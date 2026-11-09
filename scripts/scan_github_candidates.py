@@ -7,8 +7,10 @@ API route. The default output is ignored cache; no catalog inputs are modified.
 from __future__ import annotations
 
 import argparse
+import copy
 from collections import Counter
 from datetime import date, datetime, timedelta, timezone
+import email.utils
 import hashlib
 import http.client
 import json
@@ -22,10 +24,32 @@ import urllib.request
 
 from catalog import ROOT, atomic_write, canonical
 from repository_identity import repository_aliases
+from network_budget import BudgetDeferred, budget_from_environment
 
-TOPICS = frozenset({'computer-use', 'gui-agent', 'gui-agents', 'gui-automation',
+TOPIC_COHORTS = frozenset({'computer-use', 'gui-agent', 'gui-agents', 'gui-automation',
                     'desktop-automation', 'browser-agent', 'browser-agents',
-                    'browser-automation', 'android-automation'})
+                    'browser-automation', 'android-automation',
+                    'computer-use-agent', 'computer-use-agents', 'gui-grounding',
+                    'browser-use', 'web-agent', 'web-agents', 'desktop-agent',
+                    'mobile-agent',
+                    # Reviewed 2026-11-05: docs/reviews/2026-11-05-candidate-topic-expansion.md
+                    'cua', 'computer-control', 'computer-agent', 'os-agent', 'os-agents',
+                    'mobile-agents', 'android-agent', 'phone-use', 'mobile-use',
+                    'screen-understanding', 'ui-agent'})
+PHRASE_ROOTS = {
+    'phrase-clean-room-reimplementation': 'clean-room reimplementation',
+    'phrase-reimplementation-of': 'reimplementation of',
+    'phrase-open-source-reimplementation': 'open-source reimplementation',
+    'phrase-decompilation': 'decompilation',
+    'phrase-decompiled': 'decompiled',
+    'phrase-reverse-engineered': 'reverse-engineered',
+    'phrase-recreation-of': 'recreation of',
+    'phrase-clone-of': 'clone of',
+    'phrase-port-of': 'port of',
+    'phrase-matching-decomp': 'matching decomp',
+    'phrase-re-implementation': 're-implementation',
+}
+TOPICS = TOPIC_COHORTS | PHRASE_ROOTS.keys()
 DEFAULT_TOPICS = ('computer-use', 'gui-agent', 'browser-automation')
 INPUTS = ('catalog.jsonl', 'candidates.jsonl', 'primary-evidence.jsonl',
           'repository-aliases.json', 'candidate-reviews.json')
@@ -37,10 +61,50 @@ MAX_BODY = 5_000_000
 INTERVAL = 6.5
 PAGE_SIZE = 100
 SPLIT_THRESHOLD = 900
+QUERY_PROGRESS = ('status', 'next_page', 'reported_total', 'total_changed',
+                  'incomplete_results_seen', 'seen_repository_ids', 'rejected_rows', 'last_attempt')
+# A renamed or transferred (permanent redirect), deleted (404) or forked repository gives the
+# same answer on every request. Later existing-candidate cohorts skip that name for this long
+# instead of retrying it first on every scan, which stalled the lane behind it. Any other
+# quarantined direct response is not settled, including one with no fork field: it is retried,
+# because the next answer can be acceptable.
+SETTLED_SEED_RECHECK = timedelta(days=30)
 
 
 def digest(body):
     return hashlib.sha256(body).hexdigest()
+
+
+def existing_seed_url(name):
+    return 'https://api.github.com/repos/' + name
+
+
+def settled_seed_answer(receipt):
+    """True when an existing-candidate request got a final answer for that name; transient failures stay retryable."""
+    return (receipt['outcome'] == 'redirect_not_followed' and receipt['status'] in {301, 308}
+            or receipt['outcome'] == 'unavailable' and receipt['status'] == 404
+            or receipt['outcome'] == 'fork_not_recorded')
+
+
+def settled_unknown_requests(receipts, run_id):
+    """This run's existing-candidate requests answered by a permanent redirect, a 404 or a fork.
+
+    They count as unknown requests (no metadata was accepted), but the answer is final for that name, so the
+    scan reports them as a notice instead of a gap that would make every scan partial until the names are reviewed."""
+    return sum(receipt['run_id'] == run_id and receipt['query_id'].startswith('existing:') and settled_seed_answer(receipt)
+               for receipt in receipts)
+
+
+def settled_seed_requests(state, at):
+    """Request-URL fingerprints whose latest existing-candidate answer is settled and inside the recheck window."""
+    existing = {q['id'] for q in state['queries'] if q['kind'] == 'existing'}
+    latest = {}
+    for receipt in state['receipts']:
+        if receipt['query_id'] in existing:
+            latest[receipt['request_url_sha256']] = receipt
+    cutoff = timestamp(at) - SETTLED_SEED_RECHECK
+    return {sha for sha, receipt in latest.items()
+            if settled_seed_answer(receipt) and timestamp(receipt['requested_at']) > cutoff}
 
 
 def utcnow():
@@ -90,8 +154,9 @@ def safe_api_url(url):
         params = urllib.parse.parse_qs(parts.query, strict_parsing=True)
         if set(params) != {'q', 'per_page', 'page', 'sort', 'order'} or any(len(v) != 1 for v in params.values()):
             raise ValueError('unsupported search parameters')
-        match = re.fullmatch(r'topic:([a-z-]+) is:public fork:false created:(\d{4}-\d\d-\d\d)\.\.(\d{4}-\d\d-\d\d)', params['q'][0])
-        if not match or match[1] not in TOPICS or date.fromisoformat(match[2]) > date.fromisoformat(match[3]):
+        match = re.fullmatch(r'(.+) is:public fork:false created:(\d{4}-\d\d-\d\d)\.\.(\d{4}-\d\d-\d\d)', params['q'][0])
+        allowed = {search_term(cohort) for cohort in TOPICS}
+        if not match or match[1] not in allowed or date.fromisoformat(match[2]) > date.fromisoformat(match[3]):
             raise ValueError('unsupported query cohort')
         if params['per_page'] != [str(PAGE_SIZE)] or params['sort'] != ['updated'] or params['order'] != ['asc']:
             raise ValueError('unsupported search ordering or page size')
@@ -107,7 +172,7 @@ class NoRedirect(urllib.request.HTTPRedirectHandler):
         return None
 
 
-def public_get(url, timeout):
+def _http_get(url, timeout):
     """No auth, cookies, environment proxies, retries or automatic redirects."""
     safe_api_url(url)
     opener = urllib.request.build_opener(urllib.request.ProxyHandler({}), NoRedirect())
@@ -124,6 +189,39 @@ def public_get(url, timeout):
     except (urllib.error.URLError, http.client.HTTPException, TimeoutError, OSError):
         # Exception text can contain an unverified request URL: never persist it.
         return None, b'', {}
+
+
+def _transport_get(url, timeout, *, transport, budget=None, on_attempt=None, remaining_seconds=None):
+    """Charge the shared round without treating preflight deferral as HTTP I/O."""
+    safe_api_url(url)
+    attempt = budget.reserve(url, min_interval=INTERVAL) if budget else None
+    try:
+        if budget:
+            timeout = min(timeout, budget.timeout(timeout))
+        if remaining_seconds is not None:
+            timeout = min(timeout, remaining_seconds())
+        if timeout <= 0:
+            raise BudgetDeferred('wall_budget', 'api.github.com')
+        if on_attempt is not None:
+            on_attempt()
+        try:
+            status, body, headers = transport(url, timeout)
+        except (urllib.error.URLError, http.client.HTTPException, TimeoutError, OSError):
+            status, body, headers = None, b'', {}
+        if not isinstance(body, bytes) or not isinstance(headers, dict):
+            raise ValueError('transport returned invalid types')
+        if budget:
+            budget.observe_response(url, status, headers, attempt=attempt,
+                                    rate_limited=rate_limited(status, headers, body))
+        return status, body, headers
+    except BaseException:
+        if budget and attempt is not None:
+            budget.observe_response(url, None, attempt=attempt)
+        raise
+
+
+def public_get(url, timeout):
+    return _transport_get(url, timeout, transport=_http_get, budget=budget_from_environment())
 
 
 class Rejected(ValueError):
@@ -175,6 +273,16 @@ def repository_metadata(item):
             'review_status': 'candidate', 'scope': 'relevance_pending'}
 
 
+def reports_fork(item, name):
+    """True when a complete public-repository response for this name says it is a fork; anything less stays retryable."""
+    if not isinstance(item, dict) or item.get('fork') is not True:
+        return False
+    try:
+        return repository_metadata({**item, 'fork': False})['full_name'].casefold() == name.casefold()
+    except Rejected:
+        return False
+
+
 def input_snapshot(root):
     raw = {name: (root / 'data' / name).read_bytes() for name in INPUTS}
     data = {name: ([strict_json(line) for line in body.splitlines() if line.strip()]
@@ -182,7 +290,7 @@ def input_snapshot(root):
     catalog = data['catalog.jsonl']
     aliases = repository_aliases(data['repository-aliases.json'], catalog)
     observed = {r['id'] for r in data['primary-evidence.jsonl'] if r.get('ok') is True and r.get('status') == 200}
-    set_aside = {r.get('id') for r in data['candidate-reviews.json'] if r.get('decision') == 'not_a_resource'}
+    set_aside = {r.get('id') for r in data['candidate-reviews.json'] if r.get('decision') in {'not_a_resource', 'out_of_scope'}}
     names = {}
     for row in data['candidates.jsonl']:
         parsed = canonical(row.get('url'))
@@ -202,8 +310,12 @@ def input_snapshot(root):
             'existing_seed_count': len(seeds)}, seeds
 
 
+def search_term(cohort):
+    return f'"{PHRASE_ROOTS[cohort]}" in:readme,description' if cohort in PHRASE_ROOTS else f'topic:{cohort}'
+
+
 def search_query(topic, after, before, parent=None):
-    query = f'topic:{topic} is:public fork:false created:{after}..{before}'
+    query = f'{search_term(topic)} is:public fork:false created:{after}..{before}'
     return {'id': 'search:' + digest(query.encode())[:24], 'kind': 'search',
             'topic': topic, 'created_after': after, 'created_before': before,
             'query': query, 'parent_id': parent, 'next_page': 1,
@@ -222,10 +334,194 @@ def checked_output(path):
     return path
 
 
+def _state_digest(value):
+    return digest(json.dumps(value, ensure_ascii=False, sort_keys=True, separators=(',', ':')).encode('utf-8'))
+
+
+def _epoch(configuration, roots, at, reason, previous=None, source_sha=None):
+    identity = [configuration, roots, reason, previous]
+    return {'id': 'epoch:' + _state_digest(identity)[:24],
+            'configuration': copy.deepcopy(configuration), 'root_query_ids': list(roots),
+            'created_at': at, 'reason': reason, 'previous_epoch_id': previous,
+            'source_state_sha256': source_sha}
+
+
+def _epoch_nodes(state, epoch_id=None):
+    epoch = next(e for e in state['epochs'] if e['id'] == (epoch_id or state['current_epoch_id']))
+    pending = list(epoch['root_query_ids']); seen = set()
+    while pending:
+        qid = pending.pop()
+        if qid in seen:
+            continue
+        seen.add(qid)
+        pending.extend(q['id'] for q in state['queries'] if q.get('parent_id') == qid)
+    return seen
+
+
+def _epoch_owners(state, through=None):
+    """Latest declared owner for each query at an explicit point in epoch history."""
+    owners = {}
+    for epoch in state['epochs']:
+        owners.update({qid: epoch['id'] for qid in _epoch_nodes(state, epoch['id'])})
+        if epoch['id'] == through:
+            break
+    return owners
+
+
+def _query_progress_before_run(state, query, boundary, run):
+    """Reconstruct eligibility from retained receipts, excluding this run's resets."""
+    run_index = {r['id']: i for i, r in enumerate(state['runs'])}
+    index = run_index.get(run['id'], len(state['runs']))
+    start = 0
+    for event in state['query_rechecks']:
+        if event['query_id'] != query['id'] or event['receipt_boundary'] > boundary:
+            continue
+        if 'run_id' in event:
+            if run_index.get(event['run_id'], len(state['runs'])) >= index:
+                continue
+        elif timestamp(event['restarted_at']) > timestamp(run['started_at']):
+            continue
+        start = event['receipt_boundary']
+    matching = [(i, r) for i, r in enumerate(state['receipts'][start:boundary], start)
+                if r['query_id'] == query['id']]
+    progress = [r for _, r in matching if r['outcome'] in {'accepted', 'accepted_with_rejections', 'rejected'}]
+    result = {'status':'pending', 'next_page':1, 'reported_total':None, 'total_changed':False,
+              'incomplete_results_seen':False, 'seen_repository_ids':[], 'rejected_rows':0,
+              'last_attempt':matching[-1][0]+1 if matching else 0}
+    if not progress:
+        return result
+    last = progress[-1]; total = last['reported_total']
+    seen = {rid for r in progress for rid in r['accepted_repository_ids']}
+    result.update(next_page=last['position'], reported_total=total,
+                  total_changed=any(r['reported_total'] != total for r in progress),
+                  incomplete_results_seen=any(r['incomplete_results'] for r in progress),
+                  seen_repository_ids=sorted(seen), rejected_rows=sum(sum(r['rejected_rows'].values()) for r in progress))
+    if total > SPLIT_THRESHOLD:
+        result['status'] = 'blocked_single_day_window' if query['created_after'] == query['created_before'] else 'split'
+    elif not last['returned_count'] or last['position'] * PAGE_SIZE >= total:
+        complete = (len(seen) == total and all(r['reported_total'] == total for r in progress)
+                    and not any(r['incomplete_results'] or r['rejected_rows'] for r in progress))
+        result['status'] = 'observed_pages_exhausted' if complete else 'partial_results'
+    elif last['position'] >= 10:
+        result['status'] = 'partial_api_window'
+    else:
+        result['next_page'] += 1
+    return result
+
+
+def _expected_repair_epochs(state, run, boundary):
+    """Derive old repair permission from actual query ownership and prior progress."""
+    owners = _epoch_owners(state, run['epoch_id'])
+    queries = {q['id']: q for q in state['queries'] if q['id'] in owners}
+    status = {qid: _query_progress_before_run(state, q, boundary, run)['status'] for qid, q in queries.items()}
+    existence = {}
+    def existed(qid):
+        if qid not in existence:
+            parent = queries[qid]['parent_id']
+            existence[qid] = parent is None or existed(parent) and status[parent] == 'split'
+        return existence[qid]
+    needed = {owners[qid] for qid in queries if owners[qid] != run['epoch_id'] and existed(qid)
+              and status[qid] in {'pending', 'partial_results', 'partial_api_window'}}
+    return [e['id'] for e in state['epochs'] if e['id'] in needed]
+
+
+def _epoch_complete(state, epoch_id=None):
+    queries = {q['id']: q for q in state['queries']}
+    nodes = _epoch_nodes(state, epoch_id)
+    for qid in nodes:
+        query = queries[qid]
+        if query['status'] == 'observed_pages_exhausted':
+            continue
+        if query['status'] != 'split':
+            return False
+        children = sorted((q for q in state['queries'] if q.get('parent_id') == qid), key=lambda q: q['created_after'])
+        if (len(children) != 2 or children[0]['created_after'] != query['created_after']
+                or children[1]['created_before'] != query['created_before']
+                or date.fromisoformat(children[1]['created_after']) - date.fromisoformat(children[0]['created_before']) != timedelta(days=1)):
+            return False
+    return True
+
+
+def migrate_state(state, *, at=None):
+    """Explicit, pure v1 migration; original records and receipt/run prefixes survive."""
+    validate_state(state)
+    result = copy.deepcopy(state)
+    if result['schema_version'] == 2:
+        return result
+    at = at or utcnow(); timestamp(at)
+    roots = [search_query(topic, result['configuration']['created_after'], result['configuration']['created_before'])['id']
+             for topic in result['configuration']['topics']]
+    if any(not any(q['id'] == qid for q in result['queries']) for qid in roots):
+        raise ValueError('v1 migration requires every frozen topic root')
+    epoch = _epoch(result['configuration'], roots, at, 'v1_migration', source_sha=_state_digest(state))
+    result.update(schema_version=2, epochs=[epoch], current_epoch_id=epoch['id'], query_rechecks=[])
+    return validate_state(result)
+
+
+def expand_topics(state, topics, *, at=None):
+    """Add explicit topic backfills from the original historical floor, never reset old roots."""
+    result = migrate_state(state, at=at)
+    topics = list(dict.fromkeys(topics))
+    old = result['configuration']
+    if not topics or any(topic not in TOPICS for topic in topics) or not set(old['topics']) <= set(topics):
+        raise ValueError('topic expansion only permits supported additions')
+    added = [topic for topic in topics if topic not in old['topics']]
+    if not added:
+        return result
+    at = at or utcnow(); timestamp(at)
+    current = next(e for e in result['epochs'] if e['id'] == result['current_epoch_id'])
+    queries = {q['id']: q for q in result['queries']}
+    roots = {queries[qid]['topic']: qid for qid in current['root_query_ids']}
+    floor = result['epochs'][0]['configuration']['created_after']
+    for topic in added:
+        query = search_query(topic, floor, old['created_before'])
+        result['queries'].append(query); roots[topic] = query['id']
+    config = {'topics': topics, 'created_after': floor, 'created_before': old['created_before']}
+    epoch = _epoch(config, [roots[t] for t in topics], at, 'topic_expansion', current['id'])
+    result['epochs'].append(epoch); result['current_epoch_id'] = epoch['id']; result['configuration'] = config
+    return validate_state(result)
+
+
+def _retry_partial_queries(state, at, limit=2, run_id=None):
+    """A retry starts a fresh traversal; old evidence and its progress remain auditable."""
+    owners = _epoch_owners(state)
+    active = set(owners)
+    queries = sorted((q for q in state['queries'] if q['id'] in active and q['status'] in {'partial_results', 'partial_api_window'}),
+                     key=lambda q: (q['last_attempt'], q['id']))[:limit]
+    for query in queries:
+        boundary = len(state['receipts'])
+        event = {'id': 'recheck:' + _state_digest([query['id'], len(state['query_rechecks']), boundary])[:24],
+                 'query_id': query['id'], 'epoch_id': owners[query['id']],
+                 'restarted_at': at, 'receipt_boundary': boundary,
+                 'previous': {key: copy.deepcopy(query[key]) for key in QUERY_PROGRESS}}
+        if run_id is not None:
+            event['run_id'] = run_id
+        state['query_rechecks'].append(event)
+        query.update(status='pending', next_page=1, reported_total=None, total_changed=False,
+                     incomplete_results_seen=False, seen_repository_ids=[], rejected_rows=0, last_attempt=0)
+
+
+def _advance_epoch(state, at):
+    current = next(e for e in state['epochs'] if e['id'] == state['current_epoch_id'])
+    previous = current['configuration']; today = str(timestamp(at).astimezone(timezone.utc).date())
+    if today <= previous['created_before']:
+        return
+    # Inclusive lower bound repeats the final day of the preceding epoch.
+    config = {'topics': list(previous['topics']), 'created_after': previous['created_before'], 'created_before': today}
+    queries = [search_query(t, config['created_after'], config['created_before']) for t in config['topics']]
+    state['queries'].extend(queries)
+    reason = 'daily_continuation' if _epoch_complete(state) else 'frontier_continuation'
+    epoch = _epoch(config, [q['id'] for q in queries], at, reason, current['id'])
+    state['epochs'].append(epoch); state['current_epoch_id'] = epoch['id']; state['configuration'] = config
+
+
 def validate_state(state):
-    if not isinstance(state, dict) or type(state.get('schema_version')) is not int or state['schema_version'] != 1:
+    if not isinstance(state, dict) or type(state.get('schema_version')) is not int or state['schema_version'] not in {1, 2}:
         raise ValueError('unsupported scan ledger version')
-    if set(state) != {'schema_version', 'provider', 'policy', 'configuration', 'inputs', 'records', 'queries', 'receipts', 'runs', 'deferred_until'}:
+    fields = {'schema_version', 'provider', 'policy', 'configuration', 'inputs', 'records', 'queries', 'receipts', 'runs', 'deferred_until'}
+    if state['schema_version'] == 2:
+        fields |= {'epochs', 'current_epoch_id', 'query_rechecks'}
+    if set(state) != fields:
         raise ValueError('unsupported scan ledger fields')
     if state['provider'] != 'github' or state['policy'] != POLICY:
         raise ValueError('unsupported ledger provider or policy')
@@ -299,8 +595,9 @@ def validate_state(state):
                 raise ValueError('existing cohort differs from its input snapshot')
     run_ids = set()
     run_fields = {'id', 'input_id', 'started_at', 'finished_at', 'status', 'request_budget', 'wall_seconds_budget', 'requests_attempted', 'new_unique_repositories', 'accepted_metadata_rows', 'rejected_rows', 'unknown_requests', 'deferred_queries', 'deferred_query_ids', 'before_unique_repositories', 'after_unique_repositories'}
+    optional_run_fields = {'shared_budget', 'strict_replay', 'epoch_id', 'repair_epoch_ids'}
     for run in state['runs']:
-        if not isinstance(run, dict) or set(run) != run_fields or not re.fullmatch(r'run:[0-9a-f]{24}', str(run['id'])) or run['id'] in run_ids or run['input_id'] not in input_ids:
+        if not isinstance(run, dict) or not run_fields <= set(run) or set(run) - run_fields - optional_run_fields or not re.fullmatch(r'run:[0-9a-f]{24}', str(run['id'])) or run['id'] in run_ids or run['input_id'] not in input_ids:
             raise ValueError('invalid run receipt')
         run_ids.add(run['id']); timestamp(run['started_at'])
         if run['finished_at'] is not None: timestamp(run['finished_at'])
@@ -312,6 +609,22 @@ def validate_state(state):
             raise ValueError('invalid recorded budget')
         if not isinstance(run['deferred_query_ids'], list) or any(q not in query_ids for q in run['deferred_query_ids']):
             raise ValueError('invalid deferred queries')
+        if 'strict_replay' in run and type(run['strict_replay']) is not bool:
+            raise ValueError('invalid strict replay flag')
+        if 'repair_epoch_ids' in run and (not isinstance(run['repair_epoch_ids'], list)
+                or any(not isinstance(eid, str) or not re.fullmatch(r'epoch:[0-9a-f]{24}', eid) for eid in run['repair_epoch_ids'])
+                or len(set(run['repair_epoch_ids'])) != len(run['repair_epoch_ids'])):
+            raise ValueError('invalid repair epoch scope')
+        if 'shared_budget' in run:
+            shared = run['shared_budget']
+            if (not isinstance(shared, dict) or set(shared) != {'round_id', 'reservations_before', 'reservations_after', 'reservations_charged', 'deferred_reason', 'deferred_provider'}
+                    or not re.fullmatch('[0-9a-f]{32}', str(shared['round_id']))
+                    or any(type(shared[k]) is not int or shared[k] < 0 for k in ('reservations_before', 'reservations_after', 'reservations_charged'))
+                    or shared['reservations_after'] - shared['reservations_before'] != shared['reservations_charged']
+                    or shared['reservations_charged'] < run['requests_attempted']
+                    or shared['deferred_reason'] not in {None, 'request_budget', 'wall_budget', 'provider_cooldown'}
+                    or shared['deferred_provider'] is not None and not re.fullmatch('[a-z0-9.-]+', shared['deferred_provider'])):
+                raise ValueError('invalid shared-budget observation')
     runs_by_id = {run['id']: run for run in state['runs']}
     receipt_ids = set()
     receipt_fields = {'id', 'run_id', 'query_id', 'position', 'requested_at', 'finished_at', 'status', 'request_url_sha256', 'response_sha256', 'response_bytes', 'outcome', 'source_url', 'accepted_repository_ids', 'rejected_rows', 'raw_body_retained', 'reported_total', 'incomplete_results', 'returned_count'}
@@ -328,7 +641,7 @@ def validate_state(state):
             if receipt[key] is not None and (type(receipt[key]) is not int or receipt[key] < 0): raise ValueError('invalid request counts')
         if type(receipt['raw_body_retained']) is not bool or receipt['incomplete_results'] is not None and type(receipt['incomplete_results']) is not bool:
             raise ValueError('invalid request flags')
-        if receipt['outcome'] not in {'accepted', 'accepted_with_rejections', 'rejected', 'rate_limited', 'unavailable', 'redirect_not_followed', 'fetch_failed', 'response_too_large', 'malformed_response'}:
+        if receipt['outcome'] not in {'accepted', 'accepted_with_rejections', 'rejected', 'quarantined', 'rate_limited', 'unavailable', 'redirect_not_followed', 'fork_not_recorded', 'fetch_failed', 'response_too_large', 'malformed_response'}:
             raise ValueError('invalid request outcome')
         if not isinstance(receipt['accepted_repository_ids'], list) or any(type(i) is not int or i <= 0 for i in receipt['accepted_repository_ids']):
             raise ValueError('invalid accepted repository IDs')
@@ -346,6 +659,11 @@ def validate_state(state):
                 raise ValueError('source URL differs from its request fingerprint')
             if receipt['outcome'] != 'accepted' or not receipt['raw_body_retained']:
                 raise ValueError('unverified source URL in ledger')
+        if runs_by_id[receipt['run_id']].get('strict_replay') and receipt['accepted_repository_ids']:
+            if receipt['outcome'] != 'accepted' or not receipt['source_url'] or not receipt['raw_body_retained']:
+                raise ValueError('strict replay receipt lacks its complete public body')
+        if receipt['outcome'] in {'quarantined', 'fork_not_recorded'} and (receipt['accepted_repository_ids'] or receipt['source_url'] is not None or receipt['raw_body_retained']):
+            raise ValueError('quarantined page retained metadata or body')
     for item in [*state['runs'], *state['receipts']]:
         rejections = item['rejected_rows']
         if not isinstance(rejections, dict) or set(rejections) - rejection_names or any(type(v) is not int or v < 0 for v in rejections.values()):
@@ -366,7 +684,216 @@ def validate_state(state):
     for receipt in state['receipts']:
         if provenance_owners[receipt['id']] != set(receipt['accepted_repository_ids']):
             raise ValueError('accepted repository lacks a matching metadata occurrence')
+    if state['schema_version'] == 2:
+        _validate_epochs(state, queries_by_id)
+    elif any('epoch_id' in run for run in state['runs']):
+        raise ValueError('v1 run cannot claim an unrecorded epoch')
     return state
+
+
+def _validate_epoch_structure(state, queries):
+    epochs = state['epochs']
+    if not isinstance(epochs, list) or not epochs:
+        raise ValueError('v2 state requires explicit epoch history')
+    ids = set(); covered = set()
+    for index, epoch in enumerate(epochs):
+        if not isinstance(epoch, dict) or set(epoch) != {'id', 'configuration', 'root_query_ids', 'created_at', 'reason', 'previous_epoch_id', 'source_state_sha256'}:
+            raise ValueError('invalid epoch fields')
+        cfg = epoch['configuration']; timestamp(epoch['created_at'])
+        if (not isinstance(cfg, dict) or set(cfg) != {'topics', 'created_after', 'created_before'} or not isinstance(cfg['topics'], list)
+                or not cfg['topics'] or any(t not in TOPICS for t in cfg['topics']) or len(set(cfg['topics'])) != len(cfg['topics'])
+                or date.fromisoformat(cfg['created_after']) > date.fromisoformat(cfg['created_before'])):
+            raise ValueError('invalid epoch configuration')
+        previous = epochs[index-1] if index else None
+        if epoch['previous_epoch_id'] != (previous['id'] if previous else None):
+            raise ValueError('epoch history is not an append-only chain')
+        expected = _epoch(cfg, epoch['root_query_ids'], epoch['created_at'], epoch['reason'], epoch['previous_epoch_id'], epoch['source_state_sha256'])
+        if epoch['id'] != expected['id'] or epoch['id'] in ids:
+            raise ValueError('invalid or duplicate epoch identity')
+        ids.add(epoch['id'])
+        roots = epoch['root_query_ids']
+        if (not isinstance(roots, list) or len(roots) != len(cfg['topics']) or len(set(roots)) != len(roots)
+                or any(qid not in queries or queries[qid]['kind'] != 'search' or queries[qid]['parent_id'] is not None for qid in roots)
+                or [queries[qid]['topic'] for qid in roots] != cfg['topics']
+                or any(not cfg['created_after'] <= queries[qid]['created_after'] <= queries[qid]['created_before'] == cfg['created_before'] for qid in roots)):
+            raise ValueError('epoch roots do not describe their exact topic bounds')
+        if not previous:
+            if epoch['reason'] not in {'initial', 'v1_migration'}:
+                raise ValueError('first epoch lacks an initialization or migration reason')
+            if epoch['reason'] == 'v1_migration' and not SHA.fullmatch(str(epoch['source_state_sha256'])):
+                raise ValueError('migration lacks its canonical prior-state fingerprint')
+        elif epoch['reason'] == 'topic_expansion':
+            old_cfg = previous['configuration']
+            if not set(old_cfg['topics']) < set(cfg['topics']) or cfg['created_before'] != old_cfg['created_before'] or cfg['created_after'] != epochs[0]['configuration']['created_after']:
+                raise ValueError('invalid topic expansion')
+            old_roots = {queries[qid]['topic']: qid for qid in previous['root_query_ids']}
+            for qid in roots:
+                topic = queries[qid]['topic']
+                if (topic in old_roots and old_roots[topic] != qid or
+                        topic not in old_roots and queries[qid]['created_after'] != epochs[0]['configuration']['created_after']):
+                    raise ValueError('topic expansion reset an old cursor or omitted historical backfill')
+        elif epoch['reason'] in {'daily_continuation', 'frontier_continuation'}:
+            old_cfg = previous['configuration']
+            if (cfg['topics'] != old_cfg['topics'] or cfg['created_after'] != old_cfg['created_before']
+                    or cfg['created_before'] <= old_cfg['created_before']
+                    or epoch['reason'] == 'daily_continuation' and not _epoch_complete(state, previous['id'])
+                    or cfg['created_before'] != str(timestamp(epoch['created_at']).astimezone(timezone.utc).date())
+                    or any(queries[qid]['created_after'] != cfg['created_after'] for qid in roots)):
+                raise ValueError('continuation lacks its UTC creation date, required traversal, or one-day overlap')
+        else:
+            raise ValueError('unsupported epoch transition')
+        if epoch['reason'] != 'v1_migration' and epoch['source_state_sha256'] is not None:
+            raise ValueError('nonmigration epoch cannot claim a migration fingerprint')
+        covered |= _epoch_nodes(state, epoch['id'])
+    if state['current_epoch_id'] != epochs[-1]['id'] or state['configuration'] != epochs[-1]['configuration']:
+        raise ValueError('current epoch and configuration disagree')
+    if covered != {q['id'] for q in state['queries'] if q['kind'] == 'search'}:
+        raise ValueError('unowned search shard in epoch history')
+    for qid in covered:
+        parent = queries[qid]['parent_id']
+        if parent is not None and (parent not in queries or queries[parent]['kind'] != 'search' or queries[parent]['topic'] != queries[qid]['topic']
+                                   or not queries[parent]['created_after'] <= queries[qid]['created_after'] <= queries[qid]['created_before'] <= queries[parent]['created_before']):
+            raise ValueError('invalid shard ancestry')
+    return ids, covered
+
+
+def _validate_epochs(state, queries):
+    ids, covered = _validate_epoch_structure(state, queries)
+    history = state['query_rechecks']
+    if not isinstance(history, list):
+        raise ValueError('v2 state requires traversal history')
+    event_fields = {'id', 'query_id', 'epoch_id', 'restarted_at', 'receipt_boundary', 'previous'}
+    for event in history:
+        if (not isinstance(event, dict) or not event_fields <= set(event) or set(event) - event_fields - {'run_id'}
+                or not isinstance(event['query_id'], str) or type(event['receipt_boundary']) is not int
+                or 'run_id' in event and (not isinstance(event['run_id'], str) or not re.fullmatch(r'run:[0-9a-f]{24}', event['run_id']))):
+            raise ValueError('invalid traversal restart record')
+        timestamp(event['restarted_at'])
+    for run in state['runs']:
+        if 'epoch_id' in run and run['epoch_id'] not in ids:
+            raise ValueError('run references an unknown epoch')
+    runs = {run['id']: run for run in state['runs']}
+    epochs = {e['id']: e for e in state['epochs']}
+    for epoch in state['epochs']:
+        if epoch['reason'] == 'frontier_continuation':
+            associated = [r for r in state['runs'] if r.get('epoch_id') == epoch['id']]
+            if not associated or any('repair_epoch_ids' not in r for r in associated):
+                raise ValueError('frontier continuation lacks its scoped introducing run')
+    allowed_nodes = {}; run_boundaries = {}; legacy_runs = []
+    boundary = 0
+    for run_index, run in enumerate(state['runs']):
+        run_boundaries[run['id']] = boundary
+        run_receipts = [r for r in state['receipts'] if r['run_id'] == run['id']]
+        if (len(run_receipts) != run['requests_attempted']
+                or state['receipts'][boundary:boundary+len(run_receipts)] != run_receipts):
+            raise ValueError('run request boundary differs from ordered receipts')
+        if 'repair_epoch_ids' in run:
+            if run.get('epoch_id') not in ids:
+                raise ValueError('repair scope lacks its current epoch')
+            expected = _expected_repair_epochs(state, run, boundary)
+            if run['repair_epoch_ids'] != expected:
+                raise ValueError('repair epoch scope differs from retained query ownership and progress')
+            epoch = epochs[run['epoch_id']]
+            if (epoch['reason'] in {'daily_continuation', 'frontier_continuation'}
+                    and timestamp(epoch['created_at']) > timestamp(run['started_at'])
+                    or date.fromisoformat(epoch['configuration']['created_before']) > timestamp(run['started_at']).astimezone(timezone.utc).date()):
+                raise ValueError('query frontier exceeds its recorded run date')
+            allowed_nodes[run['id']] = set().union(*(_epoch_nodes(state, eid) for eid in [run['epoch_id'], *expected]))
+        else:
+            previous_run = state['runs'][run_index-1] if run_index else None
+            lower = (previous_run.get('finished_at') or previous_run['started_at']) if previous_run else run['started_at']
+            legacy_runs.append((run, boundary, timestamp(lower)))
+        boundary += run['requests_attempted']
+    for receipt in state['receipts']:
+        run = runs[receipt['run_id']]; epoch_id = run.get('epoch_id')
+        if 'repair_epoch_ids' in run and (timestamp(receipt['requested_at']) < timestamp(run['started_at'])
+                or timestamp(receipt['finished_at']) < timestamp(receipt['requested_at'])):
+            raise ValueError('request observation precedes its run/frontier')
+        allowed = allowed_nodes.get(run['id'], _epoch_nodes(state, epoch_id) if epoch_id else set())
+        if epoch_id and queries[receipt['query_id']]['kind'] == 'search' and receipt['query_id'] not in allowed:
+            raise ValueError('search receipt belongs to another run epoch')
+    boundaries = {}; event_ids = set()
+    for index, event in enumerate(history):
+        event_fields = {'id', 'query_id', 'epoch_id', 'restarted_at', 'receipt_boundary', 'previous'}
+        if not isinstance(event, dict) or not event_fields <= set(event) or set(event) - event_fields - {'run_id'}:
+            raise ValueError('invalid traversal restart record')
+        qid = event['query_id']; boundary = event['receipt_boundary']; prior = event['previous']
+        if (qid not in covered or event['epoch_id'] not in ids or qid not in _epoch_nodes(state, event['epoch_id'])
+                or type(boundary) is not int or not boundaries.get(qid, 0) <= boundary <= len(state['receipts'])
+                or not isinstance(prior, dict) or set(prior) != set(QUERY_PROGRESS) or prior['status'] not in {'partial_results', 'partial_api_window'}):
+            raise ValueError('invalid traversal restart boundary')
+        timestamp(event['restarted_at'])
+        if 'run_id' in event:
+            run = runs.get(event['run_id'])
+            if run is None or 'repair_epoch_ids' not in run:
+                raise ValueError('recheck lacks its scoped run')
+            run_boundary = run_boundaries[run['id']]
+            owner = _epoch_owners(state, run['epoch_id']).get(qid)
+            if (boundary != run_boundary or event['epoch_id'] != owner
+                    or qid not in allowed_nodes[run['id']]
+                    or timestamp(event['restarted_at']) != timestamp(run['started_at'])
+                    or _query_progress_before_run(state, queries[qid], boundary, run) != prior):
+                raise ValueError('recheck differs from its run boundary, query owner, or prior status')
+        else:
+            # Legacy events predate run_id. They still need an actual legacy run
+            # at this boundary/epoch; dropping a new scoped binding is not a
+            # backward-compatibility escape hatch.
+            restarted = timestamp(event['restarted_at'])
+            if not any(run.get('epoch_id') == event['epoch_id'] and boundary == run_boundary
+                       and lower <= restarted <= timestamp(run['started_at'])
+                       and qid in _epoch_nodes(state, run['epoch_id'])
+                       for run, run_boundary, lower in legacy_runs):
+                raise ValueError('unbound recheck lacks a matching legacy run boundary and time')
+        expected_id = 'recheck:' + _state_digest([qid, index, boundary])[:24]
+        if event['id'] != expected_id or event['id'] in event_ids:
+            raise ValueError('invalid traversal restart identity')
+        event_ids.add(event['id'])
+        prior_seen = {rid for r in state['receipts'][boundaries.get(qid, 0):boundary] if r['query_id'] == qid for rid in r['accepted_repository_ids']}
+        if prior_seen != set(prior['seen_repository_ids']):
+            raise ValueError('restart discarded unaccounted observations')
+        boundaries[qid] = boundary
+    for qid in covered:
+        query = queries[qid]
+        traversal = [r for r in state['receipts'][boundaries.get(qid, 0):] if r['query_id'] == qid]
+        observed = {rid for r in traversal for rid in r['accepted_repository_ids']}
+        if observed != set(query['seen_repository_ids']):
+            raise ValueError('traversal reuses observations from another attempt')
+        progress = [r for r in traversal if r['outcome'] in {'accepted', 'accepted_with_rejections', 'rejected'}]
+        totals = [r['reported_total'] for r in progress]
+        if (query['reported_total'] != (totals[-1] if totals else None)
+                or query['total_changed'] != any(a != b for a, b in zip(totals, totals[1:]))
+                or query['incomplete_results_seen'] != any(r['incomplete_results'] for r in progress)
+                or query['rejected_rows'] != sum(sum(r['rejected_rows'].values()) for r in progress)):
+            raise ValueError('traversal progress differs from its source receipts')
+        if query['status'] == 'observed_pages_exhausted' and (query['reported_total'] != len(observed) or query['total_changed'] or query['incomplete_results_seen'] or query['rejected_rows']):
+            raise ValueError('query completion is not supported by a reconciled traversal')
+
+
+def validate_epoch_metadata(metadata):
+    """Check epoch semantics on structurally validated metadata, without resource rows."""
+    if metadata.get('schema_version') == 2:
+        queries = {q['id']: q for q in metadata['queries']}
+        if len(queries) != len(metadata['queries']):
+            raise ValueError('duplicate query in epoch metadata')
+        _validate_epochs(metadata, queries)
+    elif metadata.get('schema_version') != 1 or any(k in metadata for k in ('epochs', 'current_epoch_id', 'query_rechecks')):
+        raise ValueError('unsupported epoch metadata version')
+    return metadata
+
+
+def validate_public_epochs(configuration, epochs, current_epoch_id, queries):
+    """Validate the shared epoch algorithm on public query projections, without cursors or receipts."""
+    by_id = {q['id']: q for q in queries}
+    if len(by_id) != len(queries):
+        raise ValueError('duplicate public query identity')
+    for query in queries:
+        if query['kind'] == 'search':
+            expected = search_query(query['topic'], query['created_after'], query['created_before'], query['parent_id'])
+            if query['id'] != expected['id']:
+                raise ValueError('public query identity differs from its declared bounds')
+    metadata = {'configuration': configuration, 'epochs': epochs, 'current_epoch_id': current_epoch_id, 'queries': queries}
+    _validate_epoch_structure(metadata, by_id)
+    return metadata
 
 
 def save(path, state):
@@ -375,16 +902,23 @@ def save(path, state):
 
 
 def delay_until(headers, now):
-    headers = {k.casefold(): v for k, v in headers.items()}
+    headers = {str(k).casefold(): str(v) for k, v in headers.items()}
+    until = now + timedelta(seconds=60)
+    retry = headers.get('retry-after', '')
     try:
-        seconds = min(86400, max(1, int(headers.get('retry-after', '0'))))
-    except (ValueError, TypeError):
-        seconds = 60
+        until = max(until, now + timedelta(seconds=min(86400, max(0, int(retry)))))
+    except ValueError:
+        try:
+            parsed = email.utils.parsedate_to_datetime(retry)
+            if parsed.tzinfo is not None:
+                until = max(until, parsed)
+        except (ValueError, TypeError, OverflowError):
+            pass
     try:
-        reset = datetime.fromtimestamp(int(headers.get('x-ratelimit-reset', '0')), timezone.utc)
-    except (ValueError, TypeError, OverflowError, OSError):
-        reset = now
-    return max(now + timedelta(seconds=max(60, seconds)), min(reset, now + timedelta(days=1))).isoformat()
+        until = max(until, datetime.fromtimestamp(int(headers.get('x-ratelimit-reset', '0')), timezone.utc))
+    except (ValueError, OverflowError, OSError):
+        pass
+    return min(until, now + timedelta(days=1)).isoformat()
 
 
 def rate_limited(status, headers, body):
@@ -412,11 +946,15 @@ def rate_limited(status, headers, body):
 
 def run_scan(root, output, *, max_requests=10, max_seconds=180, existing_budget=5,
              topics=None, created_after=None, created_before=None,
-             fetcher=public_get, clock=time.monotonic, sleep=time.sleep, now=utcnow):
+             strict_replay=False, advance_epoch=False, shared_budget=None,
+             fetcher=None, clock=time.monotonic, sleep=time.sleep, now=utcnow):
     if type(max_requests) is not int or not 1 <= max_requests <= 200 or type(existing_budget) is not int or not 0 <= existing_budget <= max_requests:
         raise ValueError('invalid request budgets')
     if type(max_seconds) not in {int, float} or not 1 <= max_seconds <= 900:
         raise ValueError('invalid wall-clock budget')
+    if type(strict_replay) is not bool or type(advance_epoch) is not bool:
+        raise ValueError('scheduled-mode flags must be boolean')
+    shared_budget = shared_budget or budget_from_environment()
     output = checked_output(output)
     path = checked_output(output / 'candidate-metadata.json')
     snapshot, seeds = input_snapshot(Path(root))
@@ -425,13 +963,28 @@ def run_scan(root, output, *, max_requests=10, max_seconds=180, existing_budget=
         'topics': list(dict.fromkeys(topics or DEFAULT_TOPICS)),
         'created_after': created_after or '2008-01-01',
         'created_before': created_before or timestamp(now()).date().isoformat()}
-    if state and ((topics is not None and list(dict.fromkeys(topics)) != config['topics']) or (created_after is not None and created_after != config['created_after']) or (created_before is not None and created_before != config['created_before'])):
+    if state and ((not advance_epoch and topics is not None and list(dict.fromkeys(topics)) != config['topics']) or (created_after is not None and created_after != config['created_after']) or (created_before is not None and created_before != config['created_before'])):
         raise ValueError('resume requires the frozen cohort bounds; use a new output directory for a new epoch')
+    new_state = state is None
     if not state:
         state = {'schema_version': 1, 'provider': 'github', 'policy': POLICY,
                  'configuration': config, 'inputs': [], 'records': {},
                  'queries': [search_query(t, config['created_after'], config['created_before']) for t in config['topics']],
                  'receipts': [], 'runs': [], 'deferred_until': None}
+    started = now()
+    run_id = 'run:' + digest((started + str(len(state['runs']))).encode())[:24]
+    if advance_epoch:
+        at = started
+        state = migrate_state(state, at=at)
+        if new_state:
+            epoch = _epoch(state['configuration'], state['epochs'][0]['root_query_ids'], at, 'initial')
+            state['epochs'] = [epoch]; state['current_epoch_id'] = epoch['id']
+        if topics is not None:
+            state = expand_topics(state, topics, at=at)
+        if not new_state:
+            _advance_epoch(state, at)
+        _retry_partial_queries(state, at, run_id=run_id)
+        config = state['configuration']
     retained_input = next((item for item in state['inputs'] if item['id'] == snapshot['id']), None)
     if retained_input is None:
         state['inputs'].append(snapshot)
@@ -452,38 +1005,63 @@ def run_scan(root, output, *, max_requests=10, max_seconds=180, existing_budget=
         state['queries'].insert(0, {'id': 'existing:' + snapshot['id'], 'kind': 'existing',
             'input_id': snapshot['id'], 'seed_count': len(seeds), 'next_index': 0,
             'status': 'pending' if seeds else 'exhausted', 'last_attempt': 0})
-    started = now(); start_clock = clock(); previous_request = None
+    start_clock = clock(); previous_request = None
     if state['receipts']:
         age = max(0, (timestamp(started) - timestamp(state['receipts'][-1]['requested_at'])).total_seconds())
         previous_request = start_clock - age
-    run = {'id': 'run:' + digest((started + str(len(state['runs']))).encode())[:24],
+    run = {'id': run_id,
            'input_id': snapshot['id'], 'started_at': started, 'finished_at': None,
            'status': 'running', 'request_budget': max_requests, 'wall_seconds_budget': max_seconds,
            'requests_attempted': 0, 'new_unique_repositories': 0, 'accepted_metadata_rows': 0,
            'rejected_rows': {}, 'unknown_requests': 0, 'deferred_queries': 0,
            'deferred_query_ids': [],
            'before_unique_repositories': len(state['records']), 'after_unique_repositories': len(state['records'])}
+    run['strict_replay'] = strict_replay
+    if state['schema_version'] == 2:
+        run['epoch_id'] = state['current_epoch_id']
+        run['repair_epoch_ids'] = _expected_repair_epochs(state, run, len(state['receipts']))
+    if shared_budget:
+        shared = shared_budget.summary()
+        run['shared_budget'] = {'round_id': shared['round_id'], 'reservations_before': shared['requests_reserved'],
+                                'reservations_after': shared['requests_reserved'], 'reservations_charged': 0,
+                                'deferred_reason': None, 'deferred_provider': None}
     state['runs'].append(run)
-    save(path, state)
-    attempted_failed = set(); existing_attempts = 0; stopped = None
+
+    def persist():
+        if shared_budget:
+            shared = run['shared_budget']; shared['reservations_after'] = shared_budget.summary()['requests_reserved']
+            shared['reservations_charged'] = shared['reservations_after'] - shared['reservations_before']
+        save(path, state)
+
+    persist()
+    settled = settled_seed_requests(state, started)
+    attempted_failed = set(); existing_attempts = 0; stopped = None; prefer_current = True
     while run['requests_attempted'] < max_requests:
         if state['deferred_until'] and timestamp(state['deferred_until']) > timestamp(now()):
             stopped = 'rate_limited'; break
         if clock() - start_clock >= max_seconds:
             stopped = 'wall_budget'; break
+        # Splitting a parent adds eligible children during this invocation.
+        current_search = _epoch_nodes(state) if state['schema_version'] == 2 else {q['id'] for q in state['queries'] if q['kind'] == 'search'}
+        active_search = current_search | set().union(*(_epoch_nodes(state, eid) for eid in run.get('repair_epoch_ids', [])))
         pending = [q for q in state['queries'] if q['status'] == 'pending' and q['id'] not in attempted_failed
-                   and (q['kind'] != 'existing' or q['input_id'] == snapshot['id'] and existing_attempts < existing_budget)]
+                   and (q['id'] in active_search if q['kind'] == 'search' else q['input_id'] == snapshot['id'] and existing_attempts < existing_budget)]
         if not pending:
             break
-        query = min(pending, key=lambda q: (q['kind'] != 'existing', q['last_attempt']))
+        existing_pending = [q for q in pending if q['kind'] == 'existing']
+        current_pending = [q for q in pending if q['kind'] == 'search' and q['id'] in current_search]
+        repair_pending = [q for q in pending if q['kind'] == 'search' and q['id'] not in current_search]
+        lane = existing_pending or ((current_pending or repair_pending) if prefer_current else (repair_pending or current_pending))
+        query = min(lane, key=lambda q: q['last_attempt'])
         if query['kind'] == 'existing':
             known = {name.casefold() for r in state['records'].values() for name in r['known_names']}
-            while query['next_index'] < len(seeds) and seeds[query['next_index']] in known:
+            while query['next_index'] < len(seeds) and (seeds[query['next_index']] in known
+                    or digest(existing_seed_url(seeds[query['next_index']]).encode()) in settled):
                 query['next_index'] += 1
             if query['next_index'] >= len(seeds):
-                query['status'] = 'exhausted'; save(path, state); continue
+                query['status'] = 'exhausted'; persist(); continue
             position = query['next_index']
-            url = 'https://api.github.com/repos/' + seeds[position]
+            url = existing_seed_url(seeds[position])
         else:
             position = query['next_page']
             url = 'https://api.github.com/search/repositories?' + urllib.parse.urlencode({
@@ -497,13 +1075,26 @@ def run_scan(root, output, *, max_requests=10, max_seconds=180, existing_budget=
         remaining = max_seconds - (clock() - start_clock)
         if remaining <= 0:
             stopped = 'wall_budget'; break
-        requested = now(); previous_request = clock()
-        run['requests_attempted'] += 1
-        if query['kind'] == 'existing': existing_attempts += 1
+        requested = None
+
+        def attempted():
+            nonlocal requested, previous_request, existing_attempts, prefer_current
+            requested = now(); previous_request = clock()
+            run['requests_attempted'] += 1
+            if query['kind'] == 'existing': existing_attempts += 1
+            else: prefer_current = query['id'] not in current_search
+
         try:
-            status, body, headers = fetcher(url, min(20, remaining))
-        except (urllib.error.URLError, http.client.HTTPException, TimeoutError, OSError):
-            status, body, headers = None, b'', {}
+            status, body, headers = _transport_get(url, min(20, remaining), transport=fetcher or _http_get,
+                budget=shared_budget, on_attempt=attempted, remaining_seconds=lambda: max_seconds - (clock() - start_clock))
+        except BudgetDeferred as error:
+            stopped = {'request_budget': 'request_budget', 'wall_budget': 'wall_budget', 'provider_cooldown': 'rate_limited'}[error.reason]
+            if shared_budget:
+                run['shared_budget'].update(deferred_reason=error.reason, deferred_provider=error.provider)
+                until = shared_budget.summary()['provider_cooldowns'].get('api.github.com')
+                if until and (not state['deferred_until'] or timestamp(until) > timestamp(state['deferred_until'])):
+                    state['deferred_until'] = until
+            break
         if not isinstance(body, bytes) or not isinstance(headers, dict):
             raise ValueError('transport returned invalid types')
         sha = digest(body)
@@ -517,8 +1108,11 @@ def run_scan(root, output, *, max_requests=10, max_seconds=180, existing_budget=
         query['last_attempt'] = len(state['receipts']) + 1
         limited = rate_limited(status, headers, body)
         parsed = False
+        quarantined = False
         if limited:
             receipt['outcome'] = 'rate_limited'; state['deferred_until'] = delay_until(headers, timestamp(now()))
+            if shared_budget:
+                run['shared_budget'].update(deferred_reason='provider_cooldown', deferred_provider='api.github.com')
         elif status != 200:
             receipt['outcome'] = 'unavailable' if status in {403, 404} else 'redirect_not_followed' if status in {301, 302, 303, 307, 308} else 'fetch_failed'
         elif len(body) > MAX_BODY:
@@ -536,7 +1130,7 @@ def run_scan(root, output, *, max_requests=10, max_seconds=180, existing_budget=
                 else:
                     items = [value]
                 receipt['returned_count'] = len(items)
-                rejected = Counter(); accepted = []
+                rejected = Counter(); accepted = []; response_ids = set()
                 for item in items:
                     try:
                         metadata = repository_metadata(item)
@@ -544,12 +1138,19 @@ def run_scan(root, output, *, max_requests=10, max_seconds=180, existing_budget=
                             raise Rejected('requested_repository_mismatch')
                         if query['kind'] == 'search' and not date.fromisoformat(query['created_after']) <= timestamp(metadata['created_at']).date() <= date.fromisoformat(query['created_before']):
                             raise Rejected('outside_created_bounds')
-                        if query['kind'] == 'search' and query['topic'] not in metadata['topics']:
+                        if query['kind'] == 'search' and query['topic'] in TOPIC_COHORTS and query['topic'] not in metadata['topics']:
                             raise Rejected('query_topic_mismatch')
+                        if strict_replay and metadata['repository_id'] in response_ids:
+                            # Duplicate or conflicting identities cannot be replayed as one page.
+                            raise Rejected('malformed')
+                        response_ids.add(metadata['repository_id'])
                         accepted.append(metadata)
                     except Rejected as error:
                         rejected[str(error)] += 1
-                receipt['rejected_rows'] = dict(rejected)
+                fork_seed = query['kind'] == 'existing' and reports_fork(value, seeds[position])
+                receipt['rejected_rows'] = {} if fork_seed else dict(rejected)
+                if strict_replay and rejected and not fork_seed:
+                    accepted = []; quarantined = True
                 for metadata in accepted:
                     rid = metadata['id']; old = state['records'].get(rid)
                     occurrence = {'query_id': query['id'], 'receipt_id': receipt['id'], 'position': position}
@@ -560,14 +1161,14 @@ def run_scan(root, output, *, max_requests=10, max_seconds=180, existing_budget=
                         'occurrences': (old['occurrences'] if old else []) + [occurrence]}
                     receipt['accepted_repository_ids'].append(metadata['repository_id'])
                 receipt['accepted_repository_ids'] = sorted(set(receipt['accepted_repository_ids']))
-                receipt['outcome'] = 'accepted_with_rejections' if rejected and accepted else 'rejected' if rejected else 'accepted'
+                receipt['outcome'] = 'fork_not_recorded' if fork_seed else 'quarantined' if quarantined else 'accepted_with_rejections' if rejected and accepted else 'rejected' if rejected else 'accepted'
                 # A mixed/unknown/private response has a digest but no raw body or request URL in the public ledger.
                 if not rejected:
                     receipt['source_url'] = url
                     raw = checked_output(output / 'raw' / (sha + '.body'))
                     atomic_write(raw, body); receipt['raw_body_retained'] = True
-                parsed = True
-                if query['kind'] == 'search':
+                parsed = not fork_seed
+                if query['kind'] == 'search' and not quarantined:
                     total = value['total_count']
                     query['total_changed'] |= query['reported_total'] is not None and query['reported_total'] != total
                     query['reported_total'] = total
@@ -594,23 +1195,31 @@ def run_scan(root, output, *, max_requests=10, max_seconds=180, existing_budget=
                         query['next_page'] += 1
             except (ValueError, TypeError, KeyError, UnicodeError):
                 receipt['outcome'] = 'malformed_response'
-        if query['kind'] == 'existing' and not limited:
+        if query['kind'] == 'existing' and not limited and not quarantined:
             query['next_index'] += 1
             if query['next_index'] >= query['seed_count']: query['status'] = 'exhausted'
+        # A settled answer concerns only this name: record it once, skip the name, and let the lane continue.
+        settled_seed = query['kind'] == 'existing' and settled_seed_answer(receipt)
+        if settled_seed:
+            settled.add(receipt['request_url_sha256'])
         if not parsed:
-            run['unknown_requests'] += 1; attempted_failed.add(query['id'])
+            run['unknown_requests'] += 1
+        if (not parsed and not settled_seed) or quarantined:
+            attempted_failed.add(query['id'])
         state['receipts'].append(receipt)
         run['accepted_metadata_rows'] += len(receipt['accepted_repository_ids'])
         run['rejected_rows'] = dict(Counter(run['rejected_rows']) + Counter(receipt['rejected_rows']))
         run['after_unique_repositories'] = len(state['records'])
         run['new_unique_repositories'] = len(state['records']) - run['before_unique_repositories']
-        save(path, state)
+        persist()
         if limited: stopped = 'rate_limited'; break
     pending_count = sum(q['status'] == 'pending' for q in state['queries'])
     run['finished_at'] = now(); run['deferred_queries'] = pending_count
     run['deferred_query_ids'] = [q['id'] for q in state['queries'] if q['status'] == 'pending']
-    run['status'] = stopped or ('request_budget' if pending_count and run['requests_attempted'] >= max_requests else 'partial' if pending_count or run['unknown_requests'] or run['rejected_rows'] or any(q['status'] in {'partial_results', 'blocked_single_day_window', 'partial_api_window'} for q in state['queries']) else 'finished')
-    save(path, state)
+    # Settled answers stay counted as unknown requests, but they are final, so they do not leave the round partial.
+    unsettled = run['unknown_requests'] - settled_unknown_requests(state['receipts'], run['id'])
+    run['status'] = stopped or ('request_budget' if pending_count and run['requests_attempted'] >= max_requests else 'partial' if pending_count or unsettled or run['rejected_rows'] or any(q['status'] in {'partial_results', 'blocked_single_day_window', 'partial_api_window'} for q in state['queries']) else 'finished')
+    persist()
     return state, run
 
 
@@ -623,13 +1232,16 @@ def main(argv=None):
     parser.add_argument('--topic', action='append', choices=sorted(TOPICS), help='Repeatable; resume uses the original topics if omitted.')
     parser.add_argument('--created-after')
     parser.add_argument('--created-before', help='Fixed inclusive creation-date upper bound; defaults to the first run UTC day and stays frozen on resume.')
+    parser.add_argument('--strict-replay', action='store_true', help='Quarantine a whole mixed/rejected page without advancing its cursor or retaining accepted siblings.')
+    parser.add_argument('--advance-epoch', action='store_true', help='Explicitly migrate v1, allow additive historical topic backfills, retry up to two partial traversals, and continue completed epochs with a one-day overlap.')
     args = parser.parse_args(argv)
     try:
         output = checked_output(args.output)
         output.relative_to((ROOT / '.cache').absolute())
         state, run = run_scan(ROOT, output, max_requests=args.max_requests, max_seconds=args.max_seconds,
             existing_budget=args.existing_budget, topics=args.topic,
-            created_after=args.created_after, created_before=args.created_before)
+            created_after=args.created_after, created_before=args.created_before,
+            strict_replay=args.strict_replay, advance_epoch=args.advance_epoch)
     except (ValueError, OSError, KeyError, TypeError) as error:
         print('Scan failed: ' + str(error), file=sys.stderr)
         return 2

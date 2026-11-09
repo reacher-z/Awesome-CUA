@@ -53,6 +53,8 @@ CASES = {
     "duplicate topics": set_path(PAPER, "topics", lambda topics: topics + topics[:1]),
     "duplicate aliases": set_path(PAPER, "aliases", ["OSWorld", "OSWorld"]),
     "unknown top-level field": set_path(PAPER, "extra_field", 1),
+    "omitted authors still listed": set_path(PAPER, "authors_omitted", True),
+    "authors_omitted false": set_path(PAPER, "authors_omitted", False),
     "id prefix": set_path(ORGANIZATION, "id", "org:anthropic"),
     "id whitespace": set_path(ORGANIZATION, "id", "organization:anthropic labs"),
     "published_at basic format": set_path(PAPER, "published_at", "20240411"),
@@ -103,7 +105,8 @@ class SchemaParityTests(unittest.TestCase):
     def test_mirrored_vocabularies_match_the_schema(self):
         properties, definitions = SCHEMA["properties"], SCHEMA["$defs"]
         evidence = properties["evidence"]["items"]["properties"]
-        self.assertEqual(set(build.FIELD_TYPES), set(properties))
+        self.assertEqual(set(build.FIELD_TYPES), set(SCHEMA["required"]))
+        self.assertEqual(set(build.FIELD_TYPES) | set(build.OPTIONAL_FIELD_TYPES), set(properties))
         self.assertEqual(catalog.KINDS, set(properties["kind"]["enum"]))
         self.assertEqual(catalog.ENVIRONMENTS, set(properties["environments"]["items"]["enum"]))
         self.assertEqual(catalog.STATUSES, set(properties["review_status"]["enum"]))

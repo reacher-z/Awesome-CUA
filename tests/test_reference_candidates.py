@@ -58,9 +58,10 @@ class ReferenceCandidateTests(unittest.TestCase):
         refs = [cite(AGENT["id"], "arxiv:2506.21506"), cite(BENCH["id"], "arxiv:2506.21506", at=OLD), cite(AGENT["id"], "arxiv:2502.13130"),
                 cite(AGENT["id"], "github:x/tool"), cite(PENDING["id"], "arxiv:2311.12022"), cite("github:o/gone", "arxiv:2206.04615")]
         candidates = self.discover(refs)
-        # Only arXiv targets cited by a curated record enter, and reading the committed references makes no request.
+        # Only targets cited by a curated record enter, and reading the committed references makes no request.
         self.assertEqual(self.requests, [])
-        self.assertEqual(sorted(candidates), ["arxiv:2502.13130", "arxiv:2506.21506"])
+        self.assertEqual(sorted(candidates), ["arxiv:2502.13130", "arxiv:2506.21506", "github:x/tool"])
+        self.assertEqual({key: candidates["github:x/tool"][key] for key in ("url", "provider")}, {"url": "https://github.com/x/tool", "provider": "github"})
         new = candidates["arxiv:2506.21506"]
         self.assertEqual({key: new[key] for key in ("url", "provider", "first_discovered_at")}, {"url": "https://arxiv.org/abs/2506.21506", "provider": "arxiv", "first_discovered_at": OLD})
         self.assertEqual(self.cited(new), [("Cited by github:o/agent; relevance awaits review", "https://github.com/o/agent"),

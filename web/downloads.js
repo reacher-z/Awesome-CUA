@@ -38,3 +38,13 @@ document.querySelector('[data-dismiss-copy]').addEventListener('click', () => {
   fallback.hidden = true;
   lastTrigger?.focus();
 });
+
+// A link to #downloads-rag opens that group, so the target is visible.
+function openLinkedGroup() {
+  const target = document.getElementById(location.hash.slice(1));
+  if (target && target.tagName === 'DETAILS') target.open = true;
+}
+if (typeof location !== 'undefined' && document.getElementById) {
+  addEventListener('hashchange', openLinkedGroup);
+  openLinkedGroup();
+}

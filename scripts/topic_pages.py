@@ -10,7 +10,8 @@ from urllib.parse import urlencode
 
 from export_citations import encode_citations
 from paper_library import PAGE_SIZE, PLATFORMS, TOPICS
-from publication_metadata import record_date_text
+from publication_metadata import AUTHORS_OMITTED, authors_omitted, record_date_text
+from site_config import SITE
 
 
 GROUPS = (
@@ -19,12 +20,14 @@ GROUPS = (
     ('datasets', ('Datasets', '数据集'), {'dataset'}),
     ('models', ('Models', '模型'), {'model'}),
     ('systems', ('Engineering & industry', '工程与产业'), {'agent', 'framework', 'infrastructure', 'tool', 'product', 'company'}),
+    ('learning', ('Learning resources', '学习资源'), {'learning'}),
 )
 KIND_LABELS = {
     'paper': ('Paper', '论文'), 'survey': ('Survey', '综述'), 'benchmark': ('Benchmark', '基准'),
     'dataset': ('Dataset', '数据集'), 'model': ('Model', '模型'), 'agent': ('Agent', '智能体'),
     'framework': ('Framework', '框架'), 'infrastructure': ('Infrastructure', '基础设施'),
     'tool': ('Tool', '工具'), 'product': ('Product', '产品'), 'company': ('Publisher', '发布方'),
+    'learning': ('Learning resource', '学习资源'),
 }
 EXPORT_FILES = ('records.jsonl', 'citations.bib', 'citations.csl.json')
 
@@ -61,7 +64,7 @@ def topic_counts(rows):
 
 
 def topic_page_count(counts):
-    return max(1, -(-sum(counts[slug] for slug, _, _ in GROUPS) // PAGE_SIZE))
+    return max(1, -(-sum(counts.get(slug, 0) for slug, _, _ in GROUPS) // PAGE_SIZE))
 
 
 def topic_sections(topic, counts, language='en'):
@@ -70,7 +73,7 @@ def topic_sections(topic, counts, language='en'):
     Pages list groups in GROUPS order, so manifest counts alone locate each group without the member rows."""
     links, start = {}, 0
     for slug, _, _ in GROUPS:
-        if counts[slug]:
+        if counts.get(slug, 0):
             links[slug] = topic_path(topic, language, start // PAGE_SIZE + 1) + '#' + slug
             start += counts[slug]
     return links
@@ -108,7 +111,7 @@ def write_topic_exports(destination, rows, catalog_bytes):
     covered = {row['id'] for members in grouped.values() for row in members}
     manifest = {'schema_version': 1, 'catalog_sha256': hashlib.sha256(catalog_bytes).hexdigest(),
                 'membership_policy': 'Explicit reviewed topic tags only; curated core/adjacent resources. No title-based inference.',
-                'count_policy': 'Resources are not independent projects. Topic memberships overlap; do not sum topic totals.',
+                'count_policy': 'A resource can belong to several topics.',
                 'citation_policy': 'Default retained-source edition; source-specific author/date precision and paper versions are preserved.',
                 'reviewed_resources': len(reviewed), 'resources_with_topics': len(covered),
                 'reviewed_resources_without_topics': len(reviewed) - len(covered), 'topics': entries}
@@ -127,19 +130,19 @@ def reconcile_topic_exports(destination, topic_ids):
                     (folder / name).unlink(missing_ok=True)
 
 
-def topic_index_body(manifest, *, language='en', site_url='https://awesomecua.github.io'):
+def topic_index_body(manifest, *, language='en', site_url=SITE):
     zh = language == 'zh'
     def tr(en, cn): return cn if zh else en
     entries = sorted(manifest['topics'], key=lambda item: (-item['counts']['total'], item['id']))
     body = ['<section class="topic-directory"><div class="library-heading"><div><div class="eyebrow">RESEARCH · DATA · TOOLS</div><h1>',
             tr('Explore by topic', '<span class="topic-title-name">Computer-Use</span> <span class="topic-title-name">主题目录</span>'), '</h1></div><a class="library-language" href="',
             topic_path(language='en' if zh else 'zh'), '">', 'English' if zh else '中文', '</a></div>',
-            '<p class="topic-intro">', tr('Find the papers, models, datasets, benchmarks, and tools that belong together.', '把同一方向的论文、模型、数据集、评测基准与工具放在一起看。'), '</p>',
+            '<p class="topic-intro">', tr('Find related papers, models, datasets, benchmarks, tools, and learning resources.', '把同一方向的论文、模型、数据集、评测基准、工具与学习资源放在一起看。'), '</p>',
             '<div class="topic-overview"><span><strong>', str(len(entries)), '</strong> ', tr('topics', '个主题'), '</span><span><strong>',
             f'{manifest["resources_with_topics"]:,}', '</strong> ', tr('reviewed resources', '条已审阅资源'),
             '</span><a href="/downloads/topics.json">', tr('Topic index · JSON', '主题索引 · JSON'), ' ↓</a></div>',
-            '<p class="topic-method">', tr('Topics overlap. Counts describe the reviewed catalog, not the size of the whole field. Blank cells mean no reviewed entries with that tag.',
-            '主题可以交叉，数量反映已审阅目录，不代表整个领域的规模。空白表示该标签下尚无已审阅条目。'), '</p><p class="topic-table-help">', tr('Scroll the table horizontally to see every resource type.', '左右滑动表格，查看全部资源类型。'), '</p>',
+            '<p class="topic-method">', tr('Counts describe the reviewed catalog. Blank cells mean no reviewed entries with that tag.',
+            '数量反映已审阅目录。空白表示该标签下尚无已审阅条目。'), '</p><p class="topic-table-help">', tr('Scroll the table horizontally to see every resource type.', '左右滑动表格，查看全部资源类型。'), '</p>',
             '<div class="topic-table-scroll" tabindex="0" role="region" aria-label="', tr('Topic coverage table', '主题覆盖表'), '"><table class="topic-matrix"><thead><tr><th scope="col">', tr('Topic', '主题'), '</th>']
     for slug, labels, _ in GROUPS:
         body += ['<th scope="col" class="topic-col-', slug, '">', labels[zh], '</th>']
@@ -149,7 +152,7 @@ def topic_index_body(manifest, *, language='en', site_url='https://awesomecua.gi
         sections = topic_sections(entry['id'], entry['counts'], language)
         body += ['<tr data-topic="', entry['id'], '"><th scope="row"><a href="', path, '">', esc(entry['name'][language]), ' <span aria-hidden="true">↗</span></a></th>']
         for slug, labels, _ in GROUPS:
-            count = entry['counts'][slug]
+            count = entry['counts'].get(slug, 0)
             body += ['<td class="topic-col-', slug, '">']
             if count:
                 body += ['<a class="topic-number" href="', sections[slug], '" aria-label="', esc(entry['name'][language] + ' · ' + labels[zh] + ': ' + str(count)), '">', f'{count:,}', '</a>']
@@ -158,7 +161,7 @@ def topic_index_body(manifest, *, language='en', site_url='https://awesomecua.gi
             body += ['</td>']
         body += ['<td class="topic-total">', f'{entry["counts"]["total"]:,}', '</td></tr>']
     body += ['</tbody></table></div><p class="topic-method">', tr('Use the complete catalog to search metadata-only discoveries or entries without topic tags.', '元数据待审条目及未标注主题的资源仍可在完整目录检索。'),
-             ' <a href="/?lang=', language, '#catalog">', tr('Search all resources', '检索全部资源'), ' ↗</a> · <a href="/about/">', tr('Editorial policy', '收录方法'), '</a></p></section>']
+             ' <a href="/explore/?lang=', language, '#catalog">', tr('Search all resources', '检索全部资源'), ' ↗</a> · <a href="/about/">', tr('Editorial policy', '收录方法'), '</a></p></section>']
     schema = {'@type': 'ItemList', 'name': tr('Computer-use research topics', 'Computer-Use 研究主题'),
               'numberOfItems': len(entries), 'itemListElement': [{'@type': 'ListItem', 'position': i + 1,
               'name': entry['name'][language], 'url': site_url + topic_path(entry['id'], language)} for i, entry in enumerate(entries)]}
@@ -174,7 +177,7 @@ def ordered_groups(rows):
             yield slug, labels, selected
 
 
-def topic_body(topic, rows, resource_path, *, language='en', site_url='https://awesomecua.github.io', number=1):
+def topic_body(topic, rows, resource_path, *, language='en', site_url=SITE, number=1):
     """Return one topic page's HTML and an ItemList describing exactly its visible resources."""
     zh = language == 'zh'
     def tr(en, cn): return cn if zh else en
@@ -186,7 +189,7 @@ def topic_body(topic, rows, resource_path, *, language='en', site_url='https://a
     here = topic_path(topic, language, number)
     sections = topic_sections(topic, counts, language)
     start = (number - 1) * PAGE_SIZE
-    query = '/?' + esc(urlencode({'topic': topic, 'review': 'curated', 'lang': language})) + '#catalog'
+    query = '/explore/?' + esc(urlencode({'topic': topic, 'review': 'curated', 'lang': language})) + '#catalog'
     export = '/downloads/topics/' + topic + '/'
     body = ['<section class="topic-directory topic-detail"><div class="topic-back"><a href="', topic_path(language=language), '">← ',
             tr('All topics', '全部主题'), '</a><a href="', topic_path(topic, 'en' if zh else 'zh', number), '">', 'English' if zh else '中文', '</a></div>',
@@ -200,7 +203,7 @@ def topic_body(topic, rows, resource_path, *, language='en', site_url='https://a
         if counts[slug]:
             link = sections[slug]
             body += ['<a class="topic-col-', slug, '" href="', link[len(here):] if link.startswith(here + '#') else link, '">', labels[zh], '<strong>', str(counts[slug]), '</strong></a>']
-    body += ['</nav><p class="topic-method">', tr('Membership follows reviewed tags; it does not establish a dependency between neighboring records. Dates preserve source precision. Annotations retain their original language.',
+    body += ['</nav><p class="topic-method">', tr('Membership follows reviewed tags. Dates preserve source precision. Annotations retain their original language.',
              '条目依据已审阅标签归类，同一主题不表示资源之间存在依赖关系。日期保留来源精度，注释保留原语言。'), '</p>']
     visible, offset = [], 0
     for slug, labels, selected in ordered_groups(rows):
@@ -220,7 +223,9 @@ def topic_body(topic, rows, resource_path, *, language='en', site_url='https://a
             if date:
                 body += ['<time datetime="', date, '">', date, '</time>'] if len(date) == 10 else ['<span>', date, '</span>']
             body += ['</div><div class="topic-resource-main"><h3><a href="', path, '">', esc(row['name']), '</a></h3>']
-            if row.get('authors'):
+            if authors_omitted(row):
+                body += ['<p class="topic-resource-authors"><a href="', safe_href(primary), '">', esc(tr(*AUTHORS_OMITTED)), '</a></p>']
+            elif row.get('authors'):
                 authors = ', '.join(row['authors'][:2])
                 if len(row['authors']) > 2:
                     authors += tr(' et al.', ' 等 ' + str(len(row['authors'])) + ' 位作者')
@@ -250,9 +255,9 @@ def topic_body(topic, rows, resource_path, *, language='en', site_url='https://a
     return ''.join(body), schema
 
 
-def topic_markdown(topic, rows, resource_path, *, language='en', site_url='https://awesomecua.github.io'):
+def topic_markdown(topic, rows, resource_path, *, language='en', site_url=SITE):
     lines = ['# ' + topic_name(topic, language), '',
-             'Reviewed topic membership; resources can appear in multiple topics. Shared membership is not a dependency claim.', '',
+             'Reviewed topic membership; resources can appear in multiple topics.', '',
              f'Full source records: {site_url}/downloads/topics/{topic}/records.jsonl', '']
     for _, labels, selected in ordered_groups(rows):
         lines += ['## ' + labels[language == 'zh'], '']

@@ -8,7 +8,8 @@ import unittest
 
 sys.path.insert(0,str(Path(__file__).resolve().parents[1]/'scripts'))
 from build_site import build_site
-from search_pages import SITE, page, resource_path
+from search_pages import page, resource_path
+from test_search_pages import page_origin
 
 
 class TrailParser(HTMLParser):
@@ -49,7 +50,7 @@ class BreadcrumbTests(unittest.TestCase):
             visible,structured=self.trails[path]
             with self.subTest(path=path):
                 self.assertEqual(visible.navs,1);self.assertEqual(len(structured),1)
-                self.assertEqual([(i+1,name,SITE+href) for i,(href,name,_) in enumerate(visible.items)],structured[0])
+                self.assertEqual([(i+1,name,page_origin(self.dest,path)+href) for i,(href,name,_) in enumerate(visible.items)],structured[0])
     def test_only_the_last_item_is_the_current_page(self):
         for path in self.pages:
             items=self.trails[path][0].items

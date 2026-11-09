@@ -2,11 +2,11 @@
 
 [Home](../README.md) · [Methodology](methodology.md) · [Machine-readable catalog](../data/catalog.jsonl)
 
-Curated metadata, not a performance ranking. Each entry links its first-party evidence. Unknown facts are shown as —.
+Curated metadata. Each entry links its first-party evidence. Unknown facts are shown as —.
 
 *Date* retains the arXiv first-submission date, or the publisher-only record's publication date at its known precision; newest first. Titles link primary sources; receipts are in `data/catalog.jsonl`.
 
-**18 resources:** [Web (2)](#web) · [Mobile (1)](#mobile) · [Cross-platform (12)](#cross-platform) · [Unspecified (3)](#unspecified)
+**37 resources:** [Web (5)](#web) · [Mobile (1)](#mobile) · [Cross-platform (14)](#cross-platform) · [Unspecified (17)](#unspecified)
 
 Resources tagged with environments from more than one family are listed under *Cross-platform*; their exact environments stay in the table.
 
@@ -16,6 +16,9 @@ All entries in this section: web.
 
 | Date | Resource | Description |
 | --- | --- | --- |
+| 2026‑08‑10 | [Software Engineering for and with GUI Agent](https://arxiv.org/abs/2608.09278) | Surveys 336 GUI-agent papers through a software engineering lens, covering architectures, evaluation, and lifecycle concerns in mobile and web settings. |
+| 2026‑04‑24 | [Agentic World Modeling: Foundations, Capabilities, Laws, and Beyond](https://arxiv.org/abs/2604.22748) | Survey of agentic world models that classifies predictive capabilities and governing laws, including the digital setting of web and GUI agents. |
+| 2026‑01‑18 | [Agentic Artificial Intelligence (AI): Architectures, Taxonomies, and Evaluation of Large Language Model Agents](https://arxiv.org/abs/2601.12560) | Surveys LLM agent architectures, operating environments and evaluation, covering web navigation and native computer use alongside other agent domains. |
 | 2025‑03‑30 | [A Survey of WebAgents: Towards Next-Generation AI Agents for Web Automation with Large Foundation Models](https://arxiv.org/abs/2503.23350) | Surveys foundation-model web agents through their architectures, training methods and trustworthiness. It organizes research on completing browser tasks from user instructions and identifies directions for further development. |
 | 2024‑02‑15 | [A Trembling House of Cards? Mapping Adversarial Attacks against Language Agents](https://arxiv.org/abs/2402.10196) | Presents a conceptual perception–reasoning–action framework and 12 potential attack scenarios for language agents, including hypothetical web-navigation attacks. |
 
@@ -37,6 +40,8 @@ All entries in this section: android, ios.
 | --- | --- | --- | --- |
 | 2026‑09‑02 | [Efficient GUI Agents: A Systems Survey of Observation, Memory, Action, and Runtime Optimization](https://arxiv.org/abs/2609.02309) | cross-platform | Surveys GUI-agent efficiency beyond task success: observation, context and memory, action, and planner or runtime cost. |
 | 2026‑08‑30 | [A Systematic Survey of Agentic Skills: Architecture, Lifecycle, and Security](https://arxiv.org/abs/2608.29596) | cross-platform | Surveys modular agentic skill architectures, skill lifecycles, and security risks in autonomous tool- and interface-using agents. |
+| 2026‑05‑08 | [Securing Computer-Use Agents: A Unified Architecture-Lifecycle Framework for Deployment-Grounded Reliability](https://arxiv.org/abs/2605.07110) | web, desktop, cross-platform | Survey of computer-use agent reliability and security across browsers, desktops, and mobile apps, using architecture and lifecycle views to map failures and controls. |
+| 2025‑12‑16 | [A Survey on Benchmarks of LLM-based GUI Agents](https://doi.org/10.36227/techrxiv.176591818.87526814/v1) | cross-platform | Surveys LLM-based GUI agent benchmarks in three task tiers (grounding and QA, multi-step navigation, open-world environments), comparing their datasets, environments and metrics, and outlines open evaluation gaps. |
 | 2025‑08‑06 | [OS Agents: A Survey on MLLM-based Agents for General Computing Devices Use](https://arxiv.org/abs/2508.04482) | cross-platform | Surveys agents that operate computers and phones through operating-system interfaces, covering components, capabilities, foundation models, frameworks, and benchmarks. |
 | 2025‑05‑16 | [A Survey on the Safety and Security Threats of Computer-Using Agents: JARVIS or Ultron?](https://arxiv.org/abs/2505.10924) | cross-platform | Systematizes safety and security threats to computer-using agents, with taxonomies of threats and defensive strategies. |
 | 2025‑04‑29 | [A Survey on GUI Agents with Foundation Models Enhanced by Reinforcement Learning](https://arxiv.org/abs/2504.20464) | cross-platform | Formalizes GUI tasks as Markov decision processes and traces agent training from prompting through supervised fine-tuning to reinforcement learning. |
@@ -56,10 +61,24 @@ All entries in this section: unspecified.
 
 | Date | Resource | Description |
 | --- | --- | --- |
+| 2026‑11‑04 | [GUI Grounding for Computer-Use Agents: A Survey](https://doi.org/10.20944/preprints202611.0431.v1) | A survey of GUI grounding organizes methods by learning, inference, and target representation, and reviews datasets, benchmarks, metrics, and inference costs. |
+| 2026‑10‑21 | [Multimodal Embodied Agents: A Unified Capability-centric Perspective from Computer-Use to Robot-Use](https://arxiv.org/abs/2610.30108) | PAPAV is a capability framework and survey comparing computer-use agents with physical agents through perception, anticipation, planning, action and verification. |
+| 2026‑10‑14 | [Seeing, Maintaining, and Learning: The Evolution of Multimodal Agent Memory](https://arxiv.org/abs/2610.19366) | Surveys multimodal memory using representation and management axes, distinguishing fixed-policy updates from policy evolution and comparing GUI memory evaluation with other modalities. |
+| 2026‑08‑05 | [LLM Agents: A Survey](https://www.preprints.org/manuscript/202608.0265/v1) | A survey organizes LLM agents by planning, memory, tool use, coordination, evaluation, and safety, covering computer-use agents among more than two hundred works. |
 | 2026‑04‑17 | [A Survey on Long-Term Memory Security in LLM Agents: Attacks, Defenses, and Governance Across the Memory Lifecycle](https://arxiv.org/abs/2604.16548) | Organizes security risks and defenses for persistent agent memory into six lifecycle phases and proposes five verifiable governance primitives. |
+| 2026‑03‑24 | [The Evolution of Tool Use in LLM Agents: From Single-Tool Call to Multi-Tool Orchestration](https://arxiv.org/abs/2603.22862) | Surveys multi-tool LLM agents across planning, training, safety, efficiency, and evaluation, including GUI and mobile systems among its application areas. |
 | 2026‑02‑12 | [Agent Skills for Large Language Models: Architecture, Acquisition, Security, and the Path Forward](https://arxiv.org/abs/2602.12430) | This survey organizes agent skills by architecture, acquisition, deployment and security, including their role in computer-use systems and GUI grounding. It also proposes a permission and lifecycle governance framework for skill deployment. |
+| 2025‑10‑19 | [Beyond Pipelines: A Survey of the Paradigm Shift toward Model-Native Agentic AI](https://arxiv.org/abs/2510.16720) | Surveys model-native agentic AI and the role of RL in learned planning, tool use and memory, covering GUI agents as one application alongside deep-research agents. |
 | 2024‑11‑04 | [Foundations and Recent Trends in Multimodal Mobile Agents: A Survey](https://arxiv.org/abs/2411.02006) | Surveys multimodal mobile agents, organizing prompt-based and training-based approaches alongside evaluation benchmarks, supporting technologies, and open challenges in mobile task execution. |
+| 2023‑10‑20 | [Vision-Based Mobile App GUI Testing: A Survey](https://arxiv.org/abs/2310.13518) | Surveys vision-based mobile app GUI testing across test generation, record-and-replay and testing frameworks, drawing on 271 papers including 92 vision-based studies. |
+| 2023‑05‑29 | [Task Automation Intelligent Agents: A Review](https://www.researchgate.net/publication/371143847_Task_Automation_Intelligent_Agents_A_Review) | A literature review examines mobile phone task automation agents, including programming by demonstration and usability heuristics for recurring user tasks. |
+| 2021 | [30 Years of Automated GUI Testing: A Bibliometric Analysis](https://link.springer.com/chapter/10.1007/978-3-030-85347-1_34) | A bibliometric review traces automated GUI testing research from 1990 to 2020, examining publication growth, citation patterns, collaboration, and emerging mobile testing topics. |
+| 2021 | [Robotic Process Automation and Artificial Intelligence in Industry 4.0 – A Literature review](https://www.sciencedirect.com/science/article/pii/S1877050921001393) | A literature review examines how robotic process automation tools combine with AI for organizational workflows in Industry 4.0, including information extraction and process optimization. |
+| 2020‑11 | [GUI testing for mobile applications: objectives, approaches and challenges](https://www.researchgate.net/profile/Kabir-Said/publication/353394632_GUI_testing_for_mobile_applications_objectives_approaches_and_challenges/links/623b5c14f559847a66144973/GUI-testing-for-mobile-applications-objectives-approaches-and-challenges.pdf) | A systematic review of mobile app GUI testing examines objectives, methods, evaluation metrics, and research challenges across 75 studies published from 2010 to 2020. |
+| 2020‑07‑27 | [From Robotic Process Automation to Intelligent Process Automation: Emerging Trends](https://arxiv.org/abs/2007.13257) | A survey of robotic and intelligent process automation traces the use of machine learning and AI in business workflows and identifies open research challenges. |
+| 2020‑02 | [Robotic Process Automation: Contemporary themes and challenges](https://www.sciencedirect.com/science/article/abs/pii/S0166361519304609) | A structured review of robotic process automation examines software bots that mimic user actions and identifies research themes and challenges for organizational use. |
+| 2018‑12‑30 | [A Systematic Literature Review of Automated Techniques for Functional GUI Testing of Mobile Applications](https://arxiv.org/abs/1812.11470) | Surveys automated functional GUI testing techniques for mobile apps, comparing the effectiveness, efficiency and practicality of approaches reported in 25 studies. |
 
 [↑ Back to top](#survey-catalog)
 
-Detailed notes and separate code/data/weights license declarations are in `data/catalog.jsonl`.
+Detailed notes and separate code/data/weights/document license declarations are in `data/catalog.jsonl`.

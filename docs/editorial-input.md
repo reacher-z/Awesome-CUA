@@ -10,11 +10,11 @@ An entry is published as `curated` only when all of the following hold:
 - `data/primary-evidence.jsonl` has a receipt for the entry's ID with `content_matched: true`
 - `reviewed_sha256` equals that receipt's `sha256`
 
-Otherwise the entry stays in `data/review-queue.jsonl` and the coverage ledger. If the evidence is unresolved, the reason is "primary evidence unresolved" with the fetch error, followed by the entry's `review_note` when it has one; if the digest differs, it is "current source snapshot needs editorial review"; in all other cases it is the entry's `review_note`. Each pending row in `data/coverage.json` and `data/review-queue.jsonl` also carries its `cause`: `unresolved_evidence`, `unreviewed_snapshot`, `reviewer_hold`, or `scope_revalidation`, and `docs/coverage.md` counts the proposals by cause. An arXiv paper whose entry is pending remains a `metadata_verified` bibliography record.
+Otherwise the entry stays in `data/review-queue.jsonl` and the coverage ledger. If the evidence is unresolved, the reason is "primary evidence unresolved" with the fetch error, followed by the entry's `review_note` when it has one; if the digest differs, it is "current source snapshot needs editorial review"; in all other cases it is the entry's `review_note`. Each pending row in `data/coverage.json` and `data/review-queue.jsonl` also carries its `cause`: `unresolved_evidence`, `unreviewed_snapshot`, `reviewer_hold`, `annotation_pending`, or `scope_revalidation`, and `docs/coverage.md` counts the proposals by cause. `annotation_pending` replaces `reviewer_hold` for an entry with a [`relevance_screen`](#relevance-screening): its reviewer read the matching receipt and found the work in scope, so it needs an annotation rather than a scope decision. An arXiv paper whose entry is pending remains a `metadata_verified` bibliography record.
 
 ## Resource ID
 
-The ID is `id` when given, otherwise the first value of `editorial_identity(entry)` in `scripts/catalog.py`. That is `canonical(url)`, except that `paper` and `survey` entries may also use an HTTPS `doi.org` URL: the DOI is case-folded into `https://doi.org/<doi>` and receives a `url:` ID. Other kinds reject bare DOI links, as discovery does. The same ID keys the entry's receipt in `primary-evidence.jsonl`, its row in `enrichment.jsonl`, and the published record, so changing `url` or `id` requires `verify` and another review.
+The ID is `id` when given, otherwise the first value of `editorial_identity(entry)` in `scripts/catalog.py`. That is `canonical(url)`, except that `paper` and `survey` entries may also use an HTTPS `doi.org` URL: the DOI is case-folded into `https://doi.org/<doi>` and receives a `url:` ID. Other kinds reject bare DOI links, as discovery does for a source that does not declare `doi_links`. The same ID keys the entry's receipt in `primary-evidence.jsonl`, its row in `enrichment.jsonl`, and the published record, so changing `url` or `id` requires `verify` and another review.
 
 ```bash
 python3 -c "import sys; sys.path.insert(0,'scripts'); from catalog import editorial_identity; print(editorial_identity({'url': 'https://github.com/xlang-ai/OSWorld/tree/main', 'kind': 'benchmark'})[0])"
@@ -43,6 +43,7 @@ In the Required column, `always` means that `build` or `verify` fails without th
 | `reviewed_sha256` | for approval | 64 hex digits | — | `source_records` | Must equal the current primary receipt's `sha256` |
 | `reviewed_at` | no | ISO 8601 UTC time of the review | — | `build` (README) | Informational. It does not gate approval and is not compared with the receipt. It orders the README's Recently reviewed table, which omits papers, surveys, and entries without it |
 | `review_note` | no | string | `"editorial review pending"` | `source_records` | Review-queue reason for an unapproved entry whose evidence matches; appended to the fetch error when the evidence is unresolved |
+| `relevance_screen` | no | `"core"` or `"adjacent"` | — | `source_records` | Outcome of a [relevance screening](#relevance-screening) of an unapproved `paper` or `survey` entry. While the entry is unapproved, `scope` must equal it and the review queue lists the entry with cause `annotation_pending`. It never approves the entry; any other value, or the key on another kind, fails `build` |
 | `verify_terms` | no | array of strings | `[name]` | `verify_editorial` | A source matches when at least one term occurs, ignoring case and whitespace runs. Bot-challenge pages never match |
 | `evidence_urls` | no | array of HTTPS URLs | GitHub: raw `README.md`, `README.MD`, `readme.md` at `HEAD`, then the repository page. Hugging Face dataset: `/api/datasets/<id>`. Other Hugging Face page except a collection: `/api/models/<id>`. Otherwise `url` | `verify_editorial` | Tried in order. The first matching response becomes the primary receipt, and its retrieval time becomes `last_verified_at` |
 | `id` | no | `arxiv:`, `github:`, `url:`, `component:` or `organization:` ID | `editorial_identity(entry)[0]` | `verify_editorial`, `enrich`, `source_records` | Record `id`. Use `component:<owner>/<path>` for one asset inside a monorepo and `organization:<slug>` for a publisher |
@@ -59,9 +60,24 @@ In the Required column, `always` means that `build` or `verify` fails without th
 | `component_of` | no | URL of the containing resource | — | `source_records` | `component_of` relation to `canonical(component_of)[0]` |
 | `family_url` | no | URL of the model family | — | `source_records` | `variant_of` relation to `canonical(family_url)[0]` |
 | `reviewed_licenses` | no | object keyed by `code`, `data`, `weights`, or `document`; each `{value, reason, evidence_urls}` | `{}` | `apply_license_reviews` | Replaces that license slot with `value`, either `null` or a license object whose `url` is in `evidence_urls`, and publishes the reason and sources in `details.license_review`. Each evidence URL must be a receipt whose `supports` include `licenses` or `licenses.<slot>` |
+| `task_classes` | no | array of IDs from `data/task-classes.json` | — | `source_records` | `task_classes` on a benchmark, dataset, paper or survey, sorted. The first segment of an ID is its realm. `validate` rejects other kinds, unknown IDs and unsorted lists |
 | `read_basis` | no | string | — | none | Informational audit note on what the reviewer read; not published |
 
 `build` sets the remaining record fields: `review_status: "curated"`, the `primary` link, `licenses` from `enrich` plus `reviewed_licenses`, and the evidence list (bibliographic receipts, then the primary receipt, `additional_evidence`, and `enrich` receipts).
+
+## Relevance screening
+
+A screening decides whether a metadata-only paper belongs in the catalog before anyone writes its annotation. The reviewer reads the paper's complete arXiv abstract and records one of three outcomes:
+
+- Outside the scope: a [scope decision](scope-review.md#authoring-a-decision) in `data/exclusions.json`.
+- Within the scope: an unapproved proposal with `name`, `kind`, `url`, `verify_terms`, the `evidence_urls` the abstract was read from, `scope` and an equal `relevance_screen`, and a `review_note` that states the reason. After `verify --id`, copy the matching receipt's `sha256` into `reviewed_sha256`: the note then describes that snapshot, and the queue shows the entry as `annotation_pending`. A changed snapshot shows it as `unreviewed_snapshot` again.
+- Not decidable from the abstract: the same proposal without `relevance_screen`, whose `review_note` says what is unclear. It is a `reviewer_hold`.
+
+Approval follows the normal rules above: add `environments`, `topics` and `summary`, review the evidence, and set `editorial_reviewed`. A screening is not an approval, and the published `scope` is the one in effect at approval.
+
+## Chinese annotations
+
+`data/translations.zh-CN.json` is a JSON object keyed by the ID of a curated record. Each value has one key, `summary`: a Chinese rendering of the record's English summary, written as a Chinese editor would write it (at most 220 characters, ending with a full stop). `catalog.py validate` rejects an ID that no curated record has, an empty or non-Chinese summary, and any other key. A record without an entry has no Chinese summary yet.
 
 ## Examples
 

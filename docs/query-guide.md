@@ -14,7 +14,7 @@ python3 scripts/catalog.py search "reinforcement" --kind paper --json
 
 Environment and topic filters refer to reviewed facets. Bibliography entries with unreviewed taxonomy use `unspecified` and will not appear in an Android filter merely because the title mentions Android. Search the title when investigating those entries.
 
-The [topic directory](https://awesomecua.github.io/topics/) groups reviewed papers, benchmarks, datasets, models, and engineering assets. Its [JSON manifest](https://awesomecua.github.io/downloads/topics.json) records exact member IDs, source snapshot SHA-256 and per-file fingerprints. Use a topic page's JSONL download as `--input` to the RAG or citation exporter for a focused corpus. Topic counts overlap and do not represent independent projects or the total size of a research field.
+The [topic directory](https://awesomecua.com/topics/) groups reviewed papers, benchmarks, datasets, models, and engineering assets. Its [JSON manifest](https://awesomecua.com/downloads/topics.json) records exact member IDs, source snapshot SHA-256 and per-file fingerprints. Use a topic page's JSONL download as `--input` to the RAG or citation exporter for a focused corpus. Topic counts overlap and do not represent independent projects or the total size of a research field.
 
 ```bash
 python3 scripts/catalog.py build
@@ -57,9 +57,9 @@ SQLite uses `resources`, `facets`, `relations`, and `resource_search`. The full 
 
 Clone the complete source catalog with `git clone https://github.com/reacher-z/Awesome-CUA.git`. [AGENTS.md](../AGENTS.md) contains executable local-search examples and a citation-preserving retrieval workflow.
 
-Known former GitHub IDs resolve through reviewed [repository identity observations](https://awesomecua.github.io/downloads/repository-aliases.json). For example, `python3 scripts/catalog.py get github:mnotgod96/appagent --json` returns the canonical AppAgent record; pasting the former repository URL into `search` finds the same owner. Use the returned canonical ID for joins and retrieval-store updates. These are dated identity observations, not additional resource records or new content approvals.
+Known former GitHub IDs resolve through reviewed [repository identity observations](https://awesomecua.com/downloads/repository-aliases.json). For example, `python3 scripts/catalog.py get github:mnotgod96/appagent --json` returns the canonical AppAgent record; pasting the former repository URL into `search` finds the same owner. Use the returned canonical ID for joins and retrieval-store updates. These are dated identity observations, not additional resource records or new content approvals.
 
-For ready-made exports, use the [English data hub](https://awesomecua.github.io/data/) or [中文数据中心](https://awesomecua.github.io/zh/data/). The six groups cover the complete catalog, RAG, citations, topics and comparisons, sources and review status, and schemas. These downloads and the clone are entry points to the same catalog; use the published snapshot's [download manifest](https://awesomecua.github.io/downloads/manifest.json) to select a file by `path`, format, and `scope`.
+For ready-made exports, use the [English data hub](https://awesomecua.com/data/) or [中文数据中心](https://awesomecua.com/zh/data/). The six groups cover the complete catalog, RAG, citations, topics and comparisons, sources and review status, and schemas. These downloads and the clone are entry points to the same catalog; use the published snapshot's [download manifest](https://awesomecua.com/downloads/manifest.json) to select a file by `path`, format, and `scope`.
 
 Check each selected file's actual `count.value`, `count.unit`, `bytes`, and `sha256`, and require matching `catalog_sha256` values across the download, RAG, citation and topic manifests. Counts for resources, retrieval documents, citations and archive records can overlap and must not be added together. A successful file check does not turn metadata-only records into reviewed resources. See the [data dictionary](data-dictionary.md) for the manifest fields and populations.
 
@@ -70,7 +70,27 @@ python3 scripts/export_rag.py --output dist/rag-documents.jsonl
 python3 scripts/export_rag.py --include-metadata --output dist/rag-all-records.jsonl
 ```
 
-The default includes reviewed resources; `--include-metadata` includes every active record with its review state intact. Each row contains `id`, `text`, and `metadata`. Keep citation URLs, evidence, dates, recorded arXiv versions, licenses, and `record_sha256` alongside embeddings. Use IDs for upserts and reconcile removed IDs against the full snapshot and scope ledger. The public [RAG manifest](https://awesomecua.github.io/downloads/rag-manifest.json) gives file counts and SHA-256 fingerprints. Embeddings and upstream paper full text are not part of the export.
+The default includes reviewed resources; `--include-metadata` includes every active record with its review state intact. Each row contains `id`, `text`, and `metadata`. Keep citation URLs, evidence, dates, recorded arXiv versions, licenses, and `record_sha256` alongside embeddings. Use IDs for upserts and reconcile removed IDs against the full snapshot and scope ledger. The public [RAG manifest](https://awesomecua.com/downloads/rag-manifest.json) gives file counts and SHA-256 fingerprints. Embeddings and upstream paper full text are not part of the export.
+
+`metadata_verified` also covers entries held after source reading; it does not imply that every such paper is unread. Recorded holds appear in `pending_editorial` in the [coverage ledger](https://awesomecua.com/downloads/coverage.json). They remain outside the default reviewed export until an editorial decision approves them.
+
+### Catalog and RAG field mapping
+
+The complete catalog and RAG exports use different JSON shapes. For an exact source record from `catalog.py get --json` or a resource's `record.json`, use the catalog column below.
+
+| Meaning | Catalog record | RAG document |
+| --- | --- | --- |
+| Stable resource ID | `id` | `id`, also `metadata.resource_id` |
+| Primary citation URL | `details.arxiv_snapshot.versioned_url` when recorded, otherwise `url` | `metadata.source_url` |
+| Canonical landing URL | `url` | `metadata.canonical_source_url` |
+| Catalog page URL | Added by the exporter | `metadata.citation_url` |
+| Recorded arXiv version | `details.arxiv_snapshot` | `metadata.arxiv_snapshot` |
+| Review status and provenance | `review_status`, `last_verified_at`, `evidence` | The same keys under `metadata` |
+| Source-record fingerprint | Computed by the exporter | `metadata.record_sha256` |
+
+`record_sha256` hashes the source object encoded as UTF-8 JSON with sorted keys, unescaped Unicode, compact `,` / `:` separators and no trailing newline. It does not hash the original JSONL line or the upstream paper. Use `scripts/export_rag.py` to obtain the fingerprint with the matching record. Preserve the primary source URL when citing findings; the catalog page supplies the annotation and review context.
+
+Track export-manifest fingerprints as well: a generator or text-policy change can update retrieval text while its source-record fingerprint remains unchanged.
 
 ## Exact identity and reviewed connections
 

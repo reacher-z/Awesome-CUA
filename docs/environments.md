@@ -4,14 +4,14 @@
 
 Environment facets come from the editorial review and overlap: a resource tagged with several platforms appears in each hub. `unspecified` records are listed only in the category pages.
 
-| Platform | All | Benchmarks | Datasets | Models | Systems | Papers |
-| --- | ---: | ---: | ---: | ---: | ---: | ---: |
-| [Web](environments/web.md) | 623 | 43 | 25 | 28 | 82 | 445 |
-| [Desktop](environments/desktop.md) | 322 | 20 | 18 | 24 | 55 | 205 |
-| [Windows](environments/windows.md) | 63 | 5 | 4 | 5 | 11 | 38 |
-| [macOS](environments/macos.md) | 30 | 3 | 2 | 4 | 7 | 14 |
-| [Linux](environments/linux.md) | 49 | 5 | 7 | 6 | 13 | 18 |
-| [Android](environments/android.md) | 300 | 19 | 35 | 24 | 44 | 178 |
-| [iOS](environments/ios.md) | 21 | 1 | 2 | 4 | 5 | 9 |
-| [HarmonyOS](environments/harmonyos.md) | 3 | · | · | · | 1 | 2 |
-| [Cross-platform](environments/cross-platform.md) | 197 | 14 | 15 | 47 | 9 | 112 |
+| Platform | All | Benchmarks | Datasets | Models | Systems | Learning resources | Papers |
+| --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
+| [Web](environments/web.md) | 2,349 | 183 | 78 | 119 | 1,280 | 21 | 668 |
+| [Desktop](environments/desktop.md) | 1,554 | 86 | 61 | 124 | 1,023 | 14 | 246 |
+| [Windows](environments/windows.md) | 487 | 14 | 11 | 13 | 403 | 2 | 44 |
+| [macOS](environments/macos.md) | 476 | 8 | 12 | 9 | 426 | 3 | 18 |
+| [Linux](environments/linux.md) | 439 | 21 | 20 | 11 | 361 | 1 | 25 |
+| [Android](environments/android.md) | 652 | 38 | 65 | 78 | 236 | 4 | 231 |
+| [iOS](environments/ios.md) | 73 | 1 | 5 | 5 | 48 | 1 | 13 |
+| [HarmonyOS](environments/harmonyos.md) | 5 | · | · | · | 1 | · | 4 |
+| [Cross-platform](environments/cross-platform.md) | 663 | 28 | 28 | 119 | 349 | 14 | 125 |

@@ -38,6 +38,21 @@ class ScanSafetyTests(unittest.TestCase):
         phases=[{'name':'discovery','ok':True},{'name':'validate','ok':False,'error':'invalid record'}]
         status,_=scan.summarize_phases(phases,[{'id':'good','ok':True}],[],[])
         self.assertEqual(status,'failed')
+    def test_nullable_error_messages_preserve_failure_classification_and_warnings(self):
+        for error in (None,''):
+            with self.subTest(error=error):
+                phases=[{'name':'discovery','ok':True},
+                    {'name':'recent_arxiv','ok':False,'error':error,'warnings':['HTTP 429']},
+                    {'name':'build','ok':True},{'name':'validate','ok':True}]
+                status,problems=scan.summarize_phases(phases,[{'id':'current','ok':True}],[],[])
+                self.assertEqual(status,'partial')
+                self.assertIn('recent_arxiv: failed',problems)
+                self.assertIn('HTTP 429',problems)
+                phases.append({'name':'github_candidates','ok':False,'error':error,
+                    'durable_validation':{'ok':False,'error':error}})
+                status,problems=scan.summarize_phases(phases,[{'id':'current','ok':True}],[],[])
+                self.assertEqual(status,'failed')
+                self.assertIn('Candidate snapshot integrity: invalid durable triplet',problems)
     def test_http_success_with_only_parse_failures_is_not_a_usable_scan(self):
         phases=[{'name':'discovery','ok':False},{'name':'huggingface','ok':True},
                 {'name':'recent_arxiv','ok':False},{'name':'build','ok':True},{'name':'validate','ok':True}]
@@ -46,6 +61,14 @@ class ScanSafetyTests(unittest.TestCase):
         self.assertEqual(status,'failed');self.assertIn('bad-shape',' '.join(problems))
         runs.append({'id':'empty-valid','state':'success','evidence':{'ok':True,'status':200},'identifiers':[]})
         self.assertEqual(scan.summarize_phases(phases,[],runs,[])[0],'partial')
+    def test_a_retired_discovery_source_is_not_a_scan_gap(self):
+        phases=[{'name':'discovery','ok':True},{'name':'build','ok':True},{'name':'validate','ok':True}]
+        retired={'id':'gone','ok':False,'state':'retired','request_attempted':False}
+        self.assertEqual(scan.summarize_phases(phases,[{'id':'live','ok':True},retired],[],[]),('success',[]))
+        failed={'id':'down','ok':False,'state':'failed','error':'HTTP Error 404: Not Found'}
+        self.assertEqual(scan.summarize_phases(phases,[{'id':'live','ok':True},retired,failed],[],[]),('partial',['Discovery sources failed: down']))
+        # A registry of retired sources alone is not a usable discovery result.
+        self.assertEqual(scan.summarize_phases(phases,[retired],[],[])[0],'failed')
     def test_arxiv_error_feed_cannot_be_counted_as_successful_empty_search(self):
         body=b'<feed xmlns="http://www.w3.org/2005/Atom"><entry><id>http://arxiv.org/api/errors#bad_query</id><title>Error</title></entry></feed>'
         info={'ok':True,'url':'https://export.arxiv.org/api/query','retrieved_at':'2026-10-16T00:00:00Z','sha256':'a'*64}
@@ -69,8 +92,8 @@ class ScanSafetyTests(unittest.TestCase):
             def stage(name,command,timeout=600):
                 invoked.append(name)
                 return {'name':name,'ok':True,'started_at':'2026-10-17T00:00:00Z'}
-            with mock.patch.object(scan,'stage',side_effect=stage),mock.patch.object(scan,'recent_papers',return_value={
-                    'name':'recent_arxiv','ok':False,'rate_limited':True,'warnings':['HTTP 429']}),mock.patch.dict(scan.os.environ,{'GITHUB_STEP_SUMMARY':''}):
+            with mock.patch.object(scan,'stage',side_effect=stage),mock.patch.object(scan,'recent_phase',return_value={
+                    'name':'recent_arxiv','ok':False,'error':None,'rate_limited':True,'warnings':['HTTP 429']}),mock.patch.dict(scan.os.environ,{'GITHUB_STEP_SUMMARY':''}):
                 self.assertEqual(scan.run_scan(),0)
             result=scan.read_json(path/'scan-status.json')
             self.assertNotIn('harvest',invoked)
@@ -90,7 +113,7 @@ class ScanSafetyTests(unittest.TestCase):
                     scan.write_json(path/'discovery-runs.json',[{'id':'hub','ok':False,'status':429,
                         'provider_host':'huggingface.co','run_started_at':'2026-10-17T00:00:01Z'}])
                 return {'name':name,'ok':True,'started_at':'2026-10-17T00:00:00Z'}
-            with mock.patch.object(scan,'stage',side_effect=stage),mock.patch.object(scan,'recent_papers',return_value={
+            with mock.patch.object(scan,'stage',side_effect=stage),mock.patch.object(scan,'recent_phase',return_value={
                     'name':'recent_arxiv','ok':True,'complete':True,'warnings':[]}) as recent,mock.patch.dict(scan.os.environ,{'GITHUB_STEP_SUMMARY':''}):
                 self.assertEqual(scan.run_scan(),0)
             recent.assert_called_once()
@@ -110,7 +133,7 @@ class ScanSafetyTests(unittest.TestCase):
                         'started_at':'2026-10-17T00:00:00Z','finished_at':'2026-10-17T00:00:01Z','configured_query_count':1,
                         'queries':[{'id':'limited','state':'failed','evidence':{'ok':False,'status':429}}]})
                 return {'name':name,'ok':True,'started_at':'2026-10-17T00:00:00Z'}
-            with mock.patch.object(scan,'stage',side_effect=stage),mock.patch.object(scan,'recent_papers',return_value={
+            with mock.patch.object(scan,'stage',side_effect=stage),mock.patch.object(scan,'recent_phase',return_value={
                     'name':'recent_arxiv','ok':True,'complete':True,'warnings':[]}) as recent,mock.patch.dict(scan.os.environ,{'GITHUB_STEP_SUMMARY':''}):
                 self.assertEqual(scan.run_scan(),0)
             recent.assert_called_once()

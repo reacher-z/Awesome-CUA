@@ -4,7 +4,7 @@
   "working_manuscript_date": "2026-10-18",
   "source_commit_for_inventory": "87166fe8ad9c8e832f7a90ee84b2e93c6e0e40db",
   "catalog_sha256": "7f71a1683ab013e587a20086c3e357956981f517a24ae8bc8e81791108c66e4f",
-  "canonical_location_intended": "https://awesomecua.github.io/survey/",
+  "canonical_location_intended": "https://awesomecua.com/survey/",
   "publication_performed": false,
   "counts": {
     "unique_cited_works": 89,
@@ -13,8 +13,8 @@
     "dataset_snapshots": 1,
     "fresh_arxiv_bibliography_additions": 14
   },
-  "body_word_count": 11556,
-  "estimated_reading_minutes": 54,
+  "body_word_count": 11232,
+  "estimated_reading_minutes": 52,
   "citation_occurrences": 104,
   "tables": [
     {
@@ -25,7 +25,7 @@
     {
       "id": "inventory-table",
       "number": 2,
-      "caption": "Populations used in this review. Counts refer to the frozen release or the explicitly bounded supplementary search; the rows overlap and should not be added."
+      "caption": "Populations used in this review. Counts refer to the frozen release or the explicitly bounded supplementary search; the rows overlap."
     },
     {
       "id": "methods-design-table",
@@ -35,12 +35,12 @@
     {
       "id": "evaluation-benchmarks",
       "number": 4,
-      "caption": "Representative evaluation contracts. Versions identify the inspected paper editions, except where a software release is explicitly named. Counts use the stated unit and are not additive across overlapping or derived benchmarks. Interfaces listed are supported options, not a claim that every evaluated agent used all of them."
+      "caption": "Representative evaluation contracts. Versions identify the inspected paper editions, except where a software release is explicitly named. Counts use the stated unit, and benchmarks can overlap or derive from one another. Interfaces listed are supported options."
     },
     {
       "id": "evaluation-datasets",
       "number": 5,
-      "caption": "Selected data populations and their measurement boundaries. Sizes are reported in the inspected papers, not independently counted downloads. A paper’s collection, its public release and the complete training mixture need not contain the same records."
+      "caption": "Selected data populations and their measurement boundaries. Sizes are as reported in the inspected papers. A paper’s collection, its public release and the complete training mixture need not contain the same records."
     },
     {
       "id": "human-case-table",
@@ -76,35 +76,35 @@
     "raw_source_documents_redistributed": false
   },
   "input_sha256": {
-    "research/survey/sections/context.html": "52c872bbabd4af68f7f3b7608034e69bb31b47cb6878183591e2dc81e8330695",
-    "research/survey/sections/review-design.html": "449f0878f6750fe1eceeeaf76436c658d30eeedcb706c5f649c753661a66ae5d",
+    "research/survey/sections/context.html": "cfdb5c357cfb6a427fc197aa0b7797f72ab40d515deac07c4885aaaa6482e68c",
+    "research/survey/sections/review-design.html": "e9175c1dd5d7d4a3c73d5eb2e53ba00b9d4c97789c05bcf934a9e84bd06bdab5",
     "research/survey/sections/methods.html": "37a0aa207a16c5acabccf4401eb7e34b47898b58370ad103c7ba855c85aff569",
-    "research/survey/sections/evaluation.html": "d03272b79c305a75cc786bd914255e9d75a35a6a8dc79caf81e0162740c208c6",
+    "research/survey/sections/evaluation.html": "34bd325cd757d1360184a72e75f52dfd53c580a75f034adb66e67cfd7436ee9e",
     "research/survey/sections/human-agency.html": "2f83e37e57ce924abf168d98e38a7b4dd9db6940fde487d3b738d48dd59be31f",
-    "research/survey/sections/assets.html": "11fb06f3f79cd56c261532beb282199293efe4767e18920eb802f71218f4fae5",
-    "research/survey/sections/agenda.html": "86ecec3fa6c42c5331ddb539e03dabfe5ba448a6f308b57885f2a2ff0e3bf941",
+    "research/survey/sections/assets.html": "e65d601af3e7bfeed11ac0a56f1d5ac82f4c79c05178525694ee8465548affc2",
+    "research/survey/sections/agenda.html": "3ef6ebc90a28738af7973cbb7329cbc458336fe762ece360ec107852dc616827",
     "research/survey/evidence/context.json": "2e3210a9a6860448d8e5a2239761484bb46bc9c039becb2e0bef9d961f752888",
-    "research/survey/evidence/methods.json": "315aeee1df6318b5333ecfa1e34c5c3cad2965c8475e0fbcb9ae049ffeebd33b",
+    "research/survey/evidence/methods.json": "10f295758e2ae7c955a8f643279b44e233209c80fe2a7cc16128ccf6b918f562",
     "research/survey/evidence/evaluation.json": "f1d188d7ab2b9f41c7c764266cd8c04c3b7c0319d24cf76228deb00f7cb0e74c",
     "research/survey/evidence/root.json": "32bfaa034625d8002ab87d6e39c6d81aec2d934a7169a134d5998982756bb9a3",
     "research/survey/evidence/corpus-statistics.json": "47fd9c2b1ed89fbfe540d17721691fd7b82e82dadea2c5205c5555a6a6a38be7",
-    "research/survey/evidence/title-search.json": "661bb5b7eea1125e9f5db7edc2644581fd5941d0cecea5835e3dbb2794b091c9",
+    "research/survey/evidence/title-search.json": "970ca63afcaee31cba70d28716a26364bf04e0cfaf6e306fe8cf3307a580e662",
     "research/survey/evidence/supplementary-screening.json": "04b8edbae9f4e17911e5919282192da51e97be777f3d01be963b4a43ac9f9edb",
     "research/survey/evidence/extra-references.json": "1d1ec6287aed88df38688afd91d74cfd9326b1a8135a3480fd5562dda54f26f3",
-    "research/survey/scripts/build_article.py": "6a3e6309bb120902b420ef069825fa320c30a3b1cd292f59a59f2763619fed80",
+    "research/survey/scripts/build_article.py": "8a78c61ec2f90b9d44f6de81f0784eb4a60e8cbd876ff205bb88f74308ae1b4c",
     "research/survey/article.css": "f70cedca3e5b0c3b48123cd280afdf7d30cc83aa4cebb6363db6ab4066f89d54",
     "research/survey/article.js": "903d48ebaad90a39a7f88f15c2aa78cb48992188b8b89bd7186be17defcd6bfe",
-    "research/survey/template.html": "a5f6f52a090ec551771b8076940c34644c4e27f8ec4ca49ae40dca8e9d8c8d17",
+    "research/survey/template.html": "2ec9894c74639a0e4f5a09fc67ef513b2b9e523d69a8ca85e3dc51a4c6f6b3eb",
     "research/survey/figures/corpus.svg": "33bb85647bd7a42235ada6dc47ef51f7d272d98e922cf181e51495d96140b106",
-    "scripts/export_citations.py": "ef23ed11c2fa1cd08c7fe46c725dd6fca80eb72c4480508bd140ecfadd535a67",
-    "scripts/publication_metadata.py": "5b0823d908d8c91977ce2d0b8d8a6dc77176e5fcf988c02c88be0c3b608357a7",
-    "research/survey/fixtures/frozen-catalog-bibliography.json": "0cecc54c022392d4e597f92f73c1ac03a01a124656e932608f77f186780df0fb"
+    "scripts/export_citations.py": "82633d1cdccbcf818b0e9a55a7119c63390cf8805875367c2b1dc800732f6a92",
+    "scripts/publication_metadata.py": "2b2f89c0584acc44ec5bf686e94c206abc85358edcc314872f5357246f5d5e82",
+    "research/survey/fixtures/frozen-catalog-bibliography.json": "c78d5601b8797b7768e968989873fc1aab5a9c4a329b46c3183cbb5a4a874c64"
   },
   "files": [
     {
       "path": "README.md",
-      "bytes": 964,
-      "sha256": "f138534d1d1962985f4ac88d1b890848008996ff85611d2d4ae40de979ae3e5e"
+      "bytes": 877,
+      "sha256": "dd6489ad03b35aff8447956a299de60f977a60386e7a726aa3d7456f541159e2"
     },
     {
       "path": "evidence/context.json",
@@ -128,13 +128,13 @@
     },
     {
       "path": "evidence/methods.json",
-      "bytes": 152855,
-      "sha256": "3cee151d0d0cfbc659e25550d857db3b58546a79017fcc02ec2eb1757576e230"
+      "bytes": 152702,
+      "sha256": "2815157236d23ef2dd3ac24773c012337f2ff3784787325db70e0312c7b19b08"
     },
     {
       "path": "evidence/reading-index.json",
-      "bytes": 97754,
-      "sha256": "952dcab2a02e8080e372faa0864550b2433b14290a6acd3cd71c2ac0e480deff"
+      "bytes": 97533,
+      "sha256": "431bd5ce510e3a90801afd9f0d3bea1a65327a5b0c01091a1d01870162836e4e"
     },
     {
       "path": "evidence/root.json",
@@ -148,27 +148,27 @@
     },
     {
       "path": "evidence/title-search.json",
-      "bytes": 725233,
-      "sha256": "b72c034d9f008d6655c31559635d4a239e394e0744fee9bbb331281a88d5cad8"
+      "bytes": 723462,
+      "sha256": "4195e1e433a52edb7c7844b5b323e22db4d84f79988d943cc49e30dd3bde8ff6"
     },
     {
       "path": "index.html",
-      "bytes": 464368,
-      "sha256": "ea4312a479c6cb125d16bd9d0b88e3239ceeb9ed0cf8e1cd5d8f15106ac7fe46"
+      "bytes": 461181,
+      "sha256": "8a5eb2c1beb96561fe6d0a01cf190d699baa6318b6a91af0c161bcff530c14d7"
     },
     {
       "path": "references.bib",
-      "bytes": 101124,
-      "sha256": "b60a0de533d985f7b313554f6b843bbe7dfcd6973d2d2a9efddcda4e388d1b95"
+      "bytes": 100789,
+      "sha256": "0c1613317d24c1f78005b62de75b4addc0eaa2a8243d38a7b5d973ee26af8b42"
     },
     {
       "path": "references.json",
-      "bytes": 218662,
-      "sha256": "596d3353d3e1741725844d9e8e2a91ccfe53628fc65d40acd59d3bffb3d449ff"
+      "bytes": 217814,
+      "sha256": "2e499e093a4e5dbdaf6e2320247cb263e1705828d6ffd6e04a97e9367a0183bc"
     }
   ],
   "frozen_bibliography_verification": {
-    "fixture_sha256": "0cecc54c022392d4e597f92f73c1ac03a01a124656e932608f77f186780df0fb",
+    "fixture_sha256": "c78d5601b8797b7768e968989873fc1aab5a9c4a329b46c3183cbb5a4a874c64",
     "record_count": 70,
     "record_hash_method": "sha256-utf8-json-sorted-keys-compact-v1",
     "history_check": "not_available_or_disabled; verified_pinned_fixture_used",

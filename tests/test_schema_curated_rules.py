@@ -7,8 +7,11 @@ sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "scripts"))
 import catalog
 import build
 
-PAPER, BENCHMARK, DATASET, BIBLIOGRAPHY, PUBLISHED, SURVEY = (
-    "arxiv:2404.07972", "github:xlang-ai/osworld", "github:alibabaresearch/rots", "arxiv:0808.1755", "url:347925d0f440d6396080", "arxiv:2411.02006")
+PAPER, BENCHMARK, DATASET, PUBLISHED, SURVEY = (
+    "arxiv:2404.07972", "github:xlang-ai/osworld", "github:alibabaresearch/rots", "url:347925d0f440d6396080", "arxiv:2411.02006")
+# Any metadata-only arXiv paper will do. A fixed one would break as soon as it is curated or excluded.
+BIBLIOGRAPHY = next(r["id"] for r in catalog.read_jsonl(catalog.DATA / "catalog.jsonl")
+                    if r["review_status"] == "metadata_verified" and r["kind"] == "paper" and r["id"].startswith("arxiv:"))
 
 
 def records():

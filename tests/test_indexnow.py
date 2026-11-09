@@ -106,6 +106,34 @@ class IndexNowTests(unittest.TestCase):
                 self.assertEqual(self.run_submission(submit=False)['url_count'], 3)
                 error.close()
 
+    def test_state_accepted_for_a_former_origin_restarts_for_the_new_host(self):
+        indexing.write_json(self.config, {'site_url': self.site + '/', 'former_site_urls': ['https://old.example/'], 'indexnow_key': self.key})
+        indexing.write_json(self.state, {**self.previous, 'site': 'https://old.example', 'accepted_pages': indexing.fingerprints(self.manifest, self.site)})
+        response = io.BytesIO(b'')
+        response.status = 200
+        with mock.patch.object(indexing, 'fetch_public', side_effect=self.preflight) as fetch, mock.patch.object(indexing.urllib.request, 'urlopen', return_value=response) as post:
+            result = self.run_submission()
+        payload = json.loads(post.call_args.args[0].data)
+        self.assertEqual((payload['host'], payload['keyLocation']), ('catalog.example', self.site + '/' + self.key + '.txt'))
+        self.assertEqual(payload['urlList'], [self.site + '/', self.site + '/new/'])
+        self.assertEqual({call.args[0] for call in fetch.call_args_list}, {self.site + '/' + self.key + '.txt', self.site + '/data/search-manifest.json'})
+        self.assertEqual(result['replaces_accepted_state_for'], 'https://old.example')
+        state = indexing.read_json(self.state)
+        self.assertEqual((state['site'], state['accepted_pages']), (self.site, indexing.fingerprints(self.manifest, self.site)))
+        self.assertEqual(self.run_submission(submit=False)['url_count'], 0)
+
+    def test_state_for_an_undeclared_origin_is_rejected(self):
+        for config in [{'site_url': self.site, 'indexnow_key': self.key},
+                       {'site_url': self.site, 'former_site_urls': ['https://old.example/'], 'indexnow_key': self.key}]:
+            with self.subTest(config=config):
+                indexing.write_json(self.config, config)
+                indexing.write_json(self.state, {**self.previous, 'site': 'https://other.example'})
+                with self.assertRaisesRegex(ValueError, 'Accepted-state identity'):
+                    self.run_submission(submit=False)
+        indexing.write_json(self.config, {'site_url': self.site, 'former_site_urls': 'https://old.example/', 'indexnow_key': self.key})
+        with self.assertRaisesRegex(ValueError, 'Former site origins'):
+            self.run_submission(submit=False)
+
     def test_foreign_paths_or_sitemap_disagreement_are_rejected(self):
         self.previous['accepted_pages']['//outside.example/stolen'] = 'f' * 64
         indexing.write_json(self.state, self.previous)
@@ -113,6 +141,19 @@ class IndexNowTests(unittest.TestCase):
             self.run_submission(submit=False)
         self.root.joinpath('sitemap.xml').write_text('<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"/>')
         with self.assertRaisesRegex(ValueError, 'Sitemap'):
+            self.run_submission(submit=False)
+
+    def test_a_sitemap_index_is_followed_to_its_local_child_files(self):
+        self.root.joinpath('sitemap-pages.xml').write_text('<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"><url><loc>https://catalog.example/</loc></url></urlset>')
+        self.root.joinpath('sitemap-resources.xml').write_text('<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml"><url><loc>https://catalog.example/new/</loc><lastmod>2026-10-01T00:00:00Z</lastmod></url></urlset>')
+        index = '<sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">' + ''.join(f'<sitemap><loc>https://catalog.example/{name}</loc></sitemap>' for name in ('sitemap-pages.xml', 'sitemap-resources.xml')) + '</sitemapindex>'
+        self.root.joinpath('sitemap.xml').write_text(index)
+        self.assertEqual(self.run_submission(submit=False)['url_count'], 3)
+        self.root.joinpath('sitemap.xml').write_text(index.replace('https://catalog.example/sitemap-resources.xml', 'https://other.example/sitemap-resources.xml'))
+        with self.assertRaisesRegex(ValueError, 'outside the site root'):
+            self.run_submission(submit=False)
+        self.root.joinpath('sitemap.xml').write_text(index.replace('sitemap-resources.xml', 'sitemap-pages.xml'))
+        with self.assertRaisesRegex(ValueError, 'Sitemap and indexable manifest disagree'):
             self.run_submission(submit=False)
 
 

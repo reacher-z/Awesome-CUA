@@ -11,6 +11,8 @@ Format audit (2026-10-17): CSL's official input schema permits literal names,
 article, version, issued, and a custom object. Its specification recommends
 article for repository preprints. Patashnik's original BibTeX manual defines
 misc without required fields, suitable when no publication venue is recorded.
+A record with authors_omitted therefore exports no author field (BibTeX) or
+author array (CSL); its note sends readers to the paper for the author list.
 Primary source URLs and reviewed-byte hashes are in FORMAT_SOURCES below.
 """
 import argparse
@@ -24,8 +26,8 @@ import sys
 import unicodedata
 from urllib.parse import urlsplit
 
-from publication_metadata import (DOI_PATTERN, PUBLICATION_TYPES, checked_date_parts,
-                                  format_date_parts, publication)
+from publication_metadata import (AUTHORS_OMITTED, DOI_PATTERN, PUBLICATION_TYPES, authors_omitted,
+                                  checked_date_parts, format_date_parts, publication)
 
 ROOT = Path(__file__).resolve().parents[1]
 PAPER_KINDS = frozenset({'paper', 'survey'})
@@ -153,6 +155,8 @@ def _facts(record, edition='record'):
         raise ValueError('authors must be a list: ' + rid)
     for author in authors:
         _text(author, 'author')
+    if authors_omitted(record):
+        authors = []  # Never export names for a record that omits its author list.
     identifiers = record.get('identifiers', {})
     if not isinstance(identifiers, dict):
         raise ValueError('identifiers must be an object: ' + rid)
@@ -187,6 +191,8 @@ def _facts(record, edition='record'):
     if snapshot is not None and not rid.startswith('arxiv:'):
         raise ValueError('arXiv snapshot requires an arXiv record identity: ' + rid)
     pub = _publication_facts(record)
+    if pub is not None and authors_omitted(record):
+        pub = {**pub, 'authors': []}
     selected = _edition(record, edition)
     facts = {
         'id': rid, 'title': title, 'authors': authors, 'identifiers': identifiers,
@@ -196,6 +202,7 @@ def _facts(record, edition='record'):
         'publication': pub, 'edition': selected,
         'date_parts': [published.year, published.month, published.day] if published else None,
         'doi': identifiers.get('doi'), 'csl_type': 'article', 'bibtex_type': 'misc',
+        'authors_omitted': authors_omitted(record),
     }
     if selected == 'publication':
         facts.update(title=pub['title'], authors=pub['authors'], source_url=pub['url'],
@@ -224,6 +231,8 @@ def _note(record, facts):
     if facts['preferred']:
         notes.append(f"Preferred arXiv record recorded by catalog: arXiv:{facts['preferred']} "
                      f"(https://arxiv.org/abs/{facts['preferred']}); this citation retains {facts['id']}")
+    if facts['authors_omitted']:
+        notes.append(AUTHORS_OMITTED[0] + ' (' + facts['source_url'] + '); this catalog does not list them')
     return '; '.join(notes) + ('.' if notes else '')
 
 
@@ -247,6 +256,8 @@ def citation_csl(record, edition='record'):
     if facts['publication'] is not None:
         custom['publication'] = copy.deepcopy(facts['publication'])
         custom['citation_edition'] = facts['edition']
+    if facts['authors_omitted']:
+        custom['authors_omitted'] = True
     citation_id = facts['id'] + (':publication' if facts['edition'] == 'publication' and facts['id'].startswith('arxiv:') else '')
     item = {
         'id': citation_id, 'citation-key': citation_key(record, edition), 'type': facts['csl_type'],
@@ -316,6 +327,8 @@ def citation_bibtex(record, edition='record'):
         metadata['publication'] = facts['publication']
         metadata['citation_edition'] = facts['edition']
         metadata['canonical_source_url'] = facts['canonical_url']
+    if facts['authors_omitted']:
+        metadata['authors_omitted'] = True
     # JSON escapes CR/LF and Unicode separators. Classic BibTeX scans for @ even
     # on lines starting with %, so encode it as JSON \u0040 as well. Both forms
     # decode to the original metadata without exposing an extra entry token.

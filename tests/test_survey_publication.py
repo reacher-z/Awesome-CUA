@@ -10,13 +10,14 @@ import sys
 import tempfile
 import unittest
 from unittest import mock
-import xml.etree.ElementTree as ET
 
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / 'scripts'))
 import build_site
 import prepare_publication
 from search_pages import SITE
+from sitemaps import sitemap_urls
+from site_config import FORMER_SITES
 from survey_bundle import (PAGE, MANIFEST, REQUIRED_INPUTS, apply_publication, copy_bundle, digest,
                            load_bundle, publication_plan)
 import test_resource_payloads as payloads
@@ -160,6 +161,36 @@ class SurveyBundleTests(unittest.TestCase):
             with self.assertRaisesRegex(ValueError, 'HTML needs'): self.copy()
             self.assertFalse((self.build/'survey').exists())
 
+    def relocate(self, html_location, manifest_location):
+        body = (self.source/'index.html').read_bytes().replace((SITE+PAGE).encode(), html_location.encode())
+        (self.source/'index.html').write_bytes(body)
+        value = copy.deepcopy(self.manifest)
+        value['canonical_location_intended'] = manifest_location
+        next(x for x in value['files'] if x['path']=='index.html').update(bytes=len(body), sha256=digest(body))
+        write_json(self.source/MANIFEST, value)
+        return body
+
+    def test_bundle_reviewed_for_a_former_origin_publishes_until_rebuilt_for_the_current_one(self):
+        former = FORMER_SITES[0]+PAGE
+        body = self.relocate(former, former)
+        apply_publication(self.plan([self.copy()]))
+        self.assertEqual((self.site/'survey/index.html').read_bytes(), body)
+        shutil.rmtree(self.build/'survey')
+        self.source, self.manifest = fixture(self.root)
+        apply_publication(self.plan([self.copy()]))
+        self.assertEqual((self.site/'survey/index.html').read_bytes(), (self.source/'index.html').read_bytes())
+        self.assertEqual(json.loads((self.site/'survey'/MANIFEST).read_bytes())['canonical_location_intended'], SITE+PAGE)
+
+    def test_canonical_must_match_its_manifest_and_a_site_origin(self):
+        former, foreign = FORMER_SITES[0]+PAGE, 'https://mirror.example'+PAGE
+        for html_location, manifest_location, error in [(SITE+PAGE, former, 'HTML needs'), (former, SITE+PAGE, 'HTML needs'),
+                                                        (foreign, foreign, 'manifest identity')]:
+            with self.subTest(html=html_location, manifest=manifest_location):
+                self.source, self.manifest = fixture(self.root)
+                self.relocate(html_location, manifest_location)
+                with self.assertRaisesRegex(ValueError, error): self.copy()
+                self.assertFalse((self.build/'survey').exists())
+
     def test_symlinked_source_ancestor_is_rejected(self):
         original = self.root/'web'
         original.rename(self.root/'real-web')
@@ -244,8 +275,7 @@ class SurveySiteIntegrationTests(unittest.TestCase):
         self.assertEqual(pages[PAGE]['sha256'], hashlib.sha256((source/'index.html').read_bytes()).hexdigest())
         self.assertEqual((self.build/'survey/index.html').read_bytes(), (source/'index.html').read_bytes())
         self.assertIn(SITE+PAGE,(self.build/'sitemap.txt').read_text(encoding='utf-8').splitlines())
-        ns={'s':'http://www.sitemaps.org/schemas/sitemap/0.9'}
-        self.assertIn(SITE+PAGE,[e.text for e in ET.parse(self.build/'sitemap.xml').findall('s:url/s:loc',ns)])
+        self.assertIn(SITE+PAGE,sitemap_urls(self.build,SITE))
         for name in ['llms.txt','llms-full.txt']:
             self.assertIn(SITE+PAGE,(self.build/name).read_text(encoding='utf-8'))
         self.assertEqual(len(json.loads((self.build/'data/records.json').read_bytes())),len(self.rows))

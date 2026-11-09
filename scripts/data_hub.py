@@ -10,15 +10,18 @@ from agent_pages import CLONE_COMMAND, RELEASES_URL
 from export_citations import encode_citations
 from export_rag import encode_documents
 from repository_identity import attach_repository_aliases
+from site_config import SITE
+from site_shell import HF_DATASET, ic, star_note
+from export_candidates import RECORD_FILE as CANDIDATE_FILE, MANIFEST_FILE as CANDIDATE_MANIFEST, SCHEMAS as CANDIDATE_SCHEMAS, validate_candidate_export
 
 
 GROUPS = {
     'catalog': ('Complete catalog', '完整目录'),
-    'rag': ('Retrieval documents', 'RAG 检索文档'),
-    'citations': ('Paper citations', '论文引用'),
+    'rag': ('RAG documents', 'RAG 文档'),
+    'citations': ('Citations', '论文引用'),
     'research': ('Topics and comparisons', '主题与对比'),
-    'provenance': ('Sources and review states', '来源与审阅状态'),
-    'contracts': ('Data contracts', '数据规范'),
+    'provenance': ('Sources and review status', '来源与审核状态'),
+    'contracts': ('File schemas', '文件规范'),
 }
 UNITS = {
     'resources': ('resources', '条资源'), 'documents': ('documents', '份文档'),
@@ -29,15 +32,25 @@ UNITS = {
     'exports': ('export files', '个导出文件'), 'reports': ('report', '份报告'),
     'schemas': ('schema', '份规范'),
     'aliases': ('former repository names', '个仓库旧标识'),
+    'repositories': ('repositories', '个仓库'),
 }
 SCOPE_LABELS = {
-    'active': ('All active records', '全部当前记录'),
-    'reviewed': ('Reviewed records', '已审阅记录'),
-    'reviewed-publication': ('Reviewed publication editions', '已审阅出版版本'),
-    'recorded-publication': ('Recorded publication editions', '已记录出版版本'),
-    'archive': ('Retained archive', '保留的原始档案'),
-    'provenance': ('Provenance and status', '来源与状态'),
-    'contract': ('Format contract', '格式规范'),
+    'active': ('All records', '全部记录'),
+    'reviewed': ('Reviewed', '已审核'),
+    'reviewed-publication': ('Reviewed, published edition', '已审核出版版本'),
+    'recorded-publication': ('Published editions', '出版版本'),
+    'archive': ('Raw archive', '原始档案'),
+    'provenance': ('Background', '来源与状态'),
+    'contract': ('Format', '格式规范'),
+    'candidate-observations': ('Unreviewed candidates', '待审候选'),
+}
+GROUP_HINTS = {
+    'catalog': ('Every record in one file', '全部记录，一个文件'),
+    'rag': ('Text documents for search indexes and agents', '用于检索索引与智能体的文本文档'),
+    'citations': ('BibTeX and CSL JSON for reference managers', '用于文献管理工具的 BibTeX 与 CSL JSON'),
+    'research': ('Reviewed subsets, profiles and links between records', '已审核的子集、规格与记录间关联'),
+    'provenance': ('Where records came from and what review decided', '记录的来源与审核决定'),
+    'contracts': ('JSON Schemas for checking the files', '用于校验文件的 JSON Schema'),
 }
 
 
@@ -95,7 +108,7 @@ def build_download_manifest(destination, rows, catalog_bytes):
             raise ValueError('SQLite searchable fields differ from the source catalog')
     for identity, path, title, description, file_format, media in [
         ('catalog-jsonl', '/downloads/catalog.jsonl', ('Full catalog', '完整目录'),
-         ('Every active source record, including metadata-only discoveries. One JSON object per line.', '全部当前资源及完整来源记录，包含仅核实书目的发现项。每行一个 JSON 对象。'), 'JSONL', 'application/x-ndjson'),
+         ('Every record, reviewed or awaiting review, with its full source history. One JSON object per line.', '全部记录，含已审核与待审核，附完整来源记录。每行一个 JSON 对象。'), 'JSONL', 'application/x-ndjson'),
         ('catalog-json', '/data/records.json', ('Full catalog as a JSON array', '完整目录 JSON 数组'),
          ('The same complete records in one JSON array for clients that expect a single JSON document.', '同一份完整记录，以单个 JSON 数组提供，适合直接读取 JSON 的客户端。'), 'JSON', 'application/json'),
         ('catalog-sqlite', '/downloads/catalog.sqlite', ('Queryable database', '可查询数据库'),
@@ -115,7 +128,7 @@ def build_download_manifest(destination, rows, catalog_bytes):
             raise ValueError('RAG count differs from its source selection')
         add('rag-all' if all_records else 'rag-reviewed', '/downloads/' + export['file'], 'rag',
             ('All retrieval documents', '全部检索文档') if all_records else ('Reviewed retrieval documents', '已审阅检索文档'),
-            ('Complete active corpus; preserve the metadata-only review states when retrieving.', '完整当前语料；检索时保留其中仅核实书目的待审状态。') if all_records else
+            ('Every record as a document, with its review status for filtering.', '全部记录的文档，附审核状态以便筛选。') if all_records else
             ('Reviewed core and adjacent resources, with text, citations, evidence and license metadata.', '已审阅的核心与相关资源，保留文本、引用、证据和许可元数据。'),
             'JSONL', 'application/x-ndjson', export['records'], 'documents', 'active' if all_records else 'reviewed')
         if artifacts[-1]['sha256'] != export['sha256']:
@@ -132,7 +145,7 @@ def build_download_manifest(destination, rows, catalog_bytes):
         title = ('Publication citations', '正式出版版引用') if is_publication else (
             ('All bibliography citations', '全部书目引用') if all_records else ('Reviewed paper citations', '已审阅论文引用'))
         description = ('The recorded publication edition uses its own authors, title, venue and date precision.', '使用所记录出版版的作者、题名、会议／期刊及日期精度。') if is_publication else (
-            ('Includes metadata-only papers and surveys with their review state retained.', '包含仅核实书目的论文与综述，并保留审阅状态。') if all_records else
+            ('Every paper and survey in the catalog, with its review status.', '目录中的全部论文与综述，附审核状态。') if all_records else
             ('Reviewed papers and surveys. Retained arXiv versions and partial dates remain explicit.', '已审阅论文与综述，保留记录的 arXiv 版本与部分日期。'))
         is_bibtex = export['format'] == 'bibtex'
         expected = sum(row['kind'] in {'paper','survey'} and (all_records or row['review_status'] == 'curated')
@@ -152,7 +165,7 @@ def build_download_manifest(destination, rows, catalog_bytes):
         ('Edition, date and identity policies with exact counts and fingerprints.', '引用版次、日期和身份规则，以及精确数量与指纹。'), 'JSON', 'application/json', len(citations['exports']), 'exports', 'provenance')
 
     add('topics', '/downloads/topics.json', 'research', ('Topic subsets', '主题子集'),
-        ('Exact member IDs and JSONL/citation downloads for every reviewed topic. Memberships overlap.', '每个已审阅主题的精确成员 ID 与 JSONL、引用下载。主题成员可以交叉。'),
+        ('Exact member IDs and JSONL/citation downloads for every reviewed topic.', '每个已审阅主题的精确成员 ID 与 JSONL、引用下载。'),
         'JSON', 'application/json', len(topics['topics']), 'topics', 'reviewed')
     for slug, labels in [('benchmarks', ('Benchmark protocols', '基准协议')), ('datasets', ('Dataset profiles', '数据集规格'))]:
         profile = read_json('/downloads/' + slug + '-profiles.json')
@@ -165,7 +178,7 @@ def build_download_manifest(destination, rows, catalog_bytes):
     if relationships['relation_count'] != len(relationships['relations']):
         raise ValueError('Relationship count does not match its edges')
     add('relationships', '/downloads/relationships.json', 'research', ('Reviewed relationships', '已审阅关系'),
-        ('Explicit source-backed relationships; incidental mentions and shared topics are separate.', '有明确来源的关联关系；偶然提及和相同主题分别处理。'),
+        ('Links between records that a primary source states, such as a paper and its code.', '一手来源明确说明的记录间关联，例如论文与其代码。'),
         'JSON', 'application/json', len(relationships['relations']), 'relations', 'reviewed')
 
     sources = read_json('/downloads/sources.json')
@@ -173,21 +186,36 @@ def build_download_manifest(destination, rows, catalog_bytes):
     archive_count = line_count(destination / 'downloads/arxiv-archive.jsonl')
     publication_count = line_count(destination / 'downloads/publications.jsonl')
     add('coverage', '/downloads/coverage.json', 'provenance', ('Coverage ledger', '覆盖台账'),
-        ('Observed source populations, review states and unresolved gaps.', '已观察到的来源范围、审阅状态和待解决缺口。'), 'JSON', 'application/json', 1, 'reports', 'provenance')
-    add('sources', '/downloads/sources.json', 'provenance', ('Discovery-source registry', '发现来源登记'),
-        ('Community collections and search sources used to discover candidates.', '用于发现候选条目的社区合集和来源文档。'), 'JSON', 'application/json', len(sources), 'sources', 'provenance')
+        ('What each source holds, what has been reviewed and what remains.', '每个来源的收录情况、已审核内容与待处理缺口。'), 'JSON', 'application/json', 1, 'reports', 'provenance')
+    add('sources', '/downloads/sources.json', 'provenance', ('Where the scans look', '扫描来源登记'),
+        ('Community collections and search sources the scans read to find candidates.', '扫描用于发现候选条目的社区合集和检索来源。'), 'JSON', 'application/json', len(sources), 'sources', 'provenance')
     add('scope-decisions', '/downloads/exclusions.json', 'provenance', ('Scope decisions', '范围审阅决定'),
-        ('Exclusion reasons, original evidence and any decisions awaiting revalidation.', '排除理由、原始证据，以及需要重新验证的决定。'), 'JSON', 'application/json', len(scope_decisions['decisions']), 'decisions', 'provenance')
-    add('arxiv-archive', '/downloads/arxiv-archive.jsonl', 'provenance', ('Raw arXiv metadata archive', '原始 arXiv 元数据档案'),
-        ('Retained ingestion snapshots, including excluded records. This is not the active catalog.', '保留的采集快照，包含已排除记录；其范围不同于当前有效目录。'), 'JSONL', 'application/x-ndjson', archive_count, 'papers', 'archive')
-    add('publications', '/downloads/publications.jsonl', 'provenance', ('Publication observations', '出版来源记录'),
-        ('Publication facts attached to canonical paper identities; not a second paper count.', '附加到规范论文身份的出版事实，不作为另一篇论文重复计数。'), 'JSONL', 'application/x-ndjson', publication_count, 'editions', 'recorded-publication')
+        ('Why records were left out, with the evidence for each decision.', '记录被排除的原因及每项决定的证据。'), 'JSON', 'application/json', len(scope_decisions['decisions']), 'decisions', 'provenance')
+    add('arxiv-archive', '/downloads/arxiv-archive.jsonl', 'provenance', ('Raw arXiv harvest', '原始 arXiv 采集档案'),
+        ('Every arXiv snapshot the scans kept, including records later excluded.', '扫描保留的全部 arXiv 快照，包括之后被排除的记录。'), 'JSONL', 'application/x-ndjson', archive_count, 'papers', 'archive')
+    add('publications', '/downloads/publications.jsonl', 'provenance', ('Published editions of papers', '论文的出版版本'),
+        ('Venue, authors and dates for papers with a recorded published version.', '已记录出版版本的论文的会议或期刊、作者与日期。'), 'JSONL', 'application/x-ndjson', publication_count, 'editions', 'recorded-publication')
     repository_declarations = read_json('/downloads/repository-aliases.json')
     if attach_repository_aliases(rows,repository_declarations) != rows:
         raise ValueError('Repository aliases differ from their catalog owners and evidence')
     add('repository-aliases', '/downloads/repository-aliases.json', 'provenance', ('Former repository names', '仓库旧地址映射'),
-        ('Former and canonical GitHub or Hugging Face names verified against the same repository ID. They do not add resources.', '通过相同的 GitHub 或 Hugging Face 仓库 ID 核实旧名与规范名称。它们不增加资源记录。'),
+        ('Earlier GitHub and Hugging Face names of catalog repositories, matched by repository ID.', '目录中仓库在 GitHub 与 Hugging Face 上的旧名称，按仓库 ID 匹配。'),
         'JSON', 'application/json', len(repository_declarations), 'aliases', 'provenance')
+    candidate_files = [destination / 'downloads' / name for name in (CANDIDATE_FILE, CANDIDATE_MANIFEST)]
+    have_candidates = any(path.exists() or path.is_symlink() for path in candidate_files)
+    if have_candidates:
+        if any(not path.is_file() or path.is_symlink() for path in candidate_files):
+            raise ValueError('Candidate observations require a complete, safe export pair')
+        candidate_manifest = read_json('/downloads/' + CANDIDATE_MANIFEST)
+        candidate_rows = validate_candidate_export(candidate_files[0].read_bytes(), candidate_manifest, catalog_bytes=catalog_bytes)
+        add('github-candidates', '/downloads/' + CANDIDATE_FILE, 'provenance', ('GitHub candidate repositories', 'GitHub 候选仓库'),
+            ('Repositories the scans found, from public API metadata, counted by numeric repository ID. Each one awaits review.',
+             '扫描发现的仓库，来自公开 API 元数据，按数字仓库 ID 去重。均待审核。'),
+            'JSONL', 'application/x-ndjson', len(candidate_rows), 'repositories', 'candidate-observations')
+        add('github-candidates-manifest', '/downloads/' + CANDIDATE_MANIFEST, 'provenance', ('Candidate observation manifest', '候选观察清单'),
+            ('Independent observation and input fingerprints, query limits, primary receipts, and a separate active-catalog comparison context.',
+             '独立的观察与输入指纹、查询边界、一手收据，以及单独标明的当前目录对照信息。'),
+            'JSON', 'application/json', 1, 'reports', 'candidate-observations')
     for name, title in [
         ('resource.schema.json', ('Resource schema', '资源记录规范')),
         ('scope-decision.schema.json', ('Scope-decision schema', '范围决定规范')),
@@ -197,66 +225,148 @@ def build_download_manifest(destination, rows, catalog_bytes):
     ]:
         add(name.replace('.', '-'), '/schemas/' + name, 'contracts', title,
             ('Machine-readable field and format contract.', '可供程序读取的字段与格式约束。'), 'JSON Schema', 'application/schema+json', 1, 'schemas', 'contract')
+    if have_candidates:
+        for name, title in zip(CANDIDATE_SCHEMAS, [('Candidate observation schema', '候选观察记录规范'), ('Candidate manifest schema', '候选清单规范')]):
+            add(name.replace('.', '-'), '/schemas/' + name, 'contracts', title,
+                ('Candidate status, public field allowlist and independent observation provenance.', '候选状态、公开字段白名单与独立观察溯源。'),
+                'JSON Schema', 'application/schema+json', 1, 'schemas', 'contract')
     if len({item['id'] for item in artifacts}) != len(artifacts):
         raise ValueError('Download artifact identifiers must be unique')
     manifest = {'schema_version': 1, 'catalog_sha256': source_sha,
                 'source_repository': 'https://github.com/reacher-z/Awesome-CUA', 'source_catalog': '/downloads/catalog.jsonl',
                 'publication_build_info': '/data/build-info.json',
-                'count_policy': 'Each count retains its own unit and scope. Artifact populations overlap and must not be added together.',
+                'count_policy': 'Each count retains its own unit and scope.',
                 'fingerprint_policy': 'SHA-256 and byte size refer to the exact uncompressed file bytes. The manifest does not hash itself.',
                 'artifacts': artifacts}
     (destination / 'downloads/manifest.json').write_text(json.dumps(manifest, ensure_ascii=False, indent=2) + '\n', encoding='utf-8')
     return manifest
 
 
-def data_hub_body(manifest, *, language='en', site_url='https://awesomecua.github.io'):
+def data_hub_body(manifest, *, language='en', site_url=SITE, updated=None, preview=None):
     zh = language == 'zh'
     def tr(en, cn): return cn if zh else en
     def esc(value): return html.escape(str(value), quote=True)
     def copy_button(value, label, kind='url'):
         return '<button type="button" class="copy-data" data-copy-value="' + esc(value) + '" aria-label="' + esc(label) + '">' + tr('Copy URL' if kind == 'url' else 'Copy', '复制链接' if kind == 'url' else '复制') + '</button>'
-    def size(value): return byte_size(value)
     artifacts = manifest['artifacts']
     by_id = {item['id']: item for item in artifacts}
     total = by_id['catalog-jsonl']['count']['value']
     reviewed = by_id['rag-reviewed']['count']['value']
-    title = tr('Download the complete data', '数据中心')
-    body = ['<section class="data-hub"><div class="library-heading"><div><div class="eyebrow">PEOPLE · RAG · AGENTS</div><h1>', title,
-            '</h1></div><a class="library-language" href="', '/data/' if zh else '/zh/data/', '">', 'English' if zh else '中文', '</a></div>',
-            '<p class="data-intro">', tr('Choose the complete catalog, retrieval documents, citations, or a focused research subset. Counts and fingerprints come from the published files.',
-             '选择完整目录、检索文档、论文引用或专题子集。条数、文件大小和指纹均来自实际导出文件。'), '</p>',
-            '<div class="data-stats"><span><strong>', f'{total:,}', '</strong> ', tr('active resources', '条当前资源'), '</span><span><strong>', f'{reviewed:,}',
-            '</strong> ', tr('reviewed resources', '条已审阅资源'), '</span><a href="/downloads/manifest.json">', tr('Complete download manifest', '完整下载清单'), ' ↗</a></div>',
-            '<div class="data-clone"><div class="clone-command"><code>', CLONE_COMMAND, '</code>',
-            copy_button(CLONE_COMMAND, tr('Copy the Git clone command', '复制 Git 克隆命令'), 'command'), '</div><p><a href="', '/zh/agents/' if zh else '/agents/', '">',
-            tr('Agent & RAG guide', 'Agent 与 RAG 指南'), '</a> · <a href="/AGENTS.md">AGENTS.md</a> · <a href="', '/zh/topics/' if zh else '/topics/', '">', tr('Browse topic subsets', '浏览主题子集'), '</a> · <a href="', RELEASES_URL, '">', tr('Versioned snapshots', '版本快照'), '</a></p></div>',
-            '<nav class="data-group-nav" aria-label="', tr('Download groups', '下载分组'), '">']
+
+    def fact(label, value):
+        return f'<div><dt>{label}</dt><dd>{value}</dd></div>'
+
+    def choice(tone, title, blurb, action, facts, also):
+        return (f'<article class="data-choice {tone}"><h3>{title}</h3><p>{blurb}</p>{action}'
+                f'<dl class="data-facts">{"".join(fact(*item) for item in facts)}</dl><p class="data-also">{also}</p></article>')
+
+    def download_choice(tone, identity, title, blurb, also):
+        item = by_id[identity]
+        facts = [(tr('Format', '格式'), esc(item['format'])), (tr('Records', '条数'), f'{item["count"]["value"]:,}'), (tr('Size', '大小'), byte_size(item['bytes']))]
+        if updated:
+            facts.append((tr('Updated', '更新'), f'<time datetime="{esc(updated)}">{esc(updated)}</time>'))
+        action = f'<a class="btn btn-primary" href="{esc(item["path"])}" download>{ic("download")}{tr("Download", "下载")} {esc(item["format"])}</a>'
+        return choice(tone, title, blurb, action, facts, also)
+
+    def also_link(identity, label):
+        return f'<a href="{esc(by_id[identity]["path"])}" download>{label}</a>'
+
+    hf_name = HF_DATASET.rsplit('/datasets/', 1)[1]
+    choices = ''.join([
+        download_choice('r3-f3', 'catalog-jsonl', tr('Full catalog', '完整目录'),
+                        tr('Every record with its sources, topics, licenses and review status.', '全部记录，附一手来源、主题、许可与审核状态。'),
+                        tr('Also as ', '也提供 ') + also_link('catalog-json', tr('a JSON array', 'JSON 数组')) + tr(' or ', '或 ') + also_link('catalog-sqlite', tr('a SQLite database', 'SQLite 数据库')) + tr('.', '。')),
+        download_choice('r3-f4', 'citations-bib', tr('Papers and citations', '论文与引用'),
+                        tr('Reviewed papers and surveys, ready for your reference manager.', '已审核的论文与综述，可直接导入文献管理工具。'),
+                        tr('Also as ', '也提供 ') + also_link('citations-csl-json', 'CSL JSON') + tr(', or ', '，或') + f'<a href="{"/zh/papers/" if zh else "/papers/"}">{tr("browse the library", "浏览论文库")}</a>' + tr('.', '。')),
+        download_choice('r3-f2', 'rag-reviewed', tr('RAG and agents', 'RAG 与智能体'),
+                        tr('Reviewed records as text documents, with citations, evidence and licenses.', '已审核记录的文本文档，附引用、证据与许可。'),
+                        also_link('rag-all', tr('All records', '全部记录')) + tr(', or the ', '，或') + f'<a href="{"/zh/agents/" if zh else "/agents/"}">{tr("agent and RAG guide", "Agent 与 RAG 指南")}</a>' + tr('.', '。')),
+        choice('r3-f1', 'Hugging Face',
+               tr('Load the reviewed catalog in one line of Python.', '一行 Python 载入已审核目录。'),
+               f'<a class="btn btn-primary" href="{HF_DATASET}">{ic("hf")}{tr("Open on Hugging Face", "在 Hugging Face 打开")}</a>',
+               [(tr('Format', '格式'), '<code>datasets</code>'), (tr('Records', '条数'), f'{reviewed:,}'), (tr('Config', '配置'), '<code>resources</code>'), (tr('Updated', '更新'), tr('Every scan', '随扫描'))],
+               tr('Other configs include <code>metadata_only</code> and <code>github_candidates</code>.', '其他配置包括 <code>metadata_only</code> 与 <code>github_candidates</code>。')),
+    ])
+
+    def key(text):
+        return f'<span class="k">{text}</span>'
+    comment = lambda text: f'<span class="c"># {text}</span>'
+    prompt = '<span class="p"></span>'
+    jq_filter = esc("""jq -r 'select(.kind=="benchmark" and .review_status=="curated") | .name'""")
+    rag_filter = esc("""jq '{id, text: .text[:120], metadata: (.metadata | keys)}'""")
+    snippets = (
+        ('curl', 'curl + jq', comment(tr('Names of every reviewed benchmark', '所有已审核评测基准的名称')) +
+         f'\n{prompt}curl -s {site_url}/downloads/catalog.jsonl \\\n  | {jq_filter}\n\n' +
+         comment(tr('Reviewed papers as BibTeX', '已审核论文的 BibTeX')) + f'\n{prompt}curl -sO {site_url}/downloads/citations.bib\n\n' +
+         comment(tr('Query the catalog with SQL', '用 SQL 查询目录')) + f'\n{prompt}curl -sO {site_url}/downloads/catalog.sqlite\n{prompt}' +
+         esc('''sqlite3 catalog.sqlite "select name from resources where kind='dataset' limit 5"''')),
+        ('python', 'Python', f"""{key("import")} json, urllib.request
+
+url = {key(chr(34) + site_url + '/downloads/catalog.jsonl' + chr(34))}
+rows = [json.loads(line) {key("for")} line {key("in")} urllib.request.urlopen(url)]
+reviewed = [r {key("for")} r {key("in")} rows {key("if")} r[{key('"review_status"')}] == {key('"curated"')}]
+print(len(reviewed), reviewed[0][{key('"name"')}])"""),
+        ('hf', 'Hugging Face', f"""{key("from")} datasets {key("import")} load_dataset
+
+ds = load_dataset({key(chr(34) + hf_name + chr(34))}, {key('"resources"')}, split={key('"train"')})
+benchmarks = ds.filter({key("lambda")} r: r[{key('"kind"')}] == {key('"benchmark"')})
+print(benchmarks[0][{key('"name"')}], benchmarks[0][{key('"url"')}])"""),
+        ('rag', 'RAG', comment(tr('One retrieval document: its text and metadata fields', '一份检索文档：文本与元数据字段')) +
+         f'\n{prompt}curl -s {site_url}/downloads/rag-documents.jsonl \\\n  | head -n 1 | {rag_filter}'),
+    )
+    tabs = ''.join(f'<button class="tab" type="button" role="tab" id="dt-{name}" aria-controls="dp-{name}" aria-selected="{"true" if number == 0 else "false"}" tabindex="{0 if number == 0 else -1}">{label}</button>'
+                   for number, (name, label, _) in enumerate(snippets))
+    panels = ''.join(f'<pre id="dp-{name}" role="tabpanel" aria-labelledby="dt-{name}" tabindex="0"{" hidden" if number else ""}><code>{code}</code></pre>'
+                     for number, (name, _, code) in enumerate(snippets))
+    record_window = ''
+    if preview:
+        lines = ',\n'.join(f'  {key(chr(34) + name + chr(34))}: {esc(json.dumps(value, ensure_ascii=False))}' for name, value in preview['record'].items())
+        record_window = (f'<div class="window term data-record"><div class="titlebar"><span class="lights" aria-hidden="true"><i></i><i></i><i></i></span><div class="address">{ic("lock")}<output><b>awesomecua.com</b>{esc(preview["path"])}</output></div></div>'
+                         f'<pre tabindex="0"><code>{{\n{lines}\n}}</code></pre>'
+                         f'<div class="panel-foot"><span>{tr(f"{len(preview["record"])} of {preview["fields"]} fields. ", f"显示 {preview["fields"]} 个字段中的 {len(preview["record"])} 个。")}<a href="{esc(preview["path"])}">{tr("Full record", "完整记录")}</a></span></div></div>')
+    agent_links = (f'<a href="{"/zh/agents/" if zh else "/agents/"}">{tr("Agent and RAG guide", "Agent 与 RAG 指南")}</a><a href="/AGENTS.md">AGENTS.md</a><a href="/llms.txt">llms.txt</a>'
+                   f'<a href="{"/zh/topics/" if zh else "/topics/"}">{tr("Topic subsets", "专题子集")}</a>')
+    command_window = (f'<div class="window term"><div class="titlebar"><span class="lights" aria-hidden="true"><i></i><i></i><i></i></span><div class="address">{ic("lock")}<output><b>awesomecua.com</b>/downloads/</output></div></div>'
+                      f'<div class="tabs" role="tablist" aria-label="{tr("Ways to use the data", "使用数据的方式")}">{tabs}</div>{panels}'
+                      f'<div class="panel-foot"><span class="data-agent-links">{agent_links}</span><button class="btn btn-ghost js-only" type="button" data-copy-panel style="min-height:36px">{ic("copy")}{tr("Copy", "复制")}</button></div></div>')
+
+    groups = []
     for group, labels in GROUPS.items():
-        body += ['<a href="#downloads-', group, '">', labels[zh], '</a>']
-    body += ['</nav><p class="data-boundary">', tr('All-active exports include metadata-only discoveries. Reviewed means source-based catalog curation, not independent experimental reproduction. Counts overlap; do not add them together.',
-              '全部当前记录包含仅核实书目的发现项。“已审阅”指目录来源审阅，实验未独立复现。各导出范围交叉，数量不可相加。'), '</p>']
-    for group, labels in GROUPS.items():
-        body += ['<section class="download-group" aria-labelledby="downloads-', group, '"><h2 id="downloads-', group, '">', labels[zh], '</h2>']
-        for item in [entry for entry in artifacts if entry['group'] == group]:
+        files = [entry for entry in artifacts if entry['group'] == group]
+        rows = []
+        for item in files:
             label = item['title'][language]
             count = item['count']
-            body += ['<article class="download-row" data-artifact-id="', esc(item['id']), '"><div class="download-description"><div class="download-name"><h3><a href="', item['path'], '" download>',
-                     esc(label), '</a></h3><span class="download-format">', esc(item['format']), '</span></div><p>', esc(item['description'][language]), '</p><span class="download-scope">',
-                     SCOPE_LABELS[item['scope']][zh], '</span></div><dl class="download-facts"><div><dt class="sr-only">', tr('Count', '数量'), '</dt><dd>', f'{count["value"]:,}',
-                     '<span>', UNITS[count['unit']][zh], '</span></dd></div><div><dt class="sr-only">', tr('File size', '文件大小'), '</dt><dd class="download-size">', size(item['bytes']),
-                     '</dd></div></dl><div class="download-actions"><a class="button secondary" href="', item['path'], '" download aria-label="', esc(tr('Download ', '下载') + label + ' · ' + item['format']), '">',
-                     tr('Download', '下载'), ' ↓</a>', copy_button(site_url + item['path'], tr('Copy URL for ', '复制链接：') + label + ' · ' + item['format']),
-                     '</div><details class="download-fingerprint"><summary>SHA-256</summary><code>', item['sha256'], '</code>', copy_button(item['sha256'], tr('Copy SHA-256 for ', '复制 SHA-256：') + label + ' · ' + item['format'], 'hash'),
-                     '</details></article>']
-        body += ['</section>']
-    body += ['<section class="data-use-notes"><h2>', tr('Keep the source snapshot with your work', '保存所使用的数据快照'), '</h2><p>',
-             tr('Keep stable IDs, review states, primary sources, license scopes and record fingerprints when building retrieval systems. Reconcile deletions against the complete snapshot and scope ledger.',
-                '构建检索系统时保留稳定 ID、审阅状态、一手来源、许可范围和记录指纹。对照完整快照与范围台账处理被移除的记录。'), '</p><details><summary>', tr('Source catalog SHA-256', '源目录 SHA-256'),
-             '</summary><code>', manifest['catalog_sha256'], '</code>', copy_button(manifest['catalog_sha256'], tr('Copy source catalog SHA-256', '复制源目录 SHA-256'), 'hash'), '</details>',
-             '<p><a href="', RELEASES_URL, '">', tr('Download a versioned data bundle', '下载指定版本的数据包'), '</a>', tr(' to keep catalog, RAG documents, citations and topic subsets on one recorded snapshot. Releases include file checksums and the source commit.', '，将目录、RAG 文档、引用和专题子集固定在同一份已记录快照上。发布包附带文件校验值和源提交。'), '</p>',
-             '<p>', tr('Downloads contain catalog metadata and original annotations. Linked papers, training datasets and weights remain with their publishers. Code, data, weights and document licenses stay separate.',
-             '下载包含目录元数据与原创注释。所链接的论文、训练数据和权重由原发布方提供；代码、数据、权重与文档许可分别记录。'), ' <a href="/LICENSE">MIT</a> · <a href="/about/">', tr('Editorial policy', '收录方法'),
-             '</a> · <a href="/coverage/">', tr('Coverage ledger', '覆盖台账'), '</a> · <a href="/compare/benchmarks/">', tr('Compare benchmarks', '对比基准'), '</a> · <a href="/compare/datasets/">', tr('Compare datasets', '对比数据集'),
-             '</a></p></section><div id="data-copy-status" role="status" aria-live="polite" class="sr-only"></div><div class="data-copy-fallback" hidden><label for="data-copy-value">',
-             tr('Select and copy this value', '请选择并复制以下内容'), '</label><input id="data-copy-value" readonly><button type="button" data-dismiss-copy>', tr('Close', '关闭'), '</button></div></section><script type="module" src="/downloads.js"></script>']
-    return ''.join(body)
+            rows.append(''.join([
+                '<article class="data-file" data-artifact-id="', esc(item['id']), '"><div class="data-file-main"><h3><a href="', item['path'], '" download>', esc(label), '</a></h3><p>',
+                esc(item['description'][language]), '</p></div><dl class="data-file-facts"><div><dt class="sr-only">', tr('Format', '格式'), '</dt><dd class="data-format">', esc(item['format']),
+                '</dd></div><div><dt class="sr-only">', tr('Review scope', '审核范围'), '</dt><dd class="data-scope">', SCOPE_LABELS[item['scope']][zh], '</dd></div><div><dt class="sr-only">', tr('Count', '数量'),
+                '</dt><dd>', f'{count["value"]:,}', ' ', UNITS[count['unit']][zh], '</dd></div><div><dt class="sr-only">', tr('File size', '文件大小'), '</dt><dd>', byte_size(item['bytes']),
+                '</dd></div></dl><div class="data-file-actions"><a class="copy-data" href="', item['path'], '" download aria-label="', esc(tr('Download ', '下载') + label + ' · ' + item['format']), '">', tr('Download', '下载'), '</a>',
+                copy_button(site_url + item['path'], tr('Copy URL for ', '复制链接：') + label + ' · ' + item['format']),
+                '</div><details class="data-sha"><summary>SHA-256</summary><code>', item['sha256'], '</code>', copy_button(item['sha256'], tr('Copy SHA-256 for ', '复制 SHA-256：') + label + ' · ' + item['format'], 'hash'),
+                '</details></article>']))
+        groups.append(''.join([
+            '<details class="data-group" id="downloads-', group, '"><summary><span class="data-group-name">', labels[zh], '</span><span class="data-group-hint">', GROUP_HINTS[group][zh], '</span><span class="data-group-count">',
+            str(len(files)), tr(' files' if len(files) != 1 else ' file', ' 个文件'), '</span></summary><div class="data-group-rows">', ''.join(rows), '</div></details>']))
+
+    return ''.join([
+        '<div class="data-hub"><header class="wrap data-head"><h1>', tr('Download the data', '下载数据'), '</h1>',
+        '<p class="data-intro">', tr('Every record links to its primary source and states its review status. Choose what you need.', '每条记录都链接一手来源并标明审核状态。选择你需要的数据。'), '</p>',
+        # Headline: curated resources; the rest of the complete catalog is labelled as awaiting review, never added in.
+        '<div class="data-stats"><span><strong>', f'{reviewed:,}', '</strong> ', tr('reviewed records', '条已审核记录'), '</span><span><strong>', f'{total - reviewed:,}', '</strong> ', tr('catalog records awaiting review', '条目录记录待审核'),
+        '</span><a href="/downloads/manifest.json">', tr('File list as JSON', '文件清单 JSON'), '</a><a href="', '/data/' if zh else '/zh/data/', '">', 'English' if zh else '中文', '</a></div></header>',
+        '<section class="wrap data-choices-wrap" aria-labelledby="data-choose"><h2 class="sr-only" id="data-choose">', tr('Choose a download', '选择下载内容'), '</h2><div class="data-choices">', choices, '</div>', star_note(zh, live=True), '</section>',
+        '<section class="r3-term data-try" aria-labelledby="data-try-h"><div class="wrap"><div class="sec-head"><div><h2 id="data-try-h">', tr('What the data looks like', '数据长什么样'), '</h2><p>',
+        tr('One real record from the catalog, and the commands to fetch it.', '目录中的一条真实记录，以及获取数据的命令。'), '</p></div></div><div class="data-try-grid">', record_window, command_window, '</div></div></section>',
+        '<section class="wrap data-all" aria-labelledby="data-all-h"><div class="sec-head"><div><h2 id="data-all-h">', tr('All files', '全部文件'), '</h2><p>',
+        tr(f'{len(artifacts)} files.', f'共 {len(artifacts)} 个文件。'), '</p></div></div>', ''.join(groups), '</section>',
+        '<section class="wrap data-notes" aria-label="', tr('Using the data', '使用数据'), '"><div><div class="data-clone-head"><h3>', tr('Clone the repository', '克隆仓库'), '</h3>',
+        copy_button(CLONE_COMMAND, tr('Copy the Git clone command', '复制 Git 克隆命令'), 'command'), '</div><code class="data-clone">', CLONE_COMMAND, '</code></div>',
+        '<div><h3>', tr('Pin a version', '固定版本'), '</h3><p><a href="', RELEASES_URL, '">', tr('Tagged releases', '版本发布包'), '</a>', tr(' package the catalog, RAG documents, citations and topic subsets with checksums and the source commit. Keep stable IDs, review states and fingerprints with your work.', '将目录、RAG 文档、引用和专题子集打包，并附校验值与源提交。请随工作保留稳定 ID、审核状态和指纹。'), '</p>',
+        '<details class="data-sha"><summary>', tr('Source catalog SHA-256', '源目录 SHA-256'), '</summary><code>', manifest['catalog_sha256'], '</code>', copy_button(manifest['catalog_sha256'], tr('Copy source catalog SHA-256', '复制源目录 SHA-256'), 'hash'), '</details></div>',
+        '<div><h3>', tr('Licenses', '许可'), '</h3><p>', tr('Downloads hold catalog metadata and original annotations under <a href="/LICENSE">MIT</a>. Papers, datasets and weights stay with their publishers, and each record states its code, data, weights and document licenses.', '下载内容为目录元数据与原创注释，采用 <a href="/LICENSE">MIT</a> 许可。论文、数据集和权重归原发布方所有，每条记录分别标明代码、数据、权重与文档许可。'), '</p>',
+        '<p class="data-more"><a href="/about/">', tr('Editorial policy', '收录方法'), '</a><a href="/coverage/">', tr('Coverage ledger', '覆盖台账'), '</a><a href="/compare/benchmarks/">', tr('Compare benchmarks', '对比基准'), '</a><a href="/compare/datasets/">', tr('Compare datasets', '对比数据集'), '</a></p></div></section>',
+        '<div id="data-copy-status" role="status" aria-live="polite" class="sr-only"></div><div class="data-copy-fallback" hidden><label for="data-copy-value">', tr('Select and copy this value', '请选择并复制以下内容'),
+        '</label><input id="data-copy-value" readonly><button type="button" data-dismiss-copy>', tr('Close', '关闭'), '</button></div></div><script type="module" src="/downloads.js"></script>'])

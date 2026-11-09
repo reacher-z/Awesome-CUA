@@ -26,16 +26,17 @@ SURVEY = ROOT / 'research/survey'
 PIN = '87166fe8ad9c8e832f7a90ee84b2e93c6e0e40db'
 CATALOG_SHA = '7f71a1683ab013e587a20086c3e357956981f517a24ae8bc8e81791108c66e4f'
 FROZEN_BIBLIOGRAPHY = SURVEY / 'fixtures/frozen-catalog-bibliography.json'
-FROZEN_BIBLIOGRAPHY_SHA = '0cecc54c022392d4e597f92f73c1ac03a01a124656e932608f77f186780df0fb'
+FROZEN_BIBLIOGRAPHY_SHA = 'c78d5601b8797b7768e968989873fc1aab5a9c4a329b46c3183cbb5a4a874c64'
 RECORD_HASH_METHOD = 'sha256-utf8-json-sorted-keys-compact-v1'
 TITLE = 'Computer-Use Agents: Methods, Evaluation, Human Agency, and Research Assets'
-CANONICAL = 'https://awesomecua.github.io/survey/'
+CANONICAL = 'https://awesomecua.com/survey/'
 SECTIONS = ('context', 'review-design', 'methods', 'evaluation', 'human-agency', 'assets', 'agenda')
 EVIDENCE = ('context', 'methods', 'evaluation', 'root', 'corpus-statistics', 'title-search', 'supplementary-screening', 'extra-references')
 VOID = {'area', 'base', 'br', 'col', 'embed', 'hr', 'img', 'input', 'link', 'meta', 'param', 'source', 'track', 'wbr'}
 
 sys.path.insert(0, str(ROOT / 'scripts'))
 from export_citations import citation_bibtex, citation_csl, citation_key, tex_escape  # noqa: E402
+from publication_metadata import AUTHORS_OMITTED, omit_authors  # noqa: E402
 
 
 def digest(data: bytes) -> str:
@@ -116,7 +117,11 @@ def load_frozen_bibliography(path=None, *, check_history=True):
     if history is not None:
         archived = {r['id']: r for r in map(json.loads, history.splitlines())}
         for record in records:
-            if archived.get(record['id']) != record:
+            expected = archived.get(record['id'])
+            if expected is not None and record.get('authors_omitted') is True:
+                # The catalog lists no authors for this record; every other field still matches the pinned object.
+                expected = omit_authors(expected)
+            if expected != record:
                 raise ValueError('Frozen bibliography differs from the available pinned Git object: ' + record['id'])
     return records, {
         'fixture_sha256': digest(data), 'record_count': len(records),
@@ -137,9 +142,14 @@ def export_frozen_bibliography(destination):
         for node in walk(parse((SURVEY / 'sections' / (name + '.html')).read_text())):
             if node.tag == 'cite':
                 keys.update(node.attrs['data-keys'].split())
+    reviewed = json.loads(FROZEN_BIBLIOGRAPHY.read_bytes())
+    omitted = {entry['record']['id'] for entry in reviewed.get('records', []) if entry['record'].get('authors_omitted') is True}
     entries = []
     for record in map(json.loads, data.splitlines()):
         if record['kind'] in {'paper', 'survey'} and citation_key(record) in keys:
+            if record['id'] in omitted:
+                # Keep the catalog's sorted key order, so authors_omitted follows authors.
+                record = dict(sorted(omit_authors(record).items()))
             entries.append({'citation_key': citation_key(record), 'record_sha256': record_sha256(record), 'record': record})
     entries.sort(key=lambda item: item['citation_key'])
     fixture = {'schema_version': 1, 'source_commit': PIN, 'catalog_git_path': 'data/catalog.jsonl', 'catalog_sha256': CATALOG_SHA, 'record_hash_method': RECORD_HASH_METHOD, 'selection': 'Original paper/survey records from the pinned catalog whose stable citation keys occur in this manuscript. Fresh-search citations and extra references are separate inputs.', 'record_count': len(entries), 'records': entries}
@@ -244,7 +254,10 @@ def arxiv_record(row):
     if not match:
         raise ValueError('Fresh bibliography has no exact version: ' + aid)
     return {
-        'id': row['id'], 'kind': 'paper', 'name': row['title'], 'authors': row['authors'],
+        'id': row['id'], 'kind': 'paper', 'name': row['title'],
+        # An omitted author list stays empty even if the retained search row still names authors.
+        'authors': [] if row.get('authors_omitted') is True else row['authors'],
+        **({'authors_omitted': True} if row.get('authors_omitted') is True else {}),
         'review_status': 'metadata_verified', 'url': 'https://arxiv.org/abs/' + aid,
         'published_at': row['published'][:10], 'updated_at': row['updated'][:10],
         'identifiers': {'arxiv': aid},
@@ -326,6 +339,8 @@ def verify_read_bibliography(key, item, ledgers):
             authors = source.get('ordered_authors', source.get('authors'))
             if source.get('title') != item['title']:
                 raise ValueError('Reading/citation title conflict: ' + chapter + '/' + key)
+            if (source.get('authors_omitted') is True) != (item.get('custom', {}).get('authors_omitted') is True):
+                raise ValueError('Reading/citation author-omission conflict: ' + chapter + '/' + key)
             if authors != [a['literal'] for a in item.get('author', [])]:
                 raise ValueError('Reading/citation ordered-author conflict: ' + chapter + '/' + key)
 
@@ -447,7 +462,9 @@ def reference_html(items):
         key = item['citation-key']
         authors = [a.get('literal', '') for a in item.get('author', [])]
         out.append(f'<li id="ref-{html.escape(key)}" value="{number}"><a class="reference-title" href="{html.escape(safe_url(item["URL"]), quote=True)}">{html.escape(item["title"])}</a>')
-        if len(authors) > 8:
+        if item.get('custom', {}).get('authors_omitted') is True:
+            out.append(f'<p><a href="{html.escape(safe_url(item["URL"]), quote=True)}">{html.escape(AUTHORS_OMITTED[0])}</a></p>')
+        elif len(authors) > 8:
             out.append('<p>' + html.escape(', '.join(authors[:3])) + ', and colleagues.</p><details><summary>Complete author list (' + str(len(authors)) + ')</summary><p>' + html.escape('; '.join(authors)) + '</p></details>')
         elif authors:
             out.append('<p>' + html.escape('; '.join(authors)) + '.</p>')
@@ -470,11 +487,11 @@ def reference_html(items):
 
 def evidence_html(reading_index, search, screening):
     counts = reading_index['counts']
-    out = [f'<p>The cited set contains <strong>{counts["fulltext_section_read_works"]} works read in selected full-text sections</strong>, one source used at abstract/project-page level, and one versioned catalog dataset. These counts deduplicate works across chapters. They do not mean that every page or reported experiment was audited.</p>',
+    out = [f'<p>The cited set contains <strong>{counts["fulltext_section_read_works"]} works read in selected full-text sections</strong>, one source used at abstract/project-page level, and one versioned catalog dataset. These counts deduplicate works across chapters.</p>',
            '<p>Bibliographic baseline: <a href="https://github.com/reacher-z/Awesome-CUA/tree/' + PIN + '"><code>' + PIN + '</code></a>. The frozen catalog SHA-256 is <code>' + CATALOG_SHA + '</code>. Later production-catalog changes are outside this manuscript snapshot.</p>',
            '<p>Download the <a href="evidence/reading-index.json">compact reading index</a>, <a href="evidence/title-search.json">complete title-search ledger</a>, <a href="evidence/supplementary-screening.json">supplementary screening decisions</a>, and <a href="evidence/corpus-statistics.json">inventory analysis</a>. Chapter ledgers: <a href="evidence/context.json">context</a>, <a href="evidence/methods.json">methods</a>, <a href="evidence/evaluation.json">evaluation</a>, and <a href="evidence/root.json">review design and human agency</a>.</p>',
            '<details><summary>Exact supplementary query and screening boundary</summary><p>Platform: ' + html.escape(search['platform']) + '. Started ' + html.escape(search['started_at_utc']) + '; completed ' + html.escape(search['completed_at_utc']) + '. Cutoff: ' + html.escape(search['cutoff_utc']) + '.</p><pre><code>' + html.escape(search['query']) + '</code></pre>',
-           f'<p>{len(search["pages"])} pages returned {search["unique_returned"]:,} unique identifiers, matching the service-reported query total of {search["reported_total"]:,}. The {screening["titles_inspected"]} absent-inventory titles received title screening; {screening["complete_abstracts_read"]} received complete abstract screening and {screening["advanced"]} advanced for further reading. Those populations overlap and do not measure recall for the whole field. Targeted searches are recorded in the individual chapter ledgers.</p></details>',
+           f'<p>{len(search["pages"])} pages returned {search["unique_returned"]:,} unique identifiers, matching the service-reported query total of {search["reported_total"]:,}. The {screening["titles_inspected"]} absent-inventory titles received title screening; {screening["complete_abstracts_read"]} received complete abstract screening and {screening["advanced"]} advanced for further reading. Those populations overlap. Targeted searches are recorded in the individual chapter ledgers.</p></details>',
            '<h3 id="reading-register">Source-by-source reading register</h3><p>Open a source to inspect the actual sections and response fingerprints. The edition column identifies the citation used here; primary-source links retain the reading authority. Raw source documents are not redistributed in this artifact.</p><div class="table-scroll"><table id="reading-register-table"><caption>Reading level and inspected sections for every cited source. Repeated readings of one work are grouped in one row.</caption><thead><tr><th scope="col">Source</th><th scope="col">Edition and read level</th><th scope="col">Sections and evidence</th></tr></thead><tbody>']
     labels = {'selected_fulltext_sections_read': 'Selected full-text sections', 'abstract_and_author_project_only': 'Abstract and author project only', 'dataset_snapshot_integrity_inspection': 'Dataset snapshot inspection'}
     for r in reading_index['records']:
@@ -576,6 +593,8 @@ def build(output, *, check_history=True, write_source_outputs=False):
         level = 'selected_fulltext_sections_read' if 'selected_fulltext_sections_read' in levels else reading['readings'][0]['read_level']
         if level not in {'selected_fulltext_sections_read', 'abstract_and_author_project_only', 'dataset_snapshot_integrity_inspection'}:
             raise ValueError('Unsupported reading level for cited source: ' + key)
+        if item.get('custom', {}).get('authors_omitted') is True:
+            reading['authors_omitted'] = True
         reading.update(reference_number=numbers[key], title=item['title'], ordered_authors=[a['literal'] for a in item.get('author', [])], citation_url=item['URL'], read_level=level, edition_label=('arXiv v' + str(item['version']) + '; first submitted ' + date_string(item)) if item.get('archive') == 'arXiv' else (item.get('version') or date_string(item)))
         item.setdefault('custom', {})['manuscript_read_level'] = level
         citations.append(item)
@@ -585,7 +604,7 @@ def build(output, *, check_history=True, write_source_outputs=False):
     counts = {'unique_cited_works': len(keys), 'fulltext_section_read_works': fulltext, 'abstract_and_project_only_works': sum(r['read_level'] == 'abstract_and_author_project_only' for r in register), 'dataset_snapshots': sum(r['read_level'] == 'dataset_snapshot_integrity_inspection' for r in register), 'fresh_arxiv_bibliography_additions': fresh_count}
     if counts != {'unique_cited_works': 89, 'fulltext_section_read_works': 87, 'abstract_and_project_only_works': 1, 'dataset_snapshots': 1, 'fresh_arxiv_bibliography_additions': 14}:
         raise ValueError('Reading population changed; inspect before release: ' + str(counts))
-    index = {'schema_version': 1, 'article_title': TITLE, 'working_manuscript_date': '2026-10-18', 'source_commit': PIN, 'catalog_sha256': CATALOG_SHA, 'counts': counts, 'read_boundary': 'Selected sections, not entire-document audits or independently reproduced experiments. Works are deduplicated by retained canonical identity.', 'records': register}
+    index = {'schema_version': 1, 'article_title': TITLE, 'working_manuscript_date': '2026-10-18', 'source_commit': PIN, 'catalog_sha256': CATALOG_SHA, 'counts': counts, 'read_boundary': 'Selected sections. Works are deduplicated by retained canonical identity.', 'records': register}
     headings, tables, occurrences = decorate_body(tree, numbers)
     body = render(tree)
     svg = sanitize_svg(SURVEY / 'figures/corpus.svg')
@@ -600,8 +619,7 @@ def build(output, *, check_history=True, write_source_outputs=False):
                 'We connect historical interface automation with visual grounding, modular and native policies, memory, verification, recovery, and runtime systems. '
                 'Comparisons retain the distinction between local action prediction, interactive task completion, safety, and acceptable assistance to a person. '
                 f'The evidence base combines selected full-text sections from {fulltext} unique works with a pinned inventory of 1,123 editorially reviewed papers and surveys, supplemented by a reproducible title search and bounded abstract screening. '
-                'Inventory review is not full-paper review, and no cited experiment is independently reproduced here. '
-                'We provide an inspectable reading register and versioned bibliography, and identify opportunities for clearer generalization tests, evaluator validation, human control, and maintenance of connected research artifacts.')
+                                'We provide an inspectable reading register and versioned bibliography, and identify opportunities for clearer generalization tests, evaluator validation, human control, and maintenance of connected research artifacts.')
     appendix = evidence_html(index, ledgers['title-search'], ledgers['supplementary-screening'])
     # The appendix table follows the body tables and shares global numbering.
     appendix_tree = parse(appendix)
@@ -610,11 +628,11 @@ def build(output, *, check_history=True, write_source_outputs=False):
             n.children.insert(0, Node('strong', {}, [f'Table {len(tables) + 1}. ']))
     appendix = render(appendix_tree)
     tables.append({'id': 'reading-register-table', 'number': len(tables) + 1, 'caption': 'Reading level and inspected sections for every cited source.'})
-    structured = {'@context': 'https://schema.org', '@type': 'ScholarlyArticle', 'headline': TITLE, 'description': abstract, 'inLanguage': 'en', 'dateCreated': '2026-10-18', 'creativeWorkStatus': 'Working manuscript; not peer reviewed', 'publisher': {'@type': 'Organization', 'name': 'AwesomeCUA', 'url': 'https://awesomecua.github.io/'}, 'url': CANONICAL, 'isAccessibleForFree': True, 'citation': [{'@type': 'CreativeWork', 'name': item['title'], 'url': item['URL']} for item in citations]}
+    structured = {'@context': 'https://schema.org', '@type': 'ScholarlyArticle', 'headline': TITLE, 'description': abstract, 'inLanguage': 'en', 'dateCreated': '2026-10-18', 'creativeWorkStatus': 'Working manuscript; not peer reviewed', 'publisher': {'@type': 'Organization', 'name': 'AwesomeCUA', 'url': 'https://awesomecua.com/'}, 'url': CANONICAL, 'isAccessibleForFree': True, 'citation': [{'@type': 'CreativeWork', 'name': item['title'], 'url': item['URL']} for item in citations]}
     structured.pop('@context')
     structured = {'@context': 'https://schema.org', '@graph': [structured, {
         '@type': 'BreadcrumbList', 'itemListElement': [
-            {'@type': 'ListItem', 'position': 1, 'name': 'AwesomeCUA', 'item': 'https://awesomecua.github.io/'},
+            {'@type': 'ListItem', 'position': 1, 'name': 'AwesomeCUA', 'item': 'https://awesomecua.com/'},
             {'@type': 'ListItem', 'position': 2, 'name': 'Research survey', 'item': CANONICAL},
         ]
     }]}
@@ -638,7 +656,7 @@ def build(output, *, check_history=True, write_source_outputs=False):
     if 'open' in toc:
         raise ValueError('Mobile contents must be closed in static markup')
     csl_bytes = (json.dumps(citations, ensure_ascii=False, indent=2) + '\n').encode()
-    bib_bytes = ('% AwesomeCUA survey bibliography. Working manuscript dated 2026-10-18.\n% Edition-specific citations; bibliographic exports do not imply independent reproduction.\n\n' + '\n'.join(bibs)).encode()
+    bib_bytes = ('% AwesomeCUA survey bibliography. Working manuscript dated 2026-10-18.\n% Edition-specific citations.\n\n' + '\n'.join(bibs)).encode()
     if len(re.findall(r'^@\w+\{', bib_bytes.decode(), re.M)) != len(keys):
         raise ValueError('BibTeX entry count mismatch')
     if len({item['id'] for item in citations}) != len(keys):
@@ -659,7 +677,7 @@ def build(output, *, check_history=True, write_source_outputs=False):
         if b'/Users/' in encoded or b'.cache/' in encoded:
             raise ValueError('Private source path escaped sanitization: ' + name)
         (output / 'evidence' / (name + '.json')).write_bytes(encoded)
-    readme = ('# AwesomeCUA research survey\n\nOpen `index.html` in a browser. It is a complete English working manuscript with embedded CSS, JavaScript, and the original inventory figure. No external runtime dependency is required.\n\n`references.bib` and `references.json` preserve the source editions used. `evidence/reading-index.json` lists every cited source and actual read level. The other JSON ledgers document the search, bounded screening, original claim notes, and inventory analysis. Raw papers, full abstracts, model weights, and training data are not included.\n\nThe research inventory is pinned to source commit ' + PIN + ' and catalog SHA-256 ' + CATALOG_SHA + '. The generated survey is a working manuscript, not a claim of independent experiment reproduction or peer-reviewed publication. Its intended public location is ' + CANONICAL + '; this build does not publish it.\n')
+    readme = ('# AwesomeCUA research survey\n\nOpen `index.html` in a browser. It is a complete English working manuscript with embedded CSS, JavaScript, and the original inventory figure. No external runtime dependency is required.\n\n`references.bib` and `references.json` preserve the source editions used. `evidence/reading-index.json` lists every cited source and actual read level. The other JSON ledgers document the search, bounded screening, original claim notes, and inventory analysis. Raw papers, full abstracts, model weights, and training data are not included.\n\nThe research inventory is pinned to source commit ' + PIN + ' and catalog SHA-256 ' + CATALOG_SHA + '. The generated survey is a working manuscript. Its intended public location is ' + CANONICAL + '; this build does not publish it.\n')
     (output / 'README.md').write_text(readme)
     expected_files = {'index.html', 'references.bib', 'references.json', 'README.md', 'evidence/reading-index.json'} | {'evidence/' + name + '.json' for name in EVIDENCE}
     for url in audit.links:

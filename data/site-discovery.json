@@ -1,5 +1,8 @@
 {
-  "site_url": "https://awesomecua.github.io/",
+  "site_url": "https://awesomecua.com/",
+  "former_site_urls": [
+    "https://awesomecua.github.io/"
+  ],
   "public_repository": "AwesomeCUA/awesomecua.github.io",
   "indexnow_key": "7869ce591e230078b3dbec50f108fd83",
   "google_verification_file": "google75a4c81c8b267ad6.html",

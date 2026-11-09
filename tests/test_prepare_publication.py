@@ -89,9 +89,10 @@ class PreparePublicationTests(unittest.TestCase):
     def readme_counts(self, rows):
         readme = (self.site / 'README.md').read_text()
         curated = sum(r['review_status'] == 'curated' for r in rows)
-        papers = sum(r['id'].startswith('arxiv:') for r in rows)
-        self.assertIn(f'**{len(rows)} resource records** · **{curated} curated** · **{papers} paper and survey records** · **0 discovery documents**', readme)
-        kinds = collections.Counter(r['kind'] for r in rows)
+        papers = sum(r['review_status'] == 'curated' and r['kind'] in {'paper', 'survey'} for r in rows)
+        self.assertIn(f'**{curated} curated resources** · **{papers} reviewed papers and surveys** · **0 discovery documents**', readme)
+        self.assertNotIn('resource records**', readme)
+        kinds = collections.Counter(r['kind'] for r in rows if r['review_status'] == 'curated')
         table = [line for line in readme.splitlines() if '[Open directory]' in line]
         self.assertEqual(table, [f'| {name} | {kinds[kind]} | [Open directory]({SITE}/categories/{kind}/) |' for kind, name in KINDS.items()])
         return readme
@@ -103,8 +104,9 @@ class PreparePublicationTests(unittest.TestCase):
         self.assertIn('Evidence snapshot: 2026-10-16T02:00:00Z.', readme)
         self.assertIn(CLONE_COMMAND, readme)
         schedule=json.loads((self.root / 'data/scan-config.json').read_text())
-        self.assertIn('Discovery is scheduled three times daily at '+', '.join(schedule['scan_times_local'])+' '+schedule['timezone'], readme)
-        self.assertIn('This website rebuilds at '+', '.join(schedule['publish_times_local'])+' '+schedule['timezone'], readme)
+        self.assertIn('Discovery is scheduled at 00:07, 08:07 and 16:07 UTC.', readme)
+        self.assertIn(schedule['scan_times_local'][1], readme)
+        self.assertIn('This website checks for a new source commit at '+' and '.join(f':{m:02d}' for m in schedule['publish_check_minutes'])+' past each hour '+schedule['timezone'], readme)
         reading = readme.split('## Research reading list\n', 1)[1].split('\n## ', 1)[0]
         self.assertEqual([line for line in reading.splitlines() if line.startswith('- ')],
                          [f'- [{self.reviewed["name"]}]({SITE}{resource_path(self.reviewed)}) — {self.reviewed["summary"]} [Original paper]({self.reviewed["url"]}).'])
@@ -124,7 +126,7 @@ class PreparePublicationTests(unittest.TestCase):
         self.assertIn(f'![Live catalog counts]({SITE}/badges/catalog.svg)', text)
         self.assertNotIn('resource records**', text)
         self.assertIn(f'```sh\n{CLONE_COMMAND}\n```', text)
-        self.assertTrue(text.endswith(f'[Scan status · 3 runs daily]({SITE}/updates/) · [Source and contribution workflow](https://github.com/reacher-z/Awesome-CUA)\n'))
+        self.assertTrue(text.endswith(f'[Scan status · every eight hours]({SITE}/updates/) · [Source and contribution workflow](https://github.com/reacher-z/Awesome-CUA)\n'))
         self.assertIn('updated public README/profile', output)
         self.prepare('--profile-dir', str(profile))
         self.assertEqual((profile / 'profile/README.md').read_text(), text)

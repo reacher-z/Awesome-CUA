@@ -212,7 +212,7 @@
     return html + esc(text.slice(last));
   }
   const slug = id => id.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
-  function hrefFor(rec) { return '/resources/' + slug(rec.id) + '/' }
+  function hrefFor(rec) { return (ZH ? '/zh/resources/' : '/resources/') + slug(rec.id) + '/' }
   // The explorer page searches every record, including those awaiting review; its filters are single-valued.
   const PLATFORM = {web: 'web', desktop: 'desktop', mobile: 'mobile', cross: 'cross-platform'};
   function exploreHref(q, kind, envBits) {

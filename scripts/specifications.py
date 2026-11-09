@@ -86,8 +86,10 @@ def safe_href(value):
     return esc(value)
 
 
-def words(values):
-    return ', '.join(values) if values else 'Not recorded'
+def words(values, zh=False):
+    if not values:
+        return '未记录' if zh else 'Not recorded'
+    return ('、' if zh else ', ').join(values)
 
 
 def count_text(count):
@@ -95,10 +97,11 @@ def count_text(count):
     return f'{PREFIXES[count["qualifier"]]}{value} {count["unit"]} — {count["population"]}' + (' (computed)' if count['basis']=='computed' else '')
 
 
-def counts_html(profile):
+def counts_html(profile, zh=False):
     if not profile['counts']:
-        return '<span class="unknown-value">Not recorded</span>'
-    return '<ul class="measure-list">' + ''.join(f'<li>{esc(count_text(count))} <a href="{safe_href(count.get("reference_url") or count["evidence_url"])}" aria-label="Source for {esc(count["population"])}">source</a></li>' for count in profile['counts']) + '</ul>'
+        return '<span class="unknown-value">' + ('未记录' if zh else 'Not recorded') + '</span>'
+    source, label = ('来源', '来源：') if zh else ('source', 'Source for ')
+    return '<ul class="measure-list">' + ''.join(f'<li>{esc(count_text(count))} <a href="{safe_href(count.get("reference_url") or count["evidence_url"])}" aria-label="{label}{esc(count["population"])}">{source}</a></li>' for count in profile['counts']) + '</ul>'
 
 
 def selected_profiles(rows, kind):
@@ -124,19 +127,26 @@ def profile_export(rows, kind):
     }
 
 
-def resource_profile_html(row):
+def resource_profile_html(row, zh=False):
     key = PROFILE_KEYS.get(row['kind'])
     profile = row['details'].get(key) if key else None
     if not profile:
         return ''
+    language = 'zh' if zh else 'en'
+    label = lambda name: field_label(name, language)
     if row['kind'] == 'benchmark':
-        facts = [(field_label('focus'), words(profile['focus'])), (field_label('setting'), profile['setting']), (field_label('observations'), words(profile['observations'])), (field_label('actions'), words(profile['actions'])), (field_label('evaluation'), profile['evaluation'] or 'Not recorded')]
+        facts = [(label('focus'), words(profile['focus'], zh)), (label('setting'), profile['setting']), (label('observations'), words(profile['observations'], zh)), (label('actions'), words(profile['actions'], zh)), (label('evaluation'), profile['evaluation'] or ('未记录' if zh else 'Not recorded'))]
     else:
-        facts = [(field_label(key), words(profile[key])) for key in ('supervision', 'modalities', 'formats', 'splits')]
-    title = 'Evaluation protocol' if row['kind'] == 'benchmark' else 'Dataset profile'
-    body = f'<h2>{title}</h2><dl class="page-facts">' + ''.join(f'<div><dt>{esc(label)}</dt><dd>{esc(value)}</dd></div>' for label, value in facts) + '</dl>'
-    body += '<h3>Scale and counting units</h3>' + counts_html(profile)
-    body += '<p>' + esc(profile['notes']) + '</p><p><a href="/compare/' + ('benchmarks' if row['kind'] == 'benchmark' else 'datasets') + '/">Compare source-reviewed profiles</a></p>'
+        facts = [(label(name), words(profile[name], zh)) for name in ('supervision', 'modalities', 'formats', 'splits')]
+    if zh:
+        title = '评测协议' if row['kind'] == 'benchmark' else '数据集概况'
+        scale, compare = '规模与计数单位', '比较已审阅的规格'
+    else:
+        title = 'Evaluation protocol' if row['kind'] == 'benchmark' else 'Dataset profile'
+        scale, compare = 'Scale and counting units', 'Compare source-reviewed profiles'
+    body = f'<h2>{title}</h2><dl class="page-facts">' + ''.join(f'<div><dt>{esc(name)}</dt><dd>{esc(value)}</dd></div>' for name, value in facts) + '</dl>'
+    body += f'<h3>{scale}</h3>' + counts_html(profile, zh)
+    body += '<p>' + esc(profile['notes']) + '</p><p><a href="/compare/' + ('benchmarks' if row['kind'] == 'benchmark' else 'datasets') + f'/">{compare}</a></p>'
     return body
 
 

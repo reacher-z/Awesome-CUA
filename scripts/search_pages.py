@@ -98,6 +98,13 @@ def resource_titles(rows):
     return titles
 
 
+def zh_resource_titles(rows, titles):
+    """Chinese resource titles add the Chinese kind; a name shared within one kind keeps the English source-address suffix."""
+    named={r['id']:(r['name'],home_page.KINDS[r['kind']][2]) for r in rows if eligible(r)}
+    shared=Counter(named.values())
+    return {key:f'{titles.get(key,name) if shared[(name,kind)]>1 else name} · {kind}' for key,(name,kind) in named.items()}
+
+
 def description(record):
     provider='arXiv' if record['id'].startswith('arxiv:') else 'retained publication sources'
     return record.get("summary") or f"Bibliographic record for {record['name']}. Title, authors and dates checked against {provider}; relevance and findings await editorial review."
@@ -143,8 +150,9 @@ def page(title, summary, path, body, main=None, index=True, lang="en", alternati
     return document
 
 
-def resource_schema(record):
-    entity={"@type":"ScholarlyArticle" if record["kind"] in {"paper","survey"} else "CreativeWork", "name":record["name"], "description":description(record), "url":SITE+resource_path(record), "sameAs":record["url"], "identifier":record["id"]}
+def resource_schema(record, zh=False):
+    entity={"@type":"ScholarlyArticle" if record["kind"] in {"paper","survey"} else "CreativeWork", "name":record["name"], "description":zh_summary(record) if zh else description(record), "url":SITE+(zh_resource_path(record) if zh else resource_path(record)), "sameAs":record["url"], "identifier":record["id"]}
+    if zh:entity["inLanguage"]="zh-CN"
     if record["authors"]:entity["author"]=[{"@type":"Person","name":name} for name in record["authors"]]
     if record["published_at"]:entity["datePublished"]=record["published_at"]
     if record["updated_at"]:entity["dateModified"]=record["updated_at"]
@@ -160,7 +168,7 @@ def listing(rows,*,zh=False,anchor=True):
         facets=home_page.env_facets(r['environments'])
         words=dict.fromkeys([*r['environments'],*(home_page.ENV_ZH[f] if zh else home_page.ENV_LABEL[f] for f in facets)])
         attrs=f' data-env="{esc(" ".join(words).lower())}"' if words else ''
-        return home_page.compact_row({**r,'href':r.get('href') or resource_path(r),'summary':description(r)},zh,date=record_date_text(r) or '',attrs=attrs,anchor=anchor,kind=False)
+        return home_page.compact_row({**r,'href':r.get('href') or localized_path(r,zh),'summary':description(r)},zh,date=record_date_text(r) or '',attrs=attrs,anchor=anchor,kind=False)
     return ''.join(row(r) for r in rows)
 
 
@@ -215,22 +223,26 @@ def catalog_body(reviewed,awaiting,candidates,*,zh=False):
     return body
 
 
-def publication_body(record):
+def publication_body(record, zh=False):
     pub=publication(record)
     if not pub:return ''
-    facts=[(field_label('title'),pub['title']),(field_label('authors'),None if authors_omitted(record) else ', '.join(pub['authors'])),
-           ('Publication date (recorded precision)',format_date_parts(pub['date_parts']))]
-    facts+=[(field_label(key),pub.get(key)) for key in ('venue','publisher','series','volume','issue','pages','doi')]
+    tr=lambda en,cn:cn if zh else en
+    language='zh' if zh else 'en'
+    label=lambda key:field_label(key,language)
+    omitted=AUTHORS_OMITTED[1 if zh else 0]
+    facts=[(label('title'),pub['title']),(label('authors'),None if authors_omitted(record) else ', '.join(pub['authors'])),
+           (tr('Publication date (recorded precision)','发表日期（按记录精度）'),format_date_parts(pub['date_parts']))]
+    facts+=[(label(key),pub.get(key)) for key in ('venue','publisher','series','volume','issue','pages','doi')]
     rows=[(key,esc(value)) for key,value in facts if value]
-    if authors_omitted(record):rows.insert(1,(field_label('authors'),'<a href="'+safe_href(pub['url'])+'">'+esc(AUTHORS_OMITTED[0])+'</a>'))
-    body='<section class="publication-record"><h2>Publication record</h2><dl class="page-facts">'+''.join('<div><dt>'+esc(key)+'</dt><dd>'+value+'</dd></div>' for key,value in rows)+'</dl>'
-    body+='<p><a href="'+safe_href(pub['url'])+'">Publication source ↗</a>'
-    if pub.get('pdf_url'):body+=' · <a href="'+safe_href(pub['pdf_url'])+'">Publisher or author PDF ↗</a>'
-    body+='</p><p><a href="'+resource_path(record)+'publication-citation.bib" download>Publication BibTeX</a> · <a href="'+resource_path(record)+'publication-citation.csl.json" download>Publication CSL JSON</a></p>'
+    if authors_omitted(record):rows.insert(1,(label('authors'),'<a href="'+safe_href(pub['url'])+'">'+esc(omitted)+'</a>'))
+    body='<section class="publication-record"><h2>'+tr('Publication record','发表记录')+'</h2><dl class="page-facts">'+''.join('<div><dt>'+esc(key)+'</dt><dd>'+value+'</dd></div>' for key,value in rows)+'</dl>'
+    body+='<p><a href="'+safe_href(pub['url'])+'">'+tr('Publication source ↗','发表来源 ↗')+'</a>'
+    if pub.get('pdf_url'):body+=' · <a href="'+safe_href(pub['pdf_url'])+'">'+tr('Publisher or author PDF ↗','出版方或作者 PDF ↗')+'</a>'
+    body+='</p><p><a href="'+resource_path(record)+'publication-citation.bib" download>'+tr('Publication BibTeX','发表版 BibTeX')+'</a> · <a href="'+resource_path(record)+'publication-citation.csl.json" download>'+tr('Publication CSL JSON','发表版 CSL JSON')+'</a></p>'
     if record['id'].startswith('arxiv:'):
-        body+='<p>This publication is a separately recorded edition of the same work. Its citation uses its own title, authors and date; the retained arXiv citation above is unchanged.</p>'
+        body+='<p>'+tr('This publication is a separately recorded edition of the same work. Its citation uses its own title, authors and date; the retained arXiv citation above is unchanged.','该发表版本是同一作品单独记录的版本，引用时使用其自身的标题、作者和日期；上方保留的 arXiv 引用保持不变。')+'</p>'
     for key in ('date_basis','event_dates','notes'):
-        if pub.get(key):body+='<p>'+field_label(key)+': '+esc(pub[key])+'</p>'
+        if pub.get(key):body+='<p>'+label(key)+tr(': ','：')+esc(pub[key])+'</p>'
     body+='</section>'
     return body
 
@@ -257,65 +269,110 @@ def markdown_literal(text):
     return re.sub(r'([\\`*_{}\[\]()#+\-.!|~=])', r'\\\1', html.escape(text, quote=False))
 
 
-def resource_body(record, lookup, incoming=None, pending_review=None):
+RELATION_LABELS = {'documented_by':('documented by','文档来源'),'introduced_by':('introduced by','提出于'),'published_by':('published by','发布方'),
+                   'variant_of':('variant of','变体来源'),'component_of':('component of','所属项目'),'uses':('uses','使用'),
+                   'trained_on':('trained on','训练数据'),'evaluates':('evaluates','评测对象')}
+INCOMING_LABELS = {'documented_by':('Documented resource','相关文档资源'),'introduced_by':('Introduced resource','提出的资源'),'published_by':('Published resource','发布的资源'),
+                   'variant_of':('Model variant','模型变体'),'component_of':('Component','组成部分'),'uses':('uses','使用方'),
+                   'trained_on':('trained on','以此训练'),'evaluates':('evaluates','评测方')}
+LICENSE_SLOTS = {'code':('Code','代码'),'data':('Data','数据'),'weights':('Weights','权重'),'document':('Document','文档')}
+EVIDENCE_METHODS = {'editorial_primary_review':'编辑一手来源审阅','arxiv_api':'arXiv API','license_header':'许可证文件头',
+                    'huggingface_card':'Hugging Face 卡片','huggingface_api':'Hugging Face API','github_repository_identity':'GitHub 仓库身份',
+                    'huggingface_repository_identity':'Hugging Face 仓库身份','dataverse_api':'Dataverse API'}
+
+
+def zh_resource_path(record):
+    """The Chinese twin of a resource page; only reviewed, in-scope records have one."""
+    return '/zh'+resource_path(record)
+
+
+def localized_path(record, zh=False):
+    # Chinese pages link to the Chinese twin when it exists and to the English page otherwise.
+    return zh_resource_path(record) if zh and eligible(record) else resource_path(record)
+
+
+def kind_crumb(kind, zh=False):
+    if not zh:return (KINDS[kind],f'/categories/{kind}/')
+    return (home_page.KINDS[kind][2],'/zh/papers/' if kind=='paper' else f'/zh/categories/{kind}/')
+
+
+def resource_crumbs(record, zh=False):
+    if zh:return [("AwesomeCUA","/zh/"),("目录","/zh/catalog/"),kind_crumb(record["kind"],True),(record["name"],zh_resource_path(record))]
+    return [("AwesomeCUA","/"),("Catalog","/catalog/"),kind_crumb(record["kind"]),(record["name"],resource_path(record))]
+
+
+def resource_body(record, lookup, incoming=None, pending_review=None, zh=False):
     r=record
-    status="AI-assisted editorial review against a primary source" if eligible(r) else "Bibliographic metadata verified; editorial approval is pending"
-    body=f'<div class="eyebrow">{esc(KIND_SINGULAR[r["kind"]])}</div><h1>{esc(r["name"])}</h1><p class="answer-lead">{esc(description(r))}</p><p class="review-notice">{esc(status)}.</p><div class="page-actions"><a class="button primary" href="{safe_href(r["url"])}">Original source ↗</a><a class="button secondary" href="{resource_path(r)}index.md">Read as Markdown</a><a class="button secondary" href="{resource_path(r)}record.json">Record JSON</a></div>'
+    tr=lambda en,cn:cn if zh else en
+    sep=tr(', ','、')
+    own=localized_path(r,zh)
+    kind_label=home_page.KINDS[r["kind"]][2] if zh else KIND_SINGULAR[r["kind"]]
+    status=tr("AI-assisted editorial review against a primary source","已对照一手来源完成 AI 辅助编辑审阅") if eligible(r) else tr("Bibliographic metadata verified; editorial approval is pending","书目元数据已核实，编辑审阅待完成")
+    lead=zh_summary(r) if zh else description(r)
+    body=f'<div class="eyebrow">{esc(kind_label)}</div><h1>{esc(r["name"])}</h1><p class="answer-lead">{esc(lead)}</p><p class="review-notice">{esc(status)}{tr(".","。")}</p><div class="page-actions"><a class="button primary" href="{safe_href(r["url"])}">{tr("Original source ↗","原始来源 ↗")}</a><a class="button secondary" href="{own}index.md">{tr("Read as Markdown","Markdown 版本")}</a><a class="button secondary" href="{resource_path(r)}record.json">{tr("Record JSON","记录 JSON")}</a></div>'
     hold=reviewer_hold(r,pending_review)
     if hold:
-        body+='<details class="review-hold" open><summary>Recorded reviewer hold</summary><p>'+esc(hold)+'</p><p><a href="/downloads/coverage.json">Review ledger</a></p></details>'
-    environments=[ENVIRONMENT_LABELS.get(env,env) for env in r["environments"] if env!="unspecified"]
+        body+='<details class="review-hold" open><summary>'+tr('Recorded reviewer hold','审阅暂缓记录')+'</summary><p>'+esc(hold)+'</p><p><a href="/downloads/coverage.json">'+tr('Review ledger','审阅台账')+'</a></p></details>'
+    environments=[PLATFORMS.get(env,(env,env))[1] if zh else ENVIRONMENT_LABELS.get(env,env) for env in r["environments"] if env!="unspecified"]
     topic_labels=TOPIC_CATALOG
+    topics=[topic_name(topic,'zh') for topic in r["topics"]] if zh else [topic_labels.get(topic,{}).get("en") or topic.replace("-"," ").capitalize() for topic in r["topics"]]
     # A row with nothing to say is left out rather than shown as "Not recorded".
-    facts=[("Resource type",KIND_SINGULAR[r["kind"]]),("Environment",", ".join(environments)),("Topics",", ".join(topic_labels.get(topic,{}).get("en") or topic.replace("-"," ").capitalize() for topic in r["topics"])),("Record publication date",record_date_text(r)),("Evidence retrieved",(r["last_verified_at"] or "")[:10]),("Resource ID",r["id"])]
+    facts=[(tr("Resource type","资源类型"),kind_label),(tr("Environment","运行环境"),sep.join(environments)),(tr("Topics","主题"),sep.join(topics)),(tr("Record publication date","记录的发布日期"),record_date_text(r)),(tr("Evidence retrieved","证据获取日期"),(r["last_verified_at"] or "")[:10]),(tr("Resource ID","资源 ID"),r["id"])]
     facts=[(label,value) for label,value in facts if value]
-    body+='<h2>What is this resource?</h2><dl class="page-facts">'+''.join(f'<div><dt>{esc(k)}</dt><dd>{esc(v)}</dd></div>' for k,v in facts)+'</dl>'
+    body+='<h2>'+tr('What is this resource?','这是什么资源？')+'</h2><dl class="page-facts">'+''.join(f'<div><dt>{esc(k)}</dt><dd>{esc(v)}</dd></div>' for k,v in facts)+'</dl>'
     snapshot=r['details'].get('arxiv_snapshot')
     if snapshot:
-        version=(f'<a href="{safe_href(snapshot["versioned_url"])}">arXiv v{esc(snapshot["version"])}</a>' if snapshot.get('versioned_url') else 'Version not recorded')
-        body+='<h2>Recorded paper version</h2><p>'+version+'</p>'
-        if snapshot.get('updated_at'):body+='<p>Version updated: '+esc(snapshot['updated_at'])+'.</p>'
-        body+='<p>This identifies the retained arXiv metadata snapshot; newly observed changes require separate review.</p>'
-        if snapshot.get('abstract_sha256'):body+='<details><summary>Abstract fingerprint</summary><code>'+esc(snapshot['abstract_sha256'])+'</code></details>'
-    if authors_omitted(r):body+='<h2>Authors</h2><p class="authors-omitted"><a href="'+safe_href((snapshot or {}).get('versioned_url') or r["url"])+'">'+esc(AUTHORS_OMITTED[0])+'</a></p>'
-    elif r["authors"]:body+='<h2>Authors</h2><p>'+esc(', '.join(r["authors"]))+'</p>'
+        version=(f'<a href="{safe_href(snapshot["versioned_url"])}">arXiv v{esc(snapshot["version"])}</a>' if snapshot.get('versioned_url') else tr('Version not recorded','未记录版本'))
+        body+='<h2>'+tr('Recorded paper version','记录的论文版本')+'</h2><p>'+version+'</p>'
+        if snapshot.get('updated_at'):body+='<p>'+tr('Version updated: ','版本更新于 ')+esc(snapshot['updated_at'])+tr('.','。')+'</p>'
+        body+='<p>'+tr('This identifies the retained arXiv metadata snapshot; newly observed changes require separate review.','此处标识保留的 arXiv 元数据快照；之后发现的变更另行审阅。')+'</p>'
+        if snapshot.get('abstract_sha256'):body+='<details><summary>'+tr('Abstract fingerprint','摘要指纹')+'</summary><code>'+esc(snapshot['abstract_sha256'])+'</code></details>'
+    if authors_omitted(r):body+='<h2>'+tr('Authors','作者')+'</h2><p class="authors-omitted"><a href="'+safe_href((snapshot or {}).get('versioned_url') or r["url"])+'">'+esc(AUTHORS_OMITTED[1 if zh else 0])+'</a></p>'
+    elif r["authors"]:body+='<h2>'+tr('Authors','作者')+'</h2><p>'+esc(', '.join(r["authors"]))+'</p>'
     preferred='arxiv:'+r['identifiers']['preferred_arxiv'] if r['identifiers'].get('preferred_arxiv') else None
     if preferred and preferred in lookup:
-        body+='<h2>Preferred paper record</h2><p>The retained source identifies this as an alternate bibliographic record. Follow <a href="'+resource_path(lookup[preferred])+'">'+esc(lookup[preferred]['name'])+'</a> for the preferred arXiv identity.</p>'
+        target='<a href="'+localized_path(lookup[preferred],zh)+'">'+esc(lookup[preferred]['name'])+'</a>'
+        body+='<h2>'+tr('Preferred paper record','首选论文记录')+'</h2><p>'+tr('The retained source identifies this as an alternate bibliographic record. Follow '+target+' for the preferred arXiv identity.','保留的来源将此记录标为备用书目记录。首选的 arXiv 身份见 '+target+'。')+'</p>'
     if r['kind'] in {'paper','survey'}:
-        body+='<h2>Cite this paper</h2><p><a href="'+resource_path(r)+'citation.bib" download>Download BibTeX</a> · <a href="'+resource_path(r)+'citation.csl.json" download>Download CSL JSON</a></p><p>Citations preserve the selected source edition, its authors and recorded date precision. Unrecorded venues and identifiers are omitted.</p>'
-        if authors_omitted(r):body+='<p>This catalog does not list the authors, so these citation files omit them; take the author list from the paper.</p>'
-        body+=publication_body(r)
+        body+='<h2>'+tr('Cite this paper','引用本文')+'</h2><p><a href="'+resource_path(r)+'citation.bib" download>'+tr('Download BibTeX','下载 BibTeX')+'</a> · <a href="'+resource_path(r)+'citation.csl.json" download>'+tr('Download CSL JSON','下载 CSL JSON')+'</a></p><p>'+tr('Citations preserve the selected source edition, its authors and recorded date precision. Unrecorded venues and identifiers are omitted.','引用文件保留所选来源版本、其作者和记录的日期精度；未记录的发表场所和标识符不写入。')+'</p>'
+        if authors_omitted(r):body+='<p>'+tr('This catalog does not list the authors, so these citation files omit them; take the author list from the paper.','本目录不列出作者，引用文件也不含作者；作者列表请以论文为准。')+'</p>'
+        body+=publication_body(r,zh)
     if r["kind"] not in {"paper","survey"} or any(r["licenses"].values()):
-        body+='<h2>What licenses are recorded?</h2><p>Code, training data, weights, and documents each have their own entry. A blank entry means the license is unknown.</p><dl class="page-facts">'
+        body+='<h2>'+tr('What licenses are recorded?','记录了哪些许可证？')+'</h2><p>'+tr('Code, training data, weights, and documents each have their own entry. A blank entry means the license is unknown.','代码、训练数据、权重和文档各自单独记录许可证。“未记录”表示许可证未知。')+'</p><dl class="page-facts">'
         for slot,l in r["licenses"].items():
-            value=f'<a href="{safe_href(l["url"])}">{esc(l["declared"] if isinstance(l["declared"],str) else ", ".join(l["declared"]))}</a> ({esc(l["basis"])})' if l else "Not recorded"
-            body+=f'<div><dt>{esc(slot.title())}</dt><dd>{value}</dd></div>'
+            value=f'<a href="{safe_href(l["url"])}">{esc(l["declared"] if isinstance(l["declared"],str) else ", ".join(l["declared"]))}</a> {tr("(","（")}{esc(l["basis"])}{tr(")","）")}' if l else tr("Not recorded","未记录")
+            body+=f'<div><dt>{esc(LICENSE_SLOTS.get(slot,(slot.title(),slot))[1 if zh else 0])}</dt><dd>{value}</dd></div>'
         body+='</dl>'
     if r['details'].get('license_review'):
-        body+='<h2>License review notes</h2><ul>'+''.join('<li><strong>'+esc(slot.title())+':</strong> '+esc(review['reason'])+' '+''.join(f'<a href="{safe_href(url)}">Source {i+1}</a> ' for i,url in enumerate(review['evidence_urls']))+'</li>' for slot,review in r['details']['license_review'].items())+'</ul>'
-    body+=resource_profile_html(r)
+        body+='<h2>'+tr('License review notes','许可证审阅备注')+'</h2><ul>'+''.join('<li><strong>'+esc(LICENSE_SLOTS.get(slot,(slot.title(),slot))[1 if zh else 0])+tr(':','：')+'</strong> '+esc(review['reason'])+' '+''.join(f'<a href="{safe_href(url)}">{tr("Source","来源")} {i+1}</a> ' for i,url in enumerate(review['evidence_urls']))+'</li>' for slot,review in r['details']['license_review'].items())+'</ul>'
+    body+=resource_profile_html(r,zh)
     details=[(k,v) for k,v in r["details"].items() if k not in {*PROFILE_KEYS.values(),'arxiv_snapshot','publication','license_review'} and v is not None and v!=[] and v!=""]
     if details:
-        body+='<h2>Recorded specifications</h2><dl class="page-facts">'+''.join(f'<div><dt>{esc(k.replace("_"," "))}</dt><dd>{esc(json.dumps(v,ensure_ascii=False) if isinstance(v,(dict,list,bool)) else v)}</dd></div>' for k,v in details)+'</dl>'
+        body+='<h2>'+tr('Recorded specifications','记录的规格')+'</h2><dl class="page-facts">'+''.join(f'<div><dt>{esc(k.replace("_"," "))}</dt><dd>{esc(json.dumps(v,ensure_ascii=False) if isinstance(v,(dict,list,bool)) else v)}</dd></div>' for k,v in details)+'</dl>'
     if eligible(r) and r['topics']:
-        body+='<h2>Explore related topics</h2><div class="library-topics">'+''.join('<a href="'+topic_path(topic)+'">'+esc(topic_name(topic))+'</a>' for topic in r['topics'])+'</div>'
-    if r["notes"]:body+='<h2>Scope and limitations</h2><p>'+esc(r["notes"])+'</p>'
+        language='zh' if zh else 'en'
+        body+='<h2>'+tr('Explore related topics','相关主题')+'</h2><div class="library-topics">'+''.join('<a href="'+topic_path(topic,language)+'">'+esc(topic_name(topic,language))+'</a>' for topic in r['topics'])+'</div>'
+    if r["notes"]:body+='<h2>'+tr('Scope and limitations','范围与局限')+'</h2><p>'+esc(r["notes"])+'</p>'
     if r["relations"]:
-        body+='<h2>Related resources</h2><ul>'+''.join(f'<li>{esc(rel["type"].replace("_"," "))}: <a href="{resource_path(lookup[rel["target_id"]])}">{esc(lookup[rel["target_id"]]["name"])}</a></li>' for rel in r["relations"] if rel["target_id"] in lookup)+'</ul>'
+        body+='<h2>'+tr('Related resources','相关资源')+'</h2><ul>'+''.join(f'<li>{esc(RELATION_LABELS.get(rel["type"],(rel["type"].replace("_"," "),)*2)[1 if zh else 0])}{tr(": ","：")}<a href="{localized_path(lookup[rel["target_id"]],zh)}">{esc(lookup[rel["target_id"]]["name"])}</a></li>' for rel in r["relations"] if rel["target_id"] in lookup)+'</ul>'
     backlinks=(incoming or {}).get(r['id'],[])
     if backlinks:
-        labels={'documented_by':'Documented resource','introduced_by':'Introduced resource','published_by':'Published resource','variant_of':'Model variant','component_of':'Component'}
-        body+='<h2 id="connected-assets">Connected assets</h2><p>These links come from reviewed resource records.</p><ul>'
+        body+='<h2 id="connected-assets">'+tr('Connected assets','关联资源')+'</h2><p>'+tr('These links come from reviewed resource records.','这些链接来自已审阅的资源记录。')+'</p><ul>'
         for rel in backlinks:
             source=lookup[rel['source_id']]
-            body+=f'<li>{esc(labels.get(rel["type"],rel["type"].replace("_"," ")))}: <a href="{resource_path(source)}">{esc(source["name"])}</a> · {esc(KINDS[source["kind"]])} · <a href="{safe_href(rel["evidence_url"])}">relationship evidence</a></li>'
+            relation=INCOMING_LABELS.get(rel['type'],(rel['type'].replace('_',' '),)*2)[1 if zh else 0]
+            kind=home_page.KINDS[source["kind"]][2] if zh else KINDS[source["kind"]]
+            body+=f'<li>{esc(relation)}{tr(": ","：")}<a href="{localized_path(source,zh)}">{esc(source["name"])}</a> · {esc(kind)} · <a href="{safe_href(rel["evidence_url"])}">{tr("relationship evidence","关系证据")}</a></li>'
         body+='</ul>'
-    body+='<h2>Primary evidence and verification</h2><p>Use the original publication or publisher page when citing claims about the resource.</p><ol class="source-list">'
+    body+='<h2>'+tr('Primary evidence and verification','一手证据与核查')+'</h2><p>'+tr('Use the original publication or publisher page when citing claims about the resource.','引用与该资源有关的说法时，请以原始论文或发布方页面为准。')+'</p><ol class="source-list">'
     for ev in r["evidence"]:
-        body+=f'<li><a href="{safe_href(ev["url"])}">{esc(ev["method"].replace("_"," "))}</a><p>Retrieved {esc(ev["retrieved_at"])}. Supports: {esc(", ".join(ev["supports"]))}.</p><details><summary>Content fingerprint</summary><code>{esc(ev["sha256"])}</code></details></li>'
-    body+='</ol><h2>Suggest a correction</h2><p><a href="'+SOURCE_REPO+'/issues/new?template=resource.yml">Open a source-backed correction</a>. Include this record ID and the original source. Read our <a href="/about/">editorial policy</a> and <a href="/coverage/">coverage boundaries</a>.</p>'
-    return body+site_shell.star_note()
+        method=EVIDENCE_METHODS.get(ev["method"],ev["method"].replace("_"," ")) if zh else ev["method"].replace("_"," ")
+        retrieved=tr(f'Retrieved {esc(ev["retrieved_at"])}. Supports: {esc(", ".join(ev["supports"]))}.',f'获取于 {esc(ev["retrieved_at"])}。支持字段：{esc("、".join(ev["supports"]))}。')
+        body+=f'<li><a href="{safe_href(ev["url"])}">{esc(method)}</a><p>{retrieved}</p><details><summary>{tr("Content fingerprint","内容指纹")}</summary><code>{esc(ev["sha256"])}</code></details></li>'
+    body+='</ol><h2>'+tr('Suggest a correction','提交更正')+'</h2><p>'
+    body+=tr('<a href="'+SOURCE_REPO+'/issues/new?template=resource.yml">Open a source-backed correction</a>. Include this record ID and the original source. Read our <a href="/about/">editorial policy</a> and <a href="/coverage/">coverage boundaries</a>.',
+             '<a href="'+SOURCE_REPO+'/issues/new?template=resource.yml">提交有来源依据的更正</a>，并附上此记录 ID 和原始来源。另见<a href="/about/">收录方法</a>与<a href="/coverage/">覆盖范围</a>。')+'</p>'
+    return body+site_shell.star_note(zh)
 
 
 def resource_markdown(r, pending_review=None, level=1):
@@ -413,6 +470,14 @@ def zh_resource_markdown(record, pending_review=None, level=2, *, paper=False):
     return body
 
 
+def zh_resource_page_markdown(record, pending_review=None):
+    """The Chinese page's own Markdown twin: the Chinese record, pointing at the Chinese page and its English twin."""
+    body = zh_resource_markdown(record, pending_review, level=1)
+    page_line = f'- 目录页面：{SITE}{resource_path(record)}'
+    if page_line not in body:raise ValueError('Chinese resource Markdown lacks its page line: '+record['id'])
+    return body.replace(page_line, f'- 目录页面：{SITE}{zh_resource_path(record)}\n- English：{SITE}{resource_path(record)}index.md', 1)
+
+
 def repository_stars():
     """Star counts the publication workflow read at build time; without them every star link shows its label alone."""
     try:
@@ -437,6 +502,7 @@ def build_search_pages(destination, rows, coverage, root, *, survey_page=None):
     pending_reviews={item['id']:item for item in coverage.get('pending_editorial',[])}
     incoming=incoming_relations(rows)
     titles=resource_titles(rows)
+    zh_titles=zh_resource_titles(rows,titles)
     reviewed=[r for r in rows if eligible(r)]
     # Headline counts are curated resources; records awaiting review and discovered candidates are labelled separately.
     awaiting,candidates=coverage['metadata_only_records'],coverage['unindexed_candidates']
@@ -488,8 +554,14 @@ def build_search_pages(destination, rows, coverage, root, *, survey_page=None):
         pending_review=pending_reviews.get(r['id'])
         # Connected assets listed on the page come from the records that point at this one.
         shown=[r]+[lookup[rel['source_id']] for rel in incoming.get(r['id'],[]) if rel['source_id'] in lookup]
-        emit(path,page(titles.get(r["id"],r["name"]),description(r),path,resource_body(r,lookup,incoming,pending_review),resource_schema(r),eligible(r),crumbs=[("AwesomeCUA","/"),("Catalog","/catalog/"),(KINDS[r["kind"]],f'/categories/{r["kind"]}/'),(r["name"],path)]),eligible(r),lastmod=modified(shown))
+        # Reviewed records have a Chinese twin; the pair names each other, and x-default is the English page.
+        pair={'en':path,'zh-CN':zh_resource_path(r),'x-default':path} if eligible(r) else None
+        emit(path,page(titles.get(r["id"],r["name"]),description(r),path,resource_body(r,lookup,incoming,pending_review),resource_schema(r),eligible(r),crumbs=resource_crumbs(r),alternatives=pair),eligible(r),lastmod=modified(shown),alternates=pair)
         (destination/path.lstrip('/')/'index.md').write_text(clean_text(resource_markdown(r,pending_review)),encoding='utf-8')
+        if pair:
+            zh_path=pair['zh-CN']
+            emit(zh_path,page(zh_titles[r['id']],zh_summary(r),zh_path,resource_body(r,lookup,incoming,pending_review,zh=True),resource_schema(r,zh=True),lang='zh-CN',crumbs=resource_crumbs(r,zh=True),alternatives=pair),lastmod=modified(shown),alternates=pair)
+            (destination/zh_path.lstrip('/')/'index.md').write_text(clean_text(zh_resource_page_markdown(r,pending_review)),encoding='utf-8')
         (destination/path.lstrip('/')/'record.json').write_text(json.dumps(r,ensure_ascii=False,sort_keys=True,separators=(',', ':'))+'\n',encoding='utf-8')
         if r['kind'] in {'paper','survey'}:
             (destination/path.lstrip('/')/'citation.bib').write_text(citation_bibtex(r),encoding='utf-8')
@@ -559,7 +631,7 @@ def build_search_pages(destination, rows, coverage, root, *, survey_page=None):
                 zh_markdown=[f'# {category_title(home_page.KINDS[kind][2],"zh")}：第 {number} 页', '',
                              f'HTML 页面：{SITE}{zh_path} · {link("English", SITE + path + "index.md")}', '',
                              f'完整类别注释：{SITE}/zh/categories/{kind}/index.md', '']
-                zh_markdown += [f'- {link(r["name"],SITE + resource_path(r))}：{zh_summary(r)}' for r in members]
+                zh_markdown += [f'- {link(r["name"],SITE + localized_path(r,True))}：{zh_summary(r)}' for r in members]
                 zh_target=destination/zh_path.lstrip('/')/'index.md'
                 zh_target.parent.mkdir(parents=True,exist_ok=True)
                 zh_target.write_text(clean_text('\n'.join(zh_markdown)+'\n'),encoding='utf-8')
@@ -604,7 +676,7 @@ def build_search_pages(destination, rows, coverage, root, *, survey_page=None):
         root_crumb=("AwesomeCUA","/zh/" if language=='zh' else "/")
         for number in range(1,library_count+1):
             path=library_path(number,language)
-            body,schema=paper_library(rows,resource_path,language=language,site_url=SITE,number=number,survey_available=bool(survey_page))
+            body,schema=paper_library(rows,lambda r:localized_path(r,language=='zh'),language=language,site_url=SITE,number=number,survey_available=bool(survey_page))
             numbered=(f'{title}, page {number}' if language=='en' else f'{title}（第 {number} 页）') if number>1 else title
             crumbs=[root_crumb,(title,library_path(1,language)),(f'Page {number}' if language=='en' else f'第 {number} 页',path)] if number>1 else None
             alternatives={'en':library_path(number),'zh-CN':library_path(number,'zh'),'x-default':library_path(number)}
@@ -626,12 +698,12 @@ def build_search_pages(destination, rows, coverage, root, *, survey_page=None):
             summary=(f'{len(members)} reviewed resources for {topic_name(topic)}, with original sources, full records and citations.' if language=='en' else f'{len(members)} 条已审阅的{topic_name(topic,language)}资源，包含原始来源、完整记录与论文引用。')
             for number in range(1,topic_page_count(topic_counts(members))+1):
                 path=topic_path(topic,language,number)
-                body,schema=topic_body(topic,members,resource_path,language=language,site_url=SITE,number=number)
+                body,schema=topic_body(topic,members,lambda r:localized_path(r,language=='zh'),language=language,site_url=SITE,number=number)
                 numbered=(f'{title}, page {number}' if language=='en' else f'{title}（第 {number} 页）') if number>1 else title
                 alternatives={'en':topic_path(topic,'en',number),'zh-CN':topic_path(topic,'zh',number),'x-default':topic_path(topic,'en',number)}
                 trail=[("AwesomeCUA","/zh/" if language=='zh' else "/"),("主题" if language=='zh' else "Topics",topic_path(language=language)),(topic_name(topic,language),first)]+([(f'Page {number}' if language=='en' else f'第 {number} 页',path)] if number>1 else [])
                 emit(path,page(numbered,summary,path,body,schema,lang='zh-CN' if language=='zh' else 'en',alternatives=alternatives,crumbs=trail),lastmod=modified(members),alternates=alternatives)
-            (destination/first.lstrip('/')/'index.md').write_text(clean_text(topic_markdown(topic,members,resource_path,language=language,site_url=SITE)),encoding='utf-8')
+            (destination/first.lstrip('/')/'index.md').write_text(clean_text(topic_markdown(topic,members,lambda r:localized_path(r,language=='zh'),language=language,site_url=SITE)),encoding='utf-8')
     library_ranges=[]
     ordered_papers=reviewed_papers(rows)
     for number in range(1,library_count+1):
@@ -766,7 +838,7 @@ def build_search_pages(destination, rows, coverage, root, *, survey_page=None):
     (destination/'api/index.md').write_text(clean_text(api_docs_markdown(api_index,site=SITE)),encoding='utf-8')
     newest=newest_reviewed(rows,review_times,20)
     (destination/'index.md').write_text(clean_text(home_markdown([(r['name'],SITE+resource_path(r),KINDS[r['kind']],review_times[r['id']],description(r)) for r in newest],kind_rows,site=SITE,counts=counts,snapshot=snapshot)),encoding='utf-8')
-    (destination/'zh/index.md').write_text(clean_text(home_markdown([(r['name'],SITE+resource_path(r),home_page.KINDS[r['kind']][2],review_times[r['id']],zh_summary(r)) for r in newest],zh_kind_rows,site=SITE,counts=counts,snapshot=snapshot,language='zh')),encoding='utf-8')
+    (destination/'zh/index.md').write_text(clean_text(home_markdown([(r['name'],SITE+localized_path(r,True),home_page.KINDS[r['kind']][2],review_times[r['id']],zh_summary(r)) for r in newest],zh_kind_rows,site=SITE,counts=counts,snapshot=snapshot,language='zh')),encoding='utf-8')
     survey_links=[]
     survey_line=''
     if survey_page:
@@ -789,7 +861,7 @@ def build_search_pages(destination, rows, coverage, root, *, survey_page=None):
     if survey_page:
         survey_date=json.loads((destination/'survey/build-manifest.json').read_text(encoding='utf-8')).get('working_manuscript_date')
         sitemap_facts['/survey/']={'lastmod':survey_date,'alternates':{}}
-    kind_by_path={resource_path(r):r['kind'] for r in rows}
+    kind_by_path={**{resource_path(r):r['kind'] for r in rows},**{zh_resource_path(r):r['kind'] for r in rows if eligible(r)}}
     write_sitemaps(destination,SITE,[{'path':item['path'],'section':sitemap_section(item['path'],kind_by_path),**sitemap_facts[item['path']]} for item in manifest if item['indexable']])
     (destination/'data/search-manifest.json').write_text(json.dumps({'site_url':SITE,'indexable_pages':sum(x['indexable'] for x in manifest),'metadata_only_pages':sum(not x['indexable'] and not x.get('scope_excluded') and not x.get('utility') for x in manifest),'excluded_pages':sum(bool(x.get('scope_excluded')) for x in manifest),'pages':manifest},ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
     config=json.loads((root/'data/site-discovery.json').read_text(encoding='utf-8'))

@@ -61,8 +61,12 @@ def slug(record_id: str) -> str:
     return re.sub(r"[^a-z0-9]+", "-", record_id.lower()).strip("-")
 
 
-def resource_href(record) -> str:
-    return record.get("href") or f"/resources/{slug(record['id'])}/"
+def resource_href(record, zh=False) -> str:
+    # Reviewed records have a Chinese page; Chinese rows link to it.
+    if record.get("href"):
+        return record["href"]
+    twin = zh and record.get("review_status") == "curated" and record.get("scope", "core") in ("core", "adjacent")
+    return f"{'/zh' if twin else ''}/resources/{slug(record['id'])}/"
 
 
 def clip(text, limit: int) -> str:
@@ -276,7 +280,7 @@ def compact_row(record, zh=False, date="", attrs="", anchor=True, kind=True) -> 
     # A record listed twice on a page keeps its anchor on one row only.
     target = f' id="r-{slug(record["id"])}"' if anchor else ""
     return f'''<li class="row"{target}{attrs}>
-{kind_tag(record["kind"], zh) if kind else ""}<div class="row-main"><h3 class="row-name"><a href="{esc(resource_href(record))}" data-src="{esc(source)}">{esc(clean_title(record["name"]))}</a><span class="row-id">{esc(identity(record))}</span>{dated}</h3>
+{kind_tag(record["kind"], zh) if kind else ""}<div class="row-main"><h3 class="row-name"><a href="{esc(resource_href(record, zh))}" data-src="{esc(source)}">{esc(clean_title(record["name"]))}</a><span class="row-id">{esc(identity(record))}</span>{dated}</h3>
 <p class="row-desc">{esc(zh_summary(record) if zh else record.get("summary") or "")}</p></div>
 <div class="row-side">{env_tag(record["environments"], zh)}{stamp(record["review_status"], zh)}</div>
 </li>'''
@@ -487,7 +491,7 @@ def benchmark_band(view, zh=False, live=True) -> str:
         summary="面向浏览器智能体的真实网站日常任务评测基准。" if zh else "An everyday-task benchmark for browser agents on live websites.",
         leaderboard=clawbench["details"].get("leaderboard_url") or "https://claw-bench.com", project="https://claw-bench.com", lead=False, zh=zh, live=live)
     rows = "".join(
-        f'<li><a class="nm" href="{esc(resource_href(record))}">{word_breaks(clean_title(record["name"]))}</a>{env_tag(record["environments"], zh)}'
+        f'<li><a class="nm" href="{esc(resource_href(record, zh))}">{word_breaks(clean_title(record["name"]))}</a>{env_tag(record["environments"], zh)}'
         f'<a class="lb" href="{esc(record["details"]["leaderboard_url"])}" aria-label="{esc(clean_title(record["name"]))} {"排行榜" if zh else "leaderboard"}">{ic("trophy")}</a></li>'
         for record in reviewed_with_board)
     benchmarks = fmt(view["kinds"]["benchmark"])
@@ -509,7 +513,7 @@ def latest(view, zh=False) -> str:
         return ""
     reviewed_items = "".join(
         f'<li><time datetime="{view["reviewed_at"][record["id"]][:10]}">{view["reviewed_at"][record["id"]][:10]}</time>'
-        f'<a href="{esc(resource_href(record))}">{esc(clean_title(record["name"]))}</a>{stamp("curated", zh)}</li>' for record in reviewed)
+        f'<a href="{esc(resource_href(record, zh))}">{esc(clean_title(record["name"]))}</a>{stamp("curated", zh)}</li>' for record in reviewed)
     found = view["scan_new"][:4]
     found_items = "".join(
         f'<li><time datetime="{view["first_seen"][record["id"]]}">{view["first_seen"][record["id"]][:16].replace("T", " ")}</time>'
@@ -542,7 +546,7 @@ def categories(view, zh=False) -> str:
         else:
             top = sorted((record for record in view["reviewed"] if record["kind"] == kind),
                          key=lambda record: (-len(view["mentions"].get(record["id"], ())), record["name"].casefold()))[:link_count]
-            links = ", ".join(f'<a href="{esc(resource_href(record))}">{esc(clip(clean_title(record["name"]), 26))}</a>' for record in top)
+            links = ", ".join(f'<a href="{esc(resource_href(record, zh))}">{esc(clip(clean_title(record["name"]), 26))}</a>' for record in top)
         drawing = {"paper": art.vig_paper, "benchmark": art.vig_rank}.get(kind)
         cells.append(f'<li class="r3-cell r3-c-{kind}"><a class="r3-cell-name" href="{"/zh/papers/" if zh and kind == "paper" else category_href(kind, zh)}">{zh_label if zh else label}</a>'
                      f'<span class="r3-cell-n">{fmt(view["kinds"][kind])}</span>{drawing() if drawing else ""}<p class="r3-cell-eg">{links}</p></li>')
@@ -585,7 +589,7 @@ def papers(view, zh=False) -> str:
         cited = f"{paper_id}v{version}" if paper_id and version else paper_id
         links = (f'<a href="https://arxiv.org/abs/{cited}">{ic("file")}arXiv {paper_id}</a><a href="https://arxiv.org/pdf/{cited}">PDF</a>' if paper_id else
                  f'<a href="{esc(record["url"])}">{ic("ext", "i i-sm")}{"来源" if zh else "Source"}</a>')
-        rows.append(f'<li><time datetime="{record_date_text(record)}">{record_date_text(record)}</time><div><a class="paper-t" href="{esc(resource_href(record))}">{esc(clean_title(record["name"]))}</a>'
+        rows.append(f'<li><time datetime="{record_date_text(record)}">{record_date_text(record)}</time><div><a class="paper-t" href="{esc(resource_href(record, zh))}">{esc(clean_title(record["name"]))}</a>'
                     f'<div class="paper-m">{f"<span>{esc(venue)}</span>" if venue else ""}{authors}{links}</div></div></li>')
     count = fmt(view["papers"])
     heading, lede, more = (("论文", f"{count} 篇已审核论文与综述，按时间倒序。书目信息已与 arXiv 或出版方核对。", "阅读综述") if zh else

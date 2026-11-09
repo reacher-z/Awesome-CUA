@@ -215,6 +215,22 @@ class AgentFileTests(unittest.TestCase):
         self.assertNotIn('(retrieved ', markdown)
         self.assertIn('（获取于 ', markdown)
 
+    def test_chinese_profile_and_publication_fields_use_the_shared_labels(self):
+        from field_labels import FIELD_LABELS
+        english = '|'.join(re.escape(en) for en, _ in FIELD_LABELS.values() if en != 'DOI')
+        for path in ('zh/categories/benchmark/index.md', 'zh/categories/dataset/index.md', 'zh/papers/index.md'):
+            with self.subTest(path=path):
+                markdown = (self.dest / path).read_text()
+                self.assertNotRegex(markdown, rf'(?mi)^- ({english}|{english.replace(" ", "_")}|date basis|identity basis|event dates):')
+                self.assertNotRegex(markdown, r'(?m)^- [^：\n]+：not recorded$')
+                self.assertNotIn('; source: ', markdown)
+        self.assertRegex((self.dest / 'zh/categories/dataset/index.md').read_text(), r'(?m)^- 数据划分：')
+        self.assertRegex((self.dest / 'zh/categories/benchmark/index.md').read_text(), r'(?m)^- 动作 / 输出：')
+        papers = (self.dest / 'zh/papers/index.md').read_text()
+        for label in ('标题', '作者', '发表于'):
+            self.assertRegex(papers, rf'(?m)^- {label}：')
+        self.assertRegex((self.dest / 'categories/dataset/index.md').read_text(), r'(?m)^- Splits: ')
+
     def test_agent_category_heading_names_the_kind_once(self):
         for path, heading in (('categories/agent/index.md', '# Computer-use agents\n'), ('zh/categories/agent/index.md', '# 计算机使用智能体\n')):
             with self.subTest(path=path):

@@ -4,6 +4,7 @@ import html
 import json
 import math
 import urllib.parse
+from field_labels import field_label
 
 PROFILE_KEYS = {'benchmark': 'benchmark_protocol', 'dataset': 'dataset_profile'}
 PREFIXES = {'exact': '', 'approximately': '≈ ', 'at-least': '≥ ', 'more-than': '> '}
@@ -129,9 +130,9 @@ def resource_profile_html(row):
     if not profile:
         return ''
     if row['kind'] == 'benchmark':
-        facts = [('Focus', words(profile['focus'])), ('Setting', profile['setting']), ('Observations', words(profile['observations'])), ('Actions / outputs', words(profile['actions'])), ('Evaluation', profile['evaluation'] or 'Not recorded')]
+        facts = [(field_label('focus'), words(profile['focus'])), (field_label('setting'), profile['setting']), (field_label('observations'), words(profile['observations'])), (field_label('actions'), words(profile['actions'])), (field_label('evaluation'), profile['evaluation'] or 'Not recorded')]
     else:
-        facts = [('Supervision', words(profile['supervision'])), ('Modalities', words(profile['modalities'])), ('Formats', words(profile['formats'])), ('Splits', words(profile['splits']))]
+        facts = [(field_label(key), words(profile[key])) for key in ('supervision', 'modalities', 'formats', 'splits')]
     title = 'Evaluation protocol' if row['kind'] == 'benchmark' else 'Dataset profile'
     body = f'<h2>{title}</h2><dl class="page-facts">' + ''.join(f'<div><dt>{esc(label)}</dt><dd>{esc(value)}</dd></div>' for label, value in facts) + '</dl>'
     body += '<h3>Scale and counting units</h3>' + counts_html(profile)

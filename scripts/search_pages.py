@@ -9,6 +9,7 @@ import os
 from pathlib import Path
 import re
 from collections import Counter, defaultdict
+from field_labels import COUNT_BASIS, FIELD_LABELS, field_label
 from specifications import PROFILE_KEYS, comparison_body, profile_export, resource_profile_html, count_text, safe_href
 from agent_pages import agent_guide_body, RELEASES_URL
 from export_citations import citation_bibtex, citation_csl
@@ -216,20 +217,19 @@ def catalog_body(reviewed,awaiting,candidates,*,zh=False):
 def publication_body(record):
     pub=publication(record)
     if not pub:return ''
-    facts=[('Title',pub['title']),('Authors',None if authors_omitted(record) else ', '.join(pub['authors'])),
-           ('Publication date (recorded precision)',format_date_parts(pub['date_parts'])),
-           ('Venue',pub.get('venue')),('Publisher',pub.get('publisher')),('Series',pub.get('series')),
-           ('Volume',pub.get('volume')),('Issue',pub.get('issue')),('Pages',pub.get('pages')),('DOI',pub.get('doi'))]
+    facts=[(field_label('title'),pub['title']),(field_label('authors'),None if authors_omitted(record) else ', '.join(pub['authors'])),
+           ('Publication date (recorded precision)',format_date_parts(pub['date_parts']))]
+    facts+=[(field_label(key),pub.get(key)) for key in ('venue','publisher','series','volume','issue','pages','doi')]
     rows=[(key,esc(value)) for key,value in facts if value]
-    if authors_omitted(record):rows.insert(1,('Authors','<a href="'+safe_href(pub['url'])+'">'+esc(AUTHORS_OMITTED[0])+'</a>'))
+    if authors_omitted(record):rows.insert(1,(field_label('authors'),'<a href="'+safe_href(pub['url'])+'">'+esc(AUTHORS_OMITTED[0])+'</a>'))
     body='<section class="publication-record"><h2>Publication record</h2><dl class="page-facts">'+''.join('<div><dt>'+esc(key)+'</dt><dd>'+value+'</dd></div>' for key,value in rows)+'</dl>'
     body+='<p><a href="'+safe_href(pub['url'])+'">Publication source ↗</a>'
     if pub.get('pdf_url'):body+=' · <a href="'+safe_href(pub['pdf_url'])+'">Publisher or author PDF ↗</a>'
     body+='</p><p><a href="'+resource_path(record)+'publication-citation.bib" download>Publication BibTeX</a> · <a href="'+resource_path(record)+'publication-citation.csl.json" download>Publication CSL JSON</a></p>'
     if record['id'].startswith('arxiv:'):
         body+='<p>This publication is a separately recorded edition of the same work. Its citation uses its own title, authors and date; the retained arXiv citation above is unchanged.</p>'
-    for key,label in [('date_basis','Date source'),('event_dates','Event dates (not substituted for publication)'),('notes','Source notes')]:
-        if pub.get(key):body+='<p>'+label+': '+esc(pub[key])+'</p>'
+    for key in ('date_basis','event_dates','notes'):
+        if pub.get(key):body+='<p>'+field_label(key)+': '+esc(pub[key])+'</p>'
     body+='</section>'
     return body
 
@@ -332,13 +332,13 @@ def resource_markdown(r, pending_review=None, level=1):
         lines+=['',h2+' Citation exports','',f'- BibTeX: {SITE}{resource_path(r)}citation.bib',f'- CSL JSON: {SITE}{resource_path(r)}citation.csl.json']
     pub=publication(r)
     if pub:
-        lines+=['',h2+' Publication record','', '- Title: '+pub['title'], '- '+(AUTHORS_OMITTED[0]+' ('+pub['url']+')' if authors_omitted(r) else 'Authors: '+', '.join(pub['authors'])),
+        lines+=['',h2+' Publication record','', '- '+field_label('title')+': '+pub['title'], '- '+(AUTHORS_OMITTED[0]+' ('+pub['url']+')' if authors_omitted(r) else field_label('authors')+': '+', '.join(pub['authors'])),
                 '- Publication date (recorded precision): '+(format_date_parts(pub['date_parts']) or 'not recorded'),
                 '- Publication source: '+pub['url'],
                 '- Publication BibTeX: '+SITE+resource_path(r)+'publication-citation.bib',
                 '- Publication CSL JSON: '+SITE+resource_path(r)+'publication-citation.csl.json']
         for key in ('venue','publisher','series','volume','issue','pages','doi','date_basis','event_dates','identity_basis','notes'):
-            if pub.get(key):lines.append('- '+key.replace('_',' ')+': '+pub[key])
+            if pub.get(key):lines.append('- '+field_label(key)+': '+pub[key])
         lines+=['- Publication evidence: '+', '.join(pub['evidence_urls'])]
     snapshot=r['details'].get('arxiv_snapshot')
     if snapshot:
@@ -354,7 +354,7 @@ def resource_markdown(r, pending_review=None, level=1):
         lines+=['',h2+' Structured profile','']
         for key,value in profile.items():
             if key in {'counts','evidence_urls','notes'}:continue
-            lines.append('- '+key.replace('_',' ')+': '+(', '.join(value) if isinstance(value,list) and value else str(value) if value else 'not recorded'))
+            lines.append('- '+field_label(key)+': '+(', '.join(value) if isinstance(value,list) and value else str(value) if value else 'not recorded'))
         lines+=['',h3+' Count observations','']
         lines += [f'- {count_text(c)} ({c["basis"]}; source: {c.get("reference_url") or c["evidence_url"]})' for c in profile['counts']] or ['No count recorded.']
         lines+=['',profile['notes']]
@@ -388,6 +388,7 @@ def zh_resource_markdown(record, pending_review=None, level=2, *, paper=False):
               'Publication date (recorded precision)': '发表日期', 'Publication source': '发表来源',
               'Publication BibTeX': '发表版 BibTeX', 'Publication CSL JSON': '发表版 CSL JSON',
               'Publication evidence': '发表证据', 'Licenses': '许可证'}
+    labels.update(FIELD_LABELS.values())
     for source, target in sorted(labels.items(), key=lambda item: -len(item[0])):
         body = re.sub(r'(?m)^(- )' + re.escape(source) + r':\s?', lambda match: match[1] + target + '：', body)
     values = {
@@ -404,6 +405,9 @@ def zh_resource_markdown(record, pending_review=None, level=2, *, paper=False):
     body = re.sub(r'(?m)^- (code|data|document|weights): ', lambda match: f'- {slots[match[1]]}：', body)
     body = re.sub(r'(?m)^- (code|data|document|weights) review: ', lambda match: f'- {slots[match[1]]}审核：', body)
     body = re.sub(r'(?m)^  Sources: ', '  来源：', body)
+    body = re.sub(r'(?m)^(- [^：\n]+：)not recorded$', r'\1未记录', body)
+    body = re.sub(r'(?m)^(- .+?)(?: \(computed\))? \((reported|computed); source: (\S+)\)$', lambda match: f'{match[1]}（{COUNT_BASIS[match[2]][1]}；来源：{match[3]}）', body)
+    body = body.replace('\nNo count recorded.\n', '\n未记录数量。\n')
     body = re.sub(r'(?m)^(- \S+) \(retrieved ([^;]+); SHA-256 ([0-9a-f]+)\)$', r'\1（获取于 \2；SHA-256：\3）', body)
     return body
 

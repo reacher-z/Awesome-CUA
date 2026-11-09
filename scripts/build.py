@@ -1110,6 +1110,10 @@ def build(args):
     print(f"Built {len(rows)} records ({report['curated_records']} curated), {len(edges)} reference edges, {len(merged)} review items, and SQLite/JSON exports.")
 
 
+# A summary assembled from facet labels ("X：面向网页（Web）环境的工具，支持A、B、C。") restates tags instead of translating the record.
+FACET_TEMPLATE = re.compile(r"^[^：]{1,120}：面向[^，。]{1,40}环境的[^，。]{1,12}，支持")
+
+
 def validate_translations(rows, translations):
     """Chinese annotations in data/translations.zh-CN.json: keyed by the ID of a curated record, one natural Chinese summary each."""
     if not isinstance(translations, dict):
@@ -1128,6 +1132,8 @@ def validate_translations(rows, translations):
             errors.append(f"Chinese translations {rid}: summary must be Chinese text")
         elif len(text) > 220 or not text.rstrip().endswith(("。", ".", "）", ")")):
             errors.append(f"Chinese translations {rid}: summary must be at most 220 characters and end with a full stop")
+        elif FACET_TEMPLATE.search(text):
+            errors.append(f"Chinese translations {rid}: summary lists facet labels; translate the English summary instead")
     return errors
 
 

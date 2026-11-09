@@ -464,6 +464,8 @@ def zh_resource_markdown(record, pending_review=None, level=2, *, paper=False):
     body = re.sub(r'(?m)^- (code|data|document|weights) review: ', lambda match: f'- {slots[match[1]]}审核：', body)
     body = re.sub(r'(?m)^  Sources: ', '  来源：', body)
     body = re.sub(r'(?m)^(- [^：\n]+：)not recorded$', r'\1未记录', body)
+    if eligible(record):
+        body = body.replace(f'- 目录页面：{SITE}{resource_path(record)}\n', f'- 目录页面：{SITE}{zh_resource_path(record)}\n', 1)
     body = re.sub(r'(?m)^(- .+?)(?: \(computed\))? \((reported|computed); source: (\S+)\)$', lambda match: f'{match[1]}（{COUNT_BASIS[match[2]][1]}；来源：{match[3]}）', body)
     body = body.replace('\nNo count recorded.\n', '\n未记录数量。\n')
     body = re.sub(r'(?m)^(- \S+) \(retrieved ([^;]+); SHA-256 ([0-9a-f]+)\)$', r'\1（获取于 \2；SHA-256：\3）', body)
@@ -473,9 +475,9 @@ def zh_resource_markdown(record, pending_review=None, level=2, *, paper=False):
 def zh_resource_page_markdown(record, pending_review=None):
     """The Chinese page's own Markdown twin: the Chinese record, pointing at the Chinese page and its English twin."""
     body = zh_resource_markdown(record, pending_review, level=1)
-    page_line = f'- 目录页面：{SITE}{resource_path(record)}'
+    page_line = f'- 目录页面：{SITE}{zh_resource_path(record)}\n'
     if page_line not in body:raise ValueError('Chinese resource Markdown lacks its page line: '+record['id'])
-    return body.replace(page_line, f'- 目录页面：{SITE}{zh_resource_path(record)}\n- English：{SITE}{resource_path(record)}index.md', 1)
+    return body.replace(page_line, page_line + f'- English：{SITE}{resource_path(record)}index.md\n', 1)
 
 
 def repository_stars():

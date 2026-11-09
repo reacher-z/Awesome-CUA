@@ -141,7 +141,7 @@ class AgentFileTests(unittest.TestCase):
                 if number == 1:
                     first_md = md
                 else:
-                    listed = re.findall(r'^- \[[^]]+\]\((https://awesomecua.com/resources/[^)]+)\)', md, re.M)
+                    listed = re.findall(r'^- \[[^]]+\]\((https://awesomecua.com/zh/resources/[^)]+)\)', md, re.M)
                     self.assertEqual(listed, html_urls, path)
                 all_html_urls += html_urls
                 number += 1

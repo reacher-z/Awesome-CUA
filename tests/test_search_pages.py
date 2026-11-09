@@ -270,7 +270,7 @@ class SearchPagesTests(unittest.TestCase):
                 collection=next(item for item in schema['@graph'] if item['@type']=='ItemList')
                 self.assertEqual(collection['numberOfItems'],len(page_ids),path)
                 self.assertEqual([item['url'] for item in collection['itemListElement']],
-                                 [SITE+resource_path({'id':rid}) for rid in page_ids],path)
+                                 [SITE+('/zh' if prefix=='/zh/papers/' else '')+resource_path({'id':rid}) for rid in page_ids],path)
                 self.assertIn('href="/downloads/citations.bib"',markup)
                 self.assertIn('href="/downloads/citations.csl.json"',markup)
                 ids+=page_ids
@@ -297,7 +297,7 @@ class SearchPagesTests(unittest.TestCase):
                     graph=json.loads(re.search(r'<script type="application/ld\+json">(.*?)</script>',markup,re.S)[1])['@graph']
                     listing=next(entity for entity in graph if entity['@type']=='ItemList')
                     self.assertEqual([entry['url'] for entry in listing['itemListElement']],
-                                     [SITE+resource_path(expected[rid]) for rid in page_ids],path)
+                                     [SITE+(zh_resource_path(expected[rid]) if language=='zh' else resource_path(expected[rid])) for rid in page_ids],path)
                     self.assertEqual(listing['numberOfItems'],len(page_ids),path)
                     ids+=page_ids
                 self.assertEqual(set(ids),set(expected),first)

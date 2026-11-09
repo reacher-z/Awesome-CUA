@@ -2,17 +2,16 @@
 
 [Home](../../README.md) · [All topics](../topics.md) · [Full arXiv bibliography](../papers.md)
 
-106 source-reviewed resources tagged `interaction-history`. Curated metadata; unknown facts are shown as —.
+111 source-reviewed resources tagged `interaction-history`. Curated metadata; unknown facts are shown as —.
 
-**Contents:** [Benchmarks (1)](#benchmarks) · [Datasets (2)](#datasets) · [Models (4)](#models) · [Agents (2)](#agents) · [Frameworks (2)](#frameworks) · [Tools (1)](#tools) · [Surveys (1)](#surveys) · [Papers (93)](#papers)
+**Contents:** [Benchmarks (2)](#benchmarks) · [Datasets (4)](#datasets) · [Models (4)](#models) · [Agents (3)](#agents) · [Frameworks (2)](#frameworks) · [Tools (2)](#tools) · [Surveys (1)](#surveys) · [Papers (93)](#papers)
 
 ## Benchmarks
 
-All entries in this section: web.
-
-| Resource | Paper | Scale | License | Description | Evidence |
-| --- | --- | --- | --- | --- | --- |
-| [VideoWebArena](https://github.com/ljang0/videowebarena) | [2410.19100](https://arxiv.org/abs/2410.19100) (2024) | — | — | VideoWebArena evaluates web agents that use video tutorials to complete website tasks. Its released benchmark includes task configurations, environments, and an evaluation pipeline. | [✓ 2026‑11‑09](https://raw.githubusercontent.com/ljang0/videowebarena/HEAD/README.md) |
+| Resource | Environments | Paper | Scale | License | Description | Evidence |
+| --- | --- | --- | --- | --- | --- | --- |
+| [PersonalAlign](https://github.com/iLearn-Lab/ACL26-PersonalAlign) | android | [2601.09636](https://arxiv.org/abs/2601.09636) (2026) | — | — | PersonalAlign releases AndroidIntent evaluations of personalized mobile GUI agents and HIM-Agent memory for using long-term interaction records. | [✓ 2026‑11‑09](https://raw.githubusercontent.com/iLearn-Lab/ACL26-PersonalAlign/HEAD/README.md) |
+| [VideoWebArena](https://github.com/ljang0/videowebarena) | web | [2410.19100](https://arxiv.org/abs/2410.19100) (2024) | — | — | VideoWebArena evaluates web agents that use video tutorials to complete website tasks. Its released benchmark includes task configurations, environments, and an evaluation pipeline. | [✓ 2026‑11‑09](https://raw.githubusercontent.com/ljang0/videowebarena/HEAD/README.md) |
 
 ## Datasets
 
@@ -20,6 +19,8 @@ All entries in this section: web.
 | --- | --- | --- | --- | --- | --- | --- |
 | [Fanbin/waa_steve_trajectories](https://huggingface.co/datasets/Fanbin/waa_steve_trajectories) | desktop, windows | [2503.12532](https://arxiv.org/abs/2503.12532) (2025) | — | — | A dataset of STEVE-R1 evaluation trajectories on WindowsAgentArena, pairing task screenshots and agent responses with action traces and outcome labels. | [✓ 2026‑11‑09](https://huggingface.co/api/datasets/Fanbin/waa_steve_trajectories) |
 | [go-browse-wa-raw](https://huggingface.co/datasets/apurvaga/go-browse-wa-raw) | web | — | — | — | go-browse-wa-raw is a browser-agent trajectory dataset with page observations, actions, goals, rewards, and images. Its train split contains 196462 examples. | [✓ 2026‑11‑09](https://huggingface.co/api/datasets/apurvaga/go-browse-wa-raw) |
+| [WenyiWU0111/CoMEM-agent-memory-trajectories](https://huggingface.co/datasets/WenyiWU0111/CoMEM-agent-memory-trajectories) | web | [2510.09038](https://arxiv.org/abs/2510.09038) (2025) | — | data apache-2.0 | A dataset for GUI-agent memory research containing expanded web links, synthesized tasks, and executed trajectories with successful and failed outcomes. | [✓ 2026‑11‑09](https://huggingface.co/api/datasets/WenyiWU0111/CoMEM-agent-memory-trajectories) |
+| [xunsss/osworld2-codex-gpt56sol-0624-attempt-preview](https://huggingface.co/datasets/xunsss/osworld2-codex-gpt56sol-0624-attempt-preview) | desktop | — | — | — | This OSWorld-V2 dataset provides compact tables for browsing Codex task summaries, attempts, trajectory events, and executed GUI or CLI actions. | [✓ 2026‑11‑09](https://huggingface.co/api/datasets/xunsss/osworld2-codex-gpt56sol-0624-attempt-preview) |
 
 ## Models
 
@@ -36,6 +37,7 @@ All entries in this section: web.
 | --- | --- | --- | --- | --- | --- |
 | [Auto-UI](https://github.com/gimme1dollar/auto_ui) | android | [2309.11436](https://arxiv.org/abs/2309.11436) (2023) | code Apache-2.0 | A multimodal interface agent that uses earlier actions and future action plans to predict the next action. The repository provides training and inference instructions. | [✓ 2026‑11‑09](https://raw.githubusercontent.com/gimme1dollar/auto_ui/HEAD/README.md) |
 | [GUI-Rise](https://github.com/Leon022/GUI-Rise-code) | cross-platform, web, android | [2510.27210](https://arxiv.org/abs/2510.27210) (2025) | — | A GUI navigation agent that combines stepwise reasoning with history summarization; its repository provides supervised training, reinforcement learning, and evaluation instructions. | [✓ 2026‑11‑09](https://raw.githubusercontent.com/Leon022/GUI-Rise-code/HEAD/README.md) |
+| [Taxy AI](https://github.com/TaxyAI/browser-extension) | web | — | — | Taxy AI is a Chrome extension that turns user instructions and a simplified page DOM into clicks and text entry, then checks the updated page before continuing. | [✓ 2026‑11‑09](https://raw.githubusercontent.com/TaxyAI/browser-extension/HEAD/README.md) |
 
 ## Frameworks
 
@@ -50,6 +52,7 @@ All entries in this section: desktop, macos.
 
 | Resource | Paper | License | Description | Evidence |
 | --- | --- | --- | --- | --- |
+| [nocta-recorder](https://github.com/nossa-y/nocta-recorder) | — | code MIT | A macOS recorder that stores screen snapshots, accessibility elements, OCR, input events, and audio in a local SQLite database and serves the captured activity through a local API. | [✓ 2026‑11‑09](https://raw.githubusercontent.com/nossa-y/nocta-recorder/HEAD/README.md) |
 | [Open Codex Computer History](https://github.com/hqhq1025/open-codex-computer-history) | — | code MIT | Clean-room macOS implementation of event-stream interaction recording using Accessibility hit-testing, CGEvent taps, and SkyLight window snapshots. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/hqhq1025/open-codex-computer-history/HEAD/README.md) |
 
 ## Surveys

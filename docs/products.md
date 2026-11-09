@@ -6,7 +6,7 @@ Curated metadata. Each entry links its first-party evidence. Unknown facts are s
 
 *Publisher* is a reviewed `published_by` relation. *Evidence* links the reviewed first-party snapshot and its retrieval date.
 
-**70 resources:** [Web (45)](#web) · [Desktop (6)](#desktop) · [Mobile (4)](#mobile) · [Cross-platform (15)](#cross-platform)
+**72 resources:** [Web (45)](#web) · [Desktop (6)](#desktop) · [Mobile (4)](#mobile) · [Cross-platform (17)](#cross-platform)
 
 Resources tagged with environments from more than one family are listed under *Cross-platform*; their exact environments stay in the table.
 
@@ -104,6 +104,8 @@ All entries in this section: android.
 | [ego(lite)](https://lite.ego.app) | — | web, desktop | A Chromium browser that lets AI agents automate signed-in websites through an agent skill, with separate workspaces for agent tasks and page snapshots for navigation. | [✓ 2026‑11‑09](https://lite.ego.app) |
 | [Fellou](https://fellou.ai/) | — | web, desktop, macos | Fellou's agentic browser, which drafts a step-by-step plan for review and then browses, fills forms and runs scheduled or parallel tasks; a Computer Use mode extends it to local apps and files. | [✓ 2026‑10‑19](https://fellou.ai/) |
 | [Interpreter Workstation](https://github.com/openinterpreter/interpreter-workstation) | — | cross-platform, desktop, web | Interpreter Workstation is a desktop agent workspace that connects to local or remote computers and combines an agent runtime with browser access and file and app controls. | [✓ 2026‑11‑09](https://raw.githubusercontent.com/openinterpreter/interpreter-workstation/HEAD/README.md) |
+| [MT Code](https://github.com/munimtechnologies/mtcode) | — | cross-platform, desktop, macos, windows, linux, web | MT Code is a desktop app that runs coding agents and gives them browser computer-use controls, a live computer view and access to reachable machines. | [✓ 2026‑11‑09](https://raw.githubusercontent.com/munimtechnologies/mtcode/HEAD/README.md) |
+| [ovoBrowser](https://github.com/ovobrowsersupport/ovobrowser-manger) | — | web, desktop, windows, macos, cross-platform | ovoBrowser is a desktop client for managing isolated browser profiles and proxies. Its local API exposes opened profiles to browser automation tools. | [✓ 2026‑11‑09](https://raw.githubusercontent.com/ovobrowsersupport/ovobrowser-manger/HEAD/README.md) |
 | [Process Discovery](https://www.automationanywhere.com/products/process-discovery) | — | cross-platform, desktop, windows, web | An enterprise process-discovery product that captures activity across desktops and web apps, then maps workflows to identify patterns and automation opportunities. | [✓ 2026‑11‑09](https://www.automationanywhere.com/products/process-discovery) |
 | [Scribe](https://scribehow.com/) | — | desktop, web | Workflow recording and documentation product adjacent to agent data collection. | [✓ 2026‑10‑16](https://scribehow.com/) |
 | [Tongyi UI Agent API](https://help.aliyun.com/zh/model-studio/ui-agent-api) | — | cross-platform, desktop, windows | Alibaba Cloud Model Studio API that returns the next GUI action with its reasoning for a screenshot and task, with a mobile pipeline and a PC pipeline using planner, worker, reflector and memory agents. | [✓ 2026‑10‑19](https://help.aliyun.com/zh/model-studio/ui-agent-api.md) |

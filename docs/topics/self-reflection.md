@@ -2,9 +2,9 @@
 
 [Home](../../README.md) · [All topics](../topics.md) · [Full arXiv bibliography](../papers.md)
 
-141 source-reviewed resources tagged `self-reflection`. Curated metadata; unknown facts are shown as —.
+143 source-reviewed resources tagged `self-reflection`. Curated metadata; unknown facts are shown as —.
 
-**Contents:** [Benchmarks (6)](#benchmarks) · [Datasets (1)](#datasets) · [Models (3)](#models) · [Agents (26)](#agents) · [Frameworks (44)](#frameworks) · [Tools (4)](#tools) · [Products (2)](#products) · [Papers (55)](#papers)
+**Contents:** [Benchmarks (6)](#benchmarks) · [Datasets (1)](#datasets) · [Models (3)](#models) · [Agents (27)](#agents) · [Frameworks (44)](#frameworks) · [Tools (5)](#tools) · [Products (2)](#products) · [Papers (55)](#papers)
 
 ## Benchmarks
 
@@ -46,6 +46,7 @@ All entries in this section: unspecified.
 | [CompBuddy](https://github.com/lewiswlker/CompBuddy) | desktop, macos | — | code MIT | CompBuddy is a background macOS computer-use agent that observes target windows and dispatches Accessibility and CGEvent actions without stealing focus. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/lewiswlker/CompBuddy/HEAD/README.md) |
 | [DSH Mobile GUI Agent](https://github.com/kunjinkao-os/dsh-mobile-gui-agent) | android | — | code MIT | Android Mobile GUI Agent plugin for DeepSeek Harness featuring ADB actuation, iterative screen verification, and error recovery. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/kunjinkao-os/dsh-mobile-gui-agent/HEAD/README.md) |
 | [Genie](https://github.com/vimalmathew26/genie) | desktop, linux | — | — | Genie is an autonomous Linux desktop agent with 3-tier UI resolution across AT-SPI accessibility trees, Chrome CDP, and VLM vision. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/vimalmathew26/genie/HEAD/README.md) |
+| [GUI Reflection](https://github.com/penghao-wu/GUI_Reflection) | unspecified | [2506.08012](https://arxiv.org/abs/2506.08012) (2025) | code Apache-2.0 | GUI Reflection provides agent code that predicts GUI actions from a screen image and task goal, alongside scripts for evaluation and supervised training. | [✓ 2026‑11‑09](https://raw.githubusercontent.com/penghao-wu/GUI_Reflection/HEAD/README.md) |
 | [Hachifish](https://github.com/momo-null/hachifish) | android | — | code MIT | Hachifish is an on-device Android GUI agent that executes natural-language tasks via the native AccessibilityService with pre-completion checks. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/momo-null/hachifish/HEAD/README.md) |
 | [Hermes Agent](https://github.com/NousResearch/hermes-agent) | cross-platform, desktop, web, linux, macos, windows | — | code MIT | Hermes Agent is a self-improving autonomous agent by Nous Research with procedural skill synthesis, browser control, and multi-platform sandboxes. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/NousResearch/hermes-agent/HEAD/README.md) |
 | [Hosp2MES-Agent](https://github.com/Ctrl-CV-Master/Hosp2MES-Agent-Public) | web | — | code MIT | Hosp2MES-Agent is a long-horizon browser GUI agent for executing multi-page Manufacturing Execution System (MES) workflows with state verification. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/Ctrl-CV-Master/Hosp2MES-Agent-Public/HEAD/README.md) |
@@ -117,6 +118,7 @@ All entries in this section: unspecified.
 
 | Resource | Environments | Paper | License | Description | Evidence |
 | --- | --- | --- | --- | --- | --- |
+| [Claude Blender](https://github.com/minihellboy/claude-blender) | desktop, macos, linux | — | code MIT | An MCP server and Blender add-on that let an AI assistant control scenes through tools, inspect screenshots and renders, and revise work using visual feedback. | [✓ 2026‑11‑09](https://raw.githubusercontent.com/minihellboy/claude-blender/HEAD/README.md) |
 | [Computer Use Studio Pro](https://github.com/666xiaoniuzi/computer-use-skill) | cross-platform, desktop, web, windows, macos, linux | — | code MIT | Cross-agent skill for low-latency, verified desktop, browser, and window control. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/666xiaoniuzi/computer-use-skill/HEAD/README.md) |
 | [dsh-desktop-automation](https://github.com/Junkrat9527/dsh-desktop-automation) | desktop, macos | — | code MIT | macOS desktop automation plugin for DeepSeek Harness with a closed-loop screenshot-locate-click-verify pipeline. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/Junkrat9527/dsh-desktop-automation/main/README.md) |
 | [dsh-live-loop](https://github.com/POWERRRRRRRR/dsh-live-loop) | web | — | code MIT | Frontend runtime verification plugin for DeepSeek Harness that detects, launches, previews, and tests web apps in a live browser. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/POWERRRRRRRR/dsh-live-loop/main/README.md) |

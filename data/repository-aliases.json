@@ -1240,5 +1240,275 @@
         "sha256": "8ed81411b0b92e25898ac9d1f3ec3ec7bb0f07dc7691db56e9c7f666833e5236"
       }
     ]
+  },
+  {
+    "alias_id": "url:b2d018c021eadf8f96d2",
+    "target_id": "url:e5e74846aeaa8398673e",
+    "repository_id": "68e70e730328c8ce94ed30e8",
+    "basis": "official_huggingface_repository_id",
+    "reviewed_at": "2026-11-09T20:02:27Z",
+    "observations": [
+      {
+        "url": "https://huggingface.co/api/models/batwBMW/Magma-R1",
+        "resolved_url": "https://huggingface.co/api/models/batwBMW/Magma-R1-4B-AndroidControl",
+        "repository_id": "68e70e730328c8ce94ed30e8",
+        "full_name": "batwBMW/Magma-R1-4B-AndroidControl",
+        "html_url": "https://huggingface.co/batwBMW/Magma-R1-4B-AndroidControl",
+        "retrieved_at": "2026-11-09T20:02:27Z",
+        "sha256": "af950099ba18be0dce84b727bb80596c6673b46286a808c6fb7a7700b4cbb44e"
+      },
+      {
+        "url": "https://huggingface.co/api/models/batwBMW/Magma-R1-4B-AndroidControl",
+        "resolved_url": "https://huggingface.co/api/models/batwBMW/Magma-R1-4B-AndroidControl",
+        "repository_id": "68e70e730328c8ce94ed30e8",
+        "full_name": "batwBMW/Magma-R1-4B-AndroidControl",
+        "html_url": "https://huggingface.co/batwBMW/Magma-R1-4B-AndroidControl",
+        "retrieved_at": "2026-11-09T20:02:27Z",
+        "sha256": "af950099ba18be0dce84b727bb80596c6673b46286a808c6fb7a7700b4cbb44e"
+      }
+    ]
+  },
+  {
+    "alias_id": "url:a81a50ab7336d51700df",
+    "target_id": "url:6680e812b94c168e6bed",
+    "repository_id": "687e0ffd6f4497da4ef44540",
+    "basis": "official_huggingface_repository_id",
+    "reviewed_at": "2026-11-09T20:02:43Z",
+    "observations": [
+      {
+        "url": "https://huggingface.co/api/datasets/MacPaw/Screen2AX-Group",
+        "resolved_url": "https://huggingface.co/api/datasets/macpaw-research/Screen2AX-Group",
+        "repository_id": "687e0ffd6f4497da4ef44540",
+        "full_name": "macpaw-research/Screen2AX-Group",
+        "html_url": "https://huggingface.co/datasets/macpaw-research/Screen2AX-Group",
+        "retrieved_at": "2026-11-09T20:02:43Z",
+        "sha256": "5cc9c0a1e97b60cbfb6b931ae3e5d30ee26aba6fc9468bc57f0b8380361cc7a5"
+      },
+      {
+        "url": "https://huggingface.co/api/datasets/macpaw-research/Screen2AX-Group",
+        "resolved_url": "https://huggingface.co/api/datasets/macpaw-research/Screen2AX-Group",
+        "repository_id": "687e0ffd6f4497da4ef44540",
+        "full_name": "macpaw-research/Screen2AX-Group",
+        "html_url": "https://huggingface.co/datasets/macpaw-research/Screen2AX-Group",
+        "retrieved_at": "2026-11-09T20:02:43Z",
+        "sha256": "5cc9c0a1e97b60cbfb6b931ae3e5d30ee26aba6fc9468bc57f0b8380361cc7a5"
+      }
+    ]
+  },
+  {
+    "alias_id": "url:49f25b65cefb94922ad9",
+    "target_id": "url:b4a01331e3e89e1bae9d",
+    "repository_id": "687e1424a9bd1aef0a8d2043",
+    "basis": "official_huggingface_repository_id",
+    "reviewed_at": "2026-11-09T20:02:53Z",
+    "observations": [
+      {
+        "url": "https://huggingface.co/api/models/MacPaw/blip-icon-captioning",
+        "resolved_url": "https://huggingface.co/api/models/macpaw-research/blip-icon-captioning",
+        "repository_id": "687e1424a9bd1aef0a8d2043",
+        "full_name": "macpaw-research/blip-icon-captioning",
+        "html_url": "https://huggingface.co/macpaw-research/blip-icon-captioning",
+        "retrieved_at": "2026-11-09T20:02:52Z",
+        "sha256": "1bc45c0b88f1ad9b5bdda5204145502d2e3d2782702f6e7c809499cb54b64d5b"
+      },
+      {
+        "url": "https://huggingface.co/api/models/macpaw-research/blip-icon-captioning",
+        "resolved_url": "https://huggingface.co/api/models/macpaw-research/blip-icon-captioning",
+        "repository_id": "687e1424a9bd1aef0a8d2043",
+        "full_name": "macpaw-research/blip-icon-captioning",
+        "html_url": "https://huggingface.co/macpaw-research/blip-icon-captioning",
+        "retrieved_at": "2026-11-09T20:02:53Z",
+        "sha256": "1bc45c0b88f1ad9b5bdda5204145502d2e3d2782702f6e7c809499cb54b64d5b"
+      }
+    ]
+  },
+  {
+    "alias_id": "url:cb8c9f4bdc14dcea9d4e",
+    "target_id": "url:5d824526d56f179d3d51",
+    "repository_id": "687e16cf730ee8988a58e905",
+    "basis": "official_huggingface_repository_id",
+    "reviewed_at": "2026-11-09T20:03:00Z",
+    "observations": [
+      {
+        "url": "https://huggingface.co/api/models/MacPaw/yolov11l-ui-elements-detection",
+        "resolved_url": "https://huggingface.co/api/models/macpaw-research/yolov11l-ui-elements-detection",
+        "repository_id": "687e16cf730ee8988a58e905",
+        "full_name": "macpaw-research/yolov11l-ui-elements-detection",
+        "html_url": "https://huggingface.co/macpaw-research/yolov11l-ui-elements-detection",
+        "retrieved_at": "2026-11-09T20:02:59Z",
+        "sha256": "43b55afc25cc24dd456ff3bb2f6c155489612594deb94c7764f1e8e9b2e8ef7c"
+      },
+      {
+        "url": "https://huggingface.co/api/models/macpaw-research/yolov11l-ui-elements-detection",
+        "resolved_url": "https://huggingface.co/api/models/macpaw-research/yolov11l-ui-elements-detection",
+        "repository_id": "687e16cf730ee8988a58e905",
+        "full_name": "macpaw-research/yolov11l-ui-elements-detection",
+        "html_url": "https://huggingface.co/macpaw-research/yolov11l-ui-elements-detection",
+        "retrieved_at": "2026-11-09T20:03:00Z",
+        "sha256": "43b55afc25cc24dd456ff3bb2f6c155489612594deb94c7764f1e8e9b2e8ef7c"
+      }
+    ]
+  },
+  {
+    "alias_id": "url:3d3d7b48e91bc3461953",
+    "target_id": "url:66d842fe6552d3ca62a1",
+    "repository_id": "6836c21992605a253165abcf",
+    "basis": "official_huggingface_repository_id",
+    "reviewed_at": "2026-11-09T20:03:02Z",
+    "observations": [
+      {
+        "url": "https://huggingface.co/api/models/THUDM/androidgen-glm-4-9b",
+        "resolved_url": "https://huggingface.co/api/models/zai-org/androidgen-glm-4-9b",
+        "repository_id": "6836c21992605a253165abcf",
+        "full_name": "zai-org/androidgen-glm-4-9b",
+        "html_url": "https://huggingface.co/zai-org/androidgen-glm-4-9b",
+        "retrieved_at": "2026-11-09T20:03:02Z",
+        "sha256": "0b88c9823b6c5adc527daa666d9c4ab002f4ff0715611d0bb71f9dfe7602f2a3"
+      },
+      {
+        "url": "https://huggingface.co/api/models/zai-org/androidgen-glm-4-9b",
+        "resolved_url": "https://huggingface.co/api/models/zai-org/androidgen-glm-4-9b",
+        "repository_id": "6836c21992605a253165abcf",
+        "full_name": "zai-org/androidgen-glm-4-9b",
+        "html_url": "https://huggingface.co/zai-org/androidgen-glm-4-9b",
+        "retrieved_at": "2026-11-09T20:03:02Z",
+        "sha256": "0b88c9823b6c5adc527daa666d9c4ab002f4ff0715611d0bb71f9dfe7602f2a3"
+      }
+    ]
+  },
+  {
+    "alias_id": "url:3dcf99f7febe16404f95",
+    "target_id": "url:75e93dff049c046c586e",
+    "repository_id": "6836c22afc2676088d8d3643",
+    "basis": "official_huggingface_repository_id",
+    "reviewed_at": "2026-11-09T20:03:07Z",
+    "observations": [
+      {
+        "url": "https://huggingface.co/api/models/THUDM/androidgen-llama-3-70b",
+        "resolved_url": "https://huggingface.co/api/models/zai-org/androidgen-llama-3-70b",
+        "repository_id": "6836c22afc2676088d8d3643",
+        "full_name": "zai-org/androidgen-llama-3-70b",
+        "html_url": "https://huggingface.co/zai-org/androidgen-llama-3-70b",
+        "retrieved_at": "2026-11-09T20:03:06Z",
+        "sha256": "60b8dee5bbbb8ff1a220b7986f30fc8f4188ee68a556aa1a849ac10a570afcd6"
+      },
+      {
+        "url": "https://huggingface.co/api/models/zai-org/androidgen-llama-3-70b",
+        "resolved_url": "https://huggingface.co/api/models/zai-org/androidgen-llama-3-70b",
+        "repository_id": "6836c22afc2676088d8d3643",
+        "full_name": "zai-org/androidgen-llama-3-70b",
+        "html_url": "https://huggingface.co/zai-org/androidgen-llama-3-70b",
+        "retrieved_at": "2026-11-09T20:03:07Z",
+        "sha256": "60b8dee5bbbb8ff1a220b7986f30fc8f4188ee68a556aa1a849ac10a570afcd6"
+      }
+    ]
+  },
+  {
+    "alias_id": "url:d2e23ee584caeafa6acb",
+    "target_id": "url:64d0220e17b4e67485f3",
+    "repository_id": "657d5bca17f67d5b87a3fb81",
+    "basis": "official_huggingface_repository_id",
+    "reviewed_at": "2026-11-09T20:03:08Z",
+    "observations": [
+      {
+        "url": "https://huggingface.co/api/models/THUDM/cogagent-vqa-hf",
+        "resolved_url": "https://huggingface.co/api/models/zai-org/cogagent-vqa-hf",
+        "repository_id": "657d5bca17f67d5b87a3fb81",
+        "full_name": "zai-org/cogagent-vqa-hf",
+        "html_url": "https://huggingface.co/zai-org/cogagent-vqa-hf",
+        "retrieved_at": "2026-11-09T20:03:07Z",
+        "sha256": "ed3760213e34cda7dd137adef4258fce7d4776a4c6aeae3546e84a3e1136716a"
+      },
+      {
+        "url": "https://huggingface.co/api/models/zai-org/cogagent-vqa-hf",
+        "resolved_url": "https://huggingface.co/api/models/zai-org/cogagent-vqa-hf",
+        "repository_id": "657d5bca17f67d5b87a3fb81",
+        "full_name": "zai-org/cogagent-vqa-hf",
+        "html_url": "https://huggingface.co/zai-org/cogagent-vqa-hf",
+        "retrieved_at": "2026-11-09T20:03:08Z",
+        "sha256": "ed3760213e34cda7dd137adef4258fce7d4776a4c6aeae3546e84a3e1136716a"
+      }
+    ]
+  },
+  {
+    "alias_id": "url:5c9ae518eda787b0d88d",
+    "target_id": "url:02370867dd4b96000a33",
+    "repository_id": "667266e9a39f739479dbff65",
+    "basis": "official_huggingface_repository_id",
+    "reviewed_at": "2026-11-09T20:03:11Z",
+    "observations": [
+      {
+        "url": "https://huggingface.co/api/datasets/WebAgent/AutoGUI-v1-zip",
+        "resolved_url": "https://huggingface.co/api/datasets/HongxinLi/AutoGUI-v1-zip",
+        "repository_id": "667266e9a39f739479dbff65",
+        "full_name": "HongxinLi/AutoGUI-v1-zip",
+        "html_url": "https://huggingface.co/datasets/HongxinLi/AutoGUI-v1-zip",
+        "retrieved_at": "2026-11-09T20:03:11Z",
+        "sha256": "4650e1a432aba0ccc003c29d757bc6811edde1fa4573b9953efa3cded2a8bd55"
+      },
+      {
+        "url": "https://huggingface.co/api/datasets/HongxinLi/AutoGUI-v1-zip",
+        "resolved_url": "https://huggingface.co/api/datasets/HongxinLi/AutoGUI-v1-zip",
+        "repository_id": "667266e9a39f739479dbff65",
+        "full_name": "HongxinLi/AutoGUI-v1-zip",
+        "html_url": "https://huggingface.co/datasets/HongxinLi/AutoGUI-v1-zip",
+        "retrieved_at": "2026-11-09T20:03:11Z",
+        "sha256": "4650e1a432aba0ccc003c29d757bc6811edde1fa4573b9953efa3cded2a8bd55"
+      }
+    ]
+  },
+  {
+    "alias_id": "url:f9ab86d5c65613b9e11c",
+    "target_id": "url:e96299566d12e790422e",
+    "repository_id": "687e0f7f5664e1e42faf2df7",
+    "basis": "official_huggingface_repository_id",
+    "reviewed_at": "2026-11-09T20:03:13Z",
+    "observations": [
+      {
+        "url": "https://huggingface.co/api/datasets/MacPaw/Screen2AX-Element",
+        "resolved_url": "https://huggingface.co/api/datasets/macpaw-research/Screen2AX-Element",
+        "repository_id": "687e0f7f5664e1e42faf2df7",
+        "full_name": "macpaw-research/Screen2AX-Element",
+        "html_url": "https://huggingface.co/datasets/macpaw-research/Screen2AX-Element",
+        "retrieved_at": "2026-11-09T20:03:13Z",
+        "sha256": "eeedf3d2243edcd2aa11df3e282731fe6d6c4d20f67a1834af2384130ab56ecd"
+      },
+      {
+        "url": "https://huggingface.co/api/datasets/macpaw-research/Screen2AX-Element",
+        "resolved_url": "https://huggingface.co/api/datasets/macpaw-research/Screen2AX-Element",
+        "repository_id": "687e0f7f5664e1e42faf2df7",
+        "full_name": "macpaw-research/Screen2AX-Element",
+        "html_url": "https://huggingface.co/datasets/macpaw-research/Screen2AX-Element",
+        "retrieved_at": "2026-11-09T20:03:13Z",
+        "sha256": "eeedf3d2243edcd2aa11df3e282731fe6d6c4d20f67a1834af2384130ab56ecd"
+      }
+    ]
+  },
+  {
+    "alias_id": "url:40a88ecca9f213b0ef62",
+    "target_id": "url:5726382dc813f040f829",
+    "repository_id": "657bee528c3aee705476a5c7",
+    "basis": "official_huggingface_repository_id",
+    "reviewed_at": "2026-11-09T20:03:14Z",
+    "observations": [
+      {
+        "url": "https://huggingface.co/api/models/THUDM/cogagent-chat-hf",
+        "resolved_url": "https://huggingface.co/api/models/zai-org/cogagent-chat-hf",
+        "repository_id": "657bee528c3aee705476a5c7",
+        "full_name": "zai-org/cogagent-chat-hf",
+        "html_url": "https://huggingface.co/zai-org/cogagent-chat-hf",
+        "retrieved_at": "2026-11-09T20:03:14Z",
+        "sha256": "cc325baca7fac28f5cbbb1233eeec9329dc529a880aca6c1ed7ee367a563149b"
+      },
+      {
+        "url": "https://huggingface.co/api/models/zai-org/cogagent-chat-hf",
+        "resolved_url": "https://huggingface.co/api/models/zai-org/cogagent-chat-hf",
+        "repository_id": "657bee528c3aee705476a5c7",
+        "full_name": "zai-org/cogagent-chat-hf",
+        "html_url": "https://huggingface.co/zai-org/cogagent-chat-hf",
+        "retrieved_at": "2026-11-09T20:03:14Z",
+        "sha256": "cc325baca7fac28f5cbbb1233eeec9329dc529a880aca6c1ed7ee367a563149b"
+      }
+    ]
   }
 ]

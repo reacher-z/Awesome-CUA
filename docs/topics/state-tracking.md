@@ -2,9 +2,9 @@
 
 [Home](../../README.md) · [All topics](../topics.md) · [Full arXiv bibliography](../papers.md)
 
-128 source-reviewed resources tagged `state-tracking`. Curated metadata; unknown facts are shown as —.
+147 source-reviewed resources tagged `state-tracking`. Curated metadata; unknown facts are shown as —.
 
-**Contents:** [Benchmarks (6)](#benchmarks) · [Models (1)](#models) · [Agents (6)](#agents) · [Frameworks (17)](#frameworks) · [Tools (13)](#tools) · [Infrastructure (5)](#infrastructure) · [Products (1)](#products) · [Learning resources (2)](#learning-resources) · [Papers (77)](#papers)
+**Contents:** [Benchmarks (7)](#benchmarks) · [Datasets (1)](#datasets) · [Models (5)](#models) · [Agents (7)](#agents) · [Frameworks (21)](#frameworks) · [Tools (20)](#tools) · [Infrastructure (5)](#infrastructure) · [Products (1)](#products) · [Learning resources (3)](#learning-resources) · [Papers (77)](#papers)
 
 ## Benchmarks
 
@@ -16,19 +16,31 @@
 | [FineState-Bench](https://github.com/FengxianJi/FineState-Bench) | cross-platform, desktop, web | — | — | — | A GUI benchmark for precise state changes across desktop, web, and mobile interfaces, with 2,257 tasks and metrics separating element location from interaction success. | [✓ 2026‑11‑09](https://raw.githubusercontent.com/FengxianJi/FineState-Bench/HEAD/README.md) |
 | [Graph-Guided Agentic Testing](https://github.com/avikundal/graph-guided-agentic-testing) | web | — | — | code MIT | Uses a browser agent to explore web checkout flows into a Neo4j state graph and synthesizes graph-guided end-to-end tests. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/avikundal/graph-guided-agentic-testing/HEAD/README.md) |
 | [Preflight-Bench](https://github.com/multimodal-ai-engineering/preflight-bench) | web, desktop | [2610.39282](https://arxiv.org/abs/2610.39282) (2026) | — | code MIT | Preflight-Bench evaluates pre-click staleness checks and page-load synchronization for computer-use agents operating under asynchronous UI updates. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/multimodal-ai-engineering/preflight-bench/HEAD/README.md) |
+| [WebReplayBench](https://github.com/mahirlabibdihan/WebReplayBench) | web | — | — | — | A web agent benchmark with a local shop site, BrowserGym tasks, and database audit records for measuring task completion and repeated writes during backtracking. | [✓ 2026‑11‑09](https://raw.githubusercontent.com/mahirlabibdihan/WebReplayBench/HEAD/README.md) |
+
+## Datasets
+
+All entries in this section: web.
+
+| Resource | Paper | Scale | License | Description | Evidence |
+| --- | --- | --- | --- | --- | --- |
+| [Preflight Bench](https://huggingface.co/datasets/multimodal-ai-engineering/preflight-bench) | [2610.39282](https://arxiv.org/abs/2610.39282) (2026) | — | data cc-by-4.0 | A dataset of paired screenshots, click outcomes and checker answers for evaluating pre-click checks on changing web pages. It includes Lance tables and development and test splits. | [✓ 2026‑11‑09](https://huggingface.co/api/datasets/multimodal-ai-engineering/preflight-bench) |
 
 ## Models
 
-All entries in this section: desktop, macos.
-
-| Resource | Paper | License | Description | Evidence |
-| --- | --- | --- | --- | --- |
-| [HobbyLM-1B Computer Use](https://huggingface.co/Hobbylm/hobbylm-1B-computer-use) | — | weights apache-2.0 | An on-device LoRA adapter that turns English requests and Mac state into single actions executed by a companion app, with training code and evaluation records. | [✓ 2026‑11‑09](https://huggingface.co/api/models/Hobbylm/hobbylm-1B-computer-use) |
+| Resource | Environments | Paper | License | Description | Evidence |
+| --- | --- | --- | --- | --- | --- |
+| [HobbyLM-1B Computer Use](https://huggingface.co/Hobbylm/hobbylm-1B-computer-use) | desktop, macos | — | weights apache-2.0 | An on-device LoRA adapter that turns English requests and Mac state into single actions executed by a companion app, with training code and evaluation records. | [✓ 2026‑11‑09](https://huggingface.co/api/models/Hobbylm/hobbylm-1B-computer-use) |
+| [jiamingzz/lgwm](https://huggingface.co/jiamingzz/lgwm) | unspecified | [2610.11942](https://arxiv.org/abs/2610.11942) (2026) | weights apache-2.0 | Released weights for a GUI world model that predicts a screen representation after an action and checks the observed transition, with a separate harm scoring head. | [✓ 2026‑11‑09](https://huggingface.co/api/models/jiamingzz/lgwm) |
+| [OTA-v1](https://huggingface.co/OTA-AI/OTA-v1) | web | — | weights apache-2.0 | OTA-v1 is a fine-tuned browser-agent checkpoint designed to plan browser actions, use tools and maintain context across multi-step web tasks. | [✓ 2026‑11‑09](https://huggingface.co/api/models/OTA-AI/OTA-v1) |
+| [S1-Accurate-LoRA](https://huggingface.co/elidot007/S1-Accurate-LoRA) | desktop, windows | — | weights apache-2.0 | A LoRA adapter for a desktop agent's decision model uses window screenshots to select an operation and target element from candidate actions when a faster model is uncertain. | [✓ 2026‑11‑09](https://huggingface.co/api/models/elidot007/S1-Accurate-LoRA) |
+| [S1-Fast](https://huggingface.co/elidot007/S1-Fast) | desktop, windows | — | weights apache-2.0 | S1-Fast predicts desktop actions, target elements and step status from a Windows UI Automation snapshot and visual tokens in one encoder pass. | [✓ 2026‑11‑09](https://huggingface.co/api/models/elidot007/S1-Fast) |
 
 ## Agents
 
 | Resource | Environments | Paper | License | Description | Evidence |
 | --- | --- | --- | --- | --- | --- |
+| [Actell](https://github.com/ja1chen/actell) | ios | — | code GPL-3.0 | An iPhone agent prototype observes screenshots or accessibility content and issues taps and drags through CoreDevice, using a VPN loopback or optional hardware relay. | [✓ 2026‑11‑09](https://raw.githubusercontent.com/ja1chen/actell/HEAD/README.md) |
 | [AGI-0 Agent](https://www.theagi.company/blog/android-world) | android | — | — | AGI-0 uses screenshots to navigate Android apps, planning subtasks and checking screen changes after each action. Its publisher reports AndroidWorld results. | [✓ 2026‑11‑09](https://www.theagi.company/blog/android-world) |
 | [Browser Agent (uiuing)](https://github.com/uiuing/browser-agent) | web | — | code MIT | Chrome side-panel agent whose page engine reads a whole-page semantic DOM snapshot, re-grounds targets by element fingerprints, dispatches DOM events and checks post-conditions before reporting success. | [✓ 2026‑10‑18](https://raw.githubusercontent.com/uiuing/browser-agent/HEAD/README.md) |
 | [Crimson-Heart](https://github.com/YEYVHAIOU/Crimson-Heart) | desktop, windows | — | code MIT | Persistent multimodal desktop agent with explicit runtime state management, priority-aware scheduling, and interruptible execution. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/YEYVHAIOU/Crimson-Heart/HEAD/README.md) |
@@ -43,14 +55,18 @@ All entries in this section: desktop, macos.
 | [action-receipt](https://github.com/JeremiahM37/action-receipt) | web | — | code MIT | Generates deterministic per-action DOM and network effect receipts for auditing browser-agent executions. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/JeremiahM37/action-receipt/main/README.md) |
 | [Active Desktop Context Engine](https://github.com/amirf147/active-desktop-context-engine) | desktop, windows | — | code Apache-2.0 | Zero-cloud Windows OS perception layer and Model Context Protocol server streaming real-time desktop UI context to AI agents. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/amirf147/active-desktop-context-engine/master/README.md) |
 | [AgentProg](https://github.com/MobileLLM/AgentProg) | android | [2512.10371](https://arxiv.org/abs/2512.10371) (2025) | code Apache-2.0 | Android GUI-agent framework that keeps long-running task context in structured programs, variables and control flow, with a CLI and AndroidWorld integration. | [✓ 2026‑10‑18](https://raw.githubusercontent.com/MobileLLM/AgentProg/HEAD/README.md) |
+| [Brobot](https://github.com/jspinak/brobot) | cross-platform, desktop | — | code MIT | Brobot is a Java visual automation framework that recognizes interface elements and models application states to navigate, perform actions and recover from errors. | [✓ 2026‑11‑09](https://raw.githubusercontent.com/jspinak/brobot/HEAD/README.md) |
 | [browser-action-receipt](https://github.com/scalar-atelier/browser-action-receipt) | web | — | code MIT | Verification protocol that binds human approval to target DOM state, aborting clicks and emitting a receipt if the page mutates. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/scalar-atelier/browser-action-receipt/main/README.md) |
 | [Domstamp](https://github.com/zuub-don/domstamp) | web | — | code MIT | Framework-neutral browser-state snapshotter capturing compact, diffable DOM and accessibility states for AI web agents. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/zuub-don/domstamp/main/README.md) |
 | [ESP (Echo-Skeleton Perception)](https://github.com/Badtheorylabs/esp) | cross-platform, desktop, web | — | — | Stateful, event-driven screen-perception runtime that converts UI changes into compact text events for text-only computer-use agents. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/Badtheorylabs/esp/HEAD/README.md) |
 | [LangGraph](https://github.com/langchain-ai/langgraph) | unspecified | — | code MIT | LangGraph is a stateful graph orchestration framework for building long-running, cyclical, and human-in-the-loop LLM and CUA agents. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/langchain-ai/langgraph/HEAD/README.md) |
 | [Ommatix](https://github.com/Yosoyepa/Ommatix) | cross-platform, desktop, web | — | — | Ommatix is an incremental spatial-indexing perception engine that tracks stable UI element IDs and state diffs across desktop frames. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/Yosoyepa/Ommatix/HEAD/README.md) |
+| [openadapt-types](https://github.com/OpenAdaptAI/openadapt-types) | cross-platform, web, desktop, windows, macos, linux | — | code MIT | openadapt-types supplies validated Python models and JSON schemas for computer-use screens, actions, results, and interaction trajectories. | [✓ 2026‑11‑09](https://raw.githubusercontent.com/OpenAdaptAI/openadapt-types/HEAD/README.md) |
 | [outlive](https://github.com/Sy-D/outlive) | web | — | code MIT | Checkpoints and resumes long-running Solari cloud browser sessions across 10-minute container timeouts. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/Sy-D/outlive/main/README.md) |
+| [Predicate TypeScript SDK](https://github.com/PredicateSystems/sdk-typescript) | web | — | — | Predicate TypeScript SDK supplies browser-agent snapshots, element actions, assertions and traces for building runs that check UI outcomes. | [✓ 2026‑11‑09](https://raw.githubusercontent.com/PredicateSystems/sdk-typescript/HEAD/README.md) |
 | [Pursuit Permit WebMCP](https://github.com/MoAqil/pursuit-permit-webmcp) | web | — | code MIT | Revision-bound capacity permit protocol for WebMCP browser agents that invalidates stale approvals when page state changes. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/MoAqil/pursuit-permit-webmcp/main/README.md) |
 | [Qontinui](https://github.com/qontinui/qontinui) | cross-platform, desktop | — | code AGPL-3.0 | Qontinui is a model-based GUI automation framework that represents application screens as state graphs with visual template and OCR matching. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/qontinui/qontinui/HEAD/README.md) |
+| [redux-webmcp](https://github.com/breeznik/redux-webmcp) | web | — | code MIT | A WebMCP bridge for Redux Toolkit apps that lets browser agents dispatch allowed actions and inspect state changes. Developers can require approval for selected actions. | [✓ 2026‑11‑09](https://raw.githubusercontent.com/breeznik/redux-webmcp/HEAD/README.md) |
 | [SameState WebMCP](https://github.com/breeznik/samestate-webmcp) | web | — | code MIT | WebMCP reference architecture exposing Redux frontend state directly to browser agents for synchronized human-agent interaction. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/breeznik/samestate-webmcp/main/README.md) |
 | [Snapsurf](https://github.com/zumerlab/snapsurf) | web | — | code MIT | Web navigation and verification layer for AI agents providing compact semantic page digests and typed post-action DOM diffs. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/zumerlab/snapsurf/HEAD/README.md) |
 | [StateAct](https://github.com/ai-nikolai/StateAct) | web | [2410.02810](https://arxiv.org/abs/2410.02810) (2024) | — | State-tracking prompts and experiment runners for language agents, including a WebShop implementation alongside text-based environments. | [✓ 2026‑10‑17](https://raw.githubusercontent.com/ai-nikolai/StateAct/HEAD/README.md) |
@@ -64,10 +80,16 @@ All entries in this section: desktop, macos.
 | --- | --- | --- | --- | --- | --- |
 | [AH64-dll Browser Automation Toolkit](https://github.com/AH64-dll/browser-automation-toolkit) | web | — | code MIT | Suite of five Python CDP utilities including a page watcher, form filler, table scraper, DOM change differ, and health checker. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/AH64-dll/browser-automation-toolkit/main/README.md) |
 | [Anionex DSH Computer Use](https://github.com/Anionex/dsh-computer-use) | desktop, macos | — | code MIT | macOS computer-use plugin for DeepSeek Harness featuring fresh Accessibility observations, stale-state rejection, and scoped permissions. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/Anionex/dsh-computer-use/HEAD/README.md) |
+| [Astra plays GTA Vice City](https://github.com/da03/astra-plays-gta) | desktop, macos | — | code MIT | A macOS helper and prompt let a desktop agent control GTA Vice City through screenshots and short input steps, pausing the game while it decides what to do next. | [✓ 2026‑11‑09](https://raw.githubusercontent.com/da03/astra-plays-gta/HEAD/README.md) |
 | [AXTree API](https://github.com/amaar-mc/axtree-api) | desktop, macos | — | code MIT | Event-driven macOS Accessibility tree streaming server and action bridge for computer-use agents. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/amaar-mc/axtree-api/HEAD/README.md) |
+| [ChatGPT WebUI Bridge](https://github.com/OLmatter/chatgpt-bridge) | web | — | code MIT | A local HTTP bridge lets agents send messages to logged-in ChatGPT browser tabs, read replies and page state, and supervise idle tabs through a userscript. | [✓ 2026‑11‑09](https://raw.githubusercontent.com/OLmatter/chatgpt-bridge/HEAD/README.md) |
 | [ChimeraX-SessionStates](https://github.com/ShiinaHiiragi/chimerax-states) | desktop, linux | — | — | ChimeraX plugin used by ScienceBoard to expose internal molecular-visualization session state for deterministic benchmark evaluation. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/ShiinaHiiragi/chimerax-states/HEAD/README.md) |
+| [chrome-agent](https://github.com/sderosiaux/chrome-agent) | web | — | code MIT | chrome-agent is a Rust CLI for browser agents to inspect pages, act through Chrome and check resulting state. It also records and replays local command sequences. | [✓ 2026‑11‑09](https://raw.githubusercontent.com/sderosiaux/chrome-agent/HEAD/README.md) |
 | [Code2World](https://github.com/AMAP-ML/Code2World) | android | [2602.09856](https://arxiv.org/abs/2602.09856) (2026) | — | Code2World provides code for predicting the next Android GUI screen from a screenshot and proposed action through renderable code, with an AndroidWorld agent integration. | [✓ 2026‑11‑09](https://raw.githubusercontent.com/AMAP-ML/Code2World/HEAD/readme.md) |
+| [computer-use-mcp](https://github.com/minghinmatthewlam/computer-use-mcp) | desktop, macos | — | code MIT | A Swift MCP server that lets agents inspect and operate macOS applications. Its shared engine manages accessibility, screen capture, and input delivery. | [✓ 2026‑11‑09](https://raw.githubusercontent.com/minghinmatthewlam/computer-use-mcp/HEAD/README.md) |
+| [DSH iOS Simulator](https://github.com/ZSeven-W/dsh-ios) | ios, macos, desktop | — | code MIT | A DeepSeek Harness plugin that gives agents access to an iOS Simulator or USB-connected iPhone, with live video, UI inspection, and tap tools. | [✓ 2026‑11‑09](https://raw.githubusercontent.com/ZSeven-W/dsh-ios/HEAD/README.md) |
 | [GenPark SPA Settlement Waiter Skill](https://github.com/Alpha-Park/genpark-spa-network-idle-settlement-waiter-skill) | web | — | — | Agent skill for awaiting single-page-application network idle and DOM mutation settlement before acting. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/Alpha-Park/genpark-spa-network-idle-settlement-waiter-skill/main/README.md) |
+| [Godot Editor MCP](https://github.com/hybridindie/godot-mcp) | desktop | — | code MIT | An MCP server and Godot addon that let agents inspect and edit a live game editor, control play sessions, simulate input, and capture screenshots. | [✓ 2026‑11‑09](https://raw.githubusercontent.com/hybridindie/godot-mcp/HEAD/README.md) |
 | [IdemStep](https://github.com/SuperMarioYL/idemstep) | web, desktop | — | code Apache-2.0 | Deduplicates repeated agent actions and HTTP retries using keyed idempotency caches and a local verification proxy. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/SuperMarioYL/idemstep/HEAD/README.md) |
 | [LlamaTouch Evaluator](https://github.com/LlamaTouch/Evaluator) | unspecified | [2404.16054](https://arxiv.org/abs/2404.16054) (2024) | — | LlamaTouch Evaluator checks mobile-agent execution traces against annotated interface states and provides exact-match and subsequence action baselines. | [✓ 2026‑11‑09](https://raw.githubusercontent.com/LlamaTouch/Evaluator/HEAD/README.md) |
 | [nexus-browser-mcp](https://github.com/paipaipai666/nexus-browser-mcp) | web | — | code MIT | Browser automation MCP server with event-driven deterministic Playwright and accessibility-tree snapshots. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/paipaipai666/nexus-browser-mcp/HEAD/README.md) |
@@ -75,6 +97,7 @@ All entries in this section: desktop, macos.
 | [OSWright](https://github.com/Ask-812/oswright) | desktop, windows | — | code MIT | Windows desktop automation MCP server using incremental UI Automation state diffs in place of full-screen vision loops. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/Ask-812/oswright/HEAD/README.md) |
 | [ScreenWatch](https://github.com/abnsapkota001/screenwatch) | cross-platform, desktop, windows, macos, linux | — | code MIT | Python library for detecting persistent visual state changes and UI settlement in desktop applications. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/abnsapkota001/screenwatch/main/README.md) |
 | [settled-computer](https://github.com/Remote-Skills/settled-computer) | cross-platform, desktop, web | — | code MIT | settled-computer is an event-driven MCP server that detects UI rendering quiescence so computer-use agents avoid fixed sleep delays and stale frames. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/Remote-Skills/settled-computer/HEAD/README.md) |
+| [tui-use](https://github.com/onesuper/tui-use) | cross-platform, desktop, windows, macos, linux | — | code MIT | tui-use is a CLI utility that lets agents read terminal application screens and send keystrokes through persistent PTY sessions. It renders text snapshots and can wait for screen changes. | [✓ 2026‑11‑09](https://raw.githubusercontent.com/onesuper/tui-use/HEAD/README.md) |
 
 ## Infrastructure
 
@@ -96,12 +119,11 @@ All entries in this section: web.
 
 ## Learning resources
 
-All entries in this section: android.
-
-| Resource | License | Description | Evidence |
-| --- | --- | --- | --- |
-| [Achieving 91.4% on Android World: A New Approach to Mobile UI Automation](https://droidrun.ai/benchmark/method) | — | Technical article describing an Android UI agent that alternates planning with single actions, checks screen changes and uses a dedicated text editing path. It reports AndroidWorld results. | [✓ 2026‑11‑09](https://droidrun.ai/benchmark/method) |
-| [Finalrun Agentic Approach](https://github.com/final-run/finalrun-android-world-benchmark) | — | Illustrated account of FinalRun's Android agent approach, with task walkthroughs and recordings showing screen observation, action planning, and state checks. | [✓ 2026‑11‑09](https://raw.githubusercontent.com/final-run/finalrun-android-world-benchmark/HEAD/README.md) |
+| Resource | Environments | License | Description | Evidence |
+| --- | --- | --- | --- | --- |
+| [Achieving 91.4% on Android World: A New Approach to Mobile UI Automation](https://droidrun.ai/benchmark/method) | android | — | Technical article describing an Android UI agent that alternates planning with single actions, checks screen changes and uses a dedicated text editing path. It reports AndroidWorld results. | [✓ 2026‑11‑09](https://droidrun.ai/benchmark/method) |
+| [Finalrun Agentic Approach](https://github.com/final-run/finalrun-android-world-benchmark) | android | — | Illustrated account of FinalRun's Android agent approach, with task walkthroughs and recordings showing screen observation, action planning, and state checks. | [✓ 2026‑11‑09](https://raw.githubusercontent.com/final-run/finalrun-android-world-benchmark/HEAD/README.md) |
+| [linux-use-recipes](https://github.com/javimosch/linux-use-recipes) | desktop, linux, web, cross-platform | code Unlicense | A collection of recipes for automating Linux desktop applications and websites with linux-use. It covers browser setup, accessibility pitfalls, posting workflows and verification. | [✓ 2026‑11‑09](https://raw.githubusercontent.com/javimosch/linux-use-recipes/HEAD/README.md) |
 
 ## Papers
 

@@ -2,9 +2,9 @@
 
 [Home](../../README.md) · [All topics](../topics.md) · [Full arXiv bibliography](../papers.md)
 
-76 source-reviewed resources tagged `world-models`. Curated metadata; unknown facts are shown as —.
+79 source-reviewed resources tagged `world-models`. Curated metadata; unknown facts are shown as —.
 
-**Contents:** [Datasets (4)](#datasets) · [Models (7)](#models) · [Agents (2)](#agents) · [Frameworks (10)](#frameworks) · [Tools (1)](#tools) · [Surveys (1)](#surveys) · [Papers (51)](#papers)
+**Contents:** [Datasets (5)](#datasets) · [Models (9)](#models) · [Agents (2)](#agents) · [Frameworks (10)](#frameworks) · [Tools (1)](#tools) · [Surveys (1)](#surveys) · [Papers (51)](#papers)
 
 ## Datasets
 
@@ -12,6 +12,7 @@
 | --- | --- | --- | --- | --- | --- | --- |
 | [AndroidCode](https://huggingface.co/datasets/GD-ML/AndroidCode) | android | [2602.09856](https://arxiv.org/abs/2602.09856) (2026) | [> 80,000 screen–action pairs](https://raw.githubusercontent.com/AMAP-ML/Code2World/HEAD/readme.md) | data MIT | HTML and annotation release used for Code2World’s action-conditioned GUI-state prediction training, constructed from mobile GUI trajectories. | [✓ 2026‑10‑18](https://raw.githubusercontent.com/AMAP-ML/Code2World/HEAD/readme.md) |
 | [Dreamer V1 Data](https://huggingface.co/datasets/osunlp/Dreamer-V1-Data) | web | [2411.06559](https://arxiv.org/abs/2411.06559) (2024) | — | data cc-by-nc-sa-4.0 | Web-world-model training data with prompts, images, action descriptions, and responses, released with the WebDreamer project. | [✓ 2026‑10‑16](https://huggingface.co/datasets/osunlp/Dreamer-V1-Data/raw/main/README.md) |
+| [LGWM data and RSWT-Bench](https://huggingface.co/datasets/jiamingzz/lgwm-data) | android, web, cross-platform | [2610.11942](https://arxiv.org/abs/2610.11942) (2026) | — | — | A dataset of GUI screen transitions for training a world model, released with RSWT-Bench to evaluate whether observed screens follow the intended actions. | [✓ 2026‑11‑09](https://huggingface.co/api/datasets/jiamingzz/lgwm-data) |
 | [Mobile-GUI-Worldmodel-SFT](https://huggingface.co/datasets/xwk123/Mobile-GUI-Worldmodel-SFT) | android | — | — | data other | A mobile GUI dataset for world-model training and evaluation. Its trajectory archives pair screenshots with page-state text and action-formatted training examples. | [✓ 2026‑11‑09](https://huggingface.co/api/datasets/xwk123/Mobile-GUI-Worldmodel-SFT) |
 | [WebEvolver SFT data](https://huggingface.co/datasets/CognitiveKernel/WebEvolver) | web | [2504.21024](https://arxiv.org/abs/2504.21024) (2025) | — | data MIT | Two JSONL collections for supervised fine-tuning the WebEvolver agent policy and web world model. | [✓ 2026‑10‑18](https://huggingface.co/datasets/CognitiveKernel/WebEvolver/raw/13f4f45b359e138a45b1c89bd4e913298c586ca9/README.md) |
 
@@ -25,6 +26,8 @@
 | [Dreamer-7B-Reddit](https://huggingface.co/osunlp/Dreamer-7B-Reddit) | web | [2411.06559](https://arxiv.org/abs/2411.06559) (2024) | weights apache-2.0 | Dreamer-7B-Reddit is a Reddit-domain checkpoint for WebDreamer. It predicts the screen state after a proposed action to support web-agent planning. | [✓ 2026‑11‑09](https://huggingface.co/api/models/osunlp/Dreamer-7B-Reddit) |
 | [Dreamer-7B-Shopping](https://huggingface.co/osunlp/Dreamer-7B-Shopping) | web | [2411.06559](https://arxiv.org/abs/2411.06559) (2024) | weights apache-2.0 | A shopping-domain Dreamer-7B checkpoint for WebDreamer, which uses screenshot-conditioned predictions of candidate web actions to support agent planning. | [✓ 2026‑11‑09](https://huggingface.co/api/models/osunlp/Dreamer-7B-Shopping) |
 | [gWorld (GuiWorld)](https://github.com/trillion-labs/gWorld) | android | [2602.01576](https://arxiv.org/abs/2602.01576) (2026) | — | gWorld is an open-weight 8B/32B mobile GUI world model that predicts next-step screen states via renderable web code generation. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/trillion-labs/gWorld/HEAD/README.md) |
+| [gWorld-8B](https://huggingface.co/trillionlabs/gWorld-8B) | android | [2602.01576](https://arxiv.org/abs/2602.01576) (2026) | weights apache-2.0 | gWorld-8B is a released mobile GUI world model that predicts the screen after an action by generating renderable HTML from the current screenshot and action. | [✓ 2026‑11‑09](https://huggingface.co/api/models/trillionlabs/gWorld-8B) |
+| [jiamingzz/lgwm](https://huggingface.co/jiamingzz/lgwm) | unspecified | [2610.11942](https://arxiv.org/abs/2610.11942) (2026) | weights apache-2.0 | Released weights for a GUI world model that predicts a screen representation after an action and checks the observed transition, with a separate harm scoring head. | [✓ 2026‑11‑09](https://huggingface.co/api/models/jiamingzz/lgwm) |
 | [Textual Foresight](https://github.com/aburns4/textualforesight) | android | [2406.07822](https://arxiv.org/abs/2406.07822) (2024) | code BSD-3-Clause | Textual Foresight pretrains UI representations by predicting textual descriptions of future screen states resulting from mobile UI actions. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/aburns4/textualforesight/HEAD/README.md) |
 
 ## Agents

@@ -177,3 +177,4 @@ html:has(.topic-directory,.paper-library,.data-hub){scroll-behavior:auto}
   .reading-shell :is(.paper-authors,.topic-resource-authors){line-height:24px}
   .reading-shell :is(.paper-authors,.topic-resource-authors) a{display:inline-block;min-height:24px}
 }
+.library-intro,.library-method,.paper-annotation,.row-desc,.list-intro,p.catalog-footnote,.reading-shell .answer-lead,.reading-shell>p,.reading-shell .source-list li{max-width:80ch}

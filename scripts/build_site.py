@@ -108,7 +108,7 @@ def write_site(destination):
     candidate_manifest=ROOT/'data/github-candidates-manifest.json'
     # Curated-only headline counts, with the populations still awaiting review reported beside them.
     counts=catalog_counts(rows,coverage,json.loads(candidate_manifest.read_text(encoding='utf-8')) if candidate_manifest.exists() else None)
-    index={'counts':counts,'coverage':{k:coverage[k] for k in ['as_of_utc','total_records','curated_records','metadata_only_records','by_kind','unindexed_candidates','sources','excluded_records','arxiv_archive_records']},
+    index={'counts':counts,'coverage':{k:coverage.get(k,0) if k=='out_of_scope_candidates' else coverage[k] for k in ['as_of_utc','total_records','curated_records','metadata_only_records','by_kind','unindexed_candidates','out_of_scope_candidates','sources','excluded_records','arxiv_archive_records']},
         'topics':{topic:[entry['en'],entry['zh']] for topic,entry in TOPICS.items()},'records':[{**{k:row[k] for k in keys},**({'authors_omitted':True} if row.get('authors_omitted') is True else {}),'page_url':resource_path(row),
         'paper_version':row.get('details',{}).get('arxiv_snapshot',{}).get('version'),
         'paper_source_url':row.get('details',{}).get('arxiv_snapshot',{}).get('versioned_url'),

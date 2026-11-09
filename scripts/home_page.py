@@ -505,8 +505,8 @@ def latest(view, zh=False) -> str:
         f'<a href="{esc(record["url"])}">{esc(clip(clean_title(record["name"]), 92))}</a>{stamp(record["review_status"], zh)}</li>' for record in found)
     batch = max(view["reviewed_at"].values())[:10]  # Papers count here, though the list below shows other resources.
     heading, lede, more, done, new = (
-        ("最新动态", f"最新审核批次：{batch}。扫描每小时运行一次，发现的条目在审核前始终带有标注。", "全部更新", "最近审核的资源", "最新扫描发现") if zh else
-        ("Latest", f"Newest review batch: {batch}. Scans run every hour; their finds stay labelled until reviewed.", "All updates", "Recently reviewed resources", "From the latest scans"))
+        ("最新动态", f"最新审核批次：{batch}。扫描每八小时运行一次，发现的条目在审核前始终带有标注。", "全部更新", "最近审核的资源", "最新扫描发现") if zh else
+        ("Latest", f"Newest review batch: {batch}. Scans run every eight hours; their finds stay labelled until reviewed.", "All updates", "Recently reviewed resources", "From the latest scans"))
     scan_log = f'<div class="r3-log"><h3>{ic("clock")}{new} <span>UTC</span></h3><ol>{found_items}</ol></div>' if found else ""
     return f'''<section class="section wrap r3-latest" aria-labelledby="latest-h">
 <div class="sec-head"><div><h2 id="latest-h">{heading}</h2><p>{lede}</p></div>
@@ -631,7 +631,7 @@ DIRECTORY = (
     ("read", (("/papers/", "Research papers"), ("/topics/", "Browse by topic"), ("/guides/", "Guides"), ("/categories/learning/", "Learning resources"))),
     ("browse", (("/catalog/", "Resource directory"), ("/categories/model/", "Models"), ("/categories/dataset/", "Datasets"), ("/categories/benchmark/", "Benchmarks"), ("/categories/framework/", "Frameworks"), ("/categories/product/", "Products"))),
     ("compare", (("/compare/benchmarks/", "Compare benchmarks"), ("/compare/datasets/", "Compare datasets"), ("/connections/", "Papers \u2192 code & data"))),
-    ("reference", (("/data/", "Download data"), ("/updates/", "Updates every hour"), ("/coverage/", "Coverage"), ("/about/", "Editorial policy"))),
+    ("reference", (("/data/", "Download data"), ("/updates/", "Scan updates"), ("/coverage/", "Coverage"), ("/about/", "Editorial policy"))),
 )
 DIRECTORY_ZH = (
     ("研究", (("/zh/papers/", "论文与综述阅读列表"), ("/zh/topics/", "按主题浏览论文、数据与工具"), ("/zh/categories/learning/", "学习资源"))),

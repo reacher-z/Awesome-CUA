@@ -37,15 +37,13 @@ class MissingCuaResourceTests(unittest.TestCase):
                 sha = next(ev for ev in self.records[rid]["evidence"] if ev["method"] == "editorial_primary_review")["sha256"]
                 self.assertIn(paper, {ref["target_id"] for ref in self.enrichment[rid]["references"] if ref["source_sha256"] == sha})
 
-    def test_project_mariner_waits_for_a_readable_product_page(self):
-        # The shell's HTML carries a per-request nonce, so a refetch changes its digest and the queue
-        # reason becomes "current source snapshot needs editorial review"; the note stays on the entry.
-        self.assertNotIn(MARINER, self.records)
-        self.assertIn(MARINER, self.queue)
-        entry = next(e for e in catalog.read_json(catalog.DATA / "editorial.json") if e.get("url") == "https://labs.google.com/mariner/")
-        self.assertIs(entry["editorial_reviewed"], False)
-        self.assertIn("client-rendered sign-in shell", entry["review_note"])
-
+    def test_project_mariner_is_curated_from_its_announcement(self):
+        # The review reads the Project Mariner section of Google's December 2024 Gemini 2.0 announcement.
+        record = self.records[MARINER]
+        self.assertEqual((record["review_status"], record["kind"]), ("curated", "product"))
+        self.assertNotIn(MARINER, self.queue)
+        primary = next(ev for ev in record["evidence"] if ev["method"] == "editorial_primary_review")
+        self.assertTrue(primary["url"].startswith("https://blog.google/"))
 
 if __name__ == "__main__":
     unittest.main()

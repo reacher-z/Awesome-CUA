@@ -630,7 +630,11 @@ def discover(args):
             info, body = {'url': source['url'], 'retrieved_at': now(), 'ok': False,
                 'error': 'Deferred after an HTTP 429 from this host; no request made.'}, b''
         else:
-            info, body = fetch(source["url"], args.refresh)
+            try:
+                info, body = fetch(source["url"], args.refresh)
+            except Exception as error:
+                info, body = {'url': source['url'], 'retrieved_at': now(), 'ok': False,
+                    'error': f'{type(error).__name__}: {error}', 'request_attempted': True}, b''
         manifest = {"id": source["id"], **info, "unique_resources": 0,
             'run_started_at': started, 'provider_host': host,
             'request_attempted': info.get('request_attempted', not deferred),
@@ -643,7 +647,7 @@ def discover(args):
             continue
         try:
             links = source_links(source, body)
-        except (ValueError, TypeError) as error:
+        except Exception as error:
             manifests[source['id']] = {**manifest, 'ok': False, 'parse_error': str(error)}
             print(f"FAILED {source['id']}: {error}", flush=True)
             continue

@@ -120,6 +120,13 @@ class SearchPagesTests(unittest.TestCase):
     def category_rows(self,path):
         text=(self.dest/path).read_text()
         return text,re.findall(r'<li class="row"[^>]*data-name="([^"]*)"',text)
+    def category_pages(self,kind,lang):
+        prefix='zh/categories/' if lang=='zh' else 'categories/'
+        paths,number=[],1
+        while (self.dest/prefix/f'{kind}/index.html' if number==1 else self.dest/prefix/f'{kind}/page/{number}/index.html').is_file():
+            paths.append(prefix+f'{kind}/index.html' if number==1 else prefix+f'{kind}/page/{number}/index.html')
+            number+=1
+        return paths
 
     def test_homepage_search_form_submits_to_the_explorer_in_its_language(self):
         form='<form class="field" role="search" action="/explore/#catalog" method="get" data-finder-form>'
@@ -162,14 +169,17 @@ class SearchPagesTests(unittest.TestCase):
         for kind in {row['kind'] for row in self.rows if eligible(row)}-{'paper'}:
             selected=[row for row in self.rows if eligible(row) and row['kind']==kind]
             expected=[row['name'] for row in sorted(selected,key=lambda row:(-len(view['mentions'].get(row['id'],())),row['name'].casefold()))]
-            for path in (f'categories/{kind}/index.html',f'zh/categories/{kind}/index.html'):
-                text,names=self.category_rows(path)
-                names=[html.unescape(name) for name in names]
-                start=len(names)-len(expected)
-                self.assertEqual(names[start:],expected,path)
-                ids=re.findall(r'<li class="row" id="([^"]+)"',text)
-                self.assertEqual(len(ids),len(set(ids)),path)
-                self.assertIn('hreflang="zh-CN"',text)
+            for lang in ('en','zh'):
+                pages=self.category_pages(kind,lang)
+                names,ids=[],[]
+                for path in pages:
+                    text,rows=self.category_rows(path)
+                    names+=[html.unescape(name) for name in rows]
+                    ids+=re.findall(r'<li class="row" id="([^"]+)"',text)
+                    self.assertIn('hreflang="zh-CN"',text)
+                # Featured rows repeat above the full list; the list itself remains in mention order across pages.
+                self.assertEqual(names[-len(expected):],expected,(kind,lang))
+                self.assertEqual(len(ids),len(set(ids)),(kind,lang))
 
     def test_benchmarks_feature_websitebench_then_clawbench_above_the_full_list(self):
         for path,heading in (('categories/benchmark/index.html','Featured'),('zh/categories/benchmark/index.html','精选')):

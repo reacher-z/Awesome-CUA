@@ -2,26 +2,39 @@
 
 [Home](../../README.md) · [All topics](../topics.md) · [Full arXiv bibliography](../papers.md)
 
-107 source-reviewed resources tagged `state-tracking`. Curated metadata; unknown facts are shown as —.
+128 source-reviewed resources tagged `state-tracking`. Curated metadata; unknown facts are shown as —.
 
-**Contents:** [Benchmarks (4)](#benchmarks) · [Agents (1)](#agents) · [Frameworks (17)](#frameworks) · [Tools (10)](#tools) · [Papers (75)](#papers)
+**Contents:** [Benchmarks (6)](#benchmarks) · [Models (1)](#models) · [Agents (6)](#agents) · [Frameworks (17)](#frameworks) · [Tools (13)](#tools) · [Infrastructure (5)](#infrastructure) · [Products (1)](#products) · [Learning resources (2)](#learning-resources) · [Papers (77)](#papers)
 
 ## Benchmarks
 
 | Resource | Environments | Paper | Scale | License | Description | Evidence |
 | --- | --- | --- | --- | --- | --- | --- |
 | [Action Check WebMCP](https://github.com/ajaknumber4/action-check-webmcp) | web | — | — | code MIT | External state-verification benchmark testing whether WebMCP browser tools actually produced their claimed DOM and backend effects. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/ajaknumber4/action-check-webmcp/main/README.md) |
+| [DynamicGUIBench](https://huggingface.co/datasets/L1007555652/osworld_env) | desktop, linux | [2604.25380](https://arxiv.org/abs/2604.25380) (2026) | [500 task JSON files](https://huggingface.co/api/datasets/L1007555652/osworld_env) · [150 tasks](https://huggingface.co/datasets/L1007555652/osworld_env/raw/44adf69d36a9bd27fbf2173fa619eb0ee92da095/README.md) | — | Desktop benchmark of 500 OSWorld-style tasks whose interfaces change between observations through scripted pop-ups, timed edits and shifting lists, with bilingual instructions and end-state evaluators. | [✓ 2026‑10‑18](https://huggingface.co/datasets/L1007555652/osworld_env/raw/44adf69d36a9bd27fbf2173fa619eb0ee92da095/README.md) |
 | [ExactDelta (ActionProof)](https://github.com/tsuchiyatakahirolab/actionproof) | web | — | — | code MIT | Post-action state-delta verification harness for WebMCP browser agents that detects silent UI and state failures. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/tsuchiyatakahirolab/actionproof/main/README.md) |
+| [FineState-Bench](https://github.com/FengxianJi/FineState-Bench) | cross-platform, desktop, web | — | — | — | A GUI benchmark for precise state changes across desktop, web, and mobile interfaces, with 2,257 tasks and metrics separating element location from interaction success. | [✓ 2026‑11‑09](https://raw.githubusercontent.com/FengxianJi/FineState-Bench/HEAD/README.md) |
 | [Graph-Guided Agentic Testing](https://github.com/avikundal/graph-guided-agentic-testing) | web | — | — | code MIT | Uses a browser agent to explore web checkout flows into a Neo4j state graph and synthesizes graph-guided end-to-end tests. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/avikundal/graph-guided-agentic-testing/HEAD/README.md) |
 | [Preflight-Bench](https://github.com/multimodal-ai-engineering/preflight-bench) | web, desktop | [2610.39282](https://arxiv.org/abs/2610.39282) (2026) | — | code MIT | Preflight-Bench evaluates pre-click staleness checks and page-load synchronization for computer-use agents operating under asynchronous UI updates. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/multimodal-ai-engineering/preflight-bench/HEAD/README.md) |
 
-## Agents
+## Models
 
-All entries in this section: desktop, windows.
+All entries in this section: desktop, macos.
 
 | Resource | Paper | License | Description | Evidence |
 | --- | --- | --- | --- | --- |
-| [Crimson-Heart](https://github.com/YEYVHAIOU/Crimson-Heart) | — | code MIT | Persistent multimodal desktop agent with explicit runtime state management, priority-aware scheduling, and interruptible execution. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/YEYVHAIOU/Crimson-Heart/HEAD/README.md) |
+| [HobbyLM-1B Computer Use](https://huggingface.co/Hobbylm/hobbylm-1B-computer-use) | — | weights apache-2.0 | An on-device LoRA adapter that turns English requests and Mac state into single actions executed by a companion app, with training code and evaluation records. | [✓ 2026‑11‑09](https://huggingface.co/api/models/Hobbylm/hobbylm-1B-computer-use) |
+
+## Agents
+
+| Resource | Environments | Paper | License | Description | Evidence |
+| --- | --- | --- | --- | --- | --- |
+| [AGI-0 Agent](https://www.theagi.company/blog/android-world) | android | — | — | AGI-0 uses screenshots to navigate Android apps, planning subtasks and checking screen changes after each action. Its publisher reports AndroidWorld results. | [✓ 2026‑11‑09](https://www.theagi.company/blog/android-world) |
+| [Browser Agent (uiuing)](https://github.com/uiuing/browser-agent) | web | — | code MIT | Chrome side-panel agent whose page engine reads a whole-page semantic DOM snapshot, re-grounds targets by element fingerprints, dispatches DOM events and checks post-conditions before reporting success. | [✓ 2026‑10‑18](https://raw.githubusercontent.com/uiuing/browser-agent/HEAD/README.md) |
+| [Crimson-Heart](https://github.com/YEYVHAIOU/Crimson-Heart) | desktop, windows | — | code MIT | Persistent multimodal desktop agent with explicit runtime state management, priority-aware scheduling, and interruptible execution. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/YEYVHAIOU/Crimson-Heart/HEAD/README.md) |
+| [FinalRun](https://blogs.finalrun.app/finalrun-achieves-the-new-1-sota-mobile-agent-eclipsing-benchmarks-at-97-4) | android | — | — | Android UI agent that prunes interface trees, waits for stable screens, feeds action failures back into its decisions, and takes fresh screenshots before grounding actions. | [✓ 2026‑11‑09](https://blogs.finalrun.app/finalrun-achieves-the-new-1-sota-mobile-agent-eclipsing-benchmarks-at-97-4) |
+| [HIPPO Agent](https://github.com/wadang/muscle-mem-agent) | desktop | — | — | A computer-use agent for multistep GUI tasks that stores task facts and progress in working memory and combines planning, grounding, and completion checks. | [✓ 2026‑11‑09](https://raw.githubusercontent.com/wadang/muscle-mem-agent/HEAD/README.md) |
+| [WebOperator](https://github.com/kagnlp/WebOperator) | web | [2512.12692](https://arxiv.org/abs/2512.12692) (2025) | code Apache-2.0 | A web agent using action-aware tree search to explore tasks and backtrack, checking page reconstruction and accounting for actions that may change website state. | [✓ 2026‑11‑09](https://raw.githubusercontent.com/kagnlp/WebOperator/HEAD/README.md) |
 
 ## Frameworks
 
@@ -53,12 +66,42 @@ All entries in this section: desktop, windows.
 | [Anionex DSH Computer Use](https://github.com/Anionex/dsh-computer-use) | desktop, macos | — | code MIT | macOS computer-use plugin for DeepSeek Harness featuring fresh Accessibility observations, stale-state rejection, and scoped permissions. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/Anionex/dsh-computer-use/HEAD/README.md) |
 | [AXTree API](https://github.com/amaar-mc/axtree-api) | desktop, macos | — | code MIT | Event-driven macOS Accessibility tree streaming server and action bridge for computer-use agents. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/amaar-mc/axtree-api/HEAD/README.md) |
 | [ChimeraX-SessionStates](https://github.com/ShiinaHiiragi/chimerax-states) | desktop, linux | — | — | ChimeraX plugin used by ScienceBoard to expose internal molecular-visualization session state for deterministic benchmark evaluation. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/ShiinaHiiragi/chimerax-states/HEAD/README.md) |
+| [Code2World](https://github.com/AMAP-ML/Code2World) | android | [2602.09856](https://arxiv.org/abs/2602.09856) (2026) | — | Code2World provides code for predicting the next Android GUI screen from a screenshot and proposed action through renderable code, with an AndroidWorld agent integration. | [✓ 2026‑11‑09](https://raw.githubusercontent.com/AMAP-ML/Code2World/HEAD/readme.md) |
 | [GenPark SPA Settlement Waiter Skill](https://github.com/Alpha-Park/genpark-spa-network-idle-settlement-waiter-skill) | web | — | — | Agent skill for awaiting single-page-application network idle and DOM mutation settlement before acting. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/Alpha-Park/genpark-spa-network-idle-settlement-waiter-skill/main/README.md) |
 | [IdemStep](https://github.com/SuperMarioYL/idemstep) | web, desktop | — | code Apache-2.0 | Deduplicates repeated agent actions and HTTP retries using keyed idempotency caches and a local verification proxy. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/SuperMarioYL/idemstep/HEAD/README.md) |
+| [LlamaTouch Evaluator](https://github.com/LlamaTouch/Evaluator) | unspecified | [2404.16054](https://arxiv.org/abs/2404.16054) (2024) | — | LlamaTouch Evaluator checks mobile-agent execution traces against annotated interface states and provides exact-match and subsequence action baselines. | [✓ 2026‑11‑09](https://raw.githubusercontent.com/LlamaTouch/Evaluator/HEAD/README.md) |
 | [nexus-browser-mcp](https://github.com/paipaipai666/nexus-browser-mcp) | web | — | code MIT | Browser automation MCP server with event-driven deterministic Playwright and accessibility-tree snapshots. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/paipaipai666/nexus-browser-mcp/HEAD/README.md) |
+| [OpenAdapt Agent](https://github.com/OpenAdaptAI/openadapt-agent) | cross-platform, web, desktop, windows | — | code MIT | OpenAdapt Agent exposes demonstrated application workflows as callable tools for AI agents. It enters values in an app and checks the record before and after saving. | [✓ 2026‑11‑09](https://raw.githubusercontent.com/OpenAdaptAI/openadapt-agent/HEAD/README.md) |
 | [OSWright](https://github.com/Ask-812/oswright) | desktop, windows | — | code MIT | Windows desktop automation MCP server using incremental UI Automation state diffs rather than full-screen vision loops. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/Ask-812/oswright/HEAD/README.md) |
 | [ScreenWatch](https://github.com/abnsapkota001/screenwatch) | cross-platform, desktop, windows, macos, linux | — | code MIT | Python library for detecting persistent visual state changes and UI settlement in desktop applications. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/abnsapkota001/screenwatch/main/README.md) |
 | [settled-computer](https://github.com/Remote-Skills/settled-computer) | cross-platform, desktop, web | — | code MIT | settled-computer is an event-driven MCP server that detects UI rendering quiescence so computer-use agents avoid fixed sleep delays and stale frames. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/Remote-Skills/settled-computer/HEAD/README.md) |
+
+## Infrastructure
+
+| Resource | Environments | Paper | License | Description | Evidence |
+| --- | --- | --- | --- | --- | --- |
+| [grass-gui](https://github.com/ShiinaHiiragi/grass-gui) | desktop, linux | — | — | ScienceBoard's replacement GRASS GIS 8.4 wxPython GUI with an embedded Flask server that loads mapsets and layers, runs GRASS commands and returns layer, region and console state as JSON for task checks. | [✓ 2026‑10‑18](https://raw.githubusercontent.com/ShiinaHiiragi/grass-gui/HEAD/manual.md) |
+| [kalgebra-kai](https://github.com/ShiinaHiiragi/kalgebra) | desktop, linux | — | code GPL-2.0 | Modified KAlgebra build from ScienceBoard with a local HTTP server that reports variables and plotted 2D and 3D functions and can switch tabs or add calculations and plots, so the benchmark can check math tasks. | [✓ 2026‑10‑18](https://raw.githubusercontent.com/ShiinaHiiragi/kalgebra/HEAD/manual.md) |
+| [MyInstagram](https://github.com/Acrab-Agentic-Labs/AppSim-Instagram) | android | — | — | MyInstagram is an Android clone app with interactive social screens, mock data, and state fields for checking the outcomes of GUI agent tasks. | [✓ 2026‑11‑09](https://raw.githubusercontent.com/Acrab-Agentic-Labs/AppSim-Instagram/HEAD/README.md) |
+| [youtube_sim](https://github.com/Acrab-Agentic-Labs/AppSim-Youtube) | android | — | — | youtube_sim is a YouTube-style Android test app with local media, interaction logs and task validators for checking mobile interface actions and resulting state. | [✓ 2026‑11‑09](https://raw.githubusercontent.com/Acrab-Agentic-Labs/AppSim-Youtube/HEAD/README.md) |
+| [Zoom Android Template](https://github.com/Acrab-Agentic-Labs/AppSim-Zoom) | android | — | — | Zoom Android Template is a simulated meeting app for mobile interaction tests, with seeded schedules and runtime records of meeting and profile actions. | [✓ 2026‑11‑09](https://raw.githubusercontent.com/Acrab-Agentic-Labs/AppSim-Zoom/HEAD/README.md) |
+
+## Products
+
+All entries in this section: web.
+
+| Resource | Publisher | Description | Evidence |
+| --- | --- | --- | --- |
+| [Predicate Systems (formerly SentienceAPI)](https://predicatesystems.ai) | — | Runtime trust layer for browser agents: a sidecar checks each action against local policy before it runs, and SDKs turn pages into compact ranked element snapshots and verify outcomes with DOM assertions. | [✓ 2026‑10‑20](https://predicatesystems.ai) |
+
+## Learning resources
+
+All entries in this section: android.
+
+| Resource | License | Description | Evidence |
+| --- | --- | --- | --- |
+| [Achieving 91.4% on Android World: A New Approach to Mobile UI Automation](https://droidrun.ai/benchmark/method) | — | Technical article describing an Android UI agent that alternates planning with single actions, checks screen changes and uses a dedicated text editing path. It reports AndroidWorld results. | [✓ 2026‑11‑09](https://droidrun.ai/benchmark/method) |
+| [Finalrun Agentic Approach](https://github.com/final-run/finalrun-android-world-benchmark) | — | Illustrated account of FinalRun's Android agent approach, with task walkthroughs and recordings showing screen observation, action planning, and state checks. | [✓ 2026‑11‑09](https://raw.githubusercontent.com/final-run/finalrun-android-world-benchmark/HEAD/README.md) |
 
 ## Papers
 
@@ -135,7 +178,9 @@ All entries in this section: desktop, windows.
 | 2024‑12‑18 | [CAD-Assistant: Tool-Augmented VLLMs as Generic CAD Task Solvers](https://arxiv.org/abs/2412.13810) | unspecified | CAD-Assistant plans CAD tasks and executes actions through FreeCAD's Python API, using the changing design state to guide later commands. |
 | 2024‑10‑31 | [From Context to Action: Analysis of the Impact of State Representation and Context on the Generalization of Multi-Turn Web Navigation Agents](https://arxiv.org/abs/2410.23555) | web | Analyzes how interaction history and webpage representation affect multiturn web-agent generalization across unfamiliar websites, task categories, and geographic settings. |
 | 2024‑10‑24 | [OSCAR: Operating System Control via State-Aware Reasoning and Re-Planning](https://arxiv.org/abs/2410.18963) | desktop, cross-platform | OSCAR translates user instructions into Python control code while observing screen images and acting through mouse and keyboard operations. A state-machine controller handles errors and replans tasks during execution across desktop and mobile applications. |
+| 2024‑09‑11 | [Guardian: A Runtime Framework for LLM-Based UI Exploration](https://dl.acm.org/doi/abs/10.1145/3650212.3680334) | unspecified | Guardian guides LLM-driven mobile app testing by narrowing available UI actions and replanning after invalidated actions; it is evaluated on 58 tasks from 23 apps. |
 | 2024‑07‑17 | [Agent-E: From Autonomous Web Navigation to Foundational Design Principles in Agentic Systems](https://arxiv.org/abs/2407.13032) | web | Agent-E combines hierarchical web-task control with DOM distillation and observations of interface changes. WebVoyager experiments inform a broader discussion of primitive skills, observation reduction, and self-improvement in agent architecture. |
 | 2024‑07‑03 | [Seeing is Believing: Vision-driven Non-crash Functional Bug Detection for Mobile Apps](https://arxiv.org/abs/2407.03037) | unspecified | Trident combines exploration, monitoring, and detection agents to identify functional bugs that do not crash a mobile app. It reasons over screenshot sequences and interface transitions to construct test oracles, evaluated on 590 non-crash bugs and additional live apps. |
 | 2024‑05‑17 | [Latent State Estimation Helps UI Agents to Reason](https://arxiv.org/abs/2405.11120) | unspecified | Studies explicit textual estimates of latent UI state, including whether commanded actions occurred and how far a task has progressed. The experiments compare agents that reason with these estimates against agents that omit them across public and internal task benchmarks. |
 | 2024‑04‑12 | [LlamaTouch: A Faithful and Scalable Testbed for Mobile UI Task Automation](https://arxiv.org/abs/2404.16054) | unspecified | LlamaTouch executes mobile tasks on devices and evaluates whether an agent visits manually annotated essential application or system states. Screenshot and hierarchy annotations, combined with exact and fuzzy state matching, support evaluation of 496 tasks across multiple agents. |
+| 2023‑04 | [Automating GUI-based Software Testing with GPT-3](https://ieeexplore.ieee.org/abstract/document/10132233) | desktop, cross-platform | A GPT-3-based GUI testing method interprets natural-language test cases, tracks current interface elements in prompts, and navigates desktop and mobile applications. |

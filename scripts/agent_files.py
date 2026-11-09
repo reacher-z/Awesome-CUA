@@ -6,7 +6,7 @@ page; llms-full.txt is one compact entry for every curated record, so no single 
 """
 from __future__ import annotations
 
-from publication_metadata import AUTHORS_OMITTED, authors_omitted, record_date_text
+from publication_metadata import record_date_text
 from site_data import PAPER_KINDS
 
 # llms-full.txt and the catalog Markdown list non-paper kinds first; papers are the largest group.
@@ -36,16 +36,12 @@ def declared_licenses(record):
     return '; '.join(parts)
 
 
-def compact_entry(record, *, site, page_path, summary, reviewed_at, kind_label):
+def compact_entry(record, *, site, page_path, summary):
     """A few lines that identify a curated record and point to its full annotation."""
     lines = ['### ' + inline(record['name']), '', inline(summary), '',
-             f'- {site}{page_path} · source: {((record["details"].get("arxiv_snapshot") or {}).get("versioned_url")) or record["url"]}',
-             f'- {kind_label} · reviewed {(reviewed_at or "")[:10] or "date not recorded"}'
-             + (f' · environments: {", ".join(record["environments"])}' if record['environments'] else '')
-             + (f' · topics: {", ".join(record["topics"])}' if record['topics'] else '')]
+             f'- {site}{page_path} · source: {((record["details"].get("arxiv_snapshot") or {}).get("versioned_url")) or record["url"]}']
     if record['kind'] in PAPER_KINDS:
-        lines.append('- Published: ' + (record_date_text(record) or 'date not recorded') + ' · '
-                     + (AUTHORS_OMITTED[0] if authors_omitted(record) else 'Authors: ' + (inline(', '.join(record['authors'])) or 'not recorded')))
+        lines.append('- Published: ' + (record_date_text(record) or 'date not recorded'))
     licenses = declared_licenses(record)
     if licenses:
         lines.append('- Licenses: ' + licenses)

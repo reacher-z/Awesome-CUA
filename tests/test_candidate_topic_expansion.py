@@ -80,7 +80,8 @@ class CandidateTopicExpansionTests(unittest.TestCase):
 
     def test_exact_added_topics_are_public_queries_not_generic_searches(self):
         config = json.loads((ROOT / 'data/scan-config.json').read_text(encoding='utf-8'))
-        self.assertEqual(config['github_candidate_topics'], EXPANDED_TOPICS + NOVEMBER_TOPICS)
+        self.assertEqual(config['github_candidate_topics'][:len(EXPANDED_TOPICS + NOVEMBER_TOPICS)], EXPANDED_TOPICS + NOVEMBER_TOPICS)
+        self.assertEqual(set(config['github_candidate_topics']) - set(EXPANDED_TOPICS + NOVEMBER_TOPICS), set(scan.PHRASE_ROOTS))
         self.assertEqual(
             tuple(config[key] for key in (
                 'github_candidate_max_requests', 'github_candidate_max_seconds',

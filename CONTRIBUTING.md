@@ -15,6 +15,8 @@ Never add a protected personal name, account or personal site ([protected names]
 
 New discovery sources belong in `data/sources.json`. Identify the exact document and scope; prefer complementary sources over mirrors. When a registered document is permanently gone, retire it with a `retired` object (`date` and a documented `reason`) instead of deleting the entry; see [retired discovery sources](docs/maintenance.md#retired-discovery-sources). Do not promote a list entry to a curated record without a first-party check. Report broken links, missing resources, and incorrect merges through the issue template.
 
+For a reviewed GitHub, Hugging Face or website candidate outside the computer-use scope, add an `out_of_scope` decision to `data/candidate-reviews.json`. Record its exact `id`, `url`, reason, UTC review time, and primary-page evidence receipt. Record arXiv scope decisions in `data/exclusions.json`.
+
 ## Resolving conflicts with the scheduled scan
 
 The scheduled scan commits regenerated data and views to `main` up to once an hour, so a pull request that commits generated files will often conflict. Rebase onto `main` (`git fetch origin && git rebase origin/main`). Resolve conflicts in authored files by hand. For a conflicting build output or scan-written file, take `main`'s version (`git checkout origin/main -- <path>`) instead of merging it. If that drops your own `verify` or `enrich` results, rerun those commands. Then run `python3 scripts/catalog.py build` to regenerate the build outputs from the combined sources, confirm `python3 scripts/catalog.py build --check` passes, stage the result, and continue the rebase.

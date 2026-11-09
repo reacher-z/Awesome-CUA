@@ -12,9 +12,11 @@ FORMER_SITES = ('https://awesomecua.github.io',)
 
 
 def scan_schedule(config):
-    """The configured scan times as a page states them: one phrase for an hourly schedule, not 24 times in a row."""
+    """Express the configured UTC slots in a short public phrase."""
     times, zone = config['scan_times_local'], config['timezone']
     minutes = {time.split(':')[1] for time in times}
     if len(times) == 24 and len(minutes) == 1:
         return f'every hour at minute {int(minutes.pop())} {zone}'
+    if len(times) == 3:
+        return 'at ' + ', '.join(times[:-1]) + ' and ' + times[-1] + ' ' + zone
     return 'at ' + ', '.join(times) + ' ' + zone

@@ -193,6 +193,8 @@ ENDPOINTS = (
 def _schema(site, snapshot):
     text, nullable = {'type': 'string'}, {'type': ['string', 'null']}
     when = {'type': 'string', 'pattern': r'^\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}Z$'}
+    date_or_time = {'anyOf': [when, {'type': 'string', 'pattern': r'^\d{4}-\d{2}-\d{2}$', 'format': 'date'}]}
+    reviewed_or_null = {'anyOf': [date_or_time, {'type': 'null'}]}
     when_or_null = {'anyOf': [when, {'type': 'null'}]}
     strings = {'type': 'array', 'items': text}
     link = {'type': 'string', 'pattern': '^https://'}
@@ -205,20 +207,20 @@ def _schema(site, snapshot):
         'licenses': {'type': 'object', 'properties': {slot: {'$ref': '#/$defs/license'} for slot in ('code', 'data', 'document', 'weights')}, 'additionalProperties': False},
         'resource': item({**identity, 'summary': text, 'scope': {'enum': ['core', 'adjacent']}, 'review_status': {'const': 'curated'},
                           'environments': strings, 'topics': strings, 'aliases': {'type': 'array'}, 'licenses': {'$ref': '#/$defs/licenses'},
-                          'published_at': nullable, 'reviewed_at': when_or_null, 'last_verified_at': when,
+                          'published_at': nullable, 'reviewed_at': reviewed_or_null, 'last_verified_at': when,
                           'relations': {'type': 'array', 'items': item({'type': text, 'target_id': text})}}),
         'paper': item({**identity, 'kind': {'enum': ['paper', 'survey']}, 'summary': text, 'scope': {'enum': ['core', 'adjacent']},
                        'review_status': {'const': 'curated'}, 'authors': strings, 'authors_omitted': {'type': 'boolean'}, 'published': nullable,
                        'arxiv_id': nullable, 'arxiv_version': {'type': ['integer', 'null']}, 'arxiv_versioned_url': nullable, 'venue': nullable,
                        'doi': nullable, 'environments': strings, 'topics': strings, 'licenses': {'$ref': '#/$defs/licenses'},
-                       'reviewed_at': when_or_null, 'last_verified_at': when}),
+                       'reviewed_at': reviewed_or_null, 'last_verified_at': when}),
         'category': item({'id': text, 'name': text, 'name_zh': text, 'type': {'enum': ['kind', 'topic']}, 'curated_count': {'type': 'integer', 'minimum': 0},
                           'active_count': {'type': ['integer', 'null']}, 'page_url': link, 'markdown_url': link, 'api_url': link}),
         'candidate': item({'population': {'enum': ['relevance_pending_record', 'candidate_identifier']}, 'curated': {'const': False},
                            'id': text, 'name': nullable, 'kind': nullable, 'url': link, 'page_url': link_or_null,
                            'review_status': {'enum': ['metadata_verified', 'candidate']}, 'scope': nullable,
                            'published': nullable, 'reason': nullable, 'first_discovered_at': when_or_null}),
-        'change': item({'date': when, 'event': {'enum': sorted(EVENTS)}, 'id': text, 'name': text,
+        'change': item({'date': date_or_time, 'event': {'enum': sorted(EVENTS)}, 'id': text, 'name': text,
                         'kind': nullable, 'current_status': text, 'page_url': link_or_null, 'url': link, 'note': nullable}),
         'envelope': {'type': 'object', 'required': ['version', 'generated_at', 'catalog_sha256', 'license', 'documentation', 'schema', 'description', 'count', 'items'],
                      'properties': {'version': {'const': API_VERSION}, 'generated_at': when, 'catalog_sha256': {'type': 'string', 'pattern': '^[0-9a-f]{64}$'},

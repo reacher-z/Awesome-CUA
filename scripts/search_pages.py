@@ -19,7 +19,7 @@ from data_hub import build_download_manifest, data_hub_body
 from site_config import SITE, scan_schedule
 import home_page
 import site_shell
-from agent_files import FULL_ORDER, catalog_markdown, compact_entry, home_markdown, kind_markdown, library_markdown, llms_full, llms_txt, paper_hub_markdown
+from agent_files import FULL_ORDER, catalog_markdown, compact_entry, home_markdown, kind_markdown, library_markdown, link, llms_full, llms_txt, paper_hub_markdown
 from discovery_files import FEED_SIZE, FEED_TITLE, feed_entry, robots_txt, write_feeds
 from site_data import PAPER_KINDS, catalog_counts, eligible, latest, newest_reviewed, record_modified, review_dates
 from static_api import API_SUMMARY, API_TITLE, api_docs_body, api_docs_markdown, write_api
@@ -31,6 +31,7 @@ KIND_SINGULAR = {"paper":"Research paper", "survey":"Survey", "learning":"Learni
 ENVIRONMENT_LABELS = {"web":"Web", "desktop":"Desktop", "windows":"Windows", "linux":"Linux", "macos":"macOS", "android":"Android", "ios":"iOS", "harmonyos":"HarmonyOS", "cross-platform":"Cross-platform"}
 TOPIC_CATALOG = json.loads((Path(__file__).resolve().parents[1]/"data/topics.json").read_text(encoding="utf-8"))
 KINDS = {"paper":"Research papers", "survey":"Surveys", "learning":"Learning resources", "model":"Models and checkpoints", "dataset":"Datasets", "benchmark":"Benchmarks", "agent":"Agents", "framework":"Frameworks", "infrastructure":"Infrastructure", "tool":"Tools", "product":"Products", "company":"Publishers"}
+CATEGORY_PAGE_SIZE = 100
 
 
 def esc(value):
@@ -161,11 +162,11 @@ def list_head(title,intro,links):
     return f'<header class="wrap list-head"><h1>{esc(title)}</h1><p class="list-intro">{intro}</p><div class="list-stats">{links}</div></header>'
 
 
-def category_body(kind,label,selected,featured,*,zh=False):
+def category_body(kind,label,selected,featured,*,zh=False,total=None,pager=''):
     """One category: its head, the featured rows if it has any, then every reviewed record with an in-page filter."""
     tr=lambda en,cn:cn if zh else en
     name=home_page.KINDS[kind][2] if zh else label.lower()
-    count=f'{len(selected):,}'
+    count=f'{total if total is not None else len(selected):,}'
     links=f'<span><strong>{count}</strong> {tr("reviewed","条已审核")}</span>'
     if kind in PROFILE_KEYS:links+=f'<a href="/compare/{"benchmarks" if kind=="benchmark" else "datasets"}/">{tr("Compare specifications","比较规格")}</a>'
     wider=f'/explore/?{"lang=zh&" if zh else ""}kind={kind}#catalog'
@@ -186,6 +187,7 @@ def category_body(kind,label,selected,featured,*,zh=False):
     body+=(f'<section class="wrap list-all" aria-labelledby="list-h" data-list><div class="sec-head list-all-head"><div><h2 id="list-h">{tr(f"All {esc(name)}",f"全部{esc(name)}")}</h2></div>{tools}</div>'
            f'<p class="list-status" role="status" data-list-status data-template="{template}"></p><ul class="rows list-rows" data-single data-list-rows>{listing(selected,zh=zh)}</ul>'
            f'<p class="list-empty" data-list-empty hidden>{empty} <a href="{esc(wider)}">{search}</a></p></section>')
+    if pager:body+=pager
     if tools:body+='<script type="module" src="/listing.js"></script>'
     return body
 
@@ -432,7 +434,7 @@ def build_search_pages(destination, rows, coverage, root, *, survey_page=None):
         shown=[r]+[lookup[rel['source_id']] for rel in incoming.get(r['id'],[]) if rel['source_id'] in lookup]
         emit(path,page(titles.get(r["id"],r["name"]),description(r),path,resource_body(r,lookup,incoming,pending_review),resource_schema(r),eligible(r),crumbs=[("AwesomeCUA","/"),("Catalog","/catalog/"),(KINDS[r["kind"]],f'/categories/{r["kind"]}/'),(r["name"],path)]),eligible(r),lastmod=modified(shown))
         (destination/path.lstrip('/')/'index.md').write_text(clean_text(resource_markdown(r,pending_review)),encoding='utf-8')
-        (destination/path.lstrip('/')/'record.json').write_text(json.dumps(r,ensure_ascii=False,sort_keys=True,indent=2)+'\n',encoding='utf-8')
+        (destination/path.lstrip('/')/'record.json').write_text(json.dumps(r,ensure_ascii=False,sort_keys=True,separators=(',', ':'))+'\n',encoding='utf-8')
         if r['kind'] in {'paper','survey'}:
             (destination/path.lstrip('/')/'citation.bib').write_text(citation_bibtex(r),encoding='utf-8')
             (destination/path.lstrip('/')/'citation.csl.json').write_text(json.dumps(citation_csl(r),ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
@@ -474,22 +476,52 @@ def build_search_pages(destination, rows, coverage, root, *, survey_page=None):
             body+='<h2>Papers by publication year</h2><nav class="paper-years" aria-label="Papers by publication year">'+''.join(f'<a href="{year_links[y]}">{"Date not recorded" if y=="undated" else y}<span>{years[y]:,}</span></a>' for y in sorted(years,key=lambda y:(y!='undated',y),reverse=True))+'</nav>'
             body+='<h2>Papers by topic</h2><div class="library-topics">'+''.join(f'<a href="{topic_path(t)}">{esc(topic_name(t))} ({n:,})</a>' for t,n in topics.most_common())+'</div>'
             schema={"@type":"CollectionPage","name":f'Computer-use agent {label.lower()}'}
+        if kind=='paper':
+            body+=f'<p><a href="/explore/?kind={kind}#catalog">Search all records in this category</a> · <a href="/catalog/">All categories</a></p>'
+            pages=[selected]
         else:
             # Most mentioned first, the same order as the homepage; the page offers A-Z.
             selected=sorted(selected,key=lambda r:(-len(view['mentions'].get(r['id'],())),r['name'].casefold()))
             featured=home_page.featured_records(view) if kind=='benchmark' else []
-            body=category_body(kind,label,selected,featured)
-            schema={"@type":"ItemList","name":f'Computer-use agent {label.lower()}',"numberOfItems":len(selected),"itemListElement":[{"@type":"ListItem","position":i+1,"url":SITE+resource_path(r),"name":r['name']} for i,r in enumerate(selected)]}
-        if kind=='paper':body+=f'<p><a href="/explore/?kind={kind}#catalog">Search all records in this category</a> · <a href="/catalog/">All categories</a></p>'
-        if kind!='paper':
             (destination/f'categories/{kind}').mkdir(parents=True,exist_ok=True)
             (destination/f'categories/{kind}/index.md').write_text(clean_text(kind_markdown(kind,label,selected,site=SITE,snapshot=snapshot,full_markdown=full_markdown)),encoding='utf-8')
-        alternatives=False if kind=='paper' else {'en':f'/categories/{kind}/','zh-CN':f'/zh/categories/{kind}/','x-default':f'/categories/{kind}/'}
-        emit(f'/categories/{kind}/',page(f'Computer-use agent {label.lower()}',f'Reviewed {label.lower()} for computer-use and GUI agents, with original sources, platform tags, and license evidence.',f'/categories/{kind}/',body,schema,crumbs=[("AwesomeCUA","/"),("Catalog","/catalog/"),(label,f'/categories/{kind}/')],alternatives=alternatives,landing=kind!='paper'),lastmod=modified(selected),alternates=alternatives or None)
-        if kind!='paper':
-            zh_name=home_page.KINDS[kind][2]
-            zh_schema={**schema,"name":f'计算机使用智能体{zh_name}'}
-            emit(f'/zh/categories/{kind}/',page(f'计算机使用智能体{zh_name}',f'面向计算机使用与 GUI 智能体的已审核{zh_name}，按目录提及次数排序。每条记录都链接到原始来源，并附平台标签、许可证据与审核状态，便于比较和引用。',f'/zh/categories/{kind}/',category_body(kind,label,selected,featured,zh=True),zh_schema,lang='zh-CN',crumbs=[("AwesomeCUA","/zh/"),("目录","/zh/catalog/"),(zh_name,f'/zh/categories/{kind}/')],alternatives=alternatives,landing=True),lastmod=modified(selected),alternates=alternatives)
+            # Long categories split into pages that stay inside the per-page byte budget; the filter works on each page.
+            pages=([selected[i:i+CATEGORY_PAGE_SIZE] for i in range(0,len(selected),CATEGORY_PAGE_SIZE)] or [[]])
+        for number,members in enumerate(pages,1):
+            path=f'/categories/{kind}/' if number==1 else f'/categories/{kind}/page/{number}/'
+            zh_path=f'/zh/categories/{kind}/' if number==1 else f'/zh/categories/{kind}/page/{number}/'
+            alternatives=None if kind=='paper' else {'en':path,'zh-CN':zh_path,'x-default':path}
+            if number>1:
+                (destination/path.lstrip('/')).mkdir(parents=True,exist_ok=True)
+                markdown=[f'# Computer-use agent {label.lower()}, page {number}','',f'HTML page: {SITE}{path}','',f'Full category annotations: {SITE}/categories/{kind}/index.md','']
+                markdown += [f'- {link(r["name"],SITE + resource_path(r))}' for r in members]
+                (destination/path.lstrip('/')/'index.md').write_text(clean_text('\n'.join(markdown)+'\n'),encoding='utf-8')
+            if kind!='paper':
+                def category_link(n,zh=False):
+                    prefix='/zh' if zh else ''
+                    return f'{prefix}/categories/{kind}/' if n==1 else f'{prefix}/categories/{kind}/page/{n}/'
+                en_pager='' if len(pages)==1 else '<nav class="pager" aria-label="Category pages">'+''.join(
+                    f'<a href="{category_link(n)}"' + (' aria-current="page"' if n==number else '') + f'>Page {n}</a>' for n in range(1,len(pages)+1))+'</nav>'
+                zh_pager='' if len(pages)==1 else '<nav class="pager" aria-label="类别分页">'+''.join(
+                    f'<a href="{category_link(n,zh=True)}"' + (' aria-current="page"' if n==number else '') + f'>第 {n} 页</a>' for n in range(1,len(pages)+1))+'</nav>'
+                page_body=category_body(kind,label,members,featured if number==1 else [],total=len(selected),pager=en_pager)
+                schema={"@type":"ItemList","name":f'Computer-use agent {label.lower()}',"numberOfItems":len(members),"itemListElement":[{"@type":"ListItem","position":(number-1)*CATEGORY_PAGE_SIZE+i+1,"url":SITE+resource_path(r),"name":r['name']} for i,r in enumerate(members)]}
+            else:
+                page_body=body
+            crumbs=[("AwesomeCUA","/"),("Catalog","/catalog/"),(label,f'/categories/{kind}/')]
+            if number>1:
+                crumbs.append((f'Page {number}',path))
+            title=f'Computer-use agent {label.lower()}'+(f', page {number}' if number>1 else '')
+            emit(path,page(title,f'Reviewed {label.lower()} for computer-use and GUI agents, with original sources, platform tags, and license evidence.',path,page_body,schema,crumbs=crumbs,alternatives=alternatives,landing=kind!='paper'),lastmod=modified(selected),alternates=alternatives)
+            if kind!='paper':
+                zh_name=home_page.KINDS[kind][2]
+                zh_schema={**schema,"name":f'计算机使用智能体{zh_name}'}
+                zh_crumbs=[("AwesomeCUA","/zh/"),("目录","/zh/catalog/"),(zh_name,f'/zh/categories/{kind}/')]
+                if number>1:
+                    zh_crumbs.append((f'第 {number} 页',zh_path))
+                zh_title=f'计算机使用智能体{zh_name}'+(f'（第 {number} 页）' if number>1 else '')
+                zh_body=category_body(kind,label,members,featured if number==1 else [],zh=True,total=len(selected),pager=zh_pager)
+                emit(zh_path,page(zh_title,f'面向计算机使用与 GUI 智能体的已审核{zh_name}，按目录提及次数排序。每条记录都链接到原始来源，并附平台标签、许可证据与审核状态，便于比较和引用。',zh_path,zh_body,zh_schema,lang='zh-CN',crumbs=zh_crumbs,alternatives=alternatives,landing=True),lastmod=modified(selected),alternates=alternatives)
     for kind,plural,title in [('benchmark','benchmarks','Compare GUI-agent benchmark protocols'),('dataset','datasets','Compare GUI-agent training datasets')]:
         path=f'/compare/{plural}/'
         export=profile_export(rows,kind)
@@ -555,8 +587,8 @@ def build_search_pages(destination, rows, coverage, root, *, survey_page=None):
     emit('/connections/',page('Computer-use papers, code, and datasets','Trace computer-use agent papers to documented implementations, GUI benchmarks, and training datasets using reviewed primary-source relationships.','/connections/',body),lastmod=modified(linked_papers+[lookup[rel['source_id']] for paper in linked_papers for rel in incoming[paper['id']]]))
     edges=[{'source_id':r['id'],'source_name':r['name'],'source_kind':r['kind'],**rel} for r in rows for rel in r['relations']]
     (destination/'downloads/relationships.json').write_text(json.dumps({'relation_count':len(edges),'semantics':'Reviewed semantic links.','relations':edges},ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
-    sources=''.join(f'<tr><td><a href="{safe_href(s["url"])}">{esc(s["name"])}</a></td><td>{s["discovered"]}</td><td>{s["indexed"]}</td><td>{s["curated"]}</td><td>{s["excluded"]}</td></tr>' for s in coverage['sources'])
-    body=f'<h1>Coverage and verification ledger</h1><p class="answer-lead">{len(reviewed):,} curated resources and {awaiting:,} records with verified bibliographic metadata awaiting review.</p><p>Evidence snapshot: {esc(snapshot)}. Resource types can refer to different parts of the same project.</p><h2>Discovery-source coverage</h2><div class="table-scroll"><table class="coverage-table"><thead><tr><th>Source</th><th>Found</th><th>Indexed</th><th>Curated</th><th>Excluded</th></tr></thead><tbody>{sources}</tbody></table></div><h2>Explicit scope exclusions</h2><p>{coverage["excluded_records"]} records are excluded after individual scope review. The original {coverage["arxiv_archive_records"]:,}-record arXiv metadata archive is retained. <a href="/downloads/exclusions.json">Inspect decisions and source evidence</a> · <a href="/downloads/arxiv-archive.jsonl">Download the raw archive</a>.</p><p>A changed or unconfirmed exclusion returns to review.</p><h2>What is still in progress?</h2><p>Most bibliography entries still require relevance review. Asset sizes, model licenses, availability, and experiment protocols need continuing curation.</p><p>{coverage["unindexed_candidates"]} discovered identifiers remain unresolved.</p><p><a href="/downloads/coverage.json">Download the complete coverage ledger</a> · <a href="/about/">Editorial policy</a></p>'
+    sources=''.join(f'<tr><td><a href="{safe_href(s["url"])}">{esc(s["name"])}</a></td><td>{s["discovered"]}</td><td>{s["indexed"]}</td><td>{s["curated"]}</td><td>{s["excluded"]}</td><td>{s.get("set_aside",0)}</td><td>{s.get("out_of_scope",0)}</td><td>{s["unindexed"]}</td></tr>' for s in coverage['sources'])
+    body=f'<h1>Coverage and verification ledger</h1><p class="answer-lead">{len(reviewed):,} curated resources and {awaiting:,} records with verified bibliographic metadata awaiting review.</p><p>Evidence snapshot: {esc(snapshot)}. Resource types can refer to different parts of the same project.</p><h2>Discovery-source coverage</h2><div class="table-scroll"><table class="coverage-table"><thead><tr><th>Source</th><th>Found</th><th>Indexed</th><th>Curated</th><th>Excluded</th><th>Set aside</th><th>Out of scope</th><th>Unresolved</th></tr></thead><tbody>{sources}</tbody></table></div><h2>Explicit scope exclusions</h2><p>{coverage["excluded_records"]} records are excluded after individual scope review. The original {coverage["arxiv_archive_records"]:,}-record arXiv metadata archive is retained. <a href="/downloads/exclusions.json">Inspect decisions and source evidence</a> · <a href="/downloads/arxiv-archive.jsonl">Download the raw archive</a>.</p><p>A changed or unconfirmed exclusion returns to review.</p><h2>What is still in progress?</h2><p>Most bibliography entries still require relevance review. Asset sizes, model licenses, availability, and experiment protocols need continuing curation.</p><p>{coverage["unindexed_candidates"]} discovered identifiers remain unresolved. {coverage.get("out_of_scope_candidates",0)} candidates have an out-of-scope review.</p><p><a href="/downloads/coverage.json">Download the complete coverage ledger</a> · <a href="/about/">Editorial policy</a></p>'
     emit('/coverage/',page('Coverage and verification ledger','Inspect AwesomeCUA source populations, editorial review states, bibliographic verification, unresolved identifiers, and explicit coverage gaps.','/coverage/',body),lastmod=max(snapshot,modified(rows) or snapshot))
     agent_alternatives={'en':'/agents/','zh-CN':'/zh/agents/','x-default':'/agents/'}
     for language,path,title,desc in [
@@ -566,7 +598,7 @@ def build_search_pages(destination, rows, coverage, root, *, survey_page=None):
     scan_config=json.loads((root/'data/scan-config.json').read_text(encoding='utf-8'))
     schedule=scan_schedule(scan_config)
     publication_schedule='at '+' and '.join(f':{minute:02d}' for minute in scan_config['publish_check_minutes'])+' past each hour '+scan_config['timezone']+'; a check rebuilds only when the source catalog has a new commit'
-    body=f'<div class="eyebrow">DISCOVERY ACTIVITY</div><h1>Catalog updates every hour</h1><p class="answer-lead">Public sources are scheduled for scanning every hour. New paper identities are checked against arXiv; editorial annotations and approvals remain separate.</p><dl class="page-facts"><div><dt>Configured scan schedule</dt><dd>{esc(schedule[0].upper()+schedule[1:])}</dd></div><div><dt>Website publication checks</dt><dd>{esc(publication_schedule)}</dd></div></dl><p>GitHub scheduling can be delayed. The completion times below record what actually ran, rather than assuming that a scheduled job executed. A scan that finds nothing new publishes no receipt; a new receipt appears at least every {scan_config["scan_commit_heartbeat_hours"]} hours.</p>'
+    body=f'<div class="eyebrow">DISCOVERY ACTIVITY</div><h1>Scan activity</h1><p class="answer-lead">Public sources are scheduled for scanning every eight hours. New paper identities are checked against arXiv; editorial annotations and approvals remain separate.</p><dl class="page-facts"><div><dt>Configured scan schedule</dt><dd>{esc(schedule[0].upper()+schedule[1:])}</dd></div><div><dt>Website publication checks</dt><dd>{esc(publication_schedule)}</dd></div></dl><p>GitHub scheduling can be delayed. The completion times below record what actually ran, rather than assuming that a scheduled job executed. A scan that finds nothing new publishes no receipt; a new receipt appears at least every {scan_config["scan_commit_heartbeat_hours"]} hours.</p>'
     body+=f'<h2>Current published catalog</h2><dl class="page-facts"><div><dt>Reviewed papers and surveys</dt><dd>{len(papers):,}</dd></div><div><dt>Other reviewed resources</dt><dd>{len(reviewed)-len(papers):,}</dd></div><div><dt>Records awaiting review</dt><dd>{awaiting:,}</dd></div><div><dt>Discovered candidates</dt><dd>{candidates:,}</dd></div></dl><p>These counts include editorial work completed after the scan below. <a href="/papers/">Browse reviewed research</a> or <a href="/coverage/">inspect full coverage</a>.</p>'
     if scan:
         body+=f'<h2>Latest completed scan</h2><dl class="page-facts"><div><dt>Status</dt><dd>{esc(scan["status"])}</dd></div><div><dt>Started</dt><dd>{esc(scan["started_at"])}</dd></div><div><dt>Finished</dt><dd>{esc(scan["finished_at"])}</dd></div><div><dt>Discovery documents fetched</dt><dd>{scan["source_fetches"]["successful"]} / {scan["source_fetches"]["total"]}</dd></div><div><dt>New paper metadata</dt><dd>{len(scan["new_papers"])}</dd></div><div><dt>New candidate identifiers</dt><dd>{scan["new_candidate_count"]}</dd></div><div><dt>Reviewed papers at scan completion</dt><dd>{scan["after"]["curated_papers"]}</dd></div><div><dt>Pending metadata changes</dt><dd>{scan["pending_metadata_changes"]}</dd></div></dl>'
@@ -591,7 +623,7 @@ def build_search_pages(destination, rows, coverage, root, *, survey_page=None):
     if conference_file.exists():
         conference=json.loads(conference_file.read_text(encoding='utf-8'))
         body+=f'<h2>Conference proceedings sweep</h2><p>{conference["title_candidate_count"]} keyword-selected titles were inspected across {conference["source_count"]} official proceedings snapshots. Title candidates and possible renamed papers await identity and scope review.</p><p><a href="/downloads/conference-discovery.json">Inspect the selected titles, review boundaries, and primary receipts</a>.</p>'
-    emit('/updates/',page('Catalog updates every hour','Inspect the actual completion, discoveries, and source gaps from the AwesomeCUA public-source scans that run every hour.','/updates/',body),lastmod=max(filter(None,[snapshot,modified(rows),scan and scan.get('finished_at')])))
+    emit('/updates/',page('Scan activity','Inspect the actual completion, discoveries, and source gaps from the AwesomeCUA public-source scans that run every eight hours.','/updates/',body),lastmod=max(filter(None,[snapshot,modified(rows),scan and scan.get('finished_at')])))
     badge_papers=sum(r['kind'] in {'paper','survey'} for r in reviewed)
     (destination/'badges').mkdir(exist_ok=True)
     badge=f'<svg xmlns="http://www.w3.org/2000/svg" width="590" height="30" role="img" aria-label="{len(reviewed)} curated resources, {badge_papers} reviewed papers, {awaiting} records awaiting review"><rect width="590" height="30" rx="5" fill="#4856df"/><g fill="#fff" font-family="Arial,sans-serif" font-size="12" text-anchor="middle"><text x="95" y="20">{len(reviewed):,} curated resources</text><text x="290" y="20">{badge_papers:,} reviewed papers</text><text x="480" y="20">{awaiting:,} awaiting review</text></g></svg>'
@@ -627,7 +659,7 @@ def build_search_pages(destination, rows, coverage, root, *, survey_page=None):
     zh_body=home_page.hero(view,last_scan,zh=True)+home_page.benchmark_band(view,zh=True)+home_page.tasks(view,zh=True)+home_page.latest(view,zh=True)+home_page.categories(view,zh=True)+home_page.papers(view,zh=True)+home_page.developers(zh=True)+home_page.directory_strip(zh=True,note=zh_note)+home_page.contribute(zh=True)
     emit('/zh/',page('AwesomeCUA 中文主页：Computer-Use Agent 资源目录','浏览可搜索、可追溯的 Computer-Use Agent 论文、模型、数据集、基准、框架与产品，查看来源证据并下载结构化目录。','/zh/',zh_body,lang='zh-CN',alternatives=True,landing=True),lastmod=modified(rows),alternates=True)
     # The explorer keeps a static, visible directory for visitors without JavaScript.
-    static='<section class="shell static-directory" aria-labelledby="static-directory-title"><div class="eyebrow" data-i18n="directoryEyebrow">READ, EXPLORE, AND CITE</div><h2 id="static-directory-title" data-i18n="directoryHeading">Computer-use agent research and resources</h2><p data-i18n="directoryCopy">Browse source-backed pages directly, with or without JavaScript. Reviewed entries include concise annotations, provenance, and separate license declarations.</p><div class="directory-links"><a href="/catalog/" data-i18n="directoryTitle">Resource directory</a><a href="/papers/" data-paper-library data-i18n="directoryPapers">Research papers</a><a href="/topics/" data-topic-directory data-i18n="directoryTopics">Browse by topic</a><a href="/connections/" data-i18n="directoryConnections">Papers → code & data</a><a href="/updates/" data-i18n="directoryUpdates">Updates every hour</a><a href="/categories/model/" data-i18n="directoryModels">Models</a><a href="/categories/dataset/" data-i18n="directoryDatasets">Datasets</a><a href="/categories/benchmark/" data-i18n="directoryBenchmarks">Benchmarks</a><a href="/compare/benchmarks/" data-i18n="compareBenchmarks">Compare benchmarks</a><a href="/compare/datasets/" data-i18n="compareDatasets">Compare datasets</a><a href="/categories/learning/" data-i18n="directoryLearning">Learning resources</a><a href="/categories/framework/" data-i18n="directoryFrameworks">Frameworks</a><a href="/categories/product/" data-i18n="directoryProducts">Products</a><a href="/guides/" data-i18n="navGuides">Guides</a><a href="/data/" data-i18n="directoryData">Download data</a><a href="/coverage/" data-i18n="navCoverage">Coverage</a><a href="/about/" data-i18n="editorialPolicy">Editorial policy</a><a href="/zh/" lang="zh-CN">中文指南</a></div><h3 data-i18n="startHeading">Where should I start?</h3><p><a href="/guides/what-are-computer-use-agents/" data-i18n="startConcepts">Understand computer-use agents</a><span data-i18n="listComma">, </span><a href="/guides/gui-agent-benchmarks/" data-i18n="startBenchmarks">choose a benchmark for the capability you need</a><span data-i18n="listOr">, or </span><a href="/guides/gui-agent-training-data/" data-i18n="startData">find training data with the right supervision and license</a><span data-i18n="sentenceEnd">.</span></p></section>'
+    static='<section class="shell static-directory" aria-labelledby="static-directory-title"><div class="eyebrow" data-i18n="directoryEyebrow">READ, EXPLORE, AND CITE</div><h2 id="static-directory-title" data-i18n="directoryHeading">Computer-use agent research and resources</h2><p data-i18n="directoryCopy">Browse source-backed pages directly, with or without JavaScript. Reviewed entries include concise annotations, provenance, and separate license declarations.</p><div class="directory-links"><a href="/catalog/" data-i18n="directoryTitle">Resource directory</a><a href="/papers/" data-paper-library data-i18n="directoryPapers">Research papers</a><a href="/topics/" data-topic-directory data-i18n="directoryTopics">Browse by topic</a><a href="/connections/" data-i18n="directoryConnections">Papers → code & data</a><a href="/updates/" data-i18n="directoryUpdates">Scan updates</a><a href="/categories/model/" data-i18n="directoryModels">Models</a><a href="/categories/dataset/" data-i18n="directoryDatasets">Datasets</a><a href="/categories/benchmark/" data-i18n="directoryBenchmarks">Benchmarks</a><a href="/compare/benchmarks/" data-i18n="compareBenchmarks">Compare benchmarks</a><a href="/compare/datasets/" data-i18n="compareDatasets">Compare datasets</a><a href="/categories/learning/" data-i18n="directoryLearning">Learning resources</a><a href="/categories/framework/" data-i18n="directoryFrameworks">Frameworks</a><a href="/categories/product/" data-i18n="directoryProducts">Products</a><a href="/guides/" data-i18n="navGuides">Guides</a><a href="/data/" data-i18n="directoryData">Download data</a><a href="/coverage/" data-i18n="navCoverage">Coverage</a><a href="/about/" data-i18n="editorialPolicy">Editorial policy</a><a href="/zh/" lang="zh-CN">中文指南</a></div><h3 data-i18n="startHeading">Where should I start?</h3><p><a href="/guides/what-are-computer-use-agents/" data-i18n="startConcepts">Understand computer-use agents</a><span data-i18n="listComma">, </span><a href="/guides/gui-agent-benchmarks/" data-i18n="startBenchmarks">choose a benchmark for the capability you need</a><span data-i18n="listOr">, or </span><a href="/guides/gui-agent-training-data/" data-i18n="startData">find training data with the right supervision and license</a><span data-i18n="sentenceEnd">.</span></p></section>'
     website={"@type":"WebSite","@id":SITE+"/#website","url":SITE+"/","name":"AwesomeCUA","description":"Source-backed computer-use and GUI-agent resource catalog","publisher":{"@id":SITE+"/#organization"}}
     home_body=home_page.hero(view,last_scan)+home_page.benchmark_band(view)+home_page.tasks(view)+home_page.latest(view)+home_page.categories(view)+home_page.papers(view)+home_page.developers()+home_page.directory_strip()+home_page.contribute()
     emit('/',page('AwesomeCUA — Computer-use research, data, and tools','Find research, models, benchmarks, and software for web, desktop, and mobile agents. Filter by task or platform, then inspect the primary sources.','/',home_body,alternatives=True,landing=True,extra_graph=[website]),lastmod=modified(rows),alternates=True)
@@ -676,7 +708,7 @@ def build_search_pages(destination, rows, coverage, root, *, survey_page=None):
     groups=[]
     for kind in FULL_ORDER:
         members=sorted((r for r in reviewed if r['kind']==kind),key=lambda r:(r['name'].casefold(),r['id']))
-        if members:groups.append((KINDS[kind],[compact_entry(r,site=SITE,page_path=resource_path(r),summary=description(r),reviewed_at=review_times.get(r['id']),kind_label=KIND_LABELS[kind][0]) for r in members]))
+        if members:groups.append((KINDS[kind],[compact_entry(r,site=SITE,page_path=resource_path(r),summary=description(r)) for r in members]))
     kind_files=[(KINDS[kind],f'/categories/{kind}/index.md') for kind in FULL_ORDER if kind!='paper']+[('Research library',library_path(1)+'index.md')]
     (destination/'llms-full.txt').write_text(clean_text(llms_full(groups,site=SITE,snapshot=snapshot,counts=counts,survey_line=survey_line,kind_files=kind_files)),encoding='utf-8')
     (destination/'robots.txt').write_text(robots_txt(SITE),encoding='utf-8')

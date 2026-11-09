@@ -29,6 +29,11 @@ LEADERBOARDS = {
     "github:tongyi-mai/mobileworld": "https://tongyi-mai.github.io/MobileWorld/#leaderboard",
     "github:unipat-ai/saas-bench": "https://unipat.ai/benchmarks/SaaS-Bench",
     "url:d9d8e68f19ef0956d189": "https://recreation-bench.cc/#leaderboard",
+    "github:ethz-spylab/agentdojo": "https://agentdojo.spylab.ai/results/",
+    "github:halluminate/webbench": "https://webbench.ai/",
+    "url:cb7f3bdb832d533c96b0": "https://www.swebench.com/multimodal.html",
+    "github:lgy0404/memgui-bench": "https://lgy0404.github.io/MemGUI-Bench/leaderboard.html",
+    "github:ljang0/odysseys": "https://odysseys-website.pages.dev/leaderboard.html",
 }
 
 

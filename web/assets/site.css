@@ -909,6 +909,9 @@ html:not(.js) .trail,html:not(.js) .cursor{display:none}
 .r3-c-benchmark{grid-column:span 3;grid-row:span 2;--cell:var(--ad-f4)}
 .r3-c-benchmark .r3-cell-n{font-size:clamp(3.5rem,2rem + 4vw,5.5rem)}
 .r3-c-benchmark .vig-rank{position:static;order:2;flex:none;width:min(132px,100%);height:auto;aspect-ratio:148/100;margin-top:8px}
+@media (max-width:767px){.r3-c-benchmark .vig-rank{margin:auto 0 0}.r3-c-benchmark .r3-cell-eg{margin-top:0}}
+@media (max-width:379px){.r3-cell.r3-c-benchmark{padding-inline:10px}.r3-c-benchmark .r3-cell-n{font-size:3rem}.r3-c-benchmark .r3-cell-name{font-size:.8125rem}}
+@media (max-width:339px){.r3-cell.r3-c-benchmark{padding-inline:8px}}
 .r3-c-model{grid-column:span 3;--cell:var(--ad-f1)}
 .r3-c-dataset{grid-column:span 3;--cell:var(--ad-f2)}
 .r3-c-framework{grid-column:span 4;--cell:var(--ad-f6);--ad-ink:#212632}

@@ -2,22 +2,24 @@
 
 [Home](../../README.md) · [All topics](../topics.md) · [Full arXiv bibliography](../papers.md)
 
-55 source-reviewed resources tagged `training-free`. Curated metadata; unknown facts are shown as —.
+64 source-reviewed resources tagged `training-free`. Curated metadata; unknown facts are shown as —.
 
-**Contents:** [Agents (1)](#agents) · [Frameworks (5)](#frameworks) · [Tools (1)](#tools) · [Papers (48)](#papers)
+**Contents:** [Agents (4)](#agents) · [Frameworks (6)](#frameworks) · [Tools (3)](#tools) · [Papers (51)](#papers)
 
 ## Agents
 
-All entries in this section: web.
-
-| Resource | Paper | License | Description | Evidence |
-| --- | --- | --- | --- | --- |
-| [RCI Agent](https://github.com/posgnu/rci-agent) | [2303.17491](https://arxiv.org/abs/2303.17491) (2023) | code MIT | A MiniWoB++ agent that uses explicit and implicit recursive criticism-and-improvement prompts to refine action plans and ground actions to browser state. | [✓ 2026‑10‑17](https://raw.githubusercontent.com/posgnu/rci-agent/HEAD/README.md) |
+| Resource | Environments | Paper | License | Description | Evidence |
+| --- | --- | --- | --- | --- | --- |
+| [AdbGPT](https://github.com/sidongfeng/AdbGPT) | android | — | — | An Android bug replay agent that extracts action details from written bug reports and uses the current app screen to guide reproduction steps. | [✓ 2026‑11‑09](https://raw.githubusercontent.com/sidongfeng/AdbGPT/HEAD/README.md) |
+| [AgentOccam](https://github.com/amazon-science/AgentOccam) | web | [2410.13825](https://arxiv.org/abs/2410.13825) (2024) | code Apache-2.0 | AgentOccam is a web agent that uses webpage descriptions and action strings to carry out tasks from a URL and instruction. Its repository includes task configurations and evaluation scripts. | [✓ 2026‑11‑09](https://raw.githubusercontent.com/amazon-science/AgentOccam/HEAD/README.md) |
+| [GUI-explorer](https://github.com/iLearn-Lab/ACL25-GUI-explorer) | android | [2505.16827](https://arxiv.org/abs/2505.16827) (2025) | code MIT | Android agent code that explores apps over ADB, mines transition-aware knowledge into a knowledge base behind a retrieval service, and runs an OpenAI-backed agent demo that draws on it. | [✓ 2026‑10‑18](https://raw.githubusercontent.com/iLearn-Lab/ACL25-GUI-explorer/HEAD/README.md) |
+| [RCI Agent](https://github.com/posgnu/rci-agent) | web | [2303.17491](https://arxiv.org/abs/2303.17491) (2023) | code MIT | A MiniWoB++ agent that uses explicit and implicit recursive criticism-and-improvement prompts to refine action plans and ground actions to browser state. | [✓ 2026‑10‑17](https://raw.githubusercontent.com/posgnu/rci-agent/HEAD/README.md) |
 
 ## Frameworks
 
 | Resource | Environments | Paper | License | Description | Evidence |
 | --- | --- | --- | --- | --- | --- |
+| [AdaGround](https://github.com/bcwang-sjtu/AdaGround) | cross-platform, desktop, web | [2610.36874](https://arxiv.org/abs/2610.36874) (2026) | code MIT | A training-free GUI grounding framework that adjusts screenshot zoom to target size and checks proposed clicks before accepting or revising them. | [✓ 2026‑11‑09](https://raw.githubusercontent.com/bcwang-sjtu/AdaGround/HEAD/README.md) |
 | [CanpGrid](https://github.com/Yeqi99/CanpGrid) | cross-platform, desktop, web, android | — | code MIT | CanpGrid provides an adaptive recursive image grid overlay for progressive coarse-to-fine visual localization by multimodal agents. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/Yeqi99/CanpGrid/HEAD/README.md) |
 | [GUI Grounding via Iterative Narrowing](https://github.com/ant-8/GUI-Grounding-via-Iterative-Narrowing) | cross-platform, desktop, web, android | [2411.13591](https://arxiv.org/abs/2411.13591) (2024) | — | Implements training-free iterative visual crop-and-narrow refinement for improving MLLM coordinate grounding on GUI screenshots. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/ant-8/GUI-Grounding-via-Iterative-Narrowing/HEAD/README.md) |
 | [Hoverclick](https://github.com/neilyysun-ui/Hoverclick) | desktop, web | — | — | Hoverclick introduces test-time cursor hover verification and visual attention guidance before committing GUI click actions. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/neilyysun-ui/Hoverclick/HEAD/README.md) |
@@ -26,11 +28,11 @@ All entries in this section: web.
 
 ## Tools
 
-All entries in this section: web.
-
-| Resource | Paper | License | Description | Evidence |
-| --- | --- | --- | --- | --- |
-| [TAG attention-driven GUI grounding](https://github.com/HeimingX/TAG) | [2412.10840](https://arxiv.org/abs/2412.10840) (2024) | — | Grounding and evaluation code that aggregates a pretrained vision-language model’s attention maps to localize requested interface elements without fine-tuning. | [✓ 2026‑10‑17](https://raw.githubusercontent.com/HeimingX/TAG/HEAD/README.md) |
+| Resource | Environments | Paper | License | Description | Evidence |
+| --- | --- | --- | --- | --- | --- |
+| [RegionFocus](https://github.com/tiangeluo/RegionFocus) | unspecified | [2505.00684](https://arxiv.org/abs/2505.00684) (2025) | — | RegionFocus provides code for GUI grounding through selected screenshot regions. The release evaluates UI-TARS and Qwen2.5-VL on ScreenSpot-Pro. | [✓ 2026‑11‑09](https://raw.githubusercontent.com/tiangeluo/RegionFocus/HEAD/README.md) |
+| [TAG attention-driven GUI grounding](https://github.com/HeimingX/TAG) | web | [2412.10840](https://arxiv.org/abs/2412.10840) (2024) | — | Grounding and evaluation code that aggregates a pretrained vision-language model’s attention maps to localize requested interface elements without fine-tuning. | [✓ 2026‑10‑17](https://raw.githubusercontent.com/HeimingX/TAG/HEAD/README.md) |
+| [Zoom Consistency Routing](https://github.com/omxyz/zoom-consistency-routing) | unspecified | — | — | A training-free router chooses between visual grounding models using prediction distance from a zoom crop's center. The release includes ScreenSpot-Pro evaluation scripts. | [✓ 2026‑11‑09](https://raw.githubusercontent.com/omxyz/zoom-consistency-routing/HEAD/README.md) |
 
 ## Papers
 
@@ -40,6 +42,7 @@ All entries in this section: web.
 | 2026‑10‑27 | [AdaGround: Token-Normalized Adaptive Zooming with Verifier-in-the-Loop Refinement for GUI Grounding](https://arxiv.org/abs/2610.36874) | unspecified | Introduces AdaGround, a training-free GUI grounding method that adjusts screenshot zoom to target size and uses a click verifier to refine or reject predictions. |
 | 2026‑10‑26 | [GUIFlow: Temporal Redundancy-Aware Incremental Inference for GUI Agents](https://arxiv.org/abs/2610.34959) | unspecified | Introduces GUIFlow, an incremental inference framework that reuses visual, language, and action computation across successive GUI-agent steps. |
 | 2026‑10‑21 | [MPIDetector: Detecting Multi-modal Prompt Injection via LLM-based Reasoning](https://arxiv.org/abs/2610.30202) | unspecified | MPIDetector uses few-shot prompts to detect text and visual prompt injections, with environmental web-agent injections included in its evaluation. |
+| 2026‑10‑19 | [In-Context Teacher–Student Guidance for Open-Weight Browser Agents](https://sol.sbc.org.br/index.php/kdmile/article/view/44978) | web | Training-free protocol that turns a teacher model's offline reasoning traces into prompt guidance for open-weight browser agents; on MiniWoB++ it lifts solved student-task pairs from 208 to 271 across ten students. |
 | 2026‑10‑18 | [From Seeing to Reporting: A Theory of Reliable Visual Set Generation in Vision-Language Models](https://arxiv.org/abs/2610.25503) | unspecified | FSR models visual reporting and gives inference-time procedures for frozen vision-language models, including screen parsing and GUI target selection. |
 | 2026‑10‑11 | [Visible but Not Avoided: State-Dependent Re-Proposal of Rejected Candidates in Catalog-Based LLM Optimization Loops](https://arxiv.org/abs/2610.15738) | unspecified | Studies repeated rejected edits while optimizing a screenshot-only GUI agent, contrasting static probes with reached loop states and testing how rejection wording changes subsequent edit proposals. |
 | 2026‑10‑08 | [Harness Evolution Hits a Ceiling: When Weight Training Should Begin](https://arxiv.org/abs/2610.11655) | unspecified | Studies when to improve an LLM agent's runtime harness or train its weights by classifying failed trajectories; WebArena-Lite supplies a web-task transfer test. |
@@ -59,6 +62,7 @@ All entries in this section: web.
 | 2026‑05‑10 | [What Happens Before Decoding? Prefill Determines GUI Grounding in VLMs](https://arxiv.org/abs/2605.12549) | unspecified | Re-Prefill adds an attention-guided second prefill pass that revisits candidate screen regions before coordinate generation. The study evaluates this training-free intervention across GUI-grounding models and benchmarks. |
 | 2026‑05‑07 | [BAMI: Training-Free Bias Mitigation in GUI Grounding](https://arxiv.org/abs/2605.06664) | unspecified | BAMI uses coarse-to-fine focus and candidate selection at inference time to address precision and ambiguity errors in GUI grounding. |
 | 2026‑05‑04 | [AutoFocus: Uncertainty-Aware Active Visual Search for GUI Grounding](https://arxiv.org/abs/2605.02630) | unspecified | Presents AutoFocus, a training-free grounding method that turns sampled coordinates and token uncertainty into spatial region proposals. Shape-aware crops and visual comparison select a target while retaining surrounding interface context. |
+| 2026‑04‑20 | [LongHorizonUI: A Unified Framework for Robust long-horizon Task Automation of GUI Agent](https://openreview.net/forum?id=BK7Mk5d4WE) | android, desktop | Training-free GUI agent that indexes screen elements via icon detection and OCR, checks each step with multi-level reflection and recovers by fallback clicks or rollback; introduces LongGUIBench, tasks over 15 steps. |
 | 2026‑04‑15 | [UI-Zoomer: Uncertainty-Driven Adaptive Zoom-In for GUI Grounding](https://arxiv.org/abs/2604.14113) | unspecified | Introduces UI-Zoomer, a training-free grounding method that uses candidate agreement and token confidence to decide when to crop and retry. Prediction variance determines a separate crop radius for each uncertain interface target. |
 | 2026‑04‑01 | [PixelPrune: Pixel-Level Adaptive Visual Token Reduction via Predictive Coding](https://arxiv.org/abs/2604.00886) | unspecified | PixelPrune removes pixel-redundant patches before the vision encoder, reducing both encoding and downstream language-model work. The training-free method evaluates lossless and controlled-lossy compression on document and GUI tasks. |
 | 2026‑03‑27 | [GUIDE: Resolving Domain Bias in GUI Agents through Real-Time Web Video Retrieval and Plug-and-Play Annotation](https://arxiv.org/abs/2603.26266) | unspecified | GUIDE retrieves relevant software tutorials through subtitle-based video search, then infers planning and grounding knowledge from consecutive annotated keyframes. It inserts that knowledge into existing GUI-agent modules without parameter updates and evaluates the plug-in on OSWorld. |
@@ -80,6 +84,7 @@ All entries in this section: web.
 | 2025‑07‑13 | [LaSM: Layer-wise Scaling Mechanism for Defending Pop-up Attack on GUI Agents](https://arxiv.org/abs/2507.10610) | unspecified | Introduces LaSM, a training-free defense that selectively scales attention and MLP components to improve alignment with task-relevant screen regions. It evaluates the approach against pop-up-based GUI injection attacks. |
 | 2025‑06‑18 | [Understanding GUI Agent Localization Biases through Logit Sharpness](https://arxiv.org/abs/2506.15425) | unspecified | Introduces a finer-grained taxonomy of GUI localization errors and a logit-based Peak Sharpness Score for analyzing coordinate-prediction uncertainty. A context-aware cropping method refines the visual input without retraining the grounding model. |
 | 2025‑01‑18 | [Learn-by-interact: A Data-Centric Framework for Self-Adaptive Agents in Realistic Environments](https://arxiv.org/abs/2501.10893) | web, desktop, cross-platform | Learn-by-interact synthesizes agent interaction trajectories from documentation and derives instructions from their histories for training or in-context use across web and desktop tasks. |
+| 2025 | [Are CAPTCHAs Still Bot-hard? Generalized Visual CAPTCHA Solving with Agentic Vision Language Model](https://www.usenix.org/conference/usenixsecurity25/presentation/teoh) | web | Presents Halligan, a VLM agent that abstracts visual CAPTCHAs into frames, elements and keypoints and solves each as a search problem through generated interaction code, tested on 2,600 challenges of 26 types. |
 | 2023‑06‑03 | [Prompting Is All You Need: Automated Android Bug Replay with Large Language Models](https://arxiv.org/abs/2306.01987) | android | Introduces AdbGPT, a prompting-based approach that uses LLMs to replay app bugs from written reports, applying few-shot examples and reasoning without model training. |
 | 2023‑03‑30 | [Language Models can Solve Computer Tasks](https://arxiv.org/abs/2303.17491) | web | Introduces recursive criticism and improvement prompting for language-model agents performing computer tasks, evaluated on MiniWoB++ with a small number of demonstrations per task. |
 | 2022‑10‑06 | [ReAct: Synergizing Reasoning and Acting in Language Models](https://arxiv.org/abs/2210.03629) | unspecified | Introduces ReAct, a method that interleaves reasoning traces and actions for language-model agents; WebShop is one of its interactive decision-making evaluations. |

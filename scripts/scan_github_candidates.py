@@ -26,7 +26,7 @@ from catalog import ROOT, atomic_write, canonical
 from repository_identity import repository_aliases
 from network_budget import BudgetDeferred, budget_from_environment
 
-TOPICS = frozenset({'computer-use', 'gui-agent', 'gui-agents', 'gui-automation',
+TOPIC_COHORTS = frozenset({'computer-use', 'gui-agent', 'gui-agents', 'gui-automation',
                     'desktop-automation', 'browser-agent', 'browser-agents',
                     'browser-automation', 'android-automation',
                     'computer-use-agent', 'computer-use-agents', 'gui-grounding',
@@ -36,6 +36,20 @@ TOPICS = frozenset({'computer-use', 'gui-agent', 'gui-agents', 'gui-automation',
                     'cua', 'computer-control', 'computer-agent', 'os-agent', 'os-agents',
                     'mobile-agents', 'android-agent', 'phone-use', 'mobile-use',
                     'screen-understanding', 'ui-agent'})
+PHRASE_ROOTS = {
+    'phrase-clean-room-reimplementation': 'clean-room reimplementation',
+    'phrase-reimplementation-of': 'reimplementation of',
+    'phrase-open-source-reimplementation': 'open-source reimplementation',
+    'phrase-decompilation': 'decompilation',
+    'phrase-decompiled': 'decompiled',
+    'phrase-reverse-engineered': 'reverse-engineered',
+    'phrase-recreation-of': 'recreation of',
+    'phrase-clone-of': 'clone of',
+    'phrase-port-of': 'port of',
+    'phrase-matching-decomp': 'matching decomp',
+    'phrase-re-implementation': 're-implementation',
+}
+TOPICS = TOPIC_COHORTS | PHRASE_ROOTS.keys()
 DEFAULT_TOPICS = ('computer-use', 'gui-agent', 'browser-automation')
 INPUTS = ('catalog.jsonl', 'candidates.jsonl', 'primary-evidence.jsonl',
           'repository-aliases.json', 'candidate-reviews.json')
@@ -140,8 +154,9 @@ def safe_api_url(url):
         params = urllib.parse.parse_qs(parts.query, strict_parsing=True)
         if set(params) != {'q', 'per_page', 'page', 'sort', 'order'} or any(len(v) != 1 for v in params.values()):
             raise ValueError('unsupported search parameters')
-        match = re.fullmatch(r'topic:([a-z-]+) is:public fork:false created:(\d{4}-\d\d-\d\d)\.\.(\d{4}-\d\d-\d\d)', params['q'][0])
-        if not match or match[1] not in TOPICS or date.fromisoformat(match[2]) > date.fromisoformat(match[3]):
+        match = re.fullmatch(r'(.+) is:public fork:false created:(\d{4}-\d\d-\d\d)\.\.(\d{4}-\d\d-\d\d)', params['q'][0])
+        allowed = {search_term(cohort) for cohort in TOPICS}
+        if not match or match[1] not in allowed or date.fromisoformat(match[2]) > date.fromisoformat(match[3]):
             raise ValueError('unsupported query cohort')
         if params['per_page'] != [str(PAGE_SIZE)] or params['sort'] != ['updated'] or params['order'] != ['asc']:
             raise ValueError('unsupported search ordering or page size')
@@ -275,7 +290,7 @@ def input_snapshot(root):
     catalog = data['catalog.jsonl']
     aliases = repository_aliases(data['repository-aliases.json'], catalog)
     observed = {r['id'] for r in data['primary-evidence.jsonl'] if r.get('ok') is True and r.get('status') == 200}
-    set_aside = {r.get('id') for r in data['candidate-reviews.json'] if r.get('decision') == 'not_a_resource'}
+    set_aside = {r.get('id') for r in data['candidate-reviews.json'] if r.get('decision') in {'not_a_resource', 'out_of_scope'}}
     names = {}
     for row in data['candidates.jsonl']:
         parsed = canonical(row.get('url'))
@@ -295,8 +310,12 @@ def input_snapshot(root):
             'existing_seed_count': len(seeds)}, seeds
 
 
+def search_term(cohort):
+    return f'"{PHRASE_ROOTS[cohort]}" in:readme,description' if cohort in PHRASE_ROOTS else f'topic:{cohort}'
+
+
 def search_query(topic, after, before, parent=None):
-    query = f'topic:{topic} is:public fork:false created:{after}..{before}'
+    query = f'{search_term(topic)} is:public fork:false created:{after}..{before}'
     return {'id': 'search:' + digest(query.encode())[:24], 'kind': 'search',
             'topic': topic, 'created_after': after, 'created_before': before,
             'query': query, 'parent_id': parent, 'next_page': 1,
@@ -1119,7 +1138,7 @@ def run_scan(root, output, *, max_requests=10, max_seconds=180, existing_budget=
                             raise Rejected('requested_repository_mismatch')
                         if query['kind'] == 'search' and not date.fromisoformat(query['created_after']) <= timestamp(metadata['created_at']).date() <= date.fromisoformat(query['created_before']):
                             raise Rejected('outside_created_bounds')
-                        if query['kind'] == 'search' and query['topic'] not in metadata['topics']:
+                        if query['kind'] == 'search' and query['topic'] in TOPIC_COHORTS and query['topic'] not in metadata['topics']:
                             raise Rejected('query_topic_mismatch')
                         if strict_replay and metadata['repository_id'] in response_ids:
                             # Duplicate or conflicting identities cannot be replayed as one page.

@@ -104,7 +104,7 @@ def main():
     profile_text=profile_path.read_text(encoding='utf-8')
     profile_text=profile_text.replace('\n| Research & training',f'\nFor people, RAG systems, and agents — clone the complete catalog:\n\n```sh\n{CLONE_COMMAND}\n```\n\n[Agent instructions]({SITE}/AGENTS.md) · [Agent & RAG guide]({SITE}/agents/) · [中文使用指南]({SITE}/zh/agents/)\n\n| Research & training')
     profile_text=profile_text.replace(counts,f'![Live catalog counts]({SITE}/badges/catalog.svg)')
-    profile_text+=f'\n[Scan status · every hour]({SITE}/updates/) · [Source and contribution workflow](https://github.com/reacher-z/Awesome-CUA)\n'
+    profile_text+=f'\n[Scan status · every eight hours]({SITE}/updates/) · [Source and contribution workflow](https://github.com/reacher-z/Awesome-CUA)\n'
     profile_path.write_text(profile_text,encoding='utf-8')
     require_clean([profile_path],'organization profile')
     print(f'Prepared {incoming["indexable_pages"]} indexable pages and updated public README/profile. Review diffs before committing.')

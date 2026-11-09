@@ -2,9 +2,9 @@
 
 [Home](../../README.md) · [All topics](../topics.md) · [Full arXiv bibliography](../papers.md)
 
-101 source-reviewed resources tagged `ui-design`. Curated metadata; unknown facts are shown as —.
+109 source-reviewed resources tagged `ui-design`. Curated metadata; unknown facts are shown as —.
 
-**Contents:** [Benchmarks (7)](#benchmarks) · [Datasets (2)](#datasets) · [Agents (4)](#agents) · [Frameworks (11)](#frameworks) · [Tools (22)](#tools) · [Learning resources (1)](#learning-resources) · [Papers (54)](#papers)
+**Contents:** [Benchmarks (8)](#benchmarks) · [Datasets (4)](#datasets) · [Models (1)](#models) · [Agents (5)](#agents) · [Frameworks (12)](#frameworks) · [Tools (22)](#tools) · [Learning resources (1)](#learning-resources) · [Surveys (1)](#surveys) · [Papers (55)](#papers)
 
 ## Benchmarks
 
@@ -16,19 +16,31 @@
 | [Persona UX Test](https://github.com/Ericwong5021/persona-ux-test) | web, desktop | — | — | code MIT | Blind-tests web and desktop user interfaces using isolated AI personas that interact strictly through rendered screens. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/Ericwong5021/persona-ux-test/HEAD/README.md) |
 | [REFRACT-PPTX](https://github.com/Haikong-Lu1206/REFRACT-PPTX) | desktop, web | — | — | code MIT | Agent-guided generation and multi-dimensional visual evaluation benchmark for editable PowerPoint presentation decks. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/Haikong-Lu1206/REFRACT-PPTX/main/README.md) |
 | [UserZero](https://github.com/aafre/userzero) | web | — | — | code MIT | Synthetic first-user evaluation harness that verifies web applications by attempting onboarding and core flows with AI browser agents. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/aafre/userzero/master/README.md) |
+| [WebGen-Bench](https://github.com/mnluzimu/WebGen-Bench) | web | [2505.03733](https://arxiv.org/abs/2505.03733) (2025) | — | — | WebGen-Bench evaluates generated websites with automated tests, including a UI agent that carries out interactions and checks outcomes. The repository supplies evaluation code and data. | [✓ 2026‑11‑09](https://raw.githubusercontent.com/mnluzimu/WebGen-Bench/HEAD/README.md) |
 | [WebsiteBench](https://github.com/TIGER-AI-Lab/WebsiteBench) · [leaderboard](https://website-bench.com/#results) | web | — | [70 tasks](https://raw.githubusercontent.com/TIGER-AI-Lab/WebsiteBench/78f5558e8197bb91b3bab63428c12b92060ddc6f/docs/tasks.md) · [46,916 test cases](https://raw.githubusercontent.com/TIGER-AI-Lab/WebsiteBench/78f5558e8197bb91b3bab63428c12b92060ddc6f/docs/tasks.md) | code Apache-2.0 | Website reconstruction benchmark: agents explore a production-level site through a browser, rebuild a full-stack version, and are scored by hidden functional and visual test cases across 70 tasks. | [✓ 2026‑11‑06](https://raw.githubusercontent.com/TIGER-AI-Lab/WebsiteBench/78f5558e8197bb91b3bab63428c12b92060ddc6f/README.md) |
 
 ## Datasets
 
 | Resource | Environments | Paper | Scale | License | Description | Evidence |
 | --- | --- | --- | --- | --- | --- | --- |
+| [Rico Dataset](https://www.interactionmining.org) | unspecified | — | — | — | Rico Dataset is a collection of mobile app interaction and design data presented through Interaction Mining, with 70k screens and 10k user flows across 5k apps. | [✓ 2026‑11‑09](https://www.interactionmining.org) |
+| [RICO-Screen2Words](https://huggingface.co/datasets/bevaya/RICO-Screen2Words) | android | [2108.03353](https://arxiv.org/abs/2108.03353) (2021) | — | data cc-by-4.0 | RICO-Screen2Words pairs Android app screenshots with human screen summaries, app metadata and view hierarchies for mobile interface understanding. | [✓ 2026‑11‑09](https://huggingface.co/api/datasets/bevaya/RICO-Screen2Words) |
 | [UEyes](https://github.com/YueJiang-nj/UEyes-CHI2023) | cross-platform, web, desktop, android | — | — | — | UEyes is an eye-tracking dataset of 62 participants viewing 1,980 UI screenshots across webpages, desktop interfaces, mobile apps, and posters. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/YueJiang-nj/UEyes-CHI2023/HEAD/README.md) |
 | [UICrit](https://github.com/google-research-datasets/uicrit) | unspecified | — | [1,000 mobile UI screens](https://raw.githubusercontent.com/google-research-datasets/uicrit/HEAD/README.md) · [11,344 design critiques](https://raw.githubusercontent.com/google-research-datasets/uicrit/HEAD/README.md) | — | Mobile-interface critiques and quality ratings with region coordinates and RICO screen references, including a larger three-annotator release than the original paper dataset. | [✓ 2026‑10‑17](https://raw.githubusercontent.com/google-research-datasets/uicrit/HEAD/README.md) |
+
+## Models
+
+All entries in this section: web.
+
+| Resource | Paper | License | Description | Evidence |
+| --- | --- | --- | --- | --- |
+| [WebVIA-Agent](https://huggingface.co/zai-org/WebVIA-Agent) | [2511.06251](https://arxiv.org/abs/2511.06251) (2025) | weights mit | GLM-4.1V-9B-based web exploration agent from WebVIA that reads a page screenshot and DOM tree and picks click, type or select actions to reach each interactive UI state for UI-to-code work. | [✓ 2026‑10‑18](https://huggingface.co/zai-org/WebVIA-Agent/raw/d6ee0ce156bc194a4f9ddcd1c4827544321c9db2/README.md) |
 
 ## Agents
 
 | Resource | Environments | Paper | License | Description | Evidence |
 | --- | --- | --- | --- | --- | --- |
+| [Avenir-UX](https://github.com/Onflow-AI/Avenir-UX) | web | [2604.09581](https://arxiv.org/abs/2604.09581) (2026) | — | Avenir-UX runs web tasks and scores interface usability after agent actions. It combines step assessments with persona settings and produces session reports. | [✓ 2026‑11‑09](https://raw.githubusercontent.com/Onflow-AI/Avenir-UX/HEAD/README.md) |
 | [Momos](https://github.com/iyulab/momos) | web, desktop | — | code AGPL-3.0 | Autonomous UI inspection agent that interacts with live applications to uncover runtime and UX flow defects missed by static analysis. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/iyulab/momos/main/README.md) |
 | [naive-user](https://github.com/TechGardenCode/naive-user) | web | — | code MIT | Source-blind browser agent that explores live web applications as a first-time user to uncover UX friction and broken flows. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/TechGardenCode/naive-user/HEAD/README.md) |
 | [PageLens](https://github.com/heinevwinston-bot/PageLens) | web | — | code MIT | Read-only Claude browser assistant that inspects live webpages and suggests UX and accessibility improvements. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/heinevwinston-bot/PageLens/main/README.md) |
@@ -45,6 +57,7 @@
 | [maestro-oss](https://github.com/victorkaor/maestro-oss) | cross-platform, desktop, web | — | code MIT | Open-source multi-agent spatial orchestration canvas integrating CLI agents, browser automation, and desktop tools. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/victorkaor/maestro-oss/main/README.md) |
 | [page-agent-sdk](https://github.com/whyymj/page-agent-sdk) | web | — | code ISC | In-page AI assistant SDK that mounts a chat widget and lets LLMs safely read and mutate webpage state via schema-validated tools. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/whyymj/page-agent-sdk/HEAD/README.md) |
 | [Polyform a11y-guide](https://github.com/polyform-ai/a11y-guide) | web | — | code MIT | Semantic accessibility page-guidance layer designed simultaneously for assistive technologies and AI browser agents. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/polyform-ai/a11y-guide/main/README.md) |
+| [RecreationWorld](https://github.com/QwenLM/RecreationWorld) | cross-platform, desktop, linux, macos, windows, android, web | [2609.22000](https://arxiv.org/abs/2609.22000) (2026) | code MIT | Framework for hybrid computer-use agents that inspect running reference apps, implement replicas with coding tools, and verify behavior across five platforms. | [✓ 2026‑11‑09](https://raw.githubusercontent.com/QwenLM/RecreationWorld/HEAD/README.md) |
 | [SameState WebMCP](https://github.com/breeznik/samestate-webmcp) | web | — | code MIT | WebMCP reference architecture exposing Redux frontend state directly to browser agents for synchronized human-agent interaction. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/breeznik/samestate-webmcp/main/README.md) |
 | [Touchline](https://github.com/edenbuilds/touchline) | web | — | code MIT | Multi-agent browser squad for evidence-led website inspection and frontend reconstruction. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/edenbuilds/touchline/main/README.md) |
 | [Venxuix Dccide](https://github.com/venxuix-dccide/Venxuix) | desktop, windows | — | — | 2D/3D agentic operating environment layered above Windows where humans and AI agents co-orchestrate desktop tasks. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/venxuix-dccide/Venxuix/main/README.md) |
@@ -84,6 +97,14 @@ All entries in this section: cross-platform, desktop, web.
 | Resource | License | Description | Evidence |
 | --- | --- | --- | --- |
 | [Awesome Multimodal Agentic Coding](https://github.com/jiangjin1999/awesome-multimodal-agentic-coding) | code MIT | Comprehensive research map of papers, benchmarks, and tools for multimodal coding and UI-verifying agents. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/jiangjin1999/awesome-multimodal-agentic-coding/main/README.md) |
+
+## Surveys
+
+All entries in this section: unspecified.
+
+| Date | Resource | Description |
+| --- | --- | --- |
+| 2023‑05‑29 | [Task Automation Intelligent Agents: A Review](https://www.researchgate.net/publication/371143847_Task_Automation_Intelligent_Agents_A_Review) | A literature review examines mobile phone task automation agents, including programming by demonstration and usability heuristics for recurring user tasks. |
 
 ## Papers
 
@@ -134,6 +155,7 @@ All entries in this section: cross-platform, desktop, web.
 | 2025‑08‑22 | [WebMMU: A Benchmark for Multimodal Multilingual Website Understanding and Code Generation](https://arxiv.org/abs/2508.16763) | web | Introduces WebMMU, a multilingual benchmark for website visual question answering, element grounding, code editing, and mockup-to-code generation. |
 | 2025‑07‑17 | [Machine-Readable Ads: Accessibility and Trust Patterns for AI Web Agents interacting with Online Advertisements](https://arxiv.org/abs/2507.12844) | web | Compares DOM-based and pixel-based web agents on a cloned news site containing advertisements, consent dialogs and paywalls. The study examines how interface presentation affects ad interaction and consequential subscription choices. |
 | 2025‑06‑12 | [Build the web for agents, not agents for the web](https://arxiv.org/abs/2506.10953) | web | Proposes Agentic Web Interface (AWI), a website interface intended for agent navigation, and sets out six design principles for web-agent use. |
+| 2025‑05‑23 | [Automated Testing of the GUI of a Real-Life Engineering Software using Large Language Models](https://arxiv.org/abs/2505.17839) | unspecified | GERALLT uses LLMs to explore the GUI of engineering software and produce a list of confusing or inconsistent interface areas for developers to inspect. |
 | 2025‑05‑09 | [Leveraging Vision-Language Models for Visual Grounding and Analysis of Automotive UI](https://arxiv.org/abs/2505.05895) | unspecified | Introduces AutomotiveUI-Bench-4K and a fine-tuned vision-language model for locating elements and evaluating automotive infotainment interfaces. |
 | 2025‑05‑08 | [Do MLLMs Capture How Interfaces Guide User Behavior? A Benchmark for Multimodal UI/UX Design Understanding](https://arxiv.org/abs/2505.05026) | unspecified | Introduces WiserUI-Bench, pairing real UI variants from industry A/B tests with observed behavioral winners and expert explanations. It evaluates models’ ability to predict the more effective interface and explain its effect on user behavior. |
 | 2025‑05‑06 | [WebGen-Bench: Evaluating LLMs on Generating Interactive and Functional Websites from Scratch](https://arxiv.org/abs/2505.03733) | web | Introduces WebGen-Bench for evaluating agents that generate multi-file websites, using a web-navigation agent to check whether the resulting pages pass interaction tests. |

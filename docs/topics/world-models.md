@@ -2,9 +2,9 @@
 
 [Home](../../README.md) · [All topics](../topics.md) · [Full arXiv bibliography](../papers.md)
 
-67 source-reviewed resources tagged `world-models`. Curated metadata; unknown facts are shown as —.
+76 source-reviewed resources tagged `world-models`. Curated metadata; unknown facts are shown as —.
 
-**Contents:** [Datasets (3)](#datasets) · [Models (4)](#models) · [Agents (1)](#agents) · [Frameworks (7)](#frameworks) · [Surveys (1)](#surveys) · [Papers (51)](#papers)
+**Contents:** [Datasets (4)](#datasets) · [Models (7)](#models) · [Agents (2)](#agents) · [Frameworks (10)](#frameworks) · [Tools (1)](#tools) · [Surveys (1)](#surveys) · [Papers (51)](#papers)
 
 ## Datasets
 
@@ -12,6 +12,7 @@
 | --- | --- | --- | --- | --- | --- | --- |
 | [AndroidCode](https://huggingface.co/datasets/GD-ML/AndroidCode) | android | [2602.09856](https://arxiv.org/abs/2602.09856) (2026) | [> 80,000 screen–action pairs](https://raw.githubusercontent.com/AMAP-ML/Code2World/HEAD/readme.md) | data MIT | HTML and annotation release used for Code2World’s action-conditioned GUI-state prediction training, constructed from mobile GUI trajectories. | [✓ 2026‑10‑18](https://raw.githubusercontent.com/AMAP-ML/Code2World/HEAD/readme.md) |
 | [Dreamer V1 Data](https://huggingface.co/datasets/osunlp/Dreamer-V1-Data) | web | [2411.06559](https://arxiv.org/abs/2411.06559) (2024) | — | data cc-by-nc-sa-4.0 | Web-world-model training data with prompts, images, action descriptions, and responses, released with the WebDreamer project. | [✓ 2026‑10‑16](https://huggingface.co/datasets/osunlp/Dreamer-V1-Data/raw/main/README.md) |
+| [Mobile-GUI-Worldmodel-SFT](https://huggingface.co/datasets/xwk123/Mobile-GUI-Worldmodel-SFT) | android | — | — | data other | A mobile GUI dataset for world-model training and evaluation. Its trajectory archives pair screenshots with page-state text and action-formatted training examples. | [✓ 2026‑11‑09](https://huggingface.co/api/datasets/xwk123/Mobile-GUI-Worldmodel-SFT) |
 | [WebEvolver SFT data](https://huggingface.co/datasets/CognitiveKernel/WebEvolver) | web | [2504.21024](https://arxiv.org/abs/2504.21024) (2025) | — | data MIT | Two JSONL collections for supervised fine-tuning the WebEvolver agent policy and web world model. | [✓ 2026‑10‑18](https://huggingface.co/datasets/CognitiveKernel/WebEvolver/raw/13f4f45b359e138a45b1c89bd4e913298c586ca9/README.md) |
 
 ## Models
@@ -20,28 +21,41 @@
 | --- | --- | --- | --- | --- | --- |
 | [Code2World-8B checkpoint](https://huggingface.co/GD-ML/Code2World) | android | [2602.09856](https://arxiv.org/abs/2602.09856) (2026) | weights MIT | Released GUI world-model checkpoint that turns a screenshot and proposed action into HTML for rendering a predicted next screen. | [✓ 2026‑10‑18](https://huggingface.co/GD-ML/Code2World/raw/3e48194a8228570164ecd510f9d83ac839e9e931/README.md) |
 | [Dreamer-7B](https://huggingface.co/osunlp/Dreamer-7B) | web | [2411.06559](https://arxiv.org/abs/2411.06559) (2024) | weights apache-2.0 | WebDreamer model checkpoint that predicts the consequences of web actions from screenshots and textual descriptions. | [✓ 2026‑10‑16](https://huggingface.co/osunlp/Dreamer-7B/raw/main/README.md) |
+| [Dreamer-7B-Classifieds](https://huggingface.co/osunlp/Dreamer-7B-Classifieds) | web | [2411.06559](https://arxiv.org/abs/2411.06559) (2024) | weights apache-2.0 | Dreamer-7B-Classifieds is a WebDreamer checkpoint for the Classifieds web domain. It supports planning by simulating the results of candidate actions. | [✓ 2026‑11‑09](https://huggingface.co/api/models/osunlp/Dreamer-7B-Classifieds) |
+| [Dreamer-7B-Reddit](https://huggingface.co/osunlp/Dreamer-7B-Reddit) | web | [2411.06559](https://arxiv.org/abs/2411.06559) (2024) | weights apache-2.0 | Dreamer-7B-Reddit is a Reddit-domain checkpoint for WebDreamer. It predicts the screen state after a proposed action to support web-agent planning. | [✓ 2026‑11‑09](https://huggingface.co/api/models/osunlp/Dreamer-7B-Reddit) |
+| [Dreamer-7B-Shopping](https://huggingface.co/osunlp/Dreamer-7B-Shopping) | web | [2411.06559](https://arxiv.org/abs/2411.06559) (2024) | weights apache-2.0 | A shopping-domain Dreamer-7B checkpoint for WebDreamer, which uses screenshot-conditioned predictions of candidate web actions to support agent planning. | [✓ 2026‑11‑09](https://huggingface.co/api/models/osunlp/Dreamer-7B-Shopping) |
 | [gWorld (GuiWorld)](https://github.com/trillion-labs/gWorld) | android | [2602.01576](https://arxiv.org/abs/2602.01576) (2026) | — | gWorld is an open-weight 8B/32B mobile GUI world model that predicts next-step screen states via renderable web code generation. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/trillion-labs/gWorld/HEAD/README.md) |
 | [Textual Foresight](https://github.com/aburns4/textualforesight) | android | [2406.07822](https://arxiv.org/abs/2406.07822) (2024) | code BSD-3-Clause | Textual Foresight pretrains UI representations by predicting textual descriptions of future screen states resulting from mobile UI actions. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/aburns4/textualforesight/HEAD/README.md) |
 
 ## Agents
 
-All entries in this section: desktop.
-
-| Resource | Paper | License | Description | Evidence |
-| --- | --- | --- | --- | --- |
-| [Octopus](https://github.com/dongyh20/Octopus) | — | — | Octopus is a vision-language programmer agent trained with environmental feedback to generate executable control code in GTA and Gibson worlds. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/dongyh20/Octopus/HEAD/README.md) |
+| Resource | Environments | Paper | License | Description | Evidence |
+| --- | --- | --- | --- | --- | --- |
+| [Octopus](https://github.com/dongyh20/Octopus) | desktop | — | — | Octopus is a vision-language programmer agent trained with environmental feedback to generate executable control code in GTA and Gibson worlds. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/dongyh20/Octopus/HEAD/README.md) |
+| [WMA Web Agent](https://github.com/kyle8581/WMA-Agents) | web | [2410.13232](https://arxiv.org/abs/2410.13232) (2024) | — | A web agent uses a learned world model to predict consequential page changes before choosing an action. The repository includes trajectory processing and inference code. | [✓ 2026‑11‑09](https://raw.githubusercontent.com/kyle8581/WMA-Agents/HEAD/README.md) |
 
 ## Frameworks
 
 | Resource | Environments | Paper | License | Description | Evidence |
 | --- | --- | --- | --- | --- | --- |
 | [AutoCoA](https://github.com/ADaM-BJTU/AutoCoA) | unspecified | — | code MIT | AutoCoA internalizes Chain-of-Action generation into reasoning models via step-level SFT, reinforcement learning, and simulated tool world models. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/ADaM-BJTU/AutoCoA/HEAD/README.md) |
+| [GUI-Trajectory-Virtual](https://github.com/Futuresis/GUI-Trajectory-Virtual) | android | [2601.18842](https://arxiv.org/abs/2601.18842) (2026) | code MIT | Synthesizes Android agent trajectories without a device: an image model behind a chat-completions API draws each next screen from the previous screenshot and the action chosen by a Mobile-Agent-v3-style agent. | [✓ 2026‑10‑18](https://raw.githubusercontent.com/Futuresis/GUI-Trajectory-Virtual/8ccef36747ca140471206534824b9f2f6278d37d/README.md) |
 | [LGWM (Latent GUI World Model)](https://github.com/jiamingzhang94/lgwm) | android, desktop, web | [2610.11942](https://arxiv.org/abs/2610.11942) (2026) | code Apache-2.0 | LGWM is an action-conditioned latent GUI world model that predicts next-state representations to verify GUI agent transitions. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/jiamingzhang94/lgwm/HEAD/README.md) |
 | [nanoAWM (Agent World Model Lab)](https://github.com/jlov7/nanoAWM) | desktop, web | — | code MIT | nanoAWM is an inspectable Agent World Model laboratory for simulating action consequences in long-horizon tool and computer-use agents. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/jlov7/nanoAWM/HEAD/README.md) |
 | [RLVR-World](https://github.com/thuml/RLVR-World) | web, desktop | — | code MIT | RLVR-World trains world models with verifiable reinforcement learning to predict state transitions for web and game agents. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/thuml/RLVR-World/HEAD/README.md) |
 | [SEAgent](https://github.com/SunzeY/SEAgent) | desktop, linux | [2508.04700](https://arxiv.org/abs/2508.04700) (2025) | — | SEAgent enables computer-use agents to self-evolve in unfamiliar software environments using a World State Model and curriculum task generator. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/SunzeY/SEAgent/HEAD/README.md) |
+| [Tencent AI LAB - Self-Improving Agent](https://github.com/Tencent/SelfEvolvingAgent) | web | [2504.21024](https://arxiv.org/abs/2504.21024) (2025), [2505.20013](https://arxiv.org/abs/2505.20013) (2025) | — | A research code collection for web-agent self-improvement, including WebEvolver's world-model approach and WebCoT's reconstructed reasoning trajectories. | [✓ 2026‑11‑09](https://raw.githubusercontent.com/Tencent/SelfEvolvingAgent/HEAD/README.md) |
+| [ViMo code](https://github.com/ai-agents-2030/ViMo) | android | [2504.13936](https://arxiv.org/abs/2504.13936) (2025) | — | Code for the ViMo GUI world model: Gemini-based next-screen text prediction, AITW and AndroidControl data processing, InstructPix2Pix-style graphic inference, and an AndroidWorld agent that consults it. | [✓ 2026‑10‑19](https://raw.githubusercontent.com/ai-agents-2030/ViMo/1f319fece4d3a4ac1d41b4572751bca1a10fa690/README.md) |
 | [WebDreamer](https://github.com/OSU-NLP-Group/WebDreamer) | web | [2411.06559](https://arxiv.org/abs/2411.06559) (2024) | — | World-model and planning components that simulate web-action outcomes, with linked training data and model checkpoints. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/OSU-NLP-Group/WebDreamer/HEAD/README.md) |
 | [WebEvolver code component](https://github.com/Tencent/SelfEvolvingAgent/tree/main/WebEvolver) | web | [2504.21024](https://arxiv.org/abs/2504.21024) (2025) | code MIT | Component for web-agent trajectory collection, supervised-data preparation and world-model-based trajectory synthesis. | [✓ 2026‑10‑18](https://raw.githubusercontent.com/Tencent/SelfEvolvingAgent/HEAD/WebEvolver/README.md) |
+
+## Tools
+
+All entries in this section: android.
+
+| Resource | Paper | License | Description | Evidence |
+| --- | --- | --- | --- | --- |
+| [Code2World](https://github.com/AMAP-ML/Code2World) | [2602.09856](https://arxiv.org/abs/2602.09856) (2026) | — | Code2World provides code for predicting the next Android GUI screen from a screenshot and proposed action through renderable code, with an AndroidWorld agent integration. | [✓ 2026‑11‑09](https://raw.githubusercontent.com/AMAP-ML/Code2World/HEAD/readme.md) |
 
 ## Surveys
 

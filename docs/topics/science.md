@@ -2,17 +2,17 @@
 
 [Home](../../README.md) · [All topics](../topics.md) · [Full arXiv bibliography](../papers.md)
 
-31 source-reviewed resources tagged `science`. Curated metadata; unknown facts are shown as —.
+44 source-reviewed resources tagged `science`. Curated metadata; unknown facts are shown as —.
 
-**Contents:** [Benchmarks (1)](#benchmarks) · [Datasets (1)](#datasets) · [Frameworks (3)](#frameworks) · [Tools (3)](#tools) · [Infrastructure (1)](#infrastructure) · [Papers (22)](#papers)
+**Contents:** [Benchmarks (3)](#benchmarks) · [Datasets (2)](#datasets) · [Models (6)](#models) · [Agents (1)](#agents) · [Frameworks (3)](#frameworks) · [Tools (3)](#tools) · [Infrastructure (3)](#infrastructure) · [Papers (23)](#papers)
 
 ## Benchmarks
 
-All entries in this section: desktop.
-
-| Resource | Paper | Scale | License | Description | Evidence |
-| --- | --- | --- | --- | --- | --- |
-| [ScienceBoard](https://github.com/OS-Copilot/ScienceBoard) | [2505.19897](https://arxiv.org/abs/2505.19897) (2025) | [169 VM task definitions](https://api.github.com/repos/OS-Copilot/ScienceBoard/git/trees/main?recursive=1) · [6 application families](https://raw.githubusercontent.com/OS-Copilot/ScienceBoard/HEAD/docs/verifier-audit.md) | code MIT | Scientific-workflow tasks for multimodal agents in desktop software such as ChimeraX, KAlgebra, Celestia, Grass GIS and Lean 4, with apps modified to expose state for evaluation. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/OS-Copilot/ScienceBoard/HEAD/README.md) |
+| Resource | Environments | Paper | Scale | License | Description | Evidence |
+| --- | --- | --- | --- | --- | --- | --- |
+| [MedSPOT](https://github.com/Tajamul21/MedSPOT) | unspecified | [2603.19993](https://arxiv.org/abs/2603.19993) (2026) | — | — | A sequential GUI grounding benchmark covering 10 medical imaging applications. It evaluates target localization across multi-step workflows and provides model evaluation scripts. | [✓ 2026‑11‑09](https://raw.githubusercontent.com/Tajamul21/MedSPOT/HEAD/README.md) |
+| [OSWorld-Science](https://github.com/DiscoAILab/OSWorld-Science) | desktop, linux, windows | [2609.39903](https://arxiv.org/abs/2609.39903) (2026) | [146 tasks](https://raw.githubusercontent.com/DiscoAILab/OSWorld-Science/HEAD/README.md) | code CC-BY-4.0 | Benchmark harness that runs computer-use agents on scientific-software tasks in per-domain VMs and scores the resulting application states and deliverables with task-specific executable evaluators. | [✓ 2026‑10‑18](https://raw.githubusercontent.com/DiscoAILab/OSWorld-Science/HEAD/README.md) |
+| [ScienceBoard](https://github.com/OS-Copilot/ScienceBoard) | desktop | [2505.19897](https://arxiv.org/abs/2505.19897) (2025) | [169 VM task definitions](https://api.github.com/repos/OS-Copilot/ScienceBoard/git/trees/main?recursive=1) · [6 application families](https://raw.githubusercontent.com/OS-Copilot/ScienceBoard/HEAD/docs/verifier-audit.md) | code MIT | Scientific-workflow tasks for multimodal agents in desktop software such as ChimeraX, KAlgebra, Celestia, Grass GIS and Lean 4, with apps modified to expose state for evaluation. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/OS-Copilot/ScienceBoard/HEAD/README.md) |
 
 ## Datasets
 
@@ -20,7 +20,29 @@ All entries in this section: desktop, linux.
 
 | Resource | Paper | Scale | License | Description | Evidence |
 | --- | --- | --- | --- | --- | --- |
+| [OSWorld-Science task data](https://huggingface.co/datasets/SciAILab/OSWorld-Science-data) | [2609.39903](https://arxiv.org/abs/2609.39903) (2026) | [153 task-definition JSON files](https://huggingface.co/api/datasets/SciAILab/OSWorld-Science-data/revision/9b8de9ad9325c87fbeba90e0676e8d640be70681) · [115 translated task files](https://huggingface.co/api/datasets/SciAILab/OSWorld-Science-data/revision/9b8de9ad9325c87fbeba90e0676e8d640be70681) · [11 QCOW2 VM images](https://huggingface.co/api/datasets/SciAILab/OSWorld-Science-data/revision/9b8de9ad9325c87fbeba90e0676e8d640be70681) · [2,759 files](https://huggingface.co/api/datasets/SciAILab/OSWorld-Science-data/revision/9b8de9ad9325c87fbeba90e0676e8d640be70681) | data cc-by-nc-4.0 | Gated Hub release of OSWorld-Science task definitions, staged inputs, grader references and prepared Ubuntu VM images for computer-use agents working in scientific software. | [✓ 2026‑10‑18](https://huggingface.co/api/datasets/SciAILab/OSWorld-Science-data/revision/9b8de9ad9325c87fbeba90e0676e8d640be70681) |
 | [ScienceBoard evaluation trajectories](https://huggingface.co/datasets/OS-Copilot/ScienceBoard-Traj) | [2505.19897](https://arxiv.org/abs/2505.19897) (2025) | — | — | Archives of ScienceBoard agent evaluation runs, separated by agent configuration and screenshot, accessibility-tree or set-of-marks observation mode. | [✓ 2026‑10‑17](https://huggingface.co/api/datasets/OS-Copilot/ScienceBoard-Traj) |
+
+## Models
+
+All entries in this section: desktop.
+
+| Resource | Paper | License | Description | Evidence |
+| --- | --- | --- | --- | --- |
+| [ScaleCUA (THUDM) GLM-4.6V-Flash ScienceBoard](https://huggingface.co/extreme1228/ScaleCUA-glm4.6v-scienceboard) | [2607.11185](https://arxiv.org/abs/2607.11185) (2026) | weights other | GLM-4.6V-Flash computer-use agent checkpoint from THUDM's ScaleCUA, trained with online RL from a released SFT start point for ScienceBoard scientific-software tasks. | [✓ 2026‑10‑18](https://huggingface.co/extreme1228/ScaleCUA-glm4.6v-scienceboard/raw/3b089b66c9d0ffd3e56477fce32b31ab5ad56361/README.md) |
+| [ScaleCUA (THUDM) GLM-4.6V-Flash ScienceBoard SFT](https://huggingface.co/extreme1228/ScaleCUA-glm4.6v-scienceboard-sft) | [2607.11185](https://arxiv.org/abs/2607.11185) (2026) | weights other | Supervised GLM-4.6V-Flash checkpoint from THUDM's ScaleCUA, released as the start point that online RL initializes from for its ScienceBoard computer-use agent. | [✓ 2026‑10‑18](https://huggingface.co/extreme1228/ScaleCUA-glm4.6v-scienceboard-sft/raw/2bcf77b8a30c161d9ed2e075276877275319d1ad/README.md) |
+| [ScaleCUA (THUDM) Qwen3-VL-8B ScienceBoard](https://huggingface.co/extreme1228/ScaleCUA-qwen3-vl-scienceboard) | [2607.11185](https://arxiv.org/abs/2607.11185) (2026) | weights other | Qwen3-VL-8B computer-use agent checkpoint from THUDM's ScaleCUA, trained with online RL for ScienceBoard scientific-software tasks after an SFT start point and served through an OpenAI-compatible endpoint. | [✓ 2026‑10‑18](https://huggingface.co/extreme1228/ScaleCUA-qwen3-vl-scienceboard/raw/13947f05bff0742e09784310b6c68ae39bff67e5/README.md) |
+| [ScaleCUA (THUDM) Qwen3-VL-8B ScienceBoard SFT](https://huggingface.co/extreme1228/ScaleCUA-qwen3-vl-scienceboard-sft) | [2607.11185](https://arxiv.org/abs/2607.11185) (2026) | weights other | Supervised Qwen3-VL-8B checkpoint from THUDM's ScaleCUA, released as the start point that online RL initializes from for its ScienceBoard computer-use agent. | [✓ 2026‑10‑18](https://huggingface.co/extreme1228/ScaleCUA-qwen3-vl-scienceboard-sft/raw/48c39bb30e1920e02c440fc256f5bb4e1d44765b/README.md) |
+| [ScaleCUA (THUDM) Qwen3.5-9B ScienceBoard](https://huggingface.co/extreme1228/ScaleCUA-qwen3.5-scienceboard) | [2607.11185](https://arxiv.org/abs/2607.11185) (2026) | weights other | Qwen3.5-9B computer-use agent checkpoint from THUDM's ScaleCUA, trained with online RL for ScienceBoard scientific-software tasks after an SFT start point and served through an OpenAI-compatible endpoint. | [✓ 2026‑10‑19](https://huggingface.co/extreme1228/ScaleCUA-qwen3.5-scienceboard/raw/ca2bc686c6d428fde67b114e002dd69e4eeb59b5/README.md) |
+| [ScaleCUA (THUDM) Qwen3.5-9B ScienceBoard SFT](https://huggingface.co/extreme1228/ScaleCUA-qwen3.5-scienceboard-sft) | [2607.11185](https://arxiv.org/abs/2607.11185) (2026) | weights other | Supervised Qwen3.5-9B checkpoint from THUDM's ScaleCUA, released as the start point that online RL initializes from for its ScienceBoard computer-use agent. | [✓ 2026‑10‑18](https://huggingface.co/extreme1228/ScaleCUA-qwen3.5-scienceboard-sft/raw/f697d10e7c30cbc7b88d677a81336210b80827d3/README.md) |
+
+## Agents
+
+All entries in this section: desktop.
+
+| Resource | Paper | License | Description | Evidence |
+| --- | --- | --- | --- | --- |
+| [GERALLT](https://github.com/DLR-SC/GERALLT) | — | — | An LLM-driven system for testing RCE through its graphical interface, using separate models to control actions, assess problems, and describe icons. | [✓ 2026‑11‑09](https://raw.githubusercontent.com/DLR-SC/GERALLT/HEAD/README.md) |
 
 ## Frameworks
 
@@ -40,11 +62,11 @@ All entries in this section: desktop, linux.
 
 ## Infrastructure
 
-All entries in this section: linux, desktop.
-
-| Resource | Paper | License | Description | Evidence |
-| --- | --- | --- | --- | --- |
-| [ScienceBoard VMware environment](https://huggingface.co/OS-Copilot/ScienceBoard-Env) | [2505.19897](https://arxiv.org/abs/2505.19897) (2025) | — | A prebuilt Ubuntu virtual-machine archive containing the software environment used for ScienceBoard scientific computer-use tasks. | [✓ 2026‑10‑17](https://huggingface.co/OS-Copilot/ScienceBoard-Env/raw/main/README.md) |
+| Resource | Environments | Paper | License | Description | Evidence |
+| --- | --- | --- | --- | --- | --- |
+| [grass-gui](https://github.com/ShiinaHiiragi/grass-gui) | desktop, linux | — | — | ScienceBoard's replacement GRASS GIS 8.4 wxPython GUI with an embedded Flask server that loads mapsets and layers, runs GRASS commands and returns layer, region and console state as JSON for task checks. | [✓ 2026‑10‑18](https://raw.githubusercontent.com/ShiinaHiiragi/grass-gui/HEAD/manual.md) |
+| [kalgebra-kai](https://github.com/ShiinaHiiragi/kalgebra) | desktop, linux | — | code GPL-2.0 | Modified KAlgebra build from ScienceBoard with a local HTTP server that reports variables and plotted 2D and 3D functions and can switch tabs or add calculations and plots, so the benchmark can check math tasks. | [✓ 2026‑10‑18](https://raw.githubusercontent.com/ShiinaHiiragi/kalgebra/HEAD/manual.md) |
+| [ScienceBoard VMware environment](https://huggingface.co/OS-Copilot/ScienceBoard-Env) | linux, desktop | [2505.19897](https://arxiv.org/abs/2505.19897) (2025) | — | A prebuilt Ubuntu virtual-machine archive containing the software environment used for ScienceBoard scientific computer-use tasks. | [✓ 2026‑10‑17](https://huggingface.co/OS-Copilot/ScienceBoard-Env/raw/main/README.md) |
 
 ## Papers
 
@@ -70,5 +92,6 @@ All entries in this section: linux, desktop.
 | 2025‑08‑27 | [CODA: Coordinating the Cerebrum and Cerebellum for a Dual-Brain Computer Use Agent with Decoupled Reinforcement Learning](https://arxiv.org/abs/2508.20096) | desktop | CODA combines a generalist planner with a specialist GUI executor and trains application-specific planners through decoupled GRPO. Successful specialist trajectories then support supervised training of a consolidated planner, evaluated across four ScienceBoard applications. |
 | 2025‑05‑30 | [VideoCAD: A Dataset and Model for Learning Long-Horizon 3D CAD UI Interactions from Video](https://arxiv.org/abs/2505.24838) | web | Introduces synthetic CAD interaction videos, a model for learning interface actions from video, and evaluation tasks for spatial and long-horizon reasoning. |
 | 2025‑05‑26 | [ScienceBoard: Evaluating Multimodal Autonomous Agents in Realistic Scientific Workflows](https://arxiv.org/abs/2505.19897) | desktop | ScienceBoard combines an interactive environment with professional scientific software and 169 human-curated tasks in areas including biochemistry, astronomy, and geoinformatics. It evaluates computer-use agents on visually rich research workflows and analyzes their execution limitations. |
+| 2025‑05‑23 | [Automated Testing of the GUI of a Real-Life Engineering Software using Large Language Models](https://arxiv.org/abs/2505.17839) | unspecified | GERALLT uses LLMs to explore the GUI of engineering software and produce a list of confusing or inconsistent interface areas for developers to inspect. |
 | 2024‑12‑18 | [CAD-Assistant: Tool-Augmented VLLMs as Generic CAD Task Solvers](https://arxiv.org/abs/2412.13810) | unspecified | CAD-Assistant plans CAD tasks and executes actions through FreeCAD's Python API, using the changing design state to guide later commands. |
 | 2024‑07‑15 | [Spider2-V: How Far Are Multimodal Agents From Automating Data Science and Engineering Workflows?](https://arxiv.org/abs/2407.10956) | desktop, web | Benchmarks multimodal agents on data-science and engineering workflows involving enterprise applications, code, and GUI operations in real computer environments. |

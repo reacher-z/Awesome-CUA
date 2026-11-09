@@ -2,25 +2,47 @@
 
 [Home](../../README.md) · [All topics](../topics.md) · [Full arXiv bibliography](../papers.md)
 
-95 source-reviewed resources tagged `interaction-history`. Curated metadata; unknown facts are shown as —.
+106 source-reviewed resources tagged `interaction-history`. Curated metadata; unknown facts are shown as —.
 
-**Contents:** [Models (1)](#models) · [Frameworks (1)](#frameworks) · [Tools (1)](#tools) · [Surveys (1)](#surveys) · [Papers (91)](#papers)
+**Contents:** [Benchmarks (1)](#benchmarks) · [Datasets (2)](#datasets) · [Models (4)](#models) · [Agents (2)](#agents) · [Frameworks (2)](#frameworks) · [Tools (1)](#tools) · [Surveys (1)](#surveys) · [Papers (93)](#papers)
+
+## Benchmarks
+
+All entries in this section: web.
+
+| Resource | Paper | Scale | License | Description | Evidence |
+| --- | --- | --- | --- | --- | --- |
+| [VideoWebArena](https://github.com/ljang0/videowebarena) | [2410.19100](https://arxiv.org/abs/2410.19100) (2024) | — | — | VideoWebArena evaluates web agents that use video tutorials to complete website tasks. Its released benchmark includes task configurations, environments, and an evaluation pipeline. | [✓ 2026‑11‑09](https://raw.githubusercontent.com/ljang0/videowebarena/HEAD/README.md) |
+
+## Datasets
+
+| Resource | Environments | Paper | Scale | License | Description | Evidence |
+| --- | --- | --- | --- | --- | --- | --- |
+| [Fanbin/waa_steve_trajectories](https://huggingface.co/datasets/Fanbin/waa_steve_trajectories) | desktop, windows | [2503.12532](https://arxiv.org/abs/2503.12532) (2025) | — | — | A dataset of STEVE-R1 evaluation trajectories on WindowsAgentArena, pairing task screenshots and agent responses with action traces and outcome labels. | [✓ 2026‑11‑09](https://huggingface.co/api/datasets/Fanbin/waa_steve_trajectories) |
+| [go-browse-wa-raw](https://huggingface.co/datasets/apurvaga/go-browse-wa-raw) | web | — | — | — | go-browse-wa-raw is a browser-agent trajectory dataset with page observations, actions, goals, rewards, and images. Its train split contains 196462 examples. | [✓ 2026‑11‑09](https://huggingface.co/api/datasets/apurvaga/go-browse-wa-raw) |
 
 ## Models
 
-All entries in this section: android, desktop.
+| Resource | Environments | Paper | License | Description | Evidence |
+| --- | --- | --- | --- | --- | --- |
+| [Aria-UI context-aware checkpoint](https://huggingface.co/Aria-UI/Aria-UI-context-aware) | android, desktop | [2412.16256](https://arxiv.org/abs/2412.16256) (2024) | — | The context-aware Aria-UI release that uses interaction context to support grounding in dynamic Android and desktop agent tasks. | [✓ 2026‑10‑17](https://huggingface.co/api/models/Aria-UI/Aria-UI-context-aware) |
+| [Aria-UI/Aria-UI-base](https://huggingface.co/Aria-UI/Aria-UI-base) | android, desktop | [2412.16256](https://arxiv.org/abs/2412.16256) (2024) | weights apache-2.0 | Aria-UI/Aria-UI-base is a released GUI grounding checkpoint that maps an instruction and interface image to target coordinates. The card documents history-aware input and inference examples. | [✓ 2026‑11‑09](https://huggingface.co/api/models/Aria-UI/Aria-UI-base) |
+| [OpenCUA-7B](https://huggingface.co/xlangai/OpenCUA-7B) | desktop, linux, windows, macos | [2508.09123](https://arxiv.org/abs/2508.09123) (2025) | weights mit | A Qwen2.5-VL-based computer-use checkpoint that produces desktop actions from screenshots and instructions, using recent screen history for context. | [✓ 2026‑11‑09](https://huggingface.co/api/models/xlangai/OpenCUA-7B) |
+| [STEVE-R1-7B-SFT](https://huggingface.co/Fanbin/STEVE-R1-7B-SFT) | desktop, windows, linux | [2503.12532](https://arxiv.org/abs/2503.12532) (2025) | weights apache-2.0 | STEVE-R1-7B-SFT is a released computer-use checkpoint trained with step-verified data for desktop agent tasks and evaluated on Windows and Ubuntu environments. | [✓ 2026‑11‑09](https://huggingface.co/api/models/Fanbin/STEVE-R1-7B-SFT) |
 
-| Resource | Paper | License | Description | Evidence |
-| --- | --- | --- | --- | --- |
-| [Aria-UI context-aware checkpoint](https://huggingface.co/Aria-UI/Aria-UI-context-aware) | [2412.16256](https://arxiv.org/abs/2412.16256) (2024) | — | The context-aware Aria-UI release that uses interaction context to support grounding in dynamic Android and desktop agent tasks. | [✓ 2026‑10‑17](https://huggingface.co/api/models/Aria-UI/Aria-UI-context-aware) |
+## Agents
+
+| Resource | Environments | Paper | License | Description | Evidence |
+| --- | --- | --- | --- | --- | --- |
+| [Auto-UI](https://github.com/gimme1dollar/auto_ui) | android | [2309.11436](https://arxiv.org/abs/2309.11436) (2023) | code Apache-2.0 | A multimodal interface agent that uses earlier actions and future action plans to predict the next action. The repository provides training and inference instructions. | [✓ 2026‑11‑09](https://raw.githubusercontent.com/gimme1dollar/auto_ui/HEAD/README.md) |
+| [GUI-Rise](https://github.com/Leon022/GUI-Rise-code) | cross-platform, web, android | [2510.27210](https://arxiv.org/abs/2510.27210) (2025) | — | A GUI navigation agent that combines stepwise reasoning with history summarization; its repository provides supervised training, reinforcement learning, and evaluation instructions. | [✓ 2026‑11‑09](https://raw.githubusercontent.com/Leon022/GUI-Rise-code/HEAD/README.md) |
 
 ## Frameworks
 
-All entries in this section: android.
-
-| Resource | Paper | License | Description | Evidence |
-| --- | --- | --- | --- | --- |
-| [MemGUI-Agent](https://github.com/kwai/MemGUI-Agent) | [2606.19926](https://arxiv.org/abs/2606.19926) (2026) | — | MemGUI-Agent training and offline evaluation tools provide trajectory conversion, LoRA SFT templates, and step-level checks of GUI actions, memory updates and context folding. | [✓ 2026‑10‑20](https://raw.githubusercontent.com/kwai/MemGUI-Agent/main/README.md) |
+| Resource | Environments | Paper | License | Description | Evidence |
+| --- | --- | --- | --- | --- | --- |
+| [HiconAgent](https://github.com/iLearn-Lab/CVPR26-HiconAgent) | unspecified | [2512.01763](https://arxiv.org/abs/2512.01763) (2025) | — | HiconAgent provides GUI-policy training code that samples histories of varied lengths and compresses past interactions during policy optimization. | [✓ 2026‑11‑09](https://raw.githubusercontent.com/iLearn-Lab/CVPR26-HiconAgent/HEAD/README.md) |
+| [MemGUI-Agent](https://github.com/kwai/MemGUI-Agent) | android | [2606.19926](https://arxiv.org/abs/2606.19926) (2026) | — | MemGUI-Agent training and offline evaluation tools provide trajectory conversion, LoRA SFT templates, and step-level checks of GUI actions, memory updates and context folding. | [✓ 2026‑10‑20](https://raw.githubusercontent.com/kwai/MemGUI-Agent/main/README.md) |
 
 ## Tools
 
@@ -101,11 +123,13 @@ All entries in this section: unspecified.
 | 2026‑02‑09 | [MUZZLE: Adaptive Agentic Red-Teaming of Web Agents Against Indirect Prompt Injection Attacks](https://arxiv.org/abs/2602.09222) | web | MUZZLE evaluates web-agent exposure to indirect prompt injection by finding attack surfaces in agent trajectories and refining injected instructions from execution feedback. |
 | 2026‑01‑28 | [Me-Agent: A Personalized Mobile Agent with Two-Level User Habit Learning for Enhanced Interaction](https://arxiv.org/abs/2601.20162) | unspecified | Me-Agent personalizes mobile agent behavior through a preference reward model and hierarchical memory for long-term and app-specific habits, and introduces User FingerTip. |
 | 2026‑01‑14 | [Compress to Focus: Efficient Coordinate Compression for Policy Optimization in Multi-Turn GUI Agents](https://arxiv.org/abs/2601.11631) | unspecified | CCPO couples GUI policy optimization with coordinate-guided compression of past visual observations. It aggregates targets across rollouts to focus retained context and uses distance-based advantages to train grounding and compression together. |
+| 2026 | [Trace2Ground: Scenario, Disambiguation, and Relation Traces for Web GUI Grounding](https://aclanthology.org/2026.realm-1.100) | web, desktop | Trace2Ground builds a web GUI grounding dataset from HTML/DOM elements and simulated traces, testing scenario, duplicate-label, and relational instructions. |
 | 2025‑12‑11 | [AgentProg: Empowering Long-Horizon GUI Agents with Program-Guided Context Management](https://arxiv.org/abs/2512.10371) | android | Introduces AgentProg, organizing mobile-agent interaction history as a program with variables and control flow to decide what context to retain. A global belief state handles partial observability, with evaluation on AndroidWorld and extended long-horizon tasks. |
 | 2025‑12‑01 | [HiconAgent: History Context-aware Policy Optimization for GUI Agents](https://arxiv.org/abs/2512.01763) | android | HiconAgent trains GUI policies to use history through variable-length context sampling and paired policy updates with compressed and complete histories. Its compression retains past actions while removing historical observations, and an alignment loss couples the two branches. |
 | 2025‑11‑27 | [Real-Time Procedural Learning From Experience for AI Agents](https://arxiv.org/abs/2511.22074) | web | PRAXIS stores action outcomes and retrieves past state-action-result examples to guide agent decisions, with evaluation on the REAL web browsing benchmark. |
 | 2025‑11‑17 | [WebCoach: Self-Evolving Web Agents with Cross-Session Memory Guidance](https://arxiv.org/abs/2511.12997) | web | Introduces WebCoach, which condenses navigation logs into persistent episodic memory and retrieves experiences by similarity and recency. Runtime hooks selectively supply advice to browser agents, evaluated on WebVoyager without retraining the underlying models. |
 | 2025‑11‑12 | [History-Aware Reasoning for GUI Agents](https://arxiv.org/abs/2511.09127) | unspecified | HAR-GUI combines episodic reasoning and short-term memory to use earlier interactions when selecting GUI actions. Its training constructs reflective scenarios and correction guidance and applies a hybrid reinforcement-learning reward to the 3B policy. |
+| 2025‑11 | [UI-Hawk: Unleashing the Screen Stream Understanding for Mobile GUI Agents](https://aclanthology.org/2025.emnlp-main.920/) | android | Mobile GUI agent whose history-aware visual encoder reads earlier screenshots with the current one, trained by a curriculum from grounding, referring, screen QA and summarization to navigation; adds the FunUI benchmark. |
 | 2025‑10‑31 | [GUI-Rise: Structured Reasoning and History Summarization for GUI Navigation](https://arxiv.org/abs/2510.27210) | unspecified | Combines structured progress-and-decision reasoning with history summarization to improve cross-domain generalization in GUI navigation agents. |
 | 2025‑10‑22 | [See, Think, Act: Online Shopper Behavior Simulation with VLM Agents](https://arxiv.org/abs/2510.19245) | web | Studies online shopper action prediction with VLM agents using webpage screenshots, HTML, and action history from OPeRA, trained with SFT and hierarchical RL rewards. |
 | 2025‑10‑22 | [WebGraphEval: Multi-Turn Trajectory Evaluation for Web Agents using Graph Representation](https://arxiv.org/abs/2510.19205) | web | Introduces WebGraphEval, which merges multiple agents' trajectories into a weighted graph of canonical actions. Structural analyses examine recurring behavior, inefficient paths and important decision points beyond a final success score. |

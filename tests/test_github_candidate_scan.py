@@ -86,6 +86,17 @@ class ScanTests(unittest.TestCase):
             query = urllib.parse.parse_qs(urllib.parse.urlsplit(url).query)['q'][0]
             self.assertIn('is:public fork:false', query)
 
+    def test_description_phrase_cohort_keeps_public_candidate_and_query_receipt(self):
+        state, run = self.execute([response(page([repo(73, 'storytold/photocraft',
+            description='A clean-room reimplementation of PhotoCraft', topics=[])]))],
+            topics=['phrase-clean-room-reimplementation'])
+        self.assertEqual(run['new_unique_repositories'], 1)
+        self.assertEqual(state['records']['github-repository:73']['scope'], 'relevance_pending')
+        query = urllib.parse.parse_qs(urllib.parse.urlsplit(self.calls[0][0]).query)['q'][0]
+        self.assertIn('"clean-room reimplementation" in:readme,description', query)
+        self.assertEqual(scan.safe_api_url(self.calls[0][0]), self.calls[0][0])
+        self.assertEqual(state['receipts'][0]['outcome'], 'accepted')
+
     def test_private_unknown_and_fork_rows_do_not_leak_into_ledger_or_raw_cache(self):
         unsafe = [repo(2, 'SECRET/private', private=True), repo(3, 'SECRET/unknown', visibility=None),
                   repo(4, 'SECRET/missing', private=None), repo(5, 'SECRET/fork', fork=True)]

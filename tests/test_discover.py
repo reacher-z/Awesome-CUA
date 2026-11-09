@@ -96,6 +96,22 @@ class DiscoverTests(unittest.TestCase):
         self.assertEqual(runs["other"]["state"], "success")
         self.assertEqual(candidates["github:xlang-ai/osworld"]["discovered_in"][1]["evidence"]["retrieved_at"], "2026-10-18T00:00:00Z")
 
+    def test_source_exception_is_recorded_and_other_sources_continue(self):
+        self.bodies[LIST['url']] = b'# List\n- https://github.com/owner/asset\n'
+        self.at = '2026-10-18T00:00:00Z'
+        original = self.fetch
+        def fetch(url, refresh=False):
+            if url == LIST['url']:
+                raise TimeoutError('source timed out')
+            return original(url, refresh)
+        with mock.patch.object(catalog, 'fetch', side_effect=fetch):
+            catalog.discover(types.SimpleNamespace(refresh=True, limit=0))
+        runs = {run['id']: run for run in catalog.read_json(self.path / 'discovery-runs.json')}
+        self.assertEqual(runs['list']['state'], 'failed')
+        self.assertIn('source timed out', runs['list']['error'])
+        self.assertEqual(runs['other']['state'], 'success')
+        self.assertIn('github:xlang-ai/osworld', {row['id'] for row in catalog.read_jsonl(self.path / 'candidates.jsonl')})
+
     def test_retired_source_is_not_requested_and_keeps_its_last_snapshot_provenance(self):
         before, _ = self.discover(README.encode(), "2026-10-17T00:00:00Z")
         retired = {**LIST, "retired": {"date": "2026-10-18", "reason": "The upstream document now returns HTTP 404 for every request."}}

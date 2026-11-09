@@ -110,7 +110,7 @@ class PartialScanReportingTests(unittest.TestCase):
         self.assertNotIn('repeated_partial', step_outputs(self.scan(history=['partial'] * 9)[2]), 'no limit configured')
 
     def test_the_configured_limit_is_set(self):
-        self.assertEqual(scan.read_json(ROOT / 'data' / 'scan-config.json')['max_consecutive_partial'], 8)
+        self.assertEqual(scan.read_json(ROOT / 'data' / 'scan-config.json')['max_consecutive_partial'], 3)
 
 
 class ThrottlePauseTests(unittest.TestCase):

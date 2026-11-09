@@ -109,5 +109,20 @@ class PromotionShellTests(unittest.TestCase):
         self.assertLess(script.index("try{"), script.index("localStorage"))
 
 
+class FirstPaintAssetTests(unittest.TestCase):
+    SUMMARY = 'A catalog of computer-use agent resources with primary sources and review status for each record.'
+
+    def test_only_the_headline_face_is_preloaded(self):
+        head = site_shell.head_assets()
+        self.assertIn('/assets/fonts/eb-garamond.woff2', head)
+        self.assertNotIn('/assets/fonts/inter.woff2', head)
+
+    def test_english_homepage_waits_on_one_stylesheet(self):
+        home = search_pages.page('AwesomeCUA', self.SUMMARY, '/', '<h1>x</h1>', landing=True)
+        reading = search_pages.page('Catalog', self.SUMMARY, '/catalog/', '<h1>x</h1>')
+        self.assertNotIn('/pages.css', home)
+        self.assertIn('/pages.css', reading)
+
+
 if __name__ == "__main__":
     unittest.main()

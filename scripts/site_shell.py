@@ -122,8 +122,8 @@ def head_assets(lang="en") -> str:
             '<meta name="referrer" content="strict-origin-when-cross-origin">'
             '<meta name="theme-color" content="#FFFFFF" media="(prefers-color-scheme: light)">'
             '<meta name="theme-color" content="#0C1023" media="(prefers-color-scheme: dark)">'
+            # The headline face is the largest paint on most pages; the body and mono faces load when the stylesheet asks.
             '<link rel="preload" href="/assets/fonts/eb-garamond.woff2" as="font" type="font/woff2" crossorigin>'
-            '<link rel="preload" href="/assets/fonts/inter.woff2" as="font" type="font/woff2" crossorigin>'
             f'<link rel="stylesheet" href="{asset("/assets/site.css")}">'
             f'<script src="{asset("/assets/site.js")}" defer></script>')
 

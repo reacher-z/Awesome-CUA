@@ -377,7 +377,7 @@
     addEventListener('resize', () => strip());
     prev.addEventListener('click', () => nav.scrollBy({left: -220, behavior: reduce.matches ? 'auto' : 'smooth'}));
     next.addEventListener('click', () => nav.scrollBy({left: 220, behavior: reduce.matches ? 'auto' : 'smooth'}));
-    d.fonts && d.fonts.ready.then(() => strip()); strip();
+    if (d.fonts) { d.fonts.ready.then(() => strip()); d.fonts.addEventListener('loadingdone', () => strip()) } strip();
     if (more) {
       d.addEventListener('click', e => { if (more.open && !more.contains(e.target)) more.open = false });
       more.addEventListener('keydown', e => { if (e.key === 'Escape' && more.open) { e.stopPropagation(); more.open = false; $('summary', more).focus() } });
@@ -450,7 +450,8 @@
     }
     geometry();
     let rt; addEventListener('resize', () => { clearTimeout(rt); rt = setTimeout(geometry, 120) });
-    d.fonts && d.fonts.ready.then(geometry);
+    // The body and mono faces load without a preload, so one can arrive after this first measure; re-measure whenever a face finishes.
+    if (d.fonts) { d.fonts.ready.then(geometry); d.fonts.addEventListener('loadingdone', geometry) }
     const first = !sess.get('cua-glide') && !reduce.matches && !input.value;
     if (first) {
       sess.set('cua-glide', '1');

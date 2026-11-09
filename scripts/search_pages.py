@@ -44,6 +44,7 @@ DESCRIPTION_BOUNDS = {'en': (70, 160), 'zh-CN': (50, 160)}
 DESCRIPTION_CONTEXT = {'en': 'AwesomeCUA links every computer-use agent resource to its primary sources and review status.',
                        'zh-CN': 'AwesomeCUA 收录计算机使用智能体的论文、模型、数据集、评测基准与工具，每条记录都附一手来源、许可证与审阅状态。'}
 CJK_BREAKS = '，、；：。！？）'
+CONNECTION_PAGE_SIZE = 150
 
 
 def esc(value):
@@ -231,7 +232,9 @@ def page(title, summary, path, body, main=None, index=True, lang="en", alternati
     skip='跳到正文' if lang.startswith('zh') else 'Skip to content'
     # Only the homepage has its own search window; other wide pages keep the header search.
     body_class=''if not landing else ' class="home"' if path in ('/','/zh/') else ' class="home list-page"'
-    document=f'''<!doctype html><html lang="{lang}" data-site="cua"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>{esc(full_title)}</title>{site_shell.head_assets(lang)}<meta name="description" content="{esc(snippet)}"><meta name="robots" content="{robots}">{identity}{alternate}<meta property="og:title" content="{esc(full_title)}"><meta property="og:description" content="{esc(snippet)}">{og_url}<meta property="og:type" content="website"><meta property="og:site_name" content="AwesomeCUA"><meta property="og:locale" content="{"zh_CN" if lang=="zh-CN" else "en_US"}"><meta property="og:image" content="{SITE}{og_image}"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta property="og:image:alt" content="{esc(og_alt)}"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:image" content="{SITE}{og_image}"><link rel="icon" href="/favicon.svg" type="image/svg+xml"><link rel="stylesheet" href="{site_shell.asset("/pages.css")}"><script type="application/ld+json">{jsonld({"@context":"https://schema.org","@graph":graph})}</script>{home_page.legacy_redirect_script() if path=="/" else ""}</head><body{body_class}><a class="skip" href="#content">{skip}</a>{site_shell.top(path=path,lang=lang,lang_href=switch_to,live=landing)}{content}{site_shell.bottom(lang=lang,lang_href=switch_to,live=landing)}</body></html>'''
+    # The English homepage uses no reading-page rule, so its first paint waits on one stylesheet instead of two.
+    pages_css='' if path=='/' else f'<link rel="stylesheet" href="{site_shell.asset("/pages.css")}">'
+    document=f'''<!doctype html><html lang="{lang}" data-site="cua"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>{esc(full_title)}</title>{site_shell.head_assets(lang)}<meta name="description" content="{esc(snippet)}"><meta name="robots" content="{robots}">{identity}{alternate}<meta property="og:title" content="{esc(full_title)}"><meta property="og:description" content="{esc(snippet)}">{og_url}<meta property="og:type" content="website"><meta property="og:site_name" content="AwesomeCUA"><meta property="og:locale" content="{"zh_CN" if lang=="zh-CN" else "en_US"}"><meta property="og:image" content="{SITE}{og_image}"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta property="og:image:alt" content="{esc(og_alt)}"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:image" content="{SITE}{og_image}"><link rel="icon" href="/favicon.svg" type="image/svg+xml">{pages_css}<script type="application/ld+json">{jsonld({"@context":"https://schema.org","@graph":graph})}</script>{home_page.legacy_redirect_script() if path=="/" else ""}</head><body{body_class}><a class="skip" href="#content">{skip}</a>{site_shell.top(path=path,lang=lang,lang_href=switch_to,live=landing)}{content}{site_shell.bottom(lang=lang,lang_href=switch_to,live=landing)}</body></html>'''
     return document
 
 
@@ -915,15 +918,29 @@ def build_search_pages(destination, rows, coverage, root, *, survey_page=None):
     zh_kind_rows=[(home_page.KINDS[kind][2],count,('/zh/papers/index.md' if kind=='paper' else f'/zh/categories/{kind}/index.md')) for (label,count,path),kind in zip(kind_rows,FULL_ORDER)]
     (destination/'zh/catalog/index.md').write_text(clean_text(catalog_markdown(zh_kind_rows,[(topic_name(topic,'zh'),len(members),topic_path(topic,'zh')) for topic,members in topic_groups.items()],site=SITE,counts=counts,language='zh')),encoding='utf-8')
     linked_papers=[r for r in papers if any(e['type'] in {'documented_by','introduced_by'} for e in incoming.get(r['id'],[]))]
-    body='<div class="eyebrow">FOLLOW THE RESEARCH TO THE ASSETS</div><h1>Computer-use papers, code, and datasets</h1><p class="answer-lead">Find the implementations, benchmarks, and datasets connected to reviewed research papers. Every relationship below has a primary-source evidence link.</p><p>Connections describe publication documentation or introduction.</p><div class="reading-list">'
-    for paper in linked_papers:
-        body+=f'<article><h2><a href="{resource_path(paper)}">{esc(paper["name"])}</a></h2><p>{esc(description(paper))}</p><ul>'
-        for rel in incoming[paper['id']]:
-            source=lookup[rel['source_id']]
-            body+=f'<li><a href="{resource_path(source)}">{esc(source["name"])}</a> — {esc(KINDS[source["kind"]])} · <a href="{safe_href(rel["evidence_url"])}">source evidence</a></li>'
-        body+='</ul></article>'
-    body+='</div><p><a href="/downloads/relationships.json">Download reviewed relationships as JSON</a> · <a href="/about/">Editorial policy</a></p>'
-    emit('/connections/',page('Computer-use papers, code, and datasets','Trace computer-use agent papers to documented implementations, GUI benchmarks, and training datasets using reviewed primary-source relationships.','/connections/',body),lastmod=modified(linked_papers+[lookup[rel['source_id']] for paper in linked_papers for rel in incoming[paper['id']]]))
+    # Long lists split into pages so each page stays a readable size; the newest papers come first.
+    connection_pages=[linked_papers[i:i+CONNECTION_PAGE_SIZE] for i in range(0,len(linked_papers),CONNECTION_PAGE_SIZE)] or [[]]
+    def connection_path(n):
+        return '/connections/' if n==1 else f'/connections/page/{n}/'
+    for number,members in enumerate(connection_pages,1):
+        path=connection_path(number)
+        start=(number-1)*CONNECTION_PAGE_SIZE
+        pager='' if len(connection_pages)==1 else ('<nav class="pagination library-pager" aria-label="Connection pages">'
+            + (f'<a href="{connection_path(number-1)}" rel="prev">← Previous</a>' if number>1 else '<span></span>') + '<span class="page-numbers">'
+            + ''.join(f'<a href="{connection_path(n)}" aria-label="Page {n}"' + (' aria-current="page"' if n==number else '') + f'>{n}</a>' for n in range(1,len(connection_pages)+1))
+            + '</span>' + (f'<a href="{connection_path(number+1)}" rel="next">Next →</a>' if number<len(connection_pages) else '<span></span>')
+            + f'</nav><p class="library-range">Showing {start+1:,}–{start+len(members):,} of {len(linked_papers):,} papers.</p>')
+        body='<div class="eyebrow">FOLLOW THE RESEARCH TO THE ASSETS</div><h1>Computer-use papers, code, and datasets'+(f', page {number}' if number>1 else '')+'</h1><p class="answer-lead">Find the implementations, benchmarks, and datasets connected to reviewed research papers. Every relationship below has a primary-source evidence link.</p><p>Connections describe publication documentation or introduction.</p><div class="reading-list">'
+        for paper in members:
+            body+=f'<article><h2><a href="{resource_path(paper)}">{esc(paper["name"])}</a></h2><p>{esc(description(paper))}</p><ul>'
+            for rel in incoming[paper['id']]:
+                source=lookup[rel['source_id']]
+                body+=f'<li><a href="{resource_path(source)}">{esc(source["name"])}</a> — {esc(KINDS[source["kind"]])} · <a href="{safe_href(rel["evidence_url"])}">source evidence</a></li>'
+            body+='</ul></article>'
+        body+='</div>'+pager+'<p><a href="/downloads/relationships.json">Download reviewed relationships as JSON</a> · <a href="/about/">Editorial policy</a></p>'
+        title='Computer-use papers, code, and datasets'+(f', page {number}' if number>1 else '')
+        crumbs=[("AwesomeCUA","/"),("Computer-use papers, code, and datasets","/connections/")]+([(f'Page {number}',path)] if number>1 else [])
+        emit(path,page(title,'Trace computer-use agent papers to documented implementations, GUI benchmarks, and training datasets using reviewed primary-source relationships.',path,body,crumbs=crumbs if number>1 else None),lastmod=modified(members+[lookup[rel['source_id']] for paper in members for rel in incoming[paper['id']]]))
     edges=[{'source_id':r['id'],'source_name':r['name'],'source_kind':r['kind'],**rel} for r in rows for rel in r['relations']]
     (destination/'downloads/relationships.json').write_text(json.dumps({'relation_count':len(edges),'semantics':'Reviewed semantic links.','relations':edges},ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
     sources=''.join(f'<tr><td><a href="{safe_href(s["url"])}">{esc(s["name"])}</a></td><td>{s["discovered"]}</td><td>{s["indexed"]}</td><td>{s["curated"]}</td><td>{s["excluded"]}</td><td>{s.get("set_aside",0)}</td><td>{s.get("out_of_scope",0)}</td><td>{s["unindexed"]}</td></tr>' for s in coverage['sources'])

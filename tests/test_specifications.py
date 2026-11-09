@@ -76,4 +76,17 @@ class SpecificationIntegrityTests(unittest.TestCase):
                 self.assertTrue(all(e['sha256'] and e['retrieved_at'] for e in row['evidence']))
 
 
+
+
+class ComparisonMarkupTests(unittest.TestCase):
+    def test_cell_labels_are_block_strongs_without_line_breaks(self):
+        # Each row repeats across 100+ profiles, so the table keeps its element count low.
+        html=comparison_body([fixture()],'benchmark',resource_path)
+        table=html[html.index('<tbody>'):html.index('</tbody>')]
+        self.assertIn('<strong>Observe</strong>',table)
+        self.assertIn('class="compare-name"',table)
+        self.assertNotIn('<br><strong>',table)
+        self.assertNotIn('<li><a href=',table.split('<details>')[1])
+
+
 if __name__=='__main__':unittest.main()

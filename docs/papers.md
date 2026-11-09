@@ -5,7 +5,7 @@
 Bibliographic records from arXiv and retained publication sources. Metadata-only entries await relevance review. Discovery includes historical references and adjacent work.
 Dates retain their recorded precision. Explicit arXiv scope exclusions are listed in the [scope-decision ledger](../data/exclusion-status.json). The [arXiv archive](../data/papers.jsonl) and [publication observations](../data/publications.jsonl) retain their separate source facts.
 
-**Years:** [2026](#2026) (1,102; 865 ⭐) · [2025](#2025) (621; 501 ⭐) · [2024](#2024) (279; 205 ⭐) · [2023](#2023) (71; 52 ⭐) · [2022](#2022) (16; 16 ⭐) · [2021](#2021) (13; 11 ⭐) · [2020](#2020) (4; 4 ⭐) · [2019](#2019) (2; 2 ⭐) · [2018](#2018) (7; 7 ⭐) · [2017](#2017) (3; 3 ⭐) · [2016](#2016) (2; 2 ⭐) · [2013](#2013) (1; 0 ⭐) · [2010](#2010) (1; 1 ⭐) · [2009](#2009) (1; 1 ⭐) · [2007](#2007) (2; 2 ⭐) · [1991](#1991) (1; 1 ⭐)
+**Years:** [2026](#2026) (1,102; 865 ⭐) · [2025](#2025) (621; 502 ⭐) · [2024](#2024) (279; 206 ⭐) · [2023](#2023) (71; 52 ⭐) · [2022](#2022) (16; 16 ⭐) · [2021](#2021) (13; 11 ⭐) · [2020](#2020) (4; 4 ⭐) · [2019](#2019) (2; 2 ⭐) · [2018](#2018) (7; 7 ⭐) · [2017](#2017) (3; 3 ⭐) · [2016](#2016) (2; 2 ⭐) · [2013](#2013) (1; 0 ⭐) · [2010](#2010) (1; 1 ⭐) · [2009](#2009) (1; 1 ⭐) · [2007](#2007) (2; 2 ⭐) · [1991](#1991) (1; 1 ⭐)
 
 ⭐ marks papers with an editorial relevance review; their topics link to the [topic hubs](topics.md). Other rows are bibliographic metadata only.
 
@@ -1166,7 +1166,7 @@ Dates retain their recorded precision. Explicit arXiv scope exclusions are liste
 | 2025-11-28 | [LegalWebAgent: Empowering Access to Justice via LLM-Based Web Agents](https://arxiv.org/abs/2512.04105) | ⭐ reviewed | [evaluation](topics/evaluation.md), [human-in-the-loop](topics/human-in-the-loop.md), [industry](topics/industry.md), [web-navigation](topics/web-navigation.md) |
 | 2025-11-27 | [Training High-Level Schedulers with Execution-Feedback Reinforcement Learning for Long-Horizon GUI Automation](https://arxiv.org/abs/2511.22235) | ⭐ reviewed | [long-horizon](topics/long-horizon.md), [planning](topics/planning.md), [reinforcement-learning](topics/reinforcement-learning.md), [state-tracking](topics/state-tracking.md) |
 | 2025-11-27 | [Real-Time Procedural Learning From Experience for AI Agents](https://arxiv.org/abs/2511.22074) | ⭐ reviewed | [interaction-history](topics/interaction-history.md), [memory](topics/memory.md), [web-navigation](topics/web-navigation.md) |
-| 2025-11-26 | [Qwen3-VL Technical Report](https://arxiv.org/abs/2511.21631) | metadata |  |
+| 2025-11-26 | [Qwen3-VL Technical Report](https://arxiv.org/abs/2511.21631) | ⭐ reviewed | [screen-understanding](topics/screen-understanding.md) |
 | 2025-11-26 | [Prune4Web: DOM Tree Pruning Programming for Web Agent](https://arxiv.org/abs/2511.21398) | ⭐ reviewed | [efficiency](topics/efficiency.md), [grounding](topics/grounding.md), [screen-understanding](topics/screen-understanding.md) |
 | 2025-11-25 | [OpenApps: Simulating Environment Variations to Measure UI-Agent Reliability](https://arxiv.org/abs/2511.20766) | ⭐ reviewed | [data-generation](topics/data-generation.md), [evaluation](topics/evaluation.md), [robustness](topics/robustness.md) |
 | 2025-11-25 | [CANVAS: A Benchmark for Vision-Language Models on Tool-Based User Interface Design](https://arxiv.org/abs/2511.20737) | metadata |  |
@@ -1912,7 +1912,7 @@ Dates retain their recorded precision. Explicit arXiv scope exclusions are liste
 | 2024-06-20 | [E-ANT: A Large-Scale Dataset for Efficient Automatic GUI NavigaTion](https://arxiv.org/abs/2406.14250) | ⭐ reviewed | [evaluation](topics/evaluation.md), [mobile-navigation](topics/mobile-navigation.md) |
 | 2024-06-19 | [WONDERBREAD: A Benchmark for Evaluating Multimodal Foundation Models on Business Process Management Tasks](https://arxiv.org/abs/2406.13264) | ⭐ reviewed | [evaluation](topics/evaluation.md), [video](topics/video.md), [workflow](topics/workflow.md) |
 | 2024-06-19 | [GUI Action Narrator: Where and When Did That Action Take Place?](https://arxiv.org/abs/2406.13719) | ⭐ reviewed | [screen-understanding](topics/screen-understanding.md), [video](topics/video.md) |
-| 2024-06-19 | [AgentDojo: A Dynamic Environment to Evaluate Prompt Injection Attacks and Defenses for LLM Agents](https://arxiv.org/abs/2406.13352) | metadata |  |
+| 2024-06-19 | [AgentDojo: A Dynamic Environment to Evaluate Prompt Injection Attacks and Defenses for LLM Agents](https://arxiv.org/abs/2406.13352) | ⭐ reviewed | [evaluation](topics/evaluation.md), [safety-security](topics/safety-security.md), [tool-integration](topics/tool-integration.md) |
 | 2024-06-18 | [WebCanvas: Benchmarking Web Agents in Online Environments](https://arxiv.org/abs/2406.12373) | ⭐ reviewed | [evaluation](topics/evaluation.md), [web-navigation](topics/web-navigation.md) |
 | 2024-06-18 | [Dissecting Adversarial Robustness of Multimodal LM Agents](https://arxiv.org/abs/2406.12814) | ⭐ reviewed | [evaluation](topics/evaluation.md), [robustness](topics/robustness.md), [safety-security](topics/safety-security.md) |
 | 2024-06-17 | [KAOS: Large Model Multi-Agent Operating System](https://arxiv.org/abs/2406.11342) | metadata |  |

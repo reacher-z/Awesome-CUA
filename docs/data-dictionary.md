@@ -72,15 +72,19 @@ The schema checks `dataset_profile`, `benchmark_protocol`, `leaderboard_url`, `a
 | `release_revision` | benchmark, dataset, model | Hub commit of the inspected release | Editorial |
 | `repository_revision` | agent, benchmark, dataset, framework, infrastructure, tool | Git commit of the inspected source tree | Editorial |
 | `repository_id` | framework | Numeric repository identity from the retained official GitHub API response; a fork has its own ID, and a matching name or file tree does not establish a rename | Editorial |
-| `repository_tree_sha` | agent, benchmark, framework | Git tree object SHA from the inspected repository file listing; distinct from a commit SHA | Editorial |
+| `repository_tree_sha` | agent, benchmark, framework, model | Git tree object SHA from the inspected repository file listing; distinct from a commit SHA | Editorial |
 | `repository_url` | agent, benchmark, dataset, framework, model | Related implementation repository or component URL; this link alone does not establish a license or a separate resource identity | Editorial |
 | `release_tag` | agent, benchmark, framework, infrastructure, tool | Inspected release tag, such as `v0.8.8` | Editorial |
 | `package_version` | agent, tool | Inspected package version, such as an npm release | Editorial |
 | `dataset_release` | benchmark | DOI of a separately published data release | Editorial |
 | `component_path` | agent, framework | Path of a component record inside its repository | Editorial |
 | `availability` | agent, benchmark, dataset, framework, infrastructure, model, product, tool | What is publicly released and what is missing, such as source without checkpoints | Editorial |
-| `access` | dataset, product | How access is obtained, such as `publisher-managed` | Editorial |
-| `pricing_url` | product | Official pricing page, or null when not established | Editorial |
+| `access` | dataset, model, product | How access is obtained, such as `publisher-managed` | Editorial |
+| `pricing_url` | model, product | Official pricing page, or null when not established | Editorial |
+| `api_model_id` | model | Model identifier that the provider's API accepts, as the reviewed source states it | Editorial |
+| `documentation_url` | framework | Official documentation site | Editorial |
+| `release_notes_url` | product | Official release announcement or notes | Editorial |
+| `released_at` | product | Release date that the reviewed source states, as an ISO date | Editorial |
 | `maintenance_status` | infrastructure, tool | Publisher-stated status, such as `archived and deprecated` | Editorial |
 | `evaluation_caution` | framework | Evaluation behaviour that can distort reported results | Editorial |
 | `platform_constraints` | framework | Map from an environment key to a stated support limit | Editorial |

@@ -2,9 +2,9 @@
 
 [Home](../../README.md) · [All topics](../topics.md) · [Full arXiv bibliography](../papers.md)
 
-308 source-reviewed resources tagged `memory`. Curated metadata; unknown facts are shown as —.
+314 source-reviewed resources tagged `memory`. Curated metadata; unknown facts are shown as —.
 
-**Contents:** [Benchmarks (2)](#benchmarks) · [Datasets (2)](#datasets) · [Agents (28)](#agents) · [Frameworks (48)](#frameworks) · [Tools (16)](#tools) · [Infrastructure (1)](#infrastructure) · [Learning resources (1)](#learning-resources) · [Surveys (3)](#surveys) · [Papers (207)](#papers)
+**Contents:** [Benchmarks (2)](#benchmarks) · [Datasets (2)](#datasets) · [Models (4)](#models) · [Agents (30)](#agents) · [Frameworks (48)](#frameworks) · [Tools (16)](#tools) · [Infrastructure (1)](#infrastructure) · [Learning resources (1)](#learning-resources) · [Surveys (3)](#surveys) · [Papers (207)](#papers)
 
 ## Benchmarks
 
@@ -20,6 +20,17 @@
 | [Aria-UI Context-aware Data](https://huggingface.co/datasets/Aria-UI/Aria-UI_Context-aware_Data) | android | — | [≈ 992,000 instruction-output pairs](https://raw.githubusercontent.com/AriaUI/Aria-UI/HEAD/README.md) | data apache-2.0 | Episode-based mobile GUI grounding data released with Aria-UI for incorporating interaction history into target localization. | [✓ 2026‑10‑16](https://huggingface.co/api/datasets/Aria-UI/Aria-UI_Context-aware_Data) |
 | [MT-Mind2Web](https://huggingface.co/datasets/magicgh/MT-Mind2Web) | web | [2402.15057](https://arxiv.org/abs/2402.15057) (2024) | [600 conversations](https://huggingface.co/datasets/magicgh/MT-Mind2Web/raw/main/README.md) · [2,896 dialogue turns](https://huggingface.co/datasets/magicgh/MT-Mind2Web/raw/main/README.md) | data cc-by-4.0 | Multi-turn web-navigation conversations constructed from Mind2Web interactions, with dialogue turns, HTML snapshots, element candidates and click/type/select action sequences. | [✓ 2026‑10‑17](https://huggingface.co/datasets/magicgh/MT-Mind2Web/raw/main/README.md) |
 
+## Models
+
+All entries in this section: cross-platform, desktop, android, web.
+
+| Resource | Paper | License | Description | Evidence |
+| --- | --- | --- | --- | --- |
+| [GUI-Owl 1.5 32B Instruct](https://huggingface.co/mPLUG/GUI-Owl-1.5-32B-Instruct) | [2602.16855](https://arxiv.org/abs/2602.16855) (2026) | weights MIT | Instruct variant of the 32B GUI-Owl 1.5 native GUI agent model, built on Qwen3-VL and released with Mobile-Agent-v3.5 for desktop, mobile and browser control, with about 33.4B BF16 parameters under MIT. | [✓ 2026‑10‑18](https://huggingface.co/mPLUG/GUI-Owl-1.5-32B-Instruct/raw/6154cc22f19e7375994707986c1bd459e29621ac/README.md) |
+| [GUI-Owl 1.5 32B Think](https://huggingface.co/mPLUG/GUI-Owl-1.5-32B-Think) | [2602.16855](https://arxiv.org/abs/2602.16855) (2026) | weights MIT | Thinking variant of the 32B GUI-Owl 1.5 native GUI agent model, built on Qwen3-VL and released with Mobile-Agent-v3.5 for desktop, mobile and browser control, with about 33.4B BF16 parameters under MIT. | [✓ 2026‑10‑18](https://huggingface.co/mPLUG/GUI-Owl-1.5-32B-Think/raw/6635d0e256809902add2e091050c7f00b6c25c93/README.md) |
+| [GUI-Owl 1.5 8B Instruct](https://huggingface.co/mPLUG/GUI-Owl-1.5-8B-Instruct) | [2602.16855](https://arxiv.org/abs/2602.16855) (2026) | weights MIT | Instruct variant of the 8B GUI-Owl 1.5 native GUI agent model, built on Qwen3-VL and released with Mobile-Agent-v3.5 for desktop, mobile and browser control, with about 8.8B BF16 parameters under MIT. | [✓ 2026‑10‑18](https://huggingface.co/mPLUG/GUI-Owl-1.5-8B-Instruct/raw/06d5faecff74840bab2be2425e9c42667a5d04fc/README.md) |
+| [GUI-Owl 1.5 8B Think](https://huggingface.co/mPLUG/GUI-Owl-1.5-8B-Think) | [2602.16855](https://arxiv.org/abs/2602.16855) (2026) | weights MIT | Thinking variant of the 8B GUI-Owl 1.5 native GUI agent model, built on Qwen3-VL and released with Mobile-Agent-v3.5 for desktop, mobile and browser control, with about 8.8B BF16 parameters under MIT. | [✓ 2026‑10‑18](https://huggingface.co/mPLUG/GUI-Owl-1.5-8B-Think/raw/afe3707fc84caebc4d7046118b34493ecf8bb060/README.md) |
+
 ## Agents
 
 | Resource | Environments | Paper | License | Description | Evidence |
@@ -33,10 +44,12 @@
 | [AppAgentX](https://github.com/Westlake-AGI-Lab/AppAgentX) | android | [2503.02268](https://arxiv.org/abs/2503.02268) (2025) | — | Mobile agent research using accumulated interaction experience. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/Westlake-AGI-Lab/AppAgentX/HEAD/README.md) |
 | [AutoBot-AI](https://github.com/mrveiss/AutoBot-AI) | cross-platform, desktop, web | — | code Apache-2.0 | AutoBot-AI is a self-hosted autonomous agent platform combining vision-driven browser and desktop control, voice interaction, and workflow memory. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/mrveiss/AutoBot-AI/HEAD/README.md) |
 | [avids2 Jarvis](https://github.com/AVIDS2/jarvis) | desktop, macos, windows | — | code MIT | Real-time Chinese voice and desktop agent with persistent memory and Pi tool execution. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/AVIDS2/jarvis/main/README.md) |
+| [Browser Operator](https://github.com/BrowserOperator/browser-operator-core) | web | — | code BSD-3-Clause | Chromium-based AI browser whose DevTools panel runs a multi-agent framework (web-task, action, form-fill, research and verification agents) over accessibility trees with OpenRouter, OpenAI, Groq or LiteLLM models. | [✓ 2026‑10‑19](https://raw.githubusercontent.com/BrowserOperator/browser-operator-core/HEAD/README.md) |
 | [Cradle](https://github.com/BAAI-Agents/Cradle) | desktop | [2403.03186](https://arxiv.org/abs/2403.03186) (2024) | code MIT | Framework in which foundation models control games and software from screenshots alone, acting through keyboard and mouse, shown on RDR2, Stardew Valley, Cities: Skylines and Dealer's Life 2. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/BAAI-Agents/Cradle/HEAD/README.md) |
 | [Crimson-Heart](https://github.com/YEYVHAIOU/Crimson-Heart) | desktop, windows | — | code MIT | Persistent multimodal desktop agent with explicit runtime state management, priority-aware scheduling, and interruptible execution. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/YEYVHAIOU/Crimson-Heart/HEAD/README.md) |
 | [Errand](https://github.com/runta-dev/errand) | cross-platform, desktop, web | — | code Apache-2.0 | Open-source persistent desktop AI teammate with scheduled tasks, browser control, and workspace memory. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/runta-dev/errand/main/README.md) |
 | [FurlPay Bot](https://github.com/FurlPay/furlpay-bot) | cross-platform, desktop, web | — | code Apache-2.0 | Persistent AI teammate equipped with its own virtual computer, browser, long-term memory, and voice interface. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/FurlPay/furlpay-bot/main/README.md) |
+| [GUI-explorer](https://github.com/iLearn-Lab/ACL25-GUI-explorer) | android | [2505.16827](https://arxiv.org/abs/2505.16827) (2025) | code MIT | Android agent code that explores apps over ADB, mines transition-aware knowledge into a knowledge base behind a retrieval service, and runs an OpenAI-backed agent demo that draws on it. | [✓ 2026‑10‑18](https://raw.githubusercontent.com/iLearn-Lab/ACL25-GUI-explorer/HEAD/README.md) |
 | [Hermes Agent](https://github.com/NousResearch/hermes-agent) | cross-platform, desktop, web, linux, macos, windows | — | code MIT | Hermes Agent is a self-improving autonomous agent by Nous Research with procedural skill synthesis, browser control, and multi-platform sandboxes. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/NousResearch/hermes-agent/HEAD/README.md) |
 | [LASER](https://github.com/Mayer123/LASER) | web | [2309.08172](https://arxiv.org/abs/2309.08172) (2023) | code GPL-3.0 | LASER models interactive web navigation as state-space exploration with explicit state transitions and backtracking on WebShop. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/Mayer123/LASER/HEAD/README.md) |
 | [LKO Mark 3.4](https://github.com/shubhransh-gupta/LKO-Mark-3.4) | desktop, macos | — | — | Autonomous macOS desktop assistant with voice interaction, screen vision, and native AppleScript/system control. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/shubhransh-gupta/LKO-Mark-3.4/main/README.md) |

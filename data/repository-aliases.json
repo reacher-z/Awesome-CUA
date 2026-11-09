@@ -565,5 +565,329 @@
         "sha256": "4b80afa11f3998830090c9c186afc753f261cc05abbcd4d906400f757f41e4da"
       }
     ]
+  },
+  {
+    "alias_id": "github:cursortouch/windows-use",
+    "target_id": "github:jeomon/windows-use",
+    "repository_id": 1177532603,
+    "basis": "official_github_repository_id",
+    "reviewed_at": "2026-10-18T10:58:00Z",
+    "observations": [
+      {
+        "url": "https://api.github.com/repos/CursorTouch/Windows-Use",
+        "resolved_url": "https://api.github.com/repositories/1177532603",
+        "repository_id": 1177532603,
+        "full_name": "Jeomon/Windows-Use",
+        "html_url": "https://github.com/Jeomon/Windows-Use",
+        "retrieved_at": "2026-10-18T10:55:30Z",
+        "sha256": "4b307d4b41b2c8051082e30df56b6a2e4b4cb2bb877dccead1fa7ae9659a5498"
+      },
+      {
+        "url": "https://api.github.com/repos/Jeomon/Windows-Use",
+        "resolved_url": "https://api.github.com/repos/Jeomon/Windows-Use",
+        "repository_id": 1177532603,
+        "full_name": "Jeomon/Windows-Use",
+        "html_url": "https://github.com/Jeomon/Windows-Use",
+        "retrieved_at": "2026-10-18T10:56:15Z",
+        "sha256": "4b307d4b41b2c8051082e30df56b6a2e4b4cb2bb877dccead1fa7ae9659a5498"
+      }
+    ]
+  },
+  {
+    "alias_id": "github:qwenlm/qwen2.5-vl",
+    "target_id": "github:qwenlm/qwen3-vl",
+    "repository_id": 849239437,
+    "basis": "official_github_repository_id",
+    "reviewed_at": "2026-10-18T11:08:00Z",
+    "observations": [
+      {
+        "url": "https://api.github.com/repos/QwenLM/Qwen2.5-VL",
+        "resolved_url": "https://api.github.com/repositories/849239437",
+        "repository_id": 849239437,
+        "full_name": "QwenLM/Qwen3-VL",
+        "html_url": "https://github.com/QwenLM/Qwen3-VL",
+        "retrieved_at": "2026-10-18T11:06:42Z",
+        "sha256": "16d1d3853a888a4f3cfbe891c9238ff2cb33c0f8eb93a110d864524dcb3cbf41"
+      },
+      {
+        "url": "https://api.github.com/repos/QwenLM/Qwen3-VL",
+        "resolved_url": "https://api.github.com/repos/QwenLM/Qwen3-VL",
+        "repository_id": 849239437,
+        "full_name": "QwenLM/Qwen3-VL",
+        "html_url": "https://github.com/QwenLM/Qwen3-VL",
+        "retrieved_at": "2026-10-18T11:05:59Z",
+        "sha256": "16d1d3853a888a4f3cfbe891c9238ff2cb33c0f8eb93a110d864524dcb3cbf41"
+      }
+    ]
+  },
+  {
+    "alias_id": "github:qwenlm/qwen2-vl",
+    "target_id": "github:qwenlm/qwen3-vl",
+    "repository_id": 849239437,
+    "basis": "official_github_repository_id",
+    "reviewed_at": "2026-10-18T11:08:00Z",
+    "observations": [
+      {
+        "url": "https://api.github.com/repos/QwenLM/Qwen2-VL",
+        "resolved_url": "https://api.github.com/repositories/849239437",
+        "repository_id": 849239437,
+        "full_name": "QwenLM/Qwen3-VL",
+        "html_url": "https://github.com/QwenLM/Qwen3-VL",
+        "retrieved_at": "2026-10-18T11:06:43Z",
+        "sha256": "16d1d3853a888a4f3cfbe891c9238ff2cb33c0f8eb93a110d864524dcb3cbf41"
+      },
+      {
+        "url": "https://api.github.com/repos/QwenLM/Qwen3-VL",
+        "resolved_url": "https://api.github.com/repos/QwenLM/Qwen3-VL",
+        "repository_id": 849239437,
+        "full_name": "QwenLM/Qwen3-VL",
+        "html_url": "https://github.com/QwenLM/Qwen3-VL",
+        "retrieved_at": "2026-10-18T11:05:59Z",
+        "sha256": "16d1d3853a888a4f3cfbe891c9238ff2cb33c0f8eb93a110d864524dcb3cbf41"
+      }
+    ]
+  },
+  {
+    "alias_id": "github:thudm/glm-4.1v-thinking",
+    "target_id": "github:zai-org/glm-v",
+    "repository_id": 1010055053,
+    "basis": "official_github_repository_id",
+    "reviewed_at": "2026-10-18T11:11:00Z",
+    "observations": [
+      {
+        "url": "https://api.github.com/repos/THUDM/GLM-4.1V-Thinking",
+        "resolved_url": "https://api.github.com/repositories/1010055053",
+        "repository_id": 1010055053,
+        "full_name": "zai-org/GLM-V",
+        "html_url": "https://github.com/zai-org/GLM-V",
+        "retrieved_at": "2026-10-18T11:09:53Z",
+        "sha256": "3caa5a1c6a030d8a7b358b8f475df74c1339ffea330ab761f4a72e0d0f8bd380"
+      },
+      {
+        "url": "https://api.github.com/repos/zai-org/GLM-V",
+        "resolved_url": "https://api.github.com/repos/zai-org/GLM-V",
+        "repository_id": 1010055053,
+        "full_name": "zai-org/GLM-V",
+        "html_url": "https://github.com/zai-org/GLM-V",
+        "retrieved_at": "2026-10-18T11:09:45Z",
+        "sha256": "3caa5a1c6a030d8a7b358b8f475df74c1339ffea330ab761f4a72e0d0f8bd380"
+      }
+    ]
+  },
+  {
+    "alias_id": "github:jiutian-vl/gui-explorer",
+    "target_id": "github:ilearn-lab/acl25-gui-explorer",
+    "repository_id": 986202248,
+    "basis": "official_github_repository_id",
+    "reviewed_at": "2026-10-18T11:24:09Z",
+    "observations": [
+      {
+        "url": "https://api.github.com/repos/JiuTian-VL/GUI-explorer",
+        "resolved_url": "https://api.github.com/repositories/986202248",
+        "repository_id": 986202248,
+        "full_name": "iLearn-Lab/ACL25-GUI-explorer",
+        "html_url": "https://github.com/iLearn-Lab/ACL25-GUI-explorer",
+        "retrieved_at": "2026-10-18T11:24:02Z",
+        "sha256": "af64b78e2b61200a3fb1fdbfd927c60dd2a1b40cfc9da2dd05703f9d2642c26b"
+      },
+      {
+        "url": "https://api.github.com/repos/iLearn-Lab/ACL25-GUI-explorer",
+        "resolved_url": "https://api.github.com/repos/iLearn-Lab/ACL25-GUI-explorer",
+        "repository_id": 986202248,
+        "full_name": "iLearn-Lab/ACL25-GUI-explorer",
+        "html_url": "https://github.com/iLearn-Lab/ACL25-GUI-explorer",
+        "retrieved_at": "2026-10-18T11:24:03Z",
+        "sha256": "af64b78e2b61200a3fb1fdbfd927c60dd2a1b40cfc9da2dd05703f9d2642c26b"
+      }
+    ]
+  },
+  {
+    "alias_id": "github:hkuds/openphone",
+    "target_id": "github:hkuds/phonecli",
+    "repository_id": 1079332068,
+    "basis": "official_github_repository_id",
+    "reviewed_at": "2026-10-18T11:57:00Z",
+    "observations": [
+      {
+        "url": "https://api.github.com/repos/HKUDS/OpenPhone",
+        "resolved_url": "https://api.github.com/repositories/1079332068",
+        "repository_id": 1079332068,
+        "full_name": "HKUDS/PhoneCLI",
+        "html_url": "https://github.com/HKUDS/PhoneCLI",
+        "retrieved_at": "2026-10-18T11:55:36Z",
+        "sha256": "7a27d023f3576d7c12cdbe428f920469539fde6419cfcbe52a0cb1e9ba8e89a7"
+      },
+      {
+        "url": "https://api.github.com/repos/HKUDS/PhoneCLI",
+        "resolved_url": "https://api.github.com/repos/HKUDS/PhoneCLI",
+        "repository_id": 1079332068,
+        "full_name": "HKUDS/PhoneCLI",
+        "html_url": "https://github.com/HKUDS/PhoneCLI",
+        "retrieved_at": "2026-10-18T11:55:37Z",
+        "sha256": "7a27d023f3576d7c12cdbe428f920469539fde6419cfcbe52a0cb1e9ba8e89a7"
+      }
+    ]
+  },
+  {
+    "alias_id": "github:ota-tech-ai/webagentprotocol",
+    "target_id": "github:ota-tech-ai/web-agent-protocol",
+    "repository_id": 985409238,
+    "basis": "official_github_repository_id",
+    "reviewed_at": "2026-10-19T06:14:00Z",
+    "observations": [
+      {
+        "url": "https://api.github.com/repos/OTA-Tech-AI/webagentprotocol",
+        "resolved_url": "https://api.github.com/repositories/985409238",
+        "repository_id": 985409238,
+        "full_name": "OTA-Tech-AI/web-agent-protocol",
+        "html_url": "https://github.com/OTA-Tech-AI/web-agent-protocol",
+        "retrieved_at": "2026-10-19T06:13:02Z",
+        "sha256": "035e5ff978b7c604f7f95ee0bd8bc682278153961e72e0eb5f0f059922456d1e"
+      },
+      {
+        "url": "https://api.github.com/repos/OTA-Tech-AI/web-agent-protocol",
+        "resolved_url": "https://api.github.com/repos/OTA-Tech-AI/web-agent-protocol",
+        "repository_id": 985409238,
+        "full_name": "OTA-Tech-AI/web-agent-protocol",
+        "html_url": "https://github.com/OTA-Tech-AI/web-agent-protocol",
+        "retrieved_at": "2026-10-19T06:13:03Z",
+        "sha256": "035e5ff978b7c604f7f95ee0bd8bc682278153961e72e0eb5f0f059922456d1e"
+      }
+    ]
+  },
+  {
+    "alias_id": "github:composiohq/open-chatgpt-atlas",
+    "target_id": "github:composio-community/open-chatgpt-atlas",
+    "repository_id": 1080954405,
+    "basis": "official_github_repository_id",
+    "reviewed_at": "2026-10-18T12:20:15Z",
+    "observations": [
+      {
+        "url": "https://api.github.com/repos/ComposioHQ/open-chatgpt-atlas",
+        "resolved_url": "https://api.github.com/repositories/1080954405",
+        "repository_id": 1080954405,
+        "full_name": "composio-community/open-chatgpt-atlas",
+        "html_url": "https://github.com/composio-community/open-chatgpt-atlas",
+        "retrieved_at": "2026-10-18T12:20:14Z",
+        "sha256": "038bb8e2d9c9be78e5ef27b6b520c97eee966862fa001e88d062242645dde255"
+      },
+      {
+        "url": "https://api.github.com/repos/composio-community/open-chatgpt-atlas",
+        "resolved_url": "https://api.github.com/repos/composio-community/open-chatgpt-atlas",
+        "repository_id": 1080954405,
+        "full_name": "composio-community/open-chatgpt-atlas",
+        "html_url": "https://github.com/composio-community/open-chatgpt-atlas",
+        "retrieved_at": "2026-10-18T12:20:15Z",
+        "sha256": "038bb8e2d9c9be78e5ef27b6b520c97eee966862fa001e88d062242645dde255"
+      }
+    ]
+  },
+  {
+    "alias_id": "url:b42890cc06e6a1ae8357",
+    "target_id": "url:f0eac3ad813245645492",
+    "repository_id": "68b1bc47596f63ee0a57c642",
+    "basis": "official_huggingface_repository_id",
+    "reviewed_at": "2026-10-18T15:34:48Z",
+    "observations": [
+      {
+        "url": "https://huggingface.co/api/datasets/harpreetsahota/FiftyOne-GUI-Grounding-Train",
+        "resolved_url": "https://huggingface.co/api/datasets/Voxel51/FiftyOne-GUI-Grounding-Train",
+        "repository_id": "68b1bc47596f63ee0a57c642",
+        "full_name": "Voxel51/FiftyOne-GUI-Grounding-Train",
+        "html_url": "https://huggingface.co/datasets/Voxel51/FiftyOne-GUI-Grounding-Train",
+        "retrieved_at": "2026-10-18T15:34:10Z",
+        "sha256": "49cf4994baaae0c3703b7b084e7c4640b9a57e9d4bdfa7c9484ad69d41a5eb78"
+      },
+      {
+        "url": "https://huggingface.co/api/datasets/Voxel51/FiftyOne-GUI-Grounding-Train",
+        "resolved_url": "https://huggingface.co/api/datasets/Voxel51/FiftyOne-GUI-Grounding-Train",
+        "repository_id": "68b1bc47596f63ee0a57c642",
+        "full_name": "Voxel51/FiftyOne-GUI-Grounding-Train",
+        "html_url": "https://huggingface.co/datasets/Voxel51/FiftyOne-GUI-Grounding-Train",
+        "retrieved_at": "2026-10-18T15:34:10Z",
+        "sha256": "49cf4994baaae0c3703b7b084e7c4640b9a57e9d4bdfa7c9484ad69d41a5eb78"
+      }
+    ]
+  },
+  {
+    "alias_id": "github:iliyazelenko/os-ai-computer-use",
+    "target_id": "github:777genius/os-ai-computer-use",
+    "repository_id": 1056802660,
+    "basis": "official_github_repository_id",
+    "reviewed_at": "2026-10-18T15:37:46Z",
+    "observations": [
+      {
+        "url": "https://api.github.com/repos/iliyaZelenko/os-ai-computer-use",
+        "resolved_url": "https://api.github.com/repositories/1056802660",
+        "repository_id": 1056802660,
+        "full_name": "777genius/os-ai-computer-use",
+        "html_url": "https://github.com/777genius/os-ai-computer-use",
+        "retrieved_at": "2026-10-18T15:37:45Z",
+        "sha256": "95b963db22daa46036d65c4bda413c3f1e839660d4f93d09049dc2882ba7e653"
+      },
+      {
+        "url": "https://api.github.com/repos/777genius/os-ai-computer-use",
+        "resolved_url": "https://api.github.com/repos/777genius/os-ai-computer-use",
+        "repository_id": 1056802660,
+        "full_name": "777genius/os-ai-computer-use",
+        "html_url": "https://github.com/777genius/os-ai-computer-use",
+        "retrieved_at": "2026-10-18T15:37:46Z",
+        "sha256": "95b963db22daa46036d65c4bda413c3f1e839660d4f93d09049dc2882ba7e653"
+      }
+    ]
+  },
+  {
+    "alias_id": "github:yeahhe365/webadb-autoglm",
+    "target_id": "github:yeahhe365/webdroid-agent",
+    "repository_id": 1244747615,
+    "basis": "official_github_repository_id",
+    "reviewed_at": "2026-10-18T15:44:11Z",
+    "observations": [
+      {
+        "url": "https://api.github.com/repos/yeahhe365/webadb-autoglm",
+        "resolved_url": "https://api.github.com/repositories/1244747615",
+        "repository_id": 1244747615,
+        "full_name": "yeahhe365/WebDroid-Agent",
+        "html_url": "https://github.com/yeahhe365/WebDroid-Agent",
+        "retrieved_at": "2026-10-18T15:43:24Z",
+        "sha256": "9fd700009d98c4d7e5713d6a37f0b52bc2cd0b6edf3373c49f3578e30027c1dd"
+      },
+      {
+        "url": "https://api.github.com/repos/yeahhe365/WebDroid-Agent",
+        "resolved_url": "https://api.github.com/repos/yeahhe365/WebDroid-Agent",
+        "repository_id": 1244747615,
+        "full_name": "yeahhe365/WebDroid-Agent",
+        "html_url": "https://github.com/yeahhe365/WebDroid-Agent",
+        "retrieved_at": "2026-10-18T15:43:23Z",
+        "sha256": "9fd700009d98c4d7e5713d6a37f0b52bc2cd0b6edf3373c49f3578e30027c1dd"
+      }
+    ]
+  },
+  {
+    "alias_id": "github:opentiny/next-sdk",
+    "target_id": "github:opentiny/webmcp-sdk",
+    "repository_id": 1019899083,
+    "basis": "official_github_repository_id",
+    "reviewed_at": "2026-10-18T15:52:25Z",
+    "observations": [
+      {
+        "url": "https://api.github.com/repos/opentiny/next-sdk",
+        "resolved_url": "https://api.github.com/repositories/1019899083",
+        "repository_id": 1019899083,
+        "full_name": "opentiny/webmcp-sdk",
+        "html_url": "https://github.com/opentiny/webmcp-sdk",
+        "retrieved_at": "2026-10-18T15:52:24Z",
+        "sha256": "f0664b4094e42b1701baba1ef800b22547a8204a7d24c73a85605c236364158a"
+      },
+      {
+        "url": "https://api.github.com/repos/opentiny/webmcp-sdk",
+        "resolved_url": "https://api.github.com/repos/opentiny/webmcp-sdk",
+        "repository_id": 1019899083,
+        "full_name": "opentiny/webmcp-sdk",
+        "html_url": "https://github.com/opentiny/webmcp-sdk",
+        "retrieved_at": "2026-10-18T15:52:25Z",
+        "sha256": "f0664b4094e42b1701baba1ef800b22547a8204a7d24c73a85605c236364158a"
+      }
+    ]
   }
 ]

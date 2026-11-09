@@ -2,15 +2,16 @@
 
 [Home](../../README.md) · [All topics](../topics.md) · [Full arXiv bibliography](../papers.md)
 
-207 source-reviewed resources tagged `long-horizon`. Curated metadata; unknown facts are shown as —.
+210 source-reviewed resources tagged `long-horizon`. Curated metadata; unknown facts are shown as —.
 
-**Contents:** [Benchmarks (14)](#benchmarks) · [Datasets (1)](#datasets) · [Models (1)](#models) · [Agents (2)](#agents) · [Frameworks (25)](#frameworks) · [Tools (1)](#tools) · [Infrastructure (1)](#infrastructure) · [Papers (162)](#papers)
+**Contents:** [Benchmarks (15)](#benchmarks) · [Datasets (3)](#datasets) · [Models (1)](#models) · [Agents (2)](#agents) · [Frameworks (25)](#frameworks) · [Tools (1)](#tools) · [Infrastructure (1)](#infrastructure) · [Papers (162)](#papers)
 
 ## Benchmarks
 
 | Resource | Environments | Paper | Scale | License | Description | Evidence |
 | --- | --- | --- | --- | --- | --- | --- |
 | [Bond Underwriting Agent Benchmark](https://github.com/vitoworleone/bond-underwriting-agent-benchmark) | desktop, web | — | — | — | Chinese vertical long-horizon evaluation benchmark testing agents on multi-step financial bond-underwriting document and web workflows. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/vitoworleone/bond-underwriting-agent-benchmark/main/README.md) |
+| [BrowseComp](https://github.com/openai/simple-evals/blob/main/browsecomp_eval.py) | web | — | [1,266 questions](https://openaipublic.blob.core.windows.net/simple-evals/browse_comp_test_set.csv) | code MIT | OpenAI's 1,266-question benchmark for browsing agents, whose short, verifiable answers require persistent search and navigation across many websites and are graded by a model judge. | [✓ 2026‑10‑18](https://raw.githubusercontent.com/openai/simple-evals/HEAD/browsecomp_eval.py) |
 | [ColorBench](https://github.com/MadeAgents/ColorBench) | android | [2510.14621](https://arxiv.org/abs/2510.14621) (2025) | [175 tasks](https://raw.githubusercontent.com/MadeAgents/ColorBench/HEAD/README.md) · [101 cross-app tasks](https://raw.githubusercontent.com/MadeAgents/ColorBench/HEAD/README.md) · [74 single-app tasks](https://raw.githubusercontent.com/MadeAgents/ColorBench/HEAD/README.md) · [21 mobile applications](https://raw.githubusercontent.com/MadeAgents/ColorBench/HEAD/README.md) | code Apache-2.0 · data apache-2.0 | A graph-based mobile GUI benchmark that evaluates long tasks through screenshot states and multiple valid or erroneous transitions, including reflection, replanning and backtracking. | [✓ 2026‑10‑17](https://raw.githubusercontent.com/MadeAgents/ColorBench/HEAD/README.md) |
 | [FlashAdventure](https://github.com/ahnjaewoo/FlashAdventure) | desktop, web | [2509.01052](https://arxiv.org/abs/2509.01052) (2025) | — | code MIT | FlashAdventure benchmarks GUI agents on solving complete story arcs across 34 Flash point-and-click adventure games requiring long-term memory. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/ahnjaewoo/FlashAdventure/HEAD/README.md) |
 | [LongPuzzleBench](https://github.com/bingozhang-verapraxis/LongPuzzleBench) | desktop, web | [2609.34769](https://arxiv.org/abs/2609.34769) (2026) | — | code Apache-2.0 | LongPuzzleBench evaluates GUI and computer-use agents on long-horizon visual puzzle games requiring multi-step spatial reasoning. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/bingozhang-verapraxis/LongPuzzleBench/HEAD/README.md) |
@@ -27,11 +28,11 @@
 
 ## Datasets
 
-All entries in this section: desktop, web.
-
-| Resource | Paper | Scale | License | Description | Evidence |
-| --- | --- | --- | --- | --- | --- |
-| [AgentSynth tasks and trajectories](https://huggingface.co/datasets/sunblaze-ucb/AgentSynth) | [2506.14205](https://arxiv.org/abs/2506.14205) (2025) | [> 6,000 tasks](https://huggingface.co/datasets/sunblaze-ucb/AgentSynth/raw/9ec3f3139f9786e81aee14b7fff1eb487cc7e991/README.md) | data Apache-2.0 | Published AgentSynth task definitions and recorded GUI trajectories, with OSWorld and InSTA training configurations and packaged screenshots, thoughts and commands. | [✓ 2026‑10‑18](https://huggingface.co/datasets/sunblaze-ucb/AgentSynth/raw/9ec3f3139f9786e81aee14b7fff1eb487cc7e991/README.md) |
+| Resource | Environments | Paper | Scale | License | Description | Evidence |
+| --- | --- | --- | --- | --- | --- | --- |
+| [AgentSynth tasks and trajectories](https://huggingface.co/datasets/sunblaze-ucb/AgentSynth) | desktop, web | [2506.14205](https://arxiv.org/abs/2506.14205) (2025) | [> 6,000 tasks](https://huggingface.co/datasets/sunblaze-ucb/AgentSynth/raw/9ec3f3139f9786e81aee14b7fff1eb487cc7e991/README.md) | data Apache-2.0 | Published AgentSynth task definitions and recorded GUI trajectories, with OSWorld and InSTA training configurations and packaged screenshots, thoughts and commands. | [✓ 2026‑10‑18](https://huggingface.co/datasets/sunblaze-ucb/AgentSynth/raw/9ec3f3139f9786e81aee14b7fff1eb487cc7e991/README.md) |
+| [OSWorld 2.0 task classes](https://huggingface.co/datasets/xlangai/osworld_v2_tasks) | desktop, linux | [2606.29537](https://arxiv.org/abs/2606.29537) (2026) | [108 task class files](https://huggingface.co/api/datasets/xlangai/osworld_v2_tasks) · [34 implementation note files](https://huggingface.co/api/datasets/xlangai/osworld_v2_tasks) | data apache-2.0 | Gated Hub release of the OSWorld 2.0 benchmark's Python task classes, which hold task setup and evaluator logic kept out of the public code to limit leakage and are pinned per benchmark release. | [✓ 2026‑10‑18](https://huggingface.co/api/datasets/xlangai/osworld_v2_tasks) |
+| [OSWorld 2.0 trajectories](https://huggingface.co/datasets/xlangai/osworld2.0-trajectory) | desktop, linux | [2606.29537](https://arxiv.org/abs/2606.29537) (2026) | [21 ZIP result archives](https://huggingface.co/api/datasets/xlangai/osworld2.0-trajectory/tree/a9cd5b050c26012f21515b227d6b9c7af728a8f0) · [7 model run folders](https://huggingface.co/api/datasets/xlangai/osworld2.0-trajectory/tree/a9cd5b050c26012f21515b227d6b9c7af728a8f0/website_demo) · [108 task folders](https://huggingface.co/api/datasets/xlangai/osworld2.0-trajectory/tree/a9cd5b050c26012f21515b227d6b9c7af728a8f0/website_demo/MiniMax-M3/tasks) | — | XLang's gated release of OSWorld 2.0 agent runs: 21 ZIP result archives named by model and run settings, plus per-task trajectory JSONL, step screenshots, results and logs for seven model runs. | [✓ 2026‑10‑18](https://huggingface.co/api/datasets/xlangai/osworld2.0-trajectory) |
 
 ## Models
 

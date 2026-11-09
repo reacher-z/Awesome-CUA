@@ -2,11 +2,11 @@
 
 Evidence snapshot through **2026-11-07T05:19:53Z**. Generated from committed source receipts.
 
-- 3,919 curated resources. Another 453 records await review with bibliographic metadata only; the active catalog file holds 4,372 records in all.
+- 4,085 curated resources. Another 451 records await review with bibliographic metadata only; the active catalog file holds 4,536 records in all.
 - 2,126 paper and survey records, including 2,112 arXiv identities and 14 publisher-only identities.
 - 3,420 retained arXiv metadata records; 1,308 explicit scope exclusions are outside the active catalog.
-- 6,084 discovery identifiers; 1,280 remain unresolved. Reviewed decisions include 201 non-resource links, 408 aliases and 95 out-of-scope resources; their reasons remain in the review queue.
-- 375 editorial proposals await verification or review.
+- 6,084 discovery identifiers; 1,207 remain unresolved. Reviewed decisions include 201 non-resource links, 408 aliases and 95 out-of-scope resources; their reasons remain in the review queue.
+- 373 editorial proposals await verification or review.
 
 These are distinct resource identifiers, not distinct research projects. Papers, repositories, datasets, products, and publisher entities have different grains.
 
@@ -16,18 +16,18 @@ Counts of source-reviewed resources. A resource tagged with several environments
 
 | Kind | web | desktop | windows | macos | linux | android | ios | harmonyos | cross-platform | unspecified |
 | --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
-| [agent](agents.md) | 148 | 172 | 80 | 81 | 53 | 45 | 9 | · | 37 | 1 |
-| [benchmark](benchmarks.md) | 156 | 72 | 10 | 6 | 14 | 27 | 1 | · | 22 | 5 |
-| [company](companies.md) | · | · | · | · | · | · | · | · | · | 16 |
-| [dataset](datasets.md) | 34 | 25 | 5 | 3 | 8 | 41 | 2 | · | 20 | 7 |
-| [framework](frameworks.md) | 406 | 278 | 88 | 73 | 98 | 84 | 14 | 1 | 137 | 20 |
-| [infrastructure](infrastructures.md) | 27 | 47 | 8 | 14 | 34 | 4 | 1 | · | 3 | · |
+| [agent](agents.md) | 168 | 180 | 83 | 87 | 56 | 50 | 9 | · | 37 | 1 |
+| [benchmark](benchmarks.md) | 161 | 77 | 11 | 7 | 17 | 29 | 1 | · | 22 | 6 |
+| [company](companies.md) | · | · | · | · | · | · | · | · | · | 17 |
+| [dataset](datasets.md) | 56 | 52 | 9 | 9 | 19 | 52 | 4 | · | 25 | 8 |
+| [framework](frameworks.md) | 413 | 282 | 89 | 74 | 99 | 88 | 15 | 1 | 137 | 20 |
+| [infrastructure](infrastructures.md) | 29 | 53 | 9 | 15 | 38 | 4 | 1 | · | 3 | · |
 | [learning](learning.md) | 10 | 7 | · | · | · | 1 | · | · | 7 | · |
-| [model](models.md) | 46 | 39 | 6 | 5 | 6 | 42 | 4 | · | 59 | 3 |
-| [paper](topics.md) | 647 | 237 | 40 | 18 | 24 | 222 | 12 | 3 | 109 | 587 |
-| [product](products.md) | 18 | 5 | · | · | · | · | · | · | · | · |
+| [model](models.md) | 73 | 70 | 6 | 5 | 6 | 67 | 4 | · | 82 | 3 |
+| [paper](topics.md) | 647 | 237 | 40 | 18 | 24 | 222 | 12 | 3 | 109 | 589 |
+| [product](products.md) | 20 | 6 | 1 | · | · | · | · | · | · | · |
 | [survey](surveys.md) | 7 | 2 | 1 | · | · | 2 | 1 | · | 12 | 9 |
-| [tool](tools.md) | 490 | 428 | 192 | 212 | 141 | 36 | 14 | · | 139 | 3 |
+| [tool](tools.md) | 495 | 430 | 194 | 214 | 143 | 36 | 15 | · | 139 | 3 |
 
 ## Source snapshot coverage
 
@@ -35,15 +35,15 @@ The denominator is the normalized identifiers extracted from each fetched docume
 
 | Source | Discovered | Indexed | Curated | Excluded | Set aside | Out of scope | Unresolved | Fetch |
 | --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: | --- |
-| [ShowLab Awesome GUI Agent](https://github.com/showlab/Awesome-GUI-Agent) | 338 | 230 | 228 | 7 | 88 | 3 | 10 | OK · 2026-11-07 |
-| [ZJU REAL Awesome GUI Agents](https://github.com/ZJU-REAL/Awesome-GUI-Agents) | 220 | 174 | 173 | 0 | 41 | 0 | 5 | OK · 2026-11-07 |
+| [ShowLab Awesome GUI Agent](https://github.com/showlab/Awesome-GUI-Agent) | 338 | 231 | 229 | 7 | 89 | 3 | 8 | OK · 2026-11-07 |
+| [ZJU REAL Awesome GUI Agents](https://github.com/ZJU-REAL/Awesome-GUI-Agents) | 220 | 177 | 176 | 0 | 41 | 0 | 2 | OK · 2026-11-07 |
 | [OS Agents Survey](https://github.com/OS-Agent-Survey/OS-Agent-Survey) | 224 | 189 | 184 | 9 | 15 | 1 | 10 | OK · 2026-11-07 |
 | [Awesome Computer Use Agents — wjhou](https://github.com/wjhou/awesome-computer-use-agents) | 132 | 96 | 94 | 4 | 17 | 3 | 12 | OK · 2026-11-07 |
 | [Steel Awesome Web Agents](https://github.com/steel-dev/awesome-web-agents) | 113 | 42 | 42 | 0 | 31 | 18 | 22 | OK · 2026-11-07 |
 | [Steel Web Agents Archive](https://github.com/steel-dev/awesome-web-agents/blob/main/ARCHIVE.md) | 7 | 1 | 1 | 0 | 4 | 0 | 2 | OK · 2026-11-07 |
-| [Computer Browser Phone Use Agent Datasets](https://github.com/Khang-9966/Computer-Browser-Phone-Use-Agent-Datasets) | 170 | 119 | 118 | 2 | 29 | 1 | 19 | OK · 2026-11-07 |
-| [Awesome Multimodal GUI Agents](https://github.com/DeLunnLi/Awesome-Multimodal-GUI-Agents) | 588 | 522 | 515 | 2 | 57 | 0 | 7 | RETIRED · 2026-11-05 |
-| [Awesome Computer Use — TianyuanYang](https://github.com/TianyuanYang/awesome-computer-use) | 94 | 72 | 72 | 1 | 10 | 4 | 7 | OK · 2026-11-07 |
+| [Computer Browser Phone Use Agent Datasets](https://github.com/Khang-9966/Computer-Browser-Phone-Use-Agent-Datasets) | 170 | 125 | 124 | 2 | 29 | 1 | 13 | OK · 2026-11-07 |
+| [Awesome Multimodal GUI Agents](https://github.com/DeLunnLi/Awesome-Multimodal-GUI-Agents) | 588 | 523 | 516 | 2 | 57 | 0 | 6 | RETIRED · 2026-11-05 |
+| [Awesome Computer Use — TianyuanYang](https://github.com/TianyuanYang/awesome-computer-use) | 94 | 73 | 73 | 1 | 10 | 4 | 6 | OK · 2026-11-07 |
 | [Computer Use Agents Overview](https://github.com/cdxeve/awesome-computer-use-agents) | 78 | 49 | 48 | 10 | 11 | 2 | 6 | OK · 2026-11-07 |
 | [Awesome GUI Agents — Supernal](https://github.com/supernalintelligence/Awesome-Gui-Agents) | 63 | 15 | 15 | 3 | 24 | 10 | 11 | OK · 2026-11-07 |
 | [Yearly GUI Agents](https://github.com/qy0720/awesome-yearly-gui-agents) | 193 | 149 | 149 | 2 | 36 | 1 | 5 | OK · 2026-11-07 |
@@ -55,16 +55,16 @@ The denominator is the normalized identifiers extracted from each fetched docume
 | [PhoneLLM/Awesome-LLM-Powered-Phone-GUI-Agents](https://github.com/PhoneLLM/Awesome-LLM-Powered-Phone-GUI-Agents) | 247 | 209 | 208 | 9 | 24 | 0 | 5 | OK · 2026-11-07 |
 | [aialt/awesome-mobile-agents](https://github.com/aialt/awesome-mobile-agents) | 91 | 71 | 69 | 7 | 11 | 2 | 0 | OK · 2026-11-07 |
 | [albzni/Awesome-LLM-based-Web-Agent-and-Tools](https://github.com/albzni/Awesome-LLM-based-Web-Agent-and-Tools) | 10 | 4 | 4 | 0 | 1 | 5 | 0 | OK · 2026-11-07 |
-| [ranpox/awesome-computer-use](https://github.com/ranpox/awesome-computer-use) | 96 | 67 | 67 | 0 | 15 | 9 | 5 | OK · 2026-11-07 |
+| [ranpox/awesome-computer-use](https://github.com/ranpox/awesome-computer-use) | 96 | 68 | 68 | 0 | 15 | 9 | 4 | OK · 2026-11-07 |
 | [Awesome GUI Agent Security](https://github.com/Yuxuan2003/Awesome-GUI-Agent-Security) | 196 | 196 | 191 | 0 | 0 | 0 | 0 | OK · 2026-11-07 |
 | [Awesome GUI Agent Safety](https://github.com/Autonomous-Agent-Team/Awesome-GUI-Agent-Safety) | 72 | 46 | 42 | 9 | 13 | 0 | 4 | OK · 2026-11-07 |
 | [Awesome GUI Agent Memory](https://github.com/kqcoxn/Awesome-GUI-Agent-Memory) | 57 | 51 | 49 | 1 | 3 | 0 | 2 | OK · 2026-11-07 |
-| [ChenVoid Awesome GUI Agent](https://github.com/ChenVoid/Awesome-GUI-Agent) | 215 | 144 | 142 | 32 | 28 | 0 | 11 | OK · 2026-11-07 |
+| [ChenVoid Awesome GUI Agent](https://github.com/ChenVoid/Awesome-GUI-Agent) | 215 | 146 | 144 | 32 | 28 | 0 | 9 | OK · 2026-11-07 |
 | [Awesome Computer Use — philfung](https://github.com/philfung/awesome-computer-use) | 34 | 21 | 21 | 0 | 10 | 0 | 3 | OK · 2026-11-07 |
 | [Fara — first-party releases](https://github.com/microsoft/fara) | 18 | 5 | 5 | 0 | 12 | 0 | 1 | OK · 2026-11-07 |
 | [UI-Venus — first-party releases](https://github.com/inclusionAI/UI-Venus) | 9 | 4 | 4 | 0 | 5 | 0 | 0 | OK · 2026-11-07 |
-| [OpenGVLab ScaleCUA — first-party releases](https://github.com/OpenGVLab/ScaleCUA) | 15 | 10 | 10 | 0 | 4 | 1 | 0 | OK · 2026-11-07 |
-| [THUDM SCALE-CUA — first-party releases](https://github.com/THUDM/SCALE-CUA) | 28 | 1 | 1 | 0 | 3 | 0 | 24 | OK · 2026-11-07 |
+| [OpenGVLab ScaleCUA — first-party releases](https://github.com/OpenGVLab/ScaleCUA) | 15 | 11 | 11 | 0 | 3 | 1 | 0 | OK · 2026-11-07 |
+| [THUDM SCALE-CUA — first-party releases](https://github.com/THUDM/SCALE-CUA) | 28 | 8 | 8 | 0 | 3 | 0 | 17 | OK · 2026-11-07 |
 | [ShowUI-π — first-party releases](https://github.com/showlab/showui-pi) | 11 | 4 | 4 | 0 | 5 | 2 | 0 | OK · 2026-11-07 |
 | [OpenCUA — first-party releases](https://github.com/xlang-ai/OpenCUA) | 18 | 7 | 7 | 0 | 10 | 0 | 1 | OK · 2026-11-07 |
 | [WebDreamer — first-party releases](https://github.com/OSU-NLP-Group/WebDreamer) | 5 | 3 | 3 | 0 | 2 | 0 | 0 | OK · 2026-11-07 |
@@ -79,66 +79,66 @@ The denominator is the normalized identifiers extracted from each fetched docume
 | [AGUVIS — first-party releases](https://github.com/xlang-ai/aguvis) | 6 | 3 | 3 | 0 | 2 | 0 | 1 | OK · 2026-11-07 |
 | [OS-Atlas — first-party releases](https://github.com/OS-Copilot/OS-Atlas) | 10 | 5 | 5 | 0 | 3 | 0 | 2 | OK · 2026-11-07 |
 | [MobileAgent / GUI-Owl / UI-S1 — first-party release index](https://github.com/X-PLUG/MobileAgent) | 33 | 14 | 14 | 0 | 12 | 0 | 7 | OK · 2026-11-07 |
-| [GUICourse — first-party release checklist](https://github.com/yiye3/GUICourse) | 7 | 4 | 4 | 0 | 1 | 0 | 2 | OK · 2026-11-07 |
-| [OS-Genesis — first-party training assets](https://github.com/OS-Copilot/OS-Genesis) | 29 | 2 | 2 | 0 | 13 | 1 | 13 | OK · 2026-11-07 |
-| [MultiUI / UIX — first-party release index](https://github.com/neulab/multiui) | 8 | 2 | 2 | 0 | 1 | 2 | 3 | OK · 2026-11-07 |
-| [UI-Genie — first-party model and data releases](https://github.com/Euphoria16/UI-Genie) | 12 | 5 | 5 | 0 | 3 | 2 | 2 | OK · 2026-11-07 |
-| [ScienceBoard — first-party environments and trajectories](https://github.com/OS-Copilot/ScienceBoard) | 16 | 5 | 5 | 0 | 7 | 1 | 3 | OK · 2026-11-07 |
+| [GUICourse — first-party release checklist](https://github.com/yiye3/GUICourse) | 7 | 6 | 6 | 0 | 1 | 0 | 0 | OK · 2026-11-07 |
+| [OS-Genesis — first-party training assets](https://github.com/OS-Copilot/OS-Genesis) | 29 | 7 | 7 | 0 | 13 | 1 | 8 | OK · 2026-11-07 |
+| [MultiUI / UIX — first-party release index](https://github.com/neulab/multiui) | 8 | 3 | 3 | 0 | 1 | 2 | 2 | OK · 2026-11-07 |
+| [UI-Genie — first-party model and data releases](https://github.com/Euphoria16/UI-Genie) | 12 | 7 | 7 | 0 | 2 | 2 | 1 | OK · 2026-11-07 |
+| [ScienceBoard — first-party environments and trajectories](https://github.com/OS-Copilot/ScienceBoard) | 16 | 7 | 7 | 0 | 7 | 1 | 1 | OK · 2026-11-07 |
 | [MAI-UI / Qwen-UI-Agent — first-party project index](https://github.com/Tongyi-MAI/MAI-UI) | 17 | 3 | 3 | 0 | 13 | 0 | 1 | OK · 2026-11-07 |
-| [H Company — official Hub model index](https://huggingface.co/Hcompany) | 39 | 4 | 4 | 0 | 0 | 10 | 25 | OK · 2026-11-07 |
-| [Maxi-W Awesome AI for GUI Agents](https://github.com/maxi-w/awesome-ai-for-gui-agents) | 50 | 33 | 33 | 0 | 6 | 2 | 9 | OK · 2026-11-07 |
+| [H Company — official Hub model index](https://huggingface.co/Hcompany) | 39 | 9 | 9 | 0 | 0 | 10 | 20 | OK · 2026-11-07 |
+| [Maxi-W Awesome AI for GUI Agents](https://github.com/maxi-w/awesome-ai-for-gui-agents) | 50 | 34 | 34 | 0 | 6 | 2 | 8 | OK · 2026-11-07 |
 | [Awesome On-Device Agents](https://github.com/Adam-THU/awesome-on-device-agents) | 32 | 23 | 18 | 3 | 0 | 5 | 1 | OK · 2026-11-07 |
 | [AwesomeEverything GUI Agents Paper List](https://github.com/WeijianQ/AwesomeEverything_GUI-Agents-Paper-List) | 496 | 451 | 442 | 0 | 38 | 0 | 7 | OK · 2026-11-07 |
-| [trycua/acu — Awesome Computer Use](https://github.com/trycua/acu) | 156 | 114 | 113 | 3 | 18 | 3 | 18 | OK · 2026-11-07 |
-| [Awesome GUI Grounding (GUI grounding survey list)](https://github.com/OmniAI-Lab-CUHKSZ/Awesome-GUI-Grounding) | 334 | 240 | 236 | 8 | 10 | 0 | 76 | OK · 2026-11-07 |
+| [trycua/acu — Awesome Computer Use](https://github.com/trycua/acu) | 156 | 116 | 115 | 3 | 18 | 3 | 16 | OK · 2026-11-07 |
+| [Awesome GUI Grounding (GUI grounding survey list)](https://github.com/OmniAI-Lab-CUHKSZ/Awesome-GUI-Grounding) | 334 | 242 | 239 | 8 | 9 | 0 | 75 | OK · 2026-11-07 |
 | [ShowLab Awesome Multimodal Embodied Agents — surveys and multimodal-agent sections](https://github.com/showlab/Awesome-Multimodal-Embodied-Agent) | 221 | 96 | 84 | 35 | 16 | 0 | 74 | OK · 2026-11-07 |
-| [Awesome RL GUI Agents (reinforcement-learning GUI agent survey list)](https://github.com/Steve2457/Awesome-RL-GUI-Agents) | 205 | 160 | 156 | 38 | 4 | 0 | 3 | OK · 2026-11-07 |
-| [12britz/awesome-computer-use — agent, grounding, automation and evaluation sections](https://github.com/12britz/awesome-computer-use) | 120 | 114 | 114 | 0 | 3 | 0 | 3 | OK · 2026-11-07 |
+| [Awesome RL GUI Agents (reinforcement-learning GUI agent survey list)](https://github.com/Steve2457/Awesome-RL-GUI-Agents) | 205 | 160 | 157 | 38 | 4 | 0 | 3 | OK · 2026-11-07 |
+| [12britz/awesome-computer-use — agent, grounding, automation and evaluation sections](https://github.com/12britz/awesome-computer-use) | 120 | 115 | 115 | 0 | 3 | 0 | 2 | OK · 2026-11-07 |
 | [Agent-Tools/awesome-autonomous-web — browser-agent sections](https://github.com/Agent-Tools/awesome-autonomous-web) | 45 | 15 | 15 | 0 | 2 | 0 | 28 | OK · 2026-11-07 |
-| [haoruilee/awesome-agent-native-services — Browser & Web Execution Services](https://github.com/haoruilee/awesome-agent-native-services) | 44 | 12 | 12 | 0 | 0 | 0 | 32 | OK · 2026-11-07 |
-| [LLM-Brained GUI Agents survey tables — data/benchmark.json](https://github.com/vyokky/LLM-Brained-GUI-Agents-Survey) | 121 | 87 | 87 | 0 | 20 | 0 | 14 | OK · 2026-11-07 |
-| [LLM-Brained GUI Agents survey tables — data/dataset.json](https://github.com/vyokky/LLM-Brained-GUI-Agents-Survey) | 74 | 53 | 53 | 2 | 7 | 0 | 12 | OK · 2026-11-07 |
+| [haoruilee/awesome-agent-native-services — Browser & Web Execution Services](https://github.com/haoruilee/awesome-agent-native-services) | 44 | 13 | 13 | 0 | 0 | 0 | 31 | OK · 2026-11-07 |
+| [LLM-Brained GUI Agents survey tables — data/benchmark.json](https://github.com/vyokky/LLM-Brained-GUI-Agents-Survey) | 121 | 88 | 88 | 0 | 20 | 0 | 13 | OK · 2026-11-07 |
+| [LLM-Brained GUI Agents survey tables — data/dataset.json](https://github.com/vyokky/LLM-Brained-GUI-Agents-Survey) | 74 | 55 | 55 | 2 | 7 | 0 | 10 | OK · 2026-11-07 |
 | [LLM-Brained GUI Agents survey tables — data/framework.json](https://github.com/vyokky/LLM-Brained-GUI-Agents-Survey) | 139 | 107 | 107 | 0 | 15 | 0 | 17 | OK · 2026-11-07 |
 | [LLM-Brained GUI Agents survey tables — data/gui-testing.json](https://github.com/vyokky/LLM-Brained-GUI-Agents-Survey) | 32 | 17 | 17 | 0 | 0 | 0 | 15 | OK · 2026-11-07 |
 | [LLM-Brained GUI Agents survey tables — data/models.json](https://github.com/vyokky/LLM-Brained-GUI-Agents-Survey) | 97 | 71 | 69 | 4 | 12 | 1 | 9 | OK · 2026-11-07 |
 | [LLM-Brained GUI Agents survey tables — data/survey.json](https://github.com/vyokky/LLM-Brained-GUI-Agents-Survey) | 40 | 15 | 5 | 6 | 1 | 0 | 18 | OK · 2026-11-07 |
 | [LLM-Brained GUI Agents survey tables — data/virtual-assistant.json](https://github.com/vyokky/LLM-Brained-GUI-Agents-Survey) | 19 | 7 | 7 | 0 | 1 | 0 | 11 | OK · 2026-11-07 |
 | [OSWorld-Verified leaderboard results](https://os-world.github.io) | 50 | 19 | 19 | 0 | 2 | 0 | 29 | OK · 2026-11-07 |
-| [OSWorld self-reported leaderboard results](https://os-world.github.io) | 89 | 19 | 19 | 5 | 7 | 0 | 58 | OK · 2026-11-07 |
-| [ScreenSpot-Pro grounding leaderboard results](https://gui-agent.github.io/grounding-leaderboard) | 45 | 11 | 11 | 2 | 5 | 0 | 27 | OK · 2026-11-07 |
-| [AndroidWorld leaderboard spreadsheet](https://docs.google.com/spreadsheets/d/1cchzP9dlTZ3WXQTfYNhh3avxoLipqHN75v1Tb86uhHo) | 66 | 20 | 20 | 0 | 6 | 0 | 40 | OK · 2026-11-07 |
-| [WebArena and VisualWebArena leaderboard spreadsheet](https://docs.google.com/spreadsheets/d/1M801lEpBbKSNwP-vDBkC_pF7LdyGU1f_ufZb_NWNBZQ) | 83 | 33 | 30 | 4 | 1 | 0 | 45 | OK · 2026-11-07 |
+| [OSWorld self-reported leaderboard results](https://os-world.github.io) | 89 | 20 | 20 | 5 | 6 | 0 | 58 | OK · 2026-11-07 |
+| [ScreenSpot-Pro grounding leaderboard results](https://gui-agent.github.io/grounding-leaderboard) | 45 | 13 | 13 | 2 | 5 | 0 | 25 | OK · 2026-11-07 |
+| [AndroidWorld leaderboard spreadsheet](https://docs.google.com/spreadsheets/d/1cchzP9dlTZ3WXQTfYNhh3avxoLipqHN75v1Tb86uhHo) | 66 | 23 | 23 | 0 | 6 | 0 | 37 | OK · 2026-11-07 |
+| [WebArena and VisualWebArena leaderboard spreadsheet](https://docs.google.com/spreadsheets/d/1M801lEpBbKSNwP-vDBkC_pF7LdyGU1f_ufZb_NWNBZQ) | 83 | 34 | 31 | 4 | 1 | 0 | 44 | OK · 2026-11-07 |
 | [AndroidLab leaderboard spreadsheet](https://docs.google.com/spreadsheets/d/1Zv6mBfd4Ibt8mke24K6zAFrXe4AvEFaBLW3hpJqSgjw) | 6 | 5 | 5 | 0 | 1 | 0 | 0 | OK · 2026-11-07 |
 | [arXiv abstract-phrase query: GUI, computer-use and web agents (all dates)](https://arxiv.org) | 1115 | 1102 | 1046 | 13 | 0 | 0 | 0 | OK · 2026-11-07 |
-| [Hub model search "gui" (by likes)](https://huggingface.co/models?search=gui) | 30 | 6 | 6 | 0 | 0 | 0 | 24 | OK · 2026-11-07 |
+| [Hub model search "gui" (by likes)](https://huggingface.co/models?search=gui) | 30 | 14 | 14 | 0 | 0 | 0 | 16 | OK · 2026-11-07 |
 | [Hub model search "computer-use" (by likes)](https://huggingface.co/models?search=computer-use) | 2 | 0 | 0 | 0 | 0 | 0 | 2 | OK · 2026-11-07 |
-| [Hub dataset search "gui" (by likes)](https://huggingface.co/datasets?search=gui) | 18 | 6 | 6 | 0 | 0 | 0 | 12 | OK · 2026-11-07 |
-| [Hub dataset search "computer-use" (by likes)](https://huggingface.co/datasets?search=computer-use) | 4 | 0 | 0 | 0 | 0 | 0 | 4 | OK · 2026-11-07 |
-| [Hub dataset search "web-agent" (by likes)](https://huggingface.co/datasets?search=web-agent) | 5 | 0 | 0 | 0 | 0 | 0 | 5 | OK · 2026-11-07 |
-| [Hub dataset search "mind2web" (by likes)](https://huggingface.co/datasets?search=mind2web) | 8 | 0 | 0 | 0 | 0 | 0 | 8 | OK · 2026-11-07 |
+| [Hub dataset search "gui" (by likes)](https://huggingface.co/datasets?search=gui) | 18 | 11 | 11 | 0 | 0 | 0 | 7 | OK · 2026-11-07 |
+| [Hub dataset search "computer-use" (by likes)](https://huggingface.co/datasets?search=computer-use) | 4 | 3 | 3 | 0 | 0 | 0 | 1 | OK · 2026-11-07 |
+| [Hub dataset search "web-agent" (by likes)](https://huggingface.co/datasets?search=web-agent) | 5 | 1 | 1 | 0 | 0 | 0 | 4 | OK · 2026-11-07 |
+| [Hub dataset search "mind2web" (by likes)](https://huggingface.co/datasets?search=mind2web) | 8 | 3 | 3 | 0 | 0 | 0 | 5 | OK · 2026-11-07 |
 | [Hub dataset search "android" (by likes)](https://huggingface.co/datasets?search=android) | 9 | 1 | 1 | 0 | 0 | 0 | 8 | OK · 2026-11-07 |
 | [Hub dataset search "screenspot" (by likes)](https://huggingface.co/datasets?search=screenspot) | 5 | 4 | 4 | 0 | 0 | 0 | 1 | OK · 2026-11-07 |
-| [Hub collection maxiw/gui-datasets](https://huggingface.co/collections/maxiw/gui-datasets-66c512aef77e8e56f38a670b) | 20 | 8 | 8 | 0 | 0 | 0 | 12 | OK · 2026-11-07 |
+| [Hub collection maxiw/gui-datasets](https://huggingface.co/collections/maxiw/gui-datasets-66c512aef77e8e56f38a670b) | 20 | 11 | 11 | 0 | 0 | 0 | 9 | OK · 2026-11-07 |
 | [Hub collection maxiw/research-on-gui-models](https://huggingface.co/collections/maxiw/research-on-gui-models-66b907281caaa1d77cfc536d) | 18 | 17 | 17 | 1 | 0 | 0 | 0 | OK · 2026-11-07 |
 | [Hub collection m-ric/gui-agents](https://huggingface.co/collections/m-ric/gui-agents-67cc9f6ea029f09af73caff8) | 8 | 8 | 8 | 0 | 0 | 0 | 0 | OK · 2026-11-07 |
 | [Hub collection thomwolf/gui-agents](https://huggingface.co/collections/thomwolf/gui-agents-675d54f9e907322a10f1cfae) | 3 | 3 | 3 | 0 | 0 | 0 | 0 | OK · 2026-11-07 |
-| [Hub collection johannhartmann/computer-use-models](https://huggingface.co/collections/johannhartmann/computer-use-models-679792c9addd59e1129d990f) | 22 | 6 | 6 | 0 | 0 | 0 | 16 | OK · 2026-11-07 |
+| [Hub collection johannhartmann/computer-use-models](https://huggingface.co/collections/johannhartmann/computer-use-models-679792c9addd59e1129d990f) | 22 | 10 | 10 | 0 | 0 | 0 | 12 | OK · 2026-11-07 |
 | [Hub collection sergiopaniego/gui-grounding-datasets](https://huggingface.co/collections/sergiopaniego/gui-grounding-datasets-6867faa9ecb5032865458705) | 2 | 2 | 2 | 0 | 0 | 0 | 0 | OK · 2026-11-07 |
 | [Hub collection xlbqc/gui-agent](https://huggingface.co/collections/xlbqc/gui-agent-67bc272a55edf2ef92ae1076) | 27 | 27 | 27 | 0 | 0 | 0 | 0 | OK · 2026-11-07 |
 | [Hub collection Yuxiang007/gui-agent](https://huggingface.co/collections/Yuxiang007/gui-agent-689d9f3701de4072f3d60dcd) | 7 | 7 | 6 | 0 | 0 | 0 | 0 | OK · 2026-11-07 |
 | [XLANG Lab — official Hub model index](https://huggingface.co/xlangai) | 13 | 2 | 2 | 0 | 0 | 0 | 11 | OK · 2026-11-07 |
-| [ByteDance Seed UI-TARS — official Hub model index](https://huggingface.co/ByteDance-Seed) | 6 | 1 | 1 | 0 | 0 | 0 | 5 | OK · 2026-11-07 |
-| [mPLUG GUI-Owl — official Hub model index](https://huggingface.co/mPLUG) | 9 | 1 | 1 | 0 | 0 | 0 | 8 | OK · 2026-11-07 |
+| [ByteDance Seed UI-TARS — official Hub model index](https://huggingface.co/ByteDance-Seed) | 6 | 6 | 6 | 0 | 0 | 0 | 0 | OK · 2026-11-07 |
+| [mPLUG GUI-Owl — official Hub model index](https://huggingface.co/mPLUG) | 9 | 7 | 7 | 0 | 0 | 0 | 2 | OK · 2026-11-07 |
 | [Salesforce GTA1 — official Hub model index](https://huggingface.co/Salesforce) | 3 | 0 | 0 | 0 | 0 | 0 | 3 | OK · 2026-11-07 |
-| [Microsoft GUI models — official Hub model index](https://huggingface.co/microsoft) | 6 | 1 | 1 | 0 | 0 | 0 | 5 | OK · 2026-11-07 |
+| [Microsoft GUI models — official Hub model index](https://huggingface.co/microsoft) | 6 | 3 | 3 | 0 | 0 | 0 | 3 | OK · 2026-11-07 |
 | [Microsoft OmniParser — official Hub model index](https://huggingface.co/microsoft) | 2 | 1 | 1 | 0 | 0 | 0 | 1 | OK · 2026-11-07 |
-| [OpenGVLab GUI datasets — official Hub dataset index](https://huggingface.co/OpenGVLab) | 2 | 0 | 0 | 0 | 0 | 0 | 2 | OK · 2026-11-07 |
-| [OSU NLP Mind2Web datasets — official Hub dataset index](https://huggingface.co/osunlp) | 4 | 0 | 0 | 0 | 0 | 0 | 4 | OK · 2026-11-07 |
+| [OpenGVLab GUI datasets — official Hub dataset index](https://huggingface.co/OpenGVLab) | 2 | 1 | 1 | 0 | 0 | 0 | 1 | OK · 2026-11-07 |
+| [OSU NLP Mind2Web datasets — official Hub dataset index](https://huggingface.co/osunlp) | 4 | 2 | 2 | 0 | 0 | 0 | 2 | OK · 2026-11-07 |
 | [StepFun Android datasets — official Hub dataset index](https://huggingface.co/stepfun-ai) | 1 | 1 | 1 | 0 | 0 | 0 | 0 | OK · 2026-11-07 |
 | [Survey bibliography references with no other registered listing (arXiv identifier query)](https://arxiv.org) | 4 | 4 | 3 | 0 | 0 | 0 | 0 | OK · 2026-11-07 |
 | [Efficient GUI Agents survey (arXiv 2609.02309) — HTML bibliography](https://arxiv.org/abs/2609.02309) | 122 | 71 | 70 | 2 | 23 | 0 | 26 | OK · 2026-11-07 |
 | [GUI Agents: A Survey (arXiv 2412.13501) — HTML bibliography](https://arxiv.org/abs/2412.13501) | 117 | 61 | 55 | 13 | 23 | 0 | 20 | OK · 2026-11-07 |
-| [Computer-use benchmark leads](https://github.com/reacher-z/Awesome-CUA/blob/main/docs/discovery-leads/benchmark-leads.md) | 161 | 102 | 0 | 4 | 0 | 0 | 55 | OK · 2026-11-07 |
+| [Computer-use benchmark leads](https://github.com/reacher-z/Awesome-CUA/blob/main/docs/discovery-leads/benchmark-leads.md) | 161 | 104 | 2 | 4 | 0 | 0 | 53 | OK · 2026-11-07 |
 
 ## Paper-discovery query coverage
 
@@ -193,16 +193,16 @@ The recorded title query returned 1,199 unique records out of 1,246 reported mat
 
 | Scope | Recorded declarations |
 | --- | ---: |
-| code | 1607 |
-| data | 64 |
-| weights | 57 |
+| code | 1657 |
+| data | 108 |
+| weights | 103 |
 | document | 8 |
 
 Data and weights fields record their own licenses. Hub declarations are publisher metadata. Missing values remain null.
 
 ## Pending editorial proposals
 
-375 proposals: 5 with unresolved primary evidence, 16 whose current source snapshot awaits review, 331 held by a reviewer after reading the current source, 23 screened as relevant from the current source and awaiting an editorial annotation, and 0 awaiting another scope review.
+373 proposals: 5 with unresolved primary evidence, 16 whose current source snapshot awaits review, 329 held by a reviewer after reading the current source, 23 screened as relevant from the current source and awaiting an editorial annotation, and 0 awaiting another scope review.
 
 | Resource | Reason |
 | --- | --- |
@@ -315,7 +315,6 @@ Data and weights fields record their own licenses. Hub declarations are publishe
 | [SWE-agent: Agent-Computer Interfaces Enable Automated Software Engineering](https://arxiv.org/abs/2405.15793) | Relevance screening of the complete arXiv v3 abstract (5 November 2026) could not settle the scope: Designs an agent-computer interface for repository-level coding on SWE-bench; the agent works through custom shell-style commands, so it sits between out-of-scope coding agents and adjacent terminal computer use. Needs a scope decision from the full text. |
 | [AutoManual: Constructing Instruction Manuals by LLM Agents via Interactive Environmental Learning](https://arxiv.org/abs/2405.16247) | Relevance screening of the complete arXiv v4 abstract (5 November 2026) could not settle the scope: LLM agents build rule-based manuals through environment interaction; web navigation is mentioned only as an example domain and the abstract reports results only on ALFWorld. Needs a scope decision from the full text. |
 | [KAOS: Large Model Multi-Agent Operating System](https://arxiv.org/abs/2406.11342) | Relevance screening of the complete arXiv v3 abstract (5 November 2026) could not settle the scope: Proposes a Kylin-based multi-agent operating system in which LLM agents serve or replace application software; the abstract does not say whether the agents operate GUIs, terminals or only internal system APIs. Needs a scope decision from the full text. |
-| [AgentDojo: A Dynamic Environment to Evaluate Prompt Injection Attacks and Defenses for LLM Agents](https://arxiv.org/abs/2406.13352) | Relevance screening of the complete arXiv v3 abstract (5 November 2026) could not settle the scope: Prompt-injection environment for tool-calling agents; tasks include navigating an e-banking website and travel booking, but the abstract frames interaction as tool calls, so it is unclear whether real web pages are operated. Needs a scope decision from the full text. |
 | [BMW Agents -- A Framework For Task Automation Through Multi-Agent Collaboration](https://arxiv.org/abs/2406.20041) | Relevance screening of the complete arXiv v3 abstract (5 November 2026) could not settle the scope: Screeners disagreed. One read it as outside the scope: The abstract describes a multi-agent planning and execution framework for industrial task automation. RPA is only named as a possible application and no GUI, web or desktop interaction is described, so this generic framework is outside scope. The other marked it borderline: Generic multi-agent task-automation framework for industrial use; it names robotic process automation as a target application but does not say whether agents operate GUIs, desktop software or only APIs. Needs a scope decision from the full text. |
 | [AI Agents That Matter](https://arxiv.org/abs/2407.01502) | Relevance screening of the complete arXiv v1 abstract (5 November 2026) could not settle the scope: Critique of agent benchmarking practice (cost, holdouts, reproducibility); the abstract does not name the benchmarks analyzed or say whether web or GUI agents are covered. Needs a scope decision from the full text. |
 | [SpreadsheetLLM: Encoding Spreadsheets for Large Language Models](https://arxiv.org/abs/2407.09025) | Relevance screening of the complete arXiv v2 abstract (5 November 2026) could not settle the scope: Screeners disagreed. One read it as outside the scope: SpreadsheetLLM compresses spreadsheets into compact encodings for LLM table detection and QA. This data-understanding work does not automate or operate spreadsheet applications, web pages or devices. The other marked it borderline: Encodes spreadsheet content compactly for LLM table detection and spreadsheet QA; unclear whether spreadsheet understanding without operating the application fits the office-automation precedent or is general table NLP. Needs a scope decision from the full text. |
@@ -388,7 +387,6 @@ Data and weights fields record their own licenses. Hub declarations are publishe
 | [When AI Meets the Web: Prompt Injection Risks in Third-Party AI Chatbot Plugins](https://arxiv.org/abs/2511.05797) | Relevance screening of the complete arXiv v1 abstract (5 November 2026) could not settle the scope: Measures prompt-injection risks in website chatbot plugins, including injected third-party page content they scrape; the chatbots do not navigate or act on pages, so the relation to web agents is unclear. An exclusion proposal is open in pull request #3777. Needs a scope decision from the full text. |
 | [UFO3: Weaving the Digital Agent Galaxy](https://arxiv.org/abs/2511.11332) | Relevance screening of the complete arXiv v2 abstract (5 November 2026) could not settle the scope: UFO3 orchestrates agents across desktops, servers, phones and edge devices through a task DAG and protocol; the abstract does not say whether the device agents act through GUIs, shells or APIs. An curation proposal is open in pull request #3819. Needs a scope decision from the full text. |
 | [SWITCH: Benchmarking Modeling and Handling of Tangible Interfaces in Long-horizon Embodied Scenarios](https://arxiv.org/abs/2511.17649) | Relevance screening of the complete arXiv v5 abstract (5 November 2026) could not settle the scope: Egocentric video benchmark for operating physical control interfaces such as appliance panels and embedded GUIs; it is embodied rather than screen-based, so its fit with GUI agents is unclear. An exclusion proposal is open in pull request #3815. Needs a scope decision from the full text. |
-| [Qwen3-VL Technical Report](https://arxiv.org/abs/2511.21631) | Relevance screening of the complete arXiv v2 abstract (5 November 2026) could not settle the scope: Screeners disagreed. One read it as outside the scope: Technical report on a general vision-language model family with long context and multimodal reasoning. The abstract mentions agentic use only in passing and makes no GUI or screen contribution. The other marked it borderline: General vision-language model report; the abstract envisions agentic decision-making but does not say whether GUI, screen or computer-use tasks are part of the work or its evaluation. Needs a scope decision from the full text. |
 | [SlideGen: Collaborative Multimodal Agents for Scientific Slide Generation](https://arxiv.org/abs/2512.04529) | Relevance screening of the complete arXiv v3 abstract (5 November 2026) could not settle the scope: Multi-agent system that composes editable PPTX decks from scientific papers through a layout library; slide creation via APIs, an office-automation precedent, without GUI operation. An open pull request (#3811) proposes to exclude it, so the scope needs a decision. Needs a scope decision from the full text. |
 | [An Index-based Approach for Efficient and Effective Web Content Extraction](https://arxiv.org/abs/2512.06641) | Relevance screening of the complete arXiv v1 abstract (5 November 2026) could not settle the scope: Structure-aware HTML segmentation with index prediction to extract query-relevant webpage content for web agents and RAG; evaluated only as a RAG step and on extraction accuracy, with no agent browsing or acting on pages. Needs a scope decision from the full text. |
 | [Attention is All You Need to Defend Against Indirect Prompt Injection Attacks in LLMs](https://arxiv.org/abs/2512.08417) | Relevance screening of the complete arXiv v3 abstract (5 November 2026) could not settle the scope: Attention-based detection and sanitization defense against indirect prompt injection in LLMs; web agents are named only as an example application, without web-specific evaluation. An exclusion proposal is open in pull request #3791. Needs a scope decision from the full text. |
@@ -586,7 +584,9 @@ Data and weights fields record their own licenses. Hub declarations are publishe
 
 Papers that a curated resource names as its `introduced_by` or `documented_by` paper but that have no editorial relevance review yet. Review them before other metadata-only papers.
 
-None: every paper linked from a curated resource is curated.
+| Paper | Linked from |
+| --- | --- |
+| [SWE-bench Multimodal: Do AI Systems Generalize to Visual Software Domains?](https://arxiv.org/abs/2410.03859) | [SWE-bench Multimodal](https://huggingface.co/datasets/SWE-bench/SWE-bench_Multimodal) |
 
 ## Scope exclusions
 

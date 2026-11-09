@@ -2,9 +2,9 @@
 
 [Home](../../README.md) · [All topics](../topics.md) · [Full arXiv bibliography](../papers.md)
 
-101 source-reviewed resources tagged `ui-design`. Curated metadata; unknown facts are shown as —.
+102 source-reviewed resources tagged `ui-design`. Curated metadata; unknown facts are shown as —.
 
-**Contents:** [Benchmarks (7)](#benchmarks) · [Datasets (2)](#datasets) · [Agents (4)](#agents) · [Frameworks (11)](#frameworks) · [Tools (22)](#tools) · [Learning resources (1)](#learning-resources) · [Papers (54)](#papers)
+**Contents:** [Benchmarks (7)](#benchmarks) · [Datasets (2)](#datasets) · [Models (1)](#models) · [Agents (4)](#agents) · [Frameworks (11)](#frameworks) · [Tools (22)](#tools) · [Learning resources (1)](#learning-resources) · [Papers (54)](#papers)
 
 ## Benchmarks
 
@@ -24,6 +24,14 @@
 | --- | --- | --- | --- | --- | --- | --- |
 | [UEyes](https://github.com/YueJiang-nj/UEyes-CHI2023) | cross-platform, web, desktop, android | — | — | — | UEyes is an eye-tracking dataset of 62 participants viewing 1,980 UI screenshots across webpages, desktop interfaces, mobile apps, and posters. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/YueJiang-nj/UEyes-CHI2023/HEAD/README.md) |
 | [UICrit](https://github.com/google-research-datasets/uicrit) | unspecified | — | [1,000 mobile UI screens](https://raw.githubusercontent.com/google-research-datasets/uicrit/HEAD/README.md) · [11,344 design critiques](https://raw.githubusercontent.com/google-research-datasets/uicrit/HEAD/README.md) | — | Mobile-interface critiques and quality ratings with region coordinates and RICO screen references, including a larger three-annotator release than the original paper dataset. | [✓ 2026‑10‑17](https://raw.githubusercontent.com/google-research-datasets/uicrit/HEAD/README.md) |
+
+## Models
+
+All entries in this section: web.
+
+| Resource | Paper | License | Description | Evidence |
+| --- | --- | --- | --- | --- |
+| [WebVIA-Agent](https://huggingface.co/zai-org/WebVIA-Agent) | [2511.06251](https://arxiv.org/abs/2511.06251) (2025) | weights mit | GLM-4.1V-9B-based web exploration agent from WebVIA that reads a page screenshot and DOM tree and picks click, type or select actions to reach each interactive UI state for UI-to-code work. | [✓ 2026‑10‑18](https://huggingface.co/zai-org/WebVIA-Agent/raw/d6ee0ce156bc194a4f9ddcd1c4827544321c9db2/README.md) |
 
 ## Agents
 

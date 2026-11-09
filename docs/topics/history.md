@@ -2,9 +2,16 @@
 
 [Home](../../README.md) · [All topics](../topics.md) · [Full arXiv bibliography](../papers.md)
 
-4 source-reviewed resources tagged `history`. Curated metadata; unknown facts are shown as —.
+6 source-reviewed resources tagged `history`. Curated metadata; unknown facts are shown as —.
 
-**Contents:** [Frameworks (1)](#frameworks) · [Tools (1)](#tools) · [Infrastructure (1)](#infrastructure) · [Products (1)](#products)
+**Contents:** [Agents (2)](#agents) · [Frameworks (1)](#frameworks) · [Tools (1)](#tools) · [Infrastructure (1)](#infrastructure) · [Products (1)](#products)
+
+## Agents
+
+| Resource | Environments | Paper | License | Description | Evidence |
+| --- | --- | --- | --- | --- | --- |
+| [Index](https://github.com/lmnr-ai/index) | web | — | code Apache-2.0 | Archived Laminar browser agent in Python that drives Playwright Chromium with vision-capable LLMs, returns Pydantic-structured results and offers an interactive CLI with optional Laminar tracing. | [✓ 2026‑10‑18](https://raw.githubusercontent.com/lmnr-ai/index/HEAD/README.md) |
+| [macOS-use](https://github.com/browser-use/macOS-use) | macos, desktop | — | code MIT | An archived Browser Use project that lets an LLM operate macOS apps by reading their accessibility trees and pressing, typing into and opening elements through the macOS Accessibility API. | [✓ 2026‑10‑18](https://raw.githubusercontent.com/browser-use/macOS-use/HEAD/README.md) |
 
 ## Frameworks
 

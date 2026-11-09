@@ -2,26 +2,26 @@
 
 [Home](../../README.md) · [All topics](../topics.md) · [Full arXiv bibliography](../papers.md)
 
-107 source-reviewed resources tagged `state-tracking`. Curated metadata; unknown facts are shown as —.
+111 source-reviewed resources tagged `state-tracking`. Curated metadata; unknown facts are shown as —.
 
-**Contents:** [Benchmarks (4)](#benchmarks) · [Agents (1)](#agents) · [Frameworks (17)](#frameworks) · [Tools (10)](#tools) · [Papers (75)](#papers)
+**Contents:** [Benchmarks (5)](#benchmarks) · [Agents (2)](#agents) · [Frameworks (17)](#frameworks) · [Tools (10)](#tools) · [Infrastructure (2)](#infrastructure) · [Papers (75)](#papers)
 
 ## Benchmarks
 
 | Resource | Environments | Paper | Scale | License | Description | Evidence |
 | --- | --- | --- | --- | --- | --- | --- |
 | [Action Check WebMCP](https://github.com/ajaknumber4/action-check-webmcp) | web | — | — | code MIT | External state-verification benchmark testing whether WebMCP browser tools actually produced their claimed DOM and backend effects. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/ajaknumber4/action-check-webmcp/main/README.md) |
+| [DynamicGUIBench](https://huggingface.co/datasets/L1007555652/osworld_env) | desktop, linux | [2604.25380](https://arxiv.org/abs/2604.25380) (2026) | [500 task JSON files](https://huggingface.co/api/datasets/L1007555652/osworld_env) · [150 tasks](https://huggingface.co/datasets/L1007555652/osworld_env/raw/44adf69d36a9bd27fbf2173fa619eb0ee92da095/README.md) | — | Desktop benchmark of 500 OSWorld-style tasks whose interfaces change between observations through scripted pop-ups, timed edits and shifting lists, with bilingual instructions and end-state evaluators. | [✓ 2026‑10‑18](https://huggingface.co/datasets/L1007555652/osworld_env/raw/44adf69d36a9bd27fbf2173fa619eb0ee92da095/README.md) |
 | [ExactDelta (ActionProof)](https://github.com/tsuchiyatakahirolab/actionproof) | web | — | — | code MIT | Post-action state-delta verification harness for WebMCP browser agents that detects silent UI and state failures. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/tsuchiyatakahirolab/actionproof/main/README.md) |
 | [Graph-Guided Agentic Testing](https://github.com/avikundal/graph-guided-agentic-testing) | web | — | — | code MIT | Uses a browser agent to explore web checkout flows into a Neo4j state graph and synthesizes graph-guided end-to-end tests. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/avikundal/graph-guided-agentic-testing/HEAD/README.md) |
 | [Preflight-Bench](https://github.com/multimodal-ai-engineering/preflight-bench) | web, desktop | [2610.39282](https://arxiv.org/abs/2610.39282) (2026) | — | code MIT | Preflight-Bench evaluates pre-click staleness checks and page-load synchronization for computer-use agents operating under asynchronous UI updates. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/multimodal-ai-engineering/preflight-bench/HEAD/README.md) |
 
 ## Agents
 
-All entries in this section: desktop, windows.
-
-| Resource | Paper | License | Description | Evidence |
-| --- | --- | --- | --- | --- |
-| [Crimson-Heart](https://github.com/YEYVHAIOU/Crimson-Heart) | — | code MIT | Persistent multimodal desktop agent with explicit runtime state management, priority-aware scheduling, and interruptible execution. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/YEYVHAIOU/Crimson-Heart/HEAD/README.md) |
+| Resource | Environments | Paper | License | Description | Evidence |
+| --- | --- | --- | --- | --- | --- |
+| [Browser Agent (uiuing)](https://github.com/uiuing/browser-agent) | web | — | code MIT | Chrome side-panel agent whose page engine reads a whole-page semantic DOM snapshot, re-grounds targets by element fingerprints, dispatches DOM events and checks post-conditions before reporting success. | [✓ 2026‑10‑18](https://raw.githubusercontent.com/uiuing/browser-agent/HEAD/README.md) |
+| [Crimson-Heart](https://github.com/YEYVHAIOU/Crimson-Heart) | desktop, windows | — | code MIT | Persistent multimodal desktop agent with explicit runtime state management, priority-aware scheduling, and interruptible execution. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/YEYVHAIOU/Crimson-Heart/HEAD/README.md) |
 
 ## Frameworks
 
@@ -59,6 +59,15 @@ All entries in this section: desktop, windows.
 | [OSWright](https://github.com/Ask-812/oswright) | desktop, windows | — | code MIT | Windows desktop automation MCP server using incremental UI Automation state diffs rather than full-screen vision loops. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/Ask-812/oswright/HEAD/README.md) |
 | [ScreenWatch](https://github.com/abnsapkota001/screenwatch) | cross-platform, desktop, windows, macos, linux | — | code MIT | Python library for detecting persistent visual state changes and UI settlement in desktop applications. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/abnsapkota001/screenwatch/main/README.md) |
 | [settled-computer](https://github.com/Remote-Skills/settled-computer) | cross-platform, desktop, web | — | code MIT | settled-computer is an event-driven MCP server that detects UI rendering quiescence so computer-use agents avoid fixed sleep delays and stale frames. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/Remote-Skills/settled-computer/HEAD/README.md) |
+
+## Infrastructure
+
+All entries in this section: desktop, linux.
+
+| Resource | Paper | License | Description | Evidence |
+| --- | --- | --- | --- | --- |
+| [grass-gui](https://github.com/ShiinaHiiragi/grass-gui) | — | — | ScienceBoard's replacement GRASS GIS 8.4 wxPython GUI with an embedded Flask server that loads mapsets and layers, runs GRASS commands and returns layer, region and console state as JSON for task checks. | [✓ 2026‑10‑18](https://raw.githubusercontent.com/ShiinaHiiragi/grass-gui/HEAD/manual.md) |
+| [kalgebra-kai](https://github.com/ShiinaHiiragi/kalgebra) | — | code GPL-2.0 | Modified KAlgebra build from ScienceBoard with a local HTTP server that reports variables and plotted 2D and 3D functions and can switch tabs or add calculations and plots, so the benchmark can check math tasks. | [✓ 2026‑10‑18](https://raw.githubusercontent.com/ShiinaHiiragi/kalgebra/HEAD/manual.md) |
 
 ## Papers
 

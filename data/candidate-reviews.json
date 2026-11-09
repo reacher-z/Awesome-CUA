@@ -4758,5 +4758,19 @@
     "url": "https://anonymous.4open.science/r/GAMBIT-40BB",
     "decision": "not_a_resource",
     "reason": "Expired anonymous review copy for GAMBIT, a withdrawn ICLR 2026 submission: the repository API returns 410 repository_expired, Wayback has no capture, and no public repository or arXiv version was found."
+  },
+  {
+    "id": "github:deepneuralmachine/seq2act-tensorflow",
+    "url": "https://github.com/deepneuralmachine/seq2act-tensorflow",
+    "decision": "alias",
+    "target_id": "component:google-research/seq2act",
+    "reason": "Unofficial copy of the google-research seq2act directory, committed once on 2020-07-13 as \"Seperate repo from google research\": same file layout, an identical requirements.txt and the README from before the datasets were released."
+  },
+  {
+    "id": "url:27b91e7a2c0dec5cdaf9",
+    "url": "https://huggingface.co/datasets/OS-Copilot/OS-Genesis-web-data/blob/main/os_genesis_web_training.jsonl",
+    "decision": "alias",
+    "target_id": "url:31768421b4ecd1ad89f7",
+    "reason": "Training-data file inside the indexed OS-Genesis web data Hub repository."
   }
 ]

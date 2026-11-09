@@ -9,7 +9,7 @@
 觉得有用？欢迎在 GitHub 上[点星支持本合集](https://github.com/reacher-z/Awesome-CUA)，让更多人找到它。
 
 <!-- BADGES:START -->
-[![Curated resources](https://img.shields.io/badge/curated%20resources-4%2C587-4352E8?style=flat-square&labelColor=1E2233)](docs/coverage.md) [![Reviewed papers and surveys](https://img.shields.io/badge/reviewed%20papers%20and%20surveys-1%2C718-4352E8?style=flat-square&labelColor=1E2233)](docs/papers.md) [![Evidence through](https://img.shields.io/badge/evidence%20through-2026--11--09%2008%3A07%20UTC-4352E8?style=flat-square&labelColor=1E2233)](docs/maintenance.md) [![Hugging Face dataset](https://img.shields.io/badge/dataset-Hugging%20Face-4352E8?style=flat-square&labelColor=1E2233)](https://huggingface.co/datasets/TIGER-Lab/AwesomeCUA) [![MIT license](https://img.shields.io/badge/license-MIT-5E6472?style=flat-square&labelColor=1E2233)](LICENSE)
+[![Curated resources](https://img.shields.io/badge/curated%20resources-4%2C587-4352E8?style=flat-square&labelColor=1E2233)](docs/coverage.md) [![Reviewed papers and surveys](https://img.shields.io/badge/reviewed%20papers%20and%20surveys-1%2C718-4352E8?style=flat-square&labelColor=1E2233)](docs/papers.md) [![Hugging Face dataset](https://img.shields.io/badge/dataset-Hugging%20Face-4352E8?style=flat-square&labelColor=1E2233)](https://huggingface.co/datasets/TIGER-Lab/AwesomeCUA) [![Evidence through](https://img.shields.io/badge/evidence%20through-2026--11--09%2008%3A07%20UTC-4352E8?style=flat-square&labelColor=1E2233)](docs/maintenance.md) [![MIT license](https://img.shields.io/badge/license-MIT-5E6472?style=flat-square&labelColor=1E2233)](LICENSE)
 <!-- BADGES:END -->
 
 已审阅条目依据一手来源快照审阅；待审阅记录已核实书目信息；候选是已发现的标识符，尚待处理。[“已核实”的含义](#已核实的含义) · [覆盖台账](docs/coverage.md)

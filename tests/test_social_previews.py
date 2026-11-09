@@ -31,19 +31,39 @@ class SocialPreviewTests(unittest.TestCase):
     def tearDownClass(cls):cls.temp.cleanup()
     def test_every_page_advertises_a_raster_preview_that_exists(self):
         pages=json.loads((self.dest/'data/search-manifest.json').read_text())['pages']
-        self.assertIn('/',{item['path'] for item in pages});locales={}
+        self.assertIn('/',{item['path'] for item in pages});locales={};images={}
         for item in pages:
             target=self.dest/item['path'].lstrip('/')
             if item['path'].endswith('/'):target=target/'index.html'
             head=HeadParser(target.read_text());meta=head.meta;locales[item['path']]=meta.get('og:locale')
             with self.subTest(path=item['path']):
-                self.assertEqual(meta['og:image'],[page_origin(self.dest,item['path'])+'/social.png'])
+                origin=page_origin(self.dest,item['path'])
+                self.assertEqual(len(meta['og:image']),1);self.assertTrue(meta['og:image'][0].startswith(origin+'/'))
+                image=self.dest/meta['og:image'][0][len(origin)+1:]
+                self.assertTrue(image.is_file(),meta['og:image'])
+                if 'twitter:image' in meta:self.assertEqual(meta['twitter:image'],meta['og:image'])
+                images[item['path']]=meta['og:image'][0][len(origin):]
                 self.assertEqual(meta['twitter:card'],['summary_large_image'])
                 self.assertEqual(meta['og:site_name'],['AwesomeCUA'])
                 self.assertEqual(meta['og:locale'],['zh_CN' if head.lang=='zh-CN' else 'en_US'])
                 self.assertEqual((meta['og:image:width'],meta['og:image:height']),(['1200'],['630']))
                 self.assertTrue(meta['og:image:alt'][0])
         self.assertEqual((locales['/'],locales['/zh/']),(['en_US'],['zh_CN']))
+        # Home and every collection page have their own card; a Chinese page shares its English twin's card.
+        collections=['/','/catalog/','/papers/','/topics/','/data/']+[path for path in images if path.startswith('/categories/') and path.count('/')==3]+[path for path in images if path.startswith('/topics/') and path.count('/')==3]
+        self.assertEqual(len({images[path] for path in collections}),len(collections))
+        for path in collections:self.assertEqual(images['/zh'+path] if '/zh'+path in images else images[path],images[path])
+        rows=[json.loads(line) for line in (Path(__file__).resolve().parents[1]/'data/catalog.jsonl').read_text().splitlines() if line.strip()]
+        from search_pages import resource_path
+        for row in rows:
+            self.assertEqual(images[resource_path(row)],f'/og/resource-{row["kind"]}.png',row['id'])
+    def test_cards_are_1200_by_630_pngs(self):
+        cards=sorted((self.dest/'og').glob('*.png'))
+        self.assertGreater(len(cards),20)
+        for card in cards:
+            data=card.read_bytes()
+            self.assertEqual(data[:8],b'\x89PNG\r\n\x1a\n',card.name);self.assertEqual(struct.unpack('>II',data[16:24]),(1200,630),card.name)
+            self.assertLess(len(data),300_000,card.name)
     def test_preview_image_is_a_1200_by_630_png(self):
         data=(self.dest/'social.png').read_bytes()
         self.assertEqual(data[:8],b'\x89PNG\r\n\x1a\n');self.assertEqual(data[12:16],b'IHDR')

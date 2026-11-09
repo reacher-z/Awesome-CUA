@@ -29,6 +29,7 @@ from discovery_files import FEED_SIZE, FEED_TITLE, feed_entry, robots_txt, write
 from site_data import PAPER_KINDS, catalog_counts, eligible, latest, newest_reviewed, record_modified, review_dates
 from static_api import API_SUMMARY, API_TITLE, api_docs_body, api_docs_markdown, write_api
 from sitemaps import write_sitemaps
+import og_cards
 
 REPO = "https://github.com/AwesomeCUA/awesomecua.github.io"
 SOURCE_REPO = "https://github.com/reacher-z/Awesome-CUA"
@@ -184,7 +185,24 @@ def organization():
     return {"@type":"Organization", "@id":SITE+"/#organization", "name":"AwesomeCUA", "url":SITE+"/", "sameAs":["https://github.com/AwesomeCUA", SOURCE_REPO, REPO]}
 
 
-def page(title, summary, path, body, main=None, index=True, lang="en", alternatives=False, crumbs=None, canonical=True, landing=False, extra_graph=(), context=''):
+# Open Graph cards drawn by this build: {name: (site path, alt text)}. Pages without a card of their own share the home card.
+OG_CARDS = {}
+OG_FALLBACK = ('/social.png', 'AwesomeCUA — Computer-use agents. Papers, data, and tools.')
+
+
+def og_name(path):
+    """The card for a page: its collection's card, or its resource kind's card when the build names one."""
+    path = path[3:] if path.startswith('/zh/') else path
+    parts = [part for part in path.split('/') if part]
+    if not parts:return 'home'
+    if parts[0] in ('catalog','papers','data') or parts == ['topics']:return parts[0]
+    if parts[0] == 'categories' and len(parts) > 1:return 'kind-' + parts[1]
+    if parts[0] == 'topics':return 'topic-' + parts[1]
+    if parts[0] == 'compare' and len(parts) > 1:return 'kind-' + parts[1].rstrip('s')
+    return 'home'
+
+
+def page(title, summary, path, body, main=None, index=True, lang="en", alternatives=False, crumbs=None, canonical=True, landing=False, extra_graph=(), context='', og=None):
     url=SITE+path
     # One list renders both the visible trail and BreadcrumbList, so they cannot disagree.
     crumbs=crumbs or [("AwesomeCUA","/zh/" if lang=="zh-CN" and path!="/zh/" else "/"),(title,path)]
@@ -205,6 +223,7 @@ def page(title, summary, path, body, main=None, index=True, lang="en", alternati
     identity=f'<link rel="canonical" href="{url}">' if canonical else ''
     og_url=f'<meta property="og:url" content="{url}">' if canonical else ''
     full_title=page_title(title)
+    og_image,og_alt=OG_CARDS.get(og or og_name(path)) or OG_CARDS.get('home') or OG_FALLBACK
     snippet=meta_description(summary,lang,context)
     switch_to=alternate_paths.get('en' if lang.startswith('zh') else 'zh-CN') or None
     breadcrumbs=f'<nav class="breadcrumbs{" vh" if landing else ""}" aria-label="Breadcrumb"><ol>{trail}</ol></nav>'
@@ -213,7 +232,7 @@ def page(title, summary, path, body, main=None, index=True, lang="en", alternati
     skip='跳到正文' if lang.startswith('zh') else 'Skip to content'
     # Only the homepage has its own search window; other wide pages keep the header search.
     body_class=''if not landing else ' class="home"' if path in ('/','/zh/') else ' class="home list-page"'
-    document=f'''<!doctype html><html lang="{lang}" data-site="cua"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>{esc(full_title)}</title>{site_shell.head_assets(lang)}<meta name="description" content="{esc(snippet)}"><meta name="robots" content="{robots}">{identity}{alternate}<meta property="og:title" content="{esc(full_title)}"><meta property="og:description" content="{esc(snippet)}">{og_url}<meta property="og:type" content="website"><meta property="og:site_name" content="AwesomeCUA"><meta property="og:locale" content="{"zh_CN" if lang=="zh-CN" else "en_US"}"><meta property="og:image" content="{SITE}/social.png"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta property="og:image:alt" content="AwesomeCUA — Computer-use agents. Papers, data, and tools."><meta name="twitter:card" content="summary_large_image"><link rel="icon" href="/favicon.svg" type="image/svg+xml"><link rel="stylesheet" href="{site_shell.asset("/pages.css")}"><script type="application/ld+json">{jsonld({"@context":"https://schema.org","@graph":graph})}</script>{home_page.legacy_redirect_script() if path=="/" else ""}</head><body{body_class}><a class="skip" href="#content">{skip}</a>{site_shell.top(path=path,lang=lang,lang_href=switch_to,live=landing)}{content}{site_shell.bottom(lang=lang,lang_href=switch_to,live=landing)}</body></html>'''
+    document=f'''<!doctype html><html lang="{lang}" data-site="cua"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>{esc(full_title)}</title>{site_shell.head_assets(lang)}<meta name="description" content="{esc(snippet)}"><meta name="robots" content="{robots}">{identity}{alternate}<meta property="og:title" content="{esc(full_title)}"><meta property="og:description" content="{esc(snippet)}">{og_url}<meta property="og:type" content="website"><meta property="og:site_name" content="AwesomeCUA"><meta property="og:locale" content="{"zh_CN" if lang=="zh-CN" else "en_US"}"><meta property="og:image" content="{SITE}{og_image}"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta property="og:image:alt" content="{esc(og_alt)}"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:image" content="{SITE}{og_image}"><link rel="icon" href="/favicon.svg" type="image/svg+xml"><link rel="stylesheet" href="{site_shell.asset("/pages.css")}"><script type="application/ld+json">{jsonld({"@context":"https://schema.org","@graph":graph})}</script>{home_page.legacy_redirect_script() if path=="/" else ""}</head><body{body_class}><a class="skip" href="#content">{skip}</a>{site_shell.top(path=path,lang=lang,lang_href=switch_to,live=landing)}{content}{site_shell.bottom(lang=lang,lang_href=switch_to,live=landing)}</body></html>'''
     return document
 
 
@@ -634,6 +653,42 @@ def declare_markdown_twins(destination, manifest):
         item['sha256']=hashlib.sha256(content).hexdigest()
 
 
+KIND_LINES = {
+    'benchmark':'Benchmarks for GUI, web and mobile agents, with evaluation protocols, scale and licenses.',
+    'dataset':'Training and evaluation data for computer-use agents, with supervision, formats and licenses.',
+    'model':'GUI grounding and action models, with weights, licenses and the papers behind them.',
+    'agent':'Agents that operate browsers, desktops and phones, linked to their code and papers.',
+    'framework':'Frameworks for building and running computer-use agents, with code licenses.',
+    'tool':'Tools for browser automation, GUI control, tracing and agent evaluation.',
+    'infrastructure':'Environments, sandboxes and runtimes where computer-use agents act.',
+    'product':'Computer-use agent products and services, linked to their publishers.',
+    'company':'Labs and companies publishing computer-use agent research and software.',
+    'paper':'Reviewed computer-use agent research, with recorded versions and citations.',
+    'survey':'Surveys of GUI, web and mobile agents, with citations.',
+    'learning':'Courses, tutorials and talks on computer-use agents.',
+}
+
+
+def draw_og_cards(destination, rows, reviewed):
+    """Home, directory, category, library, topic and data cards, plus one template per resource kind."""
+    by_kind=Counter(r['kind'] for r in reviewed)
+    papers=by_kind['paper']+by_kind['survey']
+    cards={'home':('awesomecua.com','Computer-use agents · '+f'{len(reviewed):,} reviewed','Computer-use research, data, and tools','Papers, models, datasets, benchmarks and tools for agents that use computers, each linked to its primary source.','open'),
+           'catalog':('awesomecua.com/catalog/',f'Catalog · {len(KINDS)} resource types','Computer-use agent resource directory','Papers, models, datasets, benchmarks, tools, products and publishers, each with its primary source.','browse'),
+           'papers':('awesomecua.com/papers/',f'Research library · {papers:,} reviewed','Computer-use agent papers and surveys','Reviewed research by year, author, platform and topic, with BibTeX citations.','read'),
+           'topics':('awesomecua.com/topics/',f'Topics · {len(TOPIC_CATALOG)} research areas','Computer-use research topics','Grounding, planning, evaluation, data generation and more, across papers, models and benchmarks.','select'),
+           'data':('awesomecua.com/data/','Data · JSONL, CSV, SQLite','Download the source-backed catalog','The complete catalog, RAG documents and citations, with counts and SHA-256 fingerprints.','download')}
+    for kind,label in KINDS.items():
+        cards['kind-'+kind]=(f'awesomecua.com/categories/{kind}/',f'Category · {by_kind[kind]:,} reviewed',label,KIND_LINES[kind],'click')
+        cards['resource-'+kind]=('awesomecua.com/resources/',f'{KIND_SINGULAR[kind]} record',KIND_SINGULAR[kind],KIND_LINES[kind],'inspect')
+    topics=Counter(t for r in reviewed for t in r['topics'])
+    for topic,count in topics.items():
+        cards['topic-'+topic]=(f'awesomecua.com/topics/{topic}/',f'Topic · {count:,} reviewed',topic_name(topic),'Reviewed papers, models, datasets, benchmarks and tools, each linked to its primary source.','select')
+    paths=og_cards.write_cards(destination,cards)
+    OG_CARDS.clear()
+    OG_CARDS.update({name:(paths[name],f'{spec[2]} — AwesomeCUA') for name,spec in cards.items()})
+
+
 def build_search_pages(destination, rows, coverage, root, *, survey_page=None):
     lookup={r["id"]:r for r in rows}
     pending_reviews={item['id']:item for item in coverage.get('pending_editorial',[])}
@@ -662,6 +717,7 @@ def build_search_pages(destination, rows, coverage, root, *, survey_page=None):
     # Stars and scan time change far more often than most pages, so those pages read them from this one small file.
     (destination/'data/site-stamp.json').write_text(json.dumps({'stars':stars,'last_scan':last_scan})+'\n',encoding='utf-8')
     view=home_page.catalog_view(rows,reviewed,coverage,root)
+    draw_og_cards(destination,rows,reviewed)
     for filename,zh in (('search-index.json',False),('search-index.zh.json',True)):
         (destination/'data'/filename).write_text(json.dumps(home_page.search_index(view,zh=zh),ensure_ascii=False,separators=(',',':'))+'\n',encoding='utf-8')
     if survey_page:
@@ -694,11 +750,11 @@ def build_search_pages(destination, rows, coverage, root, *, survey_page=None):
         shown=[r]+[lookup[rel['source_id']] for rel in incoming.get(r['id'],[]) if rel['source_id'] in lookup]
         # Reviewed records have a Chinese twin; the pair names each other, and x-default is the English page.
         pair={'en':path,'zh-CN':zh_resource_path(r),'x-default':path} if eligible(r) else None
-        emit(path,page(titles.get(r["id"],r["name"]),description(r),path,resource_body(r,lookup,incoming,pending_review),resource_schema(r),eligible(r),crumbs=resource_crumbs(r),alternatives=pair,context=resource_context(r)),eligible(r),lastmod=modified(shown),alternates=pair)
+        emit(path,page(titles.get(r["id"],r["name"]),description(r),path,resource_body(r,lookup,incoming,pending_review),resource_schema(r),eligible(r),crumbs=resource_crumbs(r),alternatives=pair,context=resource_context(r),og='resource-'+r['kind']),eligible(r),lastmod=modified(shown),alternates=pair)
         (destination/path.lstrip('/')/'index.md').write_text(clean_text(resource_markdown(r,pending_review)),encoding='utf-8')
         if pair:
             zh_path=pair['zh-CN']
-            emit(zh_path,page(zh_titles[r['id']],zh_summary(r),zh_path,resource_body(r,lookup,incoming,pending_review,zh=True),resource_schema(r,zh=True),lang='zh-CN',crumbs=resource_crumbs(r,zh=True),alternatives=pair,context=resource_context(r,zh=True)),lastmod=modified(shown),alternates=pair)
+            emit(zh_path,page(zh_titles[r['id']],zh_summary(r),zh_path,resource_body(r,lookup,incoming,pending_review,zh=True),resource_schema(r,zh=True),lang='zh-CN',crumbs=resource_crumbs(r,zh=True),alternatives=pair,context=resource_context(r,zh=True),og='resource-'+r['kind']),lastmod=modified(shown),alternates=pair)
             (destination/zh_path.lstrip('/')/'index.md').write_text(clean_text(zh_resource_page_markdown(r,pending_review)),encoding='utf-8')
         (destination/path.lstrip('/')/'record.json').write_text(json.dumps(r,ensure_ascii=False,sort_keys=True,separators=(',', ':'))+'\n',encoding='utf-8')
         if r['kind'] in {'paper','survey'}:

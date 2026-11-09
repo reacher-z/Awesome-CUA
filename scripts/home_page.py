@@ -458,6 +458,11 @@ def tasks(view, zh=False) -> str:
 </section>'''
 
 
+def word_breaks(name: str) -> str:
+    """Escaped name with break points between camel-case words, so AgentRewardBench wraps as AgentReward|Bench in a narrow cell."""
+    return re.sub(r"(?<=[a-z])(?=[A-Z])", "<wbr>", esc(name))
+
+
 def _feature(*, name, repo, url, summary, leaderboard, project, lead, zh, live) -> str:
     star = f"为 {name} 点 Star" if zh else f"Star {name}"
     tags = f'{kind_tag("benchmark", zh)}{env_tag(["web"], zh)}<span class="feature-tag">{"精选" if zh else "Featured"}</span>'
@@ -482,7 +487,7 @@ def benchmark_band(view, zh=False, live=True) -> str:
         summary="面向浏览器智能体的真实网站日常任务评测基准。" if zh else "An everyday-task benchmark for browser agents on live websites.",
         leaderboard=clawbench["details"].get("leaderboard_url") or "https://claw-bench.com", project="https://claw-bench.com", lead=False, zh=zh, live=live)
     rows = "".join(
-        f'<li><a class="nm" href="{esc(resource_href(record))}">{esc(clean_title(record["name"]))}</a>{env_tag(record["environments"], zh)}'
+        f'<li><a class="nm" href="{esc(resource_href(record))}">{word_breaks(clean_title(record["name"]))}</a>{env_tag(record["environments"], zh)}'
         f'<a class="lb" href="{esc(record["details"]["leaderboard_url"])}" aria-label="{esc(clean_title(record["name"]))} {"排行榜" if zh else "leaderboard"}">{ic("trophy")}</a></li>'
         for record in reviewed_with_board)
     benchmarks = fmt(view["kinds"]["benchmark"])

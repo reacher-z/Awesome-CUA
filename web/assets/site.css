@@ -1467,3 +1467,12 @@ html:lang(zh-CN) .eyebrow{letter-spacing:.02em}
 
 /* While a typed query waits for the search index, the rows on screen read as not yet filtered. */
 #finder [aria-busy="true"]{opacity:.55;transition:opacity .15s}
+
+/* Leaderboard names wrap inside their cell and keep 8px before the trophy. */
+.r3-band .lb-list li{column-gap:8px}
+.r3-band .lb-list a.nm{min-width:0;overflow-wrap:anywhere}
+/* Chinese hero: the box holds 智能体 alone, and its step badge sits above the line, clear of 用. */
+:lang(zh-CN) .bbox{margin:0 .08em}
+:lang(zh-CN) .bbox-f::before{top:auto;left:-10px;bottom:calc(100% + 4px)}
+:lang(zh-CN) .bbox-f::after{left:18px}
+:lang(zh-CN) .hero h1{font-size:min(calc(var(--step-display) * .84),calc((100vw - 32px) / 9.4))}

@@ -5,7 +5,7 @@
 Bibliographic records from arXiv and retained publication sources. Metadata-only entries await relevance review. Discovery includes historical references and adjacent work.
 Dates retain their recorded precision. Explicit arXiv scope exclusions are listed in the [scope-decision ledger](../data/exclusion-status.json). The [arXiv archive](../data/papers.jsonl) and [publication observations](../data/publications.jsonl) retain their separate source facts.
 
-**Years:** [2026](#2026) (1,375; 879 ⭐) · [2025](#2025) (713; 514 ⭐) · [2024](#2024) (331; 214 ⭐) · [2023](#2023) (96; 56 ⭐) · [2022](#2022) (22; 16 ⭐) · [2021](#2021) (17; 13 ⭐) · [2020](#2020) (10; 7 ⭐) · [2019](#2019) (8; 2 ⭐) · [2018](#2018) (10; 7 ⭐) · [2017](#2017) (8; 3 ⭐) · [2016](#2016) (4; 2 ⭐) · [2015](#2015) (1; 0 ⭐) · [2013](#2013) (1; 0 ⭐) · [2010](#2010) (1; 1 ⭐) · [2009](#2009) (1; 1 ⭐) · [2007](#2007) (2; 2 ⭐) · [1991](#1991) (1; 1 ⭐)
+**Years:** [2026](#2026) (1,377; 879 ⭐) · [2025](#2025) (713; 514 ⭐) · [2024](#2024) (331; 214 ⭐) · [2023](#2023) (96; 56 ⭐) · [2022](#2022) (22; 16 ⭐) · [2021](#2021) (17; 13 ⭐) · [2020](#2020) (10; 7 ⭐) · [2019](#2019) (8; 2 ⭐) · [2018](#2018) (10; 7 ⭐) · [2017](#2017) (8; 3 ⭐) · [2016](#2016) (4; 2 ⭐) · [2015](#2015) (1; 0 ⭐) · [2013](#2013) (1; 0 ⭐) · [2010](#2010) (1; 1 ⭐) · [2009](#2009) (1; 1 ⭐) · [2007](#2007) (2; 2 ⭐) · [1991](#1991) (1; 1 ⭐)
 
 ⭐ marks papers with an editorial relevance review; their topics link to the [topic hubs](topics.md). Other rows are bibliographic metadata only.
 
@@ -23,6 +23,7 @@ Dates retain their recorded precision. Explicit arXiv scope exclusions are liste
 | 2026-11-04 | [Securing Web Agents with the Compile-Then-Execute Paradigm](https://arxiv.org/abs/2611.06039) | ⭐ reviewed | [planning](topics/planning.md), [safety-security](topics/safety-security.md), [tool-integration](topics/tool-integration.md), [web-navigation](topics/web-navigation.md) |
 | 2026-11-04 | [MKD2World: A Typed Spatial MarkDown World Model For Web Agents](https://arxiv.org/abs/2611.06544) | ⭐ reviewed | [data-generation](topics/data-generation.md), [planning](topics/planning.md), [screen-understanding](topics/screen-understanding.md), [world-models](topics/world-models.md) |
 | 2026-11-04 | [GUI Grounding for Computer-Use Agents: A Survey](https://doi.org/10.20944/preprints202611.0431.v1) | ⭐ reviewed | [evaluation](topics/evaluation.md), [grounding](topics/grounding.md), [screen-understanding](topics/screen-understanding.md), [survey](topics/survey.md) |
+| 2026-11-04 | [GH-AWTrace: A Large-Scale Dataset of GitHub Agentic Workflow Execution Logs](https://arxiv.org/abs/2611.06866) | metadata |  |
 | 2026-11-04 | [Can LLM Agents Learn to Test? Maintaining Scoped Experience as Testing Evidence for Mobile GUI Testing](https://arxiv.org/abs/2611.05873) | ⭐ reviewed | [interaction-history](topics/interaction-history.md), [memory](topics/memory.md), [mobile-navigation](topics/mobile-navigation.md), [workflow](topics/workflow.md) |
 | 2026-11-03 | [Voluntary Servitude: Weaponized Safety Warning Mechanisms for Controlling AI Agents](https://arxiv.org/abs/2611.04393) | ⭐ reviewed | [robustness](topics/robustness.md), [safety-security](topics/safety-security.md), [web-navigation](topics/web-navigation.md) |
 | 2026-11-03 | [ViBench 2.0: A Benchmark for Long-Horizon Software Building](https://arxiv.org/abs/2611.05620) | metadata |  |
@@ -403,6 +404,7 @@ Dates retain their recorded precision. Explicit arXiv scope exclusions are liste
 | 2026-09-27 | [WorldAgent: Verification-Guided Agentic Physical World Construction](https://arxiv.org/abs/2609.33208) | metadata |  |
 | 2026-09-27 | [Sivia: Learning to Draw, Learning to Learn](https://arxiv.org/abs/2609.33386) | metadata |  |
 | 2026-09-27 | [SWE-Game: Can Coding Agents Build the Games We Want?](https://arxiv.org/abs/2609.33678) | metadata |  |
+| 2026-09-27 | [SINGED: Correct Outputs Do Not Certify Safe Execution in LLM Agents](https://arxiv.org/abs/2609.35889) | metadata |  |
 | 2026-09-27 | [Relevance Does Not Imply Applicability: Experience Activation for Personal GUI Agents](https://arxiv.org/abs/2609.33304) | ⭐ reviewed | [memory](topics/memory.md), [planning](topics/planning.md), [training-free](topics/training-free.md) |
 | 2026-09-27 | [Probe to Act: Elevating Browser-Use Agent via Active Visual Probing](https://arxiv.org/abs/2609.33646) | ⭐ reviewed | [grounding](topics/grounding.md), [memory](topics/memory.md), [web-navigation](topics/web-navigation.md) |
 | 2026-09-27 | [ORBIT: A Framework for Multi-Agent Safety and Security Evaluations](https://arxiv.org/abs/2609.33102) | ⭐ reviewed | [evaluation](topics/evaluation.md), [safety-security](topics/safety-security.md), [web-navigation](topics/web-navigation.md) |

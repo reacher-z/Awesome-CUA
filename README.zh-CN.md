@@ -84,6 +84,12 @@ python3 scripts/catalog.py get arxiv:2404.07972 --related --json
 
 <!-- CHARTS:START -->
 
+<picture><source media="(prefers-color-scheme: dark)" srcset="docs/assets/papers-by-year-dark.svg"><img src="docs/assets/papers-by-year-light.svg" alt="堆叠柱状图：按发表年份统计的 2,169 条论文与综述记录，范围为 ≤2016 至 2026。每列底部为已审阅记录，上方为仅完成书目核实的记录。2026 年记录最多，共 1,116 条，其中 879 条已审阅。"></picture>
+
+<picture><source media="(prefers-color-scheme: dark)" srcset="docs/assets/platforms-dark.svg"><img src="docs/assets/platforms-light.svg" alt="横向堆叠条形图：各平台的已审阅资源数量，按基准与数据集、模型、系统和论文分段。数量最多的是 Web 2,328、Desktop 1,540、Cross-platform 649。环境标签可以重叠，同一资源可计入多个平台。"></picture>
+
+精确计数：[按年份的论文目录](docs/papers.md) · [按平台的资源](docs/environments.md)
+
 <!-- CHARTS:END -->
 
 ## 使用数据

@@ -10,9 +10,9 @@ Evidence snapshot through **2026-11-09T08:07:58Z**. Generated from committed sou
 
 These are distinct resource identifiers, not distinct research projects. Papers, repositories, datasets, products, and publisher entities have different grains.
 
-<picture><source media="(prefers-color-scheme: dark)" srcset="assets/papers-by-year-dark.svg"><img src="assets/papers-by-year-light.svg" alt="Stacked column chart of 2,606 paper and survey records by publication year, ≤2016 to 2026. Each column stacks reviewed records at the base and metadata-only records above. 2026 has the most records: 1,083, of which 506 are reviewed."></picture>
+<picture><source media="(prefers-color-scheme: dark)" srcset="assets/papers-by-year-dark.svg"><img src="assets/papers-by-year-light.svg" alt="Stacked column chart of 2,169 paper and survey records by publication year, ≤2016 to 2026. Each column stacks reviewed records at the base and metadata-only records above. 2026 has the most records: 1,116, of which 879 are reviewed."></picture>
 
-<picture><source media="(prefers-color-scheme: dark)" srcset="assets/platforms-dark.svg"><img src="assets/platforms-light.svg" alt="Horizontal stacked bar chart of curated resources per platform, split into benchmarks and datasets, models, systems, and papers. Largest: Web 596, Desktop 320, Android 294. Environment tags overlap, so one resource can count on several platforms."></picture>
+<picture><source media="(prefers-color-scheme: dark)" srcset="assets/platforms-dark.svg"><img src="assets/platforms-light.svg" alt="Horizontal stacked bar chart of curated resources per platform, split into benchmarks and datasets, models, systems, and papers. Largest: Web 2,328, Desktop 1,540, Cross-platform 649. Environment tags overlap, so one resource can count on several platforms."></picture>
 
 Exact counts: [bibliography by year](papers.md) · [resources by platform](environments.md)
 

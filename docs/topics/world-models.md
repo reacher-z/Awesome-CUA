@@ -2,9 +2,17 @@
 
 [Home](../../README.md) · [All topics](../topics.md) · [Full arXiv bibliography](../papers.md)
 
-79 source-reviewed resources tagged `world-models`. Curated metadata; unknown facts are shown as —.
+81 source-reviewed resources tagged `world-models`. Curated metadata; unknown facts are shown as —.
 
-**Contents:** [Datasets (5)](#datasets) · [Models (9)](#models) · [Agents (2)](#agents) · [Frameworks (10)](#frameworks) · [Tools (1)](#tools) · [Surveys (1)](#surveys) · [Papers (51)](#papers)
+**Contents:** [Benchmarks (1)](#benchmarks) · [Datasets (5)](#datasets) · [Models (10)](#models) · [Agents (2)](#agents) · [Frameworks (10)](#frameworks) · [Tools (1)](#tools) · [Surveys (1)](#surveys) · [Papers (51)](#papers)
+
+## Benchmarks
+
+All entries in this section: android.
+
+| Resource | Paper | Scale | License | Description | Evidence |
+| --- | --- | --- | --- | --- | --- |
+| [MWMBench](https://huggingface.co/datasets/trillionlabs/MWMBench) | [2602.01576](https://arxiv.org/abs/2602.01576) (2026) | — | data apache-2.0 | MWMBench evaluates mobile GUI world models by asking them to predict the next screen from a screenshot and coordinate action. | [✓ 2026‑11‑09](https://huggingface.co/api/datasets/trillionlabs/MWMBench) |
 
 ## Datasets
 
@@ -26,6 +34,7 @@
 | [Dreamer-7B-Reddit](https://huggingface.co/osunlp/Dreamer-7B-Reddit) | web | [2411.06559](https://arxiv.org/abs/2411.06559) (2024) | weights apache-2.0 | Dreamer-7B-Reddit is a Reddit-domain checkpoint for WebDreamer. It predicts the screen state after a proposed action to support web-agent planning. | [✓ 2026‑11‑09](https://huggingface.co/api/models/osunlp/Dreamer-7B-Reddit) |
 | [Dreamer-7B-Shopping](https://huggingface.co/osunlp/Dreamer-7B-Shopping) | web | [2411.06559](https://arxiv.org/abs/2411.06559) (2024) | weights apache-2.0 | A shopping-domain Dreamer-7B checkpoint for WebDreamer, which uses screenshot-conditioned predictions of candidate web actions to support agent planning. | [✓ 2026‑11‑09](https://huggingface.co/api/models/osunlp/Dreamer-7B-Shopping) |
 | [gWorld (GuiWorld)](https://github.com/trillion-labs/gWorld) | android | [2602.01576](https://arxiv.org/abs/2602.01576) (2026) | — | gWorld is an open-weight 8B/32B mobile GUI world model that predicts next-step screen states via renderable web code generation. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/trillion-labs/gWorld/HEAD/README.md) |
+| [gWorld-32B](https://huggingface.co/trillionlabs/gWorld-32B) | unspecified | [2602.01576](https://arxiv.org/abs/2602.01576) (2026) | weights apache-2.0 | A released mobile GUI world model that takes a screenshot and an action, then predicts the next interface as renderable HTML. The card identifies Qwen3-VL-32B as its base. | [✓ 2026‑11‑09](https://huggingface.co/api/models/trillionlabs/gWorld-32B) |
 | [gWorld-8B](https://huggingface.co/trillionlabs/gWorld-8B) | android | [2602.01576](https://arxiv.org/abs/2602.01576) (2026) | weights apache-2.0 | gWorld-8B is a released mobile GUI world model that predicts the screen after an action by generating renderable HTML from the current screenshot and action. | [✓ 2026‑11‑09](https://huggingface.co/api/models/trillionlabs/gWorld-8B) |
 | [jiamingzz/lgwm](https://huggingface.co/jiamingzz/lgwm) | unspecified | [2610.11942](https://arxiv.org/abs/2610.11942) (2026) | weights apache-2.0 | Released weights for a GUI world model that predicts a screen representation after an action and checks the observed transition, with a separate harm scoring head. | [✓ 2026‑11‑09](https://huggingface.co/api/models/jiamingzz/lgwm) |
 | [Textual Foresight](https://github.com/aburns4/textualforesight) | android | [2406.07822](https://arxiv.org/abs/2406.07822) (2024) | code BSD-3-Clause | Textual Foresight pretrains UI representations by predicting textual descriptions of future screen states resulting from mobile UI actions. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/aburns4/textualforesight/HEAD/README.md) |

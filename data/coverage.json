@@ -1,7 +1,7 @@
 {
-  "as_of_utc": "2026-11-09T20:03:14Z",
-  "total_records": 5742,
-  "curated_records": 4857,
+  "as_of_utc": "2026-11-09T21:12:48Z",
+  "total_records": 6000,
+  "curated_records": 5115,
   "bibliographic_records": 2603,
   "arxiv_active_records": 2550,
   "non_arxiv_bibliographic_records": 53,
@@ -11,9 +11,9 @@
   "exclusion_revalidation_pending": 0,
   "metadata_only_records": 885,
   "discovery_identifiers": 8801,
-  "unindexed_candidates": 468,
+  "unindexed_candidates": 206,
   "non_resource_candidates": 469,
-  "alias_candidates": 661,
+  "alias_candidates": 665,
   "out_of_scope_candidates": 1741,
   "pending_editorial": [
     {
@@ -2558,13 +2558,6 @@
       "cause": "annotation_pending"
     },
     {
-      "id": "github:agentsea/agentd",
-      "name": "agentd",
-      "url": "https://github.com/agentsea/agentd",
-      "reason": "The repository file list shows implementation files, but the supplied README is empty. The empty supplied README leaves the daemon's purpose and computer-use capability unexplained.",
-      "cause": "reviewer_hold"
-    },
-    {
       "id": "url:6224c7f61c680453ec99",
       "name": "Bloomberg - Are you a robot?",
       "url": "https://www.bloomberg.com/news/articles/2024-11-13/openai-nears-launch-of-ai-agents-to-automate-tasks-for-users",
@@ -3887,13 +3880,17 @@
       "name": "Agent Lumos: Unified and Modular Training for Open-Source Language Agents",
       "url": "https://arxiv.org/abs/2311.05657",
       "linked_from": [
+        "url:1e85f7557b39ae40193f",
         "url:246241a0b6219513cb7f",
+        "url:457c2111894524e9dfda",
         "url:543aff764901777e6ad5",
         "url:7e7de336b1d8a2adce2c",
         "url:87bba046fba8c1cd968c",
+        "url:af446270bb6bfd20b77e",
         "url:b0b2cd616f8c30b4b09d",
         "url:dca5b0d8449331bbede4",
-        "url:e35db30fee209ef9b57d"
+        "url:e35db30fee209ef9b57d",
+        "url:eb6a5940793aa81153d0"
       ]
     },
     {
@@ -3905,12 +3902,24 @@
       ]
     },
     {
+      "id": "arxiv:2411.01606",
+      "name": "DesignRepair: Dual-Stream Design Guideline-Aware Frontend Repair with Large Language Models",
+      "url": "https://arxiv.org/abs/2411.01606",
+      "linked_from": [
+        "github:ugaiforge/designrepair"
+      ]
+    },
+    {
       "id": "arxiv:2504.10479",
       "name": "InternVL3: Exploring Advanced Training and Test-Time Recipes for Open-Source Multimodal Models",
       "url": "https://arxiv.org/abs/2504.10479",
       "linked_from": [
         "url:1e3655e5a2b664102ac7",
+        "url:34516ed7cef20f813d93",
+        "url:6d5151d298f88e2602bb",
+        "url:6fc89a4fd815cb273777",
         "url:7c01d4caa44763019e36",
+        "url:adb613aec8c5ebdeab89",
         "url:b2a83cef835559f24351"
       ]
     },
@@ -3924,11 +3933,52 @@
       ]
     },
     {
+      "id": "arxiv:2509.08755",
+      "name": "AgentGym-RL: Training LLM Agents for Long-Horizon Decision Making through Multi-Turn Reinforcement Learning",
+      "url": "https://arxiv.org/abs/2509.08755",
+      "linked_from": [
+        "github:woooodyy/agentgym-rl"
+      ]
+    },
+    {
       "id": "arxiv:2511.08195",
       "name": "UI2Code^N: UI-to-Code Generation as Interactive Visual Optimization",
       "url": "https://arxiv.org/abs/2511.08195",
       "linked_from": [
+        "github:zai-org/ui2code_n",
         "url:b04608609a8c392d110b"
+      ]
+    },
+    {
+      "id": "arxiv:2602.03255",
+      "name": "LPS-Bench: Benchmarking Safety Awareness of Computer-Use Agents in Long-Horizon Planning under Benign and Adversarial Scenarios",
+      "url": "https://arxiv.org/abs/2602.03255",
+      "linked_from": [
+        "url:625bd97c7aa32cf05833"
+      ]
+    },
+    {
+      "id": "arxiv:2604.17091",
+      "name": "GenericAgent: A Token-Efficient Self-Evolving LLM Agent via Contextual Information Density Maximization (V1.0)",
+      "url": "https://arxiv.org/abs/2604.17091",
+      "linked_from": [
+        "github:jinyihan99/ga-technical-report"
+      ]
+    },
+    {
+      "id": "arxiv:2608.13560",
+      "name": "AutoDesign: Meta-Harness Optimization for Long-Horizon Agentic Design",
+      "url": "https://arxiv.org/abs/2608.13560",
+      "linked_from": [
+        "github:yaxin9luo/autodesign"
+      ]
+    },
+    {
+      "id": "arxiv:2609.39045",
+      "name": "RSIGame: Autonomous Agentic Game Development with Recursive Self-improvement",
+      "url": "https://arxiv.org/abs/2609.39045",
+      "linked_from": [
+        "github:wenyiwu0111/rsigame"
       ]
     },
     {
@@ -3937,6 +3987,22 @@
       "url": "https://arxiv.org/abs/2609.39600",
       "linked_from": [
         "url:a80a37148148aad731a9"
+      ]
+    },
+    {
+      "id": "arxiv:2610.02200",
+      "name": "VISTA: A Visual Harness for Reasoning in an Interactive World",
+      "url": "https://arxiv.org/abs/2610.02200",
+      "linked_from": [
+        "github:joshhhhhan/vista"
+      ]
+    },
+    {
+      "id": "arxiv:2610.14096",
+      "name": "SWEeper-Bench: Can Agents Discover Bugs in Interactive Software?",
+      "url": "https://arxiv.org/abs/2610.14096",
+      "linked_from": [
+        "url:9d35341e71dfd457fd79"
       ]
     },
     {
@@ -3949,52 +4015,52 @@
     }
   ],
   "by_kind": {
-    "agent": 444,
-    "benchmark": 281,
+    "agent": 471,
+    "benchmark": 300,
     "company": 19,
-    "dataset": 225,
-    "framework": 638,
-    "infrastructure": 101,
-    "learning": 32,
-    "model": 351,
+    "dataset": 243,
+    "framework": 662,
+    "infrastructure": 114,
+    "learning": 36,
+    "model": 400,
     "paper": 2566,
-    "product": 72,
+    "product": 75,
     "survey": 37,
-    "tool": 976
+    "tool": 1077
   },
   "curated_by_environment": {
-    "android": 676,
-    "cross-platform": 706,
-    "desktop": 1670,
-    "harmonyos": 5,
-    "ios": 89,
-    "linux": 481,
-    "macos": 530,
-    "unspecified": 763,
-    "web": 2487,
-    "windows": 527
+    "android": 698,
+    "cross-platform": 750,
+    "desktop": 1780,
+    "harmonyos": 7,
+    "ios": 102,
+    "linux": 527,
+    "macos": 581,
+    "unspecified": 791,
+    "web": 2631,
+    "windows": 566
   },
   "curated_by_kind_and_environment": {
     "agent": {
-      "android": 77,
-      "cross-platform": 49,
-      "desktop": 214,
-      "ios": 13,
-      "linux": 70,
-      "macos": 106,
+      "android": 83,
+      "cross-platform": 59,
+      "desktop": 228,
+      "ios": 16,
+      "linux": 76,
+      "macos": 115,
       "unspecified": 3,
-      "web": 223,
-      "windows": 94
+      "web": 241,
+      "windows": 102
     },
     "benchmark": {
-      "android": 39,
+      "android": 41,
       "cross-platform": 28,
-      "desktop": 93,
-      "ios": 1,
-      "linux": 24,
+      "desktop": 94,
+      "ios": 2,
+      "linux": 25,
       "macos": 10,
-      "unspecified": 11,
-      "web": 193,
+      "unspecified": 12,
+      "web": 207,
       "windows": 14
     },
     "company": {
@@ -4003,60 +4069,60 @@
       "unspecified": 18
     },
     "dataset": {
-      "android": 67,
-      "cross-platform": 31,
-      "desktop": 66,
-      "ios": 6,
-      "linux": 20,
-      "macos": 14,
-      "unspecified": 27,
-      "web": 93,
-      "windows": 12
+      "android": 70,
+      "cross-platform": 33,
+      "desktop": 71,
+      "ios": 7,
+      "linux": 21,
+      "macos": 16,
+      "unspecified": 31,
+      "web": 102,
+      "windows": 13
     },
     "framework": {
-      "android": 98,
-      "cross-platform": 149,
-      "desktop": 298,
+      "android": 101,
+      "cross-platform": 154,
+      "desktop": 309,
       "harmonyos": 1,
       "ios": 17,
-      "linux": 106,
-      "macos": 81,
+      "linux": 111,
+      "macos": 88,
       "unspecified": 26,
-      "web": 443,
-      "windows": 95
+      "web": 460,
+      "windows": 99
     },
     "infrastructure": {
-      "android": 18,
-      "cross-platform": 8,
-      "desktop": 66,
+      "android": 20,
+      "cross-platform": 11,
+      "desktop": 76,
       "ios": 3,
-      "linux": 48,
-      "macos": 20,
-      "unspecified": 1,
-      "web": 51,
-      "windows": 14
+      "linux": 57,
+      "macos": 22,
+      "unspecified": 2,
+      "web": 60,
+      "windows": 16
     },
     "learning": {
       "android": 4,
-      "cross-platform": 17,
-      "desktop": 17,
+      "cross-platform": 18,
+      "desktop": 18,
       "ios": 1,
-      "linux": 3,
+      "linux": 4,
       "macos": 4,
       "unspecified": 1,
-      "web": 25,
+      "web": 29,
       "windows": 3
     },
     "model": {
-      "android": 84,
-      "cross-platform": 129,
-      "desktop": 143,
+      "android": 85,
+      "cross-platform": 138,
+      "desktop": 158,
       "ios": 7,
-      "linux": 11,
-      "macos": 14,
-      "unspecified": 52,
-      "web": 141,
-      "windows": 15
+      "linux": 14,
+      "macos": 18,
+      "unspecified": 71,
+      "web": 155,
+      "windows": 16
     },
     "paper": {
       "android": 229,
@@ -4071,13 +4137,14 @@
       "windows": 43
     },
     "product": {
-      "android": 5,
-      "cross-platform": 7,
-      "desktop": 22,
-      "ios": 1,
+      "android": 6,
+      "cross-platform": 8,
+      "desktop": 23,
+      "harmonyos": 1,
+      "ios": 2,
       "linux": 4,
-      "macos": 8,
-      "web": 61,
+      "macos": 9,
+      "web": 64,
       "windows": 9
     },
     "survey": {
@@ -4090,21 +4157,22 @@
       "windows": 1
     },
     "tool": {
-      "android": 53,
-      "cross-platform": 162,
-      "desktop": 504,
-      "ios": 27,
-      "linux": 170,
-      "macos": 255,
-      "unspecified": 10,
-      "web": 589,
-      "windows": 227
+      "android": 57,
+      "cross-platform": 175,
+      "desktop": 556,
+      "harmonyos": 1,
+      "ios": 34,
+      "linux": 190,
+      "macos": 281,
+      "unspecified": 13,
+      "web": 645,
+      "windows": 250
     }
   },
   "license_declarations_by_scope": {
-    "code": 1920,
-    "data": 181,
-    "weights": 256,
+    "code": 2055,
+    "data": 197,
+    "weights": 300,
     "document": 8
   },
   "sources": [

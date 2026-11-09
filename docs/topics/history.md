@@ -2,9 +2,17 @@
 
 [Home](../../README.md) · [All topics](../topics.md) · [Full arXiv bibliography](../papers.md)
 
-20 source-reviewed resources tagged `history`. Curated metadata; unknown facts are shown as —.
+23 source-reviewed resources tagged `history`. Curated metadata; unknown facts are shown as —.
 
-**Contents:** [Agents (3)](#agents) · [Frameworks (3)](#frameworks) · [Tools (11)](#tools) · [Infrastructure (1)](#infrastructure) · [Products (2)](#products)
+**Contents:** [Benchmarks (1)](#benchmarks) · [Agents (3)](#agents) · [Frameworks (3)](#frameworks) · [Tools (13)](#tools) · [Infrastructure (1)](#infrastructure) · [Products (2)](#products)
+
+## Benchmarks
+
+All entries in this section: web.
+
+| Resource | Paper | Scale | License | Description | Evidence |
+| --- | --- | --- | --- | --- | --- |
+| [Browser AI Agent — live-web benchmark audit](https://github.com/saarthak-yadav/browser-agent-webvoyager) | — | — | code MIT | An archived audit of live website tasks for web-agent evaluation, with task subsets and scripts that examine site decay, access barriers, and measurement errors. | [✓ 2026‑11‑09](https://raw.githubusercontent.com/saarthak-yadav/browser-agent-webvoyager/HEAD/README.md) |
 
 ## Agents
 
@@ -30,7 +38,9 @@
 | [appium-adb](https://github.com/appium/appium-adb) | android | — | code Apache-2.0 | An Android Debug Bridge wrapper that exposes device operations for Appium. The repository points to the appium-android monorepo for continuing development. | [✓ 2026‑11‑09](https://raw.githubusercontent.com/appium/appium-adb/HEAD/README.md) |
 | [appium-ios-device](https://github.com/appium/appium-ios-device) | ios | — | code Apache-2.0 | A deprecated Node.js device-control library that lets Appium communicate with iOS devices and access device services and XCTest. | [✓ 2026‑11‑09](https://raw.githubusercontent.com/appium/appium-ios-device/HEAD/README.md) |
 | [CasperJS](https://github.com/casperjs/casperjs) | web | — | — | CasperJS is a browser navigation scripting and testing utility for PhantomJS and SlimerJS, with helpers for forms, links, screenshots and assertions. | [✓ 2026‑11‑09](https://raw.githubusercontent.com/casperjs/casperjs/HEAD/README.md) |
+| [computer-use](https://github.com/leeguooooo/computer-use) | desktop, macos | — | — | An archived macOS broker that lets MCP clients delegate computer-use tasks to the official Codex runtime and receive the nested agent's final response. | [✓ 2026‑11‑09](https://raw.githubusercontent.com/leeguooooo/computer-use/HEAD/README.md) |
 | [Droidrun iOS Portal](https://github.com/droidrun/ios-portal) | ios | — | code MIT | An archived iOS automation portal that exposes screenshots, accessibility trees, app launch, gestures, and text input through an XCTest HTTP server. | [✓ 2026‑11‑09](https://raw.githubusercontent.com/droidrun/ios-portal/HEAD/README.md) |
+| [NotebookLM Claude Code Skill](https://github.com/PleasePrompto/notebooklm-skill) | web | — | code MIT | A Claude Code skill automates browser-based questions to NotebookLM and returns answers from uploaded documents. It includes scripts for authentication and notebook management. | [✓ 2026‑11‑09](https://raw.githubusercontent.com/PleasePrompto/notebooklm-skill/HEAD/README.md) |
 | [openadapt-flow](https://github.com/OpenAdaptAI/openadapt-flow) | cross-platform, web, desktop, windows, macos, linux | — | code MIT | openadapt-flow turns recorded web or desktop tasks into reusable programs, replays them locally, and verifies saved records. Its standalone repository is archived. | [✓ 2026‑11‑09](https://raw.githubusercontent.com/OpenAdaptAI/openadapt-flow/HEAD/README.md) |
 | [openadapt-grounding](https://github.com/OpenAdaptAI/openadapt-grounding) | cross-platform, web, desktop | — | code MIT | An archived GUI element localization package that anchors targets to OCR text and stabilizes detections across frames, with optional model-based fallbacks. | [✓ 2026‑11‑09](https://raw.githubusercontent.com/OpenAdaptAI/openadapt-grounding/HEAD/README.md) |
 | [openadapt-retrieval](https://github.com/OpenAdaptAI/openadapt-retrieval) | unspecified | — | code MIT | Archived retrieval tool that indexes GUI demonstrations from task text and screenshots, then finds similar examples through a Python API or CLI. | [✓ 2026‑11‑09](https://raw.githubusercontent.com/OpenAdaptAI/openadapt-retrieval/HEAD/README.md) |

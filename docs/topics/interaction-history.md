@@ -2,9 +2,9 @@
 
 [Home](../../README.md) · [All topics](../topics.md) · [Full arXiv bibliography](../papers.md)
 
-111 source-reviewed resources tagged `interaction-history`. Curated metadata; unknown facts are shown as —.
+119 source-reviewed resources tagged `interaction-history`. Curated metadata; unknown facts are shown as —.
 
-**Contents:** [Benchmarks (2)](#benchmarks) · [Datasets (4)](#datasets) · [Models (4)](#models) · [Agents (3)](#agents) · [Frameworks (2)](#frameworks) · [Tools (2)](#tools) · [Surveys (1)](#surveys) · [Papers (93)](#papers)
+**Contents:** [Benchmarks (2)](#benchmarks) · [Datasets (6)](#datasets) · [Models (5)](#models) · [Agents (5)](#agents) · [Frameworks (2)](#frameworks) · [Tools (5)](#tools) · [Surveys (1)](#surveys) · [Papers (93)](#papers)
 
 ## Benchmarks
 
@@ -17,7 +17,9 @@
 
 | Resource | Environments | Paper | Scale | License | Description | Evidence |
 | --- | --- | --- | --- | --- | --- | --- |
+| [Agent-Trajectories](https://huggingface.co/datasets/Agent-Eval-Refine/Agent-Trajectories) | web, android, ios, cross-platform | — | — | — | An archive dataset of evaluated web, Android, and iOS agent trajectories, including iOS emulator runs and WebArena runs used for agent refinement. | [✓ 2026‑11‑09](https://huggingface.co/api/datasets/Agent-Eval-Refine/Agent-Trajectories) |
 | [Fanbin/waa_steve_trajectories](https://huggingface.co/datasets/Fanbin/waa_steve_trajectories) | desktop, windows | [2503.12532](https://arxiv.org/abs/2503.12532) (2025) | — | — | A dataset of STEVE-R1 evaluation trajectories on WindowsAgentArena, pairing task screenshots and agent responses with action traces and outcome labels. | [✓ 2026‑11‑09](https://huggingface.co/api/datasets/Fanbin/waa_steve_trajectories) |
+| [gameworld-qwen38-flash-next-trajectory](https://huggingface.co/datasets/yyyang/gameworld-qwen38-flash-next-trajectory) | unspecified | — | — | — | A dataset of 1,020 GameWorld agent trajectories from general and computer-use interfaces, with step records, screenshots, outcomes, and metrics. | [✓ 2026‑11‑09](https://huggingface.co/api/datasets/yyyang/gameworld-qwen38-flash-next-trajectory) |
 | [go-browse-wa-raw](https://huggingface.co/datasets/apurvaga/go-browse-wa-raw) | web | — | — | — | go-browse-wa-raw is a browser-agent trajectory dataset with page observations, actions, goals, rewards, and images. Its train split contains 196462 examples. | [✓ 2026‑11‑09](https://huggingface.co/api/datasets/apurvaga/go-browse-wa-raw) |
 | [WenyiWU0111/CoMEM-agent-memory-trajectories](https://huggingface.co/datasets/WenyiWU0111/CoMEM-agent-memory-trajectories) | web | [2510.09038](https://arxiv.org/abs/2510.09038) (2025) | — | data apache-2.0 | A dataset for GUI-agent memory research containing expanded web links, synthesized tasks, and executed trajectories with successful and failed outcomes. | [✓ 2026‑11‑09](https://huggingface.co/api/datasets/WenyiWU0111/CoMEM-agent-memory-trajectories) |
 | [xunsss/osworld2-codex-gpt56sol-0624-attempt-preview](https://huggingface.co/datasets/xunsss/osworld2-codex-gpt56sol-0624-attempt-preview) | desktop | — | — | — | This OSWorld-V2 dataset provides compact tables for browsing Codex task summaries, attempts, trajectory events, and executed GUI or CLI actions. | [✓ 2026‑11‑09](https://huggingface.co/api/datasets/xunsss/osworld2-codex-gpt56sol-0624-attempt-preview) |
@@ -26,6 +28,7 @@
 
 | Resource | Environments | Paper | License | Description | Evidence |
 | --- | --- | --- | --- | --- | --- |
+| [AGW-35B](https://huggingface.co/YangC777/AGW-35B) | cross-platform, web, desktop, linux, windows, macos | [2610.01215](https://arxiv.org/abs/2610.01215) (2026) | weights apache-2.0 | A screenshot-based GUI action model fine-tuned on 79,266 synthetic interaction examples. It uses a task, current screen and recent actions to predict structured computer-use calls. | [✓ 2026‑11‑09](https://huggingface.co/api/models/YangC777/AGW-35B) |
 | [Aria-UI context-aware checkpoint](https://huggingface.co/Aria-UI/Aria-UI-context-aware) | android, desktop | [2412.16256](https://arxiv.org/abs/2412.16256) (2024) | — | The context-aware Aria-UI release that uses interaction context to support grounding in dynamic Android and desktop agent tasks. | [✓ 2026‑10‑17](https://huggingface.co/api/models/Aria-UI/Aria-UI-context-aware) |
 | [Aria-UI/Aria-UI-base](https://huggingface.co/Aria-UI/Aria-UI-base) | android, desktop | [2412.16256](https://arxiv.org/abs/2412.16256) (2024) | weights apache-2.0 | Aria-UI/Aria-UI-base is a released GUI grounding checkpoint that maps an instruction and interface image to target coordinates. The card documents history-aware input and inference examples. | [✓ 2026‑11‑09](https://huggingface.co/api/models/Aria-UI/Aria-UI-base) |
 | [OpenCUA-7B](https://huggingface.co/xlangai/OpenCUA-7B) | desktop, linux, windows, macos | [2508.09123](https://arxiv.org/abs/2508.09123) (2025) | weights mit | A Qwen2.5-VL-based computer-use checkpoint that produces desktop actions from screenshots and instructions, using recent screen history for context. | [✓ 2026‑11‑09](https://huggingface.co/api/models/xlangai/OpenCUA-7B) |
@@ -37,7 +40,9 @@
 | --- | --- | --- | --- | --- | --- |
 | [Auto-UI](https://github.com/gimme1dollar/auto_ui) | android | [2309.11436](https://arxiv.org/abs/2309.11436) (2023) | code Apache-2.0 | A multimodal interface agent that uses earlier actions and future action plans to predict the next action. The repository provides training and inference instructions. | [✓ 2026‑11‑09](https://raw.githubusercontent.com/gimme1dollar/auto_ui/HEAD/README.md) |
 | [GUI-Rise](https://github.com/Leon022/GUI-Rise-code) | cross-platform, web, android | [2510.27210](https://arxiv.org/abs/2510.27210) (2025) | — | A GUI navigation agent that combines stepwise reasoning with history summarization; its repository provides supervised training, reinforcement learning, and evaluation instructions. | [✓ 2026‑11‑09](https://raw.githubusercontent.com/Leon022/GUI-Rise-code/HEAD/README.md) |
+| [Jev Social](https://github.com/socai-io/jev-social) | web, desktop, windows, macos, linux | — | code MIT | Jev Social researches Instagram, TikTok, and LinkedIn through a signed-in Chrome browser, choosing successive actions and assembling reports from captured source evidence. | [✓ 2026‑11‑09](https://raw.githubusercontent.com/socai-io/jev-social/HEAD/README.md) |
 | [Taxy AI](https://github.com/TaxyAI/browser-extension) | web | — | — | Taxy AI is a Chrome extension that turns user instructions and a simplified page DOM into clicks and text entry, then checks the updated page before continuing. | [✓ 2026‑11‑09](https://raw.githubusercontent.com/TaxyAI/browser-extension/HEAD/README.md) |
+| [UI-Hawk](https://github.com/IMNearth/UIHawk) | android | — | code CC-BY-NC-SA-4.0 | UI-Hawk is a GUI agent designed to interpret sequences of screens during navigation. Its research release describes a history-aware visual encoder, screen tasks, and the FunUI benchmark. | [✓ 2026‑11‑09](https://raw.githubusercontent.com/IMNearth/UIHawk/HEAD/README.md) |
 
 ## Frameworks
 
@@ -48,12 +53,13 @@
 
 ## Tools
 
-All entries in this section: desktop, macos.
-
-| Resource | Paper | License | Description | Evidence |
-| --- | --- | --- | --- | --- |
-| [nocta-recorder](https://github.com/nossa-y/nocta-recorder) | — | code MIT | A macOS recorder that stores screen snapshots, accessibility elements, OCR, input events, and audio in a local SQLite database and serves the captured activity through a local API. | [✓ 2026‑11‑09](https://raw.githubusercontent.com/nossa-y/nocta-recorder/HEAD/README.md) |
-| [Open Codex Computer History](https://github.com/hqhq1025/open-codex-computer-history) | — | code MIT | Clean-room macOS implementation of event-stream interaction recording using Accessibility hit-testing, CGEvent taps, and SkyLight window snapshots. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/hqhq1025/open-codex-computer-history/HEAD/README.md) |
+| Resource | Environments | Paper | License | Description | Evidence |
+| --- | --- | --- | --- | --- | --- |
+| [COCO4GUI Dataset Importer](https://github.com/harpreetsahota204/coco4gui_fiftyone) | unspecified | — | code Apache-2.0 | COCO4GUI Dataset Importer loads GUI interaction annotations into FiftyOne, preserving element regions, action points, workflow sequences, and application metadata. | [✓ 2026‑11‑09](https://raw.githubusercontent.com/harpreetsahota204/coco4gui_fiftyone/HEAD/README.md) |
+| [nocta-recorder](https://github.com/nossa-y/nocta-recorder) | desktop, macos | — | code MIT | A macOS recorder that stores screen snapshots, accessibility elements, OCR, input events, and audio in a local SQLite database and serves the captured activity through a local API. | [✓ 2026‑11‑09](https://raw.githubusercontent.com/nossa-y/nocta-recorder/HEAD/README.md) |
+| [Open Codex Computer History](https://github.com/hqhq1025/open-codex-computer-history) | desktop, macos | — | code MIT | Clean-room macOS implementation of event-stream interaction recording using Accessibility hit-testing, CGEvent taps, and SkyLight window snapshots. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/hqhq1025/open-codex-computer-history/HEAD/README.md) |
+| [Q-Verifier / Q-Reflector](https://github.com/pockyitachi/Q-Verifier) | unspecified | — | — | Q-Reflector checks a GUI agent's action against before-and-after screenshots and task context, with training and online evaluation code. | [✓ 2026‑11‑09](https://raw.githubusercontent.com/pockyitachi/Q-Verifier/HEAD/README.md) |
+| [rrweb](https://github.com/rrweb-io/rrweb) | web | — | code MIT | rrweb captures web-page state and user interactions, then reconstructs sessions for replay through its recording, replay, and player packages. | [✓ 2026‑11‑09](https://raw.githubusercontent.com/rrweb-io/rrweb/HEAD/README.md) |
 
 ## Surveys
 

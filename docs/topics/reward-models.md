@@ -2,9 +2,9 @@
 
 [Home](../../README.md) · [All topics](../topics.md) · [Full arXiv bibliography](../papers.md)
 
-105 source-reviewed resources tagged `reward-models`. Curated metadata; unknown facts are shown as —.
+107 source-reviewed resources tagged `reward-models`. Curated metadata; unknown facts are shown as —.
 
-**Contents:** [Benchmarks (7)](#benchmarks) · [Datasets (5)](#datasets) · [Models (10)](#models) · [Frameworks (11)](#frameworks) · [Tools (1)](#tools) · [Papers (71)](#papers)
+**Contents:** [Benchmarks (7)](#benchmarks) · [Datasets (7)](#datasets) · [Models (10)](#models) · [Frameworks (11)](#frameworks) · [Tools (1)](#tools) · [Papers (71)](#papers)
 
 ## Benchmarks
 
@@ -23,7 +23,9 @@
 | Resource | Environments | Paper | Scale | License | Description | Evidence |
 | --- | --- | --- | --- | --- | --- | --- |
 | [AgentRewardBench dataset](https://huggingface.co/datasets/McGill-NLP/agent-reward-bench) | web, desktop, cross-platform | [2504.08942](https://arxiv.org/abs/2504.08942) (2025) | — | — | Hugging Face dataset release for AgentRewardBench containing trajectory evaluation instances across WebArena, VisualWebArena, AssistantBench, WorkArena, and OSWorld. | [✓ 2026‑10‑17](https://huggingface.co/api/datasets/McGill-NLP/agent-reward-bench) |
+| [Mind2Web-cleaned-lite-value-model-w-cot-test](https://huggingface.co/datasets/LangAGI-Lab/Mind2Web-cleaned-lite-value-model-w-cot-test) | web | — | — | — | A Mind2Web dataset of 6125 web-action records with element candidates, accessibility trees, prior actions, rationales, and value scores. | [✓ 2026‑11‑09](https://huggingface.co/api/datasets/LangAGI-Lab/Mind2Web-cleaned-lite-value-model-w-cot-test) |
 | [OS-Copilot/OS-Shepherd-100K](https://huggingface.co/datasets/OS-Copilot/OS-Shepherd-100K) | unspecified | — | — | — | A dataset of GUI agent trajectories and screenshots for training models to judge task completion, with supervised records and reinforcement learning splits. | [✓ 2026‑11‑09](https://huggingface.co/api/datasets/OS-Copilot/OS-Shepherd-100K) |
+| [OS-Copilot/OSReward](https://huggingface.co/datasets/OS-Copilot/OSReward) | cross-platform, web, desktop, windows, linux, android | [2607.28609](https://arxiv.org/abs/2607.28609) (2026) | — | — | OSReward releases labeled computer-use trajectories with aligned screenshots in Full and Hard test sets for evaluating task-success judgments. | [✓ 2026‑11‑09](https://huggingface.co/api/datasets/OS-Copilot/OSReward) |
 | [UI-Genie reward data](https://huggingface.co/datasets/HanXiao1999/UI-Genie-RM-517k) | android | [2505.21496](https://arxiv.org/abs/2505.21496) (2025) | — | data mit | Mobile GUI reward annotations released for training UI-Genie’s trajectory-assessment model. | [✓ 2026‑10‑17](https://huggingface.co/datasets/HanXiao1999/UI-Genie-RM-517k/raw/main/README.md) |
 | [WebPRM checklist-generation data](https://huggingface.co/datasets/LangAGI-Lab/WebPRMCollection_checklist_generation) | web | — | [3,630 rows](https://huggingface.co/datasets/LangAGI-Lab/WebPRMCollection_checklist_generation/raw/main/README.md) | — | Web-task context, starting observations and action history paired with structured checklists and subgoal analyses for checklist generation. | [✓ 2026‑10‑17](https://huggingface.co/api/datasets/LangAGI-Lab/WebPRMCollection_checklist_generation) |
 | [WebPRM Collection preference data](https://huggingface.co/datasets/LangAGI-Lab/WebPRMCollection_preference_pair) | web | [2505.15277](https://arxiv.org/abs/2505.15277) (2025) | [9,460 rows](https://huggingface.co/datasets/LangAGI-Lab/WebPRMCollection_preference_pair/raw/main/README.md) | — | Checklist-annotated web decision records with page observations, prior actions, one preferred continuation and rejected alternatives for process-reward learning. | [✓ 2026‑10‑17](https://huggingface.co/datasets/LangAGI-Lab/WebPRMCollection_preference_pair/raw/main/README.md) |

@@ -2,9 +2,9 @@
 
 [Home](../../README.md) · [All topics](../topics.md) · [Full arXiv bibliography](../papers.md)
 
-93 source-reviewed resources tagged `cross-app`. Curated metadata; unknown facts are shown as —.
+97 source-reviewed resources tagged `cross-app`. Curated metadata; unknown facts are shown as —.
 
-**Contents:** [Benchmarks (20)](#benchmarks) · [Datasets (4)](#datasets) · [Models (2)](#models) · [Agents (11)](#agents) · [Frameworks (3)](#frameworks) · [Tools (3)](#tools) · [Products (1)](#products) · [Learning resources (1)](#learning-resources) · [Papers (48)](#papers)
+**Contents:** [Benchmarks (21)](#benchmarks) · [Datasets (4)](#datasets) · [Models (3)](#models) · [Agents (11)](#agents) · [Frameworks (3)](#frameworks) · [Tools (4)](#tools) · [Infrastructure (1)](#infrastructure) · [Products (1)](#products) · [Learning resources (1)](#learning-resources) · [Papers (48)](#papers)
 
 ## Benchmarks
 
@@ -13,6 +13,7 @@
 | [AgentCIBench](https://github.com/ukplab/arxiv2026-agentcibench) | web | [2606.23189](https://arxiv.org/abs/2606.23189) (2026) | — | code Apache-2.0 | AgentCIBench evaluates whether computer-use agents expose information across personal apps. It includes scored scenarios, benchmark runners, and a web environment for visual runs. | [✓ 2026‑11‑09](https://raw.githubusercontent.com/ukplab/arxiv2026-agentcibench/HEAD/README.md) |
 | [AgentCIBench](https://huggingface.co/datasets/UKPLab/agentcibench) | web | [2606.23189](https://arxiv.org/abs/2606.23189) (2026) | [117 scenarios](https://huggingface.co/datasets/UKPLab/agentcibench/raw/f5523cb986828ee77bc505120a933f114bbcf4f3/README.md) | data cc-by-4.0 | Contextual-integrity benchmark for computer-use agents: 117 synthetic multi-app workspace scenarios that pair under-specified requests with must-share and must-not-share lists, plus a 50-scenario live-UI subset. | [✓ 2026‑10‑19](https://huggingface.co/datasets/UKPLab/agentcibench/raw/f5523cb986828ee77bc505120a933f114bbcf4f3/README.md) |
 | [AppWorld](https://github.com/StonyBrookNLP/appworld) · [leaderboard](https://appworld.dev/appworld/leaderboard) | unspecified | [2407.18901](https://arxiv.org/abs/2407.18901) (2024) | [750 tasks](https://arxiv.org/abs/2407.18901) · [9 applications](https://arxiv.org/abs/2407.18901) | code Apache-2.0 | Simulated applications, user data, and state-based task checks for evaluating agents that interact through APIs and code. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/stonybrooknlp/appworld/HEAD/README.md) |
+| [ASIL Benchmark](https://huggingface.co/datasets/sharryXR/asil-benchmark) | unspecified | [2608.26991](https://arxiv.org/abs/2608.26991) (2026) | — | data cc-by-4.0 | ASIL Benchmark releases indexed software-agent tasks for single-application and multi-application evaluation, with task definitions and public assets. | [✓ 2026‑11‑09](https://huggingface.co/api/datasets/sharryXR/asil-benchmark) |
 | [ColorBench](https://github.com/MadeAgents/ColorBench) | android | [2510.14621](https://arxiv.org/abs/2510.14621) (2025) | [175 tasks](https://raw.githubusercontent.com/MadeAgents/ColorBench/HEAD/README.md) · [101 cross-app tasks](https://raw.githubusercontent.com/MadeAgents/ColorBench/HEAD/README.md) · [74 single-app tasks](https://raw.githubusercontent.com/MadeAgents/ColorBench/HEAD/README.md) · [21 mobile applications](https://raw.githubusercontent.com/MadeAgents/ColorBench/HEAD/README.md) | code Apache-2.0 · data apache-2.0 | A graph-based mobile GUI benchmark that evaluates long tasks through screenshot states and multiple valid or erroneous transitions, including reflection, replanning and backtracking. | [✓ 2026‑10‑17](https://raw.githubusercontent.com/MadeAgents/ColorBench/HEAD/README.md) |
 | [CRAB](https://github.com/camel-ai/crab) | desktop, android | [2407.01511](https://arxiv.org/abs/2407.01511) (2024) | [120 tasks](https://arxiv.org/abs/2407.01511) | — | Cross-environment benchmark framework for multimodal agents. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/camel-ai/crab/HEAD/README.md) |
 | [iOSWorld](https://github.com/ljang0/iOSWorld) | ios | — | [133 tasks](https://raw.githubusercontent.com/ljang0/iOSWorld/HEAD/README.md) · [26 applications](https://raw.githubusercontent.com/ljang0/iOSWorld/HEAD/README.md) | code Apache-2.0 | Native iPhone-simulator benchmark with shared user data, application workflows, agent runners, and rubric-based scoring. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/ljang0/iOSWorld/HEAD/README.md) |
@@ -45,6 +46,7 @@
 | Resource | Environments | Paper | License | Description | Evidence |
 | --- | --- | --- | --- | --- | --- |
 | [AndroidGen-Llama-3-70B](https://huggingface.co/THUDM/androidgen-llama-3-70b) | android | [2504.19298](https://arxiv.org/abs/2504.19298) (2025) | weights other | AndroidGen-Llama-3-70B is a released model for agents that carry out tasks across Android applications such as messaging, email and settings without manually labeled interaction data. | [✓ 2026‑11‑09](https://huggingface.co/api/models/THUDM/androidgen-llama-3-70b) |
+| [Mano-CUA-2.0-4B-MLX-8bit](https://huggingface.co/Mininglamp-2718/Mano-CUA-2.0-4B-MLX-8bit) | desktop, macos, web | [2509.17336](https://arxiv.org/abs/2509.17336) (2025) | weights apache-2.0 | An MLX-quantized Mano-CUA model for Apple Silicon that reads screenshots and task instructions to produce structured GUI actions. | [✓ 2026‑11‑09](https://huggingface.co/api/models/Mininglamp-2718/Mano-CUA-2.0-4B-MLX-8bit) |
 | [MiniMax M3](https://www.minimaxi.com/blog/minimax-m3) | desktop | — | — | MiniMax M3 is a multimodal model whose release page describes desktop operation from visual input and cross-application tasks through MiniMax Code. | [✓ 2026‑11‑09](https://www.minimaxi.com/blog/minimax-m3) |
 
 ## Agents
@@ -75,9 +77,18 @@
 
 | Resource | Environments | Paper | License | Description | Evidence |
 | --- | --- | --- | --- | --- | --- |
+| [Council Bridge](https://github.com/christopherdent/council-bridge) | web | — | — | Council Bridge is a browser extension that routes human messages between assigned ChatGPT and Gemini tabs and captures their replies in a side panel. | [✓ 2026‑11‑09](https://raw.githubusercontent.com/christopherdent/council-bridge/HEAD/README.md) |
 | [debug-kit](https://github.com/dxiongya/debug-kit) | cross-platform, desktop, web, macos, ios, android, windows, linux | — | code MIT | Cross-platform Agent Skill for driving, inspecting, and testing applications across macOS, iOS, Android, Web, Electron, Windows, and Linux. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/dxiongya/debug-kit/HEAD/README.md) |
 | [Lom Desktop (麓鸣)](https://github.com/rfdiosuao/lom-desktop) | cross-platform, desktop, android, windows, macos | — | code AGPL-3.0 | Lom is an open-source multi-agent workspace coordinating desktop coding agents with cross-device Android phone execution. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/rfdiosuao/lom-desktop/HEAD/README.md) |
 | [Macuse MCP](https://github.com/macuse-app/macuse-mcp) | desktop, macos | — | — | Macuse MCP is a native macOS Model Context Protocol server granting AI agents direct control over Calendar, Mail, Notes, Messages, and GUI apps. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/macuse-app/macuse-mcp/HEAD/README.md) |
+
+## Infrastructure
+
+All entries in this section: cross-platform, desktop, web.
+
+| Resource | Paper | License | Description | Evidence |
+| --- | --- | --- | --- | --- |
+| [WildAWM](https://github.com/MSR-Orchard/WildAWM) | [2610.26828](https://arxiv.org/abs/2610.26828) (2026) | — | WildAWM supplies a pipeline for generating computer environments and cross-interface tasks, with execution checks and tools for evaluating agents. | [✓ 2026‑11‑09](https://raw.githubusercontent.com/MSR-Orchard/WildAWM/HEAD/README.md) |
 
 ## Products
 

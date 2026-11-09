@@ -27903,5 +27903,33 @@
       "sha256": "303215d7f881707462d86d715055e5ad934eb96d3320ef8af2a1df24fd43ac34",
       "retrieved_at": "2026-11-09T13:30:24Z"
     }
+  },
+  {
+    "id": "github:hhhhhhalf/webretriever",
+    "url": "https://github.com/hhhhhhalf/WebRetriever",
+    "decision": "alias",
+    "reason": "hhhhhhalf/webretriever is the former name of mininglamp-ai/webretriever; GitHub resolves the old name to the current repository, catalogued as github:mininglamp-ai/webretriever.",
+    "target_id": "github:mininglamp-ai/webretriever"
+  },
+  {
+    "id": "github:predicatesystems/sdk-python",
+    "url": "https://github.com/PredicateSystems/sdk-python",
+    "decision": "alias",
+    "reason": "predicatesystems/sdk-python is the former name of predicatesystems/predicate-runtime-python; GitHub resolves the old name to the current repository, catalogued as github:predicatesystems/predicate-runtime-python.",
+    "target_id": "github:predicatesystems/predicate-runtime-python"
+  },
+  {
+    "id": "url:8b45a5f50891daf687b3",
+    "url": "https://huggingface.co/bartowski/tencent_UI-Mate-9B-GGUF",
+    "decision": "alias",
+    "reason": "bartowski/tencent_UI-Mate-9B-GGUF holds llama.cpp GGUF quantizations of Tencent UI-Mate-9B, the model released by the Tencent/UI-Mate project.",
+    "target_id": "github:tencent/ui-mate"
+  },
+  {
+    "id": "github:kaliiiiiiiiii/undetected-playwright-python",
+    "url": "https://github.com/kaliiiiiiiiii/undetected-playwright-python",
+    "decision": "alias",
+    "reason": "The undetected-playwright-python README states that the repository has moved to Kaliiiiiiiiii-Vinyzu/patchright, the Patchright driver catalogued as github:kaliiiiiiiiii-vinyzu/patchright.",
+    "target_id": "github:kaliiiiiiiiii-vinyzu/patchright"
   }
 ]

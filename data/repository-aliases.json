@@ -1510,5 +1510,113 @@
         "sha256": "cc325baca7fac28f5cbbb1233eeec9329dc529a880aca6c1ed7ee367a563149b"
       }
     ]
+  },
+  {
+    "alias_id": "url:85572cc6beb7462dc8b1",
+    "target_id": "url:e3c3e5a5a00f024ebac5",
+    "repository_id": "6ac6f9650a06781003eb6113",
+    "basis": "official_huggingface_repository_id",
+    "reviewed_at": "2026-11-09T21:12:44Z",
+    "observations": [
+      {
+        "url": "https://huggingface.co/api/datasets/yyyang/gameworld-qwen38-flash-next-trajectory",
+        "resolved_url": "https://huggingface.co/api/datasets/yyyang/gameworld-benchmark-trajectories",
+        "repository_id": "6ac6f9650a06781003eb6113",
+        "full_name": "yyyang/gameworld-benchmark-trajectories",
+        "html_url": "https://huggingface.co/datasets/yyyang/gameworld-benchmark-trajectories",
+        "retrieved_at": "2026-11-09T21:12:44Z",
+        "sha256": "27b8969cd119cb939d2eb21921a0f1d62117b65007556317a79e418300b69dee"
+      },
+      {
+        "url": "https://huggingface.co/api/datasets/yyyang/gameworld-benchmark-trajectories",
+        "resolved_url": "https://huggingface.co/api/datasets/yyyang/gameworld-benchmark-trajectories",
+        "repository_id": "6ac6f9650a06781003eb6113",
+        "full_name": "yyyang/gameworld-benchmark-trajectories",
+        "html_url": "https://huggingface.co/datasets/yyyang/gameworld-benchmark-trajectories",
+        "retrieved_at": "2026-11-09T21:12:44Z",
+        "sha256": "27b8969cd119cb939d2eb21921a0f1d62117b65007556317a79e418300b69dee"
+      }
+    ]
+  },
+  {
+    "alias_id": "url:153af54e39c462715400",
+    "target_id": "url:3821c0d8516819a50d28",
+    "repository_id": "687e106ec265fc8812afa765",
+    "basis": "official_huggingface_repository_id",
+    "reviewed_at": "2026-11-09T21:12:48Z",
+    "observations": [
+      {
+        "url": "https://huggingface.co/api/datasets/MacPaw/Screen2AX-Tree",
+        "resolved_url": "https://huggingface.co/api/datasets/macpaw-research/Screen2AX-Tree",
+        "repository_id": "687e106ec265fc8812afa765",
+        "full_name": "macpaw-research/Screen2AX-Tree",
+        "html_url": "https://huggingface.co/datasets/macpaw-research/Screen2AX-Tree",
+        "retrieved_at": "2026-11-09T21:12:47Z",
+        "sha256": "cd5f7922f75322b8b9e58cc65499445fb2baa14f6df842732e91aced29b1236b"
+      },
+      {
+        "url": "https://huggingface.co/api/datasets/macpaw-research/Screen2AX-Tree",
+        "resolved_url": "https://huggingface.co/api/datasets/macpaw-research/Screen2AX-Tree",
+        "repository_id": "687e106ec265fc8812afa765",
+        "full_name": "macpaw-research/Screen2AX-Tree",
+        "html_url": "https://huggingface.co/datasets/macpaw-research/Screen2AX-Tree",
+        "retrieved_at": "2026-11-09T21:12:48Z",
+        "sha256": "cd5f7922f75322b8b9e58cc65499445fb2baa14f6df842732e91aced29b1236b"
+      }
+    ]
+  },
+  {
+    "alias_id": "url:a7fe74dcb25a9eee1a25",
+    "target_id": "url:6106415bee936ef638aa",
+    "repository_id": "687e1672060d826373319542",
+    "basis": "official_huggingface_repository_id",
+    "reviewed_at": "2026-11-09T21:12:48Z",
+    "observations": [
+      {
+        "url": "https://huggingface.co/api/models/MacPaw/yolov11l-ui-groups-detection",
+        "resolved_url": "https://huggingface.co/api/models/macpaw-research/yolov11l-ui-groups-detection",
+        "repository_id": "687e1672060d826373319542",
+        "full_name": "macpaw-research/yolov11l-ui-groups-detection",
+        "html_url": "https://huggingface.co/macpaw-research/yolov11l-ui-groups-detection",
+        "retrieved_at": "2026-11-09T21:12:48Z",
+        "sha256": "78c9845861cf2b1e8dc78a249f1f3ec39915ef0c34ee3d73dc2c53c584cd0450"
+      },
+      {
+        "url": "https://huggingface.co/api/models/macpaw-research/yolov11l-ui-groups-detection",
+        "resolved_url": "https://huggingface.co/api/models/macpaw-research/yolov11l-ui-groups-detection",
+        "repository_id": "687e1672060d826373319542",
+        "full_name": "macpaw-research/yolov11l-ui-groups-detection",
+        "html_url": "https://huggingface.co/macpaw-research/yolov11l-ui-groups-detection",
+        "retrieved_at": "2026-11-09T21:12:48Z",
+        "sha256": "78c9845861cf2b1e8dc78a249f1f3ec39915ef0c34ee3d73dc2c53c584cd0450"
+      }
+    ]
+  },
+  {
+    "alias_id": "url:3c1a9f2fc943eab1a115",
+    "target_id": "url:97d846b5b33235f566a1",
+    "repository_id": "687e09e089a9cd0263c55f75",
+    "basis": "official_huggingface_repository_id",
+    "reviewed_at": "2026-11-09T21:12:48Z",
+    "observations": [
+      {
+        "url": "https://huggingface.co/api/datasets/MacPaw/Screen2AX-Task",
+        "resolved_url": "https://huggingface.co/api/datasets/macpaw-research/Screen2AX-Task",
+        "repository_id": "687e09e089a9cd0263c55f75",
+        "full_name": "macpaw-research/Screen2AX-Task",
+        "html_url": "https://huggingface.co/datasets/macpaw-research/Screen2AX-Task",
+        "retrieved_at": "2026-11-09T21:12:48Z",
+        "sha256": "cfe2c81a380adacc6928662dac240b88fd760e191c178758099d368bf6768dde"
+      },
+      {
+        "url": "https://huggingface.co/api/datasets/macpaw-research/Screen2AX-Task",
+        "resolved_url": "https://huggingface.co/api/datasets/macpaw-research/Screen2AX-Task",
+        "repository_id": "687e09e089a9cd0263c55f75",
+        "full_name": "macpaw-research/Screen2AX-Task",
+        "html_url": "https://huggingface.co/datasets/macpaw-research/Screen2AX-Task",
+        "retrieved_at": "2026-11-09T21:12:48Z",
+        "sha256": "cfe2c81a380adacc6928662dac240b88fd760e191c178758099d368bf6768dde"
+      }
+    ]
   }
 ]

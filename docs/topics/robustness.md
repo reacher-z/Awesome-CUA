@@ -2,9 +2,9 @@
 
 [Home](../../README.md) · [All topics](../topics.md) · [Full arXiv bibliography](../papers.md)
 
-296 source-reviewed resources tagged `robustness`. Curated metadata; unknown facts are shown as —.
+302 source-reviewed resources tagged `robustness`. Curated metadata; unknown facts are shown as —.
 
-**Contents:** [Benchmarks (38)](#benchmarks) · [Datasets (6)](#datasets) · [Agents (3)](#agents) · [Frameworks (32)](#frameworks) · [Tools (13)](#tools) · [Products (2)](#products) · [Surveys (2)](#surveys) · [Papers (200)](#papers)
+**Contents:** [Benchmarks (39)](#benchmarks) · [Datasets (6)](#datasets) · [Agents (4)](#agents) · [Frameworks (33)](#frameworks) · [Tools (15)](#tools) · [Infrastructure (1)](#infrastructure) · [Products (2)](#products) · [Surveys (2)](#surveys) · [Papers (200)](#papers)
 
 ## Benchmarks
 
@@ -15,6 +15,7 @@
 | [AgentGauntlet](https://github.com/Konuktor/agent-gauntlet) | web | — | — | code MIT | Reliability CI harness for browser agents that runs identical web tasks across mutating DOM conditions to measure resilience. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/Konuktor/agent-gauntlet/master/README.md) |
 | [B-MoCA](https://github.com/jylee425/b-moca) | android | — | [131 task-definition files](https://api.github.com/repos/jylee425/b-moca/git/trees/release/ver.3?recursive=1) · [35 environment configuration rows](https://raw.githubusercontent.com/jylee425/b-moca/HEAD/asset/environments/config/environments_train.csv) | code Apache-2.0 | Mobile control benchmark with varied interface configurations. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/jylee425/b-moca/HEAD/readme.md) |
 | [Bellwether](https://github.com/al-mohad/bell-weather) | desktop, web | — | — | code Apache-2.0 | Bellwether measures multi-trial pass^k consistency of computer-use agents on legacy enterprise UI workflows. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/al-mohad/bell-weather/HEAD/README.md) |
+| [Browser AI Agent — live-web benchmark audit](https://github.com/saarthak-yadav/browser-agent-webvoyager) | web | — | — | code MIT | An archived audit of live website tasks for web-agent evaluation, with task subsets and scripts that examine site decay, access barriers, and measurement errors. | [✓ 2026‑11‑09](https://raw.githubusercontent.com/saarthak-yadav/browser-agent-webvoyager/HEAD/README.md) |
 | [BrowserAgentRegression](https://github.com/AlbertXXuu/BrowserAgentRegression) | web | — | — | code Apache-2.0 | Local-first regression testing benchmark for evaluating browser agents against controlled UI and DOM mutations. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/AlbertXXuu/BrowserAgentRegression/main/README.md) |
 | [BrowserTransactionBench](https://github.com/lamenting-hawthorn/browserbench) | web | — | — | code MIT | BrowserTransactionBench evaluates transactional safety, idempotency, and double-spend prevention in autonomous browser agents. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/lamenting-hawthorn/browserbench/HEAD/README.md) |
 | [Collision Canary](https://github.com/mystiquemide/collision-canary) | web | — | — | code MIT | Multi-actor invariant verification harness that drives two concurrent browser agents against a shared backend to uncover race bugs. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/mystiquemide/collision-canary/main/README.md) |
@@ -66,6 +67,7 @@
 | --- | --- | --- | --- | --- | --- |
 | [AI Mime](https://github.com/prakhar1114/ai_mime) | macos, desktop, web | — | code MIT | macOS app that records a demonstrated task, has an agent compile it into a portable skill of scripts, browser CDP steps and computer-use fallbacks, and patches the skill when a rerun breaks. | [✓ 2026‑10‑20](https://raw.githubusercontent.com/prakhar1114/ai_mime/HEAD/README.md) |
 | [crowd-test](https://github.com/anhhuyn411-alt/crowd-test) | web | — | code MIT | A CLI runs persona-driven agents in isolated Chromium browsers to explore website usability and produce graded findings with optional independent checks. | [✓ 2026‑11‑09](https://raw.githubusercontent.com/anhhuyn411-alt/crowd-test/HEAD/README.md) |
+| [Jev Ultrafast](https://github.com/browser-use/jev-ultrafast) | web | — | code MIT | Jev Ultrafast operates a browser by selecting actions and targets from an indexed table of visible controls, with a separate model generating text when needed. | [✓ 2026‑11‑09](https://raw.githubusercontent.com/browser-use/jev-ultrafast/HEAD/README.md) |
 | [WebOperator](https://github.com/kagnlp/WebOperator) | web | [2512.12692](https://arxiv.org/abs/2512.12692) (2025) | code Apache-2.0 | A web agent using action-aware tree search to explore tasks and backtrack, checking page reconstruction and accounting for actions that may change website state. | [✓ 2026‑11‑09](https://raw.githubusercontent.com/kagnlp/WebOperator/HEAD/README.md) |
 
 ## Frameworks
@@ -98,6 +100,7 @@
 | [Paragent](https://github.com/myselfsiddharth/Paragent) | web | — | code MIT | Stateful browser execution layer that records an agent task once, replays it without LLM calls, and self-repairs when selectors change. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/myselfsiddharth/Paragent/HEAD/README.md) |
 | [QUESTZ](https://github.com/PNX89/QUESTZ) | web | — | code MIT | Fail-closed browser automation reliability framework that halts execution on structural DOM drift before corrupting downstream data. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/PNX89/QUESTZ/main/README.md) |
 | [Self-Healing Browser Agent](https://github.com/25andresbernal/self-healing-browser-agent) | web | — | code MIT | Combines Claude planning with Playwright execution and ranked selector fallback to self-heal broken web automation steps. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/25andresbernal/self-healing-browser-agent/HEAD/README.md) |
+| [Solari Research Suite: ARC & ColdStart](https://github.com/itw-code/solari-cookbook) | web | — | code MIT | A research suite combining an accessibility-based browser-agent harness with an evaluation harness that changes a web task app and verifies completed actions against database state. | [✓ 2026‑11‑09](https://raw.githubusercontent.com/itw-code/solari-cookbook/HEAD/README.md) |
 | [SOLO](https://github.com/WZq975/SOLO) | desktop, android, web | [2609.34321](https://arxiv.org/abs/2609.34321) (2026) | — | SOLO performs single-rollout test-time adaptation for GUI agents using online self-supervised feedback during deployment. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/WZq975/SOLO/HEAD/README.md) |
 | [SoulSniper Browser SDK](https://github.com/SoulSniper-V2/browser-sdk) | web | — | code MIT | Provider-neutral TypeScript browser automation SDK with automatic session failover and stealth profile support. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/SoulSniper-V2/browser-sdk/main/README.md) |
 | [SuperSelector Studio](https://github.com/pirate/cua-superselector) | cross-platform, desktop, web | — | — | Resilient, cacheable fuzzy UI element identifiers and studio for Codex Computer Use recording and replay. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/pirate/cua-superselector/HEAD/README.md) |
@@ -120,8 +123,18 @@
 | [openadapt-grounding](https://github.com/OpenAdaptAI/openadapt-grounding) | cross-platform, web, desktop | — | code MIT | An archived GUI element localization package that anchors targets to OCR text and stabilizes detections across frames, with optional model-based fallbacks. | [✓ 2026‑11‑09](https://raw.githubusercontent.com/OpenAdaptAI/openadapt-grounding/HEAD/README.md) |
 | [playwright_stealth](https://github.com/Mattwmaster58/playwright_stealth) | web | — | code MIT | Playwright_stealth is a Python helper that applies browser fingerprint evasions to Playwright pages and contexts. It provides asynchronous usage and configuration examples. | [✓ 2026‑11‑09](https://raw.githubusercontent.com/Mattwmaster58/playwright_stealth/HEAD/README.md) |
 | [rebrowser-patches](https://github.com/rebrowser/rebrowser-patches) | web | — | code MIT | rebrowser-patches modifies Puppeteer and Playwright to reduce browser automation signals, and provides drop-in packages for both libraries. | [✓ 2026‑11‑09](https://raw.githubusercontent.com/rebrowser/rebrowser-patches/HEAD/README.md) |
+| [ReproSight](https://github.com/tungcorn/ReproSight) | web | — | code MIT | ReproSight is a CLI that lets coding agents reproduce visual defects in a browser, collect evidence, isolate edits in a worktree, and run regression checks. | [✓ 2026‑11‑09](https://raw.githubusercontent.com/tungcorn/ReproSight/HEAD/README.md) |
 | [Selenium Self-Healing MCP Server](https://github.com/aiqualitylab/selenium-selfhealing-mcp) | web | — | code MIT | MCP server that diagnoses broken Selenium DOM locators after UI changes and synthesizes self-healing replacement selectors. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/aiqualitylab/selenium-selfhealing-mcp/HEAD/README.md) |
+| [Synthetic GUI Samples Plugin for FiftyOne](https://github.com/harpreetsahota204/synthetic_gui_samples_plugins) | unspecified | — | code Apache-2.0 | A FiftyOne plugin that augments annotated GUI screenshots and task descriptions for training GUI understanding models while retaining annotations and transformation history. | [✓ 2026‑11‑09](https://raw.githubusercontent.com/harpreetsahota204/synthetic_gui_samples_plugins/HEAD/README.md) |
 | [WAREX Supplementary Code](https://github.com/SumanKNath/WABER) | web, desktop, linux | — | — | WAREX supplementary code uses mitmproxy add-ons to inject popups or server and network errors into web-agent tests and record token use and latency. | [✓ 2026‑11‑09](https://raw.githubusercontent.com/SumanKNath/WABER/HEAD/README.md) |
+
+## Infrastructure
+
+All entries in this section: web, desktop, windows, linux.
+
+| Resource | Paper | License | Description | Evidence |
+| --- | --- | --- | --- | --- |
+| [KC Browser](https://github.com/KuiChi-x/kc-browser) | — | — | KC Browser is a Chromium-based browser binary for automated web sessions. It generates seeded browser identities and can be launched through Playwright or Puppeteer. | [✓ 2026‑11‑09](https://raw.githubusercontent.com/KuiChi-x/kc-browser/HEAD/README.md) |
 
 ## Products
 

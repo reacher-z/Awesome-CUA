@@ -2,9 +2,9 @@
 
 [Home](../../README.md) · [All topics](../topics.md) · [Full arXiv bibliography](../papers.md)
 
-66 source-reviewed resources tagged `industry`. Curated metadata; unknown facts are shown as —.
+67 source-reviewed resources tagged `industry`. Curated metadata; unknown facts are shown as —.
 
-**Contents:** [Benchmarks (1)](#benchmarks) · [Models (2)](#models) · [Agents (1)](#agents) · [Tools (12)](#tools) · [Infrastructure (1)](#infrastructure) · [Products (5)](#products) · [Publishers (18)](#publishers) · [Surveys (3)](#surveys) · [Papers (23)](#papers)
+**Contents:** [Benchmarks (1)](#benchmarks) · [Models (2)](#models) · [Agents (1)](#agents) · [Tools (12)](#tools) · [Infrastructure (1)](#infrastructure) · [Products (6)](#products) · [Publishers (18)](#publishers) · [Surveys (3)](#surveys) · [Papers (23)](#papers)
 
 ## Benchmarks
 
@@ -62,6 +62,7 @@ All entries in this section: web.
 
 | Resource | Publisher | Environments | Description | Evidence |
 | --- | --- | --- | --- | --- |
+| [Agenta](https://github.com/agenta-ai/agenta) | — | web | Agenta is a team workspace for building and running agents. Its agents can use a browser and files to work on websites, alongside connected apps and scheduled automations. | [✓ 2026‑11‑09](https://raw.githubusercontent.com/agenta-ai/agenta/HEAD/README.md) |
 | [Asteroid](https://asteroid.ai) | — | web, desktop, windows, linux | Hosted healthcare automation platform whose agents operate EHRs, payer portals and Windows, Linux or Citrix apps from the screen, then turn repeat runs into scripts or private-API calls served as an API. | [✓ 2026‑10‑19](https://asteroid.ai) |
 | [Computer Agents](https://computer-agents.com) | — | cross-platform, web, desktop | A cloud agent platform that gives agents persistent computers with browser, GUI, terminal, and file access, alongside project workspaces and workflow triggers. | [✓ 2026‑11‑09](https://computer-agents.com) |
 | [ego(lite)](https://lite.ego.app) | — | web, desktop | A Chromium browser that lets AI agents automate signed-in websites through an agent skill, with separate workspaces for agent tasks and page snapshots for navigation. | [✓ 2026‑11‑09](https://lite.ego.app) |

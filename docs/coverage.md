@@ -1,12 +1,12 @@
 # Coverage and quality ledger
 
-Evidence snapshot through **2026-11-09T20:03:14Z**. Generated from committed source receipts.
+Evidence snapshot through **2026-11-09T21:12:48Z**. Generated from committed source receipts.
 
-- 4,857 curated resources. Another 885 records await review with bibliographic metadata only; the active catalog file holds 5,742 records in all.
+- 5,115 curated resources. Another 885 records await review with bibliographic metadata only; the active catalog file holds 6,000 records in all.
 - 2,603 paper and survey records, including 2,550 arXiv identities and 53 publisher-only identities.
 - 3,858 retained arXiv metadata records; 1,308 explicit scope exclusions are outside the active catalog.
-- 8,801 discovery identifiers; 468 remain unresolved. Reviewed decisions include 469 non-resource links, 661 aliases and 1,741 out-of-scope resources; their reasons remain in the review queue.
-- 552 editorial proposals await verification or review.
+- 8,801 discovery identifiers; 206 remain unresolved. Reviewed decisions include 469 non-resource links, 665 aliases and 1,741 out-of-scope resources; their reasons remain in the review queue.
+- 551 editorial proposals await verification or review.
 
 These are distinct resource identifiers, not distinct research projects. Papers, repositories, datasets, products, and publisher entities have different grains.
 
@@ -16,18 +16,18 @@ Counts of source-reviewed resources. A resource tagged with several environments
 
 | Kind | web | desktop | windows | macos | linux | android | ios | harmonyos | cross-platform | unspecified |
 | --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
-| [agent](agents.md) | 223 | 214 | 94 | 106 | 70 | 77 | 13 | · | 49 | 3 |
-| [benchmark](benchmarks.md) | 193 | 93 | 14 | 10 | 24 | 39 | 1 | · | 28 | 11 |
+| [agent](agents.md) | 241 | 228 | 102 | 115 | 76 | 83 | 16 | · | 59 | 3 |
+| [benchmark](benchmarks.md) | 207 | 94 | 14 | 10 | 25 | 41 | 2 | · | 28 | 12 |
 | [company](companies.md) | · | 1 | · | · | · | · | · | · | 1 | 18 |
-| [dataset](datasets.md) | 93 | 66 | 12 | 14 | 20 | 67 | 6 | · | 31 | 27 |
-| [framework](frameworks.md) | 443 | 298 | 95 | 81 | 106 | 98 | 17 | 1 | 149 | 26 |
-| [infrastructure](infrastructures.md) | 51 | 66 | 14 | 20 | 48 | 18 | 3 | · | 8 | 1 |
-| [learning](learning.md) | 25 | 17 | 3 | 4 | 3 | 4 | 1 | · | 17 | 1 |
-| [model](models.md) | 141 | 143 | 15 | 14 | 11 | 84 | 7 | · | 129 | 52 |
+| [dataset](datasets.md) | 102 | 71 | 13 | 16 | 21 | 70 | 7 | · | 33 | 31 |
+| [framework](frameworks.md) | 460 | 309 | 99 | 88 | 111 | 101 | 17 | 1 | 154 | 26 |
+| [infrastructure](infrastructures.md) | 60 | 76 | 16 | 22 | 57 | 20 | 3 | · | 11 | 2 |
+| [learning](learning.md) | 29 | 18 | 3 | 4 | 4 | 4 | 1 | · | 18 | 1 |
+| [model](models.md) | 155 | 158 | 16 | 18 | 14 | 85 | 7 | · | 138 | 71 |
 | [paper](topics.md) | 661 | 244 | 43 | 18 | 25 | 229 | 12 | 4 | 112 | 597 |
-| [product](products.md) | 61 | 22 | 9 | 8 | 4 | 5 | 1 | · | 7 | · |
+| [product](products.md) | 64 | 23 | 9 | 9 | 4 | 6 | 2 | 1 | 8 | · |
 | [survey](surveys.md) | 7 | 2 | 1 | · | · | 2 | 1 | · | 13 | 17 |
-| [tool](tools.md) | 589 | 504 | 227 | 255 | 170 | 53 | 27 | · | 162 | 10 |
+| [tool](tools.md) | 645 | 556 | 250 | 281 | 190 | 57 | 34 | 1 | 175 | 13 |
 
 ## Source snapshot coverage
 
@@ -193,16 +193,16 @@ The recorded title query returned 1,199 unique records out of 1,246 reported mat
 
 | Scope | Recorded declarations |
 | --- | ---: |
-| code | 1920 |
-| data | 181 |
-| weights | 256 |
+| code | 2055 |
+| data | 197 |
+| weights | 300 |
 | document | 8 |
 
 Data and weights fields record their own licenses. Hub declarations are publisher metadata. Missing values remain null.
 
 ## Pending editorial proposals
 
-552 proposals: 24 with unresolved primary evidence, 15 whose current source snapshot awaits review, 490 held by a reviewer after reading the current source, 23 screened as relevant from the current source and awaiting an editorial annotation, and 0 awaiting another scope review.
+551 proposals: 24 with unresolved primary evidence, 15 whose current source snapshot awaits review, 489 held by a reviewer after reading the current source, 23 screened as relevant from the current source and awaiting an editorial annotation, and 0 awaiting another scope review.
 
 | Resource | Reason |
 | --- | --- |
@@ -569,7 +569,6 @@ Data and weights fields record their own licenses. Hub declarations are publishe
 | [DynaSaur: Large Language Agents Beyond Predefined Actions](https://arxiv.org/abs/2411.01747) | Relevance screening of the complete arXiv v3 abstract (5 November 2026) left the scope open: Screeners disagreed on scope. One read it as outside the scope: The abstract lets LLM agents write and reuse program actions in place of choosing from a fixed action set. This generic agent framework names no web-page, GUI or device setting, so it is outside the catalog. The other marked it borderline: Generic LLM agent framework that writes and executes code to create reusable actions. The abstract leaves its environments and benchmarks unnamed, so it is unclear whether the agent operates web pages, computer files or applications. Needs a scope decision from the full text. |
 | [Toward Efficient Agents: Memory, Tool learning, and Planning](https://arxiv.org/abs/2601.14192) | Relevance screening of the complete arXiv v2 abstract (5 November 2026) left the scope open: Survey of efficiency in agent memory, tool learning and planning; the abstract leaves open whether it covers web, GUI or computer-use agents. Needs a scope decision from the full text. |
 | [Towards LLMCI - Multimodal AI for LLM-Vision UI Operation](https://www.researchsquare.com/article/rs-4653823/v1) | Relevance screening of the preprint abstract in its Crossref record (6 November 2026): core. A framework in which an LLM uses a vision model to recognize interface elements and operates applications with keyboard and mouse input, shown as a proof of concept. Awaiting an editorial annotation. |
-| [agentd](https://github.com/agentsea/agentd) | The repository file list shows implementation files, but the supplied README is empty. The empty supplied README leaves the daemon's purpose and computer-use capability unexplained. |
 | [Bloomberg - Are you a robot?](https://www.bloomberg.com/news/articles/2024-11-13/openai-nears-launch-of-ai-agents-to-automate-tasks-for-users) | primary evidence unresolved: HTTP Error 403: Forbidden; The Bloomberg page presents a robot check. The Bloomberg robot check leaves the article's subject and contents open. |
 | [SmolVLM2-2.2B-Instruct-Agentic-GUI-GGUF](https://huggingface.co/mradermacher/SmolVLM2-2.2B-Instruct-Agentic-GUI-GGUF) | The card provides GGUF quantizations of an Agentic-GUI-named model, but does not describe its GUI tasks, inputs, or outputs. Its computer-use capability remains unclear. |
 | [ChatUITest](https://github.com/ZJU-ACES-ISE/ChatUITest) | ChatUITest says it generates GUI test scripts, but its README marks the project under construction and the repository contains only that README. The linked simulation tool and unfinished dataset are separate resources. |
@@ -765,12 +764,20 @@ Papers that a curated resource names as its `introduced_by` or `documented_by` p
 
 | Paper | Linked from |
 | --- | --- |
-| [Agent Lumos: Unified and Modular Training for Open-Source Language Agents](https://arxiv.org/abs/2311.05657) | [lumos_web_agent_ground_iterative](https://huggingface.co/ai2lumos/lumos_web_agent_ground_iterative), [lumos_unified_plan_iterative](https://huggingface.co/datasets/ai2lumos/lumos_unified_plan_iterative), [lumos_web_agent_plan_iterative-13B](https://huggingface.co/ai2lumos/lumos_web_agent_plan_iterative-13B), [lumos_unified_ground_iterative](https://huggingface.co/datasets/ai2lumos/lumos_unified_ground_iterative), [lumos_unified_ground_iterative-13B](https://huggingface.co/ai2lumos/lumos_unified_ground_iterative-13B), [lumos_web_agent_ground_iterative-13B](https://huggingface.co/ai2lumos/lumos_web_agent_ground_iterative-13B), [lumos_web_agent_plan_iterative](https://huggingface.co/ai2lumos/lumos_web_agent_plan_iterative) |
+| [Agent Lumos: Unified and Modular Training for Open-Source Language Agents](https://arxiv.org/abs/2311.05657) | [lumos_web_agent_ground_iterative](https://huggingface.co/datasets/ai2lumos/lumos_web_agent_ground_iterative), [lumos_web_agent_ground_iterative](https://huggingface.co/ai2lumos/lumos_web_agent_ground_iterative), [lumos_unified_plan_iterative](https://huggingface.co/ai2lumos/lumos_unified_plan_iterative), [lumos_unified_plan_iterative](https://huggingface.co/datasets/ai2lumos/lumos_unified_plan_iterative), [lumos_web_agent_plan_iterative-13B](https://huggingface.co/ai2lumos/lumos_web_agent_plan_iterative-13B), [lumos_unified_ground_iterative](https://huggingface.co/datasets/ai2lumos/lumos_unified_ground_iterative), [lumos_unified_ground_iterative](https://huggingface.co/ai2lumos/lumos_unified_ground_iterative), [lumos_unified_ground_iterative-13B](https://huggingface.co/ai2lumos/lumos_unified_ground_iterative-13B), [lumos_web_agent_ground_iterative-13B](https://huggingface.co/ai2lumos/lumos_web_agent_ground_iterative-13B), [lumos_web_agent_plan_iterative](https://huggingface.co/ai2lumos/lumos_web_agent_plan_iterative), [lumos_unified_plan_iterative-13B](https://huggingface.co/ai2lumos/lumos_unified_plan_iterative-13B) |
 | [SWE-bench Multimodal: Do AI Systems Generalize to Visual Software Domains?](https://arxiv.org/abs/2410.03859) | [SWE-bench Multimodal](https://huggingface.co/datasets/SWE-bench/SWE-bench_Multimodal) |
-| [InternVL3: Exploring Advanced Training and Test-Time Recipes for Open-Source Multimodal Models](https://arxiv.org/abs/2504.10479) | [InternVL3-9B](https://huggingface.co/OpenGVLab/InternVL3-9B), [InternVL3-8B](https://huggingface.co/OpenGVLab/InternVL3-8B), [InternVL3-38B](https://huggingface.co/OpenGVLab/InternVL3-38B) |
+| [DesignRepair: Dual-Stream Design Guideline-Aware Frontend Repair with Large Language Models](https://arxiv.org/abs/2411.01606) | [DesignRepair](https://github.com/UGAIForge/DesignRepair) |
+| [InternVL3: Exploring Advanced Training and Test-Time Recipes for Open-Source Multimodal Models](https://arxiv.org/abs/2504.10479) | [InternVL3-9B](https://huggingface.co/OpenGVLab/InternVL3-9B), [InternVL3-2B](https://huggingface.co/OpenGVLab/InternVL3-2B), [InternVL3-1B](https://huggingface.co/OpenGVLab/InternVL3-1B), [InternVL3-78B](https://huggingface.co/OpenGVLab/InternVL3-78B), [InternVL3-8B](https://huggingface.co/OpenGVLab/InternVL3-8B), [InternVL3-14B](https://huggingface.co/OpenGVLab/InternVL3-14B), [InternVL3-38B](https://huggingface.co/OpenGVLab/InternVL3-38B) |
 | [AndroidGen: Building an Android Language Agent under Data Scarcity](https://arxiv.org/abs/2504.19298) | [AndroidGen-GLM-4-9B](https://huggingface.co/THUDM/androidgen-glm-4-9b), [AndroidGen-Llama-3-70B](https://huggingface.co/THUDM/androidgen-llama-3-70b) |
-| [UI2Code^N: UI-to-Code Generation as Interactive Visual Optimization](https://arxiv.org/abs/2511.08195) | [UI2Code_N](https://huggingface.co/zai-org/UI2Code_N) |
+| [AgentGym-RL: Training LLM Agents for Long-Horizon Decision Making through Multi-Turn Reinforcement Learning](https://arxiv.org/abs/2509.08755) | [AgentGym-RL](https://github.com/WooooDyy/AgentGym-RL) |
+| [UI2Code^N: UI-to-Code Generation as Interactive Visual Optimization](https://arxiv.org/abs/2511.08195) | [UI2Code^N](https://github.com/zai-org/UI2Code_N), [UI2Code_N](https://huggingface.co/zai-org/UI2Code_N) |
+| [LPS-Bench: Benchmarking Safety Awareness of Computer-Use Agents in Long-Horizon Planning under Benign and Adversarial Scenarios](https://arxiv.org/abs/2602.03255) | [LPS-Bench](https://huggingface.co/datasets/tianyyuu/LPS-Bench) |
+| [GenericAgent: A Token-Efficient Self-Evolving LLM Agent via Contextual Information Density Maximization (V1.0)](https://arxiv.org/abs/2604.17091) | [GA-Technical-Report](https://github.com/JinyiHan99/GA-Technical-Report) |
+| [AutoDesign: Meta-Harness Optimization for Long-Horizon Agentic Design](https://arxiv.org/abs/2608.13560) | [AutoDesign](https://github.com/Yaxin9Luo/AutoDesign) |
+| [RSIGame: Autonomous Agentic Game Development with Recursive Self-improvement](https://arxiv.org/abs/2609.39045) | [RSIGame](https://github.com/WenyiWU0111/RSIGame) |
 | [GroundAnything: Reconciling Parallel Decoding with Precise Visual Grounding at Flash Speed](https://arxiv.org/abs/2609.39600) | [GroundAnything-VLM](https://huggingface.co/GroundingPI/GroundAnything-VLM) |
+| [VISTA: A Visual Harness for Reasoning in an Interactive World](https://arxiv.org/abs/2610.02200) | [VISTA](https://github.com/joshhhhhan/VISTA) |
+| [SWEeper-Bench: Can Agents Discover Bugs in Interactive Software?](https://arxiv.org/abs/2610.14096) | [SWEeper-Bench](https://huggingface.co/datasets/zlab-princeton/SWEeper-Bench) |
 | [Gym-Anything-RT: Scaling Real-Time Environments for Vision-Language Agents](https://arxiv.org/abs/2610.37567) | [Gym-Anything-RT](https://github.com/gym-anything/gym-anything-rt) |
 
 ## Scope exclusions

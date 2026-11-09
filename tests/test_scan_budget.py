@@ -49,6 +49,7 @@ class ScanBudgetTests(unittest.TestCase):
         self.assertEqual([timeout for _, timeout in timeouts[3:]], [300, 300])
         self.assertEqual(set(phases), set(scan.STAGE_TIMEOUTS))
         self.assertEqual(phases["harvest"]["error"], f"Stage exceeded {timeouts[2][1]:g} seconds; last verified records retained.")
+        self.assertTrue(all(phases[name]['deferred'] for name in ('discovery','huggingface','harvest')))
 
     def test_an_interrupted_scan_leaves_its_own_running_receipt(self):
         with tempfile.TemporaryDirectory() as directory, mock.patch.object(scan, "DATA", Path(directory)), \

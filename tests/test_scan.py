@@ -61,6 +61,15 @@ class ScanSafetyTests(unittest.TestCase):
         self.assertEqual(status,'failed');self.assertIn('bad-shape',' '.join(problems))
         runs.append({'id':'empty-valid','state':'success','evidence':{'ok':True,'status':200},'identifiers':[]})
         self.assertEqual(scan.summarize_phases(phases,[],runs,[])[0],'partial')
+
+    def test_deferred_network_round_retains_verified_catalog_after_offline_gates(self):
+        phases=[{'name':name,'ok':False,'deferred':True,'error':'Stage timed out'}
+                for name in ('discovery','huggingface','recent_arxiv','harvest')]
+        phases.extend([{'name':'build','ok':True},{'name':'validate','ok':True}])
+        self.assertEqual(scan.summarize_phases(phases,[],[],[],retained_verified=True)[0],'partial')
+        self.assertEqual(scan.summarize_phases(phases,[],[],[])[0],'failed')
+        phases[-1]['ok']=False
+        self.assertEqual(scan.summarize_phases(phases,[],[],[],retained_verified=True)[0],'failed')
     def test_a_retired_discovery_source_is_not_a_scan_gap(self):
         phases=[{'name':'discovery','ok':True},{'name':'build','ok':True},{'name':'validate','ok':True}]
         retired={'id':'gone','ok':False,'state':'retired','request_attempted':False}

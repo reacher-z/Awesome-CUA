@@ -37,6 +37,13 @@ ENVIRONMENT_LABELS = {"web":"Web", "desktop":"Desktop", "windows":"Windows", "li
 TOPIC_CATALOG = json.loads((Path(__file__).resolve().parents[1]/"data/topics.json").read_text(encoding="utf-8"))
 KINDS = {"paper":"Research papers", "survey":"Surveys", "learning":"Learning resources", "model":"Models and checkpoints", "dataset":"Datasets", "benchmark":"Benchmarks", "agent":"Agents", "framework":"Frameworks", "infrastructure":"Infrastructure", "tool":"Tools", "product":"Products", "company":"Publishers"}
 CATEGORY_PAGE_SIZE = 100
+TITLE_LIMIT = 60
+TITLE_SUFFIX = ' | AwesomeCUA'
+# Search snippets: 70-160 characters in English, 50-160 in Chinese.
+DESCRIPTION_BOUNDS = {'en': (70, 160), 'zh-CN': (50, 160)}
+DESCRIPTION_CONTEXT = {'en': 'AwesomeCUA links every computer-use agent resource to its primary sources and review status.',
+                       'zh-CN': 'AwesomeCUA 收录计算机使用智能体的论文、模型、数据集、评测基准与工具，每条记录都附一手来源、许可证与审阅状态。'}
+CJK_BREAKS = '，、；：。！？）'
 
 
 def esc(value):
@@ -48,6 +55,41 @@ def clip(text, limit=300):
     if len(text)<=limit:return text
     head=re.match(r'(.*\S)\s',text[:limit],re.S)
     return re.sub(r'[\s,;:.]+$','',head[1] if head else text[:limit-1])+'…'
+
+
+def shorten(text, limit):
+    """At most `limit` characters ending in an ellipsis: cut at a space, or in Chinese text after punctuation or any character."""
+    text = ' '.join(text.split())
+    if len(text) <= limit:return text
+    head = text[:limit-1]
+    breaks = [head.rfind(' ')] + [head.rfind(mark) + 1 for mark in CJK_BREAKS if mark in head]
+    cut = max(breaks)
+    if cut < limit // 2:cut = limit - 1
+    return re.sub(r'[\s,;:.，、；：。]+$', '', head[:cut]) + '…'
+
+
+def page_title(title):
+    """The <title>: the page name, shortened to fit, then the brand once."""
+    if 'AwesomeCUA' in title:return shorten(title, TITLE_LIMIT)
+    return shorten(title, TITLE_LIMIT-len(TITLE_SUFFIX)) + TITLE_SUFFIX
+
+
+def sentence_ends(text, zh):
+    if zh:return [i + 1 for i, char in enumerate(text) if char in '。！？；']
+    return [i + 1 for i, char in enumerate(text) if char in '.!?' and (i + 1 == len(text) or text[i + 1] == ' ' and text[i + 2:i + 3].isupper())]
+
+
+def meta_description(summary, lang='en', context=''):
+    """A search snippet inside the language's bounds: whole sentences where they fit, then a word boundary."""
+    zh = lang.startswith('zh')
+    low, high = DESCRIPTION_BOUNDS['zh-CN' if zh else 'en']
+    text = ' '.join(str(summary).split())
+    for extra in (context, DESCRIPTION_CONTEXT['zh-CN' if zh else 'en']):
+        if len(text) >= low:break
+        if extra and extra not in text:text = (text + ('' if zh or not text else ' ') + extra).strip()
+    if len(text) <= high:return text
+    fitting = [end for end in sentence_ends(text, zh) if low <= end <= high]
+    return text[:fitting[-1]] if fitting else shorten(text, high)
 
 
 def clean_text(text):
@@ -95,14 +137,35 @@ def resource_titles(rows):
         for r in members:
             label=('publisher' if r['kind']=='company' else r['kind']) if kinds[r['kind']]==1 else re.sub(r'^https?://(www\.)?','',r['url']).rstrip('/')
             titles[r['id']]=f'{name} ({label})'
+    return distinct_titles(rows, titles, lambda r:r['name'])
+
+
+def distinct_titles(rows, titles, base, separator=' · '):
+    """Shortening can make two titles equal; a shared shortened title then ends with the record's own identifier."""
+    room = TITLE_LIMIT - len(TITLE_SUFFIX)
+    eligible_rows = [r for r in rows if eligible(r)]
+    shown = {r['id']: shorten(titles.get(r['id'], base(r)), room) for r in eligible_rows}
+    counts = Counter(shown.values())
+    for r in eligible_rows:
+        if counts[shown[r['id']]] > 1:
+            tag = r['id'].split(':', 1)[-1]
+            titles[r['id']] = shorten(base(r), max(12, room - len(tag) - 3)) + f' ({tag})'
     return titles
 
 
 def zh_resource_titles(rows, titles):
     """Chinese resource titles add the Chinese kind; a name shared within one kind keeps the English source-address suffix."""
+    room=TITLE_LIMIT-len(TITLE_SUFFIX)
     named={r['id']:(r['name'],home_page.KINDS[r['kind']][2]) for r in rows if eligible(r)}
     shared=Counter(named.values())
-    return {key:f'{titles.get(key,name) if shared[(name,kind)]>1 else name} · {kind}' for key,(name,kind) in named.items()}
+    # The kind stays visible when a long name is shortened.
+    zh={key:f'{shorten(titles.get(key,name) if shared[(name,kind)]>1 else name,room-len(kind)-3)} · {kind}' for key,(name,kind) in named.items()}
+    counts=Counter(zh.values())
+    for r in rows:
+        if r['id'] in zh and counts[zh[r['id']]]>1:
+            tag=r['id'].split(':',1)[-1];kind=named[r['id']][1]
+            zh[r['id']]=f'{shorten(r["name"],max(12,room-len(kind)-len(tag)-6))} ({tag}) · {kind}'
+    return zh
 
 
 def description(record):
@@ -118,7 +181,7 @@ def organization():
     return {"@type":"Organization", "@id":SITE+"/#organization", "name":"AwesomeCUA", "url":SITE+"/", "sameAs":["https://github.com/AwesomeCUA", SOURCE_REPO, REPO]}
 
 
-def page(title, summary, path, body, main=None, index=True, lang="en", alternatives=False, crumbs=None, canonical=True, landing=False, extra_graph=()):
+def page(title, summary, path, body, main=None, index=True, lang="en", alternatives=False, crumbs=None, canonical=True, landing=False, extra_graph=(), context=''):
     url=SITE+path
     # One list renders both the visible trail and BreadcrumbList, so they cannot disagree.
     crumbs=crumbs or [("AwesomeCUA","/zh/" if lang=="zh-CN" and path!="/zh/" else "/"),(title,path)]
@@ -138,7 +201,8 @@ def page(title, summary, path, body, main=None, index=True, lang="en", alternati
     # The not-found page is served at every missing address, so it claims no URL of its own.
     identity=f'<link rel="canonical" href="{url}">' if canonical else ''
     og_url=f'<meta property="og:url" content="{url}">' if canonical else ''
-    full_title=title if 'AwesomeCUA' in title else title+' | AwesomeCUA'
+    full_title=page_title(title)
+    snippet=meta_description(summary,lang,context)
     switch_to=alternate_paths.get('en' if lang.startswith('zh') else 'zh-CN') or None
     breadcrumbs=f'<nav class="breadcrumbs{" vh" if landing else ""}" aria-label="Breadcrumb"><ol>{trail}</ol></nav>'
     # A landing page lays out its own full-width sections; everything else shares the reading column.
@@ -146,7 +210,7 @@ def page(title, summary, path, body, main=None, index=True, lang="en", alternati
     skip='跳到正文' if lang.startswith('zh') else 'Skip to content'
     # Only the homepage has its own search window; other wide pages keep the header search.
     body_class=''if not landing else ' class="home"' if path in ('/','/zh/') else ' class="home list-page"'
-    document=f'''<!doctype html><html lang="{lang}" data-site="cua"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>{esc(full_title)}</title>{site_shell.head_assets(lang)}<meta name="description" content="{esc(clip(summary))}"><meta name="robots" content="{robots}">{identity}{alternate}<meta property="og:title" content="{esc(full_title)}"><meta property="og:description" content="{esc(clip(summary))}">{og_url}<meta property="og:type" content="website"><meta property="og:site_name" content="AwesomeCUA"><meta property="og:locale" content="{"zh_CN" if lang=="zh-CN" else "en_US"}"><meta property="og:image" content="{SITE}/social.png"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta property="og:image:alt" content="AwesomeCUA — Computer-use agents. Papers, data, and tools."><meta name="twitter:card" content="summary_large_image"><link rel="icon" href="/favicon.svg" type="image/svg+xml"><link rel="stylesheet" href="{site_shell.asset("/pages.css")}"><script type="application/ld+json">{jsonld({"@context":"https://schema.org","@graph":graph})}</script>{home_page.legacy_redirect_script() if path=="/" else ""}</head><body{body_class}><a class="skip" href="#content">{skip}</a>{site_shell.top(path=path,lang=lang,lang_href=switch_to,live=landing)}{content}{site_shell.bottom(lang=lang,lang_href=switch_to,live=landing)}</body></html>'''
+    document=f'''<!doctype html><html lang="{lang}" data-site="cua"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>{esc(full_title)}</title>{site_shell.head_assets(lang)}<meta name="description" content="{esc(snippet)}"><meta name="robots" content="{robots}">{identity}{alternate}<meta property="og:title" content="{esc(full_title)}"><meta property="og:description" content="{esc(snippet)}">{og_url}<meta property="og:type" content="website"><meta property="og:site_name" content="AwesomeCUA"><meta property="og:locale" content="{"zh_CN" if lang=="zh-CN" else "en_US"}"><meta property="og:image" content="{SITE}/social.png"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta property="og:image:alt" content="AwesomeCUA — Computer-use agents. Papers, data, and tools."><meta name="twitter:card" content="summary_large_image"><link rel="icon" href="/favicon.svg" type="image/svg+xml"><link rel="stylesheet" href="{site_shell.asset("/pages.css")}"><script type="application/ld+json">{jsonld({"@context":"https://schema.org","@graph":graph})}</script>{home_page.legacy_redirect_script() if path=="/" else ""}</head><body{body_class}><a class="skip" href="#content">{skip}</a>{site_shell.top(path=path,lang=lang,lang_href=switch_to,live=landing)}{content}{site_shell.bottom(lang=lang,lang_href=switch_to,live=landing)}</body></html>'''
     return document
 
 
@@ -299,6 +363,15 @@ def kind_crumb(kind, zh=False):
 def resource_crumbs(record, zh=False):
     if zh:return [("AwesomeCUA","/zh/"),("目录","/zh/catalog/"),kind_crumb(record["kind"],True),(record["name"],zh_resource_path(record))]
     return [("AwesomeCUA","/"),("Catalog","/catalog/"),kind_crumb(record["kind"]),(record["name"],resource_path(record))]
+
+
+def resource_context(record, zh=False):
+    """A sentence that lengthens a short resource summary into a usable search snippet."""
+    if zh:
+        environments='、'.join(PLATFORMS.get(env,(env,env))[1] for env in record['environments'] if env!='unspecified')
+        return f'{home_page.KINDS[record["kind"]][2]}' + (f'，运行环境：{environments}' if environments else '') + '。附一手来源、许可证记录与审阅状态。'
+    environments=', '.join(ENVIRONMENT_LABELS.get(env,env) for env in record['environments'] if env!='unspecified')
+    return f'{KIND_SINGULAR[record["kind"]]} for {environments + " " if environments else ""}computer-use agents, with primary sources, license records and review status.'
 
 
 def resource_body(record, lookup, incoming=None, pending_review=None, zh=False):
@@ -499,6 +572,21 @@ def asset_version(destination):
     return digest.hexdigest()[:12]
 
 
+def declare_markdown_twins(destination, manifest):
+    """Name each page's index.md in its <head> once the build has written every twin, then refresh the page fingerprint."""
+    for item in manifest:
+        path=item['path']
+        twin=destination/path.lstrip('/')/'index.md'
+        if not path.endswith('/') or path=='/survey/' or not twin.is_file():continue
+        target=destination/path.lstrip('/')/'index.html'
+        content=target.read_bytes()
+        link=f'<link rel="alternate" type="text/markdown" href="{path}index.md">'.encode()
+        if link in content:continue
+        content=content.replace(b'</head>',link+b'</head>',1)
+        target.write_bytes(content)
+        item['sha256']=hashlib.sha256(content).hexdigest()
+
+
 def build_search_pages(destination, rows, coverage, root, *, survey_page=None):
     lookup={r["id"]:r for r in rows}
     pending_reviews={item['id']:item for item in coverage.get('pending_editorial',[])}
@@ -558,11 +646,11 @@ def build_search_pages(destination, rows, coverage, root, *, survey_page=None):
         shown=[r]+[lookup[rel['source_id']] for rel in incoming.get(r['id'],[]) if rel['source_id'] in lookup]
         # Reviewed records have a Chinese twin; the pair names each other, and x-default is the English page.
         pair={'en':path,'zh-CN':zh_resource_path(r),'x-default':path} if eligible(r) else None
-        emit(path,page(titles.get(r["id"],r["name"]),description(r),path,resource_body(r,lookup,incoming,pending_review),resource_schema(r),eligible(r),crumbs=resource_crumbs(r),alternatives=pair),eligible(r),lastmod=modified(shown),alternates=pair)
+        emit(path,page(titles.get(r["id"],r["name"]),description(r),path,resource_body(r,lookup,incoming,pending_review),resource_schema(r),eligible(r),crumbs=resource_crumbs(r),alternatives=pair,context=resource_context(r)),eligible(r),lastmod=modified(shown),alternates=pair)
         (destination/path.lstrip('/')/'index.md').write_text(clean_text(resource_markdown(r,pending_review)),encoding='utf-8')
         if pair:
             zh_path=pair['zh-CN']
-            emit(zh_path,page(zh_titles[r['id']],zh_summary(r),zh_path,resource_body(r,lookup,incoming,pending_review,zh=True),resource_schema(r,zh=True),lang='zh-CN',crumbs=resource_crumbs(r,zh=True),alternatives=pair),lastmod=modified(shown),alternates=pair)
+            emit(zh_path,page(zh_titles[r['id']],zh_summary(r),zh_path,resource_body(r,lookup,incoming,pending_review,zh=True),resource_schema(r,zh=True),lang='zh-CN',crumbs=resource_crumbs(r,zh=True),alternatives=pair,context=resource_context(r,zh=True)),lastmod=modified(shown),alternates=pair)
             (destination/zh_path.lstrip('/')/'index.md').write_text(clean_text(zh_resource_page_markdown(r,pending_review)),encoding='utf-8')
         (destination/path.lstrip('/')/'record.json').write_text(json.dumps(r,ensure_ascii=False,sort_keys=True,separators=(',', ':'))+'\n',encoding='utf-8')
         if r['kind'] in {'paper','survey'}:
@@ -863,6 +951,7 @@ def build_search_pages(destination, rows, coverage, root, *, survey_page=None):
     if survey_page:
         survey_date=json.loads((destination/'survey/build-manifest.json').read_text(encoding='utf-8')).get('working_manuscript_date')
         sitemap_facts['/survey/']={'lastmod':survey_date,'alternates':{}}
+    declare_markdown_twins(destination,manifest)
     kind_by_path={**{resource_path(r):r['kind'] for r in rows},**{zh_resource_path(r):r['kind'] for r in rows if eligible(r)}}
     write_sitemaps(destination,SITE,[{'path':item['path'],'section':sitemap_section(item['path'],kind_by_path),**sitemap_facts[item['path']]} for item in manifest if item['indexable']])
     (destination/'data/search-manifest.json').write_text(json.dumps({'site_url':SITE,'indexable_pages':sum(x['indexable'] for x in manifest),'metadata_only_pages':sum(not x['indexable'] and not x.get('scope_excluded') and not x.get('utility') for x in manifest),'excluded_pages':sum(bool(x.get('scope_excluded')) for x in manifest),'pages':manifest},ensure_ascii=False,indent=2)+'\n',encoding='utf-8')

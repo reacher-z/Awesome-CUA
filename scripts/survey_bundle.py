@@ -209,6 +209,7 @@ def apply_site_shell(directory, *, head, top, bottom, retitle=None):
     if retitle:
         # The site's title length limit applies to the article's <title> too; the reviewed body is unchanged.
         document = re.sub(r'<title>(.*?)</title>', lambda m: '<title>' + html.escape(retitle(html.unescape(m[1])), quote=False) + '</title>', document, count=1, flags=re.S)
+        document = re.sub(r'(<meta (?:property|name)="(?:og|twitter):title" content=")([^"]*)(")', lambda m: m[1] + html.escape(retitle(html.unescape(m[2]))) + m[3], document, flags=re.S)
     body = document.encode('utf-8')
     manifest['reviewed_index_sha256'] = digest(reviewed)
     manifest['files'] = [dict(item, bytes=len(body), sha256=digest(body)) if item['path'] == 'index.html' else item

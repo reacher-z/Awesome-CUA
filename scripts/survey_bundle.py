@@ -1,6 +1,7 @@
 """Validate and publish the reviewed survey bundle without rebuilding research or using Git/network."""
 from html.parser import HTMLParser
 import hashlib
+import html
 import json
 from pathlib import Path, PurePosixPath
 import re
@@ -194,7 +195,7 @@ def copy_bundle(source, destination, *, source_root, site_url):
     return bundle['page']
 
 
-def apply_site_shell(directory, *, head, top, bottom):
+def apply_site_shell(directory, *, head, top, bottom, retitle=None):
     """Publish a copied article inside the current site header and footer; the manifest keeps the reviewed fingerprint."""
     index, manifest_path = checked_path(directory, 'index.html'), checked_path(directory, MANIFEST)
     reviewed = index.read_bytes()
@@ -205,6 +206,9 @@ def apply_site_shell(directory, *, head, top, bottom):
         raise ValueError('Survey HTML needs one article bar, one closing body tag and an embedded stylesheet')
     # The site stylesheet comes first, so the article's reading styles decide its own column.
     document = document.replace('<style>', head + '<style>', 1).replace('</body>', bottom + '</body>')
+    if retitle:
+        # The site's title length limit applies to the article's <title> too; the reviewed body is unchanged.
+        document = re.sub(r'<title>(.*?)</title>', lambda m: '<title>' + html.escape(retitle(html.unescape(m[1])), quote=False) + '</title>', document, count=1, flags=re.S)
     body = document.encode('utf-8')
     manifest['reviewed_index_sha256'] = digest(reviewed)
     manifest['files'] = [dict(item, bytes=len(body), sha256=digest(body)) if item['path'] == 'index.html' else item

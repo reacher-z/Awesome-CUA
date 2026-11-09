@@ -68,5 +68,6 @@ class ClipTests(unittest.TestCase):
         long=page_title('A Survey on (M)LLM-Based GUI Agents: Foundations, Technologies and Challenges')
         self.assertLessEqual(len(long),60);self.assertTrue(long.endswith('… | AwesomeCUA'))
         self.assertLessEqual(len(page_title('计算机使用智能体资源目录：'*8)),60)
+        self.assertEqual(page_title('Automation — computer-use research and resources in depth, page 12'),'Automation — computer-use research…, page 12 | AwesomeCUA')
 
 if __name__=='__main__':unittest.main()

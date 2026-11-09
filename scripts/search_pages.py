@@ -69,9 +69,12 @@ def shorten(text, limit):
 
 
 def page_title(title):
-    """The <title>: the page name, shortened to fit, then the brand once."""
-    if 'AwesomeCUA' in title:return shorten(title, TITLE_LIMIT)
-    return shorten(title, TITLE_LIMIT-len(TITLE_SUFFIX)) + TITLE_SUFFIX
+    """The <title>: the page name, shortened to fit, then any page number, then the brand once."""
+    number = re.search(r'(?:, page \d+|（第 \d+ 页）)$', title)
+    tail = number[0] if number else ''
+    head = title[:len(title)-len(tail)]
+    if 'AwesomeCUA' in title:return shorten(head, TITLE_LIMIT-len(tail)) + tail
+    return shorten(head, TITLE_LIMIT-len(TITLE_SUFFIX)-len(tail)) + tail + TITLE_SUFFIX
 
 
 def sentence_ends(text, zh):
@@ -619,7 +622,8 @@ def build_search_pages(destination, rows, coverage, root, *, survey_page=None):
         (destination/'data'/filename).write_text(json.dumps(home_page.search_index(view,zh=zh),ensure_ascii=False,separators=(',',':'))+'\n',encoding='utf-8')
     if survey_page:
         # The reviewed article gains the site header and footer here and is otherwise never normalized.
-        survey_page=apply_site_shell(destination/'survey',head=site_shell.head_assets('en'),top=site_shell.top(path='/survey/'),bottom=site_shell.bottom())
+        survey_page=apply_site_shell(destination/'survey',head=site_shell.head_assets('en'),top=site_shell.top(path='/survey/'),bottom=site_shell.bottom(),
+                                     retitle=lambda title:page_title(re.sub(r'\s*[·|]\s*AwesomeCUA$','',title)))
         if survey_page != {'path':'/survey/','indexable':True,'sha256':hashlib.sha256((destination/'survey/index.html').read_bytes()).hexdigest()}:
             raise ValueError('Survey page does not match its copied bytes')
         manifest.append(dict(survey_page))
@@ -784,7 +788,7 @@ def build_search_pages(destination, rows, coverage, root, *, survey_page=None):
         emit(path,page(title,summary,path,body,schema,lang='zh-CN' if language=='zh' else 'en',alternatives={'en':'/topics/','zh-CN':'/zh/topics/','x-default':'/topics/'}),lastmod=modified([r for members in topic_groups.values() for r in members]),alternates={'en':'/topics/','zh-CN':'/zh/topics/','x-default':'/topics/'})
         for topic,members in topic_groups.items():
             first=topic_path(topic,language)
-            title=topic_name(topic,language)+(' — computer-use research and resources' if language=='en' else '：Computer-Use 研究与资源')
+            title=topic_name(topic,language)+(' — computer-use research' if language=='en' else '：Computer-Use 研究与资源')
             summary=(f'{len(members)} reviewed resources for {topic_name(topic)}, with original sources, full records and citations.' if language=='en' else f'{len(members)} 条已审阅的{topic_name(topic,language)}资源，包含原始来源、完整记录与论文引用。')
             for number in range(1,topic_page_count(topic_counts(members))+1):
                 path=topic_path(topic,language,number)

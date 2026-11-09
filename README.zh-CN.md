@@ -248,7 +248,7 @@ python3 scripts/export_citations.py --format bibtex --output dist/citations.bib
 
 | 状态                  | 已检查的内容                              |
 | ------------------- | ----------------------------------- |
-| `curated`           | 基于一手来源快照的 AI 辅助编辑审阅，涵盖名称、范围、摘要和分类   |
+| `curated`           | 名称、范围、摘要和分类已对照一手来源快照审核   |
 | `metadata_verified` | 对照保留的 arXiv 或出版来源核实书目身份、标题、作者和已记录日期 |
 | `candidate`         | 发现了规范化的 URL 或标识符                    |
 

@@ -1004,7 +1004,7 @@ def enrich(args):
             declaration = card_license(raw)
             slot = "data" if source.path.startswith("/datasets/") or row["kind"] == "dataset" else "weights" if row["kind"] == "model" else None
             if declaration and slot:
-                result["licenses"][slot] = {"declared": declaration, "url": ev["url"], "retrieved_at": ev["retrieved_at"], "basis": "publisher model/dataset card metadata; third-party assets retain their own terms"}
+                result["licenses"][slot] = {"declared": declaration, "url": ev["url"], "retrieved_at": ev["retrieved_at"], "basis": "publisher model/dataset card metadata"}
                 result["evidence"].append({"role": "primary", "method": "huggingface_card", "supports": [f"licenses.{slot}"], **{k: ev[k] for k in ("url", "sha256", "retrieved_at")}})
         if hub_source and source.path.startswith(("/api/datasets/", "/api/models/")):
             try:
@@ -1075,7 +1075,7 @@ def enrich(args):
                 declared = detect_code_license(license_text)
                 # Ambiguous/custom/composite declarations stay unknown rather than being guessed.
                 if declared:
-                    result["licenses"]["code"] = {"declared": declared, "url": license_url, "retrieved_at": info["retrieved_at"], "basis": "repository LICENSE header; " + ("GNU text does not say -only or -or-later; " if "GPL" in declared else "") + "not a weights/data license"}
+                    result["licenses"]["code"] = {"declared": declared, "url": license_url, "retrieved_at": info["retrieved_at"], "basis": "repository LICENSE header" + ("; GNU text names no -only or -or-later variant" if "GPL" in declared else "")}
                     result["evidence"].append({"role": "primary", "method": "license_header", "supports": ["licenses.code"], **{k: info[k] for k in ("url", "sha256", "retrieved_at")}})
                 break
         seen = set()

@@ -76,7 +76,7 @@ class EnrichGitHubTests(unittest.TestCase):
                     self.assertNotIn("code", result["licenses"])
                     self.assertEqual(receipts, [])
                     continue
-                self.assertEqual(result["licenses"], {"code": {"declared": expected, "url": RAW + "LICENSE", "retrieved_at": AT, "basis": "repository LICENSE header; not a weights/data license"}})
+                self.assertEqual(result["licenses"], {"code": {"declared": expected, "url": RAW + "LICENSE", "retrieved_at": AT, "basis": "repository LICENSE header"}})
                 self.assertEqual(receipts, [{"role": "primary", "method": "license_header", "supports": ["licenses.code"], "url": RAW + "LICENSE", "sha256": sha(body), "retrieved_at": AT}])
 
     def test_missing_license_file_falls_through_to_the_next_name(self):

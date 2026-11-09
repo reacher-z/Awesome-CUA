@@ -11,7 +11,7 @@ from site_data import PAPER_KINDS
 
 # llms-full.txt and the catalog Markdown list non-paper kinds first; papers are the largest group.
 FULL_ORDER = ('model', 'dataset', 'benchmark', 'agent', 'framework', 'infrastructure', 'tool', 'product', 'company', 'learning', 'survey', 'paper')
-NOTICE = ('Reviews are AI-assisted inspections of primary sources. Code, data, weights and document licenses are recorded separately.')
+NOTICE = ('Each record is reviewed against its primary sources. Code, data, weights and document licenses are recorded separately.')
 
 
 def inline(text):

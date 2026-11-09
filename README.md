@@ -247,7 +247,7 @@ Use SQLite to join resources, environment/topic facets, and reviewed relations. 
 
 | State               | What has been checked                                                                                            |
 | ------------------- | ---------------------------------------------------------------------------------------------------------------- |
-| `curated`           | AI-assisted editorial review against a first-party source snapshot, with name, scope, summary, and taxonomy      |
+| `curated`           | Name, scope, summary, and taxonomy reviewed against a first-party source snapshot                                |
 | `metadata_verified` | Bibliographic identity, title, authors, and recorded dates checked against retained arXiv or publication sources |
 | `candidate`         | A normalized URL or identifier was discovered                                                                    |
 

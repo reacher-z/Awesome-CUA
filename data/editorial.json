@@ -24082,7 +24082,7 @@
           "declared": "apache-2.0",
           "url": "https://huggingface.co/datasets/mllmTeam/DroidCall/raw/main/README.md",
           "retrieved_at": "2026-10-17T02:02:28Z",
-          "basis": "publisher model/dataset card metadata; third-party assets retain their own terms"
+          "basis": "publisher model/dataset card metadata"
         },
         "reason": "The Hub dataset card declares Apache-2.0 in its metadata header (license: apache-2.0). The companion repository's MIT code license is a separate declaration.",
         "evidence_urls": [
@@ -24811,7 +24811,7 @@
           "declared": "mit",
           "url": "https://huggingface.co/xTRam1/plan-and-act-planner-70b/raw/main/README.md",
           "retrieved_at": "2026-10-17T02:02:28Z",
-          "basis": "publisher model/dataset card metadata; third-party assets retain their own terms"
+          "basis": "publisher model/dataset card metadata"
         },
         "reason": "The model card declares MIT in its metadata header (license: mit), beside a template comment asking the publisher to update it if needed. It is recorded as the publisher's declaration and does not override the Llama-3.3-70B-Instruct base model terms.",
         "evidence_urls": [
@@ -28662,7 +28662,7 @@
           "declared": "mit",
           "url": "https://huggingface.co/datasets/microsoft/WebTailBench/raw/main/README.md",
           "retrieved_at": "2026-10-17T02:42:32Z",
-          "basis": "publisher model/dataset card metadata; third-party assets retain their own terms"
+          "basis": "publisher model/dataset card metadata"
         },
         "reason": "The benchmark's Hub dataset card declares MIT in its metadata header (license: mit).",
         "evidence_urls": [
@@ -28774,7 +28774,7 @@
           "declared": "mit",
           "url": "https://huggingface.co/datasets/microsoft/CUAVerifierBench/raw/main/README.md",
           "retrieved_at": "2026-10-17T02:42:32Z",
-          "basis": "publisher model/dataset card metadata; third-party assets retain their own terms"
+          "basis": "publisher model/dataset card metadata"
         },
         "reason": "The benchmark's Hub dataset card declares MIT in its metadata header (license: mit).",
         "evidence_urls": [
@@ -68955,9 +68955,9 @@
           "declared": "MIT",
           "url": "https://raw.githubusercontent.com/solplum/yunkai/2aa6cd83165bfc201b0128c250e80892895d63af/LICENSE",
           "retrieved_at": "2026-10-20T11:57:22.238029+00:00",
-          "basis": "Complete root MIT license text inspected at the pinned commit. Repository software only; data, weights and third-party assets retain separate terms."
+          "basis": "Complete root MIT license text inspected at the pinned commit; it covers the repository software."
         },
-        "reason": "Complete root MIT license text inspected at the pinned commit. Repository software only; data, weights and third-party assets retain separate terms.",
+        "reason": "Complete root MIT license text inspected at the pinned commit; it covers the repository software.",
         "evidence_urls": [
           "https://raw.githubusercontent.com/solplum/yunkai/2aa6cd83165bfc201b0128c250e80892895d63af/LICENSE"
         ]

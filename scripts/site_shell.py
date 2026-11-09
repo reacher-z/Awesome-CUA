@@ -197,7 +197,7 @@ def header(*, path="/", lang="en", lang_href=None, live=False) -> str:
 <a class="brand" href="{home}" aria-label="Awesome CUA home">{LOGO}<b>Awesome <span>CUA</span></b></a>
 <nav class="nav" aria-label="{"主导航" if zh else "Main navigation"}">{nav}</nav>
 <div class="head-tools">
-<button class="search-trigger js-only" type="button" data-open-palette aria-label="{search_label}">{ic("search")}<span>{search_label}</span><kbd>⌘K</kbd></button>
+<button class="search-trigger js-only" type="button" data-open-palette aria-keyshortcuts="Meta+K Control+K">{ic("search")}<span>{search_label}</span><kbd>⌘K</kbd></button>
 <a class="icon-btn lang" href="{esc(other)}" {lang_attr}><span class="lang-full">{lang_text}</span><span class="vh">{"切换语言" if zh else "Switch language"}</span></a>
 <button class="icon-btn js-only" type="button" data-theme-toggle aria-label="{theme_label}">{ic("auto")}</button>
 {star_button(zh, live)}

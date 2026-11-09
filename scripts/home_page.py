@@ -565,8 +565,7 @@ def year_chart(view, zh=False) -> str:
     bars = ([("更早" if zh else "Earlier", older, "/zh/papers/" if zh else "/papers/")] if older else []) + recent
     top = max(count for _, count, _ in bars)
     latest_year = recent[-1][0]
-    records = "条记录" if zh else "records"
-    items = "".join(f'<li{" class=now" if label == latest_year else ""}><a href="{href}" aria-label="{label}: {fmt(count)} {records}" style="--h:{max(2, round(100 * count / top))}%">'
+    items = "".join(f'<li{" class=now" if label == latest_year else ""}><a href="{href}" style="--h:{max(2, round(100 * count / top))}%">'
                     f'<span class="c">{fmt(count)}</span><span class="bar"><i></i></span><span class="y">{label}</span></a></li>' for label, count, href in bars)
     heading = "按年份统计的已审核论文与综述" if zh else "Reviewed papers and surveys by year"
     note = f"按发表年份统计。{latest_year} 年仍在进行中。" if zh else f"Publication year. {latest_year} is the year so far."

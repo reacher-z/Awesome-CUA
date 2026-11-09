@@ -48,12 +48,23 @@ def compact_entry(record, *, site, page_path, summary):
     return '\n'.join(lines)
 
 
-def kind_markdown(kind, label, records, *, site, snapshot, full_markdown):
+def category_title(label, language='en'):
+    """Category heading; the agent kind reads "Computer-use agents" rather than repeating the noun."""
+    if language == 'zh':
+        return '计算机使用智能体' if label == '智能体' else f'计算机使用智能体{label}'
+    return 'Computer-use agents' if label.lower() == 'agents' else f'Computer-use agent {label.lower()}'
+
+
+def kind_markdown(kind, label, records, *, site, snapshot, full_markdown, language='en'):
     """Markdown version of a category page: every reviewed record of the kind with its full annotation."""
-    lines = [f'# Computer-use agent {label.lower()}', '',
+    lines = [f'# {category_title(label)}', '',
              f'> {plural(len(records), "curated record")} of this kind in the AwesomeCUA catalog, each with its complete annotation, primary evidence and license declarations. Snapshot {snapshot}.', '',
              f'HTML page: {site}/categories/{kind}/ · Catalog index: {site}/llms.txt · API: {site}/api/v1/{"papers" if kind in PAPER_KINDS else "resources"}.json', '',
              NOTICE]
+    if language == 'zh':
+        lines = [f'# {category_title(label, "zh")}', '',
+                 f'> AwesomeCUA 目录收录 {len(records):,} 条已审核{label}。每条附有完整注释、一手证据和许可证信息。快照：{snapshot}。', '',
+                 f'HTML 页面：{site}/zh/categories/{kind}/ · {link("English", site + "/categories/" + kind + "/index.md")} · 目录索引：{site}/llms.txt · API：{site}/api/v1/{"papers" if kind in PAPER_KINDS else "resources"}.json']
     return '\n'.join(lines) + ''.join('\n\n---\n\n' + full_markdown(record, 2).rstrip('\n') for record in records) + '\n'
 
 
@@ -69,7 +80,7 @@ def paper_hub_markdown(papers, surveys, library, topics, *, site, snapshot):
     return '\n'.join(lines) + '\n'
 
 
-def library_markdown(number, pages, records, total, *, site, path_for, full_markdown):
+def library_markdown(number, pages, records, total, *, site, path_for, full_markdown, language='en'):
     """Markdown version of one research-library page: the same papers, in the same order, with full annotations."""
     start = (number - 1) * len(records) if number < pages else total - len(records)
     navigation = [link('Previous page', site + path_for(number - 1) + 'index.md')] if number > 1 else []
@@ -77,10 +88,16 @@ def library_markdown(number, pages, records, total, *, site, path_for, full_mark
     lines = [f'# Computer-use research library, page {number} of {pages}', '',
              f'> Reviewed computer-use papers and surveys {start + 1:,} to {start + len(records):,} of {total:,}, newest publication first, with authors, recorded arXiv versions, citation files and primary evidence.', '',
              f'HTML page: {site}{path_for(number)} · ' + ' · '.join(navigation + [link('All pages', site + '/categories/paper/index.md')]), '', NOTICE]
+    if language == 'zh':
+        navigation = [link('上一页', site + path_for(number - 1) + 'index.md')] if number > 1 else []
+        navigation += [link('下一页', site + path_for(number + 1) + 'index.md')] if number < pages else []
+        lines = [f'# 计算机使用论文库：第 {number} 页，共 {pages} 页', '',
+                 f'> 已审核论文与综述第 {start + 1:,} 至 {start + len(records):,} 条，共 {total:,} 条；按发表时间从新到旧排列，附作者、arXiv 版本、引用文件和一手证据。', '',
+                 f'HTML 页面：{site}{path_for(number)} · {link("English", site + ("/papers/" if number == 1 else f"/papers/page/{number}/") + "index.md")} · ' + ' · '.join(navigation + [link('全部页面', site + '/zh/papers/index.md')])]
     return '\n'.join(lines) + ''.join('\n\n---\n\n' + full_markdown(record, 2).rstrip('\n') for record in records) + '\n'
 
 
-def catalog_markdown(kinds, topics, *, site, counts):
+def catalog_markdown(kinds, topics, *, site, counts, language='en'):
     curated = counts['curated']
     lines = ['# AwesomeCUA resource directory', '',
              f'> {curated["total"]:,} curated computer-use agent resources: {curated["papers_and_surveys"]:,} papers and surveys and {curated["other_resources"]:,} other resources. '
@@ -88,10 +105,16 @@ def catalog_markdown(kinds, topics, *, site, counts):
              f'HTML page: {site}/catalog/ · Catalog index: {site}/llms.txt', '', '## Resource kinds', '']
     lines += [f'- {link(label, site + md_path)}: {plural(count, "curated record")}' for label, count, md_path in kinds]
     lines += ['', '## Topics', ''] + [f'- {link(name, site + path + "index.md")}: {plural(count, "reviewed resource")}' for name, count, path in topics]
+    if language == 'zh':
+        lines = ['# AwesomeCUA 资源目录', '',
+                 f'> {curated["total"]:,} 条已审核的计算机使用智能体资源：论文与综述 {curated["papers_and_surveys"]:,} 条，其他资源 {curated["other_resources"]:,} 条。另有 {counts["awaiting_review"]["metadata_only_records"]:,} 条书目记录待审核。', '',
+                 f'HTML 页面：{site}/zh/catalog/ · {link("English", site + "/catalog/index.md")} · 目录索引：{site}/llms.txt', '', '## 按资源类型浏览', '']
+        lines += [f'- {link(label, site + path)}：{count:,} 条已审核记录' for label, count, path in kinds]
+        lines += ['', '## 主题', ''] + [f'- {link(name, site + path + "index.md")}：{count:,} 条已审核资源' for name, count, path in topics]
     return '\n'.join(lines) + '\n'
 
 
-def home_markdown(newest, kinds, *, site, counts, snapshot):
+def home_markdown(newest, kinds, *, site, counts, snapshot, language='en'):
     curated, waiting = counts['curated'], counts['awaiting_review']
     lines = ['# AwesomeCUA', '',
              f'> A source-backed catalog of computer-use, GUI, browser and mobile agent research and resources: {curated["total"]:,} curated records '
@@ -105,6 +128,18 @@ def home_markdown(newest, kinds, *, site, counts, snapshot):
               f'- {link("Complete curated catalog in one file", site + "/llms-full.txt")}',
               f'- {link("Atom feed", site + "/feed.xml")} and {link("JSON Feed", site + "/feed.json")} of newly reviewed resources',
               f'- {link("Data downloads", site + "/data/")}: JSONL, SQLite, RAG documents and citations']
+    if language == 'zh':
+        lines = ['# AwesomeCUA', '',
+                 f'> 计算机使用、GUI、网页和移动端智能体研究资源目录：{curated["total"]:,} 条已审核记录，其中论文与综述 {curated["papers_and_surveys"]:,} 条，其他资源 {curated["other_resources"]:,} 条。每条记录均核对一手来源。', '',
+                 f'快照：{snapshot}。另有 {waiting["metadata_only_records"]:,} 条书目记录和 {waiting["unresolved_candidate_identifiers"]:,} 个已发现标识符待审核。', '',
+                 f'HTML 页面：{site}/zh/ · {link("English", site + "/index.md")} · 智能体索引：{site}/llms.txt', '', '## 最近审核的资源', '']
+        lines += [f'- {link(name, url)} — {kind} · 审核于 {reviewed[:10]}：{inline(summary)}' for name, url, kind, reviewed, summary in newest]
+        lines += ['', '## 按资源类型浏览', ''] + [f'- {link(label, site + path)}：{count:,} 条已审核记录' for label, count, path in kinds]
+        lines += ['', '## 机器可读入口', '',
+                  f'- {link("静态 API", site + "/api/")}：带版本号的 JSON 和 CSV',
+                  f'- {link("完整已审核目录", site + "/llms-full.txt")}',
+                  f'- {link("Atom 订阅", site + "/feed.xml")}与{link("JSON Feed", site + "/feed.json")}：最新审核的资源',
+                  f'- {link("数据下载", site + "/zh/data/")}：JSONL、SQLite、RAG 文档与引用文件']
     return '\n'.join(lines) + '\n'
 
 
@@ -123,7 +158,7 @@ def llms_full(groups, *, site, snapshot, counts, survey_line, kind_files):
     return '\n'.join(lines) + '\n'
 
 
-def llms_txt(*, site, counts, kinds, library, topics, api_endpoints, guides, survey_links, releases_url):
+def llms_txt(*, site, counts, kinds, zh_kinds, library, topics, api_endpoints, guides, survey_links, releases_url):
     """The /llms.txt index: what the site is and where each Markdown and data entry point lives."""
     curated, waiting = counts['curated'], counts['awaiting_review']
     lines = ['# AwesomeCUA', '',
@@ -137,6 +172,12 @@ def llms_txt(*, site, counts, kinds, library, topics, api_endpoints, guides, sur
     lines += ['', '## Research library', '',
               'Reviewed papers and surveys, newest publication first, 60 per page with full annotations. The same pages in Chinese: ' + site + '/zh/papers/', '']
     lines += [f'- {link(f"Page {number}", site + path + "index.md")}: published {first} to {last}' for number, path, first, last in library]
+    lines += ['', '## 中文页面', '',
+              f'- {link("中文主页", site + "/zh/index.md")}：{curated["total"]:,} 条已审核记录',
+              f'- {link("资源目录", site + "/zh/catalog/index.md")}：{curated["total"]:,} 条已审核记录',
+              f'- {link("数据中心", site + "/zh/data/index.md")}']
+    lines += [f'- {link(label, site + path)}：{count:,} 条已审核记录' for label, count, path in zh_kinds if path != '/zh/papers/index.md']
+    lines += [f'- {link(f"论文库第 {number} 页", site + "/zh" + path + "index.md")}：{first} 至 {last}' for number, path, first, last in library]
     lines += ['', '## Topics', '', 'Reviewed topic membership; resources can belong to several topics, so counts overlap. Chinese topic pages: ' + site + '/zh/topics/', '']
     lines += [f'- {link(name, site + path + "index.md")}: {plural(count, "reviewed resource")}' for name, count, path in topics]
     lines += ['', '## Static API', '', f'Versioned JSON and CSV under {site}/api/v1/; every file carries `version` and `generated_at`.', '',
@@ -145,6 +186,7 @@ def llms_txt(*, site, counts, kinds, library, topics, api_endpoints, guides, sur
               f'- {link("JSON Schema", site + "/api/v1/schema.json")}']
     lines += [f'- {link(name + ".json", url_json)} ({link("CSV", url_csv)}): {inline(description)}' for name, url_json, url_csv, description in api_endpoints]
     lines += ['', '## Agent and RAG access', '', '```sh', 'git clone https://github.com/reacher-z/Awesome-CUA.git', '```', '',
+              f'- {link("Data downloads", site + "/data/index.md")}',
               f'- {link("Agent instructions", site + "/AGENTS.md")}', f'- {link("Human and agent guide", site + "/agents/")}', f'- {link("中文指南", site + "/zh/agents/")}',
               f'- {link("Reviewed retrieval documents", site + "/downloads/rag-documents.jsonl")}', f'- {link("All retrieval documents", site + "/downloads/rag-all-records.jsonl")}',
               f'- {link("Export manifest", site + "/downloads/rag-manifest.json")}', f'- {link("Full catalog JSONL", site + "/downloads/catalog.jsonl")}: every active record, including metadata-only ones']

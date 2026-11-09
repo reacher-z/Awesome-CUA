@@ -15,6 +15,7 @@ from jsonschema import Draft202012Validator
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / 'scripts'))
 from build_site import build_site
+from data_hub import UNITS, byte_size
 from paper_library import library_pages, library_path, reviewed_papers
 from search_pages import KINDS, SITE, eligible, resource_path
 from site_data import utc
@@ -118,6 +119,113 @@ class AgentFileTests(unittest.TestCase):
             text = (self.dest / path).read_text()
             for url in re.findall(r'\]\((https://awesomecua\.com/[^)]*)\)', text):
                 self.assertTrue(self.local(url).is_file(), (path, url))
+
+    def test_chinese_twins_match_html_order_counts_and_language_links(self):
+        pairs = [('zh/index.md', 'index.md'), ('zh/catalog/index.md', 'catalog/index.md')]
+        for kind in KINDS:
+            if kind == 'paper':
+                continue
+            number = 1
+            all_html_urls = []
+            first_md = None
+            while True:
+                path = f'categories/{kind}/' if number == 1 else f'categories/{kind}/page/{number}/'
+                if not (self.dest / path / 'index.html').is_file():
+                    break
+                pairs.append(('zh/' + path + 'index.md', path + 'index.md'))
+                markup = (self.dest / 'zh' / path / 'index.html').read_text()
+                section = markup.split('data-list-rows>', 1)[1].split('</ul>', 1)[0]
+                html_urls = [SITE + href for href in re.findall(r'<h3 class="row-name"><a href="([^"]+)"', section)]
+                md = (self.dest / 'zh' / path / 'index.md').read_text()
+                if number == 1:
+                    first_md = md
+                else:
+                    listed = re.findall(r'^- \[[^]]+\]\((https://awesomecua.com/resources/[^)]+)\)', md, re.M)
+                    self.assertEqual(listed, html_urls, path)
+                all_html_urls += html_urls
+                number += 1
+            self.assertEqual(re.findall(r'^- 目录页面：\s*(\S+)$', first_md, re.M), all_html_urls, kind)
+        for number in range(1, library_pages(self.rows) + 1):
+            path = library_path(number)
+            pairs.append(('zh' + path + 'index.md', path.lstrip('/') + 'index.md'))
+            markup = (self.dest / 'zh' / path.lstrip('/') / 'index.html').read_text()
+            html_ids = [html.unescape(value) for value in re.findall(r'data-resource-id="([^"]+)"', markup)]
+            md = (self.dest / 'zh' / path.lstrip('/') / 'index.md').read_text()
+            self.assertEqual(re.findall(r'^- ID：\s*(\S+)$', md, re.M), html_ids, path)
+        for zh_path, en_path in pairs:
+            zh = (self.dest / zh_path).read_text()
+            en = (self.dest / en_path).read_text()
+            self.assertIn(f'[English]({SITE}/{en_path})', zh, zh_path)
+            self.assertRegex(zh, r'[\u4e00-\u9fff]')
+            if '/categories/' in zh_path and '/page/' in zh_path:
+                continue  # these list only their page records; order and length were checked above
+            numbers = lambda body: [value.rstrip(',') for value in re.findall(r'\d[\d,]*', body.split('\n\n', 2)[1])]
+            self.assertEqual(numbers(zh), numbers(en), zh_path)
+        llms = (self.dest / 'llms.txt').read_text()
+        section = llms.split('## 中文页面\n', 1)[1].split('\n## ', 1)[0]
+        for kind in KINDS:
+            if kind != 'paper':
+                self.assertEqual(section.count(f'{SITE}/zh/categories/{kind}/index.md'), 1)
+        self.assertIn(f'{SITE}/zh/index.md', section)
+        self.assertIn(f'{SITE}/zh/catalog/index.md', section)
+        self.assertIn(f'{SITE}/zh/papers/index.md', section)
+
+    def test_data_twins_match_download_pages(self):
+        manifest = json.loads((self.dest / 'downloads/manifest.json').read_text())
+        by_id = {item['id']: item for item in manifest['artifacts']}
+        reviewed = by_id['rag-reviewed']['count']['value']
+        total = by_id['catalog-jsonl']['count']['value']
+        for prefix, other in [('data', 'zh/data'), ('zh/data', 'data')]:
+            with self.subTest(prefix=prefix):
+                markup = (self.dest / prefix / 'index.html').read_text()
+                markdown = (self.dest / prefix / 'index.md').read_text()
+                self.assertIn(f'[{"English" if prefix.startswith("zh/") else "中文"}]({SITE}/{other}/index.md)', markdown)
+                links = re.findall(r'<a[^>]+href="([^"]+)"[^>]* download', markup)
+                for path in links:
+                    self.assertIn(f']({SITE}{path})', markdown, path)
+                self.assertEqual([item['path'] for item in manifest['artifacts']],
+                                 re.findall(r'^- \[[^]]+\]\(https://awesomecua.com(/(?:downloads|data|schemas)/[^)]+)\)', markdown, re.M))
+                stats = markup.split('<div class="data-stats">', 1)[1].split('</div>', 1)[0]
+                self.assertIn(f'<strong>{reviewed:,}</strong>', stats)
+                self.assertIn(f'<strong>{total-reviewed:,}</strong>', stats)
+                self.assertIn(f'{reviewed:,}', markdown)
+                self.assertIn(f'{total-reviewed:,}', markdown)
+                date = re.search(r'<time datetime="(\d{4}-\d{2}-\d{2})"', markup)[1]
+                self.assertIn(date, markdown)
+                self.assertIn(f'{SITE}/downloads/manifest.json', markdown)
+                self.assertIn(manifest['catalog_sha256'], markdown)
+                for item in manifest['artifacts']:
+                    self.assertIn(item['sha256'], markdown)
+                    language = 'zh' if prefix.startswith('zh/') else 'en'
+                    sep = '：' if language == 'zh' else ': '
+                    self.assertIn(f'- [{item["title"][language]}]({SITE}{item["path"]}) · {item["format"]} · {item["count"]["value"]:,} {UNITS[item["count"]["unit"]][language == "zh"]} · {byte_size(item["bytes"])} · SHA-256{sep}{item["sha256"]}', markdown)
+        llms = (self.dest / 'llms.txt').read_text()
+        self.assertIn(f'{SITE}/data/index.md', llms)
+        self.assertIn(f'{SITE}/zh/data/index.md', llms)
+
+    def test_chinese_record_fields_use_page_vocabulary_and_tight_colons(self):
+        markdown = (self.dest / 'zh/categories/benchmark/index.md').read_text()
+        self.assertIn('- 类型：评测基准', markdown)
+        self.assertIn('- 审核状态：已审核', markdown)
+        self.assertIn('- 范围：核心', markdown)
+        self.assertRegex(markdown, r'(?m)^- 运行环境：[^\n]*桌面')
+        self.assertNotRegex(markdown, r'(?m)^- [^\n]+： ')
+        self.assertNotRegex(markdown, r'(?m)^- (运行环境|主题)：[^\n]*, ')
+        self.assertNotRegex(markdown, r'(?m)^- (code|data|document|weights)( review)?: ')
+        self.assertNotIn('(retrieved ', markdown)
+        self.assertIn('（获取于 ', markdown)
+
+    def test_agent_category_heading_names_the_kind_once(self):
+        for path, heading in (('categories/agent/index.md', '# Computer-use agents\n'), ('zh/categories/agent/index.md', '# 计算机使用智能体\n')):
+            with self.subTest(path=path):
+                self.assertTrue((self.dest / path).read_text().startswith(heading))
+        self.assertIn('<h1>Computer-use agents</h1>', (self.dest / 'categories/agent/index.html').read_text())
+        self.assertIn('<h1>计算机使用智能体</h1>', (self.dest / 'zh/categories/agent/index.html').read_text())
+
+    def test_records_without_scope_notes_skip_the_limitations_section(self):
+        for path in ('categories/tool/index.md', 'zh/categories/tool/index.md'):
+            with self.subTest(path=path):
+                self.assertNotIn('does not establish', (self.dest / path).read_text())
 
     def test_api_files_validate_against_the_published_schema(self):
         schema = json.loads((self.dest / 'api/v1/schema.json').read_text())

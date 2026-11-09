@@ -12,14 +12,16 @@ from collections import Counter, defaultdict
 from specifications import PROFILE_KEYS, comparison_body, profile_export, resource_profile_html, count_text, safe_href
 from agent_pages import agent_guide_body, RELEASES_URL
 from export_citations import citation_bibtex, citation_csl
-from paper_library import PAGE_SIZE, library_pages, library_path, library_years, paper_library, reviewed_papers
+from paper_library import PAGE_SIZE, PLATFORMS, library_pages, library_path, library_years, paper_library, reviewed_papers
 from publication_metadata import AUTHORS_OMITTED, authors_omitted, publication, format_date_parts, record_date_text, record_year
 from topic_pages import KIND_LABELS, write_topic_exports, topic_index_body, topic_body, topic_counts, topic_markdown, topic_name, topic_page_count, topic_path
 from data_hub import build_download_manifest, data_hub_body
+from data_hub import data_hub_markdown
 from site_config import SITE, scan_schedule
 import home_page
+from zh_summaries import zh_summary
 import site_shell
-from agent_files import FULL_ORDER, catalog_markdown, compact_entry, home_markdown, kind_markdown, library_markdown, link, llms_full, llms_txt, paper_hub_markdown
+from agent_files import FULL_ORDER, catalog_markdown, category_title, compact_entry, home_markdown, kind_markdown, library_markdown, link, llms_full, llms_txt, paper_hub_markdown
 from survey_bundle import apply_site_shell
 from discovery_files import FEED_SIZE, FEED_TITLE, feed_entry, robots_txt, write_feeds
 from site_data import PAPER_KINDS, catalog_counts, eligible, latest, newest_reviewed, record_modified, review_dates
@@ -175,7 +177,7 @@ def category_body(kind,label,selected,featured,*,zh=False,total=None,pager=''):
     search=tr('Search all records in this category','搜索此类别的全部记录')
     links+=f'<a href="{esc(wider)}">{search}</a><a href="{"/zh/catalog/" if zh else "/catalog/"}">{tr("All categories","全部类别")}</a>'
     intro=tr(f'{count} reviewed {esc(name)} connected to computer-use, GUI, web, and mobile agents. Each entry links to primary evidence and records its scope.',f'{count} 条已审核的{esc(name)}，涵盖计算机使用、GUI、网页与移动端智能体。每条都链接到一手证据并记录范围。')
-    body=list_head(tr(f'Computer-use agent {name}',f'计算机使用智能体{name}'),intro,links)
+    body=list_head(category_title(name,'zh' if zh else 'en'),intro,links)
     if featured:
         body+=f'<section class="wrap list-all" aria-labelledby="list-featured-h" data-list-featured><div class="sec-head"><div><h2 id="list-featured-h">{tr("Featured","精选")}</h2></div></div><ul class="rows list-rows" data-single>{listing(featured,zh=zh,anchor=False)}</ul></section>'
     tools=''
@@ -318,7 +320,8 @@ def resource_body(record, lookup, incoming=None, pending_review=None):
 def resource_markdown(r, pending_review=None, level=1):
     # `level` is the record's heading level: 1 in its own index.md, 2 inside a per-kind or library file.
     h1,h2,h3='#'*level,'#'*(level+1),'#'*(level+2)
-    lines=[f'{h1} {r["name"]}', '', description(r), '', f'- Catalog URL: {SITE}{resource_path(r)}', f'- Original source: {r["url"]}', f'- Kind: {r["kind"]}', f'- Review: {r["review_status"]}', f'- Scope: {r["scope"]}', f'- Environments: {", ".join(r["environments"])}', f'- Topics: {", ".join(r["topics"])}', f'- Evidence checked: {r["last_verified_at"]}', f'- ID: {r["id"]}', '', h2+' Limitations', '', r["notes"] or 'Inclusion does not establish reproducibility or endorsement.']
+    lines=[f'{h1} {r["name"]}', '', description(r), '', f'- Catalog URL: {SITE}{resource_path(r)}', f'- Original source: {r["url"]}', f'- Kind: {r["kind"]}', f'- Review: {r["review_status"]}', f'- Scope: {r["scope"]}', f'- Environments: {", ".join(r["environments"])}', f'- Topics: {", ".join(r["topics"])}', f'- Evidence checked: {r["last_verified_at"]}', f'- ID: {r["id"]}']
+    if r["notes"]:lines+=['', h2+' Limitations', '', r["notes"]]
     lines+=['',f'- Record JSON: {SITE}{resource_path(r)}record.json']
     hold=reviewer_hold(r,pending_review)
     if hold:
@@ -363,6 +366,48 @@ def resource_markdown(r, pending_review=None, level=1):
     return '\n'.join(line.rstrip() for line in lines)+'\n'
 
 
+def zh_resource_markdown(record, pending_review=None, level=2, *, paper=False):
+    """Keep the full source facts and record order while matching Chinese list summaries."""
+    body = resource_markdown(record, pending_review, level)
+    body = body.replace('\n' + description(record) + '\n', '\n' + (description(record) if paper else zh_summary(record)) + '\n', 1)
+    headings = {'Limitations': '范围记录', 'Recorded reviewer hold': '审核暂缓记录',
+                'Authors': '作者', 'Citation exports': '引用文件', 'Publication record': '发表记录',
+                'Recorded arXiv snapshot': 'arXiv 版本记录', 'Structured profile': '结构化规格',
+                'Count observations': '数量记录', 'License declarations': '许可证信息',
+                'Primary evidence': '一手证据'}
+    for source, target in headings.items():
+        body = re.sub(r'(?m)^(#+) ' + re.escape(source) + r'$', lambda match: match[1] + ' ' + target, body)
+    labels = {'Catalog URL': '目录页面', 'Original source': '原始来源', 'Kind': '类型',
+              'Review': '审核状态', 'Scope': '范围', 'Environments': '运行环境',
+              'Topics': '主题', 'Evidence checked': '证据核查日期', 'ID': 'ID',
+              'Record JSON': '完整记录 JSON', 'Review ledger': '审核记录',
+              'BibTeX': 'BibTeX', 'CSL JSON': 'CSL JSON', 'Version': '版本',
+              'Version source': '版本来源', 'First submission': '首次提交',
+              'Version updated': '版本更新日期', 'Abstract SHA-256': '摘要 SHA-256',
+              'Abstract hash normalization': '摘要哈希规范化方式',
+              'Publication date (recorded precision)': '发表日期', 'Publication source': '发表来源',
+              'Publication BibTeX': '发表版 BibTeX', 'Publication CSL JSON': '发表版 CSL JSON',
+              'Publication evidence': '发表证据', 'Licenses': '许可证'}
+    for source, target in sorted(labels.items(), key=lambda item: -len(item[0])):
+        body = re.sub(r'(?m)^(- )' + re.escape(source) + r':\s?', lambda match: match[1] + target + '：', body)
+    values = {
+        '类型': home_page.KINDS[record['kind']][2],
+        '审核状态': {'curated': '已审核', 'metadata_verified': '仅元数据'}[record['review_status']],
+        '范围': {'core': '核心', 'adjacent': '相关研究', 'relevance_pending': '相关性待审阅'}[record['scope']],
+        '运行环境': '、'.join(PLATFORMS.get(value, (value, value))[1] for value in record['environments']),
+        '主题': '、'.join(topic_name(value, 'zh') for value in record['topics']),
+    }
+    for label, value in values.items():
+        body = re.sub(r'(?m)^(- ' + label + r'：).*$', lambda match: match[1] + value, body)
+    slots = {'code': '代码', 'data': '数据', 'document': '文档', 'weights': '权重'}
+    body = re.sub(r'(?m)^- (code|data|document|weights): not recorded$', lambda match: f'- {slots[match[1]]}：未记录', body)
+    body = re.sub(r'(?m)^- (code|data|document|weights): ', lambda match: f'- {slots[match[1]]}：', body)
+    body = re.sub(r'(?m)^- (code|data|document|weights) review: ', lambda match: f'- {slots[match[1]]}审核：', body)
+    body = re.sub(r'(?m)^  Sources: ', '  来源：', body)
+    body = re.sub(r'(?m)^(- \S+) \(retrieved ([^;]+); SHA-256 ([0-9a-f]+)\)$', r'\1（获取于 \2；SHA-256：\3）', body)
+    return body
+
+
 def repository_stars():
     """Star counts the publication workflow read at build time; without them every star link shows its label alone."""
     try:
@@ -396,6 +441,8 @@ def build_search_pages(destination, rows, coverage, root, *, survey_page=None):
     candidate_manifest=root/'data/github-candidates-manifest.json'
     counts=catalog_counts(rows,coverage,json.loads(candidate_manifest.read_text(encoding='utf-8')) if candidate_manifest.exists() else None)
     def full_markdown(record,level):return resource_markdown(record,pending_reviews.get(record['id']),level)
+    def zh_category_markdown(record,level):return zh_resource_markdown(record,pending_reviews.get(record['id']),level)
+    def zh_paper_markdown(record,level):return zh_resource_markdown(record,pending_reviews.get(record['id']),level,paper=True)
     manifest=[]
     # Sitemap facts per page, kept beside the manifest so its schema and fingerprints stay unchanged.
     sitemap_facts={}
@@ -472,14 +519,14 @@ def build_search_pages(destination, rows, coverage, root, *, survey_page=None):
     for kind,label in KINDS.items():
         selected=sorted([r for r in reviewed if r['kind']==kind],key=lambda r:r['name'].lower())
         if kind=='paper':
-            body=f'<div class="eyebrow">RESOURCE CATEGORY</div><h1>Computer-use agent {esc(label.lower())}</h1><p class="answer-lead">Browse {len(selected)} reviewed {esc(label.lower())} connected to computer-use, GUI, web, and mobile agents. Each entry links to primary evidence and records its scope.</p><p>Review means AI-assisted editorial inspection against primary sources.</p>'
+            body=f'<div class="eyebrow">RESOURCE CATEGORY</div><h1>{esc(category_title(label))}</h1><p class="answer-lead">Browse {len(selected)} reviewed {esc(label.lower())} connected to computer-use, GUI, web, and mobile agents. Each entry links to primary evidence and records its scope.</p>'
             body+='<p>The complete bibliography includes metadata-only discoveries awaiting relevance review. They remain accessible in the <a href="/explore/?kind=paper#catalog">interactive catalog</a> and data downloads.</p>'
             # The paginated /papers/ library is the one indexable list of reviewed papers; this category is a hub into it.
             years=Counter(record_year(r) or 'undated' for r in selected);year_links=library_years(rows);topics=Counter(t for r in selected for t in r['topics'])
             body+='<p>The <a href="/papers/">research library</a> lists every reviewed paper and survey once, newest first, with authors, annotations and citations. Start from a publication year or a topic.</p><div class="page-actions"><a class="button primary" href="/papers/">Open the research library</a><a class="button secondary" href="/categories/survey/">Surveys</a></div>'
             body+='<h2>Papers by publication year</h2><nav class="paper-years" aria-label="Papers by publication year">'+''.join(f'<a href="{year_links[y]}">{"Date not recorded" if y=="undated" else y}<span>{years[y]:,}</span></a>' for y in sorted(years,key=lambda y:(y!='undated',y),reverse=True))+'</nav>'
             body+='<h2>Papers by topic</h2><div class="library-topics">'+''.join(f'<a href="{topic_path(t)}">{esc(topic_name(t))} ({n:,})</a>' for t,n in topics.most_common())+'</div>'
-            schema={"@type":"CollectionPage","name":f'Computer-use agent {label.lower()}'}
+            schema={"@type":"CollectionPage","name":category_title(label)}
         if kind=='paper':
             body+=f'<p><a href="/explore/?kind={kind}#catalog">Search all records in this category</a> · <a href="/catalog/">All categories</a></p>'
             pages=[selected]
@@ -489,6 +536,10 @@ def build_search_pages(destination, rows, coverage, root, *, survey_page=None):
             featured=home_page.featured_records(view) if kind=='benchmark' else []
             (destination/f'categories/{kind}').mkdir(parents=True,exist_ok=True)
             (destination/f'categories/{kind}/index.md').write_text(clean_text(kind_markdown(kind,label,selected,site=SITE,snapshot=snapshot,full_markdown=full_markdown)),encoding='utf-8')
+            zh_label=home_page.KINDS[kind][2]
+            zh_first=destination/f'zh/categories/{kind}/index.md'
+            zh_first.parent.mkdir(parents=True,exist_ok=True)
+            zh_first.write_text(clean_text(kind_markdown(kind,zh_label,selected,site=SITE,snapshot=snapshot,full_markdown=zh_category_markdown,language='zh')),encoding='utf-8')
             # Long categories split into pages that stay inside the per-page byte budget; the filter works on each page.
             pages=([selected[i:i+CATEGORY_PAGE_SIZE] for i in range(0,len(selected),CATEGORY_PAGE_SIZE)] or [[]])
         for number,members in enumerate(pages,1):
@@ -497,9 +548,16 @@ def build_search_pages(destination, rows, coverage, root, *, survey_page=None):
             alternatives=None if kind=='paper' else {'en':path,'zh-CN':zh_path,'x-default':path}
             if number>1:
                 (destination/path.lstrip('/')).mkdir(parents=True,exist_ok=True)
-                markdown=[f'# Computer-use agent {label.lower()}, page {number}','',f'HTML page: {SITE}{path}','',f'Full category annotations: {SITE}/categories/{kind}/index.md','']
+                markdown=[f'# {category_title(label)}, page {number}','',f'HTML page: {SITE}{path}','',f'Full category annotations: {SITE}/categories/{kind}/index.md','']
                 markdown += [f'- {link(r["name"],SITE + resource_path(r))}' for r in members]
                 (destination/path.lstrip('/')/'index.md').write_text(clean_text('\n'.join(markdown)+'\n'),encoding='utf-8')
+                zh_markdown=[f'# {category_title(home_page.KINDS[kind][2],"zh")}：第 {number} 页', '',
+                             f'HTML 页面：{SITE}{zh_path} · {link("English", SITE + path + "index.md")}', '',
+                             f'完整类别注释：{SITE}/zh/categories/{kind}/index.md', '']
+                zh_markdown += [f'- {link(r["name"],SITE + resource_path(r))}：{zh_summary(r)}' for r in members]
+                zh_target=destination/zh_path.lstrip('/')/'index.md'
+                zh_target.parent.mkdir(parents=True,exist_ok=True)
+                zh_target.write_text(clean_text('\n'.join(zh_markdown)+'\n'),encoding='utf-8')
             if kind!='paper':
                 def category_link(n,zh=False):
                     prefix='/zh' if zh else ''
@@ -509,21 +567,21 @@ def build_search_pages(destination, rows, coverage, root, *, survey_page=None):
                 zh_pager='' if len(pages)==1 else '<nav class="pager" aria-label="类别分页">'+''.join(
                     f'<a href="{category_link(n,zh=True)}"' + (' aria-current="page"' if n==number else '') + f'>第 {n} 页</a>' for n in range(1,len(pages)+1))+'</nav>'
                 page_body=category_body(kind,label,members,featured if number==1 else [],total=len(selected),pager=en_pager)
-                schema={"@type":"ItemList","name":f'Computer-use agent {label.lower()}',"numberOfItems":len(members),"itemListElement":[{"@type":"ListItem","position":(number-1)*CATEGORY_PAGE_SIZE+i+1,"url":SITE+resource_path(r),"name":r['name']} for i,r in enumerate(members)]}
+                schema={"@type":"ItemList","name":category_title(label),"numberOfItems":len(members),"itemListElement":[{"@type":"ListItem","position":(number-1)*CATEGORY_PAGE_SIZE+i+1,"url":SITE+resource_path(r),"name":r['name']} for i,r in enumerate(members)]}
             else:
                 page_body=body
             crumbs=[("AwesomeCUA","/"),("Catalog","/catalog/"),(label,f'/categories/{kind}/')]
             if number>1:
                 crumbs.append((f'Page {number}',path))
-            title=f'Computer-use agent {label.lower()}'+(f', page {number}' if number>1 else '')
+            title=category_title(label)+(f', page {number}' if number>1 else '')
             emit(path,page(title,f'Reviewed {label.lower()} for computer-use and GUI agents, with original sources, platform tags, and license evidence.',path,page_body,schema,crumbs=crumbs,alternatives=alternatives,landing=kind!='paper'),lastmod=modified(selected),alternates=alternatives)
             if kind!='paper':
                 zh_name=home_page.KINDS[kind][2]
-                zh_schema={**schema,"name":f'计算机使用智能体{zh_name}'}
+                zh_schema={**schema,"name":category_title(zh_name,"zh")}
                 zh_crumbs=[("AwesomeCUA","/zh/"),("目录","/zh/catalog/"),(zh_name,f'/zh/categories/{kind}/')]
                 if number>1:
                     zh_crumbs.append((f'第 {number} 页',zh_path))
-                zh_title=f'计算机使用智能体{zh_name}'+(f'（第 {number} 页）' if number>1 else '')
+                zh_title=category_title(zh_name,'zh')+(f'（第 {number} 页）' if number>1 else '')
                 zh_body=category_body(kind,label,members,featured if number==1 else [],zh=True,total=len(selected),pager=zh_pager)
                 emit(zh_path,page(zh_title,f'面向计算机使用与 GUI 智能体的已审核{zh_name}，按目录提及次数排序。每条记录都链接到原始来源，并附平台标签、许可证据与审核状态，便于比较和引用。',zh_path,zh_body,zh_schema,lang='zh-CN',crumbs=zh_crumbs,alternatives=alternatives,landing=True),lastmod=modified(selected),alternates=alternatives)
     for kind,plural,title in [('benchmark','benchmarks','Compare GUI-agent benchmark protocols'),('dataset','datasets','Compare GUI-agent training datasets')]:
@@ -543,10 +601,9 @@ def build_search_pages(destination, rows, coverage, root, *, survey_page=None):
             numbered=(f'{title}, page {number}' if language=='en' else f'{title}（第 {number} 页）') if number>1 else title
             crumbs=[root_crumb,(title,library_path(1,language)),(f'Page {number}' if language=='en' else f'第 {number} 页',path)] if number>1 else None
             alternatives={'en':library_path(number),'zh-CN':library_path(number,'zh'),'x-default':library_path(number)}
-            if language=='en':
-                visible=reviewed_papers(rows)[(number-1)*PAGE_SIZE:number*PAGE_SIZE]
-                (destination/path.lstrip('/')).mkdir(parents=True,exist_ok=True)
-                (destination/path.lstrip('/')/'index.md').write_text(clean_text(library_markdown(number,library_count,visible,len(reviewed_papers(rows)),site=SITE,path_for=library_path,full_markdown=full_markdown)),encoding='utf-8')
+            visible=reviewed_papers(rows)[(number-1)*PAGE_SIZE:number*PAGE_SIZE]
+            (destination/path.lstrip('/')).mkdir(parents=True,exist_ok=True)
+            (destination/path.lstrip('/')/'index.md').write_text(clean_text(library_markdown(number,library_count,visible,len(reviewed_papers(rows)),site=SITE,path_for=lambda n: library_path(n,language),full_markdown=full_markdown if language=='en' else zh_paper_markdown,language=language)),encoding='utf-8')
             # Every library page shows totals and year links over all reviewed papers, so all share their latest date.
             emit(path,page(numbered,summary,path,body,schema,lang='zh-CN' if language=='zh' else 'en',alternatives=alternatives,crumbs=crumbs),lastmod=modified(papers),alternates=alternatives)
     topic_manifest,topic_groups=write_topic_exports(destination,rows,(root/'data/catalog.jsonl').read_bytes())
@@ -579,6 +636,8 @@ def build_search_pages(destination, rows, coverage, root, *, survey_page=None):
     topic_rows=[(topic,topic_name(topic),len(members),topic_path(topic)) for topic,members in topic_groups.items()]
     kind_rows=[(label,counts['curated']['by_kind'].get(kind,0),f'/categories/{kind}/index.md') for kind,label in ((k,KINDS[k]) for k in FULL_ORDER)]
     (destination/'catalog/index.md').write_text(clean_text(catalog_markdown(kind_rows,[(name,n,path) for _,name,n,path in topic_rows],site=SITE,counts=counts)),encoding='utf-8')
+    zh_kind_rows=[(home_page.KINDS[kind][2],count,('/zh/papers/index.md' if kind=='paper' else f'/zh/categories/{kind}/index.md')) for (label,count,path),kind in zip(kind_rows,FULL_ORDER)]
+    (destination/'zh/catalog/index.md').write_text(clean_text(catalog_markdown(zh_kind_rows,[(topic_name(topic,'zh'),len(members),topic_path(topic,'zh')) for topic,members in topic_groups.items()],site=SITE,counts=counts,language='zh')),encoding='utf-8')
     linked_papers=[r for r in papers if any(e['type'] in {'documented_by','introduced_by'} for e in incoming.get(r['id'],[]))]
     body='<div class="eyebrow">FOLLOW THE RESEARCH TO THE ASSETS</div><h1>Computer-use papers, code, and datasets</h1><p class="answer-lead">Find the implementations, benchmarks, and datasets connected to reviewed research papers. Every relationship below has a primary-source evidence link.</p><p>Connections describe publication documentation or introduction.</p><div class="reading-list">'
     for paper in linked_papers:
@@ -652,6 +711,9 @@ def build_search_pages(destination, rows, coverage, root, *, survey_page=None):
         ('en','/data/','AwesomeCUA data downloads for people and agents',desc),
         ('zh','/zh/data/','AwesomeCUA 数据中心：完整目录、RAG 与论文引用','下载完整 Computer-Use 资源目录、RAG 检索文档、论文引用和来源文件，查看实际条数、文件大小与 SHA-256 指纹。')]:
         body=data_hub_body(download_manifest,language=language,site_url=SITE,updated=str(snapshot)[:10],preview=data_preview)
+        twin=destination/path.lstrip('/')/'index.md'
+        twin.parent.mkdir(parents=True,exist_ok=True)
+        twin.write_text(clean_text(data_hub_markdown(download_manifest,language=language,site_url=SITE,updated=str(snapshot)[:10])),encoding='utf-8')
         data_schema={**dataset,'url':SITE+path,'description':summary}
         emit(path,page(title,summary,path,body,data_schema,lang='zh-CN' if language=='zh' else 'en',alternatives=data_alternatives,landing=True),lastmod=max(snapshot,modified(rows) or snapshot),alternates=data_alternatives)
     guides=json.loads((root/'data/site-guides.json').read_text(encoding='utf-8'))
@@ -697,6 +759,7 @@ def build_search_pages(destination, rows, coverage, root, *, survey_page=None):
     (destination/'api/index.md').write_text(clean_text(api_docs_markdown(api_index,site=SITE)),encoding='utf-8')
     newest=newest_reviewed(rows,review_times,20)
     (destination/'index.md').write_text(clean_text(home_markdown([(r['name'],SITE+resource_path(r),KINDS[r['kind']],review_times[r['id']],description(r)) for r in newest],kind_rows,site=SITE,counts=counts,snapshot=snapshot)),encoding='utf-8')
+    (destination/'zh/index.md').write_text(clean_text(home_markdown([(r['name'],SITE+resource_path(r),home_page.KINDS[r['kind']][2],review_times[r['id']],zh_summary(r)) for r in newest],zh_kind_rows,site=SITE,counts=counts,snapshot=snapshot,language='zh')),encoding='utf-8')
     survey_links=[]
     survey_line=''
     if survey_page:
@@ -707,7 +770,7 @@ def build_search_pages(destination, rows, coverage, root, *, survey_page=None):
     notes={'paper':f'listed {PAGE_SIZE} per page in the research library below','survey':''}
     llms_kinds=[(label,count,path,notes.get(kind,'')) for (label,count,path),kind in zip(kind_rows,FULL_ORDER)]
     guide_rows=[(g['title'],guide_path(g),g['description']) for g in guides]+[('Editorial policy','/about/','review states, inclusion boundary and corrections'),('Coverage ledger','/coverage/','source populations and known gaps'),('Catalog updates','/updates/','scan schedule and the latest completed scan')]
-    (destination/'llms.txt').write_text(clean_text(llms_txt(site=SITE,counts=counts,kinds=llms_kinds,library=library_ranges,topics=[(name,n,path) for _,name,n,path in topic_rows],
+    (destination/'llms.txt').write_text(clean_text(llms_txt(site=SITE,counts=counts,kinds=llms_kinds,zh_kinds=zh_kind_rows,library=library_ranges,topics=[(name,n,path) for _,name,n,path in topic_rows],
         api_endpoints=[(item['name'],item['json'],item['csv'],item['description']) for item in api_index['endpoints']],guides=guide_rows,survey_links=survey_links,releases_url=RELEASES_URL)),encoding='utf-8')
     groups=[]
     for kind in FULL_ORDER:

@@ -13,7 +13,7 @@
     "dataset_snapshots": 1,
     "fresh_arxiv_bibliography_additions": 14
   },
-  "body_word_count": 11232,
+  "body_word_count": 11228,
   "estimated_reading_minutes": 52,
   "citation_occurrences": 104,
   "tables": [
@@ -79,7 +79,7 @@
     "research/survey/sections/context.html": "cfdb5c357cfb6a427fc197aa0b7797f72ab40d515deac07c4885aaaa6482e68c",
     "research/survey/sections/review-design.html": "e9175c1dd5d7d4a3c73d5eb2e53ba00b9d4c97789c05bcf934a9e84bd06bdab5",
     "research/survey/sections/methods.html": "37a0aa207a16c5acabccf4401eb7e34b47898b58370ad103c7ba855c85aff569",
-    "research/survey/sections/evaluation.html": "34bd325cd757d1360184a72e75f52dfd53c580a75f034adb66e67cfd7436ee9e",
+    "research/survey/sections/evaluation.html": "2bcac8ad7374aa0e96dd92b074ceec8a76362331402a6090e978466ade03d45e",
     "research/survey/sections/human-agency.html": "2f83e37e57ce924abf168d98e38a7b4dd9db6940fde487d3b738d48dd59be31f",
     "research/survey/sections/assets.html": "e65d601af3e7bfeed11ac0a56f1d5ac82f4c79c05178525694ee8465548affc2",
     "research/survey/sections/agenda.html": "3ef6ebc90a28738af7973cbb7329cbc458336fe762ece360ec107852dc616827",
@@ -153,8 +153,8 @@
     },
     {
       "path": "index.html",
-      "bytes": 463264,
-      "sha256": "cfa14e21f7623e9aa2874e43475c30cf308ad9cf559c8b8cd4e60588e0e1b691"
+      "bytes": 463244,
+      "sha256": "7b9929297854f02f0208dad2a23d28c27d3b005e1eb4d28825efdeee6186cedc"
     },
     {
       "path": "references.bib",

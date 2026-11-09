@@ -19,7 +19,7 @@ sys.path.insert(0,str(Path(__file__).resolve().parents[1]/'scripts'))
 from build_site import build_site
 from site_fixture import code_only, shared_site
 import home_page
-from search_pages import SITE, eligible, listing, resource_path, resource_schema, page, incoming_relations
+from search_pages import SITE, eligible, listing, resource_path, resource_schema, page, incoming_relations, zh_resource_path
 from sitemaps import sitemap_urls
 
 ROOT=Path(__file__).resolve().parents[1]
@@ -134,6 +134,26 @@ class SearchPagesTests(unittest.TestCase):
         self.assertIn(form,(self.dest/'index.html').read_text())
         self.assertNotIn('name="lang"',(self.dest/'index.html').read_text())
         self.assertIn(form+'<input type="hidden" name="lang" value="zh">',(self.dest/'zh/index.html').read_text())
+
+    def test_every_reviewed_resource_has_a_chinese_twin_that_names_its_english_page(self):
+        urls=set(sitemap_urls(self.dest,SITE))
+        translations=json.loads((ROOT/'data/translations.zh-CN.json').read_text())
+        for row in self.rows:
+            english,chinese=resource_path(row),zh_resource_path(row)
+            folder=self.dest/chinese.lstrip('/')
+            with self.subTest(row['id']):
+                self.assertEqual((folder/'index.html').is_file(),eligible(row))
+                if not eligible(row):continue
+                self.assertTrue((folder/'index.md').is_file())
+                self.assertIn(SITE+chinese,urls)
+                for path in (english,chinese):
+                    head=(self.dest/path.lstrip('/')/'index.html').read_text().split('</head>',1)[0]
+                    self.assertIn(f'hreflang="en" href="{SITE}{english}"',head)
+                    self.assertIn(f'hreflang="zh-CN" href="{SITE}{chinese}"',head)
+                    self.assertIn(f'hreflang="x-default" href="{SITE}{english}"',head)
+                text=(folder/'index.html').read_text()
+                self.assertIn('<html lang="zh-CN"',text)
+                if row['id'] in translations:self.assertIn(html.escape(translations[row['id']]['summary'],quote=True),text)
 
     def test_chinese_navigation_opens_the_chinese_catalog(self):
         text=(self.dest/'zh/index.html').read_text()

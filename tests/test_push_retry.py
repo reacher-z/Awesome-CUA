@@ -1,3 +1,4 @@
+import json
 import os
 from pathlib import Path
 import subprocess
@@ -14,9 +15,12 @@ CATALOG_STUB = """import os, pathlib, sys
 data = pathlib.Path('data')
 expected = f"{len((data / 'papers.jsonl').read_text().splitlines())} papers\\n"
 with open(os.environ['STUB_LOG'], 'a') as log: log.write(' '.join(sys.argv[1:]) + '\\n')
-if sys.argv[1:] == ['build']: (data / 'count.txt').write_text(expected)
+if sys.argv[1:] == ['build', '--list-outputs']: print('data/count.txt\\nREADME.md\\nREADME.zh-CN.md')
+elif sys.argv[1:] == ['build']: (data / 'count.txt').write_text(expected)
 elif sys.argv[1:] == ['validate']: sys.exit((data / 'count.txt').read_text() != expected)
 """
+
+ROWS = '{"id": "a", "v": 1}\n{"id": "b", "v": 1}\n{"id": "c", "v": 1}\n{"id": "d", "v": 1}\n'
 
 
 def step_script(workflow, name):
@@ -48,7 +52,9 @@ class PushRetryTests(unittest.TestCase):
         self.git("init", "-q", "-b", "main", str(seed), cwd=base)
         self.write(seed, {".gitignore": "dist/\n", "data/papers.jsonl": "a\nc\n", "data/count.txt": "2 papers\n",
                           "data/scan-status.json": "old\n", "docs/notes.md": "notes\n", "README.md": "readme\n",
+                          "data/candidates.jsonl": ROWS, "data/editorial.json": "[]\n",
                           "README.zh-CN.md": "readme\n", "scripts/catalog.py": CATALOG_STUB,
+                          "scripts/replay_scan_commit.py": (ROOT / "scripts" / "replay_scan_commit.py").read_text(),
                           ".indexnow/state.json": "{}\n", "index.html": "<p>old</p>\n"})
         self.commit(seed, "Initial")
         self.git("push", "-q", str(self.origin), "HEAD:main", cwd=seed)
@@ -90,6 +96,12 @@ class PushRetryTests(unittest.TestCase):
         hook.write_text(f'#!/bin/sh\necho rejected >> "{self.base / "pushes.log"}"\nexit 1\n')
         hook.chmod(0o755)
 
+    def reject_pushes(self, count):
+        hook = self.origin / "hooks" / "pre-receive"
+        log = self.base / "pushes.log"
+        hook.write_text(f'#!/bin/sh\n[ "$(wc -l < "{log}" 2>/dev/null || echo 0)" -ge {count} ] && exit 0\necho rejected >> "{log}"\nexit 1\n')
+        hook.chmod(0o755)
+
     def run_step(self, workflow, name):
         result = subprocess.run(["bash", "--noprofile", "--norc", "-eo", "pipefail", "-c", step_script(workflow, name)],
                                 cwd=self.work, env=self.env, capture_output=True, text=True)
@@ -111,28 +123,66 @@ class PushRetryTests(unittest.TestCase):
         self.scan_writes()
         result, output, calls = self.run_step(SCAN, "Commit verified scan output")
         self.assertEqual(result.returncode, 0, result.stdout + result.stderr)
-        self.assertEqual((output, calls), ("pushed=true\n", "build\nvalidate\n"))
+        self.assertEqual((output, calls), ("pushed=true\n", "build --list-outputs\nbuild\nvalidate\n"))
         self.assertEqual(self.head("main~1"), moved)
         self.assertEqual((self.show("data/papers.jsonl"), self.show("data/count.txt")), ("a\nb\nc\nd\n", "4 papers\n"))
         self.assertEqual((self.show("docs/notes.md"), self.show("data/scan-status.json")), ("edited\n", "scan\n"))
 
-    def test_scan_reports_a_conflicting_main_and_pushes_nothing(self):
-        moved = self.maintainer_pushes({"data/scan-status.json": "maintainer\n"})
+    def test_scan_takes_main_build_outputs_and_rebuilds_them_on_a_conflict(self):
+        moved = self.maintainer_pushes({"README.md": "maintainer\n", "data/count.txt": "9 papers\n"})
         self.scan_writes()
+        self.write(self.work, {"README.md": "scan\n"})
+        result, output, calls = self.run_step(SCAN, "Commit verified scan output")
+        self.assertEqual(result.returncode, 0, result.stdout + result.stderr)
+        self.assertEqual((output, calls), ("pushed=true\n", "build --list-outputs\nbuild\nvalidate\n"))
+        self.assertEqual(self.head("main~1"), moved)
+        self.assertEqual((self.show("README.md"), self.show("data/count.txt")), ("maintainer\n", "3 papers\n"))
+        self.assertEqual(self.show("data/papers.jsonl"), "a\nb\nc\n")
+
+    def test_scan_keeps_its_own_receipts_on_a_conflict(self):
+        self.maintainer_pushes({"data/scan-status.json": "maintainer\n"})
+        self.scan_writes()
+        result, output, _ = self.run_step(SCAN, "Commit verified scan output")
+        self.assertEqual(result.returncode, 0, result.stdout + result.stderr)
+        self.assertEqual((output, self.show("data/scan-status.json")), ("pushed=true\n", "scan\n"))
+
+    def test_scan_merges_conflicting_candidate_rows_by_id(self):
+        self.maintainer_pushes({"data/candidates.jsonl": ROWS.replace('"a", "v": 1', '"a", "v": 2').replace('{"id": "d", "v": 1}\n', '') + '{"id": "e", "v": 1}\n'})
+        self.scan_writes()
+        self.write(self.work, {"data/candidates.jsonl": ROWS.replace('"a", "v": 1', '"a", "v": 3').replace('"b", "v": 1', '"b", "v": 3') + '{"id": "f", "v": 1}\n'})
+        result, output, _ = self.run_step(SCAN, "Commit verified scan output")
+        self.assertEqual(result.returncode, 0, result.stdout + result.stderr)
+        self.assertEqual(output, "pushed=true\n")
+        rows = {row["id"]: row["v"] for row in map(json.loads, self.show("data/candidates.jsonl").splitlines())}
+        self.assertEqual(rows, {"a": 2, "b": 3, "c": 1, "e": 1, "f": 1})
+
+    def test_scan_retries_while_main_keeps_moving(self):
+        self.reject_pushes(2)
+        self.scan_writes()
+        result, output, calls = self.run_step(SCAN, "Commit verified scan output")
+        self.assertEqual(result.returncode, 0, result.stdout + result.stderr)
+        self.assertEqual((output, calls), ("pushed=true\n", "build --list-outputs\nbuild\nvalidate\n" * 2))
+        self.assertEqual(self.show("data/scan-status.json"), "scan\n")
+
+    def test_scan_reports_a_conflicting_main_and_pushes_nothing(self):
+        moved = self.maintainer_pushes({"data/editorial.json": "[1]\n"})
+        self.scan_writes()
+        self.write(self.work, {"data/editorial.json": "[2]\n"})
         result, output, calls = self.run_step(SCAN, "Commit verified scan output")
         self.assertNotEqual(result.returncode, 0)
         self.assertIn("::error::main moved during the scan", result.stdout)
-        self.assertEqual((self.head(), output, calls), (moved, "", ""))
+        self.assertIn("Not replayed: data/editorial.json", result.stdout)
+        self.assertEqual((self.head(), output, calls), (moved, "", "build --list-outputs\n"))
         self.assertFalse((self.work / ".git" / "rebase-merge").exists())
 
-    def test_scan_stops_after_three_push_attempts(self):
+    def test_scan_stops_after_five_push_attempts(self):
         self.reject_every_push()
         self.scan_writes()
         result, output, calls = self.run_step(SCAN, "Commit verified scan output")
         self.assertNotEqual(result.returncode, 0)
-        self.assertIn("::error::The scan commit was not pushed to main after 3 attempts", result.stdout)
-        self.assertEqual((self.base / "pushes.log").read_text(), "rejected\n" * 3)
-        self.assertEqual((output, calls), ("", "build\nvalidate\n" * 2))
+        self.assertIn("::error::The scan commit was not pushed to main after 5 attempts", result.stdout)
+        self.assertEqual((self.base / "pushes.log").read_text(), "rejected\n" * 5)
+        self.assertEqual((output, calls), ("", "build --list-outputs\nbuild\nvalidate\n" * 4))
 
     def test_publish_snapshot_replays_onto_a_moved_main(self):
         moved = self.maintainer_pushes({"docs/notes.md": "edited\n"})

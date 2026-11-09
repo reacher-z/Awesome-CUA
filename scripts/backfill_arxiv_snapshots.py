@@ -23,6 +23,7 @@ import xml.etree.ElementTree as ET
 
 import catalog
 from arxiv_metadata import ATOM, entry_snapshot
+from publication_metadata import authors_omitted
 
 SNAPSHOT_PATH = "details.arxiv_snapshot"
 BodyLoader = Callable[[str], bytes]
@@ -113,6 +114,8 @@ def _matching_snapshot(record, receipt, feeds):
         "updated_at": _text(entry, "updated")[:10] or None,
     }
     for field, observed in facts.items():
+        if field == "authors" and authors_omitted(record) and observed:
+            continue  # The catalog lists no authors for this record; the original entry still names some.
         if not observed or record.get(field) != observed:
             raise ValueError(f"original entry {field} does not match retained record")
     if any(not name for name in facts["authors"]):

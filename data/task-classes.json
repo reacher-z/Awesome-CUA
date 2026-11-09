@@ -1,0 +1,2661 @@
+{
+ "realms": [
+  {
+   "id": "R01",
+   "name": "Platform & System Operations",
+   "zh": "平台与系统运维"
+  },
+  {
+   "id": "R02",
+   "name": "Software Engineering",
+   "zh": "软件工程"
+  },
+  {
+   "id": "R03",
+   "name": "Data, AI & Infrastructure",
+   "zh": "数据、AI与基础设施"
+  },
+  {
+   "id": "R04",
+   "name": "Information & Document Work",
+   "zh": "信息检索与文档办公"
+  },
+  {
+   "id": "R05",
+   "name": "Business & Organizational Operations",
+   "zh": "商业与组织运营"
+  },
+  {
+   "id": "R06",
+   "name": "Creative & Media Production",
+   "zh": "创意与媒体制作"
+  },
+  {
+   "id": "R07",
+   "name": "Engineering & Physical Systems",
+   "zh": "工程与物理系统"
+  },
+  {
+   "id": "R08",
+   "name": "Science & Research",
+   "zh": "科学研究"
+  },
+  {
+   "id": "R09",
+   "name": "Health & Medicine",
+   "zh": "医疗健康"
+  },
+  {
+   "id": "R10",
+   "name": "Law & Public Services",
+   "zh": "法律与公共服务"
+  },
+  {
+   "id": "R11",
+   "name": "Communication & Collaboration",
+   "zh": "沟通协作与社交"
+  },
+  {
+   "id": "R12",
+   "name": "Everyday Life & Consumer Services",
+   "zh": "日常生活与消费"
+  },
+  {
+   "id": "R13",
+   "name": "Games & Real-time Interaction",
+   "zh": "游戏与实时交互"
+  },
+  {
+   "id": "R14",
+   "name": "Finance, Accounting & Financial Services",
+   "zh": "金融、会计与财务服务"
+  },
+  {
+   "id": "R15",
+   "name": "Education, Learning & Knowledge Services",
+   "zh": "教育、学习与知识服务"
+  }
+ ],
+ "classes": [
+  {
+   "id": "R01.01.01.01",
+   "realm": "R01",
+   "name": "Appearance & desktop shell",
+   "zh": "外观与桌面外壳"
+  },
+  {
+   "id": "R01.01.01.02",
+   "realm": "R01",
+   "name": "Display, sound, input, voice & shortcuts",
+   "zh": "显示、声音、输入、语音与快捷键"
+  },
+  {
+   "id": "R01.01.01.03",
+   "realm": "R01",
+   "name": "Attention, focus & power policy",
+   "zh": "通知、专注与电源策略"
+  },
+  {
+   "id": "R01.01.01.04",
+   "realm": "R01",
+   "name": "Accounts, locale & default apps",
+   "zh": "账户、区域与默认应用"
+  },
+  {
+   "id": "R01.01.01.05",
+   "realm": "R01",
+   "name": "Online account settings, privacy & 2FA",
+   "zh": "在线账户设置、隐私与双重验证"
+  },
+  {
+   "id": "R01.01.01.06",
+   "realm": "R01",
+   "name": "Application preferences & themes",
+   "zh": "应用偏好与主题"
+  },
+  {
+   "id": "R01.01.02.01",
+   "realm": "R01",
+   "name": "Window layouts, desktops & displays",
+   "zh": "窗口布局、虚拟桌面与多屏"
+  },
+  {
+   "id": "R01.01.02.02",
+   "realm": "R01",
+   "name": "Screenshots, recordings & clipboard",
+   "zh": "截图、录屏与剪贴板"
+  },
+  {
+   "id": "R01.02.01.01",
+   "realm": "R01",
+   "name": "Find & browse by attributes",
+   "zh": "按属性查找与浏览"
+  },
+  {
+   "id": "R01.02.01.02",
+   "realm": "R01",
+   "name": "Rule-based bulk organize & rename",
+   "zh": "规则化批量整理与重命名"
+  },
+  {
+   "id": "R01.02.01.03",
+   "realm": "R01",
+   "name": "Content-aware curation",
+   "zh": "按内容整理"
+  },
+  {
+   "id": "R01.02.01.04",
+   "realm": "R01",
+   "name": "Disks, volumes & storage cleanup",
+   "zh": "磁盘、卷与存储清理"
+  },
+  {
+   "id": "R01.02.02.01",
+   "realm": "R01",
+   "name": "Cloud drives & network shares",
+   "zh": "云盘与网络共享"
+  },
+  {
+   "id": "R01.03.01.01",
+   "realm": "R01",
+   "name": "GUI install, update & removal",
+   "zh": "图形化安装、更新与卸载"
+  },
+  {
+   "id": "R01.03.01.02",
+   "realm": "R01",
+   "name": "Package managers & environment repair",
+   "zh": "包管理与环境修复"
+  },
+  {
+   "id": "R01.04.01.01",
+   "realm": "R01",
+   "name": "Network, VPN & proxy configuration and testing",
+   "zh": "网络、VPN 与代理配置及测试"
+  },
+  {
+   "id": "R01.04.01.02",
+   "realm": "R01",
+   "name": "Peripherals & cross-device continuity",
+   "zh": "外设与跨设备协同"
+  },
+  {
+   "id": "R01.05.01.01",
+   "realm": "R01",
+   "name": "App privacy permissions",
+   "zh": "应用隐私权限"
+  },
+  {
+   "id": "R01.05.01.02",
+   "realm": "R01",
+   "name": "Protection, encryption & backup",
+   "zh": "防护、加密与备份"
+  },
+  {
+   "id": "R01.05.01.03",
+   "realm": "R01",
+   "name": "Password manager (test vault)",
+   "zh": "密码管理器（测试库）"
+  },
+  {
+   "id": "R01.05.02.01",
+   "realm": "R01",
+   "name": "Deceptive dialogs, phishing & injected instructions",
+   "zh": "欺骗性弹窗、钓鱼与注入指令"
+  },
+  {
+   "id": "R01.05.02.02",
+   "realm": "R01",
+   "name": "Confirmation gates & human handoff",
+   "zh": "确认关口与人工交接"
+  },
+  {
+   "id": "R01.06.01.01",
+   "realm": "R01",
+   "name": "Visual automation builders",
+   "zh": "可视化自动化编排"
+  },
+  {
+   "id": "R01.06.01.02",
+   "realm": "R01",
+   "name": "OS scripting & scheduled jobs",
+   "zh": "系统脚本与定时任务"
+  },
+  {
+   "id": "R01.06.01.03",
+   "realm": "R01",
+   "name": "RPA bots & no-code integrations",
+   "zh": "RPA机器人与无代码集成"
+  },
+  {
+   "id": "R01.06.01.04",
+   "realm": "R01",
+   "name": "Shell operations & system state queries",
+   "zh": "Shell操作与系统状态查询"
+  },
+  {
+   "id": "R01.07.01.01",
+   "realm": "R01",
+   "name": "Performance, storage & log diagnosis",
+   "zh": "性能、存储与日志诊断"
+  },
+  {
+   "id": "R01.07.01.02",
+   "realm": "R01",
+   "name": "Connectivity & app configuration repair",
+   "zh": "网络与应用配置修复"
+  },
+  {
+   "id": "R01.08.01.01",
+   "realm": "R01",
+   "name": "Device policies & configuration profiles",
+   "zh": "设备策略与配置描述文件"
+  },
+  {
+   "id": "R01.08.01.02",
+   "realm": "R01",
+   "name": "Directory, identity & remote support",
+   "zh": "目录、身份与远程支持"
+  },
+  {
+   "id": "R01.09.01.01",
+   "realm": "R01",
+   "name": "Accessibility settings",
+   "zh": "无障碍设置"
+  },
+  {
+   "id": "R01.09.01.02",
+   "realm": "R01",
+   "name": "Screen-reader & keyboard-only operation",
+   "zh": "读屏与纯键盘操作"
+  },
+  {
+   "id": "R01.10.01.01",
+   "realm": "R01",
+   "name": "Tabs, profiles, history & site settings",
+   "zh": "标签页、配置文件、历史与站点设置"
+  },
+  {
+   "id": "R01.10.01.02",
+   "realm": "R01",
+   "name": "Downloads, uploads & file dialogs",
+   "zh": "下载、上传与文件对话框"
+  },
+  {
+   "id": "R01.10.01.03",
+   "realm": "R01",
+   "name": "Pop-ups, consent walls & session interruptions",
+   "zh": "弹窗、同意墙与会话中断"
+  },
+  {
+   "id": "R01.10.01.04",
+   "realm": "R01",
+   "name": "Complex web widgets",
+   "zh": "复杂网页控件"
+  },
+  {
+   "id": "R01.11.01.01",
+   "realm": "R01",
+   "name": "Home screen, notifications & quick settings",
+   "zh": "主屏、通知栏与快捷设置"
+  },
+  {
+   "id": "R01.11.01.02",
+   "realm": "R01",
+   "name": "Runtime permissions, recents & split screen",
+   "zh": "运行时权限、多任务与分屏"
+  },
+  {
+   "id": "R01.11.01.03",
+   "realm": "R01",
+   "name": "On-device files & share sheet",
+   "zh": "设备文件与分享面板"
+  },
+  {
+   "id": "R01.11.02.01",
+   "realm": "R01",
+   "name": "Swipe, slider & picker precision",
+   "zh": "滑动、滑块与选择器精度"
+  },
+  {
+   "id": "R01.11.02.02",
+   "realm": "R01",
+   "name": "Long-press, selection & drag reordering",
+   "zh": "长按、选择与拖动排序"
+  },
+  {
+   "id": "R01.11.02.03",
+   "realm": "R01",
+   "name": "Pinch, rotate & map manipulation",
+   "zh": "双指缩放、旋转与地图操作"
+  },
+  {
+   "id": "R01.11.03.01",
+   "realm": "R01",
+   "name": "Watch, foldable & tablet interactions",
+   "zh": "手表、折叠屏与平板交互"
+  },
+  {
+   "id": "R02.01.01.01",
+   "realm": "R02",
+   "name": "Issue resolution in a repository",
+   "zh": "仓库问题修复"
+  },
+  {
+   "id": "R02.01.01.02",
+   "realm": "R02",
+   "name": "Feature implementation & refactoring",
+   "zh": "功能实现与重构"
+  },
+  {
+   "id": "R02.01.01.03",
+   "realm": "R02",
+   "name": "Migration & modernization",
+   "zh": "迁移与现代化"
+  },
+  {
+   "id": "R02.01.02.01",
+   "realm": "R02",
+   "name": "Library or service from spec + tests",
+   "zh": "按规格与测试实现库或服务"
+  },
+  {
+   "id": "R02.01.02.02",
+   "realm": "R02",
+   "name": "Reimplementation from behavior",
+   "zh": "依行为重新实现"
+  },
+  {
+   "id": "R02.02.01.01",
+   "realm": "R02",
+   "name": "Build & dependency repair",
+   "zh": "构建与依赖修复"
+  },
+  {
+   "id": "R02.02.01.02",
+   "realm": "R02",
+   "name": "Test authoring, smoke tests & CI pipelines",
+   "zh": "测试编写、冒烟测试与 CI 流水线"
+  },
+  {
+   "id": "R02.02.01.03",
+   "realm": "R02",
+   "name": "Packaging, signing & release",
+   "zh": "打包、签名与发布"
+  },
+  {
+   "id": "R02.02.01.04",
+   "realm": "R02",
+   "name": "Repository hosting & merge-request administration",
+   "zh": "代码托管与合并请求管理"
+  },
+  {
+   "id": "R02.03.01.01",
+   "realm": "R02",
+   "name": "Debugging & runtime inspection",
+   "zh": "调试与运行时检查"
+  },
+  {
+   "id": "R02.03.01.02",
+   "realm": "R02",
+   "name": "Performance profiling & optimization",
+   "zh": "性能剖析与优化"
+  },
+  {
+   "id": "R02.03.01.03",
+   "realm": "R02",
+   "name": "IDE & editor setup and operations",
+   "zh": "IDE 与编辑器配置和操作"
+  },
+  {
+   "id": "R02.04.01.01",
+   "realm": "R02",
+   "name": "Design or screenshot to working page",
+   "zh": "设计稿/截图转页面"
+  },
+  {
+   "id": "R02.04.01.02",
+   "realm": "R02",
+   "name": "Rebuild a site from browsing it",
+   "zh": "通过浏览复刻网站"
+  },
+  {
+   "id": "R02.04.01.03",
+   "realm": "R02",
+   "name": "Visual front-end bug fixing",
+   "zh": "前端视觉缺陷修复"
+  },
+  {
+   "id": "R02.04.02.01",
+   "realm": "R02",
+   "name": "No-code builders & CMS block editors",
+   "zh": "无代码建站与区块编辑器"
+  },
+  {
+   "id": "R02.05.01.01",
+   "realm": "R02",
+   "name": "Mobile app build & simulator testing",
+   "zh": "移动应用构建与模拟器测试"
+  },
+  {
+   "id": "R02.05.01.02",
+   "realm": "R02",
+   "name": "Desktop app & UI framework work",
+   "zh": "桌面应用与UI框架"
+  },
+  {
+   "id": "R02.06.01.01",
+   "realm": "R02",
+   "name": "Firmware & microcontroller programming",
+   "zh": "固件与单片机编程"
+  },
+  {
+   "id": "R02.06.01.02",
+   "realm": "R02",
+   "name": "RTL design & verification",
+   "zh": "RTL设计与验证"
+  },
+  {
+   "id": "R02.07.01.01",
+   "realm": "R02",
+   "name": "Exploratory UI testing & bug reports",
+   "zh": "探索式UI测试与缺陷报告"
+  },
+  {
+   "id": "R02.07.01.02",
+   "realm": "R02",
+   "name": "UI test automation",
+   "zh": "UI自动化测试"
+  },
+  {
+   "id": "R02.07.01.03",
+   "realm": "R02",
+   "name": "Accessibility audit & remediation",
+   "zh": "无障碍审计与修复"
+  },
+  {
+   "id": "R02.08.01.01",
+   "realm": "R02",
+   "name": "Node-graph & dataflow programming",
+   "zh": "节点图与数据流编程"
+  },
+  {
+   "id": "R02.08.01.02",
+   "realm": "R02",
+   "name": "Low-code app builders",
+   "zh": "低代码应用搭建"
+  },
+  {
+   "id": "R03.01.01.01",
+   "realm": "R03",
+   "name": "Enterprise text-to-SQL",
+   "zh": "企业级Text-to-SQL"
+  },
+  {
+   "id": "R03.01.01.02",
+   "realm": "R03",
+   "name": "Database administration in GUI clients",
+   "zh": "图形化数据库管理"
+  },
+  {
+   "id": "R03.01.02.01",
+   "realm": "R03",
+   "name": "ELT/ETL pipeline construction",
+   "zh": "ELT/ETL管道搭建"
+  },
+  {
+   "id": "R03.01.02.02",
+   "realm": "R03",
+   "name": "Data cleaning & reconciliation at scale",
+   "zh": "大规模数据清洗与对账"
+  },
+  {
+   "id": "R03.02.01.01",
+   "realm": "R03",
+   "name": "Exploratory & statistical analysis",
+   "zh": "探索性与统计分析"
+  },
+  {
+   "id": "R03.02.01.02",
+   "realm": "R03",
+   "name": "BI dashboard authoring",
+   "zh": "BI仪表板制作"
+  },
+  {
+   "id": "R03.02.01.03",
+   "realm": "R03",
+   "name": "Reading dashboards & rendered charts",
+   "zh": "读取仪表板与渲染图表"
+  },
+  {
+   "id": "R03.03.01.01",
+   "realm": "R03",
+   "name": "End-to-end ML engineering",
+   "zh": "端到端机器学习工程"
+  },
+  {
+   "id": "R03.03.01.02",
+   "realm": "R03",
+   "name": "Research reproduction & experiments",
+   "zh": "研究复现与实验"
+  },
+  {
+   "id": "R03.03.01.03",
+   "realm": "R03",
+   "name": "Model compression, conversion & inference optimization",
+   "zh": "模型压缩、转换与推理优化"
+  },
+  {
+   "id": "R03.03.02.01",
+   "realm": "R03",
+   "name": "Experiment tracking & model registry",
+   "zh": "实验追踪与模型注册"
+  },
+  {
+   "id": "R03.04.01.01",
+   "realm": "R03",
+   "name": "Containers, orchestration & IaC",
+   "zh": "容器、编排与基础设施即代码"
+  },
+  {
+   "id": "R03.04.01.02",
+   "realm": "R03",
+   "name": "Incident diagnosis & remediation",
+   "zh": "故障诊断与恢复"
+  },
+  {
+   "id": "R03.04.01.03",
+   "realm": "R03",
+   "name": "Cloud console operations",
+   "zh": "云控制台操作"
+  },
+  {
+   "id": "R03.04.01.04",
+   "realm": "R03",
+   "name": "Server & service configuration",
+   "zh": "服务器与服务配置"
+  },
+  {
+   "id": "R03.05.01.01",
+   "realm": "R03",
+   "name": "CTF-style offensive challenges (lab)",
+   "zh": "CTF攻防挑战（实验环境）"
+  },
+  {
+   "id": "R03.05.01.02",
+   "realm": "R03",
+   "name": "Vulnerability reproduction & patching",
+   "zh": "漏洞复现与修补"
+  },
+  {
+   "id": "R03.05.01.03",
+   "realm": "R03",
+   "name": "SOC alert triage & SIEM investigation",
+   "zh": "SOC告警分诊与SIEM调查"
+  },
+  {
+   "id": "R03.05.01.04",
+   "realm": "R03",
+   "name": "Disk, memory & binary forensics",
+   "zh": "磁盘、内存与二进制取证"
+  },
+  {
+   "id": "R03.05.01.05",
+   "realm": "R03",
+   "name": "Hardening & compliance baselines",
+   "zh": "加固与合规基线"
+  },
+  {
+   "id": "R03.05.01.06",
+   "realm": "R03",
+   "name": "Secrets hygiene & history rewriting",
+   "zh": "密钥卫生与历史重写"
+  },
+  {
+   "id": "R03.06.01.01",
+   "realm": "R03",
+   "name": "Network configuration & simulation",
+   "zh": "网络配置与仿真"
+  },
+  {
+   "id": "R03.06.01.02",
+   "realm": "R03",
+   "name": "Packet capture analysis",
+   "zh": "抓包分析"
+  },
+  {
+   "id": "R03.07.01.01",
+   "realm": "R03",
+   "name": "Optimization modeling",
+   "zh": "优化建模"
+  },
+  {
+   "id": "R03.07.01.02",
+   "realm": "R03",
+   "name": "Quantum circuit design & simulation",
+   "zh": "量子电路设计与仿真"
+  },
+  {
+   "id": "R03.08.01.01",
+   "realm": "R03",
+   "name": "Image boxes, polygons & masks",
+   "zh": "图像框、多边形与掩码"
+  },
+  {
+   "id": "R03.08.01.02",
+   "realm": "R03",
+   "name": "Video tracking annotation",
+   "zh": "视频跟踪标注"
+  },
+  {
+   "id": "R03.08.01.03",
+   "realm": "R03",
+   "name": "Text, audio & document labeling",
+   "zh": "文本、音频与文档标注"
+  },
+  {
+   "id": "R03.08.01.04",
+   "realm": "R03",
+   "name": "Annotation project setup & QA review",
+   "zh": "标注项目搭建与质检"
+  },
+  {
+   "id": "R04.01.01.01",
+   "realm": "R04",
+   "name": "Hard-to-find multi-hop facts",
+   "zh": "多跳难找事实"
+  },
+  {
+   "id": "R04.01.01.02",
+   "realm": "R04",
+   "name": "Wide aggregation into a table",
+   "zh": "广度聚合成表"
+  },
+  {
+   "id": "R04.01.01.03",
+   "realm": "R04",
+   "name": "Cited research reports",
+   "zh": "带引用的研究报告"
+  },
+  {
+   "id": "R04.01.02.01",
+   "realm": "R04",
+   "name": "Faceted search with filters & sorting",
+   "zh": "带筛选排序的分面检索"
+  },
+  {
+   "id": "R04.01.02.02",
+   "realm": "R04",
+   "name": "Statistical portals & interactive charts",
+   "zh": "统计门户与交互图表"
+  },
+  {
+   "id": "R04.01.02.03",
+   "realm": "R04",
+   "name": "Image, video & map evidence",
+   "zh": "图片、视频与地图证据"
+  },
+  {
+   "id": "R04.01.02.04",
+   "realm": "R04",
+   "name": "Single-site lookup, aggregation & saved items",
+   "zh": "单站点查询、汇总与收藏项"
+  },
+  {
+   "id": "R04.02.01.01",
+   "realm": "R04",
+   "name": "Long-document structure, styles & templates",
+   "zh": "长文档结构、样式与模板"
+  },
+  {
+   "id": "R04.02.01.02",
+   "realm": "R04",
+   "name": "Track changes, comments & redlining",
+   "zh": "修订、批注与比对"
+  },
+  {
+   "id": "R04.02.01.03",
+   "realm": "R04",
+   "name": "Mail merge, fields & references",
+   "zh": "邮件合并、域与引用"
+  },
+  {
+   "id": "R04.02.01.04",
+   "realm": "R04",
+   "name": "Precise in-place text editing & selection",
+   "zh": "精确原位文本编辑与选择"
+  },
+  {
+   "id": "R04.02.01.05",
+   "realm": "R04",
+   "name": "Everyday formatting, tables & quick edits",
+   "zh": "日常格式、表格与快速编辑"
+  },
+  {
+   "id": "R04.03.01.01",
+   "realm": "R04",
+   "name": "Cleaning, formulas & lookups",
+   "zh": "清洗、公式与查找"
+  },
+  {
+   "id": "R04.03.01.02",
+   "realm": "R04",
+   "name": "Pivot tables & grouping",
+   "zh": "数据透视与分组"
+  },
+  {
+   "id": "R04.03.01.03",
+   "realm": "R04",
+   "name": "Spreadsheet charts",
+   "zh": "表格图表"
+  },
+  {
+   "id": "R04.03.01.04",
+   "realm": "R04",
+   "name": "Formatting, view, validation & print layout",
+   "zh": "格式、视图、验证与打印布局"
+  },
+  {
+   "id": "R04.03.01.05",
+   "realm": "R04",
+   "name": "Workbook auditing & error tracing",
+   "zh": "工作簿审计与错误追踪"
+  },
+  {
+   "id": "R04.03.01.06",
+   "realm": "R04",
+   "name": "Spreadsheet macros & scripts",
+   "zh": "表格宏与脚本"
+  },
+  {
+   "id": "R04.03.02.01",
+   "realm": "R04",
+   "name": "Desktop database apps",
+   "zh": "桌面数据库应用"
+  },
+  {
+   "id": "R04.04.01.01",
+   "realm": "R04",
+   "name": "Deck assembly from source content",
+   "zh": "依据素材组装演示文稿"
+  },
+  {
+   "id": "R04.04.01.02",
+   "realm": "R04",
+   "name": "Slide layout, alignment & overflow repair",
+   "zh": "版式、对齐与溢出修复"
+  },
+  {
+   "id": "R04.04.01.03",
+   "realm": "R04",
+   "name": "Themes, masters & brand compliance",
+   "zh": "主题、母版与品牌合规"
+  },
+  {
+   "id": "R04.04.01.04",
+   "realm": "R04",
+   "name": "Diagrams, SmartArt, tables & charts in slides",
+   "zh": "幻灯片中的图示、表格与图表"
+  },
+  {
+   "id": "R04.04.01.05",
+   "realm": "R04",
+   "name": "Animations, transitions & presenter setup",
+   "zh": "动画、切换与演讲者设置"
+  },
+  {
+   "id": "R04.04.01.06",
+   "realm": "R04",
+   "name": "Slide content & formatting edits",
+   "zh": "幻灯片内容与格式编辑"
+  },
+  {
+   "id": "R04.05.01.01",
+   "realm": "R04",
+   "name": "PDF editing, redaction & assembly",
+   "zh": "PDF编辑、涂黑与组装"
+  },
+  {
+   "id": "R04.05.01.02",
+   "realm": "R04",
+   "name": "Form filling from a dossier",
+   "zh": "依据材料填写表单"
+  },
+  {
+   "id": "R04.05.01.03",
+   "realm": "R04",
+   "name": "Format conversion & export fidelity",
+   "zh": "格式转换与导出保真"
+  },
+  {
+   "id": "R04.06.01.01",
+   "realm": "R04",
+   "name": "Notes & knowledge-base organization",
+   "zh": "笔记与知识库整理"
+  },
+  {
+   "id": "R04.06.01.02",
+   "realm": "R04",
+   "name": "Reference & citation management",
+   "zh": "文献与引用管理"
+  },
+  {
+   "id": "R04.06.01.03",
+   "realm": "R04",
+   "name": "Quick utilities: calculator, sticky notes, dictionary & conversions",
+   "zh": "小工具：计算器、便签、词典与换算"
+  },
+  {
+   "id": "R04.07.01.01",
+   "realm": "R04",
+   "name": "Data entry from documents & scans",
+   "zh": "依据文档与扫描件录入"
+  },
+  {
+   "id": "R04.07.01.02",
+   "realm": "R04",
+   "name": "Download–transform–upload across portals",
+   "zh": "跨门户下载-转换-上传"
+  },
+  {
+   "id": "R04.07.01.03",
+   "realm": "R04",
+   "name": "Email → spreadsheet → report pipelines",
+   "zh": "邮件→表格→报告流程"
+  },
+  {
+   "id": "R04.07.01.04",
+   "realm": "R04",
+   "name": "Linked & embedded objects across office apps",
+   "zh": "跨办公应用的链接与嵌入对象"
+  },
+  {
+   "id": "R05.05.01.01",
+   "realm": "R05",
+   "name": "Classic ERP GUI transactions",
+   "zh": "经典ERP界面事务"
+  },
+  {
+   "id": "R05.05.01.02",
+   "realm": "R05",
+   "name": "Enterprise grids, filters & bulk edit",
+   "zh": "企业列表、筛选与批量编辑"
+  },
+  {
+   "id": "R05.05.01.03",
+   "realm": "R05",
+   "name": "Legacy terminal & virtual desktop entry",
+   "zh": "遗留终端与虚拟桌面录入"
+  },
+  {
+   "id": "R05.05.01.04",
+   "realm": "R05",
+   "name": "Service-catalog requests & low-code flows",
+   "zh": "服务目录请求与低代码流程"
+  },
+  {
+   "id": "R05.06.01.01",
+   "realm": "R05",
+   "name": "Lead, opportunity & account operations",
+   "zh": "线索、商机与客户操作"
+  },
+  {
+   "id": "R05.06.01.02",
+   "realm": "R05",
+   "name": "Quotes, pricing & approvals",
+   "zh": "报价、定价与审批"
+  },
+  {
+   "id": "R05.06.01.03",
+   "realm": "R05",
+   "name": "CRM configuration",
+   "zh": "CRM配置"
+  },
+  {
+   "id": "R05.07.01.01",
+   "realm": "R05",
+   "name": "Ad campaign setup & reporting (test accounts)",
+   "zh": "广告投放与报表（测试账户）"
+  },
+  {
+   "id": "R05.07.01.02",
+   "realm": "R05",
+   "name": "Audience segmentation & lifecycle campaigns",
+   "zh": "受众细分与生命周期营销"
+  },
+  {
+   "id": "R05.07.01.03",
+   "realm": "R05",
+   "name": "Web analytics & SEO audits",
+   "zh": "网站分析与SEO审计"
+  },
+  {
+   "id": "R05.08.01.01",
+   "realm": "R05",
+   "name": "Store & catalog administration",
+   "zh": "店铺与商品管理"
+  },
+  {
+   "id": "R05.08.01.02",
+   "realm": "R05",
+   "name": "Orders, returns & marketplace operations",
+   "zh": "订单、退货与平台运营"
+  },
+  {
+   "id": "R05.09.01.01",
+   "realm": "R05",
+   "name": "Requisition → PO → goods receipt",
+   "zh": "请购→采购订单→收货"
+  },
+  {
+   "id": "R05.09.01.02",
+   "realm": "R05",
+   "name": "Inventory, warehouse & shipping",
+   "zh": "库存、仓库与发货"
+  },
+  {
+   "id": "R05.09.01.03",
+   "realm": "R05",
+   "name": "Transport planning, routing & dispatch",
+   "zh": "运输计划、路线与调度"
+  },
+  {
+   "id": "R05.09.01.04",
+   "realm": "R05",
+   "name": "BOM & production planning (MRP)",
+   "zh": "物料清单与生产计划"
+  },
+  {
+   "id": "R05.10.01.01",
+   "realm": "R05",
+   "name": "Recruiting pipeline & ATS",
+   "zh": "招聘流程与ATS"
+  },
+  {
+   "id": "R05.10.01.02",
+   "realm": "R05",
+   "name": "Onboarding, leave, time & payroll inputs",
+   "zh": "入职、休假、工时与薪资录入"
+  },
+  {
+   "id": "R05.11.01.01",
+   "realm": "R05",
+   "name": "Issue & sprint management",
+   "zh": "事项与迭代管理"
+  },
+  {
+   "id": "R05.11.01.02",
+   "realm": "R05",
+   "name": "Schedules, dependencies & resources",
+   "zh": "进度、依赖与资源"
+  },
+  {
+   "id": "R05.12.01.01",
+   "realm": "R05",
+   "name": "Ticket triage, resolution & knowledge base",
+   "zh": "工单分诊、处理与知识库"
+  },
+  {
+   "id": "R05.12.01.02",
+   "realm": "R05",
+   "name": "Policy-bound customer service transactions",
+   "zh": "受政策约束的客服事务"
+  },
+  {
+   "id": "R05.13.01.01",
+   "realm": "R05",
+   "name": "Hotel & restaurant operations (PMS, POS)",
+   "zh": "酒店与餐饮运营"
+  },
+  {
+   "id": "R05.13.01.02",
+   "realm": "R05",
+   "name": "Retail store & point-of-sale operations",
+   "zh": "零售门店与收银"
+  },
+  {
+   "id": "R05.13.01.03",
+   "realm": "R05",
+   "name": "Real estate & property management",
+   "zh": "房地产与物业管理"
+  },
+  {
+   "id": "R05.13.01.04",
+   "realm": "R05",
+   "name": "Insurance claims & underwriting",
+   "zh": "保险理赔与核保"
+  },
+  {
+   "id": "R05.13.01.05",
+   "realm": "R05",
+   "name": "Banking & lending operations",
+   "zh": "银行与信贷运营"
+  },
+  {
+   "id": "R05.13.01.06",
+   "realm": "R05",
+   "name": "Construction estimating & field management",
+   "zh": "工程估算与现场管理"
+  },
+  {
+   "id": "R05.13.01.07",
+   "realm": "R05",
+   "name": "Facility & building automation operations",
+   "zh": "设施与楼宇自控运维"
+  },
+  {
+   "id": "R05.13.01.08",
+   "realm": "R05",
+   "name": "Service appointment scheduling (provider side)",
+   "zh": "服务预约排班（服务方）"
+  },
+  {
+   "id": "R06.01.01.01",
+   "realm": "R06",
+   "name": "Vector construction & path editing",
+   "zh": "矢量构建与路径编辑"
+  },
+  {
+   "id": "R06.01.01.02",
+   "realm": "R06",
+   "name": "Typography & type setting",
+   "zh": "字体排印"
+  },
+  {
+   "id": "R06.01.01.03",
+   "realm": "R06",
+   "name": "Brand template adaptation & resizing",
+   "zh": "品牌模板改编与多尺寸"
+  },
+  {
+   "id": "R06.01.01.04",
+   "realm": "R06",
+   "name": "Packaging & print production artwork",
+   "zh": "包装与印刷制作稿"
+  },
+  {
+   "id": "R06.01.01.05",
+   "realm": "R06",
+   "name": "Posters, flyers & single-page layouts",
+   "zh": "海报、传单与单页版式"
+  },
+  {
+   "id": "R06.02.01.01",
+   "realm": "R06",
+   "name": "Raw development to a measurable target",
+   "zh": "按可测目标的RAW显影"
+  },
+  {
+   "id": "R06.02.01.02",
+   "realm": "R06",
+   "name": "Pixel retouching & object removal",
+   "zh": "像素修图与移除"
+  },
+  {
+   "id": "R06.02.01.03",
+   "realm": "R06",
+   "name": "Layered compositing & selections",
+   "zh": "图层合成与选区"
+  },
+  {
+   "id": "R06.02.01.04",
+   "realm": "R06",
+   "name": "Photo library culling & metadata",
+   "zh": "照片筛选与元数据"
+  },
+  {
+   "id": "R06.02.01.05",
+   "realm": "R06",
+   "name": "Image conversion, batch actions & export variants",
+   "zh": "图像转换、批处理动作与导出变体"
+  },
+  {
+   "id": "R06.03.01.01",
+   "realm": "R06",
+   "name": "Digital painting, inking & flatting",
+   "zh": "数字绘画、勾线与平涂"
+  },
+  {
+   "id": "R06.03.01.02",
+   "realm": "R06",
+   "name": "Comic & manga page production",
+   "zh": "漫画分镜与页面制作"
+  },
+  {
+   "id": "R06.03.01.03",
+   "realm": "R06",
+   "name": "2D character animation",
+   "zh": "二维角色动画"
+  },
+  {
+   "id": "R06.04.01.01",
+   "realm": "R06",
+   "name": "Assembly cut from script or transcript",
+   "zh": "依脚本或文字稿粗剪"
+  },
+  {
+   "id": "R06.04.01.02",
+   "realm": "R06",
+   "name": "Fine cut & trimming",
+   "zh": "精剪与修剪"
+  },
+  {
+   "id": "R06.04.01.03",
+   "realm": "R06",
+   "name": "Multicam & cutting to music",
+   "zh": "多机位与卡点剪辑"
+  },
+  {
+   "id": "R06.04.01.04",
+   "realm": "R06",
+   "name": "Short-form & template editing",
+   "zh": "短视频与模板剪辑"
+  },
+  {
+   "id": "R06.04.02.01",
+   "realm": "R06",
+   "name": "Primary grading & shot matching",
+   "zh": "一级调色与镜头匹配"
+  },
+  {
+   "id": "R06.04.02.02",
+   "realm": "R06",
+   "name": "Secondary grading with qualifiers & windows",
+   "zh": "二级调色（限定与窗口）"
+  },
+  {
+   "id": "R06.04.02.03",
+   "realm": "R06",
+   "name": "Captions, subtitles & versions",
+   "zh": "字幕与版本"
+  },
+  {
+   "id": "R06.04.02.04",
+   "realm": "R06",
+   "name": "Media management & delivery QC",
+   "zh": "素材管理与交付质检"
+  },
+  {
+   "id": "R06.04.02.05",
+   "realm": "R06",
+   "name": "Footage logging & continuity notes",
+   "zh": "素材记录与连续性笔记"
+  },
+  {
+   "id": "R06.04.02.06",
+   "realm": "R06",
+   "name": "Color management, LUTs & HDR mastering",
+   "zh": "色彩管理、LUT与HDR母版"
+  },
+  {
+   "id": "R06.04.02.07",
+   "realm": "R06",
+   "name": "Cross-app round trips & conform",
+   "zh": "跨软件往返与套底"
+  },
+  {
+   "id": "R06.05.01.01",
+   "realm": "R06",
+   "name": "Keyframe & text animation with easing",
+   "zh": "关键帧与文字动画（缓动）"
+  },
+  {
+   "id": "R06.05.01.02",
+   "realm": "R06",
+   "name": "Templates & expression rigs",
+   "zh": "模板与表达式绑定"
+  },
+  {
+   "id": "R06.05.01.03",
+   "realm": "R06",
+   "name": "Logo & shape animation with Lottie export",
+   "zh": "标志与形状动画（Lottie）"
+  },
+  {
+   "id": "R06.05.02.01",
+   "realm": "R06",
+   "name": "Chroma keying & spill suppression",
+   "zh": "抠像与溢色抑制"
+  },
+  {
+   "id": "R06.05.02.02",
+   "realm": "R06",
+   "name": "Rotoscoping & AI masking",
+   "zh": "转描与AI蒙版"
+  },
+  {
+   "id": "R06.05.02.03",
+   "realm": "R06",
+   "name": "Tracking, match-move & stabilization",
+   "zh": "跟踪、匹配移动与稳定"
+  },
+  {
+   "id": "R06.05.02.04",
+   "realm": "R06",
+   "name": "Cleanup & paint-out",
+   "zh": "清理与擦除"
+  },
+  {
+   "id": "R06.05.02.05",
+   "realm": "R06",
+   "name": "Node-based multi-pass compositing",
+   "zh": "节点式多通道合成"
+  },
+  {
+   "id": "R06.06.01.01",
+   "realm": "R06",
+   "name": "Polygon & hard-surface modeling",
+   "zh": "多边形与硬表面建模"
+  },
+  {
+   "id": "R06.06.01.02",
+   "realm": "R06",
+   "name": "Sculpting & retopology",
+   "zh": "雕刻与重拓扑"
+  },
+  {
+   "id": "R06.06.01.03",
+   "realm": "R06",
+   "name": "Procedural modeling & simulation",
+   "zh": "程序化建模与仿真"
+  },
+  {
+   "id": "R06.06.02.01",
+   "realm": "R06",
+   "name": "UV unwrapping & layout",
+   "zh": "UV展开与排布"
+  },
+  {
+   "id": "R06.06.02.02",
+   "realm": "R06",
+   "name": "PBR texturing & material authoring",
+   "zh": "PBR贴图与材质"
+  },
+  {
+   "id": "R06.06.03.01",
+   "realm": "R06",
+   "name": "Rigging & skinning",
+   "zh": "绑定与蒙皮"
+  },
+  {
+   "id": "R06.06.03.02",
+   "realm": "R06",
+   "name": "Character & camera animation",
+   "zh": "角色与摄像机动画"
+  },
+  {
+   "id": "R06.06.03.03",
+   "realm": "R06",
+   "name": "Lighting, look-dev & rendering",
+   "zh": "灯光、外观开发与渲染"
+  },
+  {
+   "id": "R06.06.03.04",
+   "realm": "R06",
+   "name": "Scene layout & set dressing",
+   "zh": "场景布局与陈设"
+  },
+  {
+   "id": "R06.07.01.01",
+   "realm": "R06",
+   "name": "Dialogue editing & audio repair",
+   "zh": "对白剪辑与音频修复"
+  },
+  {
+   "id": "R06.07.01.02",
+   "realm": "R06",
+   "name": "Mixing & loudness-compliant delivery",
+   "zh": "混音与响度合规交付"
+  },
+  {
+   "id": "R06.07.01.03",
+   "realm": "R06",
+   "name": "Sound design & spotting to picture",
+   "zh": "声音设计与对画面"
+  },
+  {
+   "id": "R06.07.02.01",
+   "realm": "R06",
+   "name": "MIDI composition, arrangement & warping",
+   "zh": "MIDI作曲、编曲与变速"
+  },
+  {
+   "id": "R06.07.02.02",
+   "realm": "R06",
+   "name": "Music mixing & mastering",
+   "zh": "音乐混音与母带"
+  },
+  {
+   "id": "R06.07.02.03",
+   "realm": "R06",
+   "name": "Notation & engraving",
+   "zh": "记谱与制谱"
+  },
+  {
+   "id": "R06.08.01.01",
+   "realm": "R06",
+   "name": "Screen design with auto-layout & components",
+   "zh": "自动布局与组件化屏幕设计"
+  },
+  {
+   "id": "R06.08.01.02",
+   "realm": "R06",
+   "name": "Design systems, variables & theming",
+   "zh": "设计系统、变量与主题"
+  },
+  {
+   "id": "R06.08.01.03",
+   "realm": "R06",
+   "name": "Interactive prototyping",
+   "zh": "交互原型"
+  },
+  {
+   "id": "R06.09.01.01",
+   "realm": "R06",
+   "name": "Long-document layout & copyfitting",
+   "zh": "长文档排版与文字适配"
+  },
+  {
+   "id": "R06.09.01.02",
+   "realm": "R06",
+   "name": "Prepress preflight & PDF/X",
+   "zh": "印前检查与PDF/X"
+  },
+  {
+   "id": "R06.09.01.03",
+   "realm": "R06",
+   "name": "Accessible PDF remediation",
+   "zh": "无障碍PDF修复"
+  },
+  {
+   "id": "R06.10.01.01",
+   "realm": "R06",
+   "name": "Level assembly, lighting & materials",
+   "zh": "关卡搭建、灯光与材质"
+  },
+  {
+   "id": "R06.10.01.02",
+   "realm": "R06",
+   "name": "Gameplay prototyping & packaging",
+   "zh": "玩法原型与打包"
+  },
+  {
+   "id": "R06.10.01.03",
+   "realm": "R06",
+   "name": "In-engine cinematics",
+   "zh": "引擎内过场动画"
+  },
+  {
+   "id": "R06.10.01.04",
+   "realm": "R06",
+   "name": "Level editors & modding tools",
+   "zh": "关卡编辑器与模组工具"
+  },
+  {
+   "id": "R06.11.01.01",
+   "realm": "R06",
+   "name": "Node-based generative pipelines",
+   "zh": "节点式生成流程"
+  },
+  {
+   "id": "R06.11.01.02",
+   "realm": "R06",
+   "name": "Generative edit & fill in creative apps",
+   "zh": "创意软件中的生成式编辑"
+  },
+  {
+   "id": "R06.12.01.01",
+   "realm": "R06",
+   "name": "Streaming & recording scene composition",
+   "zh": "直播与录制场景搭建"
+  },
+  {
+   "id": "R06.12.01.02",
+   "realm": "R06",
+   "name": "Live switching & broadcast graphics",
+   "zh": "现场切换与播出图文"
+  },
+  {
+   "id": "R07.01.01.01",
+   "realm": "R07",
+   "name": "Part from dimensioned drawing or spec",
+   "zh": "依图纸/规格建零件"
+  },
+  {
+   "id": "R07.01.01.02",
+   "realm": "R07",
+   "name": "Design-intent edits of existing models",
+   "zh": "保持设计意图的模型修改"
+  },
+  {
+   "id": "R07.01.01.03",
+   "realm": "R07",
+   "name": "Assemblies, mates & mechanisms",
+   "zh": "装配、配合与机构"
+  },
+  {
+   "id": "R07.01.02.01",
+   "realm": "R07",
+   "name": "Drawings with dimensions, GD&T & BOM",
+   "zh": "带尺寸、形位公差与BOM的工程图"
+  },
+  {
+   "id": "R07.01.02.02",
+   "realm": "R07",
+   "name": "Design review, measurement & reverse engineering",
+   "zh": "设计评审、测量与逆向"
+  },
+  {
+   "id": "R07.02.01.01",
+   "realm": "R07",
+   "name": "Structural FEA setup & results",
+   "zh": "结构有限元设置与结果"
+  },
+  {
+   "id": "R07.02.01.02",
+   "realm": "R07",
+   "name": "Multiphysics & geotechnical analysis",
+   "zh": "多物理场与岩土分析"
+  },
+  {
+   "id": "R07.02.01.03",
+   "realm": "R07",
+   "name": "Mold-flow & process simulation",
+   "zh": "模流与工艺仿真"
+  },
+  {
+   "id": "R07.02.02.01",
+   "realm": "R07",
+   "name": "CFD case setup & post-processing",
+   "zh": "CFD算例设置与后处理"
+  },
+  {
+   "id": "R07.02.02.02",
+   "realm": "R07",
+   "name": "System modeling & control design",
+   "zh": "系统建模与控制设计"
+  },
+  {
+   "id": "R07.03.01.01",
+   "realm": "R07",
+   "name": "Schematic capture & ERC",
+   "zh": "原理图绘制与电气规则检查"
+  },
+  {
+   "id": "R07.03.01.02",
+   "realm": "R07",
+   "name": "SPICE simulation & analog design",
+   "zh": "SPICE仿真与模拟设计"
+  },
+  {
+   "id": "R07.03.02.01",
+   "realm": "R07",
+   "name": "Placement & board constraints",
+   "zh": "布局与板级约束"
+  },
+  {
+   "id": "R07.03.02.02",
+   "realm": "R07",
+   "name": "Routing to a clean DRC (incl. high-speed)",
+   "zh": "布线至DRC通过（含高速）"
+  },
+  {
+   "id": "R07.03.02.03",
+   "realm": "R07",
+   "name": "ECO, libraries & fabrication outputs",
+   "zh": "工程变更、库与生产文件"
+  },
+  {
+   "id": "R07.04.01.01",
+   "realm": "R07",
+   "name": "Custom/analog IC schematic & layout",
+   "zh": "定制/模拟IC原理图与版图"
+  },
+  {
+   "id": "R07.04.01.02",
+   "realm": "R07",
+   "name": "RTL-to-GDS flow & signoff",
+   "zh": "RTL到GDS流程与签核"
+  },
+  {
+   "id": "R07.04.01.03",
+   "realm": "R07",
+   "name": "FPGA build & timing closure",
+   "zh": "FPGA构建与时序收敛"
+  },
+  {
+   "id": "R07.05.01.01",
+   "realm": "R07",
+   "name": "2D CAD drafting & revision",
+   "zh": "二维CAD绘图与修订"
+  },
+  {
+   "id": "R07.05.01.02",
+   "realm": "R07",
+   "name": "BIM element authoring",
+   "zh": "BIM构件建模"
+  },
+  {
+   "id": "R07.05.01.03",
+   "realm": "R07",
+   "name": "3D models from 2D drawings",
+   "zh": "由二维图纸建三维模型"
+  },
+  {
+   "id": "R07.05.01.04",
+   "realm": "R07",
+   "name": "BIM coordination & clash review",
+   "zh": "BIM协调与碰撞检查"
+  },
+  {
+   "id": "R07.05.01.05",
+   "realm": "R07",
+   "name": "Parametric & environmental design",
+   "zh": "参数化与环境性能设计"
+  },
+  {
+   "id": "R07.06.01.01",
+   "realm": "R07",
+   "name": "Road alignment, profile & corridor design",
+   "zh": "道路线形、纵断面与廊道设计"
+  },
+  {
+   "id": "R07.06.01.02",
+   "realm": "R07",
+   "name": "Georeferencing & digitizing",
+   "zh": "地理配准与数字化"
+  },
+  {
+   "id": "R07.06.01.03",
+   "realm": "R07",
+   "name": "Geoprocessing workflows & model builders",
+   "zh": "地理处理流程与模型构建器"
+  },
+  {
+   "id": "R07.06.01.04",
+   "realm": "R07",
+   "name": "Cartography & print layouts",
+   "zh": "制图与打印版面"
+  },
+  {
+   "id": "R07.06.01.05",
+   "realm": "R07",
+   "name": "Survey drafting & COGO",
+   "zh": "测量制图与坐标几何"
+  },
+  {
+   "id": "R07.07.01.01",
+   "realm": "R07",
+   "name": "CAM toolpaths & stock simulation",
+   "zh": "CAM刀路与毛坯仿真"
+  },
+  {
+   "id": "R07.07.01.02",
+   "realm": "R07",
+   "name": "G-code authoring & verification",
+   "zh": "G代码编写与校验"
+  },
+  {
+   "id": "R07.07.01.03",
+   "realm": "R07",
+   "name": "Additive manufacturing prep & monitoring",
+   "zh": "增材制造准备与监控"
+  },
+  {
+   "id": "R07.07.02.01",
+   "realm": "R07",
+   "name": "PLC programming with simulation",
+   "zh": "PLC编程与仿真"
+  },
+  {
+   "id": "R07.07.02.02",
+   "realm": "R07",
+   "name": "HMI/SCADA screen engineering",
+   "zh": "HMI/SCADA画面工程"
+  },
+  {
+   "id": "R07.07.02.03",
+   "realm": "R07",
+   "name": "SCADA operation & alarm response",
+   "zh": "SCADA运行监控与报警处置"
+  },
+  {
+   "id": "R07.07.02.04",
+   "realm": "R07",
+   "name": "Quality & maintenance records",
+   "zh": "质量与维护记录"
+  },
+  {
+   "id": "R07.08.01.01",
+   "realm": "R07",
+   "name": "Power flow & contingency studies",
+   "zh": "潮流与故障分析"
+  },
+  {
+   "id": "R07.08.01.02",
+   "realm": "R07",
+   "name": "PV & renewable system design",
+   "zh": "光伏与可再生能源设计"
+  },
+  {
+   "id": "R07.08.01.03",
+   "realm": "R07",
+   "name": "Building energy simulation",
+   "zh": "建筑能耗模拟"
+  },
+  {
+   "id": "R07.09.01.01",
+   "realm": "R07",
+   "name": "Robot cell offline programming",
+   "zh": "机器人单元离线编程"
+  },
+  {
+   "id": "R07.09.01.02",
+   "realm": "R07",
+   "name": "Interactive motion planning",
+   "zh": "交互式运动规划"
+  },
+  {
+   "id": "R07.09.01.03",
+   "realm": "R07",
+   "name": "Simulation scene setup",
+   "zh": "仿真场景搭建"
+  },
+  {
+   "id": "R07.09.01.04",
+   "realm": "R07",
+   "name": "Teach-pendant programming",
+   "zh": "示教器编程"
+  },
+  {
+   "id": "R07.09.01.05",
+   "realm": "R07",
+   "name": "ROS introspection & diagnostics",
+   "zh": "ROS内省与诊断"
+  },
+  {
+   "id": "R07.09.01.06",
+   "realm": "R07",
+   "name": "Robot description authoring (URDF/MJCF)",
+   "zh": "机器人描述文件编写"
+  },
+  {
+   "id": "R07.09.02.01",
+   "realm": "R07",
+   "name": "Teleoperated assembly & dexterous manipulation",
+   "zh": "遥操作装配与灵巧操作"
+  },
+  {
+   "id": "R07.09.02.02",
+   "realm": "R07",
+   "name": "Policy rollout review & failure labeling",
+   "zh": "策略回放审查与失败标注"
+  },
+  {
+   "id": "R07.09.02.03",
+   "realm": "R07",
+   "name": "UAV mission planning & ground control",
+   "zh": "无人机任务规划与地面站"
+  },
+  {
+   "id": "R07.10.01.01",
+   "realm": "R07",
+   "name": "Process flowsheet simulation",
+   "zh": "流程模拟"
+  },
+  {
+   "id": "R07.10.01.02",
+   "realm": "R07",
+   "name": "P&ID and equipment sizing",
+   "zh": "P&ID与设备选型"
+  },
+  {
+   "id": "R07.11.01.01",
+   "realm": "R07",
+   "name": "Geological, reservoir & mine modeling",
+   "zh": "地质、油藏与矿山建模"
+  },
+  {
+   "id": "R07.12.01.01",
+   "realm": "R07",
+   "name": "Flight planning & performance",
+   "zh": "飞行计划与性能"
+  },
+  {
+   "id": "R07.13.01.01",
+   "realm": "R07",
+   "name": "Traffic & transit simulation",
+   "zh": "交通与公交仿真"
+  },
+  {
+   "id": "R07.13.01.02",
+   "realm": "R07",
+   "name": "Vessel routing & port operations",
+   "zh": "船舶航线与港口作业"
+  },
+  {
+   "id": "R08.01.01.01",
+   "realm": "R08",
+   "name": "FITS inspection, regions & photometry",
+   "zh": "FITS检查、区域与测光"
+  },
+  {
+   "id": "R08.01.01.02",
+   "realm": "R08",
+   "name": "Sky simulation & planetarium setup",
+   "zh": "星空模拟与天象仪设置"
+  },
+  {
+   "id": "R08.01.01.03",
+   "realm": "R08",
+   "name": "Interactive interferometry reduction",
+   "zh": "交互式干涉数据处理"
+  },
+  {
+   "id": "R08.01.01.04",
+   "realm": "R08",
+   "name": "Data plotting & curve fitting",
+   "zh": "数据绘图与曲线拟合"
+  },
+  {
+   "id": "R08.01.01.05",
+   "realm": "R08",
+   "name": "Numerical physics simulation",
+   "zh": "数值物理模拟"
+  },
+  {
+   "id": "R08.02.01.01",
+   "realm": "R08",
+   "name": "Chemical structure drawing & identifiers",
+   "zh": "化学结构绘制与标识符"
+  },
+  {
+   "id": "R08.02.01.02",
+   "realm": "R08",
+   "name": "Quantum-chemistry job setup & visualization",
+   "zh": "量子化学任务设置与可视化"
+  },
+  {
+   "id": "R08.02.01.03",
+   "realm": "R08",
+   "name": "Crystal & volumetric visualization",
+   "zh": "晶体与体数据可视化"
+  },
+  {
+   "id": "R08.03.01.01",
+   "realm": "R08",
+   "name": "Gridded climate & ocean data visualization",
+   "zh": "网格化气候与海洋数据可视化"
+  },
+  {
+   "id": "R08.03.01.02",
+   "realm": "R08",
+   "name": "Remote sensing image analysis",
+   "zh": "遥感影像分析"
+  },
+  {
+   "id": "R08.03.01.03",
+   "realm": "R08",
+   "name": "Hydrology & environmental models",
+   "zh": "水文与环境模型"
+  },
+  {
+   "id": "R08.04.01.01",
+   "realm": "R08",
+   "name": "Yield maps & prescription maps",
+   "zh": "产量图与处方图"
+  },
+  {
+   "id": "R08.05.01.01",
+   "realm": "R08",
+   "name": "Molecular visualization & figures",
+   "zh": "分子可视化与配图"
+  },
+  {
+   "id": "R08.05.01.02",
+   "realm": "R08",
+   "name": "Model building into density maps",
+   "zh": "密度图中建模"
+  },
+  {
+   "id": "R08.05.01.03",
+   "realm": "R08",
+   "name": "Protein preparation, docking, simulation & ensemble validation",
+   "zh": "蛋白质准备、对接、模拟与构象系综验证"
+  },
+  {
+   "id": "R08.06.01.01",
+   "realm": "R08",
+   "name": "Plasmid maps, cloning & primers",
+   "zh": "质粒图谱、克隆与引物"
+  },
+  {
+   "id": "R08.06.01.02",
+   "realm": "R08",
+   "name": "Genome browser & variant inspection",
+   "zh": "基因组浏览器与变异检查"
+  },
+  {
+   "id": "R08.06.01.03",
+   "realm": "R08",
+   "name": "Bioinformatics pipelines",
+   "zh": "生物信息流程"
+  },
+  {
+   "id": "R08.07.01.01",
+   "realm": "R08",
+   "name": "ROI drawing & manual measurement",
+   "zh": "ROI绘制与手动测量"
+  },
+  {
+   "id": "R08.07.01.02",
+   "realm": "R08",
+   "name": "Segmentation pipelines & visual QC",
+   "zh": "分割流程与可视化质控"
+  },
+  {
+   "id": "R08.07.01.03",
+   "realm": "R08",
+   "name": "3D/4D rendering & track curation",
+   "zh": "三维/四维渲染与轨迹校正"
+  },
+  {
+   "id": "R08.08.01.01",
+   "realm": "R08",
+   "name": "Pathway & network modeling",
+   "zh": "通路与网络建模"
+  },
+  {
+   "id": "R08.09.01.01",
+   "realm": "R08",
+   "name": "Stimulus-presentation experiments",
+   "zh": "刺激呈现实验"
+  },
+  {
+   "id": "R08.09.01.02",
+   "realm": "R08",
+   "name": "Survey instruments",
+   "zh": "问卷工具"
+  },
+  {
+   "id": "R08.09.01.03",
+   "realm": "R08",
+   "name": "Neuroimaging QC & mask editing",
+   "zh": "神经影像质控与掩膜编辑"
+  },
+  {
+   "id": "R08.09.01.04",
+   "realm": "R08",
+   "name": "EEG/MEG & electrophysiology analysis",
+   "zh": "脑电与电生理分析"
+  },
+  {
+   "id": "R08.10.01.01",
+   "realm": "R08",
+   "name": "Dialog-driven statistical analysis",
+   "zh": "对话框式统计分析"
+  },
+  {
+   "id": "R08.10.01.02",
+   "realm": "R08",
+   "name": "Qualitative & content coding",
+   "zh": "质性与内容编码"
+  },
+  {
+   "id": "R08.10.01.03",
+   "realm": "R08",
+   "name": "Econometric replication",
+   "zh": "计量复现"
+  },
+  {
+   "id": "R08.10.01.04",
+   "realm": "R08",
+   "name": "Phonetic & speech analysis",
+   "zh": "语音与声学分析"
+  },
+  {
+   "id": "R08.11.01.01",
+   "realm": "R08",
+   "name": "Scientific graph creation & formatting",
+   "zh": "科研绘图与格式"
+  },
+  {
+   "id": "R08.11.01.02",
+   "realm": "R08",
+   "name": "Numerical & symbolic computing apps",
+   "zh": "数值与符号计算应用"
+  },
+  {
+   "id": "R08.11.01.03",
+   "realm": "R08",
+   "name": "Manuscripts, LaTeX & citations",
+   "zh": "论文、LaTeX与引用"
+  },
+  {
+   "id": "R08.11.01.04",
+   "realm": "R08",
+   "name": "Theorem proving & formal math",
+   "zh": "定理证明与形式化数学"
+  },
+  {
+   "id": "R08.12.01.01",
+   "realm": "R08",
+   "name": "ELN, LIMS & inventory records",
+   "zh": "电子实验记录、LIMS与库存"
+  },
+  {
+   "id": "R08.12.01.02",
+   "realm": "R08",
+   "name": "Liquid-handler protocol design",
+   "zh": "液体处理协议设计"
+  },
+  {
+   "id": "R08.12.01.03",
+   "realm": "R08",
+   "name": "Virtual lab experimentation & safety",
+   "zh": "虚拟实验与安全判断"
+  },
+  {
+   "id": "R09.01.01.01",
+   "realm": "R09",
+   "name": "DICOM reading, measurement & annotation",
+   "zh": "DICOM阅片、测量与标注"
+  },
+  {
+   "id": "R09.01.01.02",
+   "realm": "R09",
+   "name": "3D segmentation, registration & resampling",
+   "zh": "三维分割、配准与重采样"
+  },
+  {
+   "id": "R09.01.01.03",
+   "realm": "R09",
+   "name": "Whole-slide pathology annotation",
+   "zh": "全切片病理标注"
+  },
+  {
+   "id": "R09.01.01.04",
+   "realm": "R09",
+   "name": "Clinical reasoning in simulated encounters",
+   "zh": "模拟病例中的临床推理"
+  },
+  {
+   "id": "R09.02.01.01",
+   "realm": "R09",
+   "name": "Radiotherapy planning & dose evaluation",
+   "zh": "放疗计划与剂量评估"
+  },
+  {
+   "id": "R09.03.01.01",
+   "realm": "R09",
+   "name": "Chart review & data retrieval",
+   "zh": "病历查阅与数据提取"
+  },
+  {
+   "id": "R09.03.01.02",
+   "realm": "R09",
+   "name": "Orders & clinical documentation",
+   "zh": "医嘱与临床文书"
+  },
+  {
+   "id": "R09.03.01.03",
+   "realm": "R09",
+   "name": "Scheduling, registration, billing & coding",
+   "zh": "预约、登记、计费与编码"
+  },
+  {
+   "id": "R09.03.01.04",
+   "realm": "R09",
+   "name": "Prior authorization, appeals & claims",
+   "zh": "预授权、申诉与理赔"
+  },
+  {
+   "id": "R09.04.01.01",
+   "realm": "R09",
+   "name": "Surveillance, cohorts & outcomes analysis",
+   "zh": "监测、队列与结局分析"
+  },
+  {
+   "id": "R09.04.01.02",
+   "realm": "R09",
+   "name": "Outbreak & epidemic modeling",
+   "zh": "疫情与流行病建模"
+  },
+  {
+   "id": "R09.05.01.01",
+   "realm": "R09",
+   "name": "EDC study build",
+   "zh": "EDC研究搭建"
+  },
+  {
+   "id": "R09.05.01.02",
+   "realm": "R09",
+   "name": "EDC data entry, queries & lock",
+   "zh": "EDC录入、质疑与锁库"
+  },
+  {
+   "id": "R09.05.01.03",
+   "realm": "R09",
+   "name": "CDISC SDTM mapping",
+   "zh": "CDISC SDTM映射"
+  },
+  {
+   "id": "R09.06.01.01",
+   "realm": "R09",
+   "name": "Pharmacy verification & dispensing",
+   "zh": "药房审核与发药"
+  },
+  {
+   "id": "R09.06.01.02",
+   "realm": "R09",
+   "name": "Laboratory information system operations",
+   "zh": "检验信息系统操作"
+  },
+  {
+   "id": "R10.01.01.01",
+   "realm": "R10",
+   "name": "eDiscovery review, coding & redaction",
+   "zh": "电子取证审阅、编码与涂黑"
+  },
+  {
+   "id": "R10.01.01.02",
+   "realm": "R10",
+   "name": "Court e-filing & docket deadlines",
+   "zh": "法院电子立案与期限管理"
+  },
+  {
+   "id": "R10.01.01.03",
+   "realm": "R10",
+   "name": "Exhibit & case-document preparation",
+   "zh": "证据与案卷准备"
+  },
+  {
+   "id": "R10.01.01.04",
+   "realm": "R10",
+   "name": "Transcript editing synced to audio",
+   "zh": "与音频同步的笔录编辑"
+  },
+  {
+   "id": "R10.02.01.01",
+   "realm": "R10",
+   "name": "Case-law & statute research with citations",
+   "zh": "判例与法规检索（含引注）"
+  },
+  {
+   "id": "R10.02.01.02",
+   "realm": "R10",
+   "name": "Contract redlining & deal points",
+   "zh": "合同修订与交易要点"
+  },
+  {
+   "id": "R10.02.01.03",
+   "realm": "R10",
+   "name": "Legal classification & reasoning",
+   "zh": "法律分类与推理"
+  },
+  {
+   "id": "R10.03.01.01",
+   "realm": "R10",
+   "name": "Caseworker & case-management systems",
+   "zh": "个案管理系统"
+  },
+  {
+   "id": "R10.03.01.02",
+   "realm": "R10",
+   "name": "Grant application assembly & submission",
+   "zh": "基金申请组装与提交"
+  },
+  {
+   "id": "R10.03.01.03",
+   "realm": "R10",
+   "name": "Permits, licensing & records processing",
+   "zh": "许可、执照与档案处理"
+  },
+  {
+   "id": "R10.04.01.01",
+   "realm": "R10",
+   "name": "911 call-taking & CAD dispatch",
+   "zh": "接警与CAD调度"
+  },
+  {
+   "id": "R10.04.01.02",
+   "realm": "R10",
+   "name": "Fire & hazard modeling",
+   "zh": "火灾与灾害模拟"
+  },
+  {
+   "id": "R10.04.01.03",
+   "realm": "R10",
+   "name": "Emergency operations & incident reporting",
+   "zh": "应急指挥与事件报告"
+  },
+  {
+   "id": "R11.01.01.01",
+   "realm": "R11",
+   "name": "Mailbox triage, rules & replies",
+   "zh": "邮箱分拣、规则与回复"
+  },
+  {
+   "id": "R11.01.01.02",
+   "realm": "R11",
+   "name": "Meeting scheduling & calendar operations",
+   "zh": "会议排期与日历操作"
+  },
+  {
+   "id": "R11.01.01.03",
+   "realm": "R11",
+   "name": "Contacts & address books",
+   "zh": "联系人与通讯录"
+  },
+  {
+   "id": "R11.01.01.04",
+   "realm": "R11",
+   "name": "Reminders, to-dos, alarms & timers",
+   "zh": "提醒、待办、闹钟与计时器"
+  },
+  {
+   "id": "R11.01.01.05",
+   "realm": "R11",
+   "name": "Personal SMS, chat & calls",
+   "zh": "个人短信、聊天与通话"
+  },
+  {
+   "id": "R11.02.01.01",
+   "realm": "R11",
+   "name": "Team chat operations",
+   "zh": "团队聊天操作"
+  },
+  {
+   "id": "R11.02.01.02",
+   "realm": "R11",
+   "name": "Information gathering from colleagues",
+   "zh": "向同事收集信息"
+  },
+  {
+   "id": "R11.02.01.03",
+   "realm": "R11",
+   "name": "Video-meeting session control",
+   "zh": "视频会议控制"
+  },
+  {
+   "id": "R11.03.01.01",
+   "realm": "R11",
+   "name": "Flowcharts, BPMN & org charts",
+   "zh": "流程图、BPMN与组织架构图"
+  },
+  {
+   "id": "R11.03.01.02",
+   "realm": "R11",
+   "name": "Whiteboard affinity mapping",
+   "zh": "白板亲和图"
+  },
+  {
+   "id": "R11.04.01.01",
+   "realm": "R11",
+   "name": "Comment & suggestion workflows",
+   "zh": "批注与建议流程"
+  },
+  {
+   "id": "R11.04.01.02",
+   "realm": "R11",
+   "name": "Media review & approval",
+   "zh": "媒体审阅与审批"
+  },
+  {
+   "id": "R11.05.01.01",
+   "realm": "R11",
+   "name": "Video upload, metadata & scheduling",
+   "zh": "视频上传、元数据与定时"
+  },
+  {
+   "id": "R11.05.01.02",
+   "realm": "R11",
+   "name": "Mobile note & short-video posting",
+   "zh": "移动端图文与短视频发布"
+  },
+  {
+   "id": "R11.05.01.03",
+   "realm": "R11",
+   "name": "Community management & channel analytics",
+   "zh": "社群管理与频道分析"
+  },
+  {
+   "id": "R11.05.01.04",
+   "realm": "R11",
+   "name": "Professional networking & social actions (sandbox)",
+   "zh": "职业社交与社交操作（沙盒）"
+  },
+  {
+   "id": "R11.06.01.01",
+   "realm": "R11",
+   "name": "Content moderation & community administration",
+   "zh": "内容审核与社区管理"
+  },
+  {
+   "id": "R11.06.01.02",
+   "realm": "R11",
+   "name": "Forum & community participation",
+   "zh": "论坛与社区参与"
+  },
+  {
+   "id": "R11.07.01.01",
+   "realm": "R11",
+   "name": "Human-in-the-loop execution & handoff",
+   "zh": "人在回路执行与交接"
+  },
+  {
+   "id": "R11.07.01.02",
+   "realm": "R11",
+   "name": "Multi-agent coordination in shared apps",
+   "zh": "共享应用中的多智能体协作"
+  },
+  {
+   "id": "R11.07.01.03",
+   "realm": "R11",
+   "name": "Proactive assistance: act, ask or stay silent",
+   "zh": "主动协助：行动、询问或保持沉默"
+  },
+  {
+   "id": "R12.01.01.01",
+   "realm": "R12",
+   "name": "Configured product purchase",
+   "zh": "配置化商品购买"
+  },
+  {
+   "id": "R12.01.01.02",
+   "realm": "R12",
+   "name": "Product discovery, comparison & shopping lists",
+   "zh": "商品发现、比价与购物清单"
+  },
+  {
+   "id": "R12.01.01.03",
+   "realm": "R12",
+   "name": "Returns, changes & reviews",
+   "zh": "退换货与评价"
+  },
+  {
+   "id": "R12.02.01.01",
+   "realm": "R12",
+   "name": "Flight booking & changes",
+   "zh": "机票预订与改签"
+  },
+  {
+   "id": "R12.02.01.02",
+   "realm": "R12",
+   "name": "Lodging under constraints",
+   "zh": "住宿预订"
+  },
+  {
+   "id": "R12.02.01.03",
+   "realm": "R12",
+   "name": "Maps, routes & ride-hailing",
+   "zh": "地图、路线与打车"
+  },
+  {
+   "id": "R12.02.01.04",
+   "realm": "R12",
+   "name": "In-car infotainment & navigation",
+   "zh": "车机导航与娱乐"
+  },
+  {
+   "id": "R12.02.01.05",
+   "realm": "R12",
+   "name": "Multi-leg itinerary planning",
+   "zh": "多段行程规划"
+  },
+  {
+   "id": "R12.04.01.01",
+   "realm": "R12",
+   "name": "Food delivery with customizations",
+   "zh": "外卖与定制"
+  },
+  {
+   "id": "R12.04.01.02",
+   "realm": "R12",
+   "name": "Reservations & appointments",
+   "zh": "预约与预订"
+  },
+  {
+   "id": "R12.04.01.03",
+   "realm": "R12",
+   "name": "Event tickets with seat maps",
+   "zh": "活动票务与选座"
+  },
+  {
+   "id": "R12.04.01.04",
+   "realm": "R12",
+   "name": "Super-app mini-program services",
+   "zh": "超级应用小程序服务"
+  },
+  {
+   "id": "R12.05.01.01",
+   "realm": "R12",
+   "name": "Patient portals & insurance self-service",
+   "zh": "患者门户与保险自助"
+  },
+  {
+   "id": "R12.05.01.02",
+   "realm": "R12",
+   "name": "Fitness & health records",
+   "zh": "健身与健康记录"
+  },
+  {
+   "id": "R12.06.01.01",
+   "realm": "R12",
+   "name": "Smart-home control & automations",
+   "zh": "智能家居控制与自动化"
+  },
+  {
+   "id": "R12.07.01.01",
+   "realm": "R12",
+   "name": "Music, podcast & video libraries",
+   "zh": "音乐、播客与视频库"
+  },
+  {
+   "id": "R12.07.01.02",
+   "realm": "R12",
+   "name": "TV & 10-foot interfaces",
+   "zh": "电视大屏界面"
+  },
+  {
+   "id": "R12.07.01.03",
+   "realm": "R12",
+   "name": "E-books & reading",
+   "zh": "电子书与阅读"
+  },
+  {
+   "id": "R12.08.01.01",
+   "realm": "R12",
+   "name": "Government & public-service portals",
+   "zh": "政务与公共服务门户"
+  },
+  {
+   "id": "R12.08.01.02",
+   "realm": "R12",
+   "name": "Job & rental applications with documents",
+   "zh": "求职与租房申请"
+  },
+  {
+   "id": "R12.08.01.03",
+   "realm": "R12",
+   "name": "Quote & comparison funnels",
+   "zh": "报价与比较漏斗"
+  },
+  {
+   "id": "R12.09.01.01",
+   "realm": "R12",
+   "name": "Photo library organization & light edits",
+   "zh": "相册整理与轻量编辑"
+  },
+  {
+   "id": "R12.09.01.02",
+   "realm": "R12",
+   "name": "Camera & audio capture on device",
+   "zh": "设备拍摄与录音"
+  },
+  {
+   "id": "R12.11.01.01",
+   "realm": "R12",
+   "name": "Personal-context reasoning across apps",
+   "zh": "跨应用个人语境推理"
+  },
+  {
+   "id": "R13.01.01.01",
+   "realm": "R13",
+   "name": "Platformers & arcade reflex",
+   "zh": "平台跳跃与街机反应"
+  },
+  {
+   "id": "R13.01.01.02",
+   "realm": "R13",
+   "name": "3D action & open-world missions",
+   "zh": "3D动作与开放世界任务"
+  },
+  {
+   "id": "R13.01.01.03",
+   "realm": "R13",
+   "name": "Racing & vehicle control",
+   "zh": "竞速与载具操控"
+  },
+  {
+   "id": "R13.01.02.01",
+   "realm": "R13",
+   "name": "Strategy & management games",
+   "zh": "策略与经营游戏"
+  },
+  {
+   "id": "R13.01.02.02",
+   "realm": "R13",
+   "name": "Long-horizon RPG & adventure",
+   "zh": "长程RPG与冒险"
+  },
+  {
+   "id": "R13.01.02.03",
+   "realm": "R13",
+   "name": "Sandbox crafting & building",
+   "zh": "沙盒合成与建造"
+  },
+  {
+   "id": "R13.02.01.01",
+   "realm": "R13",
+   "name": "Board games via GUI",
+   "zh": "图形界面棋类"
+  },
+  {
+   "id": "R13.02.01.02",
+   "realm": "R13",
+   "name": "Card games & deckbuilders",
+   "zh": "卡牌与构筑"
+  },
+  {
+   "id": "R13.02.01.03",
+   "realm": "R13",
+   "name": "Logic & contraption puzzles",
+   "zh": "逻辑与机关谜题"
+  },
+  {
+   "id": "R13.03.01.01",
+   "realm": "R13",
+   "name": "Exploratory playtesting for bugs",
+   "zh": "探索式试玩找缺陷"
+  },
+  {
+   "id": "R13.03.01.02",
+   "realm": "R13",
+   "name": "Visual glitch & regression detection",
+   "zh": "视觉故障与回归检测"
+  },
+  {
+   "id": "R13.03.01.03",
+   "realm": "R13",
+   "name": "Game settings, launchers & mods",
+   "zh": "游戏设置、启动器与模组"
+  },
+  {
+   "id": "R13.04.01.01",
+   "realm": "R13",
+   "name": "Flight & driving simulators",
+   "zh": "飞行与驾驶模拟"
+  },
+  {
+   "id": "R13.05.01.01",
+   "realm": "R13",
+   "name": "Sports video annotation & tactics",
+   "zh": "体育视频标注与战术分析"
+  },
+  {
+   "id": "R13.05.01.02",
+   "realm": "R13",
+   "name": "Tracking & performance data analysis",
+   "zh": "跟踪与表现数据分析"
+  },
+  {
+   "id": "R14.01.01.01",
+   "realm": "R14",
+   "name": "Bank & account reconciliation",
+   "zh": "银行与科目对账"
+  },
+  {
+   "id": "R14.01.01.02",
+   "realm": "R14",
+   "name": "Journal entries & period close",
+   "zh": "凭证与期末结账"
+  },
+  {
+   "id": "R14.01.02.01",
+   "realm": "R14",
+   "name": "Vendor invoice processing",
+   "zh": "供应商发票处理"
+  },
+  {
+   "id": "R14.01.02.02",
+   "realm": "R14",
+   "name": "Order-to-cash & collections",
+   "zh": "订单到收款与催收"
+  },
+  {
+   "id": "R14.01.02.03",
+   "realm": "R14",
+   "name": "Expense audit against policy",
+   "zh": "费用报销合规审核"
+  },
+  {
+   "id": "R14.02.01.01",
+   "realm": "R14",
+   "name": "Three-statement & valuation models",
+   "zh": "三表与估值模型"
+  },
+  {
+   "id": "R14.02.01.02",
+   "realm": "R14",
+   "name": "Filing-based company research",
+   "zh": "基于财报的公司研究"
+  },
+  {
+   "id": "R14.02.01.03",
+   "realm": "R14",
+   "name": "Terminal & market-data workstation workflows",
+   "zh": "金融终端与行情工作站"
+  },
+  {
+   "id": "R14.02.01.04",
+   "realm": "R14",
+   "name": "Paper-trading order entry & rebalancing",
+   "zh": "模拟交易下单与再平衡"
+  },
+  {
+   "id": "R14.03.01.01",
+   "realm": "R14",
+   "name": "Risk & actuarial models",
+   "zh": "风险与精算模型"
+  },
+  {
+   "id": "R14.04.01.01",
+   "realm": "R14",
+   "name": "Tax preparation in tax software",
+   "zh": "税务软件报税"
+  },
+  {
+   "id": "R14.04.01.02",
+   "realm": "R14",
+   "name": "Audit testing & regulatory filings",
+   "zh": "审计测试与监管报送"
+  },
+  {
+   "id": "R14.05.01.01",
+   "realm": "R14",
+   "name": "Banking & payments (sandbox)",
+   "zh": "银行与支付（沙盒）"
+  },
+  {
+   "id": "R14.05.01.02",
+   "realm": "R14",
+   "name": "Budgeting & personal bookkeeping",
+   "zh": "预算与个人记账"
+  },
+  {
+   "id": "R15.01.01.01",
+   "realm": "R15",
+   "name": "LMS course building & configuration",
+   "zh": "LMS课程搭建与配置"
+  },
+  {
+   "id": "R15.01.01.02",
+   "realm": "R15",
+   "name": "Gradebook & term closeout",
+   "zh": "成绩册与学期结算"
+  },
+  {
+   "id": "R15.01.01.03",
+   "realm": "R15",
+   "name": "Rubric grading with inline feedback",
+   "zh": "量规评分与行内反馈"
+  },
+  {
+   "id": "R15.01.01.04",
+   "realm": "R15",
+   "name": "Instructional media & assessment authoring",
+   "zh": "教学媒体与测评制作"
+  },
+  {
+   "id": "R15.02.01.01",
+   "realm": "R15",
+   "name": "Cataloging & MARC remediation",
+   "zh": "编目与MARC修复"
+  },
+  {
+   "id": "R15.02.01.02",
+   "realm": "R15",
+   "name": "Circulation & collection administration",
+   "zh": "流通与馆藏管理"
+  },
+  {
+   "id": "R15.03.01.01",
+   "realm": "R15",
+   "name": "CAT-tool translation with TM & termbase",
+   "zh": "CAT工具翻译（记忆库与术语库）"
+  },
+  {
+   "id": "R15.03.01.02",
+   "realm": "R15",
+   "name": "Software & game localization",
+   "zh": "软件与游戏本地化"
+  },
+  {
+   "id": "R15.03.01.03",
+   "realm": "R15",
+   "name": "Subtitle translation & timing",
+   "zh": "字幕翻译与时间轴"
+  },
+  {
+   "id": "R15.03.01.04",
+   "realm": "R15",
+   "name": "Image-based source transcription & translation",
+   "zh": "基于图像的原文转写与翻译"
+  },
+  {
+   "id": "R15.04.01.01",
+   "realm": "R15",
+   "name": "Student-side LMS & MOOC logistics",
+   "zh": "学生端LMS与慕课"
+  },
+  {
+   "id": "R15.04.01.02",
+   "realm": "R15",
+   "name": "Interactive simulations & virtual labs",
+   "zh": "交互仿真与虚拟实验"
+  },
+  {
+   "id": "R15.04.01.03",
+   "realm": "R15",
+   "name": "Block-based coding",
+   "zh": "积木式编程"
+  },
+  {
+   "id": "R15.04.01.04",
+   "realm": "R15",
+   "name": "Flashcards & drills",
+   "zh": "闪卡与练习"
+  }
+ ]
+}

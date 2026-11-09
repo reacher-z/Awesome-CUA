@@ -96,6 +96,45 @@ class DiscoverTests(unittest.TestCase):
         self.assertEqual(runs["other"]["state"], "success")
         self.assertEqual(candidates["github:xlang-ai/osworld"]["discovered_in"][1]["evidence"]["retrieved_at"], "2026-10-18T00:00:00Z")
 
+    def test_source_exception_is_recorded_and_other_sources_continue(self):
+        self.bodies[LIST['url']] = b'# List\n- https://github.com/owner/asset\n'
+        self.at = '2026-10-18T00:00:00Z'
+        original = self.fetch
+        def fetch(url, refresh=False):
+            if url == LIST['url']:
+                raise TimeoutError('source timed out')
+            return original(url, refresh)
+        with mock.patch.object(catalog, 'fetch', side_effect=fetch):
+            catalog.discover(types.SimpleNamespace(refresh=True, limit=0))
+        runs = {run['id']: run for run in catalog.read_json(self.path / 'discovery-runs.json')}
+        self.assertEqual(runs['list']['state'], 'failed')
+        self.assertIn('source timed out', runs['list']['error'])
+        self.assertEqual(runs['other']['state'], 'success')
+        self.assertIn('github:xlang-ai/osworld', {row['id'] for row in catalog.read_jsonl(self.path / 'candidates.jsonl')})
+
+    def test_retired_source_is_not_requested_and_keeps_its_last_snapshot_provenance(self):
+        before, _ = self.discover(README.encode(), "2026-10-17T00:00:00Z")
+        retired = {**LIST, "retired": {"date": "2026-10-18", "reason": "The upstream document now returns HTTP 404 for every request."}}
+        catalog.write_json(self.path / "sources.json", [retired, OTHER])
+        self.requests.clear()
+        candidates, runs = self.discover(None, "2026-10-18T00:00:00Z")
+        self.assertEqual(self.requests, [(OTHER["url"], True)])
+        self.assertEqual({key: runs["list"][key] for key in ("ok", "state", "retired_on", "request_attempted", "unique_resources", "error")},
+            {"ok": False, "state": "retired", "retired_on": "2026-10-18", "request_attempted": False, "unique_resources": 0,
+             "error": "Retired source: The upstream document now returns HTTP 404 for every request."})
+        self.assertEqual(self.occurrences(candidates, "list"), self.occurrences(before, "list"))
+        self.assertEqual(runs["other"]["state"], "success")
+
+    def test_registry_rejects_an_undocumented_retirement(self):
+        import build
+        ok = {**LIST, "retired": {"date": "2026-10-18", "reason": "The upstream document now returns HTTP 404 for every request."}}
+        self.assertEqual(build.validate_sources([ok]), [])
+        for retired in [True, {"date": "2026-10-18"}, {"date": "18 Oct 2026", "reason": ok["retired"]["reason"]},
+                        {"date": "2026-10-18", "reason": "gone"}, {**ok["retired"], "by": "someone"}]:
+            with self.subTest(retired=retired):
+                self.assertEqual(build.validate_sources([{**LIST, "retired": retired}]),
+                                 ["list: a retired discovery source needs exactly an ISO 'date' and a documented 'reason'"])
+
 
 if __name__ == "__main__":
     unittest.main()

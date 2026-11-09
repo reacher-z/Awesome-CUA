@@ -11,6 +11,7 @@ from build import validate_sources
 from build_site import build_site
 from search_pages import guide_path, resource_path
 from specifications import comparison_body, safe_href
+from test_search_pages import copy_survey_source_inputs
 
 ROOT=Path(__file__).resolve().parents[1]
 ATTACK='javascript:alert(document.domain)'
@@ -22,6 +23,7 @@ class SafeHrefTests(unittest.TestCase):
         cls.temp=tempfile.TemporaryDirectory();cls.source=Path(cls.temp.name)/'source';cls.source.mkdir()
         shutil.copytree(ROOT/'web',cls.source/'web');shutil.copytree(ROOT/'data',cls.source/'data');shutil.copytree(ROOT/'schemas',cls.source/'schemas')
         shutil.copy2(ROOT/'LICENSE',cls.source/'LICENSE');shutil.copy2(ROOT/'AGENTS.md',cls.source/'AGENTS.md')
+        copy_survey_source_inputs(cls.source)
     @classmethod
     def tearDownClass(cls):cls.temp.cleanup()
     def assertBuildRejects(self,name,mutate,message):

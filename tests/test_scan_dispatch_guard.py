@@ -10,6 +10,11 @@ TOKEN = re.compile(r"\s*(==|!=|&&|\|\||!|\(|\)|'[^']*'|[A-Za-z_][\w.-]*)")
 
 def evaluate(expression, context):
     """Evaluate the GitHub expression subset the guards use: context paths, string literals, ==, !=, !, && and ||."""
+    return bool(value(expression, context))
+
+
+def value(expression, context):
+    """The value of an expression; like GitHub, && and || return an operand rather than a boolean."""
     items, position = [], 0
     while expression[position:].strip():
         match = TOKEN.match(expression, position)
@@ -56,10 +61,10 @@ def evaluate(expression, context):
             return token[1:-1]
         return LITERALS[token] if token in LITERALS else context.get(token)
 
-    value = either()
+    result = either()
     if items:
         raise ValueError(expression)
-    return bool(value)
+    return result
 
 
 def steps():
@@ -121,6 +126,16 @@ class ScanDispatchGuardTests(unittest.TestCase):
         found = steps()
         self.assertEqual(WORKFLOW.read_text().count("git push"), 1)
         self.assertEqual(found["Retain scan evidence"]["if"], "always()")
+
+    def test_a_scan_of_main_checks_out_main_as_the_job_starts(self):
+        # A run queued behind another scan must not rebuild from the commit its event recorded.
+        checkout = WORKFLOW.read_text().split("\n    steps:\n", 1)[1].split("\n      - uses: actions/setup-python@", 1)[0]
+        self.assertIn("uses: actions/checkout@", checkout)
+        ref = re.search(r"^          ref: \$\{\{ (.+) \}\}$", checkout, re.M).group(1)
+        for event, github_ref, inputs, _ in self.RUNS:
+            context = {"github.ref": github_ref, "github.event_name": event, "github.sha": "0" * 40}
+            with self.subTest(event=event, ref=github_ref):
+                self.assertEqual(value(ref, context), "refs/heads/main" if github_ref == "refs/heads/main" else "0" * 40)
 
     def test_evaluator_follows_github_operator_rules(self):
         context = {"github.ref": "refs/heads/main", "inputs.flag": None}

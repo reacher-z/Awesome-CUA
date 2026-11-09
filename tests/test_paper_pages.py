@@ -6,13 +6,13 @@ import sys
 import tempfile
 import unittest
 from unittest import mock
-import xml.etree.ElementTree as ET
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / 'scripts'))
 import paper_library
 from build_site import build_site
 from paper_library import library_pages, library_path, library_years
 from search_pages import SITE, resource_path
+from sitemaps import sitemap_urls
 from test_paper_library import LibraryParser, record
 
 BUDGET = 150_000
@@ -88,6 +88,21 @@ class PaperPageTests(unittest.TestCase):
         for path, markup in self.markup.items():
             self.assertLessEqual(len(markup.encode()), BUDGET, path)
 
+    def test_paginated_category_lists_every_reviewed_record_once(self):
+        paths = [path for path in self.markup if path == '/categories/framework/' or path.startswith('/categories/framework/page/')]
+        self.assertGreater(len(paths), 1)
+        listed = [url for path in paths for block in re.findall(r'<article\b.*?</article>', self.markup[path], re.S)
+                  if (match := re.search(r'href="(/resources/[^"]+)"', block)) for url in [match[1]]]
+        rows = [json.loads(line) for line in (Path(__file__).resolve().parents[1] / 'data/catalog.jsonl').read_text(encoding='utf-8').splitlines()]
+        expected = {resource_path(row) for row in rows if row['kind'] == 'framework' and row['review_status'] == 'curated' and row['scope'] in {'core', 'adjacent'}}
+        self.assertEqual(len(listed), len(set(listed)))
+        self.assertEqual(set(listed), expected)
+        for path in paths:
+            pager = re.search(r'<nav class="pager"[^>]*>(.*?)</nav>', self.markup[path], re.S)
+            self.assertIsNotNone(pager)
+            self.assertEqual(set(re.findall(r'href="([^"]+)"', pager[1])), set(paths))
+            self.assertTrue((self.dest / path.lstrip('/') / 'index.md').is_file())
+
     def test_no_two_indexable_listings_share_more_than_half_their_entries(self):
         # Chinese library pages are hreflang translations of the English pages, not competing duplicates.
         listed = {path: entries(markup) for path, markup in self.markup.items() if self.pages[path]['indexable'] and not path.startswith('/zh/')}
@@ -108,7 +123,7 @@ class PaperPageTests(unittest.TestCase):
             self.assertIn(f'id="{anchor}"', self.markup[path])
 
     def test_library_pages_are_indexable_canonical_language_pairs_in_the_sitemap(self):
-        sitemap = {x.text for x in ET.parse(self.dest / 'sitemap.xml').getroot().iter('{http://www.sitemaps.org/schemas/sitemap/0.9}loc')}
+        sitemap = set(sitemap_urls(self.dest, SITE))
         numbers = [int(m[1] or 1) for path in self.markup if (m := re.fullmatch(r'/papers/(?:page/(\d+)/)?', path))]
         self.assertEqual(sorted(numbers), list(range(1, max(numbers) + 1)))
         for number in numbers:

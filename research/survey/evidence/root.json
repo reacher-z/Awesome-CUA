@@ -1,0 +1,197 @@
+{
+  "section": "review protocol, human agency, research assets and agenda",
+  "language": "en",
+  "reading_counts": {
+    "selected_fulltext_section_reads": 7,
+    "supplementary_titles_read": 303,
+    "supplementary_complete_abstracts_read": 26
+  },
+  "records": [
+    {
+      "canonical_id": "arxiv:2608.14132",
+      "read_status": "selected_fulltext_sections_read",
+      "sections": [
+        "3 Task definition",
+        "4.1 Raw data collection",
+        "4.2 Trajectory construction",
+        "7 Limitations and future directions"
+      ],
+      "supported_claims": [
+        "Intention understanding, prediction and confirmed execution are distinct tasks.",
+        "The primary limitations state that opportune intervention timing and real-user acceptance were not evaluated."
+      ],
+      "primary_receipt": {
+        "source_id": "act2intention",
+        "url": "https://arxiv.org/html/2608.14132v1",
+        "retrieved_at_utc": "2026-10-18T10:05:22.211464+00:00",
+        "status": 200,
+        "final_url": "https://arxiv.org/html/2608.14132v1",
+        "bytes": 466875,
+        "sha256": "8d6aa8484ff4a7cbaac589c2c220407ebf6ecd1e216015a248125abdb0f2ed2d",
+        "text_sha256": "a566b22742c4c11e6b6fc0cbf18504e169573f746fb233f17990989cfbc96f55"
+      },
+      "independent_experiments_performed": false
+    },
+    {
+      "canonical_id": "arxiv:2608.09944",
+      "read_status": "selected_fulltext_sections_read",
+      "sections": [
+        "3.3 Interface states and task annotations",
+        "3.4 Evaluation",
+        "4.1 Models and experimental setup",
+        "5 Discussion"
+      ],
+      "supported_claims": [
+        "Packaged tasks use recorded linear transition graphs; unsupported actions do not create another path.",
+        "Reported model experiments use 25 validation tasks with text-based inputs, without screenshots."
+      ],
+      "primary_receipt": {
+        "source_id": "nexui",
+        "url": "https://arxiv.org/html/2608.09944v1",
+        "retrieved_at_utc": "2026-10-18T10:05:26.923383+00:00",
+        "status": 200,
+        "final_url": "https://arxiv.org/html/2608.09944v1",
+        "bytes": 100629,
+        "sha256": "777197864eeaa34d180bf6b91f32408b7b3d8cc5c9faecc95eca276f5bd426de",
+        "text_sha256": "ec963079f47275a95838d92ae63189edff2f4ec6e65886063479f349e3954afa"
+      },
+      "independent_experiments_performed": false
+    },
+    {
+      "canonical_id": "arxiv:2507.18165",
+      "read_status": "selected_fulltext_sections_read",
+      "sections": [
+        "5.3 User study",
+        "5.3.2 Observed issues",
+        "6.1 Design trade-off",
+        "6.2 Limitations"
+      ],
+      "supported_claims": [
+        "The reported in-lab user study recruited ten users.",
+        "Users requested finer control; the paper discusses clarification and intervention trade-offs."
+      ],
+      "primary_receipt": {
+        "source_id": "proactiveva",
+        "url": "https://arxiv.org/html/2507.18165v1",
+        "retrieved_at_utc": "2026-10-18T10:05:30.529800+00:00",
+        "status": 200,
+        "final_url": "https://arxiv.org/html/2507.18165v1",
+        "bytes": 163680,
+        "sha256": "7ca9569113479791a0482f4c196002a8459f1826eb6a3c9fab8a701b33360593",
+        "text_sha256": "c094e66c45223290d018056500d87ba5e6915f68c482106c3deef0fc577cf7e3"
+      },
+      "independent_experiments_performed": false
+    },
+    {
+      "canonical_id": "arxiv:1803.09010",
+      "read_status": "selected_fulltext_sections_read",
+      "sections": [
+        "3 Questions and workflow"
+      ],
+      "supported_claims": [
+        "Dataset documentation covers lifecycle stages and can preserve unknown facts."
+      ],
+      "primary_receipt": {
+        "source_id": "datasheets",
+        "url": "https://arxiv.org/html/1803.09010v8",
+        "retrieved_at_utc": "2026-10-18T10:05:34.384454+00:00",
+        "status": 200,
+        "final_url": "https://arxiv.org/html/1803.09010v8",
+        "bytes": 98863,
+        "sha256": "c672395cf1c889a2e7512ca9b42814038075aff5082f71007d65337305f2ce5a",
+        "text_sha256": "38529e318365e4647aef877384a9e5dbdbfd0cd2dab10b03cce35a361ad1e6ae"
+      },
+      "independent_experiments_performed": false
+    },
+    {
+      "canonical_id": "arxiv:1810.03993",
+      "read_status": "selected_fulltext_sections_read",
+      "sections": [
+        "4 Model card sections",
+        "6 Discussion and future work"
+      ],
+      "supported_claims": [
+        "Model documentation connects identity and intended use with evaluation factors, metrics and caveats."
+      ],
+      "primary_receipt": {
+        "source_id": "modelcards",
+        "url": "https://arxiv.org/html/1810.03993v2",
+        "retrieved_at_utc": "2026-10-18T10:05:41.022829+00:00",
+        "status": 200,
+        "final_url": "https://arxiv.org/html/1810.03993v2",
+        "bytes": 149858,
+        "sha256": "971e98662e58d700e887638adb4ab66fbc0ae4e119a4f4f8a09a1dd89919b20d",
+        "text_sha256": "d030429bf63a7e71bcf025fbdff2be894a00a76912955c6438ed3327d8282267"
+      },
+      "independent_experiments_performed": false
+    },
+    {
+      "canonical_id": "doi:10.1038/sdata.2016.18",
+      "read_status": "selected_fulltext_sections_read",
+      "sections": [
+        "The FAIR Guiding Principles in detail",
+        "Box 2",
+        "The Principles precede implementation"
+      ],
+      "supported_claims": [
+        "Metadata, persistent identity, provenance and explicit reuse terms serve human and computational consumers."
+      ],
+      "primary_receipt": {
+        "source_id": "fair",
+        "url": "https://www.nature.com/articles/sdata201618",
+        "retrieved_at_utc": "2026-10-18T10:05:48.050920+00:00",
+        "status": 200,
+        "final_url": "https://www.nature.com/articles/sdata201618?error=cookies_not_supported&code=450dbabf-769a-437b-9312-4f9bf91ce790",
+        "bytes": 449982,
+        "sha256": "a1ffb0d1dd0fdc4fb3d98e543e9f2a33f5951d519cf2b49ccc41f60401d5efc3",
+        "text_sha256": "f256fbe80665ae55a2329628da9cf18b21464b02a1fdd2b63e56b9af6970556b"
+      },
+      "independent_experiments_performed": false
+    },
+    {
+      "canonical_id": "doi:10.1038/s41597-022-01710-x",
+      "read_status": "selected_fulltext_sections_read",
+      "sections": [
+        "Introduction",
+        "Results: FAIR4RS Principles"
+      ],
+      "supported_claims": [
+        "Research-software principles distinguish component and version identities and retain provenance and licensing."
+      ],
+      "primary_receipt": {
+        "source_id": "fair4rs",
+        "url": "https://www.nature.com/articles/s41597-022-01710-x",
+        "retrieved_at_utc": "2026-10-18T10:06:01.695367+00:00",
+        "status": 200,
+        "final_url": "https://www.nature.com/articles/s41597-022-01710-x?error=cookies_not_supported&code=5573c94b-b045-4ccf-a206-abfa9ac63e4a",
+        "bytes": 299579,
+        "sha256": "a6f9d6a33a1d1123f3fe94c69b299bf2a0eab0d903ada331059770109daad8ee",
+        "text_sha256": "cd029195f34712fbc41a46537e53a18eb987be84cad9399972c6b93787048f6e"
+      },
+      "independent_experiments_performed": false
+    }
+  ],
+  "proposal_boundary": "Record contracts and research-agenda experiments are author recommendations, not new empirical results.",
+  "catalog_anchor": {
+    "source_commit": "87166fe8ad9c8e832f7a90ee84b2e93c6e0e40db",
+    "sha256": "7f71a1683ab013e587a20086c3e357956981f517a24ae8bc8e81791108c66e4f"
+  },
+  "queries": [
+    {
+      "q": "\"FAIR Guiding Principles\" scientific data management stewardship 2016",
+      "domain": "nature.com"
+    },
+    {
+      "q": "\"Datasheets for Datasets\" Gebru 2018",
+      "domain": "arxiv.org"
+    },
+    {
+      "q": "\"Model Cards for Model Reporting\" 2019",
+      "domain": "arxiv.org"
+    },
+    {
+      "q": "\"computer use\" \"GUI agents\" survey 2026",
+      "domain": "arxiv.org"
+    }
+  ]
+}

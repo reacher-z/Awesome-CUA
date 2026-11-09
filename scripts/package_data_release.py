@@ -312,7 +312,7 @@ def validate_provenance(payloads, rows, repo_root):
              for r in rows if r['review_status']=='curated' and r['scope'] in {'core','adjacent'} for rel in r['relations']]
     relationships = parse_json(payloads['downloads/relationships.json'])
     same_json(relationships, {'relation_count':len(edges),
-                             'semantics':'Reviewed semantic links only. Documentation does not establish training or evaluation dependency.',
+                             'semantics':'Reviewed semantic links.',
                              'relations':edges}, 'reviewed relationships')
     coverage = parse_json(payloads['downloads/coverage.json'])
     expected = {'as_of_utc':max((e['retrieved_at'] for r in rows for e in r['evidence']),default=''),
@@ -384,8 +384,11 @@ same data as an array, and `downloads/catalog.sqlite` supports local SQL queries
 `downloads/rag-all-records.jsonl` also preserves metadata-only review states.
 Paper citations and publication editions are separate exports in `downloads/`.
 `downloads/topics.json` lists full-record and citation subsets under
-`downloads/topics/<topic>/`; memberships overlap and their counts must not be added.
+`downloads/topics/<topic>/`.
 Keep stable IDs, review states, evidence, scoped licenses and record fingerprints.
+Optional GitHub candidate observations have their own snapshot and input
+fingerprints. They remain candidate/relevance_pending, outside the recommendation
+and RAG populations.
 
 This ZIP contains data and guidance, not repository scripts. For CLI search or
 custom exports, clone the source and select this exact commit:
@@ -425,8 +428,10 @@ Use the existing exports under downloads/ and data/; this bundle has no scripts/
 Read README.md and downloads/manifest.json before choosing a corpus. Preserve
 review_status, source receipts, scoped licenses, aliases and record_sha256.
 Use curated records for reviewed recommendations; metadata_verified is bibliography
-awaiting relevance review. Topic subsets overlap. Raw arXiv archive records include
-scope exclusions and are not the active corpus. For source CLI tools, clone and
+awaiting relevance review. Raw arXiv archive records include scope exclusions.
+Optional GitHub candidate observations remain candidate/relevance_pending in a
+separate population with their own observation fingerprint.
+For source CLI tools, clone and
 checkout the exact commit in data/build-info.json; follow that checkout's AGENTS.md.
 ''').encode()
     payloads['data/build-info.json'] = json_bytes({'artifact_kind': 'offline-data-release', 'source_commit':source_commit,
@@ -460,7 +465,7 @@ checkout the exact commit in data/build-info.json; follow that checkout's AGENTS
                                                    for kind,count in sorted(Counter(r['kind'] for r in rows).items())}},
                    'files':entries, 'zip':{'file':ZIP_NAME, 'bytes':len(zip_body), 'sha256':digest(zip_body), 'members':len(entries),
                                          'compression':'deflate-9', 'entry_timestamp':'1980-01-01T00:00:00'},
-                   'validation_boundary':'Checks cover bundled syntax, contracts, identity links and catalog-derived exports/counts. External raw network bodies and discovery candidate populations are not included or re-fetched; their receipt claims are preserved, not independently proven by this bundle. The trusted workflow checkout/build establishes source_commit authenticity; a 40-hex string alone does not.',
+                   'validation_boundary':'Checks cover bundled syntax, contracts, identity links and catalog-derived exports/counts. Optional sanitized GitHub candidate observations are a separate, unreviewed population with independent observation/input fingerprints. External raw network bodies and the full scan state are not included or re-fetched; historical receipt claims are preserved, not independently proven by this bundle. The trusted workflow checkout/build establishes source_commit authenticity; a 40-hex string alone does not.',
                    'fingerprint_policy':'File hashes cover exact uncompressed bytes. This external manifest is not inside the ZIP, avoiding a circular ZIP hash.'}
         (stage / MANIFEST_NAME).write_bytes(json_bytes(release))
         publish_pair(stage, destination)

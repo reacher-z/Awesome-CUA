@@ -2,13 +2,23 @@
 
 [Home](../README.md) · [Methodology](methodology.md) · [Machine-readable catalog](../data/catalog.jsonl)
 
-Curated metadata, not a performance ranking. Each entry links its first-party evidence. Unknown facts are shown as —.
+Curated metadata. Each entry links its first-party evidence. Unknown facts are shown as —.
 
 *Evidence* links the reviewed first-party snapshot and its retrieval date.
 
-**16 resources:** [Unspecified (16)](#unspecified)
+**19 resources:** [Cross-platform (1)](#cross-platform) · [Unspecified (18)](#unspecified)
 
 Resources tagged with environments from more than one family are listed under *Cross-platform*; their exact environments stay in the table.
+
+## Cross-platform
+
+All entries in this section: cross-platform, desktop.
+
+| Resource | Description | Evidence |
+| --- | --- | --- |
+| [Coasty](https://coasty.ai) | Coasty develops computer-use environments for agent training and evaluation, using computer and phone interfaces alongside trajectories and outcome checks. | [✓ 2026‑11‑09](https://coasty.ai) |
+
+[↑ Back to top](#company-catalog)
 
 ## Unspecified
 
@@ -25,8 +35,10 @@ All entries in this section: unspecified.
 | [E2B](https://e2b.dev/) | Publisher or product brand associated with E2B computer-use or browser automation offerings. | [✓ 2026‑10‑16](https://e2b.dev/) |
 | [Google](https://ai.google.dev/gemini-api/docs/computer-use) | Publisher or product brand associated with Google computer-use or browser automation offerings. | [✓ 2026‑10‑16](https://ai.google.dev/gemini-api/docs/computer-use) |
 | [H](https://hcompany.ai/research/models) | Publisher or product brand associated with H computer-use or browser automation offerings. | [✓ 2026‑10‑16](https://hcompany.ai/research/models) |
+| [Huzzle Labs](https://labs.huzzle.com) | Company developing computer-use models, RL environments and evaluations for AI labs and enterprise work. Its site describes the Huzzle World model family. | [✓ 2026‑11‑09](https://labs.huzzle.com) |
 | [Hyperbrowser](https://www.hyperbrowser.ai/) | Publisher or product brand associated with Hyperbrowser computer-use or browser automation offerings. | [✓ 2026‑10‑16](https://www.hyperbrowser.ai/) |
 | [Manus](https://manus.im/) | Publisher or product brand associated with Manus computer-use or browser automation offerings. | [✓ 2026‑10‑16](https://manus.im/) |
+| [Microsoft](https://learn.microsoft.com/en-us/microsoft-copilot-studio/computer-use) | Publisher or product brand associated with Microsoft computer-use or browser automation offerings. | [✓ 2026‑10‑18](https://learn.microsoft.com/en-us/microsoft-copilot-studio/computer-use) |
 | [OpenAI](https://openai.com/index/computer-using-agent/) | Publisher or product brand associated with OpenAI computer-use or browser automation offerings. | [✓ 2026‑10‑16](https://openai.com/index/computer-using-agent/) |
 | [Simular](https://www.simular.ai/) | Publisher or product brand associated with Simular computer-use or browser automation offerings. | [✓ 2026‑10‑16](https://www.simular.ai/) |
 | [Skyvern](https://www.skyvern.com/) | Publisher or product brand associated with Skyvern computer-use or browser automation offerings. | [✓ 2026‑10‑16](https://www.skyvern.com/) |
@@ -35,4 +47,4 @@ All entries in this section: unspecified.
 
 [↑ Back to top](#company-catalog)
 
-Detailed notes and separate code/data/weights license declarations are in `data/catalog.jsonl`.
+Detailed notes and separate code/data/weights/document license declarations are in `data/catalog.jsonl`.

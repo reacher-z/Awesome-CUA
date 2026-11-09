@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light">
+  <meta name="robots" content="index,follow,max-image-preview:large">
+  <meta name="description" content="An evidence-led research survey of computer-use agents, their methods, evaluation, and human interaction.">
+  <meta property="og:title" content="{{TITLE}} · AwesomeCUA">
+  <meta property="og:description" content="An English research survey connecting computer-use agent methods, evaluation protocols, human agency, and reusable research assets. Includes an inspectable reading register and versioned bibliography.">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://awesomecua.com/survey/">
+  <meta property="og:site_name" content="AwesomeCUA">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:image" content="https://awesomecua.com/social.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="AwesomeCUA: Research, models, data, and tools in one source-backed computer-use agent index.">
+  <meta name="twitter:card" content="summary_large_image">
+  <title>{{TITLE}} · AwesomeCUA</title>
+  <style>{{CSS}}</style>
+  <script type="application/ld+json">{{STRUCTURED_DATA}}</script>
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to the article</a>
+  <header class="site-header">
+    <div class="site-header-inner">
+      <a class="site-brand" href="https://awesomecua.com/" aria-label="AwesomeCUA home">
+        <svg class="brand-mark" viewBox="0 0 24 24" width="24" height="24" aria-hidden="true"><rect x="2" y="3" width="20" height="15" rx="3" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M8 22h8M12 18v4M8 8l-3 3 3 3m8-6 3 3-3 3" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        <span>AwesomeCUA</span>
+      </a>
+      <nav class="header-nav" aria-label="Site links">
+        <a href="https://awesomecua.com/papers/">Paper library</a>
+        <a href="https://github.com/reacher-z/Awesome-CUA">GitHub <span aria-hidden="true">↗</span></a>
+      </nav>
+    </div>
+  </header>
+
+  <div class="reader-layout">
+    <aside class="contents-column" aria-label="Article navigation">
+      <details class="contents" id="article-contents">
+        <summary><span>Contents</span><span class="contents-toggle" aria-hidden="true">+</span></summary>
+        <nav id="article-toc-nav" aria-label="Table of contents">{{TOC}}</nav>
+        <div class="contents-footer"><a href="#references">References</a><a href="#evidence-appendix">Evidence appendix</a></div>
+      </details>
+    </aside>
+
+    <main id="main-content" tabindex="-1">
+      <article class="paper" aria-labelledby="article-title">
+        <header class="article-header">
+          <div class="article-kicker"><nav aria-label="Breadcrumb"><ol><li><a href="/">AwesomeCUA</a></li><li><a href="/survey/" aria-current="page">Research survey</a></li></ol></nav><span aria-hidden="true">/</span><span>Working manuscript</span></div>
+          <h1 id="article-title">{{TITLE}}</h1>
+          <p class="article-deck">An evidence-led review of the mechanisms, evaluation practices, and human decisions behind agents that operate digital interfaces.</p>
+          <div class="article-meta"><time datetime="2026-10-18">18 October 2026</time><span aria-hidden="true">·</span><span>{{READING_MINUTES}} min read</span></div>
+          <dl class="article-facts">
+            <div><dt>References</dt><dd>{{REFERENCE_COUNT}}</dd></div>
+            <div><dt>Sources read in selected sections</dt><dd>{{FULLTEXT_COUNT}}</dd></div>
+          </dl>
+        </header>
+
+        <section class="abstract" id="abstract" aria-labelledby="abstract-heading">
+          <h2 id="abstract-heading">Abstract</h2>
+          <div class="abstract-copy">{{ABSTRACT}}</div>
+        </section>
+
+        <nav class="table-jumps" aria-label="Jump to a comparison table">
+          <span class="jump-label">Compare</span>
+          <a href="#context-survey-comparison">Prior surveys <span aria-hidden="true">↘</span></a>
+          <a href="#methods-design-table">Methods <span aria-hidden="true">↘</span></a>
+          <a href="#evaluation-benchmarks">Benchmarks <span aria-hidden="true">↘</span></a>
+          <a href="#human-case-table">Human–agent cases <span aria-hidden="true">↘</span></a>
+        </nav>
+
+        <div class="article-body">{{BODY}}</div>
+
+        <section class="evidence-appendix article-body" id="evidence-appendix" aria-labelledby="evidence-appendix-heading">
+          <p class="section-label">Appendix</p>
+          <h2 id="evidence-appendix-heading">Evidence and search record</h2>
+          {{EVIDENCE_SUMMARY}}
+        </section>
+
+        <section class="references" id="references" aria-labelledby="references-heading">
+          <div class="reference-heading-row"><h2 id="references-heading">References</h2><span class="reference-total">{{REFERENCE_COUNT}} sources</span></div>
+          <p class="reference-intro">Follow the linked sources for their methods and stated limitations. Download the bibliography as <a href="references.bib" download>BibTeX</a> or <a href="references.json" download>JSON</a>.</p>
+          <form class="reference-filter" id="reference-filter" role="search" hidden>
+            <label for="reference-query">Find a reference</label>
+            <div class="reference-filter-fields"><input id="reference-query" type="search" placeholder="Author, title, year, or identifier" autocomplete="off" aria-controls="reference-list" aria-describedby="reference-filter-status"><button type="reset">Clear</button></div>
+            <p id="reference-filter-status" class="filter-status" role="status" aria-live="polite" aria-atomic="true"></p>
+          </form>
+          <div id="reference-list">{{REFERENCES}}</div>
+          <p class="reference-empty" id="reference-empty" hidden>No references match. Try a shorter title, another author, or a year.</p>
+        </section>
+      </article>
+      <footer class="article-footer"><p>AwesomeCUA · Working manuscript · 18 October 2026</p><a href="#article-title">Back to the beginning <span aria-hidden="true">↑</span></a></footer>
+    </main>
+  </div>
+
+  <script type="application/json" id="bibliography-data">{{BIB_DATA}}</script>
+  <script>{{JS}}</script>
+</body>
+</html>

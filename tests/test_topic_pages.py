@@ -9,6 +9,7 @@ import unittest
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / 'scripts'))
 from topic_pages import reviewed_topics, topic_body, topic_counts, topic_index_body, topic_markdown, topic_path, write_topic_exports
 from search_pages import resource_path
+from site_config import SITE
 from test_paper_library import LibraryParser
 from test_resource_payloads import paper
 
@@ -31,7 +32,7 @@ class TopicPagesTests(unittest.TestCase):
         self.assertEqual(set(topics), {'grounding', 'planning'})
         self.assertEqual({r['id'] for r in topics['grounding']}, {self.paper['id'], self.asset['id']})
         self.assertEqual(topic_counts(topics['grounding']),
-                         {'total': 2, 'papers': 1, 'benchmarks': 0, 'datasets': 0, 'models': 0, 'systems': 1})
+                         {'total': 2, 'papers': 1, 'benchmarks': 0, 'datasets': 0, 'models': 0, 'systems': 1, 'learning': 0})
         with tempfile.TemporaryDirectory() as temp:
             manifest, _ = write_topic_exports(temp, self.rows, b'original catalog bytes')
         self.assertEqual(manifest['reviewed_resources'], 3)
@@ -65,7 +66,7 @@ class TopicPagesTests(unittest.TestCase):
             self.assertEqual(len(parsed.records), 2)
             self.assertEqual(schema['numberOfItems'], len(parsed.records))
             self.assertEqual([i['url'] for i in schema['itemListElement']],
-                             ['https://awesomecua.github.io' + resource_path({'id': rid}) for rid in parsed.records])
+                             [SITE + resource_path({'id': rid}) for rid in parsed.records])
             for link in parsed.links:
                 if link.startswith('#') and link != '#content':
                     self.assertIn(link[1:], parsed.ids)

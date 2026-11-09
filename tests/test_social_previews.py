@@ -8,7 +8,7 @@ import unittest
 
 sys.path.insert(0,str(Path(__file__).resolve().parents[1]/'scripts'))
 from build_site import build_site
-from search_pages import SITE
+from test_search_pages import page_origin
 
 
 class HeadParser(HTMLParser):
@@ -36,7 +36,7 @@ class SocialPreviewTests(unittest.TestCase):
             if item['path'].endswith('/'):target=target/'index.html'
             head=HeadParser(target.read_text());meta=head.meta;locales[item['path']]=meta.get('og:locale')
             with self.subTest(path=item['path']):
-                self.assertEqual(meta['og:image'],[SITE+'/social.png'])
+                self.assertEqual(meta['og:image'],[page_origin(self.dest,item['path'])+'/social.png'])
                 self.assertEqual(meta['twitter:card'],['summary_large_image'])
                 self.assertEqual(meta['og:site_name'],['AwesomeCUA'])
                 self.assertEqual(meta['og:locale'],['zh_CN' if head.lang=='zh-CN' else 'en_US'])

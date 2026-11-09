@@ -5,7 +5,7 @@ import hashlib
 import json
 from pathlib import Path
 import sys
-from publication_metadata import publication, record_date_text, format_date_parts
+from publication_metadata import AUTHORS_OMITTED, authors_omitted, publication, record_date_text, format_date_parts
 
 ROOT = Path(__file__).resolve().parents[1]
 
@@ -24,7 +24,8 @@ def documents(records, include_metadata=False):
             raise ValueError('Unrecognized catalog review status: '+rid)
         if not include_metadata and record['review_status']!='curated':continue
         # Use the same stable permalink convention as the website builder.
-        from search_pages import resource_path, SITE
+        from search_pages import resource_path
+        from site_config import SITE
         snapshot=record.get('details',{}).get('arxiv_snapshot')
         source_url=(snapshot or {}).get('versioned_url') or record['url']
         lines=[record['name'],f"Resource type: {record['kind']}",f"Review status: {record['review_status']}",f"Scope: {record['scope']}"]
@@ -34,11 +35,12 @@ def documents(records, include_metadata=False):
         if record['topics']:lines.append('Topics: '+', '.join(record['topics']))
         if record.get('published_at'):lines.append('Published: '+record['published_at'])
         elif record_date_text(record):lines.append('Record publication date (recorded precision): '+record_date_text(record))
-        if record.get('authors'):lines.append('Authors: '+', '.join(record['authors']))
+        if authors_omitted(record):lines.append(AUTHORS_OMITTED[0]+' ('+source_url+')')
+        elif record.get('authors'):lines.append('Authors: '+', '.join(record['authors']))
         if snapshot and snapshot.get('version'):lines.append(f"Recorded arXiv version: v{snapshot['version']}")
         pub=publication(record)
         if pub:
-            lines.extend(['', 'Publication edition: '+pub['title'], 'Publication authors: '+', '.join(pub['authors'])])
+            lines.extend(['', 'Publication edition: '+pub['title'], 'Publication authors: '+('see the paper ('+pub['url']+')' if authors_omitted(record) else ', '.join(pub['authors']))])
             if pub['date_parts']:lines.append('Publication edition date (recorded precision): '+format_date_parts(pub['date_parts']))
             for key in ('venue','publisher','volume','issue','pages','doi','date_basis','event_dates','notes'):
                 if pub.get(key):lines.append('Publication '+key.replace('_',' ')+': '+pub[key])
@@ -47,7 +49,7 @@ def documents(records, include_metadata=False):
         if specifications:lines.extend(['','Recorded specifications: '+json.dumps(specifications,ensure_ascii=False,sort_keys=True)])
         if record.get('notes'):lines.extend(['',record['notes']])
         if record['review_status']=='metadata_verified':
-            lines.append('Bibliographic facts only; relevance, methods, and findings have not been editorially reviewed.')
+            lines.append('Bibliographic facts only; this record has no approved editorial annotation. Relevance and findings remain pending.')
         lines.extend(['','Primary source: '+source_url,'Catalog record: '+SITE+resource_path(record)])
         yield {'id':rid,'text':'\n'.join(lines),'metadata':{
             'schema_version':1,'resource_id':rid,'name':record['name'],'kind':record['kind'],
@@ -58,7 +60,8 @@ def documents(records, include_metadata=False):
             'environments':record['environments'],'topics':record['topics'],'aliases':record['aliases'],
             'arxiv_snapshot':snapshot,'publication':pub,'details':record['details'],'links':record['links'],'authors':record['authors'],
             'licenses':record['licenses'],'relations':record['relations'],
-            'evidence':record['evidence'],'record_sha256':record_digest(record)}}
+            'evidence':record['evidence'],'record_sha256':record_digest(record),
+            **({'authors_omitted':True} if authors_omitted(record) else {})}}
 
 
 def encode_documents(records, include_metadata=False):
@@ -77,7 +80,7 @@ def build_exports(records, destination, catalog_bytes):
     manifest={'schema_version':1,'catalog_sha256':hashlib.sha256(catalog_bytes).hexdigest(),
         'document_grain':'One resource per document; related papers, code, models, and datasets remain separate resources.',
         'text_policy':'Catalog metadata and original annotations; no paper full text, copied full abstracts, weights, or training examples.',
-        'review_policy':'Use review_status=curated for reviewed retrieval. metadata_verified records require a relevance review.',
+        'review_policy':'Use review_status=curated for reviewed retrieval. metadata_verified records require an editorial relevance decision and can include source-reviewed holds.',
         'exports':exports}
     (destination/'rag-manifest.json').write_text(json.dumps(manifest,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
     return manifest

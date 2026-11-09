@@ -9,6 +9,7 @@ import urllib.parse
 sys.path.insert(0,str(Path(__file__).resolve().parents[1]/'scripts'))
 from build_site import build_site
 from search_pages import KINDS, SOURCE_REPO, SITE
+from sitemaps import sitemap_urls
 
 
 class NotFoundParser(HTMLParser):
@@ -43,7 +44,7 @@ class NotFoundPageTests(unittest.TestCase):
         self.assertEqual(self.page.canonical,[]);self.assertNotIn('og:url',self.page.meta)
     def test_links_to_search_directory_papers_categories_and_issue_tracker(self):
         links=set(self.page.links)
-        for target in ['/#catalog','/catalog/','/papers/',*(f'/categories/{kind}/' for kind in KINDS)]:self.assertIn(target,links)
+        for target in ['/explore/#catalog','/catalog/','/papers/',*(f'/categories/{kind}/' for kind in KINDS)]:self.assertIn(target,links)
         self.assertTrue(any(link.startswith(SOURCE_REPO+'/issues') for link in links))
         for link in links:
             u=urllib.parse.urlsplit(link)
@@ -55,7 +56,8 @@ class NotFoundPageTests(unittest.TestCase):
         manifest=json.loads((self.dest/'data/search-manifest.json').read_text())
         # Page counts, sitemaps and IndexNow submissions all derive from the manifest.
         self.assertNotIn('/404.html',{item['path'] for item in manifest['pages']})
-        for name in ('sitemap.xml','sitemap.txt'):self.assertNotIn(SITE+'/404.html',(self.dest/name).read_text())
+        self.assertNotIn(SITE+'/404.html',sitemap_urls(self.dest,SITE))
+        self.assertNotIn(SITE+'/404.html',(self.dest/'sitemap.txt').read_text().splitlines())
 
 
 if __name__=='__main__':unittest.main()

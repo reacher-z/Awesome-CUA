@@ -2,9 +2,17 @@
 
 [Home](../../README.md) · [All topics](../topics.md) · [Full arXiv bibliography](../papers.md)
 
-101 source-reviewed resources tagged `interaction-history`. Curated metadata; unknown facts are shown as —.
+105 source-reviewed resources tagged `interaction-history`. Curated metadata; unknown facts are shown as —.
 
-**Contents:** [Datasets (2)](#datasets) · [Models (4)](#models) · [Frameworks (1)](#frameworks) · [Tools (1)](#tools) · [Surveys (1)](#surveys) · [Papers (92)](#papers)
+**Contents:** [Benchmarks (1)](#benchmarks) · [Datasets (2)](#datasets) · [Models (4)](#models) · [Agents (2)](#agents) · [Frameworks (2)](#frameworks) · [Tools (1)](#tools) · [Surveys (1)](#surveys) · [Papers (92)](#papers)
+
+## Benchmarks
+
+All entries in this section: web.
+
+| Resource | Paper | Scale | License | Description | Evidence |
+| --- | --- | --- | --- | --- | --- |
+| [VideoWebArena](https://github.com/ljang0/videowebarena) | [2410.19100](https://arxiv.org/abs/2410.19100) (2024) | — | — | VideoWebArena evaluates web agents that use video tutorials to complete website tasks. Its released benchmark includes task configurations, environments, and an evaluation pipeline. | [✓ 2026‑11‑09](https://raw.githubusercontent.com/ljang0/videowebarena/HEAD/README.md) |
 
 ## Datasets
 
@@ -22,13 +30,19 @@
 | [OpenCUA-7B](https://huggingface.co/xlangai/OpenCUA-7B) | desktop, linux, windows, macos | [2508.09123](https://arxiv.org/abs/2508.09123) (2025) | weights mit | A Qwen2.5-VL-based computer-use checkpoint that produces desktop actions from screenshots and instructions, using recent screen history for context. | [✓ 2026‑11‑09](https://huggingface.co/api/models/xlangai/OpenCUA-7B) |
 | [STEVE-R1-7B-SFT](https://huggingface.co/Fanbin/STEVE-R1-7B-SFT) | desktop, windows, linux | [2503.12532](https://arxiv.org/abs/2503.12532) (2025) | weights apache-2.0 | STEVE-R1-7B-SFT is a released computer-use checkpoint trained with step-verified data for desktop agent tasks and evaluated on Windows and Ubuntu environments. | [✓ 2026‑11‑09](https://huggingface.co/api/models/Fanbin/STEVE-R1-7B-SFT) |
 
+## Agents
+
+| Resource | Environments | Paper | License | Description | Evidence |
+| --- | --- | --- | --- | --- | --- |
+| [Auto-UI](https://github.com/gimme1dollar/auto_ui) | android | [2309.11436](https://arxiv.org/abs/2309.11436) (2023) | code Apache-2.0 | A multimodal interface agent that uses earlier actions and future action plans to predict the next action. The repository provides training and inference instructions. | [✓ 2026‑11‑09](https://raw.githubusercontent.com/gimme1dollar/auto_ui/HEAD/README.md) |
+| [GUI-Rise](https://github.com/Leon022/GUI-Rise-code) | cross-platform, web, android | [2510.27210](https://arxiv.org/abs/2510.27210) (2025) | — | A GUI navigation agent that combines stepwise reasoning with history summarization; its repository provides supervised training, reinforcement learning, and evaluation instructions. | [✓ 2026‑11‑09](https://raw.githubusercontent.com/Leon022/GUI-Rise-code/HEAD/README.md) |
+
 ## Frameworks
 
-All entries in this section: android.
-
-| Resource | Paper | License | Description | Evidence |
-| --- | --- | --- | --- | --- |
-| [MemGUI-Agent](https://github.com/kwai/MemGUI-Agent) | [2606.19926](https://arxiv.org/abs/2606.19926) (2026) | — | MemGUI-Agent training and offline evaluation tools provide trajectory conversion, LoRA SFT templates, and step-level checks of GUI actions, memory updates and context folding. | [✓ 2026‑10‑20](https://raw.githubusercontent.com/kwai/MemGUI-Agent/main/README.md) |
+| Resource | Environments | Paper | License | Description | Evidence |
+| --- | --- | --- | --- | --- | --- |
+| [HiconAgent](https://github.com/iLearn-Lab/CVPR26-HiconAgent) | unspecified | [2512.01763](https://arxiv.org/abs/2512.01763) (2025) | — | HiconAgent provides GUI-policy training code that samples histories of varied lengths and compresses past interactions during policy optimization. | [✓ 2026‑11‑09](https://raw.githubusercontent.com/iLearn-Lab/CVPR26-HiconAgent/HEAD/README.md) |
+| [MemGUI-Agent](https://github.com/kwai/MemGUI-Agent) | android | [2606.19926](https://arxiv.org/abs/2606.19926) (2026) | — | MemGUI-Agent training and offline evaluation tools provide trajectory conversion, LoRA SFT templates, and step-level checks of GUI actions, memory updates and context folding. | [✓ 2026‑10‑20](https://raw.githubusercontent.com/kwai/MemGUI-Agent/main/README.md) |
 
 ## Tools
 

@@ -10672,5 +10672,65 @@
     "url": "https://huggingface.co/datasets/BoyuNLP/Misc/tree/main/Experiments/AndroidWorld",
     "decision": "not_a_resource",
     "reason": "https://huggingface.co/datasets/BoyuNLP/Misc/tree/main/Experiments/AndroidWorld is a folder path inside a Hugging Face repository whose card holds only a license declaration; the path names a set of files."
+  },
+  {
+    "id": "github:jlin816/dynalang",
+    "url": "https://github.com/jlin816/dynalang",
+    "decision": "out_of_scope",
+    "reason": "Dynalang's examples involve embodied environments, games, and visual navigation. The README does not describe computer, browser, or mobile interface interaction.",
+    "reviewed_at": "2026-11-09T04:25:15Z",
+    "evidence": {
+      "url": "https://raw.githubusercontent.com/jlin816/dynalang/main/README.md",
+      "sha256": "1157f957d589062ec1b841d8d48697f215e165133ab7c675c86df054b12f75a5",
+      "retrieved_at": "2026-11-09T04:19:32Z"
+    }
+  },
+  {
+    "id": "github:hongjin-su/hongjin-su.github.io",
+    "url": "https://github.com/hongjin-su/hongjin-su.github.io",
+    "decision": "out_of_scope",
+    "reason": "The README documents the Minimal Mistakes Jekyll theme for personal sites, blogs, and portfolios, including layouts, skins, and installation steps.",
+    "reviewed_at": "2026-11-09T04:30:59Z",
+    "evidence": {
+      "url": "https://raw.githubusercontent.com/hongjin-su/hongjin-su.github.io/main/README.md",
+      "sha256": "577f6878c79addf96393013c73af70fb410c751593ac4c8c48018d651929cc43",
+      "retrieved_at": "2026-11-09T04:19:28Z"
+    }
+  },
+  {
+    "id": "github:cloudflare/workers-sdk",
+    "url": "https://github.com/cloudflare/workers-sdk",
+    "decision": "out_of_scope",
+    "reason": "Cloudflare Workers SDK provides tools for building and deploying serverless Workers applications.",
+    "reviewed_at": "2026-11-09T04:35:43Z",
+    "evidence": {
+      "url": "https://raw.githubusercontent.com/cloudflare/workers-sdk/main/README.md",
+      "sha256": "b366ed941e578a7b4e9c6325f0184894a61ed50ea40e5c0b10eaf3a9a8f885ac",
+      "retrieved_at": "2026-11-09T04:18:55Z"
+    }
+  },
+  {
+    "id": "url:71f096b809e9cd526e40",
+    "url": "https://dl.acm.org/doi/abs/10.1145/3678516",
+    "decision": "out_of_scope",
+    "reason": "The supplied abstract describes EasyAsk as an Android assistant that searches for tutorials using voice, touch and app context. The user operates the phone interface.",
+    "reviewed_at": "2026-11-09T05:45:23Z",
+    "evidence": {
+      "url": "https://api.crossref.org/works/10.1145/3678516",
+      "sha256": "56a2a64f99b537123677d5e267539d39ac176b618d65f538778b45acf40cc4c2",
+      "retrieved_at": "2026-11-09T05:45:22Z"
+    }
+  },
+  {
+    "id": "url:7a15cae13c3d39ab57f4",
+    "url": "https://dl.acm.org/doi/full/10.1145/3641289",
+    "decision": "out_of_scope",
+    "reason": "The Crossref abstract describes a survey of evaluation methods for large language models across many application areas. Computer-use evaluation is not a stated focus.",
+    "reviewed_at": "2026-11-09T05:45:23Z",
+    "evidence": {
+      "url": "https://api.crossref.org/works/10.1145/3641289",
+      "sha256": "4431dffd55aee0a78477065556c2652bb31281686e65334a5a95833d403f7009",
+      "retrieved_at": "2026-11-09T05:45:21Z"
+    }
   }
 ]

@@ -2,9 +2,9 @@
 
 [Home](../../README.md) · [All topics](../topics.md) · [Full arXiv bibliography](../papers.md)
 
-101 source-reviewed resources tagged `reward-models`. Curated metadata; unknown facts are shown as —.
+102 source-reviewed resources tagged `reward-models`. Curated metadata; unknown facts are shown as —.
 
-**Contents:** [Benchmarks (7)](#benchmarks) · [Datasets (4)](#datasets) · [Models (9)](#models) · [Frameworks (10)](#frameworks) · [Tools (1)](#tools) · [Papers (70)](#papers)
+**Contents:** [Benchmarks (7)](#benchmarks) · [Datasets (4)](#datasets) · [Models (9)](#models) · [Frameworks (11)](#frameworks) · [Tools (1)](#tools) · [Papers (70)](#papers)
 
 ## Benchmarks
 
@@ -47,6 +47,7 @@
 | --- | --- | --- | --- | --- | --- |
 | [Agentic Reward Modeling (RewardAgent)](https://github.com/THU-KEG/Agentic-Reward-Modeling) | web | — | — | RewardAgent combines human-preference scores with verifiable factuality and instruction-following checks to judge agent trajectories. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/THU-KEG/Agentic-Reward-Modeling/HEAD/README.md) |
 | [Autonomous Evaluation and Refinement of Digital Agents](https://github.com/Berkeley-NLP/Agent-Eval-Refine) | web, android | [2404.06474](https://arxiv.org/abs/2404.06474) (2024) | code BSD-3-Clause | Provides VLM evaluator and policy-refinement code for autonomous evaluation and filtered behavioral cloning on WebArena and AndroidInTheWild. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/Berkeley-NLP/Agent-Eval-Refine/HEAD/README.md) |
+| [CollabUIAgents](https://github.com/THUNLP-MT/CollabUIAgents) | unspecified | [2502.14496](https://arxiv.org/abs/2502.14496) (2025) | — | CollabUIAgents trains UI agents with synthesized interaction data and process rewards assigned by collaborating agents. The repository releases data collection and inference code. | [✓ 2026‑11‑09](https://raw.githubusercontent.com/THUNLP-MT/CollabUIAgents/HEAD/README.md) |
 | [CUA Evaluation & RL with Autonomous Feedback](https://github.com/martasumyk/cua-eval-and-finetuning) | desktop, web, linux | [2511.20067](https://arxiv.org/abs/2511.20067) (2025), [2603.10577](https://arxiv.org/abs/2603.10577) (2026) | — | Implements reinforcement learning with autonomous evaluator feedback for fine-tuning and benchmarking computer-use agents. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/martasumyk/cua-eval-and-finetuning/HEAD/README.md) |
 | [DeskForge](https://github.com/Saidgurbuz/deskforge) | desktop, linux | [2610.02320](https://arxiv.org/abs/2610.02320) (2026) | — | DeskForge extracts dense step-level supervision signals from desktop execution environments to train and verify computer-use agents. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/Saidgurbuz/deskforge/HEAD/README.md) |
 | [LGWM (Latent GUI World Model)](https://github.com/jiamingzhang94/lgwm) | android, desktop, web | [2610.11942](https://arxiv.org/abs/2610.11942) (2026) | code Apache-2.0 | LGWM is an action-conditioned latent GUI world model that predicts next-state representations to verify GUI agent transitions. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/jiamingzhang94/lgwm/HEAD/README.md) |

@@ -2,9 +2,9 @@
 
 [Home](../../README.md) · [All topics](../topics.md) · [Full arXiv bibliography](../papers.md)
 
-499 source-reviewed resources tagged `safety-security`. Curated metadata; unknown facts are shown as —.
+506 source-reviewed resources tagged `safety-security`. Curated metadata; unknown facts are shown as —.
 
-**Contents:** [Benchmarks (39)](#benchmarks) · [Datasets (8)](#datasets) · [Models (4)](#models) · [Agents (29)](#agents) · [Frameworks (86)](#frameworks) · [Tools (53)](#tools) · [Infrastructure (5)](#infrastructure) · [Products (2)](#products) · [Learning resources (1)](#learning-resources) · [Surveys (8)](#surveys) · [Papers (264)](#papers)
+**Contents:** [Benchmarks (40)](#benchmarks) · [Datasets (9)](#datasets) · [Models (4)](#models) · [Agents (29)](#agents) · [Frameworks (86)](#frameworks) · [Tools (54)](#tools) · [Infrastructure (6)](#infrastructure) · [Products (3)](#products) · [Learning resources (3)](#learning-resources) · [Surveys (8)](#surveys) · [Papers (264)](#papers)
 
 ## Benchmarks
 
@@ -48,6 +48,7 @@
 | [WATCHER](https://github.com/Aaman-911/watcher) | web | — | — | — | Prompt-injection defense classifier, evaluation benchmark, and defended browser harness for autonomous web agents. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/Aaman-911/watcher/main/README.md) |
 | [WebGuard](https://github.com/OSU-NLP-Group/WebGuard) | web | [2507.14293](https://arxiv.org/abs/2507.14293) (2025) | — | code MIT | Codebase, annotation toolkit, and action-level risk dataset for training and evaluating guardrail models that flag unsafe browser-agent actions before execution. | [✓ 2026‑10‑18](https://raw.githubusercontent.com/OSU-NLP-Group/WebGuard/HEAD/README.md) |
 | [WebTailBench](https://huggingface.co/datasets/microsoft/WebTailBench) | web | [2511.19663](https://arxiv.org/abs/2511.19663) (2025) | [609 task identities](https://huggingface.co/datasets/microsoft/WebTailBench/raw/main/README.md) · [111 tasks](https://huggingface.co/datasets/microsoft/WebTailBench/raw/main/README.md) | data mit | Live-web task definitions and rubrics for evaluating computer-use agents, with preserved original tasks, a refreshed V2 task suite and a separate refusal set. | [✓ 2026‑10‑17](https://huggingface.co/datasets/microsoft/WebTailBench/raw/main/README.md) |
+| [WildClawBench](https://github.com/InternLM/WildClawBench) | cross-platform, web | [2605.10912](https://arxiv.org/abs/2605.10912) (2026) | — | code MIT | WildClawBench evaluates agents on 60 tasks in a live tool environment that includes browser use, email, files and coding. It releases evaluation code and links to task data and trajectories. | [✓ 2026‑11‑09](https://raw.githubusercontent.com/InternLM/WildClawBench/HEAD/README.md) |
 | [Wornpage WebMCP Conformance](https://github.com/wornpage/webmcp-conformance) | web | — | — | code MIT | Validation toolkit checking page-owned WebMCP tool schemas, authorization boundaries, and execution conformance. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/wornpage/webmcp-conformance/main/README.md) |
 
 ## Datasets
@@ -56,6 +57,7 @@
 | --- | --- | --- | --- | --- | --- | --- |
 | [Agent Humanization Benchmark (AHB) recordings](https://huggingface.co/datasets/lyyang2766/Passing-the-Turing-Test-on-Screen-Agent-Humanization-Benchmark) | android | [2604.09574](https://arxiv.org/abs/2604.09574) (2026) | [116 task descriptions](https://huggingface.co/datasets/lyyang2766/Passing-the-Turing-Test-on-Screen-Agent-Humanization-Benchmark/raw/379fd3ef8b7103757f160ea80ac80998165404fe/metadata/tasks.csv) · [20 distinct app names](https://huggingface.co/datasets/lyyang2766/Passing-the-Turing-Test-on-Screen-Agent-Humanization-Benchmark/raw/379fd3ef8b7103757f160ea80ac80998165404fe/metadata/tasks.csv) · [21 applications](https://arxiv.org/html/2604.09574v1) · [72 gesture-recording log files](https://huggingface.co/api/datasets/lyyang2766/Passing-the-Turing-Test-on-Screen-Agent-Humanization-Benchmark/revision/379fd3ef8b7103757f160ea80ac80998165404fe) · [7 gesture-recording ZIP archives](https://huggingface.co/api/datasets/lyyang2766/Passing-the-Turing-Test-on-Screen-Agent-Humanization-Benchmark/revision/379fd3ef8b7103757f160ea80ac80998165404fe) · [8 sensor-recording ZIP archives](https://huggingface.co/api/datasets/lyyang2766/Passing-the-Turing-Test-on-Screen-Agent-Humanization-Benchmark/revision/379fd3ef8b7103757f160ea80ac80998165404fe) · [37,768,698 motion and sensor events](https://arxiv.org/html/2604.09574v1) | — | Touch-gesture and motion-sensor recordings of people and mobile GUI agents doing the same Chinese-language Android app tasks, with task lists and metadata for training detectors that tell agents from humans. | [✓ 2026‑10‑18](https://huggingface.co/api/datasets/lyyang2766/Passing-the-Turing-Test-on-Screen-Agent-Humanization-Benchmark/revision/379fd3ef8b7103757f160ea80ac80998165404fe) |
 | [Browser Agent Failure Corpus](https://github.com/MutantWeb/browser-agent-failure-corpus) | web | — | — | — | Browser Agent Failure Corpus is a versioned dataset of browser-agent action failures, execution traces, and guardrail counterexamples. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/MutantWeb/browser-agent-failure-corpus/HEAD/README.md) |
+| [BrowserART](https://huggingface.co/datasets/ScaleAI/BrowserART) | web | [2410.13886](https://arxiv.org/abs/2410.13886) (2024) | — | data cc-by-nc-4.0 | A browser-agent safety dataset of 100 harmful browser-related behaviors, designed for red-team evaluation across real and synthetic websites. | [✓ 2026‑11‑09](https://huggingface.co/api/datasets/ScaleAI/BrowserART) |
 | [ClawBench](https://huggingface.co/datasets/TIGER-Lab/ClawBench) | web | [2604.08523](https://arxiv.org/abs/2604.08523) (2026) | — | data apache-2.0 | A browser-agent task corpus for everyday work on live websites, with V1 and V2 test splits, task context, and schemas that intercept final submissions. | [✓ 2026‑11‑09](https://huggingface.co/api/datasets/TIGER-Lab/ClawBench) |
 | [EnvDistraction](https://github.com/xbmxb/EnvDistraction) | desktop, web | [2408.02544](https://arxiv.org/abs/2408.02544) (2024) | — | — | EnvDistraction provides simulated GUI environments and evaluation scripts for measuring multimodal agent susceptibility to environmental distractions. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/xbmxb/EnvDistraction/HEAD/README.md) |
 | [McGill-NLP/safearena](https://huggingface.co/datasets/McGill-NLP/safearena) | web | [2503.04957](https://arxiv.org/abs/2503.04957) (2025) | — | — | SafeArena supplies safe and harmful task splits for evaluating the safety of autonomous web agents, with accompanying environment archives under gated access. | [✓ 2026‑11‑09](https://huggingface.co/api/datasets/McGill-NLP/safearena) |
@@ -240,6 +242,7 @@
 | [mobius-browser-guard](https://github.com/mobius-style/mobius-browser-guard) | web | — | code MIT | Auditable, content-blind permission gate for Claude in Chrome browser actions driven by an explicit action-risk ladder. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/mobius-style/mobius-browser-guard/HEAD/README.md) |
 | [munim-computer-use](https://github.com/munimtechnologies/munim-computer-use) | cross-platform, desktop, macos, windows, linux | — | code Apache-2.0 | munim-computer-use is a cross-platform Computer Use MCP server combining native OS accessibility trees, OCR, and policy guardrails. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/munimtechnologies/munim-computer-use/HEAD/README.md) |
 | [Nudge](https://github.com/kaxxcode/nudge) | web | — | — | Browser extension that automatically redacts sensitive PII on webpages before AI assistants inspect or summarize the page. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/kaxxcode/nudge/main/README.md) |
+| [openadapt-privacy](https://github.com/OpenAdaptAI/openadapt-privacy) | cross-platform, desktop, web | — | code MIT | openadapt-privacy removes personal and health information from GUI recordings, including text, event data, accessibility trees and screenshots. The repository is archived. | [✓ 2026‑11‑09](https://raw.githubusercontent.com/OpenAdaptAI/openadapt-privacy/HEAD/README.md) |
 | [OpenDesk](https://github.com/vitalops/opendesk) | desktop, macos, linux, windows, web | — | code MIT | Computer-use MCP server and Python/TypeScript SDKs giving agents Set-of-Marks screenshots, accessibility-based UI actions, mouse, keyboard, OCR, CDP browser control and workflow replay on local or paired machines. | [✓ 2026‑10‑20](https://raw.githubusercontent.com/vitalops/opendesk/HEAD/README.md) |
 | [PortaMCP](https://github.com/TNLegend/PortaMCP) | desktop, windows | — | code MIT | Client-neutral Model Context Protocol server and secure desktop Control Center for Windows automation. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/TNLegend/PortaMCP/main/README.md) |
 | [Reins](https://github.com/pegasi-ai/reins) | cross-platform, desktop, web | — | code Apache-2.0 | Reins is a runtime security guardrail and policy enforcement layer that intercepts and gates unauthorized AI agent tool calls. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/pegasi-ai/reins/HEAD/README.md) |
@@ -260,6 +263,7 @@
 | Resource | Environments | Paper | License | Description | Evidence |
 | --- | --- | --- | --- | --- | --- |
 | [Aegis (Hardened Computer-Use Sandbox)](https://github.com/ArihantDeva/Aegis) | desktop, linux, web | — | code MIT | Aegis is an off-screen, capability-dropped Docker browser and desktop sandbox for isolating computer-use agents. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/ArihantDeva/Aegis/HEAD/README.md) |
+| [camofox-browser](https://github.com/jo-inc/camofox-browser) | web | — | code MIT | A browser server for AI agents that exposes accessibility snapshots and referenced page actions through a REST API, with isolated sessions and authenticated browsing support. | [✓ 2026‑11‑09](https://raw.githubusercontent.com/jo-inc/camofox-browser/HEAD/README.md) |
 | [ClawBox](https://github.com/coderkk1992/clawbox) | desktop, macos | — | code MIT | ClawBox runs OpenClaw and computer-use agents inside an isolated Apple Virtualization.framework macOS virtual machine sandbox. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/coderkk1992/clawbox/HEAD/README.md) |
 | [EdgeBox](https://github.com/BIGPPWONG/EdgeBox) | desktop, windows, macos, linux | — | code GPL-3.0 | EdgeBox provisions isolated local Linux desktop virtual machines with WebRTC streaming and snapshot rollback for running computer-use agents. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/BIGPPWONG/EdgeBox/HEAD/README.md) |
 | [Phi Browser](https://github.com/phibrowser/phibrowser-mac) | web, desktop, macos | — | code Apache-2.0 | Native macOS client of a Chromium browser whose agent Spaces let the built-in assistant or external agents drive windows over a consent-gated DevTools Protocol socket while the user watches and can take control. | [✓ 2026‑10‑18](https://raw.githubusercontent.com/phibrowser/phibrowser-mac/HEAD/README.md) |
@@ -267,20 +271,19 @@
 
 ## Products
 
-All entries in this section: web.
-
-| Resource | Publisher | Description | Evidence |
-| --- | --- | --- | --- |
-| [Dia](https://www.diabrowser.com) | — | AI browser from The Browser Company for macOS and Windows whose assistant reads open tabs and connected work apps, with an approval-gated agentic mode that fills forms and drafts replies on the current site. | [✓ 2026‑10‑20](https://www.diabrowser.com) |
-| [Predicate Systems (formerly SentienceAPI)](https://predicatesystems.ai) | — | Runtime trust layer for browser agents: a sidecar checks each action against local policy before it runs, and SDKs turn pages into compact ranked element snapshots and verify outcomes with DOM assertions. | [✓ 2026‑10‑20](https://predicatesystems.ai) |
+| Resource | Publisher | Environments | Description | Evidence |
+| --- | --- | --- | --- | --- |
+| [Dia](https://www.diabrowser.com) | — | web | AI browser from The Browser Company for macOS and Windows whose assistant reads open tabs and connected work apps, with an approval-gated agentic mode that fills forms and drafts replies on the current site. | [✓ 2026‑10‑20](https://www.diabrowser.com) |
+| [Interpreter Workstation](https://github.com/openinterpreter/interpreter-workstation) | — | cross-platform, desktop, web | Interpreter Workstation is a desktop agent workspace that connects to local or remote computers and combines an agent runtime with browser access and file and app controls. | [✓ 2026‑11‑09](https://raw.githubusercontent.com/openinterpreter/interpreter-workstation/HEAD/README.md) |
+| [Predicate Systems (formerly SentienceAPI)](https://predicatesystems.ai) | — | web | Runtime trust layer for browser agents: a sidecar checks each action against local policy before it runs, and SDKs turn pages into compact ranked element snapshots and verify outcomes with DOM assertions. | [✓ 2026‑10‑20](https://predicatesystems.ai) |
 
 ## Learning resources
 
-All entries in this section: cross-platform, desktop, web, android.
-
-| Resource | License | Description | Evidence |
-| --- | --- | --- | --- |
-| [Awesome GUI Agent Security](https://github.com/Yuxuan2003/Awesome-GUI-Agent-Security) | code MIT | Bilingual curated reading list of GUI, computer-use, and browser agent security papers organized along attack and defense axes. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/Yuxuan2003/Awesome-GUI-Agent-Security/main/README.md) |
+| Resource | Environments | License | Description | Evidence |
+| --- | --- | --- | --- | --- |
+| [Agentic Web](https://github.com/SafeRL-Lab/agentic-web) | web | code Apache-2.0 | A research reading list on agents and the web, organized around development, retrieval, planning, safety and benchmarks. | [✓ 2026‑11‑09](https://raw.githubusercontent.com/SafeRL-Lab/agentic-web/HEAD/README.md) |
+| [Awesome GUI Agent Security](https://github.com/Yuxuan2003/Awesome-GUI-Agent-Security) | cross-platform, desktop, web, android | code MIT | Bilingual curated reading list of GUI, computer-use, and browser agent security papers organized along attack and defense axes. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/Yuxuan2003/Awesome-GUI-Agent-Security/main/README.md) |
+| [NeurIPS 2025: 45 Computer-Use Agent Papers You Should Know About](https://cua.ai/blog/neurips-2025-cua-papers) | cross-platform, desktop, macos, web | — | An annotated reading list of 45 NeurIPS 2025 computer-use agent papers, organized around benchmarks, safety, grounding and agent architectures. | [✓ 2026‑11‑09](https://cua.ai/blog/neurips-2025-cua-papers) |
 
 ## Surveys
 

@@ -2,14 +2,15 @@
 
 [Home](../../README.md) · [All topics](../topics.md) · [Full arXiv bibliography](../papers.md)
 
-60 source-reviewed resources tagged `training-free`. Curated metadata; unknown facts are shown as —.
+64 source-reviewed resources tagged `training-free`. Curated metadata; unknown facts are shown as —.
 
-**Contents:** [Agents (3)](#agents) · [Frameworks (5)](#frameworks) · [Tools (1)](#tools) · [Papers (51)](#papers)
+**Contents:** [Agents (4)](#agents) · [Frameworks (6)](#frameworks) · [Tools (3)](#tools) · [Papers (51)](#papers)
 
 ## Agents
 
 | Resource | Environments | Paper | License | Description | Evidence |
 | --- | --- | --- | --- | --- | --- |
+| [AdbGPT](https://github.com/sidongfeng/AdbGPT) | android | — | — | An Android bug replay agent that extracts action details from written bug reports and uses the current app screen to guide reproduction steps. | [✓ 2026‑11‑09](https://raw.githubusercontent.com/sidongfeng/AdbGPT/HEAD/README.md) |
 | [AgentOccam](https://github.com/amazon-science/AgentOccam) | web | [2410.13825](https://arxiv.org/abs/2410.13825) (2024) | code Apache-2.0 | AgentOccam is a web agent that uses webpage descriptions and action strings to carry out tasks from a URL and instruction. Its repository includes task configurations and evaluation scripts. | [✓ 2026‑11‑09](https://raw.githubusercontent.com/amazon-science/AgentOccam/HEAD/README.md) |
 | [GUI-explorer](https://github.com/iLearn-Lab/ACL25-GUI-explorer) | android | [2505.16827](https://arxiv.org/abs/2505.16827) (2025) | code MIT | Android agent code that explores apps over ADB, mines transition-aware knowledge into a knowledge base behind a retrieval service, and runs an OpenAI-backed agent demo that draws on it. | [✓ 2026‑10‑18](https://raw.githubusercontent.com/iLearn-Lab/ACL25-GUI-explorer/HEAD/README.md) |
 | [RCI Agent](https://github.com/posgnu/rci-agent) | web | [2303.17491](https://arxiv.org/abs/2303.17491) (2023) | code MIT | A MiniWoB++ agent that uses explicit and implicit recursive criticism-and-improvement prompts to refine action plans and ground actions to browser state. | [✓ 2026‑10‑17](https://raw.githubusercontent.com/posgnu/rci-agent/HEAD/README.md) |
@@ -18,6 +19,7 @@
 
 | Resource | Environments | Paper | License | Description | Evidence |
 | --- | --- | --- | --- | --- | --- |
+| [AdaGround](https://github.com/bcwang-sjtu/AdaGround) | cross-platform, desktop, web | [2610.36874](https://arxiv.org/abs/2610.36874) (2026) | code MIT | A training-free GUI grounding framework that adjusts screenshot zoom to target size and checks proposed clicks before accepting or revising them. | [✓ 2026‑11‑09](https://raw.githubusercontent.com/bcwang-sjtu/AdaGround/HEAD/README.md) |
 | [CanpGrid](https://github.com/Yeqi99/CanpGrid) | cross-platform, desktop, web, android | — | code MIT | CanpGrid provides an adaptive recursive image grid overlay for progressive coarse-to-fine visual localization by multimodal agents. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/Yeqi99/CanpGrid/HEAD/README.md) |
 | [GUI Grounding via Iterative Narrowing](https://github.com/ant-8/GUI-Grounding-via-Iterative-Narrowing) | cross-platform, desktop, web, android | [2411.13591](https://arxiv.org/abs/2411.13591) (2024) | — | Implements training-free iterative visual crop-and-narrow refinement for improving MLLM coordinate grounding on GUI screenshots. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/ant-8/GUI-Grounding-via-Iterative-Narrowing/HEAD/README.md) |
 | [Hoverclick](https://github.com/neilyysun-ui/Hoverclick) | desktop, web | — | — | Hoverclick introduces test-time cursor hover verification and visual attention guidance before committing GUI click actions. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/neilyysun-ui/Hoverclick/HEAD/README.md) |
@@ -26,11 +28,11 @@
 
 ## Tools
 
-All entries in this section: web.
-
-| Resource | Paper | License | Description | Evidence |
-| --- | --- | --- | --- | --- |
-| [TAG attention-driven GUI grounding](https://github.com/HeimingX/TAG) | [2412.10840](https://arxiv.org/abs/2412.10840) (2024) | — | Grounding and evaluation code that aggregates a pretrained vision-language model’s attention maps to localize requested interface elements without fine-tuning. | [✓ 2026‑10‑17](https://raw.githubusercontent.com/HeimingX/TAG/HEAD/README.md) |
+| Resource | Environments | Paper | License | Description | Evidence |
+| --- | --- | --- | --- | --- | --- |
+| [RegionFocus](https://github.com/tiangeluo/RegionFocus) | unspecified | [2505.00684](https://arxiv.org/abs/2505.00684) (2025) | — | RegionFocus provides code for GUI grounding through selected screenshot regions. The release evaluates UI-TARS and Qwen2.5-VL on ScreenSpot-Pro. | [✓ 2026‑11‑09](https://raw.githubusercontent.com/tiangeluo/RegionFocus/HEAD/README.md) |
+| [TAG attention-driven GUI grounding](https://github.com/HeimingX/TAG) | web | [2412.10840](https://arxiv.org/abs/2412.10840) (2024) | — | Grounding and evaluation code that aggregates a pretrained vision-language model’s attention maps to localize requested interface elements without fine-tuning. | [✓ 2026‑10‑17](https://raw.githubusercontent.com/HeimingX/TAG/HEAD/README.md) |
+| [Zoom Consistency Routing](https://github.com/omxyz/zoom-consistency-routing) | unspecified | — | — | A training-free router chooses between visual grounding models using prediction distance from a zoom crop's center. The release includes ScreenSpot-Pro evaluation scripts. | [✓ 2026‑11‑09](https://raw.githubusercontent.com/omxyz/zoom-consistency-routing/HEAD/README.md) |
 
 ## Papers
 

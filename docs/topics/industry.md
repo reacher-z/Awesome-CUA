@@ -2,9 +2,9 @@
 
 [Home](../../README.md) · [All topics](../topics.md) · [Full arXiv bibliography](../papers.md)
 
-51 source-reviewed resources tagged `industry`. Curated metadata; unknown facts are shown as —.
+63 source-reviewed resources tagged `industry`. Curated metadata; unknown facts are shown as —.
 
-**Contents:** [Benchmarks (1)](#benchmarks) · [Models (1)](#models) · [Agents (1)](#agents) · [Tools (2)](#tools) · [Products (5)](#products) · [Publishers (18)](#publishers) · [Papers (23)](#papers)
+**Contents:** [Benchmarks (1)](#benchmarks) · [Models (2)](#models) · [Agents (1)](#agents) · [Tools (12)](#tools) · [Infrastructure (1)](#infrastructure) · [Products (5)](#products) · [Publishers (18)](#publishers) · [Papers (23)](#papers)
 
 ## Benchmarks
 
@@ -20,6 +20,7 @@ All entries in this section: desktop, web.
 
 | Resource | Paper | License | Description | Evidence |
 | --- | --- | --- | --- | --- |
+| [Claude Opus 5](https://www.anthropic.com/news/claude-opus-5) | — | — | Claude Opus 5 is a general model whose release page reports computer-use performance on OSWorld 2.0 and describes agent work across browser and business tasks. | [✓ 2026‑11‑09](https://www.anthropic.com/news/claude-opus-5) |
 | [Holo3](https://hcompany.ai/holo3) | — | — | Holo3 is a computer-use model family trained on synthetic navigation and enterprise workflows. Its publisher reports desktop benchmark results and offers inference access and an open checkpoint. | [✓ 2026‑11‑09](https://hcompany.ai/holo3) |
 
 ## Agents
@@ -37,7 +38,25 @@ All entries in this section: web.
 | Resource | Paper | License | Description | Evidence |
 | --- | --- | --- | --- | --- |
 | [ADP Workforce Now Browser Automation](https://github.com/Browser-Automation-Hub/adp-workforce-now-browser-automation) | — | code MIT | A browser automation scaffold for ADP Workforce Now. It provides actions for payroll reports, pay-stub exports, employee updates and tax-form downloads. | [✓ 2026‑11‑09](https://raw.githubusercontent.com/Browser-Automation-Hub/adp-workforce-now-browser-automation/HEAD/README.md) |
+| [Oracle E-Business Suite Browser Automation](https://github.com/Browser-Automation-Hub/oracle-ebs-browser-automation) | — | code MIT | A browser automation scaffold for Oracle E-Business Suite workflows. It describes Puppeteer and cloud browser options for login, requisitions, approvals and requests. | [✓ 2026‑11‑09](https://raw.githubusercontent.com/Browser-Automation-Hub/oracle-ebs-browser-automation/HEAD/README.md) |
+| [Oracle PeopleSoft Browser Automation](https://github.com/Browser-Automation-Hub/peoplesoft-browser-automation) | — | code MIT | A browser automation scaffold for Oracle PeopleSoft that defines actions for queries, leave requests, employee records, and payroll workflows through Puppeteer or Anchor Browser. | [✓ 2026‑11‑09](https://raw.githubusercontent.com/Browser-Automation-Hub/peoplesoft-browser-automation/HEAD/README.md) |
+| [Procore Browser Automation](https://github.com/Browser-Automation-Hub/procore-browser-automation) | — | code MIT | A Procore browser automation scaffold with actions for construction RFIs, submittal tracking, daily logs, and project-report export. | [✓ 2026‑11‑09](https://raw.githubusercontent.com/Browser-Automation-Hub/procore-browser-automation/HEAD/README.md) |
+| [Salesforce Classic Browser Automation](https://github.com/Browser-Automation-Hub/salesforce-classic-browser-automation) | — | code MIT | A browser automation scaffold for Salesforce Classic. It describes actions for login, lead creation, opportunity updates, report export and record updates. | [✓ 2026‑11‑09](https://raw.githubusercontent.com/Browser-Automation-Hub/salesforce-classic-browser-automation/HEAD/README.md) |
+| [SAP Concur Browser Automation](https://github.com/Browser-Automation-Hub/sap-concur-browser-automation) | — | code MIT | A SAP Concur browser automation scaffold with actions for expense reports, receipt uploads, approval queues, and spend-data export. | [✓ 2026‑11‑09](https://raw.githubusercontent.com/Browser-Automation-Hub/sap-concur-browser-automation/HEAD/README.md) |
+| [SAP Fiori Browser Automation](https://github.com/Browser-Automation-Hub/sap-fiori-browser-automation) | — | code MIT | A SAP Fiori browser automation scaffold with documented actions for purchase orders, approvals, financial-data export, and invoice handling. | [✓ 2026‑11‑09](https://raw.githubusercontent.com/Browser-Automation-Hub/sap-fiori-browser-automation/HEAD/README.md) |
 | [SAP SuccessFactors Browser Automation](https://github.com/Browser-Automation-Hub/successfactors-browser-automation) | — | code MIT | A browser automation scaffold for SAP SuccessFactors. It includes actions for workforce reports, employee goals, compensation worksheets and organization-chart exports. | [✓ 2026‑11‑09](https://raw.githubusercontent.com/Browser-Automation-Hub/successfactors-browser-automation/HEAD/README.md) |
+| [ServiceNow Browser Automation](https://github.com/Browser-Automation-Hub/servicenow-browser-automation) | — | code MIT | A ServiceNow browser automation scaffold with documented actions for incidents, CMDB records, task assignment, and report export. | [✓ 2026‑11‑09](https://raw.githubusercontent.com/Browser-Automation-Hub/servicenow-browser-automation/HEAD/README.md) |
+| [Veeva CRM (Veeva Commercial Cloud) Browser Automation](https://github.com/Browser-Automation-Hub/veeva-crm-browser-automation) | — | code MIT | A browser automation scaffold for Veeva CRM that defines actions for call reports, sample inventory, account records, and territory data through Puppeteer or Anchor Browser. | [✓ 2026‑11‑09](https://raw.githubusercontent.com/Browser-Automation-Hub/veeva-crm-browser-automation/HEAD/README.md) |
+| [Veeva Vault Browser Automation](https://github.com/Browser-Automation-Hub/veeva-vault-browser-automation) | — | code MIT | A Veeva Vault browser automation scaffold with documented actions for uploading documents, routing reviews, approving records, and exporting audit trails. | [✓ 2026‑11‑09](https://raw.githubusercontent.com/Browser-Automation-Hub/veeva-vault-browser-automation/HEAD/README.md) |
+| [Workday HCM Browser Automation](https://github.com/Browser-Automation-Hub/workday-hcm-browser-automation) | — | code MIT | A browser automation scaffold for Workday HCM that uses Puppeteer or Anchor Browser to run HR and payroll workflows through the application interface. | [✓ 2026‑11‑09](https://raw.githubusercontent.com/Browser-Automation-Hub/workday-hcm-browser-automation/HEAD/README.md) |
+
+## Infrastructure
+
+All entries in this section: web.
+
+| Resource | Paper | License | Description | Evidence |
+| --- | --- | --- | --- | --- |
+| [Anchor](https://anchorbrowser.io) | — | — | Anchor provides cloud browser environments for AI agents to navigate authenticated websites and run browser workloads, with SDK and MCP integration. | [✓ 2026‑11‑09](https://anchorbrowser.io) |
 
 ## Products
 

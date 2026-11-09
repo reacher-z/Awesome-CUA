@@ -177950,5 +177950,3992 @@
     "reviewed_at": "2026-11-09T05:01:55Z",
     "read_basis": "Scan-backlog review 2026-11-09: primary source (page) fetched 2026-11-09T04:20:14Z; Codex first pass and independent second pass (tiebreak), deterministic checker on quotes, vocabulary and summary rules.",
     "reviewed_sha256": "c0e13514850630d505dd8001e065fa83832db919d7c22a1fcd5a5dce2b3b4401"
+  },
+  {
+    "name": "Claude Opus 5",
+    "kind": "model",
+    "url": "https://www.anthropic.com/news/claude-opus-5",
+    "environments": [
+      "desktop",
+      "web"
+    ],
+    "topics": [
+      "evaluation",
+      "automation",
+      "industry"
+    ],
+    "summary": "Claude Opus 5 is a general model whose release page reports computer-use performance on OSWorld 2.0 and describes agent work across browser and business tasks.",
+    "scope": "adjacent",
+    "verify_terms": [
+      "Claude Opus 5",
+      "OSWorld 2.0"
+    ],
+    "notes": "The release page presents OSWorld 2.0 results as Anthropic's claims and includes customer reports about browser-based checking and workflow automation.",
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-09T04:35:43Z",
+    "read_basis": "Scan-backlog review 2026-11-09: primary source (page) fetched 2026-11-09T04:20:37Z; Codex first pass and independent second pass (triage+check), deterministic checker on quotes, vocabulary and summary rules.",
+    "reviewed_sha256": "1bd93f18baf22edcdac06587e18f6d3e369a18cd37fad64fdd0e09286967982b"
+  },
+  {
+    "name": "Appium Inspector",
+    "kind": "tool",
+    "url": "https://github.com/appium/appium-inspector",
+    "environments": [
+      "desktop",
+      "macos",
+      "windows",
+      "linux",
+      "cross-platform"
+    ],
+    "topics": [
+      "screen-understanding",
+      "automation"
+    ],
+    "summary": "An Appium inspection tool that displays app screenshots beside page source and lets users find and interact with elements. It is distributed as a desktop app and server plugin.",
+    "scope": "adjacent",
+    "verify_terms": [
+      "Appium Inspector"
+    ],
+    "notes": "The README describes desktop releases for macOS, Windows, and Linux and an Appium server plugin. It lists element search, screenshot interaction, and driver commands as features.",
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-09T04:35:49Z",
+    "read_basis": "Scan-backlog review 2026-11-09: primary source (README) fetched 2026-11-09T04:18:16Z; Codex first pass and independent second pass (triage+check), deterministic checker on quotes, vocabulary and summary rules.",
+    "reviewed_sha256": "16f1f6f871b88f246ff1d6532be3ec6db6a93ca504235ffc4976fc468d8f8f26"
+  },
+  {
+    "name": "AutoTask",
+    "kind": "agent",
+    "url": "https://github.com/BowenBryanWang/AutoTask",
+    "environments": [
+      "android"
+    ],
+    "topics": [
+      "mobile-navigation",
+      "planning",
+      "memory",
+      "automation"
+    ],
+    "summary": "An Android agent that explores mobile interfaces to execute voice commands and uses what it learns during interaction to guide later actions.",
+    "scope": "core",
+    "verify_terms": [
+      "AutoTask"
+    ],
+    "notes": "The repository includes source code, an Android front end, and a Python backend. The README describes Android Debug Bridge setup, an emulator option, and an API key requirement when using OpenAI models. It declares an MIT license.",
+    "documented_by": [
+      "2312.16062"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-09T04:35:49Z",
+    "read_basis": "Scan-backlog review 2026-11-09: primary source (README) fetched 2026-11-09T04:18:24Z; Codex first pass and independent second pass (triage+check), deterministic checker on quotes, vocabulary and summary rules.",
+    "reviewed_sha256": "c9ca025e6431b5cd2495a6f15b7d2a144665d7ee5f499a959d61c0473d1b0022"
+  },
+  {
+    "name": "FineState-Bench",
+    "kind": "benchmark",
+    "url": "https://github.com/FengxianJi/FineState-Bench",
+    "environments": [
+      "cross-platform",
+      "desktop",
+      "web"
+    ],
+    "topics": [
+      "evaluation",
+      "grounding",
+      "state-tracking"
+    ],
+    "summary": "A GUI benchmark for precise state changes across desktop, web, and mobile interfaces, with 2,257 tasks and metrics separating element location from interaction success.",
+    "scope": "core",
+    "verify_terms": [
+      "FineState-Bench"
+    ],
+    "notes": "The repository includes platform-specific evaluation scripts, model configurations, and diagnostic utilities. The README directs users to download the dataset separately and describes both API-based and local model configurations.",
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-09T04:35:49Z",
+    "read_basis": "Scan-backlog review 2026-11-09: primary source (README) fetched 2026-11-09T04:18:59Z; Codex first pass and independent second pass (triage+check), deterministic checker on quotes, vocabulary and summary rules.",
+    "reviewed_sha256": "bdc165e77ad0e828b605513a46e7e469713611589ccb7e8b96e8e59f306e23da"
+  },
+  {
+    "name": "ShowUI-Narrator",
+    "kind": "model",
+    "url": "https://huggingface.co/FRank62Wu/ShowUI-Narrator",
+    "environments": [
+      "unspecified"
+    ],
+    "topics": [
+      "screen-understanding",
+      "video",
+      "action-prediction"
+    ],
+    "summary": "A released 2B model for narrating user actions in GUI screenshots and video, with a pipeline that detects the cursor and processes cropped frames.",
+    "scope": "core",
+    "evidence_urls": [
+      "https://huggingface.co/api/models/FRank62Wu/ShowUI-Narrator"
+    ],
+    "verify_terms": [
+      "ShowUI-Narrator"
+    ],
+    "notes": "The card provides model and processor loading examples, screenshot and video processing code, and a separate link to a cursor detector checkpoint. It lists Qwen/Qwen2-VL-2B-Instruct and showlab/ShowUI-2B as base models and declares Apache-2.0.",
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-09T04:35:49Z",
+    "read_basis": "Scan-backlog review 2026-11-09: primary source (Hub card) fetched 2026-11-09T04:20:10Z; Codex first pass and independent second pass (triage+check), deterministic checker on quotes, vocabulary and summary rules.",
+    "reviewed_sha256": "809581664699bbb638837634c51d78b69be88cc5b74aad6b0824bfcdd66a3eb8"
+  },
+  {
+    "name": "BrowserART",
+    "kind": "dataset",
+    "url": "https://huggingface.co/datasets/ScaleAI/BrowserART",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "safety-security",
+      "evaluation",
+      "web-navigation"
+    ],
+    "summary": "A browser-agent safety dataset of 100 harmful browser-related behaviors, designed for red-team evaluation across real and synthetic websites.",
+    "scope": "core",
+    "evidence_urls": [
+      "https://huggingface.co/api/datasets/ScaleAI/BrowserART"
+    ],
+    "verify_terms": [
+      "BrowserART"
+    ],
+    "notes": "The repository file list includes a behavior CSV. The card says the synthetic websites' code is hosted separately on GitHub and declares a CC-BY-NC-4.0 license.",
+    "documented_by": [
+      "2410.13886"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-09T04:35:49Z",
+    "read_basis": "Scan-backlog review 2026-11-09: primary source (Hub card) fetched 2026-11-09T04:20:53Z; Codex first pass and independent second pass (triage+check), deterministic checker on quotes, vocabulary and summary rules.",
+    "reviewed_sha256": "854d13f5b05b7b0f7f96f0c2f6016dbe2ead826a4d6255574c323ad743b29ca2"
+  },
+  {
+    "name": "GUI-Dense-Descriptions",
+    "kind": "dataset",
+    "url": "https://huggingface.co/datasets/Agent-Eval-Refine/GUI-Dense-Descriptions",
+    "environments": [
+      "unspecified"
+    ],
+    "topics": [
+      "screen-understanding",
+      "data-generation"
+    ],
+    "summary": "A dataset of GUI screenshots paired with dense text descriptions, released as a train split containing 1,263 image-text examples.",
+    "scope": "core",
+    "evidence_urls": [
+      "https://huggingface.co/api/datasets/Agent-Eval-Refine/GUI-Dense-Descriptions"
+    ],
+    "verify_terms": [
+      "GUI-Dense-Descriptions",
+      "GUI Screenshots"
+    ],
+    "notes": "The card lists image and string text fields in a train split. The repository file list includes a Parquet data file.",
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-09T04:35:49Z",
+    "read_basis": "Scan-backlog review 2026-11-09: primary source (Hub card) fetched 2026-11-09T04:21:03Z; Codex first pass and independent second pass (triage+check), deterministic checker on quotes, vocabulary and summary rules.",
+    "reviewed_sha256": "bdb1aa3804c30607563e9f1eaadceb9fbe1369158dd50f86e2a5e5953db8a6a9"
+  },
+  {
+    "name": "Midscene Java",
+    "kind": "framework",
+    "url": "https://github.com/alstafeev/midscene-java",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "web-navigation",
+      "grounding",
+      "planning",
+      "observability"
+    ],
+    "summary": "A Java SDK for agents that operate web pages through natural-language instructions. It combines screenshot and DOM grounding with browser actions and execution reports.",
+    "scope": "core",
+    "verify_terms": [
+      "Midscene Java"
+    ],
+    "notes": "The repository describes core, web-adapter, and visualizer modules. It integrates with Selenium, Playwright, and LangChain4j and shows Maven dependencies for the web and visualizer packages.",
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-09T04:36:56Z",
+    "read_basis": "Scan-backlog review 2026-11-09: primary source (README) fetched 2026-11-09T04:18:13Z; Codex first pass and independent second pass (triage+check), deterministic checker on quotes, vocabulary and summary rules.",
+    "reviewed_sha256": "0b7436ddd44afbdab843cbf642b5eac3e0fc3aee5931c4e9792ee2637f01307e"
+  },
+  {
+    "name": "AdaGround",
+    "kind": "framework",
+    "url": "https://github.com/bcwang-sjtu/AdaGround",
+    "environments": [
+      "cross-platform",
+      "desktop",
+      "web"
+    ],
+    "topics": [
+      "grounding",
+      "training-free",
+      "self-reflection",
+      "robustness"
+    ],
+    "summary": "A training-free GUI grounding framework that adjusts screenshot zoom to target size and checks proposed clicks before accepting or revising them.",
+    "scope": "core",
+    "verify_terms": [
+      "AdaGround",
+      "Token-Normalized Adaptive Zooming"
+    ],
+    "notes": "The repository says code is released and gives installation and benchmark preparation steps. Its reported setup uses Qwen3-VL backbones and an NVIDIA GPU; the README shows an MIT license badge.",
+    "documented_by": [
+      "2610.36874"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-09T04:36:56Z",
+    "read_basis": "Scan-backlog review 2026-11-09: primary source (README) fetched 2026-11-09T04:18:20Z; Codex first pass and independent second pass (triage+check), deterministic checker on quotes, vocabulary and summary rules.",
+    "reviewed_sha256": "9c0a8372726584b7a8e98f2a3a99d5b4cbd78d261643ebafae3d05a3cbd620d1"
+  },
+  {
+    "name": "RICO-WidgetCaptioning",
+    "kind": "dataset",
+    "url": "https://huggingface.co/datasets/bevaya/RICO-WidgetCaptioning",
+    "environments": [
+      "android"
+    ],
+    "topics": [
+      "screen-understanding",
+      "grounding",
+      "data-generation",
+      "mobile-navigation"
+    ],
+    "summary": "A mobile UI dataset pairing RICO screenshots and widget regions with human-written captions. It includes view hierarchies and train, validation, and test splits.",
+    "scope": "core",
+    "evidence_urls": [
+      "https://huggingface.co/api/datasets/bevaya/RICO-WidgetCaptioning"
+    ],
+    "verify_terms": [
+      "RICO-WidgetCaptioning",
+      "RICO Widget Captioning"
+    ],
+    "notes": "The card lists screenshots, bounding boxes, captions, semantic annotations, and app metadata. It declares a CC-BY-4.0 license.",
+    "documented_by": [
+      "2010.04295"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-09T04:36:56Z",
+    "read_basis": "Scan-backlog review 2026-11-09: primary source (Hub card) fetched 2026-11-09T04:19:59Z; Codex first pass and independent second pass (triage+check), deterministic checker on quotes, vocabulary and summary rules.",
+    "reviewed_sha256": "4cb966ead67248ceebf1f744c72438433b92c8d8357edf02002a21e288ab9e6c"
+  },
+  {
+    "name": "KV-Ground-4B-BaseGuiOwl1.5-0228",
+    "kind": "model",
+    "url": "https://huggingface.co/vocaela/KV-Ground-4B-BaseGuiOwl1.5-0228",
+    "environments": [
+      "unspecified"
+    ],
+    "topics": [
+      "grounding",
+      "screen-understanding",
+      "reinforcement-learning"
+    ],
+    "summary": "A 4B vision-language checkpoint for locating GUI targets in high-resolution images. It is fine-tuned from GUI-Owl-1.5-4B-Instruct with supervised and reward-based post-training.",
+    "scope": "core",
+    "evidence_urls": [
+      "https://huggingface.co/api/models/vocaela/KV-Ground-4B-BaseGuiOwl1.5-0228"
+    ],
+    "verify_terms": [
+      "KV-Ground-4B-BaseGuiOwl1.5-0228"
+    ],
+    "notes": "The repository contains sharded safetensors weights and tokenizer files. The card declares a CC BY-NC-SA 4.0 license and points to separate evaluation code.",
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-09T04:36:56Z",
+    "read_basis": "Scan-backlog review 2026-11-09: primary source (Hub card) fetched 2026-11-09T04:20:11Z; Codex first pass and independent second pass (triage+check), deterministic checker on quotes, vocabulary and summary rules.",
+    "reviewed_sha256": "1d8b01966bddfaead27daf01fcb049ad1731149599187be92b9ba71f9baf94d0"
+  },
+  {
+    "name": "Playwright MCP",
+    "kind": "tool",
+    "url": "https://playwright.dev/docs/getting-started-mcp",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "web-navigation",
+      "automation",
+      "screen-understanding"
+    ],
+    "summary": "An MCP server that gives LLM clients browser navigation and interaction tools. It identifies page elements through structured accessibility snapshots.",
+    "scope": "adjacent",
+    "verify_terms": [
+      "Playwright MCP"
+    ],
+    "notes": "The documentation shows client configuration using @playwright/mcp and describes tools for common browser interactions. It lists Node.js 20 or newer as a prerequisite.",
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-09T04:36:56Z",
+    "read_basis": "Scan-backlog review 2026-11-09: primary source (page) fetched 2026-11-09T04:20:20Z; Codex first pass and independent second pass (triage+check), deterministic checker on quotes, vocabulary and summary rules.",
+    "reviewed_sha256": "6ec14cf905a8c53d2e924602c025e17b110da9f6f04ca217fc477f1fb355779f"
+  },
+  {
+    "name": "android_icon_dataset",
+    "kind": "dataset",
+    "url": "https://huggingface.co/datasets/Lancelot53/android_icon_dataset",
+    "environments": [
+      "android"
+    ],
+    "topics": [
+      "screen-understanding"
+    ],
+    "summary": "A labeled Android icon dataset for studying visual interface elements. Its train split contains images and string class labels.",
+    "scope": "core",
+    "evidence_urls": [
+      "https://huggingface.co/api/datasets/Lancelot53/android_icon_dataset"
+    ],
+    "verify_terms": [
+      "android_icon_dataset",
+      "Android icons"
+    ],
+    "notes": "The repository contains a Parquet train split. The card lists 8,161 examples and identifies a Misc_or_unknown class.",
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-09T04:36:56Z",
+    "read_basis": "Scan-backlog review 2026-11-09: primary source (Hub card) fetched 2026-11-09T04:20:30Z; Codex first pass and independent second pass (triage+check), deterministic checker on quotes, vocabulary and summary rules.",
+    "reviewed_sha256": "ebd75e1be578565fb446ef6ab148f5d3e5d456907f5eb5eef25b2301cbd5b9f2"
+  },
+  {
+    "name": "AgentTrek-1.0-32B",
+    "kind": "model",
+    "url": "https://huggingface.co/xlangai/AgentTrek-1.0-32B",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "web-navigation",
+      "imitation-learning",
+      "data-generation"
+    ],
+    "summary": "A web-agent checkpoint fine-tuned from Qwen2.5-32B-Instruct using the AgentTrek trajectory-synthesis project. The release includes model weights.",
+    "scope": "core",
+    "evidence_urls": [
+      "https://huggingface.co/api/models/xlangai/AgentTrek-1.0-32B"
+    ],
+    "verify_terms": [
+      "AgentTrek-1.0-32B"
+    ],
+    "notes": "The repository contains sharded safetensors weights and tokenizer files. The card links to an evaluation script and declares an Apache-2.0 license.",
+    "documented_by": [
+      "2412.09605"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-09T04:36:56Z",
+    "read_basis": "Scan-backlog review 2026-11-09: primary source (Hub card) fetched 2026-11-09T04:20:38Z; Codex first pass and independent second pass (triage+check), deterministic checker on quotes, vocabulary and summary rules.",
+    "reviewed_sha256": "6c6a672ccd0c8778180d2431b3ef745910341e5d940e7e7c1aa09174a4c4a8f9"
+  },
+  {
+    "name": "youtube_sim",
+    "kind": "infrastructure",
+    "url": "https://github.com/Acrab-Agentic-Labs/AppSim-Youtube",
+    "environments": [
+      "android"
+    ],
+    "topics": [
+      "evaluation",
+      "mobile-navigation",
+      "state-tracking"
+    ],
+    "summary": "youtube_sim is a YouTube-style Android test app with local media, interaction logs and task validators for checking mobile interface actions and resulting state.",
+    "scope": "core",
+    "verify_terms": [
+      "youtube_sim"
+    ],
+    "notes": "The README describes task_state.json and messages.json logs for searches, likes, saves, subscriptions, comments and settings. It lists eval_1.py through eval_35.py under auto_test.",
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-09T04:38:50Z",
+    "read_basis": "Scan-backlog review 2026-11-09: primary source (README) fetched 2026-11-09T04:18:00Z; Codex first pass and independent second pass (triage+check), deterministic checker on quotes, vocabulary and summary rules.",
+    "reviewed_sha256": "7b96351d84e447a7b771440f38461f553fb5ab91bd3054c9d747657eb0c5ba90"
+  },
+  {
+    "name": "H.AI cookbook",
+    "kind": "learning",
+    "url": "https://github.com/hcompai/hai-cookbook",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "grounding",
+      "web-navigation"
+    ],
+    "summary": "The H.AI cookbook provides notebooks and guides for deploying Holo models and invoking their web navigation and interface localization capabilities.",
+    "scope": "core",
+    "verify_terms": [
+      "H.AI cookbook",
+      "Holo1"
+    ],
+    "notes": "The repository links to vLLM and SageMaker deployment guides and navigation and localization notebooks. The source declares an Apache 2.0 license.",
+    "documented_by": [
+      "2506.02865"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-09T04:38:50Z",
+    "read_basis": "Scan-backlog review 2026-11-09: primary source (README) fetched 2026-11-09T04:24:18Z; Codex first pass and independent second pass (triage+check), deterministic checker on quotes, vocabulary and summary rules.",
+    "reviewed_sha256": "24aeefe131d5377eec71e44594024e69c03877185400dac2a8ff15dd81858bf1"
+  },
+  {
+    "name": "Midscene Java",
+    "kind": "framework",
+    "url": "https://github.com/Master-Frank/midscene-java",
+    "environments": [
+      "cross-platform",
+      "web",
+      "android"
+    ],
+    "topics": [
+      "automation",
+      "grounding",
+      "mobile-navigation",
+      "web-navigation"
+    ],
+    "summary": "Midscene Java is a framework for natural-language UI automation across web pages and Android apps, with modules for element location, actions, extraction and assertions.",
+    "scope": "core",
+    "verify_terms": [
+      "Midscene Java"
+    ],
+    "notes": "The repository documents Playwright, Selenium and Android modules. Setup requires Java 17 or newer and an AI model API key; the README displays an MIT license badge.",
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-09T04:38:50Z",
+    "read_basis": "Scan-backlog review 2026-11-09: primary source (README) fetched 2026-11-09T04:25:07Z; Codex first pass and independent second pass (triage+check), deterministic checker on quotes, vocabulary and summary rules.",
+    "reviewed_sha256": "5aa2a805a8df63ff72dcfed1f11622b3d6e95898cc0eda55595ccdd1fa867065"
+  },
+  {
+    "name": "Vision UI",
+    "kind": "tool",
+    "url": "https://github.com/Meituan-Dianping/vision-ui",
+    "environments": [
+      "unspecified"
+    ],
+    "topics": [
+      "screen-understanding",
+      "grounding",
+      "automation"
+    ],
+    "summary": "Vision UI is a visual analysis toolkit for detecting UI elements, matching semantic targets, recognizing text, and comparing interface images.",
+    "scope": "adjacent",
+    "verify_terms": [
+      "Vision UI",
+      "UI目标检测"
+    ],
+    "notes": "The repository includes Python code and documentation for detection, semantic recognition, image comparison, and text recognition. The source declares an MIT license.",
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-09T04:38:50Z",
+    "read_basis": "Scan-backlog review 2026-11-09: primary source (README) fetched 2026-11-09T04:25:14Z; Codex first pass and independent second pass (triage+check), deterministic checker on quotes, vocabulary and summary rules.",
+    "reviewed_sha256": "33e54601ac6fc8810b87889a86428a44b13c9f25e5ca0f8ea0db95f7213feab9"
+  },
+  {
+    "name": "Mobilewright",
+    "kind": "framework",
+    "url": "https://github.com/mobile-next/mobilewright",
+    "environments": [
+      "cross-platform",
+      "ios",
+      "android"
+    ],
+    "topics": [
+      "automation",
+      "mobile-navigation",
+      "screen-understanding"
+    ],
+    "summary": "Mobilewright automates iOS and Android devices through semantic locators and actions. It exposes accessibility trees that agents can use to inspect and operate mobile apps.",
+    "scope": "adjacent",
+    "verify_terms": [
+      "Mobilewright"
+    ],
+    "notes": "The README describes packages for test fixtures, protocol types, device drivers and core locators. It requires Node.js and a booted simulator, emulator or connected device.",
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-09T04:38:50Z",
+    "read_basis": "Scan-backlog review 2026-11-09: primary source (README) fetched 2026-11-09T04:25:32Z; Codex first pass and independent second pass (triage+check), deterministic checker on quotes, vocabulary and summary rules.",
+    "reviewed_sha256": "cc398ec30328a780a630fc77d4f4fe4089655cdf0df5435a6f0a14aacfe53a03"
+  },
+  {
+    "name": "openadapt-flow",
+    "kind": "tool",
+    "url": "https://github.com/OpenAdaptAI/openadapt-flow",
+    "environments": [
+      "cross-platform",
+      "web",
+      "desktop",
+      "windows",
+      "macos",
+      "linux"
+    ],
+    "topics": [
+      "recording",
+      "automation",
+      "workflow",
+      "history"
+    ],
+    "summary": "openadapt-flow turns recorded web or desktop tasks into reusable programs, replays them locally, and verifies saved records. Its standalone repository is archived.",
+    "scope": "adjacent",
+    "verify_terms": [
+      "openadapt-flow",
+      "OpenAdapt"
+    ],
+    "notes": "The README describes Playwright, desktop accessibility APIs, and pixel-based Citrix or remote-desktop control. It says current development moved to OpenAdapt's packages/flow and declares an MIT license.",
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-09T04:38:50Z",
+    "read_basis": "Scan-backlog review 2026-11-09: primary source (README) fetched 2026-11-09T04:25:52Z; Codex first pass and independent second pass (triage+check), deterministic checker on quotes, vocabulary and summary rules.",
+    "reviewed_sha256": "b06e465dccc239c082c05fa78b68262a066238be786a53a62936cc95bffc2b1e"
+  },
+  {
+    "name": "AppCopilot",
+    "kind": "agent",
+    "url": "https://github.com/OpenBMB/AppCopilot",
+    "environments": [
+      "android"
+    ],
+    "topics": [
+      "mobile-navigation",
+      "cross-app",
+      "planning",
+      "tool-integration"
+    ],
+    "summary": "AppCopilot is a multimodal mobile agent for tasks across Android apps. The repository provides code and setup steps for emulator or phone control through ADB.",
+    "scope": "core",
+    "verify_terms": [
+      "AppCopilot",
+      "Android"
+    ],
+    "notes": "The quickstart requires Android Studio, ADB, Python dependencies, and access to a model served through a vLLM API. It also describes configuring a client API key.",
+    "documented_by": [
+      "2509.02444"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-09T04:38:50Z",
+    "read_basis": "Scan-backlog review 2026-11-09: primary source (README) fetched 2026-11-09T04:25:58Z; Codex first pass and independent second pass (triage+check), deterministic checker on quotes, vocabulary and summary rules.",
+    "reviewed_sha256": "2bb3ae4d814cf21ef2f70937c88eb4c35edf9556a42359a27ca1c4bd0283f5b3"
+  },
+  {
+    "name": "Interpreter Workstation",
+    "kind": "product",
+    "url": "https://github.com/openinterpreter/interpreter-workstation",
+    "environments": [
+      "cross-platform",
+      "desktop",
+      "web"
+    ],
+    "topics": [
+      "automation",
+      "tool-integration",
+      "safety-security"
+    ],
+    "summary": "Interpreter Workstation is a desktop agent workspace that connects to local or remote computers and combines an agent runtime with browser access and file and app controls.",
+    "scope": "core",
+    "verify_terms": [
+      "Interpreter Workstation"
+    ],
+    "notes": "The repository contains the Workstation shell, desktop host, browser adapters and local policy. The README lists Node.js, pnpm, Bun and Rust as build requirements and declares Apache 2.0 licensing.",
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-09T04:38:50Z",
+    "read_basis": "Scan-backlog review 2026-11-09: primary source (README) fetched 2026-11-09T04:26:15Z; Codex first pass and independent second pass (triage+check), deterministic checker on quotes, vocabulary and summary rules.",
+    "reviewed_sha256": "205b577980981d8c98c1610af912d779aa3889c457a835c67cf90a66da0d34a6"
+  },
+  {
+    "name": "AssistantBench",
+    "kind": "benchmark",
+    "url": "https://github.com/oriyor/AssistantBench",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "evaluation",
+      "web-navigation",
+      "long-horizon"
+    ],
+    "summary": "AssistantBench evaluates web agents on realistic, time-consuming tasks. Its project repository links to the task dataset and submission leaderboard.",
+    "scope": "core",
+    "verify_terms": [
+      "AssistantBench",
+      "SeePlanAct"
+    ],
+    "notes": "The README links to a Hugging Face dataset and leaderboard. It says SeePlanAct code and additional resources will be released later.",
+    "documented_by": [
+      "2407.15711"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-09T04:38:50Z",
+    "read_basis": "Scan-backlog review 2026-11-09: primary source (README) fetched 2026-11-09T04:26:20Z; Codex first pass and independent second pass (triage+check), deterministic checker on quotes, vocabulary and summary rules.",
+    "reviewed_sha256": "4a1495306987646ca022a2ac658970028778bd5a04f768e7c6a4da4ac4eaac3f"
+  },
+  {
+    "name": "YADB",
+    "kind": "tool",
+    "url": "https://github.com/ysbing/YADB",
+    "environments": [
+      "android"
+    ],
+    "topics": [
+      "automation",
+      "screen-understanding",
+      "mobile-navigation"
+    ],
+    "summary": "YADB extends Android Debug Bridge with text input, screenshots, UI layout dumps and simulated gestures for device automation.",
+    "scope": "adjacent",
+    "verify_terms": [
+      "YADB"
+    ],
+    "notes": "The README includes commands for clipboard access, long press, drag, swipe and pinch. It declares the LGPLv3 license.",
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-09T04:38:50Z",
+    "read_basis": "Scan-backlog review 2026-11-09: primary source (README) fetched 2026-11-09T04:28:41Z; Codex first pass and independent second pass (triage+check), deterministic checker on quotes, vocabulary and summary rules.",
+    "reviewed_sha256": "ddb8c03bcc366476fa5e6df83784919f89cc2929d1f3197caea1b54c76fe535a"
+  },
+  {
+    "name": "Qwen2.5-VL-7B-Instruct",
+    "kind": "model",
+    "url": "https://huggingface.co/Qwen/Qwen2.5-VL-7B-Instruct",
+    "environments": [
+      "cross-platform"
+    ],
+    "topics": [
+      "screen-understanding",
+      "grounding",
+      "mobile-navigation",
+      "evaluation"
+    ],
+    "summary": "Qwen2.5-VL-7B-Instruct releases vision-language weights whose card describes computer and phone use and reports results on screen grounding and mobile-agent benchmarks.",
+    "scope": "adjacent",
+    "evidence_urls": [
+      "https://huggingface.co/api/models/Qwen/Qwen2.5-VL-7B-Instruct"
+    ],
+    "verify_terms": [
+      "Qwen2.5-VL-7B-Instruct"
+    ],
+    "notes": "The repository contains sharded safetensors weights and processor and tokenizer files. The card gives Transformers inference examples and declares the Apache 2.0 license.",
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-09T04:38:50Z",
+    "read_basis": "Scan-backlog review 2026-11-09: primary source (Hub card) fetched 2026-11-09T04:20:08Z; Codex first pass and independent second pass (triage+check), deterministic checker on quotes, vocabulary and summary rules.",
+    "reviewed_sha256": "59cd17c2cb9b93c463d1debbf33996f42dbfa2de60587a4dee3911ba581a38fe"
+  },
+  {
+    "name": "Hcompany/Holo4-35B-A3B-NVFP4",
+    "kind": "model",
+    "url": "https://huggingface.co/Hcompany/Holo4-35B-A3B-NVFP4",
+    "environments": [
+      "cross-platform",
+      "desktop",
+      "web"
+    ],
+    "topics": [
+      "action-prediction",
+      "grounding",
+      "tool-integration"
+    ],
+    "summary": "Holo4-35B-A3B-NVFP4 is an NVFP4 computer-use vision-language checkpoint that consumes screenshots and tool results to request interface actions through an agent harness.",
+    "scope": "core",
+    "evidence_urls": [
+      "https://huggingface.co/api/models/Hcompany/Holo4-35B-A3B-NVFP4"
+    ],
+    "verify_terms": [
+      "Holo4-35B-A3B-NVFP4",
+      "hai-agents harness"
+    ],
+    "notes": "The repository lists NVFP4 safetensors weights and configuration files. The card names Qwen3.6-35B-A3B as its base model and declares an Apache 2.0 license.",
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-09T04:38:50Z",
+    "read_basis": "Scan-backlog review 2026-11-09: primary source (Hub card) fetched 2026-11-09T04:20:59Z; Codex first pass and independent second pass (triage+check), deterministic checker on quotes, vocabulary and summary rules.",
+    "reviewed_sha256": "a9800ea79ca5e9f879cff4eef1b52303ce4c71dd6729d6f355ca65f45e4b10ce"
+  },
+  {
+    "name": "appium-adb",
+    "kind": "tool",
+    "url": "https://github.com/appium/appium-adb",
+    "environments": [
+      "android"
+    ],
+    "topics": [
+      "automation",
+      "mobile-navigation",
+      "history"
+    ],
+    "summary": "An Android Debug Bridge wrapper that exposes device operations for Appium. The repository points to the appium-android monorepo for continuing development.",
+    "scope": "adjacent",
+    "verify_terms": [
+      "appium-adb",
+      "Android Debugger Bridge"
+    ],
+    "notes": "The README includes npm installation and a JavaScript usage example. Development now continues under packages/adb in appium-android.",
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-09T04:38:55Z",
+    "read_basis": "Scan-backlog review 2026-11-09: primary source (README) fetched 2026-11-09T04:18:17Z; Codex first pass and independent second pass (triage+check), deterministic checker on quotes, vocabulary and summary rules.",
+    "reviewed_sha256": "758fc8580582e5a6a504f51e45fbf5a11df7857b1ccc9e2eaa841854f737e6a6"
+  },
+  {
+    "name": "WebDriverAgent",
+    "kind": "tool",
+    "url": "https://github.com/appium/WebDriverAgent",
+    "environments": [
+      "ios"
+    ],
+    "topics": [
+      "automation",
+      "mobile-navigation",
+      "history"
+    ],
+    "summary": "WebDriverAgent is an iOS WebDriver server for remote app control, including launching apps, tapping, scrolling, and checking views. Development has moved to appium-ios.",
+    "scope": "adjacent",
+    "verify_terms": [
+      "WebDriverAgent",
+      "appium-ios monorepo"
+    ],
+    "notes": "The source describes devices and simulators, XCTest-based commands, and a Node.js requirement for this repository. It declares a BSD license.",
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-09T04:38:55Z",
+    "read_basis": "Scan-backlog review 2026-11-09: primary source (README) fetched 2026-11-09T04:18:16Z; Codex first pass and independent second pass (triage+check), deterministic checker on quotes, vocabulary and summary rules.",
+    "reviewed_sha256": "8c779558a96d230ddfc3ca5d4341fc8702b0eff299ce37d93db945ed22d0bb13"
+  },
+  {
+    "name": "VideoWebArena",
+    "kind": "benchmark",
+    "url": "https://github.com/ljang0/videowebarena",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "evaluation",
+      "video",
+      "web-navigation",
+      "interaction-history"
+    ],
+    "summary": "VideoWebArena evaluates web agents that use video tutorials to complete website tasks. Its released benchmark includes task configurations, environments, and an evaluation pipeline.",
+    "scope": "core",
+    "verify_terms": [
+      "VideoWebArena",
+      "video_summary_agent"
+    ],
+    "notes": "The source reports 2,021 tasks and links the videos as a separate download. Evaluation requires configured website environments; the documented baselines use video frames or summaries.",
+    "documented_by": [
+      "2410.19100"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-09T04:38:55Z",
+    "read_basis": "Scan-backlog review 2026-11-09: primary source (README) fetched 2026-11-09T04:24:49Z; Codex first pass and independent second pass (triage+check), deterministic checker on quotes, vocabulary and summary rules.",
+    "reviewed_sha256": "faf7596af0970a77cd7af2071ebbb2c0d9bb615647735119f7763fd3d05d9f70"
+  },
+  {
+    "name": "WebOperator Experiments",
+    "kind": "tool",
+    "url": "https://github.com/mahirlabibdihan/WebOperator-Experiments",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "observability",
+      "evaluation",
+      "web-navigation"
+    ],
+    "summary": "Browsable viewers show WebOperator task trajectories for WebArena and WebArena-lite, with screenshots loaded from a linked Hugging Face dataset.",
+    "scope": "core",
+    "verify_terms": [
+      "WebOperator Experiments",
+      "trajectory viewers"
+    ],
+    "notes": "The linked dataset contains search trees, logs, trajectories, evaluations, configurations, screenshots and analysis scripts. The README lists 812 WebArena tasks and a WebArena-lite ablation study with 155 tasks and 10 runs.",
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-09T04:38:55Z",
+    "read_basis": "Scan-backlog review 2026-11-09: primary source (README) fetched 2026-11-09T04:25:06Z; Codex first pass and independent second pass (triage+check), deterministic checker on quotes, vocabulary and summary rules.",
+    "reviewed_sha256": "e9d3dad7a959400416ff26ccefeacf6aa3d31df45d8666af851255d2f8629d31"
+  },
+  {
+    "name": "ibara",
+    "kind": "infrastructure",
+    "url": "https://github.com/MayberryDT/ibara",
+    "environments": [
+      "desktop",
+      "linux",
+      "web"
+    ],
+    "topics": [
+      "sandbox",
+      "tool-integration",
+      "observability",
+      "human-in-the-loop"
+    ],
+    "summary": "ibara connects MCP-enabled agents to spare Omarchy computers for desktop and browser tasks. A console displays screens and tasks and lets a person take control.",
+    "scope": "core",
+    "verify_terms": [
+      "ibara",
+      "Omarchy"
+    ],
+    "notes": "The README requires Omarchy computers, a Tailscale account and an MCP-capable agent. It says the software also works with Omarchy virtual machines and declares the core license as MIT.",
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-09T04:38:55Z",
+    "read_basis": "Scan-backlog review 2026-11-09: primary source (README) fetched 2026-11-09T04:25:10Z; Codex first pass and independent second pass (triage+check), deterministic checker on quotes, vocabulary and summary rules.",
+    "reviewed_sha256": "a793e5375348dbc45204bd614dc16a3be1a2e65ef663cf36b7b21dc185efe00d"
+  },
+  {
+    "name": "VLM-R1",
+    "kind": "framework",
+    "url": "https://github.com/om-ai-lab/VLM-R1",
+    "environments": [
+      "unspecified"
+    ],
+    "topics": [
+      "reinforcement-learning",
+      "screen-understanding",
+      "evaluation"
+    ],
+    "summary": "VLM-R1 provides reinforcement learning code for vision-language models, including a GUI training example and a reported defect detection model for interface screens.",
+    "scope": "adjacent",
+    "verify_terms": [
+      "VLM-R1",
+      "run_grpo_gui.sh"
+    ],
+    "notes": "The repository provides training scripts for GRPO, LoRA, multi-node, and multi-image runs. The GUI defect detection checkpoint is linked as a separate model release.",
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-09T04:38:55Z",
+    "read_basis": "Scan-backlog review 2026-11-09: primary source (README) fetched 2026-11-09T04:25:47Z; Codex first pass and independent second pass (triage+check), deterministic checker on quotes, vocabulary and summary rules.",
+    "reviewed_sha256": "6cfadd69823b2af05f1b4c70d1cf78dbe8f361fe0722f03eb6f1524551d291f2"
+  },
+  {
+    "name": "Zoom Consistency Routing",
+    "kind": "tool",
+    "url": "https://github.com/omxyz/zoom-consistency-routing",
+    "environments": [
+      "unspecified"
+    ],
+    "topics": [
+      "grounding",
+      "training-free",
+      "evaluation"
+    ],
+    "summary": "A training-free router chooses between visual grounding models using prediction distance from a zoom crop's center. The release includes ScreenSpot-Pro evaluation scripts.",
+    "scope": "core",
+    "verify_terms": [
+      "Zoom Consistency Routing",
+      "ScreenSpot-Pro"
+    ],
+    "notes": "The repository describes capture, analysis and leaderboard-submission scripts plus saved predictions. Its setup uses KV-Ground-8B and Qwen3.5-27B and specifies a GPU with at least 80GB VRAM. The README declares an MIT license.",
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-09T04:38:55Z",
+    "read_basis": "Scan-backlog review 2026-11-09: primary source (README) fetched 2026-11-09T04:25:47Z; Codex first pass and independent second pass (triage+check), deterministic checker on quotes, vocabulary and summary rules.",
+    "reviewed_sha256": "9d1aceb8f8af29fcac38b484cb489e09f798d0080ae9cfb9f85d0aabffb0aa70"
+  },
+  {
+    "name": "Steel MCP Server",
+    "kind": "tool",
+    "url": "https://github.com/steel-dev/steel-mcp-server",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "web-navigation",
+      "automation",
+      "human-in-the-loop",
+      "observability"
+    ],
+    "summary": "Steel MCP Server gives MCP clients tools to read and operate cloud Chrome sessions through page elements, with session diagnostics and handoff for human input.",
+    "scope": "core",
+    "verify_terms": [
+      "Steel MCP Server",
+      "steel_session_handoff"
+    ],
+    "notes": "The source describes a downloadable release and a source checkout. Steel Cloud requires an API key; a self-hosted browser can run with STEEL_LOCAL. The repository links an MIT license.",
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-09T04:38:55Z",
+    "read_basis": "Scan-backlog review 2026-11-09: primary source (README) fetched 2026-11-09T04:27:27Z; Codex first pass and independent second pass (triage+check), deterministic checker on quotes, vocabulary and summary rules.",
+    "reviewed_sha256": "4acd26e643df98ba2164c7f05e47cff361b91b075107bf6988cb419d8a5e0495"
+  },
+  {
+    "name": "Pointerbench",
+    "kind": "benchmark",
+    "url": "https://github.com/warmwindOS/pointerbench",
+    "environments": [
+      "unspecified"
+    ],
+    "topics": [
+      "evaluation",
+      "grounding",
+      "screen-understanding"
+    ],
+    "summary": "Pointerbench evaluates whether computer-use models can locate instructed targets in screenshots. Its three subsets cover spreadsheets, text, and professional application interfaces.",
+    "scope": "core",
+    "verify_terms": [
+      "Pointerbench",
+      "pointerbench-sheets"
+    ],
+    "notes": "The repository contains evaluation scripts and metadata; full evaluation requires screenshots from Hugging Face. The source states that dataset images and annotations use CC BY 4.0 and evaluation scripts use MIT.",
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-09T04:38:55Z",
+    "read_basis": "Scan-backlog review 2026-11-09: primary source (README) fetched 2026-11-09T04:28:22Z; Codex first pass and independent second pass (triage+check), deterministic checker on quotes, vocabulary and summary rules.",
+    "reviewed_sha256": "dd06eec4f0b9b6f58424c0790a7fd16dad51b458b1b0909af920ea8235f381a6"
+  },
+  {
+    "name": "MyMusic",
+    "kind": "infrastructure",
+    "url": "https://github.com/Acrab-Agentic-Labs/AppSim-NetEaseCloudMusic",
+    "environments": [
+      "android"
+    ],
+    "topics": [
+      "evaluation",
+      "mobile-navigation",
+      "sandbox"
+    ],
+    "summary": "A simplified Android music app with fixed local data and action records for checking whether mobile GUI agents complete tasks.",
+    "scope": "core",
+    "verify_terms": [
+      "MyMusic",
+      "GUI Agent"
+    ],
+    "notes": "The README describes Kotlin and Jetpack Compose source, local JSON assets, and records for actions such as playback, favorites and comments.",
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-09T04:39:00Z",
+    "read_basis": "Scan-backlog review 2026-11-09: primary source (README) fetched 2026-11-09T04:17:55Z; Codex first pass and independent second pass (triage+check), deterministic checker on quotes, vocabulary and summary rules.",
+    "reviewed_sha256": "5613c44bb8a8031c7a6e0a0917c75a4012e9dd2bd22bd85a6e2b702348c577ec"
+  },
+  {
+    "name": "MyPCBench",
+    "kind": "benchmark",
+    "url": "https://github.com/ljang0/MyPCBench",
+    "environments": [
+      "desktop",
+      "linux",
+      "web"
+    ],
+    "topics": [
+      "evaluation",
+      "cross-app",
+      "sandbox",
+      "long-horizon"
+    ],
+    "summary": "A Linux desktop benchmark with 184 tasks spanning seeded web apps and office software, using a VM runner and rubric-based grading.",
+    "scope": "core",
+    "verify_terms": [
+      "MyPCBench"
+    ],
+    "notes": "The repository ships the harness, tasks, rubrics, persona metadata and documentation. The runnable VM is distributed separately as a Docker image and a qcow2 file; the README specifies Linux, KVM and QEMU for direct runs.",
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-09T04:39:00Z",
+    "read_basis": "Scan-backlog review 2026-11-09: primary source (README) fetched 2026-11-09T04:24:47Z; Codex first pass and independent second pass (triage+check), deterministic checker on quotes, vocabulary and summary rules.",
+    "reviewed_sha256": "5b82d77eeb655123ee6b287b23491d113bea762de0850e522e540a0fd4c768a3"
+  },
+  {
+    "name": "Notte CLI",
+    "kind": "tool",
+    "url": "https://github.com/nottelabs/notte-cli",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "automation",
+      "web-navigation",
+      "workflow"
+    ],
+    "summary": "A command-line tool for controlling remote browser sessions, handling files and running repeatable web automation workflows.",
+    "scope": "adjacent",
+    "verify_terms": [
+      "Notte CLI"
+    ],
+    "notes": "The README documents Go, Homebrew and script installation, API-key authentication, browser sessions, scraping and scheduled functions.",
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-09T04:39:00Z",
+    "read_basis": "Scan-backlog review 2026-11-09: primary source (README) fetched 2026-11-09T04:25:41Z; Codex first pass and independent second pass (triage+check), deterministic checker on quotes, vocabulary and summary rules.",
+    "reviewed_sha256": "2a224dc9caffc9deabb082651d16ae4a3331ff3ad67c824f703a3157348ca23d"
+  },
+  {
+    "name": "ADBKeyBoard",
+    "kind": "tool",
+    "url": "https://github.com/senzhk/ADBKeyBoard",
+    "environments": [
+      "android"
+    ],
+    "topics": [
+      "automation",
+      "mobile-navigation"
+    ],
+    "summary": "An Android virtual keyboard that accepts ADB broadcasts to enter text, Unicode characters and key events for device automation.",
+    "scope": "adjacent",
+    "verify_terms": [
+      "ADBKeyBoard"
+    ],
+    "notes": "The README documents APK installation, building from source and broadcast commands for text, key events and editor actions.",
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-09T04:39:00Z",
+    "read_basis": "Scan-backlog review 2026-11-09: primary source (README) fetched 2026-11-09T04:27:15Z; Codex first pass and independent second pass (triage+check), deterministic checker on quotes, vocabulary and summary rules.",
+    "reviewed_sha256": "b7e0b55f5defc2d09a27ad8417fc2adb085cbd5997414c3978ffef79135545b9"
+  },
+  {
+    "name": "WebtestingWithLLMs",
+    "kind": "tool",
+    "url": "https://github.com/SoftwareTestingLLMs/WebtestingWithLLMs",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "automation",
+      "evaluation"
+    ],
+    "summary": "A set of Selenium scripts for automated web application testing, including a monkey tester with configurable interaction count and timing.",
+    "scope": "adjacent",
+    "verify_terms": [
+      "WebtestingWithLLMs",
+      "monkey_tester.py"
+    ],
+    "notes": "The README provides ChromeDriver setup steps and command-line options for the monkey tester.",
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-09T04:39:00Z",
+    "read_basis": "Scan-backlog review 2026-11-09: primary source (README) fetched 2026-11-09T04:27:24Z; Codex first pass and independent second pass (triage+check), deterministic checker on quotes, vocabulary and summary rules.",
+    "reviewed_sha256": "b1c7a5b0420f752aa0fa68f82df05cc18c852a65ccdd677123f2933bd92240c6"
+  },
+  {
+    "name": "GUI Exploration Lab",
+    "kind": "infrastructure",
+    "url": "https://github.com/summoneryhl/gelab-engine",
+    "environments": [
+      "unspecified"
+    ],
+    "topics": [
+      "sandbox",
+      "evaluation",
+      "reinforcement-learning",
+      "long-horizon"
+    ],
+    "summary": "A synthetic GUI environment with configurable screens, icons and navigation graphs for training and evaluating agents on screen navigation.",
+    "scope": "core",
+    "verify_terms": [
+      "GUI Exploration Lab",
+      "GE-Lab"
+    ],
+    "notes": "The repository lists environment, data-engine, evaluation and training code. Its README links to model weights and describes supervised, single-turn reinforcement and multi-turn reinforcement learning stages.",
+    "documented_by": [
+      "2512.02423"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-09T04:39:00Z",
+    "read_basis": "Scan-backlog review 2026-11-09: primary source (README) fetched 2026-11-09T04:27:32Z; Codex first pass and independent second pass (triage+check), deterministic checker on quotes, vocabulary and summary rules.",
+    "reviewed_sha256": "0b608a0615819cb26c93e6f3d3855a058082c7b8e19d5e8c371f96a0501ea831"
+  },
+  {
+    "name": "ScribeAgent",
+    "kind": "agent",
+    "url": "https://github.com/colonylabs/ScribeAgent",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "web-navigation",
+      "imitation-learning",
+      "workflow",
+      "evaluation"
+    ],
+    "summary": "ScribeAgent trains web agents from recorded workflows represented with page HTML and prior actions. The repository provides preprocessing, fine-tuning, and evaluation code.",
+    "scope": "core",
+    "verify_terms": [
+      "ScribeAgent",
+      "Mind2Web"
+    ],
+    "notes": "The release includes example workflows and processed data, while the main dataset is described as proprietary. Preprocessing requires Hugging Face and OpenAI credentials.",
+    "documented_by": [
+      "2411.15004"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-09T04:39:28Z",
+    "read_basis": "Scan-backlog review 2026-11-09: primary source (README) fetched 2026-11-09T04:18:48Z; Codex first pass and independent second pass (triage+check), deterministic checker on quotes, vocabulary and summary rules.",
+    "reviewed_sha256": "68b0ffeacd7fb7fe9254ca30ccf9de2bbd96fad87999cea42064c558d0ea001b"
+  },
+  {
+    "name": "Kernel",
+    "kind": "infrastructure",
+    "url": "https://github.com/kernel/kernel-images",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "sandbox",
+      "automation",
+      "observability",
+      "recording"
+    ],
+    "summary": "Kernel supplies isolated Chrome browser instances for web agents and automation. Its images support remote control, live viewing, and session recording.",
+    "scope": "core",
+    "verify_terms": [
+      "Kernel",
+      "sandboxed"
+    ],
+    "notes": "The repository documents Docker and Unikraft deployments. Playwright and Puppeteer can connect through the Chrome DevTools Protocol.",
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-09T04:39:28Z",
+    "read_basis": "Scan-backlog review 2026-11-09: primary source (README) fetched 2026-11-09T04:24:23Z; Codex first pass and independent second pass (triage+check), deterministic checker on quotes, vocabulary and summary rules.",
+    "reviewed_sha256": "a041474a298cbbef825156f9c82995087812467711a9b99574f5a62c74652b01"
+  },
+  {
+    "name": "mobilecli",
+    "kind": "tool",
+    "url": "https://github.com/mobile-next/mobilecli",
+    "environments": [
+      "cross-platform",
+      "android",
+      "ios"
+    ],
+    "topics": [
+      "automation",
+      "mobile-navigation",
+      "screen-understanding"
+    ],
+    "summary": "mobilecli is a command-line utility for controlling iOS and Android devices and simulators. It captures screens, reads UI trees, sends input, and manages apps.",
+    "scope": "adjacent",
+    "verify_terms": [
+      "mobilecli",
+      "UI Tree"
+    ],
+    "notes": "The source documents real-device and simulator support for both platforms. Android support requires the Android SDK; iOS simulator support requires Xcode command-line tools on macOS.",
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-09T04:39:28Z",
+    "read_basis": "Scan-backlog review 2026-11-09: primary source (README) fetched 2026-11-09T04:25:32Z; Codex first pass and independent second pass (triage+check), deterministic checker on quotes, vocabulary and summary rules.",
+    "reviewed_sha256": "08e8538ee57d2a725cc63e31d48b4cb8a8d0a8356b1f10d48de3597ba408031b"
+  },
+  {
+    "name": "Open Operator",
+    "kind": "learning",
+    "url": "https://github.com/OpenHands/open-operator",
+    "environments": [
+      "cross-platform",
+      "web",
+      "desktop"
+    ],
+    "topics": [
+      "survey",
+      "evaluation",
+      "web-navigation"
+    ],
+    "summary": "Open Operator collects resources on computer-use agents, with task categories, benchmark summaries, and pages describing existing agent systems.",
+    "scope": "core",
+    "verify_terms": [
+      "Open Operator",
+      "OSWorld"
+    ],
+    "notes": "The repository contains benchmark pages and separate pages for open and closed solutions. Its README also presents a benchmark results table.",
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-09T04:39:28Z",
+    "read_basis": "Scan-backlog review 2026-11-09: primary source (README) fetched 2026-11-09T04:26:15Z; Codex first pass and independent second pass (triage+check), deterministic checker on quotes, vocabulary and summary rules.",
+    "reviewed_sha256": "bcfaec7a8e48745e422df9263816872ddfcb9e17f53b2fbc2c199dc0c3f8a21b"
+  },
+  {
+    "name": "AndroidGen",
+    "kind": "agent",
+    "url": "https://github.com/THUDM/AndroidGen",
+    "environments": [
+      "android"
+    ],
+    "topics": [
+      "mobile-navigation",
+      "planning",
+      "memory",
+      "self-reflection"
+    ],
+    "summary": "AndroidGen operates Android tasks using retrieved examples, plan updates, and action checks. Its repository includes agent code and AndroidWorld evaluation scripts.",
+    "scope": "core",
+    "verify_terms": [
+      "AndroidGen",
+      "AndroidWorld"
+    ],
+    "notes": "The repository includes evaluation datasets and trajectory recording code. Setup requires AndroidWorld and an Android emulator; the source also describes API and trained-model options.",
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-09T04:39:28Z",
+    "read_basis": "Scan-backlog review 2026-11-09: primary source (README) fetched 2026-11-09T04:27:43Z; Codex first pass and independent second pass (triage+check), deterministic checker on quotes, vocabulary and summary rules.",
+    "reviewed_sha256": "f6079070787e9668079b043a123b9c12d6a2e186e31b81e7d12657f5701fba51"
+  },
+  {
+    "name": "RegionFocus",
+    "kind": "tool",
+    "url": "https://github.com/tiangeluo/RegionFocus",
+    "environments": [
+      "unspecified"
+    ],
+    "topics": [
+      "grounding",
+      "training-free",
+      "evaluation"
+    ],
+    "summary": "RegionFocus provides code for GUI grounding through selected screenshot regions. The release evaluates UI-TARS and Qwen2.5-VL on ScreenSpot-Pro.",
+    "scope": "core",
+    "verify_terms": [
+      "RegionFocus",
+      "ScreenSpot-Pro"
+    ],
+    "notes": "The release contains evaluation and result summarization scripts. Running it requires ScreenSpot-Pro data and inference servers for the selected models.",
+    "documented_by": [
+      "2505.00684"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-09T04:39:28Z",
+    "read_basis": "Scan-backlog review 2026-11-09: primary source (README) fetched 2026-11-09T04:27:47Z; Codex first pass and independent second pass (triage+check), deterministic checker on quotes, vocabulary and summary rules.",
+    "reviewed_sha256": "c96a7573cd5fcf0e4c8cf230a88a12c36ac2dc9e97e5d164cbd12d52a299fbef"
+  },
+  {
+    "name": "Orienter",
+    "kind": "model",
+    "url": "https://huggingface.co/stereoid/Orienter",
+    "environments": [
+      "unspecified"
+    ],
+    "topics": [
+      "grounding",
+      "screen-understanding",
+      "evaluation"
+    ],
+    "summary": "Orienter locates interactable elements in extended reality interface screenshots using application context and a detector. The release includes code and a checkpoint.",
+    "scope": "core",
+    "evidence_urls": [
+      "https://huggingface.co/api/models/stereoid/Orienter"
+    ],
+    "verify_terms": [
+      "Orienter",
+      "APE-L"
+    ],
+    "notes": "The repository includes selected evaluation ground truth and excludes dataset images. Full inference requires external image assets, provider access, and a CUDA environment.",
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-09T04:39:28Z",
+    "read_basis": "Scan-backlog review 2026-11-09: primary source (Hub card) fetched 2026-11-09T04:20:12Z; Codex first pass and independent second pass (triage+check), deterministic checker on quotes, vocabulary and summary rules.",
+    "reviewed_sha256": "62976d0af1c4902ddf9e11e3acffd0407d6ae05f34d6434ebd20323bf972ca4a"
+  },
+  {
+    "name": "Droidrun iOS Portal",
+    "kind": "tool",
+    "url": "https://github.com/droidrun/ios-portal",
+    "environments": [
+      "ios"
+    ],
+    "topics": [
+      "automation",
+      "screen-understanding",
+      "history"
+    ],
+    "summary": "An archived iOS automation portal that exposes screenshots, accessibility trees, app launch, gestures, and text input through an XCTest HTTP server.",
+    "scope": "adjacent",
+    "verify_terms": [
+      "Droidrun iOS Portal",
+      "Portal Server"
+    ],
+    "notes": "The repository includes a SwiftUI host app, XCTest server, and scripts for physical devices and simulators. Its README says mobilerun-ios supersedes it.",
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-09T04:40:52Z",
+    "read_basis": "Scan-backlog review 2026-11-09: primary source (README) fetched 2026-11-09T04:18:52Z; Codex first pass and independent second pass (triage+check), deterministic checker on quotes, vocabulary and summary rules.",
+    "reviewed_sha256": "ab4453f442b3550038649400e5127da127fee5a5b0de43750565515086d82113"
+  },
+  {
+    "name": "ColorBrowserAgent",
+    "kind": "agent",
+    "url": "https://github.com/MadeAgents/browser-agent",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "web-navigation",
+      "long-horizon",
+      "memory",
+      "human-in-the-loop"
+    ],
+    "summary": "A browser agent for long web tasks that compresses progress into summaries and incorporates human supplied site knowledge to guide later actions.",
+    "scope": "core",
+    "verify_terms": [
+      "ColorBrowserAgent",
+      "Progressive Progress Summarization"
+    ],
+    "notes": "The repository includes agent code, WebArena run instructions, trajectory documentation, and an Apache License 2.0 declaration. Running the examples requires Python, Playwright, and API configuration.",
+    "documented_by": [
+      "2601.07262"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-09T04:40:52Z",
+    "read_basis": "Scan-backlog review 2026-11-09: primary source (README) fetched 2026-11-09T04:25:03Z; Codex first pass and independent second pass (triage+check), deterministic checker on quotes, vocabulary and summary rules.",
+    "reviewed_sha256": "22355eccd60027ec9f8c5c36926fb4c6e20c7bc745674b49b38ecfb8fc9b4290"
+  },
+  {
+    "name": "openadapt-grounding",
+    "kind": "tool",
+    "url": "https://github.com/OpenAdaptAI/openadapt-grounding",
+    "environments": [
+      "cross-platform",
+      "web",
+      "desktop"
+    ],
+    "topics": [
+      "grounding",
+      "robustness",
+      "history"
+    ],
+    "summary": "An archived GUI element localization package that anchors targets to OCR text and stabilizes detections across frames, with optional model-based fallbacks.",
+    "scope": "core",
+    "verify_terms": [
+      "openadapt-grounding",
+      "ElementLocator"
+    ],
+    "notes": "The local OCR path requires Tesseract. Optional fallbacks include self-hosted grounding models or hosted vision-language providers; the README identifies the package as archived.",
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-09T04:40:52Z",
+    "read_basis": "Scan-backlog review 2026-11-09: primary source (README) fetched 2026-11-09T04:25:53Z; Codex first pass and independent second pass (triage+check), deterministic checker on quotes, vocabulary and summary rules.",
+    "reviewed_sha256": "8b4a72e72768c5f3c4f7bef04b300509265798a533f49c3810e625992b3d8ed3"
+  },
+  {
+    "name": "AdbGPT",
+    "kind": "agent",
+    "url": "https://github.com/sidongfeng/AdbGPT",
+    "environments": [
+      "android"
+    ],
+    "topics": [
+      "mobile-navigation",
+      "grounding",
+      "automation",
+      "training-free"
+    ],
+    "summary": "An Android bug replay agent that extracts action details from written bug reports and uses the current app screen to guide reproduction steps.",
+    "scope": "core",
+    "verify_terms": [
+      "AdbGPT",
+      "Guided Replay"
+    ],
+    "notes": "The README documents Genymotion Android emulators, ADB, an OpenAI API key, and scripts that save screenshots and view hierarchies during replay.",
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-09T04:40:52Z",
+    "read_basis": "Scan-backlog review 2026-11-09: primary source (README) fetched 2026-11-09T04:27:18Z; Codex first pass and independent second pass (triage+check), deterministic checker on quotes, vocabulary and summary rules.",
+    "reviewed_sha256": "7cfb9c5c8273f689f7a3b83c58325ea15e3fc9e4d03da2643ca4a417d675e139"
+  },
+  {
+    "name": "Awesome Reinforcement Learning for GUI Agents",
+    "kind": "learning",
+    "url": "https://github.com/Steve2457/Awesome-RL-GUI-Agents",
+    "environments": [
+      "cross-platform"
+    ],
+    "topics": [
+      "survey",
+      "reinforcement-learning",
+      "evaluation"
+    ],
+    "summary": "A curated reading list of reinforcement learning work on GUI agents, organized by learning methods, reward and efficiency questions, datasets, and training environments.",
+    "scope": "core",
+    "verify_terms": [
+      "Awesome Reinforcement Learning for GUI Agents",
+      "Reinforcement Learning"
+    ],
+    "notes": "The repository contains a bibliography and sections on offline, online, and hybrid reinforcement learning, along with training resources.",
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-09T04:40:52Z",
+    "read_basis": "Scan-backlog review 2026-11-09: primary source (README) fetched 2026-11-09T04:27:29Z; Codex first pass and independent second pass (triage+check), deterministic checker on quotes, vocabulary and summary rules.",
+    "reviewed_sha256": "ba8846ec7f3e05a242bb0728395b74b0f7d754f2116133bb470e193cbe575673"
+  },
+  {
+    "name": "Explorer",
+    "kind": "tool",
+    "url": "https://github.com/varnelis/Explorer",
+    "environments": [
+      "cross-platform"
+    ],
+    "topics": [
+      "automation",
+      "recording",
+      "grounding"
+    ],
+    "summary": "A cross-platform GUI automation system with vision-based interactable detection, voice navigation, screen recording, and tools for creating and replaying traces.",
+    "scope": "adjacent",
+    "verify_terms": [
+      "Explorer",
+      "GUI automation"
+    ],
+    "notes": "The README identifies a CLI entry point and lists Selenium detection, OCR analysis, recording, and action matching components. It declares an MIT license.",
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-09T04:40:52Z",
+    "read_basis": "Scan-backlog review 2026-11-09: primary source (README) fetched 2026-11-09T04:28:11Z; Codex first pass and independent second pass (triage+check), deterministic checker on quotes, vocabulary and summary rules.",
+    "reviewed_sha256": "c444d146aad0e0d5ac19e1a9041345a671402a4e602b3bbe5cdf5729921f85af"
+  },
+  {
+    "name": "CoMEM-Agent",
+    "kind": "agent",
+    "url": "https://github.com/WenyiWU0111/CoMEM-Agent",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "memory",
+      "efficiency",
+      "web-navigation",
+      "data-generation"
+    ],
+    "summary": "A web GUI agent implementation that retrieves compact embeddings of earlier interaction trajectories as memory. The repository includes inference and training code.",
+    "scope": "core",
+    "verify_terms": [
+      "CoMEM-Agent",
+      "continuous memory"
+    ],
+    "notes": "The README links to a trajectory dataset and continuous-memory checkpoints on Hugging Face. Its examples cover MMInA, Mind2Web, and WebVoyager.",
+    "documented_by": [
+      "2510.09038"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-09T04:40:52Z",
+    "read_basis": "Scan-backlog review 2026-11-09: primary source (README) fetched 2026-11-09T04:28:28Z; Codex first pass and independent second pass (triage+check), deterministic checker on quotes, vocabulary and summary rules.",
+    "reviewed_sha256": "3a4707075684ba743f83aa5ee168e3778e08c6ae497497dfd6e21f8f077c7c84"
+  },
+  {
+    "name": "uiautomation",
+    "kind": "tool",
+    "url": "https://github.com/yinkaisheng/Python-UIAutomation-for-Windows",
+    "environments": [
+      "desktop",
+      "windows"
+    ],
+    "topics": [
+      "automation",
+      "screen-understanding"
+    ],
+    "summary": "A Python wrapper for Windows UI Automation that traverses application control trees and uses control properties and patterns to inspect and interact with interfaces.",
+    "scope": "adjacent",
+    "verify_terms": [
+      "uiautomation",
+      "UIAutomation"
+    ],
+    "notes": "The README documents installation through pip, an automation.py inspection script, and support for several Windows application frameworks. It declares Apache License 2.0.",
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-09T04:40:52Z",
+    "read_basis": "Scan-backlog review 2026-11-09: primary source (README) fetched 2026-11-09T04:28:37Z; Codex first pass and independent second pass (triage+check), deterministic checker on quotes, vocabulary and summary rules.",
+    "reviewed_sha256": "d183323fdcf884bc5dd075fdebacdab8b78c8dfa4fbf6583055547d4b77d1f65"
+  },
+  {
+    "name": "API-Based-Agent",
+    "kind": "agent",
+    "url": "https://github.com/yueqis/API-Based-Agent",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "web-navigation",
+      "tool-integration",
+      "evaluation"
+    ],
+    "summary": "Code for web agents that use application APIs and browser actions together, with scripts for evaluating the hybrid approach on WebArena.",
+    "scope": "core",
+    "verify_terms": [
+      "API-Based Agent",
+      "Hybrid Agent"
+    ],
+    "notes": "The project uses OpenHands as its evaluation framework and includes setup instructions and WebArena experiment scripts.",
+    "documented_by": [
+      "2410.16464"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-09T04:40:52Z",
+    "read_basis": "Scan-backlog review 2026-11-09: primary source (README) fetched 2026-11-09T04:28:50Z; Codex first pass and independent second pass (triage+check), deterministic checker on quotes, vocabulary and summary rules.",
+    "reviewed_sha256": "b16aed7973260a940391e940f308855b2b94be9ab1d0129f1d1b330813f9de0f"
+  },
+  {
+    "name": "Hcompany/Holo4-35B-A3B-GGUF",
+    "kind": "model",
+    "url": "https://huggingface.co/Hcompany/Holo4-35B-A3B-GGUF",
+    "environments": [
+      "cross-platform",
+      "web",
+      "desktop"
+    ],
+    "topics": [
+      "action-prediction",
+      "screen-understanding",
+      "tool-integration"
+    ],
+    "summary": "A GGUF vision-language model for computer use that processes screenshots and tool results, then requests clicks, typing, code execution, and tool calls through an agent harness.",
+    "scope": "core",
+    "evidence_urls": [
+      "https://huggingface.co/api/models/Hcompany/Holo4-35B-A3B-GGUF"
+    ],
+    "verify_terms": [
+      "Holo4-35B-A3B-GGUF",
+      "Hcompany/Holo4-35B-A3B-GGUF"
+    ],
+    "notes": "The card identifies a Q4_K_M GGUF checkpoint based on Qwen3.6-35B-A3B and declares Apache License 2.0 for the weights.",
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-09T04:40:52Z",
+    "read_basis": "Scan-backlog review 2026-11-09: primary source (Hub card) fetched 2026-11-09T04:20:51Z; Codex first pass and independent second pass (triage+check), deterministic checker on quotes, vocabulary and summary rules.",
+    "reviewed_sha256": "8f3181e82dc6e1540c5eb1dd0e4e6a3935e267c60921b2eb790274e9f9e3e123"
+  },
+  {
+    "name": "AgentGym",
+    "kind": "framework",
+    "url": "https://github.com/WooooDyy/AgentGym",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "evaluation",
+      "web-navigation",
+      "reinforcement-learning",
+      "data-generation"
+    ],
+    "summary": "AgentGym provides interactive environments for developing and evaluating agents, including web tasks in WebShop and WebArena, with trajectory collection and training support.",
+    "scope": "core",
+    "verify_terms": [
+      "AgentGym",
+      "WebArena"
+    ],
+    "notes": "The release includes the agentenv Python package and environment servers. The README links separate AgentEval benchmark and AgentTraj-L trajectory releases.",
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-09T04:41:00Z",
+    "read_basis": "Scan-backlog review 2026-11-09: primary source (README) fetched 2026-11-09T04:28:29Z; Codex first pass and independent second pass (triage+check), deterministic checker on quotes, vocabulary and summary rules.",
+    "reviewed_sha256": "086fb4cebe0f7be202f44bf3d406dcc3202a1c08d2bc074e99413cf7368a24d0"
+  },
+  {
+    "name": "ConClick",
+    "kind": "model",
+    "url": "https://github.com/zhangruotian/ConClick",
+    "environments": [
+      "unspecified"
+    ],
+    "topics": [
+      "grounding",
+      "screen-understanding",
+      "action-prediction"
+    ],
+    "summary": "ConClick is a GUI grounding model trained with coordinate supervision and target distractor ranking. Its ReClick inference method revisits candidate screen regions before choosing a click.",
+    "scope": "core",
+    "verify_terms": [
+      "ConClick",
+      "ReClick"
+    ],
+    "notes": "The repository contains training, inference and evaluation scripts and links the released ConClick-8B checkpoint and ConClick-Data dataset. The README specifies Python 3.12, an NVIDIA GPU and Apache-2.0 code licensing.",
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-09T04:41:00Z",
+    "read_basis": "Scan-backlog review 2026-11-09: primary source (README) fetched 2026-11-09T04:28:53Z; Codex first pass and independent second pass (triage+check), deterministic checker on quotes, vocabulary and summary rules.",
+    "reviewed_sha256": "595327cf11b726cba987f4016b92036769373cce48a0ea1d4b9e18471a40953e"
+  },
+  {
+    "name": "Screen Point-and-Read Data",
+    "kind": "dataset",
+    "url": "https://huggingface.co/datasets/yfan1997/ScreenPR",
+    "environments": [
+      "cross-platform",
+      "desktop",
+      "web"
+    ],
+    "topics": [
+      "screen-understanding",
+      "grounding",
+      "data-generation",
+      "evaluation"
+    ],
+    "summary": "Screen Point-and-Read Data pairs OS, web and mobile screenshots with selected points, annotated regions and corrected captions for layout-aware GUI interpretation.",
+    "scope": "core",
+    "evidence_urls": [
+      "https://huggingface.co/api/datasets/yfan1997/ScreenPR"
+    ],
+    "verify_terms": [
+      "ScreenPR",
+      "Screen Point-and-Read Data"
+    ],
+    "notes": "The dataset card documents point coordinates, human-annotated region boxes, reference regions and cycle-consistency candidates. It declares an MIT license.",
+    "documented_by": [
+      "2406.19263"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-09T04:41:00Z",
+    "read_basis": "Scan-backlog review 2026-11-09: primary source (Hub card) fetched 2026-11-09T04:20:06Z; Codex first pass and independent second pass (triage+check), deterministic checker on quotes, vocabulary and summary rules.",
+    "reviewed_sha256": "31ffc7c11a54ba92ee5936a57412ffdcd7735e90e7331387d31671177329f434"
+  },
+  {
+    "name": "SeeAct Web Agent (Chrome Extension)",
+    "kind": "agent",
+    "url": "https://github.com/OSU-NLP-Group/SeeActChromeExtension",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "web-navigation",
+      "automation",
+      "human-in-the-loop",
+      "observability"
+    ],
+    "summary": "A Chrome extension that runs a SeeAct-based agent in an existing browser session to navigate websites, gather information and prepare forms.",
+    "scope": "core",
+    "verify_terms": [
+      "SeeAct Web Agent",
+      "Chrome Extension"
+    ],
+    "notes": "The README points to packaged extension releases and says users configure an AI provider and API key. It also describes a monitor mode and task history.",
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-09T04:41:22Z",
+    "read_basis": "Scan-backlog review 2026-11-09: primary source (README) fetched 2026-11-09T04:26:33Z; Codex first pass and independent second pass (triage+check), deterministic checker on quotes, vocabulary and summary rules.",
+    "reviewed_sha256": "b5725e700ca35289753b5ac13d69eba5dbb638ecb58d405257136721dae40523"
+  },
+  {
+    "name": "Agentic Web",
+    "kind": "learning",
+    "url": "https://github.com/SafeRL-Lab/agentic-web",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "survey",
+      "web-navigation",
+      "planning",
+      "safety-security"
+    ],
+    "summary": "A research reading list on agents and the web, organized around development, retrieval, planning, safety and benchmarks.",
+    "scope": "core",
+    "verify_terms": [
+      "Agentic Web"
+    ],
+    "notes": "The repository contains a README and supporting documentation with categorized paper links.",
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-09T04:41:22Z",
+    "read_basis": "Scan-backlog review 2026-11-09: primary source (README) fetched 2026-11-09T04:27:12Z; Codex first pass and independent second pass (triage+check), deterministic checker on quotes, vocabulary and summary rules.",
+    "reviewed_sha256": "e4e09d849f8caaa3267c5fcc0177ce73b053322fdea14442fa06309ed5c806ad"
+  },
+  {
+    "name": "gui-agent",
+    "kind": "agent",
+    "url": "https://github.com/waynchi/gui-agent",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "grounding",
+      "screen-understanding",
+      "evaluation"
+    ],
+    "summary": "Research code for GUI-agent experiments, accompanied by a trained interface element detector, experiment configurations and prompts.",
+    "scope": "core",
+    "verify_terms": [
+      "GUI Element Deteciton Model",
+      "VisualWebArena"
+    ],
+    "notes": "The README gives a command for running configured experiments and setup instructions for VisualWebArena. It describes Linux and Mac dependency installation.",
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-09T04:41:22Z",
+    "read_basis": "Scan-backlog review 2026-11-09: primary source (README) fetched 2026-11-09T04:28:24Z; Codex first pass and independent second pass (triage+check), deterministic checker on quotes, vocabulary and summary rules.",
+    "reviewed_sha256": "1bebac8613abad433e630115c2ceb9068d0af7f116b13fb9f1953bdd456cce5d"
+  },
+  {
+    "name": "finalrun-agent",
+    "kind": "agent",
+    "url": "https://github.com/final-run/finalrun-agent",
+    "environments": [
+      "android",
+      "ios"
+    ],
+    "topics": [
+      "mobile-navigation",
+      "automation",
+      "evaluation",
+      "recording"
+    ],
+    "summary": "An AI-driven CLI for testing Android and iOS apps from YAML instructions. It observes the screen, performs touch and text actions, and reports results with video and logs.",
+    "scope": "core",
+    "verify_terms": [
+      "finalrun-agent",
+      "FinalRun"
+    ],
+    "notes": "The README describes test generation skills and manual CLI runs. Tests require an AI provider API key; local iOS testing requires macOS.",
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-09T04:41:27Z",
+    "read_basis": "Scan-backlog review 2026-11-09: primary source (README) fetched 2026-11-09T04:19:00Z; Codex first pass and independent second pass (triage+check), deterministic checker on quotes, vocabulary and summary rules.",
+    "reviewed_sha256": "99e7ce0c6d44957063035afbf407dd05fe5ab0da8e6acece041e866f358b77ee"
+  },
+  {
+    "name": "MMSearch-Plus",
+    "kind": "benchmark",
+    "url": "https://github.com/mmsearch-plus/MMSearch-Plus",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "evaluation",
+      "web-navigation",
+      "screen-understanding"
+    ],
+    "summary": "A benchmark of 311 visual reasoning tasks for multimodal browsing agents, requiring iterative image and text retrieval. The repository links the dataset and provides a loading helper.",
+    "scope": "core",
+    "verify_terms": [
+      "MMSearch-Plus"
+    ],
+    "notes": "The README links the Hugging Face dataset and describes a decryption helper. It lists agent rollout code, evaluation scripts, and Set-of-Mark annotations as future work; the repository code is MIT-licensed and the dataset is CC BY 4.0.",
+    "documented_by": [
+      "2508.21475"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-09T04:41:27Z",
+    "read_basis": "Scan-backlog review 2026-11-09: primary source (README) fetched 2026-11-09T04:25:31Z; Codex first pass and independent second pass (triage+check), deterministic checker on quotes, vocabulary and summary rules.",
+    "reviewed_sha256": "e718b5e9724c9a0553592b26c0c02baa4e1adf5ddff0f572af5229b22571500e"
+  },
+  {
+    "name": "Awesome Computer Use",
+    "kind": "learning",
+    "url": "https://github.com/philfung/awesome-computer-use",
+    "environments": [
+      "cross-platform",
+      "web",
+      "desktop",
+      "macos",
+      "linux",
+      "windows"
+    ],
+    "topics": [
+      "survey",
+      "automation",
+      "screen-understanding"
+    ],
+    "summary": "A curated reading list of computer GUI use research and software, linking to agent demos, frameworks, and papers across desktop and web interfaces.",
+    "scope": "core",
+    "verify_terms": [
+      "Awesome Computer Use"
+    ],
+    "notes": "The README links to individual projects and papers and includes brief descriptions of several frameworks. It is a collection of references rather than a software release.",
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-09T04:41:27Z",
+    "read_basis": "Scan-backlog review 2026-11-09: primary source (README) fetched 2026-11-09T04:26:36Z; Codex first pass and independent second pass (triage+check), deterministic checker on quotes, vocabulary and summary rules.",
+    "reviewed_sha256": "281ce576ebad822c96aa08fe297c3d2ab2aadcc10ed1717df33bacf3f1c879b4"
+  },
+  {
+    "name": "bdg - Browser Debugger CLI",
+    "kind": "tool",
+    "url": "https://github.com/szymdzum/browser-debugger-cli",
+    "environments": [
+      "cross-platform",
+      "web",
+      "desktop",
+      "macos",
+      "linux",
+      "windows"
+    ],
+    "topics": [
+      "automation",
+      "web-navigation",
+      "observability"
+    ],
+    "summary": "A browser CLI for agents to navigate and interact with pages while inspecting the DOM, network requests, console output, and layout through individual commands.",
+    "scope": "adjacent",
+    "verify_terms": [
+      "Browser Debugger CLI",
+      "bdg"
+    ],
+    "notes": "The README documents interaction, accessibility, telemetry, and raw CDP commands. It requires Node.js and a Chromium-based browser; Windows use is through WSL.",
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-09T04:41:27Z",
+    "read_basis": "Scan-backlog review 2026-11-09: primary source (README) fetched 2026-11-09T04:27:37Z; Codex first pass and independent second pass (triage+check), deterministic checker on quotes, vocabulary and summary rules.",
+    "reviewed_sha256": "ea6e300730b1049159b592829214b6ed2dce3563488e0f1a7eb5b1ed512aa597"
+  },
+  {
+    "name": "MedSPOT",
+    "kind": "benchmark",
+    "url": "https://github.com/Tajamul21/MedSPOT",
+    "environments": [
+      "unspecified"
+    ],
+    "topics": [
+      "evaluation",
+      "grounding",
+      "workflow",
+      "science"
+    ],
+    "summary": "A sequential GUI grounding benchmark covering 10 medical imaging applications. It evaluates target localization across multi-step workflows and provides model evaluation scripts.",
+    "scope": "core",
+    "verify_terms": [
+      "MedSPOT"
+    ],
+    "notes": "The README links the dataset and documents task, step, and failure metrics. The repository includes evaluation scripts for multiple models; some runs require Hugging Face access or an OpenAI API key.",
+    "documented_by": [
+      "2603.19993"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-09T04:41:27Z",
+    "read_basis": "Scan-backlog review 2026-11-09: primary source (README) fetched 2026-11-09T04:27:37Z; Codex first pass and independent second pass (triage+check), deterministic checker on quotes, vocabulary and summary rules.",
+    "reviewed_sha256": "c9a0157852fb97a30605b9943414510aecc330faf1d472d2f78ab5b44b50ddcb"
+  },
+  {
+    "name": "Jedi-7B-1080p",
+    "kind": "model",
+    "url": "https://huggingface.co/xlangai/Jedi-7B-1080p",
+    "environments": [
+      "unspecified"
+    ],
+    "topics": [
+      "grounding",
+      "screen-understanding"
+    ],
+    "summary": "A released model checkpoint for computer-use grounding research, based on Qwen2.5-VL-7B-Instruct. The repository includes weight shards and tokenizer files.",
+    "scope": "core",
+    "evidence_urls": [
+      "https://huggingface.co/api/models/xlangai/Jedi-7B-1080p"
+    ],
+    "verify_terms": [
+      "Jedi-7B-1080p",
+      "Scaling Computer-Use Grounding"
+    ],
+    "notes": "The card declares an Apache-2.0 license and links the paper, project page, and code repository. The supplied file list includes four safetensors weight shards.",
+    "documented_by": [
+      "2505.13227"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-09T04:41:27Z",
+    "read_basis": "Scan-backlog review 2026-11-09: primary source (Hub card) fetched 2026-11-09T04:20:13Z; Codex first pass and independent second pass (triage+check), deterministic checker on quotes, vocabulary and summary rules.",
+    "reviewed_sha256": "4b71801086c90cb8eb483a1bae937ce492b4c6a13a95a5db8d3e7772476882b8"
+  },
+  {
+    "name": "CollabUIAgents",
+    "kind": "framework",
+    "url": "https://github.com/THUNLP-MT/CollabUIAgents",
+    "environments": [
+      "unspecified"
+    ],
+    "topics": [
+      "reinforcement-learning",
+      "reward-models",
+      "data-generation",
+      "robustness"
+    ],
+    "summary": "CollabUIAgents trains UI agents with synthesized interaction data and process rewards assigned by collaborating agents. The repository releases data collection and inference code.",
+    "scope": "core",
+    "verify_terms": [
+      "CollabUIAgents"
+    ],
+    "notes": "The README lists a data-collection pipeline and model inference code as available. It says model weights and evaluation scripts remain unreleased, links to a public dataset, and declares Apache-2.0 licensing.",
+    "documented_by": [
+      "2502.14496"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-09T04:41:56Z",
+    "read_basis": "Scan-backlog review 2026-11-09: primary source (README) fetched 2026-11-09T04:27:45Z; Codex first pass and independent second pass (triage+check), deterministic checker on quotes, vocabulary and summary rules.",
+    "reviewed_sha256": "97a11f8872be38dd9395a69f9ac36f8d054836be4225a303bbe431d09827a52e"
+  },
+  {
+    "name": "Midscene Examples",
+    "kind": "learning",
+    "url": "https://github.com/web-infra-dev/midscene-example",
+    "environments": [
+      "cross-platform",
+      "web",
+      "android",
+      "ios",
+      "desktop",
+      "windows"
+    ],
+    "topics": [
+      "automation",
+      "cross-app",
+      "mobile-navigation",
+      "web-navigation"
+    ],
+    "summary": "Midscene Examples provides runnable AI automation and testing cases for web, Android, iOS and desktop interfaces, including YAML workflows and SDK integrations.",
+    "scope": "core",
+    "verify_terms": [
+      "Midscene Examples"
+    ],
+    "notes": "The README links to examples using Playwright, Puppeteer, Android, local desktop control and remote Windows RDP. It also includes cross-platform YAML test cases.",
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-09T04:41:56Z",
+    "read_basis": "Scan-backlog review 2026-11-09: primary source (README) fetched 2026-11-09T04:28:24Z; Codex first pass and independent second pass (triage+check), deterministic checker on quotes, vocabulary and summary rules.",
+    "reviewed_sha256": "4283244a88e3acadbbcbf8ea2048f5b7420b7a569d1ab0015a7794d791dbbf8d"
+  },
+  {
+    "name": "WeChat Mac RPA",
+    "kind": "agent",
+    "url": "https://github.com/wq19901103wq/wechat-mac-rpa",
+    "environments": [
+      "desktop",
+      "macos"
+    ],
+    "topics": [
+      "screen-understanding",
+      "automation",
+      "memory",
+      "workflow"
+    ],
+    "summary": "WeChat Mac RPA is a macOS agent that reads WeChat screenshots, reasons over conversations and uses system automation to send messages and switch chats.",
+    "scope": "core",
+    "verify_terms": [
+      "WeChat Mac RPA"
+    ],
+    "notes": "The README lists macOS 12+, Python 3.10+ and the Mac version of WeChat as requirements. Screen recording and accessibility permissions are required; external model APIs need an API key. The README displays an MIT license badge.",
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-09T04:41:56Z",
+    "read_basis": "Scan-backlog review 2026-11-09: primary source (README) fetched 2026-11-09T04:28:32Z; Codex first pass and independent second pass (triage+check), deterministic checker on quotes, vocabulary and summary rules.",
+    "reviewed_sha256": "5639402a3137241c417b21634b286214de7bdc21e4a02b615f3c31d240c9a424"
+  },
+  {
+    "name": "CrashTranslator",
+    "kind": "agent",
+    "url": "https://github.com/wuchiuwong/CrashTranslator",
+    "environments": [
+      "android"
+    ],
+    "topics": [
+      "mobile-navigation",
+      "automation",
+      "evaluation"
+    ],
+    "summary": "CrashTranslator generates Android app interactions to reproduce crashes from stack traces. The repository provides code, data and setup instructions for emulator-based runs.",
+    "scope": "core",
+    "verify_terms": [
+      "CrashTranslator"
+    ],
+    "notes": "Running the release requires an Android emulator, Appium Desktop Client and a GPT-3 API key. The README provides a fine-tuning corpus but says the fine-tuned model is not supplied.",
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-09T04:41:56Z",
+    "read_basis": "Scan-backlog review 2026-11-09: primary source (README) fetched 2026-11-09T04:28:32Z; Codex first pass and independent second pass (triage+check), deterministic checker on quotes, vocabulary and summary rules.",
+    "reviewed_sha256": "59e108b22314d77e10d4659f9152da4e933997e7bf24442a6c7567556ff490ff"
+  },
+  {
+    "name": "WMA Web Agent",
+    "kind": "agent",
+    "url": "https://github.com/kyle8581/WMA-Agents",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "web-navigation",
+      "world-models",
+      "planning",
+      "long-horizon"
+    ],
+    "summary": "A web agent uses a learned world model to predict consequential page changes before choosing an action. The repository includes trajectory processing and inference code.",
+    "scope": "core",
+    "verify_terms": [
+      "WMA Web Agent",
+      "World-model-augmented"
+    ],
+    "notes": "The README links world-model and value-model adapters and related datasets. WebArena experiments require its Docker environment; the README names MIT for code and CC BY-NC 4.0 for data.",
+    "documented_by": [
+      "2410.13232"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-09T04:42:42Z",
+    "read_basis": "Scan-backlog review 2026-11-09: primary source (README) fetched 2026-11-09T04:24:27Z; Codex first pass and independent second pass (triage+check), deterministic checker on quotes, vocabulary and summary rules.",
+    "reviewed_sha256": "616596f22f4944424791e4779c0b8b6dd5ff20237827f9388b11e3e4064445e8"
+  },
+  {
+    "name": "AgentEnv",
+    "kind": "infrastructure",
+    "url": "https://github.com/LlamaTouch/AgentEnv",
+    "environments": [
+      "android"
+    ],
+    "topics": [
+      "mobile-navigation",
+      "sandbox",
+      "recording"
+    ],
+    "summary": "AgentEnv connects agent models to Android devices or emulators, translating actions and returning screenshots and view hierarchies while recording interactions.",
+    "scope": "core",
+    "verify_terms": [
+      "AgentEnv",
+      "Android device"
+    ],
+    "notes": "The README provides emulator preparation, configuration and integration instructions. It includes a mock-agent example and describes actions formatted for AITW.",
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-09T04:42:43Z",
+    "read_basis": "Scan-backlog review 2026-11-09: primary source (README) fetched 2026-11-09T04:24:49Z; Codex first pass and independent second pass (triage+check), deterministic checker on quotes, vocabulary and summary rules.",
+    "reviewed_sha256": "a63179c5c8f479df4fc30b0598996b645fc1f7dba6450e247f5135e730737b43"
+  },
+  {
+    "name": "Midscene PC Docker",
+    "kind": "infrastructure",
+    "url": "https://github.com/Mofangbao/midscene-pc-docker",
+    "environments": [
+      "desktop",
+      "linux"
+    ],
+    "topics": [
+      "automation",
+      "sandbox"
+    ],
+    "summary": "Midscene PC Docker packages an Ubuntu GNOME desktop with Chrome and a Midscene PC automation service, exposing the graphical environment through VNC.",
+    "scope": "core",
+    "verify_terms": [
+      "Midscene PC",
+      "Ubuntu GNOME"
+    ],
+    "notes": "The README provides Docker build and run instructions and describes browser and VNC-client access. It lists separate ports for the VNC web interface and Midscene PC service.",
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-09T04:42:43Z",
+    "read_basis": "Scan-backlog review 2026-11-09: primary source (README) fetched 2026-11-09T04:25:36Z; Codex first pass and independent second pass (triage+check), deterministic checker on quotes, vocabulary and summary rules.",
+    "reviewed_sha256": "bd24f0149ff9af0c1f3e013491bbeb547bf7287a7e071d5df1ece8d50bf1d5ba"
+  },
+  {
+    "name": "Puppeteer",
+    "kind": "tool",
+    "url": "https://github.com/puppeteer/puppeteer",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "automation",
+      "web-navigation"
+    ],
+    "summary": "Puppeteer is a JavaScript browser-control library for Chrome and Firefox. Its API supports scripted page navigation and interaction.",
+    "scope": "adjacent",
+    "verify_terms": [
+      "Puppeteer",
+      "WebDriver BiDi"
+    ],
+    "notes": "The README identifies DevTools Protocol and WebDriver BiDi as control interfaces. It documents the puppeteer and puppeteer-core packages and shows keyboard, form and click operations.",
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-09T04:42:43Z",
+    "read_basis": "Scan-backlog review 2026-11-09: primary source (README) fetched 2026-11-09T04:26:48Z; Codex first pass and independent second pass (triage+check), deterministic checker on quotes, vocabulary and summary rules.",
+    "reviewed_sha256": "b2564c37c112336cc191da0890bdc4a8a3e5e039830b17613c69ac7914a7b4bc"
+  },
+  {
+    "name": "ScreenAgent Web Client",
+    "kind": "tool",
+    "url": "https://github.com/niuzaisheng/ScreenAgentWebClient",
+    "environments": [
+      "web",
+      "desktop"
+    ],
+    "topics": [
+      "automation",
+      "tool-integration",
+      "data-generation"
+    ],
+    "summary": "ScreenAgent Web Client connects language models to remote desktops through a browser and VNC, representing mouse and keyboard actions as structured calls.",
+    "scope": "core",
+    "verify_terms": [
+      "ScreenAgent Web Client",
+      "VNC"
+    ],
+    "notes": "The client is built on noVNC and includes local build instructions. It requires a desktop VNC server and websockify proxy; the README also describes collecting preference pairs for RLHF training.",
+    "documented_by": [
+      "2402.07945"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-09T04:43:14Z",
+    "read_basis": "Scan-backlog review 2026-11-09: primary source (README) fetched 2026-11-09T04:25:39Z; Codex first pass and independent second pass (triage+check), deterministic checker on quotes, vocabulary and summary rules.",
+    "reviewed_sha256": "98965dae5237740eea526fec23fa4f6901c38eee22f4867413e83841eaa0904d"
+  },
+  {
+    "name": "noVNC",
+    "kind": "tool",
+    "url": "https://github.com/novnc/noVNC",
+    "environments": [
+      "web",
+      "desktop"
+    ],
+    "topics": [
+      "automation",
+      "tool-integration"
+    ],
+    "summary": "noVNC is a browser-based VNC client and JavaScript library for viewing and controlling remote desktops through mouse, keyboard, clipboard and touch input.",
+    "scope": "adjacent",
+    "verify_terms": [
+      "noVNC",
+      "VNC"
+    ],
+    "notes": "The README documents a browser application, embeddable JavaScript library and a proxy script for connecting to a VNC server. It states that a WebSockets-capable server or proxy is required and describes the project as mainly MPL 2.0 licensed.",
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-09T04:43:14Z",
+    "read_basis": "Scan-backlog review 2026-11-09: primary source (README) fetched 2026-11-09T04:25:41Z; Codex first pass and independent second pass (triage+check), deterministic checker on quotes, vocabulary and summary rules.",
+    "reviewed_sha256": "70fb38dacd32911760059b744b44d1991a93b34e5923e61c2c47aa9b8c80ba9a"
+  },
+  {
+    "name": "Avenir-UX",
+    "kind": "agent",
+    "url": "https://github.com/Onflow-AI/Avenir-UX",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "web-navigation",
+      "ui-design",
+      "evaluation",
+      "observability"
+    ],
+    "summary": "Avenir-UX runs web tasks and scores interface usability after agent actions. It combines step assessments with persona settings and produces session reports.",
+    "scope": "core",
+    "verify_terms": [
+      "Avenir-UX",
+      "SEQ"
+    ],
+    "notes": "The repository includes agent, browser, scoring and report code, plus example task files. Running it requires a Playwright-compatible browser and an LLM provider API key. The README displays an Apache-2.0 license badge.",
+    "documented_by": [
+      "2604.09581"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-09T04:43:14Z",
+    "read_basis": "Scan-backlog review 2026-11-09: primary source (README) fetched 2026-11-09T04:25:48Z; Codex first pass and independent second pass (triage+check), deterministic checker on quotes, vocabulary and summary rules.",
+    "reviewed_sha256": "98d4bef8eb3a1b8ee0bdff4a56313e91979468c9e91d1ad64d668441fa324eaf"
+  },
+  {
+    "name": "Midscene Python",
+    "kind": "framework",
+    "url": "https://github.com/Python51888/Midscene-Python",
+    "environments": [
+      "cross-platform",
+      "web",
+      "android"
+    ],
+    "topics": [
+      "automation",
+      "grounding",
+      "mobile-navigation",
+      "web-navigation"
+    ],
+    "summary": "Midscene Python is a framework for natural-language automation of websites and Android devices, with model-assisted actions, element location, extraction and assertions.",
+    "scope": "core",
+    "verify_terms": [
+      "Midscene Python",
+      "SeleniumWebPage"
+    ],
+    "notes": "The repository contains core agent, web, Android, CLI and visual-report modules, along with examples and tests. The README lists Selenium or Playwright for web use, ADB for Android and an MIT license.",
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-09T04:43:14Z",
+    "read_basis": "Scan-backlog review 2026-11-09: primary source (README) fetched 2026-11-09T04:26:47Z; Codex first pass and independent second pass (triage+check), deterministic checker on quotes, vocabulary and summary rules.",
+    "reviewed_sha256": "e609e08c247028636d6762458206c835023f5198863560ce6e37e2362e2d0d9a"
+  },
+  {
+    "name": "GUI-Shift",
+    "kind": "framework",
+    "url": "https://github.com/UbiquitousLearning/GUI-Shift",
+    "environments": [
+      "unspecified"
+    ],
+    "topics": [
+      "reinforcement-learning",
+      "action-prediction",
+      "grounding"
+    ],
+    "summary": "GUI-Shift is a training framework that uses pairs of GUI screenshots to teach vision-language models to predict the action behind an interface transition.",
+    "scope": "core",
+    "verify_terms": [
+      "GUI-Shift",
+      "K-step GUI Transition"
+    ],
+    "notes": "The repository documents the initial UIShift training pipeline and scripts in legacy_readme.md. Its README says updated GUI-Shift training code and models are planned for release.",
+    "documented_by": [
+      "2505.12493"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-09T04:43:14Z",
+    "read_basis": "Scan-backlog review 2026-11-09: primary source (README) fetched 2026-11-09T04:27:59Z; Codex first pass and independent second pass (triage+check), deterministic checker on quotes, vocabulary and summary rules.",
+    "reviewed_sha256": "0b64d4e86fd79bf5493246e9399871ccb8406ead78439b679f3a42bffe726227"
+  },
+  {
+    "name": "vePhone",
+    "kind": "infrastructure",
+    "url": "https://github.com/volcengine/vePhone",
+    "environments": [
+      "cross-platform",
+      "android",
+      "ios",
+      "web",
+      "windows",
+      "desktop"
+    ],
+    "topics": [
+      "sandbox",
+      "mobile-navigation",
+      "tool-integration"
+    ],
+    "summary": "vePhone supplies remotely controlled cloud phones and example integrations for mobile and computer-use agents, including task execution and result retrieval.",
+    "scope": "core",
+    "verify_terms": [
+      "vePhone",
+      "Computer Use Agent"
+    ],
+    "notes": "The repository provides Android, iOS, Web/H5 and Windows Quick Start demos. Its computer-use example covers OpenAPI configuration, task execution, noVNC streaming and result queries.",
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-09T04:43:14Z",
+    "read_basis": "Scan-backlog review 2026-11-09: primary source (README) fetched 2026-11-09T04:28:18Z; Codex first pass and independent second pass (triage+check), deterministic checker on quotes, vocabulary and summary rules.",
+    "reviewed_sha256": "1c070b3ff378e3831931e886b8e3d0914857117eb4aa14a65d0efef7e18a399b"
+  },
+  {
+    "name": "WebOperator",
+    "kind": "agent",
+    "url": "https://github.com/kagnlp/WebOperator",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "web-navigation",
+      "planning",
+      "state-tracking",
+      "robustness"
+    ],
+    "summary": "A web agent using action-aware tree search to explore tasks and backtrack, checking page reconstruction and accounting for actions that may change website state.",
+    "scope": "core",
+    "verify_terms": [
+      "WebOperator",
+      "validated backtracking"
+    ],
+    "notes": "The repository lists agent and evaluation code alongside WebArena and WebVoyager integrations. The README links to the project's paper and experimental trajectories.",
+    "documented_by": [
+      "2512.12692"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-09T04:43:23Z",
+    "read_basis": "Scan-backlog review 2026-11-09: primary source (README) fetched 2026-11-09T04:24:22Z; Codex first pass and independent second pass (triage+check), deterministic checker on quotes, vocabulary and summary rules.",
+    "reviewed_sha256": "226b0b4a1268ec097f38c038726bc16b4759b299db9d57e842002c80e2eec90b"
+  },
+  {
+    "name": "OpenAPA",
+    "kind": "agent",
+    "url": "https://github.com/laiye-ai/open-apa",
+    "environments": [
+      "cross-platform",
+      "desktop",
+      "windows",
+      "macos",
+      "linux"
+    ],
+    "topics": [
+      "automation",
+      "grounding",
+      "planning",
+      "long-horizon"
+    ],
+    "summary": "A computer-use agent for desktop GUI tasks that combines screenshot-based reasoning, visual grounding, planning, and action execution across applications.",
+    "scope": "core",
+    "verify_terms": [
+      "OpenAPA",
+      "Grounding Agent"
+    ],
+    "notes": "The repository lists agent, benchmark, configuration, and tool directories. The README names Windows, macOS, and Linux support and declares an MIT license.",
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-09T04:43:23Z",
+    "read_basis": "Scan-backlog review 2026-11-09: primary source (README) fetched 2026-11-09T04:24:27Z; Codex first pass and independent second pass (triage+check), deterministic checker on quotes, vocabulary and summary rules.",
+    "reviewed_sha256": "5f7dd7ab412820f780986b5312786a3c8cf13fc105b63a8eb95089c9c0c31142"
+  },
+  {
+    "name": "GUI-Rise",
+    "kind": "agent",
+    "url": "https://github.com/Leon022/GUI-Rise-code",
+    "environments": [
+      "cross-platform",
+      "web",
+      "android"
+    ],
+    "topics": [
+      "planning",
+      "interaction-history",
+      "long-horizon",
+      "reinforcement-learning"
+    ],
+    "summary": "A GUI navigation agent that combines stepwise reasoning with history summarization; its repository provides supervised training, reinforcement learning, and evaluation instructions.",
+    "scope": "core",
+    "verify_terms": [
+      "GUI-Rise",
+      "think-act-summarize"
+    ],
+    "notes": "The repository lists separate sft and rl directories. The README names GUIAct, Mind2Web, AITW, and MiniWoB preparation steps, uses verl for reinforcement learning, and declares an MIT license.",
+    "documented_by": [
+      "2510.27210"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-09T04:43:23Z",
+    "read_basis": "Scan-backlog review 2026-11-09: primary source (README) fetched 2026-11-09T04:24:32Z; Codex first pass and independent second pass (triage+check), deterministic checker on quotes, vocabulary and summary rules.",
+    "reviewed_sha256": "f66c1c335b16b6db0216354bc6a7e272c92b8c447d6c2345a3e632052addf2ca"
+  },
+  {
+    "name": "Moli",
+    "kind": "infrastructure",
+    "url": "https://github.com/lexmount/moli",
+    "environments": [
+      "cross-platform",
+      "web",
+      "desktop",
+      "linux",
+      "macos",
+      "windows"
+    ],
+    "topics": [
+      "web-navigation",
+      "automation",
+      "screen-understanding"
+    ],
+    "summary": "A headless browser for AI agents that extracts web content and runs browser tasks through CLI, CDP, and WebDriver interfaces, with rendering performed on demand.",
+    "scope": "adjacent",
+    "verify_terms": [
+      "Moli",
+      "WebDriver BiDi"
+    ],
+    "notes": "The README names Linux, macOS, and Windows support and describes CLI, CDP, WebDriver Classic, and WebDriver BiDi access.",
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-09T04:43:23Z",
+    "read_basis": "Scan-backlog review 2026-11-09: primary source (README) fetched 2026-11-09T04:24:36Z; Codex first pass and independent second pass (triage+check), deterministic checker on quotes, vocabulary and summary rules.",
+    "reviewed_sha256": "c159f5830374b5bde9bc615c700f08f7fe1ce39983c35aedb6a9d4e1bed54436"
+  },
+  {
+    "name": "Lightpanda Browser",
+    "kind": "infrastructure",
+    "url": "https://github.com/lightpanda-io/browser",
+    "environments": [
+      "web",
+      "desktop",
+      "linux",
+      "macos"
+    ],
+    "topics": [
+      "web-navigation",
+      "automation",
+      "sandbox"
+    ],
+    "summary": "A headless browser for AI agents and automation, with released Linux and macOS binaries and interfaces for browser control and scripted tasks.",
+    "scope": "core",
+    "verify_terms": [
+      "Lightpanda Browser",
+      "PandaScript"
+    ],
+    "notes": "The README describes nightly binaries for Linux and macOS and says there is no native Windows or Android build. It includes benchmark measurements as publisher-reported results.",
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-09T04:43:23Z",
+    "read_basis": "Scan-backlog review 2026-11-09: primary source (README) fetched 2026-11-09T04:24:40Z; Codex first pass and independent second pass (triage+check), deterministic checker on quotes, vocabulary and summary rules.",
+    "reviewed_sha256": "5b1678e9b8ad87ea3ed968a1e5c630b7e484f753204a0ae91641e74c275b76f9"
+  },
+  {
+    "name": "openadapt-ml",
+    "kind": "framework",
+    "url": "https://github.com/OpenAdaptAI/openadapt-ml",
+    "environments": [
+      "cross-platform",
+      "desktop",
+      "macos",
+      "windows",
+      "web"
+    ],
+    "topics": [
+      "action-prediction",
+      "grounding",
+      "imitation-learning",
+      "data-generation"
+    ],
+    "summary": "A Python research package for GUI-action models, with trajectory schemas, model adapters, fine-tuning, grounding, and a policy interface for predicting the next action.",
+    "scope": "core",
+    "verify_terms": [
+      "openadapt-ml",
+      "Qwen3-VL"
+    ],
+    "notes": "The README describes synthetic training scenarios, adapters for Qwen3-VL and hosted API models, and a training extra. It declares an MIT license.",
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-09T04:43:23Z",
+    "read_basis": "Scan-backlog review 2026-11-09: primary source (README) fetched 2026-11-09T04:25:54Z; Codex first pass and independent second pass (triage+check), deterministic checker on quotes, vocabulary and summary rules.",
+    "reviewed_sha256": "f6ca09d9a6420a6bd92dce3af12076e92a17d8c783925b136c20a233a4c7d1ba"
+  },
+  {
+    "name": "The TinyFish Cookbook",
+    "kind": "learning",
+    "url": "https://github.com/tinyfish-io/tinyfish-cookbook",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "web-navigation",
+      "automation",
+      "workflow"
+    ],
+    "summary": "A collection of sample applications and recipes for TinyFish web agents, covering page retrieval, structured search, and multi-step browser automation.",
+    "scope": "core",
+    "verify_terms": [
+      "TinyFish Cookbook",
+      "TinyFish"
+    ],
+    "notes": "The README describes Search, Fetch, Agent, and Browser endpoints and links to example projects. Using the hosted endpoints requires a TinyFish key.",
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-09T04:43:23Z",
+    "read_basis": "Scan-backlog review 2026-11-09: primary source (README) fetched 2026-11-09T04:27:55Z; Codex first pass and independent second pass (triage+check), deterministic checker on quotes, vocabulary and summary rules.",
+    "reviewed_sha256": "803bc6cf8c40ee053a07b1277991ce30144941e8700716e4f204e2f18c588ebd"
+  },
+  {
+    "name": "Mind2Web-Live",
+    "kind": "agent",
+    "url": "https://github.com/boyugou/Mind2Web_Live_SeeAct_V",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "web-navigation",
+      "grounding",
+      "planning",
+      "action-prediction"
+    ],
+    "summary": "A SeeAct-V web agent implementation for Mind2Web-Live. It uses screen images to plan actions and a visual grounding model to locate targets for coordinate-based actions.",
+    "scope": "core",
+    "verify_terms": [
+      "SeeAct-V",
+      "Mind2Web-Live"
+    ],
+    "notes": "The repository includes agent, browser environment and evaluation harness directories. The README calls for API keys for features that use external services and describes an adaptation to the WebCanvas codebase.",
+    "documented_by": [
+      "2410.05243"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-09T04:44:43Z",
+    "read_basis": "Scan-backlog review 2026-11-09: primary source (README) fetched 2026-11-09T04:18:26Z; Codex first pass and independent second pass (triage+check), deterministic checker on quotes, vocabulary and summary rules.",
+    "reviewed_sha256": "50947552aec9545bafc6f4c75d607b4bfc716a2dade48f54c7a21502af827cbc"
+  },
+  {
+    "name": "Oracle E-Business Suite Browser Automation",
+    "kind": "tool",
+    "url": "https://github.com/Browser-Automation-Hub/oracle-ebs-browser-automation",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "automation",
+      "web-navigation",
+      "workflow",
+      "industry"
+    ],
+    "summary": "A browser automation scaffold for Oracle E-Business Suite workflows. It describes Puppeteer and cloud browser options for login, requisitions, approvals and requests.",
+    "scope": "adjacent",
+    "verify_terms": [
+      "Oracle E-Business Suite Browser Automation"
+    ],
+    "notes": "The repository lists source modules and examples. Local use requires Node.js, Chrome or Chromium, and an Oracle E-Business Suite account. The README declares an MIT license.",
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-09T04:44:43Z",
+    "read_basis": "Scan-backlog review 2026-11-09: primary source (README) fetched 2026-11-09T04:18:36Z; Codex first pass and independent second pass (triage+check), deterministic checker on quotes, vocabulary and summary rules.",
+    "reviewed_sha256": "9aa4714325190ae09da0fa4ad03e6c84fccb45cd5c8d8981d37e5363e7f47b8d"
+  },
+  {
+    "name": "Salesforce Classic Browser Automation",
+    "kind": "tool",
+    "url": "https://github.com/Browser-Automation-Hub/salesforce-classic-browser-automation",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "automation",
+      "web-navigation",
+      "workflow",
+      "industry"
+    ],
+    "summary": "A browser automation scaffold for Salesforce Classic. It describes actions for login, lead creation, opportunity updates, report export and record updates.",
+    "scope": "adjacent",
+    "verify_terms": [
+      "Salesforce Classic Browser Automation"
+    ],
+    "notes": "The README lists selectors, source modules and examples. Local use requires Node.js, Chrome or Chromium, and a Salesforce Classic account. It declares an MIT license.",
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-09T04:44:43Z",
+    "read_basis": "Scan-backlog review 2026-11-09: primary source (README) fetched 2026-11-09T04:18:27Z; Codex first pass and independent second pass (triage+check), deterministic checker on quotes, vocabulary and summary rules.",
+    "reviewed_sha256": "7288f453231e72c6c6ad6280de1863475d6cc5e85750f80f08408b701c2d8f40"
+  },
+  {
+    "name": "Midscene iOS",
+    "kind": "framework",
+    "url": "https://github.com/lhuanyu/midscene-ios",
+    "environments": [
+      "ios",
+      "desktop",
+      "macos"
+    ],
+    "topics": [
+      "mobile-navigation",
+      "automation",
+      "screen-understanding"
+    ],
+    "summary": "Midscene iOS provides an SDK and playground for automating an iOS device through screen actions and queries. It uses macOS device mirroring and exposes a browser-based playground.",
+    "scope": "core",
+    "verify_terms": [
+      "Midscene iOS",
+      "midscene-ios-playground"
+    ],
+    "notes": "The repository contains an SDK and playground package. It requires Node.js, Python, macOS accessibility and screen recording permissions, an iOS device, and Midscene model configuration. The README declares an MIT license.",
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-09T04:44:43Z",
+    "read_basis": "Scan-backlog review 2026-11-09: primary source (README) fetched 2026-11-09T04:24:38Z; Codex first pass and independent second pass (triage+check), deterministic checker on quotes, vocabulary and summary rules.",
+    "reviewed_sha256": "82bf5e49bd5dc72b8156539894c378346b5e74b5808229c75201896981a1efce"
+  },
+  {
+    "name": "WebGen-Bench",
+    "kind": "benchmark",
+    "url": "https://github.com/mnluzimu/WebGen-Bench",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "evaluation",
+      "web-navigation",
+      "ui-design"
+    ],
+    "summary": "WebGen-Bench evaluates generated websites with automated tests, including a UI agent that carries out interactions and checks outcomes. The repository supplies evaluation code and data.",
+    "scope": "core",
+    "verify_terms": [
+      "WebGen-Bench",
+      "WebVoyager"
+    ],
+    "notes": "The repository includes data, evaluation scripts and archived experiment outputs. The README describes Windows and Linux execution paths and optional deployment of a UI testing model.",
+    "documented_by": [
+      "2505.03733"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-09T04:44:43Z",
+    "read_basis": "Scan-backlog review 2026-11-09: primary source (README) fetched 2026-11-09T04:25:32Z; Codex first pass and independent second pass (triage+check), deterministic checker on quotes, vocabulary and summary rules.",
+    "reviewed_sha256": "f579d4f90c17ed8a9e862f2ba6b2862886637425fdce8fdf495ea37d246a5b10"
+  },
+  {
+    "name": "openadapt-privacy",
+    "kind": "tool",
+    "url": "https://github.com/OpenAdaptAI/openadapt-privacy",
+    "environments": [
+      "cross-platform",
+      "desktop",
+      "web"
+    ],
+    "topics": [
+      "safety-security",
+      "recording"
+    ],
+    "summary": "openadapt-privacy removes personal and health information from GUI recordings, including text, event data, accessibility trees and screenshots. The repository is archived.",
+    "scope": "adjacent",
+    "verify_terms": [
+      "openadapt-privacy",
+      "PresidioScrubbingProvider"
+    ],
+    "notes": "The code now lives in the OpenAdapt repository. The package uses Presidio and a local spaCy model; screenshot scrubbing also requires Tesseract. The README declares an MIT license.",
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-09T04:44:43Z",
+    "read_basis": "Scan-backlog review 2026-11-09: primary source (README) fetched 2026-11-09T04:25:55Z; Codex first pass and independent second pass (triage+check), deterministic checker on quotes, vocabulary and summary rules.",
+    "reviewed_sha256": "970ab740fa05027744e641f90e13e63f406957f56225877139a31b7a1ad544c8"
+  },
+  {
+    "name": "Anchor Browser",
+    "kind": "infrastructure",
+    "url": "https://docs.anchorbrowser.io/introduction",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "web-navigation",
+      "sandbox",
+      "automation",
+      "tool-integration"
+    ],
+    "summary": "Anchor Browser provides cloud browser sessions for agents through SDK, CDP and REST interfaces. Its documentation describes natural-language tasks, authentication and reusable workflows.",
+    "scope": "core",
+    "verify_terms": [
+      "Anchor Browser",
+      "Agentic browser control"
+    ],
+    "notes": "The documentation shows Node.js and Python client examples and describes Playwright and Puppeteer connections. It also covers managed authentication, recordings and network options.",
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-09T04:44:43Z",
+    "read_basis": "Scan-backlog review 2026-11-09: primary source (page) fetched 2026-11-09T04:20:10Z; Codex first pass and independent second pass (triage+check), deterministic checker on quotes, vocabulary and summary rules.",
+    "reviewed_sha256": "ce8babc6f10b333b8f0ee114f70ca82c45940b8901a48db997b032dcfacd1a22"
+  },
+  {
+    "name": "Oracle PeopleSoft Browser Automation",
+    "kind": "tool",
+    "url": "https://github.com/Browser-Automation-Hub/peoplesoft-browser-automation",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "automation",
+      "web-navigation",
+      "workflow",
+      "industry"
+    ],
+    "summary": "A browser automation scaffold for Oracle PeopleSoft that defines actions for queries, leave requests, employee records, and payroll workflows through Puppeteer or Anchor Browser.",
+    "scope": "adjacent",
+    "verify_terms": [
+      "Oracle PeopleSoft Browser Automation"
+    ],
+    "notes": "The README lists authentication, session, action, and custom action modules. It requires a PeopleSoft account, Node.js, and Chrome or Chromium for local use; the README declares an MIT license.",
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-09T04:45:24Z",
+    "read_basis": "Scan-backlog review 2026-11-09: primary source (README) fetched 2026-11-09T04:18:26Z; Codex first pass and independent second pass (triage+check), deterministic checker on quotes, vocabulary and summary rules.",
+    "reviewed_sha256": "ef5f57e4cd2f4a44a2967182100f56332ff1d425071085125eed88b83ce226aa"
+  },
+  {
+    "name": "Veeva CRM (Veeva Commercial Cloud) Browser Automation",
+    "kind": "tool",
+    "url": "https://github.com/Browser-Automation-Hub/veeva-crm-browser-automation",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "automation",
+      "web-navigation",
+      "workflow",
+      "industry"
+    ],
+    "summary": "A browser automation scaffold for Veeva CRM that defines actions for call reports, sample inventory, account records, and territory data through Puppeteer or Anchor Browser.",
+    "scope": "adjacent",
+    "verify_terms": [
+      "Veeva CRM (Veeva Commercial Cloud) Browser Automation"
+    ],
+    "notes": "The README lists authentication, session, action, and custom action modules. Local use requires Node.js, Chrome or Chromium, and a Veeva CRM account; it declares an MIT license.",
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-09T04:45:24Z",
+    "read_basis": "Scan-backlog review 2026-11-09: primary source (README) fetched 2026-11-09T04:18:29Z; Codex first pass and independent second pass (triage+check), deterministic checker on quotes, vocabulary and summary rules.",
+    "reviewed_sha256": "de5a1a710539733b515ad5e1dc85d21c70ab4ffda48516b8669eb5c4c8ba3de9"
+  },
+  {
+    "name": "Workday HCM Browser Automation",
+    "kind": "tool",
+    "url": "https://github.com/Browser-Automation-Hub/workday-hcm-browser-automation",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "automation",
+      "web-navigation",
+      "workflow",
+      "industry"
+    ],
+    "summary": "A browser automation scaffold for Workday HCM that uses Puppeteer or Anchor Browser to run HR and payroll workflows through the application interface.",
+    "scope": "adjacent",
+    "verify_terms": [
+      "Workday HCM Browser Automation"
+    ],
+    "notes": "The repository lists source modules, examples, and an environment configuration file. The README describes account credentials, Node.js, and Chrome or Chromium for local use and declares an MIT license.",
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-09T04:45:24Z",
+    "read_basis": "Scan-backlog review 2026-11-09: primary source (README) fetched 2026-11-09T04:18:30Z; Codex first pass and independent second pass (triage+check), deterministic checker on quotes, vocabulary and summary rules.",
+    "reviewed_sha256": "ded55a82d150677b1f9a8c1364f56f301fb908bc94632327fa1d8ece2d98342c"
+  },
+  {
+    "name": "bb-browser",
+    "kind": "tool",
+    "url": "https://github.com/epiral/bb-browser",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "web-navigation",
+      "automation",
+      "tool-integration",
+      "screen-understanding"
+    ],
+    "summary": "A CLI and MCP tool that lets AI agents operate an existing Chrome session through page snapshots, element actions, screenshots, and website-specific adapters.",
+    "scope": "adjacent",
+    "verify_terms": [
+      "bb-browser",
+      "accessibility tree"
+    ],
+    "notes": "The README documents a daemon connected to Chrome through CDP, an MCP configuration, site adapters, and an MIT license.",
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-09T04:45:24Z",
+    "read_basis": "Scan-backlog review 2026-11-09: primary source (README) fetched 2026-11-09T04:18:55Z; Codex first pass and independent second pass (triage+check), deterministic checker on quotes, vocabulary and summary rules.",
+    "reviewed_sha256": "8534d604b4dd62267ede62924a92b92c87e4ff1d99f2118d8f8fe40ff2622fbb"
+  },
+  {
+    "name": "camofox-browser",
+    "kind": "infrastructure",
+    "url": "https://github.com/jo-inc/camofox-browser",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "web-navigation",
+      "screen-understanding",
+      "sandbox",
+      "safety-security"
+    ],
+    "summary": "A browser server for AI agents that exposes accessibility snapshots and referenced page actions through a REST API, with isolated sessions and authenticated browsing support.",
+    "scope": "core",
+    "verify_terms": [
+      "camofox-browser",
+      "accessibility snapshots"
+    ],
+    "notes": "The README documents an OpenClaw plugin, standalone server, Docker deployment, cookie import, screenshots, and session tracing. It identifies Camoufox as the underlying browser and an MIT license.",
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-09T04:45:24Z",
+    "read_basis": "Scan-backlog review 2026-11-09: primary source (README) fetched 2026-11-09T04:19:33Z; Codex first pass and independent second pass (triage+check), deterministic checker on quotes, vocabulary and summary rules.",
+    "reviewed_sha256": "30e0a8c30d3ec52cf58a8c99348ef3441b26bb766c236d0e8fe18b665b0cf904"
+  },
+  {
+    "name": "Anchor",
+    "kind": "infrastructure",
+    "url": "https://anchorbrowser.io",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "web-navigation",
+      "sandbox",
+      "automation",
+      "industry"
+    ],
+    "summary": "Anchor provides cloud browser environments for AI agents to navigate authenticated websites and run browser workloads, with SDK and MCP integration.",
+    "scope": "core",
+    "verify_terms": [
+      "Anchor",
+      "Cloud browsers"
+    ],
+    "notes": "The page describes managed Chromium instances, authentication infrastructure, and browser workload deployment. It also lists hosted plans and a bring-your-own-cloud option.",
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-09T04:45:24Z",
+    "read_basis": "Scan-backlog review 2026-11-09: primary source (page) fetched 2026-11-09T04:20:12Z; Codex first pass and independent second pass (triage+check), deterministic checker on quotes, vocabulary and summary rules.",
+    "reviewed_sha256": "a135e7174a1e00a3136efafdda3184b026e76ed26f373157cde71bc26dd327b2"
+  },
+  {
+    "name": "Amap-Sim",
+    "kind": "infrastructure",
+    "url": "https://github.com/Acrab-Agentic-Labs/AppSim-Amap",
+    "environments": [
+      "android"
+    ],
+    "topics": [
+      "sandbox",
+      "evaluation",
+      "mobile-navigation"
+    ],
+    "summary": "An offline Android map-app simulation for AI automation tests, with map browsing, place search, routing, and navigation backed by locally prepared data.",
+    "scope": "core",
+    "verify_terms": [
+      "Amap-Sim"
+    ],
+    "notes": "The repository lists Android application code and scripts for preparing map, routing, and place data. The source says some pages still use development placeholders and the project license is pending.",
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-09T04:45:31Z",
+    "read_basis": "Scan-backlog review 2026-11-09: primary source (README) fetched 2026-11-09T04:17:53Z; Codex first pass and independent second pass (triage+check), deterministic checker on quotes, vocabulary and summary rules.",
+    "reviewed_sha256": "d39dc50c8959023de289abc3ec5090b559daf1ced936572cf3448b7357e072db"
+  },
+  {
+    "name": "Procore Browser Automation",
+    "kind": "tool",
+    "url": "https://github.com/Browser-Automation-Hub/procore-browser-automation",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "automation",
+      "web-navigation",
+      "workflow",
+      "industry"
+    ],
+    "summary": "A Procore browser automation scaffold with actions for construction RFIs, submittal tracking, daily logs, and project-report export.",
+    "scope": "adjacent",
+    "verify_terms": [
+      "Procore Browser Automation"
+    ],
+    "notes": "The repository lists source files and examples. Local setup requires Node.js, Chrome or Chromium, and a Procore account. The source declares an MIT license.",
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-09T04:45:31Z",
+    "read_basis": "Scan-backlog review 2026-11-09: primary source (README) fetched 2026-11-09T04:18:27Z; Codex first pass and independent second pass (triage+check), deterministic checker on quotes, vocabulary and summary rules.",
+    "reviewed_sha256": "b7b826bdcec1b860595675da66e652a0b54cee3ef9a78819a5256cf339b0535a"
+  },
+  {
+    "name": "SAP Concur Browser Automation",
+    "kind": "tool",
+    "url": "https://github.com/Browser-Automation-Hub/sap-concur-browser-automation",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "automation",
+      "web-navigation",
+      "workflow",
+      "industry"
+    ],
+    "summary": "A SAP Concur browser automation scaffold with actions for expense reports, receipt uploads, approval queues, and spend-data export.",
+    "scope": "adjacent",
+    "verify_terms": [
+      "SAP Concur Browser Automation"
+    ],
+    "notes": "The repository lists source files and examples. Local use requires Node.js, Chrome or Chromium, and an authorized SAP Concur account. The source declares an MIT license.",
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-09T04:45:31Z",
+    "read_basis": "Scan-backlog review 2026-11-09: primary source (README) fetched 2026-11-09T04:18:27Z; Codex first pass and independent second pass (triage+check), deterministic checker on quotes, vocabulary and summary rules.",
+    "reviewed_sha256": "ccdbfcffcc518d4994a63ba1d77584d555d68932fc3d4c10cc2eedbffa351130"
+  },
+  {
+    "name": "SAP Fiori Browser Automation",
+    "kind": "tool",
+    "url": "https://github.com/Browser-Automation-Hub/sap-fiori-browser-automation",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "automation",
+      "web-navigation",
+      "workflow",
+      "industry"
+    ],
+    "summary": "A SAP Fiori browser automation scaffold with documented actions for purchase orders, approvals, financial-data export, and invoice handling.",
+    "scope": "adjacent",
+    "verify_terms": [
+      "SAP Fiori Browser Automation"
+    ],
+    "notes": "The repository lists source files and examples. Local use requires Node.js, Chrome or Chromium, and a SAP Fiori account. The source declares an MIT license.",
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-09T04:45:31Z",
+    "read_basis": "Scan-backlog review 2026-11-09: primary source (README) fetched 2026-11-09T04:18:28Z; Codex first pass and independent second pass (triage+check), deterministic checker on quotes, vocabulary and summary rules.",
+    "reviewed_sha256": "825a5abc8093fdf9c3203251aedf42592bc5e7b15778b650aca85db6a289433c"
+  },
+  {
+    "name": "ServiceNow Browser Automation",
+    "kind": "tool",
+    "url": "https://github.com/Browser-Automation-Hub/servicenow-browser-automation",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "automation",
+      "web-navigation",
+      "workflow",
+      "industry"
+    ],
+    "summary": "A ServiceNow browser automation scaffold with documented actions for incidents, CMDB records, task assignment, and report export.",
+    "scope": "adjacent",
+    "verify_terms": [
+      "ServiceNow Browser Automation"
+    ],
+    "notes": "The repository lists source files and examples. Local use requires Node.js, Chrome or Chromium, and a ServiceNow account. The source declares an MIT license.",
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-09T04:45:31Z",
+    "read_basis": "Scan-backlog review 2026-11-09: primary source (README) fetched 2026-11-09T04:18:29Z; Codex first pass and independent second pass (triage+check), deterministic checker on quotes, vocabulary and summary rules.",
+    "reviewed_sha256": "86e7d403916f5d6b2f000c53c74241c275e390c12dbf1ebff1fab4588721e06c"
+  },
+  {
+    "name": "Veeva Vault Browser Automation",
+    "kind": "tool",
+    "url": "https://github.com/Browser-Automation-Hub/veeva-vault-browser-automation",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "automation",
+      "web-navigation",
+      "workflow",
+      "industry"
+    ],
+    "summary": "A Veeva Vault browser automation scaffold with documented actions for uploading documents, routing reviews, approving records, and exporting audit trails.",
+    "scope": "adjacent",
+    "verify_terms": [
+      "Veeva Vault Browser Automation"
+    ],
+    "notes": "The repository lists source files and examples. The documented local setup requires Node.js, Chrome or Chromium, and a Veeva Vault account. The source declares an MIT license.",
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-09T04:45:31Z",
+    "read_basis": "Scan-backlog review 2026-11-09: primary source (README) fetched 2026-11-09T04:18:29Z; Codex first pass and independent second pass (triage+check), deterministic checker on quotes, vocabulary and summary rules.",
+    "reviewed_sha256": "a7f8ac16cfd997d21a289237d7c81686f57958e5a04060a83ad789fc7ba8501a"
+  },
+  {
+    "name": "chromedp examples",
+    "kind": "learning",
+    "url": "https://github.com/chromedp/examples",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "automation",
+      "web-navigation"
+    ],
+    "summary": "A collection of 46 Go examples showing how to control Chrome with chromedp, including page interaction, screenshots, tabs, and protocol operations.",
+    "scope": "adjacent",
+    "verify_terms": [
+      "chromedp examples"
+    ],
+    "notes": "The README lists runnable programs and their arguments. It specifies Go 1.27 for the module and Chrome or Chromium on the PATH.",
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-09T04:45:31Z",
+    "read_basis": "Scan-backlog review 2026-11-09: primary source (README) fetched 2026-11-09T04:18:43Z; Codex first pass and independent second pass (triage+check), deterministic checker on quotes, vocabulary and summary rules.",
+    "reviewed_sha256": "7193d9b6d7b71cd89fde15b4e1f520074ff335d1c5cb1651b42e4912b723b4e8"
+  },
+  {
+    "name": "K²-Agent",
+    "kind": "agent",
+    "url": "https://github.com/k2-agent/k2-agent",
+    "environments": [
+      "android"
+    ],
+    "topics": [
+      "mobile-navigation",
+      "planning",
+      "reinforcement-learning"
+    ],
+    "summary": "A hierarchical mobile-device agent that combines a demonstration-informed planner with a learned action executor; the release includes AndroidWorld evaluation trajectories.",
+    "scope": "core",
+    "verify_terms": [
+      "K²-Agent"
+    ],
+    "notes": "The repository lists an AndroidWorld trajectories archive and task results. The README marks both the paper and agent code as coming soon.",
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-09T04:45:31Z",
+    "read_basis": "Scan-backlog review 2026-11-09: primary source (README) fetched 2026-11-09T04:24:18Z; Codex first pass and independent second pass (triage+check), deterministic checker on quotes, vocabulary and summary rules.",
+    "reviewed_sha256": "6fcd269fa7908cd6ed852761e40bbab724d9128842a75f70d4b9f9c9c1eeac6e"
+  },
+  {
+    "name": "Playwright Test for VS Code",
+    "kind": "tool",
+    "url": "https://github.com/microsoft/playwright-vscode",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "automation",
+      "recording",
+      "web-navigation"
+    ],
+    "summary": "A VS Code extension for Playwright browser testing that records page actions into tests and provides test running, locator inspection, debugging, and trace viewing.",
+    "scope": "adjacent",
+    "verify_terms": [
+      "Playwright Test for VS Code"
+    ],
+    "notes": "The source requires Playwright v1.38 or newer. It describes recording new tests and adding recorded actions at the current cursor position.",
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-09T04:45:31Z",
+    "read_basis": "Scan-backlog review 2026-11-09: primary source (README) fetched 2026-11-09T04:25:22Z; Codex first pass and independent second pass (triage+check), deterministic checker on quotes, vocabulary and summary rules.",
+    "reviewed_sha256": "2dd99289734ef37a5b88042a136ff5dc10a321d06abd3adeb5efbf2a3f406619"
+  },
+  {
+    "name": "openadapt-capture",
+    "kind": "tool",
+    "url": "https://github.com/OpenAdaptAI/openadapt-capture",
+    "environments": [
+      "cross-platform",
+      "desktop",
+      "windows",
+      "macos",
+      "linux"
+    ],
+    "topics": [
+      "recording",
+      "data-generation",
+      "video"
+    ],
+    "summary": "A desktop recorder for GUI demonstrations that pairs mouse and keyboard actions with screen frames and stores sessions for later inspection in Python.",
+    "scope": "adjacent",
+    "verify_terms": [
+      "openadapt-capture"
+    ],
+    "notes": "Recordings include a SQLite action database, screen video, and integrity metadata. The source lists FFmpeg and Python 3.10 or later as requirements; Linux capture is limited to X11. The repository is archived because the code moved to OpenAdapt.",
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-09T04:45:31Z",
+    "read_basis": "Scan-backlog review 2026-11-09: primary source (README) fetched 2026-11-09T04:25:51Z; Codex first pass and independent second pass (triage+check), deterministic checker on quotes, vocabulary and summary rules.",
+    "reviewed_sha256": "c87cdd1c04d63dbb2e6cd2f9d7f59773b408f4fcab318fb0ed1932b15b235cb5"
+  },
+  {
+    "name": "HIPPO Agent",
+    "kind": "agent",
+    "url": "https://github.com/wadang/muscle-mem-agent",
+    "environments": [
+      "desktop"
+    ],
+    "topics": [
+      "memory",
+      "long-horizon",
+      "planning",
+      "state-tracking"
+    ],
+    "summary": "A computer-use agent for multistep GUI tasks that stores task facts and progress in working memory and combines planning, grounding, and completion checks.",
+    "scope": "core",
+    "verify_terms": [
+      "HIPPO Agent"
+    ],
+    "notes": "The repository lists a muscle_mem package and OSWorld setup materials. The source says the agent was developed on the Agent-S3 codebase and reports an OSWorld-Verified result.",
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-09T04:45:31Z",
+    "read_basis": "Scan-backlog review 2026-11-09: primary source (README) fetched 2026-11-09T04:28:21Z; Codex first pass and independent second pass (triage+check), deterministic checker on quotes, vocabulary and summary rules.",
+    "reviewed_sha256": "bfcca97c9a37a2da487a9275aee240cc0a0132a1f879c3682a6a986af8ddd8cc"
+  },
+  {
+    "name": "Amazon Nova Act Samples",
+    "kind": "learning",
+    "url": "https://github.com/amazon-agi-labs/nova-act-samples",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "automation",
+      "web-navigation",
+      "workflow",
+      "human-in-the-loop"
+    ],
+    "summary": "Code examples and reference applications show how to build browser workflows with Amazon Nova Act and deploy the SDK on AWS compute services.",
+    "scope": "core",
+    "verify_terms": [
+      "Amazon Nova Act Samples",
+      "Reference applications"
+    ],
+    "notes": "The repository organizes AWS CDK deployment samples, lightweight SDK examples, and complete applications into separate directories. The examples require dependency installation and SDK authentication configuration.",
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-09T04:57:48Z",
+    "read_basis": "Scan-backlog review 2026-11-09: primary source (README) fetched 2026-11-09T04:18:15Z; Codex first pass and independent second pass (triage+check), deterministic checker on quotes, vocabulary and summary rules.",
+    "reviewed_sha256": "bf9262920c20fa71c0bfa305d3b05ac78c183f23c07537e0d9840317e4ce4878"
+  },
+  {
+    "name": "OpenAdapt Desktop",
+    "kind": "tool",
+    "url": "https://github.com/OpenAdaptAI/openadapt-desktop",
+    "environments": [
+      "web",
+      "desktop",
+      "windows"
+    ],
+    "topics": [
+      "automation",
+      "recording",
+      "workflow",
+      "human-in-the-loop"
+    ],
+    "summary": "OpenAdapt Desktop records work in web and desktop apps, compiles recordings into local programs, and replays data-entry tasks with screen checks and human approval.",
+    "scope": "core",
+    "verify_terms": [
+      "OpenAdapt Desktop"
+    ],
+    "notes": "The repository contains a Tauri and React desktop app and a local Python engine. The README places the compiler and runtime in openadapt-flow and says the desktop app currently runs from source.",
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-09T04:59:06Z",
+    "read_basis": "Scan-backlog review 2026-11-09: primary source (README) fetched 2026-11-09T04:25:52Z; Codex first pass and independent second pass (tiebreak), deterministic checker on quotes, vocabulary and summary rules.",
+    "reviewed_sha256": "5a9d38b3e4b59dfc8e5fdf75ec29adbd2b0d5e7496ff99f8df70ce13d998d12e"
+  },
+  {
+    "name": "Finalrun Agentic Approach",
+    "kind": "learning",
+    "url": "https://github.com/final-run/finalrun-android-world-benchmark",
+    "environments": [
+      "android"
+    ],
+    "topics": [
+      "mobile-navigation",
+      "state-tracking",
+      "planning",
+      "video"
+    ],
+    "summary": "Illustrated account of FinalRun's Android agent approach, with task walkthroughs and recordings showing screen observation, action planning, and state checks.",
+    "scope": "core",
+    "verify_terms": [
+      "Finalrun Agentic Approach",
+      "Android World"
+    ],
+    "notes": "The repository lists a README, images, and recordings. The README links demonstrations of audio recording, maze navigation, and drawing tasks.",
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-09T05:00:20Z",
+    "read_basis": "Scan-backlog review 2026-11-09: primary source (README) fetched 2026-11-09T04:19:00Z; Codex first pass and independent second pass (tiebreak), deterministic checker on quotes, vocabulary and summary rules.",
+    "reviewed_sha256": "2002806b5dd11312c616647b0d638b2c3e9fe803b8327b109a210bdd520553c8"
+  },
+  {
+    "name": "openadapt-retrieval",
+    "kind": "tool",
+    "url": "https://github.com/OpenAdaptAI/openadapt-retrieval",
+    "environments": [
+      "unspecified"
+    ],
+    "topics": [
+      "memory",
+      "screen-understanding",
+      "history"
+    ],
+    "summary": "Archived retrieval tool that indexes GUI demonstrations from task text and screenshots, then finds similar examples through a Python API or CLI.",
+    "scope": "core",
+    "verify_terms": [
+      "openadapt-retrieval"
+    ],
+    "notes": "The repository lists source code and tests. The README describes Qwen3-VL embeddings, FAISS indexing, optional CLIP support, and an MIT license.",
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-09T05:00:20Z",
+    "read_basis": "Scan-backlog review 2026-11-09: primary source (README) fetched 2026-11-09T04:25:55Z; Codex first pass and independent second pass (tiebreak), deterministic checker on quotes, vocabulary and summary rules.",
+    "reviewed_sha256": "9b2eb8779739e87262d04dda1822c747a473d2b385f3bf7970c1890b031b048b"
+  },
+  {
+    "name": "RecreationWorld",
+    "kind": "framework",
+    "url": "https://github.com/QwenLM/RecreationWorld",
+    "environments": [
+      "cross-platform",
+      "desktop",
+      "linux",
+      "macos",
+      "windows",
+      "android",
+      "web"
+    ],
+    "topics": [
+      "evaluation",
+      "tool-integration",
+      "sandbox",
+      "ui-design"
+    ],
+    "summary": "Framework for hybrid computer-use agents that inspect running reference apps, implement replicas with coding tools, and verify behavior across five platforms.",
+    "scope": "core",
+    "verify_terms": [
+      "RecreationWorld",
+      "RecreationBench"
+    ],
+    "notes": "The repository includes provider guides and a task index. Scored runs require a frozen task bundle, a prepared execution environment, and model and judge endpoints. The README declares an MIT license.",
+    "documented_by": [
+      "2609.22000"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-09T05:00:20Z",
+    "read_basis": "Scan-backlog review 2026-11-09: primary source (README) fetched 2026-11-09T04:27:02Z; Codex first pass and independent second pass (tiebreak), deterministic checker on quotes, vocabulary and summary rules.",
+    "reviewed_sha256": "ad108d6bf8d3c03f6c5fd99feb8b688d55eee211a7be9525e20ac453b6297ad3"
+  },
+  {
+    "name": "FluidGPT",
+    "kind": "product",
+    "url": "https://fluiz.ai/benchmark",
+    "environments": [
+      "android"
+    ],
+    "topics": [
+      "mobile-navigation",
+      "evaluation",
+      "video"
+    ],
+    "summary": "Android agent product presented through recorded AndroidWorld runs. Fluiz reports completion of 116 tasks across 20 apps through screen interaction.",
+    "scope": "core",
+    "verify_terms": [
+      "FluidGPT",
+      "AndroidWorld"
+    ],
+    "notes": "The page offers recordings for nine selected tasks and links to a full verification report. The completion figures are Fluiz's reported results.",
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-09T05:00:20Z",
+    "read_basis": "Scan-backlog review 2026-11-09: primary source (page) fetched 2026-11-09T04:19:59Z; Codex first pass and independent second pass (tiebreak), deterministic checker on quotes, vocabulary and summary rules.",
+    "reviewed_sha256": "28b79466716df37f922fdcb58ed862f05601188eb7a76b381943ee2299c76f2d"
+  },
+  {
+    "name": "AgentQL",
+    "kind": "tool",
+    "url": "https://docs.agentql.com",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "automation",
+      "web-navigation"
+    ],
+    "summary": "Web automation tool with a query language and Playwright-based Python and JavaScript SDKs for finding page elements, interacting with sites, and extracting data.",
+    "scope": "adjacent",
+    "verify_terms": [
+      "AgentQL",
+      "Playwright"
+    ],
+    "notes": "The documentation also lists a REST API, debugger, browser extension, and guides for forms, pagination, and remote browsers.",
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-09T05:00:20Z",
+    "read_basis": "Scan-backlog review 2026-11-09: primary source (page) fetched 2026-11-09T04:20:04Z; Codex first pass and independent second pass (tiebreak), deterministic checker on quotes, vocabulary and summary rules.",
+    "reviewed_sha256": "b170bc03f5ab08ef5f21e72439f12f8e10b4454548c07c1455357e945ad06b07"
+  },
+  {
+    "name": "FSB v0.9.92",
+    "kind": "product",
+    "url": "https://chromewebstore.google.com/detail/badgafnfchcihdfnjneklogedcdkmjfk",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "web-navigation",
+      "automation"
+    ],
+    "summary": "Chrome extension for natural-language browser automation that accepts a user's request and browses on their behalf.",
+    "scope": "core",
+    "verify_terms": [
+      "FSB v0.9.92",
+      "AI-powered browser automation"
+    ],
+    "notes": "The listing offers an Add to Chrome action and describes multi-model support. It identifies the extension version as 0.9.92.",
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-09T05:00:20Z",
+    "read_basis": "Scan-backlog review 2026-11-09: primary source (page) fetched 2026-11-09T04:20:21Z; Codex first pass and independent second pass (tiebreak), deterministic checker on quotes, vocabulary and summary rules.",
+    "reviewed_sha256": "a0c7667320affbec11d00e5d425979360a99a41d00763afb29f6ca077350c52f"
+  },
+  {
+    "name": "duvo-eye-1-evals",
+    "kind": "dataset",
+    "url": "https://huggingface.co/datasets/duvoai/duvo-eye-1-evals",
+    "environments": [
+      "unspecified"
+    ],
+    "topics": [
+      "evaluation",
+      "grounding"
+    ],
+    "summary": "Dataset of per-sample GUI grounding predictions and reference points for public benchmarks, accompanied by a script for rescoring model outputs.",
+    "scope": "core",
+    "evidence_urls": [
+      "https://huggingface.co/api/datasets/duvoai/duvo-eye-1-evals"
+    ],
+    "verify_terms": [
+      "duvo-eye-1-evals",
+      "duvo-eye-1"
+    ],
+    "notes": "The repository lists prediction JSONL files and benchmark result files. The card specifies single-shot inference and declares an Apache-2.0 license.",
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-09T05:00:20Z",
+    "read_basis": "Scan-backlog review 2026-11-09: primary source (Hub card) fetched 2026-11-09T04:20:53Z; Codex first pass and independent second pass (tiebreak), deterministic checker on quotes, vocabulary and summary rules.",
+    "reviewed_sha256": "829964b0175ba2b6f17506222deb90caf8566ef8231e62703539f89a66cca170"
+  },
+  {
+    "name": "ClawGUI-Eval",
+    "kind": "dataset",
+    "url": "https://huggingface.co/datasets/johnzqlu/clawgui-eval",
+    "environments": [
+      "unspecified"
+    ],
+    "topics": [
+      "evaluation",
+      "grounding"
+    ],
+    "summary": "GUI grounding evaluation data for six benchmarks, with images, prompts, and prior outputs for an inference, judging, and metrics workflow.",
+    "scope": "core",
+    "evidence_urls": [
+      "https://huggingface.co/api/datasets/johnzqlu/clawgui-eval"
+    ],
+    "verify_terms": [
+      "clawgui-eval",
+      "ScreenSpot-Pro"
+    ],
+    "notes": "The repository lists image.zip, data.zip, and output.zip. The card says the archives contain benchmark images, data and prompts, and precomputed inference and judge results.",
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-09T05:00:20Z",
+    "read_basis": "Scan-backlog review 2026-11-09: primary source (Hub card) fetched 2026-11-09T04:20:57Z; Codex first pass and independent second pass (tiebreak), deterministic checker on quotes, vocabulary and summary rules.",
+    "reviewed_sha256": "2cf582665728f9ce157236b5f8e23dd4383568325e62e2d8a809214bff313ac3"
+  },
+  {
+    "name": "Action-Type-Conditioned Grounding for GUI Agents",
+    "kind": "framework",
+    "url": "https://github.com/aadcha/action-conditioned-gui-agent",
+    "environments": [
+      "android",
+      "web"
+    ],
+    "topics": [
+      "grounding",
+      "action-prediction",
+      "evaluation"
+    ],
+    "summary": "Research code for GUI grounding that predicts an action type and then conditions coordinate prediction on it. It compares six conditioning methods and includes training and evaluation scripts.",
+    "scope": "core",
+    "verify_terms": [
+      "Action-Type-Conditioned Grounding for GUI Agents"
+    ],
+    "notes": "The repository includes data loaders, training code, evaluation code, run results and paper source. It uses Qwen2-VL-2B with LoRA and describes Modal training.",
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-09T05:00:31Z",
+    "read_basis": "Scan-backlog review 2026-11-09: primary source (README) fetched 2026-11-09T04:17:55Z; Codex first pass and independent second pass (tiebreak), deterministic checker on quotes, vocabulary and summary rules.",
+    "reviewed_sha256": "12cbf0da8cbb341c6ca21422ddc85ab866adaeed127da4b84f7968319af9ee7c"
+  },
+  {
+    "name": "AppSim-Eleme",
+    "kind": "infrastructure",
+    "url": "https://github.com/Acrab-Agentic-Labs/AppSim-Eleme",
+    "environments": [
+      "android"
+    ],
+    "topics": [
+      "sandbox",
+      "evaluation",
+      "mobile-navigation"
+    ],
+    "summary": "An Android food-delivery app built as a local test environment for AI interaction. It supplies shopping workflows, predefined tasks, action logging and evaluation scripts.",
+    "scope": "core",
+    "verify_terms": [
+      "MyEle",
+      "AI 操作和测试"
+    ],
+    "notes": "The app is built with Kotlin and Jetpack Compose and stores its data locally. The README describes task checks and scripts for evaluating selected interactions.",
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-09T05:00:31Z",
+    "read_basis": "Scan-backlog review 2026-11-09: primary source (README) fetched 2026-11-09T04:17:54Z; Codex first pass and independent second pass (tiebreak), deterministic checker on quotes, vocabulary and summary rules.",
+    "reviewed_sha256": "b1865e52c408658b9245ad9a4e4f8a5b12f8ffc1e277c560995e36f410998f31"
+  },
+  {
+    "name": "Epic EHR Browser Automation",
+    "kind": "framework",
+    "url": "https://github.com/Browser-Automation-Hub/epic-ehr-browser-automation",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "automation",
+      "workflow",
+      "tool-integration"
+    ],
+    "summary": "A browser automation scaffold for Epic EHR workflows such as appointments, patient lookup, notes and messaging. It documents authentication, sessions and example actions.",
+    "scope": "adjacent",
+    "verify_terms": [
+      "Epic EHR Browser Automation"
+    ],
+    "notes": "The repository lists authentication, session, action and utility modules with examples. The README describes local Puppeteer use and an optional managed-browser service, and declares an MIT license.",
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-09T05:00:31Z",
+    "read_basis": "Scan-backlog review 2026-11-09: primary source (README) fetched 2026-11-09T04:18:25Z; Codex first pass and independent second pass (tiebreak), deterministic checker on quotes, vocabulary and summary rules.",
+    "reviewed_sha256": "8b0bc6178f68d2fb50eefbd2b51d9954ca130fcf5b073070dd3751dcd1efa703"
+  },
+  {
+    "name": "Browser Harness JS",
+    "kind": "tool",
+    "url": "https://github.com/browser-use/browser-harness-js",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "automation",
+      "tool-integration",
+      "web-navigation"
+    ],
+    "summary": "A JavaScript CLI and SDK that expose typed Chrome DevTools Protocol calls through a persistent browser session, allowing agents to inspect tabs and issue browser actions.",
+    "scope": "adjacent",
+    "verify_terms": [
+      "Browser Harness JS"
+    ],
+    "notes": "The repository lists a CLI, session transport, generated protocol wrappers and interaction recipes. Its README describes attaching to Chrome through remote debugging.",
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-09T05:00:31Z",
+    "read_basis": "Scan-backlog review 2026-11-09: primary source (README) fetched 2026-11-09T04:18:36Z; Codex first pass and independent second pass (tiebreak), deterministic checker on quotes, vocabulary and summary rules.",
+    "reviewed_sha256": "016a8304fce7ab8963ae1f7c6213dffe768ed2d838ae957ae0f23fcb868501b2"
+  },
+  {
+    "name": "Auto-UI",
+    "kind": "agent",
+    "url": "https://github.com/gimme1dollar/auto_ui",
+    "environments": [
+      "android"
+    ],
+    "topics": [
+      "action-prediction",
+      "interaction-history",
+      "planning",
+      "mobile-navigation"
+    ],
+    "summary": "A multimodal interface agent that uses earlier actions and future action plans to predict the next action. The repository provides training and inference instructions.",
+    "scope": "core",
+    "verify_terms": [
+      "Auto-UI",
+      "chain-of-action"
+    ],
+    "notes": "The README points to processed data and trained models in a separate repository, gives feature-extraction commands for AITW and declares an Apache-2.0 license.",
+    "documented_by": [
+      "2309.11436"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-09T05:00:31Z",
+    "read_basis": "Scan-backlog review 2026-11-09: primary source (README) fetched 2026-11-09T04:19:06Z; Codex first pass and independent second pass (tiebreak), deterministic checker on quotes, vocabulary and summary rules.",
+    "reviewed_sha256": "13f045fa84dc0ad68dcceea95fc7e0e34a45bcda866d589132351559b87a8e30"
+  },
+  {
+    "name": "Steel Cookbook",
+    "kind": "learning",
+    "url": "https://github.com/steel-dev/steel-cookbook",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "automation",
+      "web-navigation",
+      "tool-integration"
+    ],
+    "summary": "A collection of Steel browser automation examples covering browser libraries, screenshot-driven computer-use models and agent frameworks in several programming languages.",
+    "scope": "core",
+    "verify_terms": [
+      "Steel Cookbook"
+    ],
+    "notes": "The repository lists example directories and catalogs TypeScript, Python, Go and Rust examples. Some examples cover persistent profiles, credentials and session reuse.",
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-09T05:00:31Z",
+    "read_basis": "Scan-backlog review 2026-11-09: primary source (README) fetched 2026-11-09T04:27:27Z; Codex first pass and independent second pass (tiebreak), deterministic checker on quotes, vocabulary and summary rules.",
+    "reviewed_sha256": "fc60a3a24218cad4417a15e830f3d632ef452c6089ed1e32ee54b93ec681bd64"
+  },
+  {
+    "name": "Tencent AI LAB - Self-Improving Agent",
+    "kind": "framework",
+    "url": "https://github.com/Tencent/SelfEvolvingAgent",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "web-navigation",
+      "self-reflection",
+      "world-models"
+    ],
+    "summary": "A research code collection for web-agent self-improvement, including WebEvolver's world-model approach and WebCoT's reconstructed reasoning trajectories.",
+    "scope": "core",
+    "verify_terms": [
+      "Self-Improving Agent",
+      "WebEvolver"
+    ],
+    "notes": "The repository lists separate WebEvolver and WebCoT directories and also includes VScan, a visual-token reduction project.",
+    "documented_by": [
+      "2504.21024",
+      "2505.20013"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-09T05:00:31Z",
+    "read_basis": "Scan-backlog review 2026-11-09: primary source (README) fetched 2026-11-09T04:27:39Z; Codex first pass and independent second pass (tiebreak), deterministic checker on quotes, vocabulary and summary rules.",
+    "reviewed_sha256": "873a78a46309fa3892d94b72cf73fd55542bae0e0ba8235afb26a848a64a8255"
+  },
+  {
+    "name": "WorkArena-Instances",
+    "kind": "benchmark",
+    "url": "https://huggingface.co/datasets/ServiceNow/WorkArena-Instances",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "evaluation",
+      "sandbox",
+      "workflow"
+    ],
+    "summary": "A restricted-access set of ServiceNow instances for running WorkArena benchmark evaluations. The repository provides instance information and states research-use conditions.",
+    "scope": "core",
+    "evidence_urls": [
+      "https://huggingface.co/api/datasets/ServiceNow/WorkArena-Instances"
+    ],
+    "verify_terms": [
+      "WorkArena-Instances",
+      "ServiceNow Instances for WorkArena"
+    ],
+    "notes": "Access requires accepting conditions through Hugging Face. The repository lists instances.json and instances_v2.json; the card limits use to benchmarking, evaluation and research.",
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-09T05:00:31Z",
+    "read_basis": "Scan-backlog review 2026-11-09: primary source (Hub card) fetched 2026-11-09T04:25:47Z; Codex first pass and independent second pass (tiebreak), deterministic checker on quotes, vocabulary and summary rules.",
+    "reviewed_sha256": "7c797dc4f0ac44ab8b67d5659c1c156a8707456cc691edbc1c538754e0fd848e"
+  },
+  {
+    "name": "NeurIPS 2025: 45 Computer-Use Agent Papers You Should Know About",
+    "kind": "learning",
+    "url": "https://cua.ai/blog/neurips-2025-cua-papers",
+    "environments": [
+      "cross-platform",
+      "desktop",
+      "macos",
+      "web"
+    ],
+    "topics": [
+      "survey",
+      "evaluation",
+      "grounding",
+      "safety-security"
+    ],
+    "summary": "An annotated reading list of 45 NeurIPS 2025 computer-use agent papers, organized around benchmarks, safety, grounding and agent architectures.",
+    "scope": "core",
+    "verify_terms": [
+      "NeurIPS 2025: 45 Computer-Use Agent Papers You Should Know About"
+    ],
+    "notes": "The article includes paper summaries, selected findings and poster links.",
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-09T05:00:31Z",
+    "read_basis": "Scan-backlog review 2026-11-09: primary source (page) fetched 2026-11-09T04:20:08Z; Codex first pass and independent second pass (tiebreak), deterministic checker on quotes, vocabulary and summary rules.",
+    "reviewed_sha256": "805a377c386caa28941afeb0f5053cdcea63a7b6981578e11513a1cb39d8cf72"
+  },
+  {
+    "name": "Claude 3.7 Sonnet",
+    "kind": "model",
+    "url": "https://www.anthropic.com/research/visible-extended-thinking",
+    "environments": [
+      "desktop"
+    ],
+    "topics": [
+      "evaluation"
+    ],
+    "summary": "A Claude release with an optional extended-thinking mode. Anthropic describes its mouse and keyboard computer-use capability and reports OSWorld evaluation results.",
+    "scope": "adjacent",
+    "verify_terms": [
+      "Claude 3.7 Sonnet",
+      "OSWorld"
+    ],
+    "notes": "The article says developers can set a thinking budget and describes longer computer-use runs. It also describes a screen-pixel and button-control game experiment.",
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-09T05:00:31Z",
+    "read_basis": "Scan-backlog review 2026-11-09: primary source (page) fetched 2026-11-09T04:20:09Z; Codex first pass and independent second pass (tiebreak), deterministic checker on quotes, vocabulary and summary rules.",
+    "reviewed_sha256": "6281ff5790e8d6b3fb014cbc888054bbf4c6f6c49b7caa00061c0ffd0e0db8b3"
+  },
+  {
+    "name": "Kirk Engine",
+    "kind": "agent",
+    "url": "https://abhishekdh.github.io/kirk-engine",
+    "environments": [
+      "android"
+    ],
+    "topics": [
+      "mobile-navigation",
+      "evaluation",
+      "screen-understanding"
+    ],
+    "summary": "An Android agent that uses screenshots and accessibility trees to choose taps, typing and swipes. Its page reports an AndroidWorld run and describes per-task verification artifacts.",
+    "scope": "core",
+    "verify_terms": [
+      "Kirk Engine",
+      "AndroidWorld"
+    ],
+    "notes": "The page reports results for 116 AndroidWorld tasks and describes video, screenshot, accessibility-tree, transcript and validator artifacts. It gives an emulator configuration and rerun command.",
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-09T05:00:31Z",
+    "read_basis": "Scan-backlog review 2026-11-09: primary source (page) fetched 2026-11-09T04:20:15Z; Codex first pass and independent second pass (tiebreak), deterministic checker on quotes, vocabulary and summary rules.",
+    "reviewed_sha256": "0fdd38125c25fa73c69b5bee412b03803d4ef6d69043d152dca42b887694ef16"
+  },
+  {
+    "name": "WorldGUI-Bench",
+    "kind": "dataset",
+    "url": "https://huggingface.co/datasets/hhenryz/WorldGUI-Bench",
+    "environments": [
+      "desktop"
+    ],
+    "topics": [
+      "evaluation",
+      "robustness",
+      "video",
+      "planning"
+    ],
+    "summary": "A desktop GUI evaluation dataset with user requests, instructional videos and pre-actions that vary task starting states. The release includes task metadata and a data archive.",
+    "scope": "core",
+    "evidence_urls": [
+      "https://huggingface.co/api/datasets/hhenryz/WorldGUI-Bench"
+    ],
+    "verify_terms": [
+      "WorldGUI-Bench",
+      "WorldGUI"
+    ],
+    "notes": "The repository lists WorldGUI-data.zip and worldgui_metadata.json. The card declares an Apache-2.0 license.",
+    "documented_by": [
+      "2502.08047"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-09T05:00:31Z",
+    "read_basis": "Scan-backlog review 2026-11-09: primary source (Hub card) fetched 2026-11-09T04:20:32Z; Codex first pass and independent second pass (tiebreak), deterministic checker on quotes, vocabulary and summary rules.",
+    "reviewed_sha256": "04918486ebffcb42022477bdcab041b2da78361f0072bc60137c506d3a129a7d"
+  },
+  {
+    "name": "AppSim-UberEats",
+    "kind": "infrastructure",
+    "url": "https://github.com/Acrab-Agentic-Labs/AppSim-UberEats",
+    "environments": [
+      "android"
+    ],
+    "topics": [
+      "sandbox",
+      "evaluation",
+      "mobile-navigation"
+    ],
+    "summary": "AppSim-UberEats is an Android app replica with interactive shopping screens, seeded data and scripts for checking task events and answers during mobile-agent evaluation.",
+    "scope": "core",
+    "verify_terms": [
+      "Uber Eats",
+      "Android"
+    ],
+    "notes": "The README describes a Jetpack Compose build, JSON assets and event logs in the app's private files directory. It lists evaluation scripts for 17 tasks.",
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-09T05:00:33Z",
+    "read_basis": "Scan-backlog review 2026-11-09: primary source (README) fetched 2026-11-09T04:17:59Z; Codex first pass and independent second pass (tiebreak), deterministic checker on quotes, vocabulary and summary rules.",
+    "reviewed_sha256": "7de371cd86471a0cfefde48c9e5edc6c0b8ea7239c4982b59529ccaf209e1a82"
+  },
+  {
+    "name": "SkillPacks",
+    "kind": "tool",
+    "url": "https://github.com/agentsea/skillpacks",
+    "environments": [
+      "desktop"
+    ],
+    "topics": [
+      "recording",
+      "human-in-the-loop",
+      "tool-integration"
+    ],
+    "summary": "SkillPacks records and approves agent tool actions for retrieval and later training, illustrated with a desktop-control example.",
+    "scope": "adjacent",
+    "verify_terms": [
+      "SkillPacks"
+    ],
+    "notes": "The README includes Python examples for episodes, action approval and retrieval. It labels model tuning as in progress and lists SQLite and PostgreSQL storage backends.",
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-09T05:00:33Z",
+    "read_basis": "Scan-backlog review 2026-11-09: primary source (README) fetched 2026-11-09T04:18:05Z; Codex first pass and independent second pass (tiebreak), deterministic checker on quotes, vocabulary and summary rules.",
+    "reviewed_sha256": "d791ed0cfff3a4b1241d21ec019002002508ee6cd27b4f7509a32bd18c121bcc"
+  },
+  {
+    "name": "Browser Use Pi",
+    "kind": "framework",
+    "url": "https://github.com/browser-use/browser-use-pi",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "web-navigation",
+      "tool-integration",
+      "screen-understanding"
+    ],
+    "summary": "Browser Use Pi is a TypeScript SDK for a browser agent that writes JavaScript to control Chrome through CDP and reads accessibility trees and screenshots for feedback.",
+    "scope": "core",
+    "verify_terms": [
+      "Browser Use Pi"
+    ],
+    "notes": "The README provides installation and agent-run examples. It documents cloud or local Chrome sessions and requires model-provider and Browser Use API keys for its cloud example.",
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-09T05:00:33Z",
+    "read_basis": "Scan-backlog review 2026-11-09: primary source (README) fetched 2026-11-09T04:18:31Z; Codex first pass and independent second pass (tiebreak), deterministic checker on quotes, vocabulary and summary rules.",
+    "reviewed_sha256": "d2dc1db793a64eda7bb8ba802be0077c64c3e507532cce9e8b01cfb4851e4d7d"
+  },
+  {
+    "name": "HiconAgent",
+    "kind": "framework",
+    "url": "https://github.com/iLearn-Lab/CVPR26-HiconAgent",
+    "environments": [
+      "unspecified"
+    ],
+    "topics": [
+      "interaction-history",
+      "reinforcement-learning",
+      "efficiency"
+    ],
+    "summary": "HiconAgent provides GUI-policy training code that samples histories of varied lengths and compresses past interactions during policy optimization.",
+    "scope": "core",
+    "verify_terms": [
+      "HiconAgent",
+      "HCPO"
+    ],
+    "notes": "The README provides dependency setup and a training command, and directs users to prepare Qwen2.5-VL-3B model directories. It links a separate dataset.",
+    "documented_by": [
+      "2512.01763"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-09T05:00:33Z",
+    "read_basis": "Scan-backlog review 2026-11-09: primary source (README) fetched 2026-11-09T04:19:23Z; Codex first pass and independent second pass (tiebreak), deterministic checker on quotes, vocabulary and summary rules.",
+    "reviewed_sha256": "af4c1af50ebf4ddab536b1a00664759698c61bf20f35400b95c043a81315715d"
+  },
+  {
+    "name": "LlamaTouch Evaluator",
+    "kind": "tool",
+    "url": "https://github.com/LlamaTouch/Evaluator",
+    "environments": [
+      "unspecified"
+    ],
+    "topics": [
+      "evaluation",
+      "mobile-navigation",
+      "state-tracking"
+    ],
+    "summary": "LlamaTouch Evaluator checks mobile-agent execution traces against annotated interface states and provides exact-match and subsequence action baselines.",
+    "scope": "core",
+    "verify_terms": [
+      "LlamaTouch Evaluator"
+    ],
+    "notes": "The code requires LlamaTouch task metadata, its ground-truth dataset and traces generated on AgentEnv. The README includes evaluator examples and installation steps.",
+    "documented_by": [
+      "2404.16054"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-09T05:00:33Z",
+    "read_basis": "Scan-backlog review 2026-11-09: primary source (README) fetched 2026-11-09T04:24:49Z; Codex first pass and independent second pass (tiebreak), deterministic checker on quotes, vocabulary and summary rules.",
+    "reviewed_sha256": "5210b9e80ab137401093ad43aaf658531e5879646846bed800f383479ac95d56"
+  },
+  {
+    "name": "AI Agents for Computer Use",
+    "kind": "learning",
+    "url": "https://github.com/sagerpascal/agents-for-computer-use",
+    "environments": [
+      "cross-platform",
+      "desktop"
+    ],
+    "topics": [
+      "survey",
+      "automation",
+      "mobile-navigation"
+    ],
+    "summary": "A browsable list of agents for desktop and mobile GUI control, with agent and dataset overviews linked from a companion survey repository.",
+    "scope": "core",
+    "verify_terms": [
+      "AI Agents for Computer Use"
+    ],
+    "notes": "The README links the companion survey at arXiv:2501.16150 and lists agent entries directly in the repository.",
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-09T05:00:33Z",
+    "read_basis": "Scan-backlog review 2026-11-09: primary source (README) fetched 2026-11-09T04:27:12Z; Codex first pass and independent second pass (tiebreak), deterministic checker on quotes, vocabulary and summary rules.",
+    "reviewed_sha256": "13a9d720f59e26665491e256912060867b4486fcfee55addd8676711f76af546"
+  },
+  {
+    "name": "WAREX Supplementary Code",
+    "kind": "tool",
+    "url": "https://github.com/SumanKNath/WABER",
+    "environments": [
+      "web",
+      "desktop",
+      "linux"
+    ],
+    "topics": [
+      "evaluation",
+      "robustness",
+      "efficiency"
+    ],
+    "summary": "WAREX supplementary code uses mitmproxy add-ons to inject popups or server and network errors into web-agent tests and record token use and latency.",
+    "scope": "core",
+    "verify_terms": [
+      "WAREX",
+      "mitmproxy"
+    ],
+    "notes": "The README names WebArena, WebVoyager and REAL as evaluation setups. Its example uses a Linux sandbox and configurable add-on type and frequency.",
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-09T05:00:33Z",
+    "read_basis": "Scan-backlog review 2026-11-09: primary source (README) fetched 2026-11-09T04:27:32Z; Codex first pass and independent second pass (tiebreak), deterministic checker on quotes, vocabulary and summary rules.",
+    "reviewed_sha256": "97e4a867b9ad35f288aa798ed20c1ae308ef8eb9e15e877b327b5fc0819449a9"
+  },
+  {
+    "name": "SE-GUI",
+    "kind": "framework",
+    "url": "https://github.com/YXB-NKU/SE-GUI",
+    "environments": [
+      "unspecified"
+    ],
+    "topics": [
+      "grounding",
+      "reinforcement-learning",
+      "evaluation"
+    ],
+    "summary": "SE-GUI provides training and evaluation code for a GUI-grounding model refined with location-based rewards and attention feedback; its README links separate weights and seed data.",
+    "scope": "core",
+    "verify_terms": [
+      "SE-GUI"
+    ],
+    "notes": "The README gives a Qwen2.5-VL training command and ScreenSpot evaluation commands. The model checkpoint and dataset are linked to separate Hugging Face repositories.",
+    "documented_by": [
+      "2505.12370"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-09T05:00:33Z",
+    "read_basis": "Scan-backlog review 2026-11-09: primary source (README) fetched 2026-11-09T04:28:50Z; Codex first pass and independent second pass (tiebreak), deterministic checker on quotes, vocabulary and summary rules.",
+    "reviewed_sha256": "6452101c34cd07a9c1b84fbaa52cd6ac228fa71800d549cb09cc6e09f0e920db"
+  },
+  {
+    "name": "The OS X Accessibility Model",
+    "kind": "learning",
+    "url": "https://developer.apple.com/library/archive/documentation/Accessibility/Conceptual/AccessibilityMacOSX/OSXAXmodel.html",
+    "environments": [
+      "desktop",
+      "macos"
+    ],
+    "topics": [
+      "screen-understanding",
+      "automation"
+    ],
+    "summary": "Apple's OS X guide explains how accessibility clients inspect an app's element hierarchy, read control properties, invoke actions and receive interface-change notifications.",
+    "scope": "adjacent",
+    "verify_terms": [
+      "The OS X Accessibility Model"
+    ],
+    "notes": "The archived guide covers the NSAccessibility protocol, accessible element hierarchy and an example of a client activating a button.",
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-09T05:00:33Z",
+    "read_basis": "Scan-backlog review 2026-11-09: primary source (page) fetched 2026-11-09T04:20:03Z; Codex first pass and independent second pass (tiebreak), deterministic checker on quotes, vocabulary and summary rules.",
+    "reviewed_sha256": "5f49d2a63f6b59498e9081b5a0d68fc4f6dfe16ac386a796b10a01a975b95dc5"
+  },
+  {
+    "name": "OpenGVLab/MMBench-GUI",
+    "kind": "dataset",
+    "url": "https://huggingface.co/datasets/OpenGVLab/MMBench-GUI",
+    "environments": [
+      "cross-platform",
+      "desktop",
+      "windows",
+      "macos",
+      "linux",
+      "ios",
+      "android",
+      "web"
+    ],
+    "topics": [
+      "evaluation",
+      "grounding",
+      "screen-understanding",
+      "automation"
+    ],
+    "summary": "MMBench-GUI releases annotations and offline images for evaluating interface understanding and grounding within a GUI-agent benchmark spanning desktop, mobile and web platforms.",
+    "scope": "core",
+    "evidence_urls": [
+      "https://huggingface.co/api/datasets/OpenGVLab/MMBench-GUI"
+    ],
+    "verify_terms": [
+      "MMBench-GUI"
+    ],
+    "notes": "The repository includes L1 and L2 annotation files and an offline image archive. The card declares an Apache-2.0 license.",
+    "documented_by": [
+      "2507.19478"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-09T05:00:33Z",
+    "read_basis": "Scan-backlog review 2026-11-09: primary source (Hub card) fetched 2026-11-09T04:20:03Z; Codex first pass and independent second pass (tiebreak), deterministic checker on quotes, vocabulary and summary rules.",
+    "reviewed_sha256": "bee7e3ec919487a075372e5503416e279fd97fa17bfba654d17a957de5569dff"
+  },
+  {
+    "name": "Claude Fable 5.1",
+    "kind": "product",
+    "url": "https://www.anthropic.com/claude/fable",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "web-navigation",
+      "workflow",
+      "evaluation"
+    ],
+    "summary": "Claude Fable 5.1 is a hosted model offering whose agent uses include operating a browser; its product page also discusses evaluation on OSWorld 2.0.",
+    "scope": "adjacent",
+    "verify_terms": [
+      "Claude Fable 5.1",
+      "OSWorld 2.0"
+    ],
+    "notes": "The page says the model is available through the Claude API and hosted platforms. Its OSWorld discussion describes the effect of production safeguards on evaluation.",
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-09T05:00:33Z",
+    "read_basis": "Scan-backlog review 2026-11-09: primary source (page) fetched 2026-11-09T04:20:54Z; Codex first pass and independent second pass (tiebreak), deterministic checker on quotes, vocabulary and summary rules.",
+    "reviewed_sha256": "2b9a7b9b0c5f620ac505ec973a084dc8c01924520087fea7794ba32697d1ea43"
+  },
+  {
+    "name": "Code2World",
+    "kind": "tool",
+    "url": "https://github.com/AMAP-ML/Code2World",
+    "environments": [
+      "android"
+    ],
+    "topics": [
+      "world-models",
+      "state-tracking",
+      "mobile-navigation"
+    ],
+    "summary": "Code2World provides code for predicting the next Android GUI screen from a screenshot and proposed action through renderable code, with an AndroidWorld agent integration.",
+    "scope": "core",
+    "verify_terms": [
+      "Code2World",
+      "AndroidWorld"
+    ],
+    "notes": "The README provides environment setup and an AndroidWorld run command. It requires pretrained Code2World weights and an OPENAI_API_KEY.",
+    "documented_by": [
+      "2602.09856"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-09T05:00:59Z",
+    "read_basis": "Scan-backlog review 2026-11-09: primary source (README) fetched 2026-11-09T04:18:13Z; Codex first pass and independent second pass (tiebreak), deterministic checker on quotes, vocabulary and summary rules.",
+    "reviewed_sha256": "26c14a14166d3b747454d1924ecdf6d96652ac857ae6ad488630dc843036a777"
+  },
+  {
+    "name": "Cerner PowerChart Browser Automation",
+    "kind": "tool",
+    "url": "https://github.com/Browser-Automation-Hub/cerner-powerchart-browser-automation",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "automation",
+      "web-navigation",
+      "workflow"
+    ],
+    "summary": "A browser automation scaffold for Cerner PowerChart with actions for login, patient search, results, orders, and documentation export, plus a selector reference.",
+    "scope": "adjacent",
+    "verify_terms": [
+      "Cerner PowerChart Browser Automation",
+      "search_patient"
+    ],
+    "notes": "The README lists Puppeteer and Anchor Browser options, example scripts, and source modules. It requires a PowerChart account and declares an MIT license.",
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-09T05:00:59Z",
+    "read_basis": "Scan-backlog review 2026-11-09: primary source (README) fetched 2026-11-09T04:18:25Z; Codex first pass and independent second pass (tiebreak), deterministic checker on quotes, vocabulary and summary rules.",
+    "reviewed_sha256": "4615e776bd45fd2bc722215853d98922061ad1f5b59b929ae882255e72457a58"
+  },
+  {
+    "name": "ToL Hierarchical GUI region detection",
+    "kind": "tool",
+    "url": "https://github.com/llv22/tol_gui_region_detection",
+    "environments": [
+      "android"
+    ],
+    "topics": [
+      "screen-understanding",
+      "grounding"
+    ],
+    "summary": "Code and configurations for training a hierarchical Android GUI region detector with DINO and running region inference on the ScreenPR benchmark.",
+    "scope": "core",
+    "verify_terms": [
+      "ToL Hierarchical GUI region detection",
+      "ScreenPR"
+    ],
+    "notes": "The README provides training and inference commands and links to pretrained weights stored separately. Setup uses MMDetection, MMEngine, and MMCV.",
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-09T05:00:59Z",
+    "read_basis": "Scan-backlog review 2026-11-09: primary source (README) fetched 2026-11-09T04:24:54Z; Codex first pass and independent second pass (tiebreak), deterministic checker on quotes, vocabulary and summary rules.",
+    "reviewed_sha256": "86c42c116651e7c255a0d3adf252a4d95f90dece9076a943d38bd7c13618555f"
+  },
+  {
+    "name": "MiniMax M3",
+    "kind": "model",
+    "url": "https://www.minimaxi.com/blog/minimax-m3",
+    "environments": [
+      "desktop"
+    ],
+    "topics": [
+      "screen-understanding",
+      "cross-app",
+      "automation"
+    ],
+    "summary": "MiniMax M3 is a multimodal model whose release page describes desktop operation from visual input and cross-application tasks through MiniMax Code.",
+    "scope": "adjacent",
+    "verify_terms": [
+      "MiniMax M3",
+      "Computer Use"
+    ],
+    "notes": "The page says M3 is available through MiniMax Code, a token plan, and an API. It says model weights were planned for a later release.",
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-09T05:00:59Z",
+    "read_basis": "Scan-backlog review 2026-11-09: primary source (page) fetched 2026-11-09T04:20:10Z; Codex first pass and independent second pass (tiebreak), deterministic checker on quotes, vocabulary and summary rules.",
+    "reviewed_sha256": "871aabe31c323df2b04af880a266acddab10ad082b929ad1715176d095339b7c"
+  },
+  {
+    "name": "OpenAdapt Agent",
+    "kind": "tool",
+    "url": "https://github.com/OpenAdaptAI/openadapt-agent",
+    "environments": [
+      "cross-platform",
+      "web",
+      "desktop",
+      "windows"
+    ],
+    "topics": [
+      "automation",
+      "workflow",
+      "tool-integration",
+      "state-tracking"
+    ],
+    "summary": "OpenAdapt Agent exposes demonstrated application workflows as callable tools for AI agents. It enters values in an app and checks the record before and after saving.",
+    "scope": "core",
+    "verify_terms": [
+      "OpenAdapt Agent",
+      "openadapt-agent"
+    ],
+    "notes": "The README documents a sandbox, production workflow bundles, an MCP connection, and a PyPI package. It says the repository is archived and the package has moved to the OpenAdapt monorepo. The source displays an MIT license badge.",
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-09T05:01:55Z",
+    "read_basis": "Scan-backlog review 2026-11-09: primary source (README) fetched 2026-11-09T04:25:50Z; Codex first pass and independent second pass (tiebreak), deterministic checker on quotes, vocabulary and summary rules.",
+    "reviewed_sha256": "57ffe3c22f53809b04d13c3b4022a92450295826af57ad31e03b85ac1cf22c61"
+  },
+  {
+    "name": "Rico Dataset",
+    "kind": "dataset",
+    "url": "https://www.interactionmining.org",
+    "environments": [
+      "unspecified"
+    ],
+    "topics": [
+      "data-generation",
+      "ui-design"
+    ],
+    "summary": "Rico Dataset is a collection of mobile app interaction and design data presented through Interaction Mining, with 70k screens and 10k user flows across 5k apps.",
+    "scope": "core",
+    "verify_terms": [
+      "Rico Dataset",
+      "Interaction Mining"
+    ],
+    "notes": "The site describes a platform for collecting, managing, and sharing mobile interaction datasets and invites contributions or self-hosting. It also states that 10k pieces of private user data are protected.",
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-09T05:01:55Z",
+    "read_basis": "Scan-backlog review 2026-11-09: primary source (page) fetched 2026-11-09T04:20:00Z; Codex first pass and independent second pass (tiebreak), deterministic checker on quotes, vocabulary and summary rules.",
+    "reviewed_sha256": "a6f3f922d63153d90b34c56ba443ce305395e2ba7fa5ebe812993b21525dbd1e"
+  },
+  {
+    "name": "WildClawBench",
+    "kind": "benchmark",
+    "url": "https://github.com/InternLM/WildClawBench",
+    "environments": [
+      "cross-platform",
+      "web"
+    ],
+    "topics": [
+      "evaluation",
+      "long-horizon",
+      "tool-integration",
+      "safety-security"
+    ],
+    "summary": "WildClawBench evaluates agents on 60 tasks in a live tool environment that includes browser use, email, files and coding. It releases evaluation code and links to task data and trajectories.",
+    "scope": "adjacent",
+    "verify_terms": [
+      "WildClawBench"
+    ],
+    "notes": "The README describes Docker isolation and four agent harnesses. The repository includes evaluation code and a technical report; task data and trajectories are linked as Hugging Face datasets.",
+    "documented_by": [
+      "2605.10912"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_at": "2026-11-09T05:04:09Z",
+    "read_basis": "Scan-backlog review 2026-11-09: primary source (README) fetched 2026-11-09T04:19:29Z; Codex first pass and independent second pass (orchestrator), deterministic checker on quotes, vocabulary and summary rules.",
+    "reviewed_sha256": "669c3fbe0ff02b9b00b69552c0e43ae270200317f5fcb2a621f47463de24ef81"
   }
 ]

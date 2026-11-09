@@ -2,9 +2,9 @@
 
 [Home](../../README.md) · [All topics](../topics.md) · [Full arXiv bibliography](../papers.md)
 
-83 source-reviewed resources tagged `cross-app`. Curated metadata; unknown facts are shown as —.
+87 source-reviewed resources tagged `cross-app`. Curated metadata; unknown facts are shown as —.
 
-**Contents:** [Benchmarks (17)](#benchmarks) · [Datasets (4)](#datasets) · [Agents (8)](#agents) · [Frameworks (2)](#frameworks) · [Tools (3)](#tools) · [Products (1)](#products) · [Papers (48)](#papers)
+**Contents:** [Benchmarks (18)](#benchmarks) · [Datasets (4)](#datasets) · [Models (1)](#models) · [Agents (9)](#agents) · [Frameworks (2)](#frameworks) · [Tools (3)](#tools) · [Products (1)](#products) · [Learning resources (1)](#learning-resources) · [Papers (48)](#papers)
 
 ## Benchmarks
 
@@ -19,6 +19,7 @@
 | [Mobile-Eval-E task definitions](https://huggingface.co/datasets/mikewang/mobile_eval_e) | android | [2501.11733](https://arxiv.org/abs/2501.11733) (2025) | [25 task-definition records](https://huggingface.co/datasets/mikewang/mobile_eval_e/raw/b8eca82988ed8d4f9dec01eaa9d51abf4b35aa83/README.md) | — | Task definitions for Mobile-Agent-E’s long-horizon, multi-app Android evaluation, packaged as a 25-record test split with rubrics and human-reference operation strings. | [✓ 2026‑10‑18](https://raw.githubusercontent.com/X-PLUG/MobileAgent/HEAD/Mobile-Agent-E/README.md) |
 | [MobileGUI-VBench](https://huggingface.co/datasets/vivo-ai/MobileGUI-VBench) | unspecified | [2609.12394](https://arxiv.org/abs/2609.12394) (2026) | [150 tasks](https://huggingface.co/datasets/vivo-ai/MobileGUI-VBench/raw/main/README.md) · [40 mobile apps](https://huggingface.co/datasets/vivo-ai/MobileGUI-VBench/raw/main/README.md) | — | Mobile-app task definitions covering everyday scenarios, with annotated preconditions and clarification requirements for evaluating agent behavior. | [✓ 2026‑10‑17](https://huggingface.co/datasets/vivo-ai/MobileGUI-VBench/raw/main/README.md) |
 | [MobileGym++ / MobileGym++ Bench](https://github.com/OpenMobile2/MobileGym-plusplus) | web | [2610.14157](https://arxiv.org/abs/2610.14157) (2026) | [215 task definitions](https://raw.githubusercontent.com/OpenMobile2/MobileGym-plusplus/HEAD/bench_env/benchmark/official.json) · [63 simulated clients](https://raw.githubusercontent.com/OpenMobile2/MobileGym-plusplus/HEAD/README.md) | code Apache-2.0 | Browser-rendered mobile simulation with resettable app state and a shared task suite for GUI-only and GUI-plus-tool agents. | [✓ 2026‑10‑17](https://raw.githubusercontent.com/OpenMobile2/MobileGym-plusplus/HEAD/README.md) |
+| [MyPCBench](https://github.com/ljang0/MyPCBench) | desktop, linux, web | — | — | code MIT | A Linux desktop benchmark with 184 tasks spanning seeded web apps and office software, using a VM runner and rubric-based grading. | [✓ 2026‑11‑09](https://raw.githubusercontent.com/ljang0/MyPCBench/HEAD/README.md) |
 | [OpenApps](https://github.com/facebookresearch/OpenApps) | web | [2511.20766](https://arxiv.org/abs/2511.20766) (2025) | — | code CC-BY-NC-4.0 | Configurable browser apps and task rewards for testing computer-use agents under changes in content, layout and appearance. | [✓ 2026‑10‑18](https://raw.githubusercontent.com/facebookresearch/OpenApps/HEAD/README.md) |
 | [OS-Map](https://github.com/OS-Copilot/OS-Map) | desktop, linux | [2507.19132](https://arxiv.org/abs/2507.19132) (2025) | [416 category/task references](https://raw.githubusercontent.com/OS-Copilot/OS-Map/HEAD/evaluation_examples/all.json) | code MIT | An OSWorld-derived desktop benchmark with an Ubuntu virtual-machine environment and expanded task configurations for measuring breadth and depth of computer interaction. | [✓ 2026‑10‑17](https://raw.githubusercontent.com/OS-Copilot/OS-Map/HEAD/README.md) |
 | [OSWorld](https://github.com/xlang-ai/OSWorld) · [leaderboard](https://os-world.github.io/) | desktop, linux, windows, macos | [2404.07972](https://arxiv.org/abs/2404.07972) (2024) | [369 task definitions](https://raw.githubusercontent.com/xlang-ai/OSWorld/HEAD/evaluation_examples/test_all.json) | code Apache-2.0 | Execution-based evaluation of agents performing tasks in real desktop environments. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/xlang-ai/OSWorld/HEAD/README.md) |
@@ -37,10 +38,19 @@
 | [GUIOdyssey — current data release](https://huggingface.co/datasets/hflqf88888/GUIOdyssey) | android | [2406.08451](https://arxiv.org/abs/2406.08451) (2024) | [8,334 episodes](https://huggingface.co/datasets/hflqf88888/GUIOdyssey/raw/main/README.md) | data cc-by-4.0 | Cross-app Android interaction episodes with fine-grained step instructions, screen descriptions, action context, and target boxes. | [✓ 2026‑10‑16](https://huggingface.co/datasets/hflqf88888/GUIOdyssey/raw/main/README.md) |
 | [Uni-GUI-Desktop-1](https://huggingface.co/datasets/UI-MOPD/Uni-GUI-Desktop-1) | desktop, linux | [2607.04425](https://arxiv.org/abs/2607.04425) (2026) | [2,685 trajectories](https://huggingface.co/datasets/UI-MOPD/Uni-GUI-Desktop-1/raw/92ef5917cd46a899a13461532fdda9e5a8d3bc62/README.md) · [≈ 36,000 steps](https://huggingface.co/datasets/UI-MOPD/Uni-GUI-Desktop-1/raw/92ef5917cd46a899a13461532fdda9e5a8d3bc62/README.md) · [10 application categories](https://huggingface.co/datasets/UI-MOPD/Uni-GUI-Desktop-1/raw/92ef5917cd46a899a13461532fdda9e5a8d3bc62/README.md) · [2,685 task.json trajectory files](https://huggingface.co/api/datasets/UI-MOPD/Uni-GUI-Desktop-1/revision/92ef5917cd46a899a13461532fdda9e5a8d3bc62) · [38,283 PNG screenshot files](https://huggingface.co/api/datasets/UI-MOPD/Uni-GUI-Desktop-1/revision/92ef5917cd46a899a13461532fdda9e5a8d3bc62) · [245 distinct OSWorld task IDs in trajectory folder names](https://huggingface.co/api/datasets/UI-MOPD/Uni-GUI-Desktop-1/revision/92ef5917cd46a899a13461532fdda9e5a8d3bc62) | data apache-2.0 | Desktop trajectories from the UI-MOPD training data, collected in OSWorld environments: 2,685 tasks across 10 app categories with step screenshots, reasoning traces, normalized actions and pyautogui code. | [✓ 2026‑10‑18](https://huggingface.co/datasets/UI-MOPD/Uni-GUI-Desktop-1/raw/92ef5917cd46a899a13461532fdda9e5a8d3bc62/README.md) |
 
+## Models
+
+All entries in this section: desktop.
+
+| Resource | Paper | License | Description | Evidence |
+| --- | --- | --- | --- | --- |
+| [MiniMax M3](https://www.minimaxi.com/blog/minimax-m3) | — | — | MiniMax M3 is a multimodal model whose release page describes desktop operation from visual input and cross-application tasks through MiniMax Code. | [✓ 2026‑11‑09](https://www.minimaxi.com/blog/minimax-m3) |
+
 ## Agents
 
 | Resource | Environments | Paper | License | Description | Evidence |
 | --- | --- | --- | --- | --- | --- |
+| [AppCopilot](https://github.com/OpenBMB/AppCopilot) | android | [2509.02444](https://arxiv.org/abs/2509.02444) (2025) | code Apache-2.0 | AppCopilot is a multimodal mobile agent for tasks across Android apps. The repository provides code and setup steps for emulator or phone control through ADB. | [✓ 2026‑11‑09](https://raw.githubusercontent.com/OpenBMB/AppCopilot/HEAD/README.md) |
 | [ARTEMIS](https://github.com/google/artemis) | android | — | code Apache-2.0 | ARTEMIS is an Android agent that carries out natural-language tasks across apps. It targets UI elements visually or by index and exposes device runs through an MCP server. | [✓ 2026‑11‑09](https://raw.githubusercontent.com/google/artemis/HEAD/README.md) |
 | [Intelligence Indeed](https://github.com/intelligence-indeed/intelligence-indeed) | desktop | — | code Apache-2.0 | Intelligence Indeed is a desktop GUI agent that loads reusable guidance, probes the current environment and shares task-specific findings across planning and execution. | [✓ 2026‑11‑09](https://raw.githubusercontent.com/intelligence-indeed/intelligence-indeed/HEAD/README.md) |
 | [MacOS Agent (BIGAI)](https://github.com/Computer-use-agents/MacOS-Agent) | desktop, macos | — | — | macOS agent in which a smolagents code agent dispatches per-application sub-agents that read accessibility trees and window screenshots and act through pyautogui mouse and keyboard input. | [✓ 2026‑10‑19](https://raw.githubusercontent.com/Computer-use-agents/MacOS-Agent/HEAD/README.md) |
@@ -72,6 +82,14 @@ All entries in this section: web.
 | Resource | Publisher | Description | Evidence |
 | --- | --- | --- | --- |
 | [Narada Code and OperatorMini](https://narada.ai/blog/introducing-narada-code-operatormini) | — | Narada Code develops and tests computer-use workflows, then revises them after failures. OperatorMini executes the instructions for repeatable web and enterprise tasks. | [✓ 2026‑11‑09](https://narada.ai/blog/introducing-narada-code-operatormini) |
+
+## Learning resources
+
+All entries in this section: cross-platform, web, android, ios, desktop, windows.
+
+| Resource | License | Description | Evidence |
+| --- | --- | --- | --- |
+| [Midscene Examples](https://github.com/web-infra-dev/midscene-example) | — | Midscene Examples provides runnable AI automation and testing cases for web, Android, iOS and desktop interfaces, including YAML workflows and SDK integrations. | [✓ 2026‑11‑09](https://raw.githubusercontent.com/web-infra-dev/midscene-example/HEAD/README.md) |
 
 ## Papers
 

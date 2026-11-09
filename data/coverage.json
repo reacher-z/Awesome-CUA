@@ -1,7 +1,7 @@
 {
-  "as_of_utc": "2026-11-09T05:26:45Z",
-  "total_records": 4855,
-  "curated_records": 4404,
+  "as_of_utc": "2026-11-09T06:16:40Z",
+  "total_records": 5010,
+  "curated_records": 4559,
   "bibliographic_records": 2141,
   "arxiv_active_records": 2112,
   "non_arxiv_bibliographic_records": 29,
@@ -11,10 +11,10 @@
   "exclusion_revalidation_pending": 0,
   "metadata_only_records": 451,
   "discovery_identifiers": 6084,
-  "unindexed_candidates": 337,
+  "unindexed_candidates": 177,
   "non_resource_candidates": 342,
   "alias_candidates": 518,
-  "out_of_scope_candidates": 452,
+  "out_of_scope_candidates": 457,
   "pending_editorial": [
     {
       "id": "github:thudm/autoglm",
@@ -3269,52 +3269,52 @@
     }
   ],
   "by_kind": {
-    "agent": 390,
-    "benchmark": 254,
+    "agent": 413,
+    "benchmark": 264,
     "company": 19,
-    "dataset": 185,
-    "framework": 607,
-    "infrastructure": 74,
-    "learning": 12,
-    "model": 271,
+    "dataset": 195,
+    "framework": 625,
+    "infrastructure": 90,
+    "learning": 26,
+    "model": 283,
     "paper": 2112,
-    "product": 66,
+    "product": 70,
     "survey": 29,
-    "tool": 836
+    "tool": 884
   },
   "curated_by_environment": {
-    "android": 617,
-    "cross-platform": 628,
-    "desktop": 1508,
+    "android": 651,
+    "cross-platform": 661,
+    "desktop": 1550,
     "harmonyos": 4,
-    "ios": 64,
-    "linux": 425,
-    "macos": 461,
-    "unspecified": 690,
-    "web": 2254,
-    "windows": 471
+    "ios": 73,
+    "linux": 439,
+    "macos": 476,
+    "unspecified": 712,
+    "web": 2342,
+    "windows": 486
   },
   "curated_by_kind_and_environment": {
     "agent": {
-      "android": 63,
-      "cross-platform": 39,
-      "desktop": 194,
-      "ios": 9,
-      "linux": 60,
-      "macos": 95,
+      "android": 73,
+      "cross-platform": 41,
+      "desktop": 197,
+      "ios": 10,
+      "linux": 61,
+      "macos": 97,
       "unspecified": 2,
-      "web": 195,
-      "windows": 84
+      "web": 206,
+      "windows": 85
     },
     "benchmark": {
       "android": 38,
-      "cross-platform": 26,
-      "desktop": 84,
+      "cross-platform": 28,
+      "desktop": 86,
       "ios": 1,
-      "linux": 20,
+      "linux": 21,
       "macos": 8,
-      "unspecified": 8,
-      "web": 175,
+      "unspecified": 10,
+      "web": 183,
       "windows": 14
     },
     "company": {
@@ -3323,53 +3323,58 @@
       "unspecified": 18
     },
     "dataset": {
-      "android": 62,
-      "cross-platform": 26,
-      "desktop": 58,
-      "ios": 4,
-      "linux": 19,
-      "macos": 11,
-      "unspecified": 15,
-      "web": 75,
-      "windows": 10
-    },
-    "framework": {
-      "android": 92,
-      "cross-platform": 140,
-      "desktop": 288,
-      "harmonyos": 1,
-      "ios": 15,
-      "linux": 101,
-      "macos": 76,
-      "unspecified": 21,
-      "web": 423,
-      "windows": 90
-    },
-    "infrastructure": {
-      "android": 9,
-      "cross-platform": 4,
-      "desktop": 56,
-      "ios": 1,
-      "linux": 39,
-      "macos": 17,
-      "web": 35,
+      "android": 65,
+      "cross-platform": 28,
+      "desktop": 61,
+      "ios": 5,
+      "linux": 20,
+      "macos": 12,
+      "unspecified": 19,
+      "web": 78,
       "windows": 11
     },
+    "framework": {
+      "android": 97,
+      "cross-platform": 146,
+      "desktop": 292,
+      "harmonyos": 1,
+      "ios": 17,
+      "linux": 102,
+      "macos": 79,
+      "unspecified": 26,
+      "web": 434,
+      "windows": 92
+    },
+    "infrastructure": {
+      "android": 16,
+      "cross-platform": 6,
+      "desktop": 61,
+      "ios": 2,
+      "linux": 43,
+      "macos": 19,
+      "unspecified": 1,
+      "web": 43,
+      "windows": 13
+    },
     "learning": {
-      "android": 2,
-      "cross-platform": 8,
-      "desktop": 8,
-      "web": 11
+      "android": 4,
+      "cross-platform": 14,
+      "desktop": 14,
+      "ios": 1,
+      "linux": 1,
+      "macos": 3,
+      "web": 21,
+      "windows": 2
     },
     "model": {
       "android": 78,
-      "cross-platform": 116,
-      "desktop": 119,
+      "cross-platform": 119,
+      "desktop": 124,
       "ios": 5,
       "linux": 11,
       "macos": 9,
-      "unspecified": 24,
-      "web": 115,
+      "unspecified": 29,
+      "web": 119,
       "windows": 13
     },
     "paper": {
@@ -3385,13 +3390,13 @@
       "windows": 42
     },
     "product": {
-      "android": 4,
-      "cross-platform": 4,
-      "desktop": 19,
+      "android": 5,
+      "cross-platform": 5,
+      "desktop": 20,
       "ios": 1,
       "linux": 3,
       "macos": 6,
-      "web": 56,
+      "web": 59,
       "windows": 7
     },
     "survey": {
@@ -3404,21 +3409,21 @@
       "windows": 1
     },
     "tool": {
-      "android": 39,
-      "cross-platform": 141,
-      "desktop": 439,
-      "ios": 15,
-      "linux": 147,
-      "macos": 221,
-      "unspecified": 4,
-      "web": 508,
-      "windows": 199
+      "android": 45,
+      "cross-platform": 150,
+      "desktop": 452,
+      "ios": 18,
+      "linux": 152,
+      "macos": 225,
+      "unspecified": 9,
+      "web": 538,
+      "windows": 206
     }
   },
   "license_declarations_by_scope": {
-    "code": 1722,
-    "data": 149,
-    "weights": 186,
+    "code": 1795,
+    "data": 155,
+    "weights": 193,
     "document": 8
   },
   "sources": [
@@ -3687,14 +3692,14 @@
         "state": "success"
       },
       "discovered": 94,
-      "indexed": 75,
-      "indexed_resources": 75,
+      "indexed": 76,
+      "indexed_resources": 76,
       "resolved_aliases": 0,
-      "curated": 75,
+      "curated": 76,
       "excluded": 1,
       "set_aside": 12,
       "out_of_scope": 5,
-      "unindexed": 1
+      "unindexed": 0
     },
     {
       "id": "cdxeve-cua",
@@ -4183,14 +4188,14 @@
         "state": "success"
       },
       "discovered": 215,
-      "indexed": 146,
-      "indexed_resources": 146,
+      "indexed": 147,
+      "indexed_resources": 147,
       "resolved_aliases": 2,
-      "curated": 144,
+      "curated": 145,
       "excluded": 32,
       "set_aside": 33,
       "out_of_scope": 2,
-      "unindexed": 2
+      "unindexed": 1
     },
     {
       "id": "philfung-cua",
@@ -4214,14 +4219,14 @@
         "state": "success"
       },
       "discovered": 34,
-      "indexed": 21,
-      "indexed_resources": 21,
+      "indexed": 23,
+      "indexed_resources": 23,
       "resolved_aliases": 2,
-      "curated": 21,
+      "curated": 23,
       "excluded": 0,
       "set_aside": 10,
       "out_of_scope": 0,
-      "unindexed": 3
+      "unindexed": 1
     },
     {
       "id": "release-fara",
@@ -4989,14 +4994,14 @@
         "state": "success"
       },
       "discovered": 39,
-      "indexed": 27,
-      "indexed_resources": 27,
+      "indexed": 29,
+      "indexed_resources": 29,
       "resolved_aliases": 0,
-      "curated": 27,
+      "curated": 29,
       "excluded": 0,
       "set_aside": 0,
       "out_of_scope": 10,
-      "unindexed": 2
+      "unindexed": 0
     },
     {
       "id": "maxiw-gui",
@@ -5113,14 +5118,14 @@
         "state": "success"
       },
       "discovered": 156,
-      "indexed": 121,
-      "indexed_resources": 121,
+      "indexed": 122,
+      "indexed_resources": 122,
       "resolved_aliases": 1,
-      "curated": 120,
+      "curated": 121,
       "excluded": 3,
       "set_aside": 21,
       "out_of_scope": 9,
-      "unindexed": 2
+      "unindexed": 1
     },
     {
       "id": "gui-grounding-survey",
@@ -5144,14 +5149,14 @@
         "state": "success"
       },
       "discovered": 334,
-      "indexed": 246,
-      "indexed_resources": 246,
+      "indexed": 257,
+      "indexed_resources": 257,
       "resolved_aliases": 4,
-      "curated": 243,
+      "curated": 254,
       "excluded": 8,
       "set_aside": 42,
       "out_of_scope": 4,
-      "unindexed": 34
+      "unindexed": 23
     },
     {
       "id": "showlab-mm-embodied",
@@ -5175,14 +5180,14 @@
         "state": "success"
       },
       "discovered": 221,
-      "indexed": 101,
-      "indexed_resources": 101,
+      "indexed": 108,
+      "indexed_resources": 108,
       "resolved_aliases": 0,
-      "curated": 89,
+      "curated": 96,
       "excluded": 35,
       "set_aside": 26,
-      "out_of_scope": 49,
-      "unindexed": 10
+      "out_of_scope": 50,
+      "unindexed": 2
     },
     {
       "id": "rl-gui-agents",
@@ -5268,14 +5273,14 @@
         "state": "success"
       },
       "discovered": 45,
-      "indexed": 19,
-      "indexed_resources": 19,
+      "indexed": 33,
+      "indexed_resources": 33,
       "resolved_aliases": 0,
-      "curated": 19,
+      "curated": 33,
       "excluded": 0,
       "set_aside": 6,
       "out_of_scope": 3,
-      "unindexed": 17
+      "unindexed": 3
     },
     {
       "id": "agent-native-browsers",
@@ -5299,14 +5304,14 @@
         "state": "success"
       },
       "discovered": 44,
-      "indexed": 20,
-      "indexed_resources": 20,
+      "indexed": 31,
+      "indexed_resources": 31,
       "resolved_aliases": 0,
-      "curated": 20,
+      "curated": 31,
       "excluded": 0,
       "set_aside": 6,
-      "out_of_scope": 5,
-      "unindexed": 13
+      "out_of_scope": 6,
+      "unindexed": 1
     },
     {
       "id": "llm-brained-gui-survey-benchmark",
@@ -5330,14 +5335,14 @@
         "state": "success"
       },
       "discovered": 121,
-      "indexed": 92,
-      "indexed_resources": 92,
+      "indexed": 94,
+      "indexed_resources": 94,
       "resolved_aliases": 0,
-      "curated": 92,
+      "curated": 94,
       "excluded": 0,
       "set_aside": 23,
       "out_of_scope": 1,
-      "unindexed": 5
+      "unindexed": 3
     },
     {
       "id": "llm-brained-gui-survey-dataset",
@@ -5361,14 +5366,14 @@
         "state": "success"
       },
       "discovered": 74,
-      "indexed": 56,
-      "indexed_resources": 56,
+      "indexed": 58,
+      "indexed_resources": 58,
       "resolved_aliases": 0,
-      "curated": 56,
+      "curated": 58,
       "excluded": 2,
       "set_aside": 11,
       "out_of_scope": 3,
-      "unindexed": 2
+      "unindexed": 0
     },
     {
       "id": "llm-brained-gui-survey-framework",
@@ -5392,14 +5397,14 @@
         "state": "success"
       },
       "discovered": 139,
-      "indexed": 109,
-      "indexed_resources": 109,
+      "indexed": 113,
+      "indexed_resources": 113,
       "resolved_aliases": 0,
-      "curated": 109,
+      "curated": 113,
       "excluded": 0,
       "set_aside": 23,
       "out_of_scope": 1,
-      "unindexed": 6
+      "unindexed": 2
     },
     {
       "id": "llm-brained-gui-survey-gui-testing",
@@ -5423,14 +5428,14 @@
         "state": "success"
       },
       "discovered": 32,
-      "indexed": 20,
-      "indexed_resources": 20,
+      "indexed": 23,
+      "indexed_resources": 23,
       "resolved_aliases": 0,
-      "curated": 20,
+      "curated": 23,
       "excluded": 0,
       "set_aside": 1,
       "out_of_scope": 0,
-      "unindexed": 11
+      "unindexed": 8
     },
     {
       "id": "llm-brained-gui-survey-models",
@@ -5491,8 +5496,8 @@
       "curated": 5,
       "excluded": 6,
       "set_aside": 1,
-      "out_of_scope": 5,
-      "unindexed": 13
+      "out_of_scope": 6,
+      "unindexed": 12
     },
     {
       "id": "llm-brained-gui-survey-virtual-assistant",
@@ -5516,14 +5521,14 @@
         "state": "success"
       },
       "discovered": 19,
-      "indexed": 7,
-      "indexed_resources": 7,
+      "indexed": 8,
+      "indexed_resources": 8,
       "resolved_aliases": 0,
-      "curated": 7,
+      "curated": 8,
       "excluded": 0,
       "set_aside": 4,
-      "out_of_scope": 3,
-      "unindexed": 5
+      "out_of_scope": 4,
+      "unindexed": 3
     },
     {
       "id": "osworld-verified-leaderboard",
@@ -5547,14 +5552,14 @@
         "state": "success"
       },
       "discovered": 50,
-      "indexed": 27,
-      "indexed_resources": 27,
+      "indexed": 32,
+      "indexed_resources": 32,
       "resolved_aliases": 0,
-      "curated": 27,
+      "curated": 32,
       "excluded": 0,
       "set_aside": 8,
       "out_of_scope": 6,
-      "unindexed": 9
+      "unindexed": 4
     },
     {
       "id": "osworld-self-reported-leaderboard",
@@ -5578,14 +5583,14 @@
         "state": "success"
       },
       "discovered": 89,
-      "indexed": 21,
-      "indexed_resources": 21,
+      "indexed": 22,
+      "indexed_resources": 22,
       "resolved_aliases": 1,
-      "curated": 21,
+      "curated": 22,
       "excluded": 5,
       "set_aside": 53,
       "out_of_scope": 4,
-      "unindexed": 6
+      "unindexed": 5
     },
     {
       "id": "screenspot-pro-leaderboard",
@@ -5609,14 +5614,14 @@
         "state": "success"
       },
       "discovered": 45,
-      "indexed": 27,
-      "indexed_resources": 27,
+      "indexed": 31,
+      "indexed_resources": 31,
       "resolved_aliases": 0,
-      "curated": 27,
+      "curated": 31,
       "excluded": 2,
       "set_aside": 8,
       "out_of_scope": 2,
-      "unindexed": 6
+      "unindexed": 2
     },
     {
       "id": "androidworld-leaderboard",
@@ -5640,14 +5645,14 @@
         "state": "success"
       },
       "discovered": 66,
-      "indexed": 36,
-      "indexed_resources": 36,
+      "indexed": 43,
+      "indexed_resources": 43,
       "resolved_aliases": 1,
-      "curated": 36,
+      "curated": 43,
       "excluded": 0,
       "set_aside": 19,
       "out_of_scope": 0,
-      "unindexed": 11
+      "unindexed": 4
     },
     {
       "id": "webarena-leaderboard",
@@ -5671,14 +5676,14 @@
         "state": "success"
       },
       "discovered": 83,
-      "indexed": 41,
-      "indexed_resources": 41,
+      "indexed": 43,
+      "indexed_resources": 43,
       "resolved_aliases": 0,
-      "curated": 38,
+      "curated": 40,
       "excluded": 4,
       "set_aside": 26,
-      "out_of_scope": 5,
-      "unindexed": 7
+      "out_of_scope": 6,
+      "unindexed": 4
     },
     {
       "id": "androidlab-leaderboard",
@@ -5826,14 +5831,14 @@
         "state": "success"
       },
       "discovered": 18,
-      "indexed": 13,
-      "indexed_resources": 13,
+      "indexed": 15,
+      "indexed_resources": 15,
       "resolved_aliases": 0,
-      "curated": 13,
+      "curated": 15,
       "excluded": 0,
       "set_aside": 0,
       "out_of_scope": 2,
-      "unindexed": 3
+      "unindexed": 1
     },
     {
       "id": "hf-datasets-search-computer-use",
@@ -5950,14 +5955,14 @@
         "state": "success"
       },
       "discovered": 9,
-      "indexed": 2,
-      "indexed_resources": 2,
+      "indexed": 3,
+      "indexed_resources": 3,
       "resolved_aliases": 0,
-      "curated": 2,
+      "curated": 3,
       "excluded": 0,
       "set_aside": 1,
       "out_of_scope": 2,
-      "unindexed": 4
+      "unindexed": 3
     },
     {
       "id": "hf-datasets-search-screenspot",
@@ -6012,14 +6017,14 @@
         "state": "success"
       },
       "discovered": 20,
-      "indexed": 19,
-      "indexed_resources": 19,
+      "indexed": 20,
+      "indexed_resources": 20,
       "resolved_aliases": 2,
-      "curated": 19,
+      "curated": 20,
       "excluded": 0,
       "set_aside": 0,
       "out_of_scope": 0,
-      "unindexed": 1
+      "unindexed": 0
     },
     {
       "id": "hf-collection-maxiw-research-on-gui-models",
@@ -6136,14 +6141,14 @@
         "state": "success"
       },
       "discovered": 22,
-      "indexed": 19,
-      "indexed_resources": 19,
+      "indexed": 20,
+      "indexed_resources": 20,
       "resolved_aliases": 1,
-      "curated": 19,
+      "curated": 20,
       "excluded": 0,
       "set_aside": 0,
       "out_of_scope": 1,
-      "unindexed": 2
+      "unindexed": 1
     },
     {
       "id": "hf-collection-sergiopaniego-gui-grounding-datasets",
@@ -6260,14 +6265,14 @@
         "state": "success"
       },
       "discovered": 13,
-      "indexed": 5,
-      "indexed_resources": 5,
+      "indexed": 7,
+      "indexed_resources": 7,
       "resolved_aliases": 0,
-      "curated": 5,
+      "curated": 7,
       "excluded": 0,
       "set_aside": 0,
       "out_of_scope": 1,
-      "unindexed": 7
+      "unindexed": 5
     },
     {
       "id": "release-ui-tars-model-index",
@@ -6446,14 +6451,14 @@
         "state": "success"
       },
       "discovered": 2,
-      "indexed": 1,
-      "indexed_resources": 1,
+      "indexed": 2,
+      "indexed_resources": 2,
       "resolved_aliases": 0,
-      "curated": 1,
+      "curated": 2,
       "excluded": 0,
       "set_aside": 0,
       "out_of_scope": 0,
-      "unindexed": 1
+      "unindexed": 0
     },
     {
       "id": "release-osunlp-mind2web-dataset-index",
@@ -6570,14 +6575,14 @@
         "state": "success"
       },
       "discovered": 122,
-      "indexed": 72,
-      "indexed_resources": 70,
+      "indexed": 75,
+      "indexed_resources": 73,
       "resolved_aliases": 8,
-      "curated": 71,
+      "curated": 74,
       "excluded": 2,
       "set_aside": 32,
       "out_of_scope": 0,
-      "unindexed": 16
+      "unindexed": 13
     },
     {
       "id": "gui-agents-survey-references",
@@ -6601,14 +6606,14 @@
         "state": "success"
       },
       "discovered": 117,
-      "indexed": 61,
-      "indexed_resources": 61,
+      "indexed": 62,
+      "indexed_resources": 62,
       "resolved_aliases": 0,
-      "curated": 55,
+      "curated": 56,
       "excluded": 13,
       "set_aside": 29,
       "out_of_scope": 5,
-      "unindexed": 9
+      "unindexed": 8
     },
     {
       "id": "benchmark-leads",

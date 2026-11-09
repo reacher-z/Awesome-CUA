@@ -2,9 +2,9 @@
 
 [Home](../../README.md) · [All topics](../topics.md) · [Full arXiv bibliography](../papers.md)
 
-73 source-reviewed resources tagged `world-models`. Curated metadata; unknown facts are shown as —.
+76 source-reviewed resources tagged `world-models`. Curated metadata; unknown facts are shown as —.
 
-**Contents:** [Datasets (4)](#datasets) · [Models (7)](#models) · [Agents (1)](#agents) · [Frameworks (9)](#frameworks) · [Surveys (1)](#surveys) · [Papers (51)](#papers)
+**Contents:** [Datasets (4)](#datasets) · [Models (7)](#models) · [Agents (2)](#agents) · [Frameworks (10)](#frameworks) · [Tools (1)](#tools) · [Surveys (1)](#surveys) · [Papers (51)](#papers)
 
 ## Datasets
 
@@ -29,11 +29,10 @@
 
 ## Agents
 
-All entries in this section: desktop.
-
-| Resource | Paper | License | Description | Evidence |
-| --- | --- | --- | --- | --- |
-| [Octopus](https://github.com/dongyh20/Octopus) | — | — | Octopus is a vision-language programmer agent trained with environmental feedback to generate executable control code in GTA and Gibson worlds. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/dongyh20/Octopus/HEAD/README.md) |
+| Resource | Environments | Paper | License | Description | Evidence |
+| --- | --- | --- | --- | --- | --- |
+| [Octopus](https://github.com/dongyh20/Octopus) | desktop | — | — | Octopus is a vision-language programmer agent trained with environmental feedback to generate executable control code in GTA and Gibson worlds. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/dongyh20/Octopus/HEAD/README.md) |
+| [WMA Web Agent](https://github.com/kyle8581/WMA-Agents) | web | [2410.13232](https://arxiv.org/abs/2410.13232) (2024) | — | A web agent uses a learned world model to predict consequential page changes before choosing an action. The repository includes trajectory processing and inference code. | [✓ 2026‑11‑09](https://raw.githubusercontent.com/kyle8581/WMA-Agents/HEAD/README.md) |
 
 ## Frameworks
 
@@ -45,9 +44,18 @@ All entries in this section: desktop.
 | [nanoAWM (Agent World Model Lab)](https://github.com/jlov7/nanoAWM) | desktop, web | — | code MIT | nanoAWM is an inspectable Agent World Model laboratory for simulating action consequences in long-horizon tool and computer-use agents. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/jlov7/nanoAWM/HEAD/README.md) |
 | [RLVR-World](https://github.com/thuml/RLVR-World) | web, desktop | — | code MIT | RLVR-World trains world models with verifiable reinforcement learning to predict state transitions for web and game agents. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/thuml/RLVR-World/HEAD/README.md) |
 | [SEAgent](https://github.com/SunzeY/SEAgent) | desktop, linux | [2508.04700](https://arxiv.org/abs/2508.04700) (2025) | — | SEAgent enables computer-use agents to self-evolve in unfamiliar software environments using a World State Model and curriculum task generator. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/SunzeY/SEAgent/HEAD/README.md) |
+| [Tencent AI LAB - Self-Improving Agent](https://github.com/Tencent/SelfEvolvingAgent) | web | [2504.21024](https://arxiv.org/abs/2504.21024) (2025), [2505.20013](https://arxiv.org/abs/2505.20013) (2025) | — | A research code collection for web-agent self-improvement, including WebEvolver's world-model approach and WebCoT's reconstructed reasoning trajectories. | [✓ 2026‑11‑09](https://raw.githubusercontent.com/Tencent/SelfEvolvingAgent/HEAD/README.md) |
 | [ViMo code](https://github.com/ai-agents-2030/ViMo) | android | [2504.13936](https://arxiv.org/abs/2504.13936) (2025) | — | Code for the ViMo GUI world model: Gemini-based next-screen text prediction, AITW and AndroidControl data processing, InstructPix2Pix-style graphic inference, and an AndroidWorld agent that consults it. | [✓ 2026‑10‑19](https://raw.githubusercontent.com/ai-agents-2030/ViMo/1f319fece4d3a4ac1d41b4572751bca1a10fa690/README.md) |
 | [WebDreamer](https://github.com/OSU-NLP-Group/WebDreamer) | web | [2411.06559](https://arxiv.org/abs/2411.06559) (2024) | — | World-model and planning components that simulate web-action outcomes, with linked training data and model checkpoints. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/OSU-NLP-Group/WebDreamer/HEAD/README.md) |
 | [WebEvolver code component](https://github.com/Tencent/SelfEvolvingAgent/tree/main/WebEvolver) | web | [2504.21024](https://arxiv.org/abs/2504.21024) (2025) | code MIT | Component for web-agent trajectory collection, supervised-data preparation and world-model-based trajectory synthesis. | [✓ 2026‑10‑18](https://raw.githubusercontent.com/Tencent/SelfEvolvingAgent/HEAD/WebEvolver/README.md) |
+
+## Tools
+
+All entries in this section: android.
+
+| Resource | Paper | License | Description | Evidence |
+| --- | --- | --- | --- | --- |
+| [Code2World](https://github.com/AMAP-ML/Code2World) | [2602.09856](https://arxiv.org/abs/2602.09856) (2026) | — | Code2World provides code for predicting the next Android GUI screen from a screenshot and proposed action through renderable code, with an AndroidWorld agent integration. | [✓ 2026‑11‑09](https://raw.githubusercontent.com/AMAP-ML/Code2World/HEAD/readme.md) |
 
 ## Surveys
 

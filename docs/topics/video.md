@@ -2,9 +2,9 @@
 
 [Home](../../README.md) · [All topics](../topics.md) · [Full arXiv bibliography](../papers.md)
 
-73 source-reviewed resources tagged `video`. Curated metadata; unknown facts are shown as —.
+79 source-reviewed resources tagged `video`. Curated metadata; unknown facts are shown as —.
 
-**Contents:** [Benchmarks (3)](#benchmarks) · [Datasets (14)](#datasets) · [Models (6)](#models) · [Frameworks (3)](#frameworks) · [Tools (8)](#tools) · [Papers (39)](#papers)
+**Contents:** [Benchmarks (4)](#benchmarks) · [Datasets (15)](#datasets) · [Models (7)](#models) · [Frameworks (3)](#frameworks) · [Tools (9)](#tools) · [Products (1)](#products) · [Learning resources (1)](#learning-resources) · [Papers (39)](#papers)
 
 ## Benchmarks
 
@@ -12,6 +12,7 @@
 | --- | --- | --- | --- | --- | --- | --- |
 | [GuideBench](https://huggingface.co/datasets/kixlab/GuideBench) | desktop, web | [2603.25864](https://arxiv.org/abs/2603.25864) (2026) | [120 demonstrations](https://guide-bench.github.io) · [67.5 hours of screen recordings](https://guide-bench.github.io) · [54 novice users](https://guide-bench.github.io) · [10 applications](https://guide-bench.github.io) · [40 open-ended tasks](https://guide-bench.github.io) · [120 transcription files](https://huggingface.co/api/datasets/kixlab/GuideBench/revision/783caa868dc3a929ef99702731a1e0b27add48f1) · [40 task-description files](https://huggingface.co/api/datasets/kixlab/GuideBench/revision/783caa868dc3a929ef99702731a1e0b27add48f1) | data cc-by-4.0 | Released data for the GUIDE benchmark: annotated segments of narrated novice screen recordings in 10 applications, for predicting user behavior state, short-term intent and whether and how to help. | [✓ 2026‑10‑19](https://huggingface.co/api/datasets/kixlab/GuideBench/revision/783caa868dc3a929ef99702731a1e0b27add48f1) |
 | [VideoGUI](https://github.com/showlab/videogui) | desktop | [2406.10227](https://arxiv.org/abs/2406.10227) (2024) | — | — | Benchmark for desktop GUI tasks derived from instructional videos. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/showlab/videogui/HEAD/README.md) |
+| [VideoWebArena](https://github.com/ljang0/videowebarena) | web | [2410.19100](https://arxiv.org/abs/2410.19100) (2024) | — | — | VideoWebArena evaluates web agents that use video tutorials to complete website tasks. Its released benchmark includes task configurations, environments, and an evaluation pipeline. | [✓ 2026‑11‑09](https://raw.githubusercontent.com/ljang0/videowebarena/HEAD/README.md) |
 | [WONDERBREAD](https://github.com/HazyResearch/wonderbread) | web | [2406.13264](https://arxiv.org/abs/2406.13264) (2024) | [6 task types](https://raw.githubusercontent.com/HazyResearch/wonderbread/HEAD/README.md) · [2,928 human demonstrations](https://zenodo.org/api/records/14094162) · [598 web navigation workflows](https://zenodo.org/api/records/14094162) | data cc-by-4.0 | An offline benchmark of workflow documentation, quality assessment and knowledge transfer using human web-navigation demonstrations, action traces and written procedures. | [✓ 2026‑10‑17](https://raw.githubusercontent.com/HazyResearch/wonderbread/HEAD/README.md) |
 
 ## Datasets
@@ -32,6 +33,7 @@
 | [WildGUI](https://huggingface.co/datasets/xwm/WildGUI) | cross-platform, web, desktop | [2605.14747](https://arxiv.org/abs/2605.14747) (2026) | [19 annotation JSONL shards](https://huggingface.co/api/datasets/xwm/WildGUI/revision/75287698d5876692d4b998be30a724723906e769) · [4,137 screenshot tar shards](https://huggingface.co/api/datasets/xwm/WildGUI/revision/75287698d5876692d4b998be30a724723906e769) · [≈ 12,000,000 interaction trajectories](https://raw.githubusercontent.com/WeiminXiong/Video2GUI/02f61de0c329f6763ce1b130596a650e4a9291f1/README.md) | data cc-by-nc-4.0 | WildGUI release from Video2GUI: per-task JSONL trajectories mined from Internet tutorial videos, with instructions, plans and grounded actions on web, desktop and mobile, plus screenshot shards for parts 1-15. | [✓ 2026‑10‑18](https://huggingface.co/datasets/xwm/WildGUI/raw/75287698d5876692d4b998be30a724723906e769/README.md) |
 | [WildGUI Screenshots (parts 16-19)](https://huggingface.co/datasets/joker-112/WildGUI_Screenshots) | cross-platform, web, desktop | [2605.14747](https://arxiv.org/abs/2605.14747) (2026) | [1,922 screenshot tar shards](https://huggingface.co/api/datasets/joker-112/WildGUI_Screenshots/revision/8d31cbd45c9cb82683bbd5dea767782bb604fbcd) | data cc-by-nc-4.0 | Companion Hub repository holding the WildGUI screenshot tar shards for parts 16-19; the matching trajectory annotations and the other parts' frames are in the main WildGUI repository. | [✓ 2026‑10‑18](https://huggingface.co/datasets/joker-112/WildGUI_Screenshots/raw/8d31cbd45c9cb82683bbd5dea767782bb604fbcd/README.md) |
 | [WorkDemo-350](https://huggingface.co/datasets/yuqi777/WorkDemo-350) | desktop | [2610.12984](https://arxiv.org/abs/2610.12984) (2026) | [350 demonstrations](https://huggingface.co/datasets/yuqi777/WorkDemo-350/raw/main/README.md) · [8,388 evidence images](https://huggingface.co/datasets/yuqi777/WorkDemo-350/raw/main/README.md) · [11,951 action records](https://huggingface.co/datasets/yuqi777/WorkDemo-350/raw/main/README.md) | data cc-by-4.0 | Desktop demonstrations with task descriptions, videos, input logs, and action-linked screenshot evidence for studying reusable agent skills. | [✓ 2026‑10‑16](https://huggingface.co/datasets/yuqi777/WorkDemo-350/raw/main/README.md) |
+| [WorldGUI-Bench](https://huggingface.co/datasets/hhenryz/WorldGUI-Bench) | desktop | [2502.08047](https://arxiv.org/abs/2502.08047) (2025) | — | data apache-2.0 | A desktop GUI evaluation dataset with user requests, instructional videos and pre-actions that vary task starting states. The release includes task metadata and a data archive. | [✓ 2026‑11‑09](https://huggingface.co/api/datasets/hhenryz/WorldGUI-Bench) |
 
 ## Models
 
@@ -43,6 +45,7 @@
 | [InternVL](https://github.com/OpenGVLab/InternVL) | cross-platform, web, desktop, android | — | code MIT | Official repository for the InternVL open-source multimodal foundation model family supporting high-resolution GUI grounding and visual reasoning. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/OpenGVLab/InternVL/HEAD/README.md) |
 | [Magma-8B](https://huggingface.co/microsoft/Magma-8B) | unspecified | [2502.13130](https://arxiv.org/abs/2502.13130) (2025) | weights mit | Magma-8B is a released multimodal agent checkpoint whose card shows UI navigation tasks alongside robot manipulation and describes training with video data. | [✓ 2026‑11‑09](https://huggingface.co/api/models/microsoft/Magma-8B) |
 | [Qwen3-VL / Qwen2.5-VL](https://github.com/QwenLM/Qwen3-VL) | cross-platform, web, desktop, android | [2502.13923](https://arxiv.org/abs/2502.13923) (2025) | code Apache-2.0 | Official repository for the Qwen-VL vision-language model series supporting native visual GUI grounding, computer use, and mobile navigation. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/QwenLM/Qwen3-VL/HEAD/README.md) |
+| [ShowUI-Narrator](https://huggingface.co/FRank62Wu/ShowUI-Narrator) | unspecified | — | weights apache-2.0 | A released 2B model for narrating user actions in GUI screenshots and video, with a pipeline that detects the cursor and processes cropped frames. | [✓ 2026‑11‑09](https://huggingface.co/api/models/FRank62Wu/ShowUI-Narrator) |
 
 ## Frameworks
 
@@ -60,10 +63,27 @@
 | [clickcast](https://github.com/AlexKay28/clickcast) | web | — | code MIT | Playwright browser automation, screenshot, and GIF/MP4/WebP session-recording toolkit and MCP server for AI agents. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/AlexKay28/clickcast/HEAD/README.md) |
 | [DJCLIPZ Agent Controller](https://github.com/form-u-la/djclipz-agent-controller) | web | — | code MIT | Starter kit and controller for driving the DJCLIPZ browser media application programmatically from AI agents. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/form-u-la/djclipz-agent-controller/main/README.md) |
 | [MergeProof](https://github.com/bukacdan/MergeProof) | web | — | code MIT | Installable Agent Skill that records live browser verification demos and attaches them to pull requests. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/bukacdan/MergeProof/main/README.md) |
+| [openadapt-capture](https://github.com/OpenAdaptAI/openadapt-capture) | cross-platform, desktop, windows, macos, linux | — | code MIT | A desktop recorder for GUI demonstrations that pairs mouse and keyboard actions with screen frames and stores sessions for later inspection in Python. | [✓ 2026‑11‑09](https://raw.githubusercontent.com/OpenAdaptAI/openadapt-capture/HEAD/README.md) |
 | [Pagecast MCP](https://github.com/mcpware/pagecast) | web | — | code MIT | Playwright and FFmpeg Model Context Protocol server that records browser agent interactions as GIFs or MP4 videos. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/mcpware/pagecast/HEAD/README.md) |
 | [Product Demo Video Skill](https://github.com/Afnanksalal/product-demo-video-skill) | web, desktop | — | code MIT | Codex and Claude Agent Skill that drives live web products in a browser to record truth-linked walkthrough demo videos. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/Afnanksalal/product-demo-video-skill/main/README.md) |
 | [screencast-desktop](https://github.com/JHamidun/screencast-desktop) | desktop, windows | — | code MIT | Claude Code plugin where an agent drives a Windows desktop application and records the session as a narrated screencast. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/JHamidun/screencast-desktop/main/README.md) |
 | [Sensory-Grounding MCP](https://github.com/luclinocruz/lucross-sensory-grounding-mcp) | cross-platform, desktop, web | — | code Apache-2.0 | Closed-loop visual, audio, and video sensory grounding MCP server for verifying UI state in coding and computer-use agents. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/luclinocruz/lucross-sensory-grounding-mcp/HEAD/README.md) |
+
+## Products
+
+All entries in this section: android.
+
+| Resource | Publisher | Description | Evidence |
+| --- | --- | --- | --- |
+| [FluidGPT](https://fluiz.ai/benchmark) | — | Android agent product presented through recorded AndroidWorld runs. Fluiz reports completion of 116 tasks across 20 apps through screen interaction. | [✓ 2026‑11‑09](https://fluiz.ai/benchmark) |
+
+## Learning resources
+
+All entries in this section: android.
+
+| Resource | License | Description | Evidence |
+| --- | --- | --- | --- |
+| [Finalrun Agentic Approach](https://github.com/final-run/finalrun-android-world-benchmark) | — | Illustrated account of FinalRun's Android agent approach, with task walkthroughs and recordings showing screen observation, action planning, and state checks. | [✓ 2026‑11‑09](https://raw.githubusercontent.com/final-run/finalrun-android-world-benchmark/HEAD/README.md) |
 
 ## Papers
 

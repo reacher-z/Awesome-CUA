@@ -2,9 +2,9 @@
 
 [Home](../../README.md) · [All topics](../topics.md) · [Full arXiv bibliography](../papers.md)
 
-8 source-reviewed resources tagged `history`. Curated metadata; unknown facts are shown as —.
+14 source-reviewed resources tagged `history`. Curated metadata; unknown facts are shown as —.
 
-**Contents:** [Agents (2)](#agents) · [Frameworks (1)](#frameworks) · [Tools (2)](#tools) · [Infrastructure (1)](#infrastructure) · [Products (2)](#products)
+**Contents:** [Agents (2)](#agents) · [Frameworks (1)](#frameworks) · [Tools (8)](#tools) · [Infrastructure (1)](#infrastructure) · [Products (2)](#products)
 
 ## Agents
 
@@ -26,7 +26,13 @@ All entries in this section: web.
 | Resource | Environments | Paper | License | Description | Evidence |
 | --- | --- | --- | --- | --- | --- |
 | [agent-computer-use](https://github.com/kortix-ai/agent-computer-use) | desktop, macos, windows, linux | — | code MIT | Rust CLI (agent-cu) that lets agents snapshot desktop app accessibility trees into element refs or selectors and click, type, scroll or drag through AX on macOS, UI Automation on Windows and AT-SPI2 on Linux. | [✓ 2026‑10‑20](https://raw.githubusercontent.com/kortix-ai/agent-computer-use/HEAD/README.md) |
+| [appium-adb](https://github.com/appium/appium-adb) | android | — | code Apache-2.0 | An Android Debug Bridge wrapper that exposes device operations for Appium. The repository points to the appium-android monorepo for continuing development. | [✓ 2026‑11‑09](https://raw.githubusercontent.com/appium/appium-adb/HEAD/README.md) |
+| [Droidrun iOS Portal](https://github.com/droidrun/ios-portal) | ios | — | code MIT | An archived iOS automation portal that exposes screenshots, accessibility trees, app launch, gestures, and text input through an XCTest HTTP server. | [✓ 2026‑11‑09](https://raw.githubusercontent.com/droidrun/ios-portal/HEAD/README.md) |
+| [openadapt-flow](https://github.com/OpenAdaptAI/openadapt-flow) | cross-platform, web, desktop, windows, macos, linux | — | code MIT | openadapt-flow turns recorded web or desktop tasks into reusable programs, replays them locally, and verifies saved records. Its standalone repository is archived. | [✓ 2026‑11‑09](https://raw.githubusercontent.com/OpenAdaptAI/openadapt-flow/HEAD/README.md) |
+| [openadapt-grounding](https://github.com/OpenAdaptAI/openadapt-grounding) | cross-platform, web, desktop | — | code MIT | An archived GUI element localization package that anchors targets to OCR text and stabilizes detections across frames, with optional model-based fallbacks. | [✓ 2026‑11‑09](https://raw.githubusercontent.com/OpenAdaptAI/openadapt-grounding/HEAD/README.md) |
+| [openadapt-retrieval](https://github.com/OpenAdaptAI/openadapt-retrieval) | unspecified | — | code MIT | Archived retrieval tool that indexes GUI demonstrations from task text and screenshots, then finds similar examples through a Python API or CLI. | [✓ 2026‑11‑09](https://raw.githubusercontent.com/OpenAdaptAI/openadapt-retrieval/HEAD/README.md) |
 | [Sikuli legacy research implementation](https://github.com/sikuli/sikuli) | desktop, macos, linux, windows | [Sikuli: Using GUI screenshots for search and automation](https://doi.org/10.1145/1622176.1622213) (2009), [GUI Testing Using Computer Vision](https://doi.org/10.1145/1753326.1753555) (2010) | code MIT | The original Sikuli source distribution combines screenshot targets with a Jython scripting library and IDE for visual GUI automation and testing. | [✓ 2026‑10‑17](https://raw.githubusercontent.com/sikuli/sikuli/HEAD/docs/source/index.rst) |
+| [WebDriverAgent](https://github.com/appium/WebDriverAgent) | ios | — | — | WebDriverAgent is an iOS WebDriver server for remote app control, including launching apps, tapping, scrolling, and checking views. Development has moved to appium-ios. | [✓ 2026‑11‑09](https://raw.githubusercontent.com/appium/WebDriverAgent/HEAD/README.md) |
 
 ## Infrastructure
 

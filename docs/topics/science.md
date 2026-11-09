@@ -2,14 +2,15 @@
 
 [Home](../../README.md) · [All topics](../topics.md) · [Full arXiv bibliography](../papers.md)
 
-42 source-reviewed resources tagged `science`. Curated metadata; unknown facts are shown as —.
+43 source-reviewed resources tagged `science`. Curated metadata; unknown facts are shown as —.
 
-**Contents:** [Benchmarks (2)](#benchmarks) · [Datasets (2)](#datasets) · [Models (6)](#models) · [Agents (1)](#agents) · [Frameworks (3)](#frameworks) · [Tools (3)](#tools) · [Infrastructure (3)](#infrastructure) · [Papers (22)](#papers)
+**Contents:** [Benchmarks (3)](#benchmarks) · [Datasets (2)](#datasets) · [Models (6)](#models) · [Agents (1)](#agents) · [Frameworks (3)](#frameworks) · [Tools (3)](#tools) · [Infrastructure (3)](#infrastructure) · [Papers (22)](#papers)
 
 ## Benchmarks
 
 | Resource | Environments | Paper | Scale | License | Description | Evidence |
 | --- | --- | --- | --- | --- | --- | --- |
+| [MedSPOT](https://github.com/Tajamul21/MedSPOT) | unspecified | [2603.19993](https://arxiv.org/abs/2603.19993) (2026) | — | — | A sequential GUI grounding benchmark covering 10 medical imaging applications. It evaluates target localization across multi-step workflows and provides model evaluation scripts. | [✓ 2026‑11‑09](https://raw.githubusercontent.com/Tajamul21/MedSPOT/HEAD/README.md) |
 | [OSWorld-Science](https://github.com/DiscoAILab/OSWorld-Science) | desktop, linux, windows | [2609.39903](https://arxiv.org/abs/2609.39903) (2026) | [146 tasks](https://raw.githubusercontent.com/DiscoAILab/OSWorld-Science/HEAD/README.md) | code CC-BY-4.0 | Benchmark harness that runs computer-use agents on scientific-software tasks in per-domain VMs and scores the resulting application states and deliverables with task-specific executable evaluators. | [✓ 2026‑10‑18](https://raw.githubusercontent.com/DiscoAILab/OSWorld-Science/HEAD/README.md) |
 | [ScienceBoard](https://github.com/OS-Copilot/ScienceBoard) | desktop | [2505.19897](https://arxiv.org/abs/2505.19897) (2025) | [169 VM task definitions](https://api.github.com/repos/OS-Copilot/ScienceBoard/git/trees/main?recursive=1) · [6 application families](https://raw.githubusercontent.com/OS-Copilot/ScienceBoard/HEAD/docs/verifier-audit.md) | code MIT | Scientific-workflow tasks for multimodal agents in desktop software such as ChimeraX, KAlgebra, Celestia, Grass GIS and Lean 4, with apps modified to expose state for evaluation. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/OS-Copilot/ScienceBoard/HEAD/README.md) |
 

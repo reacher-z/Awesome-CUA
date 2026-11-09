@@ -2,9 +2,9 @@
 
 [Home](../../README.md) · [All topics](../topics.md) · [Full arXiv bibliography](../papers.md)
 
-170 source-reviewed resources tagged `imitation-learning`. Curated metadata; unknown facts are shown as —.
+173 source-reviewed resources tagged `imitation-learning`. Curated metadata; unknown facts are shown as —.
 
-**Contents:** [Benchmarks (3)](#benchmarks) · [Datasets (28)](#datasets) · [Models (18)](#models) · [Agents (3)](#agents) · [Frameworks (33)](#frameworks) · [Tools (8)](#tools) · [Infrastructure (1)](#infrastructure) · [Products (1)](#products) · [Papers (75)](#papers)
+**Contents:** [Benchmarks (3)](#benchmarks) · [Datasets (28)](#datasets) · [Models (19)](#models) · [Agents (4)](#agents) · [Frameworks (34)](#frameworks) · [Tools (8)](#tools) · [Infrastructure (1)](#infrastructure) · [Products (1)](#products) · [Papers (75)](#papers)
 
 ## Benchmarks
 
@@ -51,6 +51,7 @@
 
 | Resource | Environments | Paper | License | Description | Evidence |
 | --- | --- | --- | --- | --- | --- |
+| [AgentTrek-1.0-32B](https://huggingface.co/xlangai/AgentTrek-1.0-32B) | web | [2412.09605](https://arxiv.org/abs/2412.09605) (2024) | weights apache-2.0 | A web-agent checkpoint fine-tuned from Qwen2.5-32B-Instruct using the AgentTrek trajectory-synthesis project. The release includes model weights. | [✓ 2026‑11‑09](https://huggingface.co/api/models/xlangai/AgentTrek-1.0-32B) |
 | [Go-Browse WebArena Qwen 7B](https://huggingface.co/apurvaga/go-browse-wa-qwen-7B) | web | [2506.03533](https://arxiv.org/abs/2506.03533) (2025) | — | A Qwen-2.5-7B-Instruct checkpoint fine-tuned on Go-Browse WebArena trajectories for website task execution. | [✓ 2026‑10‑17](https://huggingface.co/apurvaga/go-browse-wa-qwen-7B/raw/main/README.md) |
 | [Llama-3-8B-Web](https://huggingface.co/McGill-NLP/Llama-3-8B-Web) | web | [2402.05930](https://arxiv.org/abs/2402.05930) (2024) | weights Meta Llama 3 Community License Agreement | A Llama 3 8B instruction-model checkpoint fine-tuned on WebLINX web interactions and dialogue, predicting browser actions from a textual state representation. | [✓ 2026‑10‑17](https://huggingface.co/McGill-NLP/Llama-3-8B-Web/raw/main/README.md) |
 | [Llama8b-NNetNav-WA](https://huggingface.co/stanfordnlp/llama8b-nnetnav-wa) | web | [2410.02907](https://arxiv.org/abs/2410.02907) (2024) | weights apache-2.0 | A Llama checkpoint trained on demonstrations gathered through WebArena exploration. It takes a task instruction and selects browser actions to navigate webpages. | [✓ 2026‑11‑09](https://huggingface.co/api/models/stanfordnlp/llama8b-nnetnav-wa) |
@@ -77,6 +78,7 @@
 | [Apprentice](https://github.com/bluzername/apprentice) | desktop, macos | — | code Apache-2.0 | Apprentice is a local-first macOS agent that observes repeated user routines across allowlisted apps and replays them with click-by-click approval. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/bluzername/apprentice/HEAD/README.md) |
 | [LearnAct](https://github.com/lgy0404/LearnAct) | unspecified | [2504.13805](https://arxiv.org/abs/2504.13805) (2025) | — | Released inference and evaluation code for demonstration-conditioned mobile GUI agents on LearnGUI-Offline. The repository describes a multi-agent adaptation method and links the LearnGUI demonstrations. | [✓ 2026‑10‑18](https://raw.githubusercontent.com/lgy0404/LearnAct/HEAD/README.md) |
 | [OpenWebVoyager](https://github.com/MinorJerry/OpenWebVoyager) | web | [2401.13919](https://arxiv.org/abs/2401.13919) (2024), [2410.19609](https://arxiv.org/abs/2410.19609) (2024) | code Apache-2.0 | OpenWebVoyager trains multimodal web navigation agents through iterative real-world web exploration, feedback verification, and trajectory tuning. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/MinorJerry/OpenWebVoyager/HEAD/README.md) |
+| [ScribeAgent](https://github.com/colonylabs/ScribeAgent) | web | [2411.15004](https://arxiv.org/abs/2411.15004) (2024) | — | ScribeAgent trains web agents from recorded workflows represented with page HTML and prior actions. The repository provides preprocessing, fine-tuning, and evaluation code. | [✓ 2026‑11‑09](https://raw.githubusercontent.com/colonylabs/ScribeAgent/HEAD/README.md) |
 
 ## Frameworks
 
@@ -97,6 +99,7 @@
 | [Intent Relay WebMCP](https://github.com/midorikuramochi/intent-relay) | web | — | code MIT | Demonstration-driven intent translator that carries user workflow preferences across WebMCP-enabled websites. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/midorikuramochi/intent-relay/main/README.md) |
 | [Maestro (AI-Drivable RPA)](https://github.com/rexchengm/maestro) | desktop, windows, web | — | code Apache-2.0 | Records a desktop or browser task once and lets AI optimize, parameterize, and replay it as a deterministic RPA workflow. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/rexchengm/maestro/HEAD/README.md) |
 | [MemGUI-Agent](https://github.com/kwai/MemGUI-Agent) | android | [2606.19926](https://arxiv.org/abs/2606.19926) (2026) | — | MemGUI-Agent training and offline evaluation tools provide trajectory conversion, LoRA SFT templates, and step-level checks of GUI actions, memory updates and context folding. | [✓ 2026‑10‑20](https://raw.githubusercontent.com/kwai/MemGUI-Agent/main/README.md) |
+| [openadapt-ml](https://github.com/OpenAdaptAI/openadapt-ml) | cross-platform, desktop, macos, windows, web | — | code MIT | A Python research package for GUI-action models, with trajectory schemas, model adapters, fine-tuning, grounding, and a policy interface for predicting the next action. | [✓ 2026‑11‑09](https://raw.githubusercontent.com/OpenAdaptAI/openadapt-ml/HEAD/README.md) |
 | [OpenMobile code](https://github.com/njucckevin/OpenMobile-Code) | android | [2604.15093](https://arxiv.org/abs/2604.15093) (2026) | code Apache-2.0 | OpenMobile pipeline for AndroidWorld: random-walk exploration, memory-based task-instruction synthesis, learner/expert policy-switching rollouts, conversion to LLaMA-Factory SFT data, and AndroidWorld evaluation. | [✓ 2026‑10‑19](https://raw.githubusercontent.com/njucckevin/OpenMobile-Code/faca68f386aff7277cdf494c84693c51090229c6/README.md) |
 | [Operant](https://github.com/AlpharomeroJL/operant) | cross-platform, desktop, macos, windows, linux | — | code Apache-2.0 | Local-first desktop agent runtime that compiles exploratory AI trajectories into deterministic, invariant-gated skills. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/AlpharomeroJL/operant/HEAD/README.md) |
 | [OysterWorkflow](https://github.com/ShuxinYang111/oysterworkflow) | cross-platform, desktop, web | — | code Apache-2.0 | OysterWorkflow captures real human computer work and extracts structured, reusable workflow graphs for AI agents. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/ShuxinYang111/oysterworkflow/HEAD/README.md) |

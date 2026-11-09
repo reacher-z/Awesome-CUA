@@ -2,9 +2,9 @@
 
 [Home](../../README.md) · [All topics](../topics.md) · [Full arXiv bibliography](../papers.md)
 
-138 source-reviewed resources tagged `self-reflection`. Curated metadata; unknown facts are shown as —.
+141 source-reviewed resources tagged `self-reflection`. Curated metadata; unknown facts are shown as —.
 
-**Contents:** [Benchmarks (6)](#benchmarks) · [Datasets (1)](#datasets) · [Models (3)](#models) · [Agents (25)](#agents) · [Frameworks (42)](#frameworks) · [Tools (4)](#tools) · [Products (2)](#products) · [Papers (55)](#papers)
+**Contents:** [Benchmarks (6)](#benchmarks) · [Datasets (1)](#datasets) · [Models (3)](#models) · [Agents (26)](#agents) · [Frameworks (44)](#frameworks) · [Tools (4)](#tools) · [Products (2)](#products) · [Papers (55)](#papers)
 
 ## Benchmarks
 
@@ -40,6 +40,7 @@ All entries in this section: unspecified.
 | [Agentic Android](https://github.com/xDope7137/agentic-android) | android | — | code MIT | LLM-powered Android agent over ADB that reads the screen, executes tap/swipe/type actions, and verifies outcomes at each step. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/xDope7137/agentic-android/HEAD/README.md) |
 | [AgenticX-GUIAgent](https://github.com/DemonDamon/AgenticX-GUIAgent) | android | — | code MIT | AgenticX-GUIAgent is a multi-agent Android GUI automation system with coordinated manager, executor, reflector, and notetaker roles. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/DemonDamon/AgenticX-GUIAgent/HEAD/README.md) |
 | [Anchor-Inference Daedalus](https://github.com/anchor-inference/daedalus) | desktop, macos, linux, web | — | code MIT | Self-developing personal AI agent with its own desktop app, persistent memory, and computer-use tools. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/anchor-inference/daedalus/main/README.md) |
+| [AndroidGen](https://github.com/THUDM/AndroidGen) | android | — | code Apache-2.0 | AndroidGen operates Android tasks using retrieved examples, plan updates, and action checks. Its repository includes agent code and AndroidWorld evaluation scripts. | [✓ 2026‑11‑09](https://raw.githubusercontent.com/THUDM/AndroidGen/HEAD/README.md) |
 | [BLAXCY](https://github.com/alex3430143/blaxcyds) | desktop, linux | — | code MIT | BLAXCY is a policy-gated, self-verifying Linux desktop computer-use agent with action confirmation and state verification. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/alex3430143/blaxcyds/HEAD/README.md) |
 | [BLAXIN](https://github.com/tasinxxx/Blaxin) | desktop, linux | — | code MIT | Open-source AI desktop agent for Linux that plans, executes, and verifies GUI and shell workflows. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/tasinxxx/Blaxin/main/README.md) |
 | [CompBuddy](https://github.com/lewiswlker/CompBuddy) | desktop, macos | — | code MIT | CompBuddy is a background macOS computer-use agent that observes target windows and dispatches Accessibility and CGEvent actions without stealing focus. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/lewiswlker/CompBuddy/HEAD/README.md) |
@@ -67,6 +68,7 @@ All entries in this section: unspecified.
 
 | Resource | Environments | Paper | License | Description | Evidence |
 | --- | --- | --- | --- | --- | --- |
+| [AdaGround](https://github.com/bcwang-sjtu/AdaGround) | cross-platform, desktop, web | [2610.36874](https://arxiv.org/abs/2610.36874) (2026) | code MIT | A training-free GUI grounding framework that adjusts screenshot zoom to target size and checks proposed clicks before accepting or revising them. | [✓ 2026‑11‑09](https://raw.githubusercontent.com/bcwang-sjtu/AdaGround/HEAD/README.md) |
 | [Agent Q](https://github.com/sentient-engineering/agent-q) | web | [2408.07199](https://arxiv.org/abs/2408.07199) (2024) | code MIT | Agent Q combines Monte Carlo Tree Search, AI self-critique, and Direct Preference Optimization for autonomous web navigation. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/sentient-engineering/agent-q/HEAD/README.md) |
 | [Agent-R](https://github.com/ByteDance-Seed/Agent-R) | web | [2501.11425](https://arxiv.org/abs/2501.11425) (2025) | code Apache-2.0 | Trajectory collection and revision utilities that use tree search and model-guided critique to train agents to recover from mistakes, including WebShop tasks. | [✓ 2026‑10‑17](https://raw.githubusercontent.com/ByteDance-Seed/Agent-R/HEAD/README.md) |
 | [Attest](https://github.com/Cyrus580529/Attest) | web | — | code MIT | Self-verifying web agent core where the model proposes candidate actions and the harness validates real DOM state transitions. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/Cyrus580529/Attest/HEAD/README.md) |
@@ -103,6 +105,7 @@ All entries in this section: unspecified.
 | [Seven-Layer Web Agent & Benchmark](https://github.com/xyyojl/web-agent) | web | — | code MIT | Seven-layer LLM browser agent architecture paired with a 45-task hierarchical benchmark and reproducible execution artifacts. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/xyyojl/web-agent/HEAD/README.md) |
 | [SOLO](https://github.com/WZq975/SOLO) | desktop, android, web | [2609.34321](https://arxiv.org/abs/2609.34321) (2026) | — | SOLO performs single-rollout test-time adaptation for GUI agents using online self-supervised feedback during deployment. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/WZq975/SOLO/HEAD/README.md) |
 | [StatePilot](https://github.com/newsbruno/statepilot) | web | — | code MIT | StatePilot is a predictable browser runtime for AI agents with state validation, episodic memory, error recovery, and MCP tools. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/newsbruno/statepilot/HEAD/README.md) |
+| [Tencent AI LAB - Self-Improving Agent](https://github.com/Tencent/SelfEvolvingAgent) | web | [2504.21024](https://arxiv.org/abs/2504.21024) (2025), [2505.20013](https://arxiv.org/abs/2505.20013) (2025) | — | A research code collection for web-agent self-improvement, including WebEvolver's world-model approach and WebCoT's reconstructed reasoning trajectories. | [✓ 2026‑11‑09](https://raw.githubusercontent.com/Tencent/SelfEvolvingAgent/HEAD/README.md) |
 | [Tsaagan](https://github.com/michaelolmos/tsaagan) | web | — | code MIT | Tsaagan is a verify-first browser control framework for AI agents that proves every click and form action succeeded before advancing. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/michaelolmos/tsaagan/HEAD/README.md) |
 | [UI-Voyager](https://github.com/ui-voyager/UI-Voyager) | android | [2603.24533](https://arxiv.org/abs/2603.24533) (2026) | code MIT | UI-Voyager is a self-evolving mobile GUI agent framework that learns from failed execution trajectories via group-relative reflection. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/ui-voyager/UI-Voyager/HEAD/README.md) |
 | [V-Droid](https://github.com/V-Droid-Agent/V-Droid) | android | [2503.15937](https://arxiv.org/abs/2503.15937) (2025) | — | V-Droid pairs a mobile GUI actor with a generative verifier that scores candidate actions before execution on Android devices. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/V-Droid-Agent/V-Droid/HEAD/README.md) |

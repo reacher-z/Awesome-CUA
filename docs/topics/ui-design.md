@@ -2,9 +2,9 @@
 
 [Home](../../README.md) · [All topics](../topics.md) · [Full arXiv bibliography](../papers.md)
 
-103 source-reviewed resources tagged `ui-design`. Curated metadata; unknown facts are shown as —.
+107 source-reviewed resources tagged `ui-design`. Curated metadata; unknown facts are shown as —.
 
-**Contents:** [Benchmarks (7)](#benchmarks) · [Datasets (3)](#datasets) · [Models (1)](#models) · [Agents (4)](#agents) · [Frameworks (11)](#frameworks) · [Tools (22)](#tools) · [Learning resources (1)](#learning-resources) · [Papers (54)](#papers)
+**Contents:** [Benchmarks (8)](#benchmarks) · [Datasets (4)](#datasets) · [Models (1)](#models) · [Agents (5)](#agents) · [Frameworks (12)](#frameworks) · [Tools (22)](#tools) · [Learning resources (1)](#learning-resources) · [Papers (54)](#papers)
 
 ## Benchmarks
 
@@ -16,12 +16,14 @@
 | [Persona UX Test](https://github.com/Ericwong5021/persona-ux-test) | web, desktop | — | — | code MIT | Blind-tests web and desktop user interfaces using isolated AI personas that interact strictly through rendered screens. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/Ericwong5021/persona-ux-test/HEAD/README.md) |
 | [REFRACT-PPTX](https://github.com/Haikong-Lu1206/REFRACT-PPTX) | desktop, web | — | — | code MIT | Agent-guided generation and multi-dimensional visual evaluation benchmark for editable PowerPoint presentation decks. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/Haikong-Lu1206/REFRACT-PPTX/main/README.md) |
 | [UserZero](https://github.com/aafre/userzero) | web | — | — | code MIT | Synthetic first-user evaluation harness that verifies web applications by attempting onboarding and core flows with AI browser agents. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/aafre/userzero/master/README.md) |
+| [WebGen-Bench](https://github.com/mnluzimu/WebGen-Bench) | web | [2505.03733](https://arxiv.org/abs/2505.03733) (2025) | — | — | WebGen-Bench evaluates generated websites with automated tests, including a UI agent that carries out interactions and checks outcomes. The repository supplies evaluation code and data. | [✓ 2026‑11‑09](https://raw.githubusercontent.com/mnluzimu/WebGen-Bench/HEAD/README.md) |
 | [WebsiteBench](https://github.com/TIGER-AI-Lab/WebsiteBench) · [leaderboard](https://website-bench.com/#results) | web | — | [70 tasks](https://raw.githubusercontent.com/TIGER-AI-Lab/WebsiteBench/78f5558e8197bb91b3bab63428c12b92060ddc6f/docs/tasks.md) · [46,916 test cases](https://raw.githubusercontent.com/TIGER-AI-Lab/WebsiteBench/78f5558e8197bb91b3bab63428c12b92060ddc6f/docs/tasks.md) | code Apache-2.0 | Website reconstruction benchmark: agents explore a production-level site through a browser, rebuild a full-stack version, and are scored by hidden functional and visual test cases across 70 tasks. | [✓ 2026‑11‑06](https://raw.githubusercontent.com/TIGER-AI-Lab/WebsiteBench/78f5558e8197bb91b3bab63428c12b92060ddc6f/README.md) |
 
 ## Datasets
 
 | Resource | Environments | Paper | Scale | License | Description | Evidence |
 | --- | --- | --- | --- | --- | --- | --- |
+| [Rico Dataset](https://www.interactionmining.org) | unspecified | — | — | — | Rico Dataset is a collection of mobile app interaction and design data presented through Interaction Mining, with 70k screens and 10k user flows across 5k apps. | [✓ 2026‑11‑09](https://www.interactionmining.org) |
 | [RICO-Screen2Words](https://huggingface.co/datasets/bevaya/RICO-Screen2Words) | android | [2108.03353](https://arxiv.org/abs/2108.03353) (2021) | — | data cc-by-4.0 | RICO-Screen2Words pairs Android app screenshots with human screen summaries, app metadata and view hierarchies for mobile interface understanding. | [✓ 2026‑11‑09](https://huggingface.co/api/datasets/bevaya/RICO-Screen2Words) |
 | [UEyes](https://github.com/YueJiang-nj/UEyes-CHI2023) | cross-platform, web, desktop, android | — | — | — | UEyes is an eye-tracking dataset of 62 participants viewing 1,980 UI screenshots across webpages, desktop interfaces, mobile apps, and posters. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/YueJiang-nj/UEyes-CHI2023/HEAD/README.md) |
 | [UICrit](https://github.com/google-research-datasets/uicrit) | unspecified | — | [1,000 mobile UI screens](https://raw.githubusercontent.com/google-research-datasets/uicrit/HEAD/README.md) · [11,344 design critiques](https://raw.githubusercontent.com/google-research-datasets/uicrit/HEAD/README.md) | — | Mobile-interface critiques and quality ratings with region coordinates and RICO screen references, including a larger three-annotator release than the original paper dataset. | [✓ 2026‑10‑17](https://raw.githubusercontent.com/google-research-datasets/uicrit/HEAD/README.md) |
@@ -38,6 +40,7 @@ All entries in this section: web.
 
 | Resource | Environments | Paper | License | Description | Evidence |
 | --- | --- | --- | --- | --- | --- |
+| [Avenir-UX](https://github.com/Onflow-AI/Avenir-UX) | web | [2604.09581](https://arxiv.org/abs/2604.09581) (2026) | — | Avenir-UX runs web tasks and scores interface usability after agent actions. It combines step assessments with persona settings and produces session reports. | [✓ 2026‑11‑09](https://raw.githubusercontent.com/Onflow-AI/Avenir-UX/HEAD/README.md) |
 | [Momos](https://github.com/iyulab/momos) | web, desktop | — | code AGPL-3.0 | Autonomous UI inspection agent that interacts with live applications to uncover runtime and UX flow defects missed by static analysis. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/iyulab/momos/main/README.md) |
 | [naive-user](https://github.com/TechGardenCode/naive-user) | web | — | code MIT | Source-blind browser agent that explores live web applications as a first-time user to uncover UX friction and broken flows. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/TechGardenCode/naive-user/HEAD/README.md) |
 | [PageLens](https://github.com/heinevwinston-bot/PageLens) | web | — | code MIT | Read-only Claude browser assistant that inspects live webpages and suggests UX and accessibility improvements. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/heinevwinston-bot/PageLens/main/README.md) |
@@ -54,6 +57,7 @@ All entries in this section: web.
 | [maestro-oss](https://github.com/victorkaor/maestro-oss) | cross-platform, desktop, web | — | code MIT | Open-source multi-agent spatial orchestration canvas integrating CLI agents, browser automation, and desktop tools. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/victorkaor/maestro-oss/main/README.md) |
 | [page-agent-sdk](https://github.com/whyymj/page-agent-sdk) | web | — | code ISC | In-page AI assistant SDK that mounts a chat widget and lets LLMs safely read and mutate webpage state via schema-validated tools. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/whyymj/page-agent-sdk/HEAD/README.md) |
 | [Polyform a11y-guide](https://github.com/polyform-ai/a11y-guide) | web | — | code MIT | Semantic accessibility page-guidance layer designed simultaneously for assistive technologies and AI browser agents. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/polyform-ai/a11y-guide/main/README.md) |
+| [RecreationWorld](https://github.com/QwenLM/RecreationWorld) | cross-platform, desktop, linux, macos, windows, android, web | [2609.22000](https://arxiv.org/abs/2609.22000) (2026) | code MIT | Framework for hybrid computer-use agents that inspect running reference apps, implement replicas with coding tools, and verify behavior across five platforms. | [✓ 2026‑11‑09](https://raw.githubusercontent.com/QwenLM/RecreationWorld/HEAD/README.md) |
 | [SameState WebMCP](https://github.com/breeznik/samestate-webmcp) | web | — | code MIT | WebMCP reference architecture exposing Redux frontend state directly to browser agents for synchronized human-agent interaction. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/breeznik/samestate-webmcp/main/README.md) |
 | [Touchline](https://github.com/edenbuilds/touchline) | web | — | code MIT | Multi-agent browser squad for evidence-led website inspection and frontend reconstruction. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/edenbuilds/touchline/main/README.md) |
 | [Venxuix Dccide](https://github.com/venxuix-dccide/Venxuix) | desktop, windows | — | — | 2D/3D agentic operating environment layered above Windows where humans and AI agents co-orchestrate desktop tasks. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/venxuix-dccide/Venxuix/main/README.md) |

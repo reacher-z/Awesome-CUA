@@ -2,9 +2,9 @@
 
 [Home](../../README.md) · [All topics](../topics.md) · [Full arXiv bibliography](../papers.md)
 
-36 source-reviewed resources tagged `survey`. Curated metadata; unknown facts are shown as —.
+42 source-reviewed resources tagged `survey`. Curated metadata; unknown facts are shown as —.
 
-**Contents:** [Benchmarks (1)](#benchmarks) · [Learning resources (5)](#learning-resources) · [Surveys (29)](#surveys) · [Papers (1)](#papers)
+**Contents:** [Benchmarks (1)](#benchmarks) · [Learning resources (11)](#learning-resources) · [Surveys (29)](#surveys) · [Papers (1)](#papers)
 
 ## Benchmarks
 
@@ -18,11 +18,17 @@ All entries in this section: cross-platform, desktop, web.
 
 | Resource | Environments | License | Description | Evidence |
 | --- | --- | --- | --- | --- |
+| [Agentic Web](https://github.com/SafeRL-Lab/agentic-web) | web | code Apache-2.0 | A research reading list on agents and the web, organized around development, retrieval, planning, safety and benchmarks. | [✓ 2026‑11‑09](https://raw.githubusercontent.com/SafeRL-Lab/agentic-web/HEAD/README.md) |
+| [AI Agents for Computer Use](https://github.com/sagerpascal/agents-for-computer-use) | cross-platform, desktop | — | A browsable list of agents for desktop and mobile GUI control, with agent and dataset overviews linked from a companion survey repository. | [✓ 2026‑11‑09](https://raw.githubusercontent.com/sagerpascal/agents-for-computer-use/HEAD/README.md) |
 | [Awesome AI Agent Platforms](https://github.com/Agenta-AI/awesome-ai-agent-platforms) | cross-platform, desktop, web | — | Curated directory of open-source AI agent platforms, digital coworkers, and browser/desktop execution harnesses. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/Agenta-AI/awesome-ai-agent-platforms/main/README.md) |
+| [Awesome Computer Use](https://github.com/philfung/awesome-computer-use) | cross-platform, web, desktop, macos, linux, windows | — | A curated reading list of computer GUI use research and software, linking to agent demos, frameworks, and papers across desktop and web interfaces. | [✓ 2026‑11‑09](https://raw.githubusercontent.com/philfung/awesome-computer-use/HEAD/README.md) |
 | [Awesome GPT-6 Astra](https://github.com/archorfight/awesome-gpt-6-astra) | cross-platform, desktop, web | — | Evidence-linked catalog of computer-use demos, evaluations, and agent workflows with primary source receipts. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/archorfight/awesome-gpt-6-astra/main/README.md) |
 | [Awesome GUI Agent Security](https://github.com/Yuxuan2003/Awesome-GUI-Agent-Security) | cross-platform, desktop, web, android | code MIT | Bilingual curated reading list of GUI, computer-use, and browser agent security papers organized along attack and defense axes. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/Yuxuan2003/Awesome-GUI-Agent-Security/main/README.md) |
 | [Awesome Multimodal Agentic Coding](https://github.com/jiangjin1999/awesome-multimodal-agentic-coding) | cross-platform, desktop, web | code MIT | Comprehensive research map of papers, benchmarks, and tools for multimodal coding and UI-verifying agents. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/jiangjin1999/awesome-multimodal-agentic-coding/main/README.md) |
+| [Awesome Reinforcement Learning for GUI Agents](https://github.com/Steve2457/Awesome-RL-GUI-Agents) | cross-platform | code MIT | A curated reading list of reinforcement learning work on GUI agents, organized by learning methods, reward and efficiency questions, datasets, and training environments. | [✓ 2026‑11‑09](https://raw.githubusercontent.com/Steve2457/Awesome-RL-GUI-Agents/HEAD/README.md) |
 | [Computer-Use Agents: An Overview of Terminal-Based and GUI-Based Approaches](https://github.com/cdxeve/awesome-computer-use-agents) | cross-platform, web, desktop | — | A curated reading list and accompanying report organize computer-use research, including agents that act through web, desktop, and mobile interfaces. | [✓ 2026‑11‑09](https://raw.githubusercontent.com/cdxeve/awesome-computer-use-agents/HEAD/README.md) |
+| [NeurIPS 2025: 45 Computer-Use Agent Papers You Should Know About](https://cua.ai/blog/neurips-2025-cua-papers) | cross-platform, desktop, macos, web | — | An annotated reading list of 45 NeurIPS 2025 computer-use agent papers, organized around benchmarks, safety, grounding and agent architectures. | [✓ 2026‑11‑09](https://cua.ai/blog/neurips-2025-cua-papers) |
+| [Open Operator](https://github.com/OpenHands/open-operator) | cross-platform, web, desktop | code MIT | Open Operator collects resources on computer-use agents, with task categories, benchmark summaries, and pages describing existing agent systems. | [✓ 2026‑11‑09](https://raw.githubusercontent.com/OpenHands/open-operator/HEAD/README.md) |
 
 ## Surveys
 

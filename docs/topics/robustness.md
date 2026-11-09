@@ -2,9 +2,9 @@
 
 [Home](../../README.md) · [All topics](../topics.md) · [Full arXiv bibliography](../papers.md)
 
-282 source-reviewed resources tagged `robustness`. Curated metadata; unknown facts are shown as —.
+288 source-reviewed resources tagged `robustness`. Curated metadata; unknown facts are shown as —.
 
-**Contents:** [Benchmarks (38)](#benchmarks) · [Datasets (4)](#datasets) · [Agents (1)](#agents) · [Frameworks (29)](#frameworks) · [Tools (8)](#tools) · [Products (2)](#products) · [Surveys (2)](#surveys) · [Papers (198)](#papers)
+**Contents:** [Benchmarks (38)](#benchmarks) · [Datasets (5)](#datasets) · [Agents (2)](#agents) · [Frameworks (31)](#frameworks) · [Tools (10)](#tools) · [Products (2)](#products) · [Surveys (2)](#surveys) · [Papers (198)](#papers)
 
 ## Benchmarks
 
@@ -57,20 +57,21 @@
 | [EnvDistraction](https://github.com/xbmxb/EnvDistraction) | desktop, web | [2408.02544](https://arxiv.org/abs/2408.02544) (2024) | — | — | EnvDistraction provides simulated GUI environments and evaluation scripts for measuring multimodal agent susceptibility to environmental distractions. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/xbmxb/EnvDistraction/HEAD/README.md) |
 | [FiftyOne GUI Grounding Training Set with Synthetic Augmentation](https://huggingface.co/datasets/Voxel51/FiftyOne-GUI-Grounding-Train-with-Synthetic) | desktop, macos, web | — | [4,036 samples](https://huggingface.co/datasets/Voxel51/FiftyOne-GUI-Grounding-Train-with-Synthetic/raw/3deedc5d3667696aff317e5e8a3b47d83b9fb48c/README.md) · [739 original annotated screenshots](https://huggingface.co/datasets/Voxel51/FiftyOne-GUI-Grounding-Train-with-Synthetic/raw/3deedc5d3667696aff317e5e8a3b47d83b9fb48c/README.md) · [3,297 synthetic variant samples](https://huggingface.co/datasets/Voxel51/FiftyOne-GUI-Grounding-Train-with-Synthetic/raw/3deedc5d3667696aff317e5e8a3b47d83b9fb48c/README.md) · [4,036 PNG files](https://huggingface.co/api/datasets/Voxel51/FiftyOne-GUI-Grounding-Train-with-Synthetic/revision/3deedc5d3667696aff317e5e8a3b47d83b9fb48c) | data Apache-2.0 | 4,036 GUI screenshots, mostly macOS browser views, with interaction keypoints and task descriptions: 739 manually annotated originals plus 3,297 color-vision and reworded-task variants made with a FiftyOne plugin. | [✓ 2026‑10‑18](https://huggingface.co/datasets/Voxel51/FiftyOne-GUI-Grounding-Train-with-Synthetic/raw/3deedc5d3667696aff317e5e8a3b47d83b9fb48c/README.md) |
 | [RoTS](https://github.com/AlibabaResearch/RoTS) | cross-platform | — | [≈ 800,000 training samples](https://raw.githubusercontent.com/AlibabaResearch/RoTS/HEAD/README.md) | — | Announced GUI trajectory synthesis resources for recovery from policy-induced errors; the inspected repository marks code and data releases as in preparation. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/AlibabaResearch/RoTS/HEAD/README.md) |
+| [WorldGUI-Bench](https://huggingface.co/datasets/hhenryz/WorldGUI-Bench) | desktop | [2502.08047](https://arxiv.org/abs/2502.08047) (2025) | — | data apache-2.0 | A desktop GUI evaluation dataset with user requests, instructional videos and pre-actions that vary task starting states. The release includes task metadata and a data archive. | [✓ 2026‑11‑09](https://huggingface.co/api/datasets/hhenryz/WorldGUI-Bench) |
 
 ## Agents
 
-All entries in this section: macos, desktop, web.
-
-| Resource | Paper | License | Description | Evidence |
-| --- | --- | --- | --- | --- |
-| [AI Mime](https://github.com/prakhar1114/ai_mime) | — | code MIT | macOS app that records a demonstrated task, has an agent compile it into a portable skill of scripts, browser CDP steps and computer-use fallbacks, and patches the skill when a rerun breaks. | [✓ 2026‑10‑20](https://raw.githubusercontent.com/prakhar1114/ai_mime/HEAD/README.md) |
+| Resource | Environments | Paper | License | Description | Evidence |
+| --- | --- | --- | --- | --- | --- |
+| [AI Mime](https://github.com/prakhar1114/ai_mime) | macos, desktop, web | — | code MIT | macOS app that records a demonstrated task, has an agent compile it into a portable skill of scripts, browser CDP steps and computer-use fallbacks, and patches the skill when a rerun breaks. | [✓ 2026‑10‑20](https://raw.githubusercontent.com/prakhar1114/ai_mime/HEAD/README.md) |
+| [WebOperator](https://github.com/kagnlp/WebOperator) | web | [2512.12692](https://arxiv.org/abs/2512.12692) (2025) | code Apache-2.0 | A web agent using action-aware tree search to explore tasks and backtrack, checking page reconstruction and accounting for actions that may change website state. | [✓ 2026‑11‑09](https://raw.githubusercontent.com/kagnlp/WebOperator/HEAD/README.md) |
 
 ## Frameworks
 
 | Resource | Environments | Paper | License | Description | Evidence |
 | --- | --- | --- | --- | --- | --- |
 | [A2R2 (Android Agent Reliability Runtime)](https://github.com/rty90/Android-Agent-Reliability-Runtime) | android | — | — | A2R2 is a black-box safety and reliability runtime for Android GUI agents that intercepts unsafe actions and detects execution loops. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/rty90/Android-Agent-Reliability-Runtime/HEAD/README.md) |
+| [AdaGround](https://github.com/bcwang-sjtu/AdaGround) | cross-platform, desktop, web | [2610.36874](https://arxiv.org/abs/2610.36874) (2026) | code MIT | A training-free GUI grounding framework that adjusts screenshot zoom to target size and checks proposed clicks before accepting or revising them. | [✓ 2026‑11‑09](https://raw.githubusercontent.com/bcwang-sjtu/AdaGround/HEAD/README.md) |
 | [AdvAgent (AdvWeb)](https://github.com/AI-secure/AdvWeb) | web | [2410.17401](https://arxiv.org/abs/2410.17401) (2024) | — | Black-box adversarial prompt-injection red-teaming framework for training and evaluating controllable attacks against VLM web agents. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/AI-secure/AdvWeb/HEAD/README.md) |
 | [AdvAgent (formerly AdvWeb)](https://github.com/AI-secure/AdvAgent) | web | — | — | Research code for constructing and evaluating adversarial inputs to web agents, with a black-box red-team pipeline using Mind2Web data and SeeAct. | [✓ 2026‑10‑17](https://raw.githubusercontent.com/AI-secure/AdvAgent/HEAD/README.md) |
 | [AI-Agentic QA Framework](https://github.com/daud-khan-qa/ai-agentic-qa-framework) | web | — | — | Zero-dependency CDP browser driver and hydration-reliability testing framework for agentic web QA. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/daud-khan-qa/ai-agentic-qa-framework/main/README.md) |
@@ -79,6 +80,7 @@ All entries in this section: macos, desktop, web.
 | [Browser Reliability Runtime](https://github.com/oosuhada/browser-reliability-runtime) | web | — | — | Multimodal browser reliability runtime for failure diagnosis, policy-aware recovery, and action verification. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/oosuhada/browser-reliability-runtime/main/README.md) |
 | [CGL (Continual GUI Learning)](https://github.com/skounputer/CGL) | android, desktop, web | — | code Apache-2.0 | CGL advances continual GUI agent learning across evolving domains via reinforcement fine-tuning without catastrophic forgetting. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/skounputer/CGL/HEAD/README.md) |
 | [ChangeShield](https://github.com/Kxvya18/chnage-shield) | web | — | — | Self-repairing browser automation prototype that detects and adapts to third-party UI selector drift. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/Kxvya18/chnage-shield/main/README.md) |
+| [CollabUIAgents](https://github.com/THUNLP-MT/CollabUIAgents) | unspecified | [2502.14496](https://arxiv.org/abs/2502.14496) (2025) | — | CollabUIAgents trains UI agents with synthesized interaction data and process rewards assigned by collaborating agents. The repository releases data collection and inference code. | [✓ 2026‑11‑09](https://raw.githubusercontent.com/THUNLP-MT/CollabUIAgents/HEAD/README.md) |
 | [DoomArena](https://github.com/ServiceNow/DoomArena) | web, desktop | [2504.14064](https://arxiv.org/abs/2504.14064) (2025) | code Apache-2.0 | A security-testing framework whose attack gateways wrap BrowserGym, OSWorld, tau-bench and mail-agent environments to inject pop-ups, banners and other adversarial content under configurable threat models. | [✓ 2026‑10‑18](https://raw.githubusercontent.com/ServiceNow/DoomArena/HEAD/README.md) |
 | [dsh-OpenLiulan (开放浏览)](https://github.com/haodongzhang022-hue/OpenLiulan) | web | — | — | Self-healing browser control framework for DeepSeek Harness featuring semantic page perception and automated fault recovery. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/haodongzhang022-hue/OpenLiulan/main/README.md) |
 | [DualTAP](https://github.com/fyzhang1/DualTAP) | android | [2511.13248](https://arxiv.org/abs/2511.13248) (2025) | — | DualTAP is a dual-task adversarial protection framework for mobile MLLM GUI agents against environmental and visual prompt attacks. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/fyzhang1/DualTAP/HEAD/README.md) |
@@ -111,7 +113,9 @@ All entries in this section: macos, desktop, web.
 | [GenPark SPA Settlement Waiter Skill](https://github.com/Alpha-Park/genpark-spa-network-idle-settlement-waiter-skill) | web | — | — | Agent skill for awaiting single-page-application network idle and DOM mutation settlement before acting. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/Alpha-Park/genpark-spa-network-idle-settlement-waiter-skill/main/README.md) |
 | [GenPark Viewport Occlusion Resolver Skill](https://github.com/Alpha-Park/genpark-visual-viewport-element-occlusion-resolver-skill) | web | — | — | Agent skill that detects viewport element occlusion and dismisses blocking modals or cookie banners before clicking. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/Alpha-Park/genpark-visual-viewport-element-occlusion-resolver-skill/main/README.md) |
 | [IdemStep](https://github.com/SuperMarioYL/idemstep) | web, desktop | — | code Apache-2.0 | Deduplicates repeated agent actions and HTTP retries using keyed idempotency caches and a local verification proxy. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/SuperMarioYL/idemstep/HEAD/README.md) |
+| [openadapt-grounding](https://github.com/OpenAdaptAI/openadapt-grounding) | cross-platform, web, desktop | — | code MIT | An archived GUI element localization package that anchors targets to OCR text and stabilizes detections across frames, with optional model-based fallbacks. | [✓ 2026‑11‑09](https://raw.githubusercontent.com/OpenAdaptAI/openadapt-grounding/HEAD/README.md) |
 | [Selenium Self-Healing MCP Server](https://github.com/aiqualitylab/selenium-selfhealing-mcp) | web | — | code MIT | MCP server that diagnoses broken Selenium DOM locators after UI changes and synthesizes self-healing replacement selectors. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/aiqualitylab/selenium-selfhealing-mcp/HEAD/README.md) |
+| [WAREX Supplementary Code](https://github.com/SumanKNath/WABER) | web, desktop, linux | — | — | WAREX supplementary code uses mitmproxy add-ons to inject popups or server and network errors into web-agent tests and record token use and latency. | [✓ 2026‑11‑09](https://raw.githubusercontent.com/SumanKNath/WABER/HEAD/README.md) |
 
 ## Products
 

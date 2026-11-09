@@ -18,7 +18,7 @@ import prepare_publication
 from search_pages import SITE
 from sitemaps import sitemap_urls
 from site_config import FORMER_SITES
-from survey_bundle import (PAGE, MANIFEST, REQUIRED_INPUTS, apply_publication, copy_bundle, digest,
+from survey_bundle import (PAGE, apply_site_shell, MANIFEST, REQUIRED_INPUTS, apply_publication, copy_bundle, digest,
                            load_bundle, publication_plan)
 import test_resource_payloads as payloads
 
@@ -38,7 +38,7 @@ def fixture(root):
         authored.write_text('Authored test input only: '+name+'\n', encoding='utf-8')
     files = {
         'index.html': ('<!doctype html><html lang="en"><head><meta name="robots" content="index,follow">'
-                       '<link rel="canonical" href="'+SITE+PAGE+'"></head><body><h1>Survey fixture α</h1>  \n'
+                       '<link rel="canonical" href="'+SITE+PAGE+'"><style>h1{}</style></head><body><header class="article-bar"><a href="/">Own bar</a></header><h1>Survey fixture α</h1>  \n'
                        '<a href="references.bib">References</a></body></html>\n\n').encode('utf-8'),
         'references.bib': b'% Test fixture only.\n', 'references.json': b'[]\n',
         'README.md': b'Publication test fixture.\n', 'evidence/reading-index.json': b'{"records": []}\n',
@@ -245,6 +245,38 @@ class SurveyBundleTests(unittest.TestCase):
         with self.assertRaisesRegex(ValueError, 'search manifest'): self.plan([page])
         self.assertEqual(self.contents(self.site), {})
 
+    def write_article(self, body):
+        (self.source/'index.html').write_bytes(body)
+        value = copy.deepcopy(self.manifest)
+        next(x for x in value['files'] if x['path']=='index.html').update(bytes=len(body), sha256=digest(body))
+        write_json(self.source/MANIFEST, value)
+
+    def shell(self):
+        return apply_site_shell(self.build/'survey', head='<link rel="stylesheet" href="/assets/site.css">',
+                                top='<header class="site-header">Site</header>', bottom='<footer class="site-footer">Foot</footer>')
+
+    def test_site_shell_wraps_the_reviewed_article_and_keeps_its_fingerprint(self):
+        reviewed = (self.source/'index.html').read_bytes()
+        self.copy()
+        page = self.shell()
+        published = (self.build/'survey/index.html').read_bytes()
+        self.assertNotIn(b'article-bar', published)
+        self.assertLess(published.index(b'/assets/site.css'), published.index(b'<style>'))
+        self.assertLess(published.index(b'<header class="site-header">'), published.index(b'<h1>'))
+        self.assertLess(published.index(b'</h1>'), published.index(b'<footer class="site-footer">'))
+        self.assertEqual(page, {'path': PAGE, 'indexable': True, 'sha256': digest(published)})
+        manifest = json.loads((self.build/'survey'/MANIFEST).read_bytes())
+        self.assertEqual(manifest['reviewed_index_sha256'], digest(reviewed))
+        # The publication plan accepts the shelled page against its rewritten manifest.
+        self.assertEqual(self.plan([page])['payloads']['index.html'], published)
+
+    def test_site_shell_needs_the_article_bar_and_changes_nothing_without_it(self):
+        self.write_article((self.source/'index.html').read_bytes().replace(b'class="article-bar"', b'class="other"'))
+        self.copy()
+        before = self.contents(self.build/'survey')
+        with self.assertRaisesRegex(ValueError, 'article bar'): self.shell()
+        self.assertEqual(self.contents(self.build/'survey'), before)
+
     def test_linked_optional_companion_cannot_be_removed_only_from_manifest(self):
         path = self.source/'index.html'
         body = path.read_bytes().replace(b'</body>', b'<a href="evidence/retired.json">Evidence</a></body>')
@@ -272,15 +304,20 @@ class SurveySiteIntegrationTests(unittest.TestCase):
             self.build_site()
         manifest = json.loads((self.build/'data/search-manifest.json').read_bytes())
         pages = {p['path']:p for p in manifest['pages']}
-        self.assertEqual(pages[PAGE]['sha256'], hashlib.sha256((source/'index.html').read_bytes()).hexdigest())
-        self.assertEqual((self.build/'survey/index.html').read_bytes(), (source/'index.html').read_bytes())
+        published = (self.build/'survey/index.html').read_bytes()
+        self.assertEqual(pages[PAGE]['sha256'], hashlib.sha256(published).hexdigest())
+        self.assertIn('<h1>Survey fixture α</h1>'.encode('utf-8'), published)
+        self.assertIn(b'class="site-footer"', published)
+        self.assertEqual(json.loads((self.build/'survey'/MANIFEST).read_bytes())['reviewed_index_sha256'],
+                         hashlib.sha256((source/'index.html').read_bytes()).hexdigest())
+        self.assertEqual((self.build/'survey/references.bib').read_bytes(), (source/'references.bib').read_bytes())
         self.assertIn(SITE+PAGE,(self.build/'sitemap.txt').read_text(encoding='utf-8').splitlines())
         self.assertIn(SITE+PAGE,sitemap_urls(self.build,SITE))
         for name in ['llms.txt','llms-full.txt']:
             self.assertIn(SITE+PAGE,(self.build/name).read_text(encoding='utf-8'))
         self.assertEqual(len(json.loads((self.build/'data/records.json').read_bytes())),len(self.rows))
         self.publish()
-        self.assertEqual((self.site/'survey/index.html').read_bytes(), (source/'index.html').read_bytes())
+        self.assertEqual((self.site/'survey/index.html').read_bytes(), published)
         self.assertIn(SITE+PAGE,(self.site/'README.md').read_text(encoding='utf-8'))
         shutil.rmtree(source)
         self.build_site();self.publish()

@@ -20,6 +20,7 @@ from site_config import SITE, scan_schedule
 import home_page
 import site_shell
 from agent_files import FULL_ORDER, catalog_markdown, compact_entry, home_markdown, kind_markdown, library_markdown, link, llms_full, llms_txt, paper_hub_markdown
+from survey_bundle import apply_site_shell
 from discovery_files import FEED_SIZE, FEED_TITLE, feed_entry, robots_txt, write_feeds
 from site_data import PAPER_KINDS, catalog_counts, eligible, latest, newest_reviewed, record_modified, review_dates
 from static_api import API_SUMMARY, API_TITLE, api_docs_body, api_docs_markdown, write_api
@@ -408,7 +409,8 @@ def build_search_pages(destination, rows, coverage, root, *, survey_page=None):
     view=home_page.catalog_view(rows,reviewed,coverage,root)
     (destination/'data/search-index.json').write_text(json.dumps(home_page.search_index(view),ensure_ascii=False,separators=(',',':'))+'\n',encoding='utf-8')
     if survey_page:
-        # The reviewed standalone article is already final: never normalize its bytes.
+        # The reviewed article gains the site header and footer here and is otherwise never normalized.
+        survey_page=apply_site_shell(destination/'survey',head=site_shell.head_assets('en'),top=site_shell.top(path='/survey/'),bottom=site_shell.bottom())
         if survey_page != {'path':'/survey/','indexable':True,'sha256':hashlib.sha256((destination/'survey/index.html').read_bytes()).hexdigest()}:
             raise ValueError('Survey page does not match its copied bytes')
         manifest.append(dict(survey_page))

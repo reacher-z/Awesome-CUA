@@ -194,6 +194,26 @@ def copy_bundle(source, destination, *, source_root, site_url):
     return bundle['page']
 
 
+def apply_site_shell(directory, *, head, top, bottom):
+    """Publish a copied article inside the current site header and footer; the manifest keeps the reviewed fingerprint."""
+    index, manifest_path = checked_path(directory, 'index.html'), checked_path(directory, MANIFEST)
+    reviewed = index.read_bytes()
+    manifest = parse_json(manifest_path.read_bytes())
+    document = reviewed.decode('utf-8')
+    document, bars = re.subn(r'<header class="article-bar">.*?</header>', lambda _: top, document, count=1, flags=re.S)
+    if not bars or document.count('</body>') != 1 or '<style>' not in document:
+        raise ValueError('Survey HTML needs one article bar, one closing body tag and an embedded stylesheet')
+    # The site stylesheet comes first, so the article's reading styles decide its own column.
+    document = document.replace('<style>', head + '<style>', 1).replace('</body>', bottom + '</body>')
+    body = document.encode('utf-8')
+    manifest['reviewed_index_sha256'] = digest(reviewed)
+    manifest['files'] = [dict(item, bytes=len(body), sha256=digest(body)) if item['path'] == 'index.html' else item
+                         for item in manifest['files']]
+    index.write_bytes(body)
+    manifest_path.write_text(json.dumps(manifest, ensure_ascii=False, indent=2, sort_keys=True) + '\n', encoding='utf-8')
+    return {'path': PAGE, 'indexable': True, 'sha256': digest(body)}
+
+
 def publication_plan(build, site, *, source_root, site_url, pages):
     """Validate the incoming bundle and all owned deletion paths before publication changes anything."""
     build, site = Path(build), Path(site)

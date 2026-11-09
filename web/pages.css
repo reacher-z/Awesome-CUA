@@ -153,8 +153,7 @@ html:has(.topic-directory,.paper-library,.data-hub){scroll-behavior:auto}
 @media (max-width:767px){.reading-shell{width:calc(100% - 32px)}}
 
 /* Reading pages: a 12 px floor for metadata, code that scrolls instead of being cut off, 44 px targets at touch sizes. */
-.reading-shell :is(.library-topics a,.library-topics>span,.paper-year-heading>span,.paper-year-heading>a,.paper-years a span,.paper-years>span,.topic-overview,.topic-overview a,.topic-method,.topic-method a,.compare-table td>div,.compare-table summary,.library-method,.library-method a,.paper-date,.paper-date>span,.paper-date time,.paper-authors,.paper-publication,.paper-facets a,.paper-facets span,.paper-entry-links a,.paper-asset-kind,.paper-asset-more,.library-range,.source-list code,.source-list summary,.topic-sections a,.topic-kind,.topic-resource-meta,.topic-resource-authors,.topic-resource-facets,.topic-resource-links,.agent-field-table code,.category-directory span,.list-overline,.reading-list small,.topic-table-help,.topic-matrix thead th,.library-connected-count,.library-downloads .button,.breadcrumbs){font-size:.75rem}
-.reading-shell a.paper-asset{font-size:.75rem}
+.reading-shell :is(.library-topics a,.library-topics>span,.paper-year-heading>span,.paper-year-heading>a,.paper-years a span,.paper-years>span,.topic-overview,.topic-overview a,.topic-method,.topic-method a,.library-method,.library-method a,.paper-date,.paper-date>span,.paper-date time,.paper-authors,.paper-publication,.paper-facets a,.paper-facets span,.paper-entry-links a,.paper-asset-kind,.library-range,.source-list code,.topic-sections a,.topic-kind,.topic-resource-meta,.topic-resource-authors,.topic-resource-facets,.topic-resource-links,.agent-field-table code,.category-directory span,.topic-table-help,.topic-matrix thead th){font-size:.75rem}
 .reading-shell pre{max-width:100%;overflow-x:auto}
 .reading-shell pre code{overflow-wrap:normal}
 .reading-shell details code{overflow-wrap:anywhere}

@@ -181,6 +181,37 @@ class SearchPagesTests(unittest.TestCase):
                 self.assertEqual(names[-len(expected):],expected,(kind,lang))
                 self.assertEqual(len(ids),len(set(ids)),(kind,lang))
 
+    def test_category_pages_open_with_a_definition_a_comparison_table_and_questions(self):
+        import category_guides
+        for kind in {row['kind'] for row in self.rows if eligible(row)}-{'paper'}:
+            count=sum(eligible(row) and row['kind']==kind for row in self.rows)
+            for lang in ('en','zh'):
+                pages=self.category_pages(kind,lang)
+                text=(self.dest/pages[0]).read_text()
+                intro=html.unescape(re.sub(r'<[^>]+>','',re.search(r'<p class="list-intro">(.*?)</p>',text,re.S).group(1)))
+                self.assertTrue(intro.startswith(category_guides.definition(kind,lang=='zh')),(kind,lang))
+                if lang=='en':self.assertLessEqual(len(intro.split()),60,kind)
+                guide=text.index('<section class="wrap cat-guide"')
+                self.assertLess(text.index('<p class="list-intro">'),guide)
+                self.assertLess(guide,text.index('data-list-rows'))
+                table=re.search(r'<div class="choose"><table>(.*?)</table>',text,re.S).group(1)
+                self.assertEqual(table.count('<th scope="row">'),min(category_guides.ROWS,count),(kind,lang))
+                graph=json.loads(re.search(r'<script type="application/ld\+json">(.*?)</script>',text,re.S).group(1))['@graph']
+                faq=[item for item in graph if item['@type']=='FAQPage']
+                self.assertEqual(len(faq),1,(kind,lang))
+                questions=faq[0]['mainEntity']
+                self.assertTrue(3<=len(questions)<=5,(kind,lang,len(questions)))
+                visible=html.unescape(re.sub(r'<[^>]+>','',text[guide:text.index('data-list-rows')]))
+                for question in questions:
+                    self.assertIn(question['name'],visible)
+                    self.assertIn(question['acceptedAnswer']['text'],visible)
+                for later in pages[1:]:
+                    self.assertNotIn('FAQPage',(self.dest/later).read_text())
+                    self.assertNotIn('cat-guide',(self.dest/later).read_text())
+                markdown=(self.dest/pages[0].replace('index.html','index.md')).read_text()
+                self.assertIn(category_guides.definition(kind,lang=='zh'),markdown)
+                for question in questions:self.assertIn('### '+question['name'],markdown)
+
     def test_benchmarks_feature_websitebench_then_clawbench_above_the_full_list(self):
         for path,heading in (('categories/benchmark/index.html','Featured'),('zh/categories/benchmark/index.html','精选')):
             text,names=self.category_rows(path)

@@ -20,6 +20,7 @@ from data_hub import build_download_manifest, data_hub_body
 from data_hub import data_hub_markdown
 from site_config import SITE, scan_schedule
 import home_page
+import category_guides
 from zh_summaries import zh_summary
 import site_shell
 from agent_files import FULL_ORDER, catalog_markdown, category_title, compact_entry, home_markdown, kind_markdown, library_markdown, link, llms_full, llms_txt, paper_hub_markdown
@@ -167,8 +168,8 @@ def list_head(title,intro,links):
     return f'<header class="wrap list-head"><h1>{esc(title)}</h1><p class="list-intro">{intro}</p><div class="list-stats">{links}</div></header>'
 
 
-def category_body(kind,label,selected,featured,*,zh=False,total=None,pager=''):
-    """One category: its head, the featured rows if it has any, then every reviewed record with an in-page filter."""
+def category_body(kind,label,selected,featured,*,zh=False,total=None,pager='',guide=''):
+    """One category: its head with the definition, the guide (page 1), the featured rows if it has any, then every reviewed record with an in-page filter."""
     tr=lambda en,cn:cn if zh else en
     name=home_page.KINDS[kind][2] if zh else label.lower()
     count=f'{total if total is not None else len(selected):,}'
@@ -177,8 +178,8 @@ def category_body(kind,label,selected,featured,*,zh=False,total=None,pager=''):
     wider=f'/explore/?{"lang=zh&" if zh else ""}kind={kind}#catalog'
     search=tr('Search all records in this category','搜索此类别的全部记录')
     links+=f'<a href="{esc(wider)}">{search}</a><a href="{"/zh/catalog/" if zh else "/catalog/"}">{tr("All categories","全部类别")}</a>'
-    intro=tr(f'{count} reviewed {esc(name)} connected to computer-use, GUI, web, and mobile agents. Each entry links to primary evidence and records its scope.',f'{count} 条已审核的{esc(name)}，涵盖计算机使用、GUI、网页与移动端智能体。每条都链接到一手证据并记录范围。')
-    body=list_head(category_title(name,'zh' if zh else 'en'),intro,links)
+    intro=tr(f'{esc(category_guides.definition(kind,False))} The catalog lists {count} reviewed {esc(name)}, each linked to its primary evidence.',f'{esc(category_guides.definition(kind,True))}目录收录 {count} 条已审核{esc(name)}，每条都链接到一手证据。')
+    body=list_head(category_title(name,'zh' if zh else 'en'),intro,links)+guide
     if featured:
         body+=f'<section class="wrap list-all" aria-labelledby="list-featured-h" data-list-featured><div class="sec-head"><div><h2 id="list-featured-h">{tr("Featured","精选")}</h2></div></div><ul class="rows list-rows" data-single>{listing(featured,zh=zh,anchor=False)}</ul></section>'
     tools=''
@@ -539,11 +540,11 @@ def build_search_pages(destination, rows, coverage, root, *, survey_page=None):
             selected=sorted(selected,key=lambda r:(-len(view['mentions'].get(r['id'],())),r['name'].casefold()))
             featured=home_page.featured_records(view) if kind=='benchmark' else []
             (destination/f'categories/{kind}').mkdir(parents=True,exist_ok=True)
-            (destination/f'categories/{kind}/index.md').write_text(clean_text(kind_markdown(kind,label,selected,site=SITE,snapshot=snapshot,full_markdown=full_markdown)),encoding='utf-8')
+            (destination/f'categories/{kind}/index.md').write_text(clean_text(kind_markdown(kind,label,selected,site=SITE,snapshot=snapshot,full_markdown=full_markdown,definition=category_guides.definition(kind,False),guide=category_guides.guide_markdown(kind,selected,view,zh=False,snapshot=snapshot))),encoding='utf-8')
             zh_label=home_page.KINDS[kind][2]
             zh_first=destination/f'zh/categories/{kind}/index.md'
             zh_first.parent.mkdir(parents=True,exist_ok=True)
-            zh_first.write_text(clean_text(kind_markdown(kind,zh_label,selected,site=SITE,snapshot=snapshot,full_markdown=zh_category_markdown,language='zh')),encoding='utf-8')
+            zh_first.write_text(clean_text(kind_markdown(kind,zh_label,selected,site=SITE,snapshot=snapshot,full_markdown=zh_category_markdown,language='zh',definition=category_guides.definition(kind,True),guide=category_guides.guide_markdown(kind,selected,view,zh=True,snapshot=snapshot))),encoding='utf-8')
             # Long categories split into pages that stay inside the per-page byte budget; the filter works on each page.
             pages=([selected[i:i+CATEGORY_PAGE_SIZE] for i in range(0,len(selected),CATEGORY_PAGE_SIZE)] or [[]])
         for number,members in enumerate(pages,1):
@@ -570,15 +571,16 @@ def build_search_pages(destination, rows, coverage, root, *, survey_page=None):
                     f'<a href="{category_link(n)}"' + (' aria-current="page"' if n==number else '') + f'>Page {n}</a>' for n in range(1,len(pages)+1))+'</nav>'
                 zh_pager='' if len(pages)==1 else '<nav class="pager" aria-label="类别分页">'+''.join(
                     f'<a href="{category_link(n,zh=True)}"' + (' aria-current="page"' if n==number else '') + f'>第 {n} 页</a>' for n in range(1,len(pages)+1))+'</nav>'
-                page_body=category_body(kind,label,members,featured if number==1 else [],total=len(selected),pager=en_pager)
+                guide,faq_node,_=category_guides.guide(kind,selected,view,zh=False,snapshot=snapshot,url=SITE+path) if number==1 else ('',None,None)
+                page_body=category_body(kind,label,members,featured if number==1 else [],total=len(selected),pager=en_pager,guide=guide)
                 schema={"@type":"ItemList","name":category_title(label),"numberOfItems":len(members),"itemListElement":[{"@type":"ListItem","position":(number-1)*CATEGORY_PAGE_SIZE+i+1,"url":SITE+resource_path(r),"name":r['name']} for i,r in enumerate(members)]}
             else:
-                page_body=body
+                page_body=body;faq_node=None
             crumbs=[("AwesomeCUA","/"),("Catalog","/catalog/"),(label,f'/categories/{kind}/')]
             if number>1:
                 crumbs.append((f'Page {number}',path))
             title=category_title(label)+(f', page {number}' if number>1 else '')
-            emit(path,page(title,f'Reviewed {label.lower()} for computer-use and GUI agents, with original sources, platform tags, and license evidence.',path,page_body,schema,crumbs=crumbs,alternatives=alternatives,landing=kind!='paper'),lastmod=modified(selected),alternates=alternatives)
+            emit(path,page(title,f'Reviewed {label.lower()} for computer-use and GUI agents, with original sources, platform tags, and license evidence.',path,page_body,schema,crumbs=crumbs,alternatives=alternatives,landing=kind!='paper',extra_graph=[faq_node] if faq_node else ()),lastmod=modified(selected),alternates=alternatives)
             if kind!='paper':
                 zh_name=home_page.KINDS[kind][2]
                 zh_schema={**schema,"name":category_title(zh_name,"zh")}
@@ -586,8 +588,9 @@ def build_search_pages(destination, rows, coverage, root, *, survey_page=None):
                 if number>1:
                     zh_crumbs.append((f'第 {number} 页',zh_path))
                 zh_title=category_title(zh_name,'zh')+(f'（第 {number} 页）' if number>1 else '')
-                zh_body=category_body(kind,label,members,featured if number==1 else [],zh=True,total=len(selected),pager=zh_pager)
-                emit(zh_path,page(zh_title,f'面向计算机使用与 GUI 智能体的已审核{zh_name}，按目录提及次数排序。每条记录都链接到原始来源，并附平台标签、许可证据与审核状态，便于比较和引用。',zh_path,zh_body,zh_schema,lang='zh-CN',crumbs=zh_crumbs,alternatives=alternatives,landing=True),lastmod=modified(selected),alternates=alternatives)
+                zh_guide,zh_faq,_=category_guides.guide(kind,selected,view,zh=True,snapshot=snapshot,url=SITE+zh_path) if number==1 else ('',None,None)
+                zh_body=category_body(kind,label,members,featured if number==1 else [],zh=True,total=len(selected),pager=zh_pager,guide=zh_guide)
+                emit(zh_path,page(zh_title,f'面向计算机使用与 GUI 智能体的已审核{zh_name}，按目录提及次数排序。每条记录都链接到原始来源，并附平台标签、许可证据与审核状态，便于比较和引用。',zh_path,zh_body,zh_schema,lang='zh-CN',crumbs=zh_crumbs,alternatives=alternatives,landing=True,extra_graph=[zh_faq] if zh_faq else ()),lastmod=modified(selected),alternates=alternatives)
     for kind,plural,title in [('benchmark','benchmarks','Compare GUI-agent benchmark protocols'),('dataset','datasets','Compare GUI-agent training datasets')]:
         path=f'/compare/{plural}/'
         export=profile_export(rows,kind)

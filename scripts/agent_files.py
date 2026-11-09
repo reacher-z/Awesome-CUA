@@ -55,7 +55,7 @@ def category_title(label, language='en'):
     return 'Computer-use agents' if label.lower() == 'agents' else f'Computer-use agent {label.lower()}'
 
 
-def kind_markdown(kind, label, records, *, site, snapshot, full_markdown, language='en'):
+def kind_markdown(kind, label, records, *, site, snapshot, full_markdown, language='en', definition='', guide=''):
     """Markdown version of a category page: every reviewed record of the kind with its full annotation."""
     lines = [f'# {category_title(label)}', '',
              f'> {plural(len(records), "curated record")} of this kind in the AwesomeCUA catalog, each with its complete annotation, primary evidence and license declarations. Snapshot {snapshot}.', '',
@@ -65,6 +65,10 @@ def kind_markdown(kind, label, records, *, site, snapshot, full_markdown, langua
         lines = [f'# {category_title(label, "zh")}', '',
                  f'> AwesomeCUA 目录收录 {len(records):,} 条已审核{label}。每条附有完整注释、一手证据和许可证信息。快照：{snapshot}。', '',
                  f'HTML 页面：{site}/zh/categories/{kind}/ · {link("English", site + "/categories/" + kind + "/index.md")} · 目录索引：{site}/llms.txt · API：{site}/api/v1/{"papers" if kind in PAPER_KINDS else "resources"}.json']
+    if definition:
+        lines[2:2] = [definition, '']
+    if guide:
+        lines += ['', guide]
     return '\n'.join(lines) + ''.join('\n\n---\n\n' + full_markdown(record, 2).rstrip('\n') for record in records) + '\n'
 
 

@@ -80,8 +80,8 @@ class ScanFreshnessTests(unittest.TestCase):
 
     def test_configured_limit_allows_one_scheduled_interval_plus_slack(self):
         config = scan.read_json(ROOT / "data" / "scan-config.json")
-        self.assertEqual(config["scan_times_local"], [f"{hour:02d}:07" for hour in range(0, 24, 2)])
-        self.assertEqual(config["max_scan_age_hours"], 5)
+        self.assertEqual(config["scan_times_local"], [f"{hour:02d}:07" for hour in (0, 8, 16)])
+        self.assertEqual(config["max_scan_age_hours"], 9)
 
 
 class FreshnessWorkflowTests(unittest.TestCase):
@@ -92,7 +92,7 @@ class FreshnessWorkflowTests(unittest.TestCase):
 
     def test_runs_on_a_schedule_and_on_demand(self):
         self.assertIn("  schedule:\n", self.text)
-        self.assertRegex(self.text, r"    - cron: '\d+ \*/3 \* \* \*'\n")
+        self.assertRegex(self.text, r"    - cron: '\d+ \*/8 \* \* \*'\n")
         self.assertIn("  workflow_dispatch:\n", self.text)
         self.assertIn("\npermissions: {}\n", self.text)
 

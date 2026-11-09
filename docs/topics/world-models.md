@@ -2,9 +2,9 @@
 
 [Home](../../README.md) · [All topics](../topics.md) · [Full arXiv bibliography](../papers.md)
 
-53 source-reviewed resources tagged `world-models`. Curated metadata, not a performance ranking; unknown facts are shown as —.
+76 source-reviewed resources tagged `world-models`. Curated metadata; unknown facts are shown as —.
 
-**Contents:** [Datasets (3)](#datasets) · [Models (2)](#models) · [Frameworks (2)](#frameworks) · [Papers (46)](#papers)
+**Contents:** [Datasets (4)](#datasets) · [Models (7)](#models) · [Agents (2)](#agents) · [Frameworks (10)](#frameworks) · [Tools (1)](#tools) · [Surveys (1)](#surveys) · [Papers (51)](#papers)
 
 ## Datasets
 
@@ -12,6 +12,7 @@
 | --- | --- | --- | --- | --- | --- | --- |
 | [AndroidCode](https://huggingface.co/datasets/GD-ML/AndroidCode) | android | [2602.09856](https://arxiv.org/abs/2602.09856) (2026) | [> 80,000 screen–action pairs](https://raw.githubusercontent.com/AMAP-ML/Code2World/HEAD/readme.md) | data MIT | HTML and annotation release used for Code2World’s action-conditioned GUI-state prediction training, constructed from mobile GUI trajectories. | [✓ 2026‑10‑18](https://raw.githubusercontent.com/AMAP-ML/Code2World/HEAD/readme.md) |
 | [Dreamer V1 Data](https://huggingface.co/datasets/osunlp/Dreamer-V1-Data) | web | [2411.06559](https://arxiv.org/abs/2411.06559) (2024) | — | data cc-by-nc-sa-4.0 | Web-world-model training data with prompts, images, action descriptions, and responses, released with the WebDreamer project. | [✓ 2026‑10‑16](https://huggingface.co/datasets/osunlp/Dreamer-V1-Data/raw/main/README.md) |
+| [Mobile-GUI-Worldmodel-SFT](https://huggingface.co/datasets/xwk123/Mobile-GUI-Worldmodel-SFT) | android | — | — | data other | A mobile GUI dataset for world-model training and evaluation. Its trajectory archives pair screenshots with page-state text and action-formatted training examples. | [✓ 2026‑11‑09](https://huggingface.co/api/datasets/xwk123/Mobile-GUI-Worldmodel-SFT) |
 | [WebEvolver SFT data](https://huggingface.co/datasets/CognitiveKernel/WebEvolver) | web | [2504.21024](https://arxiv.org/abs/2504.21024) (2025) | — | data MIT | Two JSONL collections for supervised fine-tuning the WebEvolver agent policy and web world model. | [✓ 2026‑10‑18](https://huggingface.co/datasets/CognitiveKernel/WebEvolver/raw/13f4f45b359e138a45b1c89bd4e913298c586ca9/README.md) |
 
 ## Models
@@ -20,20 +21,57 @@
 | --- | --- | --- | --- | --- | --- |
 | [Code2World-8B checkpoint](https://huggingface.co/GD-ML/Code2World) | android | [2602.09856](https://arxiv.org/abs/2602.09856) (2026) | weights MIT | Released GUI world-model checkpoint that turns a screenshot and proposed action into HTML for rendering a predicted next screen. | [✓ 2026‑10‑18](https://huggingface.co/GD-ML/Code2World/raw/3e48194a8228570164ecd510f9d83ac839e9e931/README.md) |
 | [Dreamer-7B](https://huggingface.co/osunlp/Dreamer-7B) | web | [2411.06559](https://arxiv.org/abs/2411.06559) (2024) | weights apache-2.0 | WebDreamer model checkpoint that predicts the consequences of web actions from screenshots and textual descriptions. | [✓ 2026‑10‑16](https://huggingface.co/osunlp/Dreamer-7B/raw/main/README.md) |
+| [Dreamer-7B-Classifieds](https://huggingface.co/osunlp/Dreamer-7B-Classifieds) | web | [2411.06559](https://arxiv.org/abs/2411.06559) (2024) | weights apache-2.0 | Dreamer-7B-Classifieds is a WebDreamer checkpoint for the Classifieds web domain. It supports planning by simulating the results of candidate actions. | [✓ 2026‑11‑09](https://huggingface.co/api/models/osunlp/Dreamer-7B-Classifieds) |
+| [Dreamer-7B-Reddit](https://huggingface.co/osunlp/Dreamer-7B-Reddit) | web | [2411.06559](https://arxiv.org/abs/2411.06559) (2024) | weights apache-2.0 | Dreamer-7B-Reddit is a Reddit-domain checkpoint for WebDreamer. It predicts the screen state after a proposed action to support web-agent planning. | [✓ 2026‑11‑09](https://huggingface.co/api/models/osunlp/Dreamer-7B-Reddit) |
+| [Dreamer-7B-Shopping](https://huggingface.co/osunlp/Dreamer-7B-Shopping) | web | [2411.06559](https://arxiv.org/abs/2411.06559) (2024) | weights apache-2.0 | A shopping-domain Dreamer-7B checkpoint for WebDreamer, which uses screenshot-conditioned predictions of candidate web actions to support agent planning. | [✓ 2026‑11‑09](https://huggingface.co/api/models/osunlp/Dreamer-7B-Shopping) |
+| [gWorld (GuiWorld)](https://github.com/trillion-labs/gWorld) | android | [2602.01576](https://arxiv.org/abs/2602.01576) (2026) | — | gWorld is an open-weight 8B/32B mobile GUI world model that predicts next-step screen states via renderable web code generation. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/trillion-labs/gWorld/HEAD/README.md) |
+| [Textual Foresight](https://github.com/aburns4/textualforesight) | android | [2406.07822](https://arxiv.org/abs/2406.07822) (2024) | code BSD-3-Clause | Textual Foresight pretrains UI representations by predicting textual descriptions of future screen states resulting from mobile UI actions. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/aburns4/textualforesight/HEAD/README.md) |
+
+## Agents
+
+| Resource | Environments | Paper | License | Description | Evidence |
+| --- | --- | --- | --- | --- | --- |
+| [Octopus](https://github.com/dongyh20/Octopus) | desktop | — | — | Octopus is a vision-language programmer agent trained with environmental feedback to generate executable control code in GTA and Gibson worlds. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/dongyh20/Octopus/HEAD/README.md) |
+| [WMA Web Agent](https://github.com/kyle8581/WMA-Agents) | web | [2410.13232](https://arxiv.org/abs/2410.13232) (2024) | — | A web agent uses a learned world model to predict consequential page changes before choosing an action. The repository includes trajectory processing and inference code. | [✓ 2026‑11‑09](https://raw.githubusercontent.com/kyle8581/WMA-Agents/HEAD/README.md) |
 
 ## Frameworks
 
-All entries in this section: web.
+| Resource | Environments | Paper | License | Description | Evidence |
+| --- | --- | --- | --- | --- | --- |
+| [AutoCoA](https://github.com/ADaM-BJTU/AutoCoA) | unspecified | — | code MIT | AutoCoA internalizes Chain-of-Action generation into reasoning models via step-level SFT, reinforcement learning, and simulated tool world models. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/ADaM-BJTU/AutoCoA/HEAD/README.md) |
+| [GUI-Trajectory-Virtual](https://github.com/Futuresis/GUI-Trajectory-Virtual) | android | [2601.18842](https://arxiv.org/abs/2601.18842) (2026) | code MIT | Synthesizes Android agent trajectories without a device: an image model behind a chat-completions API draws each next screen from the previous screenshot and the action chosen by a Mobile-Agent-v3-style agent. | [✓ 2026‑10‑18](https://raw.githubusercontent.com/Futuresis/GUI-Trajectory-Virtual/8ccef36747ca140471206534824b9f2f6278d37d/README.md) |
+| [LGWM (Latent GUI World Model)](https://github.com/jiamingzhang94/lgwm) | android, desktop, web | [2610.11942](https://arxiv.org/abs/2610.11942) (2026) | code Apache-2.0 | LGWM is an action-conditioned latent GUI world model that predicts next-state representations to verify GUI agent transitions. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/jiamingzhang94/lgwm/HEAD/README.md) |
+| [nanoAWM (Agent World Model Lab)](https://github.com/jlov7/nanoAWM) | desktop, web | — | code MIT | nanoAWM is an inspectable Agent World Model laboratory for simulating action consequences in long-horizon tool and computer-use agents. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/jlov7/nanoAWM/HEAD/README.md) |
+| [RLVR-World](https://github.com/thuml/RLVR-World) | web, desktop | — | code MIT | RLVR-World trains world models with verifiable reinforcement learning to predict state transitions for web and game agents. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/thuml/RLVR-World/HEAD/README.md) |
+| [SEAgent](https://github.com/SunzeY/SEAgent) | desktop, linux | [2508.04700](https://arxiv.org/abs/2508.04700) (2025) | — | SEAgent enables computer-use agents to self-evolve in unfamiliar software environments using a World State Model and curriculum task generator. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/SunzeY/SEAgent/HEAD/README.md) |
+| [Tencent AI LAB - Self-Improving Agent](https://github.com/Tencent/SelfEvolvingAgent) | web | [2504.21024](https://arxiv.org/abs/2504.21024) (2025), [2505.20013](https://arxiv.org/abs/2505.20013) (2025) | — | A research code collection for web-agent self-improvement, including WebEvolver's world-model approach and WebCoT's reconstructed reasoning trajectories. | [✓ 2026‑11‑09](https://raw.githubusercontent.com/Tencent/SelfEvolvingAgent/HEAD/README.md) |
+| [ViMo code](https://github.com/ai-agents-2030/ViMo) | android | [2504.13936](https://arxiv.org/abs/2504.13936) (2025) | — | Code for the ViMo GUI world model: Gemini-based next-screen text prediction, AITW and AndroidControl data processing, InstructPix2Pix-style graphic inference, and an AndroidWorld agent that consults it. | [✓ 2026‑10‑19](https://raw.githubusercontent.com/ai-agents-2030/ViMo/1f319fece4d3a4ac1d41b4572751bca1a10fa690/README.md) |
+| [WebDreamer](https://github.com/OSU-NLP-Group/WebDreamer) | web | [2411.06559](https://arxiv.org/abs/2411.06559) (2024) | — | World-model and planning components that simulate web-action outcomes, with linked training data and model checkpoints. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/OSU-NLP-Group/WebDreamer/HEAD/README.md) |
+| [WebEvolver code component](https://github.com/Tencent/SelfEvolvingAgent/tree/main/WebEvolver) | web | [2504.21024](https://arxiv.org/abs/2504.21024) (2025) | code MIT | Component for web-agent trajectory collection, supervised-data preparation and world-model-based trajectory synthesis. | [✓ 2026‑10‑18](https://raw.githubusercontent.com/Tencent/SelfEvolvingAgent/HEAD/WebEvolver/README.md) |
+
+## Tools
+
+All entries in this section: android.
 
 | Resource | Paper | License | Description | Evidence |
 | --- | --- | --- | --- | --- |
-| [WebDreamer](https://github.com/OSU-NLP-Group/WebDreamer) | [2411.06559](https://arxiv.org/abs/2411.06559) (2024) | — | World-model and planning components that simulate web-action outcomes, with linked training data and model checkpoints. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/OSU-NLP-Group/WebDreamer/HEAD/README.md) |
-| [WebEvolver code component](https://github.com/Tencent/SelfEvolvingAgent/tree/main/WebEvolver) | [2504.21024](https://arxiv.org/abs/2504.21024) (2025) | code MIT | Component for web-agent trajectory collection, supervised-data preparation and world-model-based trajectory synthesis. | [✓ 2026‑10‑18](https://raw.githubusercontent.com/Tencent/SelfEvolvingAgent/HEAD/WebEvolver/README.md) |
+| [Code2World](https://github.com/AMAP-ML/Code2World) | [2602.09856](https://arxiv.org/abs/2602.09856) (2026) | — | Code2World provides code for predicting the next Android GUI screen from a screenshot and proposed action through renderable code, with an AndroidWorld agent integration. | [✓ 2026‑11‑09](https://raw.githubusercontent.com/AMAP-ML/Code2World/HEAD/readme.md) |
+
+## Surveys
+
+All entries in this section: web.
+
+| Date | Resource | Description |
+| --- | --- | --- |
+| 2026‑04‑24 | [Agentic World Modeling: Foundations, Capabilities, Laws, and Beyond](https://arxiv.org/abs/2604.22748) | Survey of agentic world models that classifies predictive capabilities and governing laws, including the digital setting of web and GUI agents. |
 
 ## Papers
 
 | Date | Resource | Environments | Description |
 | --- | --- | --- | --- |
+| 2026‑11‑04 | [MKD2World: A Typed Spatial MarkDown World Model For Web Agents](https://arxiv.org/abs/2611.06544) | web, desktop | Introduces MKD2World, a desktop web world model that represents interface elements in Typed Spatial Markdown and predicts post-action states, supported by AtomBlock-WebUI annotations. |
+| 2026‑11‑02 | [Computer-Use Agents Gain Little Benefit from a World Model When Conditioned on Tutorials](https://arxiv.org/abs/2611.04073) | unspecified | RAG-PolicyJudge selects computer-use actions proposed with task-specific tutorials; the study compares its decisions with and without world-model rollouts. |
+| 2026‑10‑21 | [Steering Black-Box Large Language Model Agents with Pitfall Anticipation World Model](https://arxiv.org/abs/2610.29139) | unspecified | PAWM predicts likely multi-step pitfalls and selectively guides black-box agents; its evaluations include a web-agent benchmark. |
 | 2026‑10‑17 | [Beyond Next-Screen Prediction: The Decision Value of GUI World Models](https://arxiv.org/abs/2610.24372) | android, web | Separates next-screen prediction from action evaluation in GUI lookahead and trains Direct Action Ranking on reference actions, comparing prediction-augmented scoring under matched offline supervision. |
 | 2026‑10‑09 | [Latent World Action Model for GUI Agents](https://arxiv.org/abs/2610.14228) | unspecified | Replaces future-screenshot generation with a shared latent representation for GUI action selection and action-conditioned transition prediction. An action-aware contrastive objective encourages the transition representation to retain discriminative action-induced changes. |
 | 2026‑10‑08 | [Right Screen, Wrong Transition: World Models as Verifiers for GUI Agents](https://arxiv.org/abs/2610.11942) | unspecified | Presents LGWM, a decoder-free GUI world model that predicts the next screen representation from an action and compares it with the observed state to verify transitions. Its paired diagnostic separates legitimate and hijacked transitions that lead to the same credential screen. |
@@ -46,10 +84,12 @@ All entries in this section: web.
 | 2026‑09‑02 | [Discriminative World Models for Web Agents](https://arxiv.org/abs/2609.02885) | web | Trains discriminative web world models to distinguish the true next state from outcomes of alternative actions. Branching web trajectories support training, followed by tests of predicted-state matching, process-reward action ranking and end-to-end WebArena-Lite selection. |
 | 2026‑08‑30 | [GUI-CC: Benchmarking Contextual Consistency of GUI World Models as Agent Environments](https://arxiv.org/abs/2609.00048) | unspecified | Introduces GUI-CC, a benchmark for assessing GUI world models as multi-step agent environments. Separate reference-action and agent-loop tracks test whether generated screens preserve context, plausible transitions, and task progress throughout interaction. |
 | 2026‑08‑27 | [WM-R1: Training GUI Agents to Reason and leverage World Models with Reinforcement Learning](https://arxiv.org/abs/2608.27508) | android | Uses learned world models for mobile-agent training rollouts and for reasoning about the consequences of candidate GUI actions. |
+| 2026‑08‑25 | [GameWAM: A World Action Model for Video Games](https://arxiv.org/abs/2608.26200) | unspecified | Introduces GameWAM, a model for native game play and GUI control that predicts future visuals and keyboard-mouse actions from synchronized gameplay and GUI trajectories. |
 | 2026‑08‑06 | [AppDeltaWorld: Transition-Grounded Delta Code World Model for Mobile GUI Agents](https://arxiv.org/abs/2608.05891) | android | AppDeltaWorld predicts executable code updates for the next mobile UI state, using transition-constrained retrieval and rendered visual assets. It evaluates reconstruction fidelity separately from policy training and adaptation using generated environments. |
 | 2026‑07‑27 | [Scaling GUI Agents with Visual State Transitions](https://arxiv.org/abs/2607.24112) | desktop, android | Introduces State Transition Pretraining, which jointly learns to infer actions from GUI changes and predict future states from current screens and actions. Subsequent instruction-trajectory fine-tuning tests whether these representations transfer to desktop and mobile agent tasks. |
 | 2026‑07‑19 | [EvoGUI: An Evolution-Aware Benchmark for GUI State-Transition Understanding](https://arxiv.org/abs/2607.17050) | web | Introduces EvoGUI, which derives temporal ordering, inverse action/value prediction, and successor-discrimination probes from recorded GUI trajectories. Its web-derived benchmark isolates transition understanding from the other abilities involved in end-to-end task success. |
 | 2026‑07‑17 | [SeerGuard: A Safety Framework for Mobile GUI Agents via World Model Prediction](https://arxiv.org/abs/2607.15550) | unspecified | Uses instruction screening and a safety-augmented world model to assess likely consequences of mobile GUI actions before execution. |
+| 2026‑06‑03 | [MIRAGE: Mobile Agents with Implicit Reasoning and Generative World Models](https://arxiv.org/abs/2606.04627) | android | Introduces MIRAGE, which trains mobile app agents to reason in compact latent states and anticipate future screenshots, reducing generated tokens during action selection. |
 | 2026‑05‑11 | [How Mobile World Model Guides GUI Agents?](https://arxiv.org/abs/2605.10347) | android | Compares mobile world models that predict state changes as delta text, full text, images or renderable code. Downstream Android benchmarks examine synthetic training trajectories and test-time guidance, including limits of post-action reflection. |
 | 2026‑02‑19 | [Computer-Using World Model](https://arxiv.org/abs/2602.17365) | desktop | Presents a desktop world model that predicts textual UI changes before synthesizing the next screenshot. It learns from Microsoft Office transitions and is evaluated by letting a frozen agent compare simulated actions before execution. |
 | 2026‑02‑17 | [World-Model-Augmented Web Agents with Action Correction](https://arxiv.org/abs/2602.15384) | web | WAC has a web-agent action model consult a world model, simulate action outcomes and use judge feedback to correct actions before execution. |

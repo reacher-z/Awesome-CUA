@@ -93,7 +93,7 @@ def make_release_fixture(root, *, with_scripts=False):
     write_json('downloads/benchmarks-profiles.json',profile_export(rows,'benchmark'))
     write_json('downloads/datasets-profiles.json',profile_export(rows,'dataset'))
     edges=[{'source_id':r['id'],'source_name':r['name'],'source_kind':r['kind'],**relation} for r in rows for relation in r['relations']]
-    write_json('downloads/relationships.json',{'relation_count':len(edges),'semantics':'Reviewed semantic links only. Documentation does not establish training or evaluation dependency.','relations':edges})
+    write_json('downloads/relationships.json',{'relation_count':len(edges),'semantics':'Reviewed semantic links.','relations':edges})
     sources=[{'id':'source-a','name':'Fixture source','homepage':'https://example.org/catalog'}]
     write_json('downloads/sources.json',sources)
     write_json('downloads/repository-aliases.json',[])
@@ -280,7 +280,7 @@ class DataReleasePackageTests(unittest.TestCase):
             'downloads/arxiv-archive.jsonl':b'not-json\n',
             'downloads/publications.jsonl':b'not-json\n',
             'schemas/resource.schema.json':b'not-json\n',
-            'downloads/relationships.json':json.dumps({'relation_count':1,'semantics':'Reviewed semantic links only. Documentation does not establish training or evaluation dependency.','relations':[{'source_id':'github:fake/owner','target_id':self.rows[0]['id'],'type':'introduced_by','evidence_url':'https://example.org/none'}]}).encode(),
+            'downloads/relationships.json':json.dumps({'relation_count':1,'semantics':'Reviewed semantic links.','relations':[{'source_id':'github:fake/owner','target_id':self.rows[0]['id'],'type':'introduced_by','evidence_url':'https://example.org/none'}]}).encode(),
         }
         originals={name:(self.site/name).read_bytes() for name in cases}
         for name,payload in cases.items():

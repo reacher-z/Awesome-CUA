@@ -349,7 +349,7 @@ class CandidateCoordinatorTests(unittest.TestCase):
                  'unknown_requests':2,'settled_unknown_requests':2,'rejected_rows':{},'files':{}}
         phase=stage.phase_summary(summary,'2026-10-18T00:00:00Z')
         self.assertEqual(phase['warnings'],[])
-        self.assertEqual(phase['notices'],['2 existing GitHub candidate names now redirect or return 404; the answers are recorded and those names are skipped for 30 days.'])
+        self.assertEqual(phase['notices'],['2 existing GitHub candidate names now redirect, return 404 or are forks; the answers are recorded and those names are skipped for 30 days.'])
         self.assertEqual(phase['settled_unknown_requests'],2)
         self.assertEqual(scan.summarize_phases([{'name':'recent_arxiv','ok':True},phase],[],[],[]),('success',[]))
         # A transient failure in the same round is still a gap.
@@ -365,10 +365,11 @@ class CandidateCoordinatorTests(unittest.TestCase):
             return {'run_id':run,'query_id':query,'outcome':outcome,'status':status}
         receipts=[receipt('run:a','existing:x','redirect_not_followed',301),receipt('run:a','existing:x','redirect_not_followed',308),
                   receipt('run:a','existing:x','unavailable',404),receipt('run:a','existing:x','unavailable',403),
+                  receipt('run:a','existing:x','fork_not_recorded',200),receipt('run:a','search:y','fork_not_recorded',200),
                   receipt('run:a','existing:x','redirect_not_followed',307),receipt('run:a','existing:x','fetch_failed',502),
                   receipt('run:a','existing:x','quarantined',200),receipt('run:a','search:y','unavailable',404),
                   receipt('run:b','existing:x','unavailable',404)]
-        self.assertEqual(scanner.settled_unknown_requests(receipts,'run:a'),3)
+        self.assertEqual(scanner.settled_unknown_requests(receipts,'run:a'),4)
 
     def test_zero_pending_does_not_hide_blocked_or_partial_search_windows(self):
         summary={'run_id':'run:fixture','status':'partial','requests_attempted':0,

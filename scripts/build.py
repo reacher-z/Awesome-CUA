@@ -5,6 +5,7 @@ import collections
 import copy
 import datetime as dt
 import hashlib
+from html import escape
 import json
 from pathlib import Path
 import re
@@ -52,6 +53,10 @@ def apply_license_reviews(editorial, primary, licenses, details):
         details['license_review']={slot:{k:copy.deepcopy(v) for k,v in decision.items() if k!='value'} for slot,decision in reviews.items()}
 
 
+LEGACY_ARCHIVE_NOTE = "Bibliographic metadata checked against arXiv. Relevance and taxonomy await editorial review; presence is not an endorsement."
+ARCHIVE_NOTE = "Bibliographic metadata checked against arXiv; relevance review pending."
+
+
 def source_records(with_scope=False):
     archived = read_jsonl(DATA / "papers.jsonl")
     if len({r['id'] for r in archived}) != len(archived):
@@ -65,6 +70,9 @@ def source_records(with_scope=False):
     # An omission (already recorded, or for an author list naming a protected person) also empties the attached
     # edition's list; publications.jsonl keeps its observation, and the privacy test reports any source that names one.
     records = {rid: omit_protected_authors(row) for rid, row in records.items()}
+    for row in records.values():
+        if row.get('notes') == LEGACY_ARCHIVE_NOTE:
+            row['notes'] = ARCHIVE_NOTE
     aliases=publication_aliases(observations,publication_identity)
     evidence = {r["id"]: r for r in read_jsonl(DATA / "primary-evidence.jsonl")}
     enrichment = {r["id"]: r for r in read_jsonl(DATA / "enrichment.jsonl")}
@@ -140,6 +148,8 @@ def source_records(with_scope=False):
             "last_verified_at": ev["retrieved_at"], "notes": editorial.get("notes", ""), "details": details}
         if base.get("authors_omitted") is True:
             row["authors_omitted"] = True
+        if editorial.get("task_classes"):
+            row["task_classes"] = sorted(set(editorial["task_classes"]))
         records[rid] = row
         row['links'] = publication_links(row)
     changes = {row['id'] for row in read_jsonl(DATA/'metadata-updates.jsonl')}
@@ -155,7 +165,8 @@ FIELD_TYPES = {"id": str, "name": str, "kind": str, "url": str, "aliases": list,
     "published_at": (str, type(None)), "updated_at": (str, type(None)), "authors": list, "identifiers": dict, "links": list, "relations": list, "licenses": dict, "evidence": list,
     "last_verified_at": str, "notes": str, "details": dict}
 # Optional fields; authors_omitted records that the catalog lists no authors for the record.
-OPTIONAL_FIELD_TYPES = {"authors_omitted": bool}
+OPTIONAL_FIELD_TYPES = {"authors_omitted": bool, "task_classes": list}
+TASK_CLASS_KINDS = {"benchmark", "dataset", "paper", "survey"}
 EVIDENCE_FIELDS = {"role", "method", "supports", "url", "retrieved_at", "sha256"}
 # Read from the published contract, so a new receipt method is declared in one place.
 EVIDENCE_METHODS = set(read_json(ROOT / "schemas/resource.schema.json")["properties"]["evidence"]["items"]["properties"]["method"]["enum"])
@@ -223,6 +234,13 @@ def validate_records(rows):
             error("missing fields " + ", ".join(sorted(missing)))
         if unknown := r.keys() - required - OPTIONAL_FIELD_TYPES.keys():
             error("unknown fields " + ", ".join(sorted(unknown)))
+        if "task_classes" in r:
+            known = {c["id"] for c in read_json(DATA / "task-classes.json", {"classes": []})["classes"]}
+            classes = r["task_classes"]
+            if r.get("kind") not in TASK_CLASS_KINDS or r.get("review_status") != "curated":
+                error("task_classes belongs to a curated benchmark, dataset, paper or survey")
+            if not classes or classes != sorted(set(classes)) or not all(isinstance(c, str) for c in classes) or set(classes) - known:
+                error("task_classes must be a sorted, non-empty list of unique IDs from data/task-classes.json")
         if "authors_omitted" in r:
             edition = r.get("details", {}).get("publication")
             if r["authors_omitted"] is not True or r.get("authors") or isinstance(edition, dict) and edition.get("authors"):
@@ -366,27 +384,50 @@ def validate_sources(sources):
     return errors
 
 
+CANDIDATE_REVIEW_KEYS = {"not_a_resource": (), "alias": ("target_id",), "out_of_scope": ("reviewed_at", "evidence")}
+
+
+def review_receipt(entry):
+    """Check the primary-page receipt and its ordering against the review time."""
+    evidence = entry.get("evidence")
+    if not isinstance(evidence, dict) or set(evidence) != {"url", "sha256", "retrieved_at"}:
+        return False
+    if not https(evidence["url"]) or not urllib.parse.urlsplit(evidence["url"]).netloc:
+        return False
+    if not isinstance(evidence["sha256"], str) or not re.fullmatch(r"[0-9a-f]{64}", evidence["sha256"]):
+        return False
+    if not timestamp(entry.get("reviewed_at")) or not timestamp(evidence["retrieved_at"]):
+        return False
+    instant = lambda value: dt.datetime.fromisoformat(value.upper().replace("Z", "+00:00"))
+    return instant(entry["reviewed_at"]) >= instant(evidence["retrieved_at"])
+
+
 def candidate_reviews(candidates, ids, excluded, aliases):
-    """Reviewed set-aside decisions for unresolved discovered identifiers: links that are not resources, or another address of an active record."""
+    """Reviewed decisions for unresolved discovered identifiers."""
     entries = read_json(DATA / "candidate-reviews.json", [])
     if not isinstance(entries, list):
         raise ValueError("Candidate reviews must be a list")
     exact, prefixes = {}, []
     for entry in entries:
-        if not isinstance(entry, dict) or entry.get("decision") not in {"not_a_resource", "alias"} or not isinstance(entry.get("reason"), str) or not entry["reason"].strip():
-            raise ValueError("Candidate review needs a not_a_resource or alias decision and a reason: " + json.dumps(entry)[:200])
-        alias = entry["decision"] == "alias"
+        if not isinstance(entry, dict) or entry.get("decision") not in CANDIDATE_REVIEW_KEYS or not isinstance(entry.get("reason"), str) or not entry["reason"].strip():
+            raise ValueError("Candidate review needs a not_a_resource, alias or out_of_scope decision and a reason: " + json.dumps(entry)[:200])
+        decision = entry["decision"]
         if "url_prefix" in entry:
             prefix = entry["url_prefix"]
             parts = urllib.parse.urlsplit(prefix) if isinstance(prefix, str) else None
             # A prefix covers that URL and the paths or queries below it; aliases are one-to-one, so only non-resources take a prefix.
-            if alias or set(entry) != {"url_prefix", "decision", "reason"} or not parts or parts.scheme != "https" or not parts.netloc or parts.query or parts.fragment or prefix.endswith("/"):
+            if decision != "not_a_resource" or set(entry) != {"url_prefix", "decision", "reason"} or not parts or parts.scheme != "https" or not parts.netloc or parts.query or parts.fragment or prefix.endswith("/"):
                 raise ValueError("Invalid candidate-review prefix: " + str(prefix))
             prefixes.append(entry)
             continue
-        if set(entry) != {"id", "url", "decision", "reason", *(("target_id",) if alias else ())} or not isinstance(entry["id"], str) or entry["id"] in exact:
+        if decision == "out_of_scope":
+            if str(entry.get("id")).startswith("arxiv:"):
+                raise ValueError(f"{entry['id']}: an arXiv scope decision belongs in data/exclusions.json")
+            if not review_receipt(entry):
+                raise ValueError(f"{entry.get('id')}: an out_of_scope candidate review needs reviewed_at and an evidence receipt (https url, sha256, retrieved_at no later than reviewed_at)")
+        if set(entry) != {"id", "url", "decision", "reason", *CANDIDATE_REVIEW_KEYS[decision]} or not isinstance(entry["id"], str) or entry["id"] in exact:
             raise ValueError("Invalid or duplicate candidate review: " + str(entry.get("id")))
-        if alias and entry["target_id"] not in ids:
+        if decision == "alias" and entry["target_id"] not in ids:
             raise ValueError(f"{entry['id']}: candidate alias target is not an active resource: {entry['target_id']}")
         exact[entry["id"]] = entry
     reviews, resolved = {}, ids | excluded
@@ -430,6 +471,8 @@ def coverage(rows, pending, scope_decisions):
     source_rows = []
     aliases = source_aliases(rows)
     reviews = candidate_reviews(candidates, ids, excluded, aliases)
+    out_of_scope = {rid for rid, review in reviews.items() if review["resolution"] == "out_of_scope"}
+    set_aside = reviews.keys() - out_of_scope
     for source in sources:
         population = {r["id"] for r in candidates if any(o["source_id"] == source["id"] for o in r["discovered_in"])}
         resolved = {aliases.get(identity, identity) for identity in population}
@@ -440,7 +483,7 @@ def coverage(rows, pending, scope_decisions):
             "snapshot": runs.get(source["id"]), "discovered": len(population), "indexed": len(indexed_identifiers),
             "indexed_resources":len(present), "resolved_aliases":sum(aliases.get(identity,identity)!=identity for identity in indexed_identifiers),
             "curated": sum(by_id[aliases.get(i,i)]["review_status"] == "curated" for i in indexed_identifiers),
-            "excluded":len(excluded_identifiers), "set_aside":len(population & reviews.keys()), "unindexed":len(population-indexed_identifiers-excluded_identifiers-reviews.keys())})
+            "excluded":len(excluded_identifiers), "set_aside":len(population & set_aside), "out_of_scope":len(population & out_of_scope), "unindexed":len(population-indexed_identifiers-excluded_identifiers-reviews.keys())})
     latest = max((e["retrieved_at"] for r in rows for e in r["evidence"]), default="")
     return {"as_of_utc": latest, "total_records": len(rows), "curated_records": sum(r["review_status"] == "curated" for r in rows),
         "bibliographic_records": sum(r['kind'] in {'paper','survey'} for r in rows),
@@ -453,6 +496,7 @@ def coverage(rows, pending, scope_decisions):
         "metadata_only_records": sum(r["review_status"] == "metadata_verified" for r in rows),
         "discovery_identifiers": len(candidates), "unindexed_candidates": len({aliases.get(r['id'],r['id']) for r in candidates if r['id'] not in reviews} - ids - excluded),
         "non_resource_candidates": sum(r["resolution"] == "not_a_resource" for r in reviews.values()), "alias_candidates": sum(r["resolution"] == "alias" for r in reviews.values()),
+        "out_of_scope_candidates": len(out_of_scope),
         "pending_editorial": pending, "uncurated_linked_papers": uncurated_linked_papers(rows), "by_kind": dict(sorted(collections.Counter(r["kind"] for r in rows).items())),
         "curated_by_environment": dict(sorted(collections.Counter(e for r in rows if r["review_status"] == "curated" for e in r["environments"]).items())),
         "curated_by_kind_and_environment": {kind: dict(sorted(collections.Counter(e for r in rows if r["review_status"] == "curated" and r["kind"] == kind for e in set(r["environments"])).items()))
@@ -461,11 +505,8 @@ def coverage(rows, pending, scope_decisions):
         "sources": source_rows, "primary_search": read_json(DATA / "arxiv-search.json", {}),
         "paper_discovery": read_json(DATA / 'paper-discovery-status.json', {}),
         "paper_query_registry": read_json(DATA / 'paper-discovery-queries.json', {}),
-        "limits": ["Counts are resources, not distinct projects, companies, or independent discoveries.",
-            "Metadata verification does not establish relevance, quality, reproducibility, availability, or endorsement.",
-            "Source indexing measures only fetched source snapshots; incidental/out-of-scope links remain in discovery.",
-            "Global completeness has no observed denominator and is not claimed.",
-            "Environment facets overlap. Unknown license, size, price, or performance fields are not inferred."]}
+        "limits": ["Source indexing measures fetched source snapshots; incidental/out-of-scope links remain in discovery.",
+            "Unknown license, size, price, or performance fields stay null."]}
 
 
 def md(value):
@@ -593,7 +634,7 @@ def topic_pages(rows):
     order = sorted(tagged, key=lambda t: (-len(tagged[t]), t))
     files = {}
     index = ["# Reviewed research by topic", "", "[Home](../README.md) · [Full arXiv bibliography](papers.md) · [Methodology](methodology.md)", "",
-        f"{sum(r['review_status'] == 'curated' for r in rows):,} source-reviewed resources across {len(order)} topics. Topic tags are catalog annotations from the editorial review, not author keywords; a resource appears under every topic it carries. Each hub lists benchmarks, data, models, systems, learning resources, and papers together, newest papers first.", "",
+        f"{sum(r['review_status'] == 'curated' for r in rows):,} source-reviewed resources across {len(order)} topics. Topic tags are catalog annotations from the editorial review; a resource appears under every topic it carries. Each hub lists benchmarks, data, models, systems, learning resources, and papers together, newest papers first.", "",
         "| Topic | All | Benchmarks | Datasets | Models | Systems | Learning resources | Papers | Newest reviewed paper |", "| --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: | --- |"]
     for topic in order:
         group = tagged[topic]
@@ -604,7 +645,7 @@ def topic_pages(rows):
         cell = lambda n: f"{n:,}" if n else "·"
         index.append(f"| [{topic_label(topic)}](topics/{topic}.md) | {len(group):,} | {cell(kinds['benchmark'])} | {cell(kinds['dataset'])} | {cell(kinds['model'])} | {cell(systems)} | {cell(kinds['learning'])} | {cell(len(papers))} | {newest} |")
         lines = [f"# {topic_label(topic)}", "", f"[Home](../../README.md) · [All topics](../topics.md) · [Full arXiv bibliography](../papers.md)", "",
-            f"{len(group):,} source-reviewed resources tagged `{topic}`. Curated metadata, not a performance ranking; unknown facts are shown as —.", "",
+            f"{len(group):,} source-reviewed resources tagged `{topic}`. Curated metadata; unknown facts are shown as —.", "",
             "**Contents:** " + " · ".join(f"[{label} ({kinds[kind]})](#{label.lower().replace(' ', '-')})" for kind, label in TOPIC_KINDS if kinds[kind]), ""]
         for kind, label in TOPIC_KINDS:
             members = [r for r in group if r["kind"] == kind]
@@ -641,7 +682,7 @@ def environment_pages(rows):
         systems = sum(kinds[k] for k in ("agent", "framework", "tool", "infrastructure", "product", "company"))
         index.append(f"| [{label}](environments/{env}.md) | {len(group):,} | {cell(kinds['benchmark'])} | {cell(kinds['dataset'])} | {cell(kinds['model'])} | {cell(systems)} | {cell(kinds['learning'])} | {cell(kinds['paper'] + kinds['survey'])} |")
         lines = [f"# {label}", "", "[Home](../../README.md) · [All platforms](../environments.md) · [Research by topic](../topics.md)", "",
-            f"{len(group):,} source-reviewed resources tagged `{env}`. Curated metadata, not a performance ranking; unknown facts are shown as —.", "",
+            f"{len(group):,} source-reviewed resources tagged `{env}`. Curated metadata; unknown facts are shown as —.", "",
             "**Contents:** " + " · ".join(f"[{name} ({kinds[kind]})](#{name.lower().replace(' ', '-')})" for kind, name in TOPIC_KINDS if kinds[kind]), ""]
         for kind, name in TOPIC_KINDS:
             members = sorted((r for r in group if r["kind"] == kind), key=lambda r: r["name"].casefold())
@@ -691,7 +732,7 @@ def documents(rows, report):
             sections[environment_family(r)].append(r)
         present = [(slug, label) for slug, label, _ in ENVIRONMENT_FAMILIES if sections[slug]]
         lines = [f"# {title}", "", "[Home](../README.md) · [Methodology](methodology.md) · [Machine-readable catalog](../data/catalog.jsonl)", "",
-            "Curated metadata, not a performance ranking. Each entry links its first-party evidence. Unknown facts are shown as —.", "", legend, "",
+            "Curated metadata. Each entry links its first-party evidence. Unknown facts are shown as —.", "", legend, "",
             f"**{len(group)} resources:** " + " · ".join(f"[{label} ({len(sections[slug])})](#{slug})" for slug, label in present), "",
             "Resources tagged with environments from more than one family are listed under *Cross-platform*; their exact environments stay in the table.", ""]
         for slug, label in present:
@@ -704,8 +745,8 @@ def documents(rows, report):
         filename = KIND_DOCUMENTS.get(kind, kind + "s")
         files[f"docs/{filename}.md"] = "\n".join(lines)
     paper_lines = ["# Research bibliography", "", "[Home](../README.md) · [Reviewed research by topic](topics.md) · [Curated surveys](surveys.md) · [Query examples](query-guide.md)", "",
-        "Bibliographic records from arXiv and retained publication sources. Metadata-only entries have **not** undergone a relevance or methodological review. Discovery includes historical references and adjacent work; this is not a count of confirmed CUA papers.",
-        "Dates retain their recorded precision: a year or month does not imply a known day. Explicit arXiv scope exclusions are listed in the [scope-decision ledger](../data/exclusion-status.json). The [arXiv archive](../data/papers.jsonl) and [publication observations](../data/publications.jsonl) retain their separate source facts.", ""]
+        "Bibliographic records from arXiv and retained publication sources. Metadata-only entries await relevance review. Discovery includes historical references and adjacent work.",
+        "Dates retain their recorded precision. Explicit arXiv scope exclusions are listed in the [scope-decision ledger](../data/exclusion-status.json). The [arXiv archive](../data/papers.jsonl) and [publication observations](../data/publications.jsonl) retain their separate source facts.", ""]
     years = collections.defaultdict(list)
     for r in rows:
         if r['kind'] in {'paper','survey'}:
@@ -729,44 +770,41 @@ def documents(rows, report):
     files.update(hubs)
     lines = ["# Coverage and quality ledger", "", f"Evidence snapshot through **{report['as_of_utc']}**. Generated from committed source receipts.", "",
         f"- {report['curated_records']:,} curated resources. Another {report['metadata_only_records']:,} records await review with bibliographic metadata only; the active catalog file holds {report['total_records']:,} records in all.",
-        f"- {report['bibliographic_records']:,} paper and survey records, including {report.get('arxiv_active_records',report['bibliographic_records']):,} arXiv identities and {report.get('non_arxiv_bibliographic_records',0):,} publisher-only identities. This count overlaps the status counts above.",
+        f"- {report['bibliographic_records']:,} paper and survey records, including {report.get('arxiv_active_records',report['bibliographic_records']):,} arXiv identities and {report.get('non_arxiv_bibliographic_records',0):,} publisher-only identities.",
         f"- {report['arxiv_archive_records']:,} retained arXiv metadata records; {report['excluded_records']:,} explicit scope exclusions are outside the active catalog.",
-        f"- {report['discovery_identifiers']:,} discovery identifiers; {report['unindexed_candidates']:,} remain unresolved after accounting for scope exclusions and for {report.get('non_resource_candidates',0):,} reviewed non-resource links and {report.get('alias_candidates',0):,} other addresses of indexed resources, which stay in the review queue with their reasons.",
+        f"- {report['discovery_identifiers']:,} discovery identifiers; {report['unindexed_candidates']:,} remain unresolved. Reviewed decisions include {report.get('non_resource_candidates',0):,} non-resource links, {report.get('alias_candidates',0):,} aliases and {report.get('out_of_scope_candidates',0):,} out-of-scope resources; their reasons remain in the review queue.",
         f"- {len(report['pending_editorial'])} editorial proposals await verification or review.", "",
         "These are distinct resource identifiers, not distinct research projects. Papers, repositories, datasets, products, and publisher entities have different grains.", "",
         "## Curated coverage by kind and environment", "", "Counts of source-reviewed resources. A resource tagged with several environments counts in each column; `·` marks an empty cell, which is where contributions are most needed.", "",
         *matrix_lines(report["curated_by_kind_and_environment"]), "",
-        "## Source snapshot coverage", "", "The denominator is the normalized identifiers extracted from each fetched document, including incidental links. Reviewed publisher/PDF aliases and former GitHub names can resolve to one canonical resource; coverage counts matching identifiers, while indexed_resources records distinct resolved resources. Sources overlap. These figures do not measure global completeness or editorial recall.", "",
-        "| Source | Discovered | Indexed | Curated | Excluded | Set aside | Unresolved | Fetch |", "| --- | ---: | ---: | ---: | ---: | ---: | ---: | --- |"]
+        "## Source snapshot coverage", "", "The denominator is the normalized identifiers extracted from each fetched document, including incidental links. Reviewed publisher/PDF aliases and former GitHub names can resolve to one canonical resource; coverage counts matching identifiers, while indexed_resources records distinct resolved resources.", "",
+        "| Source | Discovered | Indexed | Curated | Excluded | Set aside | Out of scope | Unresolved | Fetch |", "| --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: | --- |"]
     for s in report["sources"]:
         status = s["snapshot"] or {}
         fetch = f"RETIRED · {status.get('retired_on', '')}" if status.get("state") == "retired" else f"{'OK' if status.get('ok') else 'FAILED'} · {status.get('retrieved_at', '')[:10]}"
-        lines.append(f"| [{md(s['name'])}]({s['url']}) | {s['discovered']} | {s['indexed']} | {s['curated']} | {s['excluded']} | {s.get('set_aside',0)} | {s['unindexed']} | {fetch} |")
+        lines.append(f"| [{md(s['name'])}]({s['url']}) | {s['discovered']} | {s['indexed']} | {s['curated']} | {s['excluded']} | {s.get('set_aside',0)} | {s.get('out_of_scope',0)} | {s['unindexed']} | {fetch} |")
     search = report["primary_search"]
     discovery = report.get('paper_discovery', {})
     if discovery:
         lines += ['', '## Paper-discovery query coverage', '',
             f"Latest pass: {discovery.get('finished_at') or 'in progress'}; **{discovery.get('successful_query_count',0)}/{discovery.get('configured_query_count',0)}** query windows succeeded. {discovery.get('unique_identifiers',0):,} distinct identifiers; {discovery.get('new_candidate_count',0):,} new to the candidate queue.", '',
-            'These are ranked search windows, not a field-wide denominator. New identifiers still require primary metadata verification and relevance review.', '',
+            'These are ranked search windows. New identifiers go through primary metadata verification and relevance review.', '',
             '| Area | Query | Returned / limit | State |', '| --- | --- | ---: | --- |']
         for item in discovery.get('queries', []):
             lines.append(f"| {md(item['area'])} | {md(item['query'])} | {item['returned_count']} / {item['limit']} | {md(item['state'])} |")
-    lines += ["", "## Primary arXiv discovery", "", f"The recorded title query returned {search.get('unique_returned', 0):,} unique records out of {search.get('reported_total', 0):,} reported matches. Pagination complete: **{search.get('complete', False)}**. This query population overlaps the lists and is not the whole field.", "", "```text", search.get("query", ""), "```", "",
+    lines += ["", "## Primary arXiv discovery", "", f"The recorded title query returned {search.get('unique_returned', 0):,} unique records out of {search.get('reported_total', 0):,} reported matches. Pagination complete: **{search.get('complete', False)}**.", "", "```text", search.get("query", ""), "```", "",
         "## License evidence", "", "| Scope | Recorded declarations |", "| --- | ---: |"]
     lines += [f"| {slot} | {n} |" for slot, n in report["license_declarations_by_scope"].items()]
-    lines += ["", "A code license never fills a data or weights field. Hub declarations are publisher metadata, not independently audited legal conclusions. Missing values remain null.", "",
+    lines += ["", "Data and weights fields record their own licenses. Hub declarations are publisher metadata. Missing values remain null.", "",
         "## Pending editorial proposals", "", pending_breakdown(report["pending_editorial"]), "", "| Resource | Reason |", "| --- | --- |"]
     for p in report["pending_editorial"]:
         lines.append(f"| [{md(p['name'])}]({p['url']}) | {md(p['reason'])} |")
     linked = report.get("uncurated_linked_papers", [])
     lines += ["", "## Uncurated papers behind curated resources", "", "Papers that a curated resource names as its `introduced_by` or `documented_by` paper but that have no editorial relevance review yet. Review them before other metadata-only papers.", ""]
     lines += ["| Paper | Linked from |", "| --- | --- |", *(f"| [{md(p['name'])}]({p['url']}) | " + ", ".join(f"[{md(by_id[s]['name'])}]({by_id[s]['url']})" for s in p["linked_from"]) + " |" for p in linked)] if linked else ["None: every paper linked from a curated resource is curated."]
-    lines += ["", "## Scope exclusions", "", f"{report['excluded_records']} records have an applied scope decision; {report['exclusion_revalidation_pending']} require another review after a change. See the [decision ledger](../data/exclusion-status.json) for each rationale and source fingerprint. These decisions concern catalog relevance, not research quality. Original bibliographic metadata is retained, and previous resource URLs explain the decision rather than silently disappearing.", "", "## Known gaps", "",
+    lines += ["", "## Scope exclusions", "", f"{report['excluded_records']} records have an applied scope decision; {report['exclusion_revalidation_pending']} require another review after a change. See the [decision ledger](../data/exclusion-status.json) for each rationale and source fingerprint. Original bibliographic metadata is retained, and previous resource URLs explain the decision.", "", "## Known gaps", "",
         "- Most bibliography records still require relevance review and detailed taxonomy.",
-        "- Closed/private datasets, unpublished systems, regional products, and work absent from arXiv/lists are not exhaustively represented.",
         "- Asset sizes, model weights licenses, runtime requirements, and benchmark protocols need additional field-level curation.",
-        "- Publisher entries cover selected brands; corporate ownership, funding, usage, revenue, and product pricing are not researched here.",
-        "- Download links and available code do not establish that an asset is reproducible or still works.",
         "- Name changes, repository transfers, and related resource families need continuing entity resolution.", "",
         "See [methodology](methodology.md) for the inclusion boundary and [the review queue](../data/review-queue.jsonl) for actionable gaps.", ""]
     files["docs/coverage.md"] = "\n".join(lines)
@@ -814,10 +852,12 @@ README_TEXT = {
         "all": "{n} in the catalog", "surveys": "Start with the newest surveys", "survey_header": "| Date | Survey | Environments |", "highlight_header": "| Resource | Mentions | Environments | Paper | License | Description |",
         "recent_header": "| Reviewed | Resource | Kind | Environments | Description |", "kind_names": {"learning": "Learning resources"},
         "scopes": {"code": "code", "data": "data", "weights": "weights", "document": "document"},
+        "star_history_heading": "Star History", "star_history_alt": "GitHub star count over time for Awesome-CUA",
+        "star_history_link": "View Awesome-CUA on Star History",
         "stats": ("**{curated:,} curated resources** · **{papers:,} reviewed papers and surveys** · **{sources} discovery documents**\n\n"
-            "Evidence through `{as_of}`. Only curated resources are counted above. Listed separately: **{metadata:,} records awaiting review** have bibliographic verification only, "
-            "and **{unindexed:,} discovered candidates** remain unresolved, not counting {set_aside:,} links reviewed as non-resources or other addresses of indexed resources. "
-            "{excluded:,} scope exclusions retain their original metadata in the archive. Counts overlap as explained below.")},
+            "Evidence through `{as_of}`. **{metadata:,} records awaiting review** have verified bibliographic metadata, "
+            "and **{unindexed:,} discovered candidates** await resolution. {out_of_scope:,} candidates have an out-of-scope review. "
+            "{excluded:,} scope exclusions retain their original metadata in the archive.")},
     "zh": {"explore_header": ("浏览", "内容", "条目"), "blurbs": {'topics': '按主题整理的已审阅论文', 'bibliography': '全部论文与综述记录，含待审阅记录', 'survey': '电脑操作智能体研究综述', 'learning': '课程与教程', 'dataset': 'GUI 智能体的训练与评测数据', 'benchmark': '评测环境与任务集', 'model': '模型权重版本与模型系列', 'agent': '可操作电脑的公开实现', 'framework': '用于构建和评测智能体的代码', 'infrastructure': '沙箱、虚拟机、设备集群与运行环境', 'tool': '评测工具、录制工具及其他实用工具', 'product': '厂商和项目提供的电脑操作产品', 'company': '与已收录资源相关的发布方和品牌'},
         "labels": {"topics": "按主题浏览研究", "bibliography": "完整论文目录", "survey": "综述", "learning": "学习资源", "dataset": "数据集", "benchmark": "基准",
             "model": "模型与权重版本", "agent": "智能体", "framework": "框架", "infrastructure": "基础设施", "tool": "工具",
@@ -829,11 +869,31 @@ README_TEXT = {
         "kind_names": {"benchmark": "基准", "dataset": "数据集", "model": "模型", "agent": "智能体", "framework": "框架", "tool": "工具",
             "infrastructure": "基础设施", "product": "产品", "company": "发布方", "learning": "学习资源"},
         "scopes": {"code": "代码", "data": "数据", "weights": "权重", "document": "文档"},
+        "star_history_heading": "Star 历史", "star_history_alt": "Awesome-CUA 的 GitHub Star 数量随时间变化趋势",
+        "star_history_link": "在 Star History 查看 Awesome-CUA 的 Star 历史",
         "stats": ("**{curated:,} 条已审阅资源** · **{papers:,} 篇已审阅论文与综述** · **{sources} 个发现来源文档**\n\n"
-            "证据截至 `{as_of}`。以上只统计已审阅资源。单独列出：**{metadata:,} 条待审阅记录**仅完成书目核实；"
-            "**{unindexed:,} 个已发现候选**尚待处理，另有 {set_aside:,} 个链接经审阅确认为非资源或已收录资源的其他地址，不计入其中。"
-            "{excluded:,} 条范围排除记录在归档中保留原始元数据。各项计数存在重叠，详见下文。")},
+            "证据截至 `{as_of}`。**{metadata:,} 条待审阅记录**已完成书目核实；"
+            "**{unindexed:,} 个已发现候选**尚待处理。{out_of_scope:,} 个候选已完成范围外审阅。"
+            "{excluded:,} 条范围排除记录在归档中保留原始元数据。")},
 }
+
+
+def star_history(lang="en"):
+    """Hosted Star History chart with theme-specific sources and a text link."""
+    text = README_TEXT[lang]
+    chart = "https://api.star-history.com/svg?repos=reacher-z/Awesome-CUA&type=Date"
+    link = "https://www.star-history.com/#reacher-z/Awesome-CUA&Date"
+    return "\n\n" + "\n".join([
+        f"## {text['star_history_heading']}", "",
+        f'<a href="{escape(link)}">',
+        '  <picture>',
+        f'    <source media="(prefers-color-scheme: dark)" srcset="{escape(chart + "&theme=dark")}">',
+        f'    <source media="(prefers-color-scheme: light)" srcset="{escape(chart)}">',
+        f'    <img src="{escape(chart)}" alt="{escape(text["star_history_alt"])}" width="100%">',
+        '  </picture>',
+        '</a>', "",
+        f"[{text['star_history_link']}]({link})", "",
+    ]) + "\n"
 
 
 def stats_block(report, lang="en", reviewed_papers=0):
@@ -841,6 +901,7 @@ def stats_block(report, lang="en", reviewed_papers=0):
     return "\n\n" + README_TEXT[lang]["stats"].format(curated=report["curated_records"], papers=reviewed_papers,
         sources=len(report["sources"]), as_of=report["as_of_utc"], metadata=report["metadata_only_records"], unindexed=report["unindexed_candidates"],
         set_aside=report.get("non_resource_candidates", 0) + report.get("alias_candidates", 0),
+        out_of_scope=report.get("out_of_scope_candidates", 0),
         excluded=report["excluded_records"]) + "\n\n"
 
 
@@ -1071,7 +1132,7 @@ def build(args):
         path = ROOT / filename
         if path.exists():
             blocks = {"STATS": stats_block(report, lang, reviewed_papers), "BADGES": shared_badges, "TASKS": task_navigator(lang), "EXPLORE": explore(rows, report, lang),
-                "HIGHLIGHTS": highlights(rows, edges, lang=lang), "RECENT": recently_reviewed(rows, reviewed_at, lang=lang)}
+                "HIGHLIGHTS": highlights(rows, edges, lang=lang), "RECENT": recently_reviewed(rows, reviewed_at, lang=lang), "STAR_HISTORY": star_history(lang)}
             content = path.read_text(encoding="utf-8")
             for name, body in blocks.items():
                 # A function replacement keeps backslashes in generated Markdown literal.
@@ -1081,6 +1142,9 @@ def build(args):
     dictionary = ROOT / "docs/data-dictionary.md"
     if dictionary.exists():
         files["docs/data-dictionary.md"] = re.sub(r"(?<=<!-- TOPICS:START -->).*?(?=<!-- TOPICS:END -->)", lambda _: topic_vocabulary(), dictionary.read_text(encoding="utf-8"), flags=re.S)
+    if getattr(args, "list_outputs", False):
+        print("\n".join(sorted(files)))
+        return
     changed = []
     for relative, content in files.items():
         path = ROOT / relative
@@ -1098,6 +1162,27 @@ def build(args):
     print(f"Built {len(rows)} records ({report['curated_records']} curated), {len(edges)} reference edges, {len(merged)} review items, and SQLite/JSON exports.")
 
 
+def validate_translations(rows, translations):
+    """Chinese annotations in data/translations.zh-CN.json: keyed by the ID of a curated record, one natural Chinese summary each."""
+    if not isinstance(translations, dict):
+        return ["Chinese translations: the file must be a JSON object keyed by resource ID"]
+    curated = {row["id"] for row in rows if row.get("review_status") == "curated"}
+    errors = []
+    for rid, entry in translations.items():
+        if rid not in curated:
+            errors.append(f"Chinese translations {rid}: no curated record has this ID")
+            continue
+        if not isinstance(entry, dict) or set(entry) != {"summary"}:
+            errors.append(f"Chinese translations {rid}: expected exactly one key, summary")
+            continue
+        text = entry["summary"]
+        if not isinstance(text, str) or not re.search(r"[\u4e00-\u9fff]", text):
+            errors.append(f"Chinese translations {rid}: summary must be Chinese text")
+        elif len(text) > 220 or not text.rstrip().endswith(("。", ".", "）", ")")):
+            errors.append(f"Chinese translations {rid}: summary must be at most 220 characters and end with a full stop")
+    return errors
+
+
 def validate(args):
     rows = read_jsonl(DATA / "catalog.jsonl")
     if not rows:
@@ -1109,7 +1194,7 @@ def validate(args):
     # Without the format extras, jsonschema silently skips date-time and uri constraints.
     if missing := {"date-time", "uri"} - set(formats.checkers):
         raise ValueError("JSON Schema format checkers unavailable: " + ", ".join(sorted(missing)) + ". Install requirements-dev.txt (jsonschema[format-nongpl]).")
-    errors = validate_records(rows) + validate_sources(read_json(DATA / "sources.json", []))
+    errors = validate_records(rows) + validate_sources(read_json(DATA / "sources.json", [])) + validate_translations(rows, read_json(DATA / "translations.zh-CN.json", {}))
     from catalog import validate_candidate_snapshot
     try:
         validate_candidate_snapshot(DATA)
@@ -1150,6 +1235,7 @@ def validate(args):
     scope_validator = jsonschema.Draft202012Validator(read_json(ROOT/'schemas/scope-decision.schema.json'), format_checker=formats)
     scope_errors = ['Scope decisions: '+error.message for error in scope_validator.iter_errors(decisions)]
     errors.extend(scope_errors)
+    outcomes = []
     if not scope_errors:
         retained = {row['id']:row for row in read_jsonl(DATA/'papers.jsonl')}
         retained.update({row['id']:row for row in rows})
@@ -1164,6 +1250,14 @@ def validate(args):
                 errors.append(outcome['id']+': scope-excluded record remains in the active catalog')
             if outcome['status']=='revalidation_pending' and outcome['id'] not in published:
                 errors.append(outcome['id']+': stale scope decision must not suppress a record')
+    candidate_validator = jsonschema.Draft202012Validator(read_json(ROOT/'schemas/candidate-review.schema.json'), format_checker=formats)
+    candidate_errors = ['Candidate reviews: '+error.message for error in candidate_validator.iter_errors(read_json(DATA/'candidate-reviews.json', []))]
+    errors.extend(candidate_errors)
+    if not candidate_errors:
+        try:
+            candidate_reviews(read_jsonl(DATA/'candidates.jsonl'), {row['id'] for row in rows}, {o['id'] for o in outcomes if o['status']=='excluded'}, source_aliases(rows))
+        except ValueError as error:
+            errors.append('Candidate reviews: '+str(error))
     if errors:
         raise ValueError("\n".join(errors[:40]))
     print(f"Validated {len(rows)} records: JSON Schema, identifiers, dates, source receipts, scoped licenses, and reviewed relation targets.")

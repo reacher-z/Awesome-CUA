@@ -630,7 +630,11 @@ def discover(args):
             info, body = {'url': source['url'], 'retrieved_at': now(), 'ok': False,
                 'error': 'Deferred after an HTTP 429 from this host; no request made.'}, b''
         else:
-            info, body = fetch(source["url"], args.refresh)
+            try:
+                info, body = fetch(source["url"], args.refresh)
+            except Exception as error:
+                info, body = {'url': source['url'], 'retrieved_at': now(), 'ok': False,
+                    'error': f'{type(error).__name__}: {error}', 'request_attempted': True}, b''
         manifest = {"id": source["id"], **info, "unique_resources": 0,
             'run_started_at': started, 'provider_host': host,
             'request_attempted': info.get('request_attempted', not deferred),
@@ -643,7 +647,7 @@ def discover(args):
             continue
         try:
             links = source_links(source, body)
-        except (ValueError, TypeError) as error:
+        except Exception as error:
             manifests[source['id']] = {**manifest, 'ok': False, 'parse_error': str(error)}
             print(f"FAILED {source['id']}: {error}", flush=True)
             continue
@@ -707,7 +711,7 @@ def arxiv_entry(entry, evidence):
         "licenses": {"code": None, "data": None, "weights": None, "document": None},
         "evidence": [{"role": "primary", "method": "arxiv_api", "supports": ["name", "authors", "published_at", "updated_at", "identifiers.arxiv", "details.arxiv_snapshot"], **evidence}],
         "last_verified_at": evidence["retrieved_at"],
-        "notes": "Bibliographic metadata checked against arXiv. Relevance and taxonomy await editorial review; presence is not an endorsement."})
+        "notes": "Bibliographic metadata checked against arXiv; relevance review pending."})
 
 
 def harvest(args):
@@ -1118,6 +1122,7 @@ def main(argv=None):
     from build import build, validate, search
     command = sub.add_parser("build", help="generate catalog, category docs, coverage, JSON and SQLite exports offline")
     command.add_argument("--check", action="store_true", help="fail if generated committed views differ")
+    command.add_argument("--list-outputs", action="store_true", help="print every committed path the build writes and write nothing")
     command.set_defaults(function=build)
     command = sub.add_parser("validate", help="validate catalog against JSON Schema and quality invariants")
     command.set_defaults(function=validate)

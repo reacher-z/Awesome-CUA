@@ -4,15 +4,15 @@
 
 [English](README.md) · **简体中文**
 
-**[网站搜索](https://awesomecua.com/zh/)** · **[参与贡献](CONTRIBUTING.md)**
+**[网站搜索](https://awesomecua.com/zh/)** · **[论文](https://awesomecua.com/zh/papers/)** · **[主题](https://awesomecua.com/zh/topics/)** · **[数据](https://awesomecua.com/zh/data/)** · **[智能体指南](https://awesomecua.com/zh/agents/)** · **[参与贡献](CONTRIBUTING.md)**
 
 觉得有用？欢迎在 GitHub 上[点星支持本合集](https://github.com/reacher-z/Awesome-CUA)，让更多人找到它。
 
 <!-- BADGES:START -->
-![Curated resources](https://img.shields.io/badge/curated%20resources-1%2C863-4352E8?style=flat-square&labelColor=1E2233) ![Reviewed papers and surveys](https://img.shields.io/badge/reviewed%20papers%20and%20surveys-1%2C391-4352E8?style=flat-square&labelColor=1E2233) ![Evidence through](https://img.shields.io/badge/evidence%20through-2026--11--06%2004%3A18%20UTC-4352E8?style=flat-square&labelColor=1E2233) ![Hugging Face dataset](https://img.shields.io/badge/dataset-Hugging%20Face-4352E8?style=flat-square&labelColor=1E2233) ![MIT license](https://img.shields.io/badge/license-MIT-5E6472?style=flat-square&labelColor=1E2233)
+[![Curated resources](https://img.shields.io/badge/curated%20resources-4%2C587-4352E8?style=flat-square&labelColor=1E2233)](docs/coverage.md) [![Reviewed papers and surveys](https://img.shields.io/badge/reviewed%20papers%20and%20surveys-1%2C718-4352E8?style=flat-square&labelColor=1E2233)](docs/papers.md) [![Evidence through](https://img.shields.io/badge/evidence%20through-2026--11--09%2008%3A07%20UTC-4352E8?style=flat-square&labelColor=1E2233)](docs/maintenance.md) [![Hugging Face dataset](https://img.shields.io/badge/dataset-Hugging%20Face-4352E8?style=flat-square&labelColor=1E2233)](https://huggingface.co/datasets/TIGER-Lab/AwesomeCUA) [![MIT license](https://img.shields.io/badge/license-MIT-5E6472?style=flat-square&labelColor=1E2233)](LICENSE)
 <!-- BADGES:END -->
 
-**“全球最全”是建设目标，而不是已经核实的结论。** 已审阅条目依据一手来源快照审阅；待审阅记录只核实了书目信息；候选只是被发现的标识符，不在已发布目录中。[“已核实”的含义](#已核实的含义) · [覆盖台账](docs/coverage.md)
+已审阅条目依据一手来源快照审阅；待审阅记录已核实书目信息；候选是已发现的标识符，尚待处理。[“已核实”的含义](#已核实的含义) · [覆盖台账](docs/coverage.md)
 
 ## 推荐基准
 
@@ -20,7 +20,7 @@
 | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
 | <a href="https://github.com/TIGER-AI-Lab/WebsiteBench"><picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/TIGER-AI-Lab/WebsiteBench/78f5558e8197bb91b3bab63428c12b92060ddc6f/assets/wordmark-dark.svg"><img src="https://raw.githubusercontent.com/TIGER-AI-Lab/WebsiteBench/78f5558e8197bb91b3bab63428c12b92060ddc6f/assets/wordmark-light.svg" alt="WebsiteBench" height="32"></picture></a><br>AI 智能体能否通过浏览器探索重建网站？<br>[★ 在 GitHub 上点星](https://github.com/TIGER-AI-Lab/WebsiteBench) | <a href="https://github.com/TIGER-AI-Lab/ClawBench"><picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/TIGER-AI-Lab/ClawBench/c8409629f4f2f9768731350d764aeb3035946c5d/assets/brand/wordmark-dark.svg"><img src="https://raw.githubusercontent.com/TIGER-AI-Lab/ClawBench/c8409629f4f2f9768731350d764aeb3035946c5d/assets/brand/wordmark-light.svg" alt="ClawBench" height="32"></picture></a><br>面向日常任务的开源浏览器 AI 智能体基准。<br>[★ 在 GitHub 上点星](https://github.com/TIGER-AI-Lab/ClawBench) |
 
-**来自维护者的更多项目：** [Awesome Reverse Engineering Anything](https://github.com/reacher-z/Awesome-REA) — 独立整理的工具、案例与研究论文合集，涵盖网站、游戏、应用、原生二进制、固件和通信协议。
+**精选：** [Awesome Reverse Engineering Anything](https://github.com/reacher-z/Awesome-REA) — 工具、案例与研究论文合集，涵盖网站、游戏、应用、原生二进制、固件和通信协议。
 
 <!-- TASKS:START -->
 ## 按任务查找
@@ -52,9 +52,9 @@ python3 scripts/catalog.py get arxiv:2404.07972 --related --json
 
 <!-- STATS:START -->
 
-**1,863 条已审阅资源** · **1,391 篇已审阅论文与综述** · **103 个发现来源文档**
+**4,587 条已审阅资源** · **1,718 篇已审阅论文与综述** · **104 个发现来源文档**
 
-证据截至 `2026-11-06T04:18:34Z`。以上只统计已审阅资源。单独列出：**627 条待审阅记录**仅完成书目核实；**1,971 个已发现候选**尚待处理，另有 166 个链接经审阅确认为非资源或已收录资源的其他地址，不计入其中。1,308 条范围排除记录在归档中保留原始元数据。各项计数存在重叠，详见下文。
+证据截至 `2026-11-09T08:07:58Z`。**451 条待审阅记录**已完成书目核实；**114 个已发现候选**尚待处理。463 个候选已完成范围外审阅。1,308 条范围排除记录在归档中保留原始元数据。
 
 <!-- STATS:END -->
 
@@ -63,21 +63,21 @@ python3 scripts/catalog.py get arxiv:2404.07972 --related --json
 <!-- EXPLORE:START -->
 | 浏览                              | 内容               |    条目 |
 | ------------------------------- | ---------------- | ----: |
-| [按主题浏览研究](docs/topics.md)       | 按主题整理的已审阅论文      | 1,368 |
-| [完整论文目录](docs/papers.md)        | 全部论文与综述记录，含待审阅记录 | 2,018 |
-| [综述](docs/surveys.md)           | 电脑操作智能体研究综述      |    23 |
-| [学习资源](docs/learning.md)        | 课程与教程            |     2 |
-| [数据集](docs/datasets.md)         | GUI 智能体的训练与评测数据  |    86 |
-| [基准](docs/benchmarks.md)        | 评测环境与任务集         |    90 |
-| [模型与权重版本](docs/models.md)       | 模型权重版本与模型系列      |    98 |
-| [智能体](docs/agents.md)           | 可操作电脑的公开实现       |    45 |
-| [框架](docs/frameworks.md)        | 用于构建和评测智能体的代码    |    79 |
-| [基础设施](docs/infrastructures.md) | 沙箱、虚拟机、设备集群与运行环境 |    14 |
-| [工具](docs/tools.md)             | 评测工具、录制工具及其他实用工具 |    22 |
-| [产品](docs/products.md)          | 厂商和项目提供的电脑操作产品   |    20 |
-| [发布方与品牌](docs/companies.md)     | 与已收录资源相关的发布方和品牌  |    16 |
+| [按主题浏览研究](docs/topics.md)       | 按主题整理的已审阅论文      | 1,681 |
+| [完整论文目录](docs/papers.md)        | 全部论文与综述记录，含待审阅记录 | 2,169 |
+| [综述](docs/surveys.md)           | 电脑操作智能体研究综述      |    37 |
+| [学习资源](docs/learning.md)        | 课程与教程            |    26 |
+| [数据集](docs/datasets.md)         | GUI 智能体的训练与评测数据  |   195 |
+| [基准](docs/benchmarks.md)        | 评测环境与任务集         |   264 |
+| [模型与权重版本](docs/models.md)       | 模型权重版本与模型系列      |   283 |
+| [智能体](docs/agents.md)           | 可操作电脑的公开实现       |   413 |
+| [框架](docs/frameworks.md)        | 用于构建和评测智能体的代码    |   625 |
+| [基础设施](docs/infrastructures.md) | 沙箱、虚拟机、设备集群与运行环境 |    90 |
+| [工具](docs/tools.md)             | 评测工具、录制工具及其他实用工具 |   884 |
+| [产品](docs/products.md)          | 厂商和项目提供的电脑操作产品   |    70 |
+| [发布方与品牌](docs/companies.md)     | 与已收录资源相关的发布方和品牌  |    19 |
 
-**按平台：** [Web](docs/environments/web.md) **733** · [Desktop](docs/environments/desktop.md) **342** · [Windows](docs/environments/windows.md) **66** · [macOS](docs/environments/macos.md) **32** · [Linux](docs/environments/linux.md) **55** · [Android](docs/environments/android.md) **332** · [iOS](docs/environments/ios.md) **24** · [HarmonyOS](docs/environments/harmonyos.md) **3** · [Cross-platform](docs/environments/cross-platform.md) **200**
+**按平台：** [Web](docs/environments/web.md) **2,349** · [Desktop](docs/environments/desktop.md) **1,554** · [Windows](docs/environments/windows.md) **487** · [macOS](docs/environments/macos.md) **476** · [Linux](docs/environments/linux.md) **439** · [Android](docs/environments/android.md) **652** · [iOS](docs/environments/ios.md) **73** · [HarmonyOS](docs/environments/harmonyos.md) **5** · [Cross-platform](docs/environments/cross-platform.md) **663**
 <!-- EXPLORE:END -->
 
 覆盖 Web、桌面、Android、iOS、Windows、macOS、Linux 和跨平台工作。主题包括 grounding、屏幕理解、规划、记忆、长流程任务、强化学习、数据生成、安全、鲁棒性和评测。环境分面可以重叠；不会根据模型的基准成绩推定框架支持。
@@ -88,12 +88,12 @@ python3 scripts/catalog.py get arxiv:2404.07972 --related --json
 
 - [llms.txt](https://awesomecua.com/llms.txt) - 供语言模型使用的导航文件。
 - [llms-full.txt](https://awesomecua.com/llms-full.txt) - Markdown 格式的精选注释。
-- 数据中心 - 分六组提供目录、RAG 文档、引用、主题、对比、来源和数据规范。
+- [数据中心](https://awesomecua.com/zh/data/) - 分六组提供目录、RAG 文档、引用、主题、对比、来源和数据规范。
 - [目录 JSONL](https://awesomecua.com/downloads/catalog.jsonl) - 完整目录，每行一个资源。
 - [下载清单](https://awesomecua.com/downloads/manifest.json) - 导出文件的数量、字节数和 SHA-256 校验和。
 - [Atom 订阅源](https://awesomecua.com/feed.xml) - 以 Atom 格式发布的研究更新。
-- [Hugging Face 数据集](https://huggingface.co/datasets/AgPerry/awesome-cua) - 只读镜像，每 2 小时同步；metadata_only 和 github_candidates 不是精选条目。
-- 智能体与 RAG 指南 - 面向智能体和 RAG 系统的指南。
+- [Hugging Face 数据集](https://huggingface.co/datasets/TIGER-Lab/AwesomeCUA) - 只读镜像；metadata_only 和 github_candidates 不是精选条目。
+- [智能体与 RAG 指南](https://awesomecua.com/zh/agents/) - 面向智能体和 RAG 系统的指南。
 
 克隆完整目录：
 
@@ -103,82 +103,82 @@ git clone https://github.com/reacher-z/Awesome-CUA.git
 
 [Agent 操作指南](AGENTS.md) · [检索文档](https://awesomecua.com/downloads/rag-documents.jsonl)
 
-资源发现计划每两小时执行一次，时间为 **UTC 00:07、02:07、04:07、06:07、08:07、10:07、12:07、14:07、16:07、18:07、20:07 和 22:07**。[实际扫描结果](https://awesomecua.com/updates/) · [时间安排与保护机制](docs/maintenance.md)。
+资源发现计划**每天 00:07、08:07 和 16:07（UTC）**执行一次。[实际扫描结果](https://awesomecua.com/updates/) · [时间安排与保护机制](docs/maintenance.md)。
 
 [阅读英文研究综述](https://awesomecua.com/survey/) — 连接方法、评测、人的控制权与可复用研究资产；工作稿附有固定版本书目和逐篇阅读记录。
 
 ## 重点资源
 
-按类别列出被其他已收录资源在其已审阅一手来源（README、模型卡或数据集卡）中提及最多的已审阅资源。该计数反映目录内部的关联程度，不代表质量、流行度或基准表现；每个类别页面都列出全部已审阅条目。综述排在最前，按时间倒序。资源名称和简介保留原文。
+按类别列出被其他已收录资源在其已审阅一手来源（README、模型卡或数据集卡）中提及最多的已审阅资源。该计数反映目录内部的关联程度；每个类别页面都列出全部已审阅条目。综述排在最前，按时间倒序。资源名称和简介保留原文。
 
 <details>
 <summary>展开重点资源表</summary>
 
 <!-- HIGHLIGHTS:START -->
-**从最新综述入门** · 目录中共 23 项
+**从最新综述入门** · [全部 37 项 →](docs/surveys.md)
 
-| 日期         | 综述                                                                                                                                                     | 环境             |
-| ---------- | ------------------------------------------------------------------------------------------------------------------------------------------------------ | -------------- |
-| 2026‑10‑14 | [Seeing, Maintaining, and Learning: The Evolution of Multimodal Agent Memory](https://arxiv.org/abs/2610.19366)                                        | Unspecified    |
-| 2026‑09‑02 | [Efficient GUI Agents: A Systems Survey of Observation, Memory, Action, and Runtime Optimization](https://arxiv.org/abs/2609.02309)                    | Cross-platform |
-| 2026‑08‑30 | [A Systematic Survey of Agentic Skills: Architecture, Lifecycle, and Security](https://arxiv.org/abs/2608.29596)                                       | Cross-platform |
-| 2026‑04‑17 | [A Survey on Long-Term Memory Security in LLM Agents: Attacks, Defenses, and Governance Across the Memory Lifecycle](https://arxiv.org/abs/2604.16548) | Unspecified    |
-| 2026‑02‑12 | [Agent Skills for Large Language Models: Architecture, Acquisition, Security, and the Path Forward](https://arxiv.org/abs/2602.12430)                  | Unspecified    |
+| 日期         | 综述                                                                                                                                      | 环境             |
+| ---------- | --------------------------------------------------------------------------------------------------------------------------------------- | -------------- |
+| 2026‑11‑04 | [GUI Grounding for Computer-Use Agents: A Survey](https://doi.org/10.20944/preprints202611.0431.v1)                                     | unspecified    |
+| 2026‑10‑21 | [Multimodal Embodied Agents: A Unified Capability-centric Perspective from Computer-Use to Robot-Use](https://arxiv.org/abs/2610.30108) | unspecified    |
+| 2026‑10‑14 | [Seeing, Maintaining, and Learning: The Evolution of Multimodal Agent Memory](https://arxiv.org/abs/2610.19366)                         | unspecified    |
+| 2026‑09‑02 | [Efficient GUI Agents: A Systems Survey of Observation, Memory, Action, and Runtime Optimization](https://arxiv.org/abs/2609.02309)     | cross-platform |
+| 2026‑08‑30 | [A Systematic Survey of Agentic Skills: Architecture, Lifecycle, and Security](https://arxiv.org/abs/2608.29596)                        | cross-platform |
 
-**基准** · 目录中共 90 项
+**基准** · [全部 264 项 →](docs/benchmarks.md)
 
 | 资源                                                                             | 被提及 | 环境                             | 论文                                                    | 许可            | 简介（英文）                                                                              |
 | ------------------------------------------------------------------------------ | --: | ------------------------------ | ----------------------------------------------------- | ------------- | ----------------------------------------------------------------------------------- |
-| [OSWorld](https://github.com/xlang-ai/OSWorld)                                 |  21 | Desktop, Linux, Windows, macOS | [2404.07972](https://arxiv.org/abs/2404.07972) (2024) | 代码 Apache-2.0 | Execution-based evaluation of agents performing tasks in real desktop environments. |
-| [WebArena](https://github.com/web-arena-x/webarena)                            |  15 | Web                            | [2307.13854](https://arxiv.org/abs/2307.13854) (2023) | 代码 Apache-2.0 | Self-hosted web environments and tasks for evaluating autonomous web agents.        |
-| [BrowserGym](https://github.com/ServiceNow/BrowserGym)                         |   9 | Web                            | [2412.05467](https://arxiv.org/abs/2412.05467) (2024) | 代码 Apache-2.0 | Unified interfaces for browser-agent tasks and benchmark environments.              |
-| [ScreenSpot Pro](https://github.com/likaixin2000/ScreenSpot-Pro-GUI-Grounding) |   8 | Desktop, Windows, macOS, Linux | —                                                     | 代码 MIT        | GUI grounding benchmark focused on professional high-resolution interfaces.         |
-| [VisualWebArena](https://github.com/web-arena-x/visualwebarena)                |   7 | Web                            | [2401.13649](https://arxiv.org/abs/2401.13649) (2024) | —             | Visually grounded web tasks extending the WebArena evaluation setting.              |
-| [AndroidWorld](https://github.com/google-research/android_world)               |   6 | Android                        | [2405.14573](https://arxiv.org/abs/2405.14573) (2024) | 代码 Apache-2.0 | Android environment with programmatic task evaluation for mobile agents.            |
+| [OSWorld](https://github.com/xlang-ai/OSWorld)                                 |  56 | desktop, linux, windows, macos | [2404.07972](https://arxiv.org/abs/2404.07972) (2024) | 代码 Apache-2.0 | Execution-based evaluation of agents performing tasks in real desktop environments. |
+| [WebArena](https://github.com/web-arena-x/webarena)                            |  28 | web                            | [2307.13854](https://arxiv.org/abs/2307.13854) (2023) | 代码 Apache-2.0 | Self-hosted web environments and tasks for evaluating autonomous web agents.        |
+| [AndroidWorld](https://github.com/google-research/android_world)               |  21 | android                        | [2405.14573](https://arxiv.org/abs/2405.14573) (2024) | 代码 Apache-2.0 | Android environment with programmatic task evaluation for mobile agents.            |
+| [BrowserGym](https://github.com/ServiceNow/BrowserGym)                         |  15 | web                            | [2412.05467](https://arxiv.org/abs/2412.05467) (2024) | 代码 Apache-2.0 | Unified interfaces for browser-agent tasks and benchmark environments.              |
+| [ScreenSpot Pro](https://github.com/likaixin2000/ScreenSpot-Pro-GUI-Grounding) |  14 | desktop, windows, macos, linux | —                                                     | 代码 MIT        | GUI grounding benchmark focused on professional high-resolution interfaces.         |
+| [Mind2Web](https://github.com/OSU-NLP-Group/Mind2Web)                          |  11 | web                            | [2306.06070](https://arxiv.org/abs/2306.06070) (2023) | 代码 MIT        | Human demonstrations and tasks for generalist web navigation research.              |
 
-**模型** · 目录中共 98 项
+**模型** · [全部 283 项 →](docs/models.md)
 
-| 资源                                                 | 被提及 | 环境             | 论文                                                    | 许可            | 简介（英文）                                                                                                                                                                                                 |
-| -------------------------------------------------- | --: | -------------- | ----------------------------------------------------- | ------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| [SeeClick](https://github.com/njucckevin/SeeClick) |   9 | Cross-platform | [2401.10935](https://arxiv.org/abs/2401.10935) (2024) | 代码 Apache-2.0 | GUI grounding model trained to locate visual interface elements.                                                                                                                                       |
-| [Aguvis](https://github.com/xlang-ai/aguvis)       |   5 | Cross-platform | [2412.04454](https://arxiv.org/abs/2412.04454) (2024) | —             | Vision-based GUI agent models with unified action representations.                                                                                                                                     |
-| [UI-TARS](https://github.com/bytedance/UI-TARS)    |   5 | Cross-platform | [2501.12326](https://arxiv.org/abs/2501.12326) (2025) | 代码 Apache-2.0 | Native GUI agent models; UI-TARS-1.5 adds reinforcement-learned reasoning before acting and an open 7B checkpoint, and UI-TARS-2 extends to games, code and tool use.                                  |
-| [OpenCUA](https://github.com/xlang-ai/OpenCUA)     |   3 | Desktop        | [2508.09123](https://arxiv.org/abs/2508.09123) (2025) | 代码 MIT        | Open computer-use research stack including models and training resources.                                                                                                                              |
-| [OS-Atlas](https://github.com/OS-Copilot/OS-Atlas) |   3 | Cross-platform | [2410.23218](https://arxiv.org/abs/2410.23218) (2024) | 代码 Apache-2.0 | OS-Atlas GUI action models, including grounding bases fine-tuned from InternVL2-4B and Qwen2-VL-7B-Instruct that accept any image size and output 0-1000 relative coordinates.                         |
-| [ShowUI](https://github.com/showlab/ShowUI)        |   3 | Cross-platform | [2411.17465](https://arxiv.org/abs/2411.17465) (2024) | 代码 Apache-2.0 | Lightweight GUI-agent vision-language-action model from Show Lab and Microsoft, released with UI-guided token selection, training code, the ShowUI-web and ShowUI-desktop datasets and vLLM inference. |
+| 资源                                                                       | 被提及 | 环境                           | 论文                                                    | 许可              | 简介（英文）                                                                                                                                                                                             |
+| ------------------------------------------------------------------------ | --: | ---------------------------- | ----------------------------------------------------- | --------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [UI-TARS](https://github.com/bytedance/UI-TARS)                          |  23 | cross-platform               | [2501.12326](https://arxiv.org/abs/2501.12326) (2025) | 代码 Apache-2.0   | Native GUI agent models; UI-TARS-1.5 adds reinforcement-learned reasoning before acting and an open 7B checkpoint, and UI-TARS-2 extends to games, code and tool use.                              |
+| [SeeClick](https://github.com/njucckevin/SeeClick)                       |  18 | cross-platform               | [2401.10935](https://arxiv.org/abs/2401.10935) (2024) | 代码 Apache-2.0   | GUI grounding model trained to locate visual interface elements.                                                                                                                                   |
+| [Qwen2-VL-7B-Instruct](https://huggingface.co/Qwen/Qwen2-VL-7B-Instruct) |  11 | unspecified                  | —                                                     | 权重 apache-2.0   | An instruction-tuned 7B multimodal model for image and video understanding; its card describes visually guided operation of mobile devices.                                                        |
+| [Aguvis](https://github.com/xlang-ai/aguvis)                             |   8 | cross-platform               | [2412.04454](https://arxiv.org/abs/2412.04454) (2024) | —               | Vision-based GUI agent models with unified action representations.                                                                                                                                 |
+| [GUI-Actor](https://github.com/microsoft/GUI-Actor)                      |   7 | cross-platform               | [2506.03143](https://arxiv.org/abs/2506.03143) (2025) | 代码 MIT          | GUI grounding model with attention-based action localization.                                                                                                                                      |
+| [Holo4 27B BF16](https://huggingface.co/Hcompany/Holo4-27B)              |   7 | web, desktop, cross-platform | —                                                     | 权重 CC-BY-NC-4.0 | Dense 27B computer-use checkpoint from H Company built on Qwen3.8-27B; an external harness sends it screenshots and tool results and executes the clicks, typing, code and tool calls it requests. |
 
-**数据集** · 目录中共 86 项
+**数据集** · [全部 195 项 →](docs/datasets.md)
 
-| 资源                                                                                    | 被提及 | 环境                             | 论文                                                    | 许可     | 简介（英文）                                                                                                                                                                |
-| ------------------------------------------------------------------------------------- | --: | ------------------------------ | ----------------------------------------------------- | ------ | --------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| [ScreenSpot-Pro data](https://huggingface.co/datasets/likaixin/ScreenSpot-Pro)        |   4 | Desktop, Windows, macOS, Linux | [2504.07981](https://arxiv.org/abs/2504.07981) (2025) | 数据 mit | High-resolution professional interface screenshots and target annotations for evaluating instruction-based GUI localization.                                          |
-| [GUI-Odyssey](https://github.com/OpenGVLab/GUI-Odyssey)                               |   3 | Android                        | [2406.08451](https://arxiv.org/abs/2406.08451) (2024) | —      | Human-demonstrated Android episodes for cross-app navigation, spanning six task types, 212 apps and about 1,400 app combinations, for training and evaluating agents. |
-| [GUIAct](https://huggingface.co/datasets/yiye2023/GUIAct)                             |   3 | Web, Android                   | [2406.11317](https://arxiv.org/abs/2406.11317) (2024) | —      | Web and Android GUI action-instruction data, with single-step, multi-step and smartphone partitions.                                                                  |
-| [GUIChat](https://huggingface.co/datasets/yiye2023/GUIChat)                           |   3 | Unspecified                    | 2406.11317 (2024)                                     | —      | Conversational GUI supervision with text-rich images and bounding boxes, organized as single-turn questions and multi-turn dialogues.                                 |
-| [GUIEnv-local](https://huggingface.co/datasets/yiye2023/GUIEnv)                       |   3 | Web                            | 2406.11317 (2024)                                     | —      | The released local-supervision portion of GUIEnv, pairing webpage regions and text for OCR and GUI grounding.                                                         |
-| [OpenMobile-Data-v2](https://huggingface.co/datasets/OpenMobile-2/OpenMobile-Data-v2) |   3 | Android, Web                   | [2610.14157](https://arxiv.org/abs/2610.14157) (2026) | —      | Mobile-agent supervision from emulator and simulator trajectories, plus executable tasks with starting states and success checks for reinforcement learning.          |
+| 资源                                                                             | 被提及 | 环境                                    | 论文                                                    | 许可            | 简介（英文）                                                                                                                                                                                      |
+| ------------------------------------------------------------------------------ | --: | ------------------------------------- | ----------------------------------------------------- | ------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [ScreenSpot-Pro data](https://huggingface.co/datasets/likaixin/ScreenSpot-Pro) |  12 | desktop, windows, macos, linux        | [2504.07981](https://arxiv.org/abs/2504.07981) (2025) | 数据 mit        | High-resolution professional interface screenshots and target annotations for evaluating instruction-based GUI localization.                                                                |
+| [OS-Genesis](https://github.com/OS-Copilot/OS-Genesis)                         |  11 | cross-platform                        | [2412.19723](https://arxiv.org/abs/2412.19723) (2024) | —             | Interaction-driven pipeline that synthesizes mobile and web GUI agent trajectories without human supervision or predefined tasks, via reverse task synthesis and a trajectory reward model. |
+| [AMEX dataset release](https://huggingface.co/datasets/Yuxiang007/AMEX)        |   7 | android                               | [2407.17490](https://arxiv.org/abs/2407.17490) (2024) | 数据 cc-by-4.0  | Official Hub release of AMEX: Android app screenshots annotated for interactive-element grounding, screen and element functionality, and instructions with stepwise GUI-action chains.      |
+| [Holo4 Trajectories](https://huggingface.co/datasets/Hcompany/trajectories)    |   6 | web, desktop, android, cross-platform | —                                                     | 数据 apache-2.0 | Dataset of 7,366 computer-use agent execution trajectories from Holo4 27B and Holo4 35B-A3B, recording step-level reasoning, actions, tool results, and screenshots.                        |
+| [GroundCUA dataset](https://huggingface.co/datasets/ServiceNow/GroundCUA)      |   5 | desktop, windows, macos, linux        | [2511.07332](https://arxiv.org/abs/2511.07332) (2025) | 数据 mit        | Desktop GUI-grounding data from the GroundCUA project: PNG screenshots of 87 applications paired by hash with JSON lists of element boxes, visible text and optional coarse categories.     |
+| [GUI-Actor data](https://huggingface.co/datasets/cckevinn/GUI-Actor-Data)      |   5 | unspecified                           | [2506.03143](https://arxiv.org/abs/2506.03143) (2025) | —             | A processed screenshot and bounding-box collection released for training GUI-Actor visual grounding models.                                                                                 |
 
-**框架** · 目录中共 79 项
+**框架** · [全部 625 项 →](docs/frameworks.md)
 
-| 资源                                                                   | 被提及 | 环境             | 论文                                                    | 许可            | 简介（英文）                                                                                                                                                                                          |
-| -------------------------------------------------------------------- | --: | -------------- | ----------------------------------------------------- | ------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| [Browser Use](https://github.com/browser-use/browser-use)            |   8 | Web            | —                                                     | 代码 MIT        | Open-source browser agent library that runs locally with any LLM against a local or cloud browser, and also serves as a CLI for coding agents and as a driver for Claude's browser toolset.     |
-| [AgentLab](https://github.com/ServiceNow/AgentLab)                   |   5 | Web            | 2412.05467 (2024)                                     | 代码 Apache-2.0 | Experiment framework for developing and evaluating browser agents.                                                                                                                              |
-| [Seg2Click](https://github.com/jcwang0602/Seg2Click)                 |   5 | Cross-platform | [2610.16234](https://arxiv.org/abs/2610.16234) (2026) | 代码 MIT        | Training and inference implementation that predicts an executable-region mask and derives a GUI click from that mask.                                                                           |
-| [OpenMobile-2 code](https://github.com/OpenMobile2/OpenMobile2-Code) |   3 | Android, Web   | 2610.14157 (2026)                                     | 代码 Apache-2.0 | Evaluation adapters and training guidance for OpenMobile-2 across Android emulators and browser-rendered mobile simulation.                                                                     |
-| [UI-Genie](https://github.com/Euphoria16/UI-Genie)                   |   3 | Android        | [2505.21496](https://arxiv.org/abs/2505.21496) (2025) | —             | Training and evaluation code for a mobile-agent framework that iteratively generates trajectories using agent and reward-model feedback.                                                        |
-| [Computer Use OOTB](https://github.com/showlab/computer_use_ootb)    |   2 | Desktop        | [2411.10323](https://arxiv.org/abs/2411.10323) (2024) | 代码 Apache-2.0 | Gradio desktop GUI agent for Windows and macOS that needs no Docker, using Claude 3.5 Computer Use over the API or ShowUI and UI-TARS run locally, with multi-display and phone remote control. |
+| 资源                                                                                                   | 被提及 | 环境             | 论文                                                    | 许可            | 简介（英文）                                                                                                                                                                                        |
+| ---------------------------------------------------------------------------------------------------- | --: | -------------- | ----------------------------------------------------- | ------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [Browser Use](https://github.com/browser-use/browser-use)                                            |  52 | web            | —                                                     | 代码 MIT        | Open-source browser agent library that runs locally with any LLM against a local or cloud browser, and also serves as a CLI for coding agents and as a driver for Claude's browser toolset.   |
+| [Cua](https://github.com/trycua/cua)                                                                 |  37 | desktop        | —                                                     | 代码 MIT        | Monorepo behind Cua Spaces, which gives agents full macOS or Linux desktops, plus Cua Driver for operating native apps, Lume for Apple Silicon VMs, Cua Bench and the CUA-S1 decision models. |
+| [Epic EHR Browser Automation](https://github.com/Browser-Automation-Hub/epic-ehr-browser-automation) |  13 | web            | —                                                     | 代码 MIT        | A browser automation scaffold for Epic EHR workflows such as appointments, patient lookup, notes and messaging. It documents authentication, sessions and example actions.                    |
+| [SCALE-CUA (THUDM)](https://github.com/THUDM/SCALE-CUA)                                              |  12 | desktop        | [2607.11185](https://arxiv.org/abs/2607.11185) (2026) | —             | Computer-use training framework with VeriGen task synthesis, adaptive rollout sampling, and visual-context segmentation.                                                                      |
+| [AgentLab](https://github.com/ServiceNow/AgentLab)                                                   |   7 | web            | [2412.05467](https://arxiv.org/abs/2412.05467) (2024) | 代码 Apache-2.0 | Experiment framework for developing and evaluating browser agents.                                                                                                                            |
+| [Midscene.js](https://github.com/web-infra-dev/midscene)                                             |   7 | cross-platform | —                                                     | 代码 MIT        | Visual automation toolkit for web, mobile, and desktop interfaces.                                                                                                                            |
 
-**智能体** · 目录中共 45 项
+**智能体** · [全部 413 项 →](docs/agents.md)
 
-| 资源                                                                     | 被提及 | 环境                      | 论文                                                                                                                                                                                                                         | 许可            | 简介（英文）                                                                                                                                                                                                  |
-| ---------------------------------------------------------------------- | --: | ----------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| [Mobile-Agent](https://github.com/X-PLUG/MobileAgent)                  |   9 | Android, Cross-platform | [2401.16158](https://arxiv.org/abs/2401.16158) (2024), [2406.01014](https://arxiv.org/abs/2406.01014) (2024), [2508.15144](https://arxiv.org/abs/2508.15144) (2025), [2602.16855](https://arxiv.org/abs/2602.16855) (2026) | 代码 MIT        | Mobile device agent family using visual interface interaction.                                                                                                                                          |
-| [Agent S](https://github.com/simular-ai/Agent-S)                       |   2 | Desktop                 | [2410.08164](https://arxiv.org/abs/2410.08164) (2024), [2504.00906](https://arxiv.org/abs/2504.00906) (2025)                                                                                                               | 代码 Apache-2.0 | Simular's open-source framework for computer-use agents that click, type and scroll through desktop and web apps on macOS, Windows and Linux; its third generation, Agent S3, reports 72.6% on OSWorld. |
-| [SeeAct](https://github.com/OSU-NLP-Group/SeeAct)                      |   2 | Web                     | [2401.01614](https://arxiv.org/abs/2401.01614) (2024)                                                                                                                                                                      | —             | Generalist web agent framework for large multimodal models such as GPT-4V, with a Playwright tool that runs agents on live websites, text-choice and set-of-mark grounding, and a crawler mode.         |
-| [AppAgent](https://github.com/TencentQQGYLab/AppAgent)                 |   1 | Android                 | [2312.13771](https://arxiv.org/abs/2312.13771) (2023)                                                                                                                                                                      | 代码 MIT        | Multimodal agent that operates Android apps through taps and swipes without back-end access, building a reusable knowledge base from autonomous exploration or from watching human demonstrations.      |
-| [Auto-GUI / Auto-UI](https://github.com/cooelf/Auto-GUI)               |   1 | Android                 | [2309.11436](https://arxiv.org/abs/2309.11436) (2023)                                                                                                                                                                      | 代码 Apache-2.0 | Screenshot-based mobile agent implementation with training and inference code for chain-of-action prediction.                                                                                           |
-| [MagenticLite / Magentic UI](https://github.com/microsoft/magentic-ui) |   1 | Web                     | —                                                                                                                                                                                                                          | 代码 MIT        | Microsoft agent application combining orchestration with browser interaction; successor to Magentic UI.                                                                                                 |
+| 资源                                                           | 被提及 | 环境                                                  | 论文                                                                                                                                                                                                                         | 许可            | 简介（英文）                                                                                                                                             |
+| ------------------------------------------------------------ | --: | --------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------- | -------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [Mobile-Agent](https://github.com/X-PLUG/MobileAgent)        |  27 | android, cross-platform                             | [2401.16158](https://arxiv.org/abs/2401.16158) (2024), [2406.01014](https://arxiv.org/abs/2406.01014) (2024), [2508.15144](https://arxiv.org/abs/2508.15144) (2025), [2602.16855](https://arxiv.org/abs/2602.16855) (2026) | 代码 MIT        | Mobile device agent family using visual interface interaction.                                                                                     |
+| [Hermes Agent](https://github.com/NousResearch/hermes-agent) |  21 | cross-platform, desktop, web, linux, macos, windows | —                                                                                                                                                                                                                          | 代码 MIT        | Hermes Agent is a self-improving autonomous agent by Nous Research with procedural skill synthesis, browser control, and multi-platform sandboxes. |
+| [OpenAI Codex CLI](https://github.com/openai/codex)          |  14 | cross-platform, desktop, macos, linux, windows      | —                                                                                                                                                                                                                          | 代码 Apache-2.0 | OpenAI Codex CLI is a local terminal and desktop coding agent that executes commands and edits files inside OS-enforced sandboxes.                 |
+| [OpenClaw](https://github.com/openclaw/openclaw)             |  14 | cross-platform, desktop, web, macos, windows, linux | —                                                                                                                                                                                                                          | 代码 MIT        | OpenClaw is an open-source personal computer-use assistant that executes browser, desktop, terminal, and messaging workflows across local devices. |
+| [Gemini CLI](https://github.com/google-gemini/gemini-cli)    |   9 | cross-platform, desktop, macos, linux, windows      | —                                                                                                                                                                                                                          | 代码 Apache-2.0 | Gemini CLI is Google's open-source terminal agent providing shell execution, file manipulation, web search, and MCP tool integration.              |
+| [OpenAdapt](https://github.com/OpenAdaptAI/OpenAdapt)        |   9 | desktop                                             | —                                                                                                                                                                                                                          | 代码 MIT        | Tools for learning and automating workflows from desktop demonstrations.                                                                           |
 
 <!-- HIGHLIGHTS:END -->
 
@@ -186,26 +186,26 @@ git clone https://github.com/reacher-z/Awesome-CUA.git
 
 ## 最新审阅
 
-按时间倒序列出最新通过编辑审阅的模型、数据集、基准、系统和工具；新论文按日期列在主题页面中。
+按时间倒序列出最新通过编辑审阅的模型、数据集、基准、系统和工具；新论文按日期列在[主题页面](docs/topics.md)中。
 
 <details>
 <summary>展开最新审阅表</summary>
 
 <!-- RECENT:START -->
-| 审阅日期       | 资源                                                                                                                      | 类型   | 环境               | 简介（英文）                                                                                                                                                                                                                          |
-| ---------- | ----------------------------------------------------------------------------------------------------------------------- | ---- | ---------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| 2026‑10‑20 | [Web Browser Automation with Agents (smolagents tutorial)](https://huggingface.co/docs/smolagents/examples/web_browser) | 学习资源 | Web              | Versioned tutorial building a vision-guided CodeAgent with Selenium/Helium browser tools, screenshot callbacks and example web-navigation tasks.                                                                                |
-| 2026‑10‑20 | [ORBIT framework](https://github.com/wlanderson0/orbit)                                                                 | 框架   | Web, Desktop     | Inspect-based multi-agent evaluation framework with role, scheduling and communication controls, BrowserART accessibility-tree actions, and desktop mouse, keyboard and screenshot tools.                                       |
-| 2026‑10‑20 | [Building AI Browser Agents](https://www.deeplearning.ai/courses/building-ai-browser-agents)                            | 学习资源 | Web              | Browser-agent course with worked lessons on structured web extraction and multi-step browser interaction, followed by AgentQ search and self-correction concepts.                                                               |
-| 2026‑10‑20 | [Yunkai](https://github.com/solplum/yunkai)                                                                             | 智能体  | Android          | Android phone assistant combining model-driven tool use with accessibility-tree reading, screenshots, and tap, swipe and text-entry primitives. Its documented interaction flow presents operation plans for user confirmation. |
-| 2026‑10‑20 | [WinDOM code](https://github.com/ChenghengLi/WinDOM)                                                                    | 框架   | Web              | GUI-grounding training and evaluation code with same-family distillation, GRPO recipes and point-in-box scoring, using a Windows-style web environment.                                                                         |
-| 2026‑10‑20 | [Web Context Bench (Python)](https://github.com/charlypoly/web-context-bench-python)                                    | 基准   | Web              | Local-page benchmark comparing six browser representations on token use, factual reading and target-element selection, with deterministic answer scoring.                                                                       |
-| 2026‑10‑20 | [Mobster engine](https://github.com/RadishSoftware/mobster)                                                             | 智能体  | iOS              | iOS agent engine organized around an observe, decide, verify and act loop, using WebDriverAgent screen state and phone actions such as taps, typing, swipes and app switches.                                                   |
-| 2026‑10‑20 | [GUI Grounding Evaluation Harness](https://github.com/PatrickStarL/gui-grounding-eval)                                  | 工具   | Unspecified      | ScreenSpot-Pro evaluation harness with explicit coordinate transforms, prompt and crop-based inference comparisons, and per-sample grounding accuracy and cost records.                                                         |
-| 2026‑10‑20 | [Activity Recorder](https://github.com/anikasomaia/local-activity-recorder)                                             | 工具   | Desktop, Windows | Windows tray utility that records primary-display screenshots, keyboard key codes and mouse events as local JPEG and JSON files for training-data collection.                                                                   |
-| 2026‑10‑20 | [MobileForge](https://github.com/kwai/MobileForge)                                                                      | 框架   | Android          | Android GUI-agent adaptation framework combining app exploration, generated curricula and rollout feedback with hint-conditioned step-level GRPO; the documented public training path targets Qwen3-VL-8B.                      |
-| 2026‑10‑20 | [MemGUI-Agent](https://github.com/kwai/MemGUI-Agent)                                                                    | 框架   | Android          | MemGUI-Agent training and offline evaluation tools provide trajectory conversion, LoRA SFT templates, and step-level checks of GUI actions, memory updates and context folding.                                                 |
-| 2026‑10‑18 | [VideoCAD data](https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/WX8PCK)                        | 数据集  | Web              | CAD screen recordings paired with action logs and target model images for studying precise interface control and long-horizon visual imitation.                                                                                 |
+| 审阅日期       | 资源                                                                                                                                                     | 类型   | 环境                                                                | 简介（英文）                                                                                                                                                                                         |
+| ---------- | ------------------------------------------------------------------------------------------------------------------------------------------------------ | ---- | ----------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| 2026‑11‑09 | [WildClawBench](https://github.com/InternLM/WildClawBench)                                                                                             | 基准   | cross-platform, web                                               | WildClawBench evaluates agents on 60 tasks in a live tool environment that includes browser use, email, files and coding. It releases evaluation code and links to task data and trajectories. |
+| 2026‑11‑09 | [Rico Dataset](https://www.interactionmining.org)                                                                                                      | 数据集  | unspecified                                                       | Rico Dataset is a collection of mobile app interaction and design data presented through Interaction Mining, with 70k screens and 10k user flows across 5k apps.                               |
+| 2026‑11‑09 | [OpenAdapt Agent](https://github.com/OpenAdaptAI/openadapt-agent)                                                                                      | 工具   | cross-platform, web, desktop, windows                             | OpenAdapt Agent exposes demonstrated application workflows as callable tools for AI agents. It enters values in an app and checks the record before and after saving.                          |
+| 2026‑11‑09 | [ToL Hierarchical GUI region detection](https://github.com/llv22/tol_gui_region_detection)                                                             | 工具   | android                                                           | Code and configurations for training a hierarchical Android GUI region detector with DINO and running region inference on the ScreenPR benchmark.                                              |
+| 2026‑11‑09 | [MiniMax M3](https://www.minimaxi.com/blog/minimax-m3)                                                                                                 | 模型   | desktop                                                           | MiniMax M3 is a multimodal model whose release page describes desktop operation from visual input and cross-application tasks through MiniMax Code.                                            |
+| 2026‑11‑09 | [Code2World](https://github.com/AMAP-ML/Code2World)                                                                                                    | 工具   | android                                                           | Code2World provides code for predicting the next Android GUI screen from a screenshot and proposed action through renderable code, with an AndroidWorld agent integration.                     |
+| 2026‑11‑09 | [Cerner PowerChart Browser Automation](https://github.com/Browser-Automation-Hub/cerner-powerchart-browser-automation)                                 | 工具   | web                                                               | A browser automation scaffold for Cerner PowerChart with actions for login, patient search, results, orders, and documentation export, plus a selector reference.                              |
+| 2026‑11‑09 | [WAREX Supplementary Code](https://github.com/SumanKNath/WABER)                                                                                        | 工具   | web, desktop, linux                                               | WAREX supplementary code uses mitmproxy add-ons to inject popups or server and network errors into web-agent tests and record token use and latency.                                           |
+| 2026‑11‑09 | [The OS X Accessibility Model](https://developer.apple.com/library/archive/documentation/Accessibility/Conceptual/AccessibilityMacOSX/OSXAXmodel.html) | 学习资源 | desktop, macos                                                    | Apple's OS X guide explains how accessibility clients inspect an app's element hierarchy, read control properties, invoke actions and receive interface-change notifications.                  |
+| 2026‑11‑09 | [SkillPacks](https://github.com/agentsea/skillpacks)                                                                                                   | 工具   | desktop                                                           | SkillPacks records and approves agent tool actions for retrieval and later training, illustrated with a desktop-control example.                                                               |
+| 2026‑11‑09 | [SE-GUI](https://github.com/YXB-NKU/SE-GUI)                                                                                                            | 框架   | unspecified                                                       | SE-GUI provides training and evaluation code for a GUI-grounding model refined with location-based rewards and attention feedback; its README links separate weights and seed data.            |
+| 2026‑11‑09 | [OpenGVLab/MMBench-GUI](https://huggingface.co/datasets/OpenGVLab/MMBench-GUI)                                                                         | 数据集  | cross-platform, desktop, windows, macos, linux, ios, android, web | MMBench-GUI releases annotations and offline images for evaluating interface understanding and grounding within a GUI-agent benchmark spanning desktop, mobile and web platforms.              |
 <!-- RECENT:END -->
 
 </details>
@@ -216,17 +216,17 @@ git clone https://github.com/reacher-z/Awesome-CUA.git
 
 打开[交互式网站](https://awesomecua.com/)，可以搜索和筛选全部资源、查看来源证据、切换中英文界面，或下载完整目录。网站开发与发布见 [website.md](docs/website.md)。
 
-中文数据中心与[English data hub](https://awesomecua.com/data/)按六组组织公开下载：完整目录、RAG 检索文档、论文引用、主题与对比、来源与审阅状态、数据规范（schema）。克隆仓库仍可取得同一套完整源目录；数据中心提供其已发布快照的导出文件。
+[中文数据中心](https://awesomecua.com/zh/data/)与[English data hub](https://awesomecua.com/data/)按六组组织公开下载：完整目录、RAG 检索文档、论文引用、主题与对比、来源与审阅状态、数据规范（schema）。克隆仓库仍可取得同一套完整源目录；数据中心提供其已发布快照的导出文件。
 
-下载清单为每个列出的导出记录实际数量及单位、范围、精确字节数和 SHA-256 指纹。不同格式和视图可能包含相同资源，单位也可能不同，不能把这些数量相加。混合使用下载文件前，请比较各清单的 `catalog_sha256`，确认它们属于同一目录快照。
+[下载清单](https://awesomecua.com/downloads/manifest.json)为每个列出的导出记录实际数量及单位、范围、精确字节数和 SHA-256 指纹。混合使用下载文件前，请比较各清单的 `catalog_sha256`，确认它们属于同一目录快照。
 
-已审阅研究（[English](https://awesomecua.com/papers/)） · [Computer-use agent 指南](https://awesomecua.com/guides/) · [静态资源目录](https://awesomecua.com/catalog/) · [搜索与 AI 发现](docs/search-discovery.md)
+[已审阅研究](https://awesomecua.com/zh/papers/)（[English](https://awesomecua.com/papers/)） · [Computer-use agent 指南](https://awesomecua.com/guides/) · [静态资源目录](https://awesomecua.com/catalog/) · [搜索与 AI 发现](docs/search-discovery.md)
 
-- [目录 JSONL](https://github.com/reacher-z/Awesome-CUA/blob/main/data/catalog.jsonl) - 每行一个资源，包含稳定 ID、类型化字段、来源证据、按范围区分的许可和审阅状态。
-- [引用图](https://github.com/reacher-z/Awesome-CUA/blob/main/data/references.jsonl) - 一手来源中的对外引用。`mentions` 不等于 `trained_on` 或 `evaluated_on`。
-- [发现来源登记](https://github.com/reacher-z/Awesome-CUA/blob/main/data/sources.json) - 来源快照，以及每个标识符的发现位置（另见 [候选条目](data/candidates.jsonl)）。
-- [待审队列](https://github.com/reacher-z/Awesome-CUA/blob/main/data/review-queue.jsonl) - 未解决的证据、尚未收录的发现，以及需要编辑处理的提议。经审阅确认为非资源或已收录资源其他地址的链接仍保留在队列中，并注明 `resolution` 与理由。
-- [JSON Schema](https://github.com/reacher-z/Awesome-CUA/blob/main/schemas/resource.schema.json) - 可机器检查的数据契约和覆盖度统计（另见 [覆盖度 JSON](data/coverage.json)）。
+- **[目录 JSONL](https://github.com/reacher-z/Awesome-CUA/blob/main/data/catalog.jsonl)：** 每行一个资源，包含稳定 ID、类型化字段、来源证据、按范围区分的许可和审阅状态。
+- **[引用图](https://github.com/reacher-z/Awesome-CUA/blob/main/data/references.jsonl)：** 一手来源中的对外引用。
+- **[发现来源登记](https://github.com/reacher-z/Awesome-CUA/blob/main/data/sources.json)** 和 **[候选条目](data/candidates.jsonl)：** 来源快照，以及每个标识符的发现位置。
+- **[待审队列](https://github.com/reacher-z/Awesome-CUA/blob/main/data/review-queue.jsonl)：** 未解决的证据、尚未收录的发现，以及需要编辑处理的提议。经审阅确认为非资源或已收录资源其他地址的链接仍保留在队列中，并注明 `resolution` 与理由。
+- **[JSON Schema](https://github.com/reacher-z/Awesome-CUA/blob/main/schemas/resource.schema.json)** 和 **[覆盖度 JSON](data/coverage.json)：** 可机器检查的数据契约和覆盖度统计。
 
 ```bash
 # Python 3.11+。搜索和导出只需要标准库。
@@ -246,15 +246,15 @@ python3 scripts/export_citations.py --format bibtex --output dist/citations.bib
 
 ## “已核实”的含义
 
-| 状态                  | 已检查的内容                              | 尚未确认的内容                |
-| ------------------- | ----------------------------------- | ---------------------- |
-| `curated`           | 基于一手来源快照的 AI 辅助编辑审阅，涵盖名称、范围、摘要和分类   | 独立复现、普遍可用性或背书          |
-| `metadata_verified` | 对照保留的 arXiv 或出版来源核实书目身份、标题、作者和已记录日期 | 主题相关性、方法、结论，或是否属于核心领域  |
-| `candidate`         | 发现了规范化的 URL 或标识符                    | 是否收录、是否正确或是否可用；不计入公开目录 |
+| 状态                  | 已检查的内容                              |
+| ------------------- | ----------------------------------- |
+| `curated`           | 基于一手来源快照的 AI 辅助编辑审阅，涵盖名称、范围、摘要和分类   |
+| `metadata_verified` | 对照保留的 arXiv 或出版来源核实书目身份、标题、作者和已记录日期 |
+| `candidate`         | 发现了规范化的 URL 或标识符                    |
 
-计数指的是**资源**，而不是独立项目。论文、仓库、数据集发布、模型权重版本、产品和发布方可以是彼此关联的不同资源。模型系列与具体权重版本在审阅后会显式关联。
+论文、仓库、数据集发布、模型权重版本、产品和发布方可以是彼此关联的不同资源。模型系列与具体权重版本在审阅后会显式关联。
 
-代码、数据、权重和文档的许可分别记录。缺失值为 `null`。数据集归档文件数不会被换算成训练样本数。来自不同基准版本、数据划分、动作预算或评测器的分数不会合并成排行榜。
+代码、数据、权重和文档的许可分别记录。缺失值为 `null`。
 
 ## 维护与验证
 
@@ -271,12 +271,28 @@ node --test tests/web.test.mjs
 
 这些命令与 [Catalog quality](.github/workflows/catalog.yml) 在每次推送和拉取请求时运行的检查一致，顺序也相同。需要 Python 3.11+ 和 Node.js 24+，即 `package.json` 中 `engines` 声明的版本（CI 使用 Python 3.12 和 Node.js 24）。网页测试只使用 Node.js 内置的测试运行器，无需用 npm 安装任何依赖。`npm run test:web` 和 `npm run build:web` 分别是最后两条命令的快捷方式。
 
-网络发现和核实需要显式运行相应命令；常规构建不联网。一手来源快照发生变化后，必须重新进行编辑审阅才能发布。维护指南 · [方法说明](docs/methodology.md) · [数据字典](docs/data-dictionary.md)
+网络发现和核实需要显式运行相应命令；常规构建不联网。一手来源快照发生变化后，必须重新进行编辑审阅才能发布。[维护指南](docs/maintenance.md) · [方法说明](docs/methodology.md) · [数据字典](docs/data-dictionary.md)
 
 ## 致谢与复用
 
 [来源登记](data/sources.json)列出了用于发现资源的社区合集和综述。书目记录依据保留的 arXiv、出版方及作者来源；出版记录分别保留各版本的题名、作者和日期精度。部分资源还会对照发布方的仓库、文档以及模型/数据集卡片核查。上游 README、论文、模型权重和数据集不在本仓库中再分发。
 
-本仓库的原创代码和标注采用 [MIT 许可](LICENSE)。被链接的资源保留各自的条款；本仓库不对其重新授权。
+本仓库的原创代码和标注采用 [MIT 许可](LICENSE)。被链接的资源保留各自的条款。
 
 引用本目录时，请使用 [CITATION.cff](CITATION.cff) 或 GitHub 的“Cite this repository”按钮。数据随每次扫描更新，请固定所用的确切版本。每个 `v*` 标签都有一个[数据发布](https://github.com/reacher-z/Awesome-CUA/releases)，提供由该标签所指提交构建的版本化下载：JSONL、JSON 和 SQLite 格式的目录、覆盖台账、主题与规格导出，以及它们的 `SHA256SUMS`。请引用发布标签，或在克隆中用 `git rev-parse HEAD` 记录提交，或链接该提交下的文件，例如 `https://github.com/reacher-z/Awesome-CUA/blob/<commit>/data/catalog.jsonl`。[如何发布版本](docs/maintenance.md#versioned-data-releases)。
+
+<!-- STAR_HISTORY:START -->
+
+## Star 历史
+
+<a href="https://www.star-history.com/#reacher-z/Awesome-CUA&amp;Date">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/svg?repos=reacher-z/Awesome-CUA&amp;type=Date&amp;theme=dark">
+    <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/svg?repos=reacher-z/Awesome-CUA&amp;type=Date">
+    <img src="https://api.star-history.com/svg?repos=reacher-z/Awesome-CUA&amp;type=Date" alt="Awesome-CUA 的 GitHub Star 数量随时间变化趋势" width="100%">
+  </picture>
+</a>
+
+[在 Star History 查看 Awesome-CUA 的 Star 历史](https://www.star-history.com/#reacher-z/Awesome-CUA&Date)
+
+<!-- STAR_HISTORY:END -->

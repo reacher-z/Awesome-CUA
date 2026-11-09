@@ -1,20 +1,11 @@
 {
   "timezone": "UTC",
-  "scan_cron": "7 */2 * * *",
+  "scan_cron": "7 */8 * * *",
   "publish_cron": "25,55 * * * *",
   "scan_times_local": [
     "00:07",
-    "02:07",
-    "04:07",
-    "06:07",
     "08:07",
-    "10:07",
-    "12:07",
-    "14:07",
-    "16:07",
-    "18:07",
-    "20:07",
-    "22:07"
+    "16:07"
   ],
   "publish_check_minutes": [
     25,
@@ -57,11 +48,23 @@
     "phone-use",
     "mobile-use",
     "screen-understanding",
-    "ui-agent"
+    "ui-agent",
+    "phrase-clean-room-reimplementation",
+    "phrase-reimplementation-of",
+    "phrase-open-source-reimplementation",
+    "phrase-decompilation",
+    "phrase-decompiled",
+    "phrase-reverse-engineered",
+    "phrase-recreation-of",
+    "phrase-clone-of",
+    "phrase-port-of",
+    "phrase-matching-decomp",
+    "phrase-re-implementation"
   ],
-  "history_limit": 180,
-  "max_consecutive_partial": 4,
-  "max_scan_age_hours": 5,
+  "history_limit": 45,
+  "max_consecutive_partial": 3,
+  "max_scan_age_hours": 9,
+  "scan_commit_heartbeat_hours": 8,
   "source_repository": "reacher-z/Awesome-CUA",
   "website_repository": "AwesomeCUA/awesomecua.github.io",
   "policy": "Automated scans discover candidates and verify bibliographic metadata. Editorial approval, topic annotations, and license claims require separate source review."

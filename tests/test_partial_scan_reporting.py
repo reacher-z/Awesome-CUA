@@ -1,4 +1,5 @@
 import contextlib
+import datetime as dt
 import io
 from pathlib import Path
 import sys
@@ -109,7 +110,7 @@ class PartialScanReportingTests(unittest.TestCase):
         self.assertNotIn('repeated_partial', step_outputs(self.scan(history=['partial'] * 9)[2]), 'no limit configured')
 
     def test_the_configured_limit_is_set(self):
-        self.assertEqual(scan.read_json(ROOT / 'data' / 'scan-config.json')['max_consecutive_partial'], 4)
+        self.assertEqual(scan.read_json(ROOT / 'data' / 'scan-config.json')['max_consecutive_partial'], 3)
 
 
 class ThrottlePauseTests(unittest.TestCase):
@@ -140,14 +141,69 @@ class ThrottlePauseTests(unittest.TestCase):
     def test_a_gap_that_never_clears_keeps_counting(self):
         persistent = lambda: self.row(warnings=['GitHub candidate observations paused for provider rate limiting; verified progress and cursor are retained.',
                                                   'Discovery sources failed: a', '3 GitHub candidate requests have no accepted metadata response.'])
-        rows = [persistent() for _ in range(5)]
-        self.assertEqual(scan.partial_streak(rows), 2, 'the first three scans have no history to call the gap persistent')
+        rows = [persistent() for _ in range(8)]
+        self.assertEqual(scan.partial_streak(rows), 2, 'the first six scans have no history to call the gap persistent')
         transient = [self.row(warnings=['GitHub candidate observations paused for provider rate limiting; verified progress and cursor are retained.',
-                                        f'Discovery sources failed: s{i}']) for i in range(6)]
+                                        f'Discovery sources failed: s{i}']) for i in range(9)]
         self.assertEqual(scan.partial_streak(transient), 0)
 
     def test_a_success_still_ends_the_streak(self):
         self.assertEqual(scan.partial_streak([{'status': 'partial'}] * 3 + [{'status': 'success'}, self.row()]), 0)
+
+
+class NothingToCommitTests(unittest.TestCase):
+    NOW = dt.datetime(2026, 11, 6, 9, 0, tzinfo=dt.timezone.utc)
+    CONFIG = {'scan_commit_heartbeat_hours': 2}
+    PREVIOUS = {'status': 'success', 'finished_at': '2026-11-06T08:20:00Z', 'pending_metadata_changes': 11}
+
+    def report(self, **changes):
+        return {'status': 'success', 'warnings': [], 'new_papers': [], 'new_candidate_count': 0, 'before': {'candidates': 5}, 'after': {'candidates': 5},
+                'pending_metadata_changes': 11, 'candidate_observations': {'successful_responses': 0, 'new_unique_repositories': 0},
+                'network_budget': {'provider_cooldowns': {}}, **changes}
+
+    def decide(self, report, previous=None, config=None):
+        return scan.nothing_to_commit(report, self.PREVIOUS if previous is None else previous, self.CONFIG if config is None else config, self.NOW)
+
+    def test_a_healthy_scan_with_nothing_new_is_not_committed(self):
+        self.assertTrue(self.decide(self.report()))
+
+    def test_anything_new_or_any_gap_is_committed(self):
+        for name, changes in {
+                'partial': {'status': 'partial'}, 'gap': {'warnings': ['Discovery sources failed: a']},
+                'paper': {'new_papers': [{'id': 'p'}]}, 'candidate': {'new_candidate_count': 1},
+                'counts': {'after': {'candidates': 6}}, 'metadata': {'pending_metadata_changes': 12},
+                'cursor': {'candidate_observations': {'successful_responses': 3, 'new_unique_repositories': 0}},
+                'repositories': {'candidate_observations': {'successful_responses': 0, 'new_unique_repositories': 1}},
+                'cooldown': {'network_budget': {'provider_cooldowns': {'api.github.com': '2026-11-06T09:05:00+00:00'}}}}.items():
+            with self.subTest(name):
+                self.assertFalse(self.decide(self.report(**changes)))
+
+    def test_recovery_and_the_heartbeat_are_committed(self):
+        self.assertFalse(self.decide(self.report(), {**self.PREVIOUS, 'status': 'partial'}))
+        self.assertFalse(self.decide(self.report(), {**self.PREVIOUS, 'finished_at': '2026-11-06T07:00:00Z'}))
+        self.assertFalse(self.decide(self.report(), {'status': 'success', 'pending_metadata_changes': 11}))
+        self.assertFalse(self.decide(self.report(), config={}))
+
+    def test_only_the_times_a_scan_last_looked_are_ignored_in_records(self):
+        with tempfile.TemporaryDirectory() as directory, mock.patch.object(scan, 'DATA', Path(directory)):
+            path = Path(directory) / 'metadata-updates.jsonl'
+            row = {'id': 'a', 'changes': {'title': {'current': 'x', 'observed': 'y'}}, 'evidence': [{'retrieved_at': 't1', 'sha256': 'h'}], 'last_observed_at': 't1'}
+            scan.write_jsonl(path, [row])
+            state = scan.record_state()
+            scan.write_jsonl(path, [{**row, 'evidence': [{'retrieved_at': 't2', 'sha256': 'h'}], 'last_observed_at': 't2'}])
+            self.assertEqual(scan.record_state(), state)
+            scan.write_jsonl(path, [{**row, 'changes': {'title': {'current': 'x', 'observed': 'z'}}}])
+            self.assertNotEqual(scan.record_state(), state)
+            scan.write_jsonl(path, [{**row, 'evidence': [{'retrieved_at': 't1', 'sha256': 'other'}]}])
+            self.assertNotEqual(scan.record_state(), state)
+
+    def test_the_heartbeat_keeps_receipts_inside_the_freshness_limit(self):
+        config = scan.read_json(ROOT / 'data' / 'scan-config.json')
+        self.assertLess(config['scan_commit_heartbeat_hours'], config['max_scan_age_hours'])
+
+    def test_the_commit_step_skips_only_on_this_output(self):
+        text = WORKFLOW.read_text()
+        self.assertIn("if: github.ref == 'refs/heads/main' && !inputs.dry_run && steps.scan.outputs.nothing_new != 'true'", text)
 
 
 class RepeatedPartialWorkflowTests(unittest.TestCase):

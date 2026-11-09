@@ -1552,5 +1552,17 @@
     "doi_links": true,
     "rationale": "The arXiv HTML rendering links the references of the survey, including UI-Pro, an OpenReview-only submission that Semantic Scholar lists by title alone. Page-chrome links of arXiv HTML are set aside in data/candidate-reviews.json.",
     "notes": "Registered by the 2026-11-05 coverage comparison against outside reference sources. Discovery is not inclusion; every link stays a candidate until its own source review."
+  },
+  {
+    "id": "benchmark-leads",
+    "name": "Computer-use benchmark leads",
+    "url": "https://raw.githubusercontent.com/reacher-z/Awesome-CUA/main/docs/discovery-leads/benchmark-leads.md",
+    "homepage": "https://github.com/reacher-z/Awesome-CUA/blob/main/docs/discovery-leads/benchmark-leads.md",
+    "role": "discovery",
+    "scope": [
+      "benchmarks",
+      "research"
+    ],
+    "rationale": "Benchmarks from the owner's computer-use agent taxonomy that the catalog does not yet index. Links are leads only; each needs its own primary-source review before curation."
   }
 ]

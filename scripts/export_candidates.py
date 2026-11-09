@@ -492,7 +492,7 @@ def _validate_public_provenance(manifest, rows, receipts):
                     or params.get('q') != [scan.search_query(query['topic'], query['created_after'], query['created_before'])['query']]):
                 raise ValueError('Public primary receipt differs from its query')
     outcomes = report['request_outcomes']
-    allowed = {'accepted', 'accepted_with_rejections', 'rejected', 'quarantined', 'rate_limited', 'unavailable', 'redirect_not_followed', 'fetch_failed', 'response_too_large', 'malformed_response'}
+    allowed = {'accepted', 'accepted_with_rejections', 'rejected', 'quarantined', 'rate_limited', 'unavailable', 'redirect_not_followed', 'fork_not_recorded', 'fetch_failed', 'response_too_large', 'malformed_response'}
     if not isinstance(outcomes, dict) or set(outcomes) - allowed:
         raise ValueError('Invalid public request outcomes')
     if sum(checked_count(n) for n in outcomes.values()) != sum(r['requests_attempted'] for r in runs.values()) or outcomes.get('accepted', 0) < len(receipts):

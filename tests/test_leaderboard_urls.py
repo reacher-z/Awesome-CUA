@@ -23,11 +23,17 @@ LEADERBOARDS = {
     "github:stonybrooknlp/appworld": "https://appworld.dev/appworld/leaderboard",
     "github:theagentcompany/theagentcompany": "https://the-agent-company.com/#/leaderboard",
     "github:tiger-ai-lab/clawbench": "https://huggingface.co/spaces/TIGER-Lab/ClawBench",
+    "github:tiger-ai-lab/websitebench": "https://website-bench.com/#results",
     "github:thudm/agentbench": "https://docs.google.com/spreadsheets/d/e/2PACX-1vRR3Wl7wsCgHpwUw1_eUXW_fptAPLL3FkhnW_rua0O1Ji_GIVrpTjY5LaKAhwO-WeARjnY_KNw0SYNJ/pubhtml",
     "github:thudm/android-lab": "https://docs.google.com/spreadsheets/d/1Zv6mBfd4Ibt8mke24K6zAFrXe4AvEFaBLW3hpJqSgjw/edit?gid=0#gid=0",
     "github:tongyi-mai/mobileworld": "https://tongyi-mai.github.io/MobileWorld/#leaderboard",
     "github:unipat-ai/saas-bench": "https://unipat.ai/benchmarks/SaaS-Bench",
     "url:d9d8e68f19ef0956d189": "https://recreation-bench.cc/#leaderboard",
+    "github:ethz-spylab/agentdojo": "https://agentdojo.spylab.ai/results/",
+    "github:halluminate/webbench": "https://webbench.ai/",
+    "url:cb7f3bdb832d533c96b0": "https://www.swebench.com/multimodal.html",
+    "github:lgy0404/memgui-bench": "https://lgy0404.github.io/MemGUI-Bench/leaderboard.html",
+    "github:ljang0/odysseys": "https://odysseys-website.pages.dev/leaderboard.html",
 }
 
 

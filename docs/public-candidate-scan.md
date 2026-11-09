@@ -58,7 +58,9 @@ phase per invocation; topic shards can use the remaining request budget. Its
 cursor persists. A settled answer about one name is recorded once, the cursor
 advances, and the phase continues with the next name in the same invocation. A
 settled answer is a permanent redirect (HTTP 301 or 308, for a renamed or
-transferred repository; the redirect is not followed) or a 404. It counts as an
+transferred repository; the redirect is not followed), a 404, or a response that
+reports a public repository as a fork (`fork_not_recorded`; its metadata and body
+are not kept). It counts as an
 unknown attempt in the round's receipt, but the scheduled scan reports it as a
 notice rather than a gap, so it does not make the scan partial. The scheduled scan
 changes its input files on almost every run, so each run usually starts a new
@@ -66,8 +68,8 @@ seed cohort at the first seed. Later cohorts therefore skip a name with a settle
 answer for 30 days (`SETTLED_SEED_RECHECK`) and then ask once more; without this,
 one renamed repository was requested first by every scan and stopped the phase.
 Network errors, server errors, rate limits and unparseable bodies settle nothing
-and are retried by a later run. A quarantined direct response does not advance
-the cursor and is retried by a later run.
+and are retried by a later run. Any other quarantined direct response, including
+one with no `fork` field, does not advance the cursor and is retried by a later run.
 If input fingerprints change, a new seed cohort is created, unfinished old seed
 cursors are marked `superseded_input`, and previously observed repository data
 and search-shard progress remain intact.
@@ -212,7 +214,7 @@ and updates only the manifest’s active-catalog comparison context for that bui
 Absent inputs remove the owned optional downloads on the next publication.
 
 When present, the JSONL and manifest appear in the data hub’s **Sources and review
-states** group; their schemas appear in **Data contracts**. They are not added to
+states** group; their schemas appear in **File schemas**. They are not added to
 the active catalog, resource pages, search recommendations, citations, or default
 RAG exports. A consumer can ingest them into a separate candidate collection
 keyed by `github-repository:<numeric ID>`, preserving review state and evidence.
@@ -340,6 +342,8 @@ manifests expose all historical query gaps, epoch history and the recheck count;
 unresolved statuses remain visible even when the newest frontier is complete or
 the ordinary pending counter is zero. None of these
 states establishes global completeness or CUA relevance.
+
+The configured search cohorts include public repository topics and quoted README/description phrases for reimplementations, decompilations, recreations, clones and ports. They share the same bounded page cursors, rate-limit cooldowns and retained query receipts.
 
 ### One-time offline bootstrap
 

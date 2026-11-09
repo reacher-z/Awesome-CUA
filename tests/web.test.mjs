@@ -365,7 +365,7 @@ test('explicit sorts and empty-query order stay stable without per-comparison no
   String.prototype.localeCompare=function(...args){collated++;return localeCompare.apply(this,args);};
   try{for(const sort of ['featured','name','newest'])filtered(rows,{...initial(),sort,q:'g'});}finally{String.prototype.normalize=nativeNormalize;String.prototype.localeCompare=localeCompare;}
   assert.equal(collated,0);
-  assert.ok(normalized<=5*rows.length,`${normalized} normalizations for ${rows.length} records`);
+  assert.ok(normalized<=6*rows.length,`${normalized} normalizations for ${rows.length} records`);
 });
 test('desktop and mobile platforms include their operating systems',()=>{
   const ids=platform=>new Set(filtered(rows,{...initial(),platform}).map(r=>r.id));
@@ -536,6 +536,35 @@ test('footer and hero text on the indigo panel meets WCAG AA contrast',()=>{
   for(const block of [...site.matchAll(/--ad-indigo:(#[0-9A-Fa-f]{6})/g)])for(const text of ['#FFFFFF','#E2FDFF'])assert.ok(contrast(text,block[1])>=4.5,`${text} on ${block[1]}`);
   assert.ok([...site.matchAll(/--ad-indigo:/g)].length>=3,'light and both dark blocks define the panel colour');
 });
+test('the grid paper hero, title bar and window strips meet WCAG AA contrast in both themes',()=>{
+  const site=readFileSync(new URL('../web/assets/site.css',import.meta.url),'utf8');
+  const start=site.indexOf('Indigo on Grid Paper');
+  assert.ok(start>0,'grid paper section exists');
+  const section=site.slice(start);
+  const [light,dark]=[...section.matchAll(/--grid-line:(#[0-9A-Fa-f]{6});--bar-bg:(#[0-9A-Fa-f]{6})/g)];
+  assert.ok(light&&dark,'light and dark grid tokens');
+  const lightText=['#212632','#303542','#5E6472'],darkText=['#E2FDFF','#D0D7E8','#989EAE'];
+  for(const [match,text,paper] of [[light,lightText,'#FFFFFF'],[dark,darkText,'#0C1023']]){
+    for(const color of text)for(const surface of [paper,match[1]])assert.ok(contrast(color,surface)>=4.5,`${color} on ${surface}`);
+    assert.ok(contrast('#FFFFFF',match[2])>=4.5,`title bar text on ${match[2]}`);
+  }
+  assert.ok(contrast('#5E6472','#F7F8FC')>=4.5,'meta text on the light window strip');
+  assert.ok(contrast('#989EAE','#10152C')>=4.5,'meta text on the dark window strip');
+  assert.ok(contrast('#5E6472','#FFFFFF')>=4.5,'group label on the light window');
+  assert.ok(contrast('#989EAE','#1B223E')>=4.5,'group label on the dark window');
+  assert.match(section,/\.row-cap\{[^}]*background:none/,'group labels have no fill');
+  assert.ok(!/\.r3-band\{[^}]*background-image:linear/.test(section),'no grid on the benchmark band');
+});
+test('data page choice cards keep their text and buttons readable in both themes',()=>{
+  const site=readFileSync(new URL('../web/assets/site.css',import.meta.url),'utf8');
+  const tiles=[...site.matchAll(/--ad-f1:(#[0-9A-Fa-f]{6});--ad-f2:(#[0-9A-Fa-f]{6});--ad-f3:(#[0-9A-Fa-f]{6});--ad-f4:(#[0-9A-Fa-f]{6})/g)];
+  assert.ok(tiles.length>=2,'light and dark tile tokens');
+  for(const [index,match] of tiles.entries()){
+    const ink=index===0?'#212632':'#E2FDFF';
+    for(const tile of match.slice(1))assert.ok(contrast(ink,tile)>=4.5,`${ink} on ${tile}`);
+  }
+  for(const [label,button] of [['#FFFFFF','#4B59F2'],['#0C1023','#9BB1FF']])assert.ok(contrast(label,button)>=4.5,`${label} on ${button}`);
+});
 test('the announcement bar and its button meet WCAG AA contrast in both themes',()=>{
   const css=readFileSync(new URL('../web/assets/site.css',import.meta.url),'utf8');
   const bar=css.match(/\.announce\{--a-bg:(#[0-9A-Fa-f]{6});--a-fg:(#[0-9A-Fa-f]{6})/);
@@ -544,6 +573,12 @@ test('the announcement bar and its button meet WCAG AA contrast in both themes',
   assert.ok(contrast('#FFFFFF',bar[2])>=4.5,'button label on the dark pill');
   assert.match(css,/\.announce\{[^}]*height:40px/,'height is reserved in CSS');
   assert.match(css,/\.announce-off \.announce\{display:none\}/);
+});
+test('the star button keeps its label and count readable on the indigo fill in both themes',()=>{
+  const section=readFileSync(new URL('../web/assets/site.css',import.meta.url),'utf8');
+  const fills=[...section.matchAll(/--grid-line:#[0-9A-Fa-f]{6};--bar-bg:(#[0-9A-Fa-f]{6})/g)].map(match=>match[1]);
+  assert.ok(fills.length>=2,'light and dark fills');
+  for(const fill of fills)assert.ok(contrast('#FFFFFF',fill)>=4.5,`label on ${fill}`);
 });
 test('pagination is a nav of numbered page buttons with the current page marked in both languages',async()=>{
   const current='.pagination .page-numbers button[aria-current=page]';

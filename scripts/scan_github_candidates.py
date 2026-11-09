@@ -26,7 +26,7 @@ from catalog import ROOT, atomic_write, canonical
 from repository_identity import repository_aliases
 from network_budget import BudgetDeferred, budget_from_environment
 
-TOPICS = frozenset({'computer-use', 'gui-agent', 'gui-agents', 'gui-automation',
+TOPIC_COHORTS = frozenset({'computer-use', 'gui-agent', 'gui-agents', 'gui-automation',
                     'desktop-automation', 'browser-agent', 'browser-agents',
                     'browser-automation', 'android-automation',
                     'computer-use-agent', 'computer-use-agents', 'gui-grounding',
@@ -36,6 +36,20 @@ TOPICS = frozenset({'computer-use', 'gui-agent', 'gui-agents', 'gui-automation',
                     'cua', 'computer-control', 'computer-agent', 'os-agent', 'os-agents',
                     'mobile-agents', 'android-agent', 'phone-use', 'mobile-use',
                     'screen-understanding', 'ui-agent'})
+PHRASE_ROOTS = {
+    'phrase-clean-room-reimplementation': 'clean-room reimplementation',
+    'phrase-reimplementation-of': 'reimplementation of',
+    'phrase-open-source-reimplementation': 'open-source reimplementation',
+    'phrase-decompilation': 'decompilation',
+    'phrase-decompiled': 'decompiled',
+    'phrase-reverse-engineered': 'reverse-engineered',
+    'phrase-recreation-of': 'recreation of',
+    'phrase-clone-of': 'clone of',
+    'phrase-port-of': 'port of',
+    'phrase-matching-decomp': 'matching decomp',
+    'phrase-re-implementation': 're-implementation',
+}
+TOPICS = TOPIC_COHORTS | PHRASE_ROOTS.keys()
 DEFAULT_TOPICS = ('computer-use', 'gui-agent', 'browser-automation')
 INPUTS = ('catalog.jsonl', 'candidates.jsonl', 'primary-evidence.jsonl',
           'repository-aliases.json', 'candidate-reviews.json')
@@ -49,10 +63,11 @@ PAGE_SIZE = 100
 SPLIT_THRESHOLD = 900
 QUERY_PROGRESS = ('status', 'next_page', 'reported_total', 'total_changed',
                   'incomplete_results_seen', 'seen_repository_ids', 'rejected_rows', 'last_attempt')
-# A renamed or transferred (permanent redirect) or deleted (404) repository gives the same
-# answer on every request. Later existing-candidate cohorts skip that name for this long
-# instead of retrying it first on every scan, which stalled the lane behind it. A quarantined
-# direct response is not settled: it is retried, because the next answer can be acceptable.
+# A renamed or transferred (permanent redirect), deleted (404) or forked repository gives the
+# same answer on every request. Later existing-candidate cohorts skip that name for this long
+# instead of retrying it first on every scan, which stalled the lane behind it. Any other
+# quarantined direct response is not settled, including one with no fork field: it is retried,
+# because the next answer can be acceptable.
 SETTLED_SEED_RECHECK = timedelta(days=30)
 
 
@@ -67,11 +82,12 @@ def existing_seed_url(name):
 def settled_seed_answer(receipt):
     """True when an existing-candidate request got a final answer for that name; transient failures stay retryable."""
     return (receipt['outcome'] == 'redirect_not_followed' and receipt['status'] in {301, 308}
-            or receipt['outcome'] == 'unavailable' and receipt['status'] == 404)
+            or receipt['outcome'] == 'unavailable' and receipt['status'] == 404
+            or receipt['outcome'] == 'fork_not_recorded')
 
 
 def settled_unknown_requests(receipts, run_id):
-    """This run's existing-candidate requests answered by a permanent redirect or a 404.
+    """This run's existing-candidate requests answered by a permanent redirect, a 404 or a fork.
 
     They count as unknown requests (no metadata was accepted), but the answer is final for that name, so the
     scan reports them as a notice instead of a gap that would make every scan partial until the names are reviewed."""
@@ -138,8 +154,9 @@ def safe_api_url(url):
         params = urllib.parse.parse_qs(parts.query, strict_parsing=True)
         if set(params) != {'q', 'per_page', 'page', 'sort', 'order'} or any(len(v) != 1 for v in params.values()):
             raise ValueError('unsupported search parameters')
-        match = re.fullmatch(r'topic:([a-z-]+) is:public fork:false created:(\d{4}-\d\d-\d\d)\.\.(\d{4}-\d\d-\d\d)', params['q'][0])
-        if not match or match[1] not in TOPICS or date.fromisoformat(match[2]) > date.fromisoformat(match[3]):
+        match = re.fullmatch(r'(.+) is:public fork:false created:(\d{4}-\d\d-\d\d)\.\.(\d{4}-\d\d-\d\d)', params['q'][0])
+        allowed = {search_term(cohort) for cohort in TOPICS}
+        if not match or match[1] not in allowed or date.fromisoformat(match[2]) > date.fromisoformat(match[3]):
             raise ValueError('unsupported query cohort')
         if params['per_page'] != [str(PAGE_SIZE)] or params['sort'] != ['updated'] or params['order'] != ['asc']:
             raise ValueError('unsupported search ordering or page size')
@@ -256,6 +273,16 @@ def repository_metadata(item):
             'review_status': 'candidate', 'scope': 'relevance_pending'}
 
 
+def reports_fork(item, name):
+    """True when a complete public-repository response for this name says it is a fork; anything less stays retryable."""
+    if not isinstance(item, dict) or item.get('fork') is not True:
+        return False
+    try:
+        return repository_metadata({**item, 'fork': False})['full_name'].casefold() == name.casefold()
+    except Rejected:
+        return False
+
+
 def input_snapshot(root):
     raw = {name: (root / 'data' / name).read_bytes() for name in INPUTS}
     data = {name: ([strict_json(line) for line in body.splitlines() if line.strip()]
@@ -263,7 +290,7 @@ def input_snapshot(root):
     catalog = data['catalog.jsonl']
     aliases = repository_aliases(data['repository-aliases.json'], catalog)
     observed = {r['id'] for r in data['primary-evidence.jsonl'] if r.get('ok') is True and r.get('status') == 200}
-    set_aside = {r.get('id') for r in data['candidate-reviews.json'] if r.get('decision') == 'not_a_resource'}
+    set_aside = {r.get('id') for r in data['candidate-reviews.json'] if r.get('decision') in {'not_a_resource', 'out_of_scope'}}
     names = {}
     for row in data['candidates.jsonl']:
         parsed = canonical(row.get('url'))
@@ -283,8 +310,12 @@ def input_snapshot(root):
             'existing_seed_count': len(seeds)}, seeds
 
 
+def search_term(cohort):
+    return f'"{PHRASE_ROOTS[cohort]}" in:readme,description' if cohort in PHRASE_ROOTS else f'topic:{cohort}'
+
+
 def search_query(topic, after, before, parent=None):
-    query = f'topic:{topic} is:public fork:false created:{after}..{before}'
+    query = f'{search_term(topic)} is:public fork:false created:{after}..{before}'
     return {'id': 'search:' + digest(query.encode())[:24], 'kind': 'search',
             'topic': topic, 'created_after': after, 'created_before': before,
             'query': query, 'parent_id': parent, 'next_page': 1,
@@ -610,7 +641,7 @@ def validate_state(state):
             if receipt[key] is not None and (type(receipt[key]) is not int or receipt[key] < 0): raise ValueError('invalid request counts')
         if type(receipt['raw_body_retained']) is not bool or receipt['incomplete_results'] is not None and type(receipt['incomplete_results']) is not bool:
             raise ValueError('invalid request flags')
-        if receipt['outcome'] not in {'accepted', 'accepted_with_rejections', 'rejected', 'quarantined', 'rate_limited', 'unavailable', 'redirect_not_followed', 'fetch_failed', 'response_too_large', 'malformed_response'}:
+        if receipt['outcome'] not in {'accepted', 'accepted_with_rejections', 'rejected', 'quarantined', 'rate_limited', 'unavailable', 'redirect_not_followed', 'fork_not_recorded', 'fetch_failed', 'response_too_large', 'malformed_response'}:
             raise ValueError('invalid request outcome')
         if not isinstance(receipt['accepted_repository_ids'], list) or any(type(i) is not int or i <= 0 for i in receipt['accepted_repository_ids']):
             raise ValueError('invalid accepted repository IDs')
@@ -631,7 +662,7 @@ def validate_state(state):
         if runs_by_id[receipt['run_id']].get('strict_replay') and receipt['accepted_repository_ids']:
             if receipt['outcome'] != 'accepted' or not receipt['source_url'] or not receipt['raw_body_retained']:
                 raise ValueError('strict replay receipt lacks its complete public body')
-        if receipt['outcome'] == 'quarantined' and (receipt['accepted_repository_ids'] or receipt['source_url'] is not None or receipt['raw_body_retained']):
+        if receipt['outcome'] in {'quarantined', 'fork_not_recorded'} and (receipt['accepted_repository_ids'] or receipt['source_url'] is not None or receipt['raw_body_retained']):
             raise ValueError('quarantined page retained metadata or body')
     for item in [*state['runs'], *state['receipts']]:
         rejections = item['rejected_rows']
@@ -1107,7 +1138,7 @@ def run_scan(root, output, *, max_requests=10, max_seconds=180, existing_budget=
                             raise Rejected('requested_repository_mismatch')
                         if query['kind'] == 'search' and not date.fromisoformat(query['created_after']) <= timestamp(metadata['created_at']).date() <= date.fromisoformat(query['created_before']):
                             raise Rejected('outside_created_bounds')
-                        if query['kind'] == 'search' and query['topic'] not in metadata['topics']:
+                        if query['kind'] == 'search' and query['topic'] in TOPIC_COHORTS and query['topic'] not in metadata['topics']:
                             raise Rejected('query_topic_mismatch')
                         if strict_replay and metadata['repository_id'] in response_ids:
                             # Duplicate or conflicting identities cannot be replayed as one page.
@@ -1116,8 +1147,9 @@ def run_scan(root, output, *, max_requests=10, max_seconds=180, existing_budget=
                         accepted.append(metadata)
                     except Rejected as error:
                         rejected[str(error)] += 1
-                receipt['rejected_rows'] = dict(rejected)
-                if strict_replay and rejected:
+                fork_seed = query['kind'] == 'existing' and reports_fork(value, seeds[position])
+                receipt['rejected_rows'] = {} if fork_seed else dict(rejected)
+                if strict_replay and rejected and not fork_seed:
                     accepted = []; quarantined = True
                 for metadata in accepted:
                     rid = metadata['id']; old = state['records'].get(rid)
@@ -1129,13 +1161,13 @@ def run_scan(root, output, *, max_requests=10, max_seconds=180, existing_budget=
                         'occurrences': (old['occurrences'] if old else []) + [occurrence]}
                     receipt['accepted_repository_ids'].append(metadata['repository_id'])
                 receipt['accepted_repository_ids'] = sorted(set(receipt['accepted_repository_ids']))
-                receipt['outcome'] = 'quarantined' if quarantined else 'accepted_with_rejections' if rejected and accepted else 'rejected' if rejected else 'accepted'
+                receipt['outcome'] = 'fork_not_recorded' if fork_seed else 'quarantined' if quarantined else 'accepted_with_rejections' if rejected and accepted else 'rejected' if rejected else 'accepted'
                 # A mixed/unknown/private response has a digest but no raw body or request URL in the public ledger.
                 if not rejected:
                     receipt['source_url'] = url
                     raw = checked_output(output / 'raw' / (sha + '.body'))
                     atomic_write(raw, body); receipt['raw_body_retained'] = True
-                parsed = True
+                parsed = not fork_seed
                 if query['kind'] == 'search' and not quarantined:
                     total = value['total_count']
                     query['total_changed'] |= query['reported_total'] is not None and query['reported_total'] != total

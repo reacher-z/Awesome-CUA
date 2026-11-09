@@ -20,6 +20,7 @@ from arxiv_metadata import consider_paper, parse_search_feed, timestamp
 from network_budget import (RoundBudget, budget_from_environment, ENV_PHASE,
                             DEFAULT_REQUESTS, DEFAULT_SECONDS)
 import scan_candidate_stage as candidate_stage
+from site_config import scan_schedule
 
 
 def counts():
@@ -254,7 +255,7 @@ def recent_papers(config):
 PAUSE_WARNING='GitHub candidate observations paused'
 KNOWN_GAPS=('Discovery sources failed:','GitHub candidate requests have no accepted','GitHub metadata rows were rejected','arXiv identifiers remain unresolved')
 MAX_THROTTLE_SOURCE_FAILURE_RATIO=0.05
-PERSISTENT_RUNS=3
+PERSISTENT_RUNS=6
 
 
 def gap_keys(row):
@@ -302,6 +303,40 @@ def partial_streak(history):
     return streak
 
 
+RECORD_FILES=('candidates.jsonl','papers.jsonl','metadata-updates.jsonl','catalog.jsonl')
+SCAN_TIMES=frozenset({'retrieved_at','last_verified_at','last_observed_at'})
+
+
+def without_scan_times(value):
+    if isinstance(value,dict):return {k:without_scan_times(v) for k,v in value.items() if k not in SCAN_TIMES}
+    if isinstance(value,list):return [without_scan_times(v) for v in value]
+    return value
+
+
+def record_state():
+    """Every record a scan can change, apart from the times it last looked at each one."""
+    return {name:without_scan_times(read_jsonl(DATA/name)) for name in RECORD_FILES}
+
+
+def nothing_to_commit(report,previous,config,current=None):
+    """True when a healthy scan adds nothing to the last committed one; the caller also compares record_state().
+
+    The next scan reads every source again, so dropping this run's files loses nothing. A scan still commits when it adds a
+    record, moves the candidate cursor, records a gap or a provider cooldown that the next scan must honor, or follows
+    an unhealthy scan, and when the last committed receipt reaches scan_commit_heartbeat_hours, so the freshness check and the
+    updates page keep seeing recent scans."""
+    limit=config.get('scan_commit_heartbeat_hours')
+    if not limit or report['status']!='success' or previous.get('status')!='success' or report['warnings']:return False
+    if report['new_papers'] or report['new_candidate_count'] or report['before']!=report['after']:return False
+    if report['pending_metadata_changes']!=previous.get('pending_metadata_changes'):return False
+    candidate=report.get('candidate_observations') or {}
+    if any(candidate.get(key) for key in ('successful_responses','new_unique_repositories','settled_unknown_requests')):return False
+    if report['network_budget'].get('provider_cooldowns'):return False
+    try:finished=dt.datetime.fromisoformat(previous['finished_at'].replace('Z','+00:00'))
+    except (KeyError,AttributeError,ValueError):return False
+    return ((current or dt.datetime.now(dt.timezone.utc))-finished).total_seconds()/3600<limit
+
+
 def summarize_phases(phases,source_runs,hf_runs,harvest_failures):
     problems=[]
     for phase in phases:
@@ -344,6 +379,7 @@ def run_scan():
 
 
 def run_round(config,budget):
+    previous=read_json(DATA/'scan-status.json',{});records=record_state()
     started=now();before=counts();old_papers={r['id'] for r in read_jsonl(DATA/'papers.jsonl')};old_candidates={r['id'] for r in read_jsonl(DATA/'candidates.jsonl')}
     repo=os.getenv('GITHUB_REPOSITORY','');run_id=os.getenv('GITHUB_RUN_ID','')
     run_url=f'https://github.com/{repo}/actions/runs/{run_id}' if repo and run_id else None
@@ -418,7 +454,7 @@ def run_round(config,budget):
         if repeated:print('::error title=Repeated partial scans::'+notes[-1])
         for notice in notices:print('::notice title=Scan note::'+workflow_message(notice))
         with open(summary_file,'a',encoding='utf-8') as f:
-            f.write('## AwesomeCUA scan\n\n'+summary+'\n\n'+f'Scheduled at {", ".join(config["scan_times_local"])} {config["timezone"]}.\n\n')
+            f.write('## AwesomeCUA scan\n\n'+summary+'\n\n'+f'Scheduled {scan_schedule(config)}.\n\n')
             f.write('\n'.join('- '+n for n in notes+notices)+'\n')
     if os.getenv('GITHUB_OUTPUT'):
         # The health-tracking job copies the status and recorded gaps into the scan tracking issue.
@@ -427,6 +463,7 @@ def run_round(config,budget):
             f.write(f'status={status}\nnotes<<{delimiter}\n'+''.join(n.replace('\r',' ').replace('\n',' ')+'\n' for n in notes)+delimiter+'\n')
             # scan.yml fails a separate job on this output, after the scan job has committed this run's data.
             if repeated:f.write('repeated_partial=true\n')
+            if nothing_to_commit(report,previous,config) and record_state()==records:f.write('nothing_new=true\n')
     return 1 if status=='failed' else 0
 
 

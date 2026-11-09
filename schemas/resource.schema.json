@@ -129,6 +129,13 @@
         "type": "string"
       }
     },
+    "task_classes": {
+      "type": "array",
+      "minItems": 1,
+      "uniqueItems": true,
+      "items": {"type": "string", "pattern": "^R(0[1-9]|1[0-5])(\\.[0-9]{2}){3}$"},
+      "description": "Optional. IDs of the task classes in data/task-classes.json that the record's own text places it in; the realm is the first segment. Only curated benchmarks, datasets, papers and surveys carry it."
+    },
     "authors_omitted": {
       "const": true,
       "description": "Optional. The catalog does not list this record's authors: authors is empty, and readers consult the linked source for the author list. Pages and exports show 'Authors: see the paper' instead of names."

@@ -103,6 +103,13 @@ class SearchPagesTests(unittest.TestCase):
                 target=self.dest/path.lstrip('/')
                 if path.endswith('/'):target=target/'index.html'
                 self.assertTrue(target.exists(),f'{item["path"]} -> {link}')
+    def test_only_the_homepage_hides_the_header_search(self):
+        for path in ('index.html','zh/index.html'):
+            self.assertIn('<body class="home">',(self.dest/path).read_text())
+        for path in ('data/index.html','zh/data/index.html'):
+            self.assertIn('<body class="home list-page">',(self.dest/path).read_text())
+        css=(self.dest/'assets/site.css').read_text()
+        self.assertIn('.home.list-page .search-trigger{opacity:1;pointer-events:auto;transform:none}',css)
     def test_homepage_is_useful_without_javascript(self):
         text=(self.dest/'index.html').read_text();p=PageParser(text)
         self.assertIn('/papers/',p.links);self.assertIn('/catalog/',p.links);self.assertIn('/data/',p.links)
@@ -317,8 +324,12 @@ class SearchPagesTests(unittest.TestCase):
             for field in ['versioned_url','submitted_at','updated_at','abstract_sha256','abstract_hash_method']:
                 if snapshot.get(field) is not None:self.assertIn(str(snapshot[field]),markdown,(rid,field))
             self.assertIn('- Version: '+(str(snapshot['version']) if snapshot.get('version') else 'not recorded'),markdown,rid)
-        curated_snapshots=sum(row['review_status']=='curated' and bool(row['details'].get('arxiv_snapshot')) for row in self.rows)
-        self.assertEqual((self.dest/'llms-full.txt').read_text().count('## Recorded arXiv snapshot'),curated_snapshots)
+        # Full annotations of reviewed papers sit in the research-library Markdown, other kinds in their category Markdown.
+        snapshots=lambda kinds:sum(eligible(row) and row['kind'] in kinds and bool(row['details'].get('arxiv_snapshot')) for row in self.rows)
+        library=sum(path.read_text().count('### Recorded arXiv snapshot') for path in [self.dest/'papers/index.md',*(self.dest/'papers/page').glob('*/index.md')])
+        self.assertEqual(library,snapshots({'paper','survey'}))
+        others={kind for kind in {row['kind'] for row in self.rows}}-{'paper','survey'}
+        self.assertEqual(sum((self.dest/'categories'/kind/'index.md').read_text().count('### Recorded arXiv snapshot') for kind in others),snapshots(others))
     def test_resource_schema_uses_original_authorship_not_catalog_authorship(self):
         for r in self.rows:
             schema=resource_schema(r)

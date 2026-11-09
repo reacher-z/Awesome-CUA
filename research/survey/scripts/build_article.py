@@ -487,11 +487,11 @@ def reference_html(items):
 
 def evidence_html(reading_index, search, screening):
     counts = reading_index['counts']
-    out = [f'<p>The cited set contains <strong>{counts["fulltext_section_read_works"]} works read in selected full-text sections</strong>, one source used at abstract/project-page level, and one versioned catalog dataset. These counts deduplicate works across chapters. They do not mean that every page or reported experiment was audited.</p>',
+    out = [f'<p>The cited set contains <strong>{counts["fulltext_section_read_works"]} works read in selected full-text sections</strong>, one source used at abstract/project-page level, and one versioned catalog dataset. These counts deduplicate works across chapters.</p>',
            '<p>Bibliographic baseline: <a href="https://github.com/reacher-z/Awesome-CUA/tree/' + PIN + '"><code>' + PIN + '</code></a>. The frozen catalog SHA-256 is <code>' + CATALOG_SHA + '</code>. Later production-catalog changes are outside this manuscript snapshot.</p>',
            '<p>Download the <a href="evidence/reading-index.json">compact reading index</a>, <a href="evidence/title-search.json">complete title-search ledger</a>, <a href="evidence/supplementary-screening.json">supplementary screening decisions</a>, and <a href="evidence/corpus-statistics.json">inventory analysis</a>. Chapter ledgers: <a href="evidence/context.json">context</a>, <a href="evidence/methods.json">methods</a>, <a href="evidence/evaluation.json">evaluation</a>, and <a href="evidence/root.json">review design and human agency</a>.</p>',
            '<details><summary>Exact supplementary query and screening boundary</summary><p>Platform: ' + html.escape(search['platform']) + '. Started ' + html.escape(search['started_at_utc']) + '; completed ' + html.escape(search['completed_at_utc']) + '. Cutoff: ' + html.escape(search['cutoff_utc']) + '.</p><pre><code>' + html.escape(search['query']) + '</code></pre>',
-           f'<p>{len(search["pages"])} pages returned {search["unique_returned"]:,} unique identifiers, matching the service-reported query total of {search["reported_total"]:,}. The {screening["titles_inspected"]} absent-inventory titles received title screening; {screening["complete_abstracts_read"]} received complete abstract screening and {screening["advanced"]} advanced for further reading. Those populations overlap and do not measure recall for the whole field. Targeted searches are recorded in the individual chapter ledgers.</p></details>',
+           f'<p>{len(search["pages"])} pages returned {search["unique_returned"]:,} unique identifiers, matching the service-reported query total of {search["reported_total"]:,}. The {screening["titles_inspected"]} absent-inventory titles received title screening; {screening["complete_abstracts_read"]} received complete abstract screening and {screening["advanced"]} advanced for further reading. Those populations overlap. Targeted searches are recorded in the individual chapter ledgers.</p></details>',
            '<h3 id="reading-register">Source-by-source reading register</h3><p>Open a source to inspect the actual sections and response fingerprints. The edition column identifies the citation used here; primary-source links retain the reading authority. Raw source documents are not redistributed in this artifact.</p><div class="table-scroll"><table id="reading-register-table"><caption>Reading level and inspected sections for every cited source. Repeated readings of one work are grouped in one row.</caption><thead><tr><th scope="col">Source</th><th scope="col">Edition and read level</th><th scope="col">Sections and evidence</th></tr></thead><tbody>']
     labels = {'selected_fulltext_sections_read': 'Selected full-text sections', 'abstract_and_author_project_only': 'Abstract and author project only', 'dataset_snapshot_integrity_inspection': 'Dataset snapshot inspection'}
     for r in reading_index['records']:
@@ -604,7 +604,7 @@ def build(output, *, check_history=True, write_source_outputs=False):
     counts = {'unique_cited_works': len(keys), 'fulltext_section_read_works': fulltext, 'abstract_and_project_only_works': sum(r['read_level'] == 'abstract_and_author_project_only' for r in register), 'dataset_snapshots': sum(r['read_level'] == 'dataset_snapshot_integrity_inspection' for r in register), 'fresh_arxiv_bibliography_additions': fresh_count}
     if counts != {'unique_cited_works': 89, 'fulltext_section_read_works': 87, 'abstract_and_project_only_works': 1, 'dataset_snapshots': 1, 'fresh_arxiv_bibliography_additions': 14}:
         raise ValueError('Reading population changed; inspect before release: ' + str(counts))
-    index = {'schema_version': 1, 'article_title': TITLE, 'working_manuscript_date': '2026-10-18', 'source_commit': PIN, 'catalog_sha256': CATALOG_SHA, 'counts': counts, 'read_boundary': 'Selected sections, not entire-document audits or independently reproduced experiments. Works are deduplicated by retained canonical identity.', 'records': register}
+    index = {'schema_version': 1, 'article_title': TITLE, 'working_manuscript_date': '2026-10-18', 'source_commit': PIN, 'catalog_sha256': CATALOG_SHA, 'counts': counts, 'read_boundary': 'Selected sections. Works are deduplicated by retained canonical identity.', 'records': register}
     headings, tables, occurrences = decorate_body(tree, numbers)
     body = render(tree)
     svg = sanitize_svg(SURVEY / 'figures/corpus.svg')
@@ -619,8 +619,7 @@ def build(output, *, check_history=True, write_source_outputs=False):
                 'We connect historical interface automation with visual grounding, modular and native policies, memory, verification, recovery, and runtime systems. '
                 'Comparisons retain the distinction between local action prediction, interactive task completion, safety, and acceptable assistance to a person. '
                 f'The evidence base combines selected full-text sections from {fulltext} unique works with a pinned inventory of 1,123 editorially reviewed papers and surveys, supplemented by a reproducible title search and bounded abstract screening. '
-                'Inventory review is not full-paper review, and no cited experiment is independently reproduced here. '
-                'We provide an inspectable reading register and versioned bibliography, and identify opportunities for clearer generalization tests, evaluator validation, human control, and maintenance of connected research artifacts.')
+                                'We provide an inspectable reading register and versioned bibliography, and identify opportunities for clearer generalization tests, evaluator validation, human control, and maintenance of connected research artifacts.')
     appendix = evidence_html(index, ledgers['title-search'], ledgers['supplementary-screening'])
     # The appendix table follows the body tables and shares global numbering.
     appendix_tree = parse(appendix)
@@ -657,7 +656,7 @@ def build(output, *, check_history=True, write_source_outputs=False):
     if 'open' in toc:
         raise ValueError('Mobile contents must be closed in static markup')
     csl_bytes = (json.dumps(citations, ensure_ascii=False, indent=2) + '\n').encode()
-    bib_bytes = ('% AwesomeCUA survey bibliography. Working manuscript dated 2026-10-18.\n% Edition-specific citations; bibliographic exports do not imply independent reproduction.\n\n' + '\n'.join(bibs)).encode()
+    bib_bytes = ('% AwesomeCUA survey bibliography. Working manuscript dated 2026-10-18.\n% Edition-specific citations.\n\n' + '\n'.join(bibs)).encode()
     if len(re.findall(r'^@\w+\{', bib_bytes.decode(), re.M)) != len(keys):
         raise ValueError('BibTeX entry count mismatch')
     if len({item['id'] for item in citations}) != len(keys):
@@ -678,7 +677,7 @@ def build(output, *, check_history=True, write_source_outputs=False):
         if b'/Users/' in encoded or b'.cache/' in encoded:
             raise ValueError('Private source path escaped sanitization: ' + name)
         (output / 'evidence' / (name + '.json')).write_bytes(encoded)
-    readme = ('# AwesomeCUA research survey\n\nOpen `index.html` in a browser. It is a complete English working manuscript with embedded CSS, JavaScript, and the original inventory figure. No external runtime dependency is required.\n\n`references.bib` and `references.json` preserve the source editions used. `evidence/reading-index.json` lists every cited source and actual read level. The other JSON ledgers document the search, bounded screening, original claim notes, and inventory analysis. Raw papers, full abstracts, model weights, and training data are not included.\n\nThe research inventory is pinned to source commit ' + PIN + ' and catalog SHA-256 ' + CATALOG_SHA + '. The generated survey is a working manuscript, not a claim of independent experiment reproduction or peer-reviewed publication. Its intended public location is ' + CANONICAL + '; this build does not publish it.\n')
+    readme = ('# AwesomeCUA research survey\n\nOpen `index.html` in a browser. It is a complete English working manuscript with embedded CSS, JavaScript, and the original inventory figure. No external runtime dependency is required.\n\n`references.bib` and `references.json` preserve the source editions used. `evidence/reading-index.json` lists every cited source and actual read level. The other JSON ledgers document the search, bounded screening, original claim notes, and inventory analysis. Raw papers, full abstracts, model weights, and training data are not included.\n\nThe research inventory is pinned to source commit ' + PIN + ' and catalog SHA-256 ' + CATALOG_SHA + '. The generated survey is a working manuscript. Its intended public location is ' + CANONICAL + '; this build does not publish it.\n')
     (output / 'README.md').write_text(readme)
     expected_files = {'index.html', 'references.bib', 'references.json', 'README.md', 'evidence/reading-index.json'} | {'evidence/' + name + '.json' for name in EVIDENCE}
     for url in audit.links:

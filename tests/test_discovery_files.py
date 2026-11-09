@@ -13,7 +13,7 @@ ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / 'scripts'))
 from build_site import build_site
 from catalog import editorial_identity
-from discovery_files import CONTENT_SIGNAL, CRAWLERS, FEED_SIZE, TRAINING_PREFERENCE, crawler_tokens, robots_txt
+from discovery_files import CONTENT_SIGNAL, CRAWLERS, FEED_SIZE, crawler_tokens, robots_txt
 from search_pages import SITE, eligible, resource_path
 from site_data import catalog_counts, record_modified, utc
 from sitemaps import SECTIONS, SITEMAP_NS, XHTML_NS, section_file, sitemap_urls
@@ -59,7 +59,7 @@ class RobotsTests(unittest.TestCase):
 
     def test_training_preference_token_is_its_own_allow_group(self):
         text = robots_txt(SITE)
-        self.assertIn(f'User-agent: {TRAINING_PREFERENCE}\nAllow: /\n', text)
+        self.assertNotIn('ai-train', text); self.assertNotIn('__usage', text)
         self.assertIn('User-agent: *\nContent-Signal: ' + CONTENT_SIGNAL + '\nAllow: /\n', text)
 
 
@@ -196,6 +196,15 @@ class BuiltDiscoveryTests(unittest.TestCase):
         home = (self.dest / 'index.html').read_text()
         for markup in (home, (self.dest / 'about/index.html').read_text()):
             self.assertIn('type="application/atom+xml"', markup); self.assertIn('type="application/feed+json"', markup)
+
+    def test_every_page_head_links_exactly_one_atom_and_one_json_feed(self):
+        for page in sorted(self.dest.rglob('index.html')):
+            head = page.read_text().split('</head>', 1)[0]
+            if 'rel="canonical"' not in head or '/survey/' in page.as_posix():
+                continue
+            self.assertEqual(head.count('type="application/atom+xml"'), 1, page)
+            self.assertEqual(head.count('type="application/feed+json"'), 1, page)
+            self.assertNotIn('research updates', head, page)
 
     def test_index_counts_are_curated_only_and_report_pending_populations_separately(self):
         counts = json.loads((self.dest / 'data/index.json').read_text())['counts']

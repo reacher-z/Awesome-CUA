@@ -2,9 +2,71 @@
 
 [Home](../../README.md) · [All topics](../topics.md) · [Full arXiv bibliography](../papers.md)
 
-30 source-reviewed resources tagged `industry`. Curated metadata, not a performance ranking; unknown facts are shown as —.
+66 source-reviewed resources tagged `industry`. Curated metadata; unknown facts are shown as —.
 
-**Contents:** [Publishers (16)](#publishers) · [Papers (14)](#papers)
+**Contents:** [Benchmarks (1)](#benchmarks) · [Models (2)](#models) · [Agents (1)](#agents) · [Tools (12)](#tools) · [Infrastructure (1)](#infrastructure) · [Products (5)](#products) · [Publishers (18)](#publishers) · [Surveys (3)](#surveys) · [Papers (23)](#papers)
+
+## Benchmarks
+
+All entries in this section: unspecified.
+
+| Resource | Paper | Scale | License | Description | Evidence |
+| --- | --- | --- | --- | --- | --- |
+| [AutomotiveUI-Bench-4K](https://huggingface.co/datasets/sparks-solutions/AutomotiveUI-Bench-4K) | — | [4,208 annotations](https://huggingface.co/datasets/sparks-solutions/AutomotiveUI-Bench-4K/raw/d760810c47bed006d88ee70dad7248056fdec223/README.md) · [998 images](https://huggingface.co/datasets/sparks-solutions/AutomotiveUI-Bench-4K/raw/d760810c47bed006d88ee70dad7248056fdec223/README.md) | data cc-by-4.0 | Offline test set of 998 photos and screenshots of in-vehicle infotainment screens from 15 brands, with 4,208 English annotations for locating UI elements and judging expected results as passed or failed. | [✓ 2026‑10‑19](https://huggingface.co/datasets/sparks-solutions/AutomotiveUI-Bench-4K/raw/d760810c47bed006d88ee70dad7248056fdec223/README.md) |
+
+## Models
+
+All entries in this section: desktop, web.
+
+| Resource | Paper | License | Description | Evidence |
+| --- | --- | --- | --- | --- |
+| [Claude Opus 5](https://www.anthropic.com/news/claude-opus-5) | — | — | Claude Opus 5 is a general model whose release page reports computer-use performance on OSWorld 2.0 and describes agent work across browser and business tasks. | [✓ 2026‑11‑09](https://www.anthropic.com/news/claude-opus-5) |
+| [Holo3](https://hcompany.ai/holo3) | — | — | Holo3 is a computer-use model family trained on synthetic navigation and enterprise workflows. Its publisher reports desktop benchmark results and offers inference access and an open checkpoint. | [✓ 2026‑11‑09](https://hcompany.ai/holo3) |
+
+## Agents
+
+All entries in this section: web.
+
+| Resource | Paper | License | Description | Evidence |
+| --- | --- | --- | --- | --- |
+| [CUGA](https://github.com/cuga-project/cuga-agent) | — | code Apache-2.0 | Enterprise generalist agent harness that plans over APIs and MCP or OpenAPI tools and, in web or hybrid mode, acts on pages through a browser extension, with intent guards, tool approval and tool guards. | [✓ 2026‑10‑18](https://raw.githubusercontent.com/cuga-project/cuga-agent/HEAD/README.md) |
+
+## Tools
+
+All entries in this section: web.
+
+| Resource | Paper | License | Description | Evidence |
+| --- | --- | --- | --- | --- |
+| [ADP Workforce Now Browser Automation](https://github.com/Browser-Automation-Hub/adp-workforce-now-browser-automation) | — | code MIT | A browser automation scaffold for ADP Workforce Now. It provides actions for payroll reports, pay-stub exports, employee updates and tax-form downloads. | [✓ 2026‑11‑09](https://raw.githubusercontent.com/Browser-Automation-Hub/adp-workforce-now-browser-automation/HEAD/README.md) |
+| [Oracle E-Business Suite Browser Automation](https://github.com/Browser-Automation-Hub/oracle-ebs-browser-automation) | — | code MIT | A browser automation scaffold for Oracle E-Business Suite workflows. It describes Puppeteer and cloud browser options for login, requisitions, approvals and requests. | [✓ 2026‑11‑09](https://raw.githubusercontent.com/Browser-Automation-Hub/oracle-ebs-browser-automation/HEAD/README.md) |
+| [Oracle PeopleSoft Browser Automation](https://github.com/Browser-Automation-Hub/peoplesoft-browser-automation) | — | code MIT | A browser automation scaffold for Oracle PeopleSoft that defines actions for queries, leave requests, employee records, and payroll workflows through Puppeteer or Anchor Browser. | [✓ 2026‑11‑09](https://raw.githubusercontent.com/Browser-Automation-Hub/peoplesoft-browser-automation/HEAD/README.md) |
+| [Procore Browser Automation](https://github.com/Browser-Automation-Hub/procore-browser-automation) | — | code MIT | A Procore browser automation scaffold with actions for construction RFIs, submittal tracking, daily logs, and project-report export. | [✓ 2026‑11‑09](https://raw.githubusercontent.com/Browser-Automation-Hub/procore-browser-automation/HEAD/README.md) |
+| [Salesforce Classic Browser Automation](https://github.com/Browser-Automation-Hub/salesforce-classic-browser-automation) | — | code MIT | A browser automation scaffold for Salesforce Classic. It describes actions for login, lead creation, opportunity updates, report export and record updates. | [✓ 2026‑11‑09](https://raw.githubusercontent.com/Browser-Automation-Hub/salesforce-classic-browser-automation/HEAD/README.md) |
+| [SAP Concur Browser Automation](https://github.com/Browser-Automation-Hub/sap-concur-browser-automation) | — | code MIT | A SAP Concur browser automation scaffold with actions for expense reports, receipt uploads, approval queues, and spend-data export. | [✓ 2026‑11‑09](https://raw.githubusercontent.com/Browser-Automation-Hub/sap-concur-browser-automation/HEAD/README.md) |
+| [SAP Fiori Browser Automation](https://github.com/Browser-Automation-Hub/sap-fiori-browser-automation) | — | code MIT | A SAP Fiori browser automation scaffold with documented actions for purchase orders, approvals, financial-data export, and invoice handling. | [✓ 2026‑11‑09](https://raw.githubusercontent.com/Browser-Automation-Hub/sap-fiori-browser-automation/HEAD/README.md) |
+| [SAP SuccessFactors Browser Automation](https://github.com/Browser-Automation-Hub/successfactors-browser-automation) | — | code MIT | A browser automation scaffold for SAP SuccessFactors. It includes actions for workforce reports, employee goals, compensation worksheets and organization-chart exports. | [✓ 2026‑11‑09](https://raw.githubusercontent.com/Browser-Automation-Hub/successfactors-browser-automation/HEAD/README.md) |
+| [ServiceNow Browser Automation](https://github.com/Browser-Automation-Hub/servicenow-browser-automation) | — | code MIT | A ServiceNow browser automation scaffold with documented actions for incidents, CMDB records, task assignment, and report export. | [✓ 2026‑11‑09](https://raw.githubusercontent.com/Browser-Automation-Hub/servicenow-browser-automation/HEAD/README.md) |
+| [Veeva CRM (Veeva Commercial Cloud) Browser Automation](https://github.com/Browser-Automation-Hub/veeva-crm-browser-automation) | — | code MIT | A browser automation scaffold for Veeva CRM that defines actions for call reports, sample inventory, account records, and territory data through Puppeteer or Anchor Browser. | [✓ 2026‑11‑09](https://raw.githubusercontent.com/Browser-Automation-Hub/veeva-crm-browser-automation/HEAD/README.md) |
+| [Veeva Vault Browser Automation](https://github.com/Browser-Automation-Hub/veeva-vault-browser-automation) | — | code MIT | A Veeva Vault browser automation scaffold with documented actions for uploading documents, routing reviews, approving records, and exporting audit trails. | [✓ 2026‑11‑09](https://raw.githubusercontent.com/Browser-Automation-Hub/veeva-vault-browser-automation/HEAD/README.md) |
+| [Workday HCM Browser Automation](https://github.com/Browser-Automation-Hub/workday-hcm-browser-automation) | — | code MIT | A browser automation scaffold for Workday HCM that uses Puppeteer or Anchor Browser to run HR and payroll workflows through the application interface. | [✓ 2026‑11‑09](https://raw.githubusercontent.com/Browser-Automation-Hub/workday-hcm-browser-automation/HEAD/README.md) |
+
+## Infrastructure
+
+All entries in this section: web.
+
+| Resource | Paper | License | Description | Evidence |
+| --- | --- | --- | --- | --- |
+| [Anchor](https://anchorbrowser.io) | — | — | Anchor provides cloud browser environments for AI agents to navigate authenticated websites and run browser workloads, with SDK and MCP integration. | [✓ 2026‑11‑09](https://anchorbrowser.io) |
+
+## Products
+
+| Resource | Publisher | Environments | Description | Evidence |
+| --- | --- | --- | --- | --- |
+| [Asteroid](https://asteroid.ai) | — | web, desktop, windows, linux | Hosted healthcare automation platform whose agents operate EHRs, payer portals and Windows, Linux or Citrix apps from the screen, then turn repeat runs into scripts or private-API calls served as an API. | [✓ 2026‑10‑19](https://asteroid.ai) |
+| [Computer Agents](https://computer-agents.com) | — | cross-platform, web, desktop | A cloud agent platform that gives agents persistent computers with browser, GUI, terminal, and file access, alongside project workspaces and workflow triggers. | [✓ 2026‑11‑09](https://computer-agents.com) |
+| [ego(lite)](https://lite.ego.app) | — | web, desktop | A Chromium browser that lets AI agents automate signed-in websites through an agent skill, with separate workspaces for agent tasks and page snapshots for navigation. | [✓ 2026‑11‑09](https://lite.ego.app) |
+| [Narada Operator](https://narada.ai/blog/narada-ai-web-agent-operator) | — | web | Narada Operator is an enterprise web agent that executes workflows across web interfaces and APIs using task planning and error recovery. | [✓ 2026‑11‑09](https://narada.ai/blog/narada-ai-web-agent-operator) |
+| [Process Discovery](https://www.automationanywhere.com/products/process-discovery) | — | cross-platform, desktop, windows, web | An enterprise process-discovery product that captures activity across desktops and web apps, then maps workflows to identify patterns and automation opportunities. | [✓ 2026‑11‑09](https://www.automationanywhere.com/products/process-discovery) |
 
 ## Publishers
 
@@ -21,19 +83,40 @@ All entries in this section: unspecified.
 | [E2B](https://e2b.dev/) | Publisher or product brand associated with E2B computer-use or browser automation offerings. | [✓ 2026‑10‑16](https://e2b.dev/) |
 | [Google](https://ai.google.dev/gemini-api/docs/computer-use) | Publisher or product brand associated with Google computer-use or browser automation offerings. | [✓ 2026‑10‑16](https://ai.google.dev/gemini-api/docs/computer-use) |
 | [H](https://hcompany.ai/research/models) | Publisher or product brand associated with H computer-use or browser automation offerings. | [✓ 2026‑10‑16](https://hcompany.ai/research/models) |
+| [Huzzle Labs](https://labs.huzzle.com) | Company developing computer-use models, RL environments and evaluations for AI labs and enterprise work. Its site describes the Huzzle World model family. | [✓ 2026‑11‑09](https://labs.huzzle.com) |
 | [Hyperbrowser](https://www.hyperbrowser.ai/) | Publisher or product brand associated with Hyperbrowser computer-use or browser automation offerings. | [✓ 2026‑10‑16](https://www.hyperbrowser.ai/) |
 | [Manus](https://manus.im/) | Publisher or product brand associated with Manus computer-use or browser automation offerings. | [✓ 2026‑10‑16](https://manus.im/) |
+| [Microsoft](https://learn.microsoft.com/en-us/microsoft-copilot-studio/computer-use) | Publisher or product brand associated with Microsoft computer-use or browser automation offerings. | [✓ 2026‑10‑18](https://learn.microsoft.com/en-us/microsoft-copilot-studio/computer-use) |
 | [OpenAI](https://openai.com/index/computer-using-agent/) | Publisher or product brand associated with OpenAI computer-use or browser automation offerings. | [✓ 2026‑10‑16](https://openai.com/index/computer-using-agent/) |
 | [Simular](https://www.simular.ai/) | Publisher or product brand associated with Simular computer-use or browser automation offerings. | [✓ 2026‑10‑16](https://www.simular.ai/) |
 | [Skyvern](https://www.skyvern.com/) | Publisher or product brand associated with Skyvern computer-use or browser automation offerings. | [✓ 2026‑10‑16](https://www.skyvern.com/) |
 | [Steel](https://steel.dev/) | Publisher or product brand associated with Steel computer-use or browser automation offerings. | [✓ 2026‑10‑16](https://steel.dev/) |
 | [TinyFish](https://www.tinyfish.ai/) | Publisher or product brand associated with TinyFish computer-use or browser automation offerings. | [✓ 2026‑10‑16](https://www.tinyfish.ai/) |
 
+## Surveys
+
+All entries in this section: unspecified.
+
+| Date | Resource | Description |
+| --- | --- | --- |
+| 2021 | [Robotic Process Automation and Artificial Intelligence in Industry 4.0 – A Literature review](https://www.sciencedirect.com/science/article/pii/S1877050921001393) | A literature review examines how robotic process automation tools combine with AI for organizational workflows in Industry 4.0, including information extraction and process optimization. |
+| 2020‑07‑27 | [From Robotic Process Automation to Intelligent Process Automation: Emerging Trends](https://arxiv.org/abs/2007.13257) | A survey of robotic and intelligent process automation traces the use of machine learning and AI in business workflows and identifies open research challenges. |
+| 2020‑02 | [Robotic Process Automation: Contemporary themes and challenges](https://www.sciencedirect.com/science/article/abs/pii/S0166361519304609) | A structured review of robotic process automation examines software bots that mimic user actions and identifies research themes and challenges for organizational use. |
+
 ## Papers
 
 | Date | Resource | Environments | Description |
 | --- | --- | --- | --- |
+| 2026‑10‑24 | [Build or Adopt? Custom-Built vs. General-Purpose LLM Agent Harnesses for Automotive GUI Testing](https://arxiv.org/abs/2610.33636) | android | Compares a custom harness with general-purpose LLM agent harnesses for GUI testing of Android-based vehicle interfaces and tasks in public apps. |
+| 2026‑10‑23 | [WaitLens: Temporal VLM-Based Adaptive Waiting for Industrial GUI Testing Agents](https://arxiv.org/abs/2610.32482) | unspecified | Introduces WaitLens, a vision-language model trained on GUI loading trajectories to decide when testing agents can stop waiting for an interface to load. |
+| 2026‑09‑07 | [FinCUABuild: Can Agents Build Reliable Benchmarks for Dynamic Financial Computer Use?](https://arxiv.org/abs/2609.07603) | unspecified | Introduces FinCUABuildBench for assessing financial computer-use task construction and FinCUABuildAgent for generating tasks, environments, and validators. |
+| 2026‑07‑29 | [OmegaUse-OfficeVal: Benchmarking LLM Agents on Long-Horizon Office-Suite Tasks with Economic Grounding](https://arxiv.org/abs/2607.27155) | unspecified | Introduces OmegaUse-OfficeVal, a benchmark for long-horizon office-suite agent tasks with labor-time and price signals, plus rubric-based code verifiers. |
+| 2026‑06‑29 | [SpreadsheetBench 2: Evaluating Agents on End-to-End Business Spreadsheet Workflows](https://arxiv.org/abs/2606.29955) | unspecified | Introduces SpreadsheetBench 2, a benchmark of multi-sheet business spreadsheet workflows for agents, covering generation, debugging, and visualization tasks. |
+| 2026‑05‑29 | [BlueFin: Benchmarking LLM Agents on Financial Spreadsheets](https://arxiv.org/abs/2605.30907) | unspecified | Introduces BlueFin, a benchmark and evaluation framework for agents handling professional finance spreadsheet workbooks through synthesis, manipulation, and comprehension tasks. |
+| 2026‑05‑25 | [Anchor: Preventing Artifact Drift for Reliable Agent Verification](https://arxiv.org/abs/2605.26321) | web | Anchor builds ERP-Bench by generating procurement and manufacturing tasks with shared state verifiers for evaluating browser and computer-use agents. |
+| 2026‑04‑15 | [RiskWebWorld: A Realistic Interactive Benchmark for GUI Agents in E-commerce Risk Management](https://arxiv.org/abs/2604.13531) | web | Introduces RiskWebWorld, an interactive benchmark of e-commerce risk-management tasks for GUI agents on websites, with Gymnasium infrastructure for evaluation and agentic RL. |
 | 2026‑04‑10 | [HealthAdminBench: Evaluating Computer-Use Agents on Healthcare Administration Tasks](https://arxiv.org/abs/2604.09937) | unspecified | Introduces HealthAdminBench with GUI environments for an electronic health record, payer portals and fax handling. Expert-defined administrative tasks are decomposed into verifiable subtasks to compare local progress with end-to-end workflow completion. |
+| 2026‑03‑31 | [Terminal Agents Suffice for Enterprise Automation](https://arxiv.org/abs/2604.00073) | unspecified | Studies enterprise automation by terminal agents that call platform APIs, comparing their task results and cost with other agent approaches, including web agents using graphical interfaces. |
 | 2026‑01‑25 | [EntWorld: A Holistic Environment and Benchmark for Verifiable Enterprise GUI Agents](https://arxiv.org/abs/2601.17722) | unspecified | Introduces EntWorld, an enterprise GUI benchmark built by deriving task logic from database schemas. Long workflows across enterprise domains are assessed with deterministic SQL-based state checks rather than screenshot similarity alone. |
 | 2025‑12‑30 | [ProSoftArena: Benchmarking Hierarchical Capabilities of Multimodal Agents in Professional Software Environments](https://arxiv.org/abs/2601.02399) | windows, desktop | ProSoftArena evaluates 436 professional-software tasks across six disciplines and 13 applications in a Windows 11 virtual-machine environment. Its capability hierarchy, execution-based checks, and human-in-the-loop evaluation cover precise GUI operations and multi-software workflows. |
 | 2025‑12‑12 | [Using GUI Agent for Electronic Design Automation](https://arxiv.org/abs/2512.11611) | unspecified | GUI-EDA collects more than 2,000 screenshot-answer-action pairs from engineers working across five CAD tools and five physical domains. The accompanying benchmark evaluates more than 30 GUI agents on specialized electronic-design workflows. |

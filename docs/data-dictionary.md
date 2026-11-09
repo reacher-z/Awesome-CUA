@@ -72,15 +72,19 @@ The schema checks `dataset_profile`, `benchmark_protocol`, `leaderboard_url`, `a
 | `release_revision` | benchmark, dataset, model | Hub commit of the inspected release | Editorial |
 | `repository_revision` | agent, benchmark, dataset, framework, infrastructure, tool | Git commit of the inspected source tree | Editorial |
 | `repository_id` | framework | Numeric repository identity from the retained official GitHub API response; a fork has its own ID, and a matching name or file tree does not establish a rename | Editorial |
-| `repository_tree_sha` | agent, benchmark, framework | Git tree object SHA from the inspected repository file listing; distinct from a commit SHA | Editorial |
+| `repository_tree_sha` | agent, benchmark, framework, model | Git tree object SHA from the inspected repository file listing; distinct from a commit SHA | Editorial |
 | `repository_url` | agent, benchmark, dataset, framework, model | Related implementation repository or component URL; this link alone does not establish a license or a separate resource identity | Editorial |
 | `release_tag` | agent, benchmark, framework, infrastructure, tool | Inspected release tag, such as `v0.8.8` | Editorial |
 | `package_version` | agent, tool | Inspected package version, such as an npm release | Editorial |
 | `dataset_release` | benchmark | DOI of a separately published data release | Editorial |
 | `component_path` | agent, framework | Path of a component record inside its repository | Editorial |
 | `availability` | agent, benchmark, dataset, framework, infrastructure, model, product, tool | What is publicly released and what is missing, such as source without checkpoints | Editorial |
-| `access` | dataset, product | How access is obtained, such as `publisher-managed` | Editorial |
-| `pricing_url` | product | Official pricing page, or null when not established | Editorial |
+| `access` | dataset, model, product | How access is obtained, such as `publisher-managed` | Editorial |
+| `pricing_url` | model, product | Official pricing page, or null when not established | Editorial |
+| `api_model_id` | model | Model identifier that the provider's API accepts, as the reviewed source states it | Editorial |
+| `documentation_url` | framework | Official documentation site | Editorial |
+| `release_notes_url` | product | Official release announcement or notes | Editorial |
+| `released_at` | product | Release date that the reviewed source states, as an ISO date | Editorial |
 | `maintenance_status` | infrastructure, tool | Publisher-stated status, such as `archived and deprecated` | Editorial |
 | `evaluation_caution` | framework | Evaluation behaviour that can distort reported results | Editorial |
 | `platform_constraints` | framework | Map from an environment key to a stated support limit | Editorial |
@@ -174,6 +178,8 @@ An artifact count measures its declared unit and population, not extra catalog r
 
 Coverage counts distinguish `bibliographic_records` (all active papers/surveys), `arxiv_active_records`, `non_arxiv_bibliographic_records`, and `publication_metadata_records` (including publication attachments to arXiv). The arXiv archive count remains separate. Per-source `indexed` counts matched discovery identifiers; `indexed_resources` counts distinct canonical resources, so multiple publisher/PDF aliases or former GitHub names cannot inflate the catalog's resource total.
 
+Discovery coverage counts `out_of_scope_candidates` separately from `unindexed_candidates`, `non_resource_candidates`, and `alias_candidates`. Per-source rows use `out_of_scope`, `unindexed`, and `set_aside`. Reviewed candidate rows retain their `resolution` and `reason` in `review-queue.jsonl`.
+
 The website's `downloads/topics.json` is a derived index of reviewed topic membership, tied to the source catalog SHA-256. Each topic lists canonical resource IDs, counts, bilingual page URLs, and export fingerprints. `resources_with_topics` counts distinct reviewed resources across all topics; individual topic totals overlap and must not be summed. Per-topic JSONL preserves the complete source records, including evidence, license scopes and review state. Shared tags are not reviewed resource relationships. Rebuilds remove obsolete generated topic pages and exports when a topic loses all reviewed members.
 
 Reviewed `documented_by` links connect an implementation or dataset to a paper named by its first-party source. They do not imply a training or evaluation dependency. Resource pages expose both outgoing relations and incoming connected assets. The [connections directory](https://awesomecua.com/connections/) and [relationship export](https://awesomecua.com/downloads/relationships.json) provide a consolidated view.
@@ -205,9 +211,11 @@ Edit authored files by hand and review them in a pull request. Do not hand-edit 
 | `exclusions.json` | Authored | Scope decisions; see [scope review](scope-review.md) |
 | `publications.jsonl` | Authored | Reviewed publication observations |
 | `repository-aliases.json` | Authored | Paired official GitHub or Hugging Face identity observations for reviewed former or other repository names |
-| `candidate-reviews.json` | Authored | Discovered links reviewed as non-resources or as other addresses of active records; see [methodology](methodology.md#identity-and-deduplication) |
+| `candidate-reviews.json` | Authored | Reviewed non-resources, aliases, and out-of-scope GitHub, Hugging Face and website candidates; see [methodology](methodology.md#identity-and-deduplication) |
 | `sources.json` | Authored | Discovery-source registry read by `catalog.py discover` |
 | `paper-discovery-queries.json` | Authored | Hugging Face search registry read by `discover_papers.py` |
+| `task-classes.json` | Authored | Realm and task-class names in English and Chinese; `catalog.py validate` checks each record's `task_classes` against it |
+| `translations.zh-CN.json` | Authored | Chinese summaries keyed by curated record ID, checked by `catalog.py validate` |
 | `scan-config.json` | Authored | Scan schedule and limits read by `scan.py` and the website status page |
 | `site-guides.json`, `site-discovery.json` | Authored | Website guides and search-discovery settings read by `build_site.py` and `submit_indexnow.py` |
 | `conference-discovery.json`, `discovery-audits.json` | Authored | Records of a manual proceedings sweep and an arXiv query audit; no script rewrites them |

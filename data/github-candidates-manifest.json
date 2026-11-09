@@ -1,20 +1,20 @@
 {
   "active_catalog_context": {
-    "records": 2490,
+    "records": 2623,
     "role": "Comparison context only; not the observation source, selection, or approval.",
-    "sha256": "9fb411d9a28b68ac362fb87f3e1c5bb469365ad3ac33e34bd3dc07b231e87dbe"
+    "sha256": "ef4f2355f58da79dc77518123e580af7427c2db3655e5422ce0ea3bf944f41ff"
   },
-  "checkpoint_state_sha256": "17a30f66361c4d4978c80cfea60723e7b2bfaaf941b76ac02ff7db33747de51e",
+  "checkpoint_state_sha256": "c403dbb5166395590a410deae2a56909683e5099c6c2e652136c46092d2d49b2",
   "count": {
     "unit": "repositories",
-    "value": 10070
+    "value": 10251
   },
   "count_policy": "Unique positive numeric GitHub repository IDs within this observation snapshot. Query occurrences overlap. Candidates may overlap active catalog resources; these populations must not be added or treated as independent projects.",
   "export": {
-    "bytes": 28028656,
+    "bytes": 28330948,
     "file": "github-candidates.jsonl",
     "format": "JSONL",
-    "sha256": "b4ba9964a5ad680072ba50ba67dc747d0a002ae47364c7bc34e32f932ff0f023"
+    "sha256": "2b41decdba55c8dea9d319b4b5de85b736e436486267a99a72df8cd87e0779d3"
   },
   "input_fingerprints": [
     {
@@ -1666,14 +1666,914 @@
         }
       },
       "id": "3db4ca5eda3ea36b31d48410e6adb36801b8c6bd4bc09353bd3668fdaa83330c"
+    },
+    {
+      "files": {
+        "candidate-reviews.json": {
+          "bytes": 21773,
+          "sha256": "d3e005db34db9403f10375f78dcb274f7bde9749c2acab34788d60159b22686d"
+        },
+        "candidates.jsonl": {
+          "bytes": 8040640,
+          "sha256": "c8c8193de9dad1896f4e4637eba350f44fc300608a44a6845ffe246a30387f2a"
+        },
+        "catalog.jsonl": {
+          "bytes": 7100356,
+          "sha256": "c357ead5135b1168cf10e6d97f296cde95e46216203b1ccb667f8b5dba91c0e4"
+        },
+        "primary-evidence.jsonl": {
+          "bytes": 3394612,
+          "sha256": "23f768e7089bc51a2b324518a109aba8351cca87aa6119a287c9dad64fea4e23"
+        },
+        "repository-aliases.json": {
+          "bytes": 25203,
+          "sha256": "99fa88426164310a63582029807c04ee90a1c2bb653194b88c3142db52edc923"
+        }
+      },
+      "id": "d332638be7013b6787a7cbeff5a90cece3ad219d233313041b8063bc08c0df03"
+    },
+    {
+      "files": {
+        "candidate-reviews.json": {
+          "bytes": 21773,
+          "sha256": "d3e005db34db9403f10375f78dcb274f7bde9749c2acab34788d60159b22686d"
+        },
+        "candidates.jsonl": {
+          "bytes": 8038902,
+          "sha256": "1b27bfb505d22f53d7b60268bcb47217262324568f7020dfda3189c341e8489f"
+        },
+        "catalog.jsonl": {
+          "bytes": 7101851,
+          "sha256": "93e693dfb04bdbbf0db9ec59f57d9e7d4ff68ec08f8c6ca29425f784644e3e6c"
+        },
+        "primary-evidence.jsonl": {
+          "bytes": 3394612,
+          "sha256": "23f768e7089bc51a2b324518a109aba8351cca87aa6119a287c9dad64fea4e23"
+        },
+        "repository-aliases.json": {
+          "bytes": 25203,
+          "sha256": "99fa88426164310a63582029807c04ee90a1c2bb653194b88c3142db52edc923"
+        }
+      },
+      "id": "0c5b8a2ecd72eb2a891fa64b8adca75631fc9ba3a77dd8ec771617b7b7e959c3"
+    },
+    {
+      "files": {
+        "candidate-reviews.json": {
+          "bytes": 21773,
+          "sha256": "d3e005db34db9403f10375f78dcb274f7bde9749c2acab34788d60159b22686d"
+        },
+        "candidates.jsonl": {
+          "bytes": 8040640,
+          "sha256": "f506be82cbb87de09a32fe57aeb66f17d5a6246018508701973a73d296b9028d"
+        },
+        "catalog.jsonl": {
+          "bytes": 7101851,
+          "sha256": "93e693dfb04bdbbf0db9ec59f57d9e7d4ff68ec08f8c6ca29425f784644e3e6c"
+        },
+        "primary-evidence.jsonl": {
+          "bytes": 3394612,
+          "sha256": "23f768e7089bc51a2b324518a109aba8351cca87aa6119a287c9dad64fea4e23"
+        },
+        "repository-aliases.json": {
+          "bytes": 25203,
+          "sha256": "99fa88426164310a63582029807c04ee90a1c2bb653194b88c3142db52edc923"
+        }
+      },
+      "id": "3933c786601b6679d7e4c60cd66796eff4984a96dc76fb7382ed2436c6835362"
+    },
+    {
+      "files": {
+        "candidate-reviews.json": {
+          "bytes": 21773,
+          "sha256": "d3e005db34db9403f10375f78dcb274f7bde9749c2acab34788d60159b22686d"
+        },
+        "candidates.jsonl": {
+          "bytes": 8040640,
+          "sha256": "578ae367e9bae89df73f9f43b8500e20a5056e07c168c174d3613c78a50cf23a"
+        },
+        "catalog.jsonl": {
+          "bytes": 7101851,
+          "sha256": "93e693dfb04bdbbf0db9ec59f57d9e7d4ff68ec08f8c6ca29425f784644e3e6c"
+        },
+        "primary-evidence.jsonl": {
+          "bytes": 3394612,
+          "sha256": "23f768e7089bc51a2b324518a109aba8351cca87aa6119a287c9dad64fea4e23"
+        },
+        "repository-aliases.json": {
+          "bytes": 25203,
+          "sha256": "99fa88426164310a63582029807c04ee90a1c2bb653194b88c3142db52edc923"
+        }
+      },
+      "id": "9457540406c4182115da65a46706d26a1eecdea8d86c30df48b2d7ac0691953e"
+    },
+    {
+      "files": {
+        "candidate-reviews.json": {
+          "bytes": 21773,
+          "sha256": "d3e005db34db9403f10375f78dcb274f7bde9749c2acab34788d60159b22686d"
+        },
+        "candidates.jsonl": {
+          "bytes": 8038902,
+          "sha256": "8ff7ef98aff093f813632ad0a31efd1a6a0a8fb04b791ce73f918d75aa46d707"
+        },
+        "catalog.jsonl": {
+          "bytes": 7101851,
+          "sha256": "93e693dfb04bdbbf0db9ec59f57d9e7d4ff68ec08f8c6ca29425f784644e3e6c"
+        },
+        "primary-evidence.jsonl": {
+          "bytes": 3394612,
+          "sha256": "23f768e7089bc51a2b324518a109aba8351cca87aa6119a287c9dad64fea4e23"
+        },
+        "repository-aliases.json": {
+          "bytes": 25203,
+          "sha256": "99fa88426164310a63582029807c04ee90a1c2bb653194b88c3142db52edc923"
+        }
+      },
+      "id": "eece6dfe7f129fb5d35bdff2b74403965448cefbc004f5582a426053812c1f86"
+    },
+    {
+      "files": {
+        "candidate-reviews.json": {
+          "bytes": 21773,
+          "sha256": "d3e005db34db9403f10375f78dcb274f7bde9749c2acab34788d60159b22686d"
+        },
+        "candidates.jsonl": {
+          "bytes": 8038902,
+          "sha256": "c727bab0029e5955b92d496e7aa2325f3408c4acd71fb9db8911792117d28eca"
+        },
+        "catalog.jsonl": {
+          "bytes": 7101851,
+          "sha256": "93e693dfb04bdbbf0db9ec59f57d9e7d4ff68ec08f8c6ca29425f784644e3e6c"
+        },
+        "primary-evidence.jsonl": {
+          "bytes": 3394612,
+          "sha256": "23f768e7089bc51a2b324518a109aba8351cca87aa6119a287c9dad64fea4e23"
+        },
+        "repository-aliases.json": {
+          "bytes": 25203,
+          "sha256": "99fa88426164310a63582029807c04ee90a1c2bb653194b88c3142db52edc923"
+        }
+      },
+      "id": "7f4302d1aea40e926ce0617dd27ec74620dd847f2090a00f561b7c11050646b3"
+    },
+    {
+      "files": {
+        "candidate-reviews.json": {
+          "bytes": 21773,
+          "sha256": "d3e005db34db9403f10375f78dcb274f7bde9749c2acab34788d60159b22686d"
+        },
+        "candidates.jsonl": {
+          "bytes": 8040640,
+          "sha256": "7ef114076eea8b91a4563d30263402c65ead5161a3fcc80e993b02cc1674b348"
+        },
+        "catalog.jsonl": {
+          "bytes": 7101851,
+          "sha256": "93e693dfb04bdbbf0db9ec59f57d9e7d4ff68ec08f8c6ca29425f784644e3e6c"
+        },
+        "primary-evidence.jsonl": {
+          "bytes": 3394612,
+          "sha256": "23f768e7089bc51a2b324518a109aba8351cca87aa6119a287c9dad64fea4e23"
+        },
+        "repository-aliases.json": {
+          "bytes": 25203,
+          "sha256": "99fa88426164310a63582029807c04ee90a1c2bb653194b88c3142db52edc923"
+        }
+      },
+      "id": "08cedbc7275520a474798acca56bc024003adb870d015530af76df4e63669e81"
+    },
+    {
+      "files": {
+        "candidate-reviews.json": {
+          "bytes": 21773,
+          "sha256": "d3e005db34db9403f10375f78dcb274f7bde9749c2acab34788d60159b22686d"
+        },
+        "candidates.jsonl": {
+          "bytes": 8148636,
+          "sha256": "93e3e26cbac87b0cbca56675c31e7a0c133fa31fe691f238da5166eb95f35a98"
+        },
+        "catalog.jsonl": {
+          "bytes": 7290099,
+          "sha256": "018117029dd6791a29bd5ae723210875b945567bba613fe1573368801521bc5f"
+        },
+        "primary-evidence.jsonl": {
+          "bytes": 3394612,
+          "sha256": "23f768e7089bc51a2b324518a109aba8351cca87aa6119a287c9dad64fea4e23"
+        },
+        "repository-aliases.json": {
+          "bytes": 25203,
+          "sha256": "99fa88426164310a63582029807c04ee90a1c2bb653194b88c3142db52edc923"
+        }
+      },
+      "id": "e4ccce95a47ed2962ffddec0bc884436fbe675efe9d39b9ab75be0b93d587581"
+    },
+    {
+      "files": {
+        "candidate-reviews.json": {
+          "bytes": 21773,
+          "sha256": "d3e005db34db9403f10375f78dcb274f7bde9749c2acab34788d60159b22686d"
+        },
+        "candidates.jsonl": {
+          "bytes": 8148636,
+          "sha256": "1420b30b70861b0157832fea41c11c89cb346063863d636371c2588d1dbc2093"
+        },
+        "catalog.jsonl": {
+          "bytes": 7515306,
+          "sha256": "2ac2e107baf6b582ec86bab1770e4495b14159c8299b42a505d5dff8f1ddcd3a"
+        },
+        "primary-evidence.jsonl": {
+          "bytes": 3394612,
+          "sha256": "23f768e7089bc51a2b324518a109aba8351cca87aa6119a287c9dad64fea4e23"
+        },
+        "repository-aliases.json": {
+          "bytes": 25203,
+          "sha256": "99fa88426164310a63582029807c04ee90a1c2bb653194b88c3142db52edc923"
+        }
+      },
+      "id": "21963001dbfef36d5e0c8c3cec8d3f9c1eaffe28075152605476c3249e1a5ed8"
+    },
+    {
+      "files": {
+        "candidate-reviews.json": {
+          "bytes": 21773,
+          "sha256": "d3e005db34db9403f10375f78dcb274f7bde9749c2acab34788d60159b22686d"
+        },
+        "candidates.jsonl": {
+          "bytes": 8189812,
+          "sha256": "e6c83aa13b1f3e7ae1b8a44f668a084a201b58a7a553642d87a89ab2a2dc91ed"
+        },
+        "catalog.jsonl": {
+          "bytes": 7553362,
+          "sha256": "27ffd317a55b0fab44b85fae1cb37ee5dd1bf35b6081f9670e51c9441ecf1f37"
+        },
+        "primary-evidence.jsonl": {
+          "bytes": 3411248,
+          "sha256": "b7c36926376936fccbfeac1ac49f1c4265200145128d9021cc6f5d39d2942465"
+        },
+        "repository-aliases.json": {
+          "bytes": 25203,
+          "sha256": "99fa88426164310a63582029807c04ee90a1c2bb653194b88c3142db52edc923"
+        }
+      },
+      "id": "457072c91f5a32545cd0140bb77a9643abd5bc439a1e702cea3a5a601ea405c1"
+    },
+    {
+      "files": {
+        "candidate-reviews.json": {
+          "bytes": 21773,
+          "sha256": "d3e005db34db9403f10375f78dcb274f7bde9749c2acab34788d60159b22686d"
+        },
+        "candidates.jsonl": {
+          "bytes": 8189812,
+          "sha256": "191548751395b4577fef18b325936617c28ad7a9dabe905ebbcb37e842d6e99b"
+        },
+        "catalog.jsonl": {
+          "bytes": 7556379,
+          "sha256": "14e77ed714df9a36a027995629c192e2082e17e6107a262c9acfe89c843c24c7"
+        },
+        "primary-evidence.jsonl": {
+          "bytes": 3411248,
+          "sha256": "b7c36926376936fccbfeac1ac49f1c4265200145128d9021cc6f5d39d2942465"
+        },
+        "repository-aliases.json": {
+          "bytes": 25203,
+          "sha256": "99fa88426164310a63582029807c04ee90a1c2bb653194b88c3142db52edc923"
+        }
+      },
+      "id": "b7bb7c185d6e65b4ea784d1c170ae9cb080463d05a6756ab7a8218bce0c4399b"
+    },
+    {
+      "files": {
+        "candidate-reviews.json": {
+          "bytes": 21773,
+          "sha256": "d3e005db34db9403f10375f78dcb274f7bde9749c2acab34788d60159b22686d"
+        },
+        "candidates.jsonl": {
+          "bytes": 8191550,
+          "sha256": "1f9648b1b1237df3ea351830f2d771388d7c04b2aa4ada6bfd378c8b247f58fc"
+        },
+        "catalog.jsonl": {
+          "bytes": 7556379,
+          "sha256": "14e77ed714df9a36a027995629c192e2082e17e6107a262c9acfe89c843c24c7"
+        },
+        "primary-evidence.jsonl": {
+          "bytes": 3411248,
+          "sha256": "b7c36926376936fccbfeac1ac49f1c4265200145128d9021cc6f5d39d2942465"
+        },
+        "repository-aliases.json": {
+          "bytes": 25203,
+          "sha256": "99fa88426164310a63582029807c04ee90a1c2bb653194b88c3142db52edc923"
+        }
+      },
+      "id": "c824f00acd33e767d6e91e5c6707b71999469dc39933e27205c255018dad11f4"
+    },
+    {
+      "files": {
+        "candidate-reviews.json": {
+          "bytes": 21773,
+          "sha256": "d3e005db34db9403f10375f78dcb274f7bde9749c2acab34788d60159b22686d"
+        },
+        "candidates.jsonl": {
+          "bytes": 8191550,
+          "sha256": "f5d824ec71ffb2bf2b52c7e1f6e29c9dcbb5a4614a6defa7e14b85b1d7bdac4f"
+        },
+        "catalog.jsonl": {
+          "bytes": 7556379,
+          "sha256": "14e77ed714df9a36a027995629c192e2082e17e6107a262c9acfe89c843c24c7"
+        },
+        "primary-evidence.jsonl": {
+          "bytes": 3411248,
+          "sha256": "b7c36926376936fccbfeac1ac49f1c4265200145128d9021cc6f5d39d2942465"
+        },
+        "repository-aliases.json": {
+          "bytes": 25203,
+          "sha256": "99fa88426164310a63582029807c04ee90a1c2bb653194b88c3142db52edc923"
+        }
+      },
+      "id": "2207e12d54bb598bad11fc571268fcec530b5a06547ca0d48ee4a82f9163681f"
+    },
+    {
+      "files": {
+        "candidate-reviews.json": {
+          "bytes": 21773,
+          "sha256": "d3e005db34db9403f10375f78dcb274f7bde9749c2acab34788d60159b22686d"
+        },
+        "candidates.jsonl": {
+          "bytes": 8189812,
+          "sha256": "37527014e8de98a6ac4df203cbec56497c4fe090448af82719e8ca50775012de"
+        },
+        "catalog.jsonl": {
+          "bytes": 7556379,
+          "sha256": "14e77ed714df9a36a027995629c192e2082e17e6107a262c9acfe89c843c24c7"
+        },
+        "primary-evidence.jsonl": {
+          "bytes": 3411248,
+          "sha256": "b7c36926376936fccbfeac1ac49f1c4265200145128d9021cc6f5d39d2942465"
+        },
+        "repository-aliases.json": {
+          "bytes": 25203,
+          "sha256": "99fa88426164310a63582029807c04ee90a1c2bb653194b88c3142db52edc923"
+        }
+      },
+      "id": "3aaabb3ef16fc8f383c6db95a183b01e5d21dbe5c888e6893deb6d2f3de7ed19"
+    },
+    {
+      "files": {
+        "candidate-reviews.json": {
+          "bytes": 21773,
+          "sha256": "d3e005db34db9403f10375f78dcb274f7bde9749c2acab34788d60159b22686d"
+        },
+        "candidates.jsonl": {
+          "bytes": 8191550,
+          "sha256": "e263264e707c74757ff212cf68910cd82ed30209f19e505d9466806c7ffa380a"
+        },
+        "catalog.jsonl": {
+          "bytes": 7556379,
+          "sha256": "14e77ed714df9a36a027995629c192e2082e17e6107a262c9acfe89c843c24c7"
+        },
+        "primary-evidence.jsonl": {
+          "bytes": 3411248,
+          "sha256": "b7c36926376936fccbfeac1ac49f1c4265200145128d9021cc6f5d39d2942465"
+        },
+        "repository-aliases.json": {
+          "bytes": 25203,
+          "sha256": "99fa88426164310a63582029807c04ee90a1c2bb653194b88c3142db52edc923"
+        }
+      },
+      "id": "80e3e8064dfc6ca262729bde5415b710236d78e6d598ace37f636b18e7a213b3"
+    },
+    {
+      "files": {
+        "candidate-reviews.json": {
+          "bytes": 21773,
+          "sha256": "d3e005db34db9403f10375f78dcb274f7bde9749c2acab34788d60159b22686d"
+        },
+        "candidates.jsonl": {
+          "bytes": 8189812,
+          "sha256": "abdfd6fd21d1e3db75c27242bfde56f5d26d9ccf9d0e65b0812d8edc2714cd1c"
+        },
+        "catalog.jsonl": {
+          "bytes": 7556379,
+          "sha256": "14e77ed714df9a36a027995629c192e2082e17e6107a262c9acfe89c843c24c7"
+        },
+        "primary-evidence.jsonl": {
+          "bytes": 3411248,
+          "sha256": "b7c36926376936fccbfeac1ac49f1c4265200145128d9021cc6f5d39d2942465"
+        },
+        "repository-aliases.json": {
+          "bytes": 25203,
+          "sha256": "99fa88426164310a63582029807c04ee90a1c2bb653194b88c3142db52edc923"
+        }
+      },
+      "id": "8cc7f5407d5344cd83ec6d99cee8502c90e440240d68646cc1c67c7364e662ba"
+    },
+    {
+      "files": {
+        "candidate-reviews.json": {
+          "bytes": 21773,
+          "sha256": "d3e005db34db9403f10375f78dcb274f7bde9749c2acab34788d60159b22686d"
+        },
+        "candidates.jsonl": {
+          "bytes": 8189812,
+          "sha256": "48836a4d3aa1a87df0bc6e9e81af1cf49c8554624a2a5353bdc24ca6f45b2cab"
+        },
+        "catalog.jsonl": {
+          "bytes": 7556379,
+          "sha256": "14e77ed714df9a36a027995629c192e2082e17e6107a262c9acfe89c843c24c7"
+        },
+        "primary-evidence.jsonl": {
+          "bytes": 3411248,
+          "sha256": "b7c36926376936fccbfeac1ac49f1c4265200145128d9021cc6f5d39d2942465"
+        },
+        "repository-aliases.json": {
+          "bytes": 25203,
+          "sha256": "99fa88426164310a63582029807c04ee90a1c2bb653194b88c3142db52edc923"
+        }
+      },
+      "id": "94e15b5dfca2f34092bb97639cb6051301fa0dcd733ae8aa7ffe3bc07d33a641"
+    },
+    {
+      "files": {
+        "candidate-reviews.json": {
+          "bytes": 21773,
+          "sha256": "d3e005db34db9403f10375f78dcb274f7bde9749c2acab34788d60159b22686d"
+        },
+        "candidates.jsonl": {
+          "bytes": 8190387,
+          "sha256": "44c16ccad6e381a8ccf8efb99492cf7d1e6b53d8d42312ccbb36dd31b7e66cf7"
+        },
+        "catalog.jsonl": {
+          "bytes": 7556379,
+          "sha256": "14e77ed714df9a36a027995629c192e2082e17e6107a262c9acfe89c843c24c7"
+        },
+        "primary-evidence.jsonl": {
+          "bytes": 3411248,
+          "sha256": "b7c36926376936fccbfeac1ac49f1c4265200145128d9021cc6f5d39d2942465"
+        },
+        "repository-aliases.json": {
+          "bytes": 25203,
+          "sha256": "99fa88426164310a63582029807c04ee90a1c2bb653194b88c3142db52edc923"
+        }
+      },
+      "id": "db6ac23edfd9aa98777416ad84bdca95eb1e83fd32f9f47cb3463bc2ce16acef"
+    },
+    {
+      "files": {
+        "candidate-reviews.json": {
+          "bytes": 21773,
+          "sha256": "d3e005db34db9403f10375f78dcb274f7bde9749c2acab34788d60159b22686d"
+        },
+        "candidates.jsonl": {
+          "bytes": 8190387,
+          "sha256": "23e9fbc9b4cbcd9e320a369bf7fc6831e256ee3d65b4d0a4e6c8b53cfb5d4e26"
+        },
+        "catalog.jsonl": {
+          "bytes": 7558322,
+          "sha256": "f039cb41e5fe7d59377e62e37e840321fa44d635a9b6ba2a9a8c479ad8a6bf5d"
+        },
+        "primary-evidence.jsonl": {
+          "bytes": 3411248,
+          "sha256": "b7c36926376936fccbfeac1ac49f1c4265200145128d9021cc6f5d39d2942465"
+        },
+        "repository-aliases.json": {
+          "bytes": 25203,
+          "sha256": "99fa88426164310a63582029807c04ee90a1c2bb653194b88c3142db52edc923"
+        }
+      },
+      "id": "869aeef7f228c77b0af005f3ba870cb7794768bd299f1022065711c71f5c8eac"
+    },
+    {
+      "files": {
+        "candidate-reviews.json": {
+          "bytes": 21773,
+          "sha256": "d3e005db34db9403f10375f78dcb274f7bde9749c2acab34788d60159b22686d"
+        },
+        "candidates.jsonl": {
+          "bytes": 8192125,
+          "sha256": "316817f5ecbe1094282f4922ee094b2732057b5e7af704bcda8c2e98bae6d8a1"
+        },
+        "catalog.jsonl": {
+          "bytes": 7558322,
+          "sha256": "f039cb41e5fe7d59377e62e37e840321fa44d635a9b6ba2a9a8c479ad8a6bf5d"
+        },
+        "primary-evidence.jsonl": {
+          "bytes": 3411248,
+          "sha256": "b7c36926376936fccbfeac1ac49f1c4265200145128d9021cc6f5d39d2942465"
+        },
+        "repository-aliases.json": {
+          "bytes": 25203,
+          "sha256": "99fa88426164310a63582029807c04ee90a1c2bb653194b88c3142db52edc923"
+        }
+      },
+      "id": "fb32fc01a78be181f633f62b2f19b2df1f35b4bebd872e697b5535fbc25e01c4"
+    },
+    {
+      "files": {
+        "candidate-reviews.json": {
+          "bytes": 21773,
+          "sha256": "d3e005db34db9403f10375f78dcb274f7bde9749c2acab34788d60159b22686d"
+        },
+        "candidates.jsonl": {
+          "bytes": 8192125,
+          "sha256": "bbd15b1eb8ea2b5dd6430643c0307c48f9d74fc5b4a1439f1ae65827766169ff"
+        },
+        "catalog.jsonl": {
+          "bytes": 7558322,
+          "sha256": "f039cb41e5fe7d59377e62e37e840321fa44d635a9b6ba2a9a8c479ad8a6bf5d"
+        },
+        "primary-evidence.jsonl": {
+          "bytes": 3411248,
+          "sha256": "b7c36926376936fccbfeac1ac49f1c4265200145128d9021cc6f5d39d2942465"
+        },
+        "repository-aliases.json": {
+          "bytes": 25203,
+          "sha256": "99fa88426164310a63582029807c04ee90a1c2bb653194b88c3142db52edc923"
+        }
+      },
+      "id": "112ca7c4f9947bdd3128ed9563473fd49a234b50de73dd6dbd2e8c3e413f3c14"
+    },
+    {
+      "files": {
+        "candidate-reviews.json": {
+          "bytes": 21773,
+          "sha256": "d3e005db34db9403f10375f78dcb274f7bde9749c2acab34788d60159b22686d"
+        },
+        "candidates.jsonl": {
+          "bytes": 8190387,
+          "sha256": "25c776d669792d5c9a96b8aa5d4a1762bdc0f1d6682694cb39899c9333db7eee"
+        },
+        "catalog.jsonl": {
+          "bytes": 7558322,
+          "sha256": "f039cb41e5fe7d59377e62e37e840321fa44d635a9b6ba2a9a8c479ad8a6bf5d"
+        },
+        "primary-evidence.jsonl": {
+          "bytes": 3411248,
+          "sha256": "b7c36926376936fccbfeac1ac49f1c4265200145128d9021cc6f5d39d2942465"
+        },
+        "repository-aliases.json": {
+          "bytes": 25203,
+          "sha256": "99fa88426164310a63582029807c04ee90a1c2bb653194b88c3142db52edc923"
+        }
+      },
+      "id": "bcbd72d02aa704c385ad33e807165b65e0043c12bfde5a663363f99facbbec43"
+    },
+    {
+      "files": {
+        "candidate-reviews.json": {
+          "bytes": 21773,
+          "sha256": "d3e005db34db9403f10375f78dcb274f7bde9749c2acab34788d60159b22686d"
+        },
+        "candidates.jsonl": {
+          "bytes": 8146318,
+          "sha256": "b48405fe3d5f7fced91bb59f722132c9009cf2bdfa3039bdc0d1527c88e85af5"
+        },
+        "catalog.jsonl": {
+          "bytes": 7558322,
+          "sha256": "f039cb41e5fe7d59377e62e37e840321fa44d635a9b6ba2a9a8c479ad8a6bf5d"
+        },
+        "primary-evidence.jsonl": {
+          "bytes": 3411248,
+          "sha256": "b7c36926376936fccbfeac1ac49f1c4265200145128d9021cc6f5d39d2942465"
+        },
+        "repository-aliases.json": {
+          "bytes": 25203,
+          "sha256": "99fa88426164310a63582029807c04ee90a1c2bb653194b88c3142db52edc923"
+        }
+      },
+      "id": "e9ea40c6c75054079851178f71ec1a2702a5c1bb57ebaa013360772d9c43824f"
+    },
+    {
+      "files": {
+        "candidate-reviews.json": {
+          "bytes": 21773,
+          "sha256": "d3e005db34db9403f10375f78dcb274f7bde9749c2acab34788d60159b22686d"
+        },
+        "candidates.jsonl": {
+          "bytes": 8191156,
+          "sha256": "2413edd836bde310860d351f749079862d74fce76857f398459db109e332c864"
+        },
+        "catalog.jsonl": {
+          "bytes": 7558322,
+          "sha256": "f039cb41e5fe7d59377e62e37e840321fa44d635a9b6ba2a9a8c479ad8a6bf5d"
+        },
+        "primary-evidence.jsonl": {
+          "bytes": 3411248,
+          "sha256": "b7c36926376936fccbfeac1ac49f1c4265200145128d9021cc6f5d39d2942465"
+        },
+        "repository-aliases.json": {
+          "bytes": 25203,
+          "sha256": "99fa88426164310a63582029807c04ee90a1c2bb653194b88c3142db52edc923"
+        }
+      },
+      "id": "36a41823b1ef15357a653d6718b14db8cca3aa3710aaee40d6eb863dc44063b2"
+    },
+    {
+      "files": {
+        "candidate-reviews.json": {
+          "bytes": 21773,
+          "sha256": "d3e005db34db9403f10375f78dcb274f7bde9749c2acab34788d60159b22686d"
+        },
+        "candidates.jsonl": {
+          "bytes": 8169630,
+          "sha256": "8560ea29529157a91b735dd115bbffbf652e6b83d9669c121c11cae66976846f"
+        },
+        "catalog.jsonl": {
+          "bytes": 7558322,
+          "sha256": "f039cb41e5fe7d59377e62e37e840321fa44d635a9b6ba2a9a8c479ad8a6bf5d"
+        },
+        "primary-evidence.jsonl": {
+          "bytes": 3411248,
+          "sha256": "b7c36926376936fccbfeac1ac49f1c4265200145128d9021cc6f5d39d2942465"
+        },
+        "repository-aliases.json": {
+          "bytes": 25203,
+          "sha256": "99fa88426164310a63582029807c04ee90a1c2bb653194b88c3142db52edc923"
+        }
+      },
+      "id": "e194d914dba225bfaaed6e4504f976f48f7559e3169b350d1dbcda1d54cc714e"
+    },
+    {
+      "files": {
+        "candidate-reviews.json": {
+          "bytes": 21773,
+          "sha256": "d3e005db34db9403f10375f78dcb274f7bde9749c2acab34788d60159b22686d"
+        },
+        "candidates.jsonl": {
+          "bytes": 8142239,
+          "sha256": "8aa9a2b28f12d1b6a484524abe8d790d34a94f31bab15e34a3947907e540bef2"
+        },
+        "catalog.jsonl": {
+          "bytes": 7561370,
+          "sha256": "ef4f2355f58da79dc77518123e580af7427c2db3655e5422ce0ea3bf944f41ff"
+        },
+        "primary-evidence.jsonl": {
+          "bytes": 3411248,
+          "sha256": "b7c36926376936fccbfeac1ac49f1c4265200145128d9021cc6f5d39d2942465"
+        },
+        "repository-aliases.json": {
+          "bytes": 25203,
+          "sha256": "99fa88426164310a63582029807c04ee90a1c2bb653194b88c3142db52edc923"
+        }
+      },
+      "id": "7d818925d3f61415ef87cc4b46cb26a3b602b26d2d354c30aaf36134c6a5c1b0"
+    },
+    {
+      "files": {
+        "candidate-reviews.json": {
+          "bytes": 21773,
+          "sha256": "d3e005db34db9403f10375f78dcb274f7bde9749c2acab34788d60159b22686d"
+        },
+        "candidates.jsonl": {
+          "bytes": 8193051,
+          "sha256": "2bc47acbe4efa8db50523da456f2d05c8afa083c69b7544b2a295b1564e55977"
+        },
+        "catalog.jsonl": {
+          "bytes": 7561370,
+          "sha256": "ef4f2355f58da79dc77518123e580af7427c2db3655e5422ce0ea3bf944f41ff"
+        },
+        "primary-evidence.jsonl": {
+          "bytes": 3411248,
+          "sha256": "b7c36926376936fccbfeac1ac49f1c4265200145128d9021cc6f5d39d2942465"
+        },
+        "repository-aliases.json": {
+          "bytes": 25203,
+          "sha256": "99fa88426164310a63582029807c04ee90a1c2bb653194b88c3142db52edc923"
+        }
+      },
+      "id": "748d3408def2242bc2e6df5d49aa694011593e336e044fd070be4b2fe0d95285"
+    },
+    {
+      "files": {
+        "candidate-reviews.json": {
+          "bytes": 21773,
+          "sha256": "d3e005db34db9403f10375f78dcb274f7bde9749c2acab34788d60159b22686d"
+        },
+        "candidates.jsonl": {
+          "bytes": 8191490,
+          "sha256": "d49767f123df5b2d9a7deb30adfc49c96bf66d5c654c6d2848af6fe4aaf2e5ef"
+        },
+        "catalog.jsonl": {
+          "bytes": 7561370,
+          "sha256": "ef4f2355f58da79dc77518123e580af7427c2db3655e5422ce0ea3bf944f41ff"
+        },
+        "primary-evidence.jsonl": {
+          "bytes": 3411248,
+          "sha256": "b7c36926376936fccbfeac1ac49f1c4265200145128d9021cc6f5d39d2942465"
+        },
+        "repository-aliases.json": {
+          "bytes": 25203,
+          "sha256": "99fa88426164310a63582029807c04ee90a1c2bb653194b88c3142db52edc923"
+        }
+      },
+      "id": "48142799da4e30f2208ec9890b46c027a6ebe8ec43ae827a8699f45773a1d466"
+    },
+    {
+      "files": {
+        "candidate-reviews.json": {
+          "bytes": 21773,
+          "sha256": "d3e005db34db9403f10375f78dcb274f7bde9749c2acab34788d60159b22686d"
+        },
+        "candidates.jsonl": {
+          "bytes": 8193228,
+          "sha256": "3a3cd8a6a499c8d6e9ff94ab577aa83cdda16785873c2e856df0ec7970ad66dc"
+        },
+        "catalog.jsonl": {
+          "bytes": 7561370,
+          "sha256": "ef4f2355f58da79dc77518123e580af7427c2db3655e5422ce0ea3bf944f41ff"
+        },
+        "primary-evidence.jsonl": {
+          "bytes": 3411248,
+          "sha256": "b7c36926376936fccbfeac1ac49f1c4265200145128d9021cc6f5d39d2942465"
+        },
+        "repository-aliases.json": {
+          "bytes": 25203,
+          "sha256": "99fa88426164310a63582029807c04ee90a1c2bb653194b88c3142db52edc923"
+        }
+      },
+      "id": "04247a87ab2ed57612e1269428289a7b922d5297f8c075af8ee64000723f7d6e"
+    },
+    {
+      "files": {
+        "candidate-reviews.json": {
+          "bytes": 21773,
+          "sha256": "d3e005db34db9403f10375f78dcb274f7bde9749c2acab34788d60159b22686d"
+        },
+        "candidates.jsonl": {
+          "bytes": 8191490,
+          "sha256": "788ba21a6247c47c4d7bf90943ef92096355578785c464426ce68511ee7b481a"
+        },
+        "catalog.jsonl": {
+          "bytes": 7561370,
+          "sha256": "ef4f2355f58da79dc77518123e580af7427c2db3655e5422ce0ea3bf944f41ff"
+        },
+        "primary-evidence.jsonl": {
+          "bytes": 3411248,
+          "sha256": "b7c36926376936fccbfeac1ac49f1c4265200145128d9021cc6f5d39d2942465"
+        },
+        "repository-aliases.json": {
+          "bytes": 25203,
+          "sha256": "99fa88426164310a63582029807c04ee90a1c2bb653194b88c3142db52edc923"
+        }
+      },
+      "id": "83d2c0234ecc20696b0da4e58a925251671a1361b5fbf028c0991f775a91d4a8"
+    },
+    {
+      "files": {
+        "candidate-reviews.json": {
+          "bytes": 21773,
+          "sha256": "d3e005db34db9403f10375f78dcb274f7bde9749c2acab34788d60159b22686d"
+        },
+        "candidates.jsonl": {
+          "bytes": 8193228,
+          "sha256": "27e99a2502e54f2078c95289af2676e63d5237cb525a2e78e17ad23f1352ea60"
+        },
+        "catalog.jsonl": {
+          "bytes": 7561370,
+          "sha256": "ef4f2355f58da79dc77518123e580af7427c2db3655e5422ce0ea3bf944f41ff"
+        },
+        "primary-evidence.jsonl": {
+          "bytes": 3411248,
+          "sha256": "b7c36926376936fccbfeac1ac49f1c4265200145128d9021cc6f5d39d2942465"
+        },
+        "repository-aliases.json": {
+          "bytes": 25203,
+          "sha256": "99fa88426164310a63582029807c04ee90a1c2bb653194b88c3142db52edc923"
+        }
+      },
+      "id": "bfc9210f7a85a77e299025e0e3cbac86d87e0a97c91206a27b847886aad0d405"
+    },
+    {
+      "files": {
+        "candidate-reviews.json": {
+          "bytes": 21773,
+          "sha256": "d3e005db34db9403f10375f78dcb274f7bde9749c2acab34788d60159b22686d"
+        },
+        "candidates.jsonl": {
+          "bytes": 8191490,
+          "sha256": "d07edb5193e6917dc0d923423c6e498b07654b7c692c5c1fd49beb03875ef581"
+        },
+        "catalog.jsonl": {
+          "bytes": 7561370,
+          "sha256": "ef4f2355f58da79dc77518123e580af7427c2db3655e5422ce0ea3bf944f41ff"
+        },
+        "primary-evidence.jsonl": {
+          "bytes": 3411248,
+          "sha256": "b7c36926376936fccbfeac1ac49f1c4265200145128d9021cc6f5d39d2942465"
+        },
+        "repository-aliases.json": {
+          "bytes": 25203,
+          "sha256": "99fa88426164310a63582029807c04ee90a1c2bb653194b88c3142db52edc923"
+        }
+      },
+      "id": "318efbd950d7dab47c1c0bb94b4c1fb468e6054394df14bfe02b2de9e05d3b51"
+    },
+    {
+      "files": {
+        "candidate-reviews.json": {
+          "bytes": 21773,
+          "sha256": "d3e005db34db9403f10375f78dcb274f7bde9749c2acab34788d60159b22686d"
+        },
+        "candidates.jsonl": {
+          "bytes": 8147938,
+          "sha256": "8062d10091cf6f551b4914c7fe05b1a4cd7fb88cac1a22da2a9e8abc24e9c4b5"
+        },
+        "catalog.jsonl": {
+          "bytes": 7561370,
+          "sha256": "ef4f2355f58da79dc77518123e580af7427c2db3655e5422ce0ea3bf944f41ff"
+        },
+        "primary-evidence.jsonl": {
+          "bytes": 3411248,
+          "sha256": "b7c36926376936fccbfeac1ac49f1c4265200145128d9021cc6f5d39d2942465"
+        },
+        "repository-aliases.json": {
+          "bytes": 25203,
+          "sha256": "99fa88426164310a63582029807c04ee90a1c2bb653194b88c3142db52edc923"
+        }
+      },
+      "id": "dea314a62ee9c9d1543adcfbe078ca7e2ac3e6274a9709a9426ac4be1a3f7925"
+    },
+    {
+      "files": {
+        "candidate-reviews.json": {
+          "bytes": 21773,
+          "sha256": "d3e005db34db9403f10375f78dcb274f7bde9749c2acab34788d60159b22686d"
+        },
+        "candidates.jsonl": {
+          "bytes": 8191490,
+          "sha256": "fcb71bed8a36f9669fdd723b97f2c136289848cfbf1957d3b6e4d7c2547ff845"
+        },
+        "catalog.jsonl": {
+          "bytes": 7561370,
+          "sha256": "ef4f2355f58da79dc77518123e580af7427c2db3655e5422ce0ea3bf944f41ff"
+        },
+        "primary-evidence.jsonl": {
+          "bytes": 3411248,
+          "sha256": "b7c36926376936fccbfeac1ac49f1c4265200145128d9021cc6f5d39d2942465"
+        },
+        "repository-aliases.json": {
+          "bytes": 25203,
+          "sha256": "99fa88426164310a63582029807c04ee90a1c2bb653194b88c3142db52edc923"
+        }
+      },
+      "id": "0eb125a924d7de10090b4c9a1e00c786fbf234e5292afd90ce7329695626edc1"
+    },
+    {
+      "files": {
+        "candidate-reviews.json": {
+          "bytes": 21773,
+          "sha256": "d3e005db34db9403f10375f78dcb274f7bde9749c2acab34788d60159b22686d"
+        },
+        "candidates.jsonl": {
+          "bytes": 8193228,
+          "sha256": "8f04081ffeba71353c37824391821519462870693a998e00b3121c53fb19a4ff"
+        },
+        "catalog.jsonl": {
+          "bytes": 7561370,
+          "sha256": "ef4f2355f58da79dc77518123e580af7427c2db3655e5422ce0ea3bf944f41ff"
+        },
+        "primary-evidence.jsonl": {
+          "bytes": 3411248,
+          "sha256": "b7c36926376936fccbfeac1ac49f1c4265200145128d9021cc6f5d39d2942465"
+        },
+        "repository-aliases.json": {
+          "bytes": 25203,
+          "sha256": "99fa88426164310a63582029807c04ee90a1c2bb653194b88c3142db52edc923"
+        }
+      },
+      "id": "ccaaa4e85e21fc133a1e45f382035a6f83fc677d97cb33697110a89f872aed93"
+    },
+    {
+      "files": {
+        "candidate-reviews.json": {
+          "bytes": 21773,
+          "sha256": "d3e005db34db9403f10375f78dcb274f7bde9749c2acab34788d60159b22686d"
+        },
+        "candidates.jsonl": {
+          "bytes": 8193228,
+          "sha256": "263c5277824e75e2839262f8fe28a72cb4a596d510f1e2028bf55e80df5e294f"
+        },
+        "catalog.jsonl": {
+          "bytes": 7561370,
+          "sha256": "ef4f2355f58da79dc77518123e580af7427c2db3655e5422ce0ea3bf944f41ff"
+        },
+        "primary-evidence.jsonl": {
+          "bytes": 3411248,
+          "sha256": "b7c36926376936fccbfeac1ac49f1c4265200145128d9021cc6f5d39d2942465"
+        },
+        "repository-aliases.json": {
+          "bytes": 25203,
+          "sha256": "99fa88426164310a63582029807c04ee90a1c2bb653194b88c3142db52edc923"
+        }
+      },
+      "id": "5dfd3ba388b4a46758e73b834004fc9a05eadc661ef3e7968d833cadcd3f13a6"
     }
   ],
   "manifest_schema": "/schemas/github-candidate-observation-manifest.schema.json",
-  "observation_snapshot_sha256": "b4ba9964a5ad680072ba50ba67dc747d0a002ae47364c7bc34e32f932ff0f023",
+  "observation_snapshot_sha256": "2b41decdba55c8dea9d319b4b5de85b736e436486267a99a72df8cd87e0779d3",
   "observed_from": "2026-10-18T13:02:50.777197+00:00",
-  "observed_through": "2026-11-06T06:26:21.880942+00:00",
+  "observed_through": "2026-11-07T13:22:46.824188+00:00",
   "privacy": {
-    "checked_records": 10070,
+    "checked_records": 10251,
     "omitted_fields": [],
     "policy": "Only allowlisted public repository fields and accepted primary receipts. Suspect descriptions are explicitly omitted; owner/contact objects, headers, raw bodies and local paths are not exported."
   },
@@ -1681,8 +2581,8 @@
   "review_policy": "Public GitHub metadata observations only. Every row remains candidate/relevance_pending; HTTP success, a topic tag, or a repository name does not establish CUA relevance, release completeness, licensing, or editorial approval.",
   "scan": {
     "configuration": {
-      "created_after": "2026-11-05",
-      "created_before": "2026-11-06",
+      "created_after": "2026-11-06",
+      "created_before": "2026-11-07",
       "topics": [
         "computer-use",
         "gui-agent",
@@ -1714,7 +2614,7 @@
         "ui-agent"
       ]
     },
-    "current_epoch_id": "epoch:cb7440a35b150c9678e2a329",
+    "current_epoch_id": "epoch:33dadbd455354e9407058991",
     "epochs": [
       {
         "configuration": {
@@ -2775,16 +3675,303 @@
           "search:9313be3e9f05f200ee9fdefa"
         ],
         "source_state_sha256": null
+      },
+      {
+        "configuration": {
+          "created_after": "2026-11-06",
+          "created_before": "2026-11-07",
+          "topics": [
+            "computer-use",
+            "gui-agent",
+            "gui-agents",
+            "gui-automation",
+            "desktop-automation",
+            "browser-agent",
+            "browser-agents",
+            "browser-automation",
+            "android-automation",
+            "computer-use-agent",
+            "computer-use-agents",
+            "gui-grounding",
+            "browser-use",
+            "web-agent",
+            "web-agents",
+            "desktop-agent",
+            "mobile-agent",
+            "cua",
+            "computer-control",
+            "computer-agent",
+            "os-agent",
+            "os-agents",
+            "mobile-agents",
+            "android-agent",
+            "phone-use",
+            "mobile-use",
+            "screen-understanding",
+            "ui-agent"
+          ]
+        },
+        "created_at": "2026-11-07T00:38:56.178369+00:00",
+        "id": "epoch:33dadbd455354e9407058991",
+        "previous_epoch_id": "epoch:cb7440a35b150c9678e2a329",
+        "reason": "daily_continuation",
+        "root_query_ids": [
+          "search:88662288c2481389194f50c9",
+          "search:4361be57f0a6b553231f1e13",
+          "search:f26d43e4d76298ccba54331c",
+          "search:6ebbea3a942557eebfbea52f",
+          "search:a65c5013e36624dbdb4cf32b",
+          "search:743c4a4c911df14f80e27171",
+          "search:a05f80e50e1194e0040b0603",
+          "search:a97c3568c552dfd27a83dff6",
+          "search:f744fca42bc386ea4cef41e3",
+          "search:cc81e1903b337b9c8d111b0c",
+          "search:a51ce51a7e6c70f4320add66",
+          "search:d7dd349b2034e634ec8f095a",
+          "search:9ec667e36e42633cf60fb7a7",
+          "search:f5cff73d0c8ece1ef2554148",
+          "search:35c91608485bcb2ca0894ac2",
+          "search:b7f9ec7540ac846bb07413b5",
+          "search:7b6b0cbdfa019e1683095e14",
+          "search:5a7f2a9f71ca36bb779aa867",
+          "search:2569ea008bcedad5ccb525d5",
+          "search:8f96b95e44fe85c01fbfffec",
+          "search:999e4f4ee920036146efd842",
+          "search:158813e765345eeebe6f90f3",
+          "search:375c00d03c5223400ccd79df",
+          "search:a73452a5b588bc8e33c7db14",
+          "search:5e70cf1b47e2f2f8a2be1358",
+          "search:aa0fee920972b6bd84691fa9",
+          "search:fe40322477a39dd7e5e83e45",
+          "search:709fe192d0a453ff52f213ce"
+        ],
+        "source_state_sha256": null
       }
     ],
     "global_completeness_established": false,
     "limit": "Bounded observed requests, not an exhaustive GitHub/CUA census. Per-query totals and overlapping shards are not a global union.",
     "queries": [
       {
+        "id": "existing:5dfd3ba388b4a46758e73b834004fc9a05eadc661ef3e7968d833cadcd3f13a6",
+        "input_id": "5dfd3ba388b4a46758e73b834004fc9a05eadc661ef3e7968d833cadcd3f13a6",
+        "kind": "existing",
+        "status": "pending"
+      },
+      {
+        "id": "existing:ccaaa4e85e21fc133a1e45f382035a6f83fc677d97cb33697110a89f872aed93",
+        "input_id": "ccaaa4e85e21fc133a1e45f382035a6f83fc677d97cb33697110a89f872aed93",
+        "kind": "existing",
+        "status": "superseded_input"
+      },
+      {
+        "id": "existing:0eb125a924d7de10090b4c9a1e00c786fbf234e5292afd90ce7329695626edc1",
+        "input_id": "0eb125a924d7de10090b4c9a1e00c786fbf234e5292afd90ce7329695626edc1",
+        "kind": "existing",
+        "status": "superseded_input"
+      },
+      {
+        "id": "existing:dea314a62ee9c9d1543adcfbe078ca7e2ac3e6274a9709a9426ac4be1a3f7925",
+        "input_id": "dea314a62ee9c9d1543adcfbe078ca7e2ac3e6274a9709a9426ac4be1a3f7925",
+        "kind": "existing",
+        "status": "superseded_input"
+      },
+      {
+        "id": "existing:318efbd950d7dab47c1c0bb94b4c1fb468e6054394df14bfe02b2de9e05d3b51",
+        "input_id": "318efbd950d7dab47c1c0bb94b4c1fb468e6054394df14bfe02b2de9e05d3b51",
+        "kind": "existing",
+        "status": "superseded_input"
+      },
+      {
+        "id": "existing:bfc9210f7a85a77e299025e0e3cbac86d87e0a97c91206a27b847886aad0d405",
+        "input_id": "bfc9210f7a85a77e299025e0e3cbac86d87e0a97c91206a27b847886aad0d405",
+        "kind": "existing",
+        "status": "superseded_input"
+      },
+      {
+        "id": "existing:83d2c0234ecc20696b0da4e58a925251671a1361b5fbf028c0991f775a91d4a8",
+        "input_id": "83d2c0234ecc20696b0da4e58a925251671a1361b5fbf028c0991f775a91d4a8",
+        "kind": "existing",
+        "status": "superseded_input"
+      },
+      {
+        "id": "existing:04247a87ab2ed57612e1269428289a7b922d5297f8c075af8ee64000723f7d6e",
+        "input_id": "04247a87ab2ed57612e1269428289a7b922d5297f8c075af8ee64000723f7d6e",
+        "kind": "existing",
+        "status": "superseded_input"
+      },
+      {
+        "id": "existing:48142799da4e30f2208ec9890b46c027a6ebe8ec43ae827a8699f45773a1d466",
+        "input_id": "48142799da4e30f2208ec9890b46c027a6ebe8ec43ae827a8699f45773a1d466",
+        "kind": "existing",
+        "status": "superseded_input"
+      },
+      {
+        "id": "existing:748d3408def2242bc2e6df5d49aa694011593e336e044fd070be4b2fe0d95285",
+        "input_id": "748d3408def2242bc2e6df5d49aa694011593e336e044fd070be4b2fe0d95285",
+        "kind": "existing",
+        "status": "superseded_input"
+      },
+      {
+        "id": "existing:7d818925d3f61415ef87cc4b46cb26a3b602b26d2d354c30aaf36134c6a5c1b0",
+        "input_id": "7d818925d3f61415ef87cc4b46cb26a3b602b26d2d354c30aaf36134c6a5c1b0",
+        "kind": "existing",
+        "status": "superseded_input"
+      },
+      {
+        "id": "existing:e194d914dba225bfaaed6e4504f976f48f7559e3169b350d1dbcda1d54cc714e",
+        "input_id": "e194d914dba225bfaaed6e4504f976f48f7559e3169b350d1dbcda1d54cc714e",
+        "kind": "existing",
+        "status": "superseded_input"
+      },
+      {
+        "id": "existing:36a41823b1ef15357a653d6718b14db8cca3aa3710aaee40d6eb863dc44063b2",
+        "input_id": "36a41823b1ef15357a653d6718b14db8cca3aa3710aaee40d6eb863dc44063b2",
+        "kind": "existing",
+        "status": "superseded_input"
+      },
+      {
+        "id": "existing:e9ea40c6c75054079851178f71ec1a2702a5c1bb57ebaa013360772d9c43824f",
+        "input_id": "e9ea40c6c75054079851178f71ec1a2702a5c1bb57ebaa013360772d9c43824f",
+        "kind": "existing",
+        "status": "superseded_input"
+      },
+      {
+        "id": "existing:bcbd72d02aa704c385ad33e807165b65e0043c12bfde5a663363f99facbbec43",
+        "input_id": "bcbd72d02aa704c385ad33e807165b65e0043c12bfde5a663363f99facbbec43",
+        "kind": "existing",
+        "status": "superseded_input"
+      },
+      {
+        "id": "existing:112ca7c4f9947bdd3128ed9563473fd49a234b50de73dd6dbd2e8c3e413f3c14",
+        "input_id": "112ca7c4f9947bdd3128ed9563473fd49a234b50de73dd6dbd2e8c3e413f3c14",
+        "kind": "existing",
+        "status": "superseded_input"
+      },
+      {
+        "id": "existing:fb32fc01a78be181f633f62b2f19b2df1f35b4bebd872e697b5535fbc25e01c4",
+        "input_id": "fb32fc01a78be181f633f62b2f19b2df1f35b4bebd872e697b5535fbc25e01c4",
+        "kind": "existing",
+        "status": "superseded_input"
+      },
+      {
+        "id": "existing:869aeef7f228c77b0af005f3ba870cb7794768bd299f1022065711c71f5c8eac",
+        "input_id": "869aeef7f228c77b0af005f3ba870cb7794768bd299f1022065711c71f5c8eac",
+        "kind": "existing",
+        "status": "superseded_input"
+      },
+      {
+        "id": "existing:db6ac23edfd9aa98777416ad84bdca95eb1e83fd32f9f47cb3463bc2ce16acef",
+        "input_id": "db6ac23edfd9aa98777416ad84bdca95eb1e83fd32f9f47cb3463bc2ce16acef",
+        "kind": "existing",
+        "status": "superseded_input"
+      },
+      {
+        "id": "existing:94e15b5dfca2f34092bb97639cb6051301fa0dcd733ae8aa7ffe3bc07d33a641",
+        "input_id": "94e15b5dfca2f34092bb97639cb6051301fa0dcd733ae8aa7ffe3bc07d33a641",
+        "kind": "existing",
+        "status": "superseded_input"
+      },
+      {
+        "id": "existing:8cc7f5407d5344cd83ec6d99cee8502c90e440240d68646cc1c67c7364e662ba",
+        "input_id": "8cc7f5407d5344cd83ec6d99cee8502c90e440240d68646cc1c67c7364e662ba",
+        "kind": "existing",
+        "status": "superseded_input"
+      },
+      {
+        "id": "existing:80e3e8064dfc6ca262729bde5415b710236d78e6d598ace37f636b18e7a213b3",
+        "input_id": "80e3e8064dfc6ca262729bde5415b710236d78e6d598ace37f636b18e7a213b3",
+        "kind": "existing",
+        "status": "superseded_input"
+      },
+      {
+        "id": "existing:3aaabb3ef16fc8f383c6db95a183b01e5d21dbe5c888e6893deb6d2f3de7ed19",
+        "input_id": "3aaabb3ef16fc8f383c6db95a183b01e5d21dbe5c888e6893deb6d2f3de7ed19",
+        "kind": "existing",
+        "status": "superseded_input"
+      },
+      {
+        "id": "existing:2207e12d54bb598bad11fc571268fcec530b5a06547ca0d48ee4a82f9163681f",
+        "input_id": "2207e12d54bb598bad11fc571268fcec530b5a06547ca0d48ee4a82f9163681f",
+        "kind": "existing",
+        "status": "superseded_input"
+      },
+      {
+        "id": "existing:c824f00acd33e767d6e91e5c6707b71999469dc39933e27205c255018dad11f4",
+        "input_id": "c824f00acd33e767d6e91e5c6707b71999469dc39933e27205c255018dad11f4",
+        "kind": "existing",
+        "status": "superseded_input"
+      },
+      {
+        "id": "existing:b7bb7c185d6e65b4ea784d1c170ae9cb080463d05a6756ab7a8218bce0c4399b",
+        "input_id": "b7bb7c185d6e65b4ea784d1c170ae9cb080463d05a6756ab7a8218bce0c4399b",
+        "kind": "existing",
+        "status": "superseded_input"
+      },
+      {
+        "id": "existing:457072c91f5a32545cd0140bb77a9643abd5bc439a1e702cea3a5a601ea405c1",
+        "input_id": "457072c91f5a32545cd0140bb77a9643abd5bc439a1e702cea3a5a601ea405c1",
+        "kind": "existing",
+        "status": "superseded_input"
+      },
+      {
+        "id": "existing:21963001dbfef36d5e0c8c3cec8d3f9c1eaffe28075152605476c3249e1a5ed8",
+        "input_id": "21963001dbfef36d5e0c8c3cec8d3f9c1eaffe28075152605476c3249e1a5ed8",
+        "kind": "existing",
+        "status": "superseded_input"
+      },
+      {
+        "id": "existing:e4ccce95a47ed2962ffddec0bc884436fbe675efe9d39b9ab75be0b93d587581",
+        "input_id": "e4ccce95a47ed2962ffddec0bc884436fbe675efe9d39b9ab75be0b93d587581",
+        "kind": "existing",
+        "status": "superseded_input"
+      },
+      {
+        "id": "existing:08cedbc7275520a474798acca56bc024003adb870d015530af76df4e63669e81",
+        "input_id": "08cedbc7275520a474798acca56bc024003adb870d015530af76df4e63669e81",
+        "kind": "existing",
+        "status": "superseded_input"
+      },
+      {
+        "id": "existing:7f4302d1aea40e926ce0617dd27ec74620dd847f2090a00f561b7c11050646b3",
+        "input_id": "7f4302d1aea40e926ce0617dd27ec74620dd847f2090a00f561b7c11050646b3",
+        "kind": "existing",
+        "status": "superseded_input"
+      },
+      {
+        "id": "existing:eece6dfe7f129fb5d35bdff2b74403965448cefbc004f5582a426053812c1f86",
+        "input_id": "eece6dfe7f129fb5d35bdff2b74403965448cefbc004f5582a426053812c1f86",
+        "kind": "existing",
+        "status": "superseded_input"
+      },
+      {
+        "id": "existing:9457540406c4182115da65a46706d26a1eecdea8d86c30df48b2d7ac0691953e",
+        "input_id": "9457540406c4182115da65a46706d26a1eecdea8d86c30df48b2d7ac0691953e",
+        "kind": "existing",
+        "status": "superseded_input"
+      },
+      {
+        "id": "existing:3933c786601b6679d7e4c60cd66796eff4984a96dc76fb7382ed2436c6835362",
+        "input_id": "3933c786601b6679d7e4c60cd66796eff4984a96dc76fb7382ed2436c6835362",
+        "kind": "existing",
+        "status": "superseded_input"
+      },
+      {
+        "id": "existing:0c5b8a2ecd72eb2a891fa64b8adca75631fc9ba3a77dd8ec771617b7b7e959c3",
+        "input_id": "0c5b8a2ecd72eb2a891fa64b8adca75631fc9ba3a77dd8ec771617b7b7e959c3",
+        "kind": "existing",
+        "status": "superseded_input"
+      },
+      {
+        "id": "existing:d332638be7013b6787a7cbeff5a90cece3ad219d233313041b8063bc08c0df03",
+        "input_id": "d332638be7013b6787a7cbeff5a90cece3ad219d233313041b8063bc08c0df03",
+        "kind": "existing",
+        "status": "superseded_input"
+      },
+      {
         "id": "existing:3db4ca5eda3ea36b31d48410e6adb36801b8c6bd4bc09353bd3668fdaa83330c",
         "input_id": "3db4ca5eda3ea36b31d48410e6adb36801b8c6bd4bc09353bd3668fdaa83330c",
         "kind": "existing",
-        "status": "pending"
+        "status": "superseded_input"
       },
       {
         "id": "existing:0fca68f990b4745eab88a5f5c1ce0e804db04589bfcf0d5fc95278ce586bf498",
@@ -6932,8 +8119,8 @@
         "id": "search:cf41336e0c72ec4a7d2c872c",
         "kind": "search",
         "parent_id": null,
-        "reported_total": null,
-        "status": "pending",
+        "reported_total": 0,
+        "status": "observed_pages_exhausted",
         "topic": "os-agent"
       },
       {
@@ -6942,8 +8129,8 @@
         "id": "search:44b9dcb284979ca43b2d9578",
         "kind": "search",
         "parent_id": null,
-        "reported_total": null,
-        "status": "pending",
+        "reported_total": 0,
+        "status": "observed_pages_exhausted",
         "topic": "os-agents"
       },
       {
@@ -7002,19 +8189,300 @@
         "id": "search:9313be3e9f05f200ee9fdefa",
         "kind": "search",
         "parent_id": null,
-        "reported_total": null,
-        "status": "pending",
+        "reported_total": 0,
+        "status": "observed_pages_exhausted",
+        "topic": "ui-agent"
+      },
+      {
+        "created_after": "2026-11-06",
+        "created_before": "2026-11-07",
+        "id": "search:88662288c2481389194f50c9",
+        "kind": "search",
+        "parent_id": null,
+        "reported_total": 18,
+        "status": "observed_pages_exhausted",
+        "topic": "computer-use"
+      },
+      {
+        "created_after": "2026-11-06",
+        "created_before": "2026-11-07",
+        "id": "search:4361be57f0a6b553231f1e13",
+        "kind": "search",
+        "parent_id": null,
+        "reported_total": 2,
+        "status": "observed_pages_exhausted",
+        "topic": "gui-agent"
+      },
+      {
+        "created_after": "2026-11-06",
+        "created_before": "2026-11-07",
+        "id": "search:f26d43e4d76298ccba54331c",
+        "kind": "search",
+        "parent_id": null,
+        "reported_total": 0,
+        "status": "observed_pages_exhausted",
+        "topic": "gui-agents"
+      },
+      {
+        "created_after": "2026-11-06",
+        "created_before": "2026-11-07",
+        "id": "search:6ebbea3a942557eebfbea52f",
+        "kind": "search",
+        "parent_id": null,
+        "reported_total": 1,
+        "status": "observed_pages_exhausted",
+        "topic": "gui-automation"
+      },
+      {
+        "created_after": "2026-11-06",
+        "created_before": "2026-11-07",
+        "id": "search:a65c5013e36624dbdb4cf32b",
+        "kind": "search",
+        "parent_id": null,
+        "reported_total": 8,
+        "status": "observed_pages_exhausted",
+        "topic": "desktop-automation"
+      },
+      {
+        "created_after": "2026-11-06",
+        "created_before": "2026-11-07",
+        "id": "search:743c4a4c911df14f80e27171",
+        "kind": "search",
+        "parent_id": null,
+        "reported_total": 1,
+        "status": "observed_pages_exhausted",
+        "topic": "browser-agent"
+      },
+      {
+        "created_after": "2026-11-06",
+        "created_before": "2026-11-07",
+        "id": "search:a05f80e50e1194e0040b0603",
+        "kind": "search",
+        "parent_id": null,
+        "reported_total": 0,
+        "status": "observed_pages_exhausted",
+        "topic": "browser-agents"
+      },
+      {
+        "created_after": "2026-11-06",
+        "created_before": "2026-11-07",
+        "id": "search:a97c3568c552dfd27a83dff6",
+        "kind": "search",
+        "parent_id": null,
+        "reported_total": 28,
+        "status": "observed_pages_exhausted",
+        "topic": "browser-automation"
+      },
+      {
+        "created_after": "2026-11-06",
+        "created_before": "2026-11-07",
+        "id": "search:f744fca42bc386ea4cef41e3",
+        "kind": "search",
+        "parent_id": null,
+        "reported_total": 4,
+        "status": "observed_pages_exhausted",
+        "topic": "android-automation"
+      },
+      {
+        "created_after": "2026-11-06",
+        "created_before": "2026-11-07",
+        "id": "search:cc81e1903b337b9c8d111b0c",
+        "kind": "search",
+        "parent_id": null,
+        "reported_total": 1,
+        "status": "observed_pages_exhausted",
+        "topic": "computer-use-agent"
+      },
+      {
+        "created_after": "2026-11-06",
+        "created_before": "2026-11-07",
+        "id": "search:a51ce51a7e6c70f4320add66",
+        "kind": "search",
+        "parent_id": null,
+        "reported_total": 0,
+        "status": "observed_pages_exhausted",
+        "topic": "computer-use-agents"
+      },
+      {
+        "created_after": "2026-11-06",
+        "created_before": "2026-11-07",
+        "id": "search:d7dd349b2034e634ec8f095a",
+        "kind": "search",
+        "parent_id": null,
+        "reported_total": 0,
+        "status": "observed_pages_exhausted",
+        "topic": "gui-grounding"
+      },
+      {
+        "created_after": "2026-11-06",
+        "created_before": "2026-11-07",
+        "id": "search:9ec667e36e42633cf60fb7a7",
+        "kind": "search",
+        "parent_id": null,
+        "reported_total": 0,
+        "status": "observed_pages_exhausted",
+        "topic": "browser-use"
+      },
+      {
+        "created_after": "2026-11-06",
+        "created_before": "2026-11-07",
+        "id": "search:f5cff73d0c8ece1ef2554148",
+        "kind": "search",
+        "parent_id": null,
+        "reported_total": 1,
+        "status": "observed_pages_exhausted",
+        "topic": "web-agent"
+      },
+      {
+        "created_after": "2026-11-06",
+        "created_before": "2026-11-07",
+        "id": "search:35c91608485bcb2ca0894ac2",
+        "kind": "search",
+        "parent_id": null,
+        "reported_total": 0,
+        "status": "observed_pages_exhausted",
+        "topic": "web-agents"
+      },
+      {
+        "created_after": "2026-11-06",
+        "created_before": "2026-11-07",
+        "id": "search:b7f9ec7540ac846bb07413b5",
+        "kind": "search",
+        "parent_id": null,
+        "reported_total": 0,
+        "status": "observed_pages_exhausted",
+        "topic": "desktop-agent"
+      },
+      {
+        "created_after": "2026-11-06",
+        "created_before": "2026-11-07",
+        "id": "search:7b6b0cbdfa019e1683095e14",
+        "kind": "search",
+        "parent_id": null,
+        "reported_total": 1,
+        "status": "observed_pages_exhausted",
+        "topic": "mobile-agent"
+      },
+      {
+        "created_after": "2026-11-06",
+        "created_before": "2026-11-07",
+        "id": "search:5a7f2a9f71ca36bb779aa867",
+        "kind": "search",
+        "parent_id": null,
+        "reported_total": 0,
+        "status": "observed_pages_exhausted",
+        "topic": "cua"
+      },
+      {
+        "created_after": "2026-11-06",
+        "created_before": "2026-11-07",
+        "id": "search:2569ea008bcedad5ccb525d5",
+        "kind": "search",
+        "parent_id": null,
+        "reported_total": 0,
+        "status": "observed_pages_exhausted",
+        "topic": "computer-control"
+      },
+      {
+        "created_after": "2026-11-06",
+        "created_before": "2026-11-07",
+        "id": "search:8f96b95e44fe85c01fbfffec",
+        "kind": "search",
+        "parent_id": null,
+        "reported_total": 0,
+        "status": "observed_pages_exhausted",
+        "topic": "computer-agent"
+      },
+      {
+        "created_after": "2026-11-06",
+        "created_before": "2026-11-07",
+        "id": "search:999e4f4ee920036146efd842",
+        "kind": "search",
+        "parent_id": null,
+        "reported_total": 0,
+        "status": "observed_pages_exhausted",
+        "topic": "os-agent"
+      },
+      {
+        "created_after": "2026-11-06",
+        "created_before": "2026-11-07",
+        "id": "search:158813e765345eeebe6f90f3",
+        "kind": "search",
+        "parent_id": null,
+        "reported_total": 0,
+        "status": "observed_pages_exhausted",
+        "topic": "os-agents"
+      },
+      {
+        "created_after": "2026-11-06",
+        "created_before": "2026-11-07",
+        "id": "search:375c00d03c5223400ccd79df",
+        "kind": "search",
+        "parent_id": null,
+        "reported_total": 0,
+        "status": "observed_pages_exhausted",
+        "topic": "mobile-agents"
+      },
+      {
+        "created_after": "2026-11-06",
+        "created_before": "2026-11-07",
+        "id": "search:a73452a5b588bc8e33c7db14",
+        "kind": "search",
+        "parent_id": null,
+        "reported_total": 0,
+        "status": "observed_pages_exhausted",
+        "topic": "android-agent"
+      },
+      {
+        "created_after": "2026-11-06",
+        "created_before": "2026-11-07",
+        "id": "search:5e70cf1b47e2f2f8a2be1358",
+        "kind": "search",
+        "parent_id": null,
+        "reported_total": 0,
+        "status": "observed_pages_exhausted",
+        "topic": "phone-use"
+      },
+      {
+        "created_after": "2026-11-06",
+        "created_before": "2026-11-07",
+        "id": "search:aa0fee920972b6bd84691fa9",
+        "kind": "search",
+        "parent_id": null,
+        "reported_total": 0,
+        "status": "observed_pages_exhausted",
+        "topic": "mobile-use"
+      },
+      {
+        "created_after": "2026-11-06",
+        "created_before": "2026-11-07",
+        "id": "search:fe40322477a39dd7e5e83e45",
+        "kind": "search",
+        "parent_id": null,
+        "reported_total": 1,
+        "status": "observed_pages_exhausted",
+        "topic": "screen-understanding"
+      },
+      {
+        "created_after": "2026-11-06",
+        "created_before": "2026-11-07",
+        "id": "search:709fe192d0a453ff52f213ce",
+        "kind": "search",
+        "parent_id": null,
+        "reported_total": 0,
+        "status": "observed_pages_exhausted",
         "topic": "ui-agent"
       }
     ],
     "query_rechecks_count": 17,
     "request_outcomes": {
-      "accepted": 612,
-      "fetch_failed": 3,
-      "quarantined": 1,
-      "rate_limited": 15,
-      "redirect_not_followed": 69,
-      "unavailable": 1
+      "accepted": 774,
+      "fetch_failed": 4,
+      "fork_not_recorded": 6,
+      "quarantined": 5,
+      "rate_limited": 16,
+      "redirect_not_followed": 79,
+      "unavailable": 9
     },
     "runs": [
       {
@@ -7856,20 +9324,452 @@
         "requests_attempted": 10,
         "started_at": "2026-11-06T06:26:04.649133+00:00",
         "status": "rate_limited"
+      },
+      {
+        "accepted_metadata_rows": 0,
+        "after_unique_repositories": 10070,
+        "before_unique_repositories": 10070,
+        "finished_at": "2026-11-06T09:00:55.572255+00:00",
+        "id": "run:a4e1e4015853e32048abc53a",
+        "input_id": "d332638be7013b6787a7cbeff5a90cece3ad219d233313041b8063bc08c0df03",
+        "new_unique_repositories": 0,
+        "requests_attempted": 4,
+        "started_at": "2026-11-06T09:00:27.696873+00:00",
+        "status": "partial"
+      },
+      {
+        "accepted_metadata_rows": 0,
+        "after_unique_repositories": 10070,
+        "before_unique_repositories": 10070,
+        "finished_at": "2026-11-06T10:01:55.707682+00:00",
+        "id": "run:2218ef69f51e40db3186a0b0",
+        "input_id": "0c5b8a2ecd72eb2a891fa64b8adca75631fc9ba3a77dd8ec771617b7b7e959c3",
+        "new_unique_repositories": 0,
+        "requests_attempted": 1,
+        "started_at": "2026-11-06T10:01:44.878344+00:00",
+        "status": "partial"
+      },
+      {
+        "accepted_metadata_rows": 0,
+        "after_unique_repositories": 10070,
+        "before_unique_repositories": 10070,
+        "finished_at": "2026-11-06T10:20:51.581092+00:00",
+        "id": "run:8dbb46943d3a2f51a3e0be78",
+        "input_id": "3933c786601b6679d7e4c60cd66796eff4984a96dc76fb7382ed2436c6835362",
+        "new_unique_repositories": 0,
+        "requests_attempted": 1,
+        "started_at": "2026-11-06T10:20:40.324514+00:00",
+        "status": "partial"
+      },
+      {
+        "accepted_metadata_rows": 0,
+        "after_unique_repositories": 10070,
+        "before_unique_repositories": 10070,
+        "finished_at": "2026-11-06T11:15:19.265969+00:00",
+        "id": "run:ab54efeacc7fd645649634d9",
+        "input_id": "9457540406c4182115da65a46706d26a1eecdea8d86c30df48b2d7ac0691953e",
+        "new_unique_repositories": 0,
+        "requests_attempted": 1,
+        "started_at": "2026-11-06T11:15:10.403716+00:00",
+        "status": "partial"
+      },
+      {
+        "accepted_metadata_rows": 3,
+        "after_unique_repositories": 10073,
+        "before_unique_repositories": 10070,
+        "finished_at": "2026-11-06T12:17:31.284977+00:00",
+        "id": "run:2d40d3b6eaa864e4d2f9c3e4",
+        "input_id": "eece6dfe7f129fb5d35bdff2b74403965448cefbc004f5582a426053812c1f86",
+        "new_unique_repositories": 3,
+        "requests_attempted": 5,
+        "started_at": "2026-11-06T12:16:53.637849+00:00",
+        "status": "partial"
+      },
+      {
+        "accepted_metadata_rows": 4,
+        "after_unique_repositories": 10077,
+        "before_unique_repositories": 10073,
+        "finished_at": "2026-11-06T12:36:34.964225+00:00",
+        "id": "run:d65038d641918c5ca61c6ee6",
+        "input_id": "7f4302d1aea40e926ce0617dd27ec74620dd847f2090a00f561b7c11050646b3",
+        "new_unique_repositories": 4,
+        "requests_attempted": 5,
+        "started_at": "2026-11-06T12:36:00.022104+00:00",
+        "status": "partial"
+      },
+      {
+        "accepted_metadata_rows": 5,
+        "after_unique_repositories": 10082,
+        "before_unique_repositories": 10077,
+        "finished_at": "2026-11-06T13:17:10.013073+00:00",
+        "id": "run:e584ac02f8e891ed7602787e",
+        "input_id": "08cedbc7275520a474798acca56bc024003adb870d015530af76df4e63669e81",
+        "new_unique_repositories": 5,
+        "requests_attempted": 5,
+        "started_at": "2026-11-06T13:16:31.778173+00:00",
+        "status": "partial"
+      },
+      {
+        "accepted_metadata_rows": 3,
+        "after_unique_repositories": 10085,
+        "before_unique_repositories": 10082,
+        "finished_at": "2026-11-06T15:46:22.018616+00:00",
+        "id": "run:d66e3dda78a2493a13003afe",
+        "input_id": "e4ccce95a47ed2962ffddec0bc884436fbe675efe9d39b9ab75be0b93d587581",
+        "new_unique_repositories": 3,
+        "requests_attempted": 5,
+        "started_at": "2026-11-06T15:45:43.793052+00:00",
+        "status": "partial"
+      },
+      {
+        "accepted_metadata_rows": 4,
+        "after_unique_repositories": 10089,
+        "before_unique_repositories": 10085,
+        "finished_at": "2026-11-06T16:18:01.812146+00:00",
+        "id": "run:01328fc22c98214d227e1649",
+        "input_id": "21963001dbfef36d5e0c8c3cec8d3f9c1eaffe28075152605476c3249e1a5ed8",
+        "new_unique_repositories": 4,
+        "requests_attempted": 5,
+        "started_at": "2026-11-06T16:17:25.557299+00:00",
+        "status": "partial"
+      },
+      {
+        "accepted_metadata_rows": 5,
+        "after_unique_repositories": 10094,
+        "before_unique_repositories": 10089,
+        "finished_at": "2026-11-06T17:15:13.261050+00:00",
+        "id": "run:7af60243bbf26bcde453b72b",
+        "input_id": "457072c91f5a32545cd0140bb77a9643abd5bc439a1e702cea3a5a601ea405c1",
+        "new_unique_repositories": 5,
+        "requests_attempted": 5,
+        "started_at": "2026-11-06T17:14:38.236984+00:00",
+        "status": "partial"
+      },
+      {
+        "accepted_metadata_rows": 3,
+        "after_unique_repositories": 10097,
+        "before_unique_repositories": 10094,
+        "finished_at": "2026-11-06T18:17:10.399446+00:00",
+        "id": "run:ea8e10af7ca4db258c33a963",
+        "input_id": "b7bb7c185d6e65b4ea784d1c170ae9cb080463d05a6756ab7a8218bce0c4399b",
+        "new_unique_repositories": 3,
+        "requests_attempted": 5,
+        "started_at": "2026-11-06T18:16:36.793410+00:00",
+        "status": "partial"
+      },
+      {
+        "accepted_metadata_rows": 3,
+        "after_unique_repositories": 10100,
+        "before_unique_repositories": 10097,
+        "finished_at": "2026-11-06T18:32:37.917041+00:00",
+        "id": "run:f20715d87a268243dbe27fc6",
+        "input_id": "c824f00acd33e767d6e91e5c6707b71999469dc39933e27205c255018dad11f4",
+        "new_unique_repositories": 3,
+        "requests_attempted": 5,
+        "started_at": "2026-11-06T18:32:00.884878+00:00",
+        "status": "partial"
+      },
+      {
+        "accepted_metadata_rows": 4,
+        "after_unique_repositories": 10104,
+        "before_unique_repositories": 10100,
+        "finished_at": "2026-11-06T19:14:44.602473+00:00",
+        "id": "run:5b788810ec376168ebd3517b",
+        "input_id": "2207e12d54bb598bad11fc571268fcec530b5a06547ca0d48ee4a82f9163681f",
+        "new_unique_repositories": 4,
+        "requests_attempted": 5,
+        "started_at": "2026-11-06T19:14:05.417014+00:00",
+        "status": "partial"
+      },
+      {
+        "accepted_metadata_rows": 4,
+        "after_unique_repositories": 10108,
+        "before_unique_repositories": 10104,
+        "finished_at": "2026-11-06T20:17:16.139862+00:00",
+        "id": "run:9f35d870c4bc90be7dda978a",
+        "input_id": "3aaabb3ef16fc8f383c6db95a183b01e5d21dbe5c888e6893deb6d2f3de7ed19",
+        "new_unique_repositories": 4,
+        "requests_attempted": 5,
+        "started_at": "2026-11-06T20:16:38.912033+00:00",
+        "status": "partial"
+      },
+      {
+        "accepted_metadata_rows": 4,
+        "after_unique_repositories": 10112,
+        "before_unique_repositories": 10108,
+        "finished_at": "2026-11-06T21:14:32.636155+00:00",
+        "id": "run:688deb02203f77aa4977166d",
+        "input_id": "80e3e8064dfc6ca262729bde5415b710236d78e6d598ace37f636b18e7a213b3",
+        "new_unique_repositories": 4,
+        "requests_attempted": 5,
+        "started_at": "2026-11-06T21:13:53.050745+00:00",
+        "status": "partial"
+      },
+      {
+        "accepted_metadata_rows": 4,
+        "after_unique_repositories": 10116,
+        "before_unique_repositories": 10112,
+        "finished_at": "2026-11-06T22:16:00.959378+00:00",
+        "id": "run:a10dc3993e536da77f7ea6e9",
+        "input_id": "8cc7f5407d5344cd83ec6d99cee8502c90e440240d68646cc1c67c7364e662ba",
+        "new_unique_repositories": 4,
+        "requests_attempted": 5,
+        "started_at": "2026-11-06T22:15:22.038074+00:00",
+        "status": "partial"
+      },
+      {
+        "accepted_metadata_rows": 4,
+        "after_unique_repositories": 10120,
+        "before_unique_repositories": 10116,
+        "finished_at": "2026-11-06T23:14:40.445305+00:00",
+        "id": "run:6058d034dc3b8cabb63397b4",
+        "input_id": "94e15b5dfca2f34092bb97639cb6051301fa0dcd733ae8aa7ffe3bc07d33a641",
+        "new_unique_repositories": 4,
+        "requests_attempted": 5,
+        "started_at": "2026-11-06T23:14:00.473023+00:00",
+        "status": "partial"
+      },
+      {
+        "accepted_metadata_rows": 67,
+        "after_unique_repositories": 10174,
+        "before_unique_repositories": 10120,
+        "finished_at": "2026-11-07T00:41:07.465342+00:00",
+        "id": "run:ea699ff31ed04efb3b6289fb",
+        "input_id": "db6ac23edfd9aa98777416ad84bdca95eb1e83fd32f9f47cb3463bc2ce16acef",
+        "new_unique_repositories": 54,
+        "requests_attempted": 19,
+        "started_at": "2026-11-07T00:38:56.178369+00:00",
+        "status": "rate_limited"
+      },
+      {
+        "accepted_metadata_rows": 8,
+        "after_unique_repositories": 10179,
+        "before_unique_repositories": 10174,
+        "finished_at": "2026-11-07T01:17:29.460828+00:00",
+        "id": "run:7265de471f80070bb52b8a96",
+        "input_id": "869aeef7f228c77b0af005f3ba870cb7794768bd299f1022065711c71f5c8eac",
+        "new_unique_repositories": 5,
+        "requests_attempted": 20,
+        "started_at": "2026-11-07T01:15:18.319897+00:00",
+        "status": "partial"
+      },
+      {
+        "accepted_metadata_rows": 0,
+        "after_unique_repositories": 10179,
+        "before_unique_repositories": 10179,
+        "finished_at": "2026-11-07T02:17:24.189789+00:00",
+        "id": "run:4a9d407eecb59b672194b774",
+        "input_id": "fb32fc01a78be181f633f62b2f19b2df1f35b4bebd872e697b5535fbc25e01c4",
+        "new_unique_repositories": 0,
+        "requests_attempted": 1,
+        "started_at": "2026-11-07T02:16:58.107073+00:00",
+        "status": "partial"
+      },
+      {
+        "accepted_metadata_rows": 5,
+        "after_unique_repositories": 10184,
+        "before_unique_repositories": 10179,
+        "finished_at": "2026-11-07T02:38:36.313925+00:00",
+        "id": "run:c77c1a7d872a30df3c2fe961",
+        "input_id": "112ca7c4f9947bdd3128ed9563473fd49a234b50de73dd6dbd2e8c3e413f3c14",
+        "new_unique_repositories": 5,
+        "requests_attempted": 5,
+        "started_at": "2026-11-07T02:37:58.944868+00:00",
+        "status": "partial"
+      },
+      {
+        "accepted_metadata_rows": 5,
+        "after_unique_repositories": 10189,
+        "before_unique_repositories": 10184,
+        "finished_at": "2026-11-07T03:17:49.805579+00:00",
+        "id": "run:d0570178ed3c4bc363193e5a",
+        "input_id": "bcbd72d02aa704c385ad33e807165b65e0043c12bfde5a663363f99facbbec43",
+        "new_unique_repositories": 5,
+        "requests_attempted": 5,
+        "started_at": "2026-11-07T03:17:11.956077+00:00",
+        "status": "partial"
+      },
+      {
+        "accepted_metadata_rows": 5,
+        "after_unique_repositories": 10194,
+        "before_unique_repositories": 10189,
+        "finished_at": "2026-11-07T04:18:30.221878+00:00",
+        "id": "run:ed644b2ec6a8bff92e4fc19a",
+        "input_id": "e9ea40c6c75054079851178f71ec1a2702a5c1bb57ebaa013360772d9c43824f",
+        "new_unique_repositories": 5,
+        "requests_attempted": 5,
+        "started_at": "2026-11-07T04:17:51.899928+00:00",
+        "status": "partial"
+      },
+      {
+        "accepted_metadata_rows": 5,
+        "after_unique_repositories": 10199,
+        "before_unique_repositories": 10194,
+        "finished_at": "2026-11-07T04:38:44.746436+00:00",
+        "id": "run:c66b933f4ebf37bf89807510",
+        "input_id": "36a41823b1ef15357a653d6718b14db8cca3aa3710aaee40d6eb863dc44063b2",
+        "new_unique_repositories": 5,
+        "requests_attempted": 5,
+        "started_at": "2026-11-07T04:38:02.695409+00:00",
+        "status": "partial"
+      },
+      {
+        "accepted_metadata_rows": 5,
+        "after_unique_repositories": 10204,
+        "before_unique_repositories": 10199,
+        "finished_at": "2026-11-07T05:20:55.371096+00:00",
+        "id": "run:a3965e2d1de8ac6d9c5f75e2",
+        "input_id": "e194d914dba225bfaaed6e4504f976f48f7559e3169b350d1dbcda1d54cc714e",
+        "new_unique_repositories": 5,
+        "requests_attempted": 5,
+        "started_at": "2026-11-07T05:20:18.649855+00:00",
+        "status": "partial"
+      },
+      {
+        "accepted_metadata_rows": 5,
+        "after_unique_repositories": 10209,
+        "before_unique_repositories": 10204,
+        "finished_at": "2026-11-07T06:18:09.784043+00:00",
+        "id": "run:fe76f2c7ff8a8aa3d2f90c7b",
+        "input_id": "7d818925d3f61415ef87cc4b46cb26a3b602b26d2d354c30aaf36134c6a5c1b0",
+        "new_unique_repositories": 5,
+        "requests_attempted": 5,
+        "started_at": "2026-11-07T06:17:27.131983+00:00",
+        "status": "partial"
+      },
+      {
+        "accepted_metadata_rows": 5,
+        "after_unique_repositories": 10214,
+        "before_unique_repositories": 10209,
+        "finished_at": "2026-11-07T06:55:23.932395+00:00",
+        "id": "run:eb6978407752a7e2e7c15e89",
+        "input_id": "748d3408def2242bc2e6df5d49aa694011593e336e044fd070be4b2fe0d95285",
+        "new_unique_repositories": 5,
+        "requests_attempted": 5,
+        "started_at": "2026-11-07T06:54:45.300073+00:00",
+        "status": "partial"
+      },
+      {
+        "accepted_metadata_rows": 5,
+        "after_unique_repositories": 10219,
+        "before_unique_repositories": 10214,
+        "finished_at": "2026-11-07T07:16:37.903535+00:00",
+        "id": "run:a161a9a6ad99d587abea61c9",
+        "input_id": "48142799da4e30f2208ec9890b46c027a6ebe8ec43ae827a8699f45773a1d466",
+        "new_unique_repositories": 5,
+        "requests_attempted": 5,
+        "started_at": "2026-11-07T07:15:55.676119+00:00",
+        "status": "partial"
+      },
+      {
+        "accepted_metadata_rows": 3,
+        "after_unique_repositories": 10222,
+        "before_unique_repositories": 10219,
+        "finished_at": "2026-11-07T08:17:54.847112+00:00",
+        "id": "run:055bfe15a51e63056cfb70b5",
+        "input_id": "04247a87ab2ed57612e1269428289a7b922d5297f8c075af8ee64000723f7d6e",
+        "new_unique_repositories": 3,
+        "requests_attempted": 5,
+        "started_at": "2026-11-07T08:17:11.455645+00:00",
+        "status": "partial"
+      },
+      {
+        "accepted_metadata_rows": 4,
+        "after_unique_repositories": 10226,
+        "before_unique_repositories": 10222,
+        "finished_at": "2026-11-07T08:40:24.752753+00:00",
+        "id": "run:c4f3ea9afe84a79d534c8d7f",
+        "input_id": "83d2c0234ecc20696b0da4e58a925251671a1361b5fbf028c0991f775a91d4a8",
+        "new_unique_repositories": 4,
+        "requests_attempted": 5,
+        "started_at": "2026-11-07T08:39:47.670871+00:00",
+        "status": "partial"
+      },
+      {
+        "accepted_metadata_rows": 5,
+        "after_unique_repositories": 10231,
+        "before_unique_repositories": 10226,
+        "finished_at": "2026-11-07T09:16:23.336209+00:00",
+        "id": "run:e34123f68a0b1c72c9e91d31",
+        "input_id": "bfc9210f7a85a77e299025e0e3cbac86d87e0a97c91206a27b847886aad0d405",
+        "new_unique_repositories": 5,
+        "requests_attempted": 5,
+        "started_at": "2026-11-07T09:15:43.899361+00:00",
+        "status": "partial"
+      },
+      {
+        "accepted_metadata_rows": 4,
+        "after_unique_repositories": 10235,
+        "before_unique_repositories": 10231,
+        "finished_at": "2026-11-07T10:15:20.762155+00:00",
+        "id": "run:9680e591ccd10327062843e3",
+        "input_id": "318efbd950d7dab47c1c0bb94b4c1fb468e6054394df14bfe02b2de9e05d3b51",
+        "new_unique_repositories": 4,
+        "requests_attempted": 5,
+        "started_at": "2026-11-07T10:14:36.378123+00:00",
+        "status": "partial"
+      },
+      {
+        "accepted_metadata_rows": 4,
+        "after_unique_repositories": 10239,
+        "before_unique_repositories": 10235,
+        "finished_at": "2026-11-07T11:14:26.658876+00:00",
+        "id": "run:9b0a1ebab22027a1b4b7b8cd",
+        "input_id": "dea314a62ee9c9d1543adcfbe078ca7e2ac3e6274a9709a9426ac4be1a3f7925",
+        "new_unique_repositories": 4,
+        "requests_attempted": 5,
+        "started_at": "2026-11-07T11:13:50.609015+00:00",
+        "status": "partial"
+      },
+      {
+        "accepted_metadata_rows": 4,
+        "after_unique_repositories": 10243,
+        "before_unique_repositories": 10239,
+        "finished_at": "2026-11-07T12:17:20.417880+00:00",
+        "id": "run:896dd89d3b6416c913d32c9f",
+        "input_id": "0eb125a924d7de10090b4c9a1e00c786fbf234e5292afd90ce7329695626edc1",
+        "new_unique_repositories": 4,
+        "requests_attempted": 5,
+        "started_at": "2026-11-07T12:16:44.601531+00:00",
+        "status": "partial"
+      },
+      {
+        "accepted_metadata_rows": 3,
+        "after_unique_repositories": 10246,
+        "before_unique_repositories": 10243,
+        "finished_at": "2026-11-07T12:31:26.712123+00:00",
+        "id": "run:3fedcf1257bcea726caa35e2",
+        "input_id": "ccaaa4e85e21fc133a1e45f382035a6f83fc677d97cb33697110a89f872aed93",
+        "new_unique_repositories": 3,
+        "requests_attempted": 5,
+        "started_at": "2026-11-07T12:30:41.947048+00:00",
+        "status": "partial"
+      },
+      {
+        "accepted_metadata_rows": 5,
+        "after_unique_repositories": 10251,
+        "before_unique_repositories": 10246,
+        "finished_at": "2026-11-07T13:22:51.955144+00:00",
+        "id": "run:d45e7019e48c7ceeed2c48c8",
+        "input_id": "5dfd3ba388b4a46758e73b834004fc9a05eadc661ef3e7968d833cadcd3f13a6",
+        "new_unique_repositories": 5,
+        "requests_attempted": 5,
+        "started_at": "2026-11-07T13:22:06.486693+00:00",
+        "status": "partial"
       }
     ]
   },
   "schema": "/schemas/github-candidate-observation.schema.json",
   "schema_version": 1,
   "scope": "candidate-observations",
-  "source_ledger_sha256": "94e7583696d95a10ac541aeb669dd81fdc3d40fe66bad8785dd2cec724f44002",
-  "supporting_primary_bodies": 461,
+  "source_ledger_sha256": "6c67bec6c1b0961c914825befa81a927878697a63718d089bcfebb0aef7cf6c1",
+  "supporting_primary_bodies": 602,
   "verification": {
-    "baseline_checkpoint_sha256": "0f54dd5c708da8460a666d00fcf0ee32d765b81bff22e52196033a80f2480e8b",
-    "baseline_observation_sha256": "be8731c5466b7a07935f1cb733871cf7f1cd9f71057443a7fa3fd8d39f0a1daf",
+    "baseline_checkpoint_sha256": "05149308235080a9cd9d3e9b361c798b4c3575ccf260f69bbfb5128d8c5fc8ea",
+    "baseline_observation_sha256": "cf42fb18dc880d8116fdca6a5c166c711ed56817a4413ccf3f682a45c5434783",
     "historical_raw_replayed": false,
     "mode": "incremental_retained_replay",
-    "primary_bodies_replayed": 4,
-    "successful_receipts_replayed": 8
+    "primary_bodies_replayed": 5,
+    "successful_receipts_replayed": 5
   }
 }

@@ -60,6 +60,7 @@ In the Required column, `always` means that `build` or `verify` fails without th
 | `component_of` | no | URL of the containing resource | — | `source_records` | `component_of` relation to `canonical(component_of)[0]` |
 | `family_url` | no | URL of the model family | — | `source_records` | `variant_of` relation to `canonical(family_url)[0]` |
 | `reviewed_licenses` | no | object keyed by `code`, `data`, `weights`, or `document`; each `{value, reason, evidence_urls}` | `{}` | `apply_license_reviews` | Replaces that license slot with `value`, either `null` or a license object whose `url` is in `evidence_urls`, and publishes the reason and sources in `details.license_review`. Each evidence URL must be a receipt whose `supports` include `licenses` or `licenses.<slot>` |
+| `task_classes` | no | array of IDs from `data/task-classes.json` | — | `source_records` | `task_classes` on a benchmark, dataset, paper or survey, sorted. The first segment of an ID is its realm. `validate` rejects other kinds, unknown IDs and unsorted lists |
 | `read_basis` | no | string | — | none | Informational audit note on what the reviewer read; not published |
 
 `build` sets the remaining record fields: `review_status: "curated"`, the `primary` link, `licenses` from `enrich` plus `reviewed_licenses`, and the evidence list (bibliographic receipts, then the primary receipt, `additional_evidence`, and `enrich` receipts).
@@ -73,6 +74,10 @@ A screening decides whether a metadata-only paper belongs in the catalog before 
 - Not decidable from the abstract: the same proposal without `relevance_screen`, whose `review_note` says what is unclear. It is a `reviewer_hold`.
 
 Approval follows the normal rules above: add `environments`, `topics` and `summary`, review the evidence, and set `editorial_reviewed`. A screening is not an approval, and the published `scope` is the one in effect at approval.
+
+## Chinese annotations
+
+`data/translations.zh-CN.json` is a JSON object keyed by the ID of a curated record. Each value has one key, `summary`: a Chinese rendering of the record's English summary, written as a Chinese editor would write it (at most 220 characters, ending with a full stop). `catalog.py validate` rejects an ID that no curated record has, an empty or non-Chinese summary, and any other key. A record without an entry has no Chinese summary yet.
 
 ## Examples
 

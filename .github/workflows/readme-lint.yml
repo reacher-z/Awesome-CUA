@@ -37,7 +37,7 @@ jobs:
         run: npm ci --prefix tests/awesome-lint --ignore-scripts --no-audit --no-fund
       - name: Lint README.md
         env:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
+          GH_TOKEN: ${{ github.token }}
         run: node tests/awesome-lint/lint.mjs README.md .cache/awesome-lint/findings.json
       - name: Fail on any finding
         run: |

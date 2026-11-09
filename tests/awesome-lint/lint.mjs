@@ -14,7 +14,8 @@ try {
   console.error(`awesome-lint is not installed (${error.code || error.message}); run \`npm ci --prefix tests/awesome-lint --ignore-scripts\`.`);
   process.exit(1);
 }
-// The repository-metadata rule reads `github_token` when it is set; the workflow passes a read-only token.
+// The repository-metadata rule reads `github_token` when it is set; the workflow passes a read-only token as `GH_TOKEN`.
+if (process.env.GH_TOKEN && !process.env.github_token) process.env.github_token = process.env.GH_TOKEN;
 const files = await lint({filename: input});
 const findings = files.flatMap(file => file.messages.map(message => ({
   file: path.basename(file.path), rule: message.ruleId || message.source || 'unknown',

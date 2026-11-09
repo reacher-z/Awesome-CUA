@@ -6356,7 +6356,7 @@
     "editorial_reviewed": true,
     "reviewed_sha256": "70928db908760c1561bfc8e0cd7d925e0103ffddef4676fbaa7c1756a804b99a",
     "reviewed_at": "2026-10-16T06:38:26Z",
-    "notes": "The card links the WebUI project's ACM publication (DOI 10.1145/3544548.3581158) and website.",
+    "notes": "The card links the WebUI project's ACM publication (DOI 10.1145/3544548.3581158) and website, so no paper or family relation is recorded.",
     "additional_evidence": [
       {
         "role": "primary",

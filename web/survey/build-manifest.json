@@ -92,7 +92,7 @@
     "research/survey/evidence/supplementary-screening.json": "04b8edbae9f4e17911e5919282192da51e97be777f3d01be963b4a43ac9f9edb",
     "research/survey/evidence/extra-references.json": "1d1ec6287aed88df38688afd91d74cfd9326b1a8135a3480fd5562dda54f26f3",
     "research/survey/scripts/build_article.py": "023a91fa6912bab0b1d7bf34faa9925f6777166379c7c9fd0c52e9864e6751b6",
-    "research/survey/article.css": "811ab0ad087be4ebc2189c92fcec64168c33980890a01d5cc136784170b7ebac",
+    "research/survey/article.css": "bb0b8fa3d92cba56b9dd74d45a1a6e9aa1c8c9678ab9da3a992ebbbeaa296245",
     "research/survey/article.js": "903d48ebaad90a39a7f88f15c2aa78cb48992188b8b89bd7186be17defcd6bfe",
     "research/survey/template.html": "489ef90fbc6fefd5b70137da724b902959ed02b5ceb7ffa208abd73999807873",
     "research/survey/figures/corpus.svg": "33bb85647bd7a42235ada6dc47ef51f7d272d98e922cf181e51495d96140b106",
@@ -153,8 +153,8 @@
     },
     {
       "path": "index.html",
-      "bytes": 463244,
-      "sha256": "7b9929297854f02f0208dad2a23d28c27d3b005e1eb4d28825efdeee6186cedc"
+      "bytes": 463260,
+      "sha256": "bdcd90f8b71d5e8c7bc9bfb9ee99f3e7b38555b7149f63738e1b93cf9a4f2e64"
     },
     {
       "path": "references.bib",

@@ -908,6 +908,7 @@ html:not(.js) .trail,html:not(.js) .cursor{display:none}
 .vig-rank{position:absolute;left:20px;bottom:58px;width:148px;height:100px;--v:var(--ad-v)}
 .r3-c-benchmark{grid-column:span 3;grid-row:span 2;--cell:var(--ad-f4)}
 .r3-c-benchmark .r3-cell-n{font-size:clamp(3.5rem,2rem + 4vw,5.5rem)}
+.r3-c-benchmark .vig-rank{position:static;order:2;flex:none;width:min(132px,100%);height:auto;aspect-ratio:148/100;margin-top:8px}
 .r3-c-model{grid-column:span 3;--cell:var(--ad-f1)}
 .r3-c-dataset{grid-column:span 3;--cell:var(--ad-f2)}
 .r3-c-framework{grid-column:span 4;--cell:var(--ad-f6);--ad-ink:#212632}

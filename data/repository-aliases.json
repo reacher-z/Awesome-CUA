@@ -889,5 +889,140 @@
         "sha256": "f0664b4094e42b1701baba1ef800b22547a8204a7d24c73a85605c236364158a"
       }
     ]
+  },
+  {
+    "alias_id": "url:bbae23ff1ded196a735b",
+    "target_id": "url:c10fd1906c2e7ee289ec",
+    "repository_id": "68b5ebe6463e9fde19cd670f",
+    "basis": "official_huggingface_repository_id",
+    "reviewed_at": "2026-10-18T15:59:11Z",
+    "observations": [
+      {
+        "url": "https://huggingface.co/api/datasets/Voxel51/FiftyOne-GUI-Grounding-Train-with-Synthetic",
+        "resolved_url": "https://huggingface.co/api/datasets/Voxel51/FiftyOne-GUI-Grounding-Train-with-Synthetic",
+        "repository_id": "68b5ebe6463e9fde19cd670f",
+        "full_name": "Voxel51/FiftyOne-GUI-Grounding-Train-with-Synthetic",
+        "html_url": "https://huggingface.co/datasets/Voxel51/FiftyOne-GUI-Grounding-Train-with-Synthetic",
+        "retrieved_at": "2026-10-18T15:58:39Z",
+        "sha256": "3bb91cff67b20daec766bb819352cc443bc03a942985a27a2bb94f36734ddb60"
+      },
+      {
+        "url": "https://huggingface.co/api/datasets/harpreetsahota/FiftyOne-GUI-Grounding-Train-with-Synthetic",
+        "resolved_url": "https://huggingface.co/api/datasets/Voxel51/FiftyOne-GUI-Grounding-Train-with-Synthetic",
+        "repository_id": "68b5ebe6463e9fde19cd670f",
+        "full_name": "Voxel51/FiftyOne-GUI-Grounding-Train-with-Synthetic",
+        "html_url": "https://huggingface.co/datasets/Voxel51/FiftyOne-GUI-Grounding-Train-with-Synthetic",
+        "retrieved_at": "2026-10-18T15:58:39Z",
+        "sha256": "3bb91cff67b20daec766bb819352cc443bc03a942985a27a2bb94f36734ddb60"
+      }
+    ]
+  },
+  {
+    "alias_id": "url:ebc6421ebf9b4f9c6c06",
+    "target_id": "url:37b4f525e6d7a56a9967",
+    "repository_id": "69e03249c2203bd4afa292da",
+    "basis": "official_huggingface_repository_id",
+    "reviewed_at": "2026-10-19T06:04:53Z",
+    "observations": [
+      {
+        "url": "https://huggingface.co/api/datasets/saelyne/GuideBench",
+        "resolved_url": "https://huggingface.co/api/datasets/kixlab/GuideBench",
+        "repository_id": "69e03249c2203bd4afa292da",
+        "full_name": "kixlab/GuideBench",
+        "html_url": "https://huggingface.co/datasets/kixlab/GuideBench",
+        "retrieved_at": "2026-10-19T06:03:50Z",
+        "sha256": "d1e2fedc00dbf1c9531cd5cc676f900f149690a2e08655f8d93c56d5abd8d389"
+      },
+      {
+        "url": "https://huggingface.co/api/datasets/kixlab/GuideBench",
+        "resolved_url": "https://huggingface.co/api/datasets/kixlab/GuideBench",
+        "repository_id": "69e03249c2203bd4afa292da",
+        "full_name": "kixlab/GuideBench",
+        "html_url": "https://huggingface.co/datasets/kixlab/GuideBench",
+        "retrieved_at": "2026-10-19T06:03:50Z",
+        "sha256": "d1e2fedc00dbf1c9531cd5cc676f900f149690a2e08655f8d93c56d5abd8d389"
+      }
+    ]
+  },
+  {
+    "alias_id": "github:bravegroup/autogui",
+    "target_id": "github:zjulihongxin/autogui",
+    "repository_id": 811706476,
+    "basis": "official_github_repository_id",
+    "reviewed_at": "2026-10-19T07:03:30Z",
+    "observations": [
+      {
+        "url": "https://api.github.com/repos/BraveGroup/AutoGUI",
+        "resolved_url": "https://api.github.com/repositories/811706476",
+        "repository_id": 811706476,
+        "full_name": "ZJULiHongxin/AutoGUI",
+        "html_url": "https://github.com/ZJULiHongxin/AutoGUI",
+        "retrieved_at": "2026-10-19T07:01:33Z",
+        "sha256": "0cb04554d69ce35de9aa795902b5edcce383c86e015df497c47aba673b793a09"
+      },
+      {
+        "url": "https://api.github.com/repos/ZJULiHongxin/AutoGUI",
+        "resolved_url": "https://api.github.com/repos/ZJULiHongxin/AutoGUI",
+        "repository_id": 811706476,
+        "full_name": "ZJULiHongxin/AutoGUI",
+        "html_url": "https://github.com/ZJULiHongxin/AutoGUI",
+        "retrieved_at": "2026-10-19T07:01:34Z",
+        "sha256": "0cb04554d69ce35de9aa795902b5edcce383c86e015df497c47aba673b793a09"
+      }
+    ]
+  },
+  {
+    "alias_id": "github:microsoft/e2i-synth",
+    "target_id": "github:microsoft/five-ui-evol",
+    "repository_id": 919941789,
+    "basis": "official_github_repository_id",
+    "reviewed_at": "2026-10-19T07:09:22Z",
+    "observations": [
+      {
+        "url": "https://api.github.com/repos/microsoft/E2I-Synth",
+        "resolved_url": "https://api.github.com/repositories/919941789",
+        "repository_id": 919941789,
+        "full_name": "microsoft/FIVE-UI-Evol",
+        "html_url": "https://github.com/microsoft/FIVE-UI-Evol",
+        "retrieved_at": "2026-10-19T07:01:35Z",
+        "sha256": "9432335b90bc431d85803ab4a6789b4a0bf350ac94ccc306bbcf49748e48af9f"
+      },
+      {
+        "url": "https://api.github.com/repos/microsoft/FIVE-UI-Evol",
+        "resolved_url": "https://api.github.com/repos/microsoft/FIVE-UI-Evol",
+        "repository_id": 919941789,
+        "full_name": "microsoft/FIVE-UI-Evol",
+        "html_url": "https://github.com/microsoft/FIVE-UI-Evol",
+        "retrieved_at": "2026-10-19T07:01:36Z",
+        "sha256": "9432335b90bc431d85803ab4a6789b4a0bf350ac94ccc306bbcf49748e48af9f"
+      }
+    ]
+  },
+  {
+    "alias_id": "github:kortix-ai/agent-click",
+    "target_id": "github:kortix-ai/agent-computer-use",
+    "repository_id": 1196589005,
+    "basis": "official_github_repository_id",
+    "reviewed_at": "2026-10-20T08:36:55+00:00",
+    "observations": [
+      {
+        "url": "https://api.github.com/repos/kortix-ai/agent-click",
+        "resolved_url": "https://api.github.com/repositories/1196589005",
+        "repository_id": 1196589005,
+        "full_name": "kortix-ai/agent-computer-use",
+        "html_url": "https://github.com/kortix-ai/agent-computer-use",
+        "retrieved_at": "2026-10-20T08:35:21Z",
+        "sha256": "f1cf004fcfb3d3e7d626574385e9eebd8a25b2eba62b31f2e953f1b030a30e7d"
+      },
+      {
+        "url": "https://api.github.com/repos/kortix-ai/agent-computer-use",
+        "resolved_url": "https://api.github.com/repos/kortix-ai/agent-computer-use",
+        "repository_id": 1196589005,
+        "full_name": "kortix-ai/agent-computer-use",
+        "html_url": "https://github.com/kortix-ai/agent-computer-use",
+        "retrieved_at": "2026-10-20T08:35:24Z",
+        "sha256": "f1cf004fcfb3d3e7d626574385e9eebd8a25b2eba62b31f2e953f1b030a30e7d"
+      }
+    ]
   }
 ]

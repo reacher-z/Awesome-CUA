@@ -2,9 +2,9 @@
 
 [Home](../../README.md) · [All topics](../topics.md) · [Full arXiv bibliography](../papers.md)
 
-68 source-reviewed resources tagged `world-models`. Curated metadata; unknown facts are shown as —.
+69 source-reviewed resources tagged `world-models`. Curated metadata; unknown facts are shown as —.
 
-**Contents:** [Datasets (3)](#datasets) · [Models (4)](#models) · [Agents (1)](#agents) · [Frameworks (8)](#frameworks) · [Surveys (1)](#surveys) · [Papers (51)](#papers)
+**Contents:** [Datasets (3)](#datasets) · [Models (4)](#models) · [Agents (1)](#agents) · [Frameworks (9)](#frameworks) · [Surveys (1)](#surveys) · [Papers (51)](#papers)
 
 ## Datasets
 
@@ -41,6 +41,7 @@ All entries in this section: desktop.
 | [nanoAWM (Agent World Model Lab)](https://github.com/jlov7/nanoAWM) | desktop, web | — | code MIT | nanoAWM is an inspectable Agent World Model laboratory for simulating action consequences in long-horizon tool and computer-use agents. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/jlov7/nanoAWM/HEAD/README.md) |
 | [RLVR-World](https://github.com/thuml/RLVR-World) | web, desktop | — | code MIT | RLVR-World trains world models with verifiable reinforcement learning to predict state transitions for web and game agents. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/thuml/RLVR-World/HEAD/README.md) |
 | [SEAgent](https://github.com/SunzeY/SEAgent) | desktop, linux | [2508.04700](https://arxiv.org/abs/2508.04700) (2025) | — | SEAgent enables computer-use agents to self-evolve in unfamiliar software environments using a World State Model and curriculum task generator. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/SunzeY/SEAgent/HEAD/README.md) |
+| [ViMo code](https://github.com/ai-agents-2030/ViMo) | android | [2504.13936](https://arxiv.org/abs/2504.13936) (2025) | — | Code for the ViMo GUI world model: Gemini-based next-screen text prediction, AITW and AndroidControl data processing, InstructPix2Pix-style graphic inference, and an AndroidWorld agent that consults it. | [✓ 2026‑10‑19](https://raw.githubusercontent.com/ai-agents-2030/ViMo/1f319fece4d3a4ac1d41b4572751bca1a10fa690/README.md) |
 | [WebDreamer](https://github.com/OSU-NLP-Group/WebDreamer) | web | [2411.06559](https://arxiv.org/abs/2411.06559) (2024) | — | World-model and planning components that simulate web-action outcomes, with linked training data and model checkpoints. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/OSU-NLP-Group/WebDreamer/HEAD/README.md) |
 | [WebEvolver code component](https://github.com/Tencent/SelfEvolvingAgent/tree/main/WebEvolver) | web | [2504.21024](https://arxiv.org/abs/2504.21024) (2025) | code MIT | Component for web-agent trajectory collection, supervised-data preparation and world-model-based trajectory synthesis. | [✓ 2026‑10‑18](https://raw.githubusercontent.com/Tencent/SelfEvolvingAgent/HEAD/WebEvolver/README.md) |
 

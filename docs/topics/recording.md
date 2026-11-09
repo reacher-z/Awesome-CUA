@@ -2,9 +2,9 @@
 
 [Home](../../README.md) · [All topics](../topics.md) · [Full arXiv bibliography](../papers.md)
 
-144 source-reviewed resources tagged `recording`. Curated metadata; unknown facts are shown as —.
+150 source-reviewed resources tagged `recording`. Curated metadata; unknown facts are shown as —.
 
-**Contents:** [Benchmarks (3)](#benchmarks) · [Datasets (4)](#datasets) · [Agents (5)](#agents) · [Frameworks (47)](#frameworks) · [Tools (59)](#tools) · [Infrastructure (2)](#infrastructure) · [Products (1)](#products) · [Surveys (1)](#surveys) · [Papers (22)](#papers)
+**Contents:** [Benchmarks (3)](#benchmarks) · [Datasets (4)](#datasets) · [Agents (6)](#agents) · [Frameworks (47)](#frameworks) · [Tools (61)](#tools) · [Infrastructure (2)](#infrastructure) · [Products (4)](#products) · [Surveys (1)](#surveys) · [Papers (22)](#papers)
 
 ## Benchmarks
 
@@ -27,6 +27,7 @@
 
 | Resource | Environments | Paper | License | Description | Evidence |
 | --- | --- | --- | --- | --- | --- |
+| [AI Mime](https://github.com/prakhar1114/ai_mime) | macos, desktop, web | — | code MIT | macOS app that records a demonstrated task, has an agent compile it into a portable skill of scripts, browser CDP steps and computer-use fallbacks, and patches the skill when a rerun breaks. | [✓ 2026‑10‑20](https://raw.githubusercontent.com/prakhar1114/ai_mime/HEAD/README.md) |
 | [Apprentice](https://github.com/bluzername/apprentice) | desktop, macos | — | code Apache-2.0 | Apprentice is a local-first macOS agent that observes repeated user routines across allowlisted apps and replays them with click-by-click approval. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/bluzername/apprentice/HEAD/README.md) |
 | [OpenAdapt](https://github.com/OpenAdaptAI/OpenAdapt) | desktop | — | code MIT | Tools for learning and automating workflows from desktop demonstrations. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/OpenAdaptAI/OpenAdapt/HEAD/README.md) |
 | [RegionCUA](https://github.com/Region-AI/region-cua) | cross-platform, desktop, macos, windows, linux | — | code MIT | RegionCUA is a local Ollama-powered desktop agent that explores GUI applications and generates documented screenshots, videos, and replay scripts. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/Region-AI/region-cua/HEAD/README.md) |
@@ -125,6 +126,7 @@
 | [MacControlKit](https://github.com/tzafon/MacControlKit) | desktop, macos | — | code Apache-2.0 | MacControlKit is a Swift package by Tzafon for capturing macOS screens and dispatching native mouse and keyboard events. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/tzafon/MacControlKit/HEAD/README.md) |
 | [mcp-chrome-bridge](https://github.com/wizardofweb125-lab/mcp-chrome-bridge) | web | — | code MIT | Model Context Protocol server for controlling Chrome tabs, forms, console/network logs, screenshots, and GIF recordings. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/wizardofweb125-lab/mcp-chrome-bridge/HEAD/README.md) |
 | [MergeProof](https://github.com/bukacdan/MergeProof) | web | — | code MIT | Installable Agent Skill that records live browser verification demos and attaches them to pull requests. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/bukacdan/MergeProof/main/README.md) |
+| [native-devtools-mcp](https://github.com/vectora-foundry/native-devtools-mcp) | desktop, macos, windows, android, web | — | code MIT | Local Rust MCP server for operating macOS and Windows apps, Chrome or Electron pages over CDP, and Android devices over ADB, with screenshots, OCR, accessibility lookup, input and template matching. | [✓ 2026‑10‑20](https://raw.githubusercontent.com/vectora-foundry/native-devtools-mcp/HEAD/README.md) |
 | [Open Codex Computer History](https://github.com/hqhq1025/open-codex-computer-history) | desktop, macos | — | code MIT | Clean-room macOS implementation of event-stream interaction recording using Accessibility hit-testing, CGEvent taps, and SkyLight window snapshots. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/hqhq1025/open-codex-computer-history/HEAD/README.md) |
 | [Open Codex Record & Replay](https://github.com/hqhq1025/open-codex-record-and-replay) | desktop, macos | — | code MIT | Clean-room macOS implementation of semantic UI workflow recording and deterministic Accessibility-tree replay with visual template fallback. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/hqhq1025/open-codex-record-and-replay/HEAD/README.md) |
 | [Open Record/Replay](https://github.com/humblebanana/open-record-replay) | desktop, macos | — | code MIT | Open Record/Replay records macOS user demonstrations with Accessibility metadata and compiles them into reusable agent skills. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/humblebanana/open-record-replay/HEAD/README.md) |
@@ -137,6 +139,7 @@
 | [ScreenClaw (睇虾)](https://github.com/GinSing1226/ScreenClaw) | desktop, windows | — | code MIT | Windows visual GUI automation companion combining percentage-coordinate grid overlays with non-blocking workflow recording and replay. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/GinSing1226/ScreenClaw/HEAD/README.md) |
 | [Screenpipe](https://github.com/screenpipe/screenpipe) | cross-platform, desktop, macos, windows, linux | — | — | Screenpipe continuously captures desktop screen text via accessibility/OCR and audio transcripts into a local database for AI agents. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/screenpipe/screenpipe/HEAD/README.md) |
 | [screenshotting-gui](https://github.com/EvilFreelancer/screenshotting-gui) | cross-platform, desktop, macos, linux, windows | — | code MIT | Agent skill for Claude Code, Codex, and Cursor that captures repeatable, window-scoped screenshots of native desktop and browser GUI apps. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/EvilFreelancer/screenshotting-gui/HEAD/README.md) |
+| [Shadow](https://github.com/ghostwright/shadow) | desktop, macos | — | code MIT | macOS app that records screen, audio, input events and accessibility trees on-device, builds searchable episodes, and replays learned procedures through AX-first grounding with a LoRA-tuned ShowUI-2B fallback. | [✓ 2026‑10‑20](https://raw.githubusercontent.com/ghostwright/shadow/HEAD/README.md) |
 | [SightRig](https://github.com/coetzeexu/sightrig) | cross-platform, desktop, web | — | code MIT | SightRig is a traceable runtime and visual workbench for inspecting, guarding, and replaying GUI agent perceptions and actions. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/coetzeexu/sightrig/HEAD/README.md) |
 | [skillproof](https://github.com/hccccc01333/skillproof) | web | — | code MIT | skillproof records a human browser demonstration once and compiles it into a replayable agent skill paired with an explicit completion verifier. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/hccccc01333/skillproof/HEAD/README.md) |
 | [Taprun (tap)](https://github.com/LeonTing1010/tap) | web | — | code MIT | Captures a logged-in browser task demonstration once and compiles it into a deterministic zero-token replay skill. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/LeonTing1010/tap/HEAD/README.md) |
@@ -158,11 +161,12 @@
 
 ## Products
 
-All entries in this section: desktop, web.
-
-| Resource | Publisher | Description | Evidence |
-| --- | --- | --- | --- |
-| [Scribe](https://scribehow.com/) | — | Workflow recording and documentation product adjacent to agent data collection. | [✓ 2026‑10‑16](https://scribehow.com/) |
+| Resource | Publisher | Environments | Description | Evidence |
+| --- | --- | --- | --- | --- |
+| [Browse AI](https://www.browse.ai) | — | web | No-code web scraping and monitoring platform whose robots replay recorded clicks, typed inputs, dropdown choices, logins and pagination on target sites, or let AI build the table, then extract data on a schedule. | [✓ 2026‑10‑20](https://www.browse.ai/llms.txt) |
+| [Komos](https://www.komos.ai) | — | web | Hosted automation platform whose task flows use a prompt-driven agent to navigate, click, type and extract on websites in a cloud Chromium sandbox or self-hosted runner, built from narrated screen recordings or chat. | [✓ 2026‑10‑20](https://docs.komos.ai/index.md) |
+| [Retriever AI (rtrvr.ai)](https://www.rtrvr.ai) | — | web | Browser agent from Retriever AI that runs in a Chrome extension on the user's signed-in sessions or in cloud browsers, reading page structure to click, type and fill forms; also callable through an API and MCP. | [✓ 2026‑10‑20](https://www.rtrvr.ai) |
+| [Scribe](https://scribehow.com/) | — | desktop, web | Workflow recording and documentation product adjacent to agent data collection. | [✓ 2026‑10‑16](https://scribehow.com/) |
 
 ## Surveys
 

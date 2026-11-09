@@ -2,9 +2,9 @@
 
 [Home](../../README.md) · [All topics](../topics.md) · [Full arXiv bibliography](../papers.md)
 
-177 source-reviewed resources tagged `observability`. Curated metadata; unknown facts are shown as —.
+181 source-reviewed resources tagged `observability`. Curated metadata; unknown facts are shown as —.
 
-**Contents:** [Benchmarks (8)](#benchmarks) · [Datasets (6)](#datasets) · [Agents (10)](#agents) · [Frameworks (30)](#frameworks) · [Tools (50)](#tools) · [Infrastructure (2)](#infrastructure) · [Surveys (2)](#surveys) · [Papers (69)](#papers)
+**Contents:** [Benchmarks (8)](#benchmarks) · [Datasets (6)](#datasets) · [Agents (10)](#agents) · [Frameworks (31)](#frameworks) · [Tools (50)](#tools) · [Infrastructure (2)](#infrastructure) · [Products (2)](#products) · [Surveys (2)](#surveys) · [Papers (70)](#papers)
 
 ## Benchmarks
 
@@ -54,6 +54,7 @@
 | [AgentDesk (Enterprise Digital Workforce Platform)](https://github.com/huzjie/agentdesk) | cross-platform, desktop, web | — | code Apache-2.0 | Enterprise digital workforce operations platform combining computer-use execution, reusable skills, and governance. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/huzjie/agentdesk/main/README.md) |
 | [AI Web](https://github.com/dongxinsuperman/ai-web) | web | — | code MIT | Natural-language Browser Agent execution platform supporting multi-browser scheduling, task queues, and traceable QA test reports. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/dongxinsuperman/ai-web/HEAD/README.md) |
 | [autocomputer](https://github.com/yygg693/autocomputer) | cross-platform, desktop, windows, macos, linux | — | code MIT | Desktop GUI automation platform combining a Rust execution core, Python SDK, MCP server, and HTML5 monitoring dashboard. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/yygg693/autocomputer/HEAD/README.md) |
+| [AUV](https://github.com/moeru-ai/auv) | desktop, macos, linux, windows | — | code Apache-2.0 | Rust toolkit, CLI and MCP server for scripting reusable GUI operations on macOS, Linux and Windows, with native input drivers, accessibility trees, OCR and traced, verifiable action results. | [✓ 2026‑10‑20](https://raw.githubusercontent.com/moeru-ai/auv/HEAD/README.md) |
 | [Codex Boss Desktop](https://github.com/zhiheng-zhang-Mera/Codex-Boss) | desktop, macos, windows, linux, web | — | code MIT | Local-first Electron controller for multi-model deliberation and evidence-preserving computer-use orchestration. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/zhiheng-zhang-Mera/Codex-Boss/main/README.md) |
 | [DeepSeekEyes](https://github.com/dttxorg/deepseekeyes) | cross-platform, desktop, web | — | code MIT | Auditable vision and cross-platform computer-use runtime for DeepSeek Harness with cryptographic evidence receipts. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/dttxorg/deepseekeyes/main/README.md) |
 | [Domstamp](https://github.com/zuub-don/domstamp) | web | — | code MIT | Framework-neutral browser-state snapshotter capturing compact, diffable DOM and accessibility states for AI web agents. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/zuub-don/domstamp/main/README.md) |
@@ -142,6 +143,15 @@
 | [Deck](https://github.com/cofy-x/deck) | cross-platform, desktop, macos, windows, linux | — | code Apache-2.0 | Deck is an open-source desktop cockpit for managing isolated local AI agent sandboxes, desktop sessions, and developer handoffs. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/cofy-x/deck/HEAD/README.md) |
 | [Rocuronium](https://github.com/kageroumado/rocuronium) | desktop, macos | — | code MIT | Isolates macOS computer-use agents inside a separate login session while rendering a live visible-agent overlay on the host screen. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/kageroumado/rocuronium/main/README.md) |
 
+## Products
+
+All entries in this section: web.
+
+| Resource | Publisher | Description | Evidence |
+| --- | --- | --- | --- |
+| [Amazon Bedrock AgentCore](https://docs.aws.amazon.com/bedrock-agentcore) | — | AWS managed agent platform whose Browser tool runs isolated cloud browser sessions with automation and live-view streams and optional recording, alongside runtime, memory, gateway and code-execution services. | [✓ 2026‑10‑19](https://docs.aws.amazon.com/bedrock-agentcore/) |
+| [Predicate Systems (formerly SentienceAPI)](https://predicatesystems.ai) | — | Runtime trust layer for browser agents: a sidecar checks each action against local policy before it runs, and SDKs turn pages into compact ranked element snapshots and verify outcomes with DOM assertions. | [✓ 2026‑10‑20](https://predicatesystems.ai) |
+
 ## Surveys
 
 | Date | Resource | Environments | Description |
@@ -191,6 +201,7 @@
 | 2026‑05‑25 | [AgentHijack: Benchmarking Computer Use Agent Robustness to Common Environment Corruptions](https://arxiv.org/abs/2605.25707) | desktop | Introduces AgentHijack, a benchmark for desktop computer-use agents facing pop-ups, resolution changes and other common corruptions, alongside an agent that checks its environment. |
 | 2026‑05‑19 | [OpenComputer: Verifiable Software Worlds for Computer-Use Agents](https://arxiv.org/abs/2605.19769) | desktop | Introduces OpenComputer, which builds desktop tasks around application-state verifiers and refines those verifiers using execution feedback. An evaluation harness records trajectories and assigns auditable partial credit across professional software workflows. |
 | 2026‑05‑17 | [DiagEval: Trajectory-Conditioned Diagnosis for Reliable Software Evaluation with GUI Agents](https://arxiv.org/abs/2605.17439) | unspecified | DiagEval diagnoses failed GUI-agent evaluations of interactive software by reusing failed trajectories for targeted probes that distinguish execution errors from defects. |
+| 2026‑04‑20 | [Computer Agent Arena: Toward Human-Centric Evaluation and Analysis of Computer-Use Agents](https://openreview.net/forum?id=3x4SDbXbgl) | desktop, linux, windows | Crowdsourced arena where users set tasks on cloud Ubuntu or Windows desktops, watch two anonymous computer-use agents attempt them side by side and vote; reports 2,201 votes over 12 agents. |
 | 2026‑04‑15 | [AgentClick: A Skill-Based Human-in-the-Loop Review Layer for Terminal AI Agents](https://arxiv.org/abs/2604.16520) | web | AgentClick gives terminal-based agents a browser review interface for plans, drafts, execution traces and editable memory. A local server and skill plugin let users inspect proposed actions and provide structured feedback. |
 | 2026‑04‑09 | [Same Outcomes, Different Journeys: A Trace-Level Framework for Comparing Human and GUI-Agent Behavior in Production Search Systems](https://arxiv.org/abs/2604.07929) | unspecified | Presents a trace-level framework for comparing GUI agents with people on task outcomes, queries, and interface navigation in a production audio-search application. |
 | 2026‑04‑08 | [Where Did It Go Wrong? Process-Level Evaluation of Web Agents with Semantic State Tracking](https://arxiv.org/abs/2606.15673) | web | Introduces WebStep, a web-agent benchmark that records semantic states behind GUI interactions to analyze exploration, execution accuracy, and decisive errors across task steps. |

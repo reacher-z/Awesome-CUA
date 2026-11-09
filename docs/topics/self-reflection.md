@@ -2,9 +2,9 @@
 
 [Home](../../README.md) · [All topics](../topics.md) · [Full arXiv bibliography](../papers.md)
 
-132 source-reviewed resources tagged `self-reflection`. Curated metadata; unknown facts are shown as —.
+136 source-reviewed resources tagged `self-reflection`. Curated metadata; unknown facts are shown as —.
 
-**Contents:** [Benchmarks (6)](#benchmarks) · [Models (3)](#models) · [Agents (23)](#agents) · [Frameworks (42)](#frameworks) · [Tools (4)](#tools) · [Papers (54)](#papers)
+**Contents:** [Benchmarks (6)](#benchmarks) · [Models (3)](#models) · [Agents (25)](#agents) · [Frameworks (42)](#frameworks) · [Tools (4)](#tools) · [Products (1)](#products) · [Papers (55)](#papers)
 
 ## Benchmarks
 
@@ -41,6 +41,7 @@
 | [Hermes Agent](https://github.com/NousResearch/hermes-agent) | cross-platform, desktop, web, linux, macos, windows | — | code MIT | Hermes Agent is a self-improving autonomous agent by Nous Research with procedural skill synthesis, browser control, and multi-platform sandboxes. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/NousResearch/hermes-agent/HEAD/README.md) |
 | [Hosp2MES-Agent](https://github.com/Ctrl-CV-Master/Hosp2MES-Agent-Public) | web | — | code MIT | Hosp2MES-Agent is a long-horizon browser GUI agent for executing multi-page Manufacturing Execution System (MES) workflows with state verification. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/Ctrl-CV-Master/Hosp2MES-Agent-Public/HEAD/README.md) |
 | [Jcua (Jev Computer Use Agent)](https://github.com/1deat0r/Jcua) | cross-platform, desktop, linux, windows, macos | — | code MIT | Jcua is a cross-platform computer-use agent powered by Jev decision models across Linux, Windows, and macOS desktops. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/1deat0r/Jcua/HEAD/README.md) |
+| [LongHorizonUI](https://github.com/kane2kang/LongHorizonUI) | android | — | — | Code for the LongHorizonUI Android agent: OCR plus OmniParser icon detection yields numbered element boxes for an LLM, and failed taps fall back from element index to relative and absolute points with rollback. | [✓ 2026‑10‑20](https://raw.githubusercontent.com/kane2kang/LongHorizonUI/HEAD/README.md) |
 | [Lynx Agent](https://github.com/wangjiang314/lynx-agent) | android | — | code Apache-2.0 | Lynx Agent is a completion-first Android phone-use agent with evidence-based state verification, recovery, and safety checks. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/wangjiang314/lynx-agent/HEAD/README.md) |
 | [MobA](https://github.com/OpenDFM/MobA) | android | [2410.13757](https://arxiv.org/abs/2410.13757) (2024) | — | An Android agent that combines global task planning and memory with a local action executor, using reflection to revise mobile interaction steps. | [✓ 2026‑10‑17](https://raw.githubusercontent.com/OpenDFM/MobA/HEAD/README.md) |
 | [Mobile-Agent-E code component](https://github.com/X-PLUG/MobileAgent/tree/main/Mobile-Agent-E) | android | [2501.11733](https://arxiv.org/abs/2501.11733) (2025) | code MIT | Android automation component with hierarchical planning, reflection and persistent tips/shortcuts learned across task sequences. | [✓ 2026‑10‑18](https://raw.githubusercontent.com/X-PLUG/MobileAgent/HEAD/Mobile-Agent-E/README.md) |
@@ -49,6 +50,7 @@
 | [PC-Agent (X-PLUG component)](https://github.com/X-PLUG/MobileAgent/tree/main/PC-Agent) | desktop, windows, macos | [2502.14282](https://arxiv.org/abs/2502.14282) (2025) | code MIT | Multi-agent desktop automation component for Windows and macOS, combining active perception, task decomposition and reflection for workflows spanning applications. | [✓ 2026‑10‑18](https://raw.githubusercontent.com/X-PLUG/MobileAgent/HEAD/PC-Agent/README.md) |
 | [QAgent](https://github.com/rishabhcli/QAgent) | web, desktop | — | code AGPL-3.0 | QAgent is a local-first web QA and repair agent with an Electron desktop UI, CLI, MCP server, and isolated Git worktree execution. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/rishabhcli/QAgent/HEAD/README.md) |
 | [RCI Agent](https://github.com/posgnu/rci-agent) | web | [2303.17491](https://arxiv.org/abs/2303.17491) (2023) | code MIT | A MiniWoB++ agent that uses explicit and implicit recursive criticism-and-improvement prompts to refine action plans and ground actions to browser state. | [✓ 2026‑10‑17](https://raw.githubusercontent.com/posgnu/rci-agent/HEAD/README.md) |
+| [Roubao](https://github.com/Turbo1123/roubao) | android | — | code MIT | On-device Android phone agent in Kotlin that captures screenshots and taps, swipes and types through Shizuku without a PC, running a planner, executor and reflector loop on any OpenAI-compatible VLM, GUI-Owl or MAI-UI. | [✓ 2026‑10‑20](https://raw.githubusercontent.com/Turbo1123/roubao/HEAD/README.md) |
 | [Svate](https://github.com/JIEAO-re/Svate) | android | — | code MIT | Svate is an on-device Android UI automation agent combining Accessibility trees, screenshots, pre-action safety checks, and recovery. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/JIEAO-re/Svate/HEAD/README.md) |
 | [Third Eye](https://github.com/slastrina/third-eye) | desktop, macos | — | code MIT | Local macOS computer-use agent with screen perception and verified action execution. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/slastrina/third-eye/main/README.md) |
 | [Turan AI](https://github.com/aykutkrm67/turan-ai) | desktop, windows | — | — | Local multi-brain Windows AI desktop agent with visible computer control and verified action execution. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/aykutkrm67/turan-ai/main/README.md) |
@@ -109,6 +111,14 @@
 | [dsh-live-loop](https://github.com/POWERRRRRRRR/dsh-live-loop) | web | — | code MIT | Frontend runtime verification plugin for DeepSeek Harness that detects, launches, previews, and tests web apps in a live browser. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/POWERRRRRRRR/dsh-live-loop/main/README.md) |
 | [dsh-preview](https://github.com/Viger1/dsh-preview) | web | — | code MIT | Self-verification browser preview loop for DeepSeek Harness agents to inspect and validate live frontend changes. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/Viger1/dsh-preview/main/README.md) |
 
+## Products
+
+All entries in this section: cross-platform, desktop, windows.
+
+| Resource | Publisher | Description | Evidence |
+| --- | --- | --- | --- |
+| [Tongyi UI Agent API](https://help.aliyun.com/zh/model-studio/ui-agent-api) | — | Alibaba Cloud Model Studio API that returns the next GUI action with its reasoning for a screenshot and task, with a mobile pipeline and a PC pipeline using planner, worker, reflector and memory agents. | [✓ 2026‑10‑19](https://help.aliyun.com/zh/model-studio/ui-agent-api.md) |
+
 ## Papers
 
 | Date | Resource | Environments | Description |
@@ -134,6 +144,7 @@
 | 2026‑04‑28 | [DRIVE: Modeling Skills at the Reasoning and Interaction Levels for Web Agents under Continual Learning](https://arxiv.org/abs/2605.23939) | web | DRIVE separates reusable reasoning skills from page-specific interaction skills for web agents, retrieving both to plan tasks and execute actions on websites. |
 | 2026‑04‑23 | [Measure Twice, Click Once: Co-evolving Proposer and Visual Critic via Reinforcement Learning for GUI Grounding](https://arxiv.org/abs/2604.21268) | unspecified | Trains a GUI grounding proposer together with a visual critic that evaluates candidate locations rendered on screenshots. An adaptive reinforcement-learning schedule balances their development, using proposal diversity and critic feedback during training. |
 | 2026‑04‑23 | [VLAA-GUI: Knowing When to Stop, Recover, and Search, A Modular Framework for GUI Automation](https://arxiv.org/abs/2604.21375) | desktop, linux, windows | VLAA-GUI combines mandatory checks for visually supported completion, multi-tier loop recovery and on-demand workflow search. Optional coding and grounding agents support execution, with component ablations on Linux and Windows GUI tasks. |
+| 2026‑04‑20 | [LongHorizonUI: A Unified Framework for Robust long-horizon Task Automation of GUI Agent](https://openreview.net/forum?id=BK7Mk5d4WE) | android, desktop | Training-free GUI agent that indexes screen elements via icon detection and OCR, checks each step with multi-level reflection and recovers by fallback clicks or rollback; introduces LongGUIBench, tasks over 15 steps. |
 | 2026‑03‑23 | [CAPTCHA Solving for Native GUI Agents: Automated Reasoning-Action Data Generation and Self-Corrective Training](https://arxiv.org/abs/2603.23559) | unspecified | Introduces ReCAP, a native GUI agent for interactive CAPTCHA challenges, trained with generated interaction trajectories, reasoning traces and self-correction data. |
 | 2026‑03‑16 | [GUI-CEval: A Hierarchical and Comprehensive Chinese Benchmark for Mobile GUI Agents](https://arxiv.org/abs/2603.15039) | unspecified | GUI-CEval evaluates Chinese mobile GUI agents through a hierarchy of atomic abilities and application-level tasks collected on physical devices. Its diagnostics cover perception, planning, reflection, execution and post-action evaluation across a broad set of apps. |
 | 2026‑02‑17 | [World-Model-Augmented Web Agents with Action Correction](https://arxiv.org/abs/2602.15384) | web | WAC has a web-agent action model consult a world model, simulate action outcomes and use judge feedback to correct actions before execution. |

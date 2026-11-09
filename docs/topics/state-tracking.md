@@ -2,9 +2,9 @@
 
 [Home](../../README.md) · [All topics](../topics.md) · [Full arXiv bibliography](../papers.md)
 
-111 source-reviewed resources tagged `state-tracking`. Curated metadata; unknown facts are shown as —.
+112 source-reviewed resources tagged `state-tracking`. Curated metadata; unknown facts are shown as —.
 
-**Contents:** [Benchmarks (5)](#benchmarks) · [Agents (2)](#agents) · [Frameworks (17)](#frameworks) · [Tools (10)](#tools) · [Infrastructure (2)](#infrastructure) · [Papers (75)](#papers)
+**Contents:** [Benchmarks (5)](#benchmarks) · [Agents (2)](#agents) · [Frameworks (17)](#frameworks) · [Tools (10)](#tools) · [Infrastructure (2)](#infrastructure) · [Products (1)](#products) · [Papers (75)](#papers)
 
 ## Benchmarks
 
@@ -68,6 +68,14 @@ All entries in this section: desktop, linux.
 | --- | --- | --- | --- | --- |
 | [grass-gui](https://github.com/ShiinaHiiragi/grass-gui) | — | — | ScienceBoard's replacement GRASS GIS 8.4 wxPython GUI with an embedded Flask server that loads mapsets and layers, runs GRASS commands and returns layer, region and console state as JSON for task checks. | [✓ 2026‑10‑18](https://raw.githubusercontent.com/ShiinaHiiragi/grass-gui/HEAD/manual.md) |
 | [kalgebra-kai](https://github.com/ShiinaHiiragi/kalgebra) | — | code GPL-2.0 | Modified KAlgebra build from ScienceBoard with a local HTTP server that reports variables and plotted 2D and 3D functions and can switch tabs or add calculations and plots, so the benchmark can check math tasks. | [✓ 2026‑10‑18](https://raw.githubusercontent.com/ShiinaHiiragi/kalgebra/HEAD/manual.md) |
+
+## Products
+
+All entries in this section: web.
+
+| Resource | Publisher | Description | Evidence |
+| --- | --- | --- | --- |
+| [Predicate Systems (formerly SentienceAPI)](https://predicatesystems.ai) | — | Runtime trust layer for browser agents: a sidecar checks each action against local policy before it runs, and SDKs turn pages into compact ranked element snapshots and verify outcomes with DOM assertions. | [✓ 2026‑10‑20](https://predicatesystems.ai) |
 
 ## Papers
 

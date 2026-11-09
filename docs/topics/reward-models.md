@@ -2,9 +2,9 @@
 
 [Home](../../README.md) · [All topics](../topics.md) · [Full arXiv bibliography](../papers.md)
 
-96 source-reviewed resources tagged `reward-models`. Curated metadata; unknown facts are shown as —.
+98 source-reviewed resources tagged `reward-models`. Curated metadata; unknown facts are shown as —.
 
-**Contents:** [Benchmarks (6)](#benchmarks) · [Datasets (4)](#datasets) · [Models (5)](#models) · [Frameworks (10)](#frameworks) · [Tools (1)](#tools) · [Papers (70)](#papers)
+**Contents:** [Benchmarks (7)](#benchmarks) · [Datasets (4)](#datasets) · [Models (6)](#models) · [Frameworks (10)](#frameworks) · [Tools (1)](#tools) · [Papers (70)](#papers)
 
 ## Benchmarks
 
@@ -15,6 +15,7 @@
 | [done-or-not](https://github.com/tatra-labs/done-or-not) | desktop, web | [2610.40578](https://arxiv.org/abs/2610.40578) (2026) | — | code MIT | done-or-not is an offline benchmark of 910 computer-use trajectories across three simulated computers for grading completion verifiers. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/tatra-labs/done-or-not/HEAD/README.md) |
 | [LLM as a Judge for Computer-Use Agents](https://github.com/anaishowland/llm-judge-psai) | web, desktop | — | — | code MIT | LLM-as-a-Judge evaluation harness for assessing computer-use agent trajectories across web browsing and desktop interaction tasks. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/anaishowland/llm-judge-psai/HEAD/README.md) |
 | [OS-Critic Bench](https://huggingface.co/datasets/OS-Copilot/OS-Critic-Bench) | cross-platform, desktop, web | [2512.16295](https://arxiv.org/abs/2512.16295) (2025) | [3 platform JSONL splits](https://huggingface.co/datasets/OS-Copilot/OS-Critic-Bench/raw/main/README.md) | data apache-2.0 | A cross-platform GUI-critic benchmark with mobile, desktop and web JSONL splits and screenshot assets, accompanied by public inference and accuracy-scoring scripts. | [✓ 2026‑10‑17](https://raw.githubusercontent.com/numbmelon/OS-Oracle/HEAD/README.md) |
+| [OSReward](https://github.com/OS-Copilot/OSReward) | web, desktop, windows, linux, android | [2607.28609](https://arxiv.org/abs/2607.28609) (2026) | [1,019 trajectories](https://raw.githubusercontent.com/OS-Copilot/OSReward/0e1e401910e4033c7d3dc2631dc7171dd3c99d9a/README.md) | — | Evaluator and collection code for OSReward, which tests VLM judges' SUCCESS/FAIL verdicts on human-labelled computer-use trajectories, plus web, Windows, Android and Ubuntu trajectory pipelines. | [✓ 2026‑10‑20](https://raw.githubusercontent.com/OS-Copilot/OSReward/HEAD/README.md) |
 | [WebRewardBench](https://huggingface.co/datasets/LangAGI-Lab/WebRewardBench) | web | [2505.15277](https://arxiv.org/abs/2505.15277) (2025) | [776 rows](https://huggingface.co/datasets/LangAGI-Lab/WebRewardBench/raw/main/README.md) | — | An offline preference-evaluation set for web process reward models, pairing page and trajectory context with preferred and rejected candidate decisions. | [✓ 2026‑10‑17](https://huggingface.co/datasets/LangAGI-Lab/WebRewardBench/raw/main/README.md) |
 
 ## Datasets
@@ -31,6 +32,7 @@
 | Resource | Environments | Paper | License | Description | Evidence |
 | --- | --- | --- | --- | --- | --- |
 | [GLM-V](https://github.com/zai-org/GLM-V) | cross-platform, desktop, web, android | [2507.01006](https://arxiv.org/abs/2507.01006) (2025) | code Apache-2.0 | Z.ai repository for the open-weight GLM-4.1V-Thinking, GLM-4.5V and GLM-4.6V vision-language models, with GUI-agent prompt examples for mobile, PC and web plus a released VLM reward system. | [✓ 2026‑10‑18](https://raw.githubusercontent.com/zai-org/GLM-V/HEAD/README.md) |
+| [GUI-G2 3B](https://huggingface.co/inclusionAI/GUI-G2-3B) | cross-platform | [2507.15846](https://arxiv.org/abs/2507.15846) (2025) | weights apache-2.0 | The 3B GUI-G2 grounding checkpoint: Qwen2.5-VL-3B-Instruct fine-tuned with Gaussian point and coverage rewards to locate interface elements in screenshots from text instructions. | [✓ 2026‑10‑18](https://huggingface.co/inclusionAI/GUI-G2-3B/raw/413256770087058c21662c05c13fa8c199a08fb4/README.md) |
 | [GUI-G2 7B](https://huggingface.co/inclusionAI/GUI-G2-7B) | cross-platform | [2507.15846](https://arxiv.org/abs/2507.15846) (2025) | weights apache-2.0 | A Qwen2.5-VL grounding checkpoint trained with Gaussian point and coverage rewards whose granularity adapts to interface-element scale. | [✓ 2026‑10‑17](https://huggingface.co/inclusionAI/GUI-G2-7B/raw/main/README.md) |
 | [WebJudge 7B](https://huggingface.co/osunlp/WebJudge-7B) | web | [2504.01382](https://arxiv.org/abs/2504.01382) (2025) | weights apache-2.0 | A visual trajectory judge that retains selected intermediate screenshots to evaluate whether a web agent completed its task. | [✓ 2026‑10‑17](https://huggingface.co/osunlp/WebJudge-7B/raw/main/README.md) |
 | [WebRL outcome reward model 8B](https://huggingface.co/zai-org/webrl-orm-llama-3.1-8b) | web | [2411.02337](https://arxiv.org/abs/2411.02337) (2024) | — | The outcome-supervision checkpoint used by WebRL to score browser trajectories during policy training. | [✓ 2026‑10‑17](https://huggingface.co/api/models/zai-org/webrl-orm-llama-3.1-8b) |

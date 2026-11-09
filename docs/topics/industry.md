@@ -2,9 +2,17 @@
 
 [Home](../../README.md) · [All topics](../topics.md) · [Full arXiv bibliography](../papers.md)
 
-41 source-reviewed resources tagged `industry`. Curated metadata; unknown facts are shown as —.
+43 source-reviewed resources tagged `industry`. Curated metadata; unknown facts are shown as —.
 
-**Contents:** [Agents (1)](#agents) · [Publishers (17)](#publishers) · [Papers (23)](#papers)
+**Contents:** [Benchmarks (1)](#benchmarks) · [Agents (1)](#agents) · [Products (1)](#products) · [Publishers (17)](#publishers) · [Papers (23)](#papers)
+
+## Benchmarks
+
+All entries in this section: unspecified.
+
+| Resource | Paper | Scale | License | Description | Evidence |
+| --- | --- | --- | --- | --- | --- |
+| [AutomotiveUI-Bench-4K](https://huggingface.co/datasets/sparks-solutions/AutomotiveUI-Bench-4K) | — | [4,208 annotations](https://huggingface.co/datasets/sparks-solutions/AutomotiveUI-Bench-4K/raw/d760810c47bed006d88ee70dad7248056fdec223/README.md) · [998 images](https://huggingface.co/datasets/sparks-solutions/AutomotiveUI-Bench-4K/raw/d760810c47bed006d88ee70dad7248056fdec223/README.md) | data cc-by-4.0 | Offline test set of 998 photos and screenshots of in-vehicle infotainment screens from 15 brands, with 4,208 English annotations for locating UI elements and judging expected results as passed or failed. | [✓ 2026‑10‑19](https://huggingface.co/datasets/sparks-solutions/AutomotiveUI-Bench-4K/raw/d760810c47bed006d88ee70dad7248056fdec223/README.md) |
 
 ## Agents
 
@@ -13,6 +21,14 @@ All entries in this section: web.
 | Resource | Paper | License | Description | Evidence |
 | --- | --- | --- | --- | --- |
 | [CUGA](https://github.com/cuga-project/cuga-agent) | — | code Apache-2.0 | Enterprise generalist agent harness that plans over APIs and MCP or OpenAPI tools and, in web or hybrid mode, acts on pages through a browser extension, with intent guards, tool approval and tool guards. | [✓ 2026‑10‑18](https://raw.githubusercontent.com/cuga-project/cuga-agent/HEAD/README.md) |
+
+## Products
+
+All entries in this section: web, desktop, windows, linux.
+
+| Resource | Publisher | Description | Evidence |
+| --- | --- | --- | --- |
+| [Asteroid](https://asteroid.ai) | — | Hosted healthcare automation platform whose agents operate EHRs, payer portals and Windows, Linux or Citrix apps from the screen, then turn repeat runs into scripts or private-API calls served as an API. | [✓ 2026‑10‑19](https://asteroid.ai) |
 
 ## Publishers
 

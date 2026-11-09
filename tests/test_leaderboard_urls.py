@@ -32,6 +32,8 @@ LEADERBOARDS = {
     "github:ethz-spylab/agentdojo": "https://agentdojo.spylab.ai/results/",
     "github:halluminate/webbench": "https://webbench.ai/",
     "url:cb7f3bdb832d533c96b0": "https://www.swebench.com/multimodal.html",
+    "github:lgy0404/memgui-bench": "https://lgy0404.github.io/MemGUI-Bench/leaderboard.html",
+    "github:ljang0/odysseys": "https://odysseys-website.pages.dev/leaderboard.html",
 }
 
 

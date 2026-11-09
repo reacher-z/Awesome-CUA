@@ -2,9 +2,9 @@
 
 [Home](../../README.md) · [All topics](../topics.md) · [Full arXiv bibliography](../papers.md)
 
-6 source-reviewed resources tagged `history`. Curated metadata; unknown facts are shown as —.
+8 source-reviewed resources tagged `history`. Curated metadata; unknown facts are shown as —.
 
-**Contents:** [Agents (2)](#agents) · [Frameworks (1)](#frameworks) · [Tools (1)](#tools) · [Infrastructure (1)](#infrastructure) · [Products (1)](#products)
+**Contents:** [Agents (2)](#agents) · [Frameworks (1)](#frameworks) · [Tools (2)](#tools) · [Infrastructure (1)](#infrastructure) · [Products (2)](#products)
 
 ## Agents
 
@@ -23,11 +23,10 @@ All entries in this section: web.
 
 ## Tools
 
-All entries in this section: desktop, macos, linux, windows.
-
-| Resource | Paper | License | Description | Evidence |
-| --- | --- | --- | --- | --- |
-| [Sikuli legacy research implementation](https://github.com/sikuli/sikuli) | [Sikuli: Using GUI screenshots for search and automation](https://doi.org/10.1145/1622176.1622213) (2009), [GUI Testing Using Computer Vision](https://doi.org/10.1145/1753326.1753555) (2010) | code MIT | The original Sikuli source distribution combines screenshot targets with a Jython scripting library and IDE for visual GUI automation and testing. | [✓ 2026‑10‑17](https://raw.githubusercontent.com/sikuli/sikuli/HEAD/docs/source/index.rst) |
+| Resource | Environments | Paper | License | Description | Evidence |
+| --- | --- | --- | --- | --- | --- |
+| [agent-computer-use](https://github.com/kortix-ai/agent-computer-use) | desktop, macos, windows, linux | — | code MIT | Rust CLI (agent-cu) that lets agents snapshot desktop app accessibility trees into element refs or selectors and click, type, scroll or drag through AX on macOS, UI Automation on Windows and AT-SPI2 on Linux. | [✓ 2026‑10‑20](https://raw.githubusercontent.com/kortix-ai/agent-computer-use/HEAD/README.md) |
+| [Sikuli legacy research implementation](https://github.com/sikuli/sikuli) | desktop, macos, linux, windows | [Sikuli: Using GUI screenshots for search and automation](https://doi.org/10.1145/1622176.1622213) (2009), [GUI Testing Using Computer Vision](https://doi.org/10.1145/1753326.1753555) (2010) | code MIT | The original Sikuli source distribution combines screenshot targets with a Jython scripting library and IDE for visual GUI automation and testing. | [✓ 2026‑10‑17](https://raw.githubusercontent.com/sikuli/sikuli/HEAD/docs/source/index.rst) |
 
 ## Infrastructure
 
@@ -44,3 +43,4 @@ All entries in this section: web.
 | Resource | Publisher | Description | Evidence |
 | --- | --- | --- | --- |
 | [Operator](https://openai.com/index/introducing-operator/) | [OpenAI](https://openai.com/index/computer-using-agent/) | Historical OpenAI browser-agent research preview. | [✓ 2026‑10‑16](https://openai.com/index/introducing-operator/) |
+| [Project Mariner](https://labs.google.com/mariner/) | [Google](https://ai.google.dev/gemini-api/docs/computer-use) | Discontinued Google browser-agent research prototype built with Gemini 2.0 that read screen pixels and page elements and acted in the active Chrome tab through an extension, asking before sensitive actions. | [✓ 2026‑10‑19](https://blog.google/innovation-and-ai/models-and-research/google-deepmind/google-gemini-ai-update-december-2024/) |

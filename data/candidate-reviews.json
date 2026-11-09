@@ -4772,5 +4772,103 @@
     "decision": "alias",
     "target_id": "url:31768421b4ecd1ad89f7",
     "reason": "Training-data file inside the indexed OS-Genesis web data Hub repository."
+  },
+  {
+    "id": "url:5e9ac65f43e2c369f30c",
+    "url": "https://browsegpt.ai",
+    "decision": "alias",
+    "target_id": "github:danielpquinn/browsegpt",
+    "reason": "Website of the BrowseGPT Chrome extension; it links the danielpquinn/browsegpt source repository, whose README links back to it."
+  },
+  {
+    "id": "url:a4f3fb5c5252adb32bcd",
+    "url": "https://deepmind.google/models/project-mariner",
+    "decision": "alias",
+    "target_id": "url:12d789d450207bd6d5da",
+    "reason": "Former Google DeepMind product page for Project Mariner; it now redirects to the DeepMind home page after the project was shut down."
+  },
+  {
+    "id": "url:e7fea3f3f07c57a16dae",
+    "url": "https://browserable.ai",
+    "decision": "alias",
+    "target_id": "github:browserable/browserable",
+    "reason": "Website of the Browserable browser-agent library; it is the repository homepage and links the browserable/browserable source."
+  },
+  {
+    "id": "url:c0fde1087f4bd9248b3e",
+    "url": "https://getdexterity.com",
+    "decision": "alias",
+    "target_id": "url:76f0ba33cddbb348ea01",
+    "reason": "Former domain of the indexed Dex browser product; it redirects (301) to www.joindex.com."
+  },
+  {
+    "id": "url:12aac8cced48c576a0a7",
+    "url": "https://halligan.pages.dev",
+    "decision": "alias",
+    "target_id": "url:6942e8211a0f59eb7878",
+    "reason": "Project website for the Halligan USENIX Security 2025 paper, which the paper names as its website; same title and seven authors."
+  },
+  {
+    "id": "url:0fa046456844d3d7ca17",
+    "url": "https://help.aliyun.com/zh/ecp/quickly-experience-and-create-cloud-phone-mobileclaw",
+    "decision": "alias",
+    "target_id": "url:df3102617f3a66c44fc9",
+    "reason": "Quick-start documentation page for the indexed Wuying Agentic Mobile service; the URL now redirects to the renamed cloud-phone-jvs-mobile page."
+  },
+  {
+    "id": "url:ee4ab0ba1723ccd0da95",
+    "url": "https://paperswithcode.com/dataset/automotiveui-bench-4k",
+    "decision": "alias",
+    "target_id": "url:e80e9cf4f565f9ab2abf",
+    "reason": "Former Papers with Code page of the AutomotiveUI-Bench-4K dataset, indexed at its Hugging Face release; the URL now redirects to Hugging Face trending papers."
+  },
+  {
+    "id": "url:62d8d6bf6d1c117f2638",
+    "url": "https://vercel.com/templates/next.js/ai-sdk-computer-use",
+    "decision": "alias",
+    "target_id": "github:vercel-labs/ai-sdk-computer-use",
+    "reason": "Vercel template page for the indexed AI SDK Computer Use repository; it republishes that repository README and links github.com/vercel-labs/ai-sdk-computer-use as its source."
+  },
+  {
+    "id": "url:3278c8320e76b3cefbe9",
+    "url": "https://webarena.dev/webarena-infinity",
+    "decision": "alias",
+    "target_id": "github:web-arena-x/webarena-infinity",
+    "reason": "Blog post and homepage of the indexed WebArena-Infinity repository, which sets it as the repository homepage and cites it in its BibTeX entry."
+  },
+  {
+    "id": "url:ffca8c33695986806a57",
+    "url": "https://www.preprints.org/manuscript/202408.2137",
+    "decision": "alias",
+    "target_id": "url:9113270916a36b4b76f1",
+    "reason": "Preprints.org landing page of the August 2024 preprint of UI-Hawk (DOI 10.20944/preprints202408.2137.v1): same six authors in the same order as the EMNLP 2025 paper, titled '...for GUI Agents' without 'Mobile' and spelling the second author Yaqi Yu. The site refuses scripted requests; read through Wayback capture 20260314134926."
+  },
+  {
+    "id": "url:ef7a45799a4503144a4d",
+    "url": "https://www.preprints.org/manuscript/202408.2137/v1",
+    "decision": "alias",
+    "target_id": "url:9113270916a36b4b76f1",
+    "reason": "Version 1 address of the Preprints.org UI-Hawk preprint, the only version posted; Wayback capture 20260313061716 shows it redirecting to the unversioned manuscript page, an earlier version of the EMNLP 2025 paper by the same six authors."
+  },
+  {
+    "id": "url:20e3e42bfd3d9fd4fcf7",
+    "url": "https://www.uipath.com/newsroom/uipath-screenagent-osworld-benchmark-top-ranking",
+    "decision": "alias",
+    "target_id": "url:b09d10b87e42b7e74de9",
+    "reason": "UiPath press release of 14 January 2026 announcing the OSWorld-Verified ranking of Screen Agent, the agent that powers the indexed UiPath ScreenPlay product."
+  },
+  {
+    "id": "url:9557231fc88dcaca3c37",
+    "url": "https://www.selenium.dev",
+    "decision": "alias",
+    "target_id": "github:seleniumhq/selenium",
+    "reason": "Project website of Selenium, named as the homepage of the SeleniumHQ/selenium repository (GitHub id 7613257), whose README sends users to its documentation; it also presents Selenium IDE, which is developed in a separate repository."
+  },
+  {
+    "id": "url:aaf62a374517dcb7151d",
+    "url": "https://www.sentienceapi.com",
+    "decision": "alias",
+    "target_id": "url:4ee15c39dc38f230ad58",
+    "reason": "Former domain of Predicate Systems, which brands itself 'formerly SentienceAPI': www.sentienceapi.com redirects (301, then 308) to predicatesystems.ai and returns the same home page bytes (sha256 36c1848163bd)."
   }
 ]

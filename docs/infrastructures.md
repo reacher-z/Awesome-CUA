@@ -6,7 +6,7 @@ Curated metadata. Each entry links its first-party evidence. Unknown facts are s
 
 *Paper* lists reviewed `introduced_by`/`documented_by` relations with the record's year. *License* lists publisher declarations by scope (code, data, weights, document). *Evidence* links the reviewed first-party snapshot and its retrieval date.
 
-**62 resources:** [Web (5)](#web) · [Desktop (26)](#desktop) · [Mobile (4)](#mobile) · [Cross-platform (27)](#cross-platform)
+**64 resources:** [Web (6)](#web) · [Desktop (26)](#desktop) · [Mobile (5)](#mobile) · [Cross-platform (27)](#cross-platform)
 
 Resources tagged with environments from more than one family are listed under *Cross-platform*; their exact environments stay in the table.
 
@@ -19,6 +19,7 @@ All entries in this section: web.
 | [browser-gateway](https://github.com/browser-gateway/browser-gateway) | — | code MIT | browser-gateway is an open control plane and router across cloud browser providers with failover, persistent profiles, session replay, and MCP. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/browser-gateway/browser-gateway/HEAD/README.md) |
 | [Gobii Platform](https://github.com/gobii-ai/gobii-platform) | — | code MIT | Self-hostable platform for always-on agents based on browser-use, adding headed browsers, persistent profiles, proxy-aware routing, schedules and event triggers. | [✓ 2026‑11‑06](https://raw.githubusercontent.com/gobii-ai/gobii-platform/c9929bf8ea59b4695b99dcab59aa6c97a09c5bdb/README.md) |
 | [Playwright](https://github.com/microsoft/playwright) | — | code Apache-2.0 | Browser automation library used as an execution layer by agents. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/microsoft/playwright/HEAD/README.md) |
+| [Selenium](https://github.com/SeleniumHQ/selenium) | — | code Apache-2.0 | Browser automation project implementing W3C WebDriver, with Java, Python, Ruby, .NET and JavaScript bindings, Selenium Grid for spreading sessions across machines, and the Rust-based Selenium Manager for driver setup. | [✓ 2026‑10‑20](https://raw.githubusercontent.com/SeleniumHQ/selenium/HEAD/README.md) |
 | [Steel Browser](https://github.com/steel-dev/steel-browser) | — | code Apache-2.0 | Open-source browser API managing Chrome sessions for agents, reachable through Puppeteer, Playwright or Selenium over CDP, with persisted cookies, proxy rotation, stealth and a session debugging UI. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/steel-dev/steel-browser/HEAD/README.md) |
 | [Vessel Browser](https://github.com/unmodeled-tyler/vessel-browser) | — | code MIT | Electron/Chromium browser built as a visible runtime for agents: a local MCP server and a built-in assistant read pages as indexed elements and click, type and navigate, with scoped approvals, checkpoints and undo. | [✓ 2026‑10‑18](https://raw.githubusercontent.com/unmodeled-tyler/vessel-browser/HEAD/README.md) |
 
@@ -65,6 +66,7 @@ All entries in this section: web.
 | [Appium](https://github.com/appium/appium) | android, ios | — | code Apache-2.0 | Open-source WebDriver-based automation server for mobile, desktop and IoT apps, extended by per-platform drivers for iOS, Android, macOS and Windows, plugins, and clients in Java, Python, Ruby and C#. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/appium/appium/HEAD/README.md) |
 | [DroidFleet](https://github.com/c00l-k1D/DroidFleet) | android | — | code MIT | Open-source Android device fleet management and orchestration platform for mobile automation and testing. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/c00l-k1D/DroidFleet/main/README.md) |
 | [Mobile Env](https://github.com/X-LANCE/Mobile-Env) | android | [2305.08144](https://arxiv.org/abs/2305.08144) (2023) | code Apache-2.0 | AndroidEnv-based platform for building GUI agent benchmarks and training agents, where task definition files emit instructions, rewards and episode ends from screen text, view hierarchy or log events. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/X-LANCE/Mobile-Env/HEAD/README.md) |
+| [OpenMobile-2 extended Android AVDs](https://huggingface.co/datasets/yanhhh/AndroidAvd) | android | [2610.14157](https://arxiv.org/abs/2610.14157) (2026) | — | Seven preconfigured Pixel 6 emulator images for Android API 33 (arm64) with an Apple Silicon install script, listed in the OpenMobile-2 release as its extended Android AVDs. | [✓ 2026‑10‑18](https://huggingface.co/datasets/yanhhh/AndroidAvd/raw/4d2be38083d1a4395ab0de9749983f7091714070/install_avd.sh) |
 
 [↑ Back to top](#infrastructure-catalog)
 

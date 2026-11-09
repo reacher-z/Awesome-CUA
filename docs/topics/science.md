@@ -2,9 +2,9 @@
 
 [Home](../../README.md) · [All topics](../topics.md) · [Full arXiv bibliography](../papers.md)
 
-39 source-reviewed resources tagged `science`. Curated metadata; unknown facts are shown as —.
+41 source-reviewed resources tagged `science`. Curated metadata; unknown facts are shown as —.
 
-**Contents:** [Benchmarks (2)](#benchmarks) · [Datasets (2)](#datasets) · [Models (4)](#models) · [Frameworks (3)](#frameworks) · [Tools (3)](#tools) · [Infrastructure (3)](#infrastructure) · [Papers (22)](#papers)
+**Contents:** [Benchmarks (2)](#benchmarks) · [Datasets (2)](#datasets) · [Models (6)](#models) · [Frameworks (3)](#frameworks) · [Tools (3)](#tools) · [Infrastructure (3)](#infrastructure) · [Papers (22)](#papers)
 
 ## Benchmarks
 
@@ -29,8 +29,10 @@ All entries in this section: desktop.
 | Resource | Paper | License | Description | Evidence |
 | --- | --- | --- | --- | --- |
 | [ScaleCUA (THUDM) GLM-4.6V-Flash ScienceBoard](https://huggingface.co/extreme1228/ScaleCUA-glm4.6v-scienceboard) | [2607.11185](https://arxiv.org/abs/2607.11185) (2026) | weights other | GLM-4.6V-Flash computer-use agent checkpoint from THUDM's ScaleCUA, trained with online RL from a released SFT start point for ScienceBoard scientific-software tasks. | [✓ 2026‑10‑18](https://huggingface.co/extreme1228/ScaleCUA-glm4.6v-scienceboard/raw/3b089b66c9d0ffd3e56477fce32b31ab5ad56361/README.md) |
+| [ScaleCUA (THUDM) GLM-4.6V-Flash ScienceBoard SFT](https://huggingface.co/extreme1228/ScaleCUA-glm4.6v-scienceboard-sft) | [2607.11185](https://arxiv.org/abs/2607.11185) (2026) | weights other | Supervised GLM-4.6V-Flash checkpoint from THUDM's ScaleCUA, released as the start point that online RL initializes from for its ScienceBoard computer-use agent. | [✓ 2026‑10‑18](https://huggingface.co/extreme1228/ScaleCUA-glm4.6v-scienceboard-sft/raw/2bcf77b8a30c161d9ed2e075276877275319d1ad/README.md) |
 | [ScaleCUA (THUDM) Qwen3-VL-8B ScienceBoard](https://huggingface.co/extreme1228/ScaleCUA-qwen3-vl-scienceboard) | [2607.11185](https://arxiv.org/abs/2607.11185) (2026) | weights other | Qwen3-VL-8B computer-use agent checkpoint from THUDM's ScaleCUA, trained with online RL for ScienceBoard scientific-software tasks after an SFT start point and served through an OpenAI-compatible endpoint. | [✓ 2026‑10‑18](https://huggingface.co/extreme1228/ScaleCUA-qwen3-vl-scienceboard/raw/13947f05bff0742e09784310b6c68ae39bff67e5/README.md) |
 | [ScaleCUA (THUDM) Qwen3-VL-8B ScienceBoard SFT](https://huggingface.co/extreme1228/ScaleCUA-qwen3-vl-scienceboard-sft) | [2607.11185](https://arxiv.org/abs/2607.11185) (2026) | weights other | Supervised Qwen3-VL-8B checkpoint from THUDM's ScaleCUA, released as the start point that online RL initializes from for its ScienceBoard computer-use agent. | [✓ 2026‑10‑18](https://huggingface.co/extreme1228/ScaleCUA-qwen3-vl-scienceboard-sft/raw/48c39bb30e1920e02c440fc256f5bb4e1d44765b/README.md) |
+| [ScaleCUA (THUDM) Qwen3.5-9B ScienceBoard](https://huggingface.co/extreme1228/ScaleCUA-qwen3.5-scienceboard) | [2607.11185](https://arxiv.org/abs/2607.11185) (2026) | weights other | Qwen3.5-9B computer-use agent checkpoint from THUDM's ScaleCUA, trained with online RL for ScienceBoard scientific-software tasks after an SFT start point and served through an OpenAI-compatible endpoint. | [✓ 2026‑10‑19](https://huggingface.co/extreme1228/ScaleCUA-qwen3.5-scienceboard/raw/ca2bc686c6d428fde67b114e002dd69e4eeb59b5/README.md) |
 | [ScaleCUA (THUDM) Qwen3.5-9B ScienceBoard SFT](https://huggingface.co/extreme1228/ScaleCUA-qwen3.5-scienceboard-sft) | [2607.11185](https://arxiv.org/abs/2607.11185) (2026) | weights other | Supervised Qwen3.5-9B checkpoint from THUDM's ScaleCUA, released as the start point that online RL initializes from for its ScienceBoard computer-use agent. | [✓ 2026‑10‑18](https://huggingface.co/extreme1228/ScaleCUA-qwen3.5-scienceboard-sft/raw/f697d10e7c30cbc7b88d677a81336210b80827d3/README.md) |
 
 ## Frameworks

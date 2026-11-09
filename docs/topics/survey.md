@@ -2,9 +2,9 @@
 
 [Home](../../README.md) · [All topics](../topics.md) · [Full arXiv bibliography](../papers.md)
 
-34 source-reviewed resources tagged `survey`. Curated metadata; unknown facts are shown as —.
+35 source-reviewed resources tagged `survey`. Curated metadata; unknown facts are shown as —.
 
-**Contents:** [Benchmarks (1)](#benchmarks) · [Learning resources (4)](#learning-resources) · [Surveys (28)](#surveys) · [Papers (1)](#papers)
+**Contents:** [Benchmarks (1)](#benchmarks) · [Learning resources (4)](#learning-resources) · [Surveys (29)](#surveys) · [Papers (1)](#papers)
 
 ## Benchmarks
 
@@ -38,6 +38,7 @@ All entries in this section: cross-platform, desktop, web.
 | 2026‑03‑24 | [The Evolution of Tool Use in LLM Agents: From Single-Tool Call to Multi-Tool Orchestration](https://arxiv.org/abs/2603.22862) | unspecified | Surveys multi-tool LLM agents across planning, training, safety, efficiency, and evaluation, including GUI and mobile systems among its application areas. |
 | 2026‑02‑12 | [Agent Skills for Large Language Models: Architecture, Acquisition, Security, and the Path Forward](https://arxiv.org/abs/2602.12430) | unspecified | This survey organizes agent skills by architecture, acquisition, deployment and security, including their role in computer-use systems and GUI grounding. It also proposes a permission and lifecycle governance framework for skill deployment. |
 | 2026‑01‑18 | [Agentic Artificial Intelligence (AI): Architectures, Taxonomies, and Evaluation of Large Language Model Agents](https://arxiv.org/abs/2601.12560) | web | Surveys LLM agent architectures, operating environments and evaluation, covering web navigation and native computer use alongside other agent domains. |
+| 2025‑12‑16 | [A Survey on Benchmarks of LLM-based GUI Agents](https://doi.org/10.36227/techrxiv.176591818.87526814/v1) | cross-platform | Surveys LLM-based GUI agent benchmarks in three task tiers (grounding and QA, multi-step navigation, open-world environments), comparing their datasets, environments and metrics, and outlines open evaluation gaps. |
 | 2025‑10‑19 | [Beyond Pipelines: A Survey of the Paradigm Shift toward Model-Native Agentic AI](https://arxiv.org/abs/2510.16720) | unspecified | Surveys model-native agentic AI and the role of RL in learned planning, tool use and memory, covering GUI agents as one application alongside deep-research agents. |
 | 2025‑08‑06 | [OS Agents: A Survey on MLLM-based Agents for General Computing Devices Use](https://arxiv.org/abs/2508.04482) | cross-platform | Surveys agents that operate computers and phones through operating-system interfaces, covering components, capabilities, foundation models, frameworks, and benchmarks. |
 | 2025‑05‑16 | [A Survey on the Safety and Security Threats of Computer-Using Agents: JARVIS or Ultron?](https://arxiv.org/abs/2505.10924) | cross-platform | Systematizes safety and security threats to computer-using agents, with taxonomies of threats and defensive strategies. |

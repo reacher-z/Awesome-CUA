@@ -92,9 +92,9 @@
     "research/survey/evidence/supplementary-screening.json": "04b8edbae9f4e17911e5919282192da51e97be777f3d01be963b4a43ac9f9edb",
     "research/survey/evidence/extra-references.json": "1d1ec6287aed88df38688afd91d74cfd9326b1a8135a3480fd5562dda54f26f3",
     "research/survey/scripts/build_article.py": "023a91fa6912bab0b1d7bf34faa9925f6777166379c7c9fd0c52e9864e6751b6",
-    "research/survey/article.css": "6e115a5e8d836bf650fcd96ac6ef48d2f680285975f285379d2d664306129dd2",
+    "research/survey/article.css": "811ab0ad087be4ebc2189c92fcec64168c33980890a01d5cc136784170b7ebac",
     "research/survey/article.js": "903d48ebaad90a39a7f88f15c2aa78cb48992188b8b89bd7186be17defcd6bfe",
-    "research/survey/template.html": "9d8b4ead8040a84bcf808b3c0b3bd4120bc03a7af55453a0655f3021e60ae4ca",
+    "research/survey/template.html": "489ef90fbc6fefd5b70137da724b902959ed02b5ceb7ffa208abd73999807873",
     "research/survey/figures/corpus.svg": "33bb85647bd7a42235ada6dc47ef51f7d272d98e922cf181e51495d96140b106",
     "scripts/export_citations.py": "82633d1cdccbcf818b0e9a55a7119c63390cf8805875367c2b1dc800732f6a92",
     "scripts/publication_metadata.py": "2b2f89c0584acc44ec5bf686e94c206abc85358edcc314872f5357246f5d5e82",
@@ -153,8 +153,8 @@
     },
     {
       "path": "index.html",
-      "bytes": 463124,
-      "sha256": "dbfe52d80a08643da4806f6012f068f5d3b109a075e9055f2cf1d18c1315e804"
+      "bytes": 463264,
+      "sha256": "cfa14e21f7623e9aa2874e43475c30cf308ad9cf559c8b8cd4e60588e0e1b691"
     },
     {
       "path": "references.bib",

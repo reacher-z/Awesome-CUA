@@ -108,6 +108,8 @@ button { cursor: pointer; }
 .article-kicker li + li::before { content: "/"; margin: 0 .5rem; }
 .article-kicker a { color: inherit; text-decoration: none; }
 .article-kicker span { color: var(--faint); margin: 0 .5rem; }
+.article-kicker .kicker-status { white-space: nowrap; }
+.article-kicker .kicker-status span { margin: 0 1.5rem 0 0; }
 .reader-layout :is(h1, h2, h3, h4) { font-family: var(--serif); font-weight: 500; text-wrap: balance; color: var(--ink-strong); }
 .reader-layout h1 { font-size: clamp(2.4rem, 4vw, 3.5rem); line-height: 1.06; letter-spacing: -.02em; margin: 0 0 1.05rem; }
 .article-deck { font-size: 1.4rem; line-height: 1.45; color: var(--muted-strong); max-width: 44rem; margin: 0 0 1.1rem; }
@@ -309,7 +311,7 @@ sup { line-height: 0; }
     <main id="main-content" tabindex="-1">
       <article class="paper" aria-labelledby="article-title">
         <header class="article-header">
-          <div class="article-kicker"><nav aria-label="Breadcrumb"><ol><li><a href="/">AwesomeCUA</a></li><li><a href="/survey/" aria-current="page">Research survey</a></li></ol></nav><span aria-hidden="true">/</span><span>Working manuscript</span></div>
+          <div class="article-kicker"><nav aria-label="Breadcrumb"><ol><li><a href="/">AwesomeCUA</a></li><li><a href="/survey/" aria-current="page">Research survey</a></li></ol></nav><span class="kicker-status"><span aria-hidden="true">/</span>Working manuscript</span></div>
           <h1 id="article-title">Computer-Use Agents: Methods, Evaluation, Human Agency, and Research Assets</h1>
           <p class="article-deck">An evidence-led review of the mechanisms, evaluation practices, and human decisions behind agents that operate digital interfaces.</p>
           <div class="article-meta"><time datetime="2026-10-18">18 October 2026</time><span aria-hidden="true">·</span><span>52 min read</span></div>

@@ -87,6 +87,8 @@ button { cursor: pointer; }
 .article-kicker li + li::before { content: "/"; margin: 0 .5rem; }
 .article-kicker a { color: inherit; text-decoration: none; }
 .article-kicker span { color: var(--faint); margin: 0 .5rem; }
+.article-kicker .kicker-status { white-space: nowrap; }
+.article-kicker .kicker-status span { margin: 0 1.5rem 0 0; }
 .reader-layout :is(h1, h2, h3, h4) { font-family: var(--serif); font-weight: 500; text-wrap: balance; color: var(--ink-strong); }
 .reader-layout h1 { font-size: clamp(2.4rem, 4vw, 3.5rem); line-height: 1.06; letter-spacing: -.02em; margin: 0 0 1.05rem; }
 .article-deck { font-size: 1.4rem; line-height: 1.45; color: var(--muted-strong); max-width: 44rem; margin: 0 0 1.1rem; }

@@ -170,6 +170,17 @@ Some personal names are protected at the maintainer's request. The repository, t
 
 A failure reports only file paths and line numbers (line 0 means a form spread over several lines). Remove the name from the authored input, or fix the generator's input and rerun it; for a paper, omit the whole author list instead of one name. `python3 scripts/privacy_guard.py` checks the working tree and the built website, and `python3 scripts/privacy_guard.py PATH...` checks other files or directories. Git history is not rewritten. Changing the protected list needs the plaintext names, which stay outside the repository: ask the maintainer.
 
+## Pull request hygiene
+
+`.github/workflows/pr-hygiene.yml` runs on `pull_request_target`, so the workflow and `python3 scripts/pr_hygiene.py` both come from the base branch, on every pull request when it is opened, reopened, edited or pushed to. It reads the commits from the GitHub API and the description from the event payload, and fails when:
+
+- any commit message has a `Co-Authored-By:` trailer naming Claude or `noreply@anthropic.com`, or the text "Generated with Claude" (any case);
+- in a pull request opened by `reacher-z` or a bot, a commit's author or committer is neither `reacher-z` (`reacher-z@users.noreply.github.com` or `68239571+reacher-z@users.noreply.github.com`) nor a bot (`name[bot]` with `<id>+name[bot]@users.noreply.github.com`). A `GitHub <noreply@github.com>` committer passes when the author passes. Merge commits are checked like any other commit, because `main` advances by fast-forward;
+- in a pull request opened by `reacher-z`, the description has no `Codex review` or `Independent review` heading (any `#` level, or a setext heading) with readable text under it as GitHub renders it (comments, rules, sub-headings and empty markup do not count), and no line "independent reviewer agent (Codex usage limit until YYYY-MM-DD)";
+- fewer commits were read than the pull request has (the API lists at most 250).
+
+A commit failure names the commit SHA and the field that failed. It is an optional status check and reads only the pull request's own commits.
+
 ## Versioned data releases
 
 The website's downloads always show the latest snapshot, and the `cua-catalog` artifact of a Catalog quality run expires after 90 days. A pinned, citable version is a GitHub release made by `.github/workflows/release.yml`. Releases are cut by hand, and no workflow creates or moves a tag. Tag a `main` commit whose Catalog quality run passed, using the snapshot date as the version, and push the tag:

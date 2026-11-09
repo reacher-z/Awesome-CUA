@@ -9,6 +9,7 @@ from unittest import mock
 
 sys.path.insert(0,str(Path(__file__).resolve().parents[1]/'scripts'))
 from build_site import build_site
+from site_fixture import code_only, shared_site
 from search_pages import clean_text, resource_path
 from test_search_pages import copy_survey_source_inputs
 
@@ -42,6 +43,7 @@ class GeneratedWhitespaceTests(unittest.TestCase):
             for name,data in [('eol.md',b'ok\nx  \n'),('cr.txt',b'x\r\n'),('eof.md',b'x\n\n'),('indent.txt',b' \tx\n'),('clean.html',b'<p>x</p>'),('tab.txt',b'\tx\n'),('binary.sqlite',b'\0x  \n\n')]:
                 (root/name).write_bytes(data)
             self.assertEqual(whitespace_errors(root),['cr.txt:1: trailing whitespace','eof.md: new blank line at EOF','eol.md:2: trailing whitespace','indent.txt:1: space before tab in indent'])
+    @code_only
     def test_untrusted_text_with_trailing_whitespace_builds_cleanly(self):
         reason='Out of scope:  \nstudies circuit design.\t\n\n'
         with tempfile.TemporaryDirectory() as directory:
@@ -68,8 +70,7 @@ class GeneratedWhitespaceTests(unittest.TestCase):
             manifest={item['path']:item['sha256'] for item in json.loads((destination/'data/search-manifest.json').read_text())['pages']}
             self.assertEqual(manifest[resource_path(paper)],hashlib.sha256((destination/resource_path(paper).lstrip('/')/'index.html').read_bytes()).hexdigest())
     def test_built_site_passes_publication_whitespace_check(self):
-        with tempfile.TemporaryDirectory() as directory:
-            self.assertEqual(whitespace_errors(build_site(directory)),[])
+        self.assertEqual(whitespace_errors(shared_site()),[])
 
 
 if __name__=='__main__':unittest.main()

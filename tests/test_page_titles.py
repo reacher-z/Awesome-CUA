@@ -8,6 +8,7 @@ import unittest
 
 sys.path.insert(0,str(Path(__file__).resolve().parents[1]/'scripts'))
 from build_site import build_site
+from site_fixture import shared_site
 from search_pages import page, resource_titles
 
 
@@ -47,7 +48,7 @@ class ResourceTitleTests(unittest.TestCase):
 class GeneratedTitleTests(unittest.TestCase):
     @classmethod
     def setUpClass(cls):
-        cls.temp=tempfile.TemporaryDirectory();cls.dest=build_site(cls.temp.name)
+        cls.temp=tempfile.TemporaryDirectory();cls.dest=shared_site()
         cls.pages=json.loads((cls.dest/'data/search-manifest.json').read_text())['pages']
         cls.titles={item['path']:TitleParser((cls.dest/item['path'].lstrip('/')/'index.html').read_text()) for item in cls.pages}
     @classmethod

@@ -215,7 +215,7 @@ class NothingToCommitTests(unittest.TestCase):
 class RepeatedPartialWorkflowTests(unittest.TestCase):
     def test_a_separate_job_fails_the_run_only_after_the_scan_job_succeeds(self):
         text = WORKFLOW.read_text()
-        self.assertIn('      - name: Discover and verify public metadata\n        id: scan\n        run: python scripts/scan.py\n', text)
+        self.assertIn('      - name: Discover and verify public metadata\n        id: scan\n        timeout-minutes: 11\n        run: python scripts/scan.py\n', text)
         self.assertIn('      repeated_partial: ${{ steps.scan.outputs.repeated_partial }}\n', text.split('    steps:', 1)[0])
         job = text.split('\n  report_repeated_partial:\n', 1)[1]
         self.assertIn('    needs: scan\n', job)

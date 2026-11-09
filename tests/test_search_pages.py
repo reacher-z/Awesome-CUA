@@ -17,6 +17,7 @@ import xml.etree.ElementTree as ET
 
 sys.path.insert(0,str(Path(__file__).resolve().parents[1]/'scripts'))
 from build_site import build_site
+from site_fixture import code_only, shared_site
 import home_page
 from search_pages import SITE, eligible, listing, resource_path, resource_schema, page, incoming_relations
 from sitemaps import sitemap_urls
@@ -72,7 +73,7 @@ class ListingRowTests(unittest.TestCase):
 class SearchPagesTests(unittest.TestCase):
     @classmethod
     def setUpClass(cls):
-        cls.temp=tempfile.TemporaryDirectory();cls.dest=build_site(cls.temp.name)
+        cls.temp=tempfile.TemporaryDirectory();cls.dest=shared_site()
         cls.rows=[json.loads(x) for x in (ROOT/'data/catalog.jsonl').read_text().splitlines()]
         cls.manifest=json.loads((cls.dest/'data/search-manifest.json').read_text())
     @classmethod
@@ -334,6 +335,7 @@ class SearchPagesTests(unittest.TestCase):
         self.assertIn('href="/zh/data/" aria-current=page>数据</a>',(self.dest/'zh/data/index.html').read_text())
         self.assertIn(SITE+'/downloads/manifest.json',(self.dest/'llms.txt').read_text())
 
+    @code_only
     def test_download_script_change_versions_only_data_hub_pages(self):
         with tempfile.TemporaryDirectory() as directory:
             source=Path(directory)/'source';source.mkdir()
@@ -356,6 +358,7 @@ class SearchPagesTests(unittest.TestCase):
                     self.assertEqual([source for source in parsed.scripts if not source.startswith('/assets/site.js')],['/downloads.js?v='+expected])
                 build_site(destination)
                 self.assertEqual(snapshot(),after)
+    @code_only
     def test_core_change_updates_only_consumer_pages_and_rebuild_is_stable(self):
         with tempfile.TemporaryDirectory() as directory:
             source=Path(directory)/'source';source.mkdir()

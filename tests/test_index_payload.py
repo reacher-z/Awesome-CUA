@@ -9,13 +9,14 @@ import unittest
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / 'scripts'))
 from build_site import build_site
+from site_fixture import shared_site
 
 
 class IndexPayloadTests(unittest.TestCase):
     @classmethod
     def setUpClass(cls):
         cls.temp = tempfile.TemporaryDirectory()
-        cls.dest = build_site(cls.temp.name)
+        cls.dest = shared_site()
         cls.index = json.loads((cls.dest / 'data/index.json').read_text())['records']
         cls.client = (ROOT / 'web/app.js').read_text() + (ROOT / 'web/catalog-core.js').read_text()
 

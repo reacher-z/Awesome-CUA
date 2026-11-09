@@ -10,6 +10,7 @@ from unittest import mock
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / 'scripts'))
 import paper_library
 from build_site import build_site
+from site_fixture import shared_site
 from paper_library import library_pages, library_path, library_years
 from search_pages import SITE, resource_path
 from sitemaps import sitemap_urls
@@ -75,7 +76,7 @@ class PaperPageTests(unittest.TestCase):
     @classmethod
     def setUpClass(cls):
         cls.temp = tempfile.TemporaryDirectory()
-        cls.dest = build_site(cls.temp.name)
+        cls.dest = shared_site()
         cls.pages = {item['path']: item for item in json.loads((cls.dest / 'data/search-manifest.json').read_text())['pages']}
         cls.markup = {path: (cls.dest / path.lstrip('/') / 'index.html').read_text() for path in cls.pages
                       if re.match(r'/(zh/)?papers/|/categories/', path)}

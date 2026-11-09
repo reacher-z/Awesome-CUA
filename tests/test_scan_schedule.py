@@ -94,7 +94,7 @@ class ScanScheduleTests(unittest.TestCase):
         deployment = text.index('name: Build website from the verified catalog')
         self.assertLess(gate, deployment)
         for check in ['python scripts/catalog.py validate', 'python scripts/catalog.py build --check',
-                      'python -m unittest discover -s tests -v', 'node --test tests/web.test.mjs']:
+                      'python scripts/run_tests.py', 'node --test tests/web.test.mjs']:
             self.assertIn(check, text[gate:deployment])
 
     def test_freshness_limit_tolerates_missed_slots_after_an_uncommitted_scan(self):

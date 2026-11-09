@@ -262,7 +262,7 @@ python3 -m venv .venv
 .venv/bin/python -m pip install --require-hashes -r requirements-dev.txt
 .venv/bin/python scripts/catalog.py validate
 .venv/bin/python scripts/catalog.py build --check
-.venv/bin/python -m unittest discover -s tests -v
+.venv/bin/python scripts/run_tests.py
 .venv/bin/python scripts/catalog.py build
 node --test tests/web.test.mjs
 .venv/bin/python scripts/build_site.py

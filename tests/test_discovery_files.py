@@ -12,6 +12,7 @@ import xml.etree.ElementTree as ET
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / 'scripts'))
 from build_site import build_site
+from site_fixture import shared_site
 from catalog import editorial_identity
 from discovery_files import CONTENT_SIGNAL, CRAWLERS, FEED_SIZE, crawler_tokens, robots_txt
 from search_pages import SITE, eligible, resource_path
@@ -66,7 +67,7 @@ class RobotsTests(unittest.TestCase):
 class BuiltDiscoveryTests(unittest.TestCase):
     @classmethod
     def setUpClass(cls):
-        cls.temp = tempfile.TemporaryDirectory(); cls.dest = build_site(cls.temp.name)
+        cls.temp = tempfile.TemporaryDirectory(); cls.dest = shared_site()
         cls.rows = [json.loads(line) for line in (ROOT / 'data/catalog.jsonl').read_text().splitlines() if line.strip()]
         cls.by_path = {resource_path(row): row for row in cls.rows}
         cls.manifest = json.loads((cls.dest / 'data/search-manifest.json').read_text())

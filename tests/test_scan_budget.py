@@ -12,25 +12,42 @@ import scan
 
 ROOT = Path(__file__).resolve().parents[1]
 WORKFLOW = ROOT / ".github" / "workflows" / "scan.yml"
-# Checkout, setup, the quality gate, commit and upload. The failing runner log
-# records 1,162 seconds for the full unit suite alone at 5,438 resources.
-OTHER_STEPS = 25 * 60
+# Steps without their own timeout: job start, checkout, Python/Node setup and the hashed
+# install (12-20 s on the runner), the snapshot, both evidence uploads and the notices.
+UNTIMED_STEPS = 60
+# scan.py work outside its stage timeouts: interpreter start, receipts, counts, history and
+# the candidate integrity gate. 111 receipts from 16 Oct to 9 Nov 2026 record at most 96 s
+# between phases, and the step adds about 20 s around the receipt.
+SCAN_BOOKKEEPING = 120
+# Minutes left under the job timeout when every step uses its whole budget.
+MARGIN = 2 * 60
 CONFIG = {'recent_lookback_days': 14, 'recent_max_results': 500, 'harvest_limit': 500, 'history_limit': 5,
           'timezone': 'UTC', 'scan_times_local': ['08:17', '20:17'], 'policy': 'Fixture'}
 
 
+def scan_job():
+    return re.search(r"^  scan:\n(.*?)(?=^  \S)", WORKFLOW.read_text(), re.M | re.S)[1]
+
+
 def job_timeout():
-    job = re.search(r"^  scan:\n(.*?)(?=^  \S)", WORKFLOW.read_text(), re.M | re.S)[1]
-    return int(re.search(r"^    timeout-minutes: (\d+)$", job, re.M)[1]) * 60
+    return int(re.search(r"^    timeout-minutes: (\d+)$", scan_job(), re.M)[1]) * 60
 
 
+def step_timeouts():
+    """Seconds allowed to each scan-job step that sets its own timeout, by step id."""
+    return {step: int(minutes) * 60 for step, minutes in
+            re.findall(r"^        id: (\w+)\n        timeout-minutes: (\d+)$", scan_job(), re.M)}
 
 
 class ScanBudgetTests(unittest.TestCase):
     def test_stage_budgets_and_the_recent_search_fit_inside_the_job_timeout(self):
         config = catalog.read_json(ROOT / "data" / "scan-config.json")
         scan_seconds = config['network_max_seconds'] + sum(value for key,value in scan.STAGE_TIMEOUTS.items() if key not in scan.NETWORK_STAGES)
-        self.assertLess(scan_seconds + OTHER_STEPS, job_timeout())
+        steps = step_timeouts()
+        self.assertEqual(set(steps), {"scan", "quality", "commit"})
+        self.assertLessEqual(scan_seconds + SCAN_BOOKKEEPING, steps["scan"])
+        self.assertLessEqual(UNTIMED_STEPS + sum(steps.values()) + MARGIN, job_timeout())
+        self.assertLessEqual(job_timeout(), 30 * 60)
 
     def test_every_subprocess_stage_runs_under_its_own_budget(self):
         timeouts = []
@@ -45,8 +62,8 @@ class ScanBudgetTests(unittest.TestCase):
             self.assertEqual(scan.run_scan(), 1)
             phases = {p["name"]: p for p in scan.read_json(Path(directory) / "scan-status.json")["phases"]}
         self.assertEqual([name for name, _ in timeouts], ["discover", "scripts/discover_papers.py", "harvest", "build", "validate"])
-        self.assertTrue(all(599 < timeout <= 600 for _, timeout in timeouts[:3]), timeouts)
-        self.assertEqual([timeout for _, timeout in timeouts[3:]], [300, 300])
+        self.assertTrue(all(359 < timeout <= 360 for _, timeout in timeouts[:3]), timeouts)
+        self.assertEqual([timeout for _, timeout in timeouts[3:]], [90, 90])
         self.assertEqual(set(phases), set(scan.STAGE_TIMEOUTS))
         self.assertEqual(phases["harvest"]["error"], f"Stage exceeded {timeouts[2][1]:g} seconds; last verified records retained.")
         self.assertTrue(all(phases[name]['deferred'] for name in ('discovery','huggingface','harvest')))

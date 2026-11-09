@@ -8,6 +8,7 @@ import unittest
 
 sys.path.insert(0,str(Path(__file__).resolve().parents[1]/'scripts'))
 from build_site import build_site
+from site_fixture import shared_site
 from test_search_pages import page_origin
 
 
@@ -25,7 +26,7 @@ class HeadParser(HTMLParser):
 class SocialPreviewTests(unittest.TestCase):
     @classmethod
     def setUpClass(cls):
-        cls.temp=tempfile.TemporaryDirectory();cls.dest=build_site(cls.temp.name)
+        cls.temp=tempfile.TemporaryDirectory();cls.dest=shared_site()
     @classmethod
     def tearDownClass(cls):cls.temp.cleanup()
     def test_every_page_advertises_a_raster_preview_that_exists(self):

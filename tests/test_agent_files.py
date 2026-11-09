@@ -15,6 +15,7 @@ from jsonschema import Draft202012Validator
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / 'scripts'))
 from build_site import build_site
+from site_fixture import shared_site
 from data_hub import UNITS, byte_size
 from paper_library import library_pages, library_path, reviewed_papers
 from search_pages import KINDS, SITE, eligible, resource_path
@@ -27,7 +28,7 @@ API = ['resources', 'papers', 'categories', 'changes', 'candidates']
 class AgentFileTests(unittest.TestCase):
     @classmethod
     def setUpClass(cls):
-        cls.temp = tempfile.TemporaryDirectory(); cls.dest = build_site(cls.temp.name)
+        cls.temp = tempfile.TemporaryDirectory(); cls.dest = shared_site()
         cls.rows = [json.loads(line) for line in (ROOT / 'data/catalog.jsonl').read_text().splitlines() if line.strip()]
         cls.curated = [row for row in cls.rows if eligible(row)]
         cls.coverage = json.loads((ROOT / 'data/coverage.json').read_text())

@@ -34,8 +34,9 @@ def counts():
 
 
 # Phase caps never extend the single network-round deadline. Offline build/validation
-# retain separate time, leaving room for the workflow's remaining quality gate.
-STAGE_TIMEOUTS={'discovery':600,'huggingface':600,'recent_arxiv':600,'harvest':600,'github_candidates':220,'build':300,'validate':300}
+# retain separate time. The round plus both offline caps (540 s) and the untimed
+# bookkeeping fit the scan step's timeout in scan.yml.
+STAGE_TIMEOUTS={'discovery':360,'huggingface':360,'recent_arxiv':360,'harvest':360,'github_candidates':220,'build':90,'validate':90}
 NETWORK_STAGES=frozenset({'discovery','huggingface','recent_arxiv','harvest','github_candidates'})
 # Precise title terms miss methods whose interface setting appears only in the
 # abstract. Keep this a discovery query: every new hit still needs scope review.

@@ -1882,7 +1882,7 @@
             "evidence_url": "https://raw.githubusercontent.com/jylee425/b-moca/HEAD/asset/environments/config/environments_test.csv"
           }
         ],
-        "notes": "Current source inventory differs in grain from published experiment subsets: 131 definitions and 35/10 configuration rows are separate counts. Setup requires Android API 29, Appium, external app versions and generated AVD snapshots. No apps/snapshots were downloaded or run. Code Apache-2.0 does not establish data or app rights.",
+        "notes": "Current source inventory differs in grain from published experiment subsets: 131 definitions and 35/10 configuration rows are separate counts. Setup requires Android API 29, Appium, external app versions and generated AVD snapshots. No apps/snapshots were downloaded or run. Apache-2.0 covers the code.",
         "evidence_urls": [
           "https://raw.githubusercontent.com/jylee425/b-moca/HEAD/readme.md",
           "https://api.github.com/repos/jylee425/b-moca/git/trees/release/ver.3?recursive=1",
@@ -2646,7 +2646,7 @@
             "evidence_url": "https://raw.githubusercontent.com/HITsz-TMG/WindowsWorld/HEAD/README.md"
           }
         ],
-        "notes": "Interactive VMware/Windows environment. The public repository includes benchmark.json, task/evaluator code and monitoring support; the README refers VM import to Installation Guide.md. Checkpoint counts, application counts and task counts are different units. Apache-2.0 is recorded for repository code; Windows, apps and VM artifacts retain separate terms.",
+        "notes": "Interactive VMware/Windows environment. The public repository includes benchmark.json, task/evaluator code and monitoring support; the README refers VM import to Installation Guide.md. Checkpoint counts, application counts and task counts are different units. Apache-2.0 is recorded for repository code.",
         "evidence_urls": [
           "https://raw.githubusercontent.com/HITsz-TMG/WindowsWorld/HEAD/README.md",
           "https://api.github.com/repos/HITsz-TMG/WindowsWorld/git/trees/main?recursive=1"
@@ -4134,7 +4134,7 @@
             "evidence_url": "https://raw.githubusercontent.com/neulab/multiui/HEAD/README.md"
           }
         ],
-        "notes": "The README provides a rounded sample count. It does not establish a unique-screenshot inventory or a normalized split breakdown. Synthetic examples and publicly sourced web content have provenance and quality limits; data terms must be checked separately from repository code.",
+        "notes": "The README provides a rounded sample count. Unique screenshots and normalized split sizes are unrecorded. Synthetic examples and publicly sourced web content have provenance and quality limits; data terms must be checked separately from repository code.",
         "evidence_urls": [
           "https://raw.githubusercontent.com/neulab/multiui/HEAD/README.md"
         ]
@@ -4501,7 +4501,7 @@
         "retrieved_at": "2026-10-16T06:36:02Z"
       }
     ],
-    "notes": "The 800k figure describes training samples in the study. The repository code-license declaration does not establish terms for an unreleased dataset.",
+    "notes": "The 800k figure describes training samples in the study. The repository code-license declaration covers the repository code.",
     "task_classes": [
       "R02.07.01.02"
     ]
@@ -6081,7 +6081,7 @@
             "evidence_url": "https://huggingface.co/datasets/ServiceNow/ui-vision/raw/main/README.md"
           }
         ],
-        "notes": "This is an offline evaluation dataset. Application coverage and sample counts are different units. The inspected file-layout documentation describes grounding annotations and images; it does not establish a common split or complete action-trajectory inventory.",
+        "notes": "This is an offline evaluation dataset. Application coverage and sample counts are different units. The inspected file-layout documentation describes grounding annotations and images. A common split and complete action-trajectory inventory are unrecorded.",
         "evidence_urls": [
           "https://huggingface.co/datasets/ServiceNow/ui-vision/raw/main/README.md"
         ]
@@ -10684,7 +10684,7 @@
             "evidence_url": "https://raw.githubusercontent.com/tml-epfl/os-harm/HEAD/evaluation_examples/test_misbehavior.json"
           }
         ],
-        "notes": "README/paper reports 150 tasks, whereas retained misuse/injection/misbehavior lists contain 50/10/50 IDs. run.py expands injection vectors/goals, giving the released ID inventory and paper settings different grains. Judge agreement F1 values in the README measure agreement with human labels. Experiments use OSWorld desktop apps, with VMware documented as tested and screenshot/a11y/SOM observation choices. Code Apache-2.0 does not establish VM/app/data rights. Publisher asks that the benchmark not be used directly as agent training data.",
+        "notes": "README/paper reports 150 tasks, whereas retained misuse/injection/misbehavior lists contain 50/10/50 IDs. run.py expands injection vectors/goals, giving the released ID inventory and paper settings different grains. Judge agreement F1 values in the README measure agreement with human labels. Experiments use OSWorld desktop apps, with VMware documented as tested and screenshot/a11y/SOM observation choices. Apache-2.0 covers the code. Publisher asks that the benchmark not be used directly as agent training data.",
         "evidence_urls": [
           "https://raw.githubusercontent.com/tml-epfl/os-harm/HEAD/README.md",
           "https://raw.githubusercontent.com/tml-epfl/os-harm/HEAD/run.py",
@@ -24501,7 +24501,7 @@
     "verify_terms": [
       "WorkForceAgent-R1"
     ],
-    "notes": "The release contains WorkArena preprocessing and training source. The inspected root has no explicit project license; dependencies retain their own terms. The README discusses trained 7B/14B models; this entry is cataloged as a framework.",
+    "notes": "The release contains WorkArena preprocessing and training source. An explicit project license is unrecorded in the inspected root. The README discusses trained 7B/14B models; this entry is cataloged as a framework.",
     "evidence_urls": [
       "https://raw.githubusercontent.com/night-chen/WorkForceAgent-R1/HEAD/README.md"
     ],
@@ -24870,7 +24870,7 @@
     "verify_terms": [
       "Plan-and-Act Dataset"
     ],
-    "notes": "The public manifest exposes JSON/JSONL data for planner and actor roles, including train and validation variants. The card declares MIT. Its loading examples use a different Hub repository identifier and omit the data/ prefix for one file; the inspected xTRam1 manifest records the file layout. Third-party site content retains its own terms.",
+    "notes": "The public manifest exposes JSON/JSONL data for planner and actor roles, including train and validation variants. The card declares MIT. Its loading examples use a different Hub repository identifier and omit the data/ prefix for one file; the inspected xTRam1 manifest records the file layout.",
     "evidence_urls": [
       "https://huggingface.co/datasets/xTRam1/plan-and-act-data/raw/main/README.md"
     ],
@@ -25054,7 +25054,7 @@
     "verify_terms": [
       "AGUVIS collection stage 2"
     ],
-    "notes": "The manifest contains trajectory annotations and archives associated with mobile, desktop and web sources. The card declares Apache-2.0; underlying source content may retain separate terms. This stage has a different training purpose and files from the grounding release. No archive or training sample was downloaded.",
+    "notes": "The manifest contains trajectory annotations and archives associated with mobile, desktop and web sources. The card declares Apache-2.0. This stage has a different training purpose and files from the grounding release. No archive or training sample was downloaded.",
     "evidence_urls": [
       "https://huggingface.co/datasets/xlangai/aguvis-stage2/raw/main/README.md"
     ],
@@ -29143,7 +29143,7 @@
     "verify_terms": [
       "cogagent-9b-20241220"
     ],
-    "notes": "The former THUDM model URL resolves to zai-org. Six public safetensors shards are present. Weights use the custom CogAgent License, including a registration requirement for commercial use. The card cites the 2023 CogAgent paper as previous work and links a later technical report; no claim that the old paper documents this 2024 checkpoint is asserted.",
+    "notes": "The former THUDM model URL resolves to zai-org. Six public safetensors shards are present. Weights use the custom CogAgent License, including a registration requirement for commercial use. The card cites the 2023 CogAgent paper as previous work and links a later technical report for this 2024 checkpoint.",
     "evidence_urls": [
       "https://huggingface.co/zai-org/cogagent-9b-20241220/raw/main/README.md"
     ],
@@ -29440,7 +29440,7 @@
     "verify_terms": [
       "GUI-R1"
     ],
-    "notes": "The manifest contains two safetensors shards in GUI-R1-3B and four in GUI-R1-7B. Both are counted as one Hub resource. The model card declares MIT; this does not automatically apply to source training data or upstream base models.",
+    "notes": "The manifest contains two safetensors shards in GUI-R1-3B and four in GUI-R1-7B. Both are counted as one Hub resource. The model card declares MIT for the model.",
     "evidence_urls": [
       "https://huggingface.co/ritzzai/GUI-R1/raw/main/README.md"
     ],
@@ -34747,7 +34747,7 @@
     "verify_terms": [
       "agent-browser"
     ],
-    "notes": "The repository publishes a Rust-based CLI and platform-specific release binaries. The inspected release is v0.39.1. Apache-2.0 is declared for the code; Chrome and other external browser components retain separate terms. No package or browser was installed.",
+    "notes": "The repository publishes a Rust-based CLI and platform-specific release binaries. The inspected release is v0.39.1. Apache-2.0 is declared for the code. No package or browser was installed.",
     "evidence_urls": [
       "https://raw.githubusercontent.com/vercel-labs/agent-browser/HEAD/README.md"
     ],
@@ -35154,9 +35154,9 @@
           "declared": "AGPL-3.0",
           "url": "https://raw.githubusercontent.com/browseros-ai/BrowserOS/HEAD/LICENSE",
           "retrieved_at": "2026-10-17T04:00:59Z",
-          "basis": "Repository LICENSE and explicit README declaration; incorporated Chromium and other components retain their own terms."
+          "basis": "Repository LICENSE and explicit README declaration."
         },
-        "reason": "The repository explicitly identifies its code as AGPL-3.0; this declaration does not cover every incorporated third-party component.",
+        "reason": "The repository explicitly identifies its code as AGPL-3.0.",
         "evidence_urls": [
           "https://raw.githubusercontent.com/browseros-ai/BrowserOS/HEAD/LICENSE",
           "https://raw.githubusercontent.com/browseros-ai/BrowserOS/HEAD/README.md"
@@ -37718,7 +37718,7 @@
     "verify_terms": [
       "UI-S1-7B"
     ],
-    "notes": "The release contains train_1000.jsonl and images.parquet. The official README explicitly describes 1,000 released examples and calls the release only part of the training dataset. Apache-2.0 is declared by the dataset card; this is not the complete training corpus.",
+    "notes": "The release contains train_1000.jsonl and images.parquet. The official README explicitly describes 1,000 released examples and calls the release only part of the training dataset. Apache-2.0 is declared by the dataset card. The release contains part of the training corpus.",
     "evidence_urls": [
       "https://huggingface.co/datasets/mPLUG/UI_S1_dataset/raw/main/README.md"
     ],
@@ -41594,9 +41594,9 @@
           "declared": "mit",
           "url": "https://huggingface.co/datasets/BlitherBoom/AutoDroid-V2-Dataset/raw/main/README.md",
           "retrieved_at": "2026-10-17T09:15:33Z",
-          "basis": "Publisher dataset-card license declaration; does not establish permissions for model weights or third-party application content."
+          "basis": "Publisher dataset-card license declaration for the released data."
         },
-        "reason": "Publisher dataset-card license declaration; does not establish permissions for model weights or third-party application content.",
+        "reason": "Publisher dataset-card license declaration for the released data.",
         "evidence_urls": [
           "https://huggingface.co/datasets/BlitherBoom/AutoDroid-V2-Dataset/raw/main/README.md"
         ]
@@ -41751,9 +41751,9 @@
           "declared": "cc-by-4.0",
           "url": "https://zenodo.org/api/records/14094162",
           "retrieved_at": "2026-10-17T09:15:34Z",
-          "basis": "The linked Zenodo dataset release declares CC-BY-4.0; this does not assign a code license to the repository."
+          "basis": "The linked Zenodo dataset release declares CC-BY-4.0."
         },
-        "reason": "The linked Zenodo dataset release declares CC-BY-4.0; this does not assign a code license to the repository.",
+        "reason": "The linked Zenodo dataset release declares CC-BY-4.0.",
         "evidence_urls": [
           "https://zenodo.org/api/records/14094162"
         ]
@@ -41782,7 +41782,7 @@
     "verify_terms": [
       "ScreenSuite"
     ],
-    "notes": "The publisher states that the suite compares the underlying multimodal models. Public source includes benchmark adapters and registry code. Multi-step environments require Docker and KVM; constituent datasets, remote model services and OSWorld account-dependent tasks retain their own setup and terms. Apache-2.0 is scoped to this repository code.",
+    "notes": "The publisher states that the suite compares the underlying multimodal models. Public source includes benchmark adapters and registry code. Multi-step environments require Docker and KVM; constituent datasets, remote model services and OSWorld account-dependent tasks have separate setup and terms. Apache-2.0 is scoped to this repository code.",
     "evidence_urls": [
       "https://raw.githubusercontent.com/huggingface/screensuite/HEAD/README.md"
     ],
@@ -47234,7 +47234,7 @@
     "verify_terms": [
       "Workflow-Guided Exploration"
     ],
-    "notes": "The released repository includes training policies, experiment configuration and a MiniWoB sandbox extended for the 2018 paper. This is the WGE implementation, a separate project from the Farama MiniWoB++ benchmark and original OpenAI MiniWoB release. Its documented dependency is PyTorch 0.1.12. Stanford code declares Apache-2.0; bundled third-party browser tasks and externally downloaded demonstration/embedding data retain their own terms.",
+    "notes": "The released repository includes training policies, experiment configuration and a MiniWoB sandbox extended for the 2018 paper. This is the WGE implementation, a separate project from the Farama MiniWoB++ benchmark and original OpenAI MiniWoB release. Its documented dependency is PyTorch 0.1.12. Stanford code declares Apache-2.0.",
     "evidence_urls": [
       "https://raw.githubusercontent.com/stanfordnlp/wge/HEAD/README.md"
     ],
@@ -47920,9 +47920,9 @@
           "declared": "Apache-2.0",
           "url": "https://raw.githubusercontent.com/friedrichor/WebTestBench/HEAD/LICENSE",
           "retrieved_at": "2026-10-17T11:22:55Z",
-          "basis": "Repository source LICENSE; external tools and services retain their own licenses."
+          "basis": "Repository source LICENSE."
         },
-        "reason": "Repository source LICENSE; external tools and services retain their own licenses.",
+        "reason": "Repository source LICENSE.",
         "evidence_urls": [
           "https://raw.githubusercontent.com/friedrichor/WebTestBench/HEAD/LICENSE"
         ]
@@ -48286,9 +48286,9 @@
           "declared": "mit",
           "url": "https://huggingface.co/datasets/hkust-nlp/GUIMid/raw/main/README.md",
           "retrieved_at": "2026-10-17T11:23:07Z",
-          "basis": "Publisher dataset-card declaration for the released packaging; original source datasets retain their own terms."
+          "basis": "Publisher dataset-card declaration for the released packaging."
         },
-        "reason": "Publisher dataset-card declaration for the released packaging; original source datasets retain their own terms.",
+        "reason": "Publisher dataset-card declaration for the released packaging.",
         "evidence_urls": [
           "https://huggingface.co/datasets/hkust-nlp/GUIMid/raw/main/README.md"
         ]
@@ -48657,9 +48657,9 @@
           "declared": "GPL-3.0",
           "url": "https://raw.githubusercontent.com/AkimotoAyako/VisionTasker/HEAD/LICENSE",
           "retrieved_at": "2026-10-17T11:23:03Z",
-          "basis": "Repository GNU GPL version 3 license; pretrained models and linked data retain separate terms."
+          "basis": "Repository GNU GPL version 3 license."
         },
-        "reason": "Repository GNU GPL version 3 license; pretrained models and linked data retain separate terms.",
+        "reason": "Repository GNU GPL version 3 license.",
         "evidence_urls": [
           "https://raw.githubusercontent.com/AkimotoAyako/VisionTasker/HEAD/LICENSE"
         ]
@@ -52160,7 +52160,7 @@
     "reviewed_licenses": {
       "code": {
         "value": null,
-        "reason": "Apache-2.0 badge alone does not establish component-scoped source terms; the inspected non-truncated tree has no license file.",
+        "reason": "The inspected non-truncated tree has no license file; the README displays an Apache-2.0 badge.",
         "evidence_urls": [
           "https://raw.githubusercontent.com/IMNearth/CoAT/HEAD/README.md",
           "https://api.github.com/repos/IMNearth/CoAT/git/trees/main?recursive=1"
@@ -52536,7 +52536,7 @@
     "verify_terms": [
       "TongUI"
     ],
-    "notes": "The public tree includes training configs, preprocessing, inference and serving examples. The project still marks release of all experiment/evaluation scripts as work in progress. This entry covers the implementation and its 3B/7B/32B model-size variants. The inspected project tree has no root source license; linked frameworks, data and checkpoints retain their own terms.",
+    "notes": "The public tree includes training configs, preprocessing, inference and serving examples. The project still marks release of all experiment/evaluation scripts as work in progress. This entry covers the implementation and its 3B/7B/32B model-size variants. A root source license is unrecorded in the inspected project tree.",
     "evidence_urls": [
       "https://raw.githubusercontent.com/TongUI-agent/TongUI-agent/HEAD/README.md"
     ],
@@ -53743,9 +53743,9 @@
           "declared": "Apache-2.0",
           "url": "https://raw.githubusercontent.com/fclab-skku/MobileGPT/HEAD/LICENSE",
           "retrieved_at": "2026-10-17T12:34:10Z",
-          "basis": "Repository source license; linked benchmark data and external models retain separate terms."
+          "basis": "Repository source license."
         },
-        "reason": "Repository source license; linked benchmark data and external models retain separate terms.",
+        "reason": "Repository source license.",
         "evidence_urls": [
           "https://raw.githubusercontent.com/fclab-skku/MobileGPT/HEAD/LICENSE"
         ]
@@ -63172,9 +63172,9 @@
           "declared": "Apache-2.0",
           "url": "https://huggingface.co/datasets/sunblaze-ucb/AgentSynth/raw/9ec3f3139f9786e81aee14b7fff1eb487cc7e991/README.md",
           "retrieved_at": "2026-10-18T04:35:17Z",
-          "basis": "Publisher dataset-card declaration for this release; it does not establish rights to all upstream screenshots, applications or source content."
+          "basis": "Publisher dataset-card declaration for this release."
         },
-        "reason": "Publisher dataset-card declaration for this release; it does not establish rights to all upstream screenshots, applications or source content.",
+        "reason": "Publisher dataset-card declaration for this release.",
         "evidence_urls": [
           "https://huggingface.co/datasets/sunblaze-ucb/AgentSynth/raw/9ec3f3139f9786e81aee14b7fff1eb487cc7e991/README.md"
         ]
@@ -63665,9 +63665,9 @@
           "declared": "MIT",
           "url": "https://huggingface.co/datasets/henryhe0123/PC-Agent-E/raw/4f64c7b055154bed9ffea677aa86aeb51a01cb73/README.md",
           "retrieved_at": "2026-10-18T04:35:17Z",
-          "basis": "Publisher dataset-card declaration for this release; it does not establish rights to all upstream screenshots, applications or source content."
+          "basis": "Publisher dataset-card declaration for this release."
         },
-        "reason": "Publisher dataset-card declaration for this release; it does not establish rights to all upstream screenshots, applications or source content.",
+        "reason": "Publisher dataset-card declaration for this release.",
         "evidence_urls": [
           "https://huggingface.co/datasets/henryhe0123/PC-Agent-E/raw/4f64c7b055154bed9ffea677aa86aeb51a01cb73/README.md"
         ]
@@ -64150,9 +64150,9 @@
           "declared": "MIT",
           "url": "https://huggingface.co/datasets/CognitiveKernel/WebEvolver/raw/13f4f45b359e138a45b1c89bd4e913298c586ca9/README.md",
           "retrieved_at": "2026-10-18T04:35:17Z",
-          "basis": "Publisher dataset-card declaration for this release; it does not establish rights to all upstream screenshots, applications or source content."
+          "basis": "Publisher dataset-card declaration for this release."
         },
-        "reason": "Publisher dataset-card declaration for this release; it does not establish rights to all upstream screenshots, applications or source content.",
+        "reason": "Publisher dataset-card declaration for this release.",
         "evidence_urls": [
           "https://huggingface.co/datasets/CognitiveKernel/WebEvolver/raw/13f4f45b359e138a45b1c89bd4e913298c586ca9/README.md"
         ]
@@ -64358,7 +64358,7 @@
     "reviewed_licenses": {
       "code": {
         "value": null,
-        "reason": "No project-wide code license is established by the inspected README/API/tree; third-party code presence does not establish a license for this package.",
+        "reason": "A project-wide code license is unrecorded in the inspected README/API/tree.",
         "evidence_urls": [
           "https://raw.githubusercontent.com/sqzhang-lazy/D-PoT/HEAD/README.md"
         ]
@@ -64460,9 +64460,9 @@
           "declared": "AGPL-3.0",
           "url": "https://raw.githubusercontent.com/caap-agent/caap-agent/HEAD/LICENSE",
           "retrieved_at": "2026-10-18T04:35:20Z",
-          "basis": "Reviewed repository license declaration for code; third-party dependencies, data, weights and executable environment images are separate. The inspected text does not establish -only versus -or-later for the project."
+          "basis": "Reviewed repository license declaration for code; third-party dependencies, data, weights and executable environment images are separate. The project’s -only versus -or-later license choice is unrecorded."
         },
-        "reason": "Reviewed repository license declaration for code; third-party dependencies, data, weights and executable environment images are separate. The inspected text does not establish -only versus -or-later for the project.",
+        "reason": "Reviewed repository license declaration for code; third-party dependencies, data, weights and executable environment images are separate. The project’s -only versus -or-later license choice is unrecorded.",
         "evidence_urls": [
           "https://raw.githubusercontent.com/caap-agent/caap-agent/HEAD/LICENSE"
         ]
@@ -64675,9 +64675,9 @@
           "declared": "MIT",
           "url": "https://huggingface.co/datasets/GD-ML/AndroidCode/raw/af316a6be79bbe08c4fc09ea588b5f80f177ed25/README.md",
           "retrieved_at": "2026-10-18T04:35:17Z",
-          "basis": "Publisher dataset-card declaration for this release; it does not establish rights to all upstream screenshots, applications or source content."
+          "basis": "Publisher dataset-card declaration for this release."
         },
-        "reason": "Publisher dataset-card declaration for this release; it does not establish rights to all upstream screenshots, applications or source content.",
+        "reason": "Publisher dataset-card declaration for this release.",
         "evidence_urls": [
           "https://huggingface.co/datasets/GD-ML/AndroidCode/raw/af316a6be79bbe08c4fc09ea588b5f80f177ed25/README.md"
         ]
@@ -64723,7 +64723,7 @@
       "relations",
       "details.benchmark_protocol"
     ],
-    "notes": "Public code includes app/task/configuration and agent-launching implementations. README distinguishes moving main from v1.0-paper and says even that tag differs at the byte level from the published runs. CC-BY-NC-4.0 is the repository’s declared code license; third-party WebShop, map and icon content retain separate terms. No commercial-use permission or fixed downloadable task total is inferred.",
+    "notes": "Public code includes app/task/configuration and agent-launching implementations. README distinguishes moving main from v1.0-paper and says even that tag differs at the byte level from the published runs. CC-BY-NC-4.0 is the repository’s declared code license. No commercial-use permission or fixed downloadable task total is inferred.",
     "details": {
       "repository_url": "https://github.com/facebookresearch/OpenApps",
       "repository_tree_sha": "6e6782794433c60468d65ac75bc3f03c56007f8c",
@@ -64992,9 +64992,9 @@
           "declared": "CC-BY-4.0",
           "url": "https://huggingface.co/datasets/X-LANCE/WebSRC_v1.0/raw/7aa0bc6efc7ef43f68c192e2091108541acbaf1a/README.md",
           "retrieved_at": "2026-10-18T04:35:16Z",
-          "basis": "Publisher dataset-card declaration for this release; it does not establish rights to all upstream screenshots, applications or source content."
+          "basis": "Publisher dataset-card declaration for this release."
         },
-        "reason": "Publisher dataset-card declaration for this release; it does not establish rights to all upstream screenshots, applications or source content.",
+        "reason": "Publisher dataset-card declaration for this release.",
         "evidence_urls": [
           "https://huggingface.co/datasets/X-LANCE/WebSRC_v1.0/raw/7aa0bc6efc7ef43f68c192e2091108541acbaf1a/README.md"
         ]
@@ -65139,7 +65139,7 @@
       "notes",
       "relations"
     ],
-    "notes": "The inspected README supports Android only, with experiments on Samsung Galaxy A15; macOS/Linux instructions describe host-machine setup. Agent code, launch scripts and benchmark definitions are present. The root MIT code license does not establish terms for the separately published task dataset or external models.",
+    "notes": "The inspected README supports Android only, with experiments on Samsung Galaxy A15; macOS/Linux instructions describe host-machine setup. Agent code, launch scripts and benchmark definitions are present. The root MIT license covers the repository code.",
     "details": {
       "repository_url": "https://github.com/X-PLUG/MobileAgent",
       "repository_tree_sha": "11cea575561fb7800b5fb6b6cafa56f7a91de11f",
@@ -65336,7 +65336,7 @@
     "reviewed_licenses": {
       "data": {
         "value": null,
-        "reason": "No data-license declaration is present in the inspected task card; companion code MIT does not establish a dataset grant.",
+        "reason": "A data-license declaration is unrecorded in the inspected task card.",
         "evidence_urls": [
           "https://huggingface.co/datasets/mikewang/mobile_eval_e/raw/b8eca82988ed8d4f9dec01eaa9d51abf4b35aa83/README.md"
         ]
@@ -65621,7 +65621,7 @@
     "editorial_reviewed": true,
     "reviewed_sha256": "cb3d2329571a80b6edeab98c04f8b63c7f4e976929788d6a8283238b0b7fdadc",
     "reviewed_at": "2026-10-18T13:13:38Z",
-    "notes": "The retained README marks release of the full data-generation pipeline, training scripts, and model checkpoints as pending. Linked video content and datasets remain subject to their original licenses; the repository code license does not establish a blanket data or weights license.",
+    "notes": "The retained README marks release of the full data-generation pipeline, training scripts, and model checkpoints as pending. The repository code license covers the repository code.",
     "primary_supports": [
       "name",
       "kind",
@@ -66896,7 +66896,7 @@
           "declared": "MIT",
           "url": "https://raw.githubusercontent.com/ghadinehme/VideoCAD/2d69eeaf0ac44210c76dcab2d08b4d4610be236c/LICENSE",
           "retrieved_at": "2026-10-18T12:03:24.765415+00:00",
-          "basis": "The author repository at the inspected commit contains the standard MIT license. This declaration does not establish terms for externally hosted data or weights."
+          "basis": "The author repository at the inspected commit contains the standard MIT license."
         },
         "reason": "The author repository LICENSE declares MIT for repository code; data, weights and document rights have separate scopes.",
         "evidence_urls": [
@@ -68548,7 +68548,7 @@
           "retrieved_at": "2026-10-20T11:51:41.499735Z",
           "basis": "Complete MIT license text in the repository root at the inspected commit; repository code only."
         },
-        "reason": "The inspected root LICENSE contains complete MIT terms for repository software. The methodology explicitly leaves redistribution permission for captured third-party practice-site pages unresolved; code MIT is not a blanket snapshot/data license.",
+        "reason": "The inspected root LICENSE contains complete MIT terms for repository software. Redistribution permission for captured third-party practice-site pages is unresolved in the methodology.",
         "evidence_urls": [
           "https://raw.githubusercontent.com/charlypoly/web-context-bench-python/58d604bfaaac60ad42f02013f53f9fb301c1dcda/LICENSE"
         ]
@@ -69657,7 +69657,7 @@
       "observability"
     ],
     "scope": "core",
-    "notes": "BrowserART tools return accessibility trees, including the screenshot-named refresh. Qualification is scenario-specific: the project documents browser-judge and desktop-scoring limits; its opt-in exact-send oracle covers one derived local task and tests the local send condition. Runtime profiles and scoring policies are separate. Apache-2.0 is the top-level Orbit code declaration; third-party components and external data/environments retain separate terms. No installation, release archive or live evaluation was tested.",
+    "notes": "BrowserART tools return accessibility trees, including the screenshot-named refresh. Qualification is scenario-specific: the project documents browser-judge and desktop-scoring limits; its opt-in exact-send oracle covers one derived local task and tests the local send condition. Runtime profiles and scoring policies are separate. Apache-2.0 is the top-level Orbit code declaration. No installation, release archive or live evaluation was tested.",
     "verify_terms": [
       "Multi-agent evaluations built on",
       "Version 1.0.3"
@@ -69777,7 +69777,7 @@
           "declared": "Apache-2.0",
           "url": "https://raw.githubusercontent.com/wlanderson0/orbit/588b3035f92450ec4f0496bb8b629daa205e84c7/LICENSE",
           "retrieved_at": "2026-10-20T13:41:29.036076+00:00",
-          "basis": "Complete root Apache License 2.0 text for Orbit-original code. NOTICE preserves separate third-party component terms, including MIT-vendored modules; this is not a uniform license for the entire dependency/data bundle."
+          "basis": "Complete root Apache License 2.0 text for Orbit-original code. NOTICE records separate third-party component terms, including MIT-vendored modules."
         },
         "reason": "Record only the publisher's top-level Apache-2.0 declaration for Orbit-original code. NOTICE explicitly preserves per-component terms; neither bundled or external data nor model weights inherit this declaration. Upstream BrowserART licensing declarations remain in conflict; Orbit’s account leaves their resolution open.",
         "evidence_urls": [
@@ -70020,9 +70020,9 @@
           "declared": "CC-BY-4.0",
           "url": "https://arxiv.org/html/2610.18579v1",
           "retrieved_at": "2026-10-20T15:08:55Z",
-          "basis": "The retained version-specific arXiv HTML infobox explicitly labels this paper License: CC BY 4.0. This document declaration does not establish code, training-data or model-weight licenses."
+          "basis": "The retained version-specific arXiv HTML infobox explicitly labels this paper License: CC BY 4.0."
         },
-        "reason": "The retained version-specific arXiv HTML infobox explicitly labels this paper License: CC BY 4.0. This document declaration does not establish code, training-data or model-weight licenses.",
+        "reason": "The retained version-specific arXiv HTML infobox explicitly labels this paper License: CC BY 4.0.",
         "evidence_urls": [
           "https://arxiv.org/html/2610.18579v1"
         ]
@@ -70075,9 +70075,9 @@
           "declared": "CC-BY-4.0",
           "url": "https://arxiv.org/html/2610.02542v1",
           "retrieved_at": "2026-10-20T15:08:56Z",
-          "basis": "The retained version-specific arXiv HTML infobox explicitly labels this paper License: CC BY 4.0. This document declaration does not establish code, training-data or model-weight licenses."
+          "basis": "The retained version-specific arXiv HTML infobox explicitly labels this paper License: CC BY 4.0."
         },
-        "reason": "The retained version-specific arXiv HTML infobox explicitly labels this paper License: CC BY 4.0. This document declaration does not establish code, training-data or model-weight licenses.",
+        "reason": "The retained version-specific arXiv HTML infobox explicitly labels this paper License: CC BY 4.0.",
         "evidence_urls": [
           "https://arxiv.org/html/2610.02542v1"
         ]
@@ -70229,7 +70229,7 @@
           "retrieved_at": "2026-10-20T15:43:20.402537Z",
           "basis": "The exact-v1 arXiv HTML infobox (#license-tr) declares License: CC BY 4.0 for this paper. This declaration is document-only."
         },
-        "reason": "Record the paper-specific arXiv document declaration; it does not establish code, data or model-weight permissions.",
+        "reason": "The paper has an arXiv document declaration.",
         "evidence_urls": [
           "https://arxiv.org/html/2609.29892v1"
         ]
@@ -135975,7 +135975,7 @@
     "documented_by": [
       "2005.03776"
     ],
-    "notes": "Scoped to the seq2act directory of the google-research monorepo. The README says AndroidHowTo and PixelHelp were re-created from public sources and give slightly different results than the paper; the data are generated or downloaded separately, and a pre-trained end-to-end grounding checkpoint is linked from Cloud Storage. The monorepo's Apache-2.0 LICENSE is recorded for code only and does not establish terms for the datasets or the checkpoint. github.com/deepneuralmachine/seq2act-tensorflow is an unofficial 2020 copy of this directory.",
+    "notes": "Scoped to the seq2act directory of the google-research monorepo. The README says AndroidHowTo and PixelHelp were re-created from public sources and give slightly different results than the paper; the data are generated or downloaded separately, and a pre-trained end-to-end grounding checkpoint is linked from Cloud Storage. The monorepo's Apache-2.0 LICENSE covers code. github.com/deepneuralmachine/seq2act-tensorflow is an unofficial 2020 copy of this directory.",
     "primary_supports": [
       "name",
       "kind",
@@ -137638,7 +137638,7 @@
     "evidence_urls": [
       "https://huggingface.co/vocaela/KV-Ground-8B-BaseGuiOwl1.5-0315/raw/main/README.md"
     ],
-    "notes": "The Hub repository holds four safetensors shards in the Qwen3-VL architecture inherited from its base. The card, by Kingsware and Vocaela AI, declares CC BY-NC-SA 4.0 for this checkpoint (non-commercial, share-alike). The base model mPLUG/GUI-Owl-1.5-8B-Instruct is not an active catalog record, so no variant relation is recorded. Card scores (73.2 on ScreenSpot-Pro without zoom-in, 80.5 with it) are publisher measurements with the publisher's own prompt setup; the card has no training-data release. Smaller 4B siblings from the same publisher are separate Hub repositories.",
+    "notes": "The Hub repository holds four safetensors shards in the Qwen3-VL architecture inherited from its base. The card, by Kingsware and Vocaela AI, declares CC BY-NC-SA 4.0 for this checkpoint (non-commercial, share-alike). The base model mPLUG/GUI-Owl-1.5-8B-Instruct has no active catalog record, so no variant relation is recorded. Card scores (73.2 on ScreenSpot-Pro without zoom-in, 80.5 with it) are publisher measurements with the publisher's own prompt setup; the card has no training-data release. Smaller 4B siblings from the same publisher are separate Hub repositories.",
     "details": {
       "hub_id": "vocaela/KV-Ground-8B-BaseGuiOwl1.5-0315",
       "hub_revision": "a3c224bdd97ed6de15baef3524eb590c480e0d78",
@@ -138424,7 +138424,7 @@
     "documented_by": [
       "2501.12326"
     ],
-    "notes": "Hub API at revision f366a1db lists two F32 safetensors shards (about 2.44B parameters) in the Qwen2VLForConditionalGeneration architecture; access is open. The card declares Apache-2.0 for the checkpoint. The card's sibling links use the earlier bytedance-research namespace. The card's online agent table has no 2B row, and its sibling links also name a GGUF conversion that this record does not cover.",
+    "notes": "Hub API at revision f366a1db lists two F32 safetensors shards (about 2.44B parameters) in the Qwen2VLForConditionalGeneration architecture; access is open. The card declares Apache-2.0 for the checkpoint. The card's sibling links use the earlier bytedance-research namespace. The card’s online agent table has no 2B row; its sibling links also name a separate GGUF conversion.",
     "details": {
       "artifact_type": "model-checkpoint",
       "hub_id": "ByteDance-Seed/UI-TARS-2B-SFT",
@@ -139458,7 +139458,7 @@
             "evidence_url": "https://huggingface.co/api/datasets/xlangai/ubuntu_osworld_file_cache"
           }
         ],
-        "notes": "Counts come from the Hub file manifest. A task folder is not an OSWorld task definition, and not every OSWorld task has a folder here.",
+        "notes": "Counts come from the Hub file manifest. Task folder and OSWorld task-definition counts use different units; OSWorld tasks have partial folder coverage here.",
         "evidence_urls": [
           "https://huggingface.co/api/datasets/xlangai/ubuntu_osworld_file_cache",
           "https://huggingface.co/datasets/xlangai/ubuntu_osworld_file_cache/raw/1e112283c4ecb08d6fed8069bca7de74fa2f12aa/README.md"
@@ -139537,7 +139537,7 @@
         "evidence_url": "https://raw.githubusercontent.com/xlang-ai/OSWorld-V2/d9953673daf55381237e058fd9388cc2d74c5538/README.md"
       }
     ],
-    "notes": "The Hub API at revision 0a1aadad reports gated 'auto' (access is approved automatically after a logged-in request) and 147 files: 108 task_*.py classes, 34 task implementation notes, a task-hash manifest and the card. The card and files sit behind the gate; the description comes from the OSWorld-V2 README, which links this dataset as its data and downloads it into evaluation_examples/task_class. The README pins task, asset and website snapshots per benchmark release (osworld-v2.1 recommended, plus osworld-v2-2026.08.08 and osworld-v2-2026.06.24); main-branch file counts are distinct from release task counts. Task assets are in the separate gated xlangai/osworld_v2_assets_gated dataset and anonymous runtime assets in xlangai/osworld_v2_assets; neither is covered here. The code repository github.com/xlang-ai/OSWorld-V2 is not an active record, so no component relation is recorded. The card metadata declares Apache-2.0.",
+    "notes": "The Hub API at revision 0a1aadad reports gated 'auto' (access is approved automatically after a logged-in request) and 147 files: 108 task_*.py classes, 34 task implementation notes, a task-hash manifest and the card. The card and files sit behind the gate; the description comes from the OSWorld-V2 README, which links this dataset as its data and downloads it into evaluation_examples/task_class. The README pins task, asset and website snapshots per benchmark release (osworld-v2.1 recommended, plus osworld-v2-2026.08.08 and osworld-v2-2026.06.24); main-branch file counts are distinct from release task counts. Task assets are in the separate gated xlangai/osworld_v2_assets_gated dataset and anonymous runtime assets in xlangai/osworld_v2_assets; neither is covered here. The code repository github.com/xlang-ai/OSWorld-V2 has no active catalog record, so no component relation is recorded. The card metadata declares Apache-2.0.",
     "details": {
       "hub_revision": "0a1aadad95aa79b00b3783e717d865089ab06e26",
       "repository_url": "https://github.com/xlang-ai/OSWorld-V2",
@@ -141876,7 +141876,7 @@
     "reviewed_licenses": {
       "data": {
         "value": null,
-        "reason": "No data-license declaration is readable: the card is behind the access gate and the Hub API has no card metadata. The OSWorld-V2 code license does not establish terms for these runs, screenshots or third-party model outputs.",
+        "reason": "No data-license declaration is readable: the card is behind the access gate and the Hub API has no card metadata.",
         "evidence_urls": [
           "https://huggingface.co/api/datasets/xlangai/osworld2.0-trajectory"
         ]
@@ -142752,7 +142752,7 @@
       "details.repository_url",
       "details.dataset_profile"
     ],
-    "notes": "The main branch holds the v2 release, which the card describes as using leaf-element annotations, stricter quality filtering and varied viewport resolutions; the first release stays on the repository's v1 branch, outside this record. Labels come from DOM extraction refined by Qwen3-VL-8B-Instruct and VLM-as-a-judge filtering. CC-BY-4.0 is the card's data declaration and does not establish rights to the crawled websites' content.",
+    "notes": "The main branch holds the v2 release, which the card describes as using leaf-element annotations, stricter quality filtering and varied viewport resolutions; the first release stays on the repository's v1 branch, outside this record. Labels come from DOM extraction refined by Qwen3-VL-8B-Instruct and VLM-as-a-judge filtering. CC-BY-4.0 is the card's data declaration.",
     "details": {
       "hub_id": "docling-project/screenparse",
       "hub_revision": "bc0113f94e262ac39bf881c60547a09b5b4e4462",
@@ -143393,7 +143393,7 @@
       "licenses.data",
       "details.dataset_profile"
     ],
-    "notes": "The publisher's cleaned v2 release is a separate Hub repository (webagentlab/webchain) whose card calls this repository the original release with the least-processed artifacts and earlier high- and low-level formulations; v2 reports different counts after cleaning. Here the image and full-page screenshot folders are split ZIP sets, and the card says full-page screenshots cover only some steps. Rationales come from synthetic generation. CC-BY-4.0 is the card's data declaration and does not establish rights to the captured websites' content.",
+    "notes": "The publisher's cleaned v2 release is a separate Hub repository (webagentlab/webchain) whose card calls this repository the original release with the least-processed artifacts and earlier high- and low-level formulations; v2 reports different counts after cleaning. Here the image and full-page screenshot folders are split ZIP sets, and the card says full-page screenshots cover only some steps. Rationales come from synthetic generation. CC-BY-4.0 is the card's data declaration.",
     "details": {
       "hub_id": "webagentlab/webchain-legacy",
       "hub_revision": "bd5699076abec17010963ca6a7c66ea7c5fa01ff",
@@ -144301,7 +144301,7 @@
           "training"
         ],
         "counts": [],
-        "notes": "inp.json (767,769,533 bytes) and ten image archive parts (208,677,206,554 bytes in total) were listed through the Hub API but not downloaded, so no example count is given; the Hub size band is not a sample count. The filtering step and its OmniParser IoU criterion come from the card and the GTA1 preprocessing code; the card notes that the filter can occasionally remove correct samples and puts such cases below 3% of the data.",
+        "notes": "The Hub API lists inp.json (767,769,533 bytes) and ten image archive parts (208,677,206,554 bytes in total); an example count is unrecorded. The filtering step and its OmniParser IoU criterion come from the card and the GTA1 preprocessing code; the card notes that the filter can occasionally remove correct samples and puts such cases below 3% of the data.",
         "evidence_urls": [
           "https://huggingface.co/datasets/HelloKKMe/grounding_dataset/raw/5c0836a55b4000d8dbf431bbe10c80d2f0d42fb1/README.md",
           "https://huggingface.co/api/datasets/HelloKKMe/grounding_dataset/revision/5c0836a55b4000d8dbf431bbe10c80d2f0d42fb1",
@@ -144622,7 +144622,7 @@
       "licenses.data",
       "details.dataset_profile"
     ],
-    "notes": "The UI-MOPD paper builds Uni-GUI from self-collected desktop and mobile trajectories plus cleaned OpenCUA and OpenMobile trajectories; this repository is the self-collected mobile part (the paper's composition table rounds it to about 1K trajectories and 17K steps, the card reports about 14K steps). Per the paper, teacher models produced the rollouts, an automatic judge kept only successful ones, and reasoning traces were rewritten into one format. The card says only 'mobile'; Android is inferred from the adb commands in its step records and the paper's use of AndroidWorld and MobileWorld environments for mobile queries. Apache-2.0 is the card's declaration and does not cover third-party app content in screenshots.",
+    "notes": "The UI-MOPD paper builds Uni-GUI from self-collected desktop and mobile trajectories plus cleaned OpenCUA and OpenMobile trajectories; this repository is the self-collected mobile part (the paper's composition table rounds it to about 1K trajectories and 17K steps, the card reports about 14K steps). Per the paper, teacher models produced the rollouts, an automatic judge kept only successful ones, and reasoning traces were rewritten into one format. The card says only 'mobile'; Android is inferred from the adb commands in its step records and the paper's use of AndroidWorld and MobileWorld environments for mobile queries. Apache-2.0 is the card's declaration for the data.",
     "details": {
       "hub_id": "UI-MOPD/Uni-GUI-Mobile",
       "hub_revision": "45244387a3c284810894bc2be974b28014dcf838",
@@ -144879,7 +144879,7 @@
     "aliases": [
       "Open Surfer-H"
     ],
-    "notes": "Archived on GitHub, and the README marks it deprecated in favour of H Company's hosted Models API and Agent API and the hai-agents clients. The loop keeps the last three screenshots by default for the navigation step, which chooses click_element, write_element, scroll, go_back, refresh, wait, restart or answer; click and write targets are named elements that a localizer model (Holo1 or the structured Holo1.5 path) turns into viewport coordinates for Selenium ActionChains. Models are reached through OpenAI-compatible endpoints: H Company's hosted API, a local vLLM server, or a SageMaker deployment; one script uses GPT-4.1 as validator. A FastAPI agent_server.py and a Next.js frontend stream runs to a browser UI. Root LICENSE is the BSD 3-Clause text with an H Company copyright and does not cover the Holo weights.",
+    "notes": "Archived on GitHub, and the README marks it deprecated in favour of H Company's hosted Models API and Agent API and the hai-agents clients. The loop keeps the last three screenshots by default for the navigation step, which chooses click_element, write_element, scroll, go_back, refresh, wait, restart or answer; click and write targets are named elements that a localizer model (Holo1 or the structured Holo1.5 path) turns into viewport coordinates for Selenium ActionChains. Models are reached through OpenAI-compatible endpoints: H Company's hosted API, a local vLLM server, or a SageMaker deployment; one script uses GPT-4.1 as validator. A FastAPI agent_server.py and a Next.js frontend stream runs to a browser UI. Root LICENSE is the BSD 3-Clause text with an H Company copyright, covering the repository code.",
     "evidence_urls": [
       "https://raw.githubusercontent.com/hcompai/surfer-h-cli/HEAD/README.md"
     ],
@@ -145129,9 +145129,9 @@
           "declared": "Apache-2.0",
           "url": "https://huggingface.co/datasets/GUI-Libra/GUI-Libra-81K-SFT/raw/05bb2c5f7e81de38f3d7826739db46913dd08a23/README.md",
           "retrieved_at": "2026-10-18T12:32:45Z",
-          "basis": "Publisher dataset-card declaration for this release; it does not establish rights to the upstream screenshots and source datasets it repackages."
+          "basis": "Publisher dataset-card declaration for this release."
         },
-        "reason": "Publisher dataset-card declaration for this release; it does not establish rights to the upstream screenshots and source datasets it repackages.",
+        "reason": "Publisher dataset-card declaration for this release.",
         "evidence_urls": [
           "https://huggingface.co/datasets/GUI-Libra/GUI-Libra-81K-SFT/raw/05bb2c5f7e81de38f3d7826739db46913dd08a23/README.md"
         ]
@@ -145178,7 +145178,7 @@
       "details.repository_url",
       "details.dataset_profile"
     ],
-    "notes": "Released by the web-arena-x organization. The card cites a project page (webarena.dev/webarena-infinity); the environment-generation pipeline is the separate repository github.com/web-arena-x/webarena-infinity. Only trajectories that passed the programmatic state checks in a three-repetition final run are included; the sample contains successful trajectories. In the sampled history files, Gemini 2.5 Flash (Browser Use harness) acts on indexed DOM elements, while Kimi K2.5 and Qwen 2.5 VL Plus trajectories store clicks as absolute pixel coordinates next to the model's raw output. MIT is the card's data declaration and does not establish rights to the products the environments are modeled on.",
+    "notes": "Released by the web-arena-x organization. The card cites a project page (webarena.dev/webarena-infinity); the environment-generation pipeline is the separate repository github.com/web-arena-x/webarena-infinity. Only trajectories that passed the programmatic state checks in a three-repetition final run are included; the sample contains successful trajectories. In the sampled history files, Gemini 2.5 Flash (Browser Use harness) acts on indexed DOM elements, while Kimi K2.5 and Qwen 2.5 VL Plus trajectories store clicks as absolute pixel coordinates next to the model's raw output. MIT is the card's data declaration.",
     "details": {
       "hub_id": "webarena-x/webarena-infinity-trajectories",
       "hub_revision": "73cf7f57a6ff61c95722a23bffdd9c1de4069bfe",
@@ -146028,7 +146028,7 @@
       "licenses.data",
       "details.dataset_profile"
     ],
-    "notes": "The card calls this the cleaned, training-ready release and points to the publisher's separate original release (Hub repository webagentlab/webchain-legacy) for raw JSON records, split screenshot archives and the earlier high- and low-level formulations. Its counts (31,675 trajectories, 317,682 steps) are after cleaning; the paper's 31,725 trajectories and 317,993 steps describe the corpus before it. Annotators executed tasks on live websites; tasks were synthesized from site schemas and reasoning text was added in post-processing. CC-BY-4.0 is the card's data declaration and does not establish rights to the captured websites' content.",
+    "notes": "The card calls this the cleaned, training-ready release and points to the publisher's separate original release (Hub repository webagentlab/webchain-legacy) for raw JSON records, split screenshot archives and the earlier high- and low-level formulations. Its counts (31,675 trajectories, 317,682 steps) are after cleaning; the paper's 31,725 trajectories and 317,993 steps describe the corpus before it. Annotators executed tasks on live websites; tasks were synthesized from site schemas and reasoning text was added in post-processing. CC-BY-4.0 is the card's data declaration.",
     "details": {
       "hub_id": "webagentlab/webchain",
       "hub_revision": "59ab57fea3d6270c260b6603418afb93dee8c1ce",
@@ -146294,7 +146294,7 @@
       "licenses.data",
       "details.dataset_profile"
     ],
-    "notes": "At revision 5d6845b0 a paged listing of the Hub tree gives 51,175 PNG screenshots under images/ and 51,175 JSON annotation files with the same hashes under data/, in 87 application folders. The project's GitHub README reports 56K screenshots and about 3.56M element annotations, so the Hub file count and the reported screenshot count differ. The card says categories are approximate and present only for some elements. The repository root also holds an instruction_tuning.tar.gz archive (about 202 MB). The card names Windows, macOS and Linux for the applications but does not label each screenshot's operating system. MIT is the card's data declaration and does not establish rights to the captured applications' content.",
+    "notes": "At revision 5d6845b0 a paged listing of the Hub tree gives 51,175 PNG screenshots under images/ and 51,175 JSON annotation files with the same hashes under data/, in 87 application folders. The project's GitHub README reports 56K screenshots and about 3.56M element annotations, so the Hub file count and the reported screenshot count differ. The card says categories are approximate and present only for some elements. The repository root also holds an instruction_tuning.tar.gz archive (about 202 MB). The card names Windows, macOS and Linux for the applications but does not label each screenshot's operating system. MIT is the card's data declaration.",
     "details": {
       "hub_id": "ServiceNow/GroundCUA",
       "hub_revision": "5d6845b0116029d46ec762e734701c5b8ce207c3",
@@ -146526,9 +146526,9 @@
           "declared": "Apache-2.0",
           "url": "https://huggingface.co/datasets/Voxel51/FiftyOne-GUI-Grounding-Train/raw/ec67c2bfce4f6a9c9fcc52ce455c5b7a783dc812/README.md",
           "retrieved_at": "2026-10-18T15:34:01Z",
-          "basis": "Publisher dataset-card declaration for this release; it does not establish rights to the third-party applications and websites shown in the screenshots."
+          "basis": "Publisher dataset-card declaration for this release."
         },
-        "reason": "Publisher dataset-card declaration for this release; it does not establish rights to the third-party applications and websites shown in the screenshots.",
+        "reason": "Publisher dataset-card declaration for this release.",
         "evidence_urls": [
           "https://huggingface.co/datasets/Voxel51/FiftyOne-GUI-Grounding-Train/raw/ec67c2bfce4f6a9c9fcc52ce455c5b7a783dc812/README.md"
         ]
@@ -146989,7 +146989,7 @@
       "details.repository_url",
       "details.dataset_profile"
     ],
-    "notes": "At revision 6ecc530d raw_data/ holds one ZIP archive per application, 87 in total and about 26.1 GB. The card describes each archive as task folders with an action_log.json (instruction, platform and timestamped actions) and a 1920x1080 MP4 recording with its metadata; each action carries a groundcua_id that the card says identifies the matching annotated GroundCUA screenshot. Frame extraction into trajectories and LLM-written chain-of-thought steps come from a pipeline in the GroundCUA GitHub repository; this release holds raw recordings and logs as source material. The card names no operating system. Its license section links a LICENSE file that the repository does not contain; MIT is the card's metadata declaration and does not establish rights to the recorded applications' content. Task, hour and frame figures are publisher-reported.",
+    "notes": "At revision 6ecc530d raw_data/ holds one ZIP archive per application, 87 in total and about 26.1 GB. The card describes each archive as task folders with an action_log.json (instruction, platform and timestamped actions) and a 1920x1080 MP4 recording with its metadata; each action carries a groundcua_id that the card says identifies the matching annotated GroundCUA screenshot. Frame extraction into trajectories and LLM-written chain-of-thought steps come from a pipeline in the GroundCUA GitHub repository; this release holds raw recordings and logs as source material. The card names no operating system. The card's metadata declares MIT; its linked LICENSE file is absent from the repository. Task, hour and frame figures are publisher-reported.",
     "details": {
       "hub_id": "ServiceNow/VideoCUA",
       "hub_revision": "6ecc530df848f916bf0d195c66823ef8363abb93",
@@ -147231,9 +147231,9 @@
           "declared": "MIT",
           "url": "https://huggingface.co/datasets/mlfoundations/gelato-osworld-agent-trajectories/raw/b9495a8eca361b16d564e62cc0041ed3aecef618/README.md",
           "retrieved_at": "2026-10-18T15:36:09Z",
-          "basis": "Dataset-card metadata declaration (license: mit) for this release; the card has no other text, and the declaration does not establish rights to the applications or content shown in the screenshots."
+          "basis": "Dataset-card metadata declaration (license: mit) for this release; the card contains only that metadata."
         },
-        "reason": "Dataset-card metadata declaration (license: mit) for this release; the card has no other text, and the declaration does not establish rights to the applications or content shown in the screenshots.",
+        "reason": "Dataset-card metadata declaration (license: mit) for this release; the card contains only that metadata.",
         "evidence_urls": [
           "https://huggingface.co/datasets/mlfoundations/gelato-osworld-agent-trajectories/raw/b9495a8eca361b16d564e62cc0041ed3aecef618/README.md"
         ]
@@ -147400,9 +147400,9 @@
           "declared": "CC-BY-NC-4.0",
           "url": "https://huggingface.co/datasets/ShaofantuoshuzhengzhiSha/GUIGuard-Bench/raw/c2b5ca415cd854452585260b9eaa74699042d920/README.md",
           "retrieved_at": "2026-10-18T15:37:19Z",
-          "basis": "Publisher dataset-card declaration for this release; it does not establish rights to the applications, websites and personal content shown in the screenshots."
+          "basis": "Publisher dataset-card declaration for this release."
         },
-        "reason": "Publisher dataset-card declaration for this release; it does not establish rights to the applications, websites and personal content shown in the screenshots.",
+        "reason": "Publisher dataset-card declaration for this release.",
         "evidence_urls": [
           "https://huggingface.co/datasets/ShaofantuoshuzhengzhiSha/GUIGuard-Bench/raw/c2b5ca415cd854452585260b9eaa74699042d920/README.md"
         ]
@@ -148448,7 +148448,7 @@
       "licenses.data",
       "details.dataset_profile"
     ],
-    "notes": "The UI-MOPD paper builds Uni-GUI from self-collected desktop and mobile trajectories plus cleaned OpenCUA and OpenMobile trajectories; its composition table rounds the self-collected desktop part to about 7K trajectories and 95K steps, so this repository (2,685 trajectories and about 36K steps per the card) holds a portion of it. Per the paper, desktop queries were generated with Kimi-K2.6 from functional points of initialized OSWorld environments, Kimi-K2.6 produced the rollouts and Gemini-3.1-Pro cleaned them; these are model-generated demonstrations. Every folder name ends in an OSWorld task ID: a script over the manifest finds 245 distinct IDs, all present in OSWorld's test_all.json, with up to 19 trajectories each. Two opened task.json files for the same OSWorld task label it 'OSWorld'; one repeats that task's instruction verbatim and the other paraphrases it, so the data overlaps OSWorld's test tasks. Both carry verified: false and task_completed: true, while the card's example shows verified: true; 160 folders also hold a result.txt. Linux is inferred from the paper's use of OSWorld environments and the Linux terminal and /home/user paths in the opened queries. Apache-2.0 is the card's declaration and does not cover third-party application content in screenshots. Only two task.json files and one result.txt were opened.",
+    "notes": "The UI-MOPD paper builds Uni-GUI from self-collected desktop and mobile trajectories plus cleaned OpenCUA and OpenMobile trajectories; its composition table rounds the self-collected desktop part to about 7K trajectories and 95K steps, so this repository (2,685 trajectories and about 36K steps per the card) holds a portion of it. Per the paper, desktop queries were generated with Kimi-K2.6 from functional points of initialized OSWorld environments, Kimi-K2.6 produced the rollouts and Gemini-3.1-Pro cleaned them; these are model-generated demonstrations. Every folder name ends in an OSWorld task ID: a script over the manifest finds 245 distinct IDs, all present in OSWorld's test_all.json, with up to 19 trajectories each. Two opened task.json files for the same OSWorld task label it 'OSWorld'; one repeats that task's instruction verbatim and the other paraphrases it, so the data overlaps OSWorld's test tasks. Both carry verified: false and task_completed: true, while the card's example shows verified: true; 160 folders also hold a result.txt. Linux is inferred from the paper's use of OSWorld environments and the Linux terminal and /home/user paths in the opened queries. Apache-2.0 is the card's declaration for the data. Only two task.json files and one result.txt were opened.",
     "details": {
       "hub_id": "UI-MOPD/Uni-GUI-Desktop-1",
       "hub_revision": "92ef5917cd46a899a13461532fdda9e5a8d3bc62",
@@ -149278,7 +149278,7 @@
       "notes",
       "details.availability"
     ],
-    "notes": "This is the open macOS client (Swift, AppKit and SwiftUI). Building it requires the prebuilt Phi Framework, the publisher's own Chromium build, whose source is not published and which the Apache-2.0 license does not cover; the built-in assistant's models, prompts and pipelines are server-side and not in this repository, and a self-built copy does not reach Phi Cloud. Sources/ChromiumBridge/AgentCDP/AgentCDPListener.swift owns a Unix-domain socket through which agent tools reach the browser's DevTools endpoint after per-agent user consent. tools/phi-browser-skill (SKILL.md, scripts/lib/cdp.mjs) is an Agent Skill that drives agent Spaces: hidden windows on a chosen profile that the user can watch, take over and hand back, or off-screen shadow windows. Privacy and local-model statements are publisher claims.",
+    "notes": "This is the open macOS client (Swift, AppKit and SwiftUI). Building it requires the prebuilt Phi Framework, the publisher's own Chromium build, whose source is unpublished; the built-in assistant's models, prompts and pipelines run server-side, outside this repository, and a self-built copy has no Phi Cloud access. Sources/ChromiumBridge/AgentCDP/AgentCDPListener.swift owns a Unix-domain socket through which agent tools reach the browser's DevTools endpoint after per-agent user consent. tools/phi-browser-skill (SKILL.md, scripts/lib/cdp.mjs) is an Agent Skill that drives agent Spaces: hidden windows on a chosen profile that the user can watch, take over and hand back, or off-screen shadow windows. Privacy and local-model statements are publisher claims.",
     "details": {
       "availability": "Client source; Chromium engine only as a proprietary prebuilt framework; signed builds from the publisher site",
       "repository_revision": "7ace23508bb9e2dceea393cd223628b14514681f"
@@ -151534,7 +151534,7 @@
     "evidence_urls": [
       "https://huggingface.co/datasets/markov-ai/computer-use-large/raw/b50aeccec6d24a56ed4f8fbb9f5b2a16846b46a9/README.md"
     ],
-    "notes": "The card says the videos were sourced from the internet, trimmed to screen-recording segments and stripped of audio, and are meant for training and evaluating computer-use agents. Per-folder metadata.jsonl files give file name, category, trimmed duration and segment count only; there are no actions, cursor events or instructions. At Hub revision b50aecce the manifest lists 48,477 MP4 files, one fewer than the card (Excel has 8,110 against 8,111). The repository also holds descriptions.parquet and 48,473 per-video JSON files under descriptions/, beyond the card's documented files; the one inspected file gives the source video's title and channel, transcript text in 10-second windows and a short step description or NO_TASK per window. The card's CC-BY-4.0 declaration does not establish rights to the third-party videos.",
+    "notes": "The card says the videos were sourced from the internet, trimmed to screen-recording segments and stripped of audio, and are meant for training and evaluating computer-use agents. Per-folder metadata.jsonl files give file name, category, trimmed duration and segment count only; there are no actions, cursor events or instructions. At Hub revision b50aecce the manifest lists 48,477 MP4 files, one fewer than the card (Excel has 8,110 against 8,111). The repository also holds descriptions.parquet and 48,473 per-video JSON files under descriptions/, beyond the card's documented files; the one inspected file gives the source video's title and channel, transcript text in 10-second windows and a short step description or NO_TASK per window. CC-BY-4.0 is the card's declaration for the videos.",
     "details": {
       "hub_id": "markov-ai/computer-use-large",
       "hub_revision": "b50aeccec6d24a56ed4f8fbb9f5b2a16846b46a9",
@@ -151657,9 +151657,9 @@
           "declared": "CC-BY-4.0",
           "url": "https://huggingface.co/datasets/markov-ai/computer-use-large/raw/b50aeccec6d24a56ed4f8fbb9f5b2a16846b46a9/README.md",
           "retrieved_at": "2026-10-18T15:50:47Z",
-          "basis": "Dataset-card metadata and License section declare CC-BY-4.0 for this release; the card says the videos were sourced from the internet, and the declaration does not establish rights to those third-party recordings or the software shown."
+          "basis": "Dataset-card metadata and License section declare CC-BY-4.0 for this release; the card says the videos were sourced from the internet."
         },
-        "reason": "Dataset-card metadata and License section declare CC-BY-4.0 for this release; the card says the videos were sourced from the internet, and the declaration does not establish rights to those third-party recordings or the software shown.",
+        "reason": "Dataset-card metadata and License section declare CC-BY-4.0 for this release; the card says the videos were sourced from the internet.",
         "evidence_urls": [
           "https://huggingface.co/datasets/markov-ai/computer-use-large/raw/b50aeccec6d24a56ed4f8fbb9f5b2a16846b46a9/README.md"
         ]
@@ -154623,7 +154623,7 @@
     "evidence_urls": [
       "https://huggingface.co/datasets/Voxel51/FiftyOne-GUI-Grounding-Train-with-Synthetic/raw/3deedc5d3667696aff317e5e8a3b47d83b9fb48c/README.md"
     ],
-    "notes": "First published as harpreetsahota/FiftyOne-GUI-Grounding-Train-with-Synthetic, which the Hub now resolves to this repository. The card describes grayscale, color inversion, six color-vision simulations, resolution scaling and text variants, and says synthetic samples carry a transform_record field. The exported samples at revision 3deedc5d have no such field (metadata.json lists none), and their tags name only three transforms: 1,884 tritanopia, 942 color-inverted and 471 task-description-augmented samples. The 739 originals are tagged 370 train and 369 val, and every synthetic sample is tagged train. The card's Apache-2.0 declaration does not cover the third-party applications and websites in the screenshots.",
+    "notes": "First published as harpreetsahota/FiftyOne-GUI-Grounding-Train-with-Synthetic, which the Hub now resolves to this repository. The card describes grayscale, color inversion, six color-vision simulations, resolution scaling and text variants, and says synthetic samples carry a transform_record field. The exported samples at revision 3deedc5d have no such field (metadata.json lists none), and their tags name only three transforms: 1,884 tritanopia, 942 color-inverted and 471 task-description-augmented samples. The 739 originals are tagged 370 train and 369 val, and every synthetic sample is tagged train. Apache-2.0 is the card's data declaration.",
     "details": {
       "hub_id": "Voxel51/FiftyOne-GUI-Grounding-Train-with-Synthetic",
       "hub_revision": "3deedc5d3667696aff317e5e8a3b47d83b9fb48c",
@@ -154739,9 +154739,9 @@
           "declared": "Apache-2.0",
           "url": "https://huggingface.co/datasets/Voxel51/FiftyOne-GUI-Grounding-Train-with-Synthetic/raw/3deedc5d3667696aff317e5e8a3b47d83b9fb48c/README.md",
           "retrieved_at": "2026-10-18T15:58:38Z",
-          "basis": "Publisher dataset-card declaration for this release; it does not establish rights to the third-party applications and websites shown in the screenshots."
+          "basis": "Publisher dataset-card declaration for this release."
         },
-        "reason": "Publisher dataset-card declaration for this release; it does not establish rights to the third-party applications and websites shown in the screenshots.",
+        "reason": "Publisher dataset-card declaration for this release.",
         "evidence_urls": [
           "https://huggingface.co/datasets/Voxel51/FiftyOne-GUI-Grounding-Train-with-Synthetic/raw/3deedc5d3667696aff317e5e8a3b47d83b9fb48c/README.md"
         ]
@@ -155245,7 +155245,7 @@
     "documented_by": [
       "2508.15144"
     ],
-    "notes": "The card calls this a variant of GUI-Owl that is RL-tuned for desktop environments and deployable the same way as GUI-Owl 7B, and says it is mainly meant for validating environment-RL improvements, with no guarantee for production use. The X-PLUG/MobileAgent README links it, in its 2025-09-16 news entry, as the OSWorld RL-tuned GUI-Owl checkpoint released alongside the OSWorld code. Hub metadata names Qwen/Qwen2.5-VL-7B-Instruct as base_model. The Hub API lists seven safetensors shards totalling 8,296,592,640 F32 parameters, and config.json, stored through Git LFS, declares Qwen2_5_VLForConditionalGeneration. The card reports no score for this checkpoint. MIT is the card's weight declaration and is not extended to Qwen2.5-VL or training data.",
+    "notes": "The card calls this a variant of GUI-Owl that is RL-tuned for desktop environments and deployable the same way as GUI-Owl 7B, mainly for validating environment-RL improvements. The X-PLUG/MobileAgent README links it, in its 2025-09-16 news entry, as the OSWorld RL-tuned GUI-Owl checkpoint released alongside the OSWorld code. Hub metadata names Qwen/Qwen2.5-VL-7B-Instruct as base_model. The Hub API lists seven safetensors shards totalling 8,296,592,640 F32 parameters, and config.json, stored through Git LFS, declares Qwen2_5_VLForConditionalGeneration. The card reports no score for this checkpoint. MIT is the card's weight declaration and is not extended to Qwen2.5-VL or training data.",
     "details": {
       "artifact_type": "model-checkpoint",
       "hub_id": "mPLUG/GUI-Owl-7B-Desktop-RL",
@@ -157474,7 +157474,7 @@
       "licenses.data",
       "details.dataset_profile"
     ],
-    "notes": "The card carries the license, links and citation requests (MobA, META-GUI, CAM-GUI and a MoGUI/MoCon technical report); the announced complete report remains unlinked, leaving the paper relation unrecorded. The repository's MoGUI_Paper_v0.1.pdf is a two-page pre-release announcement without methods or statistics. Android is established by the metadata: Google Play package names, android.widget element classes and Android permission-controller screens. At revision 19639219 the manifest holds 200 metadata JSON shards, 200 moguidata tar.gz shards totalling about 1.14 TB, and an apk_infos.json file of Google Play listing fields per package. Metadata shard 1 alone holds navigation graphs for 1,084 app packages listing 13,726 valid screens. A streamed read of the start of the first tar.gz shard showed per-app folders of PNG screenshots with same-named XML files. CC BY-NC-SA 4.0 is the card's data declaration and does not establish rights to the third-party apps shown. The sibling MoCon dataset is a separate release.",
+    "notes": "The card carries the license, links and citation requests (MobA, META-GUI, CAM-GUI and a MoGUI/MoCon technical report); the announced complete report remains unlinked, leaving the paper relation unrecorded. The repository's MoGUI_Paper_v0.1.pdf is a two-page pre-release announcement without methods or statistics. Android is established by the metadata: Google Play package names, android.widget element classes and Android permission-controller screens. At revision 19639219 the manifest holds 200 metadata JSON shards, 200 moguidata tar.gz shards totalling about 1.14 TB, and an apk_infos.json file of Google Play listing fields per package. Metadata shard 1 alone holds navigation graphs for 1,084 app packages listing 13,726 valid screens. A streamed read of the start of the first tar.gz shard showed per-app folders of PNG screenshots with same-named XML files. CC BY-NC-SA 4.0 is the card's data declaration. The sibling MoCon dataset is a separate release.",
     "details": {
       "hub_id": "OpenDFM/MoGUI",
       "hub_revision": "19639219617d083a03e24842fc620e010cc63189",
@@ -158752,7 +158752,7 @@
       "details.artifact_type",
       "details.training_data_note"
     ],
-    "notes": "The manifest lists two Safetensors shards (3,754,622,976 BF16 parameters per the Hub API) plus localization, navigation and ScreenSpot evaluation scripts. The card's license link and the LICENSE file put the weights under the H Product Research License Agreement, a non-commercial research license that also defers to the Qwen Research License for the base model; this is not generalized to other Holo1 sizes. The card's 89.7% WebVoyager figure is for Surfer-H with Holo1-3B, measured by the publisher. H's current models page lists later Holo generations and leaves Holo1 unlisted, leaving a family relation unrecorded.",
+    "notes": "The manifest lists two Safetensors shards (3,754,622,976 BF16 parameters per the Hub API) plus localization, navigation and ScreenSpot evaluation scripts. The card’s license link and LICENSE file put this checkpoint’s weights under the H Product Research License Agreement, a non-commercial research license that also defers to the Qwen Research License for the base model. The card's 89.7% WebVoyager figure is for Surfer-H with Holo1-3B, measured by the publisher. H's current models page lists later Holo generations and leaves Holo1 unlisted, leaving a family relation unrecorded.",
     "details": {
       "hub_id": "Hcompany/Holo1-3B",
       "hub_revision": "94334a5f2f6b491c2d6ea68cf0ecaf050d28a94d",
@@ -159580,7 +159580,7 @@
       "details.artifact_type",
       "details.availability"
     ],
-    "notes": "The Hub dataset repository at revision 4d2be380 has no card and no license declaration. It lists 143 files, about 130 GB by listed sizes: seven AVD directories (MineAndroid plus auto, general-user, manual, senior, student and travel variants), their .ini pointers and install_avd.sh. Every config.ini targets android-33 with arm64-v8a on a Pixel 6 profile and Play Store disabled. The script requires an Apple Silicon Mac, installs the android-33 Google APIs arm64-v8a system image through sdkmanager, and warns that -wipe-data erases the installed apps. The variants' app contents remain undocumented; the images remain uninspected. The OpenMobile2-Code README links this repository as 'Extended Android AVDs' in its release list; that repository's Apache-2.0 license does not cover these images or the Android system image.",
+    "notes": "The Hub dataset repository at revision 4d2be380 has no card and no license declaration. It lists 143 files, about 130 GB by listed sizes: seven AVD directories (MineAndroid plus auto, general-user, manual, senior, student and travel variants), their .ini pointers and install_avd.sh. Every config.ini targets android-33 with arm64-v8a on a Pixel 6 profile and Play Store disabled. The script requires an Apple Silicon Mac, installs the android-33 Google APIs arm64-v8a system image through sdkmanager, and warns that -wipe-data erases the installed apps. The variants' app contents remain undocumented; the images remain uninspected. The OpenMobile2-Code README links this repository as 'Extended Android AVDs' in its release list.",
     "details": {
       "hub_id": "yanhhh/AndroidAvd",
       "gated": false,
@@ -161306,7 +161306,7 @@
           "retrieved_at": "2026-10-19T06:02:55Z",
           "basis": "Publisher model-card text for this checkpoint names the NVIDIA Open Model License; the card metadata says 'other' and the repository has no license file. Code and training-data terms are separate."
         },
-        "reason": "Publisher model-card text names the NVIDIA Open Model License for this checkpoint, matching H's models page; the Hub value 'other' is not a license name.",
+        "reason": "Publisher model-card text names the NVIDIA Open Model License for this checkpoint, matching H's models page.",
         "evidence_urls": [
           "https://huggingface.co/Hcompany/Holotron-3-Nano/raw/525e05a4b21747ea5c32b09a5969bfc425d5e95c/README.md",
           "https://hcompany.ai/research/models"
@@ -162805,7 +162805,7 @@
     "aliases": [
       "General Agents Ace"
     ],
-    "notes": "The Ace page describes a computer autopilot that uses the mouse and keyboard on the user's desktop, says it was trained by software specialists and domain experts on over a million tasks, and charts publisher figures for click-prediction accuracy for ace-control-medium and ace-control-small against Operator, Claude 3.7 Sonnet, UI-TARS-72B-SFT and other models, plus action latency. The About page says Ace learns from experts' screen recordings with mouse and keyboard logs, and that General Agents is developing video-language-action models. The official Python client (generalagents-python 0.1.1 at commit d36f6a8) posts a WebP screenshot, the instruction and recent actions to /v1/control/predict on api.generalagents.com; its macOS Computer class captures the screen with screencapture and performs clicks, drags, scrolls, key presses and typing through pyautogui. The client's Apache-2.0 code license does not cover the hosted models. At review time api.generalagents.com and docs.generalagents.com had DNS resolution failures; the reviewed pages leave pricing, download and sign-up paths unspecified, so current availability remains unknown.",
+    "notes": "The Ace page describes a computer autopilot that uses the mouse and keyboard on the user's desktop, says it was trained by software specialists and domain experts on over a million tasks, and charts publisher figures for click-prediction accuracy for ace-control-medium and ace-control-small against Operator, Claude 3.7 Sonnet, UI-TARS-72B-SFT and other models, plus action latency. The About page says Ace learns from experts' screen recordings with mouse and keyboard logs, and that General Agents is developing video-language-action models. The official Python client (generalagents-python 0.1.1 at commit d36f6a8) posts a WebP screenshot, the instruction and recent actions to /v1/control/predict on api.generalagents.com; its macOS Computer class captures the screen with screencapture and performs clicks, drags, scrolls, key presses and typing through pyautogui. Apache-2.0 covers the client's code. At review time api.generalagents.com and docs.generalagents.com had DNS resolution failures; the reviewed pages leave pricing, download and sign-up paths unspecified, so current availability remains unknown.",
     "details": {
       "pricing_url": null,
       "availability": "Hosted models reached through an API; the API and documentation hosts had DNS resolution failures at review time, and pricing and sign-up paths remain unpublished."
@@ -166860,7 +166860,7 @@
       "access": "publisher-managed",
       "pricing_url": "https://www.firecrawl.dev/pricing"
     },
-    "notes": "Recorded as adjacent: the publisher presents Firecrawl as a web data API for AI agents, and its search, scrape, map and crawl endpoints return page content as Markdown, HTML, JSON or screenshots without operating the page. Interact continues from a scrape result: POST /v2/scrape/{scrapeId}/interact takes either a natural-language prompt, which it carries out by clicking, typing and scrolling, or Playwright code, and returns a CDP URL and live-view URLs; named profiles keep browser state such as logins between sessions. The Browser Sandbox (POST /v2/interact) opens a standalone isolated browser session with Playwright and the agent-browser CLI preinstalled, CDP access and an embeddable interactive live view. The /agent endpoint gathers data from a prompt by searching and navigating sites and runs on the publisher's Spark 2 model. The homepage HTML changes on every request, so the primary receipt is the documentation introduction. The homepage also links the repository github.com/firecrawl/firecrawl; which hosted features that code includes was not reviewed, and its license does not cover the hosted service.",
+    "notes": "Recorded as adjacent: the publisher presents Firecrawl as a web data API for AI agents, and its search, scrape, map and crawl endpoints return page content as Markdown, HTML, JSON or screenshots without operating the page. Interact continues from a scrape result: POST /v2/scrape/{scrapeId}/interact takes either a natural-language prompt, which it carries out by clicking, typing and scrolling, or Playwright code, and returns a CDP URL and live-view URLs; named profiles keep browser state such as logins between sessions. The Browser Sandbox (POST /v2/interact) opens a standalone isolated browser session with Playwright and the agent-browser CLI preinstalled, CDP access and an embeddable interactive live view. The /agent endpoint gathers data from a prompt by searching and navigating sites and runs on the publisher's Spark 2 model. The homepage HTML changes on every request, so the primary receipt is the documentation introduction. The homepage also links the repository github.com/firecrawl/firecrawl; hosted feature coverage in that code is unreviewed.",
     "editorial_reviewed": true,
     "reviewed_sha256": "4ebd6ab8be2e75303248a9bcdb8ec2a206ebe88273366aa71e4cc1172766ddc8",
     "reviewed_at": "2026-10-20T04:19:09Z"
@@ -169913,7 +169913,7 @@
     "reviewed_licenses": {
       "code": {
         "value": null,
-        "reason": "Root LICENSE is the custom Andee Open Source License, the Apache-2.0 text modified by additional conditions in its Part A (no white-labelling, no multi-tenant hosting without written authorisation, written authorisation to distribute it inside another product); it is not a standard SPDX license, and GitHub reports NOASSERTION.",
+        "reason": "Root LICENSE is the custom Andee Open Source License, the Apache-2.0 text modified by additional conditions in its Part A (no white-labelling, no multi-tenant hosting without written authorisation, written authorisation to distribute it inside another product); GitHub reports NOASSERTION.",
         "evidence_urls": [
           "https://raw.githubusercontent.com/kuafuai/andee/634c6ee34ef11454116de7311bc901c3783c345c/LICENSE"
         ]
@@ -170159,7 +170159,7 @@
       "scope",
       "notes"
     ],
-    "notes": "The README states that AUV is not a computer-use agent and ships no agent or harness: an agent calls the auv CLI or the MCP server, or writes reusable Rust or JavaScript/TypeScript operations against the versioned Protobuf/gRPC daemon API; a first-party Python SDK is listed as planned. The capability matrix lists native desktop drivers for macOS, Linux and Windows, with Android and iOS planned, and background pointer input on macOS only. Integrations under supported/ cover desktop apps such as Apple Music and games such as Balatro. evals/osworld only provisions an OSWorld Ubuntu desktop on Kubernetes; its README leaves task setup, evaluation and AUV pairing as separate work. The workspace version in Cargo.toml at the inspected commit is 0.0.35.",
+    "notes": "The README describes AUV as tooling that agents call, with no agent or harness of its own: an agent calls the auv CLI or the MCP server, or writes reusable Rust or JavaScript/TypeScript operations against the versioned Protobuf/gRPC daemon API; a first-party Python SDK is listed as planned. The capability matrix lists native desktop drivers for macOS, Linux and Windows, with Android and iOS planned, and background pointer input on macOS only. Integrations under supported/ cover desktop apps such as Apple Music and games such as Balatro. evals/osworld only provisions an OSWorld Ubuntu desktop on Kubernetes; its README leaves task setup, evaluation and AUV pairing as separate work. The workspace version in Cargo.toml at the inspected commit is 0.0.35.",
     "details": {
       "availability": "Public Rust and JavaScript/TypeScript source with prebuilt CLI releases; no model or agent is bundled, so the calling agent supplies the reasoning.",
       "repository_revision": "11d9e256956d8836e83b48c9eedfaab722ad5c3d"

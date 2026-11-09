@@ -9,7 +9,10 @@ ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / 'scripts'))
 from catalog import editorial_identity
 
-ENGLISH = re.compile(r'does not imply|does not mean|not an endorsement', re.I)
+ENGLISH = re.compile(r'does not (?:imply|mean|establish|cover|replace|guarantee|constitute|endorse|assign)|not an endorsement|'
+                     r'\bis not (?:a|an|the)\b|\bthis (?:is|does) not\b|retains? (?:their|its) own|retains? separate terms|\bno (?:guarantee|claim)\b|'
+                     r'not independently|not a substitute', re.I)
+PUBLICATION_COPY = ('notes', 'date_basis', 'identity_basis')
 CHINESE = re.compile(r'不代表|不意味着')
 # build.py copies these into catalog records; search_pages.py:259-300,321-360,
 # specifications.py:130-167, and topic_pages.py:233,267 render them.
@@ -54,6 +57,19 @@ class RecordCopyTest(unittest.TestCase):
         for record_id, entry in translations.items():
             if CHINESE.search(entry['summary']):
                 failures.append(f'{record_id} summary (zh-CN): {entry["summary"]}')
+        self.assertFalse(failures, '\n'.join(failures))
+
+    def test_publication_notes_and_scope_exclusion_reasons(self):
+        failures = []
+        for line in (ROOT / 'data/publications.jsonl').read_text(encoding='utf-8').splitlines():
+            row = json.loads(line)
+            for key in PUBLICATION_COPY:
+                value = (row.get('publication') or {}).get(key) or ''
+                if ENGLISH.search(value):
+                    failures.append(f'{row["id"]} publication.{key}: {value}')
+        for row in json.loads((ROOT / 'data/exclusions.json').read_text(encoding='utf-8')):
+            if ENGLISH.search(row.get('reason') or ''):
+                failures.append(f'{row["id"]} exclusion reason: {row["reason"]}')
         self.assertFalse(failures, '\n'.join(failures))
 
 

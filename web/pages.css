@@ -175,4 +175,6 @@ html:has(.topic-directory,.paper-library,.data-hub){scroll-behavior:auto}
   .topic-matrix tbody th,.topic-matrix tbody td{padding-block:0}
   .paper-facets,.topic-resource-facets,.library-topics{row-gap:0}
   .paper-entry-links,.topic-resource-links{gap:0 22px}
+  .reading-shell :is(.paper-authors,.topic-resource-authors){line-height:24px}
+  .reading-shell :is(.paper-authors,.topic-resource-authors) a{display:inline-block;min-height:24px}
 }

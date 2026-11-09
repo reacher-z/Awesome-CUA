@@ -1465,8 +1465,5 @@ html:lang(zh-CN) .eyebrow{letter-spacing:.02em}
 /* The star count arrives after first paint on most pages; its width is held so the header does not move. */
 .js .star-btn .star-n:empty{min-width:calc(3ch + 7px)}
 
-/* Sections far below the first screen skip layout until they come near. */
-.r3-cats,.r3-latest,.r3-papers,.r3-term,.dir-strip{content-visibility:auto;contain-intrinsic-size:auto 640px}
-
 /* While a typed query waits for the search index, the rows on screen read as not yet filtered. */
 #finder [aria-busy="true"]{opacity:.55;transition:opacity .15s}

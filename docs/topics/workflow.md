@@ -2,9 +2,9 @@
 
 [Home](../../README.md) · [All topics](../topics.md) · [Full arXiv bibliography](../papers.md)
 
-491 source-reviewed resources tagged `workflow`. Curated metadata; unknown facts are shown as —.
+496 source-reviewed resources tagged `workflow`. Curated metadata; unknown facts are shown as —.
 
-**Contents:** [Benchmarks (26)](#benchmarks) · [Datasets (5)](#datasets) · [Models (1)](#models) · [Agents (58)](#agents) · [Frameworks (141)](#frameworks) · [Tools (88)](#tools) · [Infrastructure (5)](#infrastructure) · [Products (24)](#products) · [Learning resources (6)](#learning-resources) · [Surveys (1)](#surveys) · [Papers (136)](#papers)
+**Contents:** [Benchmarks (26)](#benchmarks) · [Datasets (5)](#datasets) · [Models (1)](#models) · [Agents (58)](#agents) · [Frameworks (141)](#frameworks) · [Tools (88)](#tools) · [Infrastructure (5)](#infrastructure) · [Products (24)](#products) · [Learning resources (6)](#learning-resources) · [Surveys (4)](#surveys) · [Papers (138)](#papers)
 
 ## Benchmarks
 
@@ -409,11 +409,12 @@ All entries in this section: desktop, web.
 
 ## Surveys
 
-All entries in this section: cross-platform.
-
-| Date | Resource | Description |
-| --- | --- | --- |
-| 2026‑08‑30 | [A Systematic Survey of Agentic Skills: Architecture, Lifecycle, and Security](https://arxiv.org/abs/2608.29596) | Surveys modular agentic skill architectures, skill lifecycles, and security risks in autonomous tool- and interface-using agents. |
+| Date | Resource | Environments | Description |
+| --- | --- | --- | --- |
+| 2026‑08‑30 | [A Systematic Survey of Agentic Skills: Architecture, Lifecycle, and Security](https://arxiv.org/abs/2608.29596) | cross-platform | Surveys modular agentic skill architectures, skill lifecycles, and security risks in autonomous tool- and interface-using agents. |
+| 2021 | [Robotic Process Automation and Artificial Intelligence in Industry 4.0 – A Literature review](https://www.sciencedirect.com/science/article/pii/S1877050921001393) | unspecified | A literature review examines how robotic process automation tools combine with AI for organizational workflows in Industry 4.0, including information extraction and process optimization. |
+| 2020‑07‑27 | [From Robotic Process Automation to Intelligent Process Automation: Emerging Trends](https://arxiv.org/abs/2007.13257) | unspecified | A survey of robotic and intelligent process automation traces the use of machine learning and AI in business workflows and identifies open research challenges. |
+| 2020‑02 | [Robotic Process Automation: Contemporary themes and challenges](https://www.sciencedirect.com/science/article/abs/pii/S0166361519304609) | unspecified | A structured review of robotic process automation examines software bots that mimic user actions and identifies research themes and challenges for organizational use. |
 
 ## Papers
 
@@ -530,11 +531,13 @@ All entries in this section: cross-platform.
 | 2025‑06‑04 | [macOSWorld: A Multilingual Interactive Benchmark for GUI Agents](https://arxiv.org/abs/2506.04135) | macos, desktop | macOSWorld provides 202 interactive tasks across 30 applications, with instructions and operating-system interfaces in five languages. It evaluates GUI agents on macOS workflows and includes a separate subset for deception-attack testing. |
 | 2025‑05‑28 | [WorkForceAgent-R1: Incentivizing Reasoning Capability in LLM-based Web Agents via Reinforcement Learning](https://arxiv.org/abs/2505.22942) | web | Uses rule-based rewards for output structure and action correctness to train reasoning for enterprise web navigation. |
 | 2025‑05‑26 | [ScienceBoard: Evaluating Multimodal Autonomous Agents in Realistic Scientific Workflows](https://arxiv.org/abs/2505.19897) | desktop | ScienceBoard combines an interactive environment with professional scientific software and 169 human-curated tasks in areas including biochemistry, astronomy, and geoinformatics. It evaluates computer-use agents on visually rich research workflows and analyzes their execution limitations. |
+| 2025‑03‑10 | [Towards Ethical and Personalized Web Navigation Agents: A Framework for User-Aligned Task Execution](https://dl.acm.org/doi/abs/10.1145/3701551.3707420) | web | A web navigation framework uses user-specific task representations and interactive reasoning to adapt agent workflows to preferences, with task success and satisfaction as evaluation measures. |
 | 2025‑02‑24 | [Towards Enterprise-Ready Computer Using Generalist Agent](https://arxiv.org/abs/2503.01861) | web | Describes the CUGA enterprise-agent development process, emphasizing iterative evaluation, failure analysis, and refinement on software-task benchmarks. |
 | 2025‑02‑03 | [Reinforcement Learning for Long-Horizon Interactive LLM Agents](https://arxiv.org/abs/2502.01600) | unspecified | LOOP trains interactive digital agents with reinforcement learning in stateful, multi-app environments where tasks are performed through API calls. |
 | 2024‑12‑18 | [TheAgentCompany: Benchmarking LLM Agents on Consequential Real World Tasks](https://arxiv.org/abs/2412.14161) | web, desktop | Simulates a software-company workplace to evaluate agents on professional tasks involving websites, programs, files, and coworker communication. |
 | 2024‑11‑22 | [ScribeAgent: Towards Specialized Web Agents Using Production-Scale Workflow Data](https://arxiv.org/abs/2411.15004) | web | Studies fine-tuning open language models on production web-workflow traces, including training choices for specialized web agents. |
 | 2024‑11‑08 | [WorkflowLLM: Enhancing Workflow Orchestration Capability of Large Language Models](https://arxiv.org/abs/2411.05451) | unspecified | WorkflowLLM builds WorkflowBench from application API workflows and synthetic queries, then trains WorkflowLlama to generate multi-application workflows. |
+| 2024‑10‑28 | [AssistEditor: Multi-Agent Collaboration for GUI Workflow Automation in Video Creation](https://dl.acm.org/doi/abs/10.1145/3664647.3684998) | desktop | AssistEditor coordinates GUI agents to turn video requirements and uploaded materials into storyboards and editing actions in professional desktop software. |
 | 2024‑10‑24 | [Infogent: An Agent-Based Framework for Web Information Aggregation](https://arxiv.org/abs/2410.19054) | web | Infogent separates navigation, extraction and aggregation for web information gathering, including browser interaction through webpage screenshots. |
 | 2024‑09‑11 | [Agent Workflow Memory](https://arxiv.org/abs/2409.07429) | web | Agent Workflow Memory extracts reusable task routines and selectively supplies them to guide later web actions. It studies both offline workflow induction from training examples and online induction from test experience on Mind2Web and WebArena. |
 | 2024‑07‑22 | [IDA: Breaking Barriers in No-code UI Automation Through Large Language Models and Human-Centric Design](https://arxiv.org/abs/2407.15673) | web | IDA helps business users create web UI automation through guided demonstrations, a semantic programming model, and a teaching-oriented interface. A prototype user study examines automation creation with enterprise applications by users without programming backgrounds. |

@@ -9,7 +9,7 @@ A source-backed collection of papers, models, datasets, benchmarks and tools for
 If this collection is useful, a [star on GitHub](https://github.com/reacher-z/Awesome-CUA) helps others find it.
 
 <!-- BADGES:START -->
-[![Curated resources](https://img.shields.io/badge/curated%20resources-4%2C559-4352E8?style=flat-square&labelColor=1E2233)](docs/coverage.md) [![Reviewed papers and surveys](https://img.shields.io/badge/reviewed%20papers%20and%20surveys-1%2C690-4352E8?style=flat-square&labelColor=1E2233)](docs/papers.md) [![Evidence through](https://img.shields.io/badge/evidence%20through-2026--11--09%2006%3A16%20UTC-4352E8?style=flat-square&labelColor=1E2233)](docs/maintenance.md) [![Hugging Face dataset](https://img.shields.io/badge/dataset-Hugging%20Face-4352E8?style=flat-square&labelColor=1E2233)](https://huggingface.co/datasets/TIGER-Lab/AwesomeCUA) [![MIT license](https://img.shields.io/badge/license-MIT-5E6472?style=flat-square&labelColor=1E2233)](LICENSE)
+[![Curated resources](https://img.shields.io/badge/curated%20resources-4%2C587-4352E8?style=flat-square&labelColor=1E2233)](docs/coverage.md) [![Reviewed papers and surveys](https://img.shields.io/badge/reviewed%20papers%20and%20surveys-1%2C718-4352E8?style=flat-square&labelColor=1E2233)](docs/papers.md) [![Evidence through](https://img.shields.io/badge/evidence%20through-2026--11--09%2008%3A07%20UTC-4352E8?style=flat-square&labelColor=1E2233)](docs/maintenance.md) [![Hugging Face dataset](https://img.shields.io/badge/dataset-Hugging%20Face-4352E8?style=flat-square&labelColor=1E2233)](https://huggingface.co/datasets/TIGER-Lab/AwesomeCUA) [![MIT license](https://img.shields.io/badge/license-MIT-5E6472?style=flat-square&labelColor=1E2233)](LICENSE)
 <!-- BADGES:END -->
 
 Curated entries were reviewed against a first-party source snapshot; records awaiting review have their bibliographic identity checked; candidates are discovered identifiers awaiting resolution. [What “verified” means](#what-verified-means) · [Coverage ledger](docs/coverage.md)
@@ -52,9 +52,9 @@ python3 scripts/catalog.py get arxiv:2404.07972 --related --json
 
 <!-- STATS:START -->
 
-**4,559 curated resources** · **1,690 reviewed papers and surveys** · **104 discovery documents**
+**4,587 curated resources** · **1,718 reviewed papers and surveys** · **104 discovery documents**
 
-Evidence through `2026-11-09T06:16:40Z`. **451 records awaiting review** have verified bibliographic metadata, and **177 discovered candidates** await resolution. 457 candidates have an out-of-scope review. 1,308 scope exclusions retain their original metadata in the archive.
+Evidence through `2026-11-09T08:07:58Z`. **451 records awaiting review** have verified bibliographic metadata, and **114 discovered candidates** await resolution. 463 candidates have an out-of-scope review. 1,308 scope exclusions retain their original metadata in the archive.
 
 <!-- STATS:END -->
 
@@ -63,9 +63,9 @@ Evidence through `2026-11-09T06:16:40Z`. **451 records awaiting review** have ve
 <!-- EXPLORE:START -->
 | Browse                                           | What you find                                                 | Entries |
 | ------------------------------------------------ | ------------------------------------------------------------- | ------: |
-| [Research by topic](docs/topics.md)              | Reviewed papers grouped by topic                              |   1,661 |
-| [Full bibliography](docs/papers.md)              | All paper and survey records, including those awaiting review |   2,141 |
-| [Surveys](docs/surveys.md)                       | Surveys of computer-use agent research                        |      29 |
+| [Research by topic](docs/topics.md)              | Reviewed papers grouped by topic                              |   1,681 |
+| [Full bibliography](docs/papers.md)              | All paper and survey records, including those awaiting review |   2,169 |
+| [Surveys](docs/surveys.md)                       | Surveys of computer-use agent research                        |      37 |
 | [Learning resources](docs/learning.md)           | Courses and tutorials                                         |      26 |
 | [Datasets](docs/datasets.md)                     | Training and evaluation data for GUI agents                   |     195 |
 | [Benchmarks](docs/benchmarks.md)                 | Evaluation environments and task suites                       |     264 |
@@ -77,7 +77,7 @@ Evidence through `2026-11-09T06:16:40Z`. **451 records awaiting review** have ve
 | [Products](docs/products.md)                     | Computer-use products from vendors and projects               |      70 |
 | [Publishers and brands](docs/companies.md)       | Publishers and brands connected to cataloged resources        |      19 |
 
-**By platform:** [Web](docs/environments/web.md) **2,342** · [Desktop](docs/environments/desktop.md) **1,550** · [Windows](docs/environments/windows.md) **486** · [macOS](docs/environments/macos.md) **476** · [Linux](docs/environments/linux.md) **439** · [Android](docs/environments/android.md) **651** · [iOS](docs/environments/ios.md) **73** · [HarmonyOS](docs/environments/harmonyos.md) **4** · [Cross-platform](docs/environments/cross-platform.md) **661**
+**By platform:** [Web](docs/environments/web.md) **2,349** · [Desktop](docs/environments/desktop.md) **1,554** · [Windows](docs/environments/windows.md) **487** · [macOS](docs/environments/macos.md) **476** · [Linux](docs/environments/linux.md) **439** · [Android](docs/environments/android.md) **652** · [iOS](docs/environments/ios.md) **73** · [HarmonyOS](docs/environments/harmonyos.md) **5** · [Cross-platform](docs/environments/cross-platform.md) **663**
 <!-- EXPLORE:END -->
 
 Coverage spans web, desktop, Android, iOS, Windows, macOS, Linux, and cross-platform work. Topics include grounding, screen understanding, planning, memory, long-horizon workflows, reinforcement learning, data generation, safety, robustness, and evaluation.
@@ -115,15 +115,15 @@ The most-mentioned curated resources per category: the count is how many other c
 <summary>Show the highlights tables</summary>
 
 <!-- HIGHLIGHTS:START -->
-**Start with the newest surveys** · [all 29 →](docs/surveys.md)
+**Start with the newest surveys** · [all 37 →](docs/surveys.md)
 
 | Date       | Survey                                                                                                                                  | Environments   |
 | ---------- | --------------------------------------------------------------------------------------------------------------------------------------- | -------------- |
+| 2026‑11‑04 | [GUI Grounding for Computer-Use Agents: A Survey](https://doi.org/10.20944/preprints202611.0431.v1)                                     | unspecified    |
 | 2026‑10‑21 | [Multimodal Embodied Agents: A Unified Capability-centric Perspective from Computer-Use to Robot-Use](https://arxiv.org/abs/2610.30108) | unspecified    |
 | 2026‑10‑14 | [Seeing, Maintaining, and Learning: The Evolution of Multimodal Agent Memory](https://arxiv.org/abs/2610.19366)                         | unspecified    |
 | 2026‑09‑02 | [Efficient GUI Agents: A Systems Survey of Observation, Memory, Action, and Runtime Optimization](https://arxiv.org/abs/2609.02309)     | cross-platform |
 | 2026‑08‑30 | [A Systematic Survey of Agentic Skills: Architecture, Lifecycle, and Security](https://arxiv.org/abs/2608.29596)                        | cross-platform |
-| 2026‑08‑10 | [Software Engineering for and with GUI Agent](https://arxiv.org/abs/2608.09278)                                                         | web            |
 
 **Benchmarks** · [all 264 →](docs/benchmarks.md)
 

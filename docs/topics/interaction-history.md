@@ -2,9 +2,9 @@
 
 [Home](../../README.md) · [All topics](../topics.md) · [Full arXiv bibliography](../papers.md)
 
-105 source-reviewed resources tagged `interaction-history`. Curated metadata; unknown facts are shown as —.
+106 source-reviewed resources tagged `interaction-history`. Curated metadata; unknown facts are shown as —.
 
-**Contents:** [Benchmarks (1)](#benchmarks) · [Datasets (2)](#datasets) · [Models (4)](#models) · [Agents (2)](#agents) · [Frameworks (2)](#frameworks) · [Tools (1)](#tools) · [Surveys (1)](#surveys) · [Papers (92)](#papers)
+**Contents:** [Benchmarks (1)](#benchmarks) · [Datasets (2)](#datasets) · [Models (4)](#models) · [Agents (2)](#agents) · [Frameworks (2)](#frameworks) · [Tools (1)](#tools) · [Surveys (1)](#surveys) · [Papers (93)](#papers)
 
 ## Benchmarks
 
@@ -123,6 +123,7 @@ All entries in this section: unspecified.
 | 2026‑02‑09 | [MUZZLE: Adaptive Agentic Red-Teaming of Web Agents Against Indirect Prompt Injection Attacks](https://arxiv.org/abs/2602.09222) | web | MUZZLE evaluates web-agent exposure to indirect prompt injection by finding attack surfaces in agent trajectories and refining injected instructions from execution feedback. |
 | 2026‑01‑28 | [Me-Agent: A Personalized Mobile Agent with Two-Level User Habit Learning for Enhanced Interaction](https://arxiv.org/abs/2601.20162) | unspecified | Me-Agent personalizes mobile agent behavior through a preference reward model and hierarchical memory for long-term and app-specific habits, and introduces User FingerTip. |
 | 2026‑01‑14 | [Compress to Focus: Efficient Coordinate Compression for Policy Optimization in Multi-Turn GUI Agents](https://arxiv.org/abs/2601.11631) | unspecified | CCPO couples GUI policy optimization with coordinate-guided compression of past visual observations. It aggregates targets across rollouts to focus retained context and uses distance-based advantages to train grounding and compression together. |
+| 2026 | [Trace2Ground: Scenario, Disambiguation, and Relation Traces for Web GUI Grounding](https://aclanthology.org/2026.realm-1.100) | web, desktop | Trace2Ground builds a web GUI grounding dataset from HTML/DOM elements and simulated traces, testing scenario, duplicate-label, and relational instructions. |
 | 2025‑12‑11 | [AgentProg: Empowering Long-Horizon GUI Agents with Program-Guided Context Management](https://arxiv.org/abs/2512.10371) | android | Introduces AgentProg, organizing mobile-agent interaction history as a program with variables and control flow to decide what context to retain. A global belief state handles partial observability, with evaluation on AndroidWorld and extended long-horizon tasks. |
 | 2025‑12‑01 | [HiconAgent: History Context-aware Policy Optimization for GUI Agents](https://arxiv.org/abs/2512.01763) | android | HiconAgent trains GUI policies to use history through variable-length context sampling and paired policy updates with compressed and complete histories. Its compression retains past actions while removing historical observations, and an alignment loss couples the two branches. |
 | 2025‑11‑27 | [Real-Time Procedural Learning From Experience for AI Agents](https://arxiv.org/abs/2511.22074) | web | PRAXIS stores action outcomes and retrieves past state-action-result examples to guide agent decisions, with evaluation on the REAL web browsing benchmark. |

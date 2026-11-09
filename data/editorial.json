@@ -181937,5 +181937,762 @@
     "reviewed_at": "2026-11-09T05:04:09Z",
     "read_basis": "Scan-backlog review 2026-11-09: primary source (README) fetched 2026-11-09T04:19:29Z; Codex first pass and independent second pass (orchestrator), deterministic checker on quotes, vocabulary and summary rules.",
     "reviewed_sha256": "669c3fbe0ff02b9b00b69552c0e43ae270200317f5fcb2a621f47463de24ef81"
+  },
+  {
+    "id": "url:0579bd92efb87b26cb15",
+    "name": "GUI Grounding for Computer-Use Agents: A Survey",
+    "kind": "survey",
+    "url": "https://doi.org/10.20944/preprints202611.0431.v1",
+    "evidence_urls": [
+      "https://api.crossref.org/works/10.20944/preprints202611.0431.v1"
+    ],
+    "environments": [
+      "unspecified"
+    ],
+    "topics": [
+      "survey",
+      "grounding",
+      "evaluation",
+      "screen-understanding"
+    ],
+    "summary": "A survey of GUI grounding organizes methods by learning, inference, and target representation, and reviews datasets, benchmarks, metrics, and inference costs.",
+    "scope": "core",
+    "verify_terms": [
+      "GUI Grounding for Computer-Use Agents"
+    ],
+    "notes": "The survey compares representative methods across target types, instruction complexity, and interaction requirements. It describes a shift toward intent understanding, dynamic interfaces, and spatial parameter prediction.",
+    "editorial_reviewed": true,
+    "read_basis": "Paper-hold review 2026-11-09: annotation written from the abstract (Crossref); bibliographic facts from the retained publication or arXiv receipts.",
+    "reviewed_sha256": "57f0465ea60e3e2dd9f866c9aa92990d2ae1b730402f08357da70067aebc36a4",
+    "reviewed_at": "2026-11-09T08:07:59Z"
+  },
+  {
+    "id": "url:16f4a8903de0f90d3638",
+    "name": "Do GUI Grounders Truly Understand UI Elements?",
+    "kind": "paper",
+    "url": "https://aclanthology.org/2026.findings-eacl.144",
+    "evidence_urls": [
+      "https://aclanthology.org/2026.findings-eacl.144/"
+    ],
+    "environments": [
+      "desktop",
+      "windows"
+    ],
+    "topics": [
+      "grounding",
+      "evaluation",
+      "data-generation",
+      "robustness"
+    ],
+    "summary": "A desktop GUI grounding benchmark tests whether models identify the same element across varied descriptions; a diagnosis agent generates difficult instructions using model feedback.",
+    "scope": "core",
+    "verify_terms": [
+      "Do GUI Grounders Truly Understand UI Elements"
+    ],
+    "notes": "The benchmark uses an automatic pipeline to generate and validate multiple instructions per UI element. Evaluation covers 12 models; the authors report up to 84% success in generating instructions that defeat grounding models.",
+    "editorial_reviewed": true,
+    "read_basis": "Paper-hold review 2026-11-09: annotation written from the abstract (ACL Anthology page); bibliographic facts from the retained publication or arXiv receipts.",
+    "reviewed_sha256": "082423ab2c8ded0f319be56bbb24d8db496451a54dfb5eb9e4ff1c892dc7388e",
+    "reviewed_at": "2026-11-09T08:07:59Z"
+  },
+  {
+    "id": "url:1c0a2ce1faf3017fa0c5",
+    "name": "GUI testing for mobile applications: objectives, approaches and challenges",
+    "kind": "survey",
+    "url": "https://www.researchgate.net/profile/Kabir-Said/publication/353394632_GUI_testing_for_mobile_applications_objectives_approaches_and_challenges/links/623b5c14f559847a66144973/GUI-testing-for-mobile-applications-objectives-approaches-and-challenges.pdf",
+    "evidence_urls": [
+      "https://api.openalex.org/works/doi:10.1145/3457913.3457931"
+    ],
+    "environments": [
+      "unspecified"
+    ],
+    "topics": [
+      "survey",
+      "evaluation",
+      "mobile-navigation"
+    ],
+    "summary": "A systematic review of mobile app GUI testing examines objectives, methods, evaluation metrics, and research challenges across 75 studies published from 2010 to 2020.",
+    "scope": "adjacent",
+    "verify_terms": [
+      "GUI testing for mobile applications"
+    ],
+    "notes": "The authors report that functionality is the main testing objective and model-based testing is the most common approach. Common evaluation metrics include error detection, execution time, and code coverage.",
+    "editorial_reviewed": true,
+    "read_basis": "Paper-hold review 2026-11-09: annotation written from the abstract (OpenAlex); bibliographic facts from the retained publication or arXiv receipts.",
+    "reviewed_sha256": "bdbf449595ee60cf2f00169ce8b61924d379a8976ba54a520ae557688c070229",
+    "reviewed_at": "2026-11-09T08:07:59Z"
+  },
+  {
+    "id": "url:24a139a7910431441e39",
+    "name": "30 Years of Automated GUI Testing: A Bibliometric Analysis",
+    "kind": "survey",
+    "url": "https://link.springer.com/chapter/10.1007/978-3-030-85347-1_34",
+    "evidence_urls": [
+      "https://api.semanticscholar.org/graph/v1/paper/DOI:10.1007/978-3-030-85347-1_34?fields=title,abstract,authors,venue,year,externalIds"
+    ],
+    "environments": [
+      "unspecified"
+    ],
+    "topics": [
+      "survey",
+      "evaluation",
+      "automation"
+    ],
+    "summary": "A bibliometric review traces automated GUI testing research from 1990 to 2020, examining publication growth, citation patterns, collaboration, and emerging mobile testing topics.",
+    "scope": "adjacent",
+    "verify_terms": [
+      "30 Years of Automated GUI Testing"
+    ],
+    "notes": "A Scopus search yielded 744 primary studies. The authors report that conference papers were the majority and identify AI integration and automated exploration among research trends.",
+    "editorial_reviewed": true,
+    "read_basis": "Paper-hold review 2026-11-09: annotation written from the abstract (Semantic Scholar); bibliographic facts from the retained publication or arXiv receipts.",
+    "reviewed_sha256": "39e038623968309fcbf786400b9aae6efd11acae35118edaab82a4167c9ffcac",
+    "reviewed_at": "2026-11-09T08:07:59Z"
+  },
+  {
+    "id": "url:2574c6eeee264762a990",
+    "name": "Robotic Process Automation: Contemporary themes and challenges",
+    "kind": "survey",
+    "url": "https://www.sciencedirect.com/science/article/abs/pii/S0166361519304609",
+    "evidence_urls": [
+      "https://api.semanticscholar.org/graph/v1/paper/DOI:10.1016/j.compind.2019.103162?fields=title,abstract,authors,venue,year,externalIds"
+    ],
+    "environments": [
+      "unspecified"
+    ],
+    "topics": [
+      "survey",
+      "automation",
+      "workflow",
+      "industry"
+    ],
+    "summary": "A structured review of robotic process automation examines software bots that mimic user actions and identifies research themes and challenges for organizational use.",
+    "scope": "adjacent",
+    "verify_terms": [
+      "Robotic Process Automation: Contemporary themes"
+    ],
+    "notes": "The review covers RPA vendor offerings and practical adoption, and frames its research agenda around theoretical foundations for applying and developing RPA.",
+    "editorial_reviewed": true,
+    "read_basis": "Paper-hold review 2026-11-09: annotation written from the abstract (Semantic Scholar); bibliographic facts from the retained publication or arXiv receipts.",
+    "reviewed_sha256": "5c777eea74789789f71238ab2e0b84dcc3a974c424c1633088beca1b93d98611",
+    "reviewed_at": "2026-11-09T08:07:59Z"
+  },
+  {
+    "id": "url:2af250798e99e7af01ce",
+    "name": "Towards Ethical and Personalized Web Navigation Agents: A Framework for User-Aligned Task Execution",
+    "kind": "paper",
+    "url": "https://dl.acm.org/doi/abs/10.1145/3701551.3707420",
+    "evidence_urls": [
+      "https://api.openalex.org/works/doi:10.1145/3701551.3707420"
+    ],
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "web-navigation",
+      "human-in-the-loop",
+      "safety-security",
+      "workflow"
+    ],
+    "summary": "A web navigation framework uses user-specific task representations and interactive reasoning to adapt agent workflows to preferences, with task success and satisfaction as evaluation measures.",
+    "scope": "core",
+    "verify_terms": [
+      "Personalized Web Navigation Agents"
+    ],
+    "notes": "The framework addresses privacy, bias and ethical alignment in personalized web tasks, with information retrieval and e-commerce as application areas.",
+    "editorial_reviewed": true,
+    "read_basis": "Paper-hold review 2026-11-09: annotation written from the abstract (OpenAlex); bibliographic facts from the retained publication or arXiv receipts.",
+    "reviewed_sha256": "735de39aded7ae340cfaba470c1fda4502614b986f28670c79b06a69085c34fb",
+    "reviewed_at": "2026-11-09T08:07:59Z"
+  },
+  {
+    "id": "url:2eaafb0b5ecde3babbf1",
+    "name": "FDC-Ground: Improving GRPO for GUI Grounding via Exponential Rewards and Fact-Aligned Pruning",
+    "kind": "paper",
+    "url": "https://ojs.aaai.org/index.php/AAAI/article/view/40038",
+    "evidence_urls": [
+      "https://api.crossref.org/works/10.1609/aaai.v40i33.40038"
+    ],
+    "environments": [
+      "unspecified"
+    ],
+    "topics": [
+      "grounding",
+      "reinforcement-learning",
+      "reward-models",
+      "efficiency"
+    ],
+    "summary": "FDC-Ground trains GUI element location models with a distance-based reward and completion pruning; a 7B model is evaluated on ScreenSpot and ScreenSpot-v2.",
+    "scope": "core",
+    "verify_terms": [
+      "FDC-Ground"
+    ],
+    "notes": "The authors report 88.3% and 91.0% accuracy on ScreenSpot and ScreenSpot-v2 using 3.2K training samples and one epoch. They report a 1.18× training speedup and a 5.9% accuracy gain for FDC-Pruning over standard GRPO.",
+    "editorial_reviewed": true,
+    "read_basis": "Paper-hold review 2026-11-09: annotation written from the abstract (Crossref); bibliographic facts from the retained publication or arXiv receipts.",
+    "reviewed_sha256": "c58cff03dd6719350354a3da71fc81e924d2e4cd9802e11d5536bcac4bb8db59",
+    "reviewed_at": "2026-11-09T08:07:59Z"
+  },
+  {
+    "id": "url:377f5418e39ff2da971f",
+    "name": "AssistEditor: Multi-Agent Collaboration for GUI Workflow Automation in Video Creation",
+    "kind": "paper",
+    "url": "https://dl.acm.org/doi/abs/10.1145/3664647.3684998",
+    "evidence_urls": [
+      "https://api.openalex.org/works/doi:10.1145/3664647.3684998"
+    ],
+    "environments": [
+      "desktop"
+    ],
+    "topics": [
+      "automation",
+      "workflow",
+      "planning",
+      "tool-integration"
+    ],
+    "summary": "AssistEditor coordinates GUI agents to turn video requirements and uploaded materials into storyboards and editing actions in professional desktop software.",
+    "scope": "core",
+    "verify_terms": [
+      "AssistEditor"
+    ],
+    "notes": "The system uses video understanding models and software such as Premiere Pro. Agent roles include gathering requirements through dialogue, generating storyboards, retrieving knowledge, and performing edits.",
+    "editorial_reviewed": true,
+    "read_basis": "Paper-hold review 2026-11-09: annotation written from the abstract (OpenAlex); bibliographic facts from the retained publication or arXiv receipts.",
+    "reviewed_sha256": "bbf281ed686977c66a066e6891765b0b0bc096fea6016de636628536c82202ff",
+    "reviewed_at": "2026-11-09T08:07:59Z"
+  },
+  {
+    "id": "url:39f88102e1659647b1a0",
+    "name": "Look Before You Leap: Context-Sensitive GUI Grounding for Boosting Automated Extended Reality (XR) Testing",
+    "kind": "paper",
+    "url": "https://doi.org/10.1145/3808134",
+    "evidence_urls": [
+      "https://api.crossref.org/works/10.1145/3808134"
+    ],
+    "environments": [
+      "unspecified"
+    ],
+    "topics": [
+      "grounding",
+      "screen-understanding",
+      "evaluation"
+    ],
+    "summary": "Orienter detects interactive elements in 3D XR interfaces using app context and iterative reflection, then evaluates detection and guided testing on Steam app images.",
+    "scope": "core",
+    "verify_terms": [
+      "Context-Sensitive GUI Grounding"
+    ],
+    "notes": "The benchmark contains 1,552 images from 100 industrial-setting Steam apps, with 4,470 interactable annotations across 766 semantic categories. The authors report higher F1 scores than comparison detectors and more element coverage and effective interactions in guided testing.",
+    "editorial_reviewed": true,
+    "read_basis": "Paper-hold review 2026-11-09: annotation written from the abstract (Crossref); bibliographic facts from the retained publication or arXiv receipts.",
+    "reviewed_sha256": "ac929eee5ece773f0250f6ad76ff0f5923b0a469e24cfa646f6fd585e82151d3",
+    "reviewed_at": "2026-11-09T08:07:59Z"
+  },
+  {
+    "id": "url:3a73f9fc424ca9fe170e",
+    "name": "Look Where You’re Told: Instruction-Consistent Attention for GUI Grounding",
+    "kind": "paper",
+    "url": "https://aclanthology.org/2026.alvr-main.12",
+    "evidence_urls": [
+      "https://aclanthology.org/2026.alvr-main.12/"
+    ],
+    "environments": [
+      "unspecified"
+    ],
+    "topics": [
+      "grounding",
+      "screen-understanding",
+      "efficiency"
+    ],
+    "summary": "Attention Cycle-Consistency trains GUI element grounding with semantic and spatial alignment constraints, while removing its auxiliary components at inference.",
+    "scope": "core",
+    "verify_terms": [
+      "Instruction-Consistent Attention for GUI Grounding"
+    ],
+    "notes": "The framework reconstructs instructions from attended visual regions and cycles attention through that reconstruction. Entropy regularization encourages concentrated attention, and the authors report zero added inference computation.",
+    "editorial_reviewed": true,
+    "read_basis": "Paper-hold review 2026-11-09: annotation written from the abstract (ACL Anthology page); bibliographic facts from the retained publication or arXiv receipts.",
+    "reviewed_sha256": "9beb89287bfb508e3efc66efc02d39077bce9360f8844432368f845ab0bbf9d8",
+    "reviewed_at": "2026-11-09T08:07:59Z"
+  },
+  {
+    "id": "url:3fdea133115518f9205a",
+    "name": "MemAgent: A cache-inspired framework for augmenting conversational Web Agents with task-specific information",
+    "kind": "paper",
+    "url": "https://ceur-ws.org/Vol-4028/paper8.pdf",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "web-navigation",
+      "memory",
+      "efficiency",
+      "human-in-the-loop"
+    ],
+    "summary": "MemAgent adds a cache for task-specific information to conversational web agents, separating information gathering from execution across 150 web tasks.",
+    "scope": "core",
+    "notes": "The Memory Cache Bank uses time-based expiration policies. The authors report 22.4% fewer average conversation turns and a 58% reduction in completion time for recurring tasks in a study with 15 participants.",
+    "editorial_reviewed": true,
+    "reviewed_sha256": "442e3533aaed152be80d1e201444767c3515efadeb62ee064f7dbbbfa06cc01f",
+    "read_basis": "Paper-hold review 2026-11-09: annotation written from the abstract (CEUR-WS PDF first page); bibliographic facts from the retained publication or arXiv receipts.",
+    "reviewed_at": "2026-11-09T08:07:59Z"
+  },
+  {
+    "id": "url:412c168dd5d0aeded46a",
+    "name": "Automating GUI-based Software Testing with GPT-3",
+    "kind": "paper",
+    "url": "https://ieeexplore.ieee.org/abstract/document/10132233",
+    "evidence_urls": [
+      "https://api.openalex.org/works/doi:10.1109/icstw58534.2023.00022"
+    ],
+    "environments": [
+      "desktop",
+      "cross-platform"
+    ],
+    "topics": [
+      "automation",
+      "state-tracking",
+      "screen-understanding",
+      "data-generation"
+    ],
+    "summary": "A GPT-3-based GUI testing method interprets natural-language test cases, tracks current interface elements in prompts, and navigates desktop and mobile applications.",
+    "scope": "core",
+    "verify_terms": [
+      "Automating GUI-based Software Testing with GPT-3"
+    ],
+    "notes": "A test automation framework interacts with GUI elements and returns application state to GPT-3. The authors also describe a tool for collecting training data.",
+    "editorial_reviewed": true,
+    "read_basis": "Paper-hold review 2026-11-09: annotation written from the abstract (OpenAlex); bibliographic facts from the retained publication or arXiv receipts.",
+    "reviewed_sha256": "657dd2a0369e77e08d2058b78b3216044e5013cebb2e7ae7b6fded198b69532e",
+    "reviewed_at": "2026-11-09T08:07:59Z"
+  },
+  {
+    "id": "url:83569d30f341f39f4a78",
+    "name": "Test-Agent: A Multimodal App Automation Testing Framework Based on the Large Language Model",
+    "kind": "paper",
+    "url": "https://ieeexplore.ieee.org/abstract/document/10778901",
+    "evidence_urls": [
+      "https://api.openalex.org/works/doi:10.1109/dtpi61353.2024.10778901"
+    ],
+    "environments": [
+      "harmonyos",
+      "cross-platform"
+    ],
+    "topics": [
+      "automation",
+      "mobile-navigation",
+      "screen-understanding"
+    ],
+    "summary": "Test-Agent uses an LLM, screenshots, and interface structure to generate and execute mobile app test actions from natural-language instructions across platforms.",
+    "scope": "core",
+    "verify_terms": [
+      "Test-Agent"
+    ],
+    "notes": "Harmony OS Next and mini-programs are named as emerging systems that motivate cross-platform testing. The framework works from screenshots and UI structure information without prewritten test scripts or backend access.",
+    "editorial_reviewed": true,
+    "read_basis": "Paper-hold review 2026-11-09: annotation written from the abstract (OpenAlex); bibliographic facts from the retained publication or arXiv receipts.",
+    "reviewed_sha256": "df59615003ee88decb6b913c0ea60ac191c9a9e874d7b2fdc6b16e19ed6a0dcc",
+    "reviewed_at": "2026-11-09T08:07:59Z"
+  },
+  {
+    "id": "url:85cad9e7962668786093",
+    "name": "Focus Like a Human: Efficient GUI Grounding via Coarse-to-Fine Visual Attention and Parallel Verification",
+    "kind": "paper",
+    "url": "https://doi.org/10.24963/ijcai.2026/49",
+    "evidence_urls": [
+      "https://www.ijcai.org/proceedings/2026/49"
+    ],
+    "environments": [
+      "unspecified"
+    ],
+    "topics": [
+      "grounding",
+      "efficiency",
+      "robustness"
+    ],
+    "summary": "FastFocus grounds GUI targets by proposing regions from low-resolution views and checking candidates with parallel high-resolution zooms; it is evaluated on ScreenSpot-Pro.",
+    "scope": "core",
+    "verify_terms": [
+      "Efficient GUI Grounding via Coarse-to-Fine Visual Attention"
+    ],
+    "notes": "The authors report that low-resolution inputs produce more stable attention patterns, while high-resolution views help resolve fine details. Experiments on ScreenSpot-Pro report improved grounding performance.",
+    "editorial_reviewed": true,
+    "read_basis": "Paper-hold review 2026-11-09: annotation written from the abstract (Crossref); bibliographic facts from the retained publication or arXiv receipts.",
+    "reviewed_sha256": "9f4332913e02daa202040afcbe6e86a4da42e4bd7ec613226f8b7f4ecb052f5c",
+    "reviewed_at": "2026-11-09T08:07:59Z"
+  },
+  {
+    "id": "url:8b87df7992bc7b4da1a5",
+    "name": "Trace2Ground: Scenario, Disambiguation, and Relation Traces for Web GUI Grounding",
+    "kind": "paper",
+    "url": "https://aclanthology.org/2026.realm-1.100",
+    "evidence_urls": [
+      "https://aclanthology.org/2026.realm-1.100/"
+    ],
+    "environments": [
+      "web",
+      "desktop"
+    ],
+    "topics": [
+      "grounding",
+      "data-generation",
+      "evaluation",
+      "interaction-history"
+    ],
+    "summary": "Trace2Ground builds a web GUI grounding dataset from HTML/DOM elements and simulated traces, testing scenario, duplicate-label, and relational instructions.",
+    "scope": "core",
+    "verify_terms": [
+      "Trace2Ground"
+    ],
+    "notes": "Its splits are PragmaMind, ContextTwin, and RelateLoc. The authors report a 42.3% average improvement on the curated regimes after supervised fine-tuning and a 9.8% average gain on non-web ScreenSpot-Pro across six desktop domains.",
+    "editorial_reviewed": true,
+    "read_basis": "Paper-hold review 2026-11-09: annotation written from the abstract (ACL Anthology page); bibliographic facts from the retained publication or arXiv receipts.",
+    "reviewed_sha256": "6f1297d25573918c731b0664eae22c3a0b8c548eab405b03716f4249f8d77578",
+    "reviewed_at": "2026-11-09T08:07:59Z"
+  },
+  {
+    "id": "url:a102be4d98ab5ce068d8",
+    "name": "INREACT: An Inspire-Then-Reinforce Training Framework For Multimodal GUI Agent",
+    "kind": "paper",
+    "url": "https://aclanthology.org/2025.findings-emnlp.486",
+    "evidence_urls": [
+      "https://aclanthology.org/2025.findings-emnlp.486/"
+    ],
+    "environments": [
+      "unspecified"
+    ],
+    "topics": [
+      "grounding",
+      "reinforcement-learning",
+      "action-prediction"
+    ],
+    "summary": "InReAct trains a multimodal GUI agent with staged curriculum learning and outcome-based reinforcement learning for pixel-level grounding and navigation.",
+    "scope": "core",
+    "verify_terms": [
+      "INREACT"
+    ],
+    "notes": "A rule-based reward jointly scores action-type selection and pixel-level localization. The authors report improvements on grounding and navigation tasks across multiple datasets.",
+    "editorial_reviewed": true,
+    "read_basis": "Paper-hold review 2026-11-09: annotation written from the abstract (ACL Anthology page); bibliographic facts from the retained publication or arXiv receipts.",
+    "reviewed_sha256": "b9532361b4b51dd192c03bce120fc3cb055d32cf0e2a2789a316f4a0bc6349e4",
+    "reviewed_at": "2026-11-09T08:07:59Z"
+  },
+  {
+    "id": "url:b230a6700386b7e2744c",
+    "name": "Robotic Process Automation and Artificial Intelligence in Industry 4.0 – A Literature review",
+    "kind": "survey",
+    "url": "https://www.sciencedirect.com/science/article/pii/S1877050921001393",
+    "evidence_urls": [
+      "https://api.openalex.org/works/doi:10.1016/j.procs.2021.01.104"
+    ],
+    "environments": [
+      "unspecified"
+    ],
+    "topics": [
+      "survey",
+      "automation",
+      "industry",
+      "workflow"
+    ],
+    "summary": "A literature review examines how robotic process automation tools combine with AI for organizational workflows in Industry 4.0, including information extraction and process optimization.",
+    "scope": "adjacent",
+    "verify_terms": [
+      "Robotic Process Automation and Artificial Intelligence in Industry 4.0"
+    ],
+    "notes": "The review discusses artificial neural networks, text mining, and natural language processing for recognition, classification, forecasting, and business process improvement.",
+    "editorial_reviewed": true,
+    "read_basis": "Paper-hold review 2026-11-09: annotation written from the abstract (OpenAlex); bibliographic facts from the retained publication or arXiv receipts.",
+    "reviewed_sha256": "cedbbfe09e09ed6769bdf4f375c85f81ee5a16e1dad59fe4096939f521b0091c",
+    "reviewed_at": "2026-11-09T08:07:59Z"
+  },
+  {
+    "id": "url:e86b3a1454b494224f07",
+    "name": "AgentBreaker: Evaluating Context-Aware Indirect Prompt Injection Risks in Modern Web Agents",
+    "kind": "paper",
+    "url": "https://doi.org/10.1145/3832165",
+    "evidence_urls": [
+      "https://api.crossref.org/works/10.1145/3832165"
+    ],
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "safety-security",
+      "evaluation",
+      "web-navigation"
+    ],
+    "summary": "AgentBreaker generates page-specific prompt injections in HTML elements to test web agents, then evaluates attacks and defenses on 60 webpages from Online-Mind2Web.",
+    "scope": "core",
+    "verify_terms": [
+      "AgentBreaker"
+    ],
+    "notes": "The authors evaluate five web agents and report attack success rates of 71.7%–100%. Their proposed defenses reduce the reported attack success rate to 1.7%. Attack goals include clicking selected elements, posting supplied text, and disclosing agent secrets.",
+    "editorial_reviewed": true,
+    "read_basis": "Paper-hold review 2026-11-09: annotation written from the abstract (Crossref); bibliographic facts from the retained publication or arXiv receipts.",
+    "reviewed_sha256": "93982340a4969cbd9d6eccb3ad18fb2077c6e345b461bd348fb314a650dcabe4",
+    "reviewed_at": "2026-11-09T08:07:59Z"
+  },
+  {
+    "id": "url:eb791c465f47690ade31",
+    "name": "Task Automation Intelligent Agents: A Review",
+    "kind": "survey",
+    "url": "https://www.researchgate.net/publication/371143847_Task_Automation_Intelligent_Agents_A_Review",
+    "evidence_urls": [
+      "https://api.crossref.org/works/10.3390/fi15060196"
+    ],
+    "environments": [
+      "unspecified"
+    ],
+    "topics": [
+      "survey",
+      "automation",
+      "mobile-navigation",
+      "ui-design"
+    ],
+    "summary": "A literature review examines mobile phone task automation agents, including programming by demonstration and usability heuristics for recurring user tasks.",
+    "scope": "adjacent",
+    "verify_terms": [
+      "Task Automation Intelligent Agents"
+    ],
+    "notes": "The review addresses techniques for task automation agents and methods for developing agent usability heuristics. It discusses conversational agents, virtual personal assistants, and automation rules.",
+    "editorial_reviewed": true,
+    "read_basis": "Paper-hold review 2026-11-09: annotation written from the abstract (Crossref); bibliographic facts from the retained publication or arXiv receipts.",
+    "reviewed_sha256": "47dcf97c63265465a29199ed4bbfdaff4c099034d547326885b5824fdd44ae4b",
+    "reviewed_at": "2026-11-09T08:07:59Z"
+  },
+  {
+    "id": "url:ffc05c4425f777924940",
+    "name": "GUI-Based Software Testing: An Automated Approach Using GPT-4 and Selenium WebDriver",
+    "kind": "paper",
+    "url": "https://ieeexplore.ieee.org/abstract/document/10298721",
+    "evidence_urls": [
+      "https://api.openalex.org/works/doi:10.1109/asew60602.2023.00028"
+    ],
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "automation",
+      "evaluation",
+      "web-navigation",
+      "tool-integration"
+    ],
+    "summary": "A web GUI testing method combines GPT-4 with Selenium WebDriver and compares its branch coverage with random monkey testing on a web calculator.",
+    "scope": "core",
+    "verify_terms": [
+      "GPT-4 and Selenium WebDriver"
+    ],
+    "notes": "The authors built a web calculator with integrated code coverage measurement. They report higher branch coverage than monkey testing and describe testing without recorded human tester data.",
+    "editorial_reviewed": true,
+    "read_basis": "Paper-hold review 2026-11-09: annotation written from the abstract (OpenAlex); bibliographic facts from the retained publication or arXiv receipts.",
+    "reviewed_sha256": "de68a8977abdacf083c731044c698cfc314ba26d22b27ffaf4ef4815aa13b249",
+    "reviewed_at": "2026-11-09T08:07:59Z"
+  },
+  {
+    "id": "url:7424d66754ec26d68d83",
+    "name": "Guardian: A Runtime Framework for LLM-Based UI Exploration",
+    "kind": "paper",
+    "url": "https://dl.acm.org/doi/abs/10.1145/3650212.3680334",
+    "evidence_urls": [
+      "https://api.openalex.org/works/doi:10.1145/3650212.3680334"
+    ],
+    "environments": [
+      "unspecified"
+    ],
+    "topics": [
+      "automation",
+      "planning",
+      "state-tracking",
+      "evaluation"
+    ],
+    "summary": "Guardian guides LLM-driven mobile app testing by narrowing available UI actions and replanning after invalidated actions; it is evaluated on 58 tasks from 23 apps.",
+    "scope": "core",
+    "verify_terms": [
+      "Guardian: A Runtime Framework"
+    ],
+    "notes": "Guardian restores the app to a state before invalidated actions and updates the action space for replanning. The authors instantiate it with ChatGPT and evaluate it on the FestiVal benchmark.",
+    "editorial_reviewed": true,
+    "read_basis": "Paper-hold review 2026-11-09: annotation written from the abstract (OpenAlex); bibliographic facts from the retained publication or arXiv receipts.",
+    "reviewed_sha256": "9626c5c3cc218c655a1bb55e806f27c4b97290ef13b864f6a912463a9636698f",
+    "reviewed_at": "2026-11-09T08:07:59Z"
+  },
+  {
+    "id": "url:f58895265a31c37d12b4",
+    "name": "LLM Agents: A Survey",
+    "kind": "survey",
+    "url": "https://www.preprints.org/manuscript/202608.0265/v1",
+    "evidence_urls": [
+      "https://api.openalex.org/works/doi:10.20944/preprints202608.0265.v1"
+    ],
+    "environments": [
+      "unspecified"
+    ],
+    "topics": [
+      "survey",
+      "planning",
+      "safety-security"
+    ],
+    "summary": "A survey organizes LLM agents by planning, memory, tool use, coordination, evaluation, and safety, covering computer-use agents among more than two hundred works.",
+    "scope": "adjacent",
+    "verify_terms": [
+      "LLM Agents: A Survey"
+    ],
+    "notes": "The surveyed literature spans 2021 through early 2026. The authors also discuss interactive environments, application domains, negative results on self-correction and multi-agent debate, and small controlled experiments.",
+    "editorial_reviewed": true,
+    "read_basis": "Paper-hold review 2026-11-09: annotation written from the abstract (OpenAlex); bibliographic facts from the retained publication or arXiv receipts.",
+    "reviewed_sha256": "cd0aa06534f655277571737d1cec58f5163751c8a514f83210eccaf309188e7d",
+    "reviewed_at": "2026-11-09T08:07:59Z"
+  },
+  {
+    "id": "url:24bc39ed487b311108ae",
+    "name": "Operator System Card",
+    "kind": "paper",
+    "url": "https://openai.com/index/operator-system-card",
+    "evidence_urls": [
+      "https://cdn.openai.com/operator_system_card.pdf"
+    ],
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "safety-security",
+      "human-in-the-loop",
+      "web-navigation",
+      "reinforcement-learning"
+    ],
+    "summary": "The Operator system card describes a browser agent trained to act from screenshots and details evaluations, risk policies, user confirmations, and monitoring for web tasks.",
+    "scope": "core",
+    "notes": "The card describes supervised learning for screen perception and input control, followed by reinforcement learning for reasoning and error correction. It identifies prompt injection, harmful requests, and hard-to-reverse mistakes as risks, and describes internal and external red teaming.",
+    "editorial_reviewed": true,
+    "reviewed_sha256": "72c5d16df18fe90a0b76ad4839aecbd2ebd945360e14b161fcaceb3d6b17e07d",
+    "read_basis": "Paper-hold review 2026-11-09: annotation written from the abstract (OpenAI system card PDF, pages 1-3 (no abstract; opening sections)); bibliographic facts from the retained publication or arXiv receipts.",
+    "reviewed_at": "2026-11-09T08:07:59Z"
+  },
+  {
+    "id": "url:a2c0216a0d8875e86dee",
+    "name": "SkillTracer: Structural Failure Attribution and Refinement of Agentic Skills in Long-Horizon Web Tasks",
+    "kind": "paper",
+    "url": "https://doi.org/10.1145/3770855.3817981",
+    "evidence_urls": [
+      "https://api.openalex.org/works/doi:10.1145/3770855.3817981"
+    ],
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "web-navigation",
+      "long-horizon",
+      "observability",
+      "memory"
+    ],
+    "summary": "SkillTracer maps web agent skills to inspectable plan graphs, uses interaction traces to locate failures, and refines reusable skills across long tasks and episodes.",
+    "scope": "core",
+    "verify_terms": [
+      "SkillTracer"
+    ],
+    "notes": "The framework combines short-term traces with historical evidence in a persistent skill graph. The authors report a 17.7% average success-rate improvement over baselines and gains up to 56.3% in cross-domain settings.",
+    "editorial_reviewed": true,
+    "read_basis": "Paper-hold review 2026-11-09: annotation written from the abstract (OpenAlex); bibliographic facts from the retained publication or arXiv receipts.",
+    "reviewed_sha256": "016344e128f9d40b70e7b159035ae919409af35e86e12d0a7fa8247bbcf16526",
+    "reviewed_at": "2026-11-09T08:07:59Z"
+  },
+  {
+    "id": "arxiv:2311.08649",
+    "name": "Autonomous Large Language Model Agents Enabling Intent-Driven Mobile GUI Testing",
+    "kind": "paper",
+    "url": "https://arxiv.org/abs/2311.08649",
+    "environments": [
+      "android"
+    ],
+    "topics": [
+      "mobile-navigation",
+      "automation",
+      "planning",
+      "memory"
+    ],
+    "summary": "DroidAgent uses language models and memory to set and execute GUI test goals in Android apps; an evaluation covers 15 apps from the Themis benchmark.",
+    "scope": "core",
+    "verify_terms": [
+      "Intent-Driven Mobile GUI Testing"
+    ],
+    "notes": "The authors report 61% average activity coverage, compared with 51% for other GUI testing techniques. Their manual analysis judged 317 of 374 autonomously created tasks realistic and relevant to app functions.",
+    "editorial_reviewed": true,
+    "read_basis": "Paper-hold review 2026-11-09: annotation written from the abstract (arXiv API); bibliographic facts from the retained publication or arXiv receipts.",
+    "reviewed_sha256": "579b992ebc703a8d4e8688b08781a85160cc808977ce69fc22dc2c828006d5d3",
+    "reviewed_at": "2026-11-09T08:07:59Z"
+  },
+  {
+    "id": "arxiv:2511.08172",
+    "name": "An Efficient Training Pipeline for Reasoning Graphical User Interface Agents",
+    "kind": "paper",
+    "url": "https://arxiv.org/abs/2511.08172",
+    "environments": [
+      "unspecified"
+    ],
+    "topics": [
+      "grounding",
+      "data-generation",
+      "efficiency",
+      "reinforcement-learning"
+    ],
+    "summary": "A GUI grounding pipeline filters 4.8M synthetic examples to 12K training instances and adapts a 3B vision-language model, evaluated on ScreenSpot, Multimodal-Mind2Web, and AndroidControl.",
+    "scope": "core",
+    "verify_terms": [
+      "Efficient Training Pipeline for Reasoning Graphical User Interface Agents"
+    ],
+    "notes": "Training compares supervised fine-tuning, chain-of-thought-augmented fine-tuning, and reinforcement learning through Group Relative Policy Optimization. The authors report that models trained on the filtered data match or surpass larger baselines.",
+    "editorial_reviewed": true,
+    "read_basis": "Paper-hold review 2026-11-09: annotation written from the abstract (arXiv API); bibliographic facts from the retained publication or arXiv receipts.",
+    "reviewed_sha256": "68095b1017f161d6576fa1fd7d5fcedf000baa4105cfca65a7a1fe0665b60736",
+    "reviewed_at": "2026-11-09T08:07:59Z"
+  },
+  {
+    "id": "arxiv:2007.13257",
+    "name": "From Robotic Process Automation to Intelligent Process Automation: Emerging Trends",
+    "kind": "survey",
+    "url": "https://arxiv.org/abs/2007.13257",
+    "environments": [
+      "unspecified"
+    ],
+    "topics": [
+      "survey",
+      "automation",
+      "workflow",
+      "industry"
+    ],
+    "summary": "A survey of robotic and intelligent process automation traces the use of machine learning and AI in business workflows and identifies open research challenges.",
+    "scope": "adjacent",
+    "verify_terms": [
+      "Robotic Process Automation to Intelligent Process Automation"
+    ],
+    "notes": "Intelligent process automation is presented as an extension of robotic process automation at the intersection of AI and business processes. The arXiv preprint was written for the BPM 2020 RPA Forum.",
+    "editorial_reviewed": true,
+    "read_basis": "Paper-hold review 2026-11-09: annotation written from the abstract (arXiv API); bibliographic facts from the retained publication or arXiv receipts.",
+    "reviewed_sha256": "febd234bfe8a61b80c1a1a4a87d3fd9610506f635647164f48389156e2014211",
+    "reviewed_at": "2026-11-09T08:07:59Z"
+  },
+  {
+    "id": "arxiv:2505.17839",
+    "name": "Automated Testing of the GUI of a Real-Life Engineering Software using Large Language Models",
+    "kind": "paper",
+    "url": "https://arxiv.org/abs/2505.17839",
+    "environments": [
+      "unspecified"
+    ],
+    "topics": [
+      "automation",
+      "ui-design",
+      "science"
+    ],
+    "summary": "GERALLT uses LLMs to explore the GUI of engineering software and produce a list of confusing or inconsistent interface areas for developers to inspect.",
+    "scope": "core",
+    "verify_terms": [
+      "Automated Testing of the GUI of a Real-Life Engineering Software"
+    ],
+    "notes": "The authors evaluate the system on a real-world engineering software use case previously tested by developers and users. They report that it identifies interface issues useful for future development.",
+    "editorial_reviewed": true,
+    "read_basis": "Paper-hold review 2026-11-09: annotation written from the abstract (arXiv API); bibliographic facts from the retained publication or arXiv receipts.",
+    "reviewed_sha256": "8c06bdcb850fb5386549d7e77d25e827322aafefe3ec33926814b67579fcbfe6",
+    "reviewed_at": "2026-11-09T08:07:59Z"
   }
 ]

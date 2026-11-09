@@ -2,9 +2,9 @@
 
 [Home](../../README.md) · [All topics](../topics.md) · [Full arXiv bibliography](../papers.md)
 
-230 source-reviewed resources tagged `long-horizon`. Curated metadata; unknown facts are shown as —.
+231 source-reviewed resources tagged `long-horizon`. Curated metadata; unknown facts are shown as —.
 
-**Contents:** [Benchmarks (24)](#benchmarks) · [Datasets (5)](#datasets) · [Models (1)](#models) · [Agents (9)](#agents) · [Frameworks (25)](#frameworks) · [Tools (1)](#tools) · [Infrastructure (2)](#infrastructure) · [Papers (163)](#papers)
+**Contents:** [Benchmarks (24)](#benchmarks) · [Datasets (5)](#datasets) · [Models (1)](#models) · [Agents (9)](#agents) · [Frameworks (25)](#frameworks) · [Tools (1)](#tools) · [Infrastructure (2)](#infrastructure) · [Papers (164)](#papers)
 
 ## Benchmarks
 
@@ -153,6 +153,7 @@ All entries in this section: desktop, macos.
 | 2026‑08‑16 | [UI-Mate: Advancing Open-Weight Foundation GUI Agents with In-Context Demonstrations](https://arxiv.org/abs/2608.15930) | desktop, windows | Combines environment-grounded training with demonstration-conditioned workflows, and introduces OSWorkerBench for extended office-task evaluation. |
 | 2026‑08‑15 | [StateM: Reaching 95.3% Raw Accuracy, or a \$15 Frontier Run, on Terminal-Bench 2.1 via Harness Scaling](https://arxiv.org/abs/2608.15089) | unspecified | Introduces StateM, a stateful runtime with checked transitions and reusable runbooks for long-horizon agents; its reported evaluations use terminal and business tasks. |
 | 2026‑08‑11 | [DSAgentBench: Can Agents Automate End-to-End Data-Science Workflows in Real Computer Environments?](https://arxiv.org/abs/2608.10366) | desktop, linux | DSAgentBench evaluates end-to-end data-science workflows spanning analysis, modeling and visualization inside a real desktop environment. Task evaluators check produced analytical and visual artifacts, while the released interface supports screenshot or accessibility observations and GUI actions. |
+| 2026‑08‑08 | [SkillTracer: Structural Failure Attribution and Refinement of Agentic Skills in Long-Horizon Web Tasks](https://doi.org/10.1145/3770855.3817981) | web | SkillTracer maps web agent skills to inspectable plan graphs, uses interaction traces to locate failures, and refines reusable skills across long tasks and episodes. |
 | 2026‑08‑07 | [MemPrism: Task-Conditioned Relational Memory Views for Long-Horizon Agents](https://arxiv.org/abs/2608.06745) | web | Introduces MemPrism, which records prior interactions and builds task-conditioned relational memory views for decisions in long-horizon web-agent tasks. |
 | 2026‑08‑06 | [StepJack: Benchmarking Computer-Use Agent Safety Against Multi-Step Indirect Prompt Injection](https://arxiv.org/abs/2608.06477) | web | Introduces StepJack, a benchmark of indirect prompt injections that split an adversarial goal across pages on a computer-use agent's web navigation path. |
 | 2026‑08‑03 | [LongHorizon-Harness: Advancing Long-Horizon Agents for Real-World Tasks](https://arxiv.org/abs/2608.01964) | unspecified | Introduces LongHorizon-Harness, which maintains verified task state outside an agent's execution context and audits subtasks; its evaluations include OSWorld~2.0. |

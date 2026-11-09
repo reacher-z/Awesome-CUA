@@ -2,9 +2,9 @@
 
 [Home](../../README.md) · [All topics](../topics.md) · [Full arXiv bibliography](../papers.md)
 
-126 source-reviewed resources tagged `state-tracking`. Curated metadata; unknown facts are shown as —.
+128 source-reviewed resources tagged `state-tracking`. Curated metadata; unknown facts are shown as —.
 
-**Contents:** [Benchmarks (6)](#benchmarks) · [Models (1)](#models) · [Agents (6)](#agents) · [Frameworks (17)](#frameworks) · [Tools (13)](#tools) · [Infrastructure (5)](#infrastructure) · [Products (1)](#products) · [Learning resources (2)](#learning-resources) · [Papers (75)](#papers)
+**Contents:** [Benchmarks (6)](#benchmarks) · [Models (1)](#models) · [Agents (6)](#agents) · [Frameworks (17)](#frameworks) · [Tools (13)](#tools) · [Infrastructure (5)](#infrastructure) · [Products (1)](#products) · [Learning resources (2)](#learning-resources) · [Papers (77)](#papers)
 
 ## Benchmarks
 
@@ -178,7 +178,9 @@ All entries in this section: android.
 | 2024‑12‑18 | [CAD-Assistant: Tool-Augmented VLLMs as Generic CAD Task Solvers](https://arxiv.org/abs/2412.13810) | unspecified | CAD-Assistant plans CAD tasks and executes actions through FreeCAD's Python API, using the changing design state to guide later commands. |
 | 2024‑10‑31 | [From Context to Action: Analysis of the Impact of State Representation and Context on the Generalization of Multi-Turn Web Navigation Agents](https://arxiv.org/abs/2410.23555) | web | Analyzes how interaction history and webpage representation affect multiturn web-agent generalization across unfamiliar websites, task categories, and geographic settings. |
 | 2024‑10‑24 | [OSCAR: Operating System Control via State-Aware Reasoning and Re-Planning](https://arxiv.org/abs/2410.18963) | desktop, cross-platform | OSCAR translates user instructions into Python control code while observing screen images and acting through mouse and keyboard operations. A state-machine controller handles errors and replans tasks during execution across desktop and mobile applications. |
+| 2024‑09‑11 | [Guardian: A Runtime Framework for LLM-Based UI Exploration](https://dl.acm.org/doi/abs/10.1145/3650212.3680334) | unspecified | Guardian guides LLM-driven mobile app testing by narrowing available UI actions and replanning after invalidated actions; it is evaluated on 58 tasks from 23 apps. |
 | 2024‑07‑17 | [Agent-E: From Autonomous Web Navigation to Foundational Design Principles in Agentic Systems](https://arxiv.org/abs/2407.13032) | web | Agent-E combines hierarchical web-task control with DOM distillation and observations of interface changes. WebVoyager experiments inform a broader discussion of primitive skills, observation reduction, and self-improvement in agent architecture. |
 | 2024‑07‑03 | [Seeing is Believing: Vision-driven Non-crash Functional Bug Detection for Mobile Apps](https://arxiv.org/abs/2407.03037) | unspecified | Trident combines exploration, monitoring, and detection agents to identify functional bugs that do not crash a mobile app. It reasons over screenshot sequences and interface transitions to construct test oracles, evaluated on 590 non-crash bugs and additional live apps. |
 | 2024‑05‑17 | [Latent State Estimation Helps UI Agents to Reason](https://arxiv.org/abs/2405.11120) | unspecified | Studies explicit textual estimates of latent UI state, including whether commanded actions occurred and how far a task has progressed. The experiments compare agents that reason with these estimates against agents that omit them across public and internal task benchmarks. |
 | 2024‑04‑12 | [LlamaTouch: A Faithful and Scalable Testbed for Mobile UI Task Automation](https://arxiv.org/abs/2404.16054) | unspecified | LlamaTouch executes mobile tasks on devices and evaluates whether an agent visits manually annotated essential application or system states. Screenshot and hierarchy annotations, combined with exact and fuzzy state matching, support evaluation of 496 tasks across multiple agents. |
+| 2023‑04 | [Automating GUI-based Software Testing with GPT-3](https://ieeexplore.ieee.org/abstract/document/10132233) | desktop, cross-platform | A GPT-3-based GUI testing method interprets natural-language test cases, tracks current interface elements in prompts, and navigates desktop and mobile applications. |

@@ -10732,5 +10732,294 @@
       "sha256": "4431dffd55aee0a78477065556c2652bb31281686e65334a5a95833d403f7009",
       "retrieved_at": "2026-11-09T05:45:21Z"
     }
+  },
+  {
+    "id": "url:05677dbf44b8ca827534",
+    "url": "https://openreview.net/forum?id=9hM4YRMhfT",
+    "decision": "alias",
+    "target_id": "arxiv:2509.23738",
+    "reason": "OpenReview ICLR 2026 submission page for GUI-Shepherd: Reliable Process Reward and Verification for Long-Sequence GUI Tasks, catalogued as arxiv:2509.23738. The discovery listing gives the same title."
+  },
+  {
+    "id": "url:114523fae0e48b7d2abf",
+    "url": "https://openreview.net/pdf?id=ri3yPWE21Q",
+    "decision": "alias",
+    "target_id": "url:e1842006eb7b4745da03",
+    "reason": "TMLR OpenReview PDF for A Survey on Benchmarks of LLM-based GUI Agents, catalogued as url:e1842006eb7b4745da03. The discovery listing gives the same title."
+  },
+  {
+    "id": "url:1e6e59988359d97968d2",
+    "url": "https://openreview.net/forum?id=KdEsujyiSV",
+    "decision": "alias",
+    "target_id": "arxiv:2510.15863",
+    "reason": "OpenReview ICLR 2026 page for PolySkill: Learning Generalizable Skills Through Polymorphic Abstraction, catalogued as arxiv:2510.15863. The discovery listing gives the same title."
+  },
+  {
+    "id": "url:2a788ecf5da54fc6d0d6",
+    "url": "https://papers.nips.cc/paper_files/paper/2023/hash/5950bf290a1570ea401bf98882128160-Abstract-Datasets_and_Benchmarks.html",
+    "decision": "alias",
+    "target_id": "arxiv:2306.06070",
+    "reason": "NeurIPS 2023 Datasets and Benchmarks proceedings page for Mind2Web: Towards a Generalist Agent for the Web, catalogued as arxiv:2306.06070. The discovery listing gives the same title."
+  },
+  {
+    "id": "url:2ef54ae268050ea7fe71",
+    "url": "https://www.servicenow.com/research/publication/suyuchen-wang-impr-colm2026.html",
+    "decision": "alias",
+    "target_id": "arxiv:2510.03230",
+    "reason": "ServiceNow Research publication page (COLM 2026) for Improving GUI Grounding with Explicit Position-to-Coordinate Mapping, catalogued as arxiv:2510.03230. The discovery listing gives the same title."
+  },
+  {
+    "id": "url:3670e55b165899def52a",
+    "url": "https://openreview.net/forum?id=1XLjrmKZ4p",
+    "decision": "alias",
+    "target_id": "arxiv:2505.15810",
+    "reason": "OpenReview NeurIPS 2025 page for GUI-G1: Understanding R1-Zero-Like Training for Visual Grounding in GUI Agents, catalogued as arxiv:2505.15810. The discovery listing gives the same title."
+  },
+  {
+    "id": "url:47514bad30b684cba406",
+    "url": "https://papers.nips.cc/paper_files/paper/2025/hash/89dcbea9f19960edd7765068adb13b1d-Abstract-Conference.html",
+    "decision": "alias",
+    "target_id": "arxiv:2505.15810",
+    "reason": "NeurIPS 2025 proceedings page for GUI-G1: Understanding R1-Zero-Like Training for Visual Grounding in GUI Agents, catalogued as arxiv:2505.15810. The discovery listing gives the same title."
+  },
+  {
+    "id": "url:5c1f2a751afd466962af",
+    "url": "https://ojs.aaai.org/index.php/AAAI/article/view/38816",
+    "decision": "alias",
+    "target_id": "arxiv:2503.21620",
+    "reason": "AAAI 2026 proceedings page for UI-R1: Enhancing Efficient Action Prediction of GUI Agents by Reinforcement Learning, catalogued as arxiv:2503.21620. OpenAlex links the AAAI DOI to the arXiv preprint."
+  },
+  {
+    "id": "url:61fa7adb751bbf7aabf9",
+    "url": "https://papers.nips.cc/paper_files/paper/2022/hash/82ad13ec01f9fe44c01cb91814fd7b8c-Abstract-Conference.html",
+    "decision": "alias",
+    "target_id": "arxiv:2207.01206",
+    "reason": "NeurIPS 2022 proceedings page for WebShop: Towards Scalable Real-World Web Interaction with Grounded Language Agents, catalogued as arxiv:2207.01206. The discovery listing gives the same title."
+  },
+  {
+    "id": "url:626ee2eec3ebd6b0b34d",
+    "url": "https://openreview.net/forum?id=yVP2ldY9lw",
+    "decision": "alias",
+    "target_id": "arxiv:2510.17790",
+    "reason": "OpenReview ICLR 2026 submission page for UltraCUA: A Foundation Model for Computer Use Agents with Hybrid Action, catalogued as arxiv:2510.17790. The submission title differs from the arXiv title; both list the same authors in the same order."
+  },
+  {
+    "id": "url:67fdce84eb5b512f07bc",
+    "url": "https://proceedings.iclr.cc/paper_files/paper/2026/hash/5f1d328711b162e1cf9896c7d6aaecdd-Abstract-Conference.html",
+    "decision": "alias",
+    "target_id": "url:5cfd441becdfc6ea622b",
+    "reason": "ICLR 2026 proceedings page for Computer Agent Arena: Toward Human-Centric Evaluation and Analysis of Computer-Use Agents, catalogued as url:5cfd441becdfc6ea622b. The record already retains this proceedings hash among its publication receipts."
+  },
+  {
+    "id": "url:afa99439562b96b7365b",
+    "url": "https://proceedings.iclr.cc/paper_files/paper/2026/hash/002a6bef26174b590e4eab95b63feb1b-Abstract-Conference.html",
+    "decision": "alias",
+    "target_id": "url:4395ff8522cd77109b83",
+    "reason": "ICLR 2026 proceedings page for LongHorizonUI: A Unified Framework for Robust long-horizon Task Automation of GUI Agent, catalogued as url:4395ff8522cd77109b83. The record already retains this proceedings hash among its publication receipts."
+  },
+  {
+    "id": "url:6c65e20f11010819562b",
+    "url": "https://openreview.net/forum?id=KR6tnkb6h4",
+    "decision": "alias",
+    "target_id": "arxiv:2507.16853",
+    "reason": "OpenReview NeurIPS 2025 page for MobileUse: A GUI Agent with Hierarchical Reflection for Autonomous Mobile Operation, catalogued as arxiv:2507.16853. The OpenReview title rewords the arXiv title; both list the same authors in the same order."
+  },
+  {
+    "id": "url:6d8a1b9c4556678388cc",
+    "url": "https://openaccess.thecvf.com/content/WACV2026/html/Hsieh_ZonUI-3B_Competitive_GUI_Grounding_with_a_3B_VLM_Trained_on_WACV_2026_paper.html",
+    "decision": "alias",
+    "target_id": "arxiv:2506.23491",
+    "reason": "WACV 2026 open-access page for ZonUI-3B: A Lightweight Vision-Language Model for Cross-Resolution GUI Grounding, catalogued as arxiv:2506.23491. The WACV title differs from the arXiv title; Crossref lists the same three authors."
+  },
+  {
+    "id": "url:714e149f2daf7235fc80",
+    "url": "https://proceedings.iclr.cc/paper_files/paper/2025/hash/a3b893ba1de12f76020b03f7ae8e1afd-Abstract-Conference.html",
+    "decision": "alias",
+    "target_id": "arxiv:2410.02052",
+    "reason": "ICLR 2025 proceedings page for ExACT: Teaching AI Agents to Explore with Reflective-MCTS and Exploratory Learning, catalogued as arxiv:2410.02052. The discovery listing gives the same title."
+  },
+  {
+    "id": "url:823763b59b09832c3792",
+    "url": "https://openreview.net/forum?id=qeSsHx2wIr",
+    "decision": "alias",
+    "target_id": "arxiv:2602.17049",
+    "reason": "OpenReview AAMAS 2026 page for IntentCUA: Learning Intent-level Representations for Skill Abstraction and Multi-Agent Planning in Computer-Use Agents, catalogued as arxiv:2602.17049. The discovery listing gives the same title."
+  },
+  {
+    "id": "url:840c4e58cb37aec6814e",
+    "url": "https://openreview.net/forum?id=YMPYLesItf",
+    "decision": "alias",
+    "target_id": "arxiv:2510.27210",
+    "reason": "OpenReview NeurIPS 2025 page for GUI-Rise: Structured Reasoning and History Summarization for GUI Navigation, catalogued as arxiv:2510.27210. The discovery listing gives the same title."
+  },
+  {
+    "id": "url:97b31d07c3dcbcf9b7c5",
+    "url": "https://doi.org/10.1109/cvpr52734.2025.01816",
+    "decision": "alias",
+    "target_id": "arxiv:2411.17465",
+    "reason": "CVPR 2025 DOI for ShowUI: One Vision-Language-Action Model for GUI Visual Agent, catalogued as arxiv:2411.17465. Crossref gives the same title, and OpenAlex links the DOI to the arXiv preprint."
+  },
+  {
+    "id": "url:9a97499f3c2ef95fa256",
+    "url": "https://openreview.net/forum?id=ed2f5ee6b84c3b118cb953b6e750486dbd700419",
+    "decision": "alias",
+    "target_id": "arxiv:2508.04482",
+    "reason": "OpenReview page for OS Agents: A Survey on MLLM-based Agents for General Computing Devices Use, catalogued as arxiv:2508.04482. The discovery listing gives the same title."
+  },
+  {
+    "id": "url:9b45b9874a02f2e4493f",
+    "url": "https://papers.nips.cc/paper_files/paper/2024/hash/c2f71567cd53464161cab3336e8fc865-Abstract-Datasets_and_Benchmarks_Track.html",
+    "decision": "alias",
+    "target_id": "arxiv:2407.10956",
+    "reason": "NeurIPS 2024 Datasets and Benchmarks proceedings page for Spider2-V: How Far Are Multimodal Agents From Automating Data Science and Engineering Workflows?, catalogued as arxiv:2407.10956. The discovery listing gives the same title."
+  },
+  {
+    "id": "url:a0735a5144a625760dec",
+    "url": "https://openreview.net/forum?id=l1MQVgIKEU",
+    "decision": "alias",
+    "target_id": "arxiv:2508.03923",
+    "reason": "OpenReview ICLR 2026 page for CoAct-1: Computer-using Multi-Agent System with Coding Actions, catalogued as arxiv:2508.03923. The discovery listing gives the same title."
+  },
+  {
+    "id": "url:a36e244bd5c66e8bf1ea",
+    "url": "https://openreview.net/forum?id=vnEuxLVFmN",
+    "decision": "alias",
+    "target_id": "arxiv:2512.12692",
+    "reason": "OpenReview ICLR 2026 submission page for WebOperator: Action-Aware Tree Search for Autonomous Agents in Web Environment, catalogued as arxiv:2512.12692. The discovery listing gives the same title."
+  },
+  {
+    "id": "url:aa9e6dc7381d409bfdae",
+    "url": "https://proceedings.neurips.cc/paper_files/paper/2023/hash/bbbb6308b402fe909c39dd29950c32e0-Abstract.html",
+    "decision": "alias",
+    "target_id": "arxiv:2307.10088",
+    "reason": "NeurIPS 2023 proceedings page for Android in the Wild: A Large-Scale Dataset for Android Device Control, catalogued as arxiv:2307.10088. OpenAlex links the proceedings DOI to the arXiv preprint."
+  },
+  {
+    "id": "url:bec028cf3abc529e5b16",
+    "url": "https://papers.nips.cc/paper_files/paper/2024/hash/0b82662b6c32e887bb252a74d8cb2d5e-Abstract-Datasets_and_Benchmarks_Track.html",
+    "decision": "alias",
+    "target_id": "arxiv:2407.05291",
+    "reason": "NeurIPS 2024 Datasets and Benchmarks proceedings page for WorkArena++: Towards Compositional Planning and Reasoning-based Common Knowledge Work Tasks, catalogued as arxiv:2407.05291. The discovery listing gives the same title."
+  },
+  {
+    "id": "url:c38b457226978dae408a",
+    "url": "https://papers.nips.cc/paper_files/paper/2025/hash/937ae0e83eb08d2cb8627fe1def8c751-Abstract-Conference.html",
+    "decision": "alias",
+    "target_id": "arxiv:2506.08012",
+    "reason": "NeurIPS 2025 proceedings page for GUI-Reflection: Empowering Multimodal GUI Models with Self-Reflection Behavior, catalogued as arxiv:2506.08012. The discovery listing gives the same title."
+  },
+  {
+    "id": "url:ce972e4d0930c781f100",
+    "url": "https://www.preprints.org/frontend/manuscript/3da31779a6c7c196419c841cee5292cf/download_pub",
+    "decision": "alias",
+    "target_id": "arxiv:2504.19838",
+    "reason": "Preprints.org manuscript download for LLM-Powered GUI Agents in Phone Automation: Surveying Progress and Prospects, catalogued as arxiv:2504.19838. OpenAlex links the Preprints.org DOI to the arXiv preprint."
+  },
+  {
+    "id": "url:dfa1e161e88dcb8ac4ba",
+    "url": "https://ojs.aaai.org/index.php/AAAI/article/view/38229",
+    "decision": "alias",
+    "target_id": "arxiv:2504.12679",
+    "reason": "AAAI 2026 proceedings page for TongUI: Internet-Scale Trajectories from Multimodal Web Tutorials for Generalized GUI Agents, catalogued as arxiv:2504.12679. OpenAlex links the AAAI DOI to the arXiv preprint."
+  },
+  {
+    "id": "url:e2e9d93888f58a9536fc",
+    "url": "https://proceedings.iclr.cc/paper_files/paper/2025/hash/31fc85f7461ce71eadf27fb7281973bd-Abstract-Conference.html",
+    "decision": "alias",
+    "target_id": "url:dca82e9214c5926109f1",
+    "reason": "ICLR 2025 proceedings page for Grounding Multimodal Large Language Model in GUI World, catalogued as url:dca82e9214c5926109f1. The record already retains this proceedings hash among its publication receipts."
+  },
+  {
+    "id": "url:f282dd567e6a47f515be",
+    "url": "https://www.sciencedirect.com/science/article/pii/S014193822400043X",
+    "decision": "alias",
+    "target_id": "arxiv:2403.04984",
+    "reason": "ScienceDirect article page (Displays, 2024) for UI Semantic Group Detection: Grouping UI Elements with Similar Semantics in Mobile Graphical User Interface, catalogued as arxiv:2403.04984. OpenAlex links the Elsevier DOI to the arXiv preprint."
+  },
+  {
+    "id": "url:1acfdb78e5c799ab47af",
+    "url": "https://openreview.net/forum?id=XMNElrezif",
+    "decision": "alias",
+    "target_id": "arxiv:2511.08172",
+    "reason": "OpenReview ICLR 2026 workshop page for An Efficient Training Pipeline for Reasoning Graphical User Interface Agents, catalogued as arxiv:2511.08172. The discovery listing gives the same title."
+  },
+  {
+    "id": "url:5059adec7d4bc2e9b59f",
+    "url": "https://openreview.net/pdf?id=OiyEjThGeZ",
+    "decision": "alias",
+    "target_id": "url:a2c0216a0d8875e86dee",
+    "reason": "OpenReview PDF for SkillTracer: Structural Failure Attribution and Refinement of Agentic Skills in Long-Horizon Web Tasks, catalogued as url:a2c0216a0d8875e86dee. The KDD 2026 record carries the same title and is the DOI edition of the paper."
+  },
+  {
+    "id": "url:54cbdd8461cf088fdb1e",
+    "url": "https://ojs.aaai.org/index.php/AAAI/article/view/17272",
+    "decision": "out_of_scope",
+    "reason": "AAAI 2021 paper on WCSAC, a safety-constrained reinforcement learning method that bounds worst-case cost with a distributional safety critic in continuous control.",
+    "reviewed_at": "2026-11-09T08:09:26Z",
+    "evidence": {
+      "url": "https://api.crossref.org/works/10.1609/aaai.v35i12.17272",
+      "sha256": "4a3eb895876cb72af74b3748632109b593fcf1102f71b7d3f447dbb2d74f2c95",
+      "retrieved_at": "2026-11-09T08:01:59Z"
+    }
+  },
+  {
+    "id": "url:fb06735dcedd18ed9ae3",
+    "url": "https://papers.nips.cc/paper_files/paper/2023/hash/c1f7b1ed763e9c75e4db74b49b76db5f-Abstract-Conference.html",
+    "decision": "out_of_scope",
+    "reason": "NeurIPS 2023 paper on VisionLLM, an LLM-based decoder for vision-centric tasks such as object detection and image captioning on natural images.",
+    "reviewed_at": "2026-11-09T08:09:26Z",
+    "evidence": {
+      "url": "https://export.arxiv.org/api/query?id_list=2305.11175,2306.14824,2310.09611&max_results=3",
+      "sha256": "67869e5175ccf29b0878f2778f73679089ada2952e2858033c6cd6b367b96754",
+      "retrieved_at": "2026-11-09T08:01:51Z"
+    }
+  },
+  {
+    "id": "url:fbc5a635258b39175738",
+    "url": "https://openreview.net/forum?id=lLmqxkfSIw",
+    "decision": "out_of_scope",
+    "reason": "ICLR 2024 OpenReview page of Kosmos-2, a multimodal LLM that grounds text to bounding boxes in natural images; its arXiv record arxiv:2306.14824 carries an applied scope exclusion.",
+    "reviewed_at": "2026-11-09T08:09:26Z",
+    "evidence": {
+      "url": "https://export.arxiv.org/api/query?id_list=2305.11175,2306.14824,2310.09611&max_results=3",
+      "sha256": "67869e5175ccf29b0878f2778f73679089ada2952e2858033c6cd6b367b96754",
+      "retrieved_at": "2026-11-09T08:01:51Z"
+    }
+  },
+  {
+    "id": "url:ff982ec58b5be85bcd23",
+    "url": "https://journals.sagepub.com/doi/10.1177/2379298119833860",
+    "decision": "out_of_scope",
+    "reason": "Management Teaching Review article on using Edpuzzle to add questions to online videos in classroom teaching.",
+    "reviewed_at": "2026-11-09T08:09:26Z",
+    "evidence": {
+      "url": "https://api.crossref.org/works?query.bibliographic=Watch+and+Learn%3F+Using+Edpuzzle+to+Enhance+the+Use+of+Online+Videos&rows=3",
+      "sha256": "e247cbb52132565567c7fee447afc3be6fddd55f96d4d77690fb5c1627deb48b",
+      "retrieved_at": "2026-11-09T08:06:54Z"
+    }
+  },
+  {
+    "id": "url:d4ef740bf708fd6e2e7c",
+    "url": "https://openai.com/research/gpt-4v-system-card",
+    "decision": "out_of_scope",
+    "reason": "OpenAI system card for GPT-4V, covering safety evaluations and mitigations for image inputs to GPT-4.",
+    "reviewed_at": "2026-11-09T08:09:26Z",
+    "evidence": {
+      "url": "https://cdn.openai.com/papers/GPTV_System_Card.pdf",
+      "sha256": "f5a5a731482b3029e6a998377f7fc693f309c211a0672617c44bec5a076dcf5d",
+      "retrieved_at": "2026-11-09T08:01:45Z"
+    }
+  },
+  {
+    "id": "url:f02c72d775ae29957781",
+    "url": "https://dl.acm.org/doi/abs/10.1145/3654777.3676414",
+    "decision": "out_of_scope",
+    "reason": "UIST 2024 paper on VizAbility, which adds LLM-based conversational queries to keyboard chart navigation for accessible data visualization.",
+    "reviewed_at": "2026-11-09T08:09:26Z",
+    "evidence": {
+      "url": "https://export.arxiv.org/api/query?id_list=2305.11175,2306.14824,2310.09611&max_results=3",
+      "sha256": "67869e5175ccf29b0878f2778f73679089ada2952e2858033c6cd6b367b96754",
+      "retrieved_at": "2026-11-09T08:01:51Z"
+    }
   }
 ]

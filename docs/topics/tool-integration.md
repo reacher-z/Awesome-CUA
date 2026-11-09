@@ -2,9 +2,9 @@
 
 [Home](../../README.md) · [All topics](../topics.md) · [Full arXiv bibliography](../papers.md)
 
-1,212 source-reviewed resources tagged `tool-integration`. Curated metadata; unknown facts are shown as —.
+1,214 source-reviewed resources tagged `tool-integration`. Curated metadata; unknown facts are shown as —.
 
-**Contents:** [Benchmarks (27)](#benchmarks) · [Datasets (2)](#datasets) · [Models (28)](#models) · [Agents (106)](#agents) · [Frameworks (201)](#frameworks) · [Tools (667)](#tools) · [Infrastructure (19)](#infrastructure) · [Products (13)](#products) · [Learning resources (6)](#learning-resources) · [Surveys (3)](#surveys) · [Papers (140)](#papers)
+**Contents:** [Benchmarks (27)](#benchmarks) · [Datasets (2)](#datasets) · [Models (28)](#models) · [Agents (106)](#agents) · [Frameworks (201)](#frameworks) · [Tools (667)](#tools) · [Infrastructure (19)](#infrastructure) · [Products (13)](#products) · [Learning resources (6)](#learning-resources) · [Surveys (3)](#surveys) · [Papers (142)](#papers)
 
 ## Benchmarks
 
@@ -1255,6 +1255,7 @@
 | 2024‑12‑18 | [CAD-Assistant: Tool-Augmented VLLMs as Generic CAD Task Solvers](https://arxiv.org/abs/2412.13810) | unspecified | CAD-Assistant plans CAD tasks and executes actions through FreeCAD's Python API, using the changing design state to guide later commands. |
 | 2024‑11‑30 | [DroidCall: A Dataset for LLM-powered Android Intent Invocation](https://arxiv.org/abs/2412.00402) | android | Introduces data and a generation pipeline for translating natural-language requests into Android intent invocations using compact language models. |
 | 2024‑11‑07 | [Magentic-One: A Generalist Multi-Agent System for Solving Complex Tasks](https://arxiv.org/abs/2411.04468) | web, desktop | Introduces an orchestrated team of browsing, file, and coding agents with progress tracking and error recovery for general digital tasks. |
+| 2024‑10‑28 | [AssistEditor: Multi-Agent Collaboration for GUI Workflow Automation in Video Creation](https://dl.acm.org/doi/abs/10.1145/3664647.3684998) | desktop | AssistEditor coordinates GUI agents to turn video requirements and uploaded materials into storyboards and editing actions in professional desktop software. |
 | 2024‑10‑24 | [AgentStore: Scalable Integration of Heterogeneous Agents As Specialized Generalist Computer Assistant](https://arxiv.org/abs/2410.18603) | desktop | Introduces a platform that integrates specialized agents under a coordinating MetaAgent for varied computer tasks. |
 | 2024‑10‑24 | [Infogent: An Agent-Based Framework for Web Information Aggregation](https://arxiv.org/abs/2410.19054) | web | Infogent separates navigation, extraction and aggregation for web information gathering, including browser interaction through webpage screenshots. |
 | 2024‑10‑24 | [OSCAR: Operating System Control via State-Aware Reasoning and Re-Planning](https://arxiv.org/abs/2410.18963) | desktop, cross-platform | OSCAR translates user instructions into Python control code while observing screen images and acting through mouse and keyboard operations. A state-machine controller handles errors and replans tasks during execution across desktop and mobile applications. |
@@ -1271,4 +1272,5 @@
 | 2023‑11‑03 | [PPTC Benchmark: Evaluating Large Language Models for PowerPoint Task Completion](https://arxiv.org/abs/2311.01767) | unspecified | Evaluates multi-turn PowerPoint creation and editing, scoring the resulting presentation files rather than requiring a fixed API sequence. |
 | 2023‑10‑24 | [WebWISE: Web Interface Control and Sequential Exploration with Large Language Models](https://arxiv.org/abs/2310.16042) | web | WebWISE filters DOM elements into observations and generates short programs for click, scroll, and text-entry steps. It evaluates in-context learning from either one supplied example or an example collected during a successful zero-shot MiniWoB++ trial. |
 | 2023‑10‑16 | [OpenAgents: An Open Platform for Language Agents in the Wild](https://arxiv.org/abs/2310.10634) | web | OpenAgents hosts three language agents, for data analysis, API plugins and autonomous web browsing, behind a web interface for non-expert users, with local deployment for developers. |
+| 2023‑09‑11 | [GUI-Based Software Testing: An Automated Approach Using GPT-4 and Selenium WebDriver](https://ieeexplore.ieee.org/abstract/document/10298721) | web | A web GUI testing method combines GPT-4 with Selenium WebDriver and compares its branch coverage with random monkey testing on a web calculator. |
 | 2023‑05‑30 | [SheetCopilot: Bringing Software Productivity to the Next Level through Large Language Models](https://arxiv.org/abs/2305.19308) | desktop, windows | Introduces SheetCopilot, an agent that steers spreadsheet software via atomic virtual APIs, along with a 221-task spreadsheet manipulation benchmark. |

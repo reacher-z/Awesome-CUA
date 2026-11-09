@@ -1,20 +1,20 @@
 {
-  "as_of_utc": "2026-11-09T06:16:40Z",
-  "total_records": 5010,
-  "curated_records": 4559,
-  "bibliographic_records": 2141,
-  "arxiv_active_records": 2112,
-  "non_arxiv_bibliographic_records": 29,
-  "publication_metadata_records": 100,
-  "arxiv_archive_records": 3420,
+  "as_of_utc": "2026-11-09T08:07:58Z",
+  "total_records": 5038,
+  "curated_records": 4587,
+  "bibliographic_records": 2169,
+  "arxiv_active_records": 2116,
+  "non_arxiv_bibliographic_records": 53,
+  "publication_metadata_records": 127,
+  "arxiv_archive_records": 3424,
   "excluded_records": 1308,
   "exclusion_revalidation_pending": 0,
   "metadata_only_records": 451,
   "discovery_identifiers": 6084,
-  "unindexed_candidates": 177,
+  "unindexed_candidates": 114,
   "non_resource_candidates": 342,
-  "alias_candidates": 518,
-  "out_of_scope_candidates": 457,
+  "alias_candidates": 548,
+  "out_of_scope_candidates": 463,
   "pending_editorial": [
     {
       "id": "github:thudm/autoglm",
@@ -3277,22 +3277,22 @@
     "infrastructure": 90,
     "learning": 26,
     "model": 283,
-    "paper": 2112,
+    "paper": 2132,
     "product": 70,
-    "survey": 29,
+    "survey": 37,
     "tool": 884
   },
   "curated_by_environment": {
-    "android": 651,
-    "cross-platform": 661,
-    "desktop": 1550,
-    "harmonyos": 4,
+    "android": 652,
+    "cross-platform": 663,
+    "desktop": 1554,
+    "harmonyos": 5,
     "ios": 73,
     "linux": 439,
     "macos": 476,
-    "unspecified": 712,
-    "web": 2342,
-    "windows": 486
+    "unspecified": 728,
+    "web": 2349,
+    "windows": 487
   },
   "curated_by_kind_and_environment": {
     "agent": {
@@ -3378,16 +3378,16 @@
       "windows": 13
     },
     "paper": {
-      "android": 228,
-      "cross-platform": 110,
-      "desktop": 240,
-      "harmonyos": 3,
+      "android": 229,
+      "cross-platform": 112,
+      "desktop": 244,
+      "harmonyos": 4,
       "ios": 12,
       "linux": 25,
       "macos": 18,
-      "unspecified": 589,
-      "web": 654,
-      "windows": 42
+      "unspecified": 597,
+      "web": 661,
+      "windows": 43
     },
     "product": {
       "android": 5,
@@ -3404,7 +3404,7 @@
       "cross-platform": 13,
       "desktop": 2,
       "ios": 1,
-      "unspecified": 9,
+      "unspecified": 17,
       "web": 7,
       "windows": 1
     },
@@ -3511,14 +3511,14 @@
         "state": "success"
       },
       "discovered": 224,
-      "indexed": 195,
-      "indexed_resources": 194,
+      "indexed": 196,
+      "indexed_resources": 195,
       "resolved_aliases": 1,
-      "curated": 190,
+      "curated": 191,
       "excluded": 9,
       "set_aside": 16,
       "out_of_scope": 2,
-      "unindexed": 2
+      "unindexed": 1
     },
     {
       "id": "wjhou-cua",
@@ -3542,12 +3542,12 @@
         "state": "success"
       },
       "discovered": 132,
-      "indexed": 103,
-      "indexed_resources": 103,
-      "resolved_aliases": 2,
-      "curated": 101,
+      "indexed": 104,
+      "indexed_resources": 104,
+      "resolved_aliases": 3,
+      "curated": 102,
       "excluded": 4,
-      "set_aside": 19,
+      "set_aside": 18,
       "out_of_scope": 5,
       "unindexed": 1
     },
@@ -3816,14 +3816,14 @@
         "state": "success"
       },
       "discovered": 545,
-      "indexed": 491,
-      "indexed_resources": 491,
+      "indexed": 492,
+      "indexed_resources": 492,
       "resolved_aliases": 0,
-      "curated": 473,
+      "curated": 474,
       "excluded": 0,
       "set_aside": 53,
       "out_of_scope": 0,
-      "unindexed": 1
+      "unindexed": 0
     },
     {
       "id": "opendilab-ui",
@@ -4157,14 +4157,14 @@
         "state": "success"
       },
       "discovered": 57,
-      "indexed": 51,
-      "indexed_resources": 51,
+      "indexed": 52,
+      "indexed_resources": 52,
       "resolved_aliases": 0,
-      "curated": 49,
+      "curated": 50,
       "excluded": 1,
-      "set_aside": 3,
+      "set_aside": 4,
       "out_of_scope": 0,
-      "unindexed": 2
+      "unindexed": 0
     },
     {
       "id": "chenvoid-gui",
@@ -5092,9 +5092,9 @@
       "resolved_aliases": 58,
       "curated": 447,
       "excluded": 0,
-      "set_aside": 39,
+      "set_aside": 40,
       "out_of_scope": 0,
-      "unindexed": 1
+      "unindexed": 0
     },
     {
       "id": "trycua-acu",
@@ -5149,14 +5149,14 @@
         "state": "success"
       },
       "discovered": 334,
-      "indexed": 257,
-      "indexed_resources": 257,
-      "resolved_aliases": 4,
-      "curated": 254,
+      "indexed": 266,
+      "indexed_resources": 266,
+      "resolved_aliases": 5,
+      "curated": 263,
       "excluded": 8,
-      "set_aside": 42,
-      "out_of_scope": 4,
-      "unindexed": 23
+      "set_aside": 52,
+      "out_of_scope": 5,
+      "unindexed": 3
     },
     {
       "id": "showlab-mm-embodied",
@@ -5180,14 +5180,14 @@
         "state": "success"
       },
       "discovered": 221,
-      "indexed": 108,
-      "indexed_resources": 108,
+      "indexed": 109,
+      "indexed_resources": 109,
       "resolved_aliases": 0,
-      "curated": 96,
+      "curated": 97,
       "excluded": 35,
       "set_aside": 26,
       "out_of_scope": 50,
-      "unindexed": 2
+      "unindexed": 1
     },
     {
       "id": "rl-gui-agents",
@@ -5217,8 +5217,8 @@
       "curated": 157,
       "excluded": 38,
       "set_aside": 5,
-      "out_of_scope": 0,
-      "unindexed": 2
+      "out_of_scope": 2,
+      "unindexed": 0
     },
     {
       "id": "12britz-cua",
@@ -5247,9 +5247,9 @@
       "resolved_aliases": 0,
       "curated": 115,
       "excluded": 0,
-      "set_aside": 3,
+      "set_aside": 4,
       "out_of_scope": 1,
-      "unindexed": 1
+      "unindexed": 0
     },
     {
       "id": "autonomous-web",
@@ -5397,14 +5397,14 @@
         "state": "success"
       },
       "discovered": 139,
-      "indexed": 113,
-      "indexed_resources": 113,
+      "indexed": 114,
+      "indexed_resources": 114,
       "resolved_aliases": 0,
-      "curated": 113,
+      "curated": 114,
       "excluded": 0,
       "set_aside": 23,
       "out_of_scope": 1,
-      "unindexed": 2
+      "unindexed": 1
     },
     {
       "id": "llm-brained-gui-survey-gui-testing",
@@ -5428,14 +5428,14 @@
         "state": "success"
       },
       "discovered": 32,
-      "indexed": 23,
-      "indexed_resources": 23,
-      "resolved_aliases": 0,
-      "curated": 23,
+      "indexed": 29,
+      "indexed_resources": 29,
+      "resolved_aliases": 2,
+      "curated": 29,
       "excluded": 0,
       "set_aside": 1,
       "out_of_scope": 0,
-      "unindexed": 8
+      "unindexed": 2
     },
     {
       "id": "llm-brained-gui-survey-models",
@@ -5459,12 +5459,12 @@
         "state": "success"
       },
       "discovered": 97,
-      "indexed": 72,
-      "indexed_resources": 72,
-      "resolved_aliases": 0,
-      "curated": 70,
+      "indexed": 73,
+      "indexed_resources": 73,
+      "resolved_aliases": 1,
+      "curated": 71,
       "excluded": 4,
-      "set_aside": 17,
+      "set_aside": 16,
       "out_of_scope": 2,
       "unindexed": 2
     },
@@ -5490,14 +5490,14 @@
         "state": "success"
       },
       "discovered": 40,
-      "indexed": 15,
-      "indexed_resources": 15,
-      "resolved_aliases": 0,
-      "curated": 5,
+      "indexed": 21,
+      "indexed_resources": 21,
+      "resolved_aliases": 1,
+      "curated": 11,
       "excluded": 6,
-      "set_aside": 1,
+      "set_aside": 2,
       "out_of_scope": 6,
-      "unindexed": 12
+      "unindexed": 5
     },
     {
       "id": "llm-brained-gui-survey-virtual-assistant",
@@ -5521,14 +5521,14 @@
         "state": "success"
       },
       "discovered": 19,
-      "indexed": 8,
-      "indexed_resources": 8,
+      "indexed": 9,
+      "indexed_resources": 9,
       "resolved_aliases": 0,
-      "curated": 8,
+      "curated": 9,
       "excluded": 0,
       "set_aside": 4,
-      "out_of_scope": 4,
-      "unindexed": 3
+      "out_of_scope": 5,
+      "unindexed": 1
     },
     {
       "id": "osworld-verified-leaderboard",
@@ -5589,8 +5589,8 @@
       "curated": 22,
       "excluded": 5,
       "set_aside": 53,
-      "out_of_scope": 4,
-      "unindexed": 5
+      "out_of_scope": 5,
+      "unindexed": 4
     },
     {
       "id": "screenspot-pro-leaderboard",
@@ -5676,14 +5676,14 @@
         "state": "success"
       },
       "discovered": 83,
-      "indexed": 43,
-      "indexed_resources": 43,
+      "indexed": 44,
+      "indexed_resources": 44,
       "resolved_aliases": 0,
-      "curated": 40,
+      "curated": 41,
       "excluded": 4,
       "set_aside": 26,
       "out_of_scope": 6,
-      "unindexed": 4
+      "unindexed": 3
     },
     {
       "id": "androidlab-leaderboard",
@@ -6580,9 +6580,9 @@
       "resolved_aliases": 8,
       "curated": 74,
       "excluded": 2,
-      "set_aside": 32,
+      "set_aside": 42,
       "out_of_scope": 0,
-      "unindexed": 13
+      "unindexed": 3
     },
     {
       "id": "gui-agents-survey-references",
@@ -6611,9 +6611,9 @@
       "resolved_aliases": 0,
       "curated": 56,
       "excluded": 13,
-      "set_aside": 29,
-      "out_of_scope": 5,
-      "unindexed": 8
+      "set_aside": 33,
+      "out_of_scope": 6,
+      "unindexed": 3
     },
     {
       "id": "benchmark-leads",

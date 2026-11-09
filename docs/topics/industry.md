@@ -2,9 +2,9 @@
 
 [Home](../../README.md) · [All topics](../topics.md) · [Full arXiv bibliography](../papers.md)
 
-63 source-reviewed resources tagged `industry`. Curated metadata; unknown facts are shown as —.
+66 source-reviewed resources tagged `industry`. Curated metadata; unknown facts are shown as —.
 
-**Contents:** [Benchmarks (1)](#benchmarks) · [Models (2)](#models) · [Agents (1)](#agents) · [Tools (12)](#tools) · [Infrastructure (1)](#infrastructure) · [Products (5)](#products) · [Publishers (18)](#publishers) · [Papers (23)](#papers)
+**Contents:** [Benchmarks (1)](#benchmarks) · [Models (2)](#models) · [Agents (1)](#agents) · [Tools (12)](#tools) · [Infrastructure (1)](#infrastructure) · [Products (5)](#products) · [Publishers (18)](#publishers) · [Surveys (3)](#surveys) · [Papers (23)](#papers)
 
 ## Benchmarks
 
@@ -92,6 +92,16 @@ All entries in this section: unspecified.
 | [Skyvern](https://www.skyvern.com/) | Publisher or product brand associated with Skyvern computer-use or browser automation offerings. | [✓ 2026‑10‑16](https://www.skyvern.com/) |
 | [Steel](https://steel.dev/) | Publisher or product brand associated with Steel computer-use or browser automation offerings. | [✓ 2026‑10‑16](https://steel.dev/) |
 | [TinyFish](https://www.tinyfish.ai/) | Publisher or product brand associated with TinyFish computer-use or browser automation offerings. | [✓ 2026‑10‑16](https://www.tinyfish.ai/) |
+
+## Surveys
+
+All entries in this section: unspecified.
+
+| Date | Resource | Description |
+| --- | --- | --- |
+| 2021 | [Robotic Process Automation and Artificial Intelligence in Industry 4.0 – A Literature review](https://www.sciencedirect.com/science/article/pii/S1877050921001393) | A literature review examines how robotic process automation tools combine with AI for organizational workflows in Industry 4.0, including information extraction and process optimization. |
+| 2020‑07‑27 | [From Robotic Process Automation to Intelligent Process Automation: Emerging Trends](https://arxiv.org/abs/2007.13257) | A survey of robotic and intelligent process automation traces the use of machine learning and AI in business workflows and identifies open research challenges. |
+| 2020‑02 | [Robotic Process Automation: Contemporary themes and challenges](https://www.sciencedirect.com/science/article/abs/pii/S0166361519304609) | A structured review of robotic process automation examines software bots that mimic user actions and identifies research themes and challenges for organizational use. |
 
 ## Papers
 

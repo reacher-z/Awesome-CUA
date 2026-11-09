@@ -2,9 +2,9 @@
 
 [Home](../../README.md) · [All topics](../topics.md) · [Full arXiv bibliography](../papers.md)
 
-199 source-reviewed resources tagged `observability`. Curated metadata; unknown facts are shown as —.
+200 source-reviewed resources tagged `observability`. Curated metadata; unknown facts are shown as —.
 
-**Contents:** [Benchmarks (9)](#benchmarks) · [Datasets (7)](#datasets) · [Agents (15)](#agents) · [Frameworks (33)](#frameworks) · [Tools (55)](#tools) · [Infrastructure (5)](#infrastructure) · [Products (3)](#products) · [Surveys (2)](#surveys) · [Papers (70)](#papers)
+**Contents:** [Benchmarks (9)](#benchmarks) · [Datasets (7)](#datasets) · [Agents (15)](#agents) · [Frameworks (33)](#frameworks) · [Tools (55)](#tools) · [Infrastructure (5)](#infrastructure) · [Products (3)](#products) · [Surveys (2)](#surveys) · [Papers (71)](#papers)
 
 ## Benchmarks
 
@@ -201,6 +201,7 @@
 | 2026‑09‑02 | [Monitoring Web Agents Without Internal Signals: Observable Trajectories and Key-Step Supervision](https://arxiv.org/abs/2609.02057) | web | Predicts web-agent failure risk from observable trajectory prefixes using cross-step behavior and black-box consistency queries. Key-step labels preserve valid early prefixes of failed runs, and evaluation tests early intervention and transfer across website categories. |
 | 2026‑08‑28 | [CURA: Certified Runtime Alarms for Computer-Use Agents](https://arxiv.org/abs/2608.27808) | desktop | Introduces CURA, a telemetry-based runtime monitor that turns computer-use trajectories into sequential failure alarms and can trigger mid-task oversight. Its certificate controls false alarms, while the study separately reports detection performance and limits of retrospective monitoring. |
 | 2026‑08‑23 | [ClawProBench: Trace-Aware Evaluation of AI Agents with Runtime Coverage and Frozen Workplace-Style Holdouts](https://arxiv.org/abs/2608.22510) | unspecified | Introduces ClawProBench, a trace-aware benchmark for agents on OpenClaw that scores workspace and native-runtime tasks using execution traces, safety checks, and process quality. |
+| 2026‑08‑08 | [SkillTracer: Structural Failure Attribution and Refinement of Agentic Skills in Long-Horizon Web Tasks](https://doi.org/10.1145/3770855.3817981) | web | SkillTracer maps web agent skills to inspectable plan graphs, uses interaction traces to locate failures, and refines reusable skills across long tasks and episodes. |
 | 2026‑07‑30 | [How Benchmarks Mis-Score Computer-Use Agents](https://arxiv.org/abs/2607.28367) | web, desktop | Audits failure-scored computer-use trajectories to distinguish agent errors from broken tasks and evaluator false negatives. It organizes reliability issues across task construction, trajectory evidence, scoring, and reporting, then derives corresponding evaluation design practices. |
 | 2026‑07‑20 | [Sidekick: Designing Communication for Effective Multitasking with Computer Use Agents](https://arxiv.org/abs/2607.17527) | unspecified | Introduces Sidekick, a communication interface that uses ambient status cues, multimodal action summaries, and visual and verbal explanations of reasoning to help people monitor computer-use agents. A user study examines progress awareness, error traceability, and multitasking across background and foreground interaction. |
 | 2026‑07‑18 | [Just A Rather Very Intelligent Spoken Agent](https://arxiv.org/abs/2607.16610) | unspecified | Introduces JarvisBench, a benchmark for spoken mediation during long-horizon agent workflows, measuring task collaboration and how users follow ongoing execution. |

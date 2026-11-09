@@ -2,9 +2,9 @@
 
 [Home](../../README.md) · [All topics](../topics.md) · [Full arXiv bibliography](../papers.md)
 
-107 source-reviewed resources tagged `ui-design`. Curated metadata; unknown facts are shown as —.
+109 source-reviewed resources tagged `ui-design`. Curated metadata; unknown facts are shown as —.
 
-**Contents:** [Benchmarks (8)](#benchmarks) · [Datasets (4)](#datasets) · [Models (1)](#models) · [Agents (5)](#agents) · [Frameworks (12)](#frameworks) · [Tools (22)](#tools) · [Learning resources (1)](#learning-resources) · [Papers (54)](#papers)
+**Contents:** [Benchmarks (8)](#benchmarks) · [Datasets (4)](#datasets) · [Models (1)](#models) · [Agents (5)](#agents) · [Frameworks (12)](#frameworks) · [Tools (22)](#tools) · [Learning resources (1)](#learning-resources) · [Surveys (1)](#surveys) · [Papers (55)](#papers)
 
 ## Benchmarks
 
@@ -98,6 +98,14 @@ All entries in this section: cross-platform, desktop, web.
 | --- | --- | --- | --- |
 | [Awesome Multimodal Agentic Coding](https://github.com/jiangjin1999/awesome-multimodal-agentic-coding) | code MIT | Comprehensive research map of papers, benchmarks, and tools for multimodal coding and UI-verifying agents. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/jiangjin1999/awesome-multimodal-agentic-coding/main/README.md) |
 
+## Surveys
+
+All entries in this section: unspecified.
+
+| Date | Resource | Description |
+| --- | --- | --- |
+| 2023‑05‑29 | [Task Automation Intelligent Agents: A Review](https://www.researchgate.net/publication/371143847_Task_Automation_Intelligent_Agents_A_Review) | A literature review examines mobile phone task automation agents, including programming by demonstration and usability heuristics for recurring user tasks. |
+
 ## Papers
 
 | Date | Resource | Environments | Description |
@@ -147,6 +155,7 @@ All entries in this section: cross-platform, desktop, web.
 | 2025‑08‑22 | [WebMMU: A Benchmark for Multimodal Multilingual Website Understanding and Code Generation](https://arxiv.org/abs/2508.16763) | web | Introduces WebMMU, a multilingual benchmark for website visual question answering, element grounding, code editing, and mockup-to-code generation. |
 | 2025‑07‑17 | [Machine-Readable Ads: Accessibility and Trust Patterns for AI Web Agents interacting with Online Advertisements](https://arxiv.org/abs/2507.12844) | web | Compares DOM-based and pixel-based web agents on a cloned news site containing advertisements, consent dialogs and paywalls. The study examines how interface presentation affects ad interaction and consequential subscription choices. |
 | 2025‑06‑12 | [Build the web for agents, not agents for the web](https://arxiv.org/abs/2506.10953) | web | Proposes Agentic Web Interface (AWI), a website interface intended for agent navigation, and sets out six design principles for web-agent use. |
+| 2025‑05‑23 | [Automated Testing of the GUI of a Real-Life Engineering Software using Large Language Models](https://arxiv.org/abs/2505.17839) | unspecified | GERALLT uses LLMs to explore the GUI of engineering software and produce a list of confusing or inconsistent interface areas for developers to inspect. |
 | 2025‑05‑09 | [Leveraging Vision-Language Models for Visual Grounding and Analysis of Automotive UI](https://arxiv.org/abs/2505.05895) | unspecified | Introduces AutomotiveUI-Bench-4K and a fine-tuned vision-language model for locating elements and evaluating automotive infotainment interfaces. |
 | 2025‑05‑08 | [Do MLLMs Capture How Interfaces Guide User Behavior? A Benchmark for Multimodal UI/UX Design Understanding](https://arxiv.org/abs/2505.05026) | unspecified | Introduces WiserUI-Bench, pairing real UI variants from industry A/B tests with observed behavioral winners and expert explanations. It evaluates models’ ability to predict the more effective interface and explain its effect on user behavior. |
 | 2025‑05‑06 | [WebGen-Bench: Evaluating LLMs on Generating Interactive and Functional Websites from Scratch](https://arxiv.org/abs/2505.03733) | web | Introduces WebGen-Bench for evaluating agents that generate multi-file websites, using a web-navigation agent to check whether the resulting pages pass interaction tests. |

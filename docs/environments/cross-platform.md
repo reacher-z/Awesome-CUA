@@ -2,9 +2,9 @@
 
 [Home](../../README.md) · [All platforms](../environments.md) · [Research by topic](../topics.md)
 
-661 source-reviewed resources tagged `cross-platform`. Curated metadata; unknown facts are shown as —.
+663 source-reviewed resources tagged `cross-platform`. Curated metadata; unknown facts are shown as —.
 
-**Contents:** [Benchmarks (28)](#benchmarks) · [Datasets (28)](#datasets) · [Models (119)](#models) · [Agents (41)](#agents) · [Frameworks (146)](#frameworks) · [Tools (150)](#tools) · [Infrastructure (6)](#infrastructure) · [Products (5)](#products) · [Publishers (1)](#publishers) · [Learning resources (14)](#learning-resources) · [Surveys (13)](#surveys) · [Papers (110)](#papers)
+**Contents:** [Benchmarks (28)](#benchmarks) · [Datasets (28)](#datasets) · [Models (119)](#models) · [Agents (41)](#agents) · [Frameworks (146)](#frameworks) · [Tools (150)](#tools) · [Infrastructure (6)](#infrastructure) · [Products (5)](#products) · [Publishers (1)](#publishers) · [Learning resources (14)](#learning-resources) · [Surveys (13)](#surveys) · [Papers (112)](#papers)
 
 ## Benchmarks
 
@@ -712,6 +712,7 @@ All entries in this section: cross-platform, desktop.
 | 2024‑10‑25 | [EDGE: Enhanced Grounded GUI Understanding with Enriched Multi-Granularity Synthetic Data](https://arxiv.org/abs/2410.19461) | web, cross-platform | Synthesizes GUI training examples at multiple levels of detail from webpages and studies transfer of learned understanding to other interface environments. |
 | 2024‑10‑24 | [Ferret-UI 2: Mastering Universal User Interface Understanding Across Platforms](https://arxiv.org/abs/2410.18967) | ios, android, web, cross-platform | Extends Ferret-UI across device platforms with adaptive visual scaling and synthetic data for referring, grounding, and user-centered UI tasks. |
 | 2024‑10‑24 | [OSCAR: Operating System Control via State-Aware Reasoning and Re-Planning](https://arxiv.org/abs/2410.18963) | desktop, cross-platform | OSCAR translates user instructions into Python control code while observing screen images and acting through mouse and keyboard operations. A state-machine controller handles errors and replans tasks during execution across desktop and mobile applications. |
+| 2024‑10‑18 | [Test-Agent: A Multimodal App Automation Testing Framework Based on the Large Language Model](https://ieeexplore.ieee.org/abstract/document/10778901) | harmonyos, cross-platform | Test-Agent uses an LLM, screenshots, and interface structure to generate and execute mobile app test actions from natural-language instructions across platforms. |
 | 2024‑10‑09 | [TinyClick: Single-Turn Agent for Empowering GUI Automation](https://arxiv.org/abs/2410.11871) | cross-platform | Adapts a compact Florence-2 model to map user instructions to screen coordinates using multitask training and augmented data. |
 | 2024‑10‑07 | [Navigating the Digital World as Humans Do: Universal Visual Grounding for GUI Agents](https://arxiv.org/abs/2410.05243) | cross-platform | Introduces UGround, a visual target-localization model trained with large-scale synthetic references to elements in GUI screenshots. |
 | 2024‑09‑30 | [DreamStruct: Understanding Slides and User Interfaces via Synthetic Data Generation](https://arxiv.org/abs/2410.00201) | cross-platform | Generates labeled slides and interface visuals through code to support visual element detection, description, and classification with less manual annotation. |
@@ -728,3 +729,4 @@ All entries in this section: cross-platform, desktop.
 | 2024‑01‑17 | [SeeClick: Harnessing GUI Grounding for Advanced Visual GUI Agents](https://arxiv.org/abs/2401.10935) | cross-platform | Trains a screenshot-driven GUI agent with grounding pretraining and introduces ScreenSpot for evaluating interface target localization. |
 | 2023‑10‑07 | [Reinforced UI Instruction Grounding: Towards a Generic UI Task Automation API](https://arxiv.org/abs/2310.04716) | cross-platform | Trains a screenshot-based instruction-grounding model to predict target coordinates, using reinforcement learning to improve spatial decoding. |
 | 2023‑08‑07 | [AgentBench: Evaluating LLMs as Agents](https://arxiv.org/abs/2308.03688) | cross-platform | Evaluates language agents across eight interactive environments and analyzes failures in reasoning, decisions, and instruction following. |
+| 2023‑04 | [Automating GUI-based Software Testing with GPT-3](https://ieeexplore.ieee.org/abstract/document/10132233) | desktop, cross-platform | A GPT-3-based GUI testing method interprets natural-language test cases, tracks current interface elements in prompts, and navigates desktop and mobile applications. |

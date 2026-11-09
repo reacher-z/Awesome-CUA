@@ -2,9 +2,9 @@
 
 [Home](../../README.md) · [All platforms](../environments.md) · [Research by topic](../topics.md)
 
-486 source-reviewed resources tagged `windows`. Curated metadata; unknown facts are shown as —.
+487 source-reviewed resources tagged `windows`. Curated metadata; unknown facts are shown as —.
 
-**Contents:** [Benchmarks (14)](#benchmarks) · [Datasets (11)](#datasets) · [Models (13)](#models) · [Agents (85)](#agents) · [Frameworks (92)](#frameworks) · [Tools (206)](#tools) · [Infrastructure (13)](#infrastructure) · [Products (7)](#products) · [Learning resources (2)](#learning-resources) · [Surveys (1)](#surveys) · [Papers (42)](#papers)
+**Contents:** [Benchmarks (14)](#benchmarks) · [Datasets (11)](#datasets) · [Models (13)](#models) · [Agents (85)](#agents) · [Frameworks (92)](#frameworks) · [Tools (206)](#tools) · [Infrastructure (13)](#infrastructure) · [Products (7)](#products) · [Learning resources (2)](#learning-resources) · [Surveys (1)](#surveys) · [Papers (43)](#papers)
 
 ## Benchmarks
 
@@ -528,6 +528,7 @@ All entries in this section: web, desktop, android, windows.
 | 2026‑02‑10 | [Autonomous Continual Learning for Environment Adaptation of Computer-Use Agents](https://arxiv.org/abs/2602.10356) | desktop, linux, windows | ACuRL uses autonomous interface exploration and an adaptive task curriculum to continually train computer-use policies with reinforcement learning. CUAJudge supplies outcome feedback, and experiments study adaptation across desktop applications and environment changes. |
 | 2026‑02‑06 | [ANCHOR: Branch-Point Data Generation for GUI Agents](https://arxiv.org/abs/2602.07153) | desktop, windows | ANCHOR expands verified desktop demonstrations by generating new tasks at meaningful branch points and executing their instructions. State-aware verification and action filtering refine the resulting trajectories, which are evaluated through fine-tuned agents on OSWorld and WindowsAgentArena. |
 | 2026‑01‑28 | [CUA-Skill: Develop Skills for Computer Using Agent](https://arxiv.org/abs/2601.21123) | desktop, windows | CUA-Skill encodes Windows application knowledge in parameterized skills and execution/composition graphs. Its agent retrieves and instantiates these skills and uses memory for failure recovery, with end-to-end evaluation on WindowsAgentArena. |
+| 2026 | [Do GUI Grounders Truly Understand UI Elements?](https://aclanthology.org/2026.findings-eacl.144) | desktop, windows | A desktop GUI grounding benchmark tests whether models identify the same element across varied descriptions; a diagnosis agent generates difficult instructions using model feedback. |
 | 2025‑12‑30 | [ProSoftArena: Benchmarking Hierarchical Capabilities of Multimodal Agents in Professional Software Environments](https://arxiv.org/abs/2601.02399) | windows, desktop | ProSoftArena evaluates 436 professional-software tasks across six disciplines and 13 applications in a Windows 11 virtual-machine environment. Its capability hierarchy, execution-based checks, and human-in-the-loop evaluation cover precise GUI operations and multi-software workflows. |
 | 2025‑11‑06 | [GUI-360$^\circ$: A Comprehensive Dataset and Benchmark for Computer-Using Agents](https://arxiv.org/abs/2511.04307) | desktop, windows | Collects Windows application trajectories with screenshots and action traces for grounding, screen parsing, and action prediction. |
 | 2025‑10‑30 | [GUI Knowledge Bench: Revealing the Knowledge Gap of VLMs in GUI Tasks](https://arxiv.org/abs/2510.26098) | web, desktop, windows, macos, linux, android, ios, cross-platform | GUI Knowledge Bench tests knowledge of widgets, interactions, and procedures across six named platforms and 292 applications to assess VLMs used for GUI tasks. |

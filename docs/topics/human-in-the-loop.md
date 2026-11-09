@@ -2,9 +2,9 @@
 
 [Home](../../README.md) · [All topics](../topics.md) · [Full arXiv bibliography](../papers.md)
 
-308 source-reviewed resources tagged `human-in-the-loop`. Curated metadata; unknown facts are shown as —.
+311 source-reviewed resources tagged `human-in-the-loop`. Curated metadata; unknown facts are shown as —.
 
-**Contents:** [Benchmarks (5)](#benchmarks) · [Datasets (3)](#datasets) · [Models (1)](#models) · [Agents (70)](#agents) · [Frameworks (55)](#frameworks) · [Tools (52)](#tools) · [Infrastructure (8)](#infrastructure) · [Products (9)](#products) · [Learning resources (1)](#learning-resources) · [Papers (104)](#papers)
+**Contents:** [Benchmarks (5)](#benchmarks) · [Datasets (3)](#datasets) · [Models (1)](#models) · [Agents (70)](#agents) · [Frameworks (55)](#frameworks) · [Tools (52)](#tools) · [Infrastructure (8)](#infrastructure) · [Products (9)](#products) · [Learning resources (1)](#learning-resources) · [Papers (107)](#papers)
 
 ## Benchmarks
 
@@ -343,9 +343,12 @@ All entries in this section: web.
 | 2025‑03‑31 | [Navi-plus: Managing Ambiguous GUI Navigation Tasks with Follow-up Questions](https://arxiv.org/abs/2503.24180) | unspecified | Navi-plus evaluates GUI agents that ask follow-up questions to complete ambiguous user instructions. It provides GUI clarification question-answer pairs and Dual-Stream Trajectory Evaluation for this interactive setting. |
 | 2025‑03‑25 | [Agent-Initiated Interaction in Phone UI Automation](https://arxiv.org/abs/2503.19537) | android | Defines when phone agents should request user interaction and introduces AndroidInteraction annotations for deciding whether and how to engage the user. |
 | 2025‑03‑12 | [COLA: A Scalable Multi-Agent Framework For Windows UI Task Automation](https://arxiv.org/abs/2503.09263) | desktop, windows | Coordinates specialized Windows UI agents with dynamic task scheduling, shared memory, and human-triggered rollback for recovering from errors. |
+| 2025‑03‑10 | [Towards Ethical and Personalized Web Navigation Agents: A Framework for User-Aligned Task Execution](https://dl.acm.org/doi/abs/10.1145/3701551.3707420) | web | A web navigation framework uses user-specific task representations and interactive reasoning to adapt agent workflows to preferences, with task success and satisfaction as evaluation measures. |
 | 2025‑02‑26 | [OS-Kairos: Adaptive Interaction for MLLM-Powered GUI Agents](https://arxiv.org/abs/2503.16465) | android | Uses step-level confidence estimates to decide when a GUI agent should act autonomously or request human intervention in complex situations. |
 | 2025‑01‑31 | [Towards Computer-Using Personal Agents](https://arxiv.org/abs/2503.15515) | web, cross-platform | Proposes computer-using personal agents connected to user-controlled data repositories, discussing privacy, interoperability, and collaborative tasks. |
 | 2025‑01‑28 | [CowPilot: A Framework for Autonomous and Human-Agent Collaborative Web Navigation](https://arxiv.org/abs/2501.16609) | web | Introduces CowPilot, a web-navigation framework where agents suggest actions and users can pause, reject, override, or resume them. It evaluates autonomous and collaborative use through task success and human effort. |
+| 2025‑01‑23 | [Operator System Card](https://openai.com/index/operator-system-card) | web | The Operator system card describes a browser agent trained to act from screenshots and details evaluations, risk policies, user confirmations, and monitoring for web tasks. |
+| 2025 | [MemAgent: A cache-inspired framework for augmenting conversational Web Agents with task-specific information](https://ceur-ws.org/Vol-4028/paper8.pdf) | web | MemAgent adds a cache for task-specific information to conversational web agents, separating information gathering from execution across 150 web tasks. |
 | 2024‑11 | [WebOlympus: An Open Platform for Web Agents on Live Websites](https://aclanthology.org/2024.emnlp-demo.20/) | web | Presents WebOlympus, an open platform that runs web agents on live websites from a few lines of code or a Chrome extension, with a safety monitor that blocks harmful actions through human or model checks. |
 | 2024‑09‑30 | [Interactive Speculative Planning: Enhance Agent Efficiency through Co-design of System and User Interface](https://arxiv.org/abs/2410.00079) | unspecified | Studies agent-system and interface co-design that incorporates user interruptions and intermediate feedback to reduce planning latency. |
 | 2024‑07‑22 | [IDA: Breaking Barriers in No-code UI Automation Through Large Language Models and Human-Centric Design](https://arxiv.org/abs/2407.15673) | web | IDA helps business users create web UI automation through guided demonstrations, a semantic programming model, and a teaching-oriented interface. A prototype user study examines automation creation with enterprise applications by users without programming backgrounds. |

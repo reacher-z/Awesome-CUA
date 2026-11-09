@@ -2,9 +2,9 @@
 
 [Home](../../README.md) · [All topics](../topics.md) · [Full arXiv bibliography](../papers.md)
 
-43 source-reviewed resources tagged `science`. Curated metadata; unknown facts are shown as —.
+44 source-reviewed resources tagged `science`. Curated metadata; unknown facts are shown as —.
 
-**Contents:** [Benchmarks (3)](#benchmarks) · [Datasets (2)](#datasets) · [Models (6)](#models) · [Agents (1)](#agents) · [Frameworks (3)](#frameworks) · [Tools (3)](#tools) · [Infrastructure (3)](#infrastructure) · [Papers (22)](#papers)
+**Contents:** [Benchmarks (3)](#benchmarks) · [Datasets (2)](#datasets) · [Models (6)](#models) · [Agents (1)](#agents) · [Frameworks (3)](#frameworks) · [Tools (3)](#tools) · [Infrastructure (3)](#infrastructure) · [Papers (23)](#papers)
 
 ## Benchmarks
 
@@ -92,5 +92,6 @@ All entries in this section: desktop.
 | 2025‑08‑27 | [CODA: Coordinating the Cerebrum and Cerebellum for a Dual-Brain Computer Use Agent with Decoupled Reinforcement Learning](https://arxiv.org/abs/2508.20096) | desktop | CODA combines a generalist planner with a specialist GUI executor and trains application-specific planners through decoupled GRPO. Successful specialist trajectories then support supervised training of a consolidated planner, evaluated across four ScienceBoard applications. |
 | 2025‑05‑30 | [VideoCAD: A Dataset and Model for Learning Long-Horizon 3D CAD UI Interactions from Video](https://arxiv.org/abs/2505.24838) | web | Introduces synthetic CAD interaction videos, a model for learning interface actions from video, and evaluation tasks for spatial and long-horizon reasoning. |
 | 2025‑05‑26 | [ScienceBoard: Evaluating Multimodal Autonomous Agents in Realistic Scientific Workflows](https://arxiv.org/abs/2505.19897) | desktop | ScienceBoard combines an interactive environment with professional scientific software and 169 human-curated tasks in areas including biochemistry, astronomy, and geoinformatics. It evaluates computer-use agents on visually rich research workflows and analyzes their execution limitations. |
+| 2025‑05‑23 | [Automated Testing of the GUI of a Real-Life Engineering Software using Large Language Models](https://arxiv.org/abs/2505.17839) | unspecified | GERALLT uses LLMs to explore the GUI of engineering software and produce a list of confusing or inconsistent interface areas for developers to inspect. |
 | 2024‑12‑18 | [CAD-Assistant: Tool-Augmented VLLMs as Generic CAD Task Solvers](https://arxiv.org/abs/2412.13810) | unspecified | CAD-Assistant plans CAD tasks and executes actions through FreeCAD's Python API, using the changing design state to guide later commands. |
 | 2024‑07‑15 | [Spider2-V: How Far Are Multimodal Agents From Automating Data Science and Engineering Workflows?](https://arxiv.org/abs/2407.10956) | desktop, web | Benchmarks multimodal agents on data-science and engineering workflows involving enterprise applications, code, and GUI operations in real computer environments. |

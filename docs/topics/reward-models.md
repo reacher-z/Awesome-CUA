@@ -2,9 +2,9 @@
 
 [Home](../../README.md) · [All topics](../topics.md) · [Full arXiv bibliography](../papers.md)
 
-102 source-reviewed resources tagged `reward-models`. Curated metadata; unknown facts are shown as —.
+103 source-reviewed resources tagged `reward-models`. Curated metadata; unknown facts are shown as —.
 
-**Contents:** [Benchmarks (7)](#benchmarks) · [Datasets (4)](#datasets) · [Models (9)](#models) · [Frameworks (11)](#frameworks) · [Tools (1)](#tools) · [Papers (70)](#papers)
+**Contents:** [Benchmarks (7)](#benchmarks) · [Datasets (4)](#datasets) · [Models (9)](#models) · [Frameworks (11)](#frameworks) · [Tools (1)](#tools) · [Papers (71)](#papers)
 
 ## Benchmarks
 
@@ -101,6 +101,7 @@ All entries in this section: web.
 | 2026‑04‑05 | [The Art of Building Verifiers for Computer Use Agents](https://arxiv.org/abs/2604.06240) | web | Describes a web-trajectory verifier built around structured rubrics, separate process and outcome judgments, and explicit treatment of uncontrollable failures. CUAVerifierBench supplies human labels for evaluating these choices and screenshot-based context management. |
 | 2026‑03‑20 | [A Subgoal-driven Framework for Improving Long-Horizon LLM Agents](https://arxiv.org/abs/2603.19685) | web | The framework separates inference-time subgoal planning from MiRA, a reinforcement-learning method that supplies milestone rewards. WebArena-Lite experiments evaluate these mechanisms for long-horizon web navigation. |
 | 2026‑03‑19 | [OS-Themis: A Scalable Critic Framework for Generalist GUI Rewards](https://arxiv.org/abs/2603.19191) | android, cross-platform | Presents OS-Themis, a multi-agent critic that divides GUI trajectories into verifiable milestones and reviews their evidence before assigning an outcome. OGRBench evaluates GUI rewards across platforms, with AndroidWorld experiments examining training and trajectory filtering. |
+| 2026‑03‑14 | [FDC-Ground: Improving GRPO for GUI Grounding via Exponential Rewards and Fact-Aligned Pruning](https://ojs.aaai.org/index.php/AAAI/article/view/40038) | unspecified | FDC-Ground trains GUI element location models with a distance-based reward and completion pruning; a 7B model is evaluated on ScreenSpot and ScreenSpot-v2. |
 | 2026‑03‑10 | [Video-Based Reward Modeling for Computer-Use Agents](https://arxiv.org/abs/2603.10178) | desktop, linux, macos, windows, android | Builds ExeVR-53k from execution-video, instruction and reward triplets, including negative instructions with step annotations. A reward model uses spatiotemporal token pruning to judge task completion from the instruction and execution keyframes. |
 | 2026‑02‑14 | [Building Autonomous GUI Navigation via Agentic-Q Estimation and Step-Wise Policy Optimization](https://arxiv.org/abs/2602.13653) | unspecified | This framework learns an agentic-Q model to estimate individual actions’ contributions to GUI task completion. It then optimizes a policy with step-level samples from its own trajectories, decoupling policy updates from environment interaction. |
 | 2026‑02‑12 | [Adaptive Milestone Reward for GUI Agents](https://arxiv.org/abs/2602.11524) | android, web | ADMIRE extracts milestones from successful GUI explorations to provide adaptive intermediate rewards. It assigns credit differently to successful and failed trajectories and evaluates training on AndroidWorld, with additional transfer studies in web and embodied settings. |

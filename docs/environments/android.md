@@ -2,9 +2,9 @@
 
 [Home](../../README.md) · [All platforms](../environments.md) · [Research by topic](../topics.md)
 
-651 source-reviewed resources tagged `android`. Curated metadata; unknown facts are shown as —.
+652 source-reviewed resources tagged `android`. Curated metadata; unknown facts are shown as —.
 
-**Contents:** [Benchmarks (38)](#benchmarks) · [Datasets (65)](#datasets) · [Models (78)](#models) · [Agents (73)](#agents) · [Frameworks (97)](#frameworks) · [Tools (45)](#tools) · [Infrastructure (16)](#infrastructure) · [Products (5)](#products) · [Learning resources (4)](#learning-resources) · [Surveys (2)](#surveys) · [Papers (228)](#papers)
+**Contents:** [Benchmarks (38)](#benchmarks) · [Datasets (65)](#datasets) · [Models (78)](#models) · [Agents (73)](#agents) · [Frameworks (97)](#frameworks) · [Tools (45)](#tools) · [Infrastructure (16)](#infrastructure) · [Products (5)](#products) · [Learning resources (4)](#learning-resources) · [Surveys (2)](#surveys) · [Papers (229)](#papers)
 
 ## Benchmarks
 
@@ -698,6 +698,7 @@
 | 2023‑12‑21 | [AppAgent: Multimodal Agents as Smartphone Users](https://arxiv.org/abs/2312.13771) | android | Builds app knowledge through exploration or human demonstrations and uses it to guide multimodal smartphone interactions. |
 | 2023‑12‑18 | [VisionTasker: Mobile Task Automation Using Vision Based UI Understanding and LLM Task Planning](https://arxiv.org/abs/2312.11190) | android | VisionTasker converts screenshots into textual UI interpretations and presents one interface at a time to an LLM planner for action selection. It evaluates visual representations and execution of 147 tasks on an Android smartphone, including integration with programming by demonstration. |
 | 2023‑12‑14 | [CogAgent: A Visual Language Model for GUI Agents](https://arxiv.org/abs/2312.08914) | desktop, android, web | Introduces a visual-language model with low- and high-resolution image encoders for screenshot understanding and GUI navigation. |
+| 2023‑11‑15 | [Autonomous Large Language Model Agents Enabling Intent-Driven Mobile GUI Testing](https://arxiv.org/abs/2311.08649) | android | DroidAgent uses language models and memory to set and execute GUI test goals in Android apps; an evaluation covers 15 apps from the Themis benchmark. |
 | 2023‑11‑13 | [GPT-4V in Wonderland: Large Multimodal Models for Zero-Shot Smartphone GUI Navigation](https://arxiv.org/abs/2311.07562) | ios, android | Studies MM-Navigator, a multimodal agent that interprets smartphone screenshots and predicts localized actions without task-specific training. |
 | 2023‑10‑11 | [CrashTranslator: Automatically Reproducing Mobile Application Crashes Directly from Stack Trace](https://arxiv.org/abs/2310.07128) | android | Introduces CrashTranslator, which predicts GUI exploration steps from stack traces with an LLM and uses RL-guided search to reproduce crashes in Android apps. |
 | 2023‑09‑20 | [You Only Look at Screens: Multimodal Chain-of-Action Agents](https://arxiv.org/abs/2309.11436) | android | Introduces Auto-GUI, a screenshot-based agent using previous actions and future action plans to guide device interaction. |

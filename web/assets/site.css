@@ -1487,3 +1487,5 @@ html:lang(zh-CN) .eyebrow{letter-spacing:.02em}
 :lang(zh-CN) .bbox-f::before{top:auto;left:-10px;bottom:calc(100% + 4px)}
 :lang(zh-CN) .bbox-f::after{left:18px}
 :lang(zh-CN) .hero h1{font-size:min(calc(var(--step-display) * .84),calc((100vw - 32px) / 9.4))}
+/* Tap targets: at least 24px tall without moving the layout */
+.r3-cell-name{padding-block:4px;margin-block:-4px}.r3-c-paper .r3-cell-name{margin-top:6px}.r3-cell-eg a,.r3-envs p a,.dir-qa a{padding-block:4px}.paper-m a{padding-block:2px;margin-block:-2px}

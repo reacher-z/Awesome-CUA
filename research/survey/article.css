@@ -260,3 +260,8 @@ sup { line-height: 0; }
   #reference-list li { font-size: 8.5pt; break-inside: avoid; }
   .article-footer { font-size: 8pt; }
 }
+/* Tap targets: at least 24px tall without moving the layout. */
+.citation-group a, .contents-footer a, .article-kicker a, .table-scroll a, .reference-intro a { padding-block: 4px; }
+#reference-list a { padding-block: 5px; }
+.citation-group a { padding-inline: 3px; margin-inline: -3px; }
+.article-body summary, #reference-list summary, .table-scroll summary { padding-block: 2px; }

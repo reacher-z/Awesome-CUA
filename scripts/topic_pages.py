@@ -238,7 +238,7 @@ def topic_body(topic, rows, resource_path, *, language='en', site_url=SITE, numb
                 body += ['<span>', tr('Adjacent research', '相关研究'), '</span>']
             body += ['</div></div><div class="topic-resource-links"><a href="', safe_href(primary), '">', tr('Source', '一手来源'), ' ↗</a>']
             if row['kind'] in {'paper', 'survey'}:
-                body += ['<a href="', path, 'citation.bib" download>BibTeX ↓</a>']
+                body += ['<a href="', path.removeprefix('/zh'), 'citation.bib" download>BibTeX ↓</a>']
             body += ['<a href="', path, '">', tr('Details', '详情'), ' →</a></div></article>']
         body += ['</section>']
     if pages > 1:

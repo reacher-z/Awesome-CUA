@@ -183,7 +183,7 @@ def paper_library(rows, resource_path, *, language='en', site_url=SITE, number=1
                     body.append('<a class="paper-asset-more" href="' + path + '#connected-assets">+'
                                 + str(len(linked) - 3) + ' ' + tr('resources', '项资源') + '</a>')
                 body.append('</div>')
-            body.append('</div><div class="paper-entry-links"><a href="' + safe_href(source) + '">' + tr('Paper', '原论文') + ' ↗</a><a href="' + path + 'citation.bib" download aria-label="' + esc(tr('BibTeX for ', 'BibTeX：') + row['name']) + '">BibTeX ↓</a><a href="' + path + '">' + tr('Details', '详情') + ' →</a></div></article>')
+            body.append('</div><div class="paper-entry-links"><a href="' + safe_href(source) + '">' + tr('Paper', '原论文') + ' ↗</a><a href="' + path.removeprefix('/zh') + 'citation.bib" download aria-label="' + esc(tr('BibTeX for ', 'BibTeX：') + row['name']) + '">BibTeX ↓</a><a href="' + path + '">' + tr('Details', '详情') + ' →</a></div></article>')
         body.append('</section>')
     if pages > 1:
         body.append('<nav class="pagination library-pager" aria-label="' + tr('Library pages', '论文库分页') + '">')

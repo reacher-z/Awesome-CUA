@@ -151,10 +151,11 @@ def resource_schema(record):
 def listing(rows,*,zh=False,anchor=True):
     """Reviewed records as the rows of the homepage search window; a category does not label them by kind."""
     def row(r):
+        # The filter reads the visible name, repo and platform label; data-env adds the platforms a "+2" label hides.
         facets=home_page.env_facets(r['environments'])
-        words=[r['name'],home_page.identity(r),*r['environments'],*(home_page.ENV_LABEL[f] for f in facets),*(home_page.ENV_ZH[f] for f in facets)]
-        attrs=f' data-name="{esc(r["name"])}" data-filter="{esc(" ".join(words).lower())}"'
-        return home_page.compact_row({**r,'href':r.get('href') or resource_path(r),'summary':description(r)},zh,date=record_date_text(r) or '',attrs=attrs,anchor=anchor)
+        words=dict.fromkeys([*r['environments'],*(home_page.ENV_ZH[f] if zh else home_page.ENV_LABEL[f] for f in facets)])
+        attrs=f' data-env="{esc(" ".join(words).lower())}"' if words else ''
+        return home_page.compact_row({**r,'href':r.get('href') or resource_path(r),'summary':description(r)},zh,date=record_date_text(r) or '',attrs=attrs,anchor=anchor,kind=False)
     return ''.join(row(r) for r in rows)
 
 

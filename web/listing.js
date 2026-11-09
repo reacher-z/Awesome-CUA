@@ -2,6 +2,8 @@
 export const terms = (value) => value.toLowerCase().split(/\s+/).filter(Boolean);
 export const matches = (text, query) => terms(query).every((term) => text.includes(term));
 export const byName = (a, b) => a.localeCompare(b, undefined, { sensitivity: 'base', numeric: true });
+const nameOf = (row) => row.querySelector('.row-name a').textContent;
+const textOf = (row) => [nameOf(row), row.querySelector('.row-id')?.textContent, row.querySelector('.env')?.textContent, row.dataset.env].join(' ').toLowerCase();
 
 function start(root) {
   const list = root.querySelector('[data-list-rows]');
@@ -11,7 +13,8 @@ function start(root) {
   const empty = root.querySelector('[data-list-empty]');
   const featured = document.querySelector('[data-list-featured]');
   const ranked = [...list.children];
-  const named = [...ranked].sort((a, b) => byName(a.dataset.name, b.dataset.name));
+  const named = [...ranked].sort((a, b) => byName(nameOf(a), nameOf(b)));
+  const text = new Map(ranked.map((row) => [row, textOf(row)]));
   const params = new URLSearchParams(location.search);
   input.value = params.get('q') || '';
   if (params.get('sort') === 'name') sort.value = 'name';
@@ -21,7 +24,7 @@ function start(root) {
     list.append(...(sort.value === 'name' ? named : ranked));
     let shown = 0;
     for (const row of ranked) {
-      row.hidden = !matches(row.dataset.filter, query);
+      row.hidden = !matches(text.get(row), query);
       if (!row.hidden) shown += 1;
     }
     list.hidden = !shown;

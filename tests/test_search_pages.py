@@ -119,7 +119,7 @@ class SearchPagesTests(unittest.TestCase):
                 self.assertTrue(target.exists(),f'{item["path"]} -> {link}')
     def category_rows(self,path):
         text=(self.dest/path).read_text()
-        return text,re.findall(r'<li class="row"[^>]*data-name="([^"]*)"',text)
+        return text,re.findall(r'<h3 class="row-name"><a [^>]*>([^<]*)</a>',text)
     def category_pages(self,kind,lang):
         prefix='zh/categories/' if lang=='zh' else 'categories/'
         paths,number=[],1

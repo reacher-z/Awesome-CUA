@@ -263,14 +263,13 @@ def category_href(kind, zh=False) -> str:
     return f"/zh/categories/{kind}/" if zh else f"/categories/{kind}/"
 
 
-def compact_row(record, zh=False, date="", attrs="", anchor=True) -> str:
+def compact_row(record, zh=False, date="", attrs="", anchor=True, kind=True) -> str:
     source = record.get("url") or ""
     dated = f'<span class="row-id">{esc(date)}</span>' if date else ""
     # A record listed twice on a page keeps its anchor on one row only.
     target = f' id="r-{slug(record["id"])}"' if anchor else ""
     return f'''<li class="row"{target}{attrs}>
-{kind_tag(record["kind"], zh)}
-<div class="row-main"><h3 class="row-name"><a href="{esc(resource_href(record))}" data-src="{esc(source)}">{esc(clean_title(record["name"]))}</a><span class="row-id">{esc(identity(record))}</span>{dated}</h3>
+{kind_tag(record["kind"], zh) if kind else ""}<div class="row-main"><h3 class="row-name"><a href="{esc(resource_href(record))}" data-src="{esc(source)}">{esc(clean_title(record["name"]))}</a><span class="row-id">{esc(identity(record))}</span>{dated}</h3>
 <p class="row-desc">{esc(record.get("summary") or "")}</p></div>
 <div class="row-side">{env_tag(record["environments"], zh)}{stamp(record["review_status"], zh)}</div>
 </li>'''

@@ -93,10 +93,13 @@ class AgentFileTests(unittest.TestCase):
             expected = [SITE + resource_path(row) for row in self.curated if row['kind'] == kind]
             listed = re.findall(r'^- Catalog URL: (\S+)$', target.read_text(), re.M)
             self.assertCountEqual(listed, expected, kind)
-            # The full list is the last on the page: a Featured group above it repeats records.
-            markup = (self.dest / f'categories/{kind}/index.html').read_text()
-            rows = re.findall(r'<h3 class="row-name"><a href="([^"]+)"', markup)
-            self.assertEqual(listed, [SITE + href for href in rows[len(rows) - len(listed):]], kind)
+            # The twin follows the category pages in order; a Featured group above the list repeats records.
+            rows, number = [], 1
+            while (page := self.dest / (f'categories/{kind}/' if number == 1 else f'categories/{kind}/page/{number}/') / 'index.html').is_file():
+                section = page.read_text().split('data-list-rows>', 1)[1].split('</ul>', 1)[0]
+                rows += re.findall(r'<h3 class="row-name"><a href="([^"]+)"', section)
+                number += 1
+            self.assertEqual(listed, [SITE + href for href in rows], kind)
         papers = reviewed_papers(self.rows)
         seen = []
         for number in range(1, library_pages(self.rows) + 1):

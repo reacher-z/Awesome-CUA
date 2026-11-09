@@ -2,9 +2,9 @@
 
 [Home](../../README.md) · [All topics](../topics.md) · [Full arXiv bibliography](../papers.md)
 
-112 source-reviewed resources tagged `state-tracking`. Curated metadata; unknown facts are shown as —.
+118 source-reviewed resources tagged `state-tracking`. Curated metadata; unknown facts are shown as —.
 
-**Contents:** [Benchmarks (5)](#benchmarks) · [Agents (2)](#agents) · [Frameworks (17)](#frameworks) · [Tools (10)](#tools) · [Infrastructure (2)](#infrastructure) · [Products (1)](#products) · [Papers (75)](#papers)
+**Contents:** [Benchmarks (5)](#benchmarks) · [Models (1)](#models) · [Agents (4)](#agents) · [Frameworks (17)](#frameworks) · [Tools (10)](#tools) · [Infrastructure (4)](#infrastructure) · [Products (1)](#products) · [Learning resources (1)](#learning-resources) · [Papers (75)](#papers)
 
 ## Benchmarks
 
@@ -16,12 +16,22 @@
 | [Graph-Guided Agentic Testing](https://github.com/avikundal/graph-guided-agentic-testing) | web | — | — | code MIT | Uses a browser agent to explore web checkout flows into a Neo4j state graph and synthesizes graph-guided end-to-end tests. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/avikundal/graph-guided-agentic-testing/HEAD/README.md) |
 | [Preflight-Bench](https://github.com/multimodal-ai-engineering/preflight-bench) | web, desktop | [2610.39282](https://arxiv.org/abs/2610.39282) (2026) | — | code MIT | Preflight-Bench evaluates pre-click staleness checks and page-load synchronization for computer-use agents operating under asynchronous UI updates. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/multimodal-ai-engineering/preflight-bench/HEAD/README.md) |
 
+## Models
+
+All entries in this section: desktop, macos.
+
+| Resource | Paper | License | Description | Evidence |
+| --- | --- | --- | --- | --- |
+| [HobbyLM-1B Computer Use](https://huggingface.co/Hobbylm/hobbylm-1B-computer-use) | — | weights apache-2.0 | An on-device LoRA adapter that turns English requests and Mac state into single actions executed by a companion app, with training code and evaluation records. | [✓ 2026‑11‑09](https://huggingface.co/api/models/Hobbylm/hobbylm-1B-computer-use) |
+
 ## Agents
 
 | Resource | Environments | Paper | License | Description | Evidence |
 | --- | --- | --- | --- | --- | --- |
+| [AGI-0 Agent](https://www.theagi.company/blog/android-world) | android | — | — | AGI-0 uses screenshots to navigate Android apps, planning subtasks and checking screen changes after each action. Its publisher reports AndroidWorld results. | [✓ 2026‑11‑09](https://www.theagi.company/blog/android-world) |
 | [Browser Agent (uiuing)](https://github.com/uiuing/browser-agent) | web | — | code MIT | Chrome side-panel agent whose page engine reads a whole-page semantic DOM snapshot, re-grounds targets by element fingerprints, dispatches DOM events and checks post-conditions before reporting success. | [✓ 2026‑10‑18](https://raw.githubusercontent.com/uiuing/browser-agent/HEAD/README.md) |
 | [Crimson-Heart](https://github.com/YEYVHAIOU/Crimson-Heart) | desktop, windows | — | code MIT | Persistent multimodal desktop agent with explicit runtime state management, priority-aware scheduling, and interruptible execution. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/YEYVHAIOU/Crimson-Heart/HEAD/README.md) |
+| [FinalRun](https://blogs.finalrun.app/finalrun-achieves-the-new-1-sota-mobile-agent-eclipsing-benchmarks-at-97-4) | android | — | — | Android UI agent that prunes interface trees, waits for stable screens, feeds action failures back into its decisions, and takes fresh screenshots before grounding actions. | [✓ 2026‑11‑09](https://blogs.finalrun.app/finalrun-achieves-the-new-1-sota-mobile-agent-eclipsing-benchmarks-at-97-4) |
 
 ## Frameworks
 
@@ -62,12 +72,12 @@
 
 ## Infrastructure
 
-All entries in this section: desktop, linux.
-
-| Resource | Paper | License | Description | Evidence |
-| --- | --- | --- | --- | --- |
-| [grass-gui](https://github.com/ShiinaHiiragi/grass-gui) | — | — | ScienceBoard's replacement GRASS GIS 8.4 wxPython GUI with an embedded Flask server that loads mapsets and layers, runs GRASS commands and returns layer, region and console state as JSON for task checks. | [✓ 2026‑10‑18](https://raw.githubusercontent.com/ShiinaHiiragi/grass-gui/HEAD/manual.md) |
-| [kalgebra-kai](https://github.com/ShiinaHiiragi/kalgebra) | — | code GPL-2.0 | Modified KAlgebra build from ScienceBoard with a local HTTP server that reports variables and plotted 2D and 3D functions and can switch tabs or add calculations and plots, so the benchmark can check math tasks. | [✓ 2026‑10‑18](https://raw.githubusercontent.com/ShiinaHiiragi/kalgebra/HEAD/manual.md) |
+| Resource | Environments | Paper | License | Description | Evidence |
+| --- | --- | --- | --- | --- | --- |
+| [grass-gui](https://github.com/ShiinaHiiragi/grass-gui) | desktop, linux | — | — | ScienceBoard's replacement GRASS GIS 8.4 wxPython GUI with an embedded Flask server that loads mapsets and layers, runs GRASS commands and returns layer, region and console state as JSON for task checks. | [✓ 2026‑10‑18](https://raw.githubusercontent.com/ShiinaHiiragi/grass-gui/HEAD/manual.md) |
+| [kalgebra-kai](https://github.com/ShiinaHiiragi/kalgebra) | desktop, linux | — | code GPL-2.0 | Modified KAlgebra build from ScienceBoard with a local HTTP server that reports variables and plotted 2D and 3D functions and can switch tabs or add calculations and plots, so the benchmark can check math tasks. | [✓ 2026‑10‑18](https://raw.githubusercontent.com/ShiinaHiiragi/kalgebra/HEAD/manual.md) |
+| [MyInstagram](https://github.com/Acrab-Agentic-Labs/AppSim-Instagram) | android | — | — | MyInstagram is an Android clone app with interactive social screens, mock data, and state fields for checking the outcomes of GUI agent tasks. | [✓ 2026‑11‑09](https://raw.githubusercontent.com/Acrab-Agentic-Labs/AppSim-Instagram/HEAD/README.md) |
+| [Zoom Android Template](https://github.com/Acrab-Agentic-Labs/AppSim-Zoom) | android | — | — | Zoom Android Template is a simulated meeting app for mobile interaction tests, with seeded schedules and runtime records of meeting and profile actions. | [✓ 2026‑11‑09](https://raw.githubusercontent.com/Acrab-Agentic-Labs/AppSim-Zoom/HEAD/README.md) |
 
 ## Products
 
@@ -76,6 +86,14 @@ All entries in this section: web.
 | Resource | Publisher | Description | Evidence |
 | --- | --- | --- | --- |
 | [Predicate Systems (formerly SentienceAPI)](https://predicatesystems.ai) | — | Runtime trust layer for browser agents: a sidecar checks each action against local policy before it runs, and SDKs turn pages into compact ranked element snapshots and verify outcomes with DOM assertions. | [✓ 2026‑10‑20](https://predicatesystems.ai) |
+
+## Learning resources
+
+All entries in this section: android.
+
+| Resource | License | Description | Evidence |
+| --- | --- | --- | --- |
+| [Achieving 91.4% on Android World: A New Approach to Mobile UI Automation](https://droidrun.ai/benchmark/method) | — | Technical article describing an Android UI agent that alternates planning with single actions, checks screen changes and uses a dedicated text editing path. It reports AndroidWorld results. | [✓ 2026‑11‑09](https://droidrun.ai/benchmark/method) |
 
 ## Papers
 

@@ -2,9 +2,9 @@
 
 [Home](../../README.md) · [All topics](../topics.md) · [Full arXiv bibliography](../papers.md)
 
-43 source-reviewed resources tagged `industry`. Curated metadata; unknown facts are shown as —.
+51 source-reviewed resources tagged `industry`. Curated metadata; unknown facts are shown as —.
 
-**Contents:** [Benchmarks (1)](#benchmarks) · [Agents (1)](#agents) · [Products (1)](#products) · [Publishers (17)](#publishers) · [Papers (23)](#papers)
+**Contents:** [Benchmarks (1)](#benchmarks) · [Models (1)](#models) · [Agents (1)](#agents) · [Tools (2)](#tools) · [Products (5)](#products) · [Publishers (18)](#publishers) · [Papers (23)](#papers)
 
 ## Benchmarks
 
@@ -14,6 +14,14 @@ All entries in this section: unspecified.
 | --- | --- | --- | --- | --- | --- |
 | [AutomotiveUI-Bench-4K](https://huggingface.co/datasets/sparks-solutions/AutomotiveUI-Bench-4K) | — | [4,208 annotations](https://huggingface.co/datasets/sparks-solutions/AutomotiveUI-Bench-4K/raw/d760810c47bed006d88ee70dad7248056fdec223/README.md) · [998 images](https://huggingface.co/datasets/sparks-solutions/AutomotiveUI-Bench-4K/raw/d760810c47bed006d88ee70dad7248056fdec223/README.md) | data cc-by-4.0 | Offline test set of 998 photos and screenshots of in-vehicle infotainment screens from 15 brands, with 4,208 English annotations for locating UI elements and judging expected results as passed or failed. | [✓ 2026‑10‑19](https://huggingface.co/datasets/sparks-solutions/AutomotiveUI-Bench-4K/raw/d760810c47bed006d88ee70dad7248056fdec223/README.md) |
 
+## Models
+
+All entries in this section: desktop, web.
+
+| Resource | Paper | License | Description | Evidence |
+| --- | --- | --- | --- | --- |
+| [Holo3](https://hcompany.ai/holo3) | — | — | Holo3 is a computer-use model family trained on synthetic navigation and enterprise workflows. Its publisher reports desktop benchmark results and offers inference access and an open checkpoint. | [✓ 2026‑11‑09](https://hcompany.ai/holo3) |
+
 ## Agents
 
 All entries in this section: web.
@@ -22,13 +30,24 @@ All entries in this section: web.
 | --- | --- | --- | --- | --- |
 | [CUGA](https://github.com/cuga-project/cuga-agent) | — | code Apache-2.0 | Enterprise generalist agent harness that plans over APIs and MCP or OpenAPI tools and, in web or hybrid mode, acts on pages through a browser extension, with intent guards, tool approval and tool guards. | [✓ 2026‑10‑18](https://raw.githubusercontent.com/cuga-project/cuga-agent/HEAD/README.md) |
 
+## Tools
+
+All entries in this section: web.
+
+| Resource | Paper | License | Description | Evidence |
+| --- | --- | --- | --- | --- |
+| [ADP Workforce Now Browser Automation](https://github.com/Browser-Automation-Hub/adp-workforce-now-browser-automation) | — | code MIT | A browser automation scaffold for ADP Workforce Now. It provides actions for payroll reports, pay-stub exports, employee updates and tax-form downloads. | [✓ 2026‑11‑09](https://raw.githubusercontent.com/Browser-Automation-Hub/adp-workforce-now-browser-automation/HEAD/README.md) |
+| [SAP SuccessFactors Browser Automation](https://github.com/Browser-Automation-Hub/successfactors-browser-automation) | — | code MIT | A browser automation scaffold for SAP SuccessFactors. It includes actions for workforce reports, employee goals, compensation worksheets and organization-chart exports. | [✓ 2026‑11‑09](https://raw.githubusercontent.com/Browser-Automation-Hub/successfactors-browser-automation/HEAD/README.md) |
+
 ## Products
 
-All entries in this section: web, desktop, windows, linux.
-
-| Resource | Publisher | Description | Evidence |
-| --- | --- | --- | --- |
-| [Asteroid](https://asteroid.ai) | — | Hosted healthcare automation platform whose agents operate EHRs, payer portals and Windows, Linux or Citrix apps from the screen, then turn repeat runs into scripts or private-API calls served as an API. | [✓ 2026‑10‑19](https://asteroid.ai) |
+| Resource | Publisher | Environments | Description | Evidence |
+| --- | --- | --- | --- | --- |
+| [Asteroid](https://asteroid.ai) | — | web, desktop, windows, linux | Hosted healthcare automation platform whose agents operate EHRs, payer portals and Windows, Linux or Citrix apps from the screen, then turn repeat runs into scripts or private-API calls served as an API. | [✓ 2026‑10‑19](https://asteroid.ai) |
+| [Computer Agents](https://computer-agents.com) | — | cross-platform, web, desktop | A cloud agent platform that gives agents persistent computers with browser, GUI, terminal, and file access, alongside project workspaces and workflow triggers. | [✓ 2026‑11‑09](https://computer-agents.com) |
+| [ego(lite)](https://lite.ego.app) | — | web, desktop | A Chromium browser that lets AI agents automate signed-in websites through an agent skill, with separate workspaces for agent tasks and page snapshots for navigation. | [✓ 2026‑11‑09](https://lite.ego.app) |
+| [Narada Operator](https://narada.ai/blog/narada-ai-web-agent-operator) | — | web | Narada Operator is an enterprise web agent that executes workflows across web interfaces and APIs using task planning and error recovery. | [✓ 2026‑11‑09](https://narada.ai/blog/narada-ai-web-agent-operator) |
+| [Process Discovery](https://www.automationanywhere.com/products/process-discovery) | — | cross-platform, desktop, windows, web | An enterprise process-discovery product that captures activity across desktops and web apps, then maps workflows to identify patterns and automation opportunities. | [✓ 2026‑11‑09](https://www.automationanywhere.com/products/process-discovery) |
 
 ## Publishers
 
@@ -45,6 +64,7 @@ All entries in this section: unspecified.
 | [E2B](https://e2b.dev/) | Publisher or product brand associated with E2B computer-use or browser automation offerings. | [✓ 2026‑10‑16](https://e2b.dev/) |
 | [Google](https://ai.google.dev/gemini-api/docs/computer-use) | Publisher or product brand associated with Google computer-use or browser automation offerings. | [✓ 2026‑10‑16](https://ai.google.dev/gemini-api/docs/computer-use) |
 | [H](https://hcompany.ai/research/models) | Publisher or product brand associated with H computer-use or browser automation offerings. | [✓ 2026‑10‑16](https://hcompany.ai/research/models) |
+| [Huzzle Labs](https://labs.huzzle.com) | Company developing computer-use models, RL environments and evaluations for AI labs and enterprise work. Its site describes the Huzzle World model family. | [✓ 2026‑11‑09](https://labs.huzzle.com) |
 | [Hyperbrowser](https://www.hyperbrowser.ai/) | Publisher or product brand associated with Hyperbrowser computer-use or browser automation offerings. | [✓ 2026‑10‑16](https://www.hyperbrowser.ai/) |
 | [Manus](https://manus.im/) | Publisher or product brand associated with Manus computer-use or browser automation offerings. | [✓ 2026‑10‑16](https://manus.im/) |
 | [Microsoft](https://learn.microsoft.com/en-us/microsoft-copilot-studio/computer-use) | Publisher or product brand associated with Microsoft computer-use or browser automation offerings. | [✓ 2026‑10‑18](https://learn.microsoft.com/en-us/microsoft-copilot-studio/computer-use) |

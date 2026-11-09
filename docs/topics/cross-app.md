@@ -2,9 +2,9 @@
 
 [Home](../../README.md) · [All topics](../topics.md) · [Full arXiv bibliography](../papers.md)
 
-78 source-reviewed resources tagged `cross-app`. Curated metadata; unknown facts are shown as —.
+83 source-reviewed resources tagged `cross-app`. Curated metadata; unknown facts are shown as —.
 
-**Contents:** [Benchmarks (16)](#benchmarks) · [Datasets (4)](#datasets) · [Agents (5)](#agents) · [Frameworks (2)](#frameworks) · [Tools (3)](#tools) · [Papers (48)](#papers)
+**Contents:** [Benchmarks (17)](#benchmarks) · [Datasets (4)](#datasets) · [Agents (8)](#agents) · [Frameworks (2)](#frameworks) · [Tools (3)](#tools) · [Products (1)](#products) · [Papers (48)](#papers)
 
 ## Benchmarks
 
@@ -23,6 +23,7 @@
 | [OS-Map](https://github.com/OS-Copilot/OS-Map) | desktop, linux | [2507.19132](https://arxiv.org/abs/2507.19132) (2025) | [416 category/task references](https://raw.githubusercontent.com/OS-Copilot/OS-Map/HEAD/evaluation_examples/all.json) | code MIT | An OSWorld-derived desktop benchmark with an Ubuntu virtual-machine environment and expanded task configurations for measuring breadth and depth of computer interaction. | [✓ 2026‑10‑17](https://raw.githubusercontent.com/OS-Copilot/OS-Map/HEAD/README.md) |
 | [OSWorld](https://github.com/xlang-ai/OSWorld) · [leaderboard](https://os-world.github.io/) | desktop, linux, windows, macos | [2404.07972](https://arxiv.org/abs/2404.07972) (2024) | [369 task definitions](https://raw.githubusercontent.com/xlang-ai/OSWorld/HEAD/evaluation_examples/test_all.json) | code Apache-2.0 | Execution-based evaluation of agents performing tasks in real desktop environments. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/xlang-ai/OSWorld/HEAD/README.md) |
 | [TheAgentCompany](https://github.com/TheAgentCompany/TheAgentCompany) · [leaderboard](https://the-agent-company.com/#/leaderboard) | web, desktop | [2412.14161](https://arxiv.org/abs/2412.14161) (2024) | [175 task images](https://raw.githubusercontent.com/TheAgentCompany/TheAgentCompany/HEAD/README.md) | code MIT | Self-contained workplace environment for evaluating agents on professional tasks involving websites, files, code, and simulated coworkers. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/TheAgentCompany/TheAgentCompany/HEAD/README.md) |
+| [UniClawBench](https://github.com/HKU-MMLab/UniClawBench) | cross-platform, web, desktop | [2607.08768](https://arxiv.org/abs/2607.08768) (2026) | — | code MIT | UniClawBench evaluates agents on tool, browser, file, and desktop GUI workflows. Its bilingual release contains 400 tasks, Docker runtimes, and trace review tools. | [✓ 2026‑11‑09](https://raw.githubusercontent.com/HKU-MMLab/UniClawBench/HEAD/README.md) |
 | [WebMall](https://github.com/wbsg-uni-mannheim/WebMall) | web | [2508.13024](https://arxiv.org/abs/2508.13024) (2025) | — | — | WebMall is a multi-shop e-commerce web agent benchmark evaluating cross-site price comparison, product search, and cart checkout. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/wbsg-uni-mannheim/WebMall/HEAD/README.md) |
 | [WindowsAgentArena-V2](https://github.com/GAIR-NLP/WindowsAgentArena-V2) | desktop, windows | [2505.13909](https://arxiv.org/abs/2505.13909) (2025) | [141 tasks](https://raw.githubusercontent.com/GAIR-NLP/WindowsAgentArena-V2/HEAD/README.md) · [11 Windows applications](https://raw.githubusercontent.com/GAIR-NLP/WindowsAgentArena-V2/HEAD/README.md) · [20 task IDs](https://raw.githubusercontent.com/GAIR-NLP/WindowsAgentArena-V2/HEAD/src/win-arena-container/client/evaluation_examples_windows/test_custom.json) | code MIT | Windows benchmark revision with task/evaluator fixes and VM-initialization support, documented alongside PC-Agent-E. | [✓ 2026‑10‑18](https://raw.githubusercontent.com/GAIR-NLP/WindowsAgentArena-V2/HEAD/README.md) |
 | [WindowsWorld](https://github.com/HITsz-TMG/WindowsWorld) | desktop, windows | [2604.27776](https://arxiv.org/abs/2604.27776) (2026) | [181 tasks](https://raw.githubusercontent.com/HITsz-TMG/WindowsWorld/HEAD/README.md) · [17 desktop applications](https://raw.githubusercontent.com/HITsz-TMG/WindowsWorld/HEAD/README.md) | code Apache-2.0 | Cross-application Windows benchmark with intermediate task evaluation. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/HITsz-TMG/WindowsWorld/HEAD/README.md) |
@@ -40,10 +41,13 @@
 
 | Resource | Environments | Paper | License | Description | Evidence |
 | --- | --- | --- | --- | --- | --- |
+| [ARTEMIS](https://github.com/google/artemis) | android | — | code Apache-2.0 | ARTEMIS is an Android agent that carries out natural-language tasks across apps. It targets UI elements visually or by index and exposes device runs through an MCP server. | [✓ 2026‑11‑09](https://raw.githubusercontent.com/google/artemis/HEAD/README.md) |
+| [Intelligence Indeed](https://github.com/intelligence-indeed/intelligence-indeed) | desktop | — | code Apache-2.0 | Intelligence Indeed is a desktop GUI agent that loads reusable guidance, probes the current environment and shares task-specific findings across planning and execution. | [✓ 2026‑11‑09](https://raw.githubusercontent.com/intelligence-indeed/intelligence-indeed/HEAD/README.md) |
 | [MacOS Agent (BIGAI)](https://github.com/Computer-use-agents/MacOS-Agent) | desktop, macos | — | — | macOS agent in which a smolagents code agent dispatches per-application sub-agents that read accessibility trees and window screenshots and act through pyautogui mouse and keyboard input. | [✓ 2026‑10‑19](https://raw.githubusercontent.com/Computer-use-agents/MacOS-Agent/HEAD/README.md) |
 | [OS AI Computer Use](https://github.com/777genius/os-ai-computer-use) | desktop, macos, windows, linux | — | code Apache-2.0 | Local desktop agent that sends plain screenshots to OpenAI's or Anthropic's computer-use tool and performs the returned clicks, drags, scrolls and keystrokes through PyAutoGUI-based drivers on macOS, Windows and Linux. | [✓ 2026‑10‑18](https://raw.githubusercontent.com/777genius/os-ai-computer-use/HEAD/README.md) |
 | [PC-Agent](https://github.com/GAIR-NLP/PC-Agent) | desktop | [2412.17589](https://arxiv.org/abs/2412.17589) (2024) | code MIT | Human-cognition-transfer framework for PC agents: PC Tracker logs human computer use, cognition completion turns logs into cognitive trajectories, and a planner works with a grounding agent. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/GAIR-NLP/PC-Agent/HEAD/README.md) |
 | [PC-Agent (X-PLUG component)](https://github.com/X-PLUG/MobileAgent/tree/main/PC-Agent) | desktop, windows, macos | [2502.14282](https://arxiv.org/abs/2502.14282) (2025) | code MIT | Multi-agent desktop automation component for Windows and macOS, combining active perception, task decomposition and reflection for workflows spanning applications. | [✓ 2026‑10‑18](https://raw.githubusercontent.com/X-PLUG/MobileAgent/HEAD/PC-Agent/README.md) |
+| [Pointer](https://pointer.ai/blog/sota) | desktop, web | — | — | Pointer describes a desktop computer-use agent with feasibility checks, milestone planning, and an executor that combines GUI, code, and browser tools. | [✓ 2026‑11‑09](https://pointer.ai/blog/sota) |
 | [UFO](https://github.com/microsoft/UFO) | windows, desktop | [2402.07939](https://arxiv.org/abs/2402.07939) (2024) | — | Windows agent framework for application and desktop automation. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/microsoft/UFO/HEAD/README.md) |
 
 ## Frameworks
@@ -60,6 +64,14 @@
 | [debug-kit](https://github.com/dxiongya/debug-kit) | cross-platform, desktop, web, macos, ios, android, windows, linux | — | code MIT | Cross-platform Agent Skill for driving, inspecting, and testing applications across macOS, iOS, Android, Web, Electron, Windows, and Linux. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/dxiongya/debug-kit/HEAD/README.md) |
 | [Lom Desktop (麓鸣)](https://github.com/rfdiosuao/lom-desktop) | cross-platform, desktop, android, windows, macos | — | code AGPL-3.0 | Lom is an open-source multi-agent workspace coordinating desktop coding agents with cross-device Android phone execution. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/rfdiosuao/lom-desktop/HEAD/README.md) |
 | [Macuse MCP](https://github.com/macuse-app/macuse-mcp) | desktop, macos | — | — | Macuse MCP is a native macOS Model Context Protocol server granting AI agents direct control over Calendar, Mail, Notes, Messages, and GUI apps. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/macuse-app/macuse-mcp/HEAD/README.md) |
+
+## Products
+
+All entries in this section: web.
+
+| Resource | Publisher | Description | Evidence |
+| --- | --- | --- | --- |
+| [Narada Code and OperatorMini](https://narada.ai/blog/introducing-narada-code-operatormini) | — | Narada Code develops and tests computer-use workflows, then revises them after failures. OperatorMini executes the instructions for repeatable web and enterprise tasks. | [✓ 2026‑11‑09](https://narada.ai/blog/introducing-narada-code-operatormini) |
 
 ## Papers
 

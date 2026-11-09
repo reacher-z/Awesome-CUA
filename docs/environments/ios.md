@@ -2,9 +2,9 @@
 
 [Home](../../README.md) · [All platforms](../environments.md) · [Research by topic](../topics.md)
 
-62 source-reviewed resources tagged `ios`. Curated metadata; unknown facts are shown as —.
+64 source-reviewed resources tagged `ios`. Curated metadata; unknown facts are shown as —.
 
-**Contents:** [Benchmarks (1)](#benchmarks) · [Datasets (4)](#datasets) · [Models (4)](#models) · [Agents (9)](#agents) · [Frameworks (15)](#frameworks) · [Tools (15)](#tools) · [Infrastructure (1)](#infrastructure) · [Surveys (1)](#surveys) · [Papers (12)](#papers)
+**Contents:** [Benchmarks (1)](#benchmarks) · [Datasets (4)](#datasets) · [Models (5)](#models) · [Agents (9)](#agents) · [Frameworks (15)](#frameworks) · [Tools (15)](#tools) · [Infrastructure (1)](#infrastructure) · [Products (1)](#products) · [Surveys (1)](#surveys) · [Papers (12)](#papers)
 
 ## Benchmarks
 
@@ -30,6 +30,7 @@ All entries in this section: ios.
 | [AutoGLM Phone 9B](https://huggingface.co/zai-org/AutoGLM-Phone-9B) | android, ios | — | weights mit | AutoGLM phone-agent checkpoint for Open-AutoGLM, fine-tuned from GLM-4.1V-9B-Base with about 10.3B BF16 parameters and tagged for Chinese. | [✓ 2026‑10‑16](https://huggingface.co/api/models/zai-org/AutoGLM-Phone-9B) |
 | [AutoGLM Phone 9B Multilingual](https://huggingface.co/zai-org/AutoGLM-Phone-9B-Multilingual) | android, ios | — | weights mit | Multilingual variant of the AutoGLM phone-agent checkpoint for Open-AutoGLM, likewise fine-tuned from GLM-4.1V-9B-Base with about 10.3B BF16 parameters. | [✓ 2026‑10‑16](https://huggingface.co/api/models/zai-org/AutoGLM-Phone-9B-Multilingual) |
 | [Ferret-UI](https://github.com/apple/ml-ferret) | android, ios | [2404.05719](https://arxiv.org/abs/2404.05719) (2024) | — | Screen understanding research within the Ferret model family. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/apple-aiml-research/ml-ferret/main/ferretui/README.md) |
+| [Muse-Glimmer-30B-GUI-Grounding-Fast](https://huggingface.co/lemuralabs/Muse-Glimmer-30B-GUI-Grounding-Fast) | cross-platform, desktop, windows, macos, android, ios, web | — | weights apache-2.0 | A LoRA adapter for Muse-Glimmer-30B that returns a UI element's bounding box from a screenshot and instruction, with examples spanning desktop, mobile, and web screens. | [✓ 2026‑11‑09](https://huggingface.co/api/models/lemuralabs/Muse-Glimmer-30B-GUI-Grounding-Fast) |
 | [SeeClick checkpoint](https://huggingface.co/cckevinn/SeeClick) | web, desktop, android, ios | [2401.10935](https://arxiv.org/abs/2401.10935) (2024) | — | The released SeeClick visual grounding checkpoint for mapping an interface screenshot and referring instruction to a point or bounding box. | [✓ 2026‑10‑17](https://huggingface.co/api/models/cckevinn/SeeClick) |
 
 ## Agents
@@ -93,6 +94,14 @@ All entries in this section: android, ios.
 | Resource | Paper | License | Description | Evidence |
 | --- | --- | --- | --- | --- |
 | [Appium](https://github.com/appium/appium) | — | code Apache-2.0 | Open-source WebDriver-based automation server for mobile, desktop and IoT apps, extended by per-platform drivers for iOS, Android, macOS and Windows, plugins, and clients in Java, Python, Ruby and C#. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/appium/appium/HEAD/README.md) |
+
+## Products
+
+All entries in this section: cross-platform, web, android, ios.
+
+| Resource | Publisher | Description | Evidence |
+| --- | --- | --- | --- |
+| [agent-qa](https://vostride.com) | — | A QA agent that runs plain-language tests against web, Android, and iOS apps. It navigates user flows, verifies outcomes, and stores validated run evidence for reuse. | [✓ 2026‑11‑09](https://vostride.com) |
 
 ## Surveys
 

@@ -2,9 +2,9 @@
 
 [Home](../../README.md) · [All topics](../topics.md) · [Full arXiv bibliography](../papers.md)
 
-98 source-reviewed resources tagged `reward-models`. Curated metadata; unknown facts are shown as —.
+101 source-reviewed resources tagged `reward-models`. Curated metadata; unknown facts are shown as —.
 
-**Contents:** [Benchmarks (7)](#benchmarks) · [Datasets (4)](#datasets) · [Models (6)](#models) · [Frameworks (10)](#frameworks) · [Tools (1)](#tools) · [Papers (70)](#papers)
+**Contents:** [Benchmarks (7)](#benchmarks) · [Datasets (4)](#datasets) · [Models (9)](#models) · [Frameworks (10)](#frameworks) · [Tools (1)](#tools) · [Papers (70)](#papers)
 
 ## Benchmarks
 
@@ -32,11 +32,14 @@
 | Resource | Environments | Paper | License | Description | Evidence |
 | --- | --- | --- | --- | --- | --- |
 | [GLM-V](https://github.com/zai-org/GLM-V) | cross-platform, desktop, web, android | [2507.01006](https://arxiv.org/abs/2507.01006) (2025) | code Apache-2.0 | Z.ai repository for the open-weight GLM-4.1V-Thinking, GLM-4.5V and GLM-4.6V vision-language models, with GUI-agent prompt examples for mobile, PC and web plus a released VLM reward system. | [✓ 2026‑10‑18](https://raw.githubusercontent.com/zai-org/GLM-V/HEAD/README.md) |
+| [GUI-Actor-Verifier-2B](https://huggingface.co/microsoft/GUI-Actor-Verifier-2B) | unspecified | [2506.03143](https://arxiv.org/abs/2506.03143) (2025) | weights mit | A GUI grounding verifier that checks whether a marked screenshot position matches an instruction and provides a score for candidate action positions. | [✓ 2026‑11‑09](https://huggingface.co/api/models/microsoft/GUI-Actor-Verifier-2B) |
 | [GUI-G2 3B](https://huggingface.co/inclusionAI/GUI-G2-3B) | cross-platform | [2507.15846](https://arxiv.org/abs/2507.15846) (2025) | weights apache-2.0 | The 3B GUI-G2 grounding checkpoint: Qwen2.5-VL-3B-Instruct fine-tuned with Gaussian point and coverage rewards to locate interface elements in screenshots from text instructions. | [✓ 2026‑10‑18](https://huggingface.co/inclusionAI/GUI-G2-3B/raw/413256770087058c21662c05c13fa8c199a08fb4/README.md) |
 | [GUI-G2 7B](https://huggingface.co/inclusionAI/GUI-G2-7B) | cross-platform | [2507.15846](https://arxiv.org/abs/2507.15846) (2025) | weights apache-2.0 | A Qwen2.5-VL grounding checkpoint trained with Gaussian point and coverage rewards whose granularity adapts to interface-element scale. | [✓ 2026‑10‑17](https://huggingface.co/inclusionAI/GUI-G2-7B/raw/main/README.md) |
 | [WebJudge 7B](https://huggingface.co/osunlp/WebJudge-7B) | web | [2504.01382](https://arxiv.org/abs/2504.01382) (2025) | weights apache-2.0 | A visual trajectory judge that retains selected intermediate screenshots to evaluate whether a web agent completed its task. | [✓ 2026‑10‑17](https://huggingface.co/osunlp/WebJudge-7B/raw/main/README.md) |
 | [WebRL outcome reward model 8B](https://huggingface.co/zai-org/webrl-orm-llama-3.1-8b) | web | [2411.02337](https://arxiv.org/abs/2411.02337) (2024) | — | The outcome-supervision checkpoint used by WebRL to score browser trajectories during policy training. | [✓ 2026‑10‑17](https://huggingface.co/api/models/zai-org/webrl-orm-llama-3.1-8b) |
 | [WebShepherd 3B](https://huggingface.co/LangAGI-Lab/WebShepherd_3B) | web | [2505.15277](https://arxiv.org/abs/2505.15277) (2025) | — | A public text-based process-reward checkpoint from the Web-Shepherd collection for scoring web-agent decisions against task checklists. | [✓ 2026‑10‑17](https://huggingface.co/api/models/LangAGI-Lab/WebShepherd_3B) |
+| [ZeroGUI-AndroidLab-7B](https://huggingface.co/OpenGVLab/ZeroGUI-AndroidLab-7B) | unspecified | [2505.23762](https://arxiv.org/abs/2505.23762) (2025) | weights apache-2.0 | ZeroGUI-AndroidLab-7B is a GUI-agent checkpoint associated with training that generates interface tasks, estimates rewards from screenshots, and adapts through online reinforcement learning. | [✓ 2026‑11‑09](https://huggingface.co/api/models/OpenGVLab/ZeroGUI-AndroidLab-7B) |
+| [ZeroGUI-OSWorld-7B](https://huggingface.co/OpenGVLab/ZeroGUI-OSWorld-7B) | unspecified | [2505.23762](https://arxiv.org/abs/2505.23762) (2025) | weights apache-2.0 | A GUI agent checkpoint associated with ZeroGUI, which trains on generated interface tasks using rewards estimated from trajectory screenshots. | [✓ 2026‑11‑09](https://huggingface.co/api/models/OpenGVLab/ZeroGUI-OSWorld-7B) |
 
 ## Frameworks
 

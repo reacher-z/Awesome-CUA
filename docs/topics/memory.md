@@ -2,9 +2,9 @@
 
 [Home](../../README.md) · [All topics](../topics.md) · [Full arXiv bibliography](../papers.md)
 
-328 source-reviewed resources tagged `memory`. Curated metadata; unknown facts are shown as —.
+331 source-reviewed resources tagged `memory`. Curated metadata; unknown facts are shown as —.
 
-**Contents:** [Benchmarks (3)](#benchmarks) · [Datasets (3)](#datasets) · [Models (4)](#models) · [Agents (35)](#agents) · [Frameworks (50)](#frameworks) · [Tools (18)](#tools) · [Infrastructure (1)](#infrastructure) · [Products (3)](#products) · [Learning resources (1)](#learning-resources) · [Surveys (3)](#surveys) · [Papers (207)](#papers)
+**Contents:** [Benchmarks (3)](#benchmarks) · [Datasets (3)](#datasets) · [Models (4)](#models) · [Agents (37)](#agents) · [Frameworks (50)](#frameworks) · [Tools (18)](#tools) · [Infrastructure (1)](#infrastructure) · [Products (4)](#products) · [Learning resources (1)](#learning-resources) · [Surveys (3)](#surveys) · [Papers (207)](#papers)
 
 ## Benchmarks
 
@@ -55,6 +55,7 @@ All entries in this section: cross-platform, desktop, android, web.
 | [FurlPay Bot](https://github.com/FurlPay/furlpay-bot) | cross-platform, desktop, web | — | code Apache-2.0 | Persistent AI teammate equipped with its own virtual computer, browser, long-term memory, and voice interface. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/FurlPay/furlpay-bot/main/README.md) |
 | [GUI-explorer](https://github.com/iLearn-Lab/ACL25-GUI-explorer) | android | [2505.16827](https://arxiv.org/abs/2505.16827) (2025) | code MIT | Android agent code that explores apps over ADB, mines transition-aware knowledge into a knowledge base behind a retrieval service, and runs an OpenAI-backed agent demo that draws on it. | [✓ 2026‑10‑18](https://raw.githubusercontent.com/iLearn-Lab/ACL25-GUI-explorer/HEAD/README.md) |
 | [Hermes Agent](https://github.com/NousResearch/hermes-agent) | cross-platform, desktop, web, linux, macos, windows | — | code MIT | Hermes Agent is a self-improving autonomous agent by Nous Research with procedural skill synthesis, browser control, and multi-platform sandboxes. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/NousResearch/hermes-agent/HEAD/README.md) |
+| [Intelligence Indeed](https://github.com/intelligence-indeed/intelligence-indeed) | desktop | — | code Apache-2.0 | Intelligence Indeed is a desktop GUI agent that loads reusable guidance, probes the current environment and shares task-specific findings across planning and execution. | [✓ 2026‑11‑09](https://raw.githubusercontent.com/intelligence-indeed/intelligence-indeed/HEAD/README.md) |
 | [LASER](https://github.com/Mayer123/LASER) | web | [2309.08172](https://arxiv.org/abs/2309.08172) (2023) | code GPL-3.0 | LASER models interactive web navigation as state-space exploration with explicit state transitions and backtracking on WebShop. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/Mayer123/LASER/HEAD/README.md) |
 | [LKO Mark 3.4](https://github.com/shubhransh-gupta/LKO-Mark-3.4) | desktop, macos | — | — | Autonomous macOS desktop assistant with voice interaction, screen vision, and native AppleScript/system control. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/shubhransh-gupta/LKO-Mark-3.4/main/README.md) |
 | [Lumen browser agent](https://github.com/omxyz/lumen) | web | — | code MIT | A screenshot-driven browser agent over Chrome DevTools Protocol, with resumable sessions, context compression, action replay and configurable completion checks. | [✓ 2026‑10‑17](https://raw.githubusercontent.com/omxyz/lumen/HEAD/README.md) |
@@ -70,6 +71,7 @@ All entries in this section: cross-platform, desktop, android, web.
 | [Recallo](https://github.com/Tianqi-Bu/recallo) | web | — | code Apache-2.0 | Recallo is a local-first browser agent with persistent SQLite episodic memory across browsing sessions. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/Tianqi-Bu/recallo/HEAD/README.md) |
 | [Sidemates](https://github.com/PrisacariuRobert/sidemates) | desktop, macos, windows, linux | — | code MIT | Open-source desktop AI companion that observes active windows and assists with everyday computer tasks. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/PrisacariuRobert/sidemates/main/README.md) |
 | [Smart Pet Agent](https://github.com/realstreetsmartnyc/smart-pet-agent) | desktop, macos, windows | — | code MIT | Local-first ambient desktop pet agent that observes workspace context and automates routine desktop actions. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/realstreetsmartnyc/smart-pet-agent/main/README.md) |
+| [WebTactix](https://paper-submission-anoymous.github.io/webtactix_introduction) | web | — | — | A web agent that simplifies accessibility trees, explores candidate actions in parallel and stores visited pages in a semantic tree to guide later decisions and recovery. | [✓ 2026‑11‑09](https://paper-submission-anoymous.github.io/webtactix_introduction) |
 | [Xiaoshe Agent (小蛇 Agent)](https://github.com/jackygilbert498-debug/xiaoshe-agent) | desktop, windows, macos | — | — | Local-first desktop agent built on DeepSeek Harness featuring plugin governance, permission approvals, and completion receipts. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/jackygilbert498-debug/xiaoshe-agent/main/README.md) |
 | [Xiryn](https://github.com/SouravBeraAkaSpeed/xiryn) | desktop, linux, web | — | code MIT | Self-hosted personal agent app that gives each agent its own Docker Linux desktop with Chromium, operated through screenshots and xdotool clicks and keys, with live take-over, memory, a vault and Telegram control. | [✓ 2026‑10‑20](https://raw.githubusercontent.com/SouravBeraAkaSpeed/xiryn/HEAD/README.md) |
 
@@ -161,13 +163,12 @@ All entries in this section: desktop.
 
 ## Products
 
-All entries in this section: web.
-
-| Resource | Publisher | Description | Evidence |
-| --- | --- | --- | --- |
-| [dassi](https://www.dassi.ai) | — | Side-panel extension for Chrome, Edge and Brave whose agent reads pages, takes screenshots, clicks, types, fills forms and manages tabs in the user's signed-in browser, with saved skills, schedules and a choice of model. | [✓ 2026‑10‑20](https://www.dassi.ai) |
-| [Dex](https://www.joindex.com) | — | ThirdLayer's Chrome extension that keeps an operational memory of a user's work tools and runs agents that navigate tabs and fill forms in the browser, alongside Gmail, Slack and CRM integrations. | [✓ 2026‑10‑19](https://www.joindex.com) |
-| [Strawberry](https://www.strawberrybrowser.com) | — | Agentic desktop browser for macOS and Windows whose AI companions open sites, click through flows and work inside the user's signed-in accounts, asking for approval before sending, paying or deleting. | [✓ 2026‑10‑20](https://strawberrybrowser.com/llms.txt) |
+| Resource | Publisher | Environments | Description | Evidence |
+| --- | --- | --- | --- | --- |
+| [agent-qa](https://vostride.com) | — | cross-platform, web, android, ios | A QA agent that runs plain-language tests against web, Android, and iOS apps. It navigates user flows, verifies outcomes, and stores validated run evidence for reuse. | [✓ 2026‑11‑09](https://vostride.com) |
+| [dassi](https://www.dassi.ai) | — | web | Side-panel extension for Chrome, Edge and Brave whose agent reads pages, takes screenshots, clicks, types, fills forms and manages tabs in the user's signed-in browser, with saved skills, schedules and a choice of model. | [✓ 2026‑10‑20](https://www.dassi.ai) |
+| [Dex](https://www.joindex.com) | — | web | ThirdLayer's Chrome extension that keeps an operational memory of a user's work tools and runs agents that navigate tabs and fill forms in the browser, alongside Gmail, Slack and CRM integrations. | [✓ 2026‑10‑19](https://www.joindex.com) |
+| [Strawberry](https://www.strawberrybrowser.com) | — | web | Agentic desktop browser for macOS and Windows whose AI companions open sites, click through flows and work inside the user's signed-in accounts, asking for approval before sending, paying or deleting. | [✓ 2026‑10‑20](https://strawberrybrowser.com/llms.txt) |
 
 ## Learning resources
 

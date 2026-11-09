@@ -2,9 +2,9 @@
 
 [Home](../../README.md) · [All topics](../topics.md) · [Full arXiv bibliography](../papers.md)
 
-136 source-reviewed resources tagged `self-reflection`. Curated metadata; unknown facts are shown as —.
+138 source-reviewed resources tagged `self-reflection`. Curated metadata; unknown facts are shown as —.
 
-**Contents:** [Benchmarks (6)](#benchmarks) · [Models (3)](#models) · [Agents (25)](#agents) · [Frameworks (42)](#frameworks) · [Tools (4)](#tools) · [Products (1)](#products) · [Papers (55)](#papers)
+**Contents:** [Benchmarks (6)](#benchmarks) · [Datasets (1)](#datasets) · [Models (3)](#models) · [Agents (25)](#agents) · [Frameworks (42)](#frameworks) · [Tools (4)](#tools) · [Products (2)](#products) · [Papers (55)](#papers)
 
 ## Benchmarks
 
@@ -16,6 +16,14 @@
 | [HoloSkill Gym](https://github.com/ElenaViewSynthesis/holoskill-gym) | cross-platform, desktop, web | — | — | — | Gym environment and optimization framework for self-evolving CLI and computer-use agent skills. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/ElenaViewSynthesis/holoskill-gym/main/README.md) |
 | [Kane](https://github.com/Venkat5599/kane) | web | — | — | — | Plain-English browser verification harness for AI-built web applications that reports UI failures back to coding agents. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/Venkat5599/kane/main/README.md) |
 | [OmniWebBench](https://github.com/FanXuTheRealOne/OmniWebBench) | web | — | — | code Apache-2.0 | OmniWebBench evaluates agentic browsers across end-to-end web navigation, action execution, failure recovery, and evidence verification. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/FanXuTheRealOne/OmniWebBench/HEAD/README.md) |
+
+## Datasets
+
+All entries in this section: unspecified.
+
+| Resource | Paper | Scale | License | Description | Evidence |
+| --- | --- | --- | --- | --- | --- |
+| [GUI_Reflection_SFT_train](https://huggingface.co/datasets/craigwu/GUI_Reflection_SFT_train) | [2506.08012](https://arxiv.org/abs/2506.08012) (2025) | — | data mit | Offline supervised fine-tuning data for GUI Reflection, released as JSONL files. Users obtain the corresponding images from the source datasets named in the card. | [✓ 2026‑11‑09](https://huggingface.co/api/datasets/craigwu/GUI_Reflection_SFT_train) |
 
 ## Models
 
@@ -113,11 +121,10 @@
 
 ## Products
 
-All entries in this section: cross-platform, desktop, windows.
-
-| Resource | Publisher | Description | Evidence |
-| --- | --- | --- | --- |
-| [Tongyi UI Agent API](https://help.aliyun.com/zh/model-studio/ui-agent-api) | — | Alibaba Cloud Model Studio API that returns the next GUI action with its reasoning for a screenshot and task, with a mobile pipeline and a PC pipeline using planner, worker, reflector and memory agents. | [✓ 2026‑10‑19](https://help.aliyun.com/zh/model-studio/ui-agent-api.md) |
+| Resource | Publisher | Environments | Description | Evidence |
+| --- | --- | --- | --- | --- |
+| [Narada Code and OperatorMini](https://narada.ai/blog/introducing-narada-code-operatormini) | — | web | Narada Code develops and tests computer-use workflows, then revises them after failures. OperatorMini executes the instructions for repeatable web and enterprise tasks. | [✓ 2026‑11‑09](https://narada.ai/blog/introducing-narada-code-operatormini) |
+| [Tongyi UI Agent API](https://help.aliyun.com/zh/model-studio/ui-agent-api) | — | cross-platform, desktop, windows | Alibaba Cloud Model Studio API that returns the next GUI action with its reasoning for a screenshot and task, with a mobile pipeline and a PC pipeline using planner, worker, reflector and memory agents. | [✓ 2026‑10‑19](https://help.aliyun.com/zh/model-studio/ui-agent-api.md) |
 
 ## Papers
 

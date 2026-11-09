@@ -2,9 +2,9 @@
 
 [Home](../../README.md) · [All topics](../topics.md) · [Full arXiv bibliography](../papers.md)
 
-298 source-reviewed resources tagged `human-in-the-loop`. Curated metadata; unknown facts are shown as —.
+301 source-reviewed resources tagged `human-in-the-loop`. Curated metadata; unknown facts are shown as —.
 
-**Contents:** [Benchmarks (5)](#benchmarks) · [Datasets (2)](#datasets) · [Agents (68)](#agents) · [Frameworks (55)](#frameworks) · [Tools (49)](#tools) · [Infrastructure (7)](#infrastructure) · [Products (8)](#products) · [Papers (104)](#papers)
+**Contents:** [Benchmarks (5)](#benchmarks) · [Datasets (3)](#datasets) · [Models (1)](#models) · [Agents (68)](#agents) · [Frameworks (55)](#frameworks) · [Tools (49)](#tools) · [Infrastructure (7)](#infrastructure) · [Products (9)](#products) · [Papers (104)](#papers)
 
 ## Benchmarks
 
@@ -21,7 +21,16 @@
 | Resource | Environments | Paper | Scale | License | Description | Evidence |
 | --- | --- | --- | --- | --- | --- | --- |
 | [META-GUI dataset](https://huggingface.co/datasets/X-LANCE/META-GUI) | unspecified | [2205.11029](https://arxiv.org/abs/2205.11029) (2022) | — | data apache-2.0 | Hub release of META-GUI, task-oriented dialogues in which an agent operates mobile apps: each turn pairs the conversation with screenshots, view-hierarchy XML, recorded GUI actions and a reply. | [✓ 2026‑10‑18](https://huggingface.co/datasets/X-LANCE/META-GUI/raw/12660de515ad55e40e8c4e5afa8f4d0e7430ab34/README.md) |
+| [VeriOS-Bench](https://huggingface.co/datasets/wuuuuuz/VeriOS-Bench) | desktop | [2509.07553](https://arxiv.org/abs/2509.07553) (2025) | — | — | A dataset for training and evaluating GUI-operating OS agents on decisions to ask a person for help when autonomous action could be unreliable. | [✓ 2026‑11‑09](https://huggingface.co/api/datasets/wuuuuuz/VeriOS-Bench) |
 | [WebLINX dataset](https://huggingface.co/datasets/McGill-NLP/WebLINX) | web | [2402.05930](https://arxiv.org/abs/2402.05930) (2024) | [2,337 demonstrations](https://huggingface.co/datasets/McGill-NLP/WebLINX/raw/a30ff2cbecb75f2d04fac75a2b92721c6c9e3f13/splits.json) · [2,126 chat-config turn records](https://huggingface.co/datasets/McGill-NLP/WebLINX/resolve/a30ff2cbecb75f2d04fac75a2b92721c6c9e3f13/data/chat/valid.json.gz) | data cc-by-nc-sa-4.0 | Hub data of WebLINX 1.0: conversational web-navigation demonstrations preprocessed into per-turn records with dialogue, cleaned HTML, candidate elements and action history, plus reranking data. | [✓ 2026‑10‑18](https://huggingface.co/datasets/McGill-NLP/WebLINX/raw/a30ff2cbecb75f2d04fac75a2b92721c6c9e3f13/README.md) |
+
+## Models
+
+All entries in this section: unspecified.
+
+| Resource | Paper | License | Description | Evidence |
+| --- | --- | --- | --- | --- |
+| [VeriOS-Agent-32B](https://huggingface.co/wuuuuuz/VeriOS-Agent-32B) | [2509.07553](https://arxiv.org/abs/2509.07553) (2025) | — | VeriOS-Agent-32B is a query-driven OS agent checkpoint initialized from Qwen2.5-VL-32B. It is released with model weights for the interaction approach described in the VeriOS paper. | [✓ 2026‑11‑09](https://huggingface.co/api/models/wuuuuuz/VeriOS-Agent-32B) |
 
 ## Agents
 
@@ -226,6 +235,7 @@
 
 | Resource | Publisher | Environments | Description | Evidence |
 | --- | --- | --- | --- | --- |
+| [Browser Operator](https://press.opera.com/2025/03/03/opera-browser-operator-ai-agentics) | — | web | Browser Operator is Opera's preview browser agent for carrying out natural-language browsing tasks while showing its steps and allowing user takeover. | [✓ 2026‑11‑09](https://press.opera.com/2025/03/03/opera-browser-operator-ai-agentics) |
 | [Copilot Studio computer use](https://learn.microsoft.com/en-us/microsoft-copilot-studio/computer-use) | [Microsoft](https://learn.microsoft.com/en-us/microsoft-copilot-studio/computer-use) | windows, desktop, web | Copilot Studio agent tool that operates websites and Windows desktop apps on a configured machine through a computer-using model, with stored credentials, site and app allow lists and human supervision. | [✓ 2026‑10‑18](https://learn.microsoft.com/en-us/microsoft-copilot-studio/computer-use) |
 | [dassi](https://www.dassi.ai) | — | web | Side-panel extension for Chrome, Edge and Brave whose agent reads pages, takes screenshots, clicks, types, fills forms and manages tabs in the user's signed-in browser, with saved skills, schedules and a choice of model. | [✓ 2026‑10‑20](https://www.dassi.ai) |
 | [Dia](https://www.diabrowser.com) | — | web | AI browser from The Browser Company for macOS and Windows whose assistant reads open tabs and connected work apps, with an approval-gated agentic mode that fills forms and drafts replies on the current site. | [✓ 2026‑10‑20](https://www.diabrowser.com) |

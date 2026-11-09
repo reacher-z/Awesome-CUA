@@ -2,17 +2,25 @@
 
 [Home](../../README.md) · [All topics](../topics.md) · [Full arXiv bibliography](../papers.md)
 
-96 source-reviewed resources tagged `interaction-history`. Curated metadata; unknown facts are shown as —.
+101 source-reviewed resources tagged `interaction-history`. Curated metadata; unknown facts are shown as —.
 
-**Contents:** [Models (1)](#models) · [Frameworks (1)](#frameworks) · [Tools (1)](#tools) · [Surveys (1)](#surveys) · [Papers (92)](#papers)
+**Contents:** [Datasets (2)](#datasets) · [Models (4)](#models) · [Frameworks (1)](#frameworks) · [Tools (1)](#tools) · [Surveys (1)](#surveys) · [Papers (92)](#papers)
+
+## Datasets
+
+| Resource | Environments | Paper | Scale | License | Description | Evidence |
+| --- | --- | --- | --- | --- | --- | --- |
+| [Fanbin/waa_steve_trajectories](https://huggingface.co/datasets/Fanbin/waa_steve_trajectories) | desktop, windows | [2503.12532](https://arxiv.org/abs/2503.12532) (2025) | — | — | A dataset of STEVE-R1 evaluation trajectories on WindowsAgentArena, pairing task screenshots and agent responses with action traces and outcome labels. | [✓ 2026‑11‑09](https://huggingface.co/api/datasets/Fanbin/waa_steve_trajectories) |
+| [go-browse-wa-raw](https://huggingface.co/datasets/apurvaga/go-browse-wa-raw) | web | — | — | — | go-browse-wa-raw is a browser-agent trajectory dataset with page observations, actions, goals, rewards, and images. Its train split contains 196462 examples. | [✓ 2026‑11‑09](https://huggingface.co/api/datasets/apurvaga/go-browse-wa-raw) |
 
 ## Models
 
-All entries in this section: android, desktop.
-
-| Resource | Paper | License | Description | Evidence |
-| --- | --- | --- | --- | --- |
-| [Aria-UI context-aware checkpoint](https://huggingface.co/Aria-UI/Aria-UI-context-aware) | [2412.16256](https://arxiv.org/abs/2412.16256) (2024) | — | The context-aware Aria-UI release that uses interaction context to support grounding in dynamic Android and desktop agent tasks. | [✓ 2026‑10‑17](https://huggingface.co/api/models/Aria-UI/Aria-UI-context-aware) |
+| Resource | Environments | Paper | License | Description | Evidence |
+| --- | --- | --- | --- | --- | --- |
+| [Aria-UI context-aware checkpoint](https://huggingface.co/Aria-UI/Aria-UI-context-aware) | android, desktop | [2412.16256](https://arxiv.org/abs/2412.16256) (2024) | — | The context-aware Aria-UI release that uses interaction context to support grounding in dynamic Android and desktop agent tasks. | [✓ 2026‑10‑17](https://huggingface.co/api/models/Aria-UI/Aria-UI-context-aware) |
+| [Aria-UI/Aria-UI-base](https://huggingface.co/Aria-UI/Aria-UI-base) | android, desktop | [2412.16256](https://arxiv.org/abs/2412.16256) (2024) | weights apache-2.0 | Aria-UI/Aria-UI-base is a released GUI grounding checkpoint that maps an instruction and interface image to target coordinates. The card documents history-aware input and inference examples. | [✓ 2026‑11‑09](https://huggingface.co/api/models/Aria-UI/Aria-UI-base) |
+| [OpenCUA-7B](https://huggingface.co/xlangai/OpenCUA-7B) | desktop, linux, windows, macos | [2508.09123](https://arxiv.org/abs/2508.09123) (2025) | weights mit | A Qwen2.5-VL-based computer-use checkpoint that produces desktop actions from screenshots and instructions, using recent screen history for context. | [✓ 2026‑11‑09](https://huggingface.co/api/models/xlangai/OpenCUA-7B) |
+| [STEVE-R1-7B-SFT](https://huggingface.co/Fanbin/STEVE-R1-7B-SFT) | desktop, windows, linux | [2503.12532](https://arxiv.org/abs/2503.12532) (2025) | weights apache-2.0 | STEVE-R1-7B-SFT is a released computer-use checkpoint trained with step-verified data for desktop agent tasks and evaluated on Windows and Ubuntu environments. | [✓ 2026‑11‑09](https://huggingface.co/api/models/Fanbin/STEVE-R1-7B-SFT) |
 
 ## Frameworks
 

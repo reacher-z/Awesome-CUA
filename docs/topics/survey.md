@@ -2,9 +2,9 @@
 
 [Home](../../README.md) · [All topics](../topics.md) · [Full arXiv bibliography](../papers.md)
 
-35 source-reviewed resources tagged `survey`. Curated metadata; unknown facts are shown as —.
+36 source-reviewed resources tagged `survey`. Curated metadata; unknown facts are shown as —.
 
-**Contents:** [Benchmarks (1)](#benchmarks) · [Learning resources (4)](#learning-resources) · [Surveys (29)](#surveys) · [Papers (1)](#papers)
+**Contents:** [Benchmarks (1)](#benchmarks) · [Learning resources (5)](#learning-resources) · [Surveys (29)](#surveys) · [Papers (1)](#papers)
 
 ## Benchmarks
 
@@ -22,6 +22,7 @@ All entries in this section: cross-platform, desktop, web.
 | [Awesome GPT-6 Astra](https://github.com/archorfight/awesome-gpt-6-astra) | cross-platform, desktop, web | — | Evidence-linked catalog of computer-use demos, evaluations, and agent workflows with primary source receipts. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/archorfight/awesome-gpt-6-astra/main/README.md) |
 | [Awesome GUI Agent Security](https://github.com/Yuxuan2003/Awesome-GUI-Agent-Security) | cross-platform, desktop, web, android | code MIT | Bilingual curated reading list of GUI, computer-use, and browser agent security papers organized along attack and defense axes. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/Yuxuan2003/Awesome-GUI-Agent-Security/main/README.md) |
 | [Awesome Multimodal Agentic Coding](https://github.com/jiangjin1999/awesome-multimodal-agentic-coding) | cross-platform, desktop, web | code MIT | Comprehensive research map of papers, benchmarks, and tools for multimodal coding and UI-verifying agents. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/jiangjin1999/awesome-multimodal-agentic-coding/main/README.md) |
+| [Computer-Use Agents: An Overview of Terminal-Based and GUI-Based Approaches](https://github.com/cdxeve/awesome-computer-use-agents) | cross-platform, web, desktop | — | A curated reading list and accompanying report organize computer-use research, including agents that act through web, desktop, and mobile interfaces. | [✓ 2026‑11‑09](https://raw.githubusercontent.com/cdxeve/awesome-computer-use-agents/HEAD/README.md) |
 
 ## Surveys
 

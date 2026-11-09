@@ -1024,5 +1024,221 @@
         "sha256": "f1cf004fcfb3d3e7d626574385e9eebd8a25b2eba62b31f2e953f1b030a30e7d"
       }
     ]
+  },
+  {
+    "alias_id": "url:3e23d4106727c4fab4b7",
+    "target_id": "url:1f248862e4b691b85343",
+    "repository_id": "682d98ae342edfe8598b0e90",
+    "basis": "official_huggingface_repository_id",
+    "reviewed_at": "2026-11-09T05:25:46Z",
+    "observations": [
+      {
+        "url": "https://huggingface.co/api/datasets/Reallm-Labs/android_control_test",
+        "resolved_url": "https://huggingface.co/api/datasets/InfiX-ai/android_control_test",
+        "repository_id": "682d98ae342edfe8598b0e90",
+        "full_name": "InfiX-ai/android_control_test",
+        "html_url": "https://huggingface.co/datasets/InfiX-ai/android_control_test",
+        "retrieved_at": "2026-11-09T05:25:45Z",
+        "sha256": "47b43c2c9249af946be4c46c979934d7b4765a60f4191538f5f1fb399b5e1e56"
+      },
+      {
+        "url": "https://huggingface.co/api/datasets/InfiX-ai/android_control_test",
+        "resolved_url": "https://huggingface.co/api/datasets/InfiX-ai/android_control_test",
+        "repository_id": "682d98ae342edfe8598b0e90",
+        "full_name": "InfiX-ai/android_control_test",
+        "html_url": "https://huggingface.co/datasets/InfiX-ai/android_control_test",
+        "retrieved_at": "2026-11-09T05:25:46Z",
+        "sha256": "47b43c2c9249af946be4c46c979934d7b4765a60f4191538f5f1fb399b5e1e56"
+      }
+    ]
+  },
+  {
+    "alias_id": "url:9d21680af70d1967107e",
+    "target_id": "url:25af759a783f1514fe58",
+    "repository_id": "6455ed3ee39c6464656433f4",
+    "basis": "official_huggingface_repository_id",
+    "reviewed_at": "2026-11-09T05:25:47Z",
+    "observations": [
+      {
+        "url": "https://huggingface.co/api/datasets/zdy023/WikiHow-taskset",
+        "resolved_url": "https://huggingface.co/api/datasets/X-LANCE/WikiHow-taskset",
+        "repository_id": "6455ed3ee39c6464656433f4",
+        "full_name": "X-LANCE/WikiHow-taskset",
+        "html_url": "https://huggingface.co/datasets/X-LANCE/WikiHow-taskset",
+        "retrieved_at": "2026-11-09T05:25:47Z",
+        "sha256": "5d5c8db478c79bb6cabd29453d83ce64fa54b1a309fb73affe805a57d60527cf"
+      },
+      {
+        "url": "https://huggingface.co/api/datasets/X-LANCE/WikiHow-taskset",
+        "resolved_url": "https://huggingface.co/api/datasets/X-LANCE/WikiHow-taskset",
+        "repository_id": "6455ed3ee39c6464656433f4",
+        "full_name": "X-LANCE/WikiHow-taskset",
+        "html_url": "https://huggingface.co/datasets/X-LANCE/WikiHow-taskset",
+        "retrieved_at": "2026-11-09T05:25:47Z",
+        "sha256": "5d5c8db478c79bb6cabd29453d83ce64fa54b1a309fb73affe805a57d60527cf"
+      }
+    ]
+  },
+  {
+    "alias_id": "url:df1401387f7bb3a35400",
+    "target_id": "url:3ac3ccfb23fe13adf428",
+    "repository_id": "66f3ee06df143250d611cae5",
+    "basis": "official_huggingface_repository_id",
+    "reviewed_at": "2026-11-09T05:25:52Z",
+    "observations": [
+      {
+        "url": "https://huggingface.co/api/datasets/MacPaw/uipad",
+        "resolved_url": "https://huggingface.co/api/datasets/macpaw-research/UiPad",
+        "repository_id": "66f3ee06df143250d611cae5",
+        "full_name": "macpaw-research/UiPad",
+        "html_url": "https://huggingface.co/datasets/macpaw-research/UiPad",
+        "retrieved_at": "2026-11-09T05:25:51Z",
+        "sha256": "9468b853764a07bc936cc38cb2814c64a0166838b7a0006a6e032502be7510f3"
+      },
+      {
+        "url": "https://huggingface.co/api/datasets/macpaw-research/UiPad",
+        "resolved_url": "https://huggingface.co/api/datasets/macpaw-research/UiPad",
+        "repository_id": "66f3ee06df143250d611cae5",
+        "full_name": "macpaw-research/UiPad",
+        "html_url": "https://huggingface.co/datasets/macpaw-research/UiPad",
+        "retrieved_at": "2026-11-09T05:25:52Z",
+        "sha256": "9468b853764a07bc936cc38cb2814c64a0166838b7a0006a6e032502be7510f3"
+      }
+    ]
+  },
+  {
+    "alias_id": "url:16ca7471bb5f2e255c9f",
+    "target_id": "url:5371bf588e7790a66ff0",
+    "repository_id": "672a392fecb6227cd514ca70",
+    "basis": "official_huggingface_repository_id",
+    "reviewed_at": "2026-11-09T05:25:54Z",
+    "observations": [
+      {
+        "url": "https://huggingface.co/api/models/THUDM/webrl-llama-3.1-70b",
+        "resolved_url": "https://huggingface.co/api/models/zai-org/webrl-llama-3.1-70b",
+        "repository_id": "672a392fecb6227cd514ca70",
+        "full_name": "zai-org/webrl-llama-3.1-70b",
+        "html_url": "https://huggingface.co/zai-org/webrl-llama-3.1-70b",
+        "retrieved_at": "2026-11-09T05:25:54Z",
+        "sha256": "eff7730dcf823e681c21b2c468cf6bc063cea98c79dd1102c63d18f097d4f9c0"
+      },
+      {
+        "url": "https://huggingface.co/api/models/zai-org/webrl-llama-3.1-70b",
+        "resolved_url": "https://huggingface.co/api/models/zai-org/webrl-llama-3.1-70b",
+        "repository_id": "672a392fecb6227cd514ca70",
+        "full_name": "zai-org/webrl-llama-3.1-70b",
+        "html_url": "https://huggingface.co/zai-org/webrl-llama-3.1-70b",
+        "retrieved_at": "2026-11-09T05:25:54Z",
+        "sha256": "eff7730dcf823e681c21b2c468cf6bc063cea98c79dd1102c63d18f097d4f9c0"
+      }
+    ]
+  },
+  {
+    "alias_id": "url:ff3e12a9a9831dec2bb3",
+    "target_id": "url:8477ada5b7de1d399c9d",
+    "repository_id": "686f58b04cce5bc141e17ce3",
+    "basis": "official_huggingface_repository_id",
+    "reviewed_at": "2026-11-09T05:26:01Z",
+    "observations": [
+      {
+        "url": "https://huggingface.co/api/datasets/2077AIDataFoundation/VeriGUI",
+        "resolved_url": "https://huggingface.co/api/datasets/2077AIDataFoundation/VeriWeb",
+        "repository_id": "686f58b04cce5bc141e17ce3",
+        "full_name": "2077AIDataFoundation/VeriWeb",
+        "html_url": "https://huggingface.co/datasets/2077AIDataFoundation/VeriWeb",
+        "retrieved_at": "2026-11-09T05:26:01Z",
+        "sha256": "9d03ab794419daccbdc6aef9d9df3c9863c96b87d8b33d81332446ca1b49b9cd"
+      },
+      {
+        "url": "https://huggingface.co/api/datasets/2077AIDataFoundation/VeriWeb",
+        "resolved_url": "https://huggingface.co/api/datasets/2077AIDataFoundation/VeriWeb",
+        "repository_id": "686f58b04cce5bc141e17ce3",
+        "full_name": "2077AIDataFoundation/VeriWeb",
+        "html_url": "https://huggingface.co/datasets/2077AIDataFoundation/VeriWeb",
+        "retrieved_at": "2026-11-09T05:26:01Z",
+        "sha256": "9d03ab794419daccbdc6aef9d9df3c9863c96b87d8b33d81332446ca1b49b9cd"
+      }
+    ]
+  },
+  {
+    "alias_id": "url:603711dd3b6f097f764a",
+    "target_id": "url:f979ca583090405aadee",
+    "repository_id": "6728e632ef41ab5f93840afc",
+    "basis": "official_huggingface_repository_id",
+    "reviewed_at": "2026-11-09T05:26:16Z",
+    "observations": [
+      {
+        "url": "https://huggingface.co/api/models/THUDM/webrl-glm-4-9b",
+        "resolved_url": "https://huggingface.co/api/models/zai-org/webrl-glm-4-9b",
+        "repository_id": "6728e632ef41ab5f93840afc",
+        "full_name": "zai-org/webrl-glm-4-9b",
+        "html_url": "https://huggingface.co/zai-org/webrl-glm-4-9b",
+        "retrieved_at": "2026-11-09T05:26:16Z",
+        "sha256": "a3abddb0b1c0cf3547eed2198b116474845f4453cefc96a975e8841f884e98b3"
+      },
+      {
+        "url": "https://huggingface.co/api/models/zai-org/webrl-glm-4-9b",
+        "resolved_url": "https://huggingface.co/api/models/zai-org/webrl-glm-4-9b",
+        "repository_id": "6728e632ef41ab5f93840afc",
+        "full_name": "zai-org/webrl-glm-4-9b",
+        "html_url": "https://huggingface.co/zai-org/webrl-glm-4-9b",
+        "retrieved_at": "2026-11-09T05:26:16Z",
+        "sha256": "a3abddb0b1c0cf3547eed2198b116474845f4453cefc96a975e8841f884e98b3"
+      }
+    ]
+  },
+  {
+    "alias_id": "url:8ed4a69c4aa4e1a344ae",
+    "target_id": "url:72f05843df9bd7ea35af",
+    "repository_id": "661ec2e6fa6754e7b47beec8",
+    "basis": "official_huggingface_repository_id",
+    "reviewed_at": "2026-11-09T05:26:44Z",
+    "observations": [
+      {
+        "url": "https://huggingface.co/api/datasets/rootsautomation/RICO-SCA",
+        "resolved_url": "https://huggingface.co/api/datasets/bevaya/RICO-SCA",
+        "repository_id": "661ec2e6fa6754e7b47beec8",
+        "full_name": "bevaya/RICO-SCA",
+        "html_url": "https://huggingface.co/datasets/bevaya/RICO-SCA",
+        "retrieved_at": "2026-11-09T05:26:44Z",
+        "sha256": "fbf299a0803a959045f566e66b5b16e638fc55ea561c6ebd3226817c39098063"
+      },
+      {
+        "url": "https://huggingface.co/api/datasets/bevaya/RICO-SCA",
+        "resolved_url": "https://huggingface.co/api/datasets/bevaya/RICO-SCA",
+        "repository_id": "661ec2e6fa6754e7b47beec8",
+        "full_name": "bevaya/RICO-SCA",
+        "html_url": "https://huggingface.co/datasets/bevaya/RICO-SCA",
+        "retrieved_at": "2026-11-09T05:26:44Z",
+        "sha256": "fbf299a0803a959045f566e66b5b16e638fc55ea561c6ebd3226817c39098063"
+      }
+    ]
+  },
+  {
+    "alias_id": "url:bceae573cd3c93ad0374",
+    "target_id": "url:579b1c0ceac633eeb328",
+    "repository_id": "666b24e98c4640f4aad71f5c",
+    "basis": "official_huggingface_repository_id",
+    "reviewed_at": "2026-11-09T05:26:45Z",
+    "observations": [
+      {
+        "url": "https://huggingface.co/api/models/shuaishuaicdp/GUI-Vid",
+        "resolved_url": "https://huggingface.co/api/models/ONE-Lab/GUI-Vid",
+        "repository_id": "666b24e98c4640f4aad71f5c",
+        "full_name": "ONE-Lab/GUI-Vid",
+        "html_url": "https://huggingface.co/ONE-Lab/GUI-Vid",
+        "retrieved_at": "2026-11-09T05:26:45Z",
+        "sha256": "8ed81411b0b92e25898ac9d1f3ec3ec7bb0f07dc7691db56e9c7f666833e5236"
+      },
+      {
+        "url": "https://huggingface.co/api/models/ONE-Lab/GUI-Vid",
+        "resolved_url": "https://huggingface.co/api/models/ONE-Lab/GUI-Vid",
+        "repository_id": "666b24e98c4640f4aad71f5c",
+        "full_name": "ONE-Lab/GUI-Vid",
+        "html_url": "https://huggingface.co/ONE-Lab/GUI-Vid",
+        "retrieved_at": "2026-11-09T05:26:45Z",
+        "sha256": "8ed81411b0b92e25898ac9d1f3ec3ec7bb0f07dc7691db56e9c7f666833e5236"
+      }
+    ]
   }
 ]

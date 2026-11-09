@@ -5159,8 +5159,23 @@
   "github:acrab-agentic-labs/appsim": {
     "summary": "提供模拟移动应用和评估工具，在受控应用状态下复现GUI智能体任务。"
   },
+  "github:acrab-agentic-labs/appsim-bilibili": {
+    "summary": "用于测试 AI 操作的 Bilibili 安卓模拟应用，提供可导航的页面和预设静态内容，无须联网。"
+  },
+  "github:acrab-agentic-labs/appsim-instagram": {
+    "summary": "MyInstagram 是一款 Android 仿真社交应用，提供可交互页面、模拟数据和状态字段，用于检查 GUI 智能体的任务结果。"
+  },
+  "github:acrab-agentic-labs/appsim-rednote": {
+    "summary": "这是用于 GUI 智能体测试的 Android Compose 仿应用，提供购物、消息、搜索和内容页面，并使用预置的虚构数据。"
+  },
+  "github:acrab-agentic-labs/appsim-zoom": {
+    "summary": "Zoom Android Template 是用于移动端交互测试的模拟会议应用，提供预设日程，并记录会议和个人资料操作的运行状态。"
+  },
   "github:adam-bjtu/autocoa": {
     "summary": "AutoCoA：面向通用环境环境的框架，支持强化学习、工具与协议（MCP/CDP）集成、界面世界模型。"
+  },
+  "github:adam-bjtu/guitestbench": {
+    "summary": "GUITestBench 评测安卓智能体能否通过多步操作发现应用缺陷，并结合导航与触发条件检查及评判模型进行评估。"
   },
   "github:adamsautomations/desktop-cli": {
     "summary": "desktop-cli：面向macOS、Windows、Linux环境的工具，支持界面自动化执行、低延迟与高Token效率、工具与协议（MCP/CDP）集成。"
@@ -5240,6 +5255,9 @@
   "github:agentsea/agentdesk": {
     "summary": "供AI智能体通过程序控制的桌面环境，基于agentd REST守护进程，可通过Docker在本地运行或部署到Kubernetes，并为LMM输入提供坐标网格叠加层。"
   },
+  "github:agentsea/devicebay": {
+    "summary": "为智能体提供可插拔桌面和浏览器设备的 Python 软件包，可用 SQLite 或 PostgreSQL 保存设备配置。"
+  },
   "github:agentsea/osuniverse": {
     "summary": "OSUniverse：面向桌面端、Linux环境的评测基准，支持智能体能力评测、隔离沙箱环境。"
   },
@@ -5251,6 +5269,9 @@
   },
   "github:agenttankos/tankwork": {
     "summary": "TankWork：面向macOS、Windows环境的框架，支持界面自动化执行、界面元素视觉定位、屏幕状态理解。"
+  },
+  "github:agi-inc/agisdk": {
+    "summary": "AGI SDK 提供浏览器智能体接口和评测工具，可让自定义智能体在可重复运行的网站仿真环境中执行任务。"
   },
   "github:agiresearch/a-mem": {
     "summary": "A-MEM：面向通用环境环境的框架，支持长短期记忆、长程复杂任务。"
@@ -5474,6 +5495,9 @@
   "github:amarbel-llc/chrest": {
     "summary": "Chrest：面向网页（Web）、macOS、Linux环境的工具，支持网页浏览与交互、工具与协议（MCP/CDP）集成、界面自动化执行。"
   },
+  "github:amazon-science/agentoccam": {
+    "summary": "AgentOccam 是网页操作智能体，根据网页描述生成操作，按网址和任务指令执行任务。仓库提供任务配置及评测脚本。"
+  },
   "github:amazon-science/pae": {
     "summary": "浏览器智能体训练系统，可提出任务、收集视觉交互轨迹，并通过自动评估推动策略改进。"
   },
@@ -5533,6 +5557,9 @@
   },
   "github:anchor-inference/daedalus": {
     "summary": "Anchor-Inference Daedalus：面向macOS、Linux、网页（Web）环境的智能体，支持自我反思与纠错、长短期记忆、工具与协议（MCP/CDP）集成。"
+  },
+  "github:ancolie18/lenovo-pcie-grounding": {
+    "summary": "用于在 ScreenSpot-Pro 上评估多模态 GUI 定位模型的脚本，支持不同指令形式，并将结果保存为结构化日志。"
   },
   "github:andelf/axcli": {
     "summary": "axcli：面向桌面端、macOS环境的工具，支持屏幕状态理解、界面自动化执行、工具与协议（MCP/CDP）集成。"
@@ -5789,6 +5816,9 @@
   "github:baai-agents/cradle": {
     "summary": "让基础模型仅凭截图通过键盘和鼠标控制游戏及软件的框架，已在RDR2、Stardew Valley、Cities: Skylines和Dealer's Life 2上展示。"
   },
+  "github:babelcloud/android_world_benchmark": {
+    "summary": "这是基于 AndroidWorld 的评测配置，通过 GBOX MCP 将 Claude 智能体连接到 Android 模拟器，并提供任务完成信号工具。"
+  },
   "github:badalraj9/marey": {
     "summary": "Marey：面向网页（Web）环境的框架，支持屏幕状态理解、低延迟与高Token效率、界面元素视觉定位。"
   },
@@ -5903,6 +5933,9 @@
   "github:boringcomputers/nehemiah": {
     "summary": "Nehemiah：面向Linux、网页（Web）环境的沙箱与基础设施，支持隔离沙箱环境、界面自动化执行。"
   },
+  "github:boyugou/android_world_seeact_v": {
+    "summary": "AndroidWorld-SeeAct-V 是基于图像观察的安卓智能体，由规划模型决定下一步动作，再将坐标类动作定位到屏幕上；仓库提供 AndroidWorld 评测代码。"
+  },
   "github:bpc-oss/chrome-faithful": {
     "summary": "Chrome Faithful：面向网页（Web）环境的工具，支持网页浏览与交互、工具与协议（MCP/CDP）集成、界面自动化执行。"
   },
@@ -5923,6 +5956,12 @@
   },
   "github:browser-act/skills": {
     "summary": "BrowserAct Skills：面向网页（Web）环境的工具，支持网页浏览与交互、界面自动化执行、工具与协议（MCP/CDP）集成。"
+  },
+  "github:browser-automation-hub/adp-workforce-now-browser-automation": {
+    "summary": "用于 ADP Workforce Now 的浏览器自动化脚手架，提供薪资报表、工资单导出、员工资料更新和税务表单下载等操作。"
+  },
+  "github:browser-automation-hub/successfactors-browser-automation": {
+    "summary": "用于 SAP SuccessFactors 的浏览器自动化脚手架，涵盖员工报表、绩效目标、薪酬审核表和组织架构导出等操作。"
   },
   "github:browser-gateway/browser-gateway": {
     "summary": "browser-gateway：面向网页（Web）环境的沙箱与基础设施，支持网页浏览与交互、隔离沙箱环境、工具与协议（MCP/CDP）集成。"
@@ -5948,6 +5987,9 @@
   "github:browser-use/macos-use": {
     "summary": "已归档的Browser Use项目，让LLM通过macOS Accessibility API读取辅助功能树，并在macOS应用中按下元素、输入文本和打开元素。"
   },
+  "github:browser-use/sdk": {
+    "summary": "这套 Python 和 TypeScript SDK 可将应用接入 Browser Use Cloud 智能体与托管浏览器，用于执行浏览器任务和控制浏览器。"
+  },
   "github:browser-use/terminal": {
     "summary": "Browser Use Terminal：面向网页（Web）、桌面端环境的工具，支持网页浏览与交互、执行轨迹可观测性、界面自动化执行。"
   },
@@ -5968,6 +6010,12 @@
   },
   "github:browserkit-dev/browserkit": {
     "summary": "browserkit：面向网页（Web）环境的框架，支持网页浏览与交互、工具与协议（MCP/CDP）集成、界面自动化执行。"
+  },
+  "github:browserless/browserless": {
+    "summary": "Browserless 通过 Docker 提供无头浏览器服务，供 Puppeteer 和 Playwright 脚本连接，并支持会话并发控制和实时调试查看。"
+  },
+  "github:browsermcp/mcp": {
+    "summary": "本地 MCP 服务器与 Chromium 扩展，通过 Playwright 让 AI 应用操作浏览器标签页，并提供配对机制和扩展侧的操作限制。"
   },
   "github:browseroperator/browser-operator-core": {
     "summary": "基于Chromium的AI浏览器，在DevTools面板中通过辅助功能树运行多智能体框架，包含网页任务、操作、表单填写、研究与验证智能体，支持OpenRouter、OpenAI、Groq或LiteLLM模型。"
@@ -6113,6 +6161,9 @@
   "github:cczzyy-cn/c-vision": {
     "summary": "c-vision (DSH Vision & Computer Use Plugin)：面向Windows、macOS、Linux环境的工具，支持屏幕状态理解、界面元素视觉定位、界面自动化执行。"
   },
+  "github:cdxeve/awesome-computer-use-agents": {
+    "summary": "这份资料汇集计算机操作智能体的论文、工具与基准，并附有综述报告，涵盖网页、桌面和移动界面的操作方式。"
+  },
   "github:celestoai/celesto": {
     "summary": "Celesto：面向Linux、网页（Web）环境的沙箱与基础设施，支持隔离沙箱环境、界面自动化执行、工具与协议（MCP/CDP）集成。"
   },
@@ -6197,8 +6248,20 @@
   "github:chromedp/chromedp": {
     "summary": "chromedp：面向网页（Web）环境的工具，支持界面自动化执行、网页浏览与交互。"
   },
+  "github:chromedp/chromedp-proxy": {
+    "summary": "chromedp-proxy 在客户端与浏览器之间转发 Chrome DevTools Protocol 通信，并记录会话消息，供浏览器自动化调试使用。"
+  },
+  "github:chromedp/pdlgen": {
+    "summary": "Go 代码生成工具，将 Chrome DevTools Protocol 定义转换为带类型的浏览器控制接口，供 chromedp 等 Go 程序使用。"
+  },
+  "github:chromedp/termcast": {
+    "summary": "一款 Go 工具，通过投屏帧在支持图形的终端显示 chromedp 浏览器页面，并可选择显示整个页面或单个元素。"
+  },
   "github:chuanchihsu1219/unattended-android-automation-toolkit": {
     "summary": "Unattended Android Automation Toolkit：面向Android环境的框架，支持移动端导航、抗界面漂移鲁棒性、界面自动化执行。"
+  },
+  "github:chuyg1005/seeclick-crawler": {
+    "summary": "SeeClick 数据采集工具，使用 Common Crawl 网址和 Selenium 抓取网页，提取用于预训练的页面元素定位数据。"
   },
   "github:chy4pro/jev-for-chrome": {
     "summary": "Chrome扩展智能体将可见页面控件的索引表发送给TypeSafe Jev决策模型，仅向小型文本模型请求待输入字符串，并通过Chrome调试器输入执行操作。"
@@ -6211,6 +6274,9 @@
   },
   "github:citrolabs/ego-browser-benchmark-framework": {
     "summary": "Ego Browser Benchmark Framework：面向网页（Web）环境的评测基准，支持智能体能力评测、网页浏览与交互。"
+  },
+  "github:citrolabs/ego-lite": {
+    "summary": "ego lite 是桌面浏览器，可为智能体分配独立浏览空间，并通过 ego-browser 接口提供页面快照和操作能力。"
   },
   "github:citrolabs/safari-browser-use": {
     "summary": "safari-browser-use：面向macOS、网页（Web）环境的工具，支持网页浏览与交互、界面自动化执行、工具与协议（MCP/CDP）集成。"
@@ -6269,6 +6335,12 @@
   "github:codeceptjs/codeceptjs": {
     "summary": "CodeceptJS：面向网页（Web）、Android环境的框架，支持界面自动化执行、工具与协议（MCP/CDP）集成、多步工作流编排。"
   },
+  "github:codefuse-ai/oagent": {
+    "summary": "OpAgent 是网页导航智能体，读取截图后规划并定位操作，再执行浏览器动作；仓库还提供单模型模式和训练模块。"
+  },
+  "github:codefuse-ai/opagent": {
+    "summary": "用于网页导航的智能体，提供单模型和模块化两种模式。模块化流程读取截图、规划操作、定位页面目标，并通过 Playwright 执行浏览器动作。"
+  },
   "github:codelit-io/handrail-cua": {
     "summary": "Handrail CUA：面向网页（Web）、桌面端环境的框架，支持操作录制与确定性回放、安全防御与权限门禁、低延迟与高Token效率。"
   },
@@ -6286,6 +6358,9 @@
   },
   "github:cofy-x/deck": {
     "summary": "Deck：面向macOS、Windows、Linux环境的沙箱与基础设施，支持隔离沙箱环境、多步工作流编排、执行轨迹可观测性。"
+  },
+  "github:coinse/droidagent": {
+    "summary": "这款安卓界面测试智能体根据用户目标探索应用，并生成测试场景、回放脚本和操作报告。"
   },
   "github:com55/pyside6-mcp": {
     "summary": "pyside6-mcp：面向Windows、macOS、Linux环境的工具，支持工具与协议（MCP/CDP）集成、智能体能力评测、界面自动化执行。"
@@ -6587,6 +6662,9 @@
   "github:djblack1209-coder/latitude-browser": {
     "summary": "Latitude Browser：面向Windows、macOS、Linux环境的框架，支持隔离沙箱环境、网页浏览与交互、界面自动化执行。"
   },
+  "github:dlr-sc/gerallt": {
+    "summary": "通过图形界面测试 RCE 的 LLM 智能体系统，分别使用模型执行操作、评估问题和描述图标。"
+  },
   "github:dmis-lab/switchmem": {
     "summary": "记忆路由实现，为参数冻结的GUI操作模型选择文本或图像示范，并提供离线评估和迁移至Android的实验。"
   },
@@ -6688,6 +6766,9 @@
   },
   "github:e2b-dev/desktop": {
     "summary": "面向计算机操作智能体的开源隔离式Linux Xfce桌面沙箱，可通过Python或JavaScript SDK进行屏幕串流、鼠标、键盘及窗口控制、截图和shell操作。"
+  },
+  "github:e2b-dev/e2b": {
+    "summary": "面向智能体的云端沙箱基础设施；其桌面 SDK 提供截图、鼠标和键盘控制、应用启动及画面串流接口。"
   },
   "github:e2b-dev/open-computer-use": {
     "summary": "Open Computer Use：面向桌面端、Linux环境的智能体，支持隔离沙箱环境、界面自动化执行、界面元素视觉定位。"
@@ -6944,6 +7025,9 @@
   "github:firecrawl/firecrawl": {
     "summary": "Firecrawl：面向网页（Web）环境的工具，支持网页浏览与交互、界面自动化执行、工具与协议（MCP/CDP）集成。"
   },
+  "github:firecrawl/firecrawl-mcp-server": {
+    "summary": "Firecrawl 的 MCP 服务器向智能体提供网页搜索与内容提取工具，也支持在浏览器中点击、输入、填写表单和导航。"
+  },
   "github:fletcherholt/ghost": {
     "summary": "Ghost (Non-Interfering macOS CUA)：面向桌面端、macOS环境的工具，支持界面自动化执行、屏幕状态理解、工具与协议（MCP/CDP）集成。"
   },
@@ -7070,6 +7154,9 @@
   "github:gekaixing/control-agent": {
     "summary": "Control-Agent：面向网页（Web）、Android、Windows环境的框架，支持屏幕状态理解、网页浏览与交互、移动端导航。"
   },
+  "github:genymobile/scrcpy": {
+    "summary": "scrcpy 将安卓设备画面投射到电脑，并支持在 Linux、Windows 和 macOS 上通过 USB 或 TCP/IP 使用键盘和鼠标控制设备。"
+  },
   "github:geohotstan/dsh-computer-use": {
     "summary": "Geohotstan DSH Codex Computer Use：面向桌面端、macOS环境的工具，支持屏幕状态理解、界面自动化执行、工具与协议（MCP/CDP）集成。"
   },
@@ -7181,6 +7268,12 @@
   "github:google-research/pix2struct": {
     "summary": "Pix2Struct：面向网页（Web）、Android环境的模型，支持屏幕状态理解、界面元素视觉定位。"
   },
+  "github:google/artemis": {
+    "summary": "ARTEMIS 是执行跨应用自然语言任务的 Android 智能体，可通过元素索引或视觉方式定位界面目标，并通过 MCP 服务器提供设备操作能力。"
+  },
+  "github:google/computer-use-preview": {
+    "summary": "Computer Use Preview 通过命令行接收自然语言请求，使用 Gemini 智能体操作浏览器，支持本地 Playwright 和 Browserbase 后端。"
+  },
   "github:greqone/przedwysylkawebmcplab": {
     "summary": "PrzedWysylka WebMCP Lab：面向网页（Web）环境的框架，支持安全防御与权限门禁、人在回路协同与审批、工具与协议（MCP/CDP）集成。"
   },
@@ -7238,6 +7331,9 @@
   "github:h0ngza1/testpilot": {
     "summary": "TestPilot：面向网页（Web）环境的评测基准，支持智能体能力评测、网页浏览与交互、界面自动化执行。"
   },
+  "github:h4ckf0r0day/obscura": {
+    "summary": "Obscura 是面向智能体自动化的 Rust 无头浏览器，可运行 JavaScript、提供 Chrome DevTools Protocol 接口，并支持截图和浏览器自动化工具。"
+  },
   "github:hab99/rpa-desktop-canal-visual": {
     "summary": "RPA Desktop Canal Visual：面向Linux、Windows环境的框架，支持屏幕状态理解、界面元素视觉定位、界面自动化执行。"
   },
@@ -7261,6 +7357,9 @@
   },
   "github:halluminate/webbench": {
     "summary": "Halluminate与Skyvern的实时网页基准，涵盖452个高流量网站上的读取、创建、更新、删除和文件下载任务，包括登录与表单填写，并发布各智能体的运行结果。"
+  },
+  "github:han1018/zonui-3b": {
+    "summary": "ZonUI-3B 的训练与评测代码，用于在不同分辨率的移动端、桌面和网页截图中定位界面目标。"
   },
   "github:haneiva1/safari-mcp": {
     "summary": "safari-mcp：面向macOS、网页（Web）环境的工具，支持网页浏览与交互、工具与协议（MCP/CDP）集成、界面自动化执行。"
@@ -7301,6 +7400,9 @@
   "github:hccccc01333/skillproof": {
     "summary": "skillproof：面向网页（Web）环境的工具，支持操作录制与确定性回放、多步工作流编排、智能体能力评测。"
   },
+  "github:hcompai/hai-agents-python": {
+    "summary": "hai-agents 是用于通过 H Company 的 Agents API 启动浏览器和桌面智能体的 Python SDK 与命令行工具，并可查看会话进度。"
+  },
   "github:hcompai/surfer-h-cli": {
     "summary": "已弃用的H Company Surfer-H网页智能体运行器：策略模型读取近期Chrome截图，Holo定位器给出点击坐标，Selenium执行操作，可选验证器检查答案。"
   },
@@ -7331,6 +7433,9 @@
   "github:hiyokosauna37/kb-browser": {
     "summary": "kb-browser：面向网页（Web）、Windows、macOS环境的工具，支持网页浏览与交互、界面自动化执行、工具与协议（MCP/CDP）集成。"
   },
+  "github:hku-mmlab/uniclawbench": {
+    "summary": "UniClawBench 评测智能体使用工具、浏览器、文件及桌面图形界面完成流程任务。双语版本包含 400 个任务、Docker 运行环境和轨迹查看工具。"
+  },
   "github:hkuds/anytool": {
     "summary": "AnyTool：面向网页（Web）环境的框架，支持工具与协议（MCP/CDP）集成、任务规划、低延迟与高Token效率。"
   },
@@ -7354,6 +7459,9 @@
   },
   "github:holistis/al-yad": {
     "summary": "Yad (يد)：面向网页（Web）环境的智能体，支持网页浏览与交互、安全防御与权限门禁、界面自动化执行。"
+  },
+  "github:honeynet/droidbot": {
+    "summary": "DroidBot 为 Android 应用测试生成脚本化或基于界面模型的输入，并记录界面状态转移、视图结构和方法调用轨迹。"
   },
   "github:hongnoul/hwatu": {
     "summary": "hwatu：面向网页（Web）环境的框架，支持智能体能力评测、屏幕状态理解、低延迟与高Token效率。"
@@ -7448,6 +7556,9 @@
   "github:hyperbrowserai/hyperagent": {
     "summary": "HyperAgent为Playwright增加自然语言命令，支持基于无障碍树的单步操作、可使用截图的多步任务、MCP客户端，以及无需调用LLM即可重放的操作缓存。"
   },
+  "github:hyperbrowserai/mcp": {
+    "summary": "这是一个 MCP 服务器，将 Hyperbrowser 网页工具以及 Browser Use 和计算机操作智能体的浏览器操作接入统一工具接口。"
+  },
   "github:iabdulwasey/nell": {
     "summary": "Nell (Open Source Instinct)：面向网页（Web）环境的智能体，支持多步工作流编排、网页浏览与交互、界面自动化执行。"
   },
@@ -7511,6 +7622,9 @@
   "github:imshaikot/browsentic": {
     "summary": "Browsentic：面向网页（Web）环境的框架，支持网页浏览与交互、人在回路协同与审批、界面自动化执行。"
   },
+  "github:inclusionai/agenticlearning": {
+    "summary": "AWorld-RL 汇集智能体训练项目，其中 V2P 用于视觉 GUI 定位，并提供代码、数据集和模型检查点。"
+  },
   "github:inclusionai/ui-venus": {
     "summary": "UI-Venus是GUI智能体模型系列；其中9B和27B规模的UI-Venus-2以单个端到端智能体操作移动端、网页和桌面端，并通过基于关键点的多评审任务验证进行训练。"
   },
@@ -7522,6 +7636,12 @@
   },
   "github:instavm/clickclickclick": {
     "summary": "ClickClickClick：面向Android、macOS、Windows环境的框架，支持界面自动化执行、移动端导航、界面元素视觉定位。"
+  },
+  "github:intelligence-indeed/indeed-ui": {
+    "summary": "面向桌面、移动端和浏览器界面的 GUI 定位模型；仓库提供 ScreenSpot-Pro 评估与放大定位脚本。"
+  },
+  "github:intelligence-indeed/intelligence-indeed": {
+    "summary": "Intelligence Indeed 是桌面 GUI 智能体，可加载可复用的操作指南、探查当前环境，并在规划与执行阶段共享针对任务收集的信息。"
   },
   "github:internlm/mindsearch": {
     "summary": "MindSearch：面向网页（Web）环境的框架，支持网页浏览与交互、任务规划、多步工作流编排。"
@@ -7666,6 +7786,9 @@
   },
   "github:jeremyguo/dsh-playwright": {
     "summary": "dsh-playwright：面向网页（Web）环境的工具，支持网页浏览与交互、人在回路协同与审批、工具与协议（MCP/CDP）集成。"
+  },
+  "github:jeroenvandijk/capybara-mechanize": {
+    "summary": "Capybara 驱动，借助 Mechanize 发送远程网页请求，使测试能够访问并操作外部应用。"
   },
   "github:jetastra/macagentbench": {
     "summary": "MacAgentBench包含覆盖25个应用的676项macOS任务；每项任务在独立Docker容器中运行，通过含多个检查点的确定性规则检查评分。"
@@ -11549,6 +11672,9 @@
   "url:00b1a3abf9bcb424b264": {
     "summary": "已发布的MAI-UI模型检查点，结合移动端GUI操作、智能体与用户交互，以及面向工具使用的导航能力。"
   },
+  "url:0210d8713fd41ca1448f": {
+    "summary": "面向浏览器智能体的 SDK，结合类似 Playwright 的页面控制与自然语言操作、观察和信息提取，并以浏览器扩展形式运行。"
+  },
   "url:03ffa3f28413bc2edb1b": {
     "summary": "WebCanvas实时网页基准的任务文件：源自Mind2Web的438项训练任务和104项测试任务，使用URL或页面元素上的关键节点检查评估中间进度。"
   },
@@ -11567,14 +11693,29 @@
   "url:058cb7a92cba506f9739": {
     "summary": "THUDM ScaleCUA的Qwen3-VL-8B监督学习检查点，作为其ScienceBoard计算机操作智能体在线RL训练的初始模型发布。"
   },
+  "url:0596dd7e97fd30abaadc": {
+    "summary": "RLG-ALE 用可检查的 Android 任务评估移动端图形界面智能体。页面展示了包含任务提示、屏幕观察、评估记录和可重置环境的示例过程。"
+  },
   "url:05a9a7c592089d1ddd46": {
     "summary": "META-GUI的Hub发布版，收录智能体操作移动应用的任务型对话；每轮将对话与截图、视图层级XML、记录的GUI操作和回复配对。"
+  },
+  "url:05dde0b8766744e94e07": {
+    "summary": "Coasty 开发用于智能体训练与评估的计算机操作环境，涉及电脑和手机界面，并提供交互轨迹及结果评估。"
+  },
+  "url:060c9288c7197c5a188e": {
+    "summary": "基于 RICO 界面图像的屏幕问答数据集，将问题与机器生成的简短答案配对，提供训练、验证和测试划分。"
   },
   "url:0627940da1b988739f75": {
     "summary": "TongUI训练混合数据：约143K条来自WikiHow、Baidu Experience和GUI视频的样本，加上重新处理的AITW、AMEX、GUIAct、Mind2Web、MiniWoB和ShowUI数据，以带截图的定位和导航JSON提供。"
   },
   "url:06dd5ac7917c45d48509": {
     "summary": "Aguvis第一阶段训练数据集，汇集多个界面数据源的GUI元素定位标注和图像归档。"
+  },
+  "url:06f6618d8f95f3d041cf": {
+    "summary": "AGI-0 通过截图操作 Android 应用，规划子任务，并在每次操作后检查界面变化。发布方报告了其 AndroidWorld 测试结果。"
+  },
+  "url:0772193ae2967c407d22": {
+    "summary": "这是用于训练 Lumos-Iterative 网页智能体规划模块的数据集；数据概览列出 1009 条 Mind2Web 任务标注。"
   },
   "url:07b65dc937756ddff4a1": {
     "summary": "随Aria-UI发布的按交互片段组织的移动端GUI定位数据，用于在目标定位中纳入交互历史。"
@@ -11602,6 +11743,9 @@
   },
   "url:0b134b082a7bd507fc6a": {
     "summary": "用于UI研究的移动应用截图、视图层级和交互轨迹。"
+  },
+  "url:0b3bb9fac5b0ba9777b8": {
+    "summary": "Fintor-GUI-S2 是基于 UI-TARS-7B-DPO、使用 OS-Copilot 数据微调的界面定位模型。模型卡报告了 ScreenSpot Pro 和 v2 评测。"
   },
   "url:0b590d03a3d5103a79e4": {
     "summary": "支持多种界面理解任务的桌面GUI轨迹数据。"
@@ -11642,6 +11786,9 @@
   "url:116431f8ea32dbc6d637": {
     "summary": "WebChain原始版收录真实网站上的人工标注轨迹，提供原始JSON记录、视口截图及部分完整页面截图，以及用于高层规划和低层定位步骤的Parquet文件。"
   },
+  "url:12470a40c8f82ef0294a": {
+    "summary": "一款设备端 LoRA 适配器，根据英文请求和 Mac 状态生成单步操作，由配套应用执行；仓库还提供训练代码和评测记录。"
+  },
   "url:12d789d450207bd6d5da": {
     "summary": "已停止的 Google 浏览器智能体研究原型，基于 Gemini 2.0，通过扩展读取屏幕像素和页面元素并在当前 Chrome 标签页操作，执行敏感操作前先征询用户。"
   },
@@ -11650,6 +11797,9 @@
   },
   "url:14449fe321e0a1ca34ea": {
     "summary": "已发布的PC-Agent-E训练数据集，官方流程将其用于改进人工轨迹和合成操作推理。"
+  },
+  "url:146edbaee6701bdb6ee0": {
+    "summary": "NAIL-Group/ClawBench 发布用于评估浏览器智能体的真实网站任务数据；数据卡介绍 V1、V2 任务集、任务元数据，以及通过 datasets 库加载的方法。"
   },
   "url:149769d8bf07b7fbabdc": {
     "summary": "VisualWebBench dataset：面向网页（Web）环境的数据集，支持智能体能力评测、界面元素视觉定位、屏幕状态理解。"
@@ -11672,6 +11822,9 @@
   "url:16a51d9e725ad5a5c629": {
     "summary": "基于Qwen3-VL的检查点，用于在网页、桌面和移动端界面中导航及执行多步GUI操作。"
   },
+  "url:16a5ccde8bb16cda19ff": {
+    "summary": "一套用于训练和评估操作图形界面的操作系统智能体的数据集，重点考察自主操作不可靠时何时向人求助。"
+  },
   "url:174e10a319d62c338879": {
     "summary": "基于Qwen2.5-VL-7B-Instruct微调的GroundNext GUI定位检查点，先在GroundCUA桌面数据上进行SFT，再进行RLOO训练；将截图和指令映射为computer_use点击调用。"
   },
@@ -11683,6 +11836,9 @@
   },
   "url:1807bdb33fc352a97240": {
     "summary": "THUDM ScaleCUA的Qwen3-VL-8B计算机操作智能体检查点，从已发布的SFT初始模型出发经在线RL训练，用于OSWorld桌面任务。"
+  },
+  "url:18816edf464a073a0120": {
+    "summary": "Claude Sonnet 4.5 是通过 API 提供的通用模型。Anthropic 报告了其在 OSWorld 上的计算机操作表现，并展示了浏览器任务。"
   },
   "url:1aa4168c796c15476b97": {
     "summary": "面向 macOS 和 Windows 的智能体桌面浏览器，AI 伙伴可打开网站、逐步点击并在用户已登录的账户内工作，发送、付款或删除前会请求批准。"
@@ -11705,11 +11861,17 @@
   "url:1e6b8682e0f1ddc3d36f": {
     "summary": "面向自动化应用的托管浏览器基础设施。"
   },
+  "url:1f248862e4b691b85343": {
+    "summary": "android_control_test 提供经过处理的 Android Control 测试集，用于评估 InfiGUI-R1 移动界面智能体。"
+  },
   "url:20f7cdee10b0dd70815f": {
     "summary": "UI-MOPD训练数据中的桌面轨迹，采集于OSWorld环境：涵盖10类应用的2,685项任务，含逐步截图、推理轨迹、归一化操作和pyautogui代码。"
   },
   "url:20fa95f00391bf965af2": {
     "summary": "含500项OSWorld风格桌面任务的基准，界面会在观察间因脚本化弹窗、定时编辑和列表变化而改变；提供中英双语指令及最终状态评估器。"
+  },
+  "url:21687e3bf1eb78f2bcda": {
+    "summary": "这款视觉模型经过微调，可根据图像和指令输出点击位置。模型卡说明了图像缩放和坐标换算方法。"
   },
   "url:232a1698849e2fea425c": {
     "summary": "托管OSWorld预构建的Windows 10虚拟机：含VMware和QEMU qcow2归档，供OSWorld的VMware和Docker提供程序首次运行Windows任务时下载。"
@@ -11726,14 +11888,26 @@
   "url:243ab00712ba19cc2089": {
     "summary": "桌面操作演示数据，包含任务描述、视频、输入日志，以及与操作关联的截图证据，用于研究可复用的智能体技能。"
   },
+  "url:2462fb9d529bac7fa896": {
+    "summary": "这是一款面向 AutoHub 插件的浏览器自动化模型，可根据自然语言请求执行网页操作和信息检索。"
+  },
   "url:255e1ea24461c1f205eb": {
     "summary": "网页增强代理在用户浏览器内提供网站，并通过自动化 API 和会话 MCP 服务器，让 AI 智能体读取 DOM、截图或无障碍树快照，以及点击、输入和滚动。"
   },
   "url:25a4d0ab29b60250863a": {
     "summary": "NNetNav发布的面向WebArena的浏览器交互数据，训练文件和测试文件分别提供。"
   },
+  "url:25af759a783f1514fe58": {
+    "summary": "用于 Mobile-Env 的 WikiHow 应用导航评测任务集，另含跨 Android 应用的补充任务，提供任务定义和人工改写的指令。"
+  },
   "url:263e82b29d4fca964463": {
     "summary": "OSWorld-Science在Hub上受访问控制的发布版，提供科学软件操作智能体所需的任务定义、预置输入、评分参考资料和预备好的Ubuntu虚拟机镜像。"
+  },
+  "url:2803eda78cff23fb63cc": {
+    "summary": "基于 Qwen2.5-VL 的计算机操作模型，结合截图、指令和近期屏幕历史生成桌面操作。"
+  },
+  "url:2866edbea80fa34aa684": {
+    "summary": "Aria-UI/Aria-UI-base 是 GUI 定位模型权重，可根据指令和界面图像输出目标坐标；模型卡介绍了结合历史输入的方式及推理示例。"
   },
   "url:29588aa5651b5839c045": {
     "summary": "Seg2Click检查点，以4B参数的Qwen3.5为骨干模型，预测像素级操作掩码。"
@@ -11741,11 +11915,17 @@
   "url:2a2682f86dcb8ebc9a80": {
     "summary": "EvoCUA计算机操作智能体检查点，发布于20260105，采用Qwen3-VL架构，约有8.8B个BF16参数，标注适用于OSWorld及英文和中文。"
   },
+  "url:2a4dd75acb6efdeb0e4a": {
+    "summary": "这是标准化的 Rico 屏幕标注数据集，将移动端截图与界面元素及其位置的文字描述配对，并提供训练、验证和测试集。"
+  },
   "url:2b5dead3172c0b70da7e": {
     "summary": "CAD屏幕录制数据，配有操作日志和目标模型图像，用于研究精确的界面控制和长时程视觉模仿。"
   },
   "url:2b7363c3a20d8022b319": {
     "summary": "MemGUI-Bench 移动 GUI 智能体及模型的运行记录按智能体打包为 ZIP，包含逐步截图、操作日志和评估输出，并提供供排行榜查看器使用的压缩轨迹预览。"
+  },
+  "url:2bab4b78c81cde1d5ecb": {
+    "summary": "该数据集收录 STEVE-R1 在 WindowsAgentArena 上的评估轨迹，将任务截图、智能体回复、操作记录和结果标签配对保存。"
   },
   "url:2be7f81cdca0eb8566c6": {
     "summary": "面向AndroidControl的InternVL2-8B检查点，基于OS-Genesis移动端轨迹训练；模型卡以截图、无障碍树、目标和操作历史提示其生成下一步思考与操作。"
@@ -11762,8 +11942,14 @@
   "url:2e1927450da2183a5abe": {
     "summary": "随UI-Genie智能体训练流程发布的合成移动端GUI轨迹监督数据和截图。"
   },
+  "url:2e8bba756c71f9fe3fbd": {
+    "summary": "TreeCUA-Datasets 发布图形界面探索树，包含环境配置、操作序列、步骤目标和验证结果。用户可在 OSWorld 中重放探索树，以重建屏幕观察。"
+  },
   "url:2eaf614de14193997f33": {
     "summary": "面向AndroidWorld的InternVL2-8B检查点，基于OS-Genesis移动端轨迹训练；模型卡以截图、无障碍树、目标和操作历史提示其生成下一步思考与操作。"
+  },
+  "url:2f2e38f240a36f31b631": {
+    "summary": "基于 Qwen2.5-VL-3B 的计算机操作定位模型，提供从界面图像预测鼠标操作坐标的示例。"
   },
   "url:303e1926b8ff4f60e006": {
     "summary": "AskUI基于Florence-2-base的定位模型，约有2.7亿参数，可根据元素描述返回其在截图中的边界框，面向低延迟的本地计算机和手机自动化。"
@@ -11773,6 +11959,9 @@
   },
   "url:30c831a1198b9bc2a0f5": {
     "summary": "OS-Atlas基础检查点，约有4.1B个参数，由InternVL2-4B微调而来，通过自定义InternVL聊天模型代码在Transformers中加载。"
+  },
+  "url:3173abbb295c74d0e9ec": {
+    "summary": "Dreamer-7B-Shopping 是面向购物网站的 WebDreamer 模型权重，通过根据截图预测候选网页动作的结果，辅助智能体规划。"
   },
   "url:31768421b4ecd1ad89f7": {
     "summary": "受访问控制的OS-Genesis网页数据版本，含一个反向任务合成训练轨迹JSONL文件和截图归档；项目README将其列为WA检查点的训练数据。"
@@ -11804,6 +11993,9 @@
   "url:374138c6e18c9f1dd44a": {
     "summary": "8B GUI-Owl 1.5原生GUI智能体模型的推理版，基于Qwen3-VL，随Mobile-Agent-v3.5发布，用于桌面、移动端和浏览器控制，约有8.8B个BF16参数，采用MIT许可。"
   },
+  "url:37570eed422d326bfa5a": {
+    "summary": "这是用于跨平台界面导航的 2B 视觉 GUI 智能体检查点，附有推理脚本和基础模型信息。"
+  },
   "url:37b4f525e6d7a56a9967": {
     "summary": "GUIDE 基准发布的数据：来自 10 款应用的新手口述屏幕录像的标注片段，用于预测用户行为状态、短期意图，以及是否提供帮助和如何帮助。"
   },
@@ -11812,6 +12004,12 @@
   },
   "url:3849b18aa87edefc6afd": {
     "summary": "OpenMobile 合成的 Android 智能体数据，包括由 AndroidWorld 运行轨迹生成的四个 LLaMA-Factory SFT 划分文件，以及原始轨迹和截图归档。"
+  },
+  "url:38672ac9af2e25fbfb58": {
+    "summary": "ColorGUI-32B 是基于 Qwen3-VL-32B-Instruct 训练的移动界面动作模型，可根据屏幕截图和指令选择操作，供移动智能体运行环境使用。"
+  },
+  "url:3888a4042043fb547705": {
+    "summary": "基于 Qwen2.5-VL-3B-Instruct 的界面定位模型，通过自适应探索训练，根据指令和屏幕图像找出界面元素的位置。"
   },
   "url:38942453b2b7018c0d01": {
     "summary": "Holo2检查点基于Qwen3-VL-8B-Thinking，经过监督训练和在线强化学习，用于在网页、桌面和移动界面中定位UI元素及执行多步导航。"
@@ -11822,11 +12020,17 @@
   "url:3932d69c6b6f9b2a7ba8": {
     "summary": "Plan-and-Act的规划器组件，生成结构化的高层计划，由执行器将其转化为网页操作。"
   },
+  "url:3ac3ccfb23fe13adf428": {
+    "summary": "macOS 界面数据集，收录 63 款应用的 352 个屏幕，提供截图、部分屏幕的无障碍树，以及界面元素和点击位置相关问答。"
+  },
   "url:3b4e6c30e1d095c22771": {
     "summary": "XLang受限发布的OSWorld 2.0智能体运行数据：21个按模型和运行设置命名的ZIP结果归档，以及七次模型运行的逐任务轨迹JSONL、逐步截图、结果和日志。"
   },
   "url:3b6dfd52f98bfe76bc7f": {
     "summary": "用于评估计算机操作智能体的实时网页任务定义和评分标准，包含保留的原始任务、更新后的V2任务集及独立的拒绝任务集。"
+  },
+  "url:3b99bbbd3480dbc1ec6b": {
+    "summary": "Android 界面智能体，通过精简界面树、等待画面稳定、反馈操作失败信息，并在定位操作前重新截图来执行任务。"
   },
   "url:3dab53c6c38c9e7217ea": {
     "summary": "用于ShowUI-π模型的拖拽和点击操作片段数据，涵盖桌面编辑、演示文稿、手写等界面任务。"
@@ -11834,8 +12038,17 @@
   "url:3e1a864c46c8ed5735d4": {
     "summary": "记录人类与移动端GUI智能体完成相同中文Android应用任务时的触摸手势和运动传感器数据，附任务列表和元数据，用于训练区分智能体与人类的检测器。"
   },
+  "url:3e58eecd59c404508757": {
+    "summary": "基于 Qwen2.5-VL-7B 的界面定位模型，根据截图和指令寻找目标控件。其注意力动作头预测点击位置，模型卡提供推理示例。"
+  },
+  "url:40795d2c86388ae89f43": {
+    "summary": "一款网页智能体，将无障碍树简化后并行探索候选操作，并用语义树保存已访问页面，支持后续决策和失败恢复。"
+  },
   "url:40ce19527f25bfa3bd63": {
     "summary": "GUI-World的Hub发布版，收录Android、iOS、网站、软件、多应用和XR六类场景的GUI录屏视频，以及面向GUI视频问答的训练与基准标注JSONL。"
+  },
+  "url:41556fece3bf8a2419ba": {
+    "summary": "MultimodalWebSurfer 使用标注了交互元素的截图和多模态模型选择操作，再通过 Playwright 控制 Chromium 浏览器。"
   },
   "url:41abb1b7206689cf5057": {
     "summary": "UI-AGILE训练标注和截图，以及转换后的GUI定位和AndroidControl评估文件。"
@@ -11852,6 +12065,9 @@
   "url:44827a16f49e65ba8fb3": {
     "summary": "Google DeepMind预览模型基于Gemini 2.5 Pro，经过UI控制后训练，通过Gemini API的computer_use工具，依据截图和近期操作记录返回浏览器及移动端操作。"
   },
+  "url:45dabd68921824b298ca": {
+    "summary": "一款基于 Chromium 的浏览器，通过智能体技能让智能体操作已登录的网站，并以独立工作区和页面快照支持导航任务。"
+  },
   "url:461125e2d6ac2f030f6b": {
     "summary": "基于GUI-Owl-1.5-8B-Instruct，经清洗和合成的高分辨率数据进行SFT与GRPO后训练的GUI元素定位检查点，用于在大型截图中定位元素。"
   },
@@ -11867,11 +12083,17 @@
   "url:4a47a6df845735984bf1": {
     "summary": "H浏览器扩展程序，用于通过网站界面执行任务。"
   },
+  "url:4b66957b9799a9e3decc": {
+    "summary": "Ferret-UI 的 Llama-3-8B 版本，可理解界面截图、回答选定区域的问题，并用边界框定位界面元素。"
+  },
   "url:4b6d61ff2c1d6c8e1a23": {
     "summary": "采用Qwen3-VL架构的2B MAI-UI检查点，所属GUI智能体系列的训练数据在移动端导航和定位之外，还包含智能体与用户交互及MCP工具调用。"
   },
   "url:4bcb6a451d6f4d25343c": {
     "summary": "THUDM ScaleCUA的GLM-4.6V-Flash计算机操作智能体检查点，从已发布的监督训练模型出发，经在线强化学习用于ScienceBoard科学软件任务。"
+  },
+  "url:4bece2c969edcdfc2e8d": {
+    "summary": "通用视觉语言模型系列；发布说明将电脑和手机操作列为视觉智能体能力，同时介绍图像与视频理解。"
   },
   "url:4d32ad3682ae2d71c178": {
     "summary": "UI-TARS 1.5 GUI智能体检查点，采用Qwen2.5-VL架构，约有8.3B个以FP32存储的参数；以Apache-2.0协议发布，供Transformers处理英文图文到文本任务。"
@@ -11897,6 +12119,9 @@
   "url:4f4e7c972e678f1d8c48": {
     "summary": "企业浏览器智能体构建工具，Recursion 智能体在实时网页上执行自然语言步骤，并将操作、导航、提取和检查保存为带缓存选择器的工作流模块，可部署为 API。"
   },
+  "url:4fada3187f0d1d1efbe5": {
+    "summary": "用于根据指令定位界面元素的 GUI 定位模型检查点；训练结合多样化指令表述和强化学习。"
+  },
   "url:50501b63a93c611d6e54": {
     "summary": "THUDM ScaleCUA的监督训练Qwen3-VL-8B检查点，作为OSWorld桌面计算机操作智能体在线强化学习的初始模型发布。"
   },
@@ -11906,17 +12131,35 @@
   "url:51289d2105ef35fd0265": {
     "summary": "面向 AI 工作负载的无服务器云平台，其持久化 microVM 可配备带浏览器的 Linux 桌面，由 SDK、CLI 和 MCP 服务器通过截图、点击、按键和输入操作。"
   },
+  "url:5288515eb50aef1e84a2": {
+    "summary": "这款 32B GUI 定位模型通过 GRPO 训练，根据任务和屏幕截图生成操作；模型卡报告了定位及桌面智能体基准结果。"
+  },
+  "url:528f6fe128b77e9615aa": {
+    "summary": "GUI Reflection 的离线监督微调数据，以 JSONL 文件发布；配套图像需从卡片列出的原始数据集获取。"
+  },
   "url:52a3261eb6a19b402e88": {
     "summary": "提出World of Bits网页任务平台，结合人工演示、键盘和鼠标操作及缓存的HTTP流量构建可重复的任务环境，并评估通过行为克隆和强化学习训练的智能体。"
   },
   "url:52b7de0e43b1afc9c226": {
     "summary": "基于InternVL2的视觉GUI检查点，供定位和界面导航使用；发布方建议对基础版本进行针对任务的微调。"
   },
+  "url:52ec96785d9c0ae8e039": {
+    "summary": "这是指令微调的视觉语言模型，可理解界面布局、定位点或边界框，并用于电脑和手机操作；模型卡报告了屏幕与移动智能体评测结果。"
+  },
+  "url:5371bf588e7790a66ff0": {
+    "summary": "基于 Llama-3.1-70B 发布的 WebRL 网页操作模型，面向五个 WebArena 网站。模型卡报告了 WebArena-Lite 结果，并指向推理要求。"
+  },
   "url:546e6c95825d1318c98d": {
     "summary": "来自仿真器和模拟器轨迹的移动端智能体监督数据，另含用于强化学习、带有初始状态和成功判定条件的可执行任务。"
   },
   "url:54997a3c67e54abdf319": {
     "summary": "使用MultiUI训练的视觉语言检查点，用于理解文本密集的网页及执行界面任务。"
+  },
+  "url:55be07e942393d43132f": {
+    "summary": "用于跨平台界面导航的 26B 视觉模型，仓库提供模型权重及推理脚本，底座模型为 InternVL2。"
+  },
+  "url:566bd1469811983951f3": {
+    "summary": "Holo3.1 视觉语言模型系列的 FP8 权重，用于计算机操作智能体。模型卡介绍网页、桌面和移动任务，并链接部署指南。"
   },
   "url:56b5936190d20fa3d1c1": {
     "summary": "Mind2Web步骤经MultiUI作者重新打包为JPEG截图及逐步JSONL查询和候选元素框，用于MultiUI基于截图的Mind2Web操作评估。"
@@ -11929,6 +12172,9 @@
   },
   "url:570654ff67ecefa2b955": {
     "summary": "从视频提取的移动端导航标注，将场景边界、屏幕或元素框与操作标签配对，用于训练和评估GUI智能体。"
+  },
+  "url:579b1c0ceac633eeb328": {
+    "summary": "GUI-Vid 是基于 GUI-World 重新训练的视频语言模型，用于理解视频中的图形界面。"
   },
   "url:57f17b7d0c18b2d7c8bf": {
     "summary": "Claude提供的工具能力，支持基于截图与计算机交互。"
@@ -11990,6 +12236,12 @@
   "url:628b5251757bb3888e89": {
     "summary": "介绍PLOW，它从结合演示、自然语言解释和对话的会话中学习可执行的网页任务模型；浏览器插桩将用户操作与DOM结构关联，以支持任务泛化。"
   },
+  "url:62cf0bee7a14cfbc84a0": {
+    "summary": "UI-Ins-7B 是界面定位模型，通过多样化指令和强化学习训练，为智能体操作定位界面元素。"
+  },
+  "url:62d912811f786f787ae4": {
+    "summary": "用于根据文档内容选择图形界面表单操作的训练与评测数据，包含合成的训练、验证和测试集，以及真实浏览器表单演示。"
+  },
   "url:62df6dac6ade720ddd70": {
     "summary": "Chrome 侧栏扩展运行浏览器操作智能体：为标签页交互元素编索引，再由用户配置的兼容 OpenAI 模型打开标签页、点击、输入和按键。"
   },
@@ -11998,6 +12250,9 @@
   },
   "url:63ef8c7e455951a20281": {
     "summary": "Scribe是一款工作流程录制和文档产品，与智能体数据收集相关。"
+  },
+  "url:642671eabef44827b7de": {
+    "summary": "发布的 UI-AGILE 图形界面定位模型；其方法在训练中使用奖励设计和裁剪重采样，在推理时分解图像以定位目标。"
   },
   "url:65a9a9211f0dd2b7264a": {
     "summary": "托管自动化平台通过提示驱动的智能体在云端 Chromium 沙盒或自行托管的运行器中导航、点击、输入和提取网页数据，任务流程可由带解说的录屏或聊天创建。"
@@ -12008,6 +12263,9 @@
   "url:6616228d4f267363458e": {
     "summary": "采用 Qwen3-VL 架构的移动端智能体检查点，随 OpenMobile 发布并在其合成 Android 轨迹上微调；代码 README 使用 vLLM 提供 AndroidWorld 评估服务。"
   },
+  "url:666844c28be1138b0e37": {
+    "summary": "STEVE-R1-7B-SFT 是使用逐步验证数据训练的计算机操作模型检查点，面向桌面任务，并在 Windows 和 Ubuntu 环境中评估。"
+  },
   "url:6694391b0cf50389d2e9": {
     "summary": "GUI-Libra检查点基于Qwen3-VL-8B-Instruct微调，约有87.7亿BF16参数，将截图、任务和操作历史转化为<thinking>推理块及带point_2d坐标的JSON操作。"
   },
@@ -12017,11 +12275,20 @@
   "url:66f780b493156dc7efe5": {
     "summary": "Mind2Web操作步骤与对应网页截图对齐，附原始及清理后的HTML、候选元素和目标操作，包含训练集及按任务、网站和域名划分的留出测试集。"
   },
+  "url:67ae69986d6408fde468": {
+    "summary": "PixelWeb 提供 1K、10K 和 100K 规模的网页截图、DOM 数据及元素图像，并附有掩码、轮廓和边界框标注。"
+  },
   "url:6884b7a1aa1bf507dae7": {
     "summary": "业务智能体平台通过应用连接器工作，也可启用 Chromium 浏览器进行点击、输入、使用已保存的凭据登录，并在网站需要时将控制权交给人工。"
   },
+  "url:68d09b76ec0f61b7a6c5": {
+    "summary": "Narada Operator 是企业网页智能体，通过任务规划和错误恢复，在网页界面与 API 之间执行工作流程。"
+  },
   "url:6917c59ee128421233b6": {
     "summary": "HyperWrite 浏览器智能体通过扩展操作用户的 Chrome 浏览器，执行搜索、预订和填写表单等文字请求。"
+  },
+  "url:691c52679bb1d3521db7": {
+    "summary": "GTA1-7B-2507 是通过强化学习训练的界面定位模型，可在截图中找到文字描述的控件并返回点击坐标。"
   },
   "url:6942e8211a0f59eb7878": {
     "summary": "提出 Halligan 视觉语言模型智能体，将视觉 CAPTCHA 抽象为画面、元素和关键点，通过生成交互代码将其作为搜索问题求解，并在 26 类共 2,600 项挑战上测试。"
@@ -12047,11 +12314,26 @@
   "url:6cd150ec23361b4d2e84": {
     "summary": "GUIAct是网页和Android GUI的动作指令数据，分为单步、多步和智能手机部分。"
   },
+  "url:6d36e088ada02184c6bc": {
+    "summary": "基于 Qwen2.5-VL 发布的界面智能体模型，结合截图和先前操作，预测图形界面导航动作及目标元素位置。"
+  },
   "url:6d959b58bd4a2e98e417": {
     "summary": "基于Qwen2.5-VL的移动端动作模型，使用现有轨迹和UI-Genie框架生成的奖励引导合成轨迹训练。"
   },
   "url:6e436831f76a1337ea8b": {
     "summary": "提出 OpenWebAgent 网页自动化工具包，在模块化框架中结合 Chrome 插件、HTML 解析器和动作生成模块，供开发者接入 LLM 或 LMM。"
+  },
+  "url:6ea345c7ba56049476e8": {
+    "summary": "ZeroGUI 的 GUI 智能体检查点；其训练使用自动生成的界面任务，并根据交互轨迹截图估计奖励。"
+  },
+  "url:721c94bd6f2f3edc35ba": {
+    "summary": "一个含 706,048 个参数的 GUI 表单动作评分模型，可并行评估各字段的候选操作。发布内容包括 safetensors 权重和配置文件。"
+  },
+  "url:72f05843df9bd7ea35af": {
+    "summary": "一套移动界面数据集，将截图、控件边界框、合成描述和视图层级配对，用于屏幕理解与界面定位。"
+  },
+  "url:72f3737bb5194fd64852": {
+    "summary": "Qwen2.5-VL-3B-UI-R1-E 发布 UI-R1-E-3B 模型，根据界面截图和指令预测点击坐标，并报告了移动端、桌面端和网页上的定位评测。"
   },
   "url:72f7fe0211c6551b945f": {
     "summary": "Web-Shepherd集合中公开的文本过程奖励模型检查点，依据任务检查清单为网页智能体的决策评分。"
@@ -12059,11 +12341,17 @@
   "url:73570e699421a5ad04eb": {
     "summary": "随GUICourse发布的MiniCPM-V检查点，使用其GUIEnv、GUIAct和GUIChat数据微调；模型卡提示涵盖根据任务与操作历史生成下一操作，以及结合定位框进行截图对话。"
   },
+  "url:738bfdfe24671ad29a43": {
+    "summary": "一款 Android 智能体，根据任务目标选择可复用的应用操作流程，并通过无障碍树执行。其基准报告展示了各回合的屏幕录像和操作轨迹。"
+  },
   "url:73b9b17648ea7af7aa8f": {
     "summary": "桌面计算机操作轨迹包含逐步截图及成功、安全和攻击标签，分为能力运行、安全完成与拒绝运行，以及源自RiOSWorld的旧版安全归档。"
   },
   "url:73c169c32b5765688376": {
     "summary": "THUDM ScaleCUA的Qwen3-VL-8B计算机操作智能体检查点，以监督训练模型为起点，经在线强化学习用于ScienceBoard科学软件任务，并通过兼容OpenAI的端点提供服务。"
+  },
+  "url:73e9e26d40de2a60ae05": {
+    "summary": "面向网页、Android 和 iOS 应用的测试智能体，可执行自然语言测试、操作用户流程、核验结果，并保存已验证的运行记录供后续复用。"
   },
   "url:7405463ba56f9a41e79a": {
     "summary": "紧凑的Seg2Click检查点，包含合并后的Qwen3.5主干模型和动作掩码解码器。"
@@ -12077,8 +12365,14 @@
   "url:7638e3f688374cea2217": {
     "summary": "H Company的Holo4系列中基于NemotronH Nano Omni的计算机操作检查点；外部框架向其发送截图和工具结果，并执行其请求的点击、输入、代码和工具调用。"
   },
+  "url:7645072fe9580fa9993a": {
+    "summary": "基于 Muse-Glimmer-30B 的 LoRA 适配器，根据截图和指令输出界面元素的边界框，示例涵盖桌面、移动端和网页界面。"
+  },
   "url:76f0ba33cddbb348ea01": {
     "summary": "ThirdLayer 的 Chrome 扩展会记住用户工作工具中的操作信息，并运行在浏览器中切换标签页、填写表单的智能体，同时集成 Gmail、Slack 和 CRM。"
+  },
+  "url:76f3981d219bb87b4eea": {
+    "summary": "OpenCUA-7B-exl2 是 4.5bpw 量化的 OpenCUA-7B 模型权重，可根据屏幕截图生成电脑操作并定位界面目标。"
   },
   "url:772161f06c2b3d4978b5": {
     "summary": "视觉轨迹评判模型，保留选定的中间截图，以评估网页智能体是否完成任务。"
@@ -12094,6 +12388,9 @@
   },
   "url:79287058342289aa5d45": {
     "summary": "基于截图的定位和图像描述样本，包含UI功能描述、目标坐标和边界框。"
+  },
+  "url:79e0b911afaf4313fa6c": {
+    "summary": "一款企业流程发现产品，采集桌面和网页应用中的活动并绘制工作流程，帮助识别操作模式与自动化机会。"
   },
   "url:7a35f44787f99834f13e": {
     "summary": "General Agents 的桌面自动驾驶工具根据录制的专家行为训练，从截图预测点击、按键及其他动作；其 API 客户端附带执行动作的 macOS 控制器。"
@@ -12116,6 +12413,9 @@
   "url:7c568d88a472f914d316": {
     "summary": "为原版UI-R1 3B模型发布的移动端训练数据子集，包含动作标注和独立的截图文件。"
   },
+  "url:7ea46aa7d2d4470bb1f8": {
+    "summary": "UGround-V1-72B 基于 Qwen2-VL，用于定位 GUI 截图中的目标；项目发布了模型权重，并报告了移动端、桌面端和网页界面的评估结果。"
+  },
   "url:7ed70b39ac79f97f8a87": {
     "summary": "逐步网页定位基准，对Mind2Web页面施加样式、缩放和文字大小扰动后重新渲染，并将每张截图与直接或关系型指令及目标框配对。"
   },
@@ -12131,17 +12431,35 @@
   "url:80858580c1009eba0e98": {
     "summary": "面向AndroidControl的Qwen2-VL检查点，使用OS-Genesis反向任务合成生成的移动端轨迹训练。"
   },
+  "url:808a22468ee0bf565d6e": {
+    "summary": "基于众包 HTML 任务的网页智能体基准，含 32.2K 个实例、158 项任务，并提供将模型回答映射为页面操作的评估框架。"
+  },
+  "url:80ec6c9a43360adbbc6b": {
+    "summary": "基于 Qwen2.5-VL 的界面模型检查点，通过截图定位界面元素并预测导航操作，采用强化微调训练。"
+  },
   "url:826f3753905c5c43bf46": {
     "summary": "Seg2Click检查点，将9B Qwen3.5主干模型与有效GUI点击区域解码器结合。"
   },
   "url:82a30f45d9e855f423c7": {
     "summary": "OS-Atlas基础检查点由Qwen2-VL-7B-Instruct微调而来，在Transformers中采用标准Qwen2-VL架构，约有8.3B个BF16参数。"
   },
+  "url:8477ada5b7de1d399c9d": {
+    "summary": "VeriWeb 数据集包含 302 项网页信息搜集任务，提供子任务标注、人工操作日志和执行视频，用于评估长链任务智能体。"
+  },
+  "url:848e19da3bdf0aeb500c": {
+    "summary": "面向智能体的本地浏览器工作空间，通过 MCP 接入，支持隔离任务会话、可见的浏览器操作以及重新连接已有标签页。"
+  },
   "url:849a86beaee006c6b147": {
     "summary": "OmniAct是用于生成计算机交互程序的数据集和基准。"
   },
   "url:84e5aeeffaf561baa966": {
     "summary": "用于训练UI-Genie轨迹评估模型的移动端GUI奖励标注。"
+  },
+  "url:8525e17eee1f3e754ad4": {
+    "summary": "一个托管的界面定位演示，输入截图和指令后，使用公开的 Seg2Click 模型预测操作掩码与点击位置。"
+  },
+  "url:86229ebd22143128bcf7": {
+    "summary": "面向实时网页的智能体基准，包含 111 道题，评测智能体通过文本与多模态交互浏览网页并提取事实答案的能力。"
   },
   "url:863cc1744cd5d40418be": {
     "summary": "General Agents的离线点击基准：557次macOS截图上的人工左键点击，分别配有指令和有效点击位置边界框，以预测点是否落框评分。"
@@ -12160,6 +12478,9 @@
   },
   "url:87bc346934a4117b554c": {
     "summary": "面向市场拓展团队的 Chrome 扩展平台，AI 抓取器浏览网站、点击、填写表单并翻页收集潜在客户，另提供 AI 模板构建器和目标驱动的智能体模式。"
+  },
+  "url:87f28e117d95985d5177": {
+    "summary": "GPA-GUI-Detector 是 YOLO 模型，可在界面截图中定位按钮、图标等可交互元素，并输出边界框供自动化流程使用。"
   },
   "url:8896d44370711136fd54": {
     "summary": "AgentQL提供用于网页界面的自然语言查询和交互工具。"
@@ -12191,6 +12512,9 @@
   "url:9082bb5effe5d1a1cada": {
     "summary": "GUI-Libra检查点基于Qwen3-VL-4B-Instruct微调，约有48.3亿BF16参数，将截图、任务和操作历史转化为<thinking>推理块及带point_2d坐标的JSON操作。"
   },
+  "url:90ae002dbf099d42fabb": {
+    "summary": "Qwen3-VL-8B-Instruct 是视觉语言模型权重，模型卡介绍了它识别界面元素、调用工具并操作电脑和移动设备图形界面的能力。"
+  },
   "url:90b24afa7bb8b2181205": {
     "summary": "H Company的Holo3.1系列4B检查点，采用稠密Qwen3.5架构，是面向网页、桌面和移动端计算机操作智能体、原生支持函数调用的视觉语言模型。"
   },
@@ -12202,6 +12526,9 @@
   },
   "url:9113270916a36b4b76f1": {
     "summary": "移动 GUI 智能体的历史感知视觉编码器同时读取先前和当前截图，通过从元素定位、指代、屏幕问答与摘要到导航的课程训练；另推出 FunUI 基准。"
+  },
+  "url:913a72e8929afd96ad07": {
+    "summary": "开发计算机操作模型、强化学习环境和评测的公司，面向 AI 实验室与企业应用；其网站介绍了 Huzzle World 模型系列。"
   },
   "url:93109952a74302d890b5": {
     "summary": "Anthropic 面向终端、IDE、桌面和网页的智能体编码工具，提供可选的计算机操作预览功能，可截图并操作 macOS（CLI）以及 macOS 和 Windows（Desktop）上的获准应用。"
@@ -12221,6 +12548,12 @@
   "url:964d70c40bfc5ca8e1ee": {
     "summary": "AgentNet包含Windows、macOS和Ubuntu上的22.6K个人工标注桌面计算机操作任务，随OpenCUA发布，用于训练和评估视觉语言动作模型。"
   },
+  "url:969eb56a53187cda74c7": {
+    "summary": "这款 4B 界面定位模型接收高分辨率截图和文字指令，基于 Qwen3-VL-4B-Instruct 经监督训练及基于奖励的训练得到。"
+  },
+  "url:97040677a731edfedc2d": {
+    "summary": "VeriOS-Agent-32B 是以 Qwen2.5-VL-32B 为初始模型的提问式操作系统智能体检查点，发布了用于 VeriOS 论文所述交互方法的模型权重。"
+  },
   "url:978d1dcd70fde8661b9e": {
     "summary": "Browserbase Cloud为智能体应用提供托管式浏览器基础设施。"
   },
@@ -12229,6 +12562,9 @@
   },
   "url:97cedbca35f6bd8684af": {
     "summary": "Fellou 智能浏览器先拟定分步计划供审核，再浏览网页、填写表单并执行定时或并行任务；Computer Use 模式还可操作本地应用和文件。"
+  },
+  "url:98122987ca3e7c764d0e": {
+    "summary": "Pointer 介绍一款桌面计算机操作智能体：先检查任务可行性，再规划阶段目标，由执行器结合界面、代码与浏览器工具完成任务。"
   },
   "url:98e5813bceb30104d6c4": {
     "summary": "H Company基于Qwen2.5-VL-7B的Holo1.5检查点，用于跨网页、桌面和移动界面定位元素并回答屏幕问题，先经监督微调，再经GRPO训练。"
@@ -12239,14 +12575,26 @@
   "url:9a3506ca6ef034adb424": {
     "summary": "用于微调AutoDroid V2的对话格式监督数据；项目文档提供了ShareGPT风格的JSON配置。"
   },
+  "url:9b653775f6b9270304d3": {
+    "summary": "一款图形界面定位验证模型，判断截图中标记的位置是否符合指令，并可为候选操作位置评分。"
+  },
   "url:9b7cc83c55fd75c5b867": {
     "summary": "THUDM 的 ScaleCUA 发布 Qwen3.5-9B 监督训练检查点，作为 OSWorld 计算机操作智能体在线强化学习的初始化起点。"
   },
   "url:9c5e0c8f6784bedeb153": {
     "summary": "OS-Atlas操作检查点由OS-Atlas-Base-7B微调而成，采用Qwen2-VL架构，读取截图、任务及历史记录后输出思路和下一步基础或自定义GUI操作。"
   },
+  "url:9c96a767b56ba0eb4494": {
+    "summary": "面向真实网站日常任务的浏览器智能体数据集，包含 V1 和 V2 测试集、任务背景资料，以及拦截最终提交的规则。"
+  },
   "url:9dc9d8d3b9a4b32d6f4b": {
     "summary": "为R1式视觉定位实验发布的Qwen2.5-VL-3B检查点，根据截图和指令预测界面目标位置。"
+  },
+  "url:9f296457c8ca46446c1f": {
+    "summary": "Browser Operator 是 Opera 预览中的浏览器智能体，可根据自然语言请求执行网页任务，并展示操作步骤、允许用户接管。"
+  },
+  "url:a03c649e4b14e293e2dd": {
+    "summary": "Holo3 是面向计算机操作的模型系列，使用合成导航数据和企业工作流程训练。发布方报告了桌面基准测试结果，并提供推理服务和开放权重。"
   },
   "url:a06622da7688e3718a7b": {
     "summary": "CAGUI是随AgentCPM-GUI发布的中文Android GUI基准，包含面向控件和OCR文本的定位任务，以及面向中文应用多步任务的智能体任务。"
@@ -12278,6 +12626,9 @@
   "url:a4da77ee63f879cc8e63": {
     "summary": "微软的Fara检查点，采用Qwen2.5-VL架构的图文到文本模型，约有8.3B个BF16参数，使用英语，采用MIT许可证，并关联arXiv论文2511.19663。"
   },
+  "url:a57a63693c89915903f1": {
+    "summary": "Browser Run 托管无界面 Chrome 会话，支持浏览器自动化与智能体网页操作，并提供 Playwright、Puppeteer、CDP 和 MCP 接入方式。"
+  },
   "url:a5dc446fab5e6bdce517": {
     "summary": "无需训练的协议将教师模型离线推理轨迹转为开源权重浏览器智能体的提示指导；在 MiniWoB++ 上，十个学生模型完成的任务组合数从 208 增至 271。"
   },
@@ -12295,6 +12646,9 @@
   },
   "url:a80c7330dbfd4f897693": {
     "summary": "InSTA项目约15万项网页导航任务，每项提供网站域名、指令、建议步骤和成功标准，训练集与测试集取自不同网站。"
+  },
+  "url:a886fea306211d527701": {
+    "summary": "Qwen-CUA 是基于截图生成键盘和鼠标操作的计算机操作模型，发布内容包括模型权重和浏览器参考运行环境。"
   },
   "url:a8b43a1f2bebd998f612": {
     "summary": "标记为推荐的7B DPO版UI-TARS检查点，采用Qwen2-VL架构，是用于网页、移动端和桌面的原生GUI智能体模型，可感知屏幕、定位元素并执行多步操作。"
@@ -12341,6 +12695,9 @@
   "url:aed610c413d6bb9f1caa": {
     "summary": "Gelato-30B-A3B和GTA1-32B在相同的GPT-5规划、基于GTA1.5的框架中各运行三轮OS-World任务，提供逐任务轨迹、初始及逐步截图和自动评估结果。"
   },
+  "url:aeffabf23c16f8cf2139": {
+    "summary": "Holo-3.1-35B-A3B-NVFP4 是面向网页、桌面和移动端任务的量化计算机操作视觉语言模型权重，支持函数调用。"
+  },
   "url:af7a03e8199643c3508f": {
     "summary": "THUDM ScaleCUA的监督训练Qwen3.5-9B检查点，作为ScienceBoard计算机操作智能体在线强化学习的初始模型发布。"
   },
@@ -12355,6 +12712,9 @@
   },
   "url:b09d10b87e42b7e74de9": {
     "summary": "UiPath Studio 活动中的 Screen Agent 将自然语言任务描述转为在 Windows、Linux 和 macOS 上自主运行的 UI 自动化，使用规划器、像素定位器、DOM 提取和可选 LLM。"
+  },
+  "url:b1457a20d437732b60f7": {
+    "summary": "Holo4 的量化视觉语言模型用于网页、桌面和移动界面操作；配套运行框架可执行模型请求的界面操作与工具调用。"
   },
   "url:b1837823421bd08cb826": {
     "summary": "InternVL2-4B检查点基于OS-Genesis AndroidControl轨迹微调；模型卡提示将截图和无障碍树与目标、操作历史结合，生成下一步思考与操作。"
@@ -12377,6 +12737,15 @@
   "url:b5e2127e07f692d516b9": {
     "summary": "Aguvis第二阶段的界面轨迹数据集，用于在定位预训练后学习操作序列、规划和推理。"
   },
+  "url:b5fb13515d7779218f5d": {
+    "summary": "已发布的屏幕解析模型权重，可在截图中检测可操作区域并描述图标，为图形界面智能体提供结构化屏幕信息。"
+  },
+  "url:b6114625f883ec0fda33": {
+    "summary": "这是面向 RICO 界面截图的复杂问答测试数据集，包含截图、问题和标准答案。数据卡列出 11,781 个样本。"
+  },
+  "url:b7ccf7acb2e9d8a11853": {
+    "summary": "Dreamer-7B-Classifieds 是面向 Classifieds 网页领域的 WebDreamer 模型检查点，通过模拟候选操作的结果辅助规划。"
+  },
   "url:b80bfa0a4939a493a11f": {
     "summary": "小米MobileVLM的预训练语料，以各应用的图结构归档文件分发，涵盖百度地图、QQ音乐、携程和唯品会等移动应用。"
   },
@@ -12388,6 +12757,9 @@
   },
   "url:b94e285c3f757e2d0f3a": {
     "summary": "已发布的UI-AGILE模型，用于GUI定位，推理时采用奖励塑形、基于裁剪的重采样和分解式选择。"
+  },
+  "url:b9c90048411606b00db0": {
+    "summary": "这款 7B 指令微调多模态模型处理图像和视频；模型卡还介绍了依据视觉输入操作移动设备的能力。"
   },
   "url:ba2c664c1b3c6f1b172f": {
     "summary": "APPINITE提供对话式界面，用于指定演示的Android操作所针对的目标；它构建语义化UI表示，并通过屏幕叠加层预览和完善可执行的数据描述。"
@@ -12401,6 +12773,9 @@
   "url:bc3deaf8eeecf569e73b": {
     "summary": "已发布的GUI世界模型检查点，将截图和拟执行的操作转换为HTML，以渲染预测的下一屏幕。"
   },
+  "url:bd15fb092ff80643ed97": {
+    "summary": "RICO-ScreenQA 提供应用截图问答数据，包含图像、答案文本和界面元素边界框，并划分为训练、验证和测试集。"
+  },
   "url:bd7214de6d98917c2350": {
     "summary": "ScreenSpot定位测试集的第二版，由OS-Copilot发布，桌面、移动端和网页标注分别存放，截图则共用一个归档文件。"
   },
@@ -12410,8 +12785,14 @@
   "url:bdfb50330deb97893ce4": {
     "summary": "基于Mind2Web交互构建的多轮网页导航对话，包含对话轮次、HTML快照、候选元素及点击、输入、选择操作序列。"
   },
+  "url:be4ca14d1724b0cf8314": {
+    "summary": "SafeArena 提供安全与有害任务分组，用于评估自主网页智能体的安全性；配套环境归档需申请权限后获取。"
+  },
   "url:be89a250747f507a27ef": {
     "summary": "Android应用GUI抓取数据包含逐应用导航图，以UI操作连接屏幕ID，另有200个分片归档保存捕获的屏幕。"
+  },
+  "url:beb2ca7cdaefbef42ee6": {
+    "summary": "图形界面定位模型，接收单张屏幕截图和类似指令的查询，使用专门的指向标记输出目标位置的点。"
   },
   "url:beb8f1fd6b945ffc9d93": {
     "summary": "GUI-SAGE根据已知操作生成推理内容，并利用置信度和奖励信号对策略更新加权。实验使用AndroidControl和GUIOdyssey数据，另对交互式AndroidWorld任务进行评估。"
@@ -12446,6 +12827,9 @@
   "url:c491c446a71cac1def66": {
     "summary": "Holo1 3B 动作视觉语言模型由 Qwen2.5-VL-3B-Instruct 微调而成，可在 Surfer-H 浏览器智能体中担任策略模型、UI 定位器或答案验证器。"
   },
+  "url:c4a45eed67ee9087aae3": {
+    "summary": "通用模型；发布说明介绍其通过视觉观察、鼠标和键盘操作电脑，并报告 OSWorld 评估及提示注入测试。"
+  },
   "url:c5b0e2eab771f62792fb": {
     "summary": "基于322M参数laya编码器微调的非生成式浏览器智能体策略；单次前向计算读取页面文本和可交互元素列表，选出下一步操作及目标元素。"
   },
@@ -12475,6 +12859,9 @@
   },
   "url:c918d5c828a3c6cfbc5d": {
     "summary": "面向Open-AutoGLM的AutoGLM手机智能体模型检查点，由GLM-4.1V-9B-Base微调，约有10.3B个BF16参数，并带有中文标签。"
+  },
+  "url:c9d2a9288a568db12bd1": {
+    "summary": "基于 WebArena 探索轨迹训练的 Llama 模型，可根据任务指令选择浏览器操作并完成网页导航。"
   },
   "url:ca76de56f3ddbd7c61b4": {
     "summary": "通过示范训练小型 Android 自动化智能体，结合带状态检查的宏动作、示范增强，以及预测任务完成情况以指导后续示范的评判模型。"
@@ -12506,6 +12893,9 @@
   "url:cf4d2d45a7314cb16acb": {
     "summary": "从移动GUI轨迹构建的HTML及标注数据，用于Code2World训练以操作为条件的GUI状态预测。"
   },
+  "url:cf7c132c9a988d3a6ec4": {
+    "summary": "RICO-Screen2Words 将 Android 应用截图与人工编写的界面摘要、应用元数据和视图层级配对，用于移动界面理解。"
+  },
   "url:cfea8a0949472a637990": {
     "summary": "已发布的SeeClick视觉定位模型检查点，将界面截图和指代指令映射到点或边界框。"
   },
@@ -12514,6 +12904,12 @@
   },
   "url:d0300db5ba754b1a64fa": {
     "summary": "已发布的JSONL语料，包含为GUI 智能体中期训练合成的规划与因果知识，由GUI-CIDER官方项目直接提供链接。"
+  },
+  "url:d071f3f5a01a5f9d6d78": {
+    "summary": "AskUI 通过视觉识别和操作屏幕，在 Android 设备与模拟器上执行自然语言应用测试，并提供截图轨迹及持续集成接口。"
+  },
+  "url:d1305a893a47ac03d0de": {
+    "summary": "通用视觉语言模型权重；其视觉智能体能力包括识别电脑与移动端界面元素，并调用工具完成任务。"
   },
   "url:d1830de02226155ee16d": {
     "summary": "Phi-Ground项目为其Phi-Ground-Any模型提供链接的公开训练归档文件。"
@@ -12529,6 +12925,9 @@
   },
   "url:d2d07c09a1c92e5f4a43": {
     "summary": "THUDM 的 ScaleCUA 基于 Qwen3.5-9B 的计算机操作智能体检查点，从 SFT 起点经在线强化学习训练，面向 ScienceBoard 科学软件任务，并通过兼容 OpenAI 的端点提供服务。"
+  },
+  "url:d3247ff0ff9a1f6bc247": {
+    "summary": "Magma-8B 是多模态智能体模型权重；模型卡展示了界面导航与机器人操作任务，并介绍其视频数据训练方式。"
   },
   "url:d3414794302313051ff0": {
     "summary": "支持通过浏览器执行任务的通用智能体平台。"
@@ -12550,6 +12949,9 @@
   },
   "url:d70a755e3b2102f25f34": {
     "summary": "GUI定位模型检查点，使用自适应探索奖励和多个候选答案进行训练，以改善指令与界面元素的对应关系。"
+  },
+  "url:d768dd5245832bc4b824": {
+    "summary": "websrc 是面向网页截图问答的 WebSRC 整理版本，用于理解页面内容与结构；数据包含页面标识、问题、答案和编码图像。"
   },
   "url:d7a4f34a6a5202af5f64": {
     "summary": "覆盖日常场景的移动应用任务定义，标注了前置条件和需要澄清的事项，用于评估智能体行为。"
@@ -12602,6 +13004,9 @@
   "url:dec156cbf0cb1181f7b6": {
     "summary": "AWS提供的服务，基于定制的Nova 2 Lite模型，支持通过自然语言和Python构建、部署自动执行浏览器界面工作流程的智能体。"
   },
+  "url:df10c80a8da55773154d": {
+    "summary": "包含 5,999 条浏览器操作安全标注的数据集，将网站和操作信息与风险分类配对，供网页智能体研究使用。"
+  },
   "url:df3102617f3a66c44fc9": {
     "summary": "阿里云 Wuying 服务在云端 Android 容器运行 Qwen 驱动的智能体（使用 OpenClaw 的 MobileUseAgent），跨应用执行自然语言任务，用于流程自动化和应用测试。"
   },
@@ -12611,8 +13016,14 @@
   "url:df84f6a103123387b0dd": {
     "summary": "H Company 的 Holo3.1 视觉语言模型系列中最小的检查点，面向网页、桌面和移动端计算机操作智能体，并为智能体框架提供原生函数调用。"
   },
+  "url:dfa8047521d1f3b3aa54": {
+    "summary": "Dreamer-7B-Reddit 是 WebDreamer 的 Reddit 领域模型权重，可预测拟执行操作后的屏幕状态，辅助网页智能体规划。"
+  },
   "url:e0180b9651fec04d0308": {
     "summary": "收录Simular的Sai计算机操作智能体两次完整的108任务OSWorld-V2运行证据：分数、逐步轨迹、消息记录、评估器和API日志及运行清单，不含截图。"
+  },
+  "url:e041226738f8ea43a878": {
+    "summary": "这是用于移动界面世界模型训练与评估的数据集。轨迹归档将截图与页面状态文本及动作格式的训练样例配对。"
   },
   "url:e062cf1445eaee0f3ade": {
     "summary": "与界面分解研究及OSWorld-G基准相关的合成GUI定位数据。"
@@ -12632,6 +13043,9 @@
   "url:e21ca7c859544dbf5fb6": {
     "summary": "屏幕解析模型权重包，包含图标区域检测器和图标描述模型，用于将截图转换为智能体可读取的界面元素。"
   },
+  "url:e2b79e8d1c6a28c65bff": {
+    "summary": "omniparser-finetuned 发布用于界面解析的 Florence-2 图标描述模型权重，训练数据包含图标标签和截图裁剪。"
+  },
   "url:e3c1a2a2d556e4728953": {
     "summary": "WebDreamer模型检查点，根据截图和文字描述预测网页操作的后果。"
   },
@@ -12644,11 +13058,20 @@
   "url:e554295a7f3f5c9ad0d6": {
     "summary": "由Qwen2-VL-7B微调的UGround-V1检查点，采用标准Qwen2-VL架构，约有8.3B个BF16参数；以safetensors和PyTorch文件提供，采用Apache-2.0许可证。"
   },
+  "url:e73eb2f901a50145c37e": {
+    "summary": "云端智能体平台，为智能体提供可持久使用的电脑，以及浏览器、图形界面、终端和文件访问，并配有项目工作区与工作流触发器。"
+  },
+  "url:e7653b062bded670198a": {
+    "summary": "ClawBench V1 Traces 发布浏览器智能体运行记录，包含屏幕视频、操作、网络流量和智能体消息，可用于回放、调试及重新评分。"
+  },
   "url:e7c3d3d49bf977b49996": {
     "summary": "BAMI局部纠错模型的训练数据：成对裁剪的GUI截图各高亮一个候选框，配有点击指令及自动生成的标签，指出更符合指令的框。"
   },
   "url:e80e9cf4f565f9ab2abf": {
     "summary": "车载信息娱乐屏幕的离线测试集，含来自 15 个品牌的 998 张照片和截图，以及 4,208 条英文标注，用于定位 UI 元素并判断预期结果通过或失败。"
+  },
+  "url:e8256e338a9c379ca85b": {
+    "summary": "Magma-Mind2Web-SoM 提供用于 Magma 多模态智能体下游微调的 Mind2Web 数据。"
   },
   "url:e876bff0950b82a0c9b7": {
     "summary": "一种后门攻击：用教师模型编写的恶意轨迹微调 GUI 智能体，使触发信号促使其选择符合当前屏幕与指令的有害动作；在 AitZ 和 AndroidControl 上测试。"
@@ -12656,17 +13079,32 @@
   "url:eadc6cba9ea46c38dd1d": {
     "summary": "随WebDreamer项目发布的网页世界模型训练数据，包含提示词、图像、操作描述和回复。"
   },
+  "url:ec17d3267cd49548d2d4": {
+    "summary": "这款视觉智能体将 Minecraft 崩溃报告转成复现步骤，并通过宏接口执行。项目页还介绍了 BugCraft-Bench。"
+  },
   "url:ecf89236d4e75b05c7b4": {
     "summary": "AWS 托管智能体平台的 Browser 工具提供隔离云浏览器会话、自动化、实时查看流及可选录制，并配有运行时、记忆、网关和代码执行服务。"
   },
   "url:ed8d5883c240b78e329f": {
     "summary": "Holo2混合专家检查点基于Qwen3-VL-30B-A3B-Thinking，经过监督训练和在线强化学习，用于网页、桌面和移动屏幕的UI元素定位与多步导航。"
   },
+  "url:edb0eadcc3df5559e941": {
+    "summary": "go-browse-wa-raw 是浏览器智能体轨迹数据集，包含页面观察、操作、目标、奖励和图像。其训练集包含 196462 个样本。"
+  },
   "url:edf38d43800be8c955ae": {
     "summary": "包含文字丰富的图像和边界框的对话式GUI监督数据，按单轮问答和多轮对话组织。"
   },
+  "url:ee3a18b51eb44d94a94b": {
+    "summary": "Holo3.1 的量化视觉语言模型检查点，面向网页、桌面和移动界面的计算机操作智能体，支持界面定位与函数调用。"
+  },
   "url:ef244017b1460269fc68": {
     "summary": "Browser Use提供的托管式浏览器智能体平台。"
+  },
+  "url:ef5f03efdbd5e3da2ed7": {
+    "summary": "Axiom 提供 Chrome 扩展、API 和 MCP 服务器来自动操作浏览器。AI 客户端可创建工作流程，并在云端浏览器或本地桌面运行。"
+  },
+  "url:efd78f56fcde1f4f05e5": {
+    "summary": "Surfer 2 是面向桌面、网页和移动设备任务的计算机操作智能体；其协调模块分配子任务，并由其他组件完成视觉定位与执行。"
   },
   "url:eff580f3185f2a36c265": {
     "summary": "Yutori 网页智能体平台，提供 Navigator 计算机操作模型 API（浏览器用 n1.5、完整桌面用 n2）、浏览、研究和 Scout 网页监测任务 API，以及 Delegate 个人智能体。"
@@ -12698,6 +13136,9 @@
   "url:f39d67f7a4a6f869f39c": {
     "summary": "H Company 基于 NVIDIA Nemotron 3 Nano Omni 后训练的计算机操作策略检查点，采用每个词元激活 30B 参数中 3B 的混合 Mamba-MoE 架构，面向低延迟智能体任务。"
   },
+  "url:f3a7296977a39c37f693": {
+    "summary": "面向计算机操作的 FP8 视觉语言模型。配合智能体运行框架，它根据屏幕截图和工具结果发出点击、输入、代码及工具调用请求。"
+  },
   "url:f52794224f9541fd9eb3": {
     "summary": "GUI-Libra检查点基于Qwen2.5-VL-7B-Instruct微调，约有82.9亿BF16参数，将截图、任务和操作历史转化为<think>推理块及带point_2d坐标的JSON操作。"
   },
@@ -12716,17 +13157,41 @@
   "url:f70aa7c95824a8729516": {
     "summary": "轻量级视觉操作模型检查点，根据截图和自然语言指令预测连续的GUI拖动轨迹。"
   },
+  "url:f75cab7180d8f5264606": {
+    "summary": "ZeroGUI-AndroidLab-7B 是 GUI 智能体模型权重，其训练流程会生成界面任务、依据轨迹截图估计奖励，并通过在线强化学习持续适应。"
+  },
+  "url:f7e21b1a3ba5c58a73bc": {
+    "summary": "面向浏览器和移动应用的测试智能体，通过 Playwright 和 Appium 执行操作、核验步骤并记录运行过程。发布方称其完成了 AndroidWorld 全部任务。"
+  },
   "url:f8566bd0394d36ed4f8e": {
     "summary": "涵盖网页、移动端和Ubuntu桌面界面的GUI元素描述与定位指令。"
   },
   "url:f885d17601171253d25e": {
     "summary": "Adept 于 2022 年推出的 action transformer，曾通过演示视频展示 Chrome 扩展读取网页的自定义渲染结果，并点击、输入、滚动 UI 元素以完成文字请求。"
   },
+  "url:f8b67bde8c79e7934a2a": {
+    "summary": "技术文章介绍一款 Android 界面智能体：规划与单步操作交替进行，检查屏幕变化，并通过专门路径处理文本编辑；文中报告了 AndroidWorld 测试结果。"
+  },
   "url:f976dec3d1c5e0bedbd7": {
     "summary": "基于OmniAct截图构建的7,496个桌面定位样例，其标注经GPT-4o改写，用于描述元素外观、空间关系和功能。"
   },
+  "url:f979ca583090405aadee": {
+    "summary": "基于 GLM 的 WebRL 模型，可在五个 WebArena 网站执行浏览器任务；模型卡报告了 WebArena-Lite 的评测结果。"
+  },
+  "url:fa6761a4612fab664a7c": {
+    "summary": "通过强化学习训练的 GUI 定位模型权重，根据截图和指令预测点击坐标；发布页提供推理示例和基准测试结果。"
+  },
+  "url:fb5921fec3f7c313ab5b": {
+    "summary": "具备高分辨率图像输入能力并发布权重的多模态推理模型。作者报告了它在 ScreenSpot-Pro、ScreenSpot-V2 和 OSWorld-G 上的 GUI 定位评估。"
+  },
   "url:fcc98b149272bbf31b05": {
     "summary": "将网页任务背景、初始观察和操作历史与结构化检查清单及子目标分析配对的数据，用于生成检查清单。"
+  },
+  "url:fd2143b0da03ceedf25c": {
+    "summary": "UGround-V1-2B 基于 Qwen2-VL，用于定位界面截图中的目标元素；模型卡报告了移动端、桌面端和网页界面的评测。"
+  },
+  "url:fd28110220935a0fae26": {
+    "summary": "Narada Code 开发并测试电脑操作流程，在失败后修改流程；OperatorMini 按生成的指令执行重复性网页和企业任务。"
   },
   "url:fda52d641c6b482bda7b": {
     "summary": "用于执行智能体工作负载的沙箱基础设施。"
@@ -12742,5 +13207,8 @@
   },
   "url:ff7b1873a3eead89607a": {
     "summary": "基于Qwen2.5-VL的计算机操作模型检查点，支持在桌面、移动端和网页界面上以直接定位和智能体操作模式运行。"
+  },
+  "url:ffe40334f1050b94f8b2": {
+    "summary": "Magma-AITW-SoM 提供用于 Magma 多模态智能体下游任务微调的 AITW 数据。"
   }
 }

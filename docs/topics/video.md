@@ -2,9 +2,9 @@
 
 [Home](../../README.md) · [All topics](../topics.md) · [Full arXiv bibliography](../papers.md)
 
-71 source-reviewed resources tagged `video`. Curated metadata; unknown facts are shown as —.
+73 source-reviewed resources tagged `video`. Curated metadata; unknown facts are shown as —.
 
-**Contents:** [Benchmarks (3)](#benchmarks) · [Datasets (14)](#datasets) · [Models (4)](#models) · [Frameworks (3)](#frameworks) · [Tools (8)](#tools) · [Papers (39)](#papers)
+**Contents:** [Benchmarks (3)](#benchmarks) · [Datasets (14)](#datasets) · [Models (6)](#models) · [Frameworks (3)](#frameworks) · [Tools (8)](#tools) · [Papers (39)](#papers)
 
 ## Benchmarks
 
@@ -39,7 +39,9 @@
 | --- | --- | --- | --- | --- | --- |
 | [CogVLM2](https://github.com/THUDM/CogVLM2) | cross-platform, web, desktop | — | code Apache-2.0 | CogVLM2 releases high-resolution image and video vision-language models supporting visual grounding, document reading, and GUI understanding. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/THUDM/CogVLM2/HEAD/README.md) |
 | [CombatVLA](https://github.com/ChenVoid/CombatVLA) | desktop, windows | — | — | CombatVLA is a vision-language-action model and action tracker for real-time combat control in 3D action role-playing PC games. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/ChenVoid/CombatVLA/HEAD/README.md) |
+| [GUI-Vid](https://huggingface.co/ONE-Lab/GUI-Vid) | unspecified | [2406.10819](https://arxiv.org/abs/2406.10819) (2024) | weights cc-by-4.0 | GUI-Vid is a released video language model retrained on GUI-World for understanding graphical interfaces in video. | [✓ 2026‑11‑09](https://huggingface.co/api/models/ONE-Lab/GUI-Vid) |
 | [InternVL](https://github.com/OpenGVLab/InternVL) | cross-platform, web, desktop, android | — | code MIT | Official repository for the InternVL open-source multimodal foundation model family supporting high-resolution GUI grounding and visual reasoning. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/OpenGVLab/InternVL/HEAD/README.md) |
+| [Magma-8B](https://huggingface.co/microsoft/Magma-8B) | unspecified | [2502.13130](https://arxiv.org/abs/2502.13130) (2025) | weights mit | Magma-8B is a released multimodal agent checkpoint whose card shows UI navigation tasks alongside robot manipulation and describes training with video data. | [✓ 2026‑11‑09](https://huggingface.co/api/models/microsoft/Magma-8B) |
 | [Qwen3-VL / Qwen2.5-VL](https://github.com/QwenLM/Qwen3-VL) | cross-platform, web, desktop, android | [2502.13923](https://arxiv.org/abs/2502.13923) (2025) | code Apache-2.0 | Official repository for the Qwen-VL vision-language model series supporting native visual GUI grounding, computer use, and mobile navigation. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/QwenLM/Qwen3-VL/HEAD/README.md) |
 
 ## Frameworks

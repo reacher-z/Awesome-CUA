@@ -6,9 +6,19 @@ Curated metadata. Each entry links its first-party evidence. Unknown facts are s
 
 *Evidence* links the reviewed first-party snapshot and its retrieval date.
 
-**17 resources:** [Unspecified (17)](#unspecified)
+**19 resources:** [Cross-platform (1)](#cross-platform) · [Unspecified (18)](#unspecified)
 
 Resources tagged with environments from more than one family are listed under *Cross-platform*; their exact environments stay in the table.
+
+## Cross-platform
+
+All entries in this section: cross-platform, desktop.
+
+| Resource | Description | Evidence |
+| --- | --- | --- |
+| [Coasty](https://coasty.ai) | Coasty develops computer-use environments for agent training and evaluation, using computer and phone interfaces alongside trajectories and outcome checks. | [✓ 2026‑11‑09](https://coasty.ai) |
+
+[↑ Back to top](#company-catalog)
 
 ## Unspecified
 
@@ -25,6 +35,7 @@ All entries in this section: unspecified.
 | [E2B](https://e2b.dev/) | Publisher or product brand associated with E2B computer-use or browser automation offerings. | [✓ 2026‑10‑16](https://e2b.dev/) |
 | [Google](https://ai.google.dev/gemini-api/docs/computer-use) | Publisher or product brand associated with Google computer-use or browser automation offerings. | [✓ 2026‑10‑16](https://ai.google.dev/gemini-api/docs/computer-use) |
 | [H](https://hcompany.ai/research/models) | Publisher or product brand associated with H computer-use or browser automation offerings. | [✓ 2026‑10‑16](https://hcompany.ai/research/models) |
+| [Huzzle Labs](https://labs.huzzle.com) | Company developing computer-use models, RL environments and evaluations for AI labs and enterprise work. Its site describes the Huzzle World model family. | [✓ 2026‑11‑09](https://labs.huzzle.com) |
 | [Hyperbrowser](https://www.hyperbrowser.ai/) | Publisher or product brand associated with Hyperbrowser computer-use or browser automation offerings. | [✓ 2026‑10‑16](https://www.hyperbrowser.ai/) |
 | [Manus](https://manus.im/) | Publisher or product brand associated with Manus computer-use or browser automation offerings. | [✓ 2026‑10‑16](https://manus.im/) |
 | [Microsoft](https://learn.microsoft.com/en-us/microsoft-copilot-studio/computer-use) | Publisher or product brand associated with Microsoft computer-use or browser automation offerings. | [✓ 2026‑10‑18](https://learn.microsoft.com/en-us/microsoft-copilot-studio/computer-use) |

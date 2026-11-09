@@ -2,9 +2,9 @@
 
 [Home](../../README.md) · [All topics](../topics.md) · [Full arXiv bibliography](../papers.md)
 
-69 source-reviewed resources tagged `world-models`. Curated metadata; unknown facts are shown as —.
+73 source-reviewed resources tagged `world-models`. Curated metadata; unknown facts are shown as —.
 
-**Contents:** [Datasets (3)](#datasets) · [Models (4)](#models) · [Agents (1)](#agents) · [Frameworks (9)](#frameworks) · [Surveys (1)](#surveys) · [Papers (51)](#papers)
+**Contents:** [Datasets (4)](#datasets) · [Models (7)](#models) · [Agents (1)](#agents) · [Frameworks (9)](#frameworks) · [Surveys (1)](#surveys) · [Papers (51)](#papers)
 
 ## Datasets
 
@@ -12,6 +12,7 @@
 | --- | --- | --- | --- | --- | --- | --- |
 | [AndroidCode](https://huggingface.co/datasets/GD-ML/AndroidCode) | android | [2602.09856](https://arxiv.org/abs/2602.09856) (2026) | [> 80,000 screen–action pairs](https://raw.githubusercontent.com/AMAP-ML/Code2World/HEAD/readme.md) | data MIT | HTML and annotation release used for Code2World’s action-conditioned GUI-state prediction training, constructed from mobile GUI trajectories. | [✓ 2026‑10‑18](https://raw.githubusercontent.com/AMAP-ML/Code2World/HEAD/readme.md) |
 | [Dreamer V1 Data](https://huggingface.co/datasets/osunlp/Dreamer-V1-Data) | web | [2411.06559](https://arxiv.org/abs/2411.06559) (2024) | — | data cc-by-nc-sa-4.0 | Web-world-model training data with prompts, images, action descriptions, and responses, released with the WebDreamer project. | [✓ 2026‑10‑16](https://huggingface.co/datasets/osunlp/Dreamer-V1-Data/raw/main/README.md) |
+| [Mobile-GUI-Worldmodel-SFT](https://huggingface.co/datasets/xwk123/Mobile-GUI-Worldmodel-SFT) | android | — | — | data other | A mobile GUI dataset for world-model training and evaluation. Its trajectory archives pair screenshots with page-state text and action-formatted training examples. | [✓ 2026‑11‑09](https://huggingface.co/api/datasets/xwk123/Mobile-GUI-Worldmodel-SFT) |
 | [WebEvolver SFT data](https://huggingface.co/datasets/CognitiveKernel/WebEvolver) | web | [2504.21024](https://arxiv.org/abs/2504.21024) (2025) | — | data MIT | Two JSONL collections for supervised fine-tuning the WebEvolver agent policy and web world model. | [✓ 2026‑10‑18](https://huggingface.co/datasets/CognitiveKernel/WebEvolver/raw/13f4f45b359e138a45b1c89bd4e913298c586ca9/README.md) |
 
 ## Models
@@ -20,6 +21,9 @@
 | --- | --- | --- | --- | --- | --- |
 | [Code2World-8B checkpoint](https://huggingface.co/GD-ML/Code2World) | android | [2602.09856](https://arxiv.org/abs/2602.09856) (2026) | weights MIT | Released GUI world-model checkpoint that turns a screenshot and proposed action into HTML for rendering a predicted next screen. | [✓ 2026‑10‑18](https://huggingface.co/GD-ML/Code2World/raw/3e48194a8228570164ecd510f9d83ac839e9e931/README.md) |
 | [Dreamer-7B](https://huggingface.co/osunlp/Dreamer-7B) | web | [2411.06559](https://arxiv.org/abs/2411.06559) (2024) | weights apache-2.0 | WebDreamer model checkpoint that predicts the consequences of web actions from screenshots and textual descriptions. | [✓ 2026‑10‑16](https://huggingface.co/osunlp/Dreamer-7B/raw/main/README.md) |
+| [Dreamer-7B-Classifieds](https://huggingface.co/osunlp/Dreamer-7B-Classifieds) | web | [2411.06559](https://arxiv.org/abs/2411.06559) (2024) | weights apache-2.0 | Dreamer-7B-Classifieds is a WebDreamer checkpoint for the Classifieds web domain. It supports planning by simulating the results of candidate actions. | [✓ 2026‑11‑09](https://huggingface.co/api/models/osunlp/Dreamer-7B-Classifieds) |
+| [Dreamer-7B-Reddit](https://huggingface.co/osunlp/Dreamer-7B-Reddit) | web | [2411.06559](https://arxiv.org/abs/2411.06559) (2024) | weights apache-2.0 | Dreamer-7B-Reddit is a Reddit-domain checkpoint for WebDreamer. It predicts the screen state after a proposed action to support web-agent planning. | [✓ 2026‑11‑09](https://huggingface.co/api/models/osunlp/Dreamer-7B-Reddit) |
+| [Dreamer-7B-Shopping](https://huggingface.co/osunlp/Dreamer-7B-Shopping) | web | [2411.06559](https://arxiv.org/abs/2411.06559) (2024) | weights apache-2.0 | A shopping-domain Dreamer-7B checkpoint for WebDreamer, which uses screenshot-conditioned predictions of candidate web actions to support agent planning. | [✓ 2026‑11‑09](https://huggingface.co/api/models/osunlp/Dreamer-7B-Shopping) |
 | [gWorld (GuiWorld)](https://github.com/trillion-labs/gWorld) | android | [2602.01576](https://arxiv.org/abs/2602.01576) (2026) | — | gWorld is an open-weight 8B/32B mobile GUI world model that predicts next-step screen states via renderable web code generation. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/trillion-labs/gWorld/HEAD/README.md) |
 | [Textual Foresight](https://github.com/aburns4/textualforesight) | android | [2406.07822](https://arxiv.org/abs/2406.07822) (2024) | code BSD-3-Clause | Textual Foresight pretrains UI representations by predicting textual descriptions of future screen states resulting from mobile UI actions. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/aburns4/textualforesight/HEAD/README.md) |
 

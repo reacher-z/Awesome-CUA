@@ -1,7 +1,7 @@
 {
-  "as_of_utc": "2026-11-07T05:19:53Z",
-  "total_records": 4699,
-  "curated_records": 4248,
+  "as_of_utc": "2026-11-09T05:26:45Z",
+  "total_records": 4855,
+  "curated_records": 4404,
   "bibliographic_records": 2141,
   "arxiv_active_records": 2112,
   "non_arxiv_bibliographic_records": 29,
@@ -11,10 +11,10 @@
   "exclusion_revalidation_pending": 0,
   "metadata_only_records": 451,
   "discovery_identifiers": 6084,
-  "unindexed_candidates": 1090,
-  "non_resource_candidates": 201,
-  "alias_candidates": 422,
-  "out_of_scope_candidates": 95,
+  "unindexed_candidates": 337,
+  "non_resource_candidates": 342,
+  "alias_candidates": 518,
+  "out_of_scope_candidates": 452,
   "pending_editorial": [
     {
       "id": "github:thudm/autoglm",
@@ -2619,6 +2619,643 @@
       "url": "https://www.researchsquare.com/article/rs-4653823/v1",
       "reason": "Relevance screening of the preprint abstract in its Crossref record (6 November 2026): core. A framework in which an LLM uses a vision model to recognize interface elements and operates applications with keyboard and mouse input, shown as a proof of concept. Awaiting an editorial annotation.",
       "cause": "annotation_pending"
+    },
+    {
+      "id": "url:6ef140e52d572f66d2b8",
+      "name": "Postman",
+      "url": "https://www.postman.com/idan-775bed48-7905039/browser-automation-hub",
+      "reason": "The fetched page contains only the title Postman. It gives no description of the purported browser automation hub or its contents, so its relevance cannot be established.",
+      "cause": "reviewer_hold"
+    },
+    {
+      "id": "url:00f5bfd8c7991012a183",
+      "name": "SE-GUI-7B",
+      "url": "https://huggingface.co/XinBB/SE-GUI-7B",
+      "reason": "The model repository has weight files, but its card contains only a license declaration. The source does not explain the checkpoint's purpose or how it is used.",
+      "cause": "reviewer_hold"
+    },
+    {
+      "id": "github:agentsea/agentd",
+      "name": "agentd",
+      "url": "https://github.com/agentsea/agentd",
+      "reason": "The repository file list shows implementation files, but the supplied README is empty. The source does not explain the daemon's purpose or computer-use capability.",
+      "cause": "reviewer_hold"
+    },
+    {
+      "id": "url:4ed986fbfacac80c8ed2",
+      "name": "zhuanlan.zhihu.com",
+      "url": "https://zhuanlan.zhihu.com/p/14143950360n",
+      "reason": "primary evidence unresolved: HTTP Error 403: Forbidden; The fetch returned HTTP 403 and only a generic Zhihu welcome message. The article's contents and computer-use relevance cannot be assessed.",
+      "cause": "unresolved_evidence"
+    },
+    {
+      "id": "url:280f2ab56bbc0b630d81",
+      "name": "VideoAgentTrek-IDM-s1-7B",
+      "url": "https://huggingface.co/xlangai/VideoAgentTrek-IDM-s1-7B",
+      "reason": "The model repository has weight files, but its supplied card states only a license. It does not describe the checkpoint's task, training, or use.",
+      "cause": "reviewer_hold"
+    },
+    {
+      "id": "url:4cfbb0e916842a07d102",
+      "name": "Figma",
+      "url": "https://www.figma.com/deck/rsWK4sRl0dOahG59bfMhql",
+      "reason": "The Figma deck page exposes only generic Figma metadata. The slides' title and contents are unavailable, so its relevance cannot be reviewed.",
+      "cause": "reviewer_hold"
+    },
+    {
+      "id": "url:952cb4c3f308418aa85b",
+      "name": "Auto-UI",
+      "url": "https://huggingface.co/cooelf/Auto-UI",
+      "reason": "The Auto-UI model card contains only a license declaration. It gives no description of the checkpoint, its capability or how to use it.",
+      "cause": "reviewer_hold"
+    },
+    {
+      "id": "url:44083141a8f3d05b7a54",
+      "name": "Joy_Caption_Batch-GUI",
+      "url": "https://huggingface.co/Ole1/Joy_Caption_Batch-GUI",
+      "reason": "The model card contains only a license declaration. It does not describe the model, its purpose, or any computer-use capability.",
+      "cause": "reviewer_hold"
+    },
+    {
+      "id": "url:646f1157fd8be029a59f",
+      "name": "openai.com",
+      "url": "https://openai.com/index/introducing-o3-and-o4-mini",
+      "reason": "primary evidence unresolved: HTTP Error 403: Forbidden; The fetch returned HTTP 403 and no readable page content. The linked page's computer-use relevance cannot be assessed from the supplied source.",
+      "cause": "unresolved_evidence"
+    },
+    {
+      "id": "url:92b5cb08491c09243b72",
+      "name": "ScreenAgent",
+      "url": "https://huggingface.co/niurl/ScreenAgent",
+      "reason": "The repository contains a ZIP archive, but its card states only a license. It does not identify the archive's contents or establish its relationship to the catalogued ScreenAgent project.",
+      "cause": "reviewer_hold"
+    },
+    {
+      "id": "url:a166f8bbaf1bdcc931cb",
+      "name": "AFM-WebAgent-RL-Dataset",
+      "url": "https://huggingface.co/datasets/PersonalAILab/AFM-WebAgent-RL-Dataset",
+      "reason": "The card calls this Web Agent RL training data and discusses multi-agent reasoning, but does not describe browser pages, GUI observations or web interactions in its examples. Its computer-use relevance remains unclear.",
+      "cause": "reviewer_hold"
+    },
+    {
+      "id": "url:c7e1d8863286e92c47a2",
+      "name": "VideoAgentTrek-ScreenFilter",
+      "url": "https://huggingface.co/xlangai/VideoAgentTrek-ScreenFilter",
+      "reason": "The model repository has a checkpoint file, but its card contains only license metadata. It does not explain what ScreenFilter does or how the checkpoint is used.",
+      "cause": "reviewer_hold"
+    },
+    {
+      "id": "url:2e88b52ca1717a28fd32",
+      "name": "VideoAgentTrek-IDM-s2-7B",
+      "url": "https://huggingface.co/xlangai/VideoAgentTrek-IDM-s2-7B",
+      "reason": "The model repository has weight files, but its card contains only a license declaration. The source does not explain the checkpoint's purpose or use.",
+      "cause": "reviewer_hold"
+    },
+    {
+      "id": "url:8a877877c52aa955e4c3",
+      "name": "microsoft_Fara-7B-GGUF",
+      "url": "https://huggingface.co/bartowski/microsoft_Fara-7B-GGUF",
+      "reason": "The card documents GGUF quantizations of Fara-7B but gives no account of its browser, GUI or computer-use capability. That relevance appears only in discovery context.",
+      "cause": "reviewer_hold"
+    },
+    {
+      "id": "github:jackfsuia/di-gui-3bv0.0",
+      "name": "Di-GUI-3Bv0.0",
+      "url": "https://github.com/jackfsuia/Di-GUI-3Bv0.0",
+      "reason": "The README describes training a GUI grounding model, but the supplied repository lists only a README. A released checkpoint, code or other substantive artifact is missing.",
+      "cause": "reviewer_hold"
+    },
+    {
+      "id": "github:jsdom/jsdom",
+      "name": "jsdom",
+      "url": "https://github.com/jsdom/jsdom",
+      "reason": "The supplied repository source is empty. It provides no readable description or usage details to establish what the repository contains or whether it supports computer-use agents.",
+      "cause": "reviewer_hold"
+    },
+    {
+      "id": "url:f8a956094e526a92caf3",
+      "name": "Error",
+      "url": "https://ai.meta.com/blog/introducing-muse-spark-meta-model-api",
+      "reason": "The Meta page returns an error response saying something went wrong. The supplied source contains no readable article or product description.",
+      "cause": "reviewer_hold"
+    },
+    {
+      "id": "url:511ba336435d406f3761",
+      "name": "nnetnav-wa-qwen-7B",
+      "url": "https://huggingface.co/apurvaga/nnetnav-wa-qwen-7B",
+      "reason": "The model card points to an external repository and paper but gives no description of this checkpoint's training, capabilities or use.",
+      "cause": "reviewer_hold"
+    },
+    {
+      "id": "url:25d827c3632ae849bd7a",
+      "name": "AFM-WebAgent-SFT-Dataset",
+      "url": "https://huggingface.co/datasets/PersonalAILab/AFM-WebAgent-SFT-Dataset",
+      "reason": "The dataset card describes multi-agent reasoning trajectories and mentions web-agent settings, but it does not explain whether its web-agent data involves navigating or interacting with web pages.",
+      "cause": "reviewer_hold"
+    },
+    {
+      "id": "url:2f73fe78c423e263d451",
+      "name": "UXAgent: A System for Simulating Usability Testing of Web Design with LLM Agents",
+      "url": "https://uxagent.hailab.io",
+      "reason": "The UXAgent page supplies only a title about simulated usability testing of web design with LLM agents. It lacks a description of the system, method, or available release.",
+      "cause": "reviewer_hold"
+    },
+    {
+      "id": "url:a1621345ec327462b86e",
+      "name": "tti_webarena",
+      "url": "https://huggingface.co/sjunhongs/tti_webarena/tree/main",
+      "reason": "The model repository contains weight and configuration files, but its card contains only an MIT license declaration. It gives no account of the model's task or use.",
+      "cause": "reviewer_hold"
+    },
+    {
+      "id": "url:d32dfe60eff4b87c1d05",
+      "name": "UI-Simulator_android_data",
+      "url": "https://huggingface.co/datasets/UI-Simulator/UI-Simulator_android_data",
+      "reason": "The UI-Simulator dataset card contains only metadata and CSV split names. It gives no description of the rows, their creation or how they support mobile-agent training.",
+      "cause": "reviewer_hold"
+    },
+    {
+      "id": "url:f71c8181cb28b8bda0ab",
+      "name": "help.openai.com",
+      "url": "https://help.openai.com/en/articles/10561834-operator-release-notes",
+      "reason": "primary evidence unresolved: HTTP Error 403: Forbidden; The Operator release-notes URL returned HTTP 403 and an empty page. The supplied source has no readable product details.",
+      "cause": "unresolved_evidence"
+    },
+    {
+      "id": "url:1a20a291c766bd4e6861",
+      "name": "Just a moment...",
+      "url": "https://www.adept.ai/blog/adept-fuyu-heavy",
+      "reason": "primary evidence unresolved: HTTP Error 403: Forbidden; The Adept blog address returned a 403 bot challenge. The supplied page contains only a challenge title, so the article cannot be reviewed.",
+      "cause": "unresolved_evidence"
+    },
+    {
+      "id": "github:abdur75648/v-zen",
+      "name": "V-Zen",
+      "url": "https://github.com/abdur75648/V-Zen",
+      "reason": "The repository's supplied README is empty. Its purpose and the contents of the release need documentation before a catalog record can be written.",
+      "cause": "reviewer_hold"
+    },
+    {
+      "id": "url:039a4975e102cb538c36",
+      "name": "openai.com",
+      "url": "https://openai.com/index/gpt-6-astra",
+      "reason": "primary evidence unresolved: HTTP Error 403: Forbidden; The page returned HTTP 403 with an empty title. Readable first-party content is needed to identify and assess the resource.",
+      "cause": "unresolved_evidence"
+    },
+    {
+      "id": "url:1a54e63277eaffdaef57",
+      "name": "OpenGUI-2B",
+      "url": "https://huggingface.co/SugarVapeur/OpenGUI-2B",
+      "reason": "primary evidence unresolved: content mismatch; The OpenGUI-2B model card contains only a license declaration. Documentation of the model's purpose and use is needed to assess its GUI relevance.",
+      "cause": "unresolved_evidence"
+    },
+    {
+      "id": "url:3d12df2fd27076504434",
+      "name": "MobileWorld",
+      "url": "https://huggingface.co/datasets/jacklishufan/MobileWorld",
+      "reason": "The MobileWorld repository page shows a three-row dataset preview and an archive, but has no dataset card explaining the contents or their intended use.",
+      "cause": "reviewer_hold"
+    },
+    {
+      "id": "url:0b0a7a841d65715d60b1",
+      "name": "VeriOS-Agent-7B",
+      "url": "https://huggingface.co/wuuuuuz/VeriOS-Agent-7B",
+      "reason": "The Hugging Face repository has model files but no model card. Its page gives no description of training, computer-use capability or intended use.",
+      "cause": "reviewer_hold"
+    },
+    {
+      "id": "url:3ab90a696d8578c944c8",
+      "name": "a3-qwen-3.5-9b-trajectories",
+      "url": "https://huggingface.co/datasets/xhluca/a3-qwen-3.5-9b-trajectories/tree/main/webarena",
+      "reason": "The Hugging Face dataset page has no dataset card, and its viewer reports a schema error. It does not explain the trajectories' origin, contents or intended use.",
+      "cause": "reviewer_hold"
+    },
+    {
+      "id": "url:6224c7f61c680453ec99",
+      "name": "Bloomberg - Are you a robot?",
+      "url": "https://www.bloomberg.com/news/articles/2024-11-13/openai-nears-launch-of-ai-agents-to-automate-tasks-for-users",
+      "reason": "primary evidence unresolved: HTTP Error 403: Forbidden; The Bloomberg page presents a robot check. The article text is unavailable, so its subject and contents cannot be reviewed.",
+      "cause": "unresolved_evidence"
+    },
+    {
+      "id": "github:acrab-agentic-labs/appsim-ctrip",
+      "name": "AppSim-Ctrip",
+      "url": "https://github.com/Acrab-Agentic-Labs/AppSim-Ctrip",
+      "reason": "The repository has files, but the supplied source text is empty; it gives no description of the app, its intended use, or its relation to computer-use agents.",
+      "cause": "reviewer_hold"
+    },
+    {
+      "id": "url:6588fa6675ed27a7b81c",
+      "name": "Sequence-of-action-prediction-mind2web",
+      "url": "https://huggingface.co/datasets/Izazk/Sequence-of-action-prediction-mind2web",
+      "reason": "The dataset card contains only a license declaration. It gives no description of the data, its computer-use relevance, or how it is used.",
+      "cause": "reviewer_hold"
+    },
+    {
+      "id": "url:878a860ff07d92f11fc7",
+      "name": "agent-output",
+      "url": "https://huggingface.co/datasets/yueqis/agent-output/tree/main",
+      "reason": "The dataset page exposes agent answer rows and evaluation fields, but has no card explaining the dataset's intended use or how its outputs were produced.",
+      "cause": "reviewer_hold"
+    },
+    {
+      "id": "url:2d3a533e91db8cea0f48",
+      "name": "openai.com",
+      "url": "https://openai.com/index/hello-gpt-4o",
+      "reason": "The OpenAI page fetch returned HTTP 403 and supplied no readable page content, so its subject and relevance cannot be established from the source.",
+      "cause": "reviewer_hold"
+    },
+    {
+      "id": "url:80c3ab0a8a6f78938d4d",
+      "name": "VideoAgentTrek-CUA-7B",
+      "url": "https://huggingface.co/xlangai/VideoAgentTrek-CUA-7B",
+      "reason": "The model repository includes weight files, but its card contains only a license declaration. It does not describe the checkpoint's capabilities, inputs or intended use.",
+      "cause": "reviewer_hold"
+    },
+    {
+      "id": "url:d90b71ff4bc54052cc5b",
+      "name": "android_ui_detection_yolov8",
+      "url": "https://huggingface.co/datasets/yasirfaizahmed/android_ui_detection_yolov8",
+      "reason": "The repository has a data archive, but its dataset card is an unfilled template. It gives no substantive description of the images, annotations or intended use.",
+      "cause": "reviewer_hold"
+    },
+    {
+      "id": "url:ab4587d17c4f541bb94c",
+      "name": "ACT-SOP",
+      "url": "https://huggingface.co/tineding/ACT-SOP",
+      "reason": "The ACT-SOP model card is an unfilled template with no model description, intended use, or task details. The supplied text cannot establish what the adapter does.",
+      "cause": "reviewer_hold"
+    },
+    {
+      "id": "url:b89b0614a18bf3cc9656",
+      "name": "GELab-Zero-4B-preview-GGUF",
+      "url": "https://huggingface.co/noctrex/GELab-Zero-4B-preview-GGUF",
+      "reason": "The card identifies GGUF conversions of GELab-Zero-4B-preview and gives llama.cpp usage notes, but provides no description of GUI or computer-use capability.",
+      "cause": "reviewer_hold"
+    },
+    {
+      "id": "url:ea75a3a35abbf35ce5f4",
+      "name": "smolagents_SmolVLM2-2.2B-Instruct-Agentic-GUI-GGUF",
+      "url": "https://huggingface.co/bartowski/smolagents_SmolVLM2-2.2B-Instruct-Agentic-GUI-GGUF",
+      "reason": "The card documents GGUF quantizations of a model with Agentic-GUI in its name, but describes only formats, file sizes, and llama.cpp usage; the GUI capability is unexplained.",
+      "cause": "reviewer_hold"
+    },
+    {
+      "id": "url:2f51fad53f40798dca22",
+      "name": "RVC-GUI",
+      "url": "https://huggingface.co/datasets/Tiger14n/RVC-GUI",
+      "reason": "The repository has ZIP files named RVC-GUI, while the supplied card contains only a license. Documentation explaining the contents and intended use is missing.",
+      "cause": "reviewer_hold"
+    },
+    {
+      "id": "url:91d694247291d18dc874",
+      "name": "stepfun-ai_GELab-Zero-4B-preview-EXL3",
+      "url": "https://huggingface.co/ArtusDev/stepfun-ai_GELab-Zero-4B-preview-EXL3",
+      "reason": "The card documents EXL3 quantizations of GELab-Zero-4B-preview, but its body does not describe the base model's GUI or computer-use capability; that relevance appears only in tags.",
+      "cause": "reviewer_hold"
+    },
+    {
+      "id": "url:43f98379902167a5f9f3",
+      "name": "MindAct_CandidateGeneration_deberta-v3-base",
+      "url": "https://huggingface.co/osunlp/MindAct_CandidateGeneration_deberta-v3-base",
+      "reason": "The Hugging Face repository contains model files but has no model card. Its page identifies text classification without explaining the model's task, training, or computer-use role.",
+      "cause": "reviewer_hold"
+    },
+    {
+      "id": "url:369456114b26b0ff0a05",
+      "name": "GUI-Robust",
+      "url": "https://huggingface.co/datasets/kuangtie/GUI-Robust",
+      "reason": "The GUI-Robust dataset card contains license and language metadata, while the supplied source does not describe the examples or their intended evaluation use.",
+      "cause": "reviewer_hold"
+    },
+    {
+      "id": "url:654e0cbc1a22b59eca47",
+      "name": "webgames",
+      "url": "https://huggingface.co/datasets/convergence-ai/webgames",
+      "reason": "The dataset repository has a license-only card and a test file; the source does not explain the data, its fields, or its use.",
+      "cause": "reviewer_hold"
+    },
+    {
+      "id": "url:b3ec31e442a5a9673420",
+      "name": "SmolVLM2-2.2B-Instruct-Agentic-GUI-GGUF",
+      "url": "https://huggingface.co/mradermacher/SmolVLM2-2.2B-Instruct-Agentic-GUI-GGUF",
+      "reason": "The card lists GGUF quantizations of a model named Agentic-GUI, but does not describe its GUI tasks, inputs, or outputs.",
+      "cause": "reviewer_hold"
+    },
+    {
+      "id": "github:gasse/webarena-setup",
+      "name": "webarena-setup",
+      "url": "https://github.com/gasse/webarena-setup",
+      "reason": "The repository has WebArena and VisualWebArena setup directories, but its README only warns that the setup is unofficial; it does not describe what the scripts do or how to use them.",
+      "cause": "reviewer_hold"
+    },
+    {
+      "id": "url:26157e2cda7fb73cf99c",
+      "name": "Indeed-UI-8B - ModelScope 魔搭社区",
+      "url": "https://www.modelscope.cn/models/IntellgenceIndeed/Indeed-UI-8B",
+      "reason": "The ModelScope page supplies only the Indeed-UI-8B model title and a brief open-source listing; it gives no readable model card explaining its GUI capability or use.",
+      "cause": "reviewer_hold"
+    },
+    {
+      "id": "url:5281c8befef1059590f3",
+      "name": "aitw-webshop-digiq-agent",
+      "url": "https://huggingface.co/JackBAI/aitw-webshop-digiq-agent",
+      "reason": "The Hugging Face repository page identifies aitw-webshop-digiq-agent as a PyTorch model but has no model card explaining its purpose, training, or use.",
+      "cause": "reviewer_hold"
+    },
+    {
+      "id": "url:89768830f010f4081bd6",
+      "name": "Redirecting…",
+      "url": "https://lightpanda.io/docs/open-source/guides/mcp-server",
+      "reason": "The Lightpanda documentation URL returns only a redirect notice to another MCP documentation path; no guide content is available to assess the tool.",
+      "cause": "reviewer_hold"
+    },
+    {
+      "id": "url:8968c1abb0e7f3ba989e",
+      "name": "zhuanlan.zhihu.com",
+      "url": "https://zhuanlan.zhihu.com/p/18229337790",
+      "reason": "primary evidence unresolved: HTTP Error 403: Forbidden; The Zhihu fetch returned a 403 page with only generic Zhihu welcome text; the linked article's content is unavailable.",
+      "cause": "unresolved_evidence"
+    },
+    {
+      "id": "url:4053e29cc54fd605a33f",
+      "name": "zhuanlan.zhihu.com",
+      "url": "https://zhuanlan.zhihu.com/p/1914038712540574158",
+      "reason": "primary evidence unresolved: HTTP Error 403: Forbidden; The Zhihu fetch returned 403 and only a generic welcome message. The article's subject and contents are unavailable for review.",
+      "cause": "unresolved_evidence"
+    },
+    {
+      "id": "url:6d9b772fcb41da7c6152",
+      "name": "wave-ui-viz",
+      "url": "https://huggingface.co/spaces/agentsea/wave-ui-viz",
+      "reason": "The Wave Ui Viz Space card contains configuration and a generic configuration-reference link. It does not explain what the app visualizes or how it is used.",
+      "cause": "reviewer_hold"
+    },
+    {
+      "id": "url:031c86eaad2b766793d4",
+      "name": "openai.com",
+      "url": "https://openai.com/index/gpt-4o-mini-advancing-cost-efficient-intelligence",
+      "reason": "primary evidence unresolved: HTTP Error 403: Forbidden; The OpenAI page returned a 403 response with no readable page content. Its subject and any computer-use capability cannot be established from the supplied source.",
+      "cause": "unresolved_evidence"
+    },
+    {
+      "id": "url:915e40f18b217ac63fc6",
+      "name": "SmolVLM2-2.2B-Instruct-Agentic-GUI",
+      "url": "https://huggingface.co/smolagents/SmolVLM2-2.2B-Instruct-Agentic-GUI",
+      "reason": "The model card reports supervised fine-tuning on aguvis-stage-2 but gives a generic text-generation example. It does not document GUI actions, screen grounding or computer-use behavior.",
+      "cause": "reviewer_hold"
+    },
+    {
+      "id": "url:ed599761bbe23dfce405",
+      "name": "Just a moment...",
+      "url": "https://www.adept.ai/blog/fuyu-8b",
+      "reason": "primary evidence unresolved: HTTP Error 403: Forbidden; The Adept blog fetch shows a browser verification page. The article's contents are unavailable, so its relationship to the listed Fuyu-8B model cannot be established from the source.",
+      "cause": "unresolved_evidence"
+    },
+    {
+      "id": "url:f0ffbdc41c9dca4c585f",
+      "name": "CUA_World_State_Model",
+      "url": "https://huggingface.co/Zery/CUA_World_State_Model",
+      "reason": "The model card contains a base-model field and links to a paper and repository, but does not describe what this checkpoint predicts or how it is used.",
+      "cause": "reviewer_hold"
+    },
+    {
+      "id": "url:6d6f7ffc6a15e9e75a14",
+      "name": "SE-GUI-3B",
+      "url": "https://huggingface.co/XinBB/SE-GUI-3B",
+      "reason": "The model card contains only a license declaration; it provides no description of the checkpoint's purpose, training, or use.",
+      "cause": "reviewer_hold"
+    },
+    {
+      "id": "github:calmee4/decopatch",
+      "name": "decopatch",
+      "url": "https://github.com/calmee4/decopatch",
+      "reason": "The DeCoPatch README calls the repository an ECCV reference implementation and says the complete codebase is planned. It gives no subject or method to describe.",
+      "cause": "reviewer_hold"
+    },
+    {
+      "id": "url:0e5617031e625a75cfc7",
+      "name": "aitw-general-digiq-agent",
+      "url": "https://huggingface.co/JackBAI/aitw-general-digiq-agent",
+      "reason": "The Hugging Face repository lists model files but has no model card. The page gives no description of the checkpoint's training, inputs, or use.",
+      "cause": "reviewer_hold"
+    },
+    {
+      "id": "url:6b25d42c771397f5afca",
+      "name": "UI-TARS：Next-generation native GUI agent model designed to interact seamlessly with GUIs using human-like perception",
+      "url": "https://seed-tars.com/1.5",
+      "reason": "The UI-TARS page fetch contains only a title and repeated meta description. It gives no release details or account of what this version provides.",
+      "cause": "reviewer_hold"
+    },
+    {
+      "id": "github:ny1024/safebench",
+      "name": "SafeBench",
+      "url": "https://github.com/NY1024/SafeBench",
+      "reason": "SafeBench identifies this repository as an initial proof-of-concept codebase and links a dataset, but the supplied README does not describe its evaluation subject, tasks, or use.",
+      "cause": "reviewer_hold"
+    },
+    {
+      "id": "github:sys-reasoner/visco",
+      "name": "Visco",
+      "url": "https://github.com/sys-reasoner/Visco",
+      "reason": "Visco is described as a GUI agent for Android and desktop workflows, but its README says the research paper, code, setup instructions, and API documentation are pending release.",
+      "cause": "reviewer_hold"
+    },
+    {
+      "id": "github:vuminhduc796/gptvoicetasker",
+      "name": "GPTVoiceTasker",
+      "url": "https://github.com/vuminhduc796/GPTVoiceTasker",
+      "reason": "The repository has app and build files, but the supplied source text is empty. Its function and relevance to computer-use agents cannot be established.",
+      "cause": "reviewer_hold"
+    },
+    {
+      "id": "url:c4f9e1e096522afa3017",
+      "name": "finalrun.app",
+      "url": "https://finalrun.app/benchmark",
+      "reason": "primary evidence unresolved: <urlopen error timed out>; The benchmark URL returned zero bytes with no readable page content or HTTP status. Its identity and contents cannot be established from the supplied source.",
+      "cause": "unresolved_evidence"
+    },
+    {
+      "id": "github:osu-nlp-group/eia",
+      "name": "eia",
+      "url": "https://github.com/OSU-NLP-Group/EIA",
+      "reason": "primary evidence unresolved: HTTP Error 404: Not Found; The supplied fetch reports HTTP 0 from the GitHub API, leaving the repository's contents and computer-use relevance unreadable.",
+      "cause": "unresolved_evidence"
+    },
+    {
+      "id": "url:a4b101913db4b3673a2b",
+      "name": "SeeClick-aitw",
+      "url": "https://huggingface.co/cckevinn/SeeClick-aitw",
+      "reason": "The Hugging Face repository exposes model weights and generic text-generation loading instructions but has no model card. Its GUI or mobile-agent purpose needs documentation.",
+      "cause": "reviewer_hold"
+    },
+    {
+      "id": "url:e58270c90ea4fa83cfb4",
+      "name": "Qwen3-VL-8B-Instruct-MobileWorld-SFT",
+      "url": "https://huggingface.co/jacklishufan/Qwen3-VL-8B-Instruct-MobileWorld-SFT",
+      "reason": "The Hugging Face repository lists model files but has no model card. It needs documentation of its mobile-agent task, training, or intended use.",
+      "cause": "reviewer_hold"
+    },
+    {
+      "id": "url:900a4ea90640baaf11d0",
+      "name": "autodevice.io",
+      "url": "https://autodevice.io/benchmark",
+      "reason": "primary evidence unresolved: <urlopen error [Errno -2] Name or service not known>; The AutoDevice benchmark address returned no readable content, so its benchmark tasks, evaluation method, and relationship to other resources cannot be established.",
+      "cause": "unresolved_evidence"
+    },
+    {
+      "id": "url:ca7bfba3981fc7e5b3bf",
+      "name": "MobileRisk",
+      "url": "https://huggingface.co/datasets/OS-Copilot/MobileRisk",
+      "reason": "The MobileRisk page exposes an image and text dataset preview but has no dataset card explaining the images, labels or intended use.",
+      "cause": "reviewer_hold"
+    },
+    {
+      "id": "github:neuroevolution-ai/softwaretestinglanguagemodels",
+      "name": "SoftwareTestingLanguageModels",
+      "url": "https://github.com/neuroevolution-ai/SoftwareTestingLanguageModels",
+      "reason": "The repository has code and notebook files, but the supplied source is empty. It provides no description of the project or how it relates to GUI testing.",
+      "cause": "reviewer_hold"
+    },
+    {
+      "id": "github:xnancy/russ",
+      "name": "russ",
+      "url": "https://github.com/xnancy/russ",
+      "reason": "Sitebot documents training and WebLang typechecking with a webagent manifest, but does not explain how the system observes or operates websites. Its computer-use capability remains unclear.",
+      "cause": "reviewer_hold"
+    },
+    {
+      "id": "url:687a7b27f38720fe54bc",
+      "name": "huggingface.co",
+      "url": "https://huggingface.co/datasets/TIGER-Lab/WebsiteBench",
+      "reason": "primary evidence unresolved: response exceeds 10 MB metadata budget; The WebsiteBench dataset address returned no readable source content. Its contents and relationship to the catalogued WebsiteBench repository cannot be verified from this fetch.",
+      "cause": "unresolved_evidence"
+    },
+    {
+      "id": "github:acrab-agentic-labs/appsim-wechat-v2",
+      "name": "AppSim-Wechat-V2",
+      "url": "https://github.com/Acrab-Agentic-Labs/AppSim-Wechat-V2",
+      "reason": "The AutoWechat README documents contact data, avatars and app fixes, and mentions AI automated testing. It gives no account of an agent testing interface or evaluation workflow.",
+      "cause": "reviewer_hold"
+    },
+    {
+      "id": "url:71e3df995abb51b4f661",
+      "name": "arena.xlang.ai",
+      "url": "https://arena.xlang.ai",
+      "reason": "primary evidence unresolved: HTTP Error 522: <none>; The arena page fetch returned error code 522. Its content and computer-use relevance cannot be reviewed from the supplied response.",
+      "cause": "unresolved_evidence"
+    },
+    {
+      "id": "url:e68b8a6065350ceab375",
+      "name": "zerostep.com",
+      "url": "https://zerostep.com",
+      "reason": "primary evidence unresolved: <urlopen error [Errno -3] Temporary failure in name resolution>; The zerostep.com fetch returned no readable page content. A product description is needed to assess its browser-agent capabilities and substance.",
+      "cause": "unresolved_evidence"
+    },
+    {
+      "id": "github:openvla/openvla",
+      "name": "openvla",
+      "url": "https://github.com/openvla/openvla",
+      "reason": "The supplied README source is empty, while the repository file list shows content. Source documentation is needed to establish what the release does.",
+      "cause": "reviewer_hold"
+    },
+    {
+      "id": "github:steel-dev/steel-python",
+      "name": "steel-python",
+      "url": "https://github.com/steel-dev/steel-python",
+      "reason": "Steel Python documents a REST API client and session creation, but the supplied README does not explain whether those sessions provide browser or computer interaction.",
+      "cause": "reviewer_hold"
+    },
+    {
+      "id": "url:3452cef2f99d7de2935a",
+      "name": "huggingface.co",
+      "url": "https://huggingface.co/datasets/TIGER-Lab/ClawBenchV2Trace",
+      "reason": "The Hugging Face dataset fetch returned an error and supplied no readable source text. Its contents and relevance cannot be assessed.",
+      "cause": "reviewer_hold"
+    },
+    {
+      "id": "github:steel-dev/steel-node",
+      "name": "steel-node",
+      "url": "https://github.com/steel-dev/steel-node",
+      "reason": "The README documents a TypeScript and JavaScript client for the Steel REST API, including session creation. It does not explain what those sessions control, so its computer-use capability remains unclear.",
+      "cause": "reviewer_hold"
+    },
+    {
+      "id": "url:55e1984776b99054def2",
+      "name": "android_control",
+      "url": "https://huggingface.co/datasets/jacklishufan/android_control",
+      "reason": "The Hugging Face page shows an android_control dataset archive and an image/text preview, but no dataset card explains its origin, contents, or relation to AndroidControl.",
+      "cause": "reviewer_hold"
+    },
+    {
+      "id": "github:qwenlm/qwen-agentworld",
+      "name": "Qwen-AgentWorld",
+      "url": "https://github.com/QwenLM/Qwen-AgentWorld",
+      "reason": "The README describes a language world model for seven agent domains, including Android, Web, and OS. The supplied text leaves its GUI or browser interaction capability unclear.",
+      "cause": "reviewer_hold"
+    },
+    {
+      "id": "github:lx-guiagent/lx-guiagent",
+      "name": "LX-GUIAgent",
+      "url": "https://github.com/LX-GUIAgent/LX-GUIAgent",
+      "reason": "The README explains an Android agent and names implementation files, but the supplied repository file list contains evaluation results and documentation without the named agent code.",
+      "cause": "reviewer_hold"
+    },
+    {
+      "id": "url:76b3c8418dfcd7192aab",
+      "name": "deepmind.google",
+      "url": "https://deepmind.google/technologies/project-mariner",
+      "reason": "primary evidence unresolved: content mismatch; The Project Mariner address redirected to a generic home address and returned undecodable binary text, leaving the linked page's contents unreadable.",
+      "cause": "unresolved_evidence"
+    },
+    {
+      "id": "github:imeanai/webcanvas_showcase",
+      "name": "WebCanvas_showcase",
+      "url": "https://github.com/iMeanAI/WebCanvas_showcase",
+      "reason": "The README describes a WebCanvas evaluation showcase and marks SEEACT complete. It gives no explanation of the integration or how to use it.",
+      "cause": "reviewer_hold"
+    },
+    {
+      "id": "github:browser-automation-hub/yardi-voyager-browser-automation",
+      "name": "yardi-voyager-browser-automation",
+      "url": "https://github.com/Browser-Automation-Hub/yardi-voyager-browser-automation",
+      "reason": "The README presents a Yardi Voyager browser automation scaffold and names intended actions, but its action examples use placeholders and its Yardi selector reference is undocumented. Substantive workflows remain unclear.",
+      "cause": "reviewer_hold"
+    },
+    {
+      "id": "url:3de50fa3eee0081d31ac",
+      "name": "osworld_v2_assets_gated",
+      "url": "https://huggingface.co/datasets/xlangai/osworld_v2_assets_gated",
+      "reason": "The gated OSWorld assets repository has listed files, but its accessible page says there is no dataset card. The source does not explain the assets' contents or use.",
+      "cause": "reviewer_hold"
+    },
+    {
+      "id": "url:4a786c2f07fa142a1071",
+      "name": "stepfun-ai_GELab-Zero-4B-preview-GGUF",
+      "url": "https://huggingface.co/bartowski/stepfun-ai_GELab-Zero-4B-preview-GGUF",
+      "reason": "The card documents GGUF quantizations and llama.cpp use for GELab-Zero-4B-preview. GUI and phone-use relevance appears only in tags, with no described interface task or training.",
+      "cause": "reviewer_hold"
+    },
+    {
+      "id": "url:6546c8f79b5cae118e20",
+      "name": "mind2web_clean",
+      "url": "https://huggingface.co/datasets/BigAction/mind2web_clean",
+      "reason": "The mind2web_clean card lists HTML, queries, actions, candidate elements, and Selenium ground-truth fields with a test split. It gives no explanation of the dataset's purpose, provenance, or preparation.",
+      "cause": "reviewer_hold"
+    },
+    {
+      "id": "url:891329fc95617395b58f",
+      "name": "android-control",
+      "url": "https://huggingface.co/datasets/smolagents/android-control",
+      "reason": "The Android-control card lists goals, screenshots, actions, step instructions, and split sizes but gives no description or provenance. Those fields alone do not establish identity with the listed AndroidControl neighbor.",
+      "cause": "reviewer_hold"
+    },
+    {
+      "id": "url:7ae659b00ca85338fe0a",
+      "name": "MobileGym",
+      "url": "https://os-copilot.github.io/OpenMobile2-Sim",
+      "reason": "The MobileGym page contains only a title. A description of the resource, its contents, and how it is used is missing.",
+      "cause": "reviewer_hold"
     }
   ],
   "uncurated_linked_papers": [
@@ -2632,106 +3269,108 @@
     }
   ],
   "by_kind": {
-    "agent": 372,
-    "benchmark": 248,
-    "company": 17,
-    "dataset": 158,
-    "framework": 601,
-    "infrastructure": 64,
-    "learning": 10,
-    "model": 210,
+    "agent": 390,
+    "benchmark": 254,
+    "company": 19,
+    "dataset": 185,
+    "framework": 607,
+    "infrastructure": 74,
+    "learning": 12,
+    "model": 271,
     "paper": 2112,
-    "product": 57,
+    "product": 66,
     "survey": 29,
-    "tool": 821
+    "tool": 836
   },
   "curated_by_environment": {
-    "android": 586,
-    "cross-platform": 592,
-    "desktop": 1457,
+    "android": 617,
+    "cross-platform": 628,
+    "desktop": 1508,
     "harmonyos": 4,
-    "ios": 62,
-    "linux": 420,
-    "macos": 453,
-    "unspecified": 660,
-    "web": 2176,
-    "windows": 459
+    "ios": 64,
+    "linux": 425,
+    "macos": 461,
+    "unspecified": 690,
+    "web": 2254,
+    "windows": 471
   },
   "curated_by_kind_and_environment": {
     "agent": {
-      "android": 55,
-      "cross-platform": 37,
-      "desktop": 190,
+      "android": 63,
+      "cross-platform": 39,
+      "desktop": 194,
       "ios": 9,
       "linux": 60,
       "macos": 95,
-      "unspecified": 1,
-      "web": 186,
+      "unspecified": 2,
+      "web": 195,
       "windows": 84
     },
     "benchmark": {
-      "android": 35,
-      "cross-platform": 25,
-      "desktop": 83,
+      "android": 38,
+      "cross-platform": 26,
+      "desktop": 84,
       "ios": 1,
       "linux": 20,
       "macos": 8,
       "unspecified": 8,
-      "web": 172,
+      "web": 175,
       "windows": 14
     },
     "company": {
-      "unspecified": 17
+      "cross-platform": 1,
+      "desktop": 1,
+      "unspecified": 18
     },
     "dataset": {
-      "android": 57,
+      "android": 62,
       "cross-platform": 26,
-      "desktop": 54,
+      "desktop": 58,
       "ios": 4,
       "linux": 19,
-      "macos": 10,
-      "unspecified": 9,
-      "web": 62,
-      "windows": 9
+      "macos": 11,
+      "unspecified": 15,
+      "web": 75,
+      "windows": 10
     },
     "framework": {
       "android": 92,
-      "cross-platform": 138,
-      "desktop": 286,
+      "cross-platform": 140,
+      "desktop": 288,
       "harmonyos": 1,
       "ios": 15,
       "linux": 101,
       "macos": 76,
-      "unspecified": 20,
-      "web": 418,
+      "unspecified": 21,
+      "web": 423,
       "windows": 90
     },
     "infrastructure": {
-      "android": 5,
-      "cross-platform": 3,
-      "desktop": 53,
+      "android": 9,
+      "cross-platform": 4,
+      "desktop": 56,
       "ios": 1,
-      "linux": 38,
-      "macos": 15,
-      "web": 30,
-      "windows": 9
+      "linux": 39,
+      "macos": 17,
+      "web": 35,
+      "windows": 11
     },
     "learning": {
-      "android": 1,
-      "cross-platform": 7,
-      "desktop": 7,
-      "web": 10
+      "android": 2,
+      "cross-platform": 8,
+      "desktop": 8,
+      "web": 11
     },
     "model": {
-      "android": 72,
-      "cross-platform": 93,
-      "desktop": 91,
-      "ios": 4,
-      "linux": 8,
-      "macos": 5,
-      "unspecified": 4,
-      "web": 92,
-      "windows": 6
+      "android": 78,
+      "cross-platform": 116,
+      "desktop": 119,
+      "ios": 5,
+      "linux": 11,
+      "macos": 9,
+      "unspecified": 24,
+      "web": 115,
+      "windows": 13
     },
     "paper": {
       "android": 228,
@@ -2746,13 +3385,14 @@
       "windows": 42
     },
     "product": {
-      "android": 2,
-      "cross-platform": 1,
-      "desktop": 15,
+      "android": 4,
+      "cross-platform": 4,
+      "desktop": 19,
+      "ios": 1,
       "linux": 3,
       "macos": 6,
-      "web": 48,
-      "windows": 6
+      "web": 56,
+      "windows": 7
     },
     "survey": {
       "android": 2,
@@ -2764,21 +3404,21 @@
       "windows": 1
     },
     "tool": {
-      "android": 37,
-      "cross-platform": 139,
-      "desktop": 436,
+      "android": 39,
+      "cross-platform": 141,
+      "desktop": 439,
       "ios": 15,
-      "linux": 146,
-      "macos": 220,
-      "unspecified": 3,
-      "web": 497,
-      "windows": 198
+      "linux": 147,
+      "macos": 221,
+      "unspecified": 4,
+      "web": 508,
+      "windows": 199
     }
   },
   "license_declarations_by_scope": {
-    "code": 1699,
-    "data": 126,
-    "weights": 133,
+    "code": 1722,
+    "data": 149,
+    "weights": 186,
     "document": 8
   },
   "sources": [
@@ -2810,8 +3450,8 @@
       "curated": 232,
       "excluded": 7,
       "set_aside": 89,
-      "out_of_scope": 3,
-      "unindexed": 5
+      "out_of_scope": 5,
+      "unindexed": 3
     },
     {
       "id": "zju-gui",
@@ -2872,8 +3512,8 @@
       "curated": 190,
       "excluded": 9,
       "set_aside": 16,
-      "out_of_scope": 1,
-      "unindexed": 3
+      "out_of_scope": 2,
+      "unindexed": 2
     },
     {
       "id": "wjhou-cua",
@@ -2902,9 +3542,9 @@
       "resolved_aliases": 2,
       "curated": 101,
       "excluded": 4,
-      "set_aside": 18,
-      "out_of_scope": 3,
-      "unindexed": 4
+      "set_aside": 19,
+      "out_of_scope": 5,
+      "unindexed": 1
     },
     {
       "id": "steel-web",
@@ -2928,14 +3568,14 @@
         "state": "success"
       },
       "discovered": 113,
-      "indexed": 57,
-      "indexed_resources": 57,
+      "indexed": 58,
+      "indexed_resources": 58,
       "resolved_aliases": 2,
-      "curated": 57,
+      "curated": 58,
       "excluded": 0,
       "set_aside": 35,
       "out_of_scope": 18,
-      "unindexed": 3
+      "unindexed": 2
     },
     {
       "id": "steel-web-archive",
@@ -2990,14 +3630,14 @@
         "state": "success"
       },
       "discovered": 170,
-      "indexed": 136,
-      "indexed_resources": 135,
-      "resolved_aliases": 4,
-      "curated": 135,
+      "indexed": 137,
+      "indexed_resources": 136,
+      "resolved_aliases": 5,
+      "curated": 136,
       "excluded": 2,
       "set_aside": 30,
       "out_of_scope": 1,
-      "unindexed": 1
+      "unindexed": 0
     },
     {
       "id": "delunn-multimodal",
@@ -3022,8 +3662,8 @@
       "curated": 517,
       "excluded": 2,
       "set_aside": 58,
-      "out_of_scope": 0,
-      "unindexed": 4
+      "out_of_scope": 1,
+      "unindexed": 3
     },
     {
       "id": "tianyuan-cua",
@@ -3053,8 +3693,8 @@
       "curated": 75,
       "excluded": 1,
       "set_aside": 12,
-      "out_of_scope": 4,
-      "unindexed": 2
+      "out_of_scope": 5,
+      "unindexed": 1
     },
     {
       "id": "cdxeve-cua",
@@ -3084,8 +3724,8 @@
       "curated": 49,
       "excluded": 10,
       "set_aside": 12,
-      "out_of_scope": 2,
-      "unindexed": 4
+      "out_of_scope": 6,
+      "unindexed": 0
     },
     {
       "id": "supernal-gui",
@@ -3109,14 +3749,14 @@
         "state": "success"
       },
       "discovered": 63,
-      "indexed": 20,
-      "indexed_resources": 20,
+      "indexed": 21,
+      "indexed_resources": 21,
       "resolved_aliases": 0,
-      "curated": 20,
+      "curated": 21,
       "excluded": 3,
       "set_aside": 25,
-      "out_of_scope": 10,
-      "unindexed": 5
+      "out_of_scope": 12,
+      "unindexed": 2
     },
     {
       "id": "yearly-gui",
@@ -3202,14 +3842,14 @@
         "state": "success"
       },
       "discovered": 144,
-      "indexed": 96,
-      "indexed_resources": 96,
+      "indexed": 97,
+      "indexed_resources": 97,
       "resolved_aliases": 1,
-      "curated": 94,
+      "curated": 95,
       "excluded": 6,
       "set_aside": 32,
       "out_of_scope": 9,
-      "unindexed": 1
+      "unindexed": 0
     },
     {
       "id": "jin-gui-hub",
@@ -3331,9 +3971,9 @@
       "resolved_aliases": 3,
       "curated": 210,
       "excluded": 9,
-      "set_aside": 25,
+      "set_aside": 26,
       "out_of_scope": 0,
-      "unindexed": 2
+      "unindexed": 1
     },
     {
       "id": "mobile-agents",
@@ -3419,14 +4059,14 @@
         "state": "success"
       },
       "discovered": 96,
-      "indexed": 70,
-      "indexed_resources": 70,
+      "indexed": 71,
+      "indexed_resources": 71,
       "resolved_aliases": 0,
-      "curated": 70,
+      "curated": 71,
       "excluded": 0,
       "set_aside": 15,
       "out_of_scope": 9,
-      "unindexed": 2
+      "unindexed": 1
     },
     {
       "id": "gui-agent-security",
@@ -3548,9 +4188,9 @@
       "resolved_aliases": 2,
       "curated": 144,
       "excluded": 32,
-      "set_aside": 28,
-      "out_of_scope": 0,
-      "unindexed": 9
+      "set_aside": 33,
+      "out_of_scope": 2,
+      "unindexed": 2
     },
     {
       "id": "philfung-cua",
@@ -3703,9 +4343,9 @@
       "resolved_aliases": 0,
       "curated": 13,
       "excluded": 0,
-      "set_aside": 3,
+      "set_aside": 15,
       "out_of_scope": 0,
-      "unindexed": 12
+      "unindexed": 0
     },
     {
       "id": "release-showui-pi",
@@ -3760,14 +4400,14 @@
         "state": "success"
       },
       "discovered": 18,
-      "indexed": 7,
-      "indexed_resources": 7,
+      "indexed": 8,
+      "indexed_resources": 8,
       "resolved_aliases": 1,
-      "curated": 7,
+      "curated": 8,
       "excluded": 0,
       "set_aside": 10,
       "out_of_scope": 0,
-      "unindexed": 1
+      "unindexed": 0
     },
     {
       "id": "release-webdreamer",
@@ -3853,14 +4493,14 @@
         "state": "success"
       },
       "discovered": 11,
-      "indexed": 9,
-      "indexed_resources": 9,
+      "indexed": 10,
+      "indexed_resources": 10,
       "resolved_aliases": 0,
-      "curated": 9,
+      "curated": 10,
       "excluded": 0,
       "set_aside": 0,
       "out_of_scope": 1,
-      "unindexed": 1
+      "unindexed": 0
     },
     {
       "id": "release-seg2click",
@@ -3884,14 +4524,14 @@
         "state": "success"
       },
       "discovered": 12,
-      "indexed": 8,
-      "indexed_resources": 8,
+      "indexed": 9,
+      "indexed_resources": 9,
       "resolved_aliases": 0,
-      "curated": 8,
+      "curated": 9,
       "excluded": 0,
       "set_aside": 1,
       "out_of_scope": 2,
-      "unindexed": 1
+      "unindexed": 0
     },
     {
       "id": "release-switchmem",
@@ -4101,14 +4741,14 @@
         "state": "success"
       },
       "discovered": 10,
-      "indexed": 5,
-      "indexed_resources": 5,
+      "indexed": 6,
+      "indexed_resources": 6,
       "resolved_aliases": 0,
-      "curated": 5,
+      "curated": 6,
       "excluded": 0,
       "set_aside": 3,
-      "out_of_scope": 0,
-      "unindexed": 2
+      "out_of_scope": 1,
+      "unindexed": 0
     },
     {
       "id": "release-mobileagent",
@@ -4137,9 +4777,9 @@
       "resolved_aliases": 0,
       "curated": 18,
       "excluded": 0,
-      "set_aside": 13,
+      "set_aside": 15,
       "out_of_scope": 0,
-      "unindexed": 2
+      "unindexed": 0
     },
     {
       "id": "release-guicourse",
@@ -4194,14 +4834,14 @@
         "state": "success"
       },
       "discovered": 29,
-      "indexed": 11,
-      "indexed_resources": 11,
+      "indexed": 12,
+      "indexed_resources": 12,
       "resolved_aliases": 1,
-      "curated": 11,
+      "curated": 12,
       "excluded": 0,
       "set_aside": 13,
-      "out_of_scope": 1,
-      "unindexed": 4
+      "out_of_scope": 3,
+      "unindexed": 1
     },
     {
       "id": "release-multiui",
@@ -4349,14 +4989,14 @@
         "state": "success"
       },
       "discovered": 39,
-      "indexed": 22,
-      "indexed_resources": 22,
+      "indexed": 27,
+      "indexed_resources": 27,
       "resolved_aliases": 0,
-      "curated": 22,
+      "curated": 27,
       "excluded": 0,
       "set_aside": 0,
       "out_of_scope": 10,
-      "unindexed": 7
+      "unindexed": 2
     },
     {
       "id": "maxiw-gui",
@@ -4385,9 +5025,9 @@
       "resolved_aliases": 0,
       "curated": 39,
       "excluded": 0,
-      "set_aside": 6,
+      "set_aside": 7,
       "out_of_scope": 2,
-      "unindexed": 3
+      "unindexed": 2
     },
     {
       "id": "on-device-agents",
@@ -4473,14 +5113,14 @@
         "state": "success"
       },
       "discovered": 156,
-      "indexed": 119,
-      "indexed_resources": 119,
+      "indexed": 121,
+      "indexed_resources": 121,
       "resolved_aliases": 1,
-      "curated": 118,
+      "curated": 120,
       "excluded": 3,
-      "set_aside": 18,
-      "out_of_scope": 3,
-      "unindexed": 13
+      "set_aside": 21,
+      "out_of_scope": 9,
+      "unindexed": 2
     },
     {
       "id": "gui-grounding-survey",
@@ -4509,9 +5149,9 @@
       "resolved_aliases": 4,
       "curated": 243,
       "excluded": 8,
-      "set_aside": 9,
-      "out_of_scope": 0,
-      "unindexed": 71
+      "set_aside": 42,
+      "out_of_scope": 4,
+      "unindexed": 34
     },
     {
       "id": "showlab-mm-embodied",
@@ -4535,14 +5175,14 @@
         "state": "success"
       },
       "discovered": 221,
-      "indexed": 97,
-      "indexed_resources": 97,
+      "indexed": 101,
+      "indexed_resources": 101,
       "resolved_aliases": 0,
-      "curated": 85,
+      "curated": 89,
       "excluded": 35,
-      "set_aside": 16,
-      "out_of_scope": 0,
-      "unindexed": 73
+      "set_aside": 26,
+      "out_of_scope": 49,
+      "unindexed": 10
     },
     {
       "id": "rl-gui-agents",
@@ -4571,9 +5211,9 @@
       "resolved_aliases": 0,
       "curated": 157,
       "excluded": 38,
-      "set_aside": 4,
+      "set_aside": 5,
       "out_of_scope": 0,
-      "unindexed": 3
+      "unindexed": 2
     },
     {
       "id": "12britz-cua",
@@ -4603,8 +5243,8 @@
       "curated": 115,
       "excluded": 0,
       "set_aside": 3,
-      "out_of_scope": 0,
-      "unindexed": 2
+      "out_of_scope": 1,
+      "unindexed": 1
     },
     {
       "id": "autonomous-web",
@@ -4628,14 +5268,14 @@
         "state": "success"
       },
       "discovered": 45,
-      "indexed": 15,
-      "indexed_resources": 15,
+      "indexed": 19,
+      "indexed_resources": 19,
       "resolved_aliases": 0,
-      "curated": 15,
+      "curated": 19,
       "excluded": 0,
-      "set_aside": 2,
-      "out_of_scope": 0,
-      "unindexed": 28
+      "set_aside": 6,
+      "out_of_scope": 3,
+      "unindexed": 17
     },
     {
       "id": "agent-native-browsers",
@@ -4659,14 +5299,14 @@
         "state": "success"
       },
       "discovered": 44,
-      "indexed": 13,
-      "indexed_resources": 13,
+      "indexed": 20,
+      "indexed_resources": 20,
       "resolved_aliases": 0,
-      "curated": 13,
+      "curated": 20,
       "excluded": 0,
-      "set_aside": 0,
-      "out_of_scope": 0,
-      "unindexed": 31
+      "set_aside": 6,
+      "out_of_scope": 5,
+      "unindexed": 13
     },
     {
       "id": "llm-brained-gui-survey-benchmark",
@@ -4690,14 +5330,14 @@
         "state": "success"
       },
       "discovered": 121,
-      "indexed": 89,
-      "indexed_resources": 89,
+      "indexed": 92,
+      "indexed_resources": 92,
       "resolved_aliases": 0,
-      "curated": 89,
+      "curated": 92,
       "excluded": 0,
-      "set_aside": 20,
-      "out_of_scope": 0,
-      "unindexed": 12
+      "set_aside": 23,
+      "out_of_scope": 1,
+      "unindexed": 5
     },
     {
       "id": "llm-brained-gui-survey-dataset",
@@ -4721,14 +5361,14 @@
         "state": "success"
       },
       "discovered": 74,
-      "indexed": 55,
-      "indexed_resources": 55,
+      "indexed": 56,
+      "indexed_resources": 56,
       "resolved_aliases": 0,
-      "curated": 55,
+      "curated": 56,
       "excluded": 2,
-      "set_aside": 7,
-      "out_of_scope": 0,
-      "unindexed": 10
+      "set_aside": 11,
+      "out_of_scope": 3,
+      "unindexed": 2
     },
     {
       "id": "llm-brained-gui-survey-framework",
@@ -4757,9 +5397,9 @@
       "resolved_aliases": 0,
       "curated": 109,
       "excluded": 0,
-      "set_aside": 15,
-      "out_of_scope": 0,
-      "unindexed": 15
+      "set_aside": 23,
+      "out_of_scope": 1,
+      "unindexed": 6
     },
     {
       "id": "llm-brained-gui-survey-gui-testing",
@@ -4783,14 +5423,14 @@
         "state": "success"
       },
       "discovered": 32,
-      "indexed": 17,
-      "indexed_resources": 17,
+      "indexed": 20,
+      "indexed_resources": 20,
       "resolved_aliases": 0,
-      "curated": 17,
+      "curated": 20,
       "excluded": 0,
-      "set_aside": 0,
+      "set_aside": 1,
       "out_of_scope": 0,
-      "unindexed": 15
+      "unindexed": 11
     },
     {
       "id": "llm-brained-gui-survey-models",
@@ -4819,9 +5459,9 @@
       "resolved_aliases": 0,
       "curated": 70,
       "excluded": 4,
-      "set_aside": 12,
-      "out_of_scope": 1,
-      "unindexed": 8
+      "set_aside": 17,
+      "out_of_scope": 2,
+      "unindexed": 2
     },
     {
       "id": "llm-brained-gui-survey-survey",
@@ -4851,8 +5491,8 @@
       "curated": 5,
       "excluded": 6,
       "set_aside": 1,
-      "out_of_scope": 0,
-      "unindexed": 18
+      "out_of_scope": 5,
+      "unindexed": 13
     },
     {
       "id": "llm-brained-gui-survey-virtual-assistant",
@@ -4881,9 +5521,9 @@
       "resolved_aliases": 0,
       "curated": 7,
       "excluded": 0,
-      "set_aside": 1,
-      "out_of_scope": 0,
-      "unindexed": 11
+      "set_aside": 4,
+      "out_of_scope": 3,
+      "unindexed": 5
     },
     {
       "id": "osworld-verified-leaderboard",
@@ -4907,14 +5547,14 @@
         "state": "success"
       },
       "discovered": 50,
-      "indexed": 19,
-      "indexed_resources": 19,
+      "indexed": 27,
+      "indexed_resources": 27,
       "resolved_aliases": 0,
-      "curated": 19,
+      "curated": 27,
       "excluded": 0,
-      "set_aside": 2,
-      "out_of_scope": 0,
-      "unindexed": 29
+      "set_aside": 8,
+      "out_of_scope": 6,
+      "unindexed": 9
     },
     {
       "id": "osworld-self-reported-leaderboard",
@@ -4938,14 +5578,14 @@
         "state": "success"
       },
       "discovered": 89,
-      "indexed": 20,
-      "indexed_resources": 20,
+      "indexed": 21,
+      "indexed_resources": 21,
       "resolved_aliases": 1,
-      "curated": 20,
+      "curated": 21,
       "excluded": 5,
-      "set_aside": 6,
-      "out_of_scope": 0,
-      "unindexed": 58
+      "set_aside": 53,
+      "out_of_scope": 4,
+      "unindexed": 6
     },
     {
       "id": "screenspot-pro-leaderboard",
@@ -4969,14 +5609,14 @@
         "state": "success"
       },
       "discovered": 45,
-      "indexed": 18,
-      "indexed_resources": 18,
+      "indexed": 27,
+      "indexed_resources": 27,
       "resolved_aliases": 0,
-      "curated": 18,
+      "curated": 27,
       "excluded": 2,
-      "set_aside": 5,
-      "out_of_scope": 0,
-      "unindexed": 20
+      "set_aside": 8,
+      "out_of_scope": 2,
+      "unindexed": 6
     },
     {
       "id": "androidworld-leaderboard",
@@ -5000,14 +5640,14 @@
         "state": "success"
       },
       "discovered": 66,
-      "indexed": 23,
-      "indexed_resources": 23,
+      "indexed": 36,
+      "indexed_resources": 36,
       "resolved_aliases": 1,
-      "curated": 23,
+      "curated": 36,
       "excluded": 0,
-      "set_aside": 6,
+      "set_aside": 19,
       "out_of_scope": 0,
-      "unindexed": 37
+      "unindexed": 11
     },
     {
       "id": "webarena-leaderboard",
@@ -5031,14 +5671,14 @@
         "state": "success"
       },
       "discovered": 83,
-      "indexed": 34,
-      "indexed_resources": 34,
+      "indexed": 41,
+      "indexed_resources": 41,
       "resolved_aliases": 0,
-      "curated": 31,
+      "curated": 38,
       "excluded": 4,
-      "set_aside": 1,
-      "out_of_scope": 0,
-      "unindexed": 44
+      "set_aside": 26,
+      "out_of_scope": 5,
+      "unindexed": 7
     },
     {
       "id": "androidlab-leaderboard",
@@ -5124,14 +5764,14 @@
         "state": "success"
       },
       "discovered": 30,
-      "indexed": 16,
-      "indexed_resources": 16,
+      "indexed": 24,
+      "indexed_resources": 24,
       "resolved_aliases": 0,
-      "curated": 16,
+      "curated": 24,
       "excluded": 0,
       "set_aside": 0,
       "out_of_scope": 0,
-      "unindexed": 14
+      "unindexed": 6
     },
     {
       "id": "hf-models-search-computer-use",
@@ -5155,14 +5795,14 @@
         "state": "success"
       },
       "discovered": 2,
-      "indexed": 0,
-      "indexed_resources": 0,
+      "indexed": 2,
+      "indexed_resources": 2,
       "resolved_aliases": 0,
-      "curated": 0,
+      "curated": 2,
       "excluded": 0,
       "set_aside": 0,
       "out_of_scope": 0,
-      "unindexed": 2
+      "unindexed": 0
     },
     {
       "id": "hf-datasets-search-gui",
@@ -5186,14 +5826,14 @@
         "state": "success"
       },
       "discovered": 18,
-      "indexed": 11,
-      "indexed_resources": 11,
+      "indexed": 13,
+      "indexed_resources": 13,
       "resolved_aliases": 0,
-      "curated": 11,
+      "curated": 13,
       "excluded": 0,
       "set_aside": 0,
-      "out_of_scope": 0,
-      "unindexed": 7
+      "out_of_scope": 2,
+      "unindexed": 3
     },
     {
       "id": "hf-datasets-search-computer-use",
@@ -5222,9 +5862,9 @@
       "resolved_aliases": 0,
       "curated": 3,
       "excluded": 0,
-      "set_aside": 0,
+      "set_aside": 1,
       "out_of_scope": 0,
-      "unindexed": 1
+      "unindexed": 0
     },
     {
       "id": "hf-datasets-search-web-agent",
@@ -5248,14 +5888,14 @@
         "state": "success"
       },
       "discovered": 5,
-      "indexed": 1,
-      "indexed_resources": 1,
+      "indexed": 2,
+      "indexed_resources": 2,
       "resolved_aliases": 0,
-      "curated": 1,
+      "curated": 2,
       "excluded": 0,
-      "set_aside": 0,
+      "set_aside": 1,
       "out_of_scope": 0,
-      "unindexed": 4
+      "unindexed": 2
     },
     {
       "id": "hf-datasets-search-mind2web",
@@ -5315,9 +5955,9 @@
       "resolved_aliases": 0,
       "curated": 2,
       "excluded": 0,
-      "set_aside": 0,
-      "out_of_scope": 0,
-      "unindexed": 7
+      "set_aside": 1,
+      "out_of_scope": 2,
+      "unindexed": 4
     },
     {
       "id": "hf-datasets-search-screenspot",
@@ -5346,9 +5986,9 @@
       "resolved_aliases": 1,
       "curated": 4,
       "excluded": 0,
-      "set_aside": 0,
+      "set_aside": 1,
       "out_of_scope": 0,
-      "unindexed": 1
+      "unindexed": 0
     },
     {
       "id": "hf-collection-maxiw-gui-datasets",
@@ -5372,14 +6012,14 @@
         "state": "success"
       },
       "discovered": 20,
-      "indexed": 12,
-      "indexed_resources": 12,
+      "indexed": 19,
+      "indexed_resources": 19,
       "resolved_aliases": 2,
-      "curated": 12,
+      "curated": 19,
       "excluded": 0,
       "set_aside": 0,
       "out_of_scope": 0,
-      "unindexed": 8
+      "unindexed": 1
     },
     {
       "id": "hf-collection-maxiw-research-on-gui-models",
@@ -5496,14 +6136,14 @@
         "state": "success"
       },
       "discovered": 22,
-      "indexed": 11,
-      "indexed_resources": 11,
+      "indexed": 19,
+      "indexed_resources": 19,
       "resolved_aliases": 1,
-      "curated": 11,
+      "curated": 19,
       "excluded": 0,
       "set_aside": 0,
-      "out_of_scope": 0,
-      "unindexed": 11
+      "out_of_scope": 1,
+      "unindexed": 2
     },
     {
       "id": "hf-collection-sergiopaniego-gui-grounding-datasets",
@@ -5620,14 +6260,14 @@
         "state": "success"
       },
       "discovered": 13,
-      "indexed": 2,
-      "indexed_resources": 2,
+      "indexed": 5,
+      "indexed_resources": 5,
       "resolved_aliases": 0,
-      "curated": 2,
+      "curated": 5,
       "excluded": 0,
       "set_aside": 0,
-      "out_of_scope": 0,
-      "unindexed": 11
+      "out_of_scope": 1,
+      "unindexed": 7
     },
     {
       "id": "release-ui-tars-model-index",
@@ -5713,14 +6353,14 @@
         "state": "success"
       },
       "discovered": 3,
-      "indexed": 0,
-      "indexed_resources": 0,
+      "indexed": 3,
+      "indexed_resources": 3,
       "resolved_aliases": 0,
-      "curated": 0,
+      "curated": 3,
       "excluded": 0,
       "set_aside": 0,
       "out_of_scope": 0,
-      "unindexed": 3
+      "unindexed": 0
     },
     {
       "id": "release-microsoft-gui-model-index",
@@ -5744,14 +6384,14 @@
         "state": "success"
       },
       "discovered": 6,
-      "indexed": 3,
-      "indexed_resources": 3,
+      "indexed": 5,
+      "indexed_resources": 5,
       "resolved_aliases": 0,
-      "curated": 3,
+      "curated": 5,
       "excluded": 0,
       "set_aside": 0,
-      "out_of_scope": 0,
-      "unindexed": 3
+      "out_of_scope": 1,
+      "unindexed": 0
     },
     {
       "id": "release-omniparser-model-index",
@@ -5775,14 +6415,14 @@
         "state": "success"
       },
       "discovered": 2,
-      "indexed": 1,
-      "indexed_resources": 1,
+      "indexed": 2,
+      "indexed_resources": 2,
       "resolved_aliases": 0,
-      "curated": 1,
+      "curated": 2,
       "excluded": 0,
       "set_aside": 0,
       "out_of_scope": 0,
-      "unindexed": 1
+      "unindexed": 0
     },
     {
       "id": "release-opengvlab-gui-dataset-index",
@@ -5935,9 +6575,9 @@
       "resolved_aliases": 8,
       "curated": 71,
       "excluded": 2,
-      "set_aside": 23,
+      "set_aside": 32,
       "out_of_scope": 0,
-      "unindexed": 25
+      "unindexed": 16
     },
     {
       "id": "gui-agents-survey-references",
@@ -5966,9 +6606,9 @@
       "resolved_aliases": 0,
       "curated": 55,
       "excluded": 13,
-      "set_aside": 23,
-      "out_of_scope": 0,
-      "unindexed": 20
+      "set_aside": 29,
+      "out_of_scope": 5,
+      "unindexed": 9
     },
     {
       "id": "benchmark-leads",
@@ -5998,8 +6638,8 @@
       "curated": 3,
       "excluded": 4,
       "set_aside": 0,
-      "out_of_scope": 0,
-      "unindexed": 52
+      "out_of_scope": 52,
+      "unindexed": 0
     }
   ],
   "primary_search": {

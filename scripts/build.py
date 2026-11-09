@@ -364,6 +364,36 @@ def validate_records(rows):
     return errors
 
 
+def shared_url_key(url):
+    """Normalized record URL: scheme, letter case, a leading www., a trailing slash and the fragment do not distinguish records."""
+    parts = urllib.parse.urlsplit(url.strip())
+    host = parts.netloc.lower().removeprefix("www.")
+    return host + parts.path.rstrip("/") + ("?" + parts.query if parts.query else "")
+
+
+def shared_url_errors(rows, declared):
+    """Each record URL belongs to one record, except the publisher/product pairs declared in data/shared-urls.json."""
+    errors, groups = [], collections.defaultdict(list)
+    for row in rows:
+        # A missing or malformed URL is reported by the record checks; it has no key to share.
+        if isinstance(row.get("url"), str) and row["url"].strip():
+            groups[shared_url_key(row["url"])].append(row.get("id"))
+    allowed = {}
+    for entry in declared:
+        key, ids = shared_url_key(entry["url"]), sorted(entry["ids"])
+        if key in allowed:
+            errors.append(f"Shared URLs: {entry['url']} is declared twice")
+        allowed[key] = ids
+    for key, ids in sorted(groups.items()):
+        ids = sorted(ids)
+        if len(ids) > 1 and allowed.get(key) != ids:
+            errors.append(f"Shared URLs: {', '.join(ids)} share {key}; give each its own URL or declare the pair in data/shared-urls.json")
+    for key, ids in sorted(allowed.items()):
+        if sorted(groups.get(key, [])) != ids:
+            errors.append(f"Shared URLs: declared pair {', '.join(ids)} no longer shares {key}; remove it from data/shared-urls.json")
+    return errors
+
+
 def validate_sources(sources):
     errors = []
     for source in sources:
@@ -1152,6 +1182,7 @@ def validate(args):
     if missing := {"date-time", "uri"} - set(formats.checkers):
         raise ValueError("JSON Schema format checkers unavailable: " + ", ".join(sorted(missing)) + ". Install requirements-dev.txt (jsonschema[format-nongpl]).")
     errors = validate_records(rows) + validate_sources(read_json(DATA / "sources.json", [])) + validate_translations(rows, read_json(DATA / "translations.zh-CN.json", {}))
+    errors += shared_url_errors(rows, read_json(DATA / "shared-urls.json", []))
     from catalog import validate_candidate_snapshot
     try:
         validate_candidate_snapshot(DATA)

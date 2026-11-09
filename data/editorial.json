@@ -8348,9 +8348,9 @@
     "id": "organization:anthropic",
     "name": "Anthropic",
     "kind": "company",
-    "url": "https://claude.com/chrome",
+    "url": "https://www.anthropic.com/",
     "evidence_urls": [
-      "https://claude.com/chrome"
+      "https://www.anthropic.com/"
     ],
     "environments": [
       "unspecified"
@@ -8364,16 +8364,16 @@
     ],
     "editorial_reviewed": true,
     "notes": "Publisher/brand identity only.",
-    "reviewed_sha256": "bd3e99c1e12588bc3136dfa27de2c0d5790b6f6f25f2696988eb182c6b1ef670",
-    "reviewed_at": "2026-10-16T06:40:54Z"
+    "reviewed_sha256": "8047aa76e9dd0338186a8ab0a0875b9ef82b8efed972e8b3d19a190961e78c5f",
+    "reviewed_at": "2026-11-09T22:08:42Z"
   },
   {
     "id": "organization:google",
     "name": "Google",
     "kind": "company",
-    "url": "https://ai.google.dev/gemini-api/docs/computer-use",
+    "url": "https://about.google/",
     "evidence_urls": [
-      "https://ai.google.dev/gemini-api/docs/computer-use"
+      "https://about.google/"
     ],
     "environments": [
       "unspecified"
@@ -8387,16 +8387,16 @@
     ],
     "editorial_reviewed": true,
     "notes": "Publisher/brand identity only.",
-    "reviewed_sha256": "e7062cfb4c0948d3a2274843f9f493f34cb40dfd634371408086df6141a0e036",
-    "reviewed_at": "2026-10-16T06:38:27Z"
+    "reviewed_sha256": "ea135c294b3d06de2271ce103a5a43838f0281f36e446a3299c0f9d7d78c49f8",
+    "reviewed_at": "2026-11-09T22:08:42Z"
   },
   {
     "id": "organization:h",
     "name": "H",
     "kind": "company",
-    "url": "https://hcompany.ai/research/models",
+    "url": "https://hcompany.ai/",
     "evidence_urls": [
-      "https://hcompany.ai/research/models"
+      "https://hcompany.ai/"
     ],
     "environments": [
       "unspecified"
@@ -8406,12 +8406,12 @@
     ],
     "summary": "Publisher or product brand associated with H computer-use or browser automation offerings.",
     "verify_terms": [
-      "Holo"
+      "H Company"
     ],
     "editorial_reviewed": true,
     "notes": "Publisher/brand identity only.",
-    "reviewed_sha256": "84ce0fd682367a6dac5cc5abc39d5c877556024bbf6ffdad30f76fc2ec08523f",
-    "reviewed_at": "2026-10-16T06:38:27Z"
+    "reviewed_sha256": "45b4aa57ea8ccd2452314a8e397f9c0d237e2f644d137e18aca984030077f765",
+    "reviewed_at": "2026-11-09T22:08:42Z"
   },
   {
     "id": "organization:browserbase",
@@ -136524,9 +136524,9 @@
     "id": "organization:microsoft",
     "name": "Microsoft",
     "kind": "company",
-    "url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/computer-use",
+    "url": "https://www.microsoft.com/",
     "evidence_urls": [
-      "https://learn.microsoft.com/en-us/microsoft-copilot-studio/computer-use"
+      "https://www.microsoft.com/"
     ],
     "environments": [
       "unspecified"
@@ -136540,8 +136540,8 @@
     ],
     "notes": "Publisher/brand identity only.",
     "editorial_reviewed": true,
-    "reviewed_sha256": "c8abf59f80322ecaa4c8ef863c3344e675a549f05397ba17562a9b0e7eac3edf",
-    "reviewed_at": "2026-10-18T11:10:02Z"
+    "reviewed_sha256": "a4d1f60411eea43240af78da4111f978879af4206eec3716ec2c2e6b18652951",
+    "reviewed_at": "2026-11-09T22:08:43Z"
   },
   {
     "name": "Copilot Studio computer use",

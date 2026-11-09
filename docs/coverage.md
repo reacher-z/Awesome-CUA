@@ -1,6 +1,6 @@
 # Coverage and quality ledger
 
-Evidence snapshot through **2026-11-09T21:12:48Z**. Generated from committed source receipts.
+Evidence snapshot through **2026-11-09T22:08:43Z**. Generated from committed source receipts.
 
 - 5,115 curated resources. Another 885 records await review with bibliographic metadata only; the active catalog file holds 6,000 records in all.
 - 2,603 paper and survey records, including 2,550 arXiv identities and 53 publisher-only identities.

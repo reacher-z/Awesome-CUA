@@ -101,7 +101,12 @@ def license_name(spellings):
     best = max(spellings, key=lambda value: (sum(ch.isupper() for ch in value), spellings[value]))
     if best != best.lower():
         return best
+    if best in LICENSE_CASE:
+        return LICENSE_CASE[best]
     return 'Apache-' + best[7:] if best.startswith('apache-') else best.upper() if best != 'other' else best
+
+
+LICENSE_CASE = {'unlicense': 'Unlicense', 'openrail': 'OpenRAIL', 'odc-by': 'ODC-By'}
 
 
 def n(value):
@@ -176,7 +181,7 @@ def cell(column, record, view, zh):
             return '—'
         scope, value = found
         url = (record['licenses'].get(scope) or {}).get('url')
-        label = esc(value) + (f'（{SCOPES[scope][1]}）' if zh else f' ({SCOPES[scope][0]})')
+        label = esc(' / '.join(license_name({part: 1}) for part in value.split(' / '))) + (f'（{SCOPES[scope][1]}）' if zh else f' ({SCOPES[scope][0]})')
         return f'<a href="{esc(url)}">{label}</a>' if url else label
     if column == 'paper':
         found = paper_record(record, by_id)
@@ -202,12 +207,20 @@ def cell(column, record, view, zh):
     if column == 'date':
         return esc(record_date_text(record) or '—')
     if column == 'topics':
-        return esc(', '.join(topic_name(t, 'zh' if zh else 'en') for t in record['topics'][:2])) or '—'
+        return esc(', '.join([topic_name(t, 'zh' if zh else 'en') for t in record['topics'] if t != 'survey'][:2])) or '—'
     raise KeyError(column)
 
 
-def columns_for(kind):
-    return COLUMNS.get(kind, ('platform', 'license', 'mentions'))
+FALLBACK_COLUMNS = ('publisher', 'license', 'mentions')
+
+
+def columns_for(kind, rows, view):
+    """The kind's preferred columns that at least two shown rows fill, topped up from shared fallbacks."""
+    preferred = COLUMNS.get(kind, ('platform', 'license', 'mentions'))
+    needed = min(2, len(rows))
+    filled = [c for c in dict.fromkeys(preferred + FALLBACK_COLUMNS)
+              if sum(cell(c, r, view, False) != '—' for r in rows) >= needed]
+    return tuple(filled[:len(preferred)])
 
 
 def ordered_by_mentions(kind):
@@ -215,8 +228,8 @@ def ordered_by_mentions(kind):
 
 
 def choose_table(kind, records, view, *, zh, snapshot):
-    columns = columns_for(kind)
     rows = records[:ROWS]
+    columns = columns_for(kind, rows, view)
     name_heading = KIND_NAMES[kind][2] if zh else KIND_NAMES[kind][0].capitalize()
     head = f'<th scope="col">{esc(name_heading)}</th>' + ''.join(f'<th scope="col">{HEADINGS[c][zh]}</th>' for c in columns)
     body = ''.join('<tr>' + f'<th scope="row">{a(r, zh)}</th>' + ''.join(f'<td data-label="{esc(HEADINGS[c][zh])}">{cell(c, r, view, zh)}</td>' for c in columns) + '</tr>' for r in rows)
@@ -427,7 +440,7 @@ def guide(kind, records, view, *, zh, snapshot, url):
 
 def guide_markdown(kind, records, view, *, zh, snapshot):
     """The same definition, table and questions for the category's Markdown twin."""
-    columns = columns_for(kind)
+    columns = columns_for(kind, records[:ROWS], view)
     name_heading = KIND_NAMES[kind][2] if zh else KIND_NAMES[kind][0].capitalize()
 
     def md(markup):

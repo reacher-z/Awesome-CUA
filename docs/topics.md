@@ -2,16 +2,16 @@
 
 [Home](../README.md) · [Full arXiv bibliography](papers.md) · [Methodology](methodology.md)
 
-4,587 source-reviewed resources across 35 topics. Topic tags are catalog annotations from the editorial review; a resource appears under every topic it carries. Each hub lists benchmarks, data, models, systems, learning resources, and papers together, newest papers first.
+4,588 source-reviewed resources across 35 topics. Topic tags are catalog annotations from the editorial review; a resource appears under every topic it carries. Each hub lists benchmarks, data, models, systems, learning resources, and papers together, newest papers first.
 
 | Topic | All | Benchmarks | Datasets | Models | Systems | Learning resources | Papers | Newest reviewed paper |
 | --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: | --- |
 | [Web navigation](topics/web-navigation.md) | 1,489 | 107 | 34 | 43 | 937 | 12 | 356 | [Securing Web Agents with the Compile-Then-Execute Paradigm](https://arxiv.org/abs/2611.06039) · 2026-11-04 |
-| [Evaluation](topics/evaluation.md) | 1,386 | 262 | 58 | 19 | 204 | 8 | 835 | [GUI Grounding for Computer-Use Agents: A Survey](https://doi.org/10.20944/preprints202611.0431.v1) · 2026-11-04 |
+| [Evaluation](topics/evaluation.md) | 1,387 | 262 | 58 | 19 | 204 | 8 | 836 | [GUI Grounding for Computer-Use Agents: A Survey](https://doi.org/10.20944/preprints202611.0431.v1) · 2026-11-04 |
 | [Automation](topics/automation.md) | 1,335 | 10 | 1 | 8 | 1,168 | 10 | 138 | [Interface Quilt: Modifying Applications with Computer Use Agents and Generative UI](https://arxiv.org/abs/2611.01891) · 2026-11-01 |
 | [Tool integration](topics/tool-integration.md) | 1,214 | 27 | 2 | 28 | 1,006 | 6 | 145 | [Securing Web Agents with the Compile-Then-Execute Paradigm](https://arxiv.org/abs/2611.06039) · 2026-11-04 |
 | [GUI grounding](topics/grounding.md) | 878 | 32 | 62 | 177 | 303 | 2 | 302 | [GUI Grounding for Computer-Use Agents: A Survey](https://doi.org/10.20944/preprints202611.0431.v1) · 2026-11-04 |
-| [Screen understanding](topics/screen-understanding.md) | 816 | 22 | 51 | 83 | 421 | 4 | 235 | [Visual Token Routing: Learning to keep tokens that matter](https://arxiv.org/abs/2611.06854) · 2026-11-04 |
+| [Screen understanding](topics/screen-understanding.md) | 817 | 22 | 51 | 83 | 421 | 4 | 236 | [Visual Token Routing: Learning to keep tokens that matter](https://arxiv.org/abs/2611.06854) · 2026-11-04 |
 | [Data generation](topics/data-generation.md) | 578 | 4 | 113 | 9 | 97 | · | 355 | [MKD2World: A Typed Spatial MarkDown World Model For Web Agents](https://arxiv.org/abs/2611.06544) · 2026-11-04 |
 | [Mobile navigation](topics/mobile-navigation.md) | 556 | 24 | 31 | 50 | 182 | 5 | 264 | [Can LLM Agents Learn to Test? Maintaining Scoped Experience as Testing Evidence for Mobile GUI Testing](https://arxiv.org/abs/2611.05873) · 2026-11-04 |
 | [Planning](topics/planning.md) | 532 | 11 | 9 | 41 | 162 | 4 | 305 | [Securing Web Agents with the Compile-Then-Execute Paradigm](https://arxiv.org/abs/2611.06039) · 2026-11-04 |

@@ -2,7 +2,7 @@
 
 Evidence snapshot through **2026-11-09T08:07:58Z**. Generated from committed source receipts.
 
-- 4,587 curated resources. Another 451 records await review with bibliographic metadata only; the active catalog file holds 5,038 records in all.
+- 4,588 curated resources. Another 450 records await review with bibliographic metadata only; the active catalog file holds 5,038 records in all.
 - 2,169 paper and survey records, including 2,116 arXiv identities and 53 publisher-only identities.
 - 3,424 retained arXiv metadata records; 1,308 explicit scope exclusions are outside the active catalog.
 - 6,084 discovery identifiers; 114 remain unresolved. Reviewed decisions include 342 non-resource links, 548 aliases and 463 out-of-scope resources; their reasons remain in the review queue.
@@ -24,7 +24,7 @@ Counts of source-reviewed resources. A resource tagged with several environments
 | [infrastructure](infrastructures.md) | 43 | 61 | 13 | 19 | 43 | 16 | 2 | · | 6 | 1 |
 | [learning](learning.md) | 21 | 14 | 2 | 3 | 1 | 4 | 1 | · | 14 | · |
 | [model](models.md) | 119 | 124 | 13 | 9 | 11 | 78 | 5 | · | 119 | 29 |
-| [paper](topics.md) | 661 | 244 | 43 | 18 | 25 | 229 | 12 | 4 | 112 | 597 |
+| [paper](topics.md) | 662 | 244 | 43 | 18 | 25 | 229 | 12 | 4 | 112 | 597 |
 | [product](products.md) | 59 | 20 | 7 | 6 | 3 | 5 | 1 | · | 5 | · |
 | [survey](surveys.md) | 7 | 2 | 1 | · | · | 2 | 1 | · | 13 | 17 |
 | [tool](tools.md) | 538 | 452 | 206 | 225 | 152 | 45 | 18 | · | 150 | 9 |
@@ -138,7 +138,7 @@ The denominator is the normalized identifiers extracted from each fetched docume
 | [Survey bibliography references with no other registered listing (arXiv identifier query)](https://arxiv.org) | 4 | 4 | 3 | 0 | 0 | 0 | 0 | OK · 2026-11-07 |
 | [Efficient GUI Agents survey (arXiv 2609.02309) — HTML bibliography](https://arxiv.org/abs/2609.02309) | 122 | 75 | 74 | 2 | 42 | 0 | 3 | OK · 2026-11-07 |
 | [GUI Agents: A Survey (arXiv 2412.13501) — HTML bibliography](https://arxiv.org/abs/2412.13501) | 117 | 62 | 56 | 13 | 33 | 6 | 3 | OK · 2026-11-07 |
-| [Computer-use benchmark leads](https://github.com/reacher-z/Awesome-CUA/blob/main/docs/discovery-leads/benchmark-leads.md) | 161 | 105 | 3 | 4 | 0 | 52 | 0 | OK · 2026-11-07 |
+| [Computer-use benchmark leads](https://github.com/reacher-z/Awesome-CUA/blob/main/docs/discovery-leads/benchmark-leads.md) | 161 | 105 | 4 | 4 | 0 | 52 | 0 | OK · 2026-11-07 |
 
 ## Paper-discovery query coverage
 
@@ -674,9 +674,7 @@ Data and weights fields record their own licenses. Hub declarations are publishe
 
 Papers that a curated resource names as its `introduced_by` or `documented_by` paper but that have no editorial relevance review yet. Review them before other metadata-only papers.
 
-| Paper | Linked from |
-| --- | --- |
-| [SWE-bench Multimodal: Do AI Systems Generalize to Visual Software Domains?](https://arxiv.org/abs/2410.03859) | [SWE-bench Multimodal](https://huggingface.co/datasets/SWE-bench/SWE-bench_Multimodal) |
+None: every paper linked from a curated resource is curated.
 
 ## Scope exclusions
 

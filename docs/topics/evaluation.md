@@ -2,9 +2,9 @@
 
 [Home](../../README.md) · [All topics](../topics.md) · [Full arXiv bibliography](../papers.md)
 
-1,386 source-reviewed resources tagged `evaluation`. Curated metadata; unknown facts are shown as —.
+1,387 source-reviewed resources tagged `evaluation`. Curated metadata; unknown facts are shown as —.
 
-**Contents:** [Benchmarks (262)](#benchmarks) · [Datasets (58)](#datasets) · [Models (19)](#models) · [Agents (32)](#agents) · [Frameworks (85)](#frameworks) · [Tools (63)](#tools) · [Infrastructure (19)](#infrastructure) · [Products (4)](#products) · [Publishers (1)](#publishers) · [Learning resources (8)](#learning-resources) · [Surveys (13)](#surveys) · [Papers (822)](#papers)
+**Contents:** [Benchmarks (262)](#benchmarks) · [Datasets (58)](#datasets) · [Models (19)](#models) · [Agents (32)](#agents) · [Frameworks (85)](#frameworks) · [Tools (63)](#tools) · [Infrastructure (19)](#infrastructure) · [Products (4)](#products) · [Publishers (1)](#publishers) · [Learning resources (8)](#learning-resources) · [Surveys (13)](#surveys) · [Papers (823)](#papers)
 
 ## Benchmarks
 
@@ -1354,6 +1354,7 @@ All entries in this section: cross-platform, desktop.
 | 2024‑10‑11 | [From Interaction to Impact: Towards Safer AI Agents Through Understanding and Evaluating Mobile UI Operation Impacts](https://arxiv.org/abs/2410.09006) | unspecified | Develops a taxonomy of mobile-action consequences and annotated interaction data to evaluate whether models recognize impactful or risky UI operations. |
 | 2024‑10‑11 | [Refusal-Trained LLMs Are Easily Jailbroken As Browser Agents](https://arxiv.org/abs/2410.13886) | web | Introduces BrowserART and studies whether chat-model refusal behavior transfers to browser agents carrying out potentially harmful instructions. |
 | 2024‑10‑09 | [ST-WebAgentBench: A Benchmark for Evaluating Safety and Trustworthiness in Web Agents](https://arxiv.org/abs/2410.06703) | web | Evaluates web-task completion under explicit enterprise policies, measuring policy-compliant completion and safety violations separately. |
+| 2024‑10‑04 | [SWE-bench Multimodal: Do AI Systems Generalize to Visual Software Domains?](https://arxiv.org/abs/2410.03859) | web | Introduces SWE-bench Multimodal, issue-resolution tasks from 17 JavaScript libraries for interface design, diagramming, visualization and mapping, each with images, and tests how SWE-bench systems generalize to them. |
 | 2024‑10‑01 | [Multimodal Auto Validation For Self-Refinement in Web Agents](https://arxiv.org/abs/2410.00689) | web | Studies text and visual validation for web agents and uses the resulting validator to detect failures and guide workflow self-refinement. |
 | 2024‑09‑26 | [Inferring Alt-text For UI Icons With Large Language Models During App Development](https://arxiv.org/abs/2409.18060) | unspecified | Introduces IconDesc, which generates mobile icon alt-text from partial UI context such as element identifiers, bounds, nearby text and hierarchy. Model evaluation and a user study examine the resulting accessibility descriptions. |
 | 2024‑09‑18 | [The Impact of Element Ordering on LM Agent Performance](https://arxiv.org/abs/2409.12089) | web, desktop | Studies how the ordering of UI elements in an agent observation affects web and desktop performance. A pixel-based element detector and dimensionality-reduction ordering are evaluated on OmniACT when document hierarchy is unavailable. |

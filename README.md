@@ -9,7 +9,7 @@ A source-backed collection of papers, models, datasets, benchmarks and tools for
 If this collection is useful, a [star on GitHub](https://github.com/reacher-z/Awesome-CUA) helps others find it.
 
 <!-- BADGES:START -->
-[![Curated resources](https://img.shields.io/badge/curated%20resources-4%2C587-4352E8?style=flat-square&labelColor=1E2233)](docs/coverage.md) [![Reviewed papers and surveys](https://img.shields.io/badge/reviewed%20papers%20and%20surveys-1%2C718-4352E8?style=flat-square&labelColor=1E2233)](docs/papers.md) [![Evidence through](https://img.shields.io/badge/evidence%20through-2026--11--09%2008%3A07%20UTC-4352E8?style=flat-square&labelColor=1E2233)](docs/maintenance.md) [![Hugging Face dataset](https://img.shields.io/badge/dataset-Hugging%20Face-4352E8?style=flat-square&labelColor=1E2233)](https://huggingface.co/datasets/TIGER-Lab/AwesomeCUA) [![MIT license](https://img.shields.io/badge/license-MIT-5E6472?style=flat-square&labelColor=1E2233)](LICENSE)
+[![Curated resources](https://img.shields.io/badge/curated%20resources-4%2C588-4352E8?style=flat-square&labelColor=1E2233)](docs/coverage.md) [![Reviewed papers and surveys](https://img.shields.io/badge/reviewed%20papers%20and%20surveys-1%2C719-4352E8?style=flat-square&labelColor=1E2233)](docs/papers.md) [![Evidence through](https://img.shields.io/badge/evidence%20through-2026--11--09%2008%3A07%20UTC-4352E8?style=flat-square&labelColor=1E2233)](docs/maintenance.md) [![Hugging Face dataset](https://img.shields.io/badge/dataset-Hugging%20Face-4352E8?style=flat-square&labelColor=1E2233)](https://huggingface.co/datasets/TIGER-Lab/AwesomeCUA) [![MIT license](https://img.shields.io/badge/license-MIT-5E6472?style=flat-square&labelColor=1E2233)](LICENSE)
 <!-- BADGES:END -->
 
 Curated entries were reviewed against a first-party source snapshot; records awaiting review have their bibliographic identity checked; candidates are discovered identifiers awaiting resolution. [What “verified” means](#what-verified-means) · [Coverage ledger](docs/coverage.md)
@@ -52,9 +52,9 @@ python3 scripts/catalog.py get arxiv:2404.07972 --related --json
 
 <!-- STATS:START -->
 
-**4,587 curated resources** · **1,718 reviewed papers and surveys** · **104 discovery documents**
+**4,588 curated resources** · **1,719 reviewed papers and surveys** · **104 discovery documents**
 
-Evidence through `2026-11-09T08:07:58Z`. **451 records awaiting review** have verified bibliographic metadata, and **114 discovered candidates** await resolution. 463 candidates have an out-of-scope review. 1,308 scope exclusions retain their original metadata in the archive.
+Evidence through `2026-11-09T08:07:58Z`. **450 records awaiting review** have verified bibliographic metadata, and **114 discovered candidates** await resolution. 463 candidates have an out-of-scope review. 1,308 scope exclusions retain their original metadata in the archive.
 
 <!-- STATS:END -->
 
@@ -63,7 +63,7 @@ Evidence through `2026-11-09T08:07:58Z`. **451 records awaiting review** have ve
 <!-- EXPLORE:START -->
 | Browse                                           | What you find                                                 | Entries |
 | ------------------------------------------------ | ------------------------------------------------------------- | ------: |
-| [Research by topic](docs/topics.md)              | Reviewed papers grouped by topic                              |   1,681 |
+| [Research by topic](docs/topics.md)              | Reviewed papers grouped by topic                              |   1,682 |
 | [Full bibliography](docs/papers.md)              | All paper and survey records, including those awaiting review |   2,169 |
 | [Surveys](docs/surveys.md)                       | Surveys of computer-use agent research                        |      37 |
 | [Learning resources](docs/learning.md)           | Courses and tutorials                                         |      26 |
@@ -77,7 +77,7 @@ Evidence through `2026-11-09T08:07:58Z`. **451 records awaiting review** have ve
 | [Products](docs/products.md)                     | Computer-use products from vendors and projects               |      70 |
 | [Publishers and brands](docs/companies.md)       | Publishers and brands connected to cataloged resources        |      19 |
 
-**By platform:** [Web](docs/environments/web.md) **2,349** · [Desktop](docs/environments/desktop.md) **1,554** · [Windows](docs/environments/windows.md) **487** · [macOS](docs/environments/macos.md) **476** · [Linux](docs/environments/linux.md) **439** · [Android](docs/environments/android.md) **652** · [iOS](docs/environments/ios.md) **73** · [HarmonyOS](docs/environments/harmonyos.md) **5** · [Cross-platform](docs/environments/cross-platform.md) **663**
+**By platform:** [Web](docs/environments/web.md) **2,350** · [Desktop](docs/environments/desktop.md) **1,554** · [Windows](docs/environments/windows.md) **487** · [macOS](docs/environments/macos.md) **476** · [Linux](docs/environments/linux.md) **439** · [Android](docs/environments/android.md) **652** · [iOS](docs/environments/ios.md) **73** · [HarmonyOS](docs/environments/harmonyos.md) **5** · [Cross-platform](docs/environments/cross-platform.md) **663**
 <!-- EXPLORE:END -->
 
 Coverage spans web, desktop, Android, iOS, Windows, macOS, Linux, and cross-platform work. Topics include grounding, screen understanding, planning, memory, long-horizon workflows, reinforcement learning, data generation, safety, robustness, and evaluation.

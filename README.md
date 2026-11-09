@@ -54,7 +54,7 @@ python3 scripts/catalog.py get arxiv:2404.07972 --related --json
 
 **3,919 curated resources** · **1,673 reviewed papers and surveys** · **104 discovery documents**
 
-Evidence through `2026-11-07T05:19:53Z`. **453 records awaiting review** have verified bibliographic metadata, and **1,448 discovered candidates** await resolution. 1,308 scope exclusions retain their original metadata in the archive.
+Evidence through `2026-11-07T05:19:53Z`. **453 records awaiting review** have verified bibliographic metadata, and **1,280 discovered candidates** await resolution. 95 candidates have an out-of-scope review. 1,308 scope exclusions retain their original metadata in the archive.
 
 <!-- STATS:END -->
 

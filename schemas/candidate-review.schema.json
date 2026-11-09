@@ -1,0 +1,54 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://awesomecua.github.io/schemas/candidate-review.schema.json",
+  "title": "AwesomeCUA candidate reviews",
+  "description": "Reviewed decisions for discovered identifiers that have no catalog record: links that are not resources, other addresses of active records, and non-bibliographic resources reviewed as outside the computer-use scope. A decision neither creates nor removes a resource; indexing or a scope exclusion takes precedence. arXiv scope decisions belong in exclusions.json.",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "additionalProperties": false,
+    "required": ["decision", "reason"],
+    "properties": {
+      "id": {"type": "string", "pattern": "^[a-z]+:\\S+$"},
+      "url": {"type": "string", "format": "uri", "pattern": "^https://"},
+      "url_prefix": {
+        "description": "Covers this URL and the paths and queries below it; no query, fragment or trailing slash.",
+        "type": "string",
+        "format": "uri",
+        "pattern": "^https://[^/?#\\s]+(/[^?#\\s]*[^/?#\\s])?$"
+      },
+      "decision": {"enum": ["not_a_resource", "alias", "out_of_scope"]},
+      "reason": {"type": "string", "minLength": 1, "pattern": "\\S"},
+      "target_id": {"type": "string", "pattern": "^[a-z]+:\\S+$"},
+      "reviewed_at": {"type": "string", "format": "date-time"},
+      "evidence": {
+        "description": "Receipt for the primary page that was read, in the same shape as an exclusion's evidence.",
+        "type": "object",
+        "required": ["url", "sha256", "retrieved_at"],
+        "properties": {
+          "url": {"type": "string", "format": "uri", "pattern": "^https://"},
+          "sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+          "retrieved_at": {"type": "string", "format": "date-time"}
+        },
+        "additionalProperties": false
+      }
+    },
+    "allOf": [
+      {
+        "if": {"required": ["url_prefix"]},
+        "then": {"properties": {"decision": {"const": "not_a_resource"}, "id": false, "url": false}},
+        "else": {"required": ["id", "url"]}
+      },
+      {
+        "if": {"required": ["decision"], "properties": {"decision": {"const": "alias"}}},
+        "then": {"required": ["target_id"]},
+        "else": {"properties": {"target_id": false}}
+      },
+      {
+        "if": {"required": ["decision"], "properties": {"decision": {"const": "out_of_scope"}}},
+        "then": {"required": ["reviewed_at", "evidence"], "properties": {"id": {"not": {"pattern": "^arxiv:"}}}},
+        "else": {"properties": {"reviewed_at": false, "evidence": false}}
+      }
+    ]
+  }
+}

@@ -174,6 +174,8 @@ An artifact count measures its declared unit and population, not extra catalog r
 
 Coverage counts distinguish `bibliographic_records` (all active papers/surveys), `arxiv_active_records`, `non_arxiv_bibliographic_records`, and `publication_metadata_records` (including publication attachments to arXiv). The arXiv archive count remains separate. Per-source `indexed` counts matched discovery identifiers; `indexed_resources` counts distinct canonical resources, so multiple publisher/PDF aliases or former GitHub names cannot inflate the catalog's resource total.
 
+Discovery coverage counts `out_of_scope_candidates` separately from `unindexed_candidates`, `non_resource_candidates`, and `alias_candidates`. Per-source rows use `out_of_scope`, `unindexed`, and `set_aside`. Reviewed candidate rows retain their `resolution` and `reason` in `review-queue.jsonl`.
+
 The website's `downloads/topics.json` is a derived index of reviewed topic membership, tied to the source catalog SHA-256. Each topic lists canonical resource IDs, counts, bilingual page URLs, and export fingerprints. `resources_with_topics` counts distinct reviewed resources across all topics; individual topic totals overlap and must not be summed. Per-topic JSONL preserves the complete source records, including evidence, license scopes and review state. Shared tags are not reviewed resource relationships. Rebuilds remove obsolete generated topic pages and exports when a topic loses all reviewed members.
 
 Reviewed `documented_by` links connect an implementation or dataset to a paper named by its first-party source. They do not imply a training or evaluation dependency. Resource pages expose both outgoing relations and incoming connected assets. The [connections directory](https://awesomecua.com/connections/) and [relationship export](https://awesomecua.com/downloads/relationships.json) provide a consolidated view.
@@ -205,7 +207,7 @@ Edit authored files by hand and review them in a pull request. Do not hand-edit 
 | `exclusions.json` | Authored | Scope decisions; see [scope review](scope-review.md) |
 | `publications.jsonl` | Authored | Reviewed publication observations |
 | `repository-aliases.json` | Authored | Paired official GitHub or Hugging Face identity observations for reviewed former or other repository names |
-| `candidate-reviews.json` | Authored | Discovered links reviewed as non-resources or as other addresses of active records; see [methodology](methodology.md#identity-and-deduplication) |
+| `candidate-reviews.json` | Authored | Reviewed non-resources, aliases, and out-of-scope GitHub, Hugging Face and website candidates; see [methodology](methodology.md#identity-and-deduplication) |
 | `sources.json` | Authored | Discovery-source registry read by `catalog.py discover` |
 | `paper-discovery-queries.json` | Authored | Hugging Face search registry read by `discover_papers.py` |
 | `task-classes.json` | Authored | Realm and task-class names in English and Chinese; `catalog.py validate` checks each record's `task_classes` against it |

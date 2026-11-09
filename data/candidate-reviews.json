@@ -3144,5 +3144,1619 @@
     "decision": "alias",
     "target_id": "arxiv:2407.01476",
     "reason": "Former repository path for the indexed Tree Search for Language Model Agents paper (arxiv:2407.01476)."
+  },
+  {
+    "id": "github:chengyou-jia/agentstore",
+    "url": "https://github.com/chengyou-jia/AgentStore",
+    "decision": "not_a_resource",
+    "reason": "Repository returns 404 from GitHub, its API and raw README on 2026-10-18 (Wayback captures show it was public in early 2025); no code remains at this address. The AgentStore paper is indexed as arxiv:2410.18603."
+  },
+  {
+    "id": "github:camel-ai/agent",
+    "url": "https://github.com/camel-ai/agent",
+    "decision": "not_a_resource",
+    "reason": "Dead link: the repository page and the GitHub API both return 404 with no rename redirect. The listing labels it OWL, whose repository camel-ai/owl is a separate candidate."
+  },
+  {
+    "id": "github:alibaba/mnn",
+    "url": "https://github.com/alibaba/MNN",
+    "decision": "out_of_scope",
+    "reason": "MNN is a general on-device inference engine for neural networks and LLMs; it provides no agent or interface-control capability.",
+    "reviewed_at": "2026-10-18T11:21:28Z",
+    "evidence": {
+      "url": "https://raw.githubusercontent.com/alibaba/MNN/master/README.md",
+      "sha256": "a0b80e613bd936291302c3b087c8c36965b402f3f35d112e7baed27a8c9ba356",
+      "retrieved_at": "2026-10-18T11:19:20Z"
+    }
+  },
+  {
+    "id": "github:allenai/open-instruct",
+    "url": "https://github.com/allenai/open-instruct",
+    "decision": "out_of_scope",
+    "reason": "Open-Instruct is a general LLM post-training codebase; it contains no computer-use agent, interface environment or GUI data.",
+    "reviewed_at": "2026-10-18T11:21:49Z",
+    "evidence": {
+      "url": "https://raw.githubusercontent.com/allenai/open-instruct/main/README.md",
+      "sha256": "a415dae659f4a66da5e75b44779c04ff75d15f70115cdd3af8fc7636ca825558",
+      "retrieved_at": "2026-10-18T11:19:21Z"
+    }
+  },
+  {
+    "id": "github:ggml-org/llama.cpp",
+    "url": "https://github.com/ggml-org/llama.cpp",
+    "decision": "out_of_scope",
+    "reason": "llama.cpp is a general LLM inference engine; it has no agent or interface-control capability.",
+    "reviewed_at": "2026-10-18T11:23:25Z",
+    "evidence": {
+      "url": "https://raw.githubusercontent.com/ggml-org/llama.cpp/master/README.md",
+      "sha256": "dc2d34687c844ecf929d9e9a9c9c78e8023b52abf3b2b3d039600c79016673b6",
+      "retrieved_at": "2026-10-18T11:19:27Z"
+    }
+  },
+  {
+    "id": "github:huggingface/transformers",
+    "url": "https://github.com/huggingface/transformers",
+    "decision": "out_of_scope",
+    "reason": "Hugging Face Transformers is a general model-definition library for training and inference across text, vision, audio and multimodal models. It has no GUI, browser or device interaction of its own and was found only in the Seg2Click README's acknowledgements.",
+    "reviewed_at": "2026-10-18T11:30:41Z",
+    "evidence": {
+      "url": "https://raw.githubusercontent.com/huggingface/transformers/HEAD/README.md",
+      "sha256": "2a177841823df1ce1ad7ec068f07809eeb39d8db336ecab0fec259ddaf488ecb",
+      "retrieved_at": "2026-10-18T11:22:23Z"
+    }
+  },
+  {
+    "id": "github:james4ever0/computer_control_agent_knowledge_base",
+    "url": "https://github.com/James4Ever0/computer_control_agent_knowledge_base",
+    "decision": "out_of_scope",
+    "reason": "A personal retrieval knowledge base built with embedchain from crawled pages about computer-control and Devin-style agent projects, released once as a 7z database (v0.1, August 2024). It is a reference collection about other projects rather than an agent, dataset, benchmark or tool for computer use.",
+    "reviewed_at": "2026-10-18T11:31:28Z",
+    "evidence": {
+      "url": "https://raw.githubusercontent.com/James4Ever0/computer_control_agent_knowledge_base/HEAD/README.md",
+      "sha256": "628e58ba9598cc2000d8e49d17d8c21cc36b4c0ccda72ee5940984af234ae170",
+      "retrieved_at": "2026-10-18T11:22:24Z"
+    }
+  },
+  {
+    "id": "github:hkust-nlp/guimid",
+    "url": "https://github.com/hkust-nlp/GUIMid",
+    "decision": "alias",
+    "target_id": "arxiv:2504.10127",
+    "reason": "Project page for the paper arXiv 2504.10127: the repository holds only a README with the paper title, results table and BibTeX, plus figure assets. Training code is marked coming soon, and the data it links is the indexed Hub dataset url:422010da7a5c845a18f6."
+  },
+  {
+    "id": "github:numbmelon/os-oracle",
+    "url": "https://github.com/numbmelon/OS-Oracle",
+    "decision": "alias",
+    "target_id": "url:c73ba0618d1b3c505887",
+    "reason": "Official OS-Oracle repository whose only released code is the OS-Critic Bench inference and accuracy-scoring scripts; the indexed OS-Critic Bench record already describes these scripts and cites this README and tree. Its data-synthesis pipeline, training data and checkpoints are still listed as TODO."
+  },
+  {
+    "id": "github:neur-io/bami",
+    "url": "https://github.com/Neur-IO/BAMI",
+    "decision": "alias",
+    "target_id": "arxiv:2605.06664",
+    "reason": "Project repository of the BAMI paper: it holds only a README, the technical-report PDF and a teaser image, and says the inference code is still to be released. Its title and nine authors match arXiv:2605.06664."
+  },
+  {
+    "id": "github:nvlabs/llm-agents",
+    "url": "https://github.com/NVlabs/llm-agents",
+    "decision": "not_a_resource",
+    "reason": "Dead link: the repository page and the GitHub API both return 404 with no rename redirect, no NVlabs repository has this or a similar name, and the Wayback Machine has no capture (CDX query empty). The discovery list's description, standardized evaluation for LLM agents, names no other resource."
+  },
+  {
+    "id": "github:kyegomez/screenai",
+    "url": "https://github.com/kyegomez/ScreenAI",
+    "decision": "out_of_scope",
+    "reason": "This is an unofficial third-party PyTorch sketch of the ScreenAI architecture: one module run on random tensors in the README example, with no checkpoint, data, training or evaluation code, and a README TODO noting that the encoder and decoder layer lists are unimplemented. It provides no screen-understanding capability of its own. The ScreenAI paper is already curated as arxiv:2402.04615, and an alias would misstate an unaffiliated reimplementation as the paper's resource.",
+    "reviewed_at": "2026-10-18T11:48:36Z",
+    "evidence": {
+      "url": "https://raw.githubusercontent.com/kyegomez/ScreenAI/HEAD/README.md",
+      "sha256": "afac82b86bec5fa86ebf2e3381d238672cf163a4c49be90320dd500b14e636fa",
+      "retrieved_at": "2026-10-18T11:32:45Z"
+    }
+  },
+  {
+    "id": "github:huggingface/lerobot",
+    "url": "https://github.com/huggingface/lerobot",
+    "decision": "out_of_scope",
+    "reason": "LeRobot is Hugging Face's PyTorch library for real-world robotics: robot-arm and humanoid control, the LeRobotDataset format and robot policies. It surfaced only through ShowUI-π's acknowledgements and has no screen, browser or GUI interaction.",
+    "reviewed_at": "2026-10-18T11:49:22Z",
+    "evidence": {
+      "url": "https://raw.githubusercontent.com/huggingface/lerobot/HEAD/README.md",
+      "sha256": "79d69e66512bc9e9571e214cb42a71249977d39baff45c1acd69a8e38cba2178",
+      "retrieved_at": "2026-10-18T11:24:51Z"
+    }
+  },
+  {
+    "id": "github:huggingface/peft",
+    "url": "https://github.com/huggingface/peft",
+    "decision": "out_of_scope",
+    "reason": "PEFT is Hugging Face's general library for parameter-efficient fine-tuning methods such as LoRA, applicable to any transformer or diffusion model. It surfaced only through Seg2Click's acknowledgements and has no computer-use functionality of its own.",
+    "reviewed_at": "2026-10-18T11:49:33Z",
+    "evidence": {
+      "url": "https://raw.githubusercontent.com/huggingface/peft/HEAD/README.md",
+      "sha256": "65958fdf047de668cb2abd1c34dace3082d46680b98ae781b8bd2db38486e13e",
+      "retrieved_at": "2026-10-18T11:24:51Z"
+    }
+  },
+  {
+    "id": "github:meta-llama/llama3",
+    "url": "https://github.com/meta-llama/llama3",
+    "decision": "out_of_scope",
+    "reason": "meta-llama/llama3 is Meta's archived and deprecated repository with download scripts and minimal inference code for the general-purpose Llama 3 8B and 70B language models; its README redirects users to llama-models. It provides no GUI, browser or device interaction, and GUI-specific Llama 3 fine-tunes are recorded separately.",
+    "reviewed_at": "2026-10-18T11:49:45Z",
+    "evidence": {
+      "url": "https://raw.githubusercontent.com/meta-llama/llama3/HEAD/README.md",
+      "sha256": "ad2ece7d31e80a30b7fab5cbdba0efa29b3b9852eb51378f1d715f0cdfdb10ce",
+      "retrieved_at": "2026-10-18T11:37:54Z"
+    }
+  },
+  {
+    "id": "github:mlc-ai/mlc-llm",
+    "url": "https://github.com/mlc-ai/mlc-llm",
+    "decision": "out_of_scope",
+    "reason": "MLC LLM is a general compiler and inference engine that deploys language models on GPUs, in browsers through WebGPU, and on iOS and Android behind an OpenAI-compatible API. It has no GUI, browser or device interaction of its own, so it falls outside the computer-use scope.",
+    "reviewed_at": "2026-10-18T11:50:19Z",
+    "evidence": {
+      "url": "https://raw.githubusercontent.com/mlc-ai/mlc-llm/HEAD/README.md",
+      "sha256": "c6208e455ea145dbac62aa26493175db67bde071d481edf57ceaf17638d4db09",
+      "retrieved_at": "2026-10-18T11:39:37Z"
+    }
+  },
+  {
+    "id": "github:modelscope/ms-swift",
+    "url": "https://github.com/modelscope/ms-swift",
+    "decision": "out_of_scope",
+    "reason": "ms-swift is ModelScope's general framework for fine-tuning, aligning and deploying several hundred language and multimodal models with methods such as SFT, DPO and GRPO. Its README describes no GUI, browser or device interaction; GUI-agent projects mention it only as their training toolkit.",
+    "reviewed_at": "2026-10-18T11:50:42Z",
+    "evidence": {
+      "url": "https://raw.githubusercontent.com/modelscope/ms-swift/HEAD/README.md",
+      "sha256": "66ceebf6a1479b23035825f32330185ff87b0b8c3a55d1299dc8d27ce597e4a8",
+      "retrieved_at": "2026-10-18T11:39:37Z"
+    }
+  },
+  {
+    "id": "github:modelscope/swift",
+    "url": "https://github.com/modelscope/swift",
+    "decision": "out_of_scope",
+    "reason": "github.com/modelscope/swift is the former name of modelscope/ms-swift: the GitHub API returns the same repository ID, 673412924, for both names. The repository is a general language-model fine-tuning framework with no GUI, browser or device interaction, so the former name shares the current repository's out-of-scope status.",
+    "reviewed_at": "2026-10-18T11:50:55Z",
+    "evidence": {
+      "url": "https://api.github.com/repos/modelscope/swift",
+      "sha256": "c4bd5aeb55d0269cbc4d8bb33479b80e0c18a7497b7f662f2cd3f554b6ee6127",
+      "retrieved_at": "2026-10-18T11:39:49Z"
+    }
+  },
+  {
+    "id": "github:roocode/roocode",
+    "url": "https://github.com/RooCode/RooCode",
+    "decision": "not_a_resource",
+    "reason": "Dead link: page and API return 404 with no rename redirect; the RooCode account is an unrelated user with no public repositories, and the only Wayback capture (CDX, 2025-11-17) is a 404. Roo Code is published at RooCodeInc/Roo-Code, not at this address."
+  },
+  {
+    "id": "github:pytorch/executorch",
+    "url": "https://github.com/pytorch/executorch",
+    "decision": "out_of_scope",
+    "reason": "ExecuTorch is PyTorch's general runtime and export toolchain for running models on phones, laptops, embedded devices and microcontrollers. It provides no GUI observation, screen understanding or device-control capability, so it is generic on-device inference infrastructure like MNN and llama.cpp rather than a computer-use resource.",
+    "reviewed_at": "2026-10-18T12:20:21Z",
+    "evidence": {
+      "url": "https://raw.githubusercontent.com/pytorch/executorch/897d28fe3094f27898115ebd65fecafdef5970cb/README.md",
+      "sha256": "edc454a811e13bb1735d82d40522a56a4a8b747042987943dbe9fe8669aae736",
+      "retrieved_at": "2026-10-18T12:04:36Z"
+    }
+  },
+  {
+    "id": "github:shenzhi-wang/llama3-chinese-chat",
+    "url": "https://github.com/Shenzhi-Wang/Llama3-Chinese-Chat",
+    "decision": "out_of_scope",
+    "reason": "Llama3-Chinese-Chat documents Llama3-8B-Chinese-Chat, a general Chinese-English chat model fine-tuned from Meta-Llama-3-8B-Instruct with ORPO, plus its GGUF and Ollama builds; the repository holds only this README. It has no GUI, browser or device interaction and does not target computer-use tasks.",
+    "reviewed_at": "2026-10-18T12:20:33Z",
+    "evidence": {
+      "url": "https://raw.githubusercontent.com/Shenzhi-Wang/Llama3-Chinese-Chat/HEAD/README.md",
+      "sha256": "f10300a4e91f1fc155da4afcc68f0121e3ed4999bea4d2b5b76e110cf1181954",
+      "retrieved_at": "2026-10-18T12:07:38Z"
+    }
+  },
+  {
+    "id": "github:tjunlp-lab/ctooleval",
+    "url": "https://github.com/tjunlp-lab/CToolEval",
+    "decision": "not_a_resource",
+    "reason": "Dead link: on 2026-10-18 the GitHub page and API both returned 404 with no rename redirect, none of the owner's 42 public repositories is CToolEval, a repository search returns nothing, and every Wayback capture since 2024-08-14 is a 404 page."
+  },
+  {
+    "id": "github:unicomai/unichat-llama3-chinese",
+    "url": "https://github.com/UnicomAI/Unichat-llama3-Chinese",
+    "decision": "out_of_scope",
+    "reason": "Unichat-llama3-Chinese releases Chinese instruction-tuned Llama 3 and 3.1 chat models (8B, a 28K-context 8B and 70B) with question-answering examples. It has no GUI, browser, mobile or tool-use agent component, so it is a general language model outside the computer-use catalog.",
+    "reviewed_at": "2026-10-18T15:32:51Z",
+    "evidence": {
+      "url": "https://raw.githubusercontent.com/UnicomAI/Unichat-llama3-Chinese/HEAD/README.md",
+      "sha256": "01d58c83f0a2617abfda1c15cd2f58558be3510e59db332496026fe5586e8a8b",
+      "retrieved_at": "2026-10-18T12:23:52Z"
+    }
+  },
+  {
+    "id": "github:sugarandgugu/focus",
+    "url": "https://github.com/sugarandgugu/Focus",
+    "decision": "not_a_resource",
+    "reason": "Dead link: the repository page and the GitHub API return 404 with no rename redirect, and the owner's public repositories include no Focus repository. The only Wayback captures (March 2025) show a README-only placeholder saying the code would be released soon. The paper it was listed for, arXiv 2503.06470, is indexed."
+  },
+  {
+    "id": "github:vllm-project/vllm",
+    "url": "https://github.com/vllm-project/vllm",
+    "decision": "out_of_scope",
+    "reason": "vLLM is a general library for serving and running inference on language and multimodal models through an OpenAI-compatible API. It has no GUI, browser or device interaction of its own, and ScaleCUA's README links it only as the server for deploying its models.",
+    "reviewed_at": "2026-10-18T15:33:34Z",
+    "evidence": {
+      "url": "https://raw.githubusercontent.com/vllm-project/vllm/HEAD/README.md",
+      "sha256": "4dc7399323b9660117f8cc1226afb7a81cdbb912dbb4ae74b66d89052417d11c",
+      "retrieved_at": "2026-10-18T12:29:37Z"
+    }
+  },
+  {
+    "id": "github:zhixin-l/tipo",
+    "url": "https://github.com/Zhixin-L/TIPO",
+    "decision": "not_a_resource",
+    "reason": "Dead link: on 2026-10-18 the GitHub page and API both returned 404 with no rename redirect, the owner's two public repositories are other projects, and the Wayback Machine's only captures (April 2026) are 404 pages. arXiv 2604.11259 announces its code and dataset for this address, but nothing has been published there."
+  },
+  {
+    "id": "github:yihaop/dreamstruct",
+    "url": "https://github.com/yihaop/dreamstruct",
+    "decision": "alias",
+    "target_id": "arxiv:2410.00201",
+    "reason": "Source of the DreamStruct project website for the paper arXiv 2410.00201 (ECCV 2024): the repository holds a README with the abstract, resource links and BibTeX, plus index.html, fonts, figures and the poster PDF, and no code. The datasets and models it points to are on Google Drive and Hugging Face, not in this repository."
+  },
+  {
+    "id": "url:35a8f56b123ef9b51f69",
+    "url": "https://huggingface.co/sujitvasanth",
+    "decision": "not_a_resource",
+    "reason": "Hugging Face user profile of Sujit Vasanth, whom the OpenCUA README thanks for a quantized OpenCUA-7B build; a person's profile page, not a resource."
+  },
+  {
+    "id": "url:3deb06272f87c957a810",
+    "url": "https://huggingface.co/spaces/xlangai/OpenCUA-demo",
+    "decision": "alias",
+    "target_id": "github:xlang-ai/opencua",
+    "reason": "Hugging Face Space with the OpenCUA GUI grounding demo, linked as Model Demo from the indexed OpenCUA repository; its app sends a screenshot and instruction to a hosted OpenCUA model endpoint and marks the predicted point."
+  },
+  {
+    "id": "url:143351d4efc86a846bba",
+    "url": "https://huggingface.co/google/siglip-so400m-patch14-384",
+    "decision": "out_of_scope",
+    "reason": "A general-purpose SigLIP image-text encoder pre-trained on WebLi for zero-shot image classification and retrieval; its card describes no GUI, web or device interaction. MultiUI lists it only as the vision tower behind its UIX-Qwen2 checkpoints, which does not make the encoder itself a computer-use resource.",
+    "reviewed_at": "2026-10-18T16:05:13Z",
+    "evidence": {
+      "url": "https://huggingface.co/google/siglip-so400m-patch14-384/raw/9fdffc58afc957d1a03a25b10dba0329ab15c2a3/README.md",
+      "sha256": "96a172e58539296eadb939acf544287c14e20a0a426fbbff116518c2c8024a8b",
+      "retrieved_at": "2026-10-18T15:38:35Z"
+    }
+  },
+  {
+    "id": "url:19ee6af6e3d15e37dee5",
+    "url": "https://huggingface.co/meta-llama/Meta-Llama-3-8B",
+    "decision": "out_of_scope",
+    "reason": "Meta's gated, general-purpose Llama 3 8B base text model (text-generation pipeline, LlamaForCausalLM, Llama 3 Community License); its Hub metadata describes no GUI, web or device interaction. A web-agent list names it only as a general large language model, and agent checkpoints fine-tuned from it are separate resources.",
+    "reviewed_at": "2026-10-18T16:05:34Z",
+    "evidence": {
+      "url": "https://huggingface.co/api/models/meta-llama/Meta-Llama-3-8B",
+      "sha256": "1ca835369c162ae288b190f167a2e0e7b1ba7c6447c05d6e4a540592c0782101",
+      "retrieved_at": "2026-10-18T15:38:36Z"
+    }
+  },
+  {
+    "id": "url:1bd8434bd25907f469c0",
+    "url": "https://huggingface.co/Hcompany/NeoMME-260M-Retriever-ST-dense",
+    "decision": "out_of_scope",
+    "reason": "NeoMME-260M-Retriever-ST-dense is a 263M-parameter encoder that embeds text queries and document pages (text or page images) for multimodal document retrieval, evaluated on ViDoRe and BEIR. Its card describes no GUI, screen-control or agent use, so it is a document-retrieval model outside the computer-use catalog despite its publisher's other GUI-agent releases.",
+    "reviewed_at": "2026-10-18T16:05:54Z",
+    "evidence": {
+      "url": "https://huggingface.co/Hcompany/NeoMME-260M-Retriever-ST-dense/raw/main/README.md",
+      "sha256": "30c509a5d55237a5b5dbe8331d7bd76c25ebaa66f1123fe10784c1a5ae65e3df",
+      "retrieved_at": "2026-10-18T15:38:59Z"
+    }
+  },
+  {
+    "id": "url:3312804cfa1c8a3349fe",
+    "url": "https://huggingface.co/Hcompany/NeoMME-260M-Retriever-ST-late",
+    "decision": "out_of_scope",
+    "reason": "NeoMME-260M-Retriever-ST-late is the multi-vector (late-interaction) Sentence Transformers variant of H Company's NeoMME-260M document retriever, scored on ViDoRe and BEIR. Its card describes document-page and text retrieval only, with no GUI, screen-control or agent use, so it is outside the computer-use catalog.",
+    "reviewed_at": "2026-10-18T16:06:28Z",
+    "evidence": {
+      "url": "https://huggingface.co/Hcompany/NeoMME-260M-Retriever-ST-late/raw/main/README.md",
+      "sha256": "60a1562a0fda2980795ffde310a265d0c6f102fa77dbeb51e50bd8bf0c23f4bb",
+      "retrieved_at": "2026-10-18T15:38:59Z"
+    }
+  },
+  {
+    "id": "url:3248b11f30f4986e04cd",
+    "url": "https://huggingface.co/datasets/HarrytheOrange/parsed_AndroidControl",
+    "decision": "alias",
+    "target_id": "component:google-research/android_control",
+    "reason": "Third-party copy of the indexed AndroidControl dataset: HarrytheOrange/parsed_AndroidControl reformats the same episodes as JSONL with pickled view-hierarchy trees and a script that extracts screenshots from the original TFRecords."
+  },
+  {
+    "id": "url:4efcd2c3fbd98bc4106d",
+    "url": "https://huggingface.co/shenzhi-wang/Llama3-8B-Chinese-Chat",
+    "decision": "out_of_scope",
+    "reason": "Llama3-8B-Chinese-Chat is a general Chinese-English chat model fine-tuned from Meta-Llama-3-8B-Instruct with ORPO; its card shows roleplay, math, writing and text-only function-calling examples. It has no GUI, browser or device interaction, so it is a general language model outside the computer-use catalog.",
+    "reviewed_at": "2026-10-18T16:07:09Z",
+    "evidence": {
+      "url": "https://huggingface.co/shenzhi-wang/Llama3-8B-Chinese-Chat/raw/f25f13cb2571e70e285121faceac92926b51e6f5/README.md",
+      "sha256": "a2b393dba94b196a23198f3bf1ecde12f49a1a303ce3449c3797667280cf8716",
+      "retrieved_at": "2026-10-18T15:51:58Z"
+    }
+  },
+  {
+    "id": "url:5b125e4e6db1286080c7",
+    "url": "https://huggingface.co/datasets/GAIR/AgencyBench",
+    "decision": "out_of_scope",
+    "reason": "AgencyBench evaluates autonomous LLM agents on 32 long-horizon scenarios in game, frontend and backend development, code, deep research and MCP tool use, run through coding scaffolds. Mouse, keyboard and screenshot actions appear only in its evaluation sandbox, which checks the web pages and games the agent builds, so the agent under test never operates a GUI.",
+    "reviewed_at": "2026-10-18T16:07:28Z",
+    "evidence": {
+      "url": "https://huggingface.co/datasets/GAIR/AgencyBench/raw/ea9008235da1864d00380f56e48c18270e84518c/README.md",
+      "sha256": "9f33dc44d29224baa8c55c3894d3eeaf053739ad610cde6093f054b34e433954",
+      "retrieved_at": "2026-10-18T15:52:37Z"
+    }
+  },
+  {
+    "id": "url:618028884ec02c25e156",
+    "url": "https://huggingface.co/Hcompany/NeoMME-800M",
+    "decision": "out_of_scope",
+    "reason": "NeoMME-800M is H Company's pretrained single-tower text-and-image encoder trained with a masked-diffusion objective for long-context document understanding; its card says it needs a task head for retrieval, classification or extraction. Neither the card nor H's models page describes GUI, screen or agent use, so it falls outside the computer-use catalog.",
+    "reviewed_at": "2026-10-18T16:07:52Z",
+    "evidence": {
+      "url": "https://huggingface.co/Hcompany/NeoMME-800M/raw/b0169a3100065d5f3f2d0c112e2ec7bdacf88456/README.md",
+      "sha256": "39550199dbb5eb75b1b23bdfa9e68fa058f5f53dd36099b1f929475388bedef0",
+      "retrieved_at": "2026-10-18T15:52:38Z"
+    }
+  },
+  {
+    "id": "url:a3155db43158302b7967",
+    "url": "https://huggingface.co/datasets/Voxel51/ScreenSpot-Pro",
+    "decision": "alias",
+    "target_id": "url:c79e152e6f7af1a9efed",
+    "reason": "Third-party copy of the indexed ScreenSpot-Pro data: Voxel51/ScreenSpot-Pro repackages the same 1,581 screenshots in FiftyOne format with only the English instructions and target boxes, and credits likaixin/ScreenSpot-Pro."
+  },
+  {
+    "id": "url:6af83fdc10d9ae10b6f3",
+    "url": "https://huggingface.co/Qwen/Qwen2-7B-Instruct",
+    "decision": "out_of_scope",
+    "reason": "Qwen2-7B-Instruct is a general-purpose, text-only instruction-tuned language model whose card covers language, coding, math and long-context benchmarks with no GUI, screen or agent use. MultiUI lists it only as the language backbone of its UIX-Qwen2 checkpoints, which are recorded separately.",
+    "reviewed_at": "2026-10-18T16:08:13Z",
+    "evidence": {
+      "url": "https://huggingface.co/Qwen/Qwen2-7B-Instruct/raw/f2826a00ceef68f0f2b946d945ecc0477ce4450c/README.md",
+      "sha256": "174c5a5d83d0f9670e0b96df86f2dddb2de5ab958f885653525b3d2c977f24b5",
+      "retrieved_at": "2026-10-18T15:52:39Z"
+    }
+  },
+  {
+    "id": "url:a1ebe1d53a071bcb3e4a",
+    "url": "https://huggingface.co/lerobot/smolvla_base",
+    "decision": "out_of_scope",
+    "reason": "SmolVLA base is LeRobot's vision-language-action checkpoint for robot manipulation: it maps multi-view camera images, robot state and an optional instruction to continuous robot actions, and its card describes no GUI, screen or computer use. It appears in the discovery source only as the base acknowledged by ShowUI-pi, whose GUI checkpoint is recorded separately.",
+    "reviewed_at": "2026-10-18T16:08:33Z",
+    "evidence": {
+      "url": "https://huggingface.co/lerobot/smolvla_base/raw/5e8d12a6e2975b0e5e5fce7c8caf47c371d257b6/README.md",
+      "sha256": "1c4eab155e159a5fd3fd6c4d5f770c43f056665d73e11c0584e47f8b824d3c98",
+      "retrieved_at": "2026-10-18T15:53:27Z"
+    }
+  },
+  {
+    "id": "url:6245f70e1b5fb2ff0499",
+    "url": "https://huggingface.co/datasets/rootsautomation/websrc",
+    "decision": "alias",
+    "target_id": "url:e0ba328ae1a643b0a5aa",
+    "reason": "Third-party copy of the indexed WebSRC v1.0 dataset: rootsautomation/websrc, now served as bevaya/websrc, is a flat Parquet copy of the train and dev question-answer pairs with base64 screenshots, omitting HTML and the test split."
+  },
+  {
+    "id": "url:49902bc1ebed9ff91a85",
+    "url": "https://huggingface.co/Hcompany/NeoMME-260M-Pretrain-predecay-s450000",
+    "decision": "out_of_scope",
+    "reason": "This repository holds the NeoMME-260M masked-language-model checkpoint saved at step 450,000 of a 500,000-step pretraining run, with its native optimizer state, for continued pretraining of H Company's text-and-image document encoder. The card and its paper describe document encoding and retrieval, not GUI, screen or agent use, so it falls outside the computer-use catalog.",
+    "reviewed_at": "2026-10-18T16:08:54Z",
+    "evidence": {
+      "url": "https://huggingface.co/Hcompany/NeoMME-260M-Pretrain-predecay-s450000/raw/1ceebb61b7df831f3990eca8b5bd1d1f7e55208e/README.md",
+      "sha256": "bdc49ad1beb20e8cc3836ee52d7d2baa090a7043258b8049a6ea4de6755e0519",
+      "retrieved_at": "2026-10-18T16:00:19Z"
+    }
+  },
+  {
+    "id": "url:b0c7aaa37caa57c013b5",
+    "url": "https://huggingface.co/Hcompany/NeoMME-800M-Retriever",
+    "decision": "out_of_scope",
+    "reason": "NeoMME-800M-Retriever is H Company's multimodal document-retrieval encoder, fine-tuned from NeoMME-800M, that embeds text queries and document pages (text or page images) into dense and multi-vector representations; its card evaluates it only on ViDoRe and BEIR retrieval. It does not observe or act on graphical interfaces and the card describes no agent use, so it falls outside the computer-use catalog.",
+    "reviewed_at": "2026-10-18T16:09:13Z",
+    "evidence": {
+      "url": "https://huggingface.co/Hcompany/NeoMME-800M-Retriever/raw/1a89315b30e2c2fac38b949b35a92ca321e62b24/README.md",
+      "sha256": "6353303ed48d818c80c43b1aeb2c1e48eed162ae6ce81ebc9a72124f9736dec3",
+      "retrieved_at": "2026-10-18T16:01:22Z"
+    }
+  },
+  {
+    "id": "url:9216257833c74d2ea15f",
+    "url": "https://huggingface.co/Hcompany/NeoMME-800M-Retriever-ST-late",
+    "decision": "out_of_scope",
+    "reason": "NeoMME-800M-Retriever-ST-late is H Company's Sentence Transformers late-interaction variant of a multilingual multimodal encoder for retrieving text and document-page images, evaluated on ViDoRe and BEIR retrieval benchmarks. It neither perceives nor operates graphical interfaces, so it is a document-retrieval model outside the computer-use scope despite its publisher's GUI-agent models.",
+    "reviewed_at": "2026-10-18T16:09:32Z",
+    "evidence": {
+      "url": "https://huggingface.co/Hcompany/NeoMME-800M-Retriever-ST-late/raw/ad4c17419c28745c3b3045981b0d8abb72cd142b/README.md",
+      "sha256": "0d7ae8361d598236d573e4e5841cf7a828cd92438bb12dcc2c08a635889a2f36",
+      "retrieved_at": "2026-10-18T16:03:31Z"
+    }
+  },
+  {
+    "id": "url:b1c74b74404eefa7090c",
+    "url": "https://huggingface.co/datasets/Voxel51/ShowUI_desktop",
+    "decision": "alias",
+    "target_id": "url:f976dec3d1c5e0bedbd7",
+    "reason": "Third-party copy of the indexed ShowUI Desktop dataset: Voxel51/ShowUI_desktop repackages its 7,496 grounding examples in FiftyOne format, one image file per example, and credits showlab/ShowUI-desktop."
+  },
+  {
+    "id": "url:c5b5e9d09ea81f07c080",
+    "url": "https://huggingface.co/UnicomLLM",
+    "decision": "not_a_resource",
+    "reason": "Hugging Face organization profile of China Unicom's unicomAI team, linked as the hub site of its Unichat-llama3-Chinese chat model. The profile is a publisher homepage whose three models are Chinese chat Llama 3 checkpoints, with no GUI-agent resource."
+  },
+  {
+    "id": "url:ff60fa8969e2acff42ad",
+    "url": "https://aclanthology.org/2025.acl-long.1065",
+    "decision": "alias",
+    "target_id": "arxiv:2406.11317",
+    "reason": "ACL Anthology page for the ACL 2025 long-paper edition (DOI 10.18653/v1/2025.acl-long.1065) of the indexed GUICourse preprint; same 14 authors as arXiv 2406.11317, with a singular-form title variant."
+  },
+  {
+    "id": "url:b2393e252a7c2a156dd1",
+    "url": "https://ai.google/discover/jarvis",
+    "decision": "not_a_resource",
+    "reason": "Dead link for a rumored Google agent the discovery source lists as \"Project Jarvis\" with few details: the URL redirects to /discover/jarvis/, which returns 404 with a generic page; Wayback CDX and availability queries return no capture."
+  },
+  {
+    "id": "url:2b9161de3439cc2ac8b2",
+    "url": "https://bailian.console.aliyun.com/next?tab=demohouse",
+    "decision": "not_a_resource",
+    "reason": "Alibaba Cloud Bailian (Model Studio) console, the demo tab of a hosting platform. Once the fragment that named the Mobile-Agent-v3.5 computer-use demo is dropped, the address serves only the generic console shell."
+  },
+  {
+    "id": "url:83ad05e194c121277cab",
+    "url": "https://bailian.console.aliyun.com?spm=5176.21213303.J_qCOwPWspKEuWcmp8qiZNQ.131.39712f3dOmFAxI&scm=20140722.S_card%40%40%E4%BA%A7%E5%93%81%40%402983180.S_card0.ID_card%40%40%E4%BA%A7%E5%93%81%40%402983180-RL_%E7%99%BE%E7%82%BC-LOC_search~UND~card~UND~item-OR_ser-V_3-P0_0&tab=model",
+    "decision": "not_a_resource",
+    "reason": "Alibaba Cloud Bailian (Model Studio) console, the model tab of a hosting platform, reached through search-tracking parameters. Once the fragment that named the gui-plus model page is dropped, the address serves only the generic console shell."
+  },
+  {
+    "id": "url:865032cbe662fc70c4b2",
+    "url": "https://huggingface.co/Hcompany/NeoMME-800M-Pretrain-predecay-s450000",
+    "decision": "out_of_scope",
+    "reason": "This repository holds the NeoMME-800M masked-language-model checkpoint saved at step 450,000 of a 500,000-step pretraining run, with its native optimizer state, as a starting point for continued pretraining of H Company's text-and-image document encoder. The card and its paper describe document encoding, not GUI, screen or agent use, so it falls outside the computer-use catalog.",
+    "reviewed_at": "2026-10-19T06:07:11Z",
+    "evidence": {
+      "url": "https://huggingface.co/Hcompany/NeoMME-800M-Pretrain-predecay-s450000/raw/e9a937e2973f0094d1984b5145d0d52d10b03141/README.md",
+      "sha256": "a2c72835288a7e41e43ba447fbf851c31d15843cd7f68fcbe1fc9e9d5dccd2ee",
+      "retrieved_at": "2026-10-18T16:04:29Z"
+    }
+  },
+  {
+    "id": "url:beabd1248afe045ac222",
+    "url": "https://huggingface.co/Hcompany/NeoMME-260M",
+    "decision": "out_of_scope",
+    "reason": "NeoMME-260M is H Company's 263M-parameter pretrained text-and-image encoder backbone, trained with a masked discrete-diffusion objective on web text, code, document pages, captions and synthetic OCR data; its card says it needs a task head for retrieval, classification or extraction. The card describes no GUI, screen-control or agent use, so it is a document-understanding encoder outside the computer-use catalog.",
+    "reviewed_at": "2026-10-19T06:07:34Z",
+    "evidence": {
+      "url": "https://huggingface.co/Hcompany/NeoMME-260M/raw/5ba79fb246e23776d2c2fcead975eae2775ed94b/README.md",
+      "sha256": "732a99f5e41f3e79af0b082e25dbb14afd92778cfc43d8a5201fe4584c2f01b3",
+      "retrieved_at": "2026-10-18T16:07:05Z"
+    }
+  },
+  {
+    "id": "url:f2bae5c2e6c059d6c659",
+    "url": "https://bailian.console.aliyun.com/cn-beijing?tab=model",
+    "decision": "not_a_resource",
+    "reason": "Alibaba Cloud Bailian (Model Studio) console, the model tab of its cn-beijing region. Once the fragment that named the gui-plus-2026-02-26 model page is dropped, the address serves only the generic console shell."
+  },
+  {
+    "id": "url:dba74d12eb6142e7bd73",
+    "url": "https://huggingface.co/Hcompany/NeoMME-800M-Retriever-ST-dense",
+    "decision": "out_of_scope",
+    "reason": "NeoMME-800M-Retriever-ST-dense is the Sentence Transformers dense-embedding variant of H Company's 800M multimodal document retriever: it embeds text queries and document pages (text or page images) and is evaluated only on ViDoRe and BEIR retrieval. Its card describes no GUI, screen-control or agent use, so it falls outside the computer-use catalog.",
+    "reviewed_at": "2026-10-19T06:07:55Z",
+    "evidence": {
+      "url": "https://huggingface.co/Hcompany/NeoMME-800M-Retriever-ST-dense/raw/c0b3be7a95e59145e5f2a626caeed894ff5285c1/README.md",
+      "sha256": "5b2927d3c37cd1e8460e46d37cdb3e6ebbdba121afbb363e32b54318740f998d",
+      "retrieved_at": "2026-10-18T16:12:53Z"
+    }
+  },
+  {
+    "id": "url:4574c2b22102997e0559",
+    "url": "https://cdn.mobilegym.dev",
+    "decision": "not_a_resource",
+    "reason": "Static asset host from which the MobileGym++ phone (github:openmobile2/mobilegym-plusplus) loads wallpapers; its root returns a Cloudflare 404 page and the Wayback CDX query for the domain is empty, so it serves no resource of its own."
+  },
+  {
+    "id": "url:282be9e587b28498e17a",
+    "url": "https://adaptive.ai",
+    "decision": "out_of_scope",
+    "reason": "Adaptive is a commercial platform whose agents run sales follow-up, marketing, customer lifecycle and market research and build small apps through OAuth-connected services such as Gmail, Stripe, Square and GitHub. Its homepage describes no agent that observes or operates graphical interfaces, browsers or devices, so it falls outside the computer-use boundary.",
+    "reviewed_at": "2026-10-19T06:08:15Z",
+    "evidence": {
+      "url": "https://adaptive.ai",
+      "sha256": "1c21e4c754ffc663e37b5b1b4c003cf63ad3f38e373f17dd8748895ecffb59dd",
+      "retrieved_at": "2026-10-18T16:15:59Z"
+    }
+  },
+  {
+    "id": "url:dc36e6a92c0cd731939a",
+    "url": "https://huggingface.co/Hcompany/NeoMME-260M-Retriever",
+    "decision": "out_of_scope",
+    "reason": "NeoMME-260M-Retriever is H Company's 263M-parameter multimodal document retriever, fine-tuned from NeoMME-260M, that embeds text queries and document pages (text or page images) into multi-vector and dense representations; its card evaluates it only on ViDoRe and BEIR retrieval. It does not observe or act on graphical interfaces and the card describes no agent use, so it falls outside the computer-use catalog.",
+    "reviewed_at": "2026-10-19T06:08:40Z",
+    "evidence": {
+      "url": "https://huggingface.co/Hcompany/NeoMME-260M-Retriever/raw/481083153ac22931afbd614e672212bffbcb666e/README.md",
+      "sha256": "e6b46b239531d7724c2cf46410c6d42a195783c60bafd2ff0a6b83cf5405d93d",
+      "retrieved_at": "2026-10-18T16:15:52Z"
+    }
+  },
+  {
+    "id": "url:097cb157bd72a50a0c43",
+    "url": "https://ai.google.dev/gemini-api",
+    "decision": "out_of_scope",
+    "reason": "The URL redirects to the Gemini API documentation home, which introduces Google's general-purpose API for text, image and multimodal generation and conversational agents. Computer use appears only as one built-in tool in its navigation and tool list, and that tool is already indexed as the curated Gemini Computer Use record (url:879d4e3e75e83582bde6).",
+    "reviewed_at": "2026-10-19T06:09:23Z",
+    "evidence": {
+      "url": "https://ai.google.dev/gemini-api",
+      "sha256": "41c875dabbe87129436a3610d606bc1218631993308ac5af02739db819ff3063",
+      "retrieved_at": "2026-10-19T06:03:09Z"
+    }
+  },
+  {
+    "id": "url:cb47a716636e193ba59f",
+    "url": "https://chatpaper.com/chatpaper/zh-CN/paper/17441",
+    "decision": "alias",
+    "target_id": "arxiv:2404.18074",
+    "reason": "ChatPaper listing page for the indexed MMAC-Copilot arXiv paper: it repeats the paper's title, authors and arXiv date with a Chinese translation of the abstract and links arxiv.org/abs/2404.18074."
+  },
+  {
+    "id": "url:f28e520edd657e8b6689",
+    "url": "https://cognition.dev",
+    "decision": "not_a_resource",
+    "reason": "Parked domain that the supernal-gui list links for Devin. HTTPS times out; HTTP forwards to a Namecheap parking page for a recently registered domain, and the only 2023 Wayback capture is a Porkbun parking page. It hosts no Cognition or Devin content."
+  },
+  {
+    "id": "url:1d0a3816a2803ce4081d",
+    "url": "https://chenwu.io/attack-agent",
+    "decision": "alias",
+    "target_id": "github:chenwu98/agent-attack",
+    "reason": "Project website for the indexed VisualWebArena-Adv adversarial web agent repository and its paper arxiv:2406.12814; it links that repository's code and data."
+  },
+  {
+    "id": "url:22ce693d5ecb30906b04",
+    "url": "https://docs.google.com/spreadsheets/d/1cchzP9dlTZ3WXQTfYNhh3avxoLipqHN75v1Tb86uhHo/edit?gid=0",
+    "decision": "alias",
+    "target_id": "github:google-research/android_world",
+    "reason": "AndroidWorld Leaderboard spreadsheet that the indexed AndroidWorld benchmark README links as its leaderboard."
+  },
+  {
+    "id": "url:b40c51376faff46f7e33",
+    "url": "https://convergence.ai",
+    "decision": "not_a_resource",
+    "reason": "Former homepage of Convergence, the Proxy web-agent company that Salesforce acquired in 2025. Every request now returns HTTP 403, as all Wayback captures since August 2025 do, and the last readable capture (July 2025) only announces the acquisition."
+  },
+  {
+    "id": "url:1e8f3046578af87002d2",
+    "url": "https://deepmind.google/discover/blog/introducing-mariner-ai",
+    "decision": "not_a_resource",
+    "reason": "Dead link: deepmind.google returns HTTP 404 for this blog path and for its /blog/ form, with no redirect, and the Wayback CDX index has no capture of it. Google DeepMind described Project Mariner at other addresses."
+  },
+  {
+    "id": "url:87b42dd6f8bcd054d9d5",
+    "url": "https://deepmind.google/discover/blog/sima-generalist-ai-agent-for-3d-virtual-environments",
+    "decision": "alias",
+    "target_id": "arxiv:2404.10179",
+    "reason": "Google DeepMind announcement page for the indexed SIMA technical report, published the same day; it summarizes that report and links its arXiv entry."
+  },
+  {
+    "id": "url:59a677c3d80441b8fc2d",
+    "url": "https://dl.acm.org/doi/abs/10.1145/3637528.3671646",
+    "decision": "alias",
+    "target_id": "arxiv:2312.06677",
+    "reason": "ACM Digital Library abstract page for the KDD 2024 edition (DOI 10.1145/3637528.3671646), retitled Intelligent Agents with LLM-based Process Automation, of the indexed LLMPA paper. Crossref lists seven authors for this edition, the arXiv list without Longfei Li and Jinjie Gu, in the same order; the abstract is the same."
+  },
+  {
+    "id": "url:82618023225740cbdf79",
+    "url": "https://felluo.ai",
+    "decision": "not_a_resource",
+    "reason": "Dead link: felluo.ai and www.felluo.ai return NXDOMAIN from public resolvers, so no page is served; no Wayback capture (CDX queries for both hosts are empty) and no GitHub user or repository named felluo."
+  },
+  {
+    "id": "url:2c735a98fd797a4970b0",
+    "url": "https://mobilegym-mock-production.up.railway.app",
+    "decision": "alias",
+    "target_id": "github:openmobile2/mobilegym-plusplus",
+    "reason": "Hosted copy of the MobileGym++ simulated phone, linked as \"Try the phone\" from the indexed MobileGym++ repository."
+  },
+  {
+    "id": "url:0b9babde61a69790374e",
+    "url": "https://manus.bot",
+    "decision": "not_a_resource",
+    "reason": "Dead link: manus.bot has no A, AAAA or CNAME record (its Route 53 zone answers only SOA and NS, so the host does not resolve), and the Wayback CDX query is empty. The listing names Manus, which is indexed at manus.im."
+  },
+  {
+    "id": "url:92b2d396e6293e47da6a",
+    "url": "https://modelscope.cn/models/iic/GUI-Owl-7B",
+    "decision": "alias",
+    "target_id": "url:aeb32973694f91ad9920",
+    "reason": "ModelScope copy of the indexed GUI-Owl 7B checkpoint, linked beside it in the Mobile-Agent README; all five safetensors shards have the same SHA-256 digests as on Hugging Face."
+  },
+  {
+    "id": "url:ff147d50026d2d44c62d",
+    "url": "https://modelscope.cn/collections/iic/GUI-Owl-15",
+    "decision": "alias",
+    "target_id": "github:x-plug/mobileagent",
+    "reason": "ModelScope release collection for the GUI-Owl-1.5 checkpoints of the indexed Mobile-Agent project; it lists the same six models as the project's Hugging Face collection."
+  },
+  {
+    "id": "url:334c8e97e5c0387b7c5b",
+    "url": "https://modelscope.cn/studios/MobileAgentTest/computer_use",
+    "decision": "alias",
+    "target_id": "github:x-plug/mobileagent",
+    "reason": "ModelScope online demo of Mobile-Agent-v3.5, linked as such from the indexed Mobile-Agent repository; the app calls the hosted GUI-Owl agent service."
+  },
+  {
+    "id": "url:b3adba37854ced041632",
+    "url": "https://modelscope.cn/collections/extreme1228/ScaleCUA",
+    "decision": "alias",
+    "target_id": "github:thudm/scale-cua",
+    "reason": "ModelScope release collection of checkpoints and a dataset for the indexed THUDM SCALE-CUA project, linked from that repository's README header."
+  },
+  {
+    "id": "url:fdfd8496b90bacf3ca31",
+    "url": "https://onpiste.work",
+    "decision": "not_a_resource",
+    "reason": "Dead homepage of the withdrawn OnPiste browser-automation Chrome extension: onpiste.work has no DNS address record (NOERROR, empty answer from public resolvers), its Chrome Web Store item hmojfgaobpbggbfcaijjghjimbbjfnei now returns an untitled empty listing, and the onpiste GitHub organization holds only an empty feedback repository; the last Wayback capture of the site is from 2026-02-15."
+  },
+  {
+    "id": "url:c01a0a0897800e1d41bf",
+    "url": "https://ojs.aaai.org/index.php/AAAI/article/view/39974",
+    "decision": "alias",
+    "target_id": "arxiv:2511.09157",
+    "reason": "AAAI Proceedings landing page for the AAAI-26 edition (DOI 10.1609/aaai.v40i32.39974) of the indexed ProBench paper."
+  },
+  {
+    "id": "url:cc488994eec482193a7b",
+    "url": "https://modelscope.cn/studios/wangjunyang/Mobile-Agent-v3",
+    "decision": "alias",
+    "target_id": "github:x-plug/mobileagent",
+    "reason": "ModelScope online demo of Mobile-Agent-v3 on Wuying cloud desktops and phones, linked from the indexed Mobile-Agent repository's README; its agent calls the hosted GUI-Owl service."
+  },
+  {
+    "id": "url:8803959f853113b8b42d",
+    "url": "https://aleksandarhaber.com/install-and-run-browser-use-ai-agents-locally-using-ollama",
+    "decision": "out_of_scope",
+    "reason": "A third-party blog tutorial with an embedded YouTube video that walks through installing the already-curated Browser Use library (github:browser-use/browser-use) on Windows and running it locally with Ollama and Qwen2.5-14B. It is a setup recipe for an existing framework, not a new agent, dataset, benchmark or tool.",
+    "reviewed_at": "2026-10-19T06:34:27Z",
+    "evidence": {
+      "url": "https://aleksandarhaber.com/install-and-run-browser-use-ai-agents-locally-using-ollama/",
+      "sha256": "b8217bd900c60580e3bf8687dbdec7c804c3bdfc3efa55c2dafe09eaf6a48f25",
+      "retrieved_at": "2026-10-19T06:03:54Z"
+    }
+  },
+  {
+    "id": "url:d67073361d40856980e8",
+    "url": "https://highlight.run",
+    "decision": "not_a_resource",
+    "reason": "Redirects to www.highlight.io and from there to the LaunchDarkly homepage; it is not the Highlight AI desktop assistant (highlightai.com) that the listing names, and no computer-use resource is behind it."
+  },
+  {
+    "id": "url:12eca12dbb5a4c439fbe",
+    "url": "https://composio.dev/blog/claude-computer-use",
+    "decision": "out_of_scope",
+    "reason": "A October 2024 Composio blog post (now served at composio.dev/content/claude-computer-use) in which a Composio employee runs Anthropic's computer-use quickstart demo on a few web and spreadsheet tasks and gives an opinion on cost and speed. It is commentary on the already-curated Claude computer-use capability (url:57f17b7d0c18b2d7c8bf), not a new agent, dataset, benchmark or tool.",
+    "reviewed_at": "2026-10-19T06:34:43Z",
+    "evidence": {
+      "url": "https://composio.dev/blog/claude-computer-use",
+      "sha256": "1d1f14a9057eb1d3517aa238cadc0353baae793b9f1fbab9f4cda20ed2ccc24a",
+      "retrieved_at": "2026-10-19T06:12:01Z"
+    }
+  },
+  {
+    "id": "url:51a27bb7418a7e6c923b",
+    "url": "https://dzone.com/articles/build-ai-browser-agent-llms-playwright-browser-use",
+    "decision": "out_of_scope",
+    "reason": "A third-party DZone tutorial that describes the already-curated Browser Use library and walks through cloning, installing and launching the already-curated Browser Use WebUI (github:browser-use/web-ui) with Playwright. It is a setup guide for existing tools, not a new agent, dataset, benchmark or tool.",
+    "reviewed_at": "2026-10-19T06:34:59Z",
+    "evidence": {
+      "url": "https://dzone.com/articles/build-ai-browser-agent-llms-playwright-browser-use",
+      "sha256": "446857889c758749449dabb709b1cab1e470b306e1ea3565645f016fd9ca6662",
+      "retrieved_at": "2026-10-19T06:13:28Z"
+    }
+  },
+  {
+    "id": "url:0f586b6ae86261d12585",
+    "url": "https://dl.acm.org/doi/10.1145/3716628",
+    "decision": "out_of_scope",
+    "reason": "This ACM Computing Surveys article (arXiv 2406.02630) reviews security threats to AI agents in general, grouped into input, internal execution, environment and external-entity gaps. Its full text does not discuss GUI, browser, mobile or computer-use agents; web pages appear only as an indirect prompt-injection channel.",
+    "reviewed_at": "2026-10-19T06:35:14Z",
+    "evidence": {
+      "url": "https://api.crossref.org/works/10.1145/3716628",
+      "sha256": "47409204a12865e7dfe84cbc88aa38cdd8e17ba17ecd584ca1c93965c66f1191",
+      "retrieved_at": "2026-10-19T06:09:50Z"
+    }
+  },
+  {
+    "id": "url:16e3d137699cea261175",
+    "url": "https://openreview.net/forum?id=IgTUGrZfMr",
+    "decision": "alias",
+    "target_id": "arxiv:2603.24440",
+    "reason": "OpenReview page of the ICLR 2026 Workshop LLA poster edition of the indexed CUA-Suite paper; same title and authors."
+  },
+  {
+    "id": "url:58343bd3b3d0de7f0cdf",
+    "url": "https://dl.acm.org/doi/10.1145/3132847.3133009",
+    "decision": "out_of_scope",
+    "reason": "This CIKM 2017 paper studies natural language interfaces that map user commands to web service API calls (NL2API). It involves no graphical interface, web page or device interaction, so it falls outside the computer-use scope.",
+    "reviewed_at": "2026-10-19T06:35:29Z",
+    "evidence": {
+      "url": "https://api.crossref.org/works/10.1145/3132847.3133009",
+      "sha256": "1119879fc10b7fb1045ff3c1fa47c575240cf4eb5a967087864fc3fdca6b36b3",
+      "retrieved_at": "2026-10-19T06:09:51Z"
+    }
+  },
+  {
+    "id": "url:9dd7bcc544b2b899a033",
+    "url": "https://aclanthology.org/2024.findings-acl.928",
+    "decision": "out_of_scope",
+    "reason": "CToolEval (Findings of ACL 2024) is a Chinese benchmark of LLM tool invocation over 398 APIs from 27 apps in 14 domains. Agents call those APIs directly and never operate a graphical, browser or device interface, so the paper is outside the computer-use scope. It has no arXiv version, and its linked repository is already being set aside as a dead link (PR #817).",
+    "reviewed_at": "2026-10-19T06:35:46Z",
+    "evidence": {
+      "url": "https://aclanthology.org/2024.findings-acl.928",
+      "sha256": "228f6563697298756e45ec95076d2bb40adb79467a4e64c377ce3245559fffc8",
+      "retrieved_at": "2026-10-19T06:14:46Z"
+    }
+  },
+  {
+    "id": "url:c2bf550f02b935270a8a",
+    "url": "https://datalens.uk",
+    "decision": "out_of_scope",
+    "reason": "DataLens is a Chrome and Edge extension that turns the page a user has open, including paginated lists, into a table for export to Excel or CSV, using an AI model to identify the fields. It extracts data from pages rather than carrying out tasks on interfaces, so it is a scraper outside the computer-use scope.",
+    "reviewed_at": "2026-10-19T06:36:04Z",
+    "evidence": {
+      "url": "https://datalens.uk",
+      "sha256": "dd35bfc18f1878e6969c5b7345a8ccecb11800898e27b388beca48af61112c69",
+      "retrieved_at": "2026-10-19T06:14:32Z"
+    }
+  },
+  {
+    "id": "url:1880e73fc2f79a66bec2",
+    "url": "https://openreview.net/forum?id=IWDpCaSF9Q",
+    "decision": "alias",
+    "target_id": "arxiv:2505.11891",
+    "reason": "OpenReview page of the ICLR 2026 edition of the indexed Mobile-Bench-v2 paper, retitled SMAN-Bench; same ten authors, splits and released dataset."
+  },
+  {
+    "id": "url:da6c7ce30d89a9018660",
+    "url": "https://deepmind.google/discover/blog/a-generalist-agent",
+    "decision": "out_of_scope",
+    "reason": "This May 2022 Google DeepMind post announces Gato, a single transformer policy that plays Atari games, captions images, chats and stacks blocks with a real robot arm. It does not operate graphical user interfaces, websites or devices, and its paper (arXiv 2205.06175) is not in the catalog.",
+    "reviewed_at": "2026-10-19T06:36:26Z",
+    "evidence": {
+      "url": "https://deepmind.google/discover/blog/a-generalist-agent",
+      "sha256": "608c20651e876c36dcfb2a951842136f0cb6790818cc7155f27b33e4fbac619c",
+      "retrieved_at": "2026-10-19T06:14:34Z"
+    }
+  },
+  {
+    "id": "url:543eb835feb4c59741cc",
+    "url": "https://deta.surf",
+    "decision": "out_of_scope",
+    "reason": "Deta Surf is an open-source AI notebook for macOS, Windows and Linux that collects web pages, files, videos and PDFs into notebooks and generates notes and answers from them with a chosen language model. No agent operates websites or applications for the user, so it is a research and note-taking tool outside the computer-use scope.",
+    "reviewed_at": "2026-10-19T06:36:45Z",
+    "evidence": {
+      "url": "https://deta.surf",
+      "sha256": "9e246b1569ae3673eee2cad51d9a51d652570d21f2d2a13e222553e11dee8d1f",
+      "retrieved_at": "2026-10-19T06:14:34Z"
+    }
+  },
+  {
+    "id": "url:12f2d6b288b11497d7bc",
+    "url": "https://dev.to/nodeshiftcloud/build-a-browser-use-agent-with-deepseek-a-step-by-step-guide-2n59",
+    "decision": "out_of_scope",
+    "reason": "A NodeShift blog tutorial from January 2025 that provisions a cloud virtual machine and runs the already-curated Browser Use Web UI (github:browser-use/web-ui) with a DeepSeek model. It is a setup guide for an existing tool, not a new agent, dataset, benchmark or tool.",
+    "reviewed_at": "2026-10-19T06:36:59Z",
+    "evidence": {
+      "url": "https://dev.to/nodeshiftcloud/build-a-browser-use-agent-with-deepseek-a-step-by-step-guide-2n59",
+      "sha256": "fdc6599e0a405206bfa233403210ecefa909c68cbfe6d895e0c1a8d4f8f1a648",
+      "retrieved_at": "2026-10-19T06:14:35Z"
+    }
+  },
+  {
+    "id": "url:cc76cd5cb3935b1394d8",
+    "url": "https://exa.ai",
+    "decision": "out_of_scope",
+    "reason": "Exa is a commercial web search and content-retrieval API that returns ranked results, page contents and generated answers to AI applications through API calls. It does not open or operate web pages or other interfaces, so it is web retrieval infrastructure rather than computer or browser use.",
+    "reviewed_at": "2026-10-19T06:37:14Z",
+    "evidence": {
+      "url": "https://exa.ai",
+      "sha256": "585c49a7b62ab819b18d2da0f832197c29002586738e43c12ad4e670ee19cf3b",
+      "retrieved_at": "2026-10-19T06:17:13Z"
+    }
+  },
+  {
+    "id": "url:d1e6e942f07e9fc49147",
+    "url": "https://dl.acm.org/doi/10.1145/2009916.2010020",
+    "decision": "out_of_scope",
+    "reason": "This SIGIR 2011 paper learns vertical-level features from one labeled seed site to extract entity attributes from other websites for search engines and knowledge bases, evaluated on 80 sites in 8 verticals. It is web information extraction with no agent observing or acting on an interface.",
+    "reviewed_at": "2026-10-19T06:37:28Z",
+    "evidence": {
+      "url": "https://dl.acm.org/doi/10.1145/2009916.2010020",
+      "sha256": "ec286356c2eed88d170ccc3f7dc18a838ba26beff049698bd5e557d4fcd704bf",
+      "retrieved_at": "2026-10-19T06:12:34Z"
+    }
+  },
+  {
+    "id": "url:955ed52bd98ae8a5e909",
+    "url": "https://glama.ai/blog/2024-10-22-automate-computer-using-claude",
+    "decision": "out_of_scope",
+    "reason": "An October 2024 Glama blog post by Frank Fiegel (punkpeye) that shows how to start Anthropic's computer-use demo Docker container, tries one Hacker News browsing prompt, and lists community demos, limitations and alternatives. It is a setup guide for the already-curated Claude Computer Use (url:57f17b7d0c18b2d7c8bf), not a new agent, dataset, benchmark or tool.",
+    "reviewed_at": "2026-10-19T06:38:08Z",
+    "evidence": {
+      "url": "https://glama.ai/blog/2024-10-22-automate-computer-using-claude",
+      "sha256": "02f7f32e03dd1764232a3fb81283a27749fdcbe54669853e43e96765a79ccd6e",
+      "retrieved_at": "2026-10-19T06:18:02Z"
+    }
+  },
+  {
+    "id": "url:57c169130922283e3331",
+    "url": "https://glama.ai/blog/2024-10-23-automating-macos-using-claude",
+    "decision": "out_of_scope",
+    "reason": "An October 2024 Glama blog post by Frank Fiegel (punkpeye) that explains how to run Anthropic's computer-use quickstart natively on macOS by swapping in a cliclick-based computer.py, credited to a third-party gist, and lists related projects. It is a tutorial about the already-curated Claude Computer Use (url:57f17b7d0c18b2d7c8bf), not a maintained agent, dataset, benchmark or tool.",
+    "reviewed_at": "2026-10-19T06:38:21Z",
+    "evidence": {
+      "url": "https://glama.ai/blog/2024-10-23-automating-macos-using-claude",
+      "sha256": "5c7e91a0de001634bbc46937dc77444ffdc947fe97294a63b3e41697dd988754",
+      "retrieved_at": "2026-10-19T06:18:03Z"
+    }
+  },
+  {
+    "id": "url:d642c930de1e1d5fd70e",
+    "url": "https://coasty.ai/blog/computer-use-ai-agent-news-2026",
+    "decision": "out_of_scope",
+    "reason": "A Coasty marketing blog post that comments on OSWorld accuracy trends and common agent failures, then promotes Coasty's own desktop agent and its self-reported OSWorld scores. It is vendor commentary with no agent, dataset, benchmark, method or tool of its own.",
+    "reviewed_at": "2026-10-19T06:38:37Z",
+    "evidence": {
+      "url": "https://coasty.ai/blog/computer-use-ai-agent-news-2026",
+      "sha256": "9e85e2edebbf0561f49d7986d4eb09332b53824954909fd53de5f8063b280931",
+      "retrieved_at": "2026-10-19T06:19:12Z"
+    }
+  },
+  {
+    "id": "url:45ec936167a440314676",
+    "url": "https://lindy.ai",
+    "decision": "out_of_scope",
+    "reason": "Lindy is a commercial AI teammate that works through Slack, iMessage, email and phone and connects to 1,500+ tools via integrations and MCP servers for sales, support, finance and engineering tasks. Its homepage mentions driving the browser like a person only as a fallback, on Pro plans and up, for tools with no integration, so GUI interaction is not material to the product.",
+    "reviewed_at": "2026-10-19T06:39:17Z",
+    "evidence": {
+      "url": "https://lindy.ai",
+      "sha256": "3b5f83e098c077b73289ef40457d15b00b30851ad864cf25ce529d3bb9bb6e02",
+      "retrieved_at": "2026-10-19T06:28:50Z"
+    }
+  },
+  {
+    "id": "url:2ef592a5e30038f258af",
+    "url": "https://llava-vl.github.io/blog/2024-01-30-llava-next",
+    "decision": "out_of_scope",
+    "reason": "This 30 January 2024 LLaVA team blog post announces LLaVA-NeXT, a general vision-language model with higher input resolution and better OCR and reasoning, and reports general multimodal benchmarks such as MMMU, MathVista and VQAv2. It does not address GUI, web or mobile interaction, so it is a general base model rather than a computer-use resource.",
+    "reviewed_at": "2026-10-19T06:39:31Z",
+    "evidence": {
+      "url": "https://llava-vl.github.io/blog/2024-01-30-llava-next",
+      "sha256": "23029ba42dcf6bba3b006770a839f44e76b52763b600d8780ab2d9712d7c886e",
+      "retrieved_at": "2026-10-19T06:28:50Z"
+    }
+  },
+  {
+    "id": "url:8d42067401ec21d9546e",
+    "url": "https://monica.im",
+    "decision": "out_of_scope",
+    "reason": "monica.im is the homepage of Monica, Butterfly Effect Pte. Ltd.'s all-in-one AI assistant for chat, writing, summarizing, translating and image generation in a browser sidebar and in desktop and mobile apps. The page describes no agent that operates web pages, desktops or phones. The discovery list labels this link 'Manus', which the catalog already indexes at manus.im.",
+    "reviewed_at": "2026-10-19T06:39:47Z",
+    "evidence": {
+      "url": "https://monica.im",
+      "sha256": "63c3677140fea914f4f3c8ce8b3ddb83866031aa2987b520145a16efae08b1df",
+      "retrieved_at": "2026-10-19T06:25:09Z"
+    }
+  },
+  {
+    "id": "url:03a20e805d953af506e9",
+    "url": "https://openreview.net/forum?id=CjfQssZtAb",
+    "decision": "alias",
+    "target_id": "arxiv:2502.15760",
+    "reason": "OpenReview forum of the ICLR 2025 edition of the indexed Digi-Q paper (same authors; the arXiv version notes ICLR 2025 acceptance). The ICLR edition is titled Digi-Q: Learning VLM Q-Value Functions for Training Device-Control Agents, adding VLM to the arXiv title."
+  },
+  {
+    "id": "url:5a73ab9fb41a4b6651bf",
+    "url": "https://mp.weixin.qq.com/s/naVskQ9btJFkoUyyQVr7zA",
+    "decision": "out_of_scope",
+    "reason": "A Chinese-language article published on 2025-06-26 by the media account 机器之心 (Jiqizhixin), introducing the ScienceBoard benchmark with a byline note on its first author. It is press coverage of the already-curated ScienceBoard (github:os-copilot/scienceboard, arxiv:2505.19897), not a new agent, dataset, benchmark or tool.",
+    "reviewed_at": "2026-10-19T06:40:01Z",
+    "evidence": {
+      "url": "https://mp.weixin.qq.com/s/naVskQ9btJFkoUyyQVr7zA",
+      "sha256": "541733a477d022c79521a3db26e48245b3bc6eb8d98dcc14d46d91f028901d18",
+      "retrieved_at": "2026-10-19T06:30:02Z"
+    }
+  },
+  {
+    "id": "url:c1b322d8849bf125e295",
+    "url": "https://mp.weixin.qq.com/s/_gu3NSCpAbAE1A8mEhGD7Q",
+    "decision": "out_of_scope",
+    "reason": "A Chinese-language AIxiv column article published on 2025-01-22 by the media account 机器之心 (Jiqizhixin) that summarizes the OS-Genesis paper for a general audience. It is press coverage of the already-curated OS-Genesis (github:os-copilot/os-genesis, arxiv:2412.19723), not a new agent, dataset, benchmark or tool.",
+    "reviewed_at": "2026-10-19T06:40:15Z",
+    "evidence": {
+      "url": "https://mp.weixin.qq.com/s/_gu3NSCpAbAE1A8mEhGD7Q",
+      "sha256": "afbf01ebcda7ac858c7f07cbc1316e6c88fd08319a98dba416cd7b4ec0f4ae39",
+      "retrieved_at": "2026-10-19T06:30:14Z"
+    }
+  },
+  {
+    "id": "url:3fc78f9621c648336d56",
+    "url": "https://openreview.net/forum?id=Hghm8tVvbs",
+    "decision": "alias",
+    "target_id": "arxiv:2609.15307",
+    "reason": "OpenReview page of an earlier ICLR 2026 submission (not accepted) of the work in the indexed arXiv paper, before its retitling; same two insights, method and ScreenSpot results under earlier method names."
+  },
+  {
+    "id": "url:436eb55c4e36e6c043bc",
+    "url": "https://nothumansearch.ai",
+    "decision": "out_of_scope",
+    "reason": "Not Human Search is a hosted search engine that ranks websites by machine-readable agent signals such as llms.txt, OpenAPI specs, MCP servers and Schema.org markup, and serves results through a REST API and an MCP server. It helps agents find APIs to call and does not operate browsers, GUIs or devices.",
+    "reviewed_at": "2026-10-19T06:40:29Z",
+    "evidence": {
+      "url": "https://nothumansearch.ai",
+      "sha256": "f28968deab64a4ad08a2ea779c58bb0b35d77cdab852f091506b6236a062ec90",
+      "retrieved_at": "2026-10-19T06:30:42Z"
+    }
+  },
+  {
+    "id": "url:ed048de0531541a28cb4",
+    "url": "https://o-mega.ai/articles/agentic-computer-use-the-ultimate-deep-guide-2026",
+    "decision": "out_of_scope",
+    "reason": "A long O-mega company article, first published in December 2025 and revised in September 2026, that surveys computer-use agents through benchmark scores, a scored top-10 list that includes O-mega's own platform, pricing, security and legal news, and ends with a sign-up pitch. It is vendor commentary with no agent, dataset, benchmark, method or tool of its own.",
+    "reviewed_at": "2026-10-19T06:40:44Z",
+    "evidence": {
+      "url": "https://o-mega.ai/articles/agentic-computer-use-the-ultimate-deep-guide-2026",
+      "sha256": "363428941e6ed2db7107c4ce668df7aad458c889ec27e826e1c6f34a7414f2a7",
+      "retrieved_at": "2026-10-19T06:30:43Z"
+    }
+  },
+  {
+    "id": "url:99dd8ba9b4c6cd85d36c",
+    "url": "https://octo-models.github.io",
+    "decision": "out_of_scope",
+    "reason": "Project page of Octo, an open transformer diffusion policy for robot manipulation pretrained on 800k robot episodes from the Open X-Embodiment dataset and evaluated on physical robot setups. It controls robot arms, not graphical interfaces, browsers or devices, and its paper (arXiv 2405.12213) is not in the catalog.",
+    "reviewed_at": "2026-10-19T06:40:58Z",
+    "evidence": {
+      "url": "https://octo-models.github.io",
+      "sha256": "4f23c47e37533137b1e3845afd57bbbd74ed37865f3fce0699ca673a8cde0b6b",
+      "retrieved_at": "2026-10-19T06:30:44Z"
+    }
+  },
+  {
+    "id": "url:0464f6807d8dbeb55df1",
+    "url": "https://openreview.net/forum?id=XaKNDIAHas&referrer=%5Bthe+profile+of+Tat-Seng+Chua%5D%28%2Fprofile%3Fid%3D~Tat-Seng_Chua2",
+    "decision": "alias",
+    "target_id": "arxiv:2504.07981",
+    "reason": "OpenReview forum, reached through a profile referrer link, of the ScreenSpot-Pro paper at the Workshop on Reasoning and Planning for Large Language Models; same title and authors as the indexed arXiv paper."
+  },
+  {
+    "id": "url:7c4bded4d27a66ad4236",
+    "url": "https://openreview.net/forum?id=UXdxYnkJtX",
+    "decision": "alias",
+    "target_id": "arxiv:2411.17465",
+    "reason": "OpenReview page of the NeurIPS 2024 Open-World Agents workshop version of the indexed ShowUI paper, under an earlier subtitle with eight of its nine authors and the same GitHub project."
+  },
+  {
+    "id": "url:7f469d085df928e5260e",
+    "url": "https://openreview.net/pdf?id=SMA13YzI4U",
+    "decision": "alias",
+    "target_id": "arxiv:2502.18525",
+    "reason": "OpenReview PDF of the ICLR 2025 Deep Learning for Code workshop version of the indexed Programming with Pixels paper, under an earlier subtitle with the same two authors and the same PwP environment."
+  },
+  {
+    "id": "url:9b576f82b28d76a56452",
+    "url": "https://openreview.net/forum?id=whqkAw5M7q",
+    "decision": "alias",
+    "target_id": "arxiv:2510.06607",
+    "reason": "OpenReview page of an ICLR 2026 submission (not accepted) of the indexed paper under an earlier title, when its benchmark was named AdvCUA; same twelve authors and the same 140-task MITRE ATT&CK-aligned benchmark."
+  },
+  {
+    "id": "url:77007e43347d7c5658b6",
+    "url": "https://openreview.net/forum?id=I7ODESoF6k",
+    "decision": "alias",
+    "target_id": "arxiv:2508.04482",
+    "reason": "Authors' OpenReview archive copy of the indexed OS Agents survey; first posted under the same title and later retitled for computer, phone and browser use."
+  },
+  {
+    "id": "url:68d5ae6b679e7abff552",
+    "url": "https://openreview.net/forum?id=JDa5RiTIC7",
+    "decision": "alias",
+    "target_id": "arxiv:2411.06559",
+    "reason": "OpenReview forum of the withdrawn ICLR 2025 submission that became the indexed WebDreamer paper; same method, benchmarks and main results table, and ten of its twelve authors."
+  },
+  {
+    "id": "url:8eb25c226af6b10391bc",
+    "url": "https://os-copilot.github.io/OSReward-Home",
+    "decision": "alias",
+    "target_id": "arxiv:2607.28609",
+    "reason": "Project website for the indexed OSReward paper, with its benchmark overview, leaderboard and release links."
+  },
+  {
+    "id": "url:f5c8f3c346ef688c8d10",
+    "url": "https://please.com",
+    "decision": "not_a_resource",
+    "reason": "Domain-sale page (\"please.com | Available for acquisition\") with no product behind it. Wayback captures from February 2024 to January 2026 show only for-sale pages, GoDaddy for-sale redirects or a parked placeholder, not the MultiOn or Please AI agent that the source names."
+  },
+  {
+    "id": "url:e17427963ca01a5de2e7",
+    "url": "https://press.opera.com",
+    "decision": "not_a_resource",
+    "reason": "Home page of the Opera Newsroom, a feed of company press releases about browsers, gaming and other products; the source links it as the code for the Browser Operator announcement, but it holds no code or agent."
+  },
+  {
+    "id": "url:fde1d92ed0c758c033c6",
+    "url": "https://ottogrid.ai",
+    "decision": "not_a_resource",
+    "reason": "Lapsed domain of the discontinued Otto table-based research agent product: HTTPS times out and HTTP forwards to a Namecheap parking page; Wayback shows the product page until 2026-01-23 and a disabled deployment (HTTP 402) from 2026-02-18 on."
+  },
+  {
+    "id": "url:e22de587c1f4ba17518e",
+    "url": "https://relay.club",
+    "decision": "not_a_resource",
+    "reason": "Dead link: the domain now resolves to an expired-domain parking host and HTTPS connections time out. Wayback captures from 2022 to 2026-06 show an influencer-marketing platform (Relay Club, later BoostBot), not the Relay.app workflow tool the listing names or any computer-use resource."
+  },
+  {
+    "id": "url:ec672bf1610c27cd4090",
+    "url": "https://storage.googleapis.com/deepmind-media/DeepMind.com/Blog/sima-generalist-ai-agent-for-3d-virtual-environments/Scaling%20Instructable%20Agents%20Across%20Many%20Simulated%20Worlds.pdf",
+    "decision": "alias",
+    "target_id": "arxiv:2404.10179",
+    "reason": "Google DeepMind-hosted PDF of the SIMA technical report dated March 2024. Its title and its SIMA Team list of 90 authors match arXiv v1 of 2404.10179 in the same order; arXiv v2 and v3 add Jony Hudson, Kshitij Gupta and Rory Lawton."
+  },
+  {
+    "id": "url:29634ecd8da089730352",
+    "url": "https://supernalintelligence.com",
+    "decision": "not_a_resource",
+    "reason": "Website of the Supernal Intelligence maintainers of the supernal-gui discovery source: a directory of leaderboards, benchmarks and GUI agents that the list's README links as its own site. It redirects to www.supernalintelligence.com/dashboard."
+  },
+  {
+    "id": "url:200bc4728f6d34f3386b",
+    "url": "https://vigilworkshop.github.io/static/papers-2021/26.pdf",
+    "decision": "alias",
+    "target_id": "arxiv:2104.08560",
+    "reason": "ViGIL 2021 workshop copy of the MoTIF paper; the PDF has the same title and six authors as arXiv 2104.08560, whose comment records acceptance at ViGIL at NAACL 2021."
+  },
+  {
+    "id": "url:8b4a9ef8ffc50d5fe667",
+    "url": "https://highlightai.com",
+    "decision": "out_of_scope",
+    "reason": "Highlight AI is a macOS and Windows assistant that reads on-screen windows through accessibility and screen-recording permissions and records meetings to produce briefs, chat answers and drafted follow-ups. It acts through app integrations and MCP rather than by operating graphical interfaces, so it is outside the computer-use scope.",
+    "reviewed_at": "2026-10-20T04:16:08Z",
+    "evidence": {
+      "url": "https://highlightai.com/changelog",
+      "sha256": "72491fa24f32e9b26c52b888a7dc57e9a86c019c1350ba0e2bcdca320bfea36a",
+      "retrieved_at": "2026-10-19T06:35:00Z"
+    }
+  },
+  {
+    "id": "url:3d1972816500a523aa50",
+    "url": "https://openreview.net/forum?id=G7sIFXugTX",
+    "decision": "out_of_scope",
+    "reason": "SWE-Search (ICLR 2025) adds Monte Carlo Tree Search, an LLM value agent and a discriminator agent to software agents that resolve repository-level code issues, evaluated on SWE-bench. Its agents edit code repositories and do not operate a graphical, browser or mobile interface, so it falls outside the computer-use boundary.",
+    "reviewed_at": "2026-10-20T04:16:22Z",
+    "evidence": {
+      "url": "https://api2.openreview.net/notes?id=G7sIFXugTX",
+      "sha256": "035e6e99df40e963c13367ec8f90abdcdbdd35ab2ecf4c2c851257b238975eca",
+      "retrieved_at": "2026-10-19T06:31:34Z"
+    }
+  },
+  {
+    "id": "url:056fc284d518c930bc9c",
+    "url": "https://openreview.net/forum?id=0bmGL4q7vJ",
+    "decision": "out_of_scope",
+    "reason": "This ICLR 2025 paper synthesizes multimodal tool-usage trajectories (MM-Traj, 20K tasks) and tunes a vision-language model as a controller that calls external tools, evaluated on the GTA and GAIA benchmarks. It concerns tool calling and describes no graphical-interface, web-page or device interaction, so it falls outside the computer-use boundary.",
+    "reviewed_at": "2026-10-20T04:16:47Z",
+    "evidence": {
+      "url": "https://web.archive.org/web/20250711032645id_/https://openreview.net/forum?id=0bmGL4q7vJ",
+      "sha256": "f92ce5101133f4ddb6b2bde2e6b2e70d85947bebc854e5a72ec26e04207aa230",
+      "retrieved_at": "2026-10-19T06:39:04Z"
+    }
+  },
+  {
+    "id": "url:0c048ad66a9bde20d50e",
+    "url": "https://openreview.net/forum?id=XLMAMmowdY",
+    "decision": "out_of_scope",
+    "reason": "This ICLR 2025 paper represents each of over 47,000 API tools as a vocabulary token so a language model retrieves and calls tools by generating them. It covers text tool calling only and describes no graphical-interface, web-page or device interaction, so it falls outside the computer-use boundary.",
+    "reviewed_at": "2026-10-20T04:17:00Z",
+    "evidence": {
+      "url": "https://web.archive.org/web/20250711094410id_/https://openreview.net/forum?id=XLMAMmowdY",
+      "sha256": "9414c4f1ab8bc957102a98ca6b4bd0d77856aaa550605dd8782bf418db629e49",
+      "retrieved_at": "2026-10-19T06:39:05Z"
+    }
+  },
+  {
+    "id": "url:d1e4128de64578d40279",
+    "url": "https://intel.twzrd.xyz",
+    "decision": "out_of_scope",
+    "reason": "TWZRD Agent Intel is a paid API and MCP server that scores Solana and Base seller wallets and returns signed receipts before an agent makes x402 micropayments. Its own llms.txt says it does not fetch pages or solve CAPTCHAs, so it involves no GUI, browser or device operation and falls outside the computer-use scope.",
+    "reviewed_at": "2026-10-20T04:17:14Z",
+    "evidence": {
+      "url": "https://intel.twzrd.xyz",
+      "sha256": "6c6d1b738a29d22e1542d489bb97f35eefb3a2fa9d56eec6c46105e91e67e912",
+      "retrieved_at": "2026-10-19T06:46:28Z"
+    }
+  },
+  {
+    "id": "url:1c6794ed91d94282d0fb",
+    "url": "https://intel.twzrd.xyz/mcp",
+    "decision": "out_of_scope",
+    "reason": "This is the streamable-HTTP MCP endpoint of TWZRD Agent Intel, a paid trust-scoring service for x402 wallet payments on Solana; a GET returns only a notice to POST MCP calls. The service involves no GUI, browser or device operation, so the endpoint falls outside the computer-use scope along with its homepage.",
+    "reviewed_at": "2026-10-20T04:17:27Z",
+    "evidence": {
+      "url": "https://intel.twzrd.xyz/mcp",
+      "sha256": "f880cb74c4a92a850ec5ee3fdbb1be79bce20eef79dbd1d45b0a4670a1549f0d",
+      "retrieved_at": "2026-10-19T06:46:28Z"
+    }
+  },
+  {
+    "id": "url:096f42a09e6296a4ab9e",
+    "url": "https://jina.ai",
+    "decision": "out_of_scope",
+    "reason": "Jina AI's homepage offers search infrastructure for LLM applications: a Reader API that converts a URL to Markdown, a web search API, embedding and reranker models and an MCP server for those APIs. These retrieve and rank page content but never operate a web page or other interface for an agent, so the site falls outside the computer-use scope.",
+    "reviewed_at": "2026-10-20T04:17:54Z",
+    "evidence": {
+      "url": "https://jina.ai",
+      "sha256": "497911d6dcea79a9f2a8342c85f22736bfab350f6b48a2705981f52b8bff2ac3",
+      "retrieved_at": "2026-10-19T06:49:17Z"
+    }
+  },
+  {
+    "id": "url:cf83de4dddbdd47a7dde",
+    "url": "https://labex.io/tutorials/docker-instant-claude-computer-use-demo-414899",
+    "decision": "out_of_scope",
+    "reason": "A LabEx guided lab that opens Anthropic's computer-use demo in a pre-built virtual machine, asks the learner to paste an API key, and walks through a few example prompts such as installing htop or creating a folder. It is a setup guide for the already-curated Claude Computer Use (url:57f17b7d0c18b2d7c8bf), not a new agent, dataset, benchmark or tool.",
+    "reviewed_at": "2026-10-20T04:18:07Z",
+    "evidence": {
+      "url": "https://web.archive.org/web/20250815003649id_/https://labex.io/tutorials/docker-instant-claude-computer-use-demo-414899",
+      "sha256": "ac6bc08b8e9d66bfecf891a8afca0db397b633f52a1920b81e4fdfc0cd31f323",
+      "retrieved_at": "2026-10-19T06:50:48Z"
+    }
+  },
+  {
+    "id": "url:4cc2a85b7bd60dc0a620",
+    "url": "https://palm-e.github.io",
+    "decision": "out_of_scope",
+    "reason": "PaLM-E is an embodied multimodal language model that feeds images and robot state estimates into PaLM for robotic manipulation planning, visual question answering and captioning. Its project page describes no interaction with graphical interfaces, web pages or devices, so it falls outside the computer-use scope.",
+    "reviewed_at": "2026-10-20T04:18:35Z",
+    "evidence": {
+      "url": "https://palm-e.github.io",
+      "sha256": "a0a316d5539e12d0be1952f27b57a1441174493e5178d3a118f34a6d5d6e2a57",
+      "retrieved_at": "2026-10-19T07:46:02Z"
+    }
+  },
+  {
+    "id": "url:ab8062b62991ffcfb6ae",
+    "url": "https://platform.claude.com/docs/en/agent-sdk/overview",
+    "decision": "out_of_scope",
+    "reason": "The Claude Agent SDK packages the Claude Code agent loop as a Python and TypeScript library whose built-in tools read and edit files, run shell commands and search the web. The overview lists no graphical, browser or device-control executor, so it is a general agent framework outside the computer-use scope.",
+    "reviewed_at": "2026-10-20T04:18:49Z",
+    "evidence": {
+      "url": "https://platform.claude.com/docs/en/agent-sdk/overview",
+      "sha256": "f6fa46a65faf653a00d71f63933c964f67811f64830639924a5a5f007f3f9a0f",
+      "retrieved_at": "2026-10-19T07:46:02Z"
+    }
+  },
+  {
+    "id": "url:e2ba2dac5d3fac2e9791",
+    "url": "https://proceedings.iclr.cc/paper_files/paper/2026/hash/a1c8a68e52499c9396854e3f967e37c0-Abstract-Conference.html",
+    "decision": "out_of_scope",
+    "reason": "Collaborative Gym (Co-Gym) is a framework for human-agent collaboration whose agents act through API-style tools (travel search functions, a distance matrix, paper search and library actions, Jupyter cells and a shared text editor) in travel planning, related-work writing and tabular analysis tasks. Its agents do not operate graphical, browser or device interfaces, so the paper is outside the catalog's computer-use and GUI-agent scope.",
+    "reviewed_at": "2026-10-20T04:19:02Z",
+    "evidence": {
+      "url": "https://proceedings.iclr.cc/paper_files/paper/2026/hash/a1c8a68e52499c9396854e3f967e37c0-Abstract-Conference.html",
+      "sha256": "4217a895f255dd0ad6d04390e0eb1828ca89391b03683f236e5eb9c03d07ff14",
+      "retrieved_at": "2026-10-19T08:06:43Z"
+    }
+  },
+  {
+    "id": "url:13905d393b73e465b616",
+    "url": "https://relevance.ai",
+    "decision": "out_of_scope",
+    "reason": "Relevance AI is a no-code platform for building sales, marketing, support and operations agents that act through 1,000+ app integrations, evals and governance controls. Its only page interaction comes from optional tool steps for Airtop, a separate browser service that needs its own account, so it is a general agent-builder platform rather than a computer-use resource.",
+    "reviewed_at": "2026-10-20T04:19:17Z",
+    "evidence": {
+      "url": "https://relevance.ai",
+      "sha256": "ade5239277240a029f857f5718cdecdc658c2b42fbf6acb7a4c3bdf6581a5080",
+      "retrieved_at": "2026-10-19T08:33:08Z"
+    }
+  },
+  {
+    "id": "url:6cfff423d61048961ea1",
+    "url": "https://simonwillison.net/2024/Oct/22/computer-use",
+    "decision": "out_of_scope",
+    "reason": "A 22 October 2024 post on Simon Willison's personal weblog recounting his first runs of Anthropic's computer-use-demo Docker container and commenting on coordinate output, prompt injection risk and model naming. It is commentary on the already-curated Claude computer-use capability (url:57f17b7d0c18b2d7c8bf), not a new agent, dataset, benchmark or tool.",
+    "reviewed_at": "2026-10-20T04:19:34Z",
+    "evidence": {
+      "url": "https://simonwillison.net/2024/Oct/22/computer-use",
+      "sha256": "fb01a0cba8bd47d2ec4b672cafdf23b82cbe46ff426e843798e6fd7ac6c56361",
+      "retrieved_at": "2026-10-19T08:33:54Z"
+    }
+  },
+  {
+    "id": "url:929b5bcde588099095fe",
+    "url": "https://rl4vlm.github.io",
+    "decision": "out_of_scope",
+    "reason": "rl4vlm.github.io is the project page of arXiv 2405.10292, which fine-tunes a LLaVA vision-language model with PPO and chain-of-thought prompts on GymCards arithmetic card games and the ALFWorld embodied household environment. Neither task operates a web page, desktop or mobile interface, so the work is outside the computer-use scope.",
+    "reviewed_at": "2026-10-20T04:20:06Z",
+    "evidence": {
+      "url": "https://rl4vlm.github.io",
+      "sha256": "fd20953e8bc6c36b6abe74f31b059daa6e3378ca78c2fbfdc13601097520f0c8",
+      "retrieved_at": "2026-10-19T08:34:42Z"
+    }
+  },
+  {
+    "id": "url:a05184542fe63d5c0463",
+    "url": "https://robotics-transformer2.github.io",
+    "decision": "out_of_scope",
+    "reason": "robotics-transformer2.github.io presents RT-2, a vision-language-action model that co-fine-tunes web-scale vision-language models on robot trajectories so they output physical robot actions for manipulation tasks. It controls a robot arm, not web, desktop or mobile interfaces, so it is outside the computer-use scope.",
+    "reviewed_at": "2026-10-20T04:20:22Z",
+    "evidence": {
+      "url": "https://robotics-transformer2.github.io",
+      "sha256": "0e3adbcf6031c4959fca91905f3838f484482527778b7dc71f12d4a9b183994b",
+      "retrieved_at": "2026-10-19T08:35:16Z"
+    }
+  },
+  {
+    "id": "url:0d9466cad6b8f06214fe",
+    "url": "https://scrapegraphai.com",
+    "decision": "out_of_scope",
+    "reason": "scrapegraphai.com is the hosted API for ScrapeGraphAI, which turns web pages into Markdown, screenshots or prompt-defined JSON and offers search, site crawling and change-monitoring endpoints plus an MCP server. It retrieves and extracts page content for LLM pipelines and does not let an agent operate a web interface, so it is a crawler outside the computer-use scope.",
+    "reviewed_at": "2026-10-20T04:20:52Z",
+    "evidence": {
+      "url": "https://scrapegraphai.com",
+      "sha256": "f3581abe72ef42050be23e3e7f371e98d545f520401fb38b419bbb6e4d6358b0",
+      "retrieved_at": "2026-10-19T08:39:35Z"
+    }
+  },
+  {
+    "id": "url:ffa84c1e2fe5a19f156b",
+    "url": "https://serpapi.com",
+    "decision": "out_of_scope",
+    "reason": "SerpApi is a commercial API that returns search-engine result pages from Google, Bing, Baidu, DuckDuckGo and shopping or app-store sites as parsed JSON. Callers send queries over HTTP and never open or operate a web page, so it is search-data infrastructure rather than computer or browser use.",
+    "reviewed_at": "2026-10-20T04:21:06Z",
+    "evidence": {
+      "url": "https://serpapi.com",
+      "sha256": "241a63fdf77fb08da23eda2aaf36d8a7a7bfa5d4ec86c6602cde51e9e80b43bc",
+      "retrieved_at": "2026-10-19T08:35:02Z"
+    }
+  },
+  {
+    "id": "url:3d82e6f1e186b87b3d5a",
+    "url": "https://serper.dev",
+    "decision": "out_of_scope",
+    "reason": "Serper is a commercial API that returns Google search results (web, images, news, maps, places, shopping, scholar and patents) as JSON for programmatic use. It does not open or operate web pages or other interfaces, so it is search-data infrastructure rather than computer or browser use.",
+    "reviewed_at": "2026-10-20T04:21:19Z",
+    "evidence": {
+      "url": "https://web.archive.org/web/20261010093645id_/https://serper.dev/",
+      "sha256": "70d0ca1151636be3a5685e0b13ed8da25d7d07f3d6bd12f3c4e73d5bdd304778",
+      "retrieved_at": "2026-10-19T08:35:17Z"
+    }
+  },
+  {
+    "id": "url:ee25e56c7ecca5e49c5a",
+    "url": "https://superhighway.walls.sh",
+    "decision": "out_of_scope",
+    "reason": "Superhighway is a hosted web search API for AI agents whose endpoints return ranked results, news, image links and page text as markdown, sold per call with a free tier. It never renders, clicks or types in a page or app, so it is retrieval infrastructure rather than a computer-use agent, environment or tool.",
+    "reviewed_at": "2026-10-20T04:21:39Z",
+    "evidence": {
+      "url": "https://superhighway.walls.sh",
+      "sha256": "9d7b0620ef9431efda623e0dea433991878b3342a7eaf6c2474a9bf9fcd0e13f",
+      "retrieved_at": "2026-10-19T08:47:44Z"
+    }
+  },
+  {
+    "id": "url:f714a2ad3e251e5794f4",
+    "url": "https://techcrunch.com/2025/03/03/opera-announces-a-new-agentic-feature-for-its-browser",
+    "decision": "out_of_scope",
+    "reason": "A 3 March 2025 TechCrunch news item by Ivan Mehta reporting Opera's announcement of Browser Operator, a preview agent that completes tasks on websites inside the user's own browser, based on Opera's demo video and claims. It is third-party press coverage, not an agent, dataset, benchmark or tool.",
+    "reviewed_at": "2026-10-20T04:21:57Z",
+    "evidence": {
+      "url": "https://web.archive.org/web/20251128192712id_/https://techcrunch.com/2025/03/03/opera-announces-a-new-agentic-feature-for-its-browser/",
+      "sha256": "7b70ff6d0c0ed0b59d71f7e3aee4e89d59484a43bf66f3f8552e10d6ae054a6c",
+      "retrieved_at": "2026-10-19T08:50:08Z"
+    }
+  },
+  {
+    "id": "url:9b88bfec4a46afeb42f3",
+    "url": "https://www.anthropic.com/engineering/code-execution-with-mcp",
+    "decision": "out_of_scope",
+    "reason": "A 4 November 2025 Anthropic engineering post arguing that agents should call Model Context Protocol tools by writing code in an execution environment, which cuts the tokens spent on tool definitions and intermediate results. It concerns API tool integration and never involves operating graphical interfaces, websites or devices.",
+    "reviewed_at": "2026-10-20T04:22:28Z",
+    "evidence": {
+      "url": "https://www.anthropic.com/engineering/code-execution-with-mcp",
+      "sha256": "a156fec895e7958e336c5d598a1cc31fb1271b55b4353c23849e7fea173b31c1",
+      "retrieved_at": "2026-10-20T04:07:03Z"
+    }
+  },
+  {
+    "id": "url:9f90189258f9cd5ea7ed",
+    "url": "https://www.anthropic.com/research/measuring-agent-autonomy",
+    "decision": "out_of_scope",
+    "reason": "A February 2026 Anthropic research post that measures how much autonomy people grant agents, using privacy-preserving analysis of Claude Code sessions and tool calls on the public API: turn durations, auto-approval and interruption rates, and the risk of tool actions. It studies coding and API tool use, not agents operating graphical interfaces, websites or devices.",
+    "reviewed_at": "2026-10-20T04:22:47Z",
+    "evidence": {
+      "url": "https://web.archive.org/web/20261018120110id_/https://www.anthropic.com/research/measuring-agent-autonomy",
+      "sha256": "80dc787efe64d745e4956e518f5ef799e30e50935262852d3b5a52e349e50545",
+      "retrieved_at": "2026-10-20T04:11:47Z"
+    }
+  },
+  {
+    "id": "url:856f7cac650f4f7684b8",
+    "url": "https://www.servicenow.com/products/now-platform-ai.html",
+    "decision": "not_a_resource",
+    "reason": "Dead ServiceNow product link: the page returns 403 to scripts and 404 Page not found to a browser request, has no redirect, and has no Wayback capture (CDX and availability API empty)."
+  },
+  {
+    "id": "url:30c47e06f966999086db",
+    "url": "https://www.supernalintelligence.com",
+    "decision": "not_a_resource",
+    "reason": "Website of the supernal-gui discovery source maintainers: a directory of leaderboards, benchmarks and GUI agents that the list links as its own site."
+  },
+  {
+    "id": "url:40eb109bf0616eee2783",
+    "url": "https://www.proxyagent.ai",
+    "decision": "not_a_resource",
+    "reason": "Former address of Convergence's Proxy web agent, now a parked domain: HTTPS fails the TLS handshake for both proxyagent.ai and www.proxyagent.ai, plain HTTP redirects www to the apex and serves a Porkbun 'Coming Soon' parking page (sha256 057f64244055), and the Wayback CDX has no capture of either host."
+  },
+  {
+    "id": "url:93572a66369b92e553fc",
+    "url": "https://www.expand.ai",
+    "decision": "out_of_scope",
+    "reason": "Expand is a commercial API that renders web pages in a hosted browser and returns them as Markdown together with the page's embedded JSON and a citable snapshot, with crawl and change-monitoring endpoints. Agents receive page content but never click, type or otherwise operate a page, so it is retrieval infrastructure rather than computer or browser use.",
+    "reviewed_at": "2026-10-20T05:07:44Z",
+    "evidence": {
+      "url": "https://www.expand.ai",
+      "sha256": "623a8551792d28f629827c1994c3083f87a688c89a5e61fc2e1d652d49d20ec4",
+      "retrieved_at": "2026-10-20T04:16:14Z"
+    }
+  },
+  {
+    "id": "url:5ee32309be4981d585ba",
+    "url": "https://www.interconnects.ai/p/claudes-agency",
+    "decision": "out_of_scope",
+    "reason": "An October 2024 Interconnects newsletter post by Nathan Lambert that gives first impressions of Anthropic's Computer Use beta from two trial web tasks and then compares the Anthropic, Google and OpenAI frontier models. It is third-party commentary with no dataset, code, model or evaluation of its own, so it is not a catalog resource.",
+    "reviewed_at": "2026-10-20T05:08:03Z",
+    "evidence": {
+      "url": "https://www.interconnects.ai/p/claudes-agency",
+      "sha256": "97ced405289750814a00c8c313e3fe44de551b5d2b607b8f88e77954610f0e03",
+      "retrieved_at": "2026-10-20T04:19:19Z"
+    }
+  },
+  {
+    "id": "url:eafac31fef5dbe00d5b1",
+    "url": "https://www.gatesnotes.com/AI-agents",
+    "decision": "out_of_scope",
+    "reason": "A 9 November 2023 Gates Notes essay in which Bill Gates predicts that personal AI agents, acting across applications from everyday-language requests, will reshape health care, education, productivity and shopping within five years, and lists open questions about privacy and agent-to-agent protocols. It is opinion commentary with no system, method, data or evaluation and does not discuss operating graphical interfaces.",
+    "reviewed_at": "2026-10-20T05:08:21Z",
+    "evidence": {
+      "url": "https://web.archive.org/web/20231109190047id_/https://www.gatesnotes.com/AI-agents",
+      "sha256": "99f387250d4ad379b943627c9c5d4bccedd26a0c3ef8e2d9cc4d3df4bb30d8ac",
+      "retrieved_at": "2026-10-20T04:20:50Z"
+    }
+  },
+  {
+    "id": "url:423fc440548161c79b31",
+    "url": "https://www.kaggle.com/datasets/datasnaek/lightshot",
+    "decision": "out_of_scope",
+    "reason": "A 2017 Kaggle upload by user Mitchell J of 13,000 images scraped by sequential URL from the prnt.sc screenshot-sharing site, with a hand-labelled subset in six content categories (animations, games, objects, people, text, one game character). The images are arbitrary user uploads with no interface annotations, actions or tasks, and the license is given only as 'Data files (c) Original Authors', so it is not a GUI-agent resource.",
+    "reviewed_at": "2026-10-20T05:08:41Z",
+    "evidence": {
+      "url": "https://www.kaggle.com/api/v1/datasets/view/datasnaek/lightshot",
+      "sha256": "d7dadeb3fa730cdd4d5fde298ab4bae0e975978a6ae21d47e60fecf00a5f2cb4",
+      "retrieved_at": "2026-10-20T04:22:41Z"
+    }
+  },
+  {
+    "id": "url:c7a01df1b0c354e0a650",
+    "url": "https://www.kaggle.com/datasets/vinothpandian/uisketch/data",
+    "decision": "out_of_scope",
+    "reason": "UISketch is a CHI 2021 dataset of about 19,000 hand-drawn sketches of 21 UI element categories from 1,218 participants, released on Kaggle with image-classification checkpoints for sketch-based UI prototyping. It contains no screenshots, interface states or interactions, so it supports design tooling rather than agents that perceive or operate interfaces.",
+    "reviewed_at": "2026-10-20T05:09:00Z",
+    "evidence": {
+      "url": "https://www.kaggle.com/api/v1/datasets/view/vinothpandian/uisketch",
+      "sha256": "be818aa66adc39155927d404e3c61f272da61e8ed6bbece31455b427d2075f5f",
+      "retrieved_at": "2026-10-20T04:22:42Z"
+    }
+  },
+  {
+    "id": "url:a9dae6f22b637892e4c0",
+    "url": "https://www.mdpi.com/1999-5903/17/4/180",
+    "decision": "out_of_scope",
+    "reason": "This Future Internet 2025 article proposes a framework that combines model-driven development with generative AI and multi-agent reinforcement learning to personalize and re-lay-out e-commerce user interfaces from collected user behavior data. Its agents generate and optimize interface designs for human users; no agent perceives or operates a graphical interface, so it is outside the catalog's scope.",
+    "reviewed_at": "2026-10-20T05:09:22Z",
+    "evidence": {
+      "url": "https://web.archive.org/web/20251126082822id_/https://www.mdpi.com/1999-5903/17/4/180",
+      "sha256": "7606ab30618232613ab4b61748a2c31aea8d6a24019395585edbee8b9063c9b2",
+      "retrieved_at": "2026-10-20T04:29:20Z"
+    }
+  },
+  {
+    "id": "url:7ab3e51a49c632058e97",
+    "url": "https://www.microsoft.com/en-us/research/publication/interactive-agent-foundation-model",
+    "decision": "out_of_scope",
+    "reason": "This Microsoft Research page lists the February 2024 arXiv paper 2402.05929, which trains one multi-task agent foundation model with masked visual autoencoding, language modeling and next-action prediction and evaluates it on robotics, gaming and healthcare video tasks. It does not study agents that operate web, desktop or mobile interfaces, so it is outside the catalog's scope.",
+    "reviewed_at": "2026-10-20T05:09:43Z",
+    "evidence": {
+      "url": "https://www.microsoft.com/en-us/research/publication/interactive-agent-foundation-model/",
+      "sha256": "6ee663c6bb1ed508b72651b51342ab440dfea8b1a47301605e9e847e2179a58d",
+      "retrieved_at": "2026-10-20T04:29:38Z"
+    }
+  },
+  {
+    "id": "url:b0676300ea65342ee07f",
+    "url": "https://www.nature.com/articles/s41467-026-69010-1",
+    "decision": "out_of_scope",
+    "reason": "This Nature Communications article (2026; arXiv 2508.04039) shows that large reasoning models can autonomously run persuasive multi-turn text conversations that jailbreak other chat models. The attacks happen only in conversation, with no browser, GUI, tool or device actions, so it concerns language-model safety rather than computer-use agents.",
+    "reviewed_at": "2026-10-20T05:10:05Z",
+    "evidence": {
+      "url": "https://www.nature.com/articles/s41467-026-69010-1.pdf",
+      "sha256": "43f722b05ec4dbb432f19e2bbc47ab9baa45bed850d5f5130c7a287c60e35386",
+      "retrieved_at": "2026-10-20T04:25:43Z"
+    }
+  },
+  {
+    "id": "url:d785ac06ca5229f9e753",
+    "url": "https://www.context.dev",
+    "decision": "out_of_scope",
+    "reason": "Context.dev is a commercial web data API whose endpoints scrape a URL into Markdown, JSON or screenshots, search the web, crawl sites in batches, answer questions with sources and watch pages for changes. Its optional pre-capture browser actions only click, scroll or wait to load content, so it is retrieval infrastructure rather than an agent, environment or tool for operating interfaces.",
+    "reviewed_at": "2026-10-20T05:10:25Z",
+    "evidence": {
+      "url": "https://www.context.dev",
+      "sha256": "96303104a9dc80b3446ac946d5cfbccc6b5413bad7e58766e72b3508c4a7771d",
+      "retrieved_at": "2026-10-20T04:31:41Z"
+    }
+  },
+  {
+    "id": "url:7966d456db7ba244b22e",
+    "url": "https://www.oneusefulthing.org/p/when-you-give-a-claude-a-mouse",
+    "decision": "out_of_scope",
+    "reason": "Ethan Mollick's One Useful Thing post of 22 October 2024 gives first impressions of Anthropic's Claude computer use, from a lesson-planning task and a run at the Paperclip Clicker browser game, with prompting hints from Anthropic. It is third-party commentary that releases no software, data or evaluation of its own.",
+    "reviewed_at": "2026-10-20T05:10:42Z",
+    "evidence": {
+      "url": "https://www.oneusefulthing.org/p/when-you-give-a-claude-a-mouse",
+      "sha256": "65a527caac3e316a2d14ade795f657ab74c1d4813af26ad0fb20228e1884b828",
+      "retrieved_at": "2026-10-20T04:25:34Z"
+    }
+  },
+  {
+    "id": "url:4403f570f495a7f8cd51",
+    "url": "https://www.datacamp.com/blog/what-is-anthropic-computer-use",
+    "decision": "out_of_scope",
+    "reason": "A DataCamp blog tutorial by Abid Ali Awan, dated 22 October 2024, that explains Anthropic's computer-use beta, shows its tool definitions, walks through running Anthropic's reference Docker demo and lists prompting tips, limitations and token pricing. It is third-party instructional content about a resource rather than a resource of its own.",
+    "reviewed_at": "2026-10-20T05:10:58Z",
+    "evidence": {
+      "url": "https://web.archive.org/web/20260921141110id_/https://www.datacamp.com/blog/what-is-anthropic-computer-use",
+      "sha256": "842c6d0f0e52106eac740c10715a6d8ad1ccd8027699b9e368142ed22765f506",
+      "retrieved_at": "2026-10-20T04:33:52Z"
+    }
+  },
+  {
+    "id": "url:ce318faf98d8a518c31d",
+    "url": "https://www.socialcrawl.dev",
+    "decision": "out_of_scope",
+    "reason": "SocialCrawl is a commercial data API that returns public profiles, posts, comments and search results from social and commerce platforms in one JSON schema, with an MCP server and SDKs for agents. It retrieves data through API calls and does not operate browser, desktop or mobile interfaces, so it is data-retrieval infrastructure rather than a computer-use resource.",
+    "reviewed_at": "2026-10-20T05:11:15Z",
+    "evidence": {
+      "url": "https://www.socialcrawl.dev",
+      "sha256": "c46495ea7b49af6bc2644b70db34997394aa8b28a439c68bd09edd577bd7c3c5",
+      "retrieved_at": "2026-10-20T04:38:46Z"
+    }
+  },
+  {
+    "id": "url:89412e155b7b77076e53",
+    "url": "https://www.usenix.org/conference/atc25/presentation/tian",
+    "decision": "out_of_scope",
+    "reason": "CLONE is a USENIX ATC 2025 systems paper on serving large language models on edge devices through model- and system-level co-design with a 28nm hardware accelerator, measured on latency and energy. It does not build, train or evaluate agents that operate graphical, web or mobile interfaces, so it is general on-device LLM inference rather than a computer-use resource.",
+    "reviewed_at": "2026-10-20T05:11:33Z",
+    "evidence": {
+      "url": "https://web.archive.org/web/20251206182016id_/https://www.usenix.org/conference/atc25/presentation/tian",
+      "sha256": "2d790d7ddc99a4011078e95f9b4c0599d6f13c2c606c550132bdcd0be98dcd43",
+      "retrieved_at": "2026-10-20T04:39:27Z"
+    }
+  },
+  {
+    "id": "url:ccc69641ceab4252f9d5",
+    "url": "https://www.swebench.com",
+    "decision": "out_of_scope",
+    "reason": "swebench.com hosts the official leaderboards of the SWE-bench family (the original 2,294-instance set, Verified, Bash Only, Lite, Multilingual and Multimodal) and links its tooling. These benchmarks score models on resolving GitHub issues by editing repository code and passing tests, without operating a graphical, browser or device interface, so the site falls outside the computer-use scope; only the Multimodal subset, reviewed separately, involves visual inputs.",
+    "reviewed_at": "2026-10-20T05:11:54Z",
+    "evidence": {
+      "url": "https://www.swebench.com",
+      "sha256": "fea73eb594cc0c539efd7a4368989370b4c36635fab6144806732a10d09a450f",
+      "retrieved_at": "2026-10-20T04:44:58Z"
+    }
+  },
+  {
+    "id": "url:bf3a83fc163f29db9770",
+    "url": "https://xufangzhi.github.io/symbol-llm-page",
+    "decision": "out_of_scope",
+    "reason": "This page is the project website of Symbol-LLM (arXiv 2311.09278), which instruction-tunes language models on 34 symbolic tasks such as SQL, knowledge-graph queries, code, logic and planning. It does not build or evaluate agents that operate graphical, web or mobile interfaces, so the page and the paper are outside the computer-use scope.",
+    "reviewed_at": "2026-10-20T05:12:09Z",
+    "evidence": {
+      "url": "https://xufangzhi.github.io/symbol-llm-page",
+      "sha256": "942697bed5f248ace4e5498f7fe40058b1dfb7bcdc9ba76ebf7364b40744bc92",
+      "retrieved_at": "2026-10-20T04:54:58Z"
+    }
+  },
+  {
+    "id": "url:12379f1e44023d4b6276",
+    "url": "https://www.runcopycat.com",
+    "decision": "out_of_scope",
+    "reason": "runcopycat.com now serves CopyCat AI's insurance proposal builder, which turns carrier PDF quotes into branded broker proposals with source citations; the browser-automation agent product the discovery list describes is no longer offered there, and the current product does not operate GUIs.",
+    "reviewed_at": "2026-10-20T05:12:39Z",
+    "evidence": {
+      "url": "https://www.runcopycat.com",
+      "sha256": "74329b87106fdc2484bfd34ec019d2056ae27e45e80e1ef4443396e7ad39d506",
+      "retrieved_at": "2026-10-20T05:00:11Z"
+    }
+  },
+  {
+    "id": "url:f5e8edcb66327e91b597",
+    "url": "https://anonymous.4open.science/r/VEM-Agent-51E7",
+    "decision": "not_a_resource",
+    "reason": "Anonymous GitHub double-blind review copy of VEM code, linked from its ICLR 2026 submission abstract; the service hides the source repository and lists an expiration date of 2026-11-03. Its layout (src_aitw, src_m2w) differs from the published code at github:microsoft/gui-agent-rl."
+  },
+  {
+    "id": "url:f6407c99f95647b29d56",
+    "url": "https://anonymous.4open.science/r/MobileRL-iclr-4513",
+    "decision": "not_a_resource",
+    "reason": "Anonymous GitHub review copy that the MobileRL ICLR 2026 submission abstract links as its code, now gone: the page shell loads, but the repository API returns 410 Gone for files, README and options, and both Wayback captures (2026-04-20) hold only the app shell. The published code is github:thudm/mobilerl."
+  },
+  {
+    "id": "url:089e347bd4bcf8981595",
+    "url": "https://drive.google.com/drive/folders/1Gzm44P5QBxvBYUU4BiYW-WlxbiB5M19K",
+    "decision": "not_a_resource",
+    "reason": "Google Drive folder titled WebVLN that the github:webvln/webvln README links for downloading the WebVLN-v1 dataset and pretrained models; a download folder, not a separate resource."
+  },
+  {
+    "id": "url:274a43bf6043c02c522a",
+    "url": "https://drive.google.com/file/d/1X2QktZ51OUofZ43vDGB4RuAPlXbdf5ua/view?usp=sharing",
+    "decision": "not_a_resource",
+    "reason": "Google Drive file state_transfer_screenshots_web.zip, the web screenshot archive of the raw state-action-state triples that the github:os-copilot/os-genesis README links under Raw collected triples; a download file, not a separate resource."
+  },
+  {
+    "id": "url:767f27f966855905a4ec",
+    "url": "https://drive.google.com/file/d/1dSxNf-co4LGh93NoiUgWKdbcf8Mo_VWG/view?usp=sharing",
+    "decision": "not_a_resource",
+    "reason": "Google Drive file state_transfer_mobile.json, the mobile data JSON of the raw state-action-state triples that the github:os-copilot/os-genesis README links under Raw collected triples; a download file, not a separate resource."
+  },
+  {
+    "id": "url:ba51705246d70332ef08",
+    "url": "https://drive.google.com/file/d/1ILyz_-DDOdAk32kue1lEPaV50YzQ5c4v/view?usp=sharing",
+    "decision": "not_a_resource",
+    "reason": "Google Drive file state_transfer_screenshots_mobile.zip, the mobile screenshot archive of the raw state-action-state triples that the github:os-copilot/os-genesis README links under Raw collected triples; a download file, not a separate resource."
+  },
+  {
+    "id": "url:e55e0aee1a0e3a3b12ae",
+    "url": "https://drive.google.com/file/d/1mDxhonGnd3wZbNQgWMVpYEkPW26_FVg8/view?usp=sharing",
+    "decision": "not_a_resource",
+    "reason": "Google Drive file state_transfer_web.json, the web data JSON of the raw state-action-state triples that the github:os-copilot/os-genesis README links under Raw collected triples; a download file, not a separate resource."
+  },
+  {
+    "id": "url:8f59e9befa0ad61e6827",
+    "url": "https://anonymous.4open.science/r/FingerTip-57B8",
+    "decision": "alias",
+    "target_id": "github:tsinghua-fib-lab/fingertip-20k",
+    "reason": "Anonymized review mirror of the indexed FingerTip-20K repository: it serves the same 11 files with the same sizes, and its README and sampled files are byte-identical to commit e73a4dac."
+  },
+  {
+    "id": "url:5883c0436062e40e031f",
+    "url": "https://anonymous.4open.science/r/GAMBIT-40BB",
+    "decision": "not_a_resource",
+    "reason": "Expired anonymous review copy for GAMBIT, a withdrawn ICLR 2026 submission: the repository API returns 410 repository_expired, Wayback has no capture, and no public repository or arXiv version was found."
   }
 ]

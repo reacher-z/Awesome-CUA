@@ -290,7 +290,7 @@ def input_snapshot(root):
     catalog = data['catalog.jsonl']
     aliases = repository_aliases(data['repository-aliases.json'], catalog)
     observed = {r['id'] for r in data['primary-evidence.jsonl'] if r.get('ok') is True and r.get('status') == 200}
-    set_aside = {r.get('id') for r in data['candidate-reviews.json'] if r.get('decision') == 'not_a_resource'}
+    set_aside = {r.get('id') for r in data['candidate-reviews.json'] if r.get('decision') in {'not_a_resource', 'out_of_scope'}}
     names = {}
     for row in data['candidates.jsonl']:
         parsed = canonical(row.get('url'))

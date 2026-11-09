@@ -79,6 +79,19 @@ class ScanSafetyTests(unittest.TestCase):
             rows=[json.loads(line) for line in (Path(directory)/'papers.jsonl').read_text().splitlines()]
             self.assertEqual(rows,[existing])
 
+    def test_recent_http_429_records_deferral_and_keeps_verified_paper(self):
+        info={'ok':False,'status':429,'error':'HTTP 429','retry_after':'120',
+              'url':'https://export.arxiv.org/api/query','retrieved_at':'2026-10-17T00:00:00Z'}
+        with tempfile.TemporaryDirectory() as directory,mock.patch.object(scan,'DATA',Path(directory)), \
+                mock.patch.object(scan,'fetch',return_value=(info,b'')):
+            old=self.row();write_jsonl(Path(directory)/'papers.jsonl',[old])
+            result=scan.recent_papers({'recent_lookback_days':14,'recent_max_results':100})
+            receipt=scan.read_json(Path(directory)/'recent-paper-search.json')
+            self.assertTrue(result['deferred'])
+            self.assertTrue(receipt['deferred'])
+            self.assertEqual(receipt['pages'][0]['retry_after'],'120')
+            self.assertEqual(scan.read_jsonl(Path(directory)/'papers.jsonl'),[old])
+
     def test_recent_rate_limit_defers_harvest_and_stale_search_receipts_do_not_count(self):
         with tempfile.TemporaryDirectory() as directory,mock.patch.object(scan,'DATA',Path(directory)):
             path=Path(directory)
@@ -110,7 +123,7 @@ class ScanSafetyTests(unittest.TestCase):
             def stage(name,command,timeout=600):
                 invoked.append(name)
                 if name=='discovery':
-                    scan.write_json(path/'discovery-runs.json',[{'id':'hub','ok':False,'status':429,
+                    scan.write_json(path/'discovery-runs.json',[{'id':'hub','ok':False,'status':429,'state':'deferred',
                         'provider_host':'huggingface.co','run_started_at':'2026-10-17T00:00:01Z'}])
                 return {'name':name,'ok':True,'started_at':'2026-10-17T00:00:00Z'}
             with mock.patch.object(scan,'stage',side_effect=stage),mock.patch.object(scan,'recent_phase',return_value={
@@ -120,6 +133,7 @@ class ScanSafetyTests(unittest.TestCase):
             self.assertEqual(invoked,['discovery','harvest','build','validate'])
             phase=next(p for p in scan.read_json(path/'scan-status.json')['phases'] if p['name']=='huggingface')
             self.assertTrue(phase['deferred']);self.assertFalse(phase['request_attempted'])
+            self.assertTrue(scan.read_json(path/'scan-status.json')['rate_limit_only'])
     def test_huggingface_query_rate_limit_does_not_stop_arxiv_or_harvest(self):
         with tempfile.TemporaryDirectory() as directory,mock.patch.object(scan,'DATA',Path(directory)):
             path=Path(directory)
@@ -131,7 +145,7 @@ class ScanSafetyTests(unittest.TestCase):
                 if name=='huggingface':
                     scan.write_json(path/'paper-discovery-status.json',{'schema_version':1,
                         'started_at':'2026-10-17T00:00:00Z','finished_at':'2026-10-17T00:00:01Z','configured_query_count':1,
-                        'queries':[{'id':'limited','state':'failed','evidence':{'ok':False,'status':429}}]})
+                        'queries':[{'id':'limited','state':'deferred','evidence':{'ok':False,'status':429}}]})
                 return {'name':name,'ok':True,'started_at':'2026-10-17T00:00:00Z'}
             with mock.patch.object(scan,'stage',side_effect=stage),mock.patch.object(scan,'recent_phase',return_value={
                     'name':'recent_arxiv','ok':True,'complete':True,'warnings':[]}) as recent,mock.patch.dict(scan.os.environ,{'GITHUB_STEP_SUMMARY':''}):
@@ -139,6 +153,7 @@ class ScanSafetyTests(unittest.TestCase):
             recent.assert_called_once()
             self.assertEqual(invoked,['discovery','huggingface','harvest','build','validate'])
             self.assertEqual(scan.read_json(path/'scan-status.json')['status'],'partial')
+            self.assertTrue(scan.read_json(path/'scan-status.json')['rate_limit_only'])
 
 
 if __name__=='__main__':unittest.main()

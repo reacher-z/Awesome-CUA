@@ -68,7 +68,7 @@ class PaperDiscoveryTests(unittest.TestCase):
         queries=self.queries+[{'id':'hf-search-other','query':'GUI safety','area':'Safety','limit':5}]
         result,fetch=self.run_queries([self.response([{'id':'2610.00002'}]),self.response({},429)],queries)
         self.assertEqual(fetch.call_count,2)
-        self.assertEqual([r['state'] for r in result['queries']],['success','failed','deferred'])
+        self.assertEqual([r['state'] for r in result['queries']],['success','deferred','deferred'])
         self.assertEqual(result['successful_query_count'],1);self.assertEqual(result['configured_query_count'],3)
         self.assertIn('arxiv:2610.00002',{r['id'] for r in catalog.read_jsonl(self.path/'candidates.jsonl')})
         self.assertTrue(result['queries'][1]['request_attempted'])
@@ -172,6 +172,7 @@ class PublisherIndexTests(unittest.TestCase):
             self.assertEqual(calls,[sources[0]['url'],sources[2]['url']])
             runs={r['id']:r for r in catalog.read_json(path/'discovery-runs.json')}
             self.assertNotIn('removed-source',runs)
+            self.assertEqual(runs['first']['state'],'deferred')
             self.assertEqual(runs['second']['state'],'deferred');self.assertFalse(runs['second']['request_attempted'])
             self.assertEqual(runs['publisher']['state'],'success')
             candidates={r['id']:r for r in catalog.read_jsonl(path/'candidates.jsonl')}

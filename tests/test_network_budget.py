@@ -164,7 +164,7 @@ class BudgetTests(BudgetCase):
             self.assertTrue(scan.stage('harvest',['scripts/catalog.py','harvest'])['deferred'])
             self.assertFalse(run.called)
             self.assertTrue(scan.stage('validate',['scripts/catalog.py','validate'])['ok'])
-        self.assertEqual(run.call_args.kwargs['timeout'],180)
+        self.assertEqual(run.call_args.kwargs['timeout'],300)
 
     def test_discovery_reports_do_not_claim_a_deferred_transport_was_sent(self):
         data=self.directory/'data';data.mkdir()

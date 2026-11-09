@@ -225,7 +225,7 @@ def search_index(view, zh=False):
             extra["l"] = leaderboard
         text = clip(record["summary"], 120)
         shown = clip(zh_summary(record), 120) if zh else text
-        if shown != text:
+        if shown != text and not is_paper:
             extra["e"] = text
         rows.append([record["id"], clean_title(record["name"]), KIND_ORDER.index(record["kind"]), bits,
                      year_of(record, by_id), flags, "" if is_paper else shown,

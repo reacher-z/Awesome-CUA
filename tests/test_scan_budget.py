@@ -12,9 +12,9 @@ import scan
 
 ROOT = Path(__file__).resolve().parents[1]
 WORKFLOW = ROOT / ".github" / "workflows" / "scan.yml"
-# Checkout, Python and Node setup, dependency install, the quality gate, the commit and the evidence upload. The gate's full
-# unit-test suite alone takes about 4 minutes on GitHub's runners.
-OTHER_STEPS = 10 * 60
+# Checkout, setup, the quality gate, commit and upload. The failing runner log
+# records 1,162 seconds for the full unit suite alone at 5,438 resources.
+OTHER_STEPS = 25 * 60
 CONFIG = {'recent_lookback_days': 14, 'recent_max_results': 500, 'harvest_limit': 500, 'history_limit': 5,
           'timezone': 'UTC', 'scan_times_local': ['08:17', '20:17'], 'policy': 'Fixture'}
 
@@ -44,9 +44,12 @@ class ScanBudgetTests(unittest.TestCase):
             scan.write_json(Path(directory) / "scan-config.json", CONFIG)
             self.assertEqual(scan.run_scan(), 1)
             phases = {p["name"]: p for p in scan.read_json(Path(directory) / "scan-status.json")["phases"]}
-        self.assertEqual(timeouts, [("discover", 300), ("scripts/discover_papers.py", 300), ("harvest", 300), ("build", 180), ("validate", 180)])
+        self.assertEqual([name for name, _ in timeouts], ["discover", "scripts/discover_papers.py", "harvest", "build", "validate"])
+        self.assertTrue(all(599 < timeout <= 600 for _, timeout in timeouts[:3]), timeouts)
+        self.assertEqual([timeout for _, timeout in timeouts[3:]], [300, 300])
         self.assertEqual(set(phases), set(scan.STAGE_TIMEOUTS))
-        self.assertEqual(phases["harvest"]["error"], "Stage exceeded 300 seconds; last verified records retained.")
+        self.assertEqual(phases["harvest"]["error"], f"Stage exceeded {timeouts[2][1]:g} seconds; last verified records retained.")
+        self.assertTrue(all(phases[name]['deferred'] for name in ('discovery','huggingface','harvest')))
 
     def test_an_interrupted_scan_leaves_its_own_running_receipt(self):
         with tempfile.TemporaryDirectory() as directory, mock.patch.object(scan, "DATA", Path(directory)), \

@@ -83,7 +83,7 @@ class ScanScheduleTests(unittest.TestCase):
         self.assertEqual(set(gaps(checks)), {30})
         publication = ROOT / 'automation/publish.yml'
         scan_timeout = job_timeout(ROOT / '.github/workflows/scan.yml', 'scan')
-        self.assertLessEqual(scan_timeout, 45)
+        self.assertLessEqual(scan_timeout, 60)
         # A scan that ends within its timeout is picked up by the next check, then validated, built and deployed.
         worst = scan_timeout + max(gaps(checks)) + sum(job_timeout(publication, job) for job in ('gate', 'build', 'deploy'))
         self.assertLessEqual(worst, LIVE_WITHIN_MINUTES)

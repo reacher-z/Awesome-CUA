@@ -35,7 +35,7 @@ def counts():
 
 # Phase caps never extend the single network-round deadline. Offline build/validation
 # retain separate time, leaving room for the workflow's remaining quality gate.
-STAGE_TIMEOUTS={'discovery':300,'huggingface':300,'recent_arxiv':600,'harvest':300,'github_candidates':220,'build':180,'validate':180}
+STAGE_TIMEOUTS={'discovery':600,'huggingface':600,'recent_arxiv':600,'harvest':600,'github_candidates':220,'build':300,'validate':300}
 NETWORK_STAGES=frozenset({'discovery','huggingface','recent_arxiv','harvest','github_candidates'})
 # Precise title terms miss methods whose interface setting appears only in the
 # abstract. Keep this a discovery query: every new hit still needs scope review.
@@ -65,6 +65,7 @@ def stage(name,command,timeout=None):
             'error':result.stdout[-1600:] if result.returncode else None}
     except subprocess.TimeoutExpired:
         return {'name':name,'started_at':started,'finished_at':now(),'ok':False,
+                **({'deferred':True} if name in NETWORK_STAGES else {}),
                 'error':f'Stage exceeded {timeout:g} seconds; last verified records retained.'}
 
 
@@ -244,12 +245,14 @@ def recent_papers(config):
     complete=total is not None and len(seen)==total and bool(pages) and all(p.get('ok') for p in pages) and not warnings
     if total is not None and not complete:warnings.append(f'Recent search delivered {len(seen)} unique in-window records out of {total} reported; completeness is not claimed.')
     write_jsonl(DATA/'papers.jsonl',records.values());write_jsonl(DATA/'candidates.jsonl',candidates.values());write_jsonl(DATA/'metadata-updates.jsonl',proposals.values())
+    limited=any(p.get('status')==429 for p in pages)
     report={'schema_version':2,'scan_day_utc':day,'query':query,'since_utc':since,'cutoff_utc':cutoff,
         'polling_policy':'Complete arXiv snapshots are reused within one UTC publication day; failed or incomplete searches are retried by a later scheduled scan.',
-        'reported_total':total,'unique_returned':len(seen),'complete':complete,'pages':pages,'new_ids':new_ids,'warnings':warnings}
+        'reported_total':total,'unique_returned':len(seen),'complete':complete,'deferred':limited,
+        'pages':pages,'new_ids':new_ids,'warnings':warnings}
     write_json(DATA/'recent-paper-search.json',report)
     return {'name':'recent_arxiv','ok':any(p.get('ok') for p in pages),'complete':complete,'new_count':len(new_ids),'warnings':warnings,'cache_used':False,
-            'rate_limited':any(p.get('status')==429 for p in pages)}
+            'rate_limited':limited,'deferred':limited}
 
 
 PAUSE_WARNING='GitHub candidate observations paused'
@@ -293,10 +296,11 @@ def throttle_pause(row,previous=()):
 
 
 def partial_streak(history):
-    """Consecutive partial scans ending at the newest, ignoring rate-limit pauses that made progress."""
+    """Consecutive partial scans ending at the newest, ignoring bounded network deferrals."""
     streak=0
     for index in range(len(history)-1,-1,-1):
         row=history[index]
+        if row.get('status')=='partial' and (row.get('rate_limit_only') or row.get('network_deferred_only')):continue
         if throttle_pause(row,history[:index]):continue
         if row.get('status')!='partial':break
         streak+=1
@@ -337,10 +341,10 @@ def nothing_to_commit(report,previous,config,current=None):
     return ((current or dt.datetime.now(dt.timezone.utc))-finished).total_seconds()/3600<limit
 
 
-def summarize_phases(phases,source_runs,hf_runs,harvest_failures):
+def summarize_phases(phases,source_runs,hf_runs,harvest_failures,retained_verified=False):
     problems=[]
     for phase in phases:
-        if not phase.get('ok'):problems.append(phase['name']+': '+(phase.get('error') or 'failed'))
+        if not phase.get('ok'):problems.append(phase['name']+': '+(phase.get('error') or ('deferred' if phase.get('deferred') else 'failed')))
         problems.extend(phase.get('warnings',[]))
         validation=phase.get('durable_validation',{})
         if validation.get('ok') is False:
@@ -356,6 +360,11 @@ def summarize_phases(phases,source_runs,hf_runs,harvest_failures):
     candidate_usable=any(p['name']==candidate_stage.PHASE and p.get('ok') and p.get('published')
         and p.get('successful_responses',0)>0 for p in phases)
     usable=(phase_ok.get('discovery') and any(r.get('ok') and not r.get('parse_error') for r in source_runs)) or (phase_ok.get('huggingface') and any(successful_query(r) for r in hf_runs)) or phase_ok.get('recent_arxiv') or candidate_usable
+    # A bounded network round may end before any source completes. The existing
+    # verified catalog remains usable after the offline build and validation.
+    if retained_verified and all(p.get('ok') or p.get('deferred') or p.get('rate_limited')
+                                for p in phases if p['name'] in NETWORK_STAGES):
+        usable=True
     fatal=not usable or any(p['name'] in {'build','validate'} and not p.get('ok') for p in phases) or any(
         p.get('durable_validation',{}).get('ok') is False for p in phases)
     return ('failed' if fatal else 'partial' if problems else 'success'),problems
@@ -425,7 +434,29 @@ def run_round(config,budget):
     hf_runs=hf_report.get('queries',[]) if hf_current else []
     if phases[1]['ok'] and not hf_current:
         phases[1].update(ok=False,error='No complete receipt for the current paper-discovery run; previous successes are not reused.')
-    status,problems=summarize_phases(phases,source_runs,hf_runs,read_jsonl(DATA/'harvest-failures.jsonl'))
+    harvest_failures=read_jsonl(DATA/'harvest-failures.jsonl')
+    status,problems=summarize_phases(phases,source_runs,hf_runs,harvest_failures,
+        retained_verified=before['resources']>0 and counts()['resources']>0)
+    rate_limited_seen=(any(r.get('status')==429 for r in source_runs)
+        or any(r.get('evidence',{}).get('status')==429 for r in hf_runs)
+        or any(p.get('rate_limited') for p in phases))
+    def rate_limit_deferral(receipt):
+        return (receipt.get('status')==429 or receipt.get('deferred_reason')=='provider_cooldown'
+            or '429' in str(receipt.get('error') or ''))
+    rate_limit_only=bool(status=='partial' and rate_limited_seen and all(
+        p.get('ok') or p.get('rate_limited') or p.get('deferred') and rate_limit_deferral(p) for p in phases)
+        and all(r.get('ok') or r.get('state')=='retired' or
+            r.get('state')=='deferred' and rate_limit_deferral(r) for r in source_runs)
+        and all(r.get('state')=='success' or r.get('state')=='deferred' and
+            rate_limit_deferral(r.get('evidence',{})) for r in hf_runs)
+        and all(r.get('deferred') for r in harvest_failures)
+        and all('429' in warning for p in phases for warning in p.get('warnings',[])))
+    network_deferred_only=bool(status=='partial' and before['resources']>0 and all(
+        p.get('ok') or p['name'] in NETWORK_STAGES and (p.get('deferred') or p.get('rate_limited')) for p in phases)
+        and all(r.get('ok') or r.get('state') in {'retired','deferred'} for r in source_runs)
+        and all(r.get('state') in {'success','deferred'} for r in hf_runs)
+        and all(r.get('deferred') for r in harvest_failures)
+        and not any(p.get('warnings') and not all('429' in warning for warning in p['warnings']) for p in phases))
     papers=read_jsonl(DATA/'papers.jsonl');candidates=read_jsonl(DATA/'candidates.jsonl');finished=now()
     retired_sources=sum(r.get('state')=='retired' for r in source_runs)
     new_papers=[{'id':r['id'],'name':r['name'],'url':r['url'],'review_status':'metadata_verified'} for r in papers if r['id'] not in old_papers]
@@ -436,7 +467,8 @@ def run_round(config,budget):
         'paper_searches':{'successful':sum(r.get('state')=='success' for r in hf_runs),'total':hf_report.get('configured_query_count',0) if hf_current else 0,
             'unique_identifiers':hf_report.get('unique_identifiers',0) if hf_current else 0,'new_candidates':hf_report.get('new_candidate_count',0) if hf_current else 0},
         'candidate_observations':{k:v for k,v in candidate.items() if k not in {'name','baseline_files','ready_to_publish'}},
-        'phases':phases,'warnings':problems,'policy':config['policy'],'network_budget':budget.summary()}
+        'phases':phases,'warnings':problems,'rate_limit_only':rate_limit_only,
+        'network_deferred_only':network_deferred_only,'policy':config['policy'],'network_budget':budget.summary()}
     write_json(DATA/'scan-status.json',report)
     history=read_jsonl(DATA/'scan-history.jsonl');history.append({k:v for k,v in report.items() if k!='phases'})
     write_jsonl(DATA/'scan-history.jsonl',history[-config['history_limit']:])

@@ -38,6 +38,12 @@ def step_outputs(text):
 
 
 class PartialScanReportingTests(unittest.TestCase):
+    def test_rate_limit_only_partials_do_not_fail_the_workflow_after_three_runs(self):
+        self.assertEqual(scan.partial_streak([{'status':'partial','rate_limit_only':True}] * 4),0)
+        self.assertEqual(scan.partial_streak([{'status':'partial','network_deferred_only':True}] * 4),0)
+        self.assertEqual(scan.partial_streak([{'status':'partial','rate_limit_only':True},
+                                              {'status':'partial','warnings':['build: failed']}]),1)
+
     def scan(self, recent=RATE_LIMITED, errors=None, history=(), actions=True, **config):
         """Run one scan with stubbed stages; return its exit code, stdout, step output and step summary."""
         errors = errors or {}

@@ -9,7 +9,7 @@
 觉得有用？欢迎在 GitHub 上[点星支持本合集](https://github.com/reacher-z/Awesome-CUA)，让更多人找到它。
 
 <!-- BADGES:START -->
-[![Curated resources](https://img.shields.io/badge/curated%20resources-4%2C587-4352E8?style=flat-square&labelColor=1E2233)](docs/coverage.md) [![Reviewed papers and surveys](https://img.shields.io/badge/reviewed%20papers%20and%20surveys-1%2C718-4352E8?style=flat-square&labelColor=1E2233)](docs/papers.md) [![Evidence through](https://img.shields.io/badge/evidence%20through-2026--11--09%2008%3A07%20UTC-4352E8?style=flat-square&labelColor=1E2233)](docs/maintenance.md) [![Hugging Face dataset](https://img.shields.io/badge/dataset-Hugging%20Face-4352E8?style=flat-square&labelColor=1E2233)](https://huggingface.co/datasets/TIGER-Lab/AwesomeCUA) [![MIT license](https://img.shields.io/badge/license-MIT-5E6472?style=flat-square&labelColor=1E2233)](LICENSE)
+[![Curated resources](https://img.shields.io/badge/curated%20resources-4%2C587-4352E8?style=flat-square&labelColor=1E2233)](docs/coverage.md) [![Reviewed papers and surveys](https://img.shields.io/badge/reviewed%20papers%20and%20surveys-1%2C718-4352E8?style=flat-square&labelColor=1E2233)](docs/papers.md) [![Evidence through](https://img.shields.io/badge/evidence%20through-2026--11--09%2011%3A08%20UTC-4352E8?style=flat-square&labelColor=1E2233)](docs/maintenance.md) [![Hugging Face dataset](https://img.shields.io/badge/dataset-Hugging%20Face-4352E8?style=flat-square&labelColor=1E2233)](https://huggingface.co/datasets/TIGER-Lab/AwesomeCUA) [![MIT license](https://img.shields.io/badge/license-MIT-5E6472?style=flat-square&labelColor=1E2233)](LICENSE)
 <!-- BADGES:END -->
 
 已审阅条目依据一手来源快照审阅；待审阅记录已核实书目信息；候选是已发现的标识符，尚待处理。[“已核实”的含义](#已核实的含义) · [覆盖台账](docs/coverage.md)
@@ -54,7 +54,7 @@ python3 scripts/catalog.py get arxiv:2404.07972 --related --json
 
 **4,587 条已审阅资源** · **1,718 篇已审阅论文与综述** · **104 个发现来源文档**
 
-证据截至 `2026-11-09T08:07:58Z`。**451 条待审阅记录**已完成书目核实；**114 个已发现候选**尚待处理。463 个候选已完成范围外审阅。1,308 条范围排除记录在归档中保留原始元数据。
+证据截至 `2026-11-09T11:08:26Z`。**883 条待审阅记录**已完成书目核实；**2,255 个已发现候选**尚待处理。463 个候选已完成范围外审阅。1,308 条范围排除记录在归档中保留原始元数据。
 
 <!-- STATS:END -->
 
@@ -64,7 +64,7 @@ python3 scripts/catalog.py get arxiv:2404.07972 --related --json
 | 浏览                              | 内容               |    条目 |
 | ------------------------------- | ---------------- | ----: |
 | [按主题浏览研究](docs/topics.md)       | 按主题整理的已审阅论文      | 1,681 |
-| [完整论文目录](docs/papers.md)        | 全部论文与综述记录，含待审阅记录 | 2,169 |
+| [完整论文目录](docs/papers.md)        | 全部论文与综述记录，含待审阅记录 | 2,601 |
 | [综述](docs/surveys.md)           | 电脑操作智能体研究综述      |    37 |
 | [学习资源](docs/learning.md)        | 课程与教程            |    26 |
 | [数据集](docs/datasets.md)         | GUI 智能体的训练与评测数据  |   195 |

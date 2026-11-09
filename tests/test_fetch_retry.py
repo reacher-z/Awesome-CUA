@@ -98,6 +98,7 @@ class FetchRetryTests(unittest.TestCase):
     def test_retry_after_beyond_the_cap_is_left_to_the_caller(self):
         info, _, calls = self.fetch(http_error(429, str(catalog.MAX_RETRY_AFTER + 1)))
         self.assertEqual((info["ok"], info["status"], info["retry_after"], calls), (False, 429, "61", 1))
+        self.assertTrue(info['deferred'])
         self.sleep.assert_not_called()
 
 

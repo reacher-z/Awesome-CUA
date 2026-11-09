@@ -29,7 +29,6 @@ from discovery_files import FEED_SIZE, FEED_TITLE, feed_entry, robots_txt, write
 from site_data import PAPER_KINDS, catalog_counts, eligible, latest, newest_reviewed, record_modified, review_dates
 from static_api import API_SUMMARY, API_TITLE, api_docs_body, api_docs_markdown, write_api
 from sitemaps import write_sitemaps
-import og_cards
 
 REPO = "https://github.com/AwesomeCUA/awesomecua.github.io"
 SOURCE_REPO = "https://github.com/reacher-z/Awesome-CUA"
@@ -684,6 +683,8 @@ def draw_og_cards(destination, rows, reviewed):
     topics=Counter(t for r in reviewed for t in r['topics'])
     for topic,count in topics.items():
         cards['topic-'+topic]=(f'awesomecua.com/topics/{topic}/',f'Topic · {count:,} reviewed',topic_name(topic),'Reviewed papers, models, datasets, benchmarks and tools, each linked to its primary source.','select')
+    # Pillow loads only for the site build; the data-release package imports this module with site-packages disabled.
+    import og_cards
     paths=og_cards.write_cards(destination,cards)
     OG_CARDS.clear()
     OG_CARDS.update({name:(paths[name],f'{spec[2]} — AwesomeCUA') for name,spec in cards.items()})

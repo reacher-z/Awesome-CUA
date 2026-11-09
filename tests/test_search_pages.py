@@ -155,6 +155,16 @@ class SearchPagesTests(unittest.TestCase):
                 self.assertIn('<html lang="zh-CN"',text)
                 if row['id'] in translations:self.assertIn(html.escape(translations[row['id']]['summary'],quote=True),text)
 
+    def test_home_pages_declare_the_site_search(self):
+        for path in ('index.html','zh/index.html'):
+            graph=json.loads(re.search(r'<script type="application/ld\+json">(.*?)</script>',(self.dest/path).read_text(),re.S).group(1))['@graph']
+            website=next(item for item in graph if item['@type']=='WebSite')
+            action=website['potentialAction']
+            self.assertEqual(action['@type'],'SearchAction',path)
+            self.assertEqual(action['target']['urlTemplate'],SITE+'/explore/?q={search_term_string}#catalog')
+            self.assertEqual(action['query-input'],'required name=search_term_string')
+            self.assertIn('Organization',{item['@type'] for item in graph})
+
     def test_chinese_navigation_opens_the_chinese_catalog(self):
         text=(self.dest/'zh/index.html').read_text()
         self.assertIn('href="/zh/catalog/"',text)

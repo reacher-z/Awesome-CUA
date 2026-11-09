@@ -217,14 +217,46 @@ def page(title, summary, path, body, main=None, index=True, lang="en", alternati
     return document
 
 
+CODE_HOSTS = ('https://github.com/','https://gitlab.com/','https://codeberg.org/','https://bitbucket.org/')
+SOFTWARE_KINDS = {'tool','framework','agent','infrastructure'}
+
+
+def schema_type(record):
+    """The schema.org type for a resource: papers are articles, datasets and benchmarks are datasets, software is code or an application."""
+    kind=record['kind']
+    if kind in {'paper','survey'}:return 'ScholarlyArticle'
+    if kind in {'dataset','benchmark'}:return 'Dataset'
+    code=record['url'].startswith(CODE_HOSTS)
+    if kind in SOFTWARE_KINDS:return 'SoftwareSourceCode' if code else 'SoftwareApplication'
+    if kind=='model':return 'SoftwareSourceCode' if code else 'CreativeWork'
+    if kind=='product':return 'SoftwareApplication'
+    if kind=='learning':return 'LearningResource'
+    if kind=='company':return 'Organization'
+    return 'CreativeWork'
+
+
 def resource_schema(record, zh=False):
-    entity={"@type":"ScholarlyArticle" if record["kind"] in {"paper","survey"} else "CreativeWork", "name":record["name"], "description":zh_summary(record) if zh else description(record), "url":SITE+(zh_resource_path(record) if zh else resource_path(record)), "sameAs":record["url"], "identifier":record["id"]}
+    entity={"@type":schema_type(record), "name":record["name"], "description":zh_summary(record) if zh else description(record), "url":SITE+(zh_resource_path(record) if zh else resource_path(record)), "sameAs":record["url"], "identifier":record["id"]}
     if zh:entity["inLanguage"]="zh-CN"
+    if entity["@type"]=="Organization":
+        return entity
     if record["authors"]:entity["author"]=[{"@type":"Person","name":name} for name in record["authors"]]
     if record["published_at"]:entity["datePublished"]=record["published_at"]
     if record["updated_at"]:entity["dateModified"]=record["updated_at"]
     if record["topics"]:entity["keywords"]=record["topics"]
-    if record["kind"]=="dataset" and len(description(record))>=50:entity["@type"]="Dataset"
+    # Dataset descriptions need 50 characters; a short summary gains the resource's own context, then the catalog's.
+    for extra in (resource_context(record,zh),DESCRIPTION_CONTEXT['zh-CN' if zh else 'en']):
+        if entity["@type"]!="Dataset" or len(entity["description"])>=50:break
+        entity["description"]=(entity["description"]+('' if zh else ' ')+extra).strip()
+    environments=[ENVIRONMENT_LABELS.get(env,env) for env in record["environments"] if env!="unspecified"]
+    if entity["@type"]=="SoftwareSourceCode":
+        entity["codeRepository"]=record["url"]
+        if environments:entity["runtimePlatform"]=environments
+    if entity["@type"]=="SoftwareApplication":
+        entity["applicationCategory"]="DeveloperApplication"
+        if environments:entity["operatingSystem"]=", ".join(environments)
+    license=next((l for slot in (('data','document') if entity["@type"]=="Dataset" else ('code','weights','document')) if (l:=record["licenses"].get(slot)) and l.get("url")),None)
+    if license:entity["license"]=license["url"]
     return entity
 
 
@@ -911,10 +943,12 @@ def build_search_pages(destination, rows, coverage, root, *, survey_page=None):
     emit('/guides/',page('Computer-use agent guides','Understand computer-use agents, choose GUI-agent benchmarks, and find training datasets with clearly scoped primary-source references.','/guides/',body))
     zh_note=f'当前有 {len(reviewed):,} 条经过 AI 辅助编辑审阅的资源；另有 {awaiting:,} 条书目记录待审阅、{candidates:,} 个已发现候选待核实。'
     zh_body=home_page.hero(view,last_scan,zh=True)+home_page.benchmark_band(view,zh=True)+home_page.tasks(view,zh=True)+home_page.latest(view,zh=True)+home_page.categories(view,zh=True)+home_page.papers(view,zh=True)+home_page.developers(zh=True)+home_page.directory_strip(zh=True,note=zh_note)+home_page.contribute(zh=True)
-    emit('/zh/',page('AwesomeCUA 中文主页：Computer-Use Agent 资源目录','浏览可搜索、可追溯的 Computer-Use Agent 论文、模型、数据集、基准、框架与产品，查看来源证据并下载结构化目录。','/zh/',zh_body,lang='zh-CN',alternatives=True,landing=True),lastmod=modified(rows),alternates=True)
+    website={"@type":"WebSite","@id":SITE+"/#website","url":SITE+"/","name":"AwesomeCUA","description":"Source-backed computer-use and GUI-agent resource catalog","publisher":{"@id":SITE+"/#organization"},"inLanguage":["en","zh-CN"],
+             # The explorer reads ?q= and searches every record.
+             "potentialAction":{"@type":"SearchAction","target":{"@type":"EntryPoint","urlTemplate":SITE+"/explore/?q={search_term_string}#catalog"},"query-input":"required name=search_term_string"}}
+    emit('/zh/',page('AwesomeCUA 中文主页：Computer-Use Agent 资源目录','浏览可搜索、可追溯的 Computer-Use Agent 论文、模型、数据集、基准、框架与产品，查看来源证据并下载结构化目录。','/zh/',zh_body,lang='zh-CN',alternatives=True,landing=True,extra_graph=[website]),lastmod=modified(rows),alternates=True)
     # The explorer keeps a static, visible directory for visitors without JavaScript.
     static='<section class="shell static-directory" aria-labelledby="static-directory-title"><div class="eyebrow" data-i18n="directoryEyebrow">READ, EXPLORE, AND CITE</div><h2 id="static-directory-title" data-i18n="directoryHeading">Computer-use agent research and resources</h2><p data-i18n="directoryCopy">Browse source-backed pages directly, with or without JavaScript. Reviewed entries include concise annotations, provenance, and separate license declarations.</p><div class="directory-links"><a href="/catalog/" data-i18n="directoryTitle">Resource directory</a><a href="/papers/" data-paper-library data-i18n="directoryPapers">Research papers</a><a href="/topics/" data-topic-directory data-i18n="directoryTopics">Browse by topic</a><a href="/connections/" data-i18n="directoryConnections">Papers → code & data</a><a href="/updates/" data-i18n="directoryUpdates">Scan updates</a><a href="/categories/model/" data-i18n="directoryModels">Models</a><a href="/categories/dataset/" data-i18n="directoryDatasets">Datasets</a><a href="/categories/benchmark/" data-i18n="directoryBenchmarks">Benchmarks</a><a href="/compare/benchmarks/" data-i18n="compareBenchmarks">Compare benchmarks</a><a href="/compare/datasets/" data-i18n="compareDatasets">Compare datasets</a><a href="/categories/learning/" data-i18n="directoryLearning">Learning resources</a><a href="/categories/framework/" data-i18n="directoryFrameworks">Frameworks</a><a href="/categories/product/" data-i18n="directoryProducts">Products</a><a href="/guides/" data-i18n="navGuides">Guides</a><a href="/data/" data-i18n="directoryData">Download data</a><a href="/coverage/" data-i18n="navCoverage">Coverage</a><a href="/about/" data-i18n="editorialPolicy">Editorial policy</a><a href="/zh/" lang="zh-CN">中文指南</a></div><h3 data-i18n="startHeading">Where should I start?</h3><p><a href="/guides/what-are-computer-use-agents/" data-i18n="startConcepts">Understand computer-use agents</a><span data-i18n="listComma">, </span><a href="/guides/gui-agent-benchmarks/" data-i18n="startBenchmarks">choose a benchmark for the capability you need</a><span data-i18n="listOr">, or </span><a href="/guides/gui-agent-training-data/" data-i18n="startData">find training data with the right supervision and license</a><span data-i18n="sentenceEnd">.</span></p></section>'
-    website={"@type":"WebSite","@id":SITE+"/#website","url":SITE+"/","name":"AwesomeCUA","description":"Source-backed computer-use and GUI-agent resource catalog","publisher":{"@id":SITE+"/#organization"}}
     home_body=home_page.hero(view,last_scan)+home_page.benchmark_band(view)+home_page.tasks(view)+home_page.latest(view)+home_page.categories(view)+home_page.papers(view)+home_page.developers()+home_page.directory_strip()+home_page.contribute()
     emit('/',page('AwesomeCUA — Computer-use research, data, and tools','Find research, models, benchmarks, and software for web, desktop, and mobile agents. Filter by task or platform, then inspect the primary sources.','/',home_body,alternatives=True,landing=True,extra_graph=[website]),lastmod=modified(rows),alternates=True)
     # Feeds announce curated records as they pass source review, newest review first.

@@ -48,13 +48,13 @@ COLUMNS = {
     'benchmark': ('platform', 'setting', 'scale', 'leaderboard'),
     'dataset': ('platform', 'supervision', 'scale', 'license'),
     'model': ('platform', 'license', 'paper', 'mentions'),
-    'product': ('platform', 'publisher', 'pricing'),
+    'product': ('platform', 'access', 'pricing'),
     'company': ('resources', 'kinds'),
     'survey': ('date', 'platform', 'topics'),
 }
 HEADINGS = {'platform': ('Platform', '平台'), 'setting': ('Setting', '设置'), 'scale': ('Scale', '规模'), 'leaderboard': ('Leaderboard', '排行榜'),
             'supervision': ('Supervision', '监督信号'), 'license': ('License', '许可证'), 'paper': ('Paper', '论文'), 'mentions': ('Mentions', '提及'),
-            'publisher': ('Publisher', '发布方'), 'pricing': ('Pricing', '定价'), 'resources': ('Resources', '资源'), 'kinds': ('Kinds', '类型'),
+            'publisher': ('Publisher', '发布方'), 'access': ('Access', '访问方式'), 'pricing': ('Pricing', '定价'), 'resources': ('Resources', '资源'), 'kinds': ('Kinds', '类型'),
             'date': ('Date', '日期'), 'topics': ('Topics', '主题')}
 KIND_NAMES = {'paper': ('paper', 'papers', '论文'), 'survey': ('survey', 'surveys', '综述'), 'learning': ('learning resource', 'learning resources', '学习资源'),
               'model': ('model', 'models', '模型'), 'dataset': ('dataset', 'datasets', '数据集'), 'benchmark': ('benchmark', 'benchmarks', '评测基准'),
@@ -189,6 +189,8 @@ def cell(column, record, view, zh):
         return n(len(view['mentions'].get(record['id'], ())))
     if column == 'publisher':
         return ', '.join(a(p, zh) for p in publishers(record, by_id)) or '—'
+    if column == 'access':
+        return ('发布方托管' if zh else 'Publisher-managed') if details.get('access') == 'publisher-managed' else '—'
     if column == 'pricing':
         url = details.get('pricing_url')
         return f'<a href="{esc(url)}">{"定价页" if zh else "Pricing page"}</a>' if url else '—'

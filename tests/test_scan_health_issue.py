@@ -16,7 +16,7 @@ RUN_URL = "https://github.com/owner/repo/actions/runs/42"
 FAKE_GH = r"""#!/bin/sh
 printf '%s\n' "$*" >> "$GH_LOG"
 case "$1 $2" in
-  "issue list") printf '%s\n' "$GH_OPEN" ;;
+  "issue list") case "$*" in *"--state closed"*) printf '%s\n' "$GH_CLOSED" ;; *) printf '%s\n' "$GH_OPEN" ;; esac ;;
   "issue view") printf '%s\n' "$GH_BODY" ;;
   "api repos/owner/repo/actions/runs/42/jobs") printf '%s\n' "$GH_FAILING" ;;
 esac
@@ -73,9 +73,9 @@ class ScanHealthStepTests(unittest.TestCase):
         (self.tmp / "bin" / "gh").chmod(0o755)
         self.log, self.uploaded = self.tmp / "gh.log", self.tmp / "uploaded.md"
 
-    def run_step(self, result, status="", notes="", repeated="", open_issues="", body="", failing=""):
+    def run_step(self, result, status="", notes="", repeated="", open_issues="", body="", failing="", closed_issue=""):
         env = {**os.environ, "PATH": f"{self.tmp / 'bin'}{os.pathsep}{os.environ['PATH']}", "GH_LOG": str(self.log),
-               "GH_UPLOADED": str(self.uploaded), "GH_OPEN": open_issues, "GH_BODY": body, "GH_FAILING": failing,
+               "GH_UPLOADED": str(self.uploaded), "GH_OPEN": open_issues, "GH_CLOSED": closed_issue, "GH_BODY": body, "GH_FAILING": failing,
                "GH_TOKEN": "token", "GITHUB_REPOSITORY": "owner/repo", "GITHUB_RUN_ID": "42", "GITHUB_EVENT_NAME": "schedule",
                "RUNNER_TEMP": str(self.tmp), "RUN_URL": RUN_URL, "SCAN_RESULT": result, "SCAN_STATUS": status,
                "SCAN_NOTES": notes, "REPEATED_PARTIAL": repeated}
@@ -100,13 +100,31 @@ class ScanHealthStepTests(unittest.TestCase):
         calls, body = self.run_step("failure", status="failed", notes="discovery: down\nharvest: deferred",
                                     failing="scan (Check generated data and review boundaries)")
         self.assertEqual([call.split()[:2] for call in calls], [["issue", "list"], ["api", "repos/owner/repo/actions/runs/42/jobs"],
-                                                                ["label", "create"], ["issue", "create"]])
+                                                                ["issue", "list"], ["label", "create"], ["issue", "create"]])
+        self.assertIn("issue list -R owner/repo --label scan-health --state closed --limit 100 --json number,closedAt", self.log.read_text())
         self.assertIn("issue create -R owner/repo --title Scheduled discovery scan is unhealthy --label scan-health --body-file", self.log.read_text())
         self.assertTrue(body.startswith("<!-- scan-health unhealthy_runs=1 since="))
         self.assertIn(f"- Latest unhealthy run: {RUN_URL} (schedule, ", body)
         self.assertIn("- Scan job: `failure`; scan status: `failed`; repeated partial scans: `false`", body)
         self.assertIn("- Failing jobs and steps: scan (Check generated data and review boundaries)", body)
         self.assertIn("```text\ndiscovery: down\nharvest: deferred\n```", body)
+
+    def test_a_new_incident_reopens_the_most_recently_closed_issue_with_a_fresh_count(self):
+        previous = "<!-- scan-health unhealthy_runs=6 since=2026-11-01T00:07:00Z -->\nThe scheduled discovery scan..."
+        calls, body = self.run_step("failure", status="failed", closed_issue="12", body=previous)
+        self.assertEqual([call for call in calls if not call.startswith("api ")], ["issue list", "issue list", "issue edit 12", "issue reopen 12"])
+        log = self.log.read_text()
+        self.assertNotIn("issue create", log)
+        self.assertNotIn("label create", log)
+        self.assertIn(f"--comment Unhealthy again in {RUN_URL}; the description holds the latest run.", log)
+        self.assertTrue(body.startswith("<!-- scan-health unhealthy_runs=1 since="))
+        self.assertNotIn("2026-11-01T00:07:00Z", body)
+        self.assertIn("reopened by the next unhealthy one", body)
+
+    def test_a_healthy_run_reopens_nothing(self):
+        calls, body = self.run_step("success", status="success", closed_issue="12")
+        self.assertEqual(calls, ["issue list"])
+        self.assertIsNone(body)
 
     def test_later_unhealthy_runs_edit_the_oldest_issue_in_place_and_close_duplicates(self):
         previous = "<!-- scan-health unhealthy_runs=3 since=2026-11-05T00:39:00Z -->\nThe scheduled discovery scan..."

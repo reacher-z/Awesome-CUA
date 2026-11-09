@@ -144,6 +144,7 @@ jobs:
   track_scan_health:
     # One tracking issue stays open while scans of main are unhealthy: it is edited in place on each such run and
     # closed by the next healthy run, so a long outage neither fails silently nor posts a new issue every eight hours.
+    # The next incident reopens the most recently closed tracking issue; a new issue is created only when none exists.
     needs: scan
     if: always() && github.ref == 'refs/heads/main' && !inputs.dry_run
     runs-on: ubuntu-latest
@@ -174,22 +175,28 @@ jobs:
           # A failed job may never have written a receipt; the jobs API still names the failing step.
           failing=$(gh api "repos/$GITHUB_REPOSITORY/actions/runs/$GITHUB_RUN_ID/jobs" --jq '[.jobs[] | select(.conclusion == "failure" or .conclusion == "cancelled") | .name + " (" + ([.steps[] | select(.conclusion == "failure" or .conclusion == "cancelled") | .name] | join(", ")) + ")"] | join("; ")' || true)
           now=$(date -u +%Y-%m-%dT%H:%M:%SZ)
-          count=1; since=$now
-          if [ -n "$tracking" ]; then
+          count=1; since=$now; reopen=
+          if [ -z "$tracking" ]; then
+            tracking=$(gh issue list "${repo[@]}" --label "$label" --state closed --limit 100 --json number,closedAt --jq 'sort_by(.closedAt) | last | .number // empty') || tracking=
+            reopen=${tracking:+true}
+          else
             marker=$(gh issue view "$tracking" "${repo[@]}" --json body --jq .body | sed -n 's/^<!-- scan-health unhealthy_runs=\([0-9][0-9]*\) since=\([0-9TZ:-]*\) -->$/\1 \2/p') || marker=
             marker=${marker%%$'\n'*}
             if [ -n "$marker" ]; then read -r count since <<< "$marker"; count=$((count + 1)); fi
           fi
           {
             printf '<!-- scan-health unhealthy_runs=%s since=%s -->\n' "$count" "$since"
-            printf 'The scheduled discovery scan of `main` is unhealthy. This issue is edited in place on each unhealthy run and closed automatically by the next healthy run.\n\n'
+            printf 'The scheduled discovery scan of `main` is unhealthy. This issue is edited in place on each unhealthy run, closed automatically by the next healthy run and reopened by the next unhealthy one.\n\n'
             printf -- '- Latest unhealthy run: %s (%s, %s)\n' "$RUN_URL" "$GITHUB_EVENT_NAME" "$now"
             printf -- '- Scan job: `%s`; scan status: `%s`; repeated partial scans: `%s`\n' "$SCAN_RESULT" "${SCAN_STATUS:-not recorded}" "${REPEATED_PARTIAL:-false}"
             printf -- '- Failing jobs and steps: %s\n' "${failing:-none recorded}"
             printf -- '- Consecutive unhealthy runs: %s since %s\n\n' "$count" "$since"
             printf 'Gaps recorded by the latest scan receipt:\n\n```text\n%s\n```\n' "$(printf '%s' "${SCAN_NOTES:-none recorded}" | sed 's/```/` ` `/g')"
           } > "$RUNNER_TEMP/scan-health.md"
-          if [ -z "$tracking" ]; then
+          if [ -n "$reopen" ]; then
+            gh issue edit "$tracking" "${repo[@]}" --body-file "$RUNNER_TEMP/scan-health.md"
+            gh issue reopen "$tracking" "${repo[@]}" --comment "Unhealthy again in $RUN_URL; the description holds the latest run."
+          elif [ -z "$tracking" ]; then
             gh label create "$label" "${repo[@]}" --color B60205 --description 'Open while the scheduled discovery scan is unhealthy' 2>/dev/null || true
             gh issue create "${repo[@]}" --title 'Scheduled discovery scan is unhealthy' --label "$label" --body-file "$RUNNER_TEMP/scan-health.md"
           else

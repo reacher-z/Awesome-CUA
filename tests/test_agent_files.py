@@ -77,7 +77,7 @@ class AgentFileTests(unittest.TestCase):
 
     def test_llms_full_lists_every_curated_record_once_and_nothing_unreviewed(self):
         text = (self.dest / 'llms-full.txt').read_text()
-        self.assertLess(len(text.encode()), 1_600_000)
+        self.assertLess(len(text.encode()), 400 * len(self.curated) + 20_000)  # a compact entry per record, without evidence receipts
         listed = re.findall(r'^- (https://awesomecua\.com/resources/[^ ]+/) · source:', text, re.M)
         self.assertEqual(len(listed), len(set(listed)))
         self.assertEqual(set(listed), {SITE + resource_path(row) for row in self.curated})

@@ -9,7 +9,8 @@ FENCE = re.compile(r"^```(?:bash|sh)\n(.*?)^```", re.S | re.M)
 
 
 def targets(text):
-    return {t for t in LINK.findall(text) if not t.startswith("#")} - {"README.md", "README.zh-CN.md"}
+    # The Chinese page links the site's /zh/ pages where they exist; they count as the English page's targets.
+    return {t.replace("awesomecua.com/zh/", "awesomecua.com/") for t in LINK.findall(text) if not t.startswith("#")} - {"README.md", "README.zh-CN.md"}
 
 
 def commands(text):
@@ -37,7 +38,7 @@ class ReadmeParityTests(unittest.TestCase):
         block = re.compile(r"<!-- BADGES:START -->.*?<!-- BADGES:END -->", re.S)
         self.assertEqual(block.search(self.zh).group(0), block.search(self.en).group(0))
         # The other generated blocks are localized, but both pages carry every one of them.
-        for name in ["STATS", "EXPLORE", "HIGHLIGHTS", "RECENT"]:
+        for name in ["STATS", "EXPLORE", "HIGHLIGHTS", "RECENT", "STAR_HISTORY"]:
             for text in (self.en, self.zh):
                 self.assertIn(f"<!-- {name}:START -->", text)
 

@@ -38,5 +38,5 @@ body:
     attributes:
       label: Existing records
       options:
-        - label: I searched [catalog.jsonl](https://awesomecua.github.io/downloads/catalog.jsonl) and [candidates.jsonl](https://github.com/reacher-z/Awesome-CUA/blob/main/data/candidates.jsonl) for this resource, its aliases, and mirrors.
+        - label: I searched [catalog.jsonl](https://awesomecua.com/downloads/catalog.jsonl) and [candidates.jsonl](https://github.com/reacher-z/Awesome-CUA/blob/main/data/candidates.jsonl) for this resource, its aliases, and mirrors.
           required: true

@@ -127,7 +127,11 @@ class FetchCacheConsistencyTests(unittest.TestCase):
         info, body, calls = self.fetch(b"v3 body")
         self.assert_consistent(info, body)
         self.assertEqual((body, calls), (b"v3 body", 1))
-        self.assertEqual(self.fetch(), (info, body, 0))
+        cached, cached_body, calls = self.fetch()
+        self.assertEqual((cached_body, calls), (body, 0))
+        self.assertEqual(cached, {**info, "request_attempted": False,
+                                  "request_attempts": 0, "cache_used": True})
+        self.assertEqual(catalog.read_json(self.cache / f"{self.key}.json"), info)
 
     def test_kill_during_body_write_keeps_previous_cache_entry(self):
         with mock.patch("os.replace", side_effect=KeyboardInterrupt), self.assertRaises(KeyboardInterrupt):

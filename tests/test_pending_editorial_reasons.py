@@ -24,17 +24,54 @@ def receipt(name, **extra):
     return {"id": f"github:example/{name.lower()}", "url": f"https://github.com/example/{name}", "retrieved_at": "2026-10-01T00:00:00Z", **extra}
 
 
+def paper(number, **extra):
+    return {"name": f"Paper {number}", "kind": "paper", "url": f"https://arxiv.org/abs/2601.0000{number}", "editorial_reviewed": False, **extra}
+
+
+def archived(number):
+    return {"id": f"arxiv:2601.0000{number}", "name": f"Paper {number}", "kind": "paper", "url": f"https://arxiv.org/abs/2601.0000{number}",
+        "aliases": [], "environments": ["unspecified"], "topics": [], "summary": None, "review_status": "metadata_verified",
+        "published_at": "2026-01-01", "updated_at": "2026-01-01", "authors": [], "identifiers": {"arxiv": f"2601.0000{number}"},
+        "details": {}, "links": [], "relations": [], "licenses": {"code": None, "data": None, "weights": None, "document": None},
+        "evidence": [], "last_verified_at": "2026-01-01T00:00:00Z", "notes": ""}
+
+
 class PendingEditorialReasonTests(unittest.TestCase):
-    def pending(self, entries, evidence):
+    def pending(self, entries, evidence, papers=()):
         with tempfile.TemporaryDirectory() as directory, mock.patch.object(build, "DATA", Path(directory)):
             data = Path(directory)
             (data / "editorial.json").write_text(json.dumps(entries))
             (data / "primary-evidence.jsonl").write_text("".join(json.dumps(row) + "\n" for row in evidence))
-            for name in ("enrichment.jsonl", "papers.jsonl", "publications.jsonl", "metadata-updates.jsonl"):
+            for name in ("enrichment.jsonl", "publications.jsonl", "metadata-updates.jsonl"):
                 (data / name).write_text("")
+            (data / "papers.jsonl").write_text("".join(json.dumps(row) + "\n" for row in papers))
             rows, pending = build.source_records()
-        self.assertEqual(rows, [])
+        self.assertEqual([row["review_status"] for row in rows], ["metadata_verified"] * len(papers))
         return {row["name"]: (row["reason"], row["cause"]) for row in pending}
+
+    def test_a_screened_paper_awaits_an_annotation_instead_of_a_scope_decision(self):
+        receipts = [{"id": f"arxiv:2601.0000{n}", "url": "https://export.arxiv.org/api/query?id_list=x", "retrieved_at": "2026-10-01T00:00:00Z",
+            "content_matched": True, "sha256": "a" * 64} for n in (1, 2, 3, 4)]
+        pending = self.pending([
+            paper(1, relevance_screen="core", review_note="The abstract trains a web agent.", reviewed_sha256="a" * 64),
+            paper(2, relevance_screen="adjacent", scope="adjacent", review_note="The abstract evaluates on WebShop.", reviewed_sha256="a" * 64),
+            paper(3, review_note="The abstract does not say whether the interface is graphical.", reviewed_sha256="a" * 64),
+            paper(4, relevance_screen="core", review_note="Read another snapshot.", reviewed_sha256="b" * 64)],
+            receipts, [archived(n) for n in (1, 2, 3, 4)])
+        self.assertEqual(pending["Paper 1"], ("The abstract trains a web agent.", "annotation_pending"))
+        self.assertEqual(pending["Paper 2"], ("The abstract evaluates on WebShop.", "annotation_pending"))
+        self.assertEqual(pending["Paper 3"], ("The abstract does not say whether the interface is graphical.", "reviewer_hold"))
+        self.assertEqual(pending["Paper 4"], ("current source snapshot needs editorial review", "unreviewed_snapshot"))
+
+    def test_invalid_or_contradictory_screens_and_duplicate_entries_stop_the_build(self):
+        receipt = [{"id": "arxiv:2601.00001", "url": "https://export.arxiv.org/api/query?id_list=x", "retrieved_at": "2026-10-01T00:00:00Z",
+            "content_matched": True, "sha256": "a" * 64}]
+        for entries, message in (([paper(1, relevance_screen="out_of_scope")], "relevance_screen must be core or adjacent"),
+                                 ([paper(1, relevance_screen="core", scope="adjacent")], "keeps the scope its relevance_screen proposes"),
+                                 ([entry("Tool", relevance_screen="core")], "relevance_screen must be core or adjacent"),
+                                 ([paper(1), paper(1, review_note="again")], "Duplicate editorial entry: arxiv:2601.00001")):
+            with self.subTest(message), self.assertRaisesRegex(ValueError, message):
+                self.pending(entries, receipt, [archived(1)])
 
     def test_failed_fetch_keeps_the_reviewer_note_after_the_error(self):
         pending = self.pending([entry("Gone", review_note=NOTE), entry("Blocked")],
@@ -50,8 +87,10 @@ class PendingEditorialReasonTests(unittest.TestCase):
 
     def test_breakdown_counts_every_cause(self):
         pending = [{"cause": "unresolved_evidence"}, {"cause": "reviewer_hold"}, {"cause": "reviewer_hold"}]
-        self.assertEqual(build.pending_breakdown(pending), "3 proposals: 1 with unresolved primary evidence, 0 whose current source snapshot awaits review, "
-            "2 held by a reviewer after reading the current source, and 0 awaiting another scope review.")
+        pending.append({"cause": "annotation_pending"})
+        self.assertEqual(build.pending_breakdown(pending), "4 proposals: 1 with unresolved primary evidence, 0 whose current source snapshot awaits review, "
+            "2 held by a reviewer after reading the current source, 1 screened as relevant from the current source and awaiting an editorial annotation, "
+            "and 0 awaiting another scope review.")
 
     def test_coverage_ledger_states_the_committed_breakdown(self):
         pending = json.loads((ROOT / "data" / "coverage.json").read_text(encoding="utf-8"))["pending_editorial"]

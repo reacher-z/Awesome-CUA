@@ -88,7 +88,8 @@ def consider_paper(row, records, proposals, observed_at):
         records[rid] = row
         return True
     old = records[rid]
-    fields = ('name', 'authors', 'published_at', 'updated_at')
+    # An omitted author list is never compared with, or proposed from, the names a source returns.
+    fields = ('name', 'published_at', 'updated_at') if old.get('authors_omitted') is True else ('name', 'authors', 'published_at', 'updated_at')
     changes = {field: {'current': old.get(field), 'observed': row.get(field)}
                for field in fields if old.get(field) != row.get(field)}
     known_change = bool(changes)

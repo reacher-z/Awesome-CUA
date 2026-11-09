@@ -1,0 +1,3690 @@
+{
+  "schema_version": 1,
+  "section": "evaluation",
+  "format": "semantic HTML fragment",
+  "language": "en",
+  "review_completed_at": "2026-10-18T10:53:20+00:00",
+  "inventory_anchor": {
+    "source_commit": "87166fe8ad9c8e832f7a90ee84b2e93c6e0e40db",
+    "catalog_sha256": "7f71a1683ab013e587a20086c3e357956981f517a24ae8bc8e81791108c66e4f",
+    "catalog_bytes_reverified": true,
+    "retained_source": "Retained in private review cache; see source URL and fingerprint.",
+    "snapshot_basis": "Actual independently verified public v2026.10.18 release bytes, retained before unrelated subsequent working-tree catalog changes.",
+    "active_records": 3048,
+    "curated_papers_and_surveys": 1123,
+    "count_meaning": "Frozen selection inventory, not the number of full texts read for this section."
+  },
+  "reading_counts": {
+    "unique_fulltext_section_inspections": 32,
+    "from_frozen_catalog": 27,
+    "new_from_root_fresh_search": 5,
+    "successful_fresh_primary_fulltexts": 32,
+    "full_document_exhaustive_audits": 0,
+    "incomplete_pdf_attempts_not_used": 3
+  },
+  "selection_basis": "Purposeful comparison of web/desktop/mobile task evaluation, offline grounding and trajectory data, evaluator uncertainty, efficiency and distinct safety threat models. No claim of systematic exhaustiveness or independent reproduction.",
+  "root_search_boundary": "Root owns the broad arXiv title-query search and overall scan counts. This chapter adds one targeted four-query search batch and exact-version full-text section inspections; manuscript-wide read counts require deduplication.",
+  "citation_key_convention": "Existing catalog citation_key for retained records; stable arxiv_ID keys for five new primary papers supplied by root. No new DOI, venue or author-name parsing is inferred.",
+  "cited_canonical_ids": [
+    "arxiv:1802.08802",
+    "arxiv:2306.06070",
+    "arxiv:2307.10088",
+    "arxiv:2307.13854",
+    "arxiv:2401.10935",
+    "arxiv:2401.13649",
+    "arxiv:2403.07718",
+    "arxiv:2404.07972",
+    "arxiv:2405.14573",
+    "arxiv:2406.03679",
+    "arxiv:2406.08451",
+    "arxiv:2406.12814",
+    "arxiv:2407.05291",
+    "arxiv:2407.15711",
+    "arxiv:2409.08264",
+    "arxiv:2410.17520",
+    "arxiv:2412.05467",
+    "arxiv:2504.07981",
+    "arxiv:2504.18575",
+    "arxiv:2505.21936",
+    "arxiv:2506.13205",
+    "arxiv:2506.14866",
+    "arxiv:2506.16042",
+    "arxiv:2507.00841",
+    "arxiv:2508.09123",
+    "arxiv:2510.18488",
+    "arxiv:2607.00333",
+    "arxiv:2608.07775",
+    "arxiv:2609.24890",
+    "arxiv:2610.01491",
+    "arxiv:2610.06898",
+    "url:52a3261eb6a19b402e88"
+  ],
+  "citation_map": {
+    "cua_ba263493b78b0263c7933138": "url:52a3261eb6a19b402e88",
+    "arxiv_1802_08802": "arxiv:1802.08802",
+    "arxiv_2306_06070": "arxiv:2306.06070",
+    "arxiv_2401_13649": "arxiv:2401.13649",
+    "arxiv_2403_07718": "arxiv:2403.07718",
+    "arxiv_2407_05291": "arxiv:2407.05291",
+    "arxiv_2412_05467": "arxiv:2412.05467",
+    "arxiv_2407_15711": "arxiv:2407.15711",
+    "arxiv_2409_08264": "arxiv:2409.08264",
+    "arxiv_2405_14573": "arxiv:2405.14573",
+    "arxiv_2307_10088": "arxiv:2307.10088",
+    "arxiv_2406_03679": "arxiv:2406.03679",
+    "arxiv_2406_08451": "arxiv:2406.08451",
+    "arxiv_2401_10935": "arxiv:2401.10935",
+    "arxiv_2307_13854": "arxiv:2307.13854",
+    "arxiv_2404_07972": "arxiv:2404.07972",
+    "arxiv_2508_09123": "arxiv:2508.09123",
+    "arxiv_2504_07981": "arxiv:2504.07981",
+    "arxiv_2506_16042": "arxiv:2506.16042",
+    "arxiv_2510_18488": "arxiv:2510.18488",
+    "arxiv_2609_24890": "arxiv:2609.24890",
+    "arxiv_2610_01491": "arxiv:2610.01491",
+    "arxiv_2410_17520": "arxiv:2410.17520",
+    "arxiv_2506_14866": "arxiv:2506.14866",
+    "arxiv_2504_18575": "arxiv:2504.18575",
+    "arxiv_2505_21936": "arxiv:2505.21936",
+    "arxiv_2406_12814": "arxiv:2406.12814",
+    "arxiv_2610_06898": "arxiv:2610.06898",
+    "arxiv_2608_07775": "arxiv:2608.07775",
+    "arxiv_2607_00333": "arxiv:2607.00333",
+    "arxiv_2507_00841": "arxiv:2507.00841",
+    "arxiv_2506_13205": "arxiv:2506.13205"
+  },
+  "records": [
+    {
+      "canonical_id": "url:52a3261eb6a19b402e88",
+      "citation_key": "cua_ba263493b78b0263c7933138",
+      "title": "World of Bits: An Open-Domain Platform for Web-Based Agents",
+      "ordered_authors": [
+        "Tianlin Shi",
+        "Andrej Karpathy",
+        "Linxi Fan",
+        "Jonathan Hernandez",
+        "Percy Liang"
+      ],
+      "present_in_frozen_catalog": true,
+      "catalog_review_status": "curated",
+      "bibliographic_metadata_basis": "Frozen retained catalog edition",
+      "arxiv_version_read": null,
+      "catalog_arxiv_version": null,
+      "version_override_required": false,
+      "primary_source": {
+        "url": "https://proceedings.mlr.press/v70/shi17a/shi17a.pdf",
+        "final_url": "https://proceedings.mlr.press/v70/shi17a/shi17a.pdf",
+        "retrieved_at": "2026-10-18T10:00:29.002410+00:00",
+        "sha256": "087008efb9d056df5fd9fbc724413d6a3f20cb14c7f1597d00bacac53d8342d6",
+        "bytes": 3383879,
+        "http_status": 200,
+        "transfer_completed": true,
+        "format": "PDF",
+        "fresh_fetch": true,
+        "retention_note": "Raw full text is retained only in ignored local cache; not included in this public ledger."
+      },
+      "read_status": "selected_fulltext_sections_read",
+      "sections": [
+        "2.1 Web as an Environment",
+        "2.2 Minimalistic Web Tasks: MiniWoB",
+        "2.3 Live Web Tasks: FormWoB",
+        "2.4 Crowdsourcing Web Tasks at Scale: QAWoB"
+      ],
+      "pdf_pages_read": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "findings": [
+        "Original MiniWoB paper describes 100 authored environments, not a fixed count for modern MiniWoB++ releases.",
+        "Observation includes pixels and DOM with bounding boxes; actions are low-level key/pointer events.",
+        "MiniWoB reward is time-weighted between failure -1 and success +1.",
+        "FormWoB records/replays HTTP requests, terminating an unseen cache-miss action with zero reward: controllable replay is an approximation of the live website, not all possible trajectories."
+      ],
+      "reported_quantities": [
+        {
+          "value": 100,
+          "unit": "authored MiniWoB environments",
+          "locator": "PDF pp.2–3 §2.2"
+        }
+      ]
+    },
+    {
+      "canonical_id": "arxiv:1802.08802",
+      "citation_key": "arxiv_1802_08802",
+      "title": "Reinforcement Learning on Web Interfaces Using Workflow-Guided Exploration",
+      "ordered_authors": [
+        "Evan Zheran Liu",
+        "Kelvin Guu",
+        "Panupong Pasupat",
+        "Tianlin Shi",
+        "Percy Liang"
+      ],
+      "present_in_frozen_catalog": true,
+      "catalog_review_status": "curated",
+      "bibliographic_metadata_basis": "Frozen retained catalog edition",
+      "arxiv_version_read": 1,
+      "catalog_arxiv_version": 1,
+      "version_override_required": false,
+      "primary_source": {
+        "url": "https://arxiv.org/pdf/1802.08802v1",
+        "final_url": "https://arxiv.org/pdf/1802.08802v1",
+        "retrieved_at": "2026-10-18T10:00:31.908500+00:00",
+        "sha256": "7a7ce9d5f8f31c7f7c01a35271c5bdfdf2697dfe17e72ff090a9465d55f7f60d",
+        "bytes": 661364,
+        "http_status": 200,
+        "transfer_completed": true,
+        "format": "PDF",
+        "fresh_fetch": true,
+        "retention_note": "Raw full text is retained only in ignored local cache; not included in this public ledger."
+      },
+      "read_status": "selected_fulltext_sections_read",
+      "sections": [
+        "6.1 Benchmarks: Environment and Evaluation metric",
+        "6.3.1 MiniWoB++ benchmark"
+      ],
+      "pdf_pages_read": [
+        6,
+        7
+      ],
+      "findings": [
+        "WGE selects 40 of the publicly available 80 MiniWoB tasks for click-DOM-element/type-goal-string action support.",
+        "It disables partial rewards; success rate counts reward +1 episodes.",
+        "MiniWoB++ additions target longer horizons, language variation and stochastically varying layouts.",
+        "Do not equate a paper experiment subset, an original authored suite, and the maintained Farama package inventory."
+      ],
+      "reported_quantities": [
+        {
+          "value": 40,
+          "unit": "selected MiniWoB task types in this experiment",
+          "locator": "PDF p.6 §6.1"
+        },
+        {
+          "value": 80,
+          "unit": "public MiniWoB task types at paper time",
+          "locator": "PDF p.6 §6.1"
+        }
+      ]
+    },
+    {
+      "canonical_id": "arxiv:2306.06070",
+      "citation_key": "arxiv_2306_06070",
+      "title": "Mind2Web: Towards a Generalist Agent for the Web",
+      "ordered_authors": [
+        "Xiang Deng",
+        "Yu Gu",
+        "Boyuan Zheng",
+        "Shijie Chen",
+        "Samuel Stevens",
+        "Boshi Wang",
+        "Huan Sun",
+        "Yu Su"
+      ],
+      "present_in_frozen_catalog": true,
+      "catalog_review_status": "curated",
+      "bibliographic_metadata_basis": "Frozen retained catalog edition",
+      "arxiv_version_read": 3,
+      "catalog_arxiv_version": 3,
+      "version_override_required": false,
+      "primary_source": {
+        "url": "https://arxiv.org/pdf/2306.06070v3",
+        "final_url": "https://arxiv.org/pdf/2306.06070v3",
+        "retrieved_at": "2026-10-18T10:00:52.831447+00:00",
+        "sha256": "75d8af953769a53bf75913908e2bb6185c6b338c8d89b7304e7fd8cfb79934e8",
+        "bytes": 7635816,
+        "http_status": 200,
+        "transfer_completed": true,
+        "format": "PDF",
+        "fresh_fetch": true,
+        "retention_note": "Raw full text is retained only in ignored local cache; not included in this public ledger."
+      },
+      "read_status": "selected_fulltext_sections_read",
+      "sections": [
+        "2.1 Task Definition",
+        "2.2 Data Collection",
+        "2.3 Comparison",
+        "4.1 Experimental Setup",
+        "4.2 Data Preprocessing and Evaluation",
+        "4.3 Results"
+      ],
+      "pdf_pages_read": [
+        3,
+        4,
+        5,
+        7,
+        8
+      ],
+      "findings": [
+        "Each action pairs target element and operation; webpage evidence includes MHTML, DOM/layout, HAR and traces.",
+        "Offline evaluation independently predicts each action with ground-truth history. Element accuracy and operation token F1 support step success; whole-task success requires every recorded step correct. This is not autonomous rollout goal completion.",
+        "Cross-task, cross-website and cross-domain distinguish held-out task semantics from novel site/domain exposure.",
+        "Reported step-wise metrics macro-average across tasks; some GPT-4 results use a 50-task subset per split, not all test tasks."
+      ],
+      "reported_quantities": [
+        {
+          "value": 2350,
+          "unit": "demonstrated tasks across collection",
+          "locator": "PDF p.5 Table 1"
+        },
+        {
+          "value": 137,
+          "unit": "websites",
+          "locator": "PDF p.4 §2.2"
+        },
+        {
+          "value": 1009,
+          "unit": "training tasks",
+          "locator": "PDF p.7 §4.1"
+        },
+        {
+          "value": 252,
+          "unit": "cross-task test tasks",
+          "locator": "PDF p.7 §4.1"
+        },
+        {
+          "value": 177,
+          "unit": "cross-website test tasks",
+          "locator": "PDF p.7 §4.1"
+        },
+        {
+          "value": 912,
+          "unit": "cross-domain test tasks",
+          "locator": "PDF p.7 §4.1"
+        }
+      ]
+    },
+    {
+      "canonical_id": "arxiv:2401.13649",
+      "citation_key": "arxiv_2401_13649",
+      "title": "VisualWebArena: Evaluating Multimodal Agents on Realistic Visual Web Tasks",
+      "ordered_authors": [
+        "Jing Yu Koh",
+        "Robert Lo",
+        "Lawrence Jang",
+        "Vikram Duvvur",
+        "Ming Chong Lim",
+        "Po-Yu Huang",
+        "Graham Neubig",
+        "Shuyan Zhou",
+        "Ruslan Salakhutdinov",
+        "Daniel Fried"
+      ],
+      "present_in_frozen_catalog": true,
+      "catalog_review_status": "curated",
+      "bibliographic_metadata_basis": "Frozen retained catalog edition",
+      "arxiv_version_read": 2,
+      "catalog_arxiv_version": 2,
+      "version_override_required": false,
+      "primary_source": {
+        "url": "https://arxiv.org/pdf/2401.13649v2",
+        "final_url": "https://arxiv.org/pdf/2401.13649v2",
+        "retrieved_at": "2026-10-18T10:02:25.134588+00:00",
+        "sha256": "8674b4ae17290bb797e5988706f765c75a3310a4e9d14cbd32497e40235ff795",
+        "bytes": 4564902,
+        "http_status": 200,
+        "transfer_completed": true,
+        "format": "PDF",
+        "fresh_fetch": true,
+        "retention_note": "Raw full text is retained only in ignored local cache; not included in this public ledger."
+      },
+      "read_status": "selected_fulltext_sections_read",
+      "sections": [
+        "3 Environment",
+        "3.1 Observation Space",
+        "3.2 Action Space",
+        "3.3 Evaluation",
+        "4.1 Web Environments",
+        "4.2 Tasks"
+      ],
+      "pdf_pages_read": [
+        3,
+        4,
+        5
+      ],
+      "findings": [
+        "Self-hosted cloned websites use HTML, AXTree, screenshot or set-of-marks observations; element-ID actions explicitly separate high-level reasoning from coordinate-level control.",
+        "End-goal binary reward combines exact/inclusion/exclusion checks, URL/DOM locators, LLM semantic matches, BLIP-2 VQA and SSIM image matches as appropriate. Functional evaluation is not synonymous with every judge being exact or deterministic.",
+        "Some tasks are intentionally unachievable; justified termination is checked through fuzzy matching."
+      ],
+      "reported_quantities": [
+        {
+          "value": 910,
+          "unit": "task instances",
+          "locator": "PDF p.5 §4.2"
+        },
+        {
+          "value": 314,
+          "unit": "intent templates",
+          "locator": "PDF p.5 §4.2"
+        },
+        {
+          "value": 46,
+          "unit": "unachievable task instances within 910",
+          "locator": "PDF p.5 §4.2"
+        }
+      ]
+    },
+    {
+      "canonical_id": "arxiv:2403.07718",
+      "citation_key": "arxiv_2403_07718",
+      "title": "WorkArena: How Capable Are Web Agents at Solving Common Knowledge Work Tasks?",
+      "ordered_authors": [
+        "Alexandre Drouin",
+        "Maxime Gasse",
+        "Massimo Caccia",
+        "Issam H. Laradji",
+        "Manuel Del Verme",
+        "Tom Marty",
+        "Léo Boisvert",
+        "Megh Thakkar",
+        "Quentin Cappart",
+        "David Vazquez",
+        "Nicolas Chapados",
+        "Alexandre Lacoste"
+      ],
+      "present_in_frozen_catalog": true,
+      "catalog_review_status": "curated",
+      "bibliographic_metadata_basis": "Frozen retained catalog edition",
+      "arxiv_version_read": 5,
+      "catalog_arxiv_version": 5,
+      "version_override_required": false,
+      "primary_source": {
+        "url": "https://arxiv.org/pdf/2403.07718v5",
+        "final_url": "https://arxiv.org/pdf/2403.07718v5",
+        "retrieved_at": "2026-10-18T10:03:18.698795+00:00",
+        "sha256": "686792a9085d998be3ac3de3e9c126fd0a9256b6ccb313aa006edb62f7645295",
+        "bytes": 7060004,
+        "http_status": 200,
+        "transfer_completed": true,
+        "format": "PDF",
+        "fresh_fetch": true,
+        "retention_note": "Raw full text is retained only in ignored local cache; not included in this public ledger."
+      },
+      "read_status": "selected_fulltext_sections_read",
+      "sections": [
+        "3 WorkArena",
+        "3.1 WorkArena Tasks",
+        "3.2 Challenges",
+        "3.3 Availability",
+        "4.1 Capabilities",
+        "4.2 An Ideal Experimental Framework",
+        "5 Experiments"
+      ],
+      "pdf_pages_read": [
+        3,
+        4,
+        5,
+        6
+      ],
+      "findings": [
+        "Retained v5 reports 33 tasks and 19,912 instances, unlike older 29-task descriptions; record the release rather than mixing versions.",
+        "Validation may query a database, verify URL/page/chat content; oracle Playwright solutions check feasibility.",
+        "setup creates state/authentication and teardown cleans task-created resources; this is a ServiceNow cloud Personal Developer Instance, not an archived unrestricted native desktop.",
+        "BrowserGym exposes DOM, AXTree, screenshot, element IDs and configurable action families; arbitrary Python is an optional interface, not the same restriction as coordinate-only control."
+      ],
+      "reported_quantities": [
+        {
+          "value": 33,
+          "unit": "WorkArena task types in v5",
+          "locator": "PDF p.3 §3"
+        },
+        {
+          "value": 19912,
+          "unit": "unique task instances in v5",
+          "locator": "PDF p.3 §3"
+        },
+        {
+          "value": "WorkArena v0.3.0 / BrowserGym v0.3.5",
+          "unit": "experimental software versions",
+          "locator": "PDF p.6 §5"
+        }
+      ]
+    },
+    {
+      "canonical_id": "arxiv:2407.05291",
+      "citation_key": "arxiv_2407_05291",
+      "title": "WorkArena++: Towards Compositional Planning and Reasoning-based Common Knowledge Work Tasks",
+      "ordered_authors": [
+        "Léo Boisvert",
+        "Megh Thakkar",
+        "Maxime Gasse",
+        "Massimo Caccia",
+        "Thibault Le Sellier De Chezelles",
+        "Quentin Cappart",
+        "Nicolas Chapados",
+        "Alexandre Lacoste",
+        "Alexandre Drouin"
+      ],
+      "present_in_frozen_catalog": true,
+      "catalog_review_status": "curated",
+      "bibliographic_metadata_basis": "Frozen retained catalog edition",
+      "arxiv_version_read": 2,
+      "catalog_arxiv_version": 2,
+      "version_override_required": false,
+      "primary_source": {
+        "url": "https://arxiv.org/pdf/2407.05291v2",
+        "final_url": "https://arxiv.org/pdf/2407.05291v2",
+        "retrieved_at": "2026-10-18T10:04:05.429994+00:00",
+        "sha256": "9a3f424bfcdb2e5b2098c9fa00269a4dac371c11dada4bd4eec436bb2b61d479",
+        "bytes": 24628627,
+        "http_status": 200,
+        "transfer_completed": true,
+        "format": "PDF",
+        "fresh_fetch": true,
+        "retention_note": "Raw full text is retained only in ignored local cache; not included in this public ledger."
+      },
+      "read_status": "selected_fulltext_sections_read",
+      "sections": [
+        "3.1 Difficulty levels",
+        "3.3 Salient features",
+        "4.1 Evaluation curriculum",
+        "4.2 Agent design"
+      ],
+      "pdf_pages_read": [
+        4,
+        6,
+        7
+      ],
+      "findings": [
+        "L2 and L3 share 341 workflows but differ in instruction disclosure; 682 presentations are not 682 unrelated workflows.",
+        "Task-specific fresh user accounts isolate persistent UI state; installer standardizes backend configuration.",
+        "Reserved evaluation seeds 0–9 and seed-controlled curricula separate tuning and evaluation; example action limits and parser retries are explicit budgets."
+      ],
+      "reported_quantities": [
+        {
+          "value": 341,
+          "unit": "workflows shared by L2/L3",
+          "locator": "PDF p.4 §3.1"
+        },
+        {
+          "value": 682,
+          "unit": "L2/L3 task presentations",
+          "locator": "PDF p.4 §3.1"
+        }
+      ]
+    },
+    {
+      "canonical_id": "arxiv:2412.05467",
+      "citation_key": "arxiv_2412_05467",
+      "title": "The BrowserGym Ecosystem for Web Agent Research",
+      "ordered_authors": [
+        "Thibault Le Sellier De Chezelles",
+        "Maxime Gasse",
+        "Alexandre Drouin",
+        "Massimo Caccia",
+        "Léo Boisvert",
+        "Megh Thakkar",
+        "Tom Marty",
+        "Rim Assouel",
+        "Sahar Omidi Shayegan",
+        "Lawrence Keunho Jang",
+        "Xing Han Lù",
+        "Ori Yoran",
+        "Dehan Kong",
+        "Frank F. Xu",
+        "Siva Reddy",
+        "Quentin Cappart",
+        "Graham Neubig",
+        "Ruslan Salakhutdinov",
+        "Nicolas Chapados",
+        "Alexandre Lacoste"
+      ],
+      "present_in_frozen_catalog": true,
+      "catalog_review_status": "curated",
+      "bibliographic_metadata_basis": "Frozen retained catalog edition",
+      "arxiv_version_read": 4,
+      "catalog_arxiv_version": 4,
+      "version_override_required": false,
+      "primary_source": {
+        "url": "https://arxiv.org/pdf/2412.05467v4",
+        "final_url": "https://arxiv.org/pdf/2412.05467v4",
+        "retrieved_at": "2026-10-18T10:04:23.544564+00:00",
+        "sha256": "98d4d9b8088ca6bc5e0efd613389622b53ffedcb36cb285f093f7e6045499491",
+        "bytes": 10876140,
+        "http_status": 200,
+        "transfer_completed": true,
+        "format": "PDF",
+        "fresh_fetch": true,
+        "retention_note": "Raw full text is retained only in ignored local cache; not included in this public ledger."
+      },
+      "read_status": "selected_fulltext_sections_read",
+      "sections": [
+        "3.1 Observation space",
+        "3.2 Action space",
+        "3.3 Task interface",
+        "4 Benchmark unification",
+        "5.1–5.4 Experiment management/reproducibility",
+        "7.1 Limitations",
+        "Appendix B"
+      ],
+      "pdf_pages_read": [
+        5,
+        7,
+        8,
+        10,
+        11,
+        17,
+        26
+      ],
+      "findings": [
+        "BrowserGym is an adapter/harness; it exposes screenshots/DOM/AXTree and configurable high-level or code action mappings.",
+        "A Gym wrapper may expose one-step static WebLINX prediction rather than live task execution; wrapper uniformity does not equal measurement uniformity.",
+        "WebArena/VWA require backend Docker state restoration; task dependency scheduling prevents trajectory collisions.",
+        "AssistantBench is open-web, has no task randomization, and remains affected by web changes and robot detection.",
+        "Software versions, changing model endpoints, geography, ads, backend collisions and technical retries affect reproducibility."
+      ],
+      "reported_quantities": []
+    },
+    {
+      "canonical_id": "arxiv:2407.15711",
+      "citation_key": "arxiv_2407_15711",
+      "title": "AssistantBench: Can Web Agents Solve Realistic and Time-Consuming Tasks?",
+      "ordered_authors": [
+        "Ori Yoran",
+        "Samuel Joseph Amouyal",
+        "Chaitanya Malaviya",
+        "Ben Bogin",
+        "Ofir Press",
+        "Jonathan Berant"
+      ],
+      "present_in_frozen_catalog": true,
+      "catalog_review_status": "curated",
+      "bibliographic_metadata_basis": "Frozen retained catalog edition",
+      "arxiv_version_read": 2,
+      "catalog_arxiv_version": 2,
+      "version_override_required": false,
+      "primary_source": {
+        "url": "https://arxiv.org/pdf/2407.15711v2",
+        "final_url": "https://arxiv.org/pdf/2407.15711v2",
+        "retrieved_at": "2026-10-18T10:04:34.746850+00:00",
+        "sha256": "f85974c1441ac70de53675aa3c0bf3f2d719b963d296c1bc28733f203fcc027d",
+        "bytes": 3911373,
+        "http_status": 200,
+        "transfer_completed": true,
+        "format": "PDF",
+        "fresh_fetch": true,
+        "retention_note": "Raw full text is retained only in ignored local cache; not included in this public ledger."
+      },
+      "read_status": "selected_fulltext_sections_read",
+      "sections": [
+        "3.1 Task criteria",
+        "3.2 Data collection",
+        "3.3 Statistics",
+        "3.4 Automatic evaluation",
+        "6.4 Time dependency",
+        "9 Limitations"
+      ],
+      "pdf_pages_read": [
+        3,
+        4,
+        8,
+        9
+      ],
+      "findings": [
+        "AssistantBench uses realistic open-web information-seeking tasks with closed-form answers; no general web-state reset is claimed.",
+        "Automatic evaluation includes string/list F1, numeric partial credit and structured dictionary matching; it is not simply binary executable-goal success.",
+        "Tasks were selected for temporal stability, with explicit date constraints where possible, but some answers can still change over longer horizons."
+      ],
+      "reported_quantities": [
+        {
+          "value": 214,
+          "unit": "total tasks",
+          "locator": "PDF p.4 §3.3"
+        },
+        {
+          "value": 33,
+          "unit": "development tasks",
+          "locator": "PDF p.4 §3.3"
+        }
+      ]
+    },
+    {
+      "canonical_id": "arxiv:2409.08264",
+      "citation_key": "arxiv_2409_08264",
+      "title": "Windows Agent Arena: Evaluating Multi-Modal OS Agents at Scale",
+      "ordered_authors": [
+        "Rogerio Bonatti",
+        "Dan Zhao",
+        "Francesco Bonacci",
+        "Dillon Dupont",
+        "Sara Abdali",
+        "Yinheng Li",
+        "Yadong Lu",
+        "Justin Wagle",
+        "Kazuhito Koishida",
+        "Arthur Bucker",
+        "Lawrence Jang",
+        "Zack Hui"
+      ],
+      "present_in_frozen_catalog": true,
+      "catalog_review_status": "curated",
+      "bibliographic_metadata_basis": "Frozen retained catalog edition",
+      "arxiv_version_read": 2,
+      "catalog_arxiv_version": 2,
+      "version_override_required": false,
+      "primary_source": {
+        "url": "https://arxiv.org/pdf/2409.08264v2",
+        "final_url": "https://arxiv.org/pdf/2409.08264v2",
+        "retrieved_at": "2026-10-18T10:05:14.005003+00:00",
+        "sha256": "fbd0821e72620273a47c4c5366bb4283cd88ed2d909ca77c96b58839e95e9b7e",
+        "bytes": 14742832,
+        "http_status": 200,
+        "transfer_completed": true,
+        "format": "PDF",
+        "fresh_fetch": true,
+        "retention_note": "Raw full text is retained only in ignored local cache; not included in this public ledger."
+      },
+      "read_status": "selected_fulltext_sections_read",
+      "sections": [
+        "3.1 Task definition and reward",
+        "3.2 Task curation",
+        "3.3 Deployment"
+      ],
+      "pdf_pages_read": [
+        4,
+        6
+      ],
+      "findings": [
+        "Windows observations can include screenshot, DOM/UIAutomation, clipboard and window metadata; action interfaces include Python/pyautogui and ID wrappers.",
+        "Deterministic setup scripts configure initial task state; terminal reward may be binary or fractional similarity, not universally a binary checker.",
+        "Post-processing validates settings/files/web results. The paper says Windows licensing prevents providing a pre-built snapshot; user-built trial images differ from open-source benchmark code licensing."
+      ],
+      "reported_quantities": [
+        {
+          "value": 154,
+          "unit": "initial-release Windows task instances",
+          "locator": "PDF p.4 §3.2"
+        }
+      ]
+    },
+    {
+      "canonical_id": "arxiv:2405.14573",
+      "citation_key": "arxiv_2405_14573",
+      "title": "AndroidWorld: A Dynamic Benchmarking Environment for Autonomous Agents",
+      "ordered_authors": [
+        "Christopher Rawles",
+        "Sarah Clinckemaillie",
+        "Yifan Chang",
+        "Jonathan Waltz",
+        "Gabrielle Lau",
+        "Marybeth Fair",
+        "Alice Li",
+        "William Bishop",
+        "Wei Li",
+        "Folawiyo Campbell-Ajala",
+        "Daniel Toyama",
+        "Robert Berry",
+        "Divya Tyamagundlu",
+        "Timothy Lillicrap",
+        "Oriana Riva"
+      ],
+      "present_in_frozen_catalog": true,
+      "catalog_review_status": "curated",
+      "bibliographic_metadata_basis": "Frozen retained catalog edition",
+      "arxiv_version_read": 5,
+      "catalog_arxiv_version": 5,
+      "version_override_required": false,
+      "primary_source": {
+        "url": "https://arxiv.org/pdf/2405.14573v5",
+        "final_url": "https://arxiv.org/pdf/2405.14573v5",
+        "retrieved_at": "2026-10-18T10:05:24.587650+00:00",
+        "sha256": "5673a60129459d8b8c0efbe3219ffc2ff2b311a3560e50cc488fa03eefcc35d1",
+        "bytes": 4367977,
+        "http_status": 200,
+        "transfer_completed": true,
+        "format": "PDF",
+        "fresh_fetch": true,
+        "retention_note": "Raw full text is retained only in ignored local cache; not included in this public ledger."
+      },
+      "read_status": "selected_fulltext_sections_read",
+      "sections": [
+        "3.2 Observation/action",
+        "3.3 Reproducible parameterized tasks",
+        "3.4 State rewards",
+        "5 Robustness analysis"
+      ],
+      "pdf_pages_read": [
+        5,
+        6,
+        9
+      ],
+      "findings": [
+        "Screenshot and accessibility UI tree observations; gestures/text/navigation plus limited optional function-calling APIs must be disclosed.",
+        "Fixed Pixel 6 Android 13 emulator, app versions, clock, per-task setup/teardown and seeded parameters support repeatable task instances.",
+        "Reward uses durable device/app state and sometimes UI checks; composite examples allow fractional rewards.",
+        "Paper robustness experiment reports variation across parameter seeds, so one sampled parameterization does not establish stable performance."
+      ],
+      "reported_quantities": [
+        {
+          "value": 116,
+          "unit": "parameterized task definitions, not all generated instances",
+          "locator": "PDF p.5 §3.3"
+        },
+        {
+          "value": 20,
+          "unit": "Android applications",
+          "locator": "PDF p.5 §3.3"
+        }
+      ]
+    },
+    {
+      "canonical_id": "arxiv:2307.10088",
+      "citation_key": "arxiv_2307_10088",
+      "title": "Android in the Wild: A Large-Scale Dataset for Android Device Control",
+      "ordered_authors": [
+        "Christopher Rawles",
+        "Alice Li",
+        "Daniel Rodriguez",
+        "Oriana Riva",
+        "Timothy Lillicrap"
+      ],
+      "present_in_frozen_catalog": true,
+      "catalog_review_status": "curated",
+      "bibliographic_metadata_basis": "Frozen retained catalog edition",
+      "arxiv_version_read": 2,
+      "catalog_arxiv_version": 2,
+      "version_override_required": false,
+      "primary_source": {
+        "url": "https://arxiv.org/pdf/2307.10088v2",
+        "final_url": "https://arxiv.org/pdf/2307.10088v2",
+        "retrieved_at": "2026-10-18T10:05:36.415524+00:00",
+        "sha256": "3e4ace8fe18dedc903144894cb69a57f5e0dfbb75f7f23de52bff91f08b11e5a",
+        "bytes": 4340836,
+        "http_status": 200,
+        "transfer_completed": true,
+        "format": "PDF",
+        "fresh_fetch": true,
+        "retention_note": "Raw full text is retained only in ignored local cache; not included in this public ledger."
+      },
+      "read_status": "selected_fulltext_sections_read",
+      "sections": [
+        "3 Dataset collection",
+        "3.1 Trajectories",
+        "3.2 Hindsight language relabeling",
+        "5.2 Evaluation methodology",
+        "5.3 Human comparison",
+        "6.1 Limitations"
+      ],
+      "pdf_pages_read": [
+        4,
+        5,
+        8,
+        9
+      ],
+      "findings": [
+        "AITW episodes, prompts and screenshots are distinct counting units; Google Apps accounts for many repeated demonstrations of few prompts.",
+        "Offline partial/complete action matching uses action-dependent tolerances. Human online validation can accept alternative successful actions rejected by trace matching.",
+        "Limited English prompts, annotator populations and mouse/keyboard emulator collection constrain demographic and touch-interaction generalization."
+      ],
+      "reported_quantities": [
+        {
+          "value": 715142,
+          "unit": "episodes",
+          "locator": "PDF p.4 Table 2"
+        },
+        {
+          "value": 30378,
+          "unit": "unique prompts",
+          "locator": "PDF p.4 Table 2"
+        },
+        {
+          "value": 5689993,
+          "unit": "screens",
+          "locator": "PDF p.4 Table 2"
+        }
+      ]
+    },
+    {
+      "canonical_id": "arxiv:2406.03679",
+      "citation_key": "arxiv_2406_03679",
+      "title": "On the Effects of Data Scale on UI Control Agents",
+      "ordered_authors": [
+        "Wei Li",
+        "William Bishop",
+        "Alice Li",
+        "Chris Rawles",
+        "Folawiyo Campbell-Ajala",
+        "Divya Tyamagundlu",
+        "Oriana Riva"
+      ],
+      "present_in_frozen_catalog": true,
+      "catalog_review_status": "curated",
+      "bibliographic_metadata_basis": "Frozen retained catalog edition",
+      "arxiv_version_read": 6,
+      "catalog_arxiv_version": 6,
+      "version_override_required": false,
+      "primary_source": {
+        "url": "https://arxiv.org/pdf/2406.03679v6",
+        "final_url": "https://arxiv.org/pdf/2406.03679v6",
+        "retrieved_at": "2026-10-18T10:05:46.442693+00:00",
+        "sha256": "d4a14ffbe97638159a2003a9b63eff4de21512c9799edcf7754d8705d757c4cf",
+        "bytes": 3979497,
+        "http_status": 200,
+        "transfer_completed": true,
+        "format": "PDF",
+        "fresh_fetch": true,
+        "retention_note": "Raw full text is retained only in ignored local cache; not included in this public ledger."
+      },
+      "read_status": "selected_fulltext_sections_read",
+      "sections": [
+        "Table 1",
+        "3.2 Statistics",
+        "3.3 Splits/Table 3",
+        "4.1 Agent implementation",
+        "4.2 Metrics",
+        "4.4 Scaling extrapolation",
+        "5 Limitations"
+      ],
+      "pdf_pages_read": [
+        3,
+        5,
+        6,
+        7,
+        8,
+        10
+      ],
+      "findings": [
+        "AndroidControl supports high-level-only and high+low-level instruction settings; supplied low-level instructions change the planning problem.",
+        "Held-out app/task/category test subsets overlap and cannot be added as disjoint examples.",
+        "Step accuracy with equivalent-action matching remains offline and misses alternative routes and recovery.",
+        "The implementation uses accessibility-derived text rather than screenshots; dataset screenshots do not imply every reported agent used vision.",
+        "Million-episode scaling estimates are extrapolations for one model, not observed released datasets or universal sample-complexity laws."
+      ],
+      "reported_quantities": [
+        {
+          "value": 15283,
+          "unit": "task demonstrations",
+          "locator": "PDF p.3 Table 1"
+        },
+        {
+          "value": 833,
+          "unit": "applications",
+          "locator": "PDF p.3 Table 1"
+        },
+        {
+          "value": 13604,
+          "unit": "training demonstrations",
+          "locator": "PDF p.6 Table 3"
+        }
+      ]
+    },
+    {
+      "canonical_id": "arxiv:2406.08451",
+      "citation_key": "arxiv_2406_08451",
+      "title": "GUIOdyssey: A Comprehensive Dataset for Cross-App GUI Navigation on Mobile Devices",
+      "ordered_authors": [
+        "Quanfeng Lu",
+        "Wenqi Shao",
+        "Zitao Liu",
+        "Lingxiao Du",
+        "Fanqing Meng",
+        "Boxuan Li",
+        "Botong Chen",
+        "Siyuan Huang",
+        "Kaipeng Zhang",
+        "Ping Luo"
+      ],
+      "present_in_frozen_catalog": true,
+      "catalog_review_status": "curated",
+      "bibliographic_metadata_basis": "Frozen retained catalog edition",
+      "arxiv_version_read": 2,
+      "catalog_arxiv_version": 2,
+      "version_override_required": false,
+      "primary_source": {
+        "url": "https://arxiv.org/pdf/2406.08451v2",
+        "final_url": "https://arxiv.org/pdf/2406.08451v2",
+        "retrieved_at": "2026-10-18T10:06:29.054200+00:00",
+        "sha256": "3f95681c58642c8b899c3951f940e350b70fb50ece5004520fcd7794759aecb2",
+        "bytes": 15981954,
+        "http_status": 200,
+        "transfer_completed": true,
+        "format": "PDF",
+        "fresh_fetch": true,
+        "retention_note": "Raw full text is retained only in ignored local cache; not included in this public ledger."
+      },
+      "read_status": "selected_fulltext_sections_read",
+      "sections": [
+        "3.1 Metadata",
+        "3.2 Collection",
+        "3.3 Statistics",
+        "5.1 Metrics",
+        "5.2 Experimental setup",
+        "Appendix 9.1 Splits"
+      ],
+      "pdf_pages_read": [
+        3,
+        4,
+        5,
+        6,
+        7,
+        13
+      ],
+      "findings": [
+        "GUIOdyssey v2 covers cross-app screenshot/action trajectories and adds model-generated low-level instructions and semantic annotations to human executions.",
+        "Offline action matching and all-actions-correct episode SR do not establish autonomous recovery; splits test apps, task templates and device transfer.",
+        "Metric uses gesture tolerances/segmented-target acceptance, scroll direction and text matching. The prose labels an ANLS threshold ambiguously; exact TYPE threshold is not asserted in the chapter.",
+        "8,334 episodes is a paper-v2 collection number, not automatically a claim about an older Hub release with another inventory."
+      ],
+      "reported_quantities": [
+        {
+          "value": 8334,
+          "unit": "paper-v2 episodes",
+          "locator": "PDF p.4 Table 1 / p.5 §3.3"
+        },
+        {
+          "value": 15.3,
+          "unit": "mean action steps per paper-v2 episode",
+          "locator": "PDF p.5 §3.3"
+        },
+        {
+          "value": 212,
+          "unit": "apps",
+          "locator": "PDF p.4 Table 1"
+        }
+      ]
+    },
+    {
+      "canonical_id": "arxiv:2401.10935",
+      "citation_key": "arxiv_2401_10935",
+      "title": "SeeClick: Harnessing GUI Grounding for Advanced Visual GUI Agents",
+      "ordered_authors": [
+        "Kanzhi Cheng",
+        "Qiushi Sun",
+        "Yougang Chu",
+        "Fangzhi Xu",
+        "Yantao Li",
+        "Jianbing Zhang",
+        "Zhiyong Wu"
+      ],
+      "present_in_frozen_catalog": true,
+      "catalog_review_status": "curated",
+      "bibliographic_metadata_basis": "Frozen retained catalog edition",
+      "arxiv_version_read": 2,
+      "catalog_arxiv_version": 2,
+      "version_override_required": false,
+      "primary_source": {
+        "url": "https://arxiv.org/pdf/2401.10935v2",
+        "final_url": "https://arxiv.org/pdf/2401.10935v2",
+        "retrieved_at": "2026-10-18T10:07:03.022590+00:00",
+        "sha256": "b62bd796d8e6d45e13b41ed41a55d021a9df3329bf500d14efed129e8a1e04e2",
+        "bytes": 10795836,
+        "http_status": 200,
+        "transfer_completed": true,
+        "format": "PDF",
+        "fresh_fetch": true,
+        "retention_note": "Raw full text is retained only in ignored local cache; not included in this public ledger."
+      },
+      "read_status": "selected_fulltext_sections_read",
+      "sections": [
+        "3.2 Training data",
+        "4 ScreenSpot",
+        "5.1 Grounding metric",
+        "5.2.1 MiniWoB experiment"
+      ],
+      "pdf_pages_read": [
+        4,
+        5,
+        6
+      ],
+      "findings": [
+        "ScreenSpot isolates instruction-conditioned target localization from sequential planning; click accuracy tests whether a predicted point is inside the annotated target box.",
+        "Original ScreenSpot collection contains over 600 screenshots and 1,200+ instruction-target pairs, which are distinct units.",
+        "This is the SeeClick paper version v2, not a claim about the later resource named ScreenSpot-v2.",
+        "SeeClick explicitly reports separate overlapping MiniWoB subsets and multiple seeds, reinforcing protocol-sensitive comparisons."
+      ],
+      "reported_quantities": [
+        {
+          "value": 600,
+          "qualifier": "over",
+          "unit": "screenshots",
+          "locator": "PDF p.5 §4"
+        },
+        {
+          "value": 1200,
+          "qualifier": "over",
+          "unit": "instruction-target pairs",
+          "locator": "PDF p.5 §4"
+        }
+      ]
+    },
+    {
+      "canonical_id": "arxiv:2307.13854",
+      "citation_key": "arxiv_2307_13854",
+      "title": "WebArena: A Realistic Web Environment for Building Autonomous Agents",
+      "ordered_authors": [
+        "Shuyan Zhou",
+        "Frank F. Xu",
+        "Hao Zhu",
+        "Xuhui Zhou",
+        "Robert Lo",
+        "Abishek Sridhar",
+        "Xianyi Cheng",
+        "Tianyue Ou",
+        "Yonatan Bisk",
+        "Daniel Fried",
+        "Uri Alon",
+        "Graham Neubig"
+      ],
+      "present_in_frozen_catalog": true,
+      "catalog_review_status": "curated",
+      "bibliographic_metadata_basis": "Frozen retained catalog edition",
+      "arxiv_version_read": 4,
+      "catalog_arxiv_version": 4,
+      "version_override_required": false,
+      "primary_source": {
+        "url": "https://arxiv.org/html/2307.13854v4",
+        "final_url": "https://arxiv.org/html/2307.13854v4",
+        "retrieved_at": "2026-10-18T10:10:22.276000+00:00",
+        "sha256": "15c4dcd5968f24bf21f1bdc6696be4180bdeed58f2703345ed7e11da89cedd2d",
+        "bytes": 247063,
+        "http_status": 200,
+        "transfer_completed": true,
+        "format": "HTML",
+        "fresh_fetch": true,
+        "retention_note": "Raw full text is retained only in ignored local cache; not included in this public ledger."
+      },
+      "read_status": "selected_fulltext_sections_read",
+      "sections": [
+        "HTML §2.2–2.4 (#S2.SS2–S2.SS4)",
+        "HTML §3.1 Intent Analysis (#S3.SS1.SSS0.Px1)",
+        "HTML §3.2 Evaluation Annotation (#S3.SS2)"
+      ],
+      "pdf_pages_read": [],
+      "findings": [
+        "Self-hosted websites and Docker reset scripts separate this interactive benchmark from mutable live-web browsing.",
+        "Screenshot, DOM and accessibility observations and ID or coordinate actions are options, not interchangeable control constraints.",
+        "Evaluation combines reference-answer exact/inclusion/LLM semantic checks and programmatic checks of URLs, page contents and backend state; infeasible tasks are explicitly included."
+      ],
+      "reported_quantities": [
+        {
+          "value": 812,
+          "unit": "task instances",
+          "locator": "HTML §3.1 Intent Analysis"
+        },
+        {
+          "value": 241,
+          "unit": "intent templates",
+          "locator": "HTML §3.1 Intent Analysis"
+        }
+      ]
+    },
+    {
+      "canonical_id": "arxiv:2404.07972",
+      "citation_key": "arxiv_2404_07972",
+      "title": "OSWorld: Benchmarking Multimodal Agents for Open-Ended Tasks in Real Computer Environments",
+      "ordered_authors": [
+        "Tianbao Xie",
+        "Danyang Zhang",
+        "Jixuan Chen",
+        "Xiaochuan Li",
+        "Siheng Zhao",
+        "Ruisheng Cao",
+        "Toh Jing Hua",
+        "Zhoujun Cheng",
+        "Dongchan Shin",
+        "Fangyu Lei",
+        "Yitao Liu",
+        "Yiheng Xu",
+        "Shuyan Zhou",
+        "Silvio Savarese",
+        "Caiming Xiong",
+        "Victor Zhong",
+        "Tao Yu"
+      ],
+      "present_in_frozen_catalog": true,
+      "catalog_review_status": "curated",
+      "bibliographic_metadata_basis": "Frozen retained catalog edition",
+      "arxiv_version_read": 2,
+      "catalog_arxiv_version": 2,
+      "version_override_required": false,
+      "primary_source": {
+        "url": "https://arxiv.org/html/2404.07972v2",
+        "final_url": "https://arxiv.org/html/2404.07972v2",
+        "retrieved_at": "2026-10-18T10:10:29.042609+00:00",
+        "sha256": "fbd620dccd72032406ceb36d4d9e108292b1bc7fcbf4c3aee0c0b544601a05c2",
+        "bytes": 820428,
+        "http_status": 200,
+        "transfer_completed": true,
+        "format": "HTML",
+        "fresh_fetch": true,
+        "retention_note": "Raw full text is retained only in ignored local cache; not included in this public ledger."
+      },
+      "read_status": "selected_fulltext_sections_read",
+      "sections": [
+        "HTML §2.2 Infrastructure (#S2.SS2)",
+        "HTML §2.3–2.4 Interfaces",
+        "HTML §3.1–3.2 Benchmark and tasks",
+        "HTML §7 Safety discussion (#S7.SS0.SSS0.Px3)"
+      ],
+      "pdf_pages_read": [],
+      "findings": [
+        "VM snapshots plus task files and initialization commands produce controlled initial states; evaluator post-processing and getters inspect outputs/settings and sometimes live values.",
+        "Primary benchmark has 369 Ubuntu tasks; the separate 43-task Windows analysis is not another part of the same task denominator.",
+        "Mouse/keyboard pyautogui actions, screenshots and optional accessibility tree; model interface restrictions must be recorded.",
+        "The paper explicitly acknowledges that task-completion evaluators do not comprehensively detect harmful side effects; VM containment is not agent alignment."
+      ],
+      "reported_quantities": [
+        {
+          "value": 369,
+          "unit": "primary Ubuntu task instances",
+          "locator": "HTML §3, §3.2"
+        },
+        {
+          "value": 43,
+          "unit": "separate Windows analytic tasks",
+          "locator": "HTML §3"
+        }
+      ]
+    },
+    {
+      "canonical_id": "arxiv:2508.09123",
+      "citation_key": "arxiv_2508_09123",
+      "title": "OpenCUA: Open Foundations for Computer-Use Agents",
+      "ordered_authors": [
+        "Xinyuan Wang",
+        "Bowen Wang",
+        "Dunjie Lu",
+        "Junlin Yang",
+        "Tianbao Xie",
+        "Junli Wang",
+        "Jiaqi Deng",
+        "Xiaole Guo",
+        "Yiheng Xu",
+        "Chen Henry Wu",
+        "Zhennan Shen",
+        "Zhuokai Li",
+        "Ryan Li",
+        "Xiaochuan Li",
+        "Junda Chen",
+        "Boyuan Zheng",
+        "Peihang Li",
+        "Fangyu Lei",
+        "Ruisheng Cao",
+        "Yeqiao Fu",
+        "Dongchan Shin",
+        "Martin Shin",
+        "Jiarui Hu",
+        "Yuyan Wang",
+        "Jixuan Chen",
+        "Yuxiao Ye",
+        "Danyang Zhang",
+        "Dikang Du",
+        "Hao Hu",
+        "Huarong Chen",
+        "Zaida Zhou",
+        "Haotian Yao",
+        "Ziwei Chen",
+        "Qizheng Gu",
+        "Yipu Wang",
+        "Heng Wang",
+        "Diyi Yang",
+        "Victor Zhong",
+        "Flood Sung",
+        "Y. Charles",
+        "Zhilin Yang",
+        "Tao Yu"
+      ],
+      "present_in_frozen_catalog": true,
+      "catalog_review_status": "curated",
+      "bibliographic_metadata_basis": "Frozen retained catalog edition",
+      "arxiv_version_read": 3,
+      "catalog_arxiv_version": 3,
+      "version_override_required": false,
+      "primary_source": {
+        "url": "https://arxiv.org/html/2508.09123v3",
+        "final_url": "https://arxiv.org/html/2508.09123v3",
+        "retrieved_at": "2026-10-18T10:10:31.930715+00:00",
+        "sha256": "bd90167d436738c1e50b6ab2fd89cac3d427ff59c31be9d731f72453ee3a6937",
+        "bytes": 1121920,
+        "http_status": 200,
+        "transfer_completed": true,
+        "format": "HTML",
+        "fresh_fetch": true,
+        "retention_note": "Raw full text is retained only in ignored local cache; not included in this public ledger."
+      },
+      "read_status": "selected_fulltext_sections_read",
+      "sections": [
+        "HTML §2.1–2.3 AgentNet Collection",
+        "HTML Table 2 footnote",
+        "HTML §3.1 Reflective CoT synthesis",
+        "HTML Appendix C.1–C.2"
+      ],
+      "pdf_pages_read": [],
+      "findings": [
+        "AgentNet records natural desktop video, inputs and accessibility information, then constructs compact screenshot-action pairs; future cursor position leakage is explicitly considered during frame alignment.",
+        "Human actions and model-synthesized reasoning annotations have different provenance.",
+        "The described public collection is 22,625 tasks; the paper separately states larger model-training trajectory pools in Table 2 footnote. These must not be conflated.",
+        "Authors state avoiding OSWorld task overlap; this is a documented collection control, not independent proof of absence from foundation-model pretraining."
+      ],
+      "reported_quantities": [
+        {
+          "value": 22625,
+          "unit": "paper-described public human task trajectories",
+          "locator": "HTML §2.3 and Table 2 footnote"
+        }
+      ]
+    },
+    {
+      "canonical_id": "arxiv:2504.07981",
+      "citation_key": "arxiv_2504_07981",
+      "title": "ScreenSpot-Pro: GUI Grounding for Professional High-Resolution Computer Use",
+      "ordered_authors": [
+        "Kaixin Li",
+        "Ziyang Meng",
+        "Hongzhan Lin",
+        "Ziyang Luo",
+        "Yuchen Tian",
+        "Jing Ma",
+        "Zhiyong Huang",
+        "Tat-Seng Chua"
+      ],
+      "present_in_frozen_catalog": true,
+      "catalog_review_status": "curated",
+      "bibliographic_metadata_basis": "Frozen retained catalog edition",
+      "arxiv_version_read": 1,
+      "catalog_arxiv_version": 1,
+      "version_override_required": false,
+      "primary_source": {
+        "url": "https://arxiv.org/pdf/2504.07981v1",
+        "final_url": "https://arxiv.org/pdf/2504.07981v1",
+        "retrieved_at": "2026-10-18T10:07:31.910360+00:00",
+        "sha256": "4eec6bbf0bba837c66a0d69551cc1567200d7aea85c6ce72650706de637c10c0",
+        "bytes": 11160171,
+        "http_status": 200,
+        "transfer_completed": true,
+        "format": "PDF",
+        "fresh_fetch": true,
+        "retention_note": "Raw full text is retained only in ignored local cache; not included in this public ledger."
+      },
+      "read_status": "selected_fulltext_sections_read",
+      "sections": [
+        "Introduction benchmark summary",
+        "3.1–3.4 Collection and statistics",
+        "Limitations"
+      ],
+      "pdf_pages_read": [
+        2,
+        4,
+        5,
+        9
+      ],
+      "findings": [
+        "ScreenSpot-Pro targets high-resolution professional GUI localization, excludes planning/execution, and makes paper-specific application/version and screenshot collection conditions explicit.",
+        "Instructions are checked for one target; target box precision is manually verified.",
+        "The limitations section cites licensing constraints of professional software as a reason for grounding-only evaluation."
+      ],
+      "reported_quantities": [
+        {
+          "value": 1581,
+          "unit": "instructions, each with a unique screenshot",
+          "locator": "PDF p.2 introduction"
+        },
+        {
+          "value": 23,
+          "unit": "applications",
+          "locator": "PDF p.5 §3.4"
+        },
+        {
+          "value": 3,
+          "unit": "operating systems",
+          "locator": "PDF p.5 §3.4"
+        }
+      ]
+    },
+    {
+      "canonical_id": "arxiv:2506.16042",
+      "citation_key": "arxiv_2506_16042",
+      "title": "OSWorld-Human: Benchmarking the Efficiency of Computer-Use Agents",
+      "ordered_authors": [
+        "Reyna Abhyankar",
+        "Qi Qi",
+        "Yiying Zhang"
+      ],
+      "present_in_frozen_catalog": true,
+      "catalog_review_status": "curated",
+      "bibliographic_metadata_basis": "Frozen retained catalog edition",
+      "arxiv_version_read": 2,
+      "catalog_arxiv_version": 2,
+      "version_override_required": false,
+      "primary_source": {
+        "url": "https://arxiv.org/pdf/2506.16042v2",
+        "final_url": "https://arxiv.org/pdf/2506.16042v2",
+        "retrieved_at": "2026-10-18T10:08:35.906616+00:00",
+        "sha256": "ee48a997c1d55ba387cbe6a4d35297cf414675ff6f18b26dcac94fcd97abfcfc",
+        "bytes": 613558,
+        "http_status": 200,
+        "transfer_completed": true,
+        "format": "PDF",
+        "fresh_fetch": true,
+        "retention_note": "Raw full text is retained only in ignored local cache; not included in this public ledger."
+      },
+      "read_status": "selected_fulltext_sections_read",
+      "sections": [
+        "4.1 Human trajectory construction",
+        "4.2 Action grouping",
+        "5.1 Weighted Efficiency Score"
+      ],
+      "pdf_pages_read": [
+        9,
+        10
+      ],
+      "findings": [
+        "Human reference trajectories distinguish single actions from groups executable without a new observation; counting each model call as one action can obscure interface differences.",
+        "Weighted Efficiency Score conditions efficiency credit on successful outcomes and includes a failure-budget penalty. It is not identical to elapsed time or token cost."
+      ],
+      "reported_quantities": [
+        {
+          "value": 369,
+          "unit": "OSWorld tasks with human reference trajectories",
+          "locator": "PDF p.9 §4.1"
+        }
+      ]
+    },
+    {
+      "canonical_id": "arxiv:2510.18488",
+      "citation_key": "arxiv_2510_18488",
+      "title": "AndroidControl-Curated: Revealing the True Potential of GUI Agents through Benchmark Purification",
+      "ordered_authors": [
+        "Ho Fai Leung",
+        "Xiaoyan Xi",
+        "Fei Zuo"
+      ],
+      "present_in_frozen_catalog": true,
+      "catalog_review_status": "curated",
+      "bibliographic_metadata_basis": "Frozen retained catalog edition",
+      "arxiv_version_read": 1,
+      "catalog_arxiv_version": 1,
+      "version_override_required": false,
+      "primary_source": {
+        "url": "https://arxiv.org/pdf/2510.18488v1",
+        "final_url": "https://arxiv.org/pdf/2510.18488v1",
+        "retrieved_at": "2026-10-18T10:08:39.351780+00:00",
+        "sha256": "2b8d59200d47d1b3347f38ba6aa21c1f93a4ac724081178117a5bb9873a84797",
+        "bytes": 992994,
+        "http_status": 200,
+        "transfer_completed": true,
+        "format": "PDF",
+        "fresh_fetch": true,
+        "retention_note": "Raw full text is retained only in ignored local cache; not included in this public ledger."
+      },
+      "read_status": "selected_fulltext_sections_read",
+      "sections": [
+        "2.1 Benchmark purification",
+        "3 Evaluation setup/metrics"
+      ],
+      "pdf_pages_read": [
+        3,
+        5
+      ],
+      "findings": [
+        "The paper proposes bounding-box matching and model-assisted human-reviewed corrections, illustrating the need to version evaluators separately from policies.",
+        "Its contrast with exact-point evaluation must not be generalized to every original AndroidControl result: original v6 §4.2 explicitly uses relaxed equivalent-action matching. No before/after ranking or universal error estimate is adopted here."
+      ],
+      "reported_quantities": []
+    },
+    {
+      "canonical_id": "arxiv:2609.24890",
+      "citation_key": "arxiv_2609_24890",
+      "title": "OSWorld-Pro: Process-based Evaluation for Computer Use Agents",
+      "ordered_authors": [
+        "Zhilin Wang",
+        "Shaokun Zhang",
+        "Yifan Zhang",
+        "Hao Zhang",
+        "Jin Xu",
+        "Binfeng Xu",
+        "Jian Hu",
+        "Yunheng Zou",
+        "Karan Sapra",
+        "Andrew Tao",
+        "Jan Kautz",
+        "Yi Dong"
+      ],
+      "present_in_frozen_catalog": true,
+      "catalog_review_status": "curated",
+      "bibliographic_metadata_basis": "Frozen retained catalog edition",
+      "arxiv_version_read": 1,
+      "catalog_arxiv_version": 1,
+      "version_override_required": false,
+      "primary_source": {
+        "url": "https://arxiv.org/pdf/2609.24890v1",
+        "final_url": "https://arxiv.org/pdf/2609.24890v1",
+        "retrieved_at": "2026-10-18T10:09:35.635503+00:00",
+        "sha256": "71ebfedd965911d53840bccc05c8dedcf8812268529adba07ee68f8e3195d9d2",
+        "bytes": 2953152,
+        "http_status": 200,
+        "transfer_completed": true,
+        "format": "PDF",
+        "fresh_fetch": true,
+        "retention_note": "Raw full text is retained only in ignored local cache; not included in this public ledger."
+      },
+      "read_status": "selected_fulltext_sections_read",
+      "sections": [
+        "2 Benchmark overview",
+        "3 Data collection",
+        "4.1 Judge evaluation",
+        "Reproducibility statement"
+      ],
+      "pdf_pages_read": [
+        3,
+        4,
+        5,
+        11
+      ],
+      "findings": [
+        "OSWorld-Pro adds dependent subgoals and human trajectory labels, and tests LLM judges against these labels.",
+        "Step/subgoal/task judge agreement and predicted progress are distinct from execution success; progress annotation is a diagnosis layer rather than a proof of safety."
+      ],
+      "reported_quantities": [
+        {
+          "value": 305,
+          "unit": "tasks",
+          "locator": "PDF p.3 §2"
+        },
+        {
+          "value": 2814,
+          "unit": "progressive subgoals",
+          "locator": "PDF p.3 §2"
+        },
+        {
+          "value": 67264,
+          "unit": "human annotation labels",
+          "locator": "PDF p.3 §2"
+        }
+      ]
+    },
+    {
+      "canonical_id": "arxiv:2610.01491",
+      "citation_key": "arxiv_2610_01491",
+      "title": "Auditing Web Agent Evaluation on WebArena-Lite: Human Review of Outcomes and Trajectories",
+      "ordered_authors": [
+        "Chengguang Gan",
+        "Zimeng He",
+        "Yoshihiro Tsujii",
+        "Ken-ichiro Kobayashi",
+        "Hiroki Itoh",
+        "Kotaro Funakoshi"
+      ],
+      "present_in_frozen_catalog": true,
+      "catalog_review_status": "curated",
+      "bibliographic_metadata_basis": "Frozen retained catalog edition",
+      "arxiv_version_read": 1,
+      "catalog_arxiv_version": 1,
+      "version_override_required": false,
+      "primary_source": {
+        "url": "https://arxiv.org/pdf/2610.01491v1",
+        "final_url": "https://arxiv.org/pdf/2610.01491v1",
+        "retrieved_at": "2026-10-18T10:09:38.289366+00:00",
+        "sha256": "a6eb4d550204825582dd0da428692968a443de99a6b8ff43fa5626d0c20de04f",
+        "bytes": 254264,
+        "http_status": 200,
+        "transfer_completed": true,
+        "format": "PDF",
+        "fresh_fetch": true,
+        "retention_note": "Raw full text is retained only in ignored local cache; not included in this public ledger."
+      },
+      "read_status": "selected_fulltext_sections_read",
+      "sections": [
+        "3.1 Study scope",
+        "4.1–4.3 Human verification",
+        "6 Limitations"
+      ],
+      "pdf_pages_read": [
+        3,
+        4,
+        5,
+        9
+      ],
+      "findings": [
+        "WebArena-Lite audit preserves raw and corrected scores and bases corrections on environment evidence, not agent self-reports.",
+        "One rollout per task, asymmetric review across model conditions, procedural guidance, possible state carryover and intermediate-answer leakage limit causal or population-wide claims.",
+        "We use it as a limited evaluator-audit example, not a SOTA comparison."
+      ],
+      "reported_quantities": [
+        {
+          "value": 165,
+          "unit": "fixed WebArena-Lite tasks in study",
+          "locator": "PDF p.3 §3.1"
+        }
+      ]
+    },
+    {
+      "canonical_id": "arxiv:2410.17520",
+      "citation_key": "arxiv_2410_17520",
+      "title": "MobileSafetyBench: Evaluating Safety of Autonomous Agents in Mobile Device Control",
+      "ordered_authors": [
+        "Juyong Lee",
+        "Dongyoon Hahm",
+        "June Suk Choi",
+        "W. Bradley Knox",
+        "Kimin Lee"
+      ],
+      "present_in_frozen_catalog": true,
+      "catalog_review_status": "curated",
+      "bibliographic_metadata_basis": "Frozen retained catalog edition",
+      "arxiv_version_read": 3,
+      "catalog_arxiv_version": 3,
+      "version_override_required": false,
+      "primary_source": {
+        "url": "https://arxiv.org/pdf/2410.17520v3",
+        "final_url": "https://arxiv.org/pdf/2410.17520v3",
+        "retrieved_at": "2026-10-18T10:08:53.257108+00:00",
+        "sha256": "8f407be8a7e95dcedb68f82d6b4fe2e4da2a1d692f0e8d048a18853ab715ceb3",
+        "bytes": 5700541,
+        "http_status": 200,
+        "transfer_completed": true,
+        "format": "PDF",
+        "fresh_fetch": true,
+        "retention_note": "Raw full text is retained only in ignored local cache; not included in this public ledger."
+      },
+      "read_status": "selected_fulltext_sections_read",
+      "sections": [
+        "3.1–3.4 Benchmark design and evaluation",
+        "Limitations"
+      ],
+      "pdf_pages_read": [
+        3,
+        4,
+        8
+      ],
+      "findings": [
+        "MobileSafetyBench pairs helpfulness and safety: low-risk completion, high-risk refusal/consent and incorrect refusal are distinct behaviors.",
+        "Rule-based checks inspect action history, system settings/files/app databases; full benchmark v3 count is not interchangeable with later selected subsets."
+      ],
+      "reported_quantities": [
+        {
+          "value": 250,
+          "unit": "total v3 tasks",
+          "locator": "PDF p.3 §3.3"
+        },
+        {
+          "value": 100,
+          "unit": "low-risk daily tasks",
+          "locator": "PDF p.3 §3.3"
+        },
+        {
+          "value": 100,
+          "unit": "high-risk daily tasks",
+          "locator": "PDF p.3 §3.3"
+        },
+        {
+          "value": 50,
+          "unit": "high-risk injection tasks",
+          "locator": "PDF p.3 §3.3"
+        }
+      ]
+    },
+    {
+      "canonical_id": "arxiv:2506.14866",
+      "citation_key": "arxiv_2506_14866",
+      "title": "OS-Harm: A Benchmark for Measuring Safety of Computer Use Agents",
+      "ordered_authors": [
+        "Thomas Kuntz",
+        "Agatha Duzan",
+        "Hao Zhao",
+        "Francesco Croce",
+        "Zico Kolter",
+        "Nicolas Flammarion",
+        "Maksym Andriushchenko"
+      ],
+      "present_in_frozen_catalog": true,
+      "catalog_review_status": "curated",
+      "bibliographic_metadata_basis": "Frozen retained catalog edition",
+      "arxiv_version_read": 2,
+      "catalog_arxiv_version": 2,
+      "version_override_required": false,
+      "primary_source": {
+        "url": "https://arxiv.org/pdf/2506.14866v2",
+        "final_url": "https://arxiv.org/pdf/2506.14866v2",
+        "retrieved_at": "2026-10-18T10:08:55.941603+00:00",
+        "sha256": "5a1133e729d882a7bc0a19fe3a08889072ecfa3789e7c5c2773aa3c6e18bdb6a",
+        "bytes": 1289259,
+        "http_status": 200,
+        "transfer_completed": true,
+        "format": "PDF",
+        "fresh_fetch": true,
+        "retention_note": "Raw full text is retained only in ignored local cache; not included in this public ledger."
+      },
+      "read_status": "selected_fulltext_sections_read",
+      "sections": [
+        "3.1 Setup",
+        "3.2 Three harm categories",
+        "3.3 LLM judge",
+        "5 Discussion"
+      ],
+      "pdf_pages_read": [
+        4,
+        5,
+        6,
+        9
+      ],
+      "findings": [
+        "OS-Harm distinguishes deliberate misuse, indirect injection and harmful model behavior under benign requests.",
+        "It uses trajectory-level semantic safety/success judgment; the study assumes the adversary targets the agent, not the judge.",
+        "Canary/exclusion requests are collection hygiene, not proof all future training pipelines exclude the benchmark.",
+        "Capability failures can conceal harmful intent, so low realized harm alone is insufficient evidence of robustness."
+      ],
+      "reported_quantities": [
+        {
+          "value": 150,
+          "unit": "total safety tasks",
+          "locator": "PDF p.4 Table 1"
+        },
+        {
+          "value": 50,
+          "unit": "tasks per harm category",
+          "locator": "PDF p.4 Table 1"
+        }
+      ]
+    },
+    {
+      "canonical_id": "arxiv:2504.18575",
+      "citation_key": "arxiv_2504_18575",
+      "title": "WASP: Benchmarking Web Agent Security Against Prompt Injection Attacks",
+      "ordered_authors": [
+        "Ivan Evtimov",
+        "Arman Zharmagambetov",
+        "Aaron Grattafiori",
+        "Chuan Guo",
+        "Kamalika Chaudhuri"
+      ],
+      "present_in_frozen_catalog": true,
+      "catalog_review_status": "curated",
+      "bibliographic_metadata_basis": "Frozen retained catalog edition",
+      "arxiv_version_read": 3,
+      "catalog_arxiv_version": 3,
+      "version_override_required": false,
+      "primary_source": {
+        "url": "https://arxiv.org/pdf/2504.18575v3",
+        "final_url": "https://arxiv.org/pdf/2504.18575v3",
+        "retrieved_at": "2026-10-18T10:09:12.692007+00:00",
+        "sha256": "460fd2adff8d31a62f7743fc7f30e63f83ac3ed1c0eca2bd957fd2d5ba0b4290",
+        "bytes": 1194682,
+        "http_status": 200,
+        "transfer_completed": true,
+        "format": "PDF",
+        "fresh_fetch": true,
+        "retention_note": "Raw full text is retained only in ignored local cache; not included in this public ledger."
+      },
+      "read_status": "selected_fulltext_sections_read",
+      "sections": [
+        "2 Threat model",
+        "3.1–3.2 Benchmark construction",
+        "3.4 Main metrics",
+        "5 Limitations"
+      ],
+      "pdf_pages_read": [
+        3,
+        4,
+        5,
+        9
+      ],
+      "findings": [
+        "WASP restricts an attacker to user-editable content on self-hosted web platforms, without agent or whole-site control.",
+        "It separates final attacker-goal success, intermediate diversion and benign utility; incomplete harm may reflect lack of agent capability.",
+        "Limited websites and attack prompts constrain external validity; no cross-threat-model success-rate ranking is justified."
+      ],
+      "reported_quantities": []
+    },
+    {
+      "canonical_id": "arxiv:2505.21936",
+      "citation_key": "arxiv_2505_21936",
+      "title": "RedTeamCUA: Realistic Adversarial Testing of Computer-Use Agents in Hybrid Web-OS Environments",
+      "ordered_authors": [
+        "Zeyi Liao",
+        "Jaylen Jones",
+        "Linxi Jiang",
+        "Yuting Ning",
+        "Eric Fosler-Lussier",
+        "Yu Su",
+        "Zhiqiang Lin",
+        "Huan Sun"
+      ],
+      "present_in_frozen_catalog": true,
+      "catalog_review_status": "curated",
+      "bibliographic_metadata_basis": "Frozen retained catalog edition",
+      "arxiv_version_read": 5,
+      "catalog_arxiv_version": 5,
+      "version_override_required": false,
+      "primary_source": {
+        "url": "https://arxiv.org/pdf/2505.21936v5",
+        "final_url": "https://arxiv.org/pdf/2505.21936v5",
+        "retrieved_at": "2026-10-18T10:09:08.748979+00:00",
+        "sha256": "f0622cc48b654aeeb2f2872162d7df21b3a32ee8475156b254544260e696b3b2",
+        "bytes": 5916672,
+        "http_status": 200,
+        "transfer_completed": true,
+        "format": "PDF",
+        "fresh_fetch": true,
+        "retention_note": "Raw full text is retained only in ignored local cache; not included in this public ledger."
+      },
+      "read_status": "selected_fulltext_sections_read",
+      "sections": [
+        "3 Hybrid sandbox",
+        "4.2 Threat model",
+        "5.1 Evaluation metrics",
+        "7 End-to-end evaluation",
+        "Appendix A limitations"
+      ],
+      "pdf_pages_read": [
+        4,
+        5,
+        6,
+        7,
+        10,
+        18
+      ],
+      "findings": [
+        "Hybrid web/OS sandbox contains consequences and allows reproducible injection-state setup.",
+        "Decoupled trials place the agent at the injection site; this estimates conditional susceptibility, unlike end-to-end exposure-and-completion risk.",
+        "Execution-based ASR and LLM-judged attempt rate distinguish completed harms from attempted deviations.",
+        "Reported best-of-three attack outcome aggregation, step budgets and permission-check handling are part of the protocol; no numerical rate is transferred to another setting."
+      ],
+      "reported_quantities": []
+    },
+    {
+      "canonical_id": "arxiv:2406.12814",
+      "citation_key": "arxiv_2406_12814",
+      "title": "Dissecting Adversarial Robustness of Multimodal LM Agents",
+      "ordered_authors": [
+        "Chen Henry Wu",
+        "Rishi Shah",
+        "Jing Yu Koh",
+        "Ruslan Salakhutdinov",
+        "Daniel Fried",
+        "Aditi Raghunathan"
+      ],
+      "present_in_frozen_catalog": true,
+      "catalog_review_status": "curated",
+      "bibliographic_metadata_basis": "Frozen retained catalog edition",
+      "arxiv_version_read": 3,
+      "catalog_arxiv_version": 3,
+      "version_override_required": false,
+      "primary_source": {
+        "url": "https://arxiv.org/pdf/2406.12814v3",
+        "final_url": "https://arxiv.org/pdf/2406.12814v3",
+        "retrieved_at": "2026-10-18T10:09:27.478864+00:00",
+        "sha256": "b2956d9036dba351b756cbc5986a89b8180b6284ee91bcaa989ca6f274f869ff",
+        "bytes": 5553289,
+        "http_status": 200,
+        "transfer_completed": true,
+        "format": "PDF",
+        "fresh_fetch": true,
+        "retention_note": "Raw full text is retained only in ignored local cache; not included in this public ledger."
+      },
+      "read_status": "selected_fulltext_sections_read",
+      "sections": [
+        "3.1 Threat model",
+        "3.2 Agent graph",
+        "4.1 VWA-Adv curation",
+        "4.2 Attacker access"
+      ],
+      "pdf_pages_read": [
+        3,
+        5,
+        6
+      ],
+      "findings": [
+        "Multimodal robustness includes attacker-controlled text/image fragments without modifying user goals or agent parameters.",
+        "VWA-Adv selects initially solvable tasks and starts at the trigger encounter, conditioning on exposure rather than population-wide deployment frequency.",
+        "Intermediate caption/reflection/evaluator components can introduce additional attack paths; more reasoning components do not automatically guarantee more robustness."
+      ],
+      "reported_quantities": []
+    },
+    {
+      "canonical_id": "arxiv:2610.06898",
+      "citation_key": "arxiv_2610_06898",
+      "title": "DIBench: Benchmarking Decision Integrity of GUI-based Mobile Agents Under Deceptive Injections",
+      "ordered_authors": [
+        "Li Hu",
+        "Kanghua Mo",
+        "Yingbin Jin",
+        "Qingqing Ye",
+        "Haibo Hu"
+      ],
+      "present_in_frozen_catalog": false,
+      "catalog_review_status": null,
+      "bibliographic_metadata_basis": "Root fresh official arXiv title-search metadata; not an automatic catalog insertion",
+      "arxiv_version_read": 1,
+      "catalog_arxiv_version": null,
+      "version_override_required": false,
+      "primary_source": {
+        "url": "https://arxiv.org/pdf/2610.06898v1",
+        "final_url": "https://arxiv.org/pdf/2610.06898v1",
+        "retrieved_at": "2026-10-18T10:10:35.098754+00:00",
+        "sha256": "73f83c27e58e46086dbd5f32f108df2c5faa9ab2bd968d48062f39d94b2cc14b",
+        "bytes": 2158697,
+        "http_status": 200,
+        "transfer_completed": true,
+        "format": "PDF",
+        "fresh_fetch": true,
+        "retention_note": "Raw full text is retained only in ignored local cache; not included in this public ledger."
+      },
+      "read_status": "selected_fulltext_sections_read",
+      "sections": [
+        "3.1 Benchmark components",
+        "3.2 Instance generation",
+        "3.3 Paired protocol/metrics",
+        "5 Limitations/Ethics"
+      ],
+      "pdf_pages_read": [
+        3,
+        4,
+        5,
+        6,
+        9
+      ],
+      "findings": [
+        "DIBench measures selection-stage decision integrity. Commercial-app tests use fixed screenshots and context, not transactions or live end-to-end mobile task execution.",
+        "Completion means committing to a candidate; correctness means membership in the acceptable set; targeted steering uses paired benign/injected choices under matched seeds.",
+        "Evaluations cover open research agent frameworks and simulated/fixed decision states, not production OEM assistants."
+      ],
+      "reported_quantities": []
+    },
+    {
+      "canonical_id": "arxiv:2608.07775",
+      "citation_key": "arxiv_2608_07775",
+      "title": "AndroidReality: How Far Are Mobile Agents from the Real World?",
+      "ordered_authors": [
+        "Xiaoou Liu",
+        "Longchao Da",
+        "Hanyang Chen",
+        "Yuan Ling",
+        "Hua Wei"
+      ],
+      "present_in_frozen_catalog": false,
+      "catalog_review_status": null,
+      "bibliographic_metadata_basis": "Root fresh official arXiv title-search metadata; not an automatic catalog insertion",
+      "arxiv_version_read": 1,
+      "catalog_arxiv_version": null,
+      "version_override_required": false,
+      "primary_source": {
+        "url": "https://arxiv.org/pdf/2608.07775v1",
+        "final_url": "https://arxiv.org/pdf/2608.07775v1",
+        "retrieved_at": "2026-10-18T10:10:44.898646+00:00",
+        "sha256": "d4afe27efcce2a3b9401f9677304db3cdedfa66f537293bb742bd1abfb16ee59",
+        "bytes": 7241423,
+        "http_status": 200,
+        "transfer_completed": true,
+        "format": "PDF",
+        "fresh_fetch": true,
+        "retention_note": "Raw full text is retained only in ignored local cache; not included in this public ledger."
+      },
+      "read_status": "selected_fulltext_sections_read",
+      "sections": [
+        "3.1 Perturbation formulation",
+        "3.2 Injection",
+        "3.3 Evaluation protocol",
+        "4.3 Error analysis"
+      ],
+      "pdf_pages_read": [
+        4,
+        5,
+        7,
+        8
+      ],
+      "findings": [
+        "AndroidReality wraps AndroidWorld with observation/state, transition and action-execution perturbations while preserving task semantics/reward.",
+        "Clean-versus-perturbed task success and failure traces distinguish grounding, silent failures, distraction and goal-memory drift.",
+        "Usually one perturbation type is active at a time, so results do not establish robustness to arbitrary combined deployment disturbances."
+      ],
+      "reported_quantities": []
+    },
+    {
+      "canonical_id": "arxiv:2607.00333",
+      "citation_key": "arxiv_2607_00333",
+      "title": "(A)I Sees What You Don't: Exploiting New Attack Surfaces in Third-Party Mobile Agents",
+      "ordered_authors": [
+        "Zidong Zhang",
+        "Zhentao Xie",
+        "Wenrui Diao",
+        "Jianliang Wu"
+      ],
+      "present_in_frozen_catalog": false,
+      "catalog_review_status": null,
+      "bibliographic_metadata_basis": "Root fresh official arXiv title-search metadata; not an automatic catalog insertion",
+      "arxiv_version_read": 2,
+      "catalog_arxiv_version": null,
+      "version_override_required": false,
+      "primary_source": {
+        "url": "https://arxiv.org/pdf/2607.00333v2",
+        "final_url": "https://arxiv.org/pdf/2607.00333v2",
+        "retrieved_at": "2026-10-18T10:10:51.142293+00:00",
+        "sha256": "97bf1ad827e6c378b90ae67d58a77e19dc0fce1a4dc7125ed3c8687e6da5de8c",
+        "bytes": 1738760,
+        "http_status": 200,
+        "transfer_completed": true,
+        "format": "PDF",
+        "fresh_fetch": true,
+        "retention_note": "Raw full text is retained only in ignored local cache; not included in this public ledger."
+      },
+      "read_status": "selected_fulltext_sections_read",
+      "sections": [
+        "III Threat model",
+        "Table II permissions",
+        "VII Discussion/limitations"
+      ],
+      "pdf_pages_read": [
+        3,
+        4,
+        12,
+        13
+      ],
+      "findings": [
+        "This study requires a malicious installed Android app and examines third-party host-connected agents, not arbitrary remote websites or first-party/iOS assistants.",
+        "Observed risks include screenshot/perception integrity and privileged automation communication boundaries. Some vectors require granted overlay/accessibility/storage privileges.",
+        "Controlled feasibility demonstrations are not population-prevalence estimates; defenses discussed are not universal security proofs."
+      ],
+      "reported_quantities": []
+    },
+    {
+      "canonical_id": "arxiv:2507.00841",
+      "citation_key": "arxiv_2507_00841",
+      "title": "SafeMobile: Chain-level Jailbreak Detection and Automated Evaluation for Multimodal Mobile Agents",
+      "ordered_authors": [
+        "Siyuan Liang",
+        "Tianmeng Fang",
+        "Zhe Liu",
+        "Aishan Liu",
+        "Yan Xiao",
+        "Jinyuan He",
+        "Ee-Chien Chang",
+        "Xiaochun Cao"
+      ],
+      "present_in_frozen_catalog": false,
+      "catalog_review_status": null,
+      "bibliographic_metadata_basis": "Root fresh official arXiv title-search metadata; not an automatic catalog insertion",
+      "arxiv_version_read": 1,
+      "catalog_arxiv_version": null,
+      "version_override_required": false,
+      "primary_source": {
+        "url": "https://arxiv.org/pdf/2507.00841v1",
+        "final_url": "https://arxiv.org/pdf/2507.00841v1",
+        "retrieved_at": "2026-10-18T10:10:56.912207+00:00",
+        "sha256": "a25da6700a238167d5e9915cf6fb3a4bcd910cefc300f4be6eed56271be26f00",
+        "bytes": 1632507,
+        "http_status": 200,
+        "transfer_completed": true,
+        "format": "PDF",
+        "fresh_fetch": true,
+        "retention_note": "Raw full text is retained only in ignored local cache; not included in this public ledger."
+      },
+      "read_status": "selected_fulltext_sections_read",
+      "sections": [
+        "II.B Defense objective",
+        "III Chain-level guard and GPTJudge",
+        "IV.B Evaluation setup",
+        "V.D Judge validity"
+      ],
+      "pdf_pages_read": [
+        3,
+        6,
+        7,
+        10
+      ],
+      "findings": [
+        "SafeMobile studies trajectory-aware risk checking together with functional preservation, and compares automated and human safety judgments.",
+        "A GPT-based score threshold is a specific evaluator contract, not an objective universal safety scale.",
+        "Its described MobileSafetyBench-derived 80-task setup/extension is not the whole 250-task v3 corpus. We do not conflate these populations or reproduce its performance numbers."
+      ],
+      "reported_quantities": []
+    },
+    {
+      "canonical_id": "arxiv:2506.13205",
+      "citation_key": "arxiv_2506_13205",
+      "title": "Poison Once, Control Anywhere: Clean-Text Visual Backdoors in VLM-based Mobile Agents",
+      "ordered_authors": [
+        "Xuan Wang",
+        "Siyuan Liang",
+        "Zhe Liu",
+        "Yi Yu",
+        "Aishan Liu",
+        "Yuliang Lu",
+        "Xitong Gao",
+        "Ee-Chien Chang"
+      ],
+      "present_in_frozen_catalog": false,
+      "catalog_review_status": null,
+      "bibliographic_metadata_basis": "Root fresh official arXiv title-search metadata; not an automatic catalog insertion",
+      "arxiv_version_read": 6,
+      "catalog_arxiv_version": null,
+      "version_override_required": false,
+      "primary_source": {
+        "url": "https://arxiv.org/pdf/2506.13205v6",
+        "final_url": "https://arxiv.org/pdf/2506.13205v6",
+        "retrieved_at": "2026-10-18T10:10:59.891515+00:00",
+        "sha256": "c0f3e6d21428ae8f75c090006cd5d97f44b6d945cab072208408efbaf3b507da",
+        "bytes": 1388922,
+        "http_status": 200,
+        "transfer_completed": true,
+        "format": "PDF",
+        "fresh_fetch": true,
+        "retention_note": "Raw full text is retained only in ignored local cache; not included in this public ledger."
+      },
+      "read_status": "selected_fulltext_sections_read",
+      "sections": [
+        "Threat model",
+        "Evaluation metrics",
+        "Conclusion"
+      ],
+      "pdf_pages_read": [
+        2,
+        5,
+        7
+      ],
+      "findings": [
+        "Poison Once assumes compromised visual fine-tuning examples and unmodified training text; it is a training-data backdoor threat, distinct from runtime indirect prompt injection.",
+        "Action/context target-output success and clean-input functionality are reported separately; they are not automatically completed malicious workflows.",
+        "No attack construction, perturbation settings or operational payloads are reproduced in the chapter."
+      ],
+      "reported_quantities": []
+    }
+  ],
+  "claims": [
+    {
+      "html_id": "eval-measurement",
+      "type": "evidence_based_synthesis",
+      "statement": "A shared agent API does not make offline action prediction equivalent to closed-loop task execution.",
+      "citation_keys": [
+        "arxiv_2412_05467"
+      ],
+      "canonical_ids": [
+        "arxiv:2412.05467"
+      ],
+      "source_sections": [
+        {
+          "canonical_id": "arxiv:2412.05467",
+          "sections": [
+            "3.1 Observation space",
+            "3.2 Action space",
+            "3.3 Task interface",
+            "4 Benchmark unification",
+            "5.1–5.4 Experiment management/reproducibility",
+            "7.1 Limitations",
+            "Appendix B"
+          ]
+        }
+      ]
+    },
+    {
+      "html_id": "eval-no-leaderboard",
+      "type": "evidence_based_synthesis",
+      "statement": "Historical MiniWoB collections and WGE experimental subsets have different populations and reward rules.",
+      "citation_keys": [
+        "cua_ba263493b78b0263c7933138",
+        "arxiv_1802_08802"
+      ],
+      "canonical_ids": [
+        "url:52a3261eb6a19b402e88",
+        "arxiv:1802.08802"
+      ],
+      "source_sections": [
+        {
+          "canonical_id": "url:52a3261eb6a19b402e88",
+          "sections": [
+            "2.1 Web as an Environment",
+            "2.2 Minimalistic Web Tasks: MiniWoB",
+            "2.3 Live Web Tasks: FormWoB",
+            "2.4 Crowdsourcing Web Tasks at Scale: QAWoB"
+          ]
+        },
+        {
+          "canonical_id": "arxiv:1802.08802",
+          "sections": [
+            "6.1 Benchmarks: Environment and Evaluation metric",
+            "6.3.1 MiniWoB++ benchmark"
+          ]
+        }
+      ]
+    },
+    {
+      "html_id": "eval-outcomes",
+      "type": "evidence_based_synthesis",
+      "statement": "Execution-based benchmarks support alternative trajectories but may combine rules with learned semantic or visual judges.",
+      "citation_keys": [
+        "arxiv_2307_13854",
+        "arxiv_2401_13649",
+        "arxiv_2404_07972"
+      ],
+      "canonical_ids": [
+        "arxiv:2307.13854",
+        "arxiv:2401.13649",
+        "arxiv:2404.07972"
+      ],
+      "source_sections": [
+        {
+          "canonical_id": "arxiv:2307.13854",
+          "sections": [
+            "HTML §2.2–2.4 (#S2.SS2–S2.SS4)",
+            "HTML §3.1 Intent Analysis (#S3.SS1.SSS0.Px1)",
+            "HTML §3.2 Evaluation Annotation (#S3.SS2)"
+          ]
+        },
+        {
+          "canonical_id": "arxiv:2401.13649",
+          "sections": [
+            "3 Environment",
+            "3.1 Observation Space",
+            "3.2 Action Space",
+            "3.3 Evaluation",
+            "4.1 Web Environments",
+            "4.2 Tasks"
+          ]
+        },
+        {
+          "canonical_id": "arxiv:2404.07972",
+          "sections": [
+            "HTML §2.2 Infrastructure (#S2.SS2)",
+            "HTML §2.3–2.4 Interfaces",
+            "HTML §3.1–3.2 Benchmark and tasks",
+            "HTML §7 Safety discussion (#S7.SS0.SSS0.Px3)"
+          ]
+        }
+      ]
+    },
+    {
+      "html_id": "eval-information-budget",
+      "type": "evidence_based_synthesis",
+      "statement": "Observation privileges and action capabilities are part of the experimental intervention, not properties of a backbone alone.",
+      "citation_keys": [
+        "arxiv_2403_07718",
+        "arxiv_2409_08264",
+        "arxiv_2405_14573"
+      ],
+      "canonical_ids": [
+        "arxiv:2403.07718",
+        "arxiv:2409.08264",
+        "arxiv:2405.14573"
+      ],
+      "source_sections": [
+        {
+          "canonical_id": "arxiv:2403.07718",
+          "sections": [
+            "3 WorkArena",
+            "3.1 WorkArena Tasks",
+            "3.2 Challenges",
+            "3.3 Availability",
+            "4.1 Capabilities",
+            "4.2 An Ideal Experimental Framework",
+            "5 Experiments"
+          ]
+        },
+        {
+          "canonical_id": "arxiv:2409.08264",
+          "sections": [
+            "3.1 Task definition and reward",
+            "3.2 Task curation",
+            "3.3 Deployment"
+          ]
+        },
+        {
+          "canonical_id": "arxiv:2405.14573",
+          "sections": [
+            "3.2 Observation/action",
+            "3.3 Reproducible parameterized tasks",
+            "3.4 State rewards",
+            "5 Robustness analysis"
+          ]
+        }
+      ]
+    },
+    {
+      "html_id": "eval-row-miniwob",
+      "type": "reported_protocol",
+      "statement": "Protocol comparison row for MiniWoB / WGE, v1",
+      "citation_keys": [
+        "arxiv_1802_08802",
+        "arxiv_2412_05467"
+      ],
+      "canonical_ids": [
+        "arxiv:1802.08802",
+        "arxiv:2412.05467"
+      ],
+      "source_sections": [
+        {
+          "canonical_id": "arxiv:1802.08802",
+          "sections": [
+            "6.1 Benchmarks: Environment and Evaluation metric",
+            "6.3.1 MiniWoB++ benchmark"
+          ]
+        },
+        {
+          "canonical_id": "arxiv:2412.05467",
+          "sections": [
+            "3.1 Observation space",
+            "3.2 Action space",
+            "3.3 Task interface",
+            "4 Benchmark unification",
+            "5.1–5.4 Experiment management/reproducibility",
+            "7.1 Limitations",
+            "Appendix B"
+          ]
+        }
+      ],
+      "table_cells": [
+        "MiniWoB / WGE, v1",
+        "Interactive synthetic web; DOM-element clicking and typing in WGE",
+        "40 selected original task types, plus MiniWoB++ extensions",
+        "Episode success; reward +1, partial rewards disabled",
+        "Single-page task logic; generated task instances"
+      ]
+    },
+    {
+      "html_id": "eval-row-mind2web",
+      "type": "reported_protocol",
+      "statement": "Protocol comparison row for Mind2Web, v3",
+      "citation_keys": [
+        "arxiv_2306_06070"
+      ],
+      "canonical_ids": [
+        "arxiv:2306.06070"
+      ],
+      "source_sections": [
+        {
+          "canonical_id": "arxiv:2306.06070",
+          "sections": [
+            "2.1 Task Definition",
+            "2.2 Data Collection",
+            "2.3 Comparison",
+            "4.1 Experimental Setup",
+            "4.2 Data Preprocessing and Evaluation",
+            "4.3 Results"
+          ]
+        }
+      ],
+      "table_cells": [
+        "Mind2Web, v3",
+        "Offline web snapshots; target element and operation",
+        "2,350 demonstrated tasks across the collection",
+        "Element accuracy, operation F1, step success, all-steps-correct task score",
+        "Recorded states and ground-truth action history"
+      ]
+    },
+    {
+      "html_id": "eval-row-webarena",
+      "type": "reported_protocol",
+      "statement": "Protocol comparison row for WebArena, v4",
+      "citation_keys": [
+        "arxiv_2307_13854"
+      ],
+      "canonical_ids": [
+        "arxiv:2307.13854"
+      ],
+      "source_sections": [
+        {
+          "canonical_id": "arxiv:2307.13854",
+          "sections": [
+            "HTML §2.2–2.4 (#S2.SS2–S2.SS4)",
+            "HTML §3.1 Intent Analysis (#S3.SS1.SSS0.Px1)",
+            "HTML §3.2 Evaluation Annotation (#S3.SS2)"
+          ]
+        }
+      ],
+      "table_cells": [
+        "WebArena, v4",
+        "Interactive self-hosted web; DOM, accessibility tree or screenshots; IDs or coordinates",
+        "812 instances from 241 intent templates",
+        "Answer and state checks; semantic matching for selected answers",
+        "Docker services and deterministic reset scripts"
+      ]
+    },
+    {
+      "html_id": "eval-row-vwa",
+      "type": "reported_protocol",
+      "statement": "Protocol comparison row for VisualWebArena, v2",
+      "citation_keys": [
+        "arxiv_2401_13649",
+        "arxiv_2412_05467"
+      ],
+      "canonical_ids": [
+        "arxiv:2401.13649",
+        "arxiv:2412.05467"
+      ],
+      "source_sections": [
+        {
+          "canonical_id": "arxiv:2401.13649",
+          "sections": [
+            "3 Environment",
+            "3.1 Observation Space",
+            "3.2 Action Space",
+            "3.3 Evaluation",
+            "4.1 Web Environments",
+            "4.2 Tasks"
+          ]
+        },
+        {
+          "canonical_id": "arxiv:2412.05467",
+          "sections": [
+            "3.1 Observation space",
+            "3.2 Action space",
+            "3.3 Task interface",
+            "4 Benchmark unification",
+            "5.1–5.4 Experiment management/reproducibility",
+            "7.1 Limitations",
+            "Appendix B"
+          ]
+        }
+      ],
+      "table_cells": [
+        "VisualWebArena, v2",
+        "Interactive visual web; screenshots, accessibility or set-of-marks representations",
+        "910 instances from 314 templates",
+        "Goal reward; text, state, VQA and image checks",
+        "Self-hosted services; backend restoration"
+      ]
+    },
+    {
+      "html_id": "eval-row-workarena",
+      "type": "reported_protocol",
+      "statement": "Protocol comparison row for WorkArena, v5",
+      "citation_keys": [
+        "arxiv_2403_07718"
+      ],
+      "canonical_ids": [
+        "arxiv:2403.07718"
+      ],
+      "source_sections": [
+        {
+          "canonical_id": "arxiv:2403.07718",
+          "sections": [
+            "3 WorkArena",
+            "3.1 WorkArena Tasks",
+            "3.2 Challenges",
+            "3.3 Availability",
+            "4.1 Capabilities",
+            "4.2 An Ideal Experimental Framework",
+            "5 Experiments"
+          ]
+        }
+      ],
+      "table_cells": [
+        "WorkArena, v5",
+        "Interactive ServiceNow; BrowserGym observation/action options",
+        "33 types; 19,912 instances",
+        "Database, UI and response validators",
+        "Task setup/teardown; cloud developer instance; experiments use WorkArena 0.3.0 and BrowserGym 0.3.5"
+      ]
+    },
+    {
+      "html_id": "eval-row-workarena-plus",
+      "type": "reported_protocol",
+      "statement": "Protocol comparison row for WorkArena++, v2",
+      "citation_keys": [
+        "arxiv_2407_05291"
+      ],
+      "canonical_ids": [
+        "arxiv:2407.05291"
+      ],
+      "source_sections": [
+        {
+          "canonical_id": "arxiv:2407.05291",
+          "sections": [
+            "3.1 Difficulty levels",
+            "3.3 Salient features",
+            "4.1 Evaluation curriculum",
+            "4.2 Agent design"
+          ]
+        }
+      ],
+      "table_cells": [
+        "WorkArena++, v2",
+        "Interactive composed enterprise workflows",
+        "341 workflows presented at two instruction levels: 682 tasks",
+        "Composed task validators; feasibility handling",
+        "Seeded curricula and task-specific user accounts"
+      ]
+    },
+    {
+      "html_id": "eval-row-browsergym",
+      "type": "reported_protocol",
+      "statement": "Protocol comparison row for BrowserGym, v4",
+      "citation_keys": [
+        "arxiv_2412_05467"
+      ],
+      "canonical_ids": [
+        "arxiv:2412.05467"
+      ],
+      "source_sections": [
+        {
+          "canonical_id": "arxiv:2412.05467",
+          "sections": [
+            "3.1 Observation space",
+            "3.2 Action space",
+            "3.3 Task interface",
+            "4 Benchmark unification",
+            "5.1–5.4 Experiment management/reproducibility",
+            "7.1 Limitations",
+            "Appendix B"
+          ]
+        }
+      ],
+      "table_cells": [
+        "BrowserGym, v4",
+        "Harness for executable and offline web benchmarks; configurable interfaces",
+        "Inherited from each benchmark; no new pooled sample population",
+        "Benchmark-specific validation",
+        "Backend preparation and dependency scheduling where required"
+      ]
+    },
+    {
+      "html_id": "eval-row-assistantbench",
+      "type": "reported_protocol",
+      "statement": "Protocol comparison row for AssistantBench, v2",
+      "citation_keys": [
+        "arxiv_2407_15711"
+      ],
+      "canonical_ids": [
+        "arxiv:2407.15711"
+      ],
+      "source_sections": [
+        {
+          "canonical_id": "arxiv:2407.15711",
+          "sections": [
+            "3.1 Task criteria",
+            "3.2 Data collection",
+            "3.3 Statistics",
+            "3.4 Automatic evaluation",
+            "6.4 Time dependency",
+            "9 Limitations"
+          ]
+        }
+      ],
+      "table_cells": [
+        "AssistantBench, v2",
+        "Open-web information seeking",
+        "214 tasks, including 33 development tasks",
+        "String/list F1, numeric partial credit and structured-answer matching",
+        "Live websites are not globally resettable; temporal assumptions matter"
+      ]
+    },
+    {
+      "html_id": "eval-row-osworld",
+      "type": "reported_protocol",
+      "statement": "Protocol comparison row for OSWorld, v2",
+      "citation_keys": [
+        "arxiv_2404_07972"
+      ],
+      "canonical_ids": [
+        "arxiv:2404.07972"
+      ],
+      "source_sections": [
+        {
+          "canonical_id": "arxiv:2404.07972",
+          "sections": [
+            "HTML §2.2 Infrastructure (#S2.SS2)",
+            "HTML §2.3–2.4 Interfaces",
+            "HTML §3.1–3.2 Benchmark and tasks",
+            "HTML §7 Safety discussion (#S7.SS0.SSS0.Px3)"
+          ]
+        }
+      ],
+      "table_cells": [
+        "OSWorld, v2",
+        "Interactive Ubuntu desktop; screenshots, optional accessibility; mouse/keyboard code",
+        "369 primary Ubuntu tasks",
+        "Task-specific execution checks on artifacts and state",
+        "VM snapshots plus files, initialization commands and post-processing"
+      ]
+    },
+    {
+      "html_id": "eval-row-windows",
+      "type": "reported_protocol",
+      "statement": "Protocol comparison row for Windows Agent Arena, v2",
+      "citation_keys": [
+        "arxiv_2409_08264"
+      ],
+      "canonical_ids": [
+        "arxiv:2409.08264"
+      ],
+      "source_sections": [
+        {
+          "canonical_id": "arxiv:2409.08264",
+          "sections": [
+            "3.1 Task definition and reward",
+            "3.2 Task curation",
+            "3.3 Deployment"
+          ]
+        }
+      ],
+      "table_cells": [
+        "Windows Agent Arena, v2",
+        "Interactive Windows 11; screen/UI metadata; Python or action wrappers",
+        "154 initial-release tasks",
+        "Binary or fractional execution reward, depending on task",
+        "VM deployment and deterministic task setup"
+      ]
+    },
+    {
+      "html_id": "eval-row-androidworld",
+      "type": "reported_protocol",
+      "statement": "Protocol comparison row for AndroidWorld, v5",
+      "citation_keys": [
+        "arxiv_2405_14573"
+      ],
+      "canonical_ids": [
+        "arxiv:2405.14573"
+      ],
+      "source_sections": [
+        {
+          "canonical_id": "arxiv:2405.14573",
+          "sections": [
+            "3.2 Observation/action",
+            "3.3 Reproducible parameterized tasks",
+            "3.4 State rewards",
+            "5 Robustness analysis"
+          ]
+        }
+      ],
+      "table_cells": [
+        "AndroidWorld, v5",
+        "Interactive Android; screenshots/UI tree; gestures, text and optional APIs",
+        "116 parameterized definitions across 20 apps",
+        "Device/app-state and selected UI checks",
+        "Fixed Android 13, app versions and clock; seeded setup/teardown"
+      ]
+    },
+    {
+      "html_id": "eval-row-osworld-pro",
+      "type": "reported_protocol",
+      "statement": "Protocol comparison row for OSWorld-Pro, v1",
+      "citation_keys": [
+        "arxiv_2609_24890"
+      ],
+      "canonical_ids": [
+        "arxiv:2609.24890"
+      ],
+      "source_sections": [
+        {
+          "canonical_id": "arxiv:2609.24890",
+          "sections": [
+            "2 Benchmark overview",
+            "3 Data collection",
+            "4.1 Judge evaluation",
+            "Reproducibility statement"
+          ]
+        }
+      ],
+      "table_cells": [
+        "OSWorld-Pro, v1",
+        "Desktop trajectories across varied Linux environments",
+        "305 tasks; 2,814 progressive subgoals",
+        "Subgoal progress; LLM judges compared with human labels",
+        "Task/environment-specific; a universal reset recipe was not established in the inspected sections"
+      ]
+    },
+    {
+      "html_id": "eval-reset",
+      "type": "evidence_based_synthesis",
+      "statement": "Reset and backend isolation differ across self-hosted, cloud and open-web environments.",
+      "citation_keys": [
+        "arxiv_2412_05467",
+        "arxiv_2407_05291",
+        "arxiv_2405_14573",
+        "arxiv_2407_15711"
+      ],
+      "canonical_ids": [
+        "arxiv:2412.05467",
+        "arxiv:2407.05291",
+        "arxiv:2405.14573",
+        "arxiv:2407.15711"
+      ],
+      "source_sections": [
+        {
+          "canonical_id": "arxiv:2412.05467",
+          "sections": [
+            "3.1 Observation space",
+            "3.2 Action space",
+            "3.3 Task interface",
+            "4 Benchmark unification",
+            "5.1–5.4 Experiment management/reproducibility",
+            "7.1 Limitations",
+            "Appendix B"
+          ]
+        },
+        {
+          "canonical_id": "arxiv:2407.05291",
+          "sections": [
+            "3.1 Difficulty levels",
+            "3.3 Salient features",
+            "4.1 Evaluation curriculum",
+            "4.2 Agent design"
+          ]
+        },
+        {
+          "canonical_id": "arxiv:2405.14573",
+          "sections": [
+            "3.2 Observation/action",
+            "3.3 Reproducible parameterized tasks",
+            "3.4 State rewards",
+            "5 Robustness analysis"
+          ]
+        },
+        {
+          "canonical_id": "arxiv:2407.15711",
+          "sections": [
+            "3.1 Task criteria",
+            "3.2 Data collection",
+            "3.3 Statistics",
+            "3.4 Automatic evaluation",
+            "6.4 Time dependency",
+            "9 Limitations"
+          ]
+        }
+      ]
+    },
+    {
+      "html_id": "eval-infeasibility",
+      "type": "evidence_based_synthesis",
+      "statement": "Correctly recognizing infeasibility differs from refusing a feasible but unsafe request.",
+      "citation_keys": [
+        "arxiv_2307_13854",
+        "arxiv_2401_13649",
+        "arxiv_2407_05291"
+      ],
+      "canonical_ids": [
+        "arxiv:2307.13854",
+        "arxiv:2401.13649",
+        "arxiv:2407.05291"
+      ],
+      "source_sections": [
+        {
+          "canonical_id": "arxiv:2307.13854",
+          "sections": [
+            "HTML §2.2–2.4 (#S2.SS2–S2.SS4)",
+            "HTML §3.1 Intent Analysis (#S3.SS1.SSS0.Px1)",
+            "HTML §3.2 Evaluation Annotation (#S3.SS2)"
+          ]
+        },
+        {
+          "canonical_id": "arxiv:2401.13649",
+          "sections": [
+            "3 Environment",
+            "3.1 Observation Space",
+            "3.2 Action Space",
+            "3.3 Evaluation",
+            "4.1 Web Environments",
+            "4.2 Tasks"
+          ]
+        },
+        {
+          "canonical_id": "arxiv:2407.05291",
+          "sections": [
+            "3.1 Difficulty levels",
+            "3.3 Salient features",
+            "4.1 Evaluation curriculum",
+            "4.2 Agent design"
+          ]
+        }
+      ]
+    },
+    {
+      "html_id": "eval-offline",
+      "type": "evidence_based_synthesis",
+      "statement": "Gold-history action matching is a proxy that cannot directly establish autonomous recovery and completed rollouts.",
+      "citation_keys": [
+        "arxiv_2306_06070",
+        "arxiv_2307_10088",
+        "arxiv_2406_03679"
+      ],
+      "canonical_ids": [
+        "arxiv:2306.06070",
+        "arxiv:2307.10088",
+        "arxiv:2406.03679"
+      ],
+      "source_sections": [
+        {
+          "canonical_id": "arxiv:2306.06070",
+          "sections": [
+            "2.1 Task Definition",
+            "2.2 Data Collection",
+            "2.3 Comparison",
+            "4.1 Experimental Setup",
+            "4.2 Data Preprocessing and Evaluation",
+            "4.3 Results"
+          ]
+        },
+        {
+          "canonical_id": "arxiv:2307.10088",
+          "sections": [
+            "3 Dataset collection",
+            "3.1 Trajectories",
+            "3.2 Hindsight language relabeling",
+            "5.2 Evaluation methodology",
+            "5.3 Human comparison",
+            "6.1 Limitations"
+          ]
+        },
+        {
+          "canonical_id": "arxiv:2406.03679",
+          "sections": [
+            "Table 1",
+            "3.2 Statistics",
+            "3.3 Splits/Table 3",
+            "4.1 Agent implementation",
+            "4.2 Metrics",
+            "4.4 Scaling extrapolation",
+            "5 Limitations"
+          ]
+        }
+      ]
+    },
+    {
+      "html_id": "eval-row-aitw",
+      "type": "reported_protocol",
+      "statement": "Protocol comparison row for AITW, v2",
+      "citation_keys": [
+        "arxiv_2307_10088"
+      ],
+      "canonical_ids": [
+        "arxiv:2307.10088"
+      ],
+      "source_sections": [
+        {
+          "canonical_id": "arxiv:2307.10088",
+          "sections": [
+            "3 Dataset collection",
+            "3.1 Trajectories",
+            "3.2 Hindsight language relabeling",
+            "5.2 Evaluation methodology",
+            "5.3 Human comparison",
+            "6.1 Limitations"
+          ]
+        }
+      ],
+      "table_cells": [
+        "AITW, v2",
+        "715,142 episodes; 30,378 unique prompts",
+        "Android screenshots and actions",
+        "Offline partial/complete action matching; repeated demonstrations are not unique intentions"
+      ]
+    },
+    {
+      "html_id": "eval-row-androidcontrol",
+      "type": "reported_protocol",
+      "statement": "Protocol comparison row for AndroidControl, v6",
+      "citation_keys": [
+        "arxiv_2406_03679"
+      ],
+      "canonical_ids": [
+        "arxiv:2406.03679"
+      ],
+      "source_sections": [
+        {
+          "canonical_id": "arxiv:2406.03679",
+          "sections": [
+            "Table 1",
+            "3.2 Statistics",
+            "3.3 Splits/Table 3",
+            "4.1 Agent implementation",
+            "4.2 Metrics",
+            "4.4 Scaling extrapolation",
+            "5 Limitations"
+          ]
+        }
+      ],
+      "table_cells": [
+        "AndroidControl, v6",
+        "15,283 demonstrations; 833 apps",
+        "Screenshots/UI trees; high- and low-level instructions",
+        "Step accuracy with action equivalence; held-out test subsets overlap"
+      ]
+    },
+    {
+      "html_id": "eval-row-guiodyssey",
+      "type": "reported_protocol",
+      "statement": "Protocol comparison row for GUIOdyssey, v2",
+      "citation_keys": [
+        "arxiv_2406_08451"
+      ],
+      "canonical_ids": [
+        "arxiv:2406.08451"
+      ],
+      "source_sections": [
+        {
+          "canonical_id": "arxiv:2406.08451",
+          "sections": [
+            "3.1 Metadata",
+            "3.2 Collection",
+            "3.3 Statistics",
+            "5.1 Metrics",
+            "5.2 Experimental setup",
+            "Appendix 9.1 Splits"
+          ]
+        }
+      ],
+      "table_cells": [
+        "GUIOdyssey, v2",
+        "8,334 episodes; mean 15.3 steps",
+        "Cross-app mobile screenshots/actions; additional synthesized annotations",
+        "Offline action matching and all-actions-correct score; app/task/device splits"
+      ]
+    },
+    {
+      "html_id": "eval-row-agentnet",
+      "type": "reported_protocol",
+      "statement": "Protocol comparison row for AgentNet / OpenCUA, v3",
+      "citation_keys": [
+        "arxiv_2508_09123"
+      ],
+      "canonical_ids": [
+        "arxiv:2508.09123"
+      ],
+      "source_sections": [
+        {
+          "canonical_id": "arxiv:2508.09123",
+          "sections": [
+            "HTML §2.1–2.3 AgentNet Collection",
+            "HTML Table 2 footnote",
+            "HTML §3.1 Reflective CoT synthesis",
+            "HTML Appendix C.1–C.2"
+          ]
+        }
+      ],
+      "table_cells": [
+        "AgentNet / OpenCUA, v3",
+        "22,625 tasks in the described public corpus",
+        "Desktop demonstrations converted to screenshot/action trajectories",
+        "Public corpus is distinct from larger reported training pools"
+      ]
+    },
+    {
+      "html_id": "eval-row-screenspot",
+      "type": "reported_protocol",
+      "statement": "Protocol comparison row for ScreenSpot / SeeClick, v2",
+      "citation_keys": [
+        "arxiv_2401_10935"
+      ],
+      "canonical_ids": [
+        "arxiv:2401.10935"
+      ],
+      "source_sections": [
+        {
+          "canonical_id": "arxiv:2401.10935",
+          "sections": [
+            "3.2 Training data",
+            "4 ScreenSpot",
+            "5.1 Grounding metric",
+            "5.2.1 MiniWoB experiment"
+          ]
+        }
+      ],
+      "table_cells": [
+        "ScreenSpot / SeeClick, v2",
+        "Over 600 screenshots; 1,200+ instruction–target pairs",
+        "Screenshot, instruction and target box",
+        "Single-step point-in-box accuracy; no autonomous rollout"
+      ]
+    },
+    {
+      "html_id": "eval-row-screenspot-pro",
+      "type": "reported_protocol",
+      "statement": "Protocol comparison row for ScreenSpot-Pro, v1",
+      "citation_keys": [
+        "arxiv_2504_07981"
+      ],
+      "canonical_ids": [
+        "arxiv:2504.07981"
+      ],
+      "source_sections": [
+        {
+          "canonical_id": "arxiv:2504.07981",
+          "sections": [
+            "Introduction benchmark summary",
+            "3.1–3.4 Collection and statistics",
+            "Limitations"
+          ]
+        }
+      ],
+      "table_cells": [
+        "ScreenSpot-Pro, v1",
+        "1,581 instruction/screenshot instances; 23 applications",
+        "Expert-annotated professional desktop targets",
+        "High-resolution grounding; planning and execution explicitly excluded"
+      ]
+    },
+    {
+      "html_id": "eval-instruction-information",
+      "type": "evidence_based_synthesis",
+      "statement": "Low-level instructions change the planning burden; grounding-only evaluations do not test full task execution.",
+      "citation_keys": [
+        "arxiv_2406_03679",
+        "arxiv_2406_08451",
+        "arxiv_2401_10935",
+        "arxiv_2504_07981"
+      ],
+      "canonical_ids": [
+        "arxiv:2406.03679",
+        "arxiv:2406.08451",
+        "arxiv:2401.10935",
+        "arxiv:2504.07981"
+      ],
+      "source_sections": [
+        {
+          "canonical_id": "arxiv:2406.03679",
+          "sections": [
+            "Table 1",
+            "3.2 Statistics",
+            "3.3 Splits/Table 3",
+            "4.1 Agent implementation",
+            "4.2 Metrics",
+            "4.4 Scaling extrapolation",
+            "5 Limitations"
+          ]
+        },
+        {
+          "canonical_id": "arxiv:2406.08451",
+          "sections": [
+            "3.1 Metadata",
+            "3.2 Collection",
+            "3.3 Statistics",
+            "5.1 Metrics",
+            "5.2 Experimental setup",
+            "Appendix 9.1 Splits"
+          ]
+        },
+        {
+          "canonical_id": "arxiv:2401.10935",
+          "sections": [
+            "3.2 Training data",
+            "4 ScreenSpot",
+            "5.1 Grounding metric",
+            "5.2.1 MiniWoB experiment"
+          ]
+        },
+        {
+          "canonical_id": "arxiv:2504.07981",
+          "sections": [
+            "Introduction benchmark summary",
+            "3.1–3.4 Collection and statistics",
+            "Limitations"
+          ]
+        }
+      ]
+    },
+    {
+      "html_id": "eval-annotation-provenance",
+      "type": "evidence_based_synthesis",
+      "statement": "GUIOdyssey uses model-generated annotations over human demonstrations; the methods section separately explains OpenCUA.",
+      "citation_keys": [
+        "arxiv_2406_08451"
+      ],
+      "canonical_ids": [
+        "arxiv:2406.08451"
+      ],
+      "source_sections": [
+        {
+          "canonical_id": "arxiv:2406.08451",
+          "sections": [
+            "3.1 Metadata",
+            "3.2 Collection",
+            "3.3 Statistics",
+            "5.1 Metrics",
+            "5.2 Experimental setup",
+            "Appendix 9.1 Splits"
+          ]
+        }
+      ]
+    },
+    {
+      "html_id": "eval-recovery-data",
+      "type": "cross_section_synthesis",
+      "statement": "Recovery data require a mistaken state, corrective action and observed outcome; this is cross-section synthesis.",
+      "citation_keys": [],
+      "canonical_ids": [],
+      "source_sections": []
+    },
+    {
+      "html_id": "eval-generalization",
+      "type": "evidence_based_synthesis",
+      "statement": "Held-out task/site/app/device axes and overlapping splits must retain their definitions; dataset scale is not demographic coverage.",
+      "citation_keys": [
+        "arxiv_2306_06070",
+        "arxiv_2406_03679",
+        "arxiv_2406_08451",
+        "arxiv_2307_10088"
+      ],
+      "canonical_ids": [
+        "arxiv:2306.06070",
+        "arxiv:2406.03679",
+        "arxiv:2406.08451",
+        "arxiv:2307.10088"
+      ],
+      "source_sections": [
+        {
+          "canonical_id": "arxiv:2306.06070",
+          "sections": [
+            "2.1 Task Definition",
+            "2.2 Data Collection",
+            "2.3 Comparison",
+            "4.1 Experimental Setup",
+            "4.2 Data Preprocessing and Evaluation",
+            "4.3 Results"
+          ]
+        },
+        {
+          "canonical_id": "arxiv:2406.03679",
+          "sections": [
+            "Table 1",
+            "3.2 Statistics",
+            "3.3 Splits/Table 3",
+            "4.1 Agent implementation",
+            "4.2 Metrics",
+            "4.4 Scaling extrapolation",
+            "5 Limitations"
+          ]
+        },
+        {
+          "canonical_id": "arxiv:2406.08451",
+          "sections": [
+            "3.1 Metadata",
+            "3.2 Collection",
+            "3.3 Statistics",
+            "5.1 Metrics",
+            "5.2 Experimental setup",
+            "Appendix 9.1 Splits"
+          ]
+        },
+        {
+          "canonical_id": "arxiv:2307.10088",
+          "sections": [
+            "3 Dataset collection",
+            "3.1 Trajectories",
+            "3.2 Hindsight language relabeling",
+            "5.2 Evaluation methodology",
+            "5.3 Human comparison",
+            "6.1 Limitations"
+          ]
+        }
+      ]
+    },
+    {
+      "html_id": "eval-contamination",
+      "type": "evidence_based_synthesis",
+      "statement": "Reported overlap safeguards do not establish universal pretraining independence; controlled perturbations test a bounded robustness setting.",
+      "citation_keys": [
+        "arxiv_2508_09123",
+        "arxiv_2506_14866",
+        "arxiv_2608_07775"
+      ],
+      "canonical_ids": [
+        "arxiv:2508.09123",
+        "arxiv:2506.14866",
+        "arxiv:2608.07775"
+      ],
+      "source_sections": [
+        {
+          "canonical_id": "arxiv:2508.09123",
+          "sections": [
+            "HTML §2.1–2.3 AgentNet Collection",
+            "HTML Table 2 footnote",
+            "HTML §3.1 Reflective CoT synthesis",
+            "HTML Appendix C.1–C.2"
+          ]
+        },
+        {
+          "canonical_id": "arxiv:2506.14866",
+          "sections": [
+            "3.1 Setup",
+            "3.2 Three harm categories",
+            "3.3 LLM judge",
+            "5 Discussion"
+          ]
+        },
+        {
+          "canonical_id": "arxiv:2608.07775",
+          "sections": [
+            "3.1 Perturbation formulation",
+            "3.2 Injection",
+            "3.3 Evaluation protocol",
+            "4.3 Error analysis"
+          ]
+        }
+      ]
+    },
+    {
+      "html_id": "eval-sampling",
+      "type": "evidence_based_synthesis",
+      "statement": "Trajectories, task families, parameter seeds and paired probes define different sampling units.",
+      "citation_keys": [
+        "arxiv_2407_05291",
+        "arxiv_2405_14573",
+        "arxiv_2610_06898"
+      ],
+      "canonical_ids": [
+        "arxiv:2407.05291",
+        "arxiv:2405.14573",
+        "arxiv:2610.06898"
+      ],
+      "source_sections": [
+        {
+          "canonical_id": "arxiv:2407.05291",
+          "sections": [
+            "3.1 Difficulty levels",
+            "3.3 Salient features",
+            "4.1 Evaluation curriculum",
+            "4.2 Agent design"
+          ]
+        },
+        {
+          "canonical_id": "arxiv:2405.14573",
+          "sections": [
+            "3.2 Observation/action",
+            "3.3 Reproducible parameterized tasks",
+            "3.4 State rewards",
+            "5 Robustness analysis"
+          ]
+        },
+        {
+          "canonical_id": "arxiv:2610.06898",
+          "sections": [
+            "3.1 Benchmark components",
+            "3.2 Instance generation",
+            "3.3 Paired protocol/metrics",
+            "5 Limitations/Ethics"
+          ]
+        }
+      ]
+    },
+    {
+      "html_id": "eval-efficiency",
+      "type": "evidence_based_synthesis",
+      "statement": "Action counts, model calls and elapsed cost are distinct; retries and failure budgets affect efficiency interpretation.",
+      "citation_keys": [
+        "arxiv_2506_16042",
+        "arxiv_2412_05467"
+      ],
+      "canonical_ids": [
+        "arxiv:2506.16042",
+        "arxiv:2412.05467"
+      ],
+      "source_sections": [
+        {
+          "canonical_id": "arxiv:2506.16042",
+          "sections": [
+            "4.1 Human trajectory construction",
+            "4.2 Action grouping",
+            "5.1 Weighted Efficiency Score"
+          ]
+        },
+        {
+          "canonical_id": "arxiv:2412.05467",
+          "sections": [
+            "3.1 Observation space",
+            "3.2 Action space",
+            "3.3 Task interface",
+            "4 Benchmark unification",
+            "5.1–5.4 Experiment management/reproducibility",
+            "7.1 Limitations",
+            "Appendix B"
+          ]
+        }
+      ]
+    },
+    {
+      "html_id": "eval-human-reference",
+      "type": "evidence_based_synthesis",
+      "statement": "Human reference trajectories reflect permitted tools and are not proven shortest paths over unrestricted computer operations.",
+      "citation_keys": [
+        "arxiv_2506_16042"
+      ],
+      "canonical_ids": [
+        "arxiv:2506.16042"
+      ],
+      "source_sections": [
+        {
+          "canonical_id": "arxiv:2506.16042",
+          "sections": [
+            "4.1 Human trajectory construction",
+            "4.2 Action grouping",
+            "5.1 Weighted Efficiency Score"
+          ]
+        }
+      ]
+    },
+    {
+      "html_id": "eval-evaluator-uncertainty",
+      "type": "evidence_based_synthesis",
+      "statement": "Judge validation, raw-versus-corrected outcomes and evaluator versions are needed to interpret measurement changes.",
+      "citation_keys": [
+        "arxiv_2609_24890",
+        "arxiv_2610_01491",
+        "arxiv_2510_18488",
+        "arxiv_2406_03679"
+      ],
+      "canonical_ids": [
+        "arxiv:2609.24890",
+        "arxiv:2610.01491",
+        "arxiv:2510.18488",
+        "arxiv:2406.03679"
+      ],
+      "source_sections": [
+        {
+          "canonical_id": "arxiv:2609.24890",
+          "sections": [
+            "2 Benchmark overview",
+            "3 Data collection",
+            "4.1 Judge evaluation",
+            "Reproducibility statement"
+          ]
+        },
+        {
+          "canonical_id": "arxiv:2610.01491",
+          "sections": [
+            "3.1 Study scope",
+            "4.1–4.3 Human verification",
+            "6 Limitations"
+          ]
+        },
+        {
+          "canonical_id": "arxiv:2510.18488",
+          "sections": [
+            "2.1 Benchmark purification",
+            "3 Evaluation setup/metrics"
+          ]
+        },
+        {
+          "canonical_id": "arxiv:2406.03679",
+          "sections": [
+            "Table 1",
+            "3.2 Statistics",
+            "3.3 Splits/Table 3",
+            "4.1 Agent implementation",
+            "4.2 Metrics",
+            "4.4 Scaling extrapolation",
+            "5 Limitations"
+          ]
+        }
+      ]
+    },
+    {
+      "html_id": "eval-safety-objectives",
+      "type": "evidence_based_synthesis",
+      "statement": "Task success, helpful refusal, misuse, injection and unintended harm require separate outcome definitions.",
+      "citation_keys": [
+        "arxiv_2404_07972",
+        "arxiv_2506_14866",
+        "arxiv_2410_17520"
+      ],
+      "canonical_ids": [
+        "arxiv:2404.07972",
+        "arxiv:2506.14866",
+        "arxiv:2410.17520"
+      ],
+      "source_sections": [
+        {
+          "canonical_id": "arxiv:2404.07972",
+          "sections": [
+            "HTML §2.2 Infrastructure (#S2.SS2)",
+            "HTML §2.3–2.4 Interfaces",
+            "HTML §3.1–3.2 Benchmark and tasks",
+            "HTML §7 Safety discussion (#S7.SS0.SSS0.Px3)"
+          ]
+        },
+        {
+          "canonical_id": "arxiv:2506.14866",
+          "sections": [
+            "3.1 Setup",
+            "3.2 Three harm categories",
+            "3.3 LLM judge",
+            "5 Discussion"
+          ]
+        },
+        {
+          "canonical_id": "arxiv:2410.17520",
+          "sections": [
+            "3.1–3.4 Benchmark design and evaluation",
+            "Limitations"
+          ]
+        }
+      ]
+    },
+    {
+      "html_id": "eval-injection-threats",
+      "type": "evidence_based_synthesis",
+      "statement": "Security findings are conditional on attacker control and should not be pooled across incompatible threat models.",
+      "citation_keys": [
+        "arxiv_2504_18575",
+        "arxiv_2406_12814",
+        "arxiv_2505_21936"
+      ],
+      "canonical_ids": [
+        "arxiv:2504.18575",
+        "arxiv:2406.12814",
+        "arxiv:2505.21936"
+      ],
+      "source_sections": [
+        {
+          "canonical_id": "arxiv:2504.18575",
+          "sections": [
+            "2 Threat model",
+            "3.1–3.2 Benchmark construction",
+            "3.4 Main metrics",
+            "5 Limitations"
+          ]
+        },
+        {
+          "canonical_id": "arxiv:2406.12814",
+          "sections": [
+            "3.1 Threat model",
+            "3.2 Agent graph",
+            "4.1 VWA-Adv curation",
+            "4.2 Attacker access"
+          ]
+        },
+        {
+          "canonical_id": "arxiv:2505.21936",
+          "sections": [
+            "3 Hybrid sandbox",
+            "4.2 Threat model",
+            "5.1 Evaluation metrics",
+            "7 End-to-end evaluation",
+            "Appendix A limitations"
+          ]
+        }
+      ]
+    },
+    {
+      "html_id": "eval-exposure",
+      "type": "evidence_based_synthesis",
+      "statement": "Attack encounter, attempted diversion and completed harm are separate stages; lack of exposure is not demonstrated resistance.",
+      "citation_keys": [
+        "arxiv_2406_12814",
+        "arxiv_2505_21936",
+        "arxiv_2504_18575"
+      ],
+      "canonical_ids": [
+        "arxiv:2406.12814",
+        "arxiv:2505.21936",
+        "arxiv:2504.18575"
+      ],
+      "source_sections": [
+        {
+          "canonical_id": "arxiv:2406.12814",
+          "sections": [
+            "3.1 Threat model",
+            "3.2 Agent graph",
+            "4.1 VWA-Adv curation",
+            "4.2 Attacker access"
+          ]
+        },
+        {
+          "canonical_id": "arxiv:2505.21936",
+          "sections": [
+            "3 Hybrid sandbox",
+            "4.2 Threat model",
+            "5.1 Evaluation metrics",
+            "7 End-to-end evaluation",
+            "Appendix A limitations"
+          ]
+        },
+        {
+          "canonical_id": "arxiv:2504.18575",
+          "sections": [
+            "2 Threat model",
+            "3.1–3.2 Benchmark construction",
+            "3.4 Main metrics",
+            "5 Limitations"
+          ]
+        }
+      ]
+    },
+    {
+      "html_id": "eval-decision-integrity",
+      "type": "evidence_based_synthesis",
+      "statement": "DIBench commercial-app trials measure fixed-state candidate decisions rather than live end-to-end transactions.",
+      "citation_keys": [
+        "arxiv_2610_06898"
+      ],
+      "canonical_ids": [
+        "arxiv:2610.06898"
+      ],
+      "source_sections": [
+        {
+          "canonical_id": "arxiv:2610.06898",
+          "sections": [
+            "3.1 Benchmark components",
+            "3.2 Instance generation",
+            "3.3 Paired protocol/metrics",
+            "5 Limitations/Ethics"
+          ]
+        }
+      ]
+    },
+    {
+      "html_id": "eval-other-attack-surfaces",
+      "type": "evidence_based_synthesis",
+      "statement": "Installed-app architectural threats and compromised visual fine-tuning data are distinct from runtime webpage injection.",
+      "citation_keys": [
+        "arxiv_2607_00333",
+        "arxiv_2506_13205"
+      ],
+      "canonical_ids": [
+        "arxiv:2607.00333",
+        "arxiv:2506.13205"
+      ],
+      "source_sections": [
+        {
+          "canonical_id": "arxiv:2607.00333",
+          "sections": [
+            "III Threat model",
+            "Table II permissions",
+            "VII Discussion/limitations"
+          ]
+        },
+        {
+          "canonical_id": "arxiv:2506.13205",
+          "sections": [
+            "Threat model",
+            "Evaluation metrics",
+            "Conclusion"
+          ]
+        }
+      ]
+    },
+    {
+      "html_id": "eval-safety-judges",
+      "type": "evidence_based_synthesis",
+      "statement": "Trajectory safety scores are fallible evaluator contracts, requiring utility and human-agreement reporting.",
+      "citation_keys": [
+        "arxiv_2506_14866",
+        "arxiv_2507_00841"
+      ],
+      "canonical_ids": [
+        "arxiv:2506.14866",
+        "arxiv:2507.00841"
+      ],
+      "source_sections": [
+        {
+          "canonical_id": "arxiv:2506.14866",
+          "sections": [
+            "3.1 Setup",
+            "3.2 Three harm categories",
+            "3.3 LLM judge",
+            "5 Discussion"
+          ]
+        },
+        {
+          "canonical_id": "arxiv:2507.00841",
+          "sections": [
+            "II.B Defense objective",
+            "III Chain-level guard and GPTJudge",
+            "IV.B Evaluation setup",
+            "V.D Judge validity"
+          ]
+        }
+      ]
+    },
+    {
+      "html_id": "eval-recommend-contract",
+      "type": "recommendation",
+      "statement": "Recommendation: publish the complete evaluation contract, correction policy and failure denominators.",
+      "citation_keys": [],
+      "canonical_ids": [],
+      "source_sections": []
+    },
+    {
+      "html_id": "eval-recommend-evidence",
+      "type": "recommendation",
+      "statement": "Recommendation: retain execution evidence and report capability, cost, shift and security outcomes separately.",
+      "citation_keys": [],
+      "canonical_ids": [],
+      "source_sections": []
+    },
+    {
+      "html_id": "eval-licenses",
+      "type": "recommendation",
+      "statement": "Recommendation: distinguish code, data, weights and application access terms; publication or repository visibility is not a blanket grant.",
+      "citation_keys": [
+        "arxiv_2409_08264",
+        "arxiv_2504_07981"
+      ],
+      "canonical_ids": [
+        "arxiv:2409.08264",
+        "arxiv:2504.07981"
+      ],
+      "source_sections": [
+        {
+          "canonical_id": "arxiv:2409.08264",
+          "sections": [
+            "3.1 Task definition and reward",
+            "3.2 Task curation",
+            "3.3 Deployment"
+          ]
+        },
+        {
+          "canonical_id": "arxiv:2504.07981",
+          "sections": [
+            "Introduction benchmark summary",
+            "3.1–3.4 Collection and statistics",
+            "Limitations"
+          ]
+        }
+      ]
+    }
+  ],
+  "targeted_search_log": [
+    {
+      "receipt_sha256": "d4dfcefba766b258cbecf8b3b8b546b2a9e0316ad44c98e1fd9e5d51835db9c6",
+      "searched_at": "2026-10-18T09:59:01.669Z",
+      "queries": [
+        {
+          "q": "site:arxiv.org Mind2Web WebArena evaluation benchmark"
+        },
+        {
+          "q": "site:arxiv.org ScreenSpot-Pro AndroidControl evaluation benchmark"
+        },
+        {
+          "q": "site:arxiv.org OS-Harm MobileSafetyBench RedTeamCUA safety"
+        },
+        {
+          "q": "site:arxiv.org \"OSWorld-Pro\" \"evaluation\""
+        }
+      ],
+      "mapping_note": "Search returned a combined stream; no unsupported per-query hit counts are reconstructed. Search snippets did not substitute for the primary full-text readings."
+    }
+  ],
+  "failed_retrievals": [
+    {
+      "id": "arxiv:2307.13854",
+      "url": "https://arxiv.org/pdf/2307.13854v4",
+      "retrieved_at": "2026-10-18T10:01:54.335688+00:00",
+      "http_status": 200,
+      "curl_exit": 28,
+      "sha256": "6acdad39154dbae1a31a6c491f55476d1be961d81418bdd790307dd9ab893900",
+      "bytes": 5947374,
+      "text_extraction_exit": 1,
+      "body_file_exists": true,
+      "disposition": "Not used as full-text evidence; a complete exact-version official HTML response was subsequently read."
+    },
+    {
+      "id": "arxiv:2404.07972",
+      "url": "https://arxiv.org/pdf/2404.07972v2",
+      "retrieved_at": "2026-10-18T10:04:37.257924+00:00",
+      "http_status": 200,
+      "curl_exit": 56,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "text_extraction_exit": null,
+      "body_file_exists": false,
+      "disposition": "Not used as full-text evidence; a complete exact-version official HTML response was subsequently read."
+    },
+    {
+      "id": "arxiv:2508.09123",
+      "url": "https://arxiv.org/pdf/2508.09123v3",
+      "retrieved_at": "2026-10-18T10:08:33.240581+00:00",
+      "http_status": 200,
+      "curl_exit": 28,
+      "sha256": "a83cb5322e2549cfc7396b06c05c8c12fdacf515dd5b5e94f5a5378d658da6d0",
+      "bytes": 17249983,
+      "text_extraction_exit": 1,
+      "body_file_exists": true,
+      "disposition": "Not used as full-text evidence; a complete exact-version official HTML response was subsequently read."
+    }
+  ],
+  "scope_and_version_cautions": [
+    {
+      "id": "arxiv:2403.07718",
+      "issue": "Earlier descriptions often cite 29 task types.",
+      "resolution": "Use inspected v5: 33 types, 19,912 instances; experimental software WorkArena 0.3.0 / BrowserGym 0.3.5."
+    },
+    {
+      "id": "arxiv:2406.08451",
+      "issue": "A paper collection and a previously indexed Hub release may have different totals.",
+      "resolution": "8,334 is explicitly the paper-v2 population; no released archive row count is claimed."
+    },
+    {
+      "id": "arxiv:2508.09123",
+      "issue": "Public collection and full model-training pools differ.",
+      "resolution": "22,625 is attributed to the paper-described public corpus; larger training pools are kept conceptually separate."
+    },
+    {
+      "id": "arxiv:2510.18488",
+      "issue": "The paper contrasts its matcher with exact-point evaluation, while original AndroidControl v6 already describes relaxed action equivalence.",
+      "resolution": "Discuss evaluator-version sensitivity without generalizing the critique to every original AndroidControl score."
+    },
+    {
+      "id": "arxiv:2507.00841",
+      "issue": "Its described MobileSafetyBench-derived task setup is not the entire 250-task v3 suite.",
+      "resolution": "No subset/full-suite counts or performance numbers are mixed."
+    },
+    {
+      "id": "arxiv:2610.06898",
+      "issue": "Task Completion Rate denotes candidate commitment at a controlled decision state.",
+      "resolution": "Do not describe commercial-app trials as live end-to-end mobile workflows or transactions."
+    },
+    {
+      "id": "arxiv:2607.00333",
+      "issue": "Installed-malicious-app assumptions and controlled feasibility experiments.",
+      "resolution": "Do not infer deployment prevalence, first-party assistant behavior or iOS security."
+    }
+  ],
+  "public_redistribution_boundary": "This ledger contains original summaries, factual bibliographic metadata, locators and receipts only. Raw papers, abstracts, extracted full text and search result bodies remain in ignored cache.",
+  "verification": {
+    "html_path": "research/survey/sections/evaluation.html",
+    "html_sha256": "3f292c1452def0097f35c5dc592664386fe5e796577772dee0b6a872ec088584",
+    "english_words_including_tables_and_captions": 2788,
+    "semantic_tables": 2,
+    "table_rows": 18,
+    "unique_citations": 32,
+    "all_citations_have_read_source": true,
+    "all_32_source_byte_hashes_reverified": true,
+    "balanced_html": true,
+    "unique_html_ids": true,
+    "fixed_table_numbers": false,
+    "contains_han_text": false,
+    "formal_catalog_unchanged_during_ledger_assembly": true,
+    "benchmarks_run": 0,
+    "models_executed": 0,
+    "downloaded_training_samples_or_weights": false,
+    "attack_recipes_in_manuscript": false,
+    "rendering_note": "Fragment syntax and semantic structure checked locally; root assembles and visually verifies the complete standalone HTML."
+  },
+  "paragraph_review": {
+    "argument_pass": "Defines the measurement before comparing environments; distinguishes offline supervision, generalization and costs before security threat models; recommendations are a separately labeled final subsection.",
+    "meaning_preservation_pass": "Preserves units, original versions, subset overlaps, interface choices and conditional threat models. No cross-benchmark score ranking or claimed replication.",
+    "reader_pass": "Acronyms and technical interfaces are explained or given context; no raw cache paths or internal review IDs appear in visible prose."
+  },
+  "integrated_manuscript_sha256": "d03272b79c305a75cc786bd914255e9d75a35a6a8dc79caf81e0162740c208c6",
+  "integration_revision": "Applied independent review for precision, repetition and acronym definitions; original reading receipts retained."
+}

@@ -29,6 +29,7 @@ def validate_errors(rows, decisions):
     with tempfile.TemporaryDirectory() as directory:
         catalog.write_jsonl(Path(directory) / "catalog.jsonl", rows)
         catalog.write_json(Path(directory) / "exclusions.json", decisions)
+        catalog.write_json(Path(directory) / "task-classes.json", catalog.read_json(catalog.DATA / "task-classes.json"))
         with mock.patch.object(build, "DATA", Path(directory)), unittest.TestCase().assertRaises(ValueError) as raised:
             build.validate(types.SimpleNamespace())
     return str(raised.exception).splitlines()

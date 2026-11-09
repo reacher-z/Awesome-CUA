@@ -1,4 +1,5 @@
 import contextlib
+import hashlib
 import io
 import json
 from pathlib import Path
@@ -7,6 +8,7 @@ import tempfile
 import types
 import unittest
 from unittest import mock
+import xml.etree.ElementTree as ET
 
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / "scripts"))
@@ -91,7 +93,7 @@ class CandidateReviewTests(unittest.TestCase):
         cases = {"alias target is not active": {"id": "url:file", "url": "https://example.org/tool/blob/main/README.md", "decision": "alias", "target_id": "url:missing", "reason": "x"},
             "prefix alias": {"url_prefix": "https://example.org/tool", "decision": "alias", "reason": "x"},
             "prefix with a query": {"url_prefix": "https://badges.example.net/svg?repo=a", "decision": "not_a_resource", "reason": "x"},
-            "unknown decision": {"id": "url:open", "url": "https://example.org/agent", "decision": "out_of_scope", "reason": "x"},
+            "unknown decision": {"id": "url:open", "url": "https://example.org/agent", "decision": "unsupported", "reason": "x"},
             "missing reason": {"id": "url:open", "url": "https://example.org/agent", "decision": "not_a_resource", "reason": " "},
             "URL differs from the candidate": {"id": "url:open", "url": "https://example.org/other", "decision": "not_a_resource", "reason": "x"}}
         for label, entry in cases.items():
@@ -104,6 +106,41 @@ class CandidateReviewTests(unittest.TestCase):
         queue = [json.loads(line) for line in (ROOT / "data" / "review-queue.jsonl").read_text(encoding="utf-8").splitlines()]
         unresolved = {row["id"] for row in queue if "resolution" not in row}
         self.assertEqual(sorted(set(LISTED) & unresolved), [])
+
+    def test_harvest_skips_arxiv_candidates_reviewed_as_non_resources(self):
+        import catalog
+        self.write("candidates.jsonl", [{"id": "arxiv:2306.17882", "url": "https://arxiv.org/abs/2306.17882", "provider": "arxiv", "discovered_in": SOURCE}])
+        self.write("candidate-reviews.json", [{"id": "arxiv:2306.17882", "url": "https://arxiv.org/abs/2306.17882", "decision": "not_a_resource", "reason": "Malformed arXiv number."}])
+        self.write("papers.jsonl", [])
+        self.write("metadata-updates.jsonl", [])
+        with mock.patch.object(catalog, "DATA", self.data), mock.patch.object(catalog, "fetch") as fetch, contextlib.redirect_stdout(io.StringIO()):
+            catalog.harvest(types.SimpleNamespace(refresh=False, limit=50))
+        fetch.assert_not_called()
+        self.assertEqual(catalog.read_jsonl(self.data / "harvest-failures.jsonl"), [])
+
+    def test_harvest_refresh_keeps_archived_identity_precedence_over_stale_review(self):
+        import catalog
+        body = b'''<feed xmlns="http://www.w3.org/2005/Atom"><entry>
+          <id>http://arxiv.org/abs/2610.00001v1</id><title>GUI Agent Test</title>
+          <author><name>Researcher</name></author><summary>A browser agent.</summary>
+          <published>2026-10-04T10:00:00Z</published><updated>2026-10-04T10:00:00Z</updated>
+        </entry></feed>'''
+        info = {"ok": True, "status": 200, "url": "https://export.arxiv.org/api/query?id_list=2610.00001&max_results=1",
+                "retrieved_at": "2026-10-18T00:00:00Z", "sha256": hashlib.sha256(body).hexdigest()}
+        retained = catalog.arxiv_entry(ET.fromstring(body)[0], {key: info[key] for key in ("url", "retrieved_at", "sha256")})
+        ids = ["arxiv:2610.00001", "arxiv:2306.17882"]
+        self.write("candidates.jsonl", [{"id": rid, "url": "https://arxiv.org/abs/" + rid.split(":")[1],
+                                        "provider": "arxiv", "discovered_in": SOURCE} for rid in ids])
+        self.write("candidate-reviews.json", [{"id": rid, "url": "https://arxiv.org/abs/" + rid.split(":")[1],
+                                               "decision": "not_a_resource", "reason": "Synthetic set-aside decision."} for rid in ids])
+        self.write("papers.jsonl", [retained])
+        self.write("metadata-updates.jsonl", [])
+        with mock.patch.object(catalog, "DATA", self.data), mock.patch.object(catalog, "fetch", return_value=(info, body)) as fetch, contextlib.redirect_stdout(io.StringIO()):
+            catalog.harvest(types.SimpleNamespace(refresh=True, limit=50))
+        fetch.assert_called_once_with(info["url"], True)
+        self.assertEqual(catalog.read_jsonl(self.data / "papers.jsonl"), [retained])
+        self.assertEqual(catalog.read_jsonl(self.data / "metadata-updates.jsonl"), [])
+        self.assertEqual(catalog.read_jsonl(self.data / "harvest-failures.jsonl"), [])
 
 
 if __name__ == "__main__":

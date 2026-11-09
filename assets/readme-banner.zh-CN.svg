@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="360" viewBox="0 0 1280 360" role="img" aria-labelledby="title description" lang="zh-CN">
+<title id="title">Awesome Computer-Use Agents · 智能体资源合集</title><desc id="description">收集 Computer-Use 智能体相关论文、模型、数据集、评测基准与工具，保留原始来源。</desc>
+<rect x=".5" y=".5" width="1279" height="359" rx="16" fill="#FFFFFF" stroke="#E2E6ED"/>
+<g font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', Arial, sans-serif">
+<g transform="translate(48 25) scale(.65)"><rect width="40" height="40" rx="11" fill="#4856DF"/><path d="M12 9v23l6.5-6.5 4.5 8 4.5-2.5-4.5-8H32L12 9Z" fill="#FFFFFF"/><rect x="26" y="7" width="5" height="5" rx="1" fill="#BFC6FF"/></g>
+<text x="88" y="43" fill="#303447" font-size="14" font-weight="650" letter-spacing="1.5">AWESOME CUA</text>
+<text x="1232" y="42" text-anchor="end" fill="#687386" font-size="11" letter-spacing="1.3">开放资源合集</text>
+<path d="M48 72.5h1184M48 294.5h1184" stroke="#E6E9F0"/>
+<text x="46" y="145" font-size="52" font-weight="650" letter-spacing="-.8" fill="#202637">Computer-Use 智能体</text>
+<text x="46" y="211" font-size="49" font-weight="650" letter-spacing="-.5" fill="#202637">一份互相关联的资源合集</text>
+<text x="48" y="253" font-size="20" fill="#626D80">论文、数据与工具，每条资源连接原始来源。</text>
+<path d="M844.5 106v170" stroke="#E6E9F0"/>
+<rect x="878.5" y="106.5" width="353" height="49" rx="7" fill="#FAFBFF" stroke="#E2E6F1"/><text x="899" y="135" font-size="11" font-weight="650" letter-spacing=".7" fill="#4856DF">研究</text><text x="991" y="136" font-size="18" fill="#303447">论文与评测基准</text><rect x="878.5" y="166.5" width="353" height="49" rx="7" fill="#FAFBFF" stroke="#E2E6F1"/><text x="899" y="195" font-size="11" font-weight="650" letter-spacing=".7" fill="#4856DF">构建</text><text x="991" y="196" font-size="18" fill="#303447">模型、智能体与工具</text><rect x="878.5" y="226.5" width="353" height="49" rx="7" fill="#FAFBFF" stroke="#E2E6F1"/><text x="899" y="255" font-size="11" font-weight="650" letter-spacing=".7" fill="#4856DF">复用</text><text x="991" y="256" font-size="18" fill="#303447">数据集与检索文档</text>
+<text x="48" y="332" font-size="13" font-weight="600" letter-spacing="1" fill="#5B6476">浏览器</text><text x="203" y="332" font-size="13" font-weight="600" letter-spacing="1" fill="#5B6476">桌面</text><text x="358" y="332" font-size="13" font-weight="600" letter-spacing="1" fill="#5B6476">移动设备</text><circle cx="175" cy="327" r="1.5" fill="#C4CADA"/><circle cx="330" cy="327" r="1.5" fill="#C4CADA"/><text x="1232" y="332" text-anchor="end" font-size="11" letter-spacing="1.2" fill="#687386">来源可追溯  ·  中英双语</text>
+</g></svg>

@@ -3,7 +3,8 @@ from collections import Counter, defaultdict
 import html
 from urllib.parse import urlencode
 from catalog import TOPICS as VOCABULARY
-from publication_metadata import publication, record_date_text, record_year
+from publication_metadata import AUTHORS_OMITTED, authors_omitted, publication, record_date_text, record_year
+from site_config import SITE
 from specifications import safe_href
 
 
@@ -78,7 +79,7 @@ def library_years(rows, language='en'):
     return links
 
 
-def paper_library(rows, resource_path, *, language='en', site_url='https://awesomecua.github.io', number=1):
+def paper_library(rows, resource_path, *, language='en', site_url=SITE, number=1, survey_available=False):
     """Return one library page's HTML and an ItemList describing exactly its visible reviewed papers."""
     zh = language == 'zh'
     def tr(en, cn):
@@ -103,7 +104,7 @@ def paper_library(rows, resource_path, *, language='en', site_url='https://aweso
     if 'undated' in years:
         years.remove('undated'); years.append('undated')
     def search_link(**filters):
-        return '/?' + esc(urlencode({'kind': 'paper', 'review': 'curated', 'lang': 'zh' if zh else 'en', **filters})) + '#catalog'
+        return '/explore/?' + esc(urlencode({'kind': 'paper', 'review': 'curated', 'lang': 'zh' if zh else 'en', **filters})) + '#catalog'
     title = tr('Computer-use research library', 'Computer-Use 论文库')
     title_markup = 'Computer-Use <span class="library-title-tail">论文库</span>' if zh else esc(title)
     body = ['<section class="paper-library" aria-labelledby="library-title">',
@@ -111,6 +112,7 @@ def paper_library(rows, resource_path, *, language='en', site_url='https://aweso
             '<h1 id="library-title">' + title_markup + '</h1></div>',
             '<a class="library-language" href="' + library_path(number, 'en' if zh else 'zh') + '">' + ('English' if zh else '中文') + '</a></div>',
             '<p class="library-intro">' + tr('Source-backed papers on GUI grounding, agents, training, evaluation, and safety.', '从 GUI 定位到智能体训练、评测与安全，每篇都可追溯到原始论文。') + '</p>',
+            '<p class="library-intro"><a href="/survey/">' + tr('Read the research survey', '阅读英文研究综述') + ' ↗</a> · ' + tr('Methods, evaluation, and human agency — an English working manuscript with a source-by-source reading register.', '方法、评测与人的控制权；英文工作稿附有逐篇阅读记录。') + '</p>' if survey_available else '',
             '<div class="library-toolbar"><p class="library-count"><strong>' + f'{len(papers):,}' + '</strong> ' + tr('reviewed papers & surveys', '篇已审阅论文与综述')
             + ('<a class="library-connected-count" href="/connections/">' + str(len(assets)) + ' ' + tr('with recorded resource links', '篇附有已审阅的资源关联') + ' ↗</a>' if assets else '') + '</p>',
             '<div class="library-downloads"><a class="button primary" href="' + search_link() + '">' + tr('Search papers', '检索论文') + ' ↗</a>',
@@ -128,7 +130,7 @@ def paper_library(rows, resource_path, *, language='en', site_url='https://aweso
     for topic, _count in topics.most_common(8):
         body.append('<a href="' + search_link(topic=topic) + '">' + esc(label(TOPICS, topic)) + '</a>')
     body.append('<a class="library-all-topics" href="' + ('/zh/topics/' if zh else '/topics/') + '">' + tr('All topics', '全部主题') + ' ↗</a>')
-    body.append('</div><p class="library-method">' + tr('AI-assisted editorial review of primary sources; experiments are not independently reproduced. Dates keep their recorded precision. Resource links below follow reviewed introduction or documentation relationships.', '条目经过 AI 辅助的一手来源编辑审阅，实验未独立复现。发表日期保留来源记录的精度。下方资源链接来自已审阅的介绍或文档关系。') + ' <a href="/about/">' + tr('Method', '收录方法') + ' ↗</a></p>')
+    body.append('</div><p class="library-method">' + tr('AI-assisted editorial review of primary sources. Dates keep their recorded precision. Resource links below follow reviewed introduction or documentation relationships.', '条目经过 AI 辅助的一手来源编辑审阅。发表日期保留来源记录的精度。下方资源链接来自已审阅的介绍或文档关系。') + ' <a href="/about/">' + tr('Method', '收录方法') + ' ↗</a></p>')
     for year in (year for year in years if year in groups):
         body.append('<section class="paper-year-group" aria-labelledby="papers-' + year + '"><div class="paper-year-heading"><h2 id="papers-' + year + '">' + (tr('Date not recorded', '日期待录') if year == 'undated' else year) + '</h2><span>' + str(totals[year]) + ' ' + tr('papers & surveys', '篇论文与综述') + '</span><a href="#library-title">' + tr('Back to years', '回到年份') + ' ↑</a></div>')
         for row in groups[year]:
@@ -147,7 +149,9 @@ def paper_library(rows, resource_path, *, language='en', site_url='https://aweso
                 body.append('<span class="paper-survey">' + tr('Survey', '综述') + '</span>')
             body.append('</div><div class="paper-entry-main"><h3><a href="' + path + '">' + esc(row['name']) + '</a></h3>')
             authors = row.get('authors', [])
-            if authors:
+            if authors_omitted(row):
+                body.append('<p class="paper-authors"><a href="' + safe_href(source) + '">' + esc(tr(*AUTHORS_OMITTED)) + '</a></p>')
+            elif authors:
                 names = ', '.join(authors[:2])
                 if len(authors) > 2:
                     names += tr(' + ' + str(len(authors) - 2) + (' author' if len(authors) == 3 else ' authors'), ' 等 ' + str(len(authors)) + ' 位作者')

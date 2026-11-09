@@ -105,7 +105,8 @@ def discover(queries, refresh=False):
         info = {**info, 'url': endpoint}
         run = {**spec, 'provider': 'huggingface_papers_search', 'scope': POLICY,
                'evidence': info, 'identifiers': [], 'returned_count': 0,
-               'request_attempted': not rate_limited, 'state': 'deferred' if rate_limited else 'failed'}
+               'request_attempted': info.get('request_attempted', not rate_limited),
+               'state': 'deferred' if rate_limited or info.get('deferred') else 'failed'}
         if info.get('ok'):
             try:
                 identifiers, returned = parse_hits(body, size)

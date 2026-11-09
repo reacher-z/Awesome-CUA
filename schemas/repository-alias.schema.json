@@ -1,6 +1,6 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "$id": "https://awesomecua.github.io/schemas/repository-alias.schema.json",
+  "$id": "https://awesomecua.com/schemas/repository-alias.schema.json",
   "title": "AwesomeCUA source-reviewed repository aliases",
   "description": "Other names observed to identify the same numeric GitHub repository, or the same Hugging Face model or dataset object. These observations do not create resources or approve release completeness, licensing or relevance.",
   "type": "array",

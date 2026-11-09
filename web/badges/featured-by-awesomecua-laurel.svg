@@ -1,7 +1,7 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="500" height="106" viewBox="0 0 500 106" role="img" aria-labelledby="title desc">
-  <title id="title">Featured by AwesomeCUA</title>
-  <desc id="desc">A violet laurel wreath and CUA monogram with a rounded outline and two levels of typography.</desc>
-  <rect x="1" y="1" width="498" height="104" rx="21" fill="#fff" stroke="#5b30b5" stroke-width="2"/>
+<svg xmlns="http://www.w3.org/2000/svg" width="480" height="106" viewBox="0 0 480 106" role="img" aria-labelledby="title desc">
+  <title id="title">Featured by Awesome CUA</title>
+  <desc id="desc">A purple laurel wreath around a small CUA shield, with serif lettering and a rounded outline.</desc>
+  <rect x="1" y="1" width="478" height="104" rx="21" fill="#fff" stroke="#5b30b5" stroke-width="2"/>
   <g fill="#55309e" stroke="#55309e" stroke-width="1.25">
     <path d="M64 82C46 81 29 68 25 44M64 82C82 81 99 68 103 44" fill="none" stroke-linecap="round"/>
     <ellipse cx="25" cy="43" rx="2.8" ry="5.5" transform="rotate(15 25 43)" stroke="none"/>
@@ -27,7 +27,8 @@
       <ellipse cx="57" cy="82" rx="2.4" ry="5.5" transform="rotate(-80 57 82)" stroke="none"/>
     </g>
   </g>
-  <text x="64" y="60" text-anchor="middle" fill="#55309e" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Arial,sans-serif" font-size="24" font-weight="750" letter-spacing="-1">CUA</text>
-  <text x="127" y="39" fill="#5b3c98" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Arial,sans-serif" font-size="14" font-weight="500" letter-spacing="1.15">COMPUTER-USE AGENTS</text>
-  <text x="126" y="72" fill="#432477" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Arial,sans-serif" font-size="27" font-weight="750" letter-spacing="-.55">Featured by AwesomeCUA</text>
+  <path d="M42 23Q64 17 86 23V39C86 50 77 59 64 64C51 59 42 50 42 39Z" fill="#faf8ff" stroke="#55309e" stroke-width="1.6"/>
+  <text x="64" y="43" text-anchor="middle" fill="#55309e" font-family="Georgia, Times New Roman, serif" font-size="16" font-weight="700" letter-spacing="-.4">CUA</text>
+  <text x="127" y="39" fill="#5b3c98" font-family="Georgia, Times New Roman, serif" font-size="14" font-weight="500" letter-spacing="1.15">COMPUTER-USE AGENTS</text>
+  <text x="126" y="72" fill="#432477" font-family="Georgia, Times New Roman, serif" font-size="25" font-weight="700" letter-spacing="-.45">Featured by Awesome CUA</text>
 </svg>

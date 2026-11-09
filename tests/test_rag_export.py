@@ -29,7 +29,7 @@ class RetrievalExportTests(unittest.TestCase):
                 self.assertEqual(meta['arxiv_snapshot'],snapshot)
                 self.assertIn(source['name'],doc['text'])
                 if snapshot and snapshot.get('versioned_url'):self.assertEqual(meta['source_url'],snapshot['versioned_url'])
-                if source['review_status']=='metadata_verified':self.assertIn('have not been editorially reviewed',doc['text'])
+                if source['review_status']=='metadata_verified':self.assertIn('has no approved editorial annotation',doc['text'])
     def test_changed_annotations_update_fingerprint_without_changing_upsert_id(self):
         row=copy.deepcopy(next(r for r in self.rows if r['review_status']=='curated'))
         original=list(documents([row]))[0]

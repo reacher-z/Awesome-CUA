@@ -1,0 +1,2436 @@
+{
+  "reviewer": "AI-assisted editorial title and abstract reading",
+  "search_ledger": "title-search.json",
+  "purpose": "Manuscript source selection; no production catalog decisions or claimed systematic-review denominator.",
+  "titles_inspected": 303,
+  "complete_abstracts_read": 26,
+  "advanced": 15,
+  "not_selected_after_abstract": 11,
+  "not_advanced_beyond_title": 277,
+  "decisions": [
+    {
+      "id": "arxiv:2610.17436",
+      "title": "SchemaWeaver: Accelerating On-Device Mobile Agentic AI via Schema-Guided Parallel LLM Decoding",
+      "reading_level": "complete_abstract_read",
+      "selection": "not_selected_for_this_synthesis",
+      "reason": "Tool-call decoding on mobile processors; the abstract does not establish GUI interaction.",
+      "metadata_source_page": 0
+    },
+    {
+      "id": "arxiv:2610.11955",
+      "title": "Capturing a Moving Target on Star Graphs by Two Communicating Mobile Agents",
+      "reading_level": "title_only",
+      "selection": "not_advanced_after_title_screen",
+      "reason": "Title describes a different research domain or did not provide a sufficiently specific interface-agent connection for this purposeful supplementary sample. Not a full-text scope adjudication.",
+      "metadata_source_page": 0
+    },
+    {
+      "id": "arxiv:2610.02617",
+      "title": "WebUIProof: Benchmarking WebUI Code Generators with UI-Agent Execution Harness",
+      "reading_level": "complete_abstract_read",
+      "selection": "advance_to_interface_specific_reading",
+      "reason": "Adjacent: a UI-agent harness executes tests of generated web interfaces.",
+      "metadata_source_page": 0
+    },
+    {
+      "id": "arxiv:2610.06898",
+      "title": "DIBench: Benchmarking Decision Integrity of GUI-based Mobile Agents Under Deceptive Injections",
+      "reading_level": "complete_abstract_read",
+      "selection": "advance_to_interface_specific_reading",
+      "reason": "Core: decision integrity evaluation in mobile GUI settings.",
+      "metadata_source_page": 0
+    },
+    {
+      "id": "arxiv:2610.00264",
+      "title": "A Mobile Agent-Based Hierarchical Reinforcement Learning Framework for Energy-Balanced Data Collection and Wireless Charging in WSN",
+      "reading_level": "title_only",
+      "selection": "not_advanced_after_title_screen",
+      "reason": "Title describes a different research domain or did not provide a sufficiently specific interface-agent connection for this purposeful supplementary sample. Not a full-text scope adjudication.",
+      "metadata_source_page": 0
+    },
+    {
+      "id": "arxiv:2608.14132",
+      "title": "Act2Intention: A Benchmark For Developing Active Mobile Agents Through Inferring User Intention from GUI Actions",
+      "reading_level": "complete_abstract_read",
+      "selection": "advance_to_interface_specific_reading",
+      "reason": "Core: mobile intention modeling and confirmed GUI execution.",
+      "metadata_source_page": 1
+    },
+    {
+      "id": "arxiv:2608.07775",
+      "title": "AndroidReality: How Far Are Mobile Agents from the Real World?",
+      "reading_level": "complete_abstract_read",
+      "selection": "advance_to_interface_specific_reading",
+      "reason": "Core: perturbations and recovery in Android interaction.",
+      "metadata_source_page": 1
+    },
+    {
+      "id": "arxiv:2608.09944",
+      "title": "Navigation Alone Is Not Enough: Evaluating Explanatory Assistive UI Agents",
+      "reading_level": "complete_abstract_read",
+      "selection": "advance_to_interface_specific_reading",
+      "reason": "Core: explanatory assistance while navigating software interfaces.",
+      "metadata_source_page": 2
+    },
+    {
+      "id": "arxiv:2607.00333",
+      "title": "(A)I Sees What You Don't: Exploiting New Attack Surfaces in Third-Party Mobile Agents",
+      "reading_level": "complete_abstract_read",
+      "selection": "advance_to_interface_specific_reading",
+      "reason": "Core: security of mobile-agent perception and execution interfaces.",
+      "metadata_source_page": 2
+    },
+    {
+      "id": "arxiv:2605.30547",
+      "title": "MATraM: A Multi-Activity Transport and Mobility Agent-Based Model for Activity Modifications",
+      "reading_level": "title_only",
+      "selection": "not_advanced_after_title_screen",
+      "reason": "Title describes a different research domain or did not provide a sufficiently specific interface-agent connection for this purposeful supplementary sample. Not a full-text scope adjudication.",
+      "metadata_source_page": 2
+    },
+    {
+      "id": "arxiv:2606.20622",
+      "title": "Darwin Mobile Agent: A Roadmap for Self-Evolution",
+      "reading_level": "complete_abstract_read",
+      "selection": "advance_to_interface_specific_reading",
+      "reason": "Core: mobile GUI reinforcement-learning infrastructure.",
+      "metadata_source_page": 3
+    },
+    {
+      "id": "arxiv:2605.24265",
+      "title": "ChatMOSP: A Chemistry-Grounded Mobile Agent for Working-State Catalyst Simulations",
+      "reading_level": "complete_abstract_read",
+      "selection": "not_selected_for_this_synthesis",
+      "reason": "Mobile access to parameterized scientific workflows; existing-interface operation is not established in the abstract.",
+      "metadata_source_page": 3
+    },
+    {
+      "id": "arxiv:2605.05765",
+      "title": "X-OmniClaw Technical Report: A Unified Mobile Agent for Multimodal Understanding and Interaction",
+      "reading_level": "complete_abstract_read",
+      "selection": "advance_to_interface_specific_reading",
+      "reason": "Core: Android interface perception, memory and hybrid grounding.",
+      "metadata_source_page": 3
+    },
+    {
+      "id": "arxiv:2605.08124",
+      "title": "Scaling Mobile Agent Systems: From Capability Density to Collective Intelligence",
+      "reading_level": "complete_abstract_read",
+      "selection": "not_selected_for_this_synthesis",
+      "reason": "General edge/AIoT agent-scaling agenda; no concrete GUI task established in the abstract.",
+      "metadata_source_page": 3
+    },
+    {
+      "id": "arxiv:2604.15309",
+      "title": "MM-WebAgent: A Hierarchical Multimodal Web Agent for Webpage Generation",
+      "reading_level": "title_only",
+      "selection": "not_advanced_after_title_screen",
+      "reason": "Title describes a different research domain or did not provide a sufficiently specific interface-agent connection for this purposeful supplementary sample. Not a full-text scope adjudication.",
+      "metadata_source_page": 3
+    },
+    {
+      "id": "arxiv:2603.29426",
+      "title": "Diffusion-Guided Cooperative Policy Learning for Target Tracking Based on Underwater Mobile Agent Networks",
+      "reading_level": "title_only",
+      "selection": "not_advanced_after_title_screen",
+      "reason": "Title describes a different research domain or did not provide a sufficiently specific interface-agent connection for this purposeful supplementary sample. Not a full-text scope adjudication.",
+      "metadata_source_page": 4
+    },
+    {
+      "id": "arxiv:2603.24241",
+      "title": "C-STEP: Continuous Space-Time Empowerment for Physics-informed Safe Reinforcement Learning of Mobile Agents",
+      "reading_level": "title_only",
+      "selection": "not_advanced_after_title_screen",
+      "reason": "Title describes a different research domain or did not provide a sufficiently specific interface-agent connection for this purposeful supplementary sample. Not a full-text scope adjudication.",
+      "metadata_source_page": 4
+    },
+    {
+      "id": "arxiv:2603.05831",
+      "title": "Knowledge-driven Reasoning for Mobile Agentic AI: Concepts, Approaches, and Directions",
+      "reading_level": "complete_abstract_read",
+      "selection": "not_selected_for_this_synthesis",
+      "reason": "Explicit edge-robot/UAV setting, not software-interface control.",
+      "metadata_source_page": 4
+    },
+    {
+      "id": "arxiv:2603.01035",
+      "title": "From Human Negotiation to Agent Negotiation: Personal Mobility Agents in Automated Traffic",
+      "reading_level": "title_only",
+      "selection": "not_advanced_after_title_screen",
+      "reason": "Title describes a different research domain or did not provide a sufficiently specific interface-agent connection for this purposeful supplementary sample. Not a full-text scope adjudication.",
+      "metadata_source_page": 4
+    },
+    {
+      "id": "arxiv:2602.07321",
+      "title": "Wireless Context Engineering for Efficient Mobile Agentic AI and Edge General Intelligence",
+      "reading_level": "complete_abstract_read",
+      "selection": "not_selected_for_this_synthesis",
+      "reason": "Wireless-context and beam-prediction setting, not GUI interaction.",
+      "metadata_source_page": 4
+    },
+    {
+      "id": "arxiv:2601.19306",
+      "title": "Curiosity Driven Knowledge Retrieval for Mobile Agents",
+      "reading_level": "complete_abstract_read",
+      "selection": "advance_to_interface_specific_reading",
+      "reason": "Core: knowledge retrieval supporting smartphone automation.",
+      "metadata_source_page": 5
+    },
+    {
+      "id": "arxiv:2601.08470",
+      "title": "Towards Safer Mobile Agents: Scalable Generation and Evaluation of Diverse Scenarios for VLMs",
+      "reading_level": "complete_abstract_read",
+      "selection": "not_selected_for_this_synthesis",
+      "reason": "Physical hazardous-scene question answering for vehicles/mobile systems.",
+      "metadata_source_page": 5
+    },
+    {
+      "id": "arxiv:2511.19947",
+      "title": "Towards Edge General Intelligence: Knowledge Distillation for Mobile Agentic AI",
+      "reading_level": "complete_abstract_read",
+      "selection": "not_selected_for_this_synthesis",
+      "reason": "Wireless-edge distillation survey without a concrete interface-agent connection in the abstract.",
+      "metadata_source_page": 5
+    },
+    {
+      "id": "arxiv:2511.19880",
+      "title": "Improved Linear-Time Construction of Minimal Dominating Set via Mobile Agents",
+      "reading_level": "title_only",
+      "selection": "not_advanced_after_title_screen",
+      "reason": "Title describes a different research domain or did not provide a sufficiently specific interface-agent connection for this purposeful supplementary sample. Not a full-text scope adjudication.",
+      "metadata_source_page": 5
+    },
+    {
+      "id": "arxiv:2511.19780",
+      "title": "NOEM$^{3}$A: a Neuro-symbolic Ontology-Enhanced Method for Multi-intent understanding in Mobile Agents",
+      "reading_level": "complete_abstract_read",
+      "selection": "not_selected_for_this_synthesis",
+      "reason": "Intent classification in MultiWOZ dialogues; no GUI execution established in the abstract.",
+      "metadata_source_page": 5
+    },
+    {
+      "id": "arxiv:2511.18315",
+      "title": "Monotone Decontamination of Arbitrary Dynamic Graphs with Mobile Agents",
+      "reading_level": "title_only",
+      "selection": "not_advanced_after_title_screen",
+      "reason": "Title describes a different research domain or did not provide a sufficiently specific interface-agent connection for this purposeful supplementary sample. Not a full-text scope adjudication.",
+      "metadata_source_page": 5
+    },
+    {
+      "id": "arxiv:2510.09483",
+      "title": "FOGMACHINE -- Leveraging Discrete-Event Simulation and Scene Graphs for Modeling Hierarchical, Interconnected Environments under Partial Observations from Mobile Agents",
+      "reading_level": "complete_abstract_read",
+      "selection": "not_selected_for_this_synthesis",
+      "reason": "Physical urban scene-graph simulation for embodied agents.",
+      "metadata_source_page": 6
+    },
+    {
+      "id": "arxiv:2510.06042",
+      "title": "Agent+P: Guiding UI Agents via Symbolic Planning",
+      "reading_level": "complete_abstract_read",
+      "selection": "advance_to_interface_specific_reading",
+      "reason": "Core: symbolic planning over UI transition structure.",
+      "metadata_source_page": 6
+    },
+    {
+      "id": "arxiv:2510.01741",
+      "title": "Multi-scale friction coefficient: From roughness to system computation using deep learning",
+      "reading_level": "title_only",
+      "selection": "not_advanced_after_title_screen",
+      "reason": "Title describes a different research domain or did not provide a sufficiently specific interface-agent connection for this purposeful supplementary sample. Not a full-text scope adjudication.",
+      "metadata_source_page": 6
+    },
+    {
+      "id": "arxiv:2510.01495",
+      "title": "Improving Runtime Performance of Tensor Computations using Rust From Python",
+      "reading_level": "title_only",
+      "selection": "not_advanced_after_title_screen",
+      "reason": "Title describes a different research domain or did not provide a sufficiently specific interface-agent connection for this purposeful supplementary sample. Not a full-text scope adjudication.",
+      "metadata_source_page": 6
+    },
+    {
+      "id": "arxiv:2509.22999",
+      "title": "Enhanced Hybrid Temporal Computing Using Deterministic Summations for Ultra-Low-Power Accelerators",
+      "reading_level": "title_only",
+      "selection": "not_advanced_after_title_screen",
+      "reason": "Title describes a different research domain or did not provide a sufficiently specific interface-agent connection for this purposeful supplementary sample. Not a full-text scope adjudication.",
+      "metadata_source_page": 6
+    },
+    {
+      "id": "arxiv:2509.18679",
+      "title": "Lightweight Targeted Estimation of Layout Noise in a Quantum Computer using Quality Indicator Circuits",
+      "reading_level": "title_only",
+      "selection": "not_advanced_after_title_screen",
+      "reason": "Title describes a different research domain or did not provide a sufficiently specific interface-agent connection for this purposeful supplementary sample. Not a full-text scope adjudication.",
+      "metadata_source_page": 6
+    },
+    {
+      "id": "arxiv:2509.10627",
+      "title": "ReCross: Efficient Embedding Reduction Scheme for In-Memory Computing using ReRAM-Based Crossbar",
+      "reading_level": "title_only",
+      "selection": "not_advanced_after_title_screen",
+      "reason": "Title describes a different research domain or did not provide a sufficiently specific interface-agent connection for this purposeful supplementary sample. Not a full-text scope adjudication.",
+      "metadata_source_page": 6
+    },
+    {
+      "id": "arxiv:2509.02444",
+      "title": "AppCopilot: Toward General, Accurate, Long-Horizon, and Efficient Mobile Agent",
+      "reading_level": "complete_abstract_read",
+      "selection": "advance_to_interface_specific_reading",
+      "reason": "Core: mobile-interface agent architecture and execution.",
+      "metadata_source_page": 6
+    },
+    {
+      "id": "arxiv:2508.18683",
+      "title": "Graph Traversal via Connected Mobile Agents",
+      "reading_level": "title_only",
+      "selection": "not_advanced_after_title_screen",
+      "reason": "Title describes a different research domain or did not provide a sufficiently specific interface-agent connection for this purposeful supplementary sample. Not a full-text scope adjudication.",
+      "metadata_source_page": 6
+    },
+    {
+      "id": "arxiv:2508.18040",
+      "title": "PerPilot: Personalizing VLM-based Mobile Agents via Memory and Exploration",
+      "reading_level": "complete_abstract_read",
+      "selection": "advance_to_interface_specific_reading",
+      "reason": "Core: personalized mobile-interface instructions.",
+      "metadata_source_page": 6
+    },
+    {
+      "id": "arxiv:2508.16172",
+      "title": "Graph RAG as Human Choice Model: Building a Data-Driven Mobility Agent with Preference Chain",
+      "reading_level": "title_only",
+      "selection": "not_advanced_after_title_screen",
+      "reason": "Title describes a different research domain or did not provide a sufficiently specific interface-agent connection for this purposeful supplementary sample. Not a full-text scope adjudication.",
+      "metadata_source_page": 7
+    },
+    {
+      "id": "arxiv:2508.10850",
+      "title": "Scalable platform for qudit-based quantum computing using polar molecules",
+      "reading_level": "title_only",
+      "selection": "not_advanced_after_title_screen",
+      "reason": "Title describes a different research domain or did not provide a sufficiently specific interface-agent connection for this purposeful supplementary sample. Not a full-text scope adjudication.",
+      "metadata_source_page": 7
+    },
+    {
+      "id": "arxiv:2507.18165",
+      "title": "ProactiveVA: Proactive Visual Analytics with LLM-Based UI Agent",
+      "reading_level": "complete_abstract_read",
+      "selection": "advance_to_interface_specific_reading",
+      "reason": "Core: proactive UI assistance in visual analytics.",
+      "metadata_source_page": 7
+    },
+    {
+      "id": "arxiv:2507.15955",
+      "title": "Impact of finite squeezing on near-term quantum computations using GKP qubits",
+      "reading_level": "title_only",
+      "selection": "not_advanced_after_title_screen",
+      "reason": "Title describes a different research domain or did not provide a sufficiently specific interface-agent connection for this purposeful supplementary sample. Not a full-text scope adjudication.",
+      "metadata_source_page": 7
+    },
+    {
+      "id": "arxiv:2507.13204",
+      "title": "Performance Portable Gradient Computations Using Source Transformation",
+      "reading_level": "title_only",
+      "selection": "not_advanced_after_title_screen",
+      "reason": "Title describes a different research domain or did not provide a sufficiently specific interface-agent connection for this purposeful supplementary sample. Not a full-text scope adjudication.",
+      "metadata_source_page": 7
+    },
+    {
+      "id": "arxiv:2507.06063",
+      "title": "Practical design and performance of physical reservoir computing using hysteresis",
+      "reading_level": "title_only",
+      "selection": "not_advanced_after_title_screen",
+      "reason": "Title describes a different research domain or did not provide a sufficiently specific interface-agent connection for this purposeful supplementary sample. Not a full-text scope adjudication.",
+      "metadata_source_page": 7
+    },
+    {
+      "id": "arxiv:2507.00841",
+      "title": "SafeMobile: Chain-level Jailbreak Detection and Automated Evaluation for Multimodal Mobile Agents",
+      "reading_level": "complete_abstract_read",
+      "selection": "advance_to_interface_specific_reading",
+      "reason": "Core: sequence-level risk assessment for mobile-interface agents.",
+      "metadata_source_page": 7
+    },
+    {
+      "id": "arxiv:2506.19365",
+      "title": "Computing Tree Structures in Anonymous Graphs via Mobile Agents",
+      "reading_level": "title_only",
+      "selection": "not_advanced_after_title_screen",
+      "reason": "Title describes a different research domain or did not provide a sufficiently specific interface-agent connection for this purposeful supplementary sample. Not a full-text scope adjudication.",
+      "metadata_source_page": 7
+    },
+    {
+      "id": "arxiv:2506.17721",
+      "title": "Distributed Butterfly Analysis using Mobile Agents",
+      "reading_level": "title_only",
+      "selection": "not_advanced_after_title_screen",
+      "reason": "Title describes a different research domain or did not provide a sufficiently specific interface-agent connection for this purposeful supplementary sample. Not a full-text scope adjudication.",
+      "metadata_source_page": 7
+    },
+    {
+      "id": "arxiv:2506.13205",
+      "title": "Poison Once, Control Anywhere: Clean-Text Visual Backdoors in VLM-based Mobile Agents",
+      "reading_level": "complete_abstract_read",
+      "selection": "advance_to_interface_specific_reading",
+      "reason": "Core: training-time visual backdoors in mobile-interface agents.",
+      "metadata_source_page": 7
+    },
+    {
+      "id": "arxiv:2506.08331",
+      "title": "Correcting a noisy quantum computer using a quantum computer",
+      "reading_level": "title_only",
+      "selection": "not_advanced_after_title_screen",
+      "reason": "Title describes a different research domain or did not provide a sufficiently specific interface-agent connection for this purposeful supplementary sample. Not a full-text scope adjudication.",
+      "metadata_source_page": 7
+    },
+    {
+      "id": "arxiv:2505.23819",
+      "title": "Linear Layouts: Robust Code Generation of Efficient Tensor Computation Using $\\mathbb{F}_2$",
+      "reading_level": "title_only",
+      "selection": "not_advanced_after_title_screen",
+      "reason": "Title describes a different research domain or did not provide a sufficiently specific interface-agent connection for this purposeful supplementary sample. Not a full-text scope adjudication.",
+      "metadata_source_page": 7
+    },
+    {
+      "id": "arxiv:2505.13695",
+      "title": "Large-scale quantum reservoir computing using a Gaussian Boson Sampler",
+      "reading_level": "title_only",
+      "selection": "not_advanced_after_title_screen",
+      "reason": "Title describes a different research domain or did not provide a sufficiently specific interface-agent connection for this purposeful supplementary sample. Not a full-text scope adjudication.",
+      "metadata_source_page": 8
+    },
+    {
+      "id": "arxiv:2505.12830",
+      "title": "2T1R Regulated Memristor Conductance Control Array Architecture for Neuromorphic Computing using 28nm CMOS Technology",
+      "reading_level": "title_only",
+      "selection": "not_advanced_after_title_screen",
+      "reason": "Title describes a different research domain or did not provide a sufficiently specific interface-agent connection for this purposeful supplementary sample. Not a full-text scope adjudication.",
+      "metadata_source_page": 8
+    },
+    {
+      "id": "arxiv:2504.11576",
+      "title": "Effective dimensionality reduction for Greeks computation using Randomized QMC",
+      "reading_level": "title_only",
+      "selection": "not_advanced_after_title_screen",
+      "reason": "Title describes a different research domain or did not provide a sufficiently specific interface-agent connection for this purposeful supplementary sample. Not a full-text scope adjudication.",
+      "metadata_source_page": 8
+    },
+    {
+      "id": "arxiv:2504.08340",
+      "title": "All-in-Memory Stochastic Computing using ReRAM",
+      "reading_level": "title_only",
+      "selection": "not_advanced_after_title_screen",
+      "reason": "Title describes a different research domain or did not provide a sufficiently specific interface-agent connection for this purposeful supplementary sample. Not a full-text scope adjudication.",
+      "metadata_source_page": 8
+    },
+    {
+      "id": "arxiv:2504.08271",
+      "title": "Self-Stabilizing Weakly Byzantine Perpetual Gathering of Mobile Agents",
+      "reading_level": "title_only",
+      "selection": "not_advanced_after_title_screen",
+      "reason": "Title describes a different research domain or did not provide a sufficiently specific interface-agent connection for this purposeful supplementary sample. Not a full-text scope adjudication.",
+      "metadata_source_page": 8
+    },
+    {
+      "id": "arxiv:2504.05442",
+      "title": "Broadcast via Mobile Agents in a Dynamic Network: Interplay of Graph Properties & Agents",
+      "reading_level": "title_only",
+      "selection": "not_advanced_after_title_screen",
+      "reason": "Title describes a different research domain or did not provide a sufficiently specific interface-agent connection for this purposeful supplementary sample. Not a full-text scope adjudication.",
+      "metadata_source_page": 8
+    },
+    {
+      "id": "arxiv:2504.03763",
+      "title": "Efficient Calibration for RRAM-based In-Memory Computing using DoRA",
+      "reading_level": "title_only",
+      "selection": "not_advanced_after_title_screen",
+      "reason": "Title describes a different research domain or did not provide a sufficiently specific interface-agent connection for this purposeful supplementary sample. Not a full-text scope adjudication.",
+      "metadata_source_page": 8
+    },
+    {
+      "id": "arxiv:2503.16222",
+      "title": "Efficient Bayesian Computation Using Plug-and-Play Priors for Poisson Inverse Problems",
+      "reading_level": "title_only",
+      "selection": "not_advanced_after_title_screen",
+      "reason": "Title describes a different research domain or did not provide a sufficiently specific interface-agent connection for this purposeful supplementary sample. Not a full-text scope adjudication.",
+      "metadata_source_page": 8
+    },
+    {
+      "id": "arxiv:2503.16146",
+      "title": "Distributed Split Computing Using Diffusive Metrics for UAV Swarms",
+      "reading_level": "title_only",
+      "selection": "not_advanced_after_title_screen",
+      "reason": "Title describes a different research domain or did not provide a sufficiently specific interface-agent connection for this purposeful supplementary sample. Not a full-text scope adjudication.",
+      "metadata_source_page": 8
+    },
+    {
+      "id": "arxiv:2503.14988",
+      "title": "Fault-Tolerant Optical Quantum Computation using 3D Hybrid Cluster States",
+      "reading_level": "title_only",
+      "selection": "not_advanced_after_title_screen",
+      "reason": "Title describes a different research domain or did not provide a sufficiently specific interface-agent connection for this purposeful supplementary sample. Not a full-text scope adjudication.",
+      "metadata_source_page": 8
+    },
+    {
+      "id": "arxiv:2503.05850",
+      "title": "Encrypted Vector Similarity Computations Using Partially Homomorphic Encryption: Applications and Performance Analysis",
+      "reading_level": "title_only",
+      "selection": "not_advanced_after_title_screen",
+      "reason": "Title describes a different research domain or did not provide a sufficiently specific interface-agent connection for this purposeful supplementary sample. Not a full-text scope adjudication.",
+      "metadata_source_page": 8
+    },
+    {
+      "id": "arxiv:2504.03653",
+      "title": "A Survey on Heterogeneous Computing Using SmartNICs and Emerging Data Processing Units",
+      "reading_level": "title_only",
+      "selection": "not_advanced_after_title_screen",
+      "reason": "Title describes a different research domain or did not provide a sufficiently specific interface-agent connection for this purposeful supplementary sample. Not a full-text scope adjudication.",
+      "metadata_source_page": 8
+    },
+    {
+      "id": "arxiv:2503.00931",
+      "title": "Personalizing the meshed SPL/NAC Brain Atlas for patient-specific scientific computing using SynthMorph",
+      "reading_level": "title_only",
+      "selection": "not_advanced_after_title_screen",
+      "reason": "Title describes a different research domain or did not provide a sufficiently specific interface-agent connection for this purposeful supplementary sample. Not a full-text scope adjudication.",
+      "metadata_source_page": 8
+    },
+    {
+      "id": "arxiv:2502.12252",
+      "title": "Roadmap to fault tolerant quantum computation using topological qubit arrays",
+      "reading_level": "title_only",
+      "selection": "not_advanced_after_title_screen",
+      "reason": "Title describes a different research domain or did not provide a sufficiently specific interface-agent connection for this purposeful supplementary sample. Not a full-text scope adjudication.",
+      "metadata_source_page": 8
+    },
+    {
+      "id": "arxiv:2502.03797",
+      "title": "Superior probabilistic computing using operationally stable probabilistic-bit constructed by manganite nanowire",
+      "reading_level": "title_only",
+      "selection": "not_advanced_after_title_screen",
+      "reason": "Title describes a different research domain or did not provide a sufficiently specific interface-agent connection for this purposeful supplementary sample. Not a full-text scope adjudication.",
+      "metadata_source_page": 8
+    },
+    {
+      "id": "arxiv:2502.03402",
+      "title": "Tensor Evolution: A Framework for Fast Evaluation of Tensor Computations using Recurrences",
+      "reading_level": "title_only",
+      "selection": "not_advanced_after_title_screen",
+      "reason": "Title describes a different research domain or did not provide a sufficiently specific interface-agent connection for this purposeful supplementary sample. Not a full-text scope adjudication.",
+      "metadata_source_page": 8
+    },
+    {
+      "id": "arxiv:2502.01897",
+      "title": "Improved Quantum Computation using Operator Backpropagation",
+      "reading_level": "title_only",
+      "selection": "not_advanced_after_title_screen",
+      "reason": "Title describes a different research domain or did not provide a sufficiently specific interface-agent connection for this purposeful supplementary sample. Not a full-text scope adjudication.",
+      "metadata_source_page": 8
+    },
+    {
+      "id": "arxiv:2501.08639",
+      "title": "Detecting Wildfire Flame and Smoke through Edge Computing using Transfer Learning Enhanced Deep Learning Models",
+      "reading_level": "title_only",
+      "selection": "not_advanced_after_title_screen",
+      "reason": "Title describes a different research domain or did not provide a sufficiently specific interface-agent connection for this purposeful supplementary sample. Not a full-text scope adjudication.",
+      "metadata_source_page": 8
+    },
+    {
+      "id": "arxiv:2501.02813",
+      "title": "Multi-time scale and high performance in-material reservoir computing using graphene-based ion-gating reservoir",
+      "reading_level": "title_only",
+      "selection": "not_advanced_after_title_screen",
+      "reason": "Title describes a different research domain or did not provide a sufficiently specific interface-agent connection for this purposeful supplementary sample. Not a full-text scope adjudication.",
+      "metadata_source_page": 8
+    },
+    {
+      "id": "arxiv:2501.02210",
+      "title": "Vulnerability Liquefaction Mapping in Padang City Based on Cloud Computing Using Optical Satellite Imagery Data",
+      "reading_level": "title_only",
+      "selection": "not_advanced_after_title_screen",
+      "reason": "Title describes a different research domain or did not provide a sufficiently specific interface-agent connection for this purposeful supplementary sample. Not a full-text scope adjudication.",
+      "metadata_source_page": 8
+    },
+    {
+      "id": "arxiv:2412.05040",
+      "title": "Synchronization and desynchronization in ensembles of mobile agents",
+      "reading_level": "title_only",
+      "selection": "not_advanced_after_title_screen",
+      "reason": "Title describes a different research domain or did not provide a sufficiently specific interface-agent connection for this purposeful supplementary sample. Not a full-text scope adjudication.",
+      "metadata_source_page": 9
+    },
+    {
+      "id": "arxiv:2410.17542",
+      "title": "Collision-free Exploration by Mobile Agents Using Pebbles",
+      "reading_level": "title_only",
+      "selection": "not_advanced_after_title_screen",
+      "reason": "Title describes a different research domain or did not provide a sufficiently specific interface-agent connection for this purposeful supplementary sample. Not a full-text scope adjudication.",
+      "metadata_source_page": 9
+    },
+    {
+      "id": "arxiv:2408.14001",
+      "title": "Decentralized Federated Learning with Model Caching on Mobile Agents",
+      "reading_level": "title_only",
+      "selection": "not_advanced_after_title_screen",
+      "reason": "Title describes a different research domain or did not provide a sufficiently specific interface-agent connection for this purposeful supplementary sample. Not a full-text scope adjudication.",
+      "metadata_source_page": 9
+    },
+    {
+      "id": "arxiv:2407.00641",
+      "title": "NeuroNAS: Enhancing Efficiency of Neuromorphic In-Memory Computing for Intelligent Mobile Agents through Hardware-Aware Spiking Neural Architecture Search",
+      "reading_level": "complete_abstract_read",
+      "selection": "not_selected_for_this_synthesis",
+      "reason": "Hardware-aware SNN architecture search for UGV/UAV classification.",
+      "metadata_source_page": 9
+    },
+    {
+      "id": "arxiv:2403.16900",
+      "title": "Spline Trajectory Tracking and Obstacle Avoidance for Mobile Agents via Convex Optimization",
+      "reading_level": "title_only",
+      "selection": "not_advanced_after_title_screen",
+      "reason": "Title describes a different research domain or did not provide a sufficiently specific interface-agent connection for this purposeful supplementary sample. Not a full-text scope adjudication.",
+      "metadata_source_page": 9
+    },
+    {
+      "id": "arxiv:2403.07748",
+      "title": "Ariadne and Theseus: Exploration and Rendezvous with Two Mobile Agents in an Unknown Graph",
+      "reading_level": "title_only",
+      "selection": "not_advanced_after_title_screen",
+      "reason": "Title describes a different research domain or did not provide a sufficiently specific interface-agent connection for this purposeful supplementary sample. Not a full-text scope adjudication.",
+      "metadata_source_page": 9
+    },
+    {
+      "id": "arxiv:2402.18394",
+      "title": "Dual-IMU State Estimation for Relative Localization of Two Mobile Agents",
+      "reading_level": "title_only",
+      "selection": "not_advanced_after_title_screen",
+      "reason": "Title describes a different research domain or did not provide a sufficiently specific interface-agent connection for this purposeful supplementary sample. Not a full-text scope adjudication.",
+      "metadata_source_page": 9
+    },
+    {
+      "id": "arxiv:2312.06666",
+      "title": "Synchronization and movement control of an ensemble of mobile agents",
+      "reading_level": "title_only",
+      "selection": "not_advanced_after_title_screen",
+      "reason": "Title describes a different research domain or did not provide a sufficiently specific interface-agent connection for this purposeful supplementary sample. Not a full-text scope adjudication.",
+      "metadata_source_page": 9
+    },
+    {
+      "id": "arxiv:2311.11817",
+      "title": "Quantum Strategies for Rendezvous and Domination Tasks on Graphs with Mobile Agents",
+      "reading_level": "title_only",
+      "selection": "not_advanced_after_title_screen",
+      "reason": "Title describes a different research domain or did not provide a sufficiently specific interface-agent connection for this purposeful supplementary sample. Not a full-text scope adjudication.",
+      "metadata_source_page": 10
+    },
+    {
+      "id": "arxiv:2310.09096",
+      "title": "Consensus Formation Among Mobile Agents in Networks of Heterogeneous Interaction Venues",
+      "reading_level": "title_only",
+      "selection": "not_advanced_after_title_screen",
+      "reason": "Title describes a different research domain or did not provide a sufficiently specific interface-agent connection for this purposeful supplementary sample. Not a full-text scope adjudication.",
+      "metadata_source_page": 10
+    },
+    {
+      "id": "arxiv:2310.04376",
+      "title": "Near-linear Time Dispersion of Mobile Agents",
+      "reading_level": "title_only",
+      "selection": "not_advanced_after_title_screen",
+      "reason": "Title describes a different research domain or did not provide a sufficiently specific interface-agent connection for this purposeful supplementary sample. Not a full-text scope adjudication.",
+      "metadata_source_page": 10
+    },
+    {
+      "id": "arxiv:2309.02200",
+      "title": "Run for Cover: Dominating Set via Mobile Agents",
+      "reading_level": "title_only",
+      "selection": "not_advanced_after_title_screen",
+      "reason": "Title describes a different research domain or did not provide a sufficiently specific interface-agent connection for this purposeful supplementary sample. Not a full-text scope adjudication.",
+      "metadata_source_page": 10
+    },
+    {
+      "id": "arxiv:2308.11961",
+      "title": "Value of Assistance for Mobile Agents",
+      "reading_level": "complete_abstract_read",
+      "selection": "not_selected_for_this_synthesis",
+      "reason": "Physical robot localization assistance.",
+      "metadata_source_page": 10
+    },
+    {
+      "id": "arxiv:2307.10883",
+      "title": "Control Input Inference of Mobile Agents under Unknown Objective",
+      "reading_level": "title_only",
+      "selection": "not_advanced_after_title_screen",
+      "reason": "Title describes a different research domain or did not provide a sufficiently specific interface-agent connection for this purposeful supplementary sample. Not a full-text scope adjudication.",
+      "metadata_source_page": 10
+    },
+    {
+      "id": "arxiv:2307.07763",
+      "title": "Tightly-Coupled LiDAR-Visual SLAM Based on Geometric Features for Mobile Agents",
+      "reading_level": "title_only",
+      "selection": "not_advanced_after_title_screen",
+      "reason": "Title describes a different research domain or did not provide a sufficiently specific interface-agent connection for this purposeful supplementary sample. Not a full-text scope adjudication.",
+      "metadata_source_page": 10
+    },
+    {
+      "id": "arxiv:2303.01826",
+      "title": "TopSpark: A Timestep Optimization Methodology for Energy-Efficient Spiking Neural Networks on Autonomous Mobile Agents",
+      "reading_level": "title_only",
+      "selection": "not_advanced_after_title_screen",
+      "reason": "Title describes a different research domain or did not provide a sufficiently specific interface-agent connection for this purposeful supplementary sample. Not a full-text scope adjudication.",
+      "metadata_source_page": 10
+    },
+    {
+      "id": "arxiv:2302.00518",
+      "title": "Probabilistic Search and Track with Multiple Mobile Agents",
+      "reading_level": "title_only",
+      "selection": "not_advanced_after_title_screen",
+      "reason": "Title describes a different research domain or did not provide a sufficiently specific interface-agent connection for this purposeful supplementary sample. Not a full-text scope adjudication.",
+      "metadata_source_page": 10
+    },
+    {
+      "id": "arxiv:2212.12620",
+      "title": "Mantis: Enabling Energy-Efficient Autonomous Mobile Agents with Spiking Neural Networks",
+      "reading_level": "title_only",
+      "selection": "not_advanced_after_title_screen",
+      "reason": "Title describes a different research domain or did not provide a sufficiently specific interface-agent connection for this purposeful supplementary sample. Not a full-text scope adjudication.",
+      "metadata_source_page": 10
+    },
+    {
+      "id": "arxiv:2212.03457",
+      "title": "Partial gathering of mobile agents in dynamic rings",
+      "reading_level": "title_only",
+      "selection": "not_advanced_after_title_screen",
+      "reason": "Title describes a different research domain or did not provide a sufficiently specific interface-agent connection for this purposeful supplementary sample. Not a full-text scope adjudication.",
+      "metadata_source_page": 10
+    },
+    {
+      "id": "arxiv:2211.00332",
+      "title": "Computational Power of a Single Oblivious Mobile Agent in Two-Edge-Connected Graphs",
+      "reading_level": "title_only",
+      "selection": "not_advanced_after_title_screen",
+      "reason": "Title describes a different research domain or did not provide a sufficiently specific interface-agent connection for this purposeful supplementary sample. Not a full-text scope adjudication.",
+      "metadata_source_page": 10
+    },
+    {
+      "id": "arxiv:2210.08455",
+      "title": "Self-Reconfigurable Soft-Rigid Mobile Agent with Variable Stiffness and Adaptive Morphology",
+      "reading_level": "title_only",
+      "selection": "not_advanced_after_title_screen",
+      "reason": "Title describes a different research domain or did not provide a sufficiently specific interface-agent connection for this purposeful supplementary sample. Not a full-text scope adjudication.",
+      "metadata_source_page": 10
+    },
+    {
+      "id": "arxiv:2209.13156",
+      "title": "Towards Multimodal Multitask Scene Understanding Models for Indoor Mobile Agents",
+      "reading_level": "title_only",
+      "selection": "not_advanced_after_title_screen",
+      "reason": "Title describes a different research domain or did not provide a sufficiently specific interface-agent connection for this purposeful supplementary sample. Not a full-text scope adjudication.",
+      "metadata_source_page": 10
+    },
+    {
+      "id": "arxiv:2209.05167",
+      "title": "LF-VISLAM: A SLAM Framework for Large Field-of-View Cameras with Negative Imaging Plane on Mobile Agents",
+      "reading_level": "title_only",
+      "selection": "not_advanced_after_title_screen",
+      "reason": "Title describes a different research domain or did not provide a sufficiently specific interface-agent connection for this purposeful supplementary sample. Not a full-text scope adjudication.",
+      "metadata_source_page": 10
+    },
+    {
+      "id": "arxiv:2209.01906",
+      "title": "Deciding a Graph Property by a Single Mobile Agent: One-Bit Memory Suffices",
+      "reading_level": "title_only",
+      "selection": "not_advanced_after_title_screen",
+      "reason": "Title describes a different research domain or did not provide a sufficiently specific interface-agent connection for this purposeful supplementary sample. Not a full-text scope adjudication.",
+      "metadata_source_page": 10
+    },
+    {
+      "id": "arxiv:2207.14404",
+      "title": "Entangled Rendezvous: A Possible Application of Bell Non-Locality For Mobile Agents on Networks",
+      "reading_level": "title_only",
+      "selection": "not_advanced_after_title_screen",
+      "reason": "Title describes a different research domain or did not provide a sufficiently specific interface-agent connection for this purposeful supplementary sample. Not a full-text scope adjudication.",
+      "metadata_source_page": 10
+    },
+    {
+      "id": "arxiv:2206.10711",
+      "title": "Panoramic Panoptic Segmentation: Insights Into Surrounding Parsing for Mobile Agents via Unsupervised Contrastive Learning",
+      "reading_level": "title_only",
+      "selection": "not_advanced_after_title_screen",
+      "reason": "Title describes a different research domain or did not provide a sufficiently specific interface-agent connection for this purposeful supplementary sample. Not a full-text scope adjudication.",
+      "metadata_source_page": 10
+    },
+    {
+      "id": "arxiv:2206.09330",
+      "title": "Multi-period Optimal Control for Mobile Agents Considering State Unpredictability",
+      "reading_level": "title_only",
+      "selection": "not_advanced_after_title_screen",
+      "reason": "Title describes a different research domain or did not provide a sufficiently specific interface-agent connection for this purposeful supplementary sample. Not a full-text scope adjudication.",
+      "metadata_source_page": 10
+    },
+    {
+      "id": "arxiv:2112.07829",
+      "title": "Epidemic spreading in populations of mobile agents with adaptive behavioral response",
+      "reading_level": "title_only",
+      "selection": "not_advanced_after_title_screen",
+      "reason": "Title describes a different research domain or did not provide a sufficiently specific interface-agent connection for this purposeful supplementary sample. Not a full-text scope adjudication.",
+      "metadata_source_page": 10
+    },
+    {
+      "id": "arxiv:2111.06284",
+      "title": "Optimal Physical Sorting of Mobile Agents",
+      "reading_level": "title_only",
+      "selection": "not_advanced_after_title_screen",
+      "reason": "Title describes a different research domain or did not provide a sufficiently specific interface-agent connection for this purposeful supplementary sample. Not a full-text scope adjudication.",
+      "metadata_source_page": 11
+    },
+    {
+      "id": "arxiv:2111.05958",
+      "title": "Social Distancing, Gathering, Search Games: Mobile Agents on Simple Networks",
+      "reading_level": "title_only",
+      "selection": "not_advanced_after_title_screen",
+      "reason": "Title describes a different research domain or did not provide a sufficiently specific interface-agent connection for this purposeful supplementary sample. Not a full-text scope adjudication.",
+      "metadata_source_page": 11
+    },
+    {
+      "id": "arxiv:2110.06332",
+      "title": "Distributed Kalman Filters for Relative Formation Control of Mobile Agents",
+      "reading_level": "title_only",
+      "selection": "not_advanced_after_title_screen",
+      "reason": "Title describes a different research domain or did not provide a sufficiently specific interface-agent connection for this purposeful supplementary sample. Not a full-text scope adjudication.",
+      "metadata_source_page": 11
+    },
+    {
+      "id": "arxiv:2103.01394",
+      "title": "Object Allocation Over a Network of Objects: Mobile Agents with Strict Preferences",
+      "reading_level": "title_only",
+      "selection": "not_advanced_after_title_screen",
+      "reason": "Title describes a different research domain or did not provide a sufficiently specific interface-agent connection for this purposeful supplementary sample. Not a full-text scope adjudication.",
+      "metadata_source_page": 11
+    },
+    {
+      "id": "arxiv:2102.13062",
+      "title": "Graph Exploration by Energy-Sharing Mobile Agents",
+      "reading_level": "title_only",
+      "selection": "not_advanced_after_title_screen",
+      "reason": "Title describes a different research domain or did not provide a sufficiently specific interface-agent connection for this purposeful supplementary sample. Not a full-text scope adjudication.",
+      "metadata_source_page": 11
+    },
+    {
+      "id": "arxiv:2102.07202",
+      "title": "CMIP: Clone Mobile-agent Itinerary Planning Approach for Enhancing Event-to-Sink Throughput in Wireless Sensor Networks",
+      "reading_level": "title_only",
+      "selection": "not_advanced_after_title_screen",
+      "reason": "Title describes a different research domain or did not provide a sufficiently specific interface-agent connection for this purposeful supplementary sample. Not a full-text scope adjudication.",
+      "metadata_source_page": 11
+    },
+    {
+      "id": "arxiv:2009.11943",
+      "title": "A distributed service-matching coverage via heterogeneous mobile agents",
+      "reading_level": "title_only",
+      "selection": "not_advanced_after_title_screen",
+      "reason": "Title describes a different research domain or did not provide a sufficiently specific interface-agent connection for this purposeful supplementary sample. Not a full-text scope adjudication.",
+      "metadata_source_page": 11
+    },
+    {
+      "id": "arxiv:2009.07937",
+      "title": "Post Quantum Secure Command and Control of Mobile Agents : Inserting quantum-resistant encryption schemes in the Secure Robot Operating System",
+      "reading_level": "title_only",
+      "selection": "not_advanced_after_title_screen",
+      "reason": "Title describes a different research domain or did not provide a sufficiently specific interface-agent connection for this purposeful supplementary sample. Not a full-text scope adjudication.",
+      "metadata_source_page": 11
+    },
+    {
+      "id": "arxiv:2008.09379",
+      "title": "Efficient Dispersion of Mobile Agents without Global Knowledge",
+      "reading_level": "title_only",
+      "selection": "not_advanced_after_title_screen",
+      "reason": "Title describes a different research domain or did not provide a sufficiently specific interface-agent connection for this purposeful supplementary sample. Not a full-text scope adjudication.",
+      "metadata_source_page": 11
+    },
+    {
+      "id": "arxiv:2008.07058",
+      "title": "Distance dependent competitive interactions in a frustrated network of mobile agents",
+      "reading_level": "title_only",
+      "selection": "not_advanced_after_title_screen",
+      "reason": "Title describes a different research domain or did not provide a sufficiently specific interface-agent connection for this purposeful supplementary sample. Not a full-text scope adjudication.",
+      "metadata_source_page": 11
+    },
+    {
+      "id": "arxiv:2004.12621",
+      "title": "Succinct Blind Quantum Computation Using a Random Oracle",
+      "reading_level": "title_only",
+      "selection": "not_advanced_after_title_screen",
+      "reason": "Title describes a different research domain or did not provide a sufficiently specific interface-agent connection for this purposeful supplementary sample. Not a full-text scope adjudication.",
+      "metadata_source_page": 11
+    },
+    {
+      "id": "arxiv:2004.05956",
+      "title": "Multi-qubit quantum computing using discrete-time quantum walks on closed graphs",
+      "reading_level": "title_only",
+      "selection": "not_advanced_after_title_screen",
+      "reason": "Title describes a different research domain or did not provide a sufficiently specific interface-agent connection for this purposeful supplementary sample. Not a full-text scope adjudication.",
+      "metadata_source_page": 11
+    },
+    {
+      "id": "arxiv:2004.04114",
+      "title": "Reservoir Computing using High Order Synchronization of Coupled Oscillators",
+      "reading_level": "title_only",
+      "selection": "not_advanced_after_title_screen",
+      "reason": "Title describes a different research domain or did not provide a sufficiently specific interface-agent connection for this purposeful supplementary sample. Not a full-text scope adjudication.",
+      "metadata_source_page": 11
+    },
+    {
+      "id": "arxiv:2004.01477",
+      "title": "Localized Mobile Agent Framework for data processing on Internet of Things",
+      "reading_level": "title_only",
+      "selection": "not_advanced_after_title_screen",
+      "reason": "Title describes a different research domain or did not provide a sufficiently specific interface-agent connection for this purposeful supplementary sample. Not a full-text scope adjudication.",
+      "metadata_source_page": 11
+    },
+    {
+      "id": "arxiv:2004.01329",
+      "title": "How to Compute Using Quantum Walks",
+      "reading_level": "title_only",
+      "selection": "not_advanced_after_title_screen",
+      "reason": "Title describes a different research domain or did not provide a sufficiently specific interface-agent connection for this purposeful supplementary sample. Not a full-text scope adjudication.",
+      "metadata_source_page": 11
+    },
+    {
+      "id": "arxiv:2004.00704",
+      "title": "Quantum computing using continuous-time evolution",
+      "reading_level": "title_only",
+      "selection": "not_advanced_after_title_screen",
+      "reason": "Title describes a different research domain or did not provide a sufficiently specific interface-agent connection for this purposeful supplementary sample. Not a full-text scope adjudication.",
+      "metadata_source_page": 11
+    },
+    {
+      "id": "arxiv:2002.08886",
+      "title": "Spatio-Temporal Coverage Enhancement in Drive-By Sensing Through Utility-Aware Mobile Agent Selection",
+      "reading_level": "title_only",
+      "selection": "not_advanced_after_title_screen",
+      "reason": "Title describes a different research domain or did not provide a sufficiently specific interface-agent connection for this purposeful supplementary sample. Not a full-text scope adjudication.",
+      "metadata_source_page": 11
+    },
+    {
+      "id": "arxiv:2001.09090",
+      "title": "A Cloud Security Framework Based on Trust Model and Mobile Agent",
+      "reading_level": "title_only",
+      "selection": "not_advanced_after_title_screen",
+      "reason": "Title describes a different research domain or did not provide a sufficiently specific interface-agent connection for this purposeful supplementary sample. Not a full-text scope adjudication.",
+      "metadata_source_page": 11
+    },
+    {
+      "id": "arxiv:2001.04941",
+      "title": "Computation of molecular excited states on IBM quantum computers using a discriminative variational quantum eigensolver",
+      "reading_level": "title_only",
+      "selection": "not_advanced_after_title_screen",
+      "reason": "Title describes a different research domain or did not provide a sufficiently specific interface-agent connection for this purposeful supplementary sample. Not a full-text scope adjudication.",
+      "metadata_source_page": 11
+    },
+    {
+      "id": "arxiv:2001.00794",
+      "title": "Simulation of Thermal Relaxation in Spin Chemistry Systems on a Quantum Computer Using Inherent Qubit Decoherence",
+      "reading_level": "title_only",
+      "selection": "not_advanced_after_title_screen",
+      "reason": "Title describes a different research domain or did not provide a sufficiently specific interface-agent connection for this purposeful supplementary sample. Not a full-text scope adjudication.",
+      "metadata_source_page": 11
+    },
+    {
+      "id": "arxiv:1912.05119",
+      "title": "Reservoir computing using a spin-wave delay line active ring resonator",
+      "reading_level": "title_only",
+      "selection": "not_advanced_after_title_screen",
+      "reason": "Title describes a different research domain or did not provide a sufficiently specific interface-agent connection for this purposeful supplementary sample. Not a full-text scope adjudication.",
+      "metadata_source_page": 11
+    },
+    {
+      "id": "arxiv:1911.01354",
+      "title": "Robust universal Hamiltonian quantum computing using two-body interactions",
+      "reading_level": "title_only",
+      "selection": "not_advanced_after_title_screen",
+      "reason": "Title describes a different research domain or did not provide a sufficiently specific interface-agent connection for this purposeful supplementary sample. Not a full-text scope adjudication.",
+      "metadata_source_page": 11
+    },
+    {
+      "id": "arxiv:1910.11075",
+      "title": "Topological Quantum Computing Using Nanowire Devices",
+      "reading_level": "title_only",
+      "selection": "not_advanced_after_title_screen",
+      "reason": "Title describes a different research domain or did not provide a sufficiently specific interface-agent connection for this purposeful supplementary sample. Not a full-text scope adjudication.",
+      "metadata_source_page": 11
+    },
+    {
+      "id": "arxiv:1910.05636",
+      "title": "Trajectory optimization for a class of robots belonging to Constrained Collaborative Mobile Agents (CCMA) family",
+      "reading_level": "title_only",
+      "selection": "not_advanced_after_title_screen",
+      "reason": "Title describes a different research domain or did not provide a sufficiently specific interface-agent connection for this purposeful supplementary sample. Not a full-text scope adjudication.",
+      "metadata_source_page": 11
+    },
+    {
+      "id": "arxiv:1909.12925",
+      "title": "Interaction-Aware Multi-Agent Reinforcement Learning for Mobile Agents with Individual Goals",
+      "reading_level": "title_only",
+      "selection": "not_advanced_after_title_screen",
+      "reason": "Title describes a different research domain or did not provide a sufficiently specific interface-agent connection for this purposeful supplementary sample. Not a full-text scope adjudication.",
+      "metadata_source_page": 11
+    },
+    {
+      "id": "arxiv:1908.07315",
+      "title": "Evacuation of equilateral triangles by mobile agents of limited communication range",
+      "reading_level": "title_only",
+      "selection": "not_advanced_after_title_screen",
+      "reason": "Title describes a different research domain or did not provide a sufficiently specific interface-agent connection for this purposeful supplementary sample. Not a full-text scope adjudication.",
+      "metadata_source_page": 11
+    },
+    {
+      "id": "arxiv:1909.02547",
+      "title": "Collecting MIB Data from Network Managed by SNMP using Multi Mobile Agents",
+      "reading_level": "title_only",
+      "selection": "not_advanced_after_title_screen",
+      "reason": "Title describes a different research domain or did not provide a sufficiently specific interface-agent connection for this purposeful supplementary sample. Not a full-text scope adjudication.",
+      "metadata_source_page": 11
+    },
+    {
+      "id": "arxiv:1907.04084",
+      "title": "Universal quantum computing using single-particle discrete-time quantum walk",
+      "reading_level": "title_only",
+      "selection": "not_advanced_after_title_screen",
+      "reason": "Title describes a different research domain or did not provide a sufficiently specific interface-agent connection for this purposeful supplementary sample. Not a full-text scope adjudication.",
+      "metadata_source_page": 11
+    },
+    {
+      "id": "arxiv:1907.02804",
+      "title": "Demonstrating Delay-based Reservoir Computing Using a Compact Photonic Integrated Chip",
+      "reading_level": "title_only",
+      "selection": "not_advanced_after_title_screen",
+      "reason": "Title describes a different research domain or did not provide a sufficiently specific interface-agent connection for this purposeful supplementary sample. Not a full-text scope adjudication.",
+      "metadata_source_page": 11
+    },
+    {
+      "id": "arxiv:1907.00657",
+      "title": "Optical Reservoir Computing using multiple light scattering for chaotic systems prediction",
+      "reading_level": "title_only",
+      "selection": "not_advanced_after_title_screen",
+      "reason": "Title describes a different research domain or did not provide a sufficiently specific interface-agent connection for this purposeful supplementary sample. Not a full-text scope adjudication.",
+      "metadata_source_page": 11
+    },
+    {
+      "id": "arxiv:1904.12028",
+      "title": "Arbitrary-time error suppression for Markovian adiabatic quantum computing using stabilizer subspace codes",
+      "reading_level": "title_only",
+      "selection": "not_advanced_after_title_screen",
+      "reason": "Title describes a different research domain or did not provide a sufficiently specific interface-agent connection for this purposeful supplementary sample. Not a full-text scope adjudication.",
+      "metadata_source_page": 11
+    },
+    {
+      "id": "arxiv:1901.07653",
+      "title": "Determining eigenstates and thermal states on a quantum computer using quantum imaginary time evolution",
+      "reading_level": "title_only",
+      "selection": "not_advanced_after_title_screen",
+      "reason": "Title describes a different research domain or did not provide a sufficiently specific interface-agent connection for this purposeful supplementary sample. Not a full-text scope adjudication.",
+      "metadata_source_page": 11
+    },
+    {
+      "id": "arxiv:1901.02935",
+      "title": "An optimization framework for simulation and kinematic control of Constrained Collaborative Mobile Agents (CCMA) system",
+      "reading_level": "title_only",
+      "selection": "not_advanced_after_title_screen",
+      "reason": "Title describes a different research domain or did not provide a sufficiently specific interface-agent connection for this purposeful supplementary sample. Not a full-text scope adjudication.",
+      "metadata_source_page": 11
+    },
+    {
+      "id": "arxiv:1812.06425",
+      "title": "Further Investigation on Classical Multiparty computation using Quantum Resources",
+      "reading_level": "title_only",
+      "selection": "not_advanced_after_title_screen",
+      "reason": "Title describes a different research domain or did not provide a sufficiently specific interface-agent connection for this purposeful supplementary sample. Not a full-text scope adjudication.",
+      "metadata_source_page": 11
+    },
+    {
+      "id": "arxiv:1812.07503",
+      "title": "Superconducting Neuromorphic Computing Using Quantum Phase-Slip Junctions",
+      "reading_level": "title_only",
+      "selection": "not_advanced_after_title_screen",
+      "reason": "Title describes a different research domain or did not provide a sufficiently specific interface-agent connection for this purposeful supplementary sample. Not a full-text scope adjudication.",
+      "metadata_source_page": 11
+    },
+    {
+      "id": "arxiv:1811.12926",
+      "title": "Validating quantum computers using randomized model circuits",
+      "reading_level": "title_only",
+      "selection": "not_advanced_after_title_screen",
+      "reason": "Title describes a different research domain or did not provide a sufficiently specific interface-agent connection for this purposeful supplementary sample. Not a full-text scope adjudication.",
+      "metadata_source_page": 11
+    },
+    {
+      "id": "arxiv:1811.03894",
+      "title": "Near Zero-Energy Computation Using Quantum-dot Cellular Automata",
+      "reading_level": "title_only",
+      "selection": "not_advanced_after_title_screen",
+      "reason": "Title describes a different research domain or did not provide a sufficiently specific interface-agent connection for this purposeful supplementary sample. Not a full-text scope adjudication.",
+      "metadata_source_page": 11
+    },
+    {
+      "id": "arxiv:1808.06709",
+      "title": "Low overhead quantum computation using lattice surgery",
+      "reading_level": "title_only",
+      "selection": "not_advanced_after_title_screen",
+      "reason": "Title describes a different research domain or did not provide a sufficiently specific interface-agent connection for this purposeful supplementary sample. Not a full-text scope adjudication.",
+      "metadata_source_page": 12
+    },
+    {
+      "id": "arxiv:1806.09138",
+      "title": "Resource-efficient verification of quantum computing using Serfling's bound",
+      "reading_level": "title_only",
+      "selection": "not_advanced_after_title_screen",
+      "reason": "Title describes a different research domain or did not provide a sufficiently specific interface-agent connection for this purposeful supplementary sample. Not a full-text scope adjudication.",
+      "metadata_source_page": 12
+    },
+    {
+      "id": "arxiv:1806.05543",
+      "title": "Witnessing quantum resource conversion within deterministic quantum computation using one pure superconducting qubit",
+      "reading_level": "title_only",
+      "selection": "not_advanced_after_title_screen",
+      "reason": "Title describes a different research domain or did not provide a sufficiently specific interface-agent connection for this purposeful supplementary sample. Not a full-text scope adjudication.",
+      "metadata_source_page": 12
+    },
+    {
+      "id": "arxiv:1806.04663",
+      "title": "Universal quantum computation using fractal symmetry-protected cluster phases",
+      "reading_level": "title_only",
+      "selection": "not_advanced_after_title_screen",
+      "reason": "Title describes a different research domain or did not provide a sufficiently specific interface-agent connection for this purposeful supplementary sample. Not a full-text scope adjudication.",
+      "metadata_source_page": 12
+    },
+    {
+      "id": "arxiv:1806.01140",
+      "title": "Percolation of Lipschitz surface and tight bounds on the spread of information among mobile agents",
+      "reading_level": "title_only",
+      "selection": "not_advanced_after_title_screen",
+      "reason": "Title describes a different research domain or did not provide a sufficiently specific interface-agent connection for this purposeful supplementary sample. Not a full-text scope adjudication.",
+      "metadata_source_page": 12
+    },
+    {
+      "id": "arxiv:1805.00988",
+      "title": "Simulating Quantum Computers Using OpenCL",
+      "reading_level": "title_only",
+      "selection": "not_advanced_after_title_screen",
+      "reason": "Title describes a different research domain or did not provide a sufficiently specific interface-agent connection for this purposeful supplementary sample. Not a full-text scope adjudication.",
+      "metadata_source_page": 12
+    },
+    {
+      "id": "arxiv:1804.00267",
+      "title": "Toward Fast Neural Computing using All-Photonic Phase Change Spiking Neurons",
+      "reading_level": "title_only",
+      "selection": "not_advanced_after_title_screen",
+      "reason": "Title describes a different research domain or did not provide a sufficiently specific interface-agent connection for this purposeful supplementary sample. Not a full-text scope adjudication.",
+      "metadata_source_page": 12
+    },
+    {
+      "id": "arxiv:1802.07759",
+      "title": "Non-asymptotic Error Bounds For Constant Stepsize Stochastic Approximation For Tracking Mobile Agents",
+      "reading_level": "title_only",
+      "selection": "not_advanced_after_title_screen",
+      "reason": "Title describes a different research domain or did not provide a sufficiently specific interface-agent connection for this purposeful supplementary sample. Not a full-text scope adjudication.",
+      "metadata_source_page": 12
+    },
+    {
+      "id": "arxiv:1802.08303",
+      "title": "The Quantum Abacus: Analog Computing using Surface Rydberg States",
+      "reading_level": "title_only",
+      "selection": "not_advanced_after_title_screen",
+      "reason": "Title describes a different research domain or did not provide a sufficiently specific interface-agent connection for this purposeful supplementary sample. Not a full-text scope adjudication.",
+      "metadata_source_page": 12
+    },
+    {
+      "id": "arxiv:1802.04345",
+      "title": "Localization in internets of mobile agents: A linear approach",
+      "reading_level": "title_only",
+      "selection": "not_advanced_after_title_screen",
+      "reason": "Title describes a different research domain or did not provide a sufficiently specific interface-agent connection for this purposeful supplementary sample. Not a full-text scope adjudication.",
+      "metadata_source_page": 12
+    },
+    {
+      "id": "arxiv:1802.03417",
+      "title": "Narrow Artificial Intelligence with Machine Learning for Real-Time Estimation of a Mobile Agents Location Using Hidden Markov Models",
+      "reading_level": "title_only",
+      "selection": "not_advanced_after_title_screen",
+      "reason": "Title describes a different research domain or did not provide a sufficiently specific interface-agent connection for this purposeful supplementary sample. Not a full-text scope adjudication.",
+      "metadata_source_page": 12
+    },
+    {
+      "id": "arxiv:1801.07093",
+      "title": "Network flow of mobile agents enhances the evolution of cooperation",
+      "reading_level": "title_only",
+      "selection": "not_advanced_after_title_screen",
+      "reason": "Title describes a different research domain or did not provide a sufficiently specific interface-agent connection for this purposeful supplementary sample. Not a full-text scope adjudication.",
+      "metadata_source_page": 12
+    },
+    {
+      "id": "arxiv:1801.04073",
+      "title": "Quantum Many-Body Effects in X-Ray Spectra Efficiently Computed using a Basic Graph Algorithm",
+      "reading_level": "title_only",
+      "selection": "not_advanced_after_title_screen",
+      "reason": "Title describes a different research domain or did not provide a sufficiently specific interface-agent connection for this purposeful supplementary sample. Not a full-text scope adjudication.",
+      "metadata_source_page": 12
+    },
+    {
+      "id": "arxiv:1801.04006",
+      "title": "Blind quantum computation using the central spin Hamiltonian",
+      "reading_level": "title_only",
+      "selection": "not_advanced_after_title_screen",
+      "reason": "Title describes a different research domain or did not provide a sufficiently specific interface-agent connection for this purposeful supplementary sample. Not a full-text scope adjudication.",
+      "metadata_source_page": 12
+    },
+    {
+      "id": "arxiv:1801.01372",
+      "title": "Effective usage of random routing on networks of mobile agents",
+      "reading_level": "title_only",
+      "selection": "not_advanced_after_title_screen",
+      "reason": "Title describes a different research domain or did not provide a sufficiently specific interface-agent connection for this purposeful supplementary sample. Not a full-text scope adjudication.",
+      "metadata_source_page": 12
+    },
+    {
+      "id": "arxiv:1712.06482",
+      "title": "Temporal Analog Optical Computing using an On-Chip Fully Reconfigurable Photonic Signal Processor",
+      "reading_level": "title_only",
+      "selection": "not_advanced_after_title_screen",
+      "reason": "Title describes a different research domain or did not provide a sufficiently specific interface-agent connection for this purposeful supplementary sample. Not a full-text scope adjudication.",
+      "metadata_source_page": 12
+    },
+    {
+      "id": "arxiv:1712.00316",
+      "title": "The Snow Team Problem (Clearing Directed Subgraphs by Mobile Agents)",
+      "reading_level": "title_only",
+      "selection": "not_advanced_after_title_screen",
+      "reason": "Title describes a different research domain or did not provide a sufficiently specific interface-agent connection for this purposeful supplementary sample. Not a full-text scope adjudication.",
+      "metadata_source_page": 12
+    },
+    {
+      "id": "arxiv:1711.05875",
+      "title": "Scaling Trapped Ion Quantum Computers Using Fast Gates and Microtraps",
+      "reading_level": "title_only",
+      "selection": "not_advanced_after_title_screen",
+      "reason": "Title describes a different research domain or did not provide a sufficiently specific interface-agent connection for this purposeful supplementary sample. Not a full-text scope adjudication.",
+      "metadata_source_page": 12
+    },
+    {
+      "id": "arxiv:1711.02348",
+      "title": "Multi-mode Tracking of a Group of Mobile Agents",
+      "reading_level": "title_only",
+      "selection": "not_advanced_after_title_screen",
+      "reason": "Title describes a different research domain or did not provide a sufficiently specific interface-agent connection for this purposeful supplementary sample. Not a full-text scope adjudication.",
+      "metadata_source_page": 12
+    },
+    {
+      "id": "arxiv:1711.00094",
+      "title": "Universal quantum computing using $(\\mathbb{Z}_d)^3$ symmetry-protected topologically ordered states",
+      "reading_level": "title_only",
+      "selection": "not_advanced_after_title_screen",
+      "reason": "Title describes a different research domain or did not provide a sufficiently specific interface-agent connection for this purposeful supplementary sample. Not a full-text scope adjudication.",
+      "metadata_source_page": 12
+    },
+    {
+      "id": "arxiv:1709.10211",
+      "title": "Reservoir Computing using Stochastic p-Bits",
+      "reading_level": "title_only",
+      "selection": "not_advanced_after_title_screen",
+      "reason": "Title describes a different research domain or did not provide a sufficiently specific interface-agent connection for this purposeful supplementary sample. Not a full-text scope adjudication.",
+      "metadata_source_page": 12
+    },
+    {
+      "id": "arxiv:1708.07285",
+      "title": "Area Protection in Adversarial Path-Finding Scenarios with Multiple Mobile Agents on Graphs: a theoretical and experimental study of target-allocation strategies for defense coordination",
+      "reading_level": "title_only",
+      "selection": "not_advanced_after_title_screen",
+      "reason": "Title describes a different research domain or did not provide a sufficiently specific interface-agent connection for this purposeful supplementary sample. Not a full-text scope adjudication.",
+      "metadata_source_page": 12
+    },
+    {
+      "id": "arxiv:1708.06144",
+      "title": "Classical multiparty computation using quantum resources",
+      "reading_level": "title_only",
+      "selection": "not_advanced_after_title_screen",
+      "reason": "Title describes a different research domain or did not provide a sufficiently specific interface-agent connection for this purposeful supplementary sample. Not a full-text scope adjudication.",
+      "metadata_source_page": 12
+    },
+    {
+      "id": "arxiv:1707.03148",
+      "title": "An Opportunistic AODV Routing Scheme : A Cognitive Mobile Agents Approach",
+      "reading_level": "title_only",
+      "selection": "not_advanced_after_title_screen",
+      "reason": "Title describes a different research domain or did not provide a sufficiently specific interface-agent connection for this purposeful supplementary sample. Not a full-text scope adjudication.",
+      "metadata_source_page": 12
+    },
+    {
+      "id": "arxiv:1706.08061",
+      "title": "High-fidelity adiabatic quantum computation using the intrinsic Hamiltonian of a spin system: Application to the experimental factorization of 291311",
+      "reading_level": "title_only",
+      "selection": "not_advanced_after_title_screen",
+      "reason": "Title describes a different research domain or did not provide a sufficiently specific interface-agent connection for this purposeful supplementary sample. Not a full-text scope adjudication.",
+      "metadata_source_page": 12
+    },
+    {
+      "id": "arxiv:1704.03431",
+      "title": "Qudit-Basis Universal Quantum Computation using $χ^{(2)}$ Interactions",
+      "reading_level": "title_only",
+      "selection": "not_advanced_after_title_screen",
+      "reason": "Title describes a different research domain or did not provide a sufficiently specific interface-agent connection for this purposeful supplementary sample. Not a full-text scope adjudication.",
+      "metadata_source_page": 12
+    },
+    {
+      "id": "arxiv:1703.05496",
+      "title": "Data Delivery by Mobile Agents with Energy Constraints over a fixed path",
+      "reading_level": "title_only",
+      "selection": "not_advanced_after_title_screen",
+      "reason": "Title describes a different research domain or did not provide a sufficiently specific interface-agent connection for this purposeful supplementary sample. Not a full-text scope adjudication.",
+      "metadata_source_page": 12
+    },
+    {
+      "id": "arxiv:1703.02806",
+      "title": "Deep Reservoir Computing Using Cellular Automata",
+      "reading_level": "title_only",
+      "selection": "not_advanced_after_title_screen",
+      "reason": "Title describes a different research domain or did not provide a sufficiently specific interface-agent connection for this purposeful supplementary sample. Not a full-text scope adjudication.",
+      "metadata_source_page": 12
+    },
+    {
+      "id": "arxiv:1702.07665",
+      "title": "Truthful Mechanisms for Delivery with Mobile Agents",
+      "reading_level": "title_only",
+      "selection": "not_advanced_after_title_screen",
+      "reason": "Title describes a different research domain or did not provide a sufficiently specific interface-agent connection for this purposeful supplementary sample. Not a full-text scope adjudication.",
+      "metadata_source_page": 12
+    },
+    {
+      "id": "arxiv:1702.03812",
+      "title": "Reservoir Computing Using Non-Uniform Binary Cellular Automata",
+      "reading_level": "title_only",
+      "selection": "not_advanced_after_title_screen",
+      "reason": "Title describes a different research domain or did not provide a sufficiently specific interface-agent connection for this purposeful supplementary sample. Not a full-text scope adjudication.",
+      "metadata_source_page": 12
+    },
+    {
+      "id": "arxiv:1701.02970",
+      "title": "Compressed quantum computation using the IBM Quantum Experience",
+      "reading_level": "title_only",
+      "selection": "not_advanced_after_title_screen",
+      "reason": "Title describes a different research domain or did not provide a sufficiently specific interface-agent connection for this purposeful supplementary sample. Not a full-text scope adjudication.",
+      "metadata_source_page": 12
+    },
+    {
+      "id": "arxiv:1612.08606",
+      "title": "Parallel photonic reservoir computing using frequency multiplexing of neurons",
+      "reading_level": "title_only",
+      "selection": "not_advanced_after_title_screen",
+      "reason": "Title describes a different research domain or did not provide a sufficiently specific interface-agent connection for this purposeful supplementary sample. Not a full-text scope adjudication.",
+      "metadata_source_page": 12
+    },
+    {
+      "id": "arxiv:1612.09292",
+      "title": "Stochastic single flux quantum neuromorphic computing using magnetically tunable Josephson junctions",
+      "reading_level": "title_only",
+      "selection": "not_advanced_after_title_screen",
+      "reason": "Title describes a different research domain or did not provide a sufficiently specific interface-agent connection for this purposeful supplementary sample. Not a full-text scope adjudication.",
+      "metadata_source_page": 12
+    },
+    {
+      "id": "arxiv:1611.01985",
+      "title": "Cooperative Simultaneous Localization and Synchronization in Mobile Agent Networks",
+      "reading_level": "title_only",
+      "selection": "not_advanced_after_title_screen",
+      "reason": "Title describes a different research domain or did not provide a sufficiently specific interface-agent connection for this purposeful supplementary sample. Not a full-text scope adjudication.",
+      "metadata_source_page": 12
+    },
+    {
+      "id": "arxiv:1610.02361",
+      "title": "Energy-efficient Delivery by Heterogeneous Mobile Agents",
+      "reading_level": "title_only",
+      "selection": "not_advanced_after_title_screen",
+      "reason": "Title describes a different research domain or did not provide a sufficiently specific interface-agent connection for this purposeful supplementary sample. Not a full-text scope adjudication.",
+      "metadata_source_page": 12
+    },
+    {
+      "id": "arxiv:1609.06628",
+      "title": "Programming quantum computers using 3-D puzzles, coffee cups, and doughnuts",
+      "reading_level": "title_only",
+      "selection": "not_advanced_after_title_screen",
+      "reason": "Title describes a different research domain or did not provide a sufficiently specific interface-agent connection for this purposeful supplementary sample. Not a full-text scope adjudication.",
+      "metadata_source_page": 12
+    },
+    {
+      "id": "arxiv:1609.06435",
+      "title": "Controlling rigid formations of mobile agents under inconsistent measurements",
+      "reading_level": "title_only",
+      "selection": "not_advanced_after_title_screen",
+      "reason": "Title describes a different research domain or did not provide a sufficiently specific interface-agent connection for this purposeful supplementary sample. Not a full-text scope adjudication.",
+      "metadata_source_page": 12
+    },
+    {
+      "id": "arxiv:1607.04959",
+      "title": "Quantum computation using arrays of N polar molecules in pendular states",
+      "reading_level": "title_only",
+      "selection": "not_advanced_after_title_screen",
+      "reason": "Title describes a different research domain or did not provide a sufficiently specific interface-agent connection for this purposeful supplementary sample. Not a full-text scope adjudication.",
+      "metadata_source_page": 12
+    },
+    {
+      "id": "arxiv:1607.02632",
+      "title": "Decentralized, Self-organizing, Potential field-based Control for Individuallymotivated, Mobile Agents in a Cluttered Environment: A Vector-Harmonic Potential Field Approach",
+      "reading_level": "title_only",
+      "selection": "not_advanced_after_title_screen",
+      "reason": "Title describes a different research domain or did not provide a sufficiently specific interface-agent connection for this purposeful supplementary sample. Not a full-text scope adjudication.",
+      "metadata_source_page": 12
+    },
+    {
+      "id": "arxiv:1607.00644",
+      "title": "Nearest Neighbor-based Rendezvous for Sparsely Connected Mobile Agents",
+      "reading_level": "title_only",
+      "selection": "not_advanced_after_title_screen",
+      "reason": "Title describes a different research domain or did not provide a sufficiently specific interface-agent connection for this purposeful supplementary sample. Not a full-text scope adjudication.",
+      "metadata_source_page": 12
+    },
+    {
+      "id": "arxiv:1606.03795",
+      "title": "Error suppression for Hamiltonian-based quantum computation using subsystem codes",
+      "reading_level": "title_only",
+      "selection": "not_advanced_after_title_screen",
+      "reason": "Title describes a different research domain or did not provide a sufficiently specific interface-agent connection for this purposeful supplementary sample. Not a full-text scope adjudication.",
+      "metadata_source_page": 12
+    },
+    {
+      "id": "arxiv:1603.04789",
+      "title": "Emergence of metapopulations and echo chambers in mobile agents",
+      "reading_level": "title_only",
+      "selection": "not_advanced_after_title_screen",
+      "reason": "Title describes a different research domain or did not provide a sufficiently specific interface-agent connection for this purposeful supplementary sample. Not a full-text scope adjudication.",
+      "metadata_source_page": 12
+    },
+    {
+      "id": "arxiv:1603.04234",
+      "title": "Convergecast and Broadcast by Power-Aware Mobile Agents",
+      "reading_level": "title_only",
+      "selection": "not_advanced_after_title_screen",
+      "reason": "Title describes a different research domain or did not provide a sufficiently specific interface-agent connection for this purposeful supplementary sample. Not a full-text scope adjudication.",
+      "metadata_source_page": 12
+    },
+    {
+      "id": "arxiv:1512.00796",
+      "title": "Designing a Million-Qubit Quantum Computer Using Resource Performance Simulator",
+      "reading_level": "title_only",
+      "selection": "not_advanced_after_title_screen",
+      "reason": "Title describes a different research domain or did not provide a sufficiently specific interface-agent connection for this purposeful supplementary sample. Not a full-text scope adjudication.",
+      "metadata_source_page": 12
+    },
+    {
+      "id": "arxiv:1511.05987",
+      "title": "Algorithms for Communication Problems for Mobile Agents Exchanging Energy",
+      "reading_level": "title_only",
+      "selection": "not_advanced_after_title_screen",
+      "reason": "Title describes a different research domain or did not provide a sufficiently specific interface-agent connection for this purposeful supplementary sample. Not a full-text scope adjudication.",
+      "metadata_source_page": 12
+    },
+    {
+      "id": "arxiv:1509.05008",
+      "title": "Optimal strategies for driving a mobile agent in a guidance by repulsion model",
+      "reading_level": "title_only",
+      "selection": "not_advanced_after_title_screen",
+      "reason": "Title describes a different research domain or did not provide a sufficiently specific interface-agent connection for this purposeful supplementary sample. Not a full-text scope adjudication.",
+      "metadata_source_page": 12
+    },
+    {
+      "id": "arxiv:1509.00224",
+      "title": "Impact of mobility structure on the optimization of small-world networks of mobile agents",
+      "reading_level": "title_only",
+      "selection": "not_advanced_after_title_screen",
+      "reason": "Title describes a different research domain or did not provide a sufficiently specific interface-agent connection for this purposeful supplementary sample. Not a full-text scope adjudication.",
+      "metadata_source_page": 12
+    },
+    {
+      "id": "arxiv:1507.01656",
+      "title": "Languages for Mobile Agents",
+      "reading_level": "title_only",
+      "selection": "not_advanced_after_title_screen",
+      "reason": "Title describes a different research domain or did not provide a sufficiently specific interface-agent connection for this purposeful supplementary sample. Not a full-text scope adjudication.",
+      "metadata_source_page": 12
+    },
+    {
+      "id": "arxiv:1506.01310",
+      "title": "Adaptive event sensing in networks of autonomous mobile agents",
+      "reading_level": "title_only",
+      "selection": "not_advanced_after_title_screen",
+      "reason": "Title describes a different research domain or did not provide a sufficiently specific interface-agent connection for this purposeful supplementary sample. Not a full-text scope adjudication.",
+      "metadata_source_page": 12
+    },
+    {
+      "id": "arxiv:1505.06596",
+      "title": "Partial Gathering of Mobile Agents in Asynchronous Rings",
+      "reading_level": "title_only",
+      "selection": "not_advanced_after_title_screen",
+      "reason": "Title describes a different research domain or did not provide a sufficiently specific interface-agent connection for this purposeful supplementary sample. Not a full-text scope adjudication.",
+      "metadata_source_page": 12
+    },
+    {
+      "id": "arxiv:1505.05908",
+      "title": "Cooperative localization for mobile agents: a recursive decentralized algorithm based on Kalman filter decoupling",
+      "reading_level": "title_only",
+      "selection": "not_advanced_after_title_screen",
+      "reason": "Title describes a different research domain or did not provide a sufficiently specific interface-agent connection for this purposeful supplementary sample. Not a full-text scope adjudication.",
+      "metadata_source_page": 12
+    },
+    {
+      "id": "arxiv:1411.6767",
+      "title": "Mobile Agent based Market Basket Analysis on Cloud",
+      "reading_level": "title_only",
+      "selection": "not_advanced_after_title_screen",
+      "reason": "Title describes a different research domain or did not provide a sufficiently specific interface-agent connection for this purposeful supplementary sample. Not a full-text scope adjudication.",
+      "metadata_source_page": 13
+    },
+    {
+      "id": "arxiv:1410.4772",
+      "title": "Mobile Agents Rendezvous in spite of a Malicious Agent",
+      "reading_level": "title_only",
+      "selection": "not_advanced_after_title_screen",
+      "reason": "Title describes a different research domain or did not provide a sufficiently specific interface-agent connection for this purposeful supplementary sample. Not a full-text scope adjudication.",
+      "metadata_source_page": 13
+    },
+    {
+      "id": "arxiv:1410.4147",
+      "title": "Mobile Agent Systems, Recent Security Threats and Counter Measures",
+      "reading_level": "title_only",
+      "selection": "not_advanced_after_title_screen",
+      "reason": "Title describes a different research domain or did not provide a sufficiently specific interface-agent connection for this purposeful supplementary sample. Not a full-text scope adjudication.",
+      "metadata_source_page": 13
+    },
+    {
+      "id": "arxiv:1410.0162",
+      "title": "Reservoir Computing using Cellular Automata",
+      "reading_level": "title_only",
+      "selection": "not_advanced_after_title_screen",
+      "reason": "Title describes a different research domain or did not provide a sufficiently specific interface-agent connection for this purposeful supplementary sample. Not a full-text scope adjudication.",
+      "metadata_source_page": 13
+    },
+    {
+      "id": "arxiv:1409.8028",
+      "title": "Reaching Consensus Among Mobile Agents: A Distributed Protocol for the Detection of Social Situations",
+      "reading_level": "title_only",
+      "selection": "not_advanced_after_title_screen",
+      "reason": "Title describes a different research domain or did not provide a sufficiently specific interface-agent connection for this purposeful supplementary sample. Not a full-text scope adjudication.",
+      "metadata_source_page": 13
+    },
+    {
+      "id": "arxiv:1408.6258",
+      "title": "Percolation and cooperation with mobile agents: Geometric and strategy clusters",
+      "reading_level": "title_only",
+      "selection": "not_advanced_after_title_screen",
+      "reason": "Title describes a different research domain or did not provide a sufficiently specific interface-agent connection for this purposeful supplementary sample. Not a full-text scope adjudication.",
+      "metadata_source_page": 13
+    },
+    {
+      "id": "arxiv:1408.1460",
+      "title": "Verification of Linear Optical Quantum Computing using Quantum Process Calculus",
+      "reading_level": "title_only",
+      "selection": "not_advanced_after_title_screen",
+      "reason": "Title describes a different research domain or did not provide a sufficiently specific interface-agent connection for this purposeful supplementary sample. Not a full-text scope adjudication.",
+      "metadata_source_page": 13
+    },
+    {
+      "id": "arxiv:1407.8194",
+      "title": "Fence patrolling by mobile agents with distinct speeds",
+      "reading_level": "title_only",
+      "selection": "not_advanced_after_title_screen",
+      "reason": "Title describes a different research domain or did not provide a sufficiently specific interface-agent connection for this purposeful supplementary sample. Not a full-text scope adjudication.",
+      "metadata_source_page": 13
+    },
+    {
+      "id": "arxiv:1407.5889",
+      "title": "Domain-partitioned element management systems employing mobile agents for distributed network management",
+      "reading_level": "title_only",
+      "selection": "not_advanced_after_title_screen",
+      "reason": "Title describes a different research domain or did not provide a sufficiently specific interface-agent connection for this purposeful supplementary sample. Not a full-text scope adjudication.",
+      "metadata_source_page": 13
+    },
+    {
+      "id": "arxiv:1407.1485",
+      "title": "Error suppression in Hamiltonian based quantum computation using energy penalties",
+      "reading_level": "title_only",
+      "selection": "not_advanced_after_title_screen",
+      "reason": "Title describes a different research domain or did not provide a sufficiently specific interface-agent connection for this purposeful supplementary sample. Not a full-text scope adjudication.",
+      "metadata_source_page": 13
+    },
+    {
+      "id": "arxiv:1406.7631",
+      "title": "Dynamical topological quantum computation using spin pulse control in the Heisenberg model",
+      "reading_level": "title_only",
+      "selection": "not_advanced_after_title_screen",
+      "reason": "Title describes a different research domain or did not provide a sufficiently specific interface-agent connection for this purposeful supplementary sample. Not a full-text scope adjudication.",
+      "metadata_source_page": 13
+    },
+    {
+      "id": "arxiv:1406.2795",
+      "title": "Rendezvous of Distance-aware Mobile Agents in Unknown Graphs",
+      "reading_level": "title_only",
+      "selection": "not_advanced_after_title_screen",
+      "reason": "Title describes a different research domain or did not provide a sufficiently specific interface-agent connection for this purposeful supplementary sample. Not a full-text scope adjudication.",
+      "metadata_source_page": 13
+    },
+    {
+      "id": "arxiv:1406.2008",
+      "title": "Rendezvous of Heterogeneous Mobile Agents in Edge-weighted Networks",
+      "reading_level": "title_only",
+      "selection": "not_advanced_after_title_screen",
+      "reason": "Title describes a different research domain or did not provide a sufficiently specific interface-agent connection for this purposeful supplementary sample. Not a full-text scope adjudication.",
+      "metadata_source_page": 13
+    },
+    {
+      "id": "arxiv:1406.0296",
+      "title": "Using Mobile Agents for Information Retrival in B2B Systems",
+      "reading_level": "title_only",
+      "selection": "not_advanced_after_title_screen",
+      "reason": "Title describes a different research domain or did not provide a sufficiently specific interface-agent connection for this purposeful supplementary sample. Not a full-text scope adjudication.",
+      "metadata_source_page": 13
+    },
+    {
+      "id": "arxiv:1406.0295",
+      "title": "Mobile Agents for Distance Evaluation Procedures",
+      "reading_level": "title_only",
+      "selection": "not_advanced_after_title_screen",
+      "reason": "Title describes a different research domain or did not provide a sufficiently specific interface-agent connection for this purposeful supplementary sample. Not a full-text scope adjudication.",
+      "metadata_source_page": 13
+    },
+    {
+      "id": "arxiv:1405.0296",
+      "title": "Reservoir Computing Approach to Robust Computation using Unreliable Nanoscale Networks",
+      "reading_level": "title_only",
+      "selection": "not_advanced_after_title_screen",
+      "reason": "Title describes a different research domain or did not provide a sufficiently specific interface-agent connection for this purposeful supplementary sample. Not a full-text scope adjudication.",
+      "metadata_source_page": 13
+    },
+    {
+      "id": "arxiv:1402.0886",
+      "title": "A Secure Communication in Mobile Agent System",
+      "reading_level": "title_only",
+      "selection": "not_advanced_after_title_screen",
+      "reason": "Title describes a different research domain or did not provide a sufficiently specific interface-agent connection for this purposeful supplementary sample. Not a full-text scope adjudication.",
+      "metadata_source_page": 13
+    },
+    {
+      "id": "arxiv:1401.6070",
+      "title": "On Fence Patrolling by Mobile Agents",
+      "reading_level": "title_only",
+      "selection": "not_advanced_after_title_screen",
+      "reason": "Title describes a different research domain or did not provide a sufficiently specific interface-agent connection for this purposeful supplementary sample. Not a full-text scope adjudication.",
+      "metadata_source_page": 13
+    },
+    {
+      "id": "arxiv:1401.5509",
+      "title": "Intelligent Product: Mobile Agent Architecture Integrating the End of Life Cycle (EOL) For minimizing the lunch phase PLM",
+      "reading_level": "title_only",
+      "selection": "not_advanced_after_title_screen",
+      "reason": "Title describes a different research domain or did not provide a sufficiently specific interface-agent connection for this purposeful supplementary sample. Not a full-text scope adjudication.",
+      "metadata_source_page": 13
+    },
+    {
+      "id": "arxiv:1401.4844",
+      "title": "Managing Congestion Control in Mobile AD-HOC Network Using Mobile Agents",
+      "reading_level": "title_only",
+      "selection": "not_advanced_after_title_screen",
+      "reason": "Title describes a different research domain or did not provide a sufficiently specific interface-agent connection for this purposeful supplementary sample. Not a full-text scope adjudication.",
+      "metadata_source_page": 13
+    },
+    {
+      "id": "arxiv:1401.0102",
+      "title": "A DDoS-Aware IDS Model Based on Danger Theory and Mobile Agents",
+      "reading_level": "title_only",
+      "selection": "not_advanced_after_title_screen",
+      "reason": "Title describes a different research domain or did not provide a sufficiently specific interface-agent connection for this purposeful supplementary sample. Not a full-text scope adjudication.",
+      "metadata_source_page": 13
+    },
+    {
+      "id": "arxiv:1211.4616",
+      "title": "Motion-induced synchronization in metapopulations of mobile agents",
+      "reading_level": "title_only",
+      "selection": "not_advanced_after_title_screen",
+      "reason": "Title describes a different research domain or did not provide a sufficiently specific interface-agent connection for this purposeful supplementary sample. Not a full-text scope adjudication.",
+      "metadata_source_page": 13
+    },
+    {
+      "id": "arxiv:1210.4644",
+      "title": "Dimensions and issues of mobile agent technology",
+      "reading_level": "title_only",
+      "selection": "not_advanced_after_title_screen",
+      "reason": "Title describes a different research domain or did not provide a sufficiently specific interface-agent connection for this purposeful supplementary sample. Not a full-text scope adjudication.",
+      "metadata_source_page": 13
+    },
+    {
+      "id": "arxiv:1210.6512",
+      "title": "An Introduction to Quantum Computing using Cavity QED concepts",
+      "reading_level": "title_only",
+      "selection": "not_advanced_after_title_screen",
+      "reason": "Title describes a different research domain or did not provide a sufficiently specific interface-agent connection for this purposeful supplementary sample. Not a full-text scope adjudication.",
+      "metadata_source_page": 13
+    },
+    {
+      "id": "arxiv:1208.2252",
+      "title": "Towards All Optical, Universal Quantum Computation using Trapped Electron Spins and Cavity Polariton Resonance",
+      "reading_level": "title_only",
+      "selection": "not_advanced_after_title_screen",
+      "reason": "Title describes a different research domain or did not provide a sufficiently specific interface-agent connection for this purposeful supplementary sample. Not a full-text scope adjudication.",
+      "metadata_source_page": 13
+    },
+    {
+      "id": "arxiv:1207.5444",
+      "title": "Using mobile agent results to create hard-to-detect computer viruses",
+      "reading_level": "title_only",
+      "selection": "not_advanced_after_title_screen",
+      "reason": "Title describes a different research domain or did not provide a sufficiently specific interface-agent connection for this purposeful supplementary sample. Not a full-text scope adjudication.",
+      "metadata_source_page": 13
+    },
+    {
+      "id": "arxiv:1207.3140",
+      "title": "Multiple Criteria Clustering of Mobile Agents in WSN",
+      "reading_level": "title_only",
+      "selection": "not_advanced_after_title_screen",
+      "reason": "Title describes a different research domain or did not provide a sufficiently specific interface-agent connection for this purposeful supplementary sample. Not a full-text scope adjudication.",
+      "metadata_source_page": 13
+    },
+    {
+      "id": "arxiv:1207.0033",
+      "title": "Quantum-like model of behavioral response computation using neural oscillators",
+      "reading_level": "title_only",
+      "selection": "not_advanced_after_title_screen",
+      "reason": "Title describes a different research domain or did not provide a sufficiently specific interface-agent connection for this purposeful supplementary sample. Not a full-text scope adjudication.",
+      "metadata_source_page": 13
+    },
+    {
+      "id": "arxiv:1202.1941",
+      "title": "An Intelligent Mobile-Agent Based Scalable Network Management Architecture for Large-Scale Enterprise System",
+      "reading_level": "title_only",
+      "selection": "not_advanced_after_title_screen",
+      "reason": "Title describes a different research domain or did not provide a sufficiently specific interface-agent connection for this purposeful supplementary sample. Not a full-text scope adjudication.",
+      "metadata_source_page": 13
+    },
+    {
+      "id": "arxiv:1112.4773",
+      "title": "Greedy routing on networks of mobile agents",
+      "reading_level": "title_only",
+      "selection": "not_advanced_after_title_screen",
+      "reason": "Title describes a different research domain or did not provide a sufficiently specific interface-agent connection for this purposeful supplementary sample. Not a full-text scope adjudication.",
+      "metadata_source_page": 13
+    },
+    {
+      "id": "arxiv:1112.0825",
+      "title": "Near-deterministic quantum teleportation and resource-efficient quantum computation using linear optics and hybrid qubits",
+      "reading_level": "title_only",
+      "selection": "not_advanced_after_title_screen",
+      "reason": "Title describes a different research domain or did not provide a sufficiently specific interface-agent connection for this purposeful supplementary sample. Not a full-text scope adjudication.",
+      "metadata_source_page": 13
+    },
+    {
+      "id": "arxiv:1111.2662",
+      "title": "Scalable one-way quantum computer using on-chip resonator qubits",
+      "reading_level": "title_only",
+      "selection": "not_advanced_after_title_screen",
+      "reason": "Title describes a different research domain or did not provide a sufficiently specific interface-agent connection for this purposeful supplementary sample. Not a full-text scope adjudication.",
+      "metadata_source_page": 13
+    },
+    {
+      "id": "arxiv:1111.1865",
+      "title": "Reliability of Mobile Agents for Reliable Service Discovery Protocol in MANET",
+      "reading_level": "title_only",
+      "selection": "not_advanced_after_title_screen",
+      "reason": "Title describes a different research domain or did not provide a sufficiently specific interface-agent connection for this purposeful supplementary sample. Not a full-text scope adjudication.",
+      "metadata_source_page": 13
+    },
+    {
+      "id": "arxiv:1109.3999",
+      "title": "A Lightweight and Flexible Mobile Agent Platform Tailored to Management Applications",
+      "reading_level": "title_only",
+      "selection": "not_advanced_after_title_screen",
+      "reason": "Title describes a different research domain or did not provide a sufficiently specific interface-agent connection for this purposeful supplementary sample. Not a full-text scope adjudication.",
+      "metadata_source_page": 13
+    },
+    {
+      "id": "arxiv:1109.0693",
+      "title": "Transportation dynamics on networks of mobile agents",
+      "reading_level": "title_only",
+      "selection": "not_advanced_after_title_screen",
+      "reason": "Title describes a different research domain or did not provide a sufficiently specific interface-agent connection for this purposeful supplementary sample. Not a full-text scope adjudication.",
+      "metadata_source_page": 13
+    },
+    {
+      "id": "arxiv:1108.2095",
+      "title": "Mobile Agent as an Approach to Improve QoS in Vehicular Ad Hoc Network",
+      "reading_level": "title_only",
+      "selection": "not_advanced_after_title_screen",
+      "reason": "Title describes a different research domain or did not provide a sufficiently specific interface-agent connection for this purposeful supplementary sample. Not a full-text scope adjudication.",
+      "metadata_source_page": 13
+    },
+    {
+      "id": "arxiv:1107.4171",
+      "title": "Next Generation High Speed Computing Using Photonic Based Technolog",
+      "reading_level": "title_only",
+      "selection": "not_advanced_after_title_screen",
+      "reason": "Title describes a different research domain or did not provide a sufficiently specific interface-agent connection for this purposeful supplementary sample. Not a full-text scope adjudication.",
+      "metadata_source_page": 13
+    },
+    {
+      "id": "arxiv:1107.0003",
+      "title": "Valley-based noise-resistant quantum computation using Si quantum dots",
+      "reading_level": "title_only",
+      "selection": "not_advanced_after_title_screen",
+      "reason": "Title describes a different research domain or did not provide a sufficiently specific interface-agent connection for this purposeful supplementary sample. Not a full-text scope adjudication.",
+      "metadata_source_page": 13
+    },
+    {
+      "id": "arxiv:1106.1992",
+      "title": "Efficient quantum computing using coherent photon conversion",
+      "reading_level": "title_only",
+      "selection": "not_advanced_after_title_screen",
+      "reason": "Title describes a different research domain or did not provide a sufficiently specific interface-agent connection for this purposeful supplementary sample. Not a full-text scope adjudication.",
+      "metadata_source_page": 13
+    },
+    {
+      "id": "arxiv:1103.5512",
+      "title": "Macroscopic quantum computation using Bose-Einstein condensates",
+      "reading_level": "title_only",
+      "selection": "not_advanced_after_title_screen",
+      "reason": "Title describes a different research domain or did not provide a sufficiently specific interface-agent connection for this purposeful supplementary sample. Not a full-text scope adjudication.",
+      "metadata_source_page": 13
+    },
+    {
+      "id": "arxiv:1012.4485",
+      "title": "An Experimental Approach for Optimising Mobile Agent Migrations",
+      "reading_level": "title_only",
+      "selection": "not_advanced_after_title_screen",
+      "reason": "Title describes a different research domain or did not provide a sufficiently specific interface-agent connection for this purposeful supplementary sample. Not a full-text scope adjudication.",
+      "metadata_source_page": 13
+    },
+    {
+      "id": "arxiv:1011.2719",
+      "title": "Decidability Classes for Mobile Agents Computing",
+      "reading_level": "title_only",
+      "selection": "not_advanced_after_title_screen",
+      "reason": "Title describes a different research domain or did not provide a sufficiently specific interface-agent connection for this purposeful supplementary sample. Not a full-text scope adjudication.",
+      "metadata_source_page": 13
+    },
+    {
+      "id": "arxiv:1010.5036",
+      "title": "Dynamic Multi Layer Signature based Intrusion Detection system Using Mobile Agents",
+      "reading_level": "title_only",
+      "selection": "not_advanced_after_title_screen",
+      "reason": "Title describes a different research domain or did not provide a sufficiently specific interface-agent connection for this purposeful supplementary sample. Not a full-text scope adjudication.",
+      "metadata_source_page": 13
+    },
+    {
+      "id": "arxiv:1009.3124",
+      "title": "Quantum function computation using sublogarithmic space (abstract & poster)",
+      "reading_level": "title_only",
+      "selection": "not_advanced_after_title_screen",
+      "reason": "Title describes a different research domain or did not provide a sufficiently specific interface-agent connection for this purposeful supplementary sample. Not a full-text scope adjudication.",
+      "metadata_source_page": 13
+    },
+    {
+      "id": "arxiv:1006.4538",
+      "title": "Computational Analysis of .NET Remoting and Mobile agent in Distributed Environment",
+      "reading_level": "title_only",
+      "selection": "not_advanced_after_title_screen",
+      "reason": "Title describes a different research domain or did not provide a sufficiently specific interface-agent connection for this purposeful supplementary sample. Not a full-text scope adjudication.",
+      "metadata_source_page": 13
+    },
+    {
+      "id": "arxiv:1006.0772",
+      "title": "Evolution of Cooperation among Mobile Agents",
+      "reading_level": "title_only",
+      "selection": "not_advanced_after_title_screen",
+      "reason": "Title describes a different research domain or did not provide a sufficiently specific interface-agent connection for this purposeful supplementary sample. Not a full-text scope adjudication.",
+      "metadata_source_page": 13
+    },
+    {
+      "id": "arxiv:1005.1666",
+      "title": "Universal Quantum Computation Using Continuous Dynamical Decoupling",
+      "reading_level": "title_only",
+      "selection": "not_advanced_after_title_screen",
+      "reason": "Title describes a different research domain or did not provide a sufficiently specific interface-agent connection for this purposeful supplementary sample. Not a full-text scope adjudication.",
+      "metadata_source_page": 13
+    },
+    {
+      "id": "arxiv:1004.0602",
+      "title": "Intelligent Detection System framework using Mobile agents",
+      "reading_level": "title_only",
+      "selection": "not_advanced_after_title_screen",
+      "reason": "Title describes a different research domain or did not provide a sufficiently specific interface-agent connection for this purposeful supplementary sample. Not a full-text scope adjudication.",
+      "metadata_source_page": 13
+    },
+    {
+      "id": "arxiv:0910.1024",
+      "title": "Universal quantum computation using the discrete time quantum walk",
+      "reading_level": "title_only",
+      "selection": "not_advanced_after_title_screen",
+      "reason": "Title describes a different research domain or did not provide a sufficiently specific interface-agent connection for this purposeful supplementary sample. Not a full-text scope adjudication.",
+      "metadata_source_page": 13
+    },
+    {
+      "id": "arxiv:0907.2239",
+      "title": "A generic new platform for topological quantum computation using semiconductor heterostructures",
+      "reading_level": "title_only",
+      "selection": "not_advanced_after_title_screen",
+      "reason": "Title describes a different research domain or did not provide a sufficiently specific interface-agent connection for this purposeful supplementary sample. Not a full-text scope adjudication.",
+      "metadata_source_page": 13
+    },
+    {
+      "id": "arxiv:0904.3273",
+      "title": "A Thermodynamic Turing Machine: Artificial Molecular Computing Using Classical Reversible Logic Switching Networks",
+      "reading_level": "title_only",
+      "selection": "not_advanced_after_title_screen",
+      "reason": "Title describes a different research domain or did not provide a sufficiently specific interface-agent connection for this purposeful supplementary sample. Not a full-text scope adjudication.",
+      "metadata_source_page": 13
+    },
+    {
+      "id": "arxiv:0810.3710",
+      "title": "Insights into classical irreversible computation using quantum information concepts",
+      "reading_level": "title_only",
+      "selection": "not_advanced_after_title_screen",
+      "reason": "Title describes a different research domain or did not provide a sufficiently specific interface-agent connection for this purposeful supplementary sample. Not a full-text scope adjudication.",
+      "metadata_source_page": 13
+    },
+    {
+      "id": "arxiv:0808.1591",
+      "title": "A scalable, high-speed measurement-based quantum computer using trapped ions",
+      "reading_level": "title_only",
+      "selection": "not_advanced_after_title_screen",
+      "reason": "Title describes a different research domain or did not provide a sufficiently specific interface-agent connection for this purposeful supplementary sample. Not a full-text scope adjudication.",
+      "metadata_source_page": 13
+    },
+    {
+      "id": "arxiv:0806.4548",
+      "title": "Efficient and robust adiabatic universal quantum computation using STIRAP on a qubit chain",
+      "reading_level": "title_only",
+      "selection": "not_advanced_after_title_screen",
+      "reason": "Title describes a different research domain or did not provide a sufficiently specific interface-agent connection for this purposeful supplementary sample. Not a full-text scope adjudication.",
+      "metadata_source_page": 13
+    },
+    {
+      "id": "arxiv:0806.2308",
+      "title": "Dynamics and Steady States in excitable mobile agent systems",
+      "reading_level": "title_only",
+      "selection": "not_advanced_after_title_screen",
+      "reason": "Title describes a different research domain or did not provide a sufficiently specific interface-agent connection for this purposeful supplementary sample. Not a full-text scope adjudication.",
+      "metadata_source_page": 13
+    },
+    {
+      "id": "arxiv:0805.3592",
+      "title": "Deterministic optical quantum computer using photonic modules",
+      "reading_level": "title_only",
+      "selection": "not_advanced_after_title_screen",
+      "reason": "Title describes a different research domain or did not provide a sufficiently specific interface-agent connection for this purposeful supplementary sample. Not a full-text scope adjudication.",
+      "metadata_source_page": 13
+    },
+    {
+      "id": "arxiv:0805.3239",
+      "title": "A robust system for Quantum Computation using Coherent Population Trap states of neutral atoms",
+      "reading_level": "title_only",
+      "selection": "not_advanced_after_title_screen",
+      "reason": "Title describes a different research domain or did not provide a sufficiently specific interface-agent connection for this purposeful supplementary sample. Not a full-text scope adjudication.",
+      "metadata_source_page": 13
+    },
+    {
+      "id": "arxiv:0805.0029",
+      "title": "How to simulate a quantum computer using negative probabilities",
+      "reading_level": "title_only",
+      "selection": "not_advanced_after_title_screen",
+      "reason": "Title describes a different research domain or did not provide a sufficiently specific interface-agent connection for this purposeful supplementary sample. Not a full-text scope adjudication.",
+      "metadata_source_page": 13
+    },
+    {
+      "id": "arxiv:0804.0272",
+      "title": "Quantum computing using shortcuts through higher dimensions",
+      "reading_level": "title_only",
+      "selection": "not_advanced_after_title_screen",
+      "reason": "Title describes a different research domain or did not provide a sufficiently specific interface-agent connection for this purposeful supplementary sample. Not a full-text scope adjudication.",
+      "metadata_source_page": 13
+    },
+    {
+      "id": "arxiv:0803.0189",
+      "title": "Quiescence of Self-stabilizing Gossiping among Mobile Agents in Graphs",
+      "reading_level": "title_only",
+      "selection": "not_advanced_after_title_screen",
+      "reason": "Title describes a different research domain or did not provide a sufficiently specific interface-agent connection for this purposeful supplementary sample. Not a full-text scope adjudication.",
+      "metadata_source_page": 13
+    },
+    {
+      "id": "arxiv:0803.0053",
+      "title": "Mobile Agents for Content-Based WWW Distributed Image Retrieval",
+      "reading_level": "title_only",
+      "selection": "not_advanced_after_title_screen",
+      "reason": "Title describes a different research domain or did not provide a sufficiently specific interface-agent connection for this purposeful supplementary sample. Not a full-text scope adjudication.",
+      "metadata_source_page": 13
+    },
+    {
+      "id": "arxiv:0705.0233",
+      "title": "Coordination for a Group of Autonomous Mobile Agents with Multiple Leaders",
+      "reading_level": "title_only",
+      "selection": "not_advanced_after_title_screen",
+      "reason": "Title describes a different research domain or did not provide a sufficiently specific interface-agent connection for this purposeful supplementary sample. Not a full-text scope adjudication.",
+      "metadata_source_page": 13
+    },
+    {
+      "id": "arxiv:quant-ph/0702104",
+      "title": "Scalable quantum computer using superconducting charge qubits",
+      "reading_level": "title_only",
+      "selection": "not_advanced_after_title_screen",
+      "reason": "Title describes a different research domain or did not provide a sufficiently specific interface-agent connection for this purposeful supplementary sample. Not a full-text scope adjudication.",
+      "metadata_source_page": 13
+    },
+    {
+      "id": "arxiv:cs/0701188",
+      "title": "Faster Inversion and Other Black Box Matrix Computations Using Efficient Block Projections",
+      "reading_level": "title_only",
+      "selection": "not_advanced_after_title_screen",
+      "reason": "Title describes a different research domain or did not provide a sufficiently specific interface-agent connection for this purposeful supplementary sample. Not a full-text scope adjudication.",
+      "metadata_source_page": 13
+    },
+    {
+      "id": "arxiv:quant-ph/0701017",
+      "title": "High-speed linear optics quantum computing using active feed-forward",
+      "reading_level": "title_only",
+      "selection": "not_advanced_after_title_screen",
+      "reason": "Title describes a different research domain or did not provide a sufficiently specific interface-agent connection for this purposeful supplementary sample. Not a full-text scope adjudication.",
+      "metadata_source_page": 13
+    },
+    {
+      "id": "arxiv:cond-mat/0609483",
+      "title": "Current-Voltage Curves for Molecular Junctions Computed Using All-Electron Basis Sets",
+      "reading_level": "title_only",
+      "selection": "not_advanced_after_title_screen",
+      "reason": "Title describes a different research domain or did not provide a sufficiently specific interface-agent connection for this purposeful supplementary sample. Not a full-text scope adjudication.",
+      "metadata_source_page": 13
+    },
+    {
+      "id": "arxiv:hep-lat/0608015",
+      "title": "Accelerating Dynamical Fermion Computations using the Rational Hybrid Monte Carlo (RHMC) Algorithm with Multiple Pseudofermion Fields",
+      "reading_level": "title_only",
+      "selection": "not_advanced_after_title_screen",
+      "reason": "Title describes a different research domain or did not provide a sufficiently specific interface-agent connection for this purposeful supplementary sample. Not a full-text scope adjudication.",
+      "metadata_source_page": 13
+    },
+    {
+      "id": "arxiv:quant-ph/0607007",
+      "title": "Geometric quantum computation using fictitious spin- 1/2 subspaces of strongly dipolar coupled nuclear spins",
+      "reading_level": "title_only",
+      "selection": "not_advanced_after_title_screen",
+      "reason": "Title describes a different research domain or did not provide a sufficiently specific interface-agent connection for this purposeful supplementary sample. Not a full-text scope adjudication.",
+      "metadata_source_page": 14
+    },
+    {
+      "id": "arxiv:quant-ph/0606101",
+      "title": "Quantum Computation Using Vortices and Majorana Zero Modes of a $p_x$ + $ip_y$ Superfluid of Fermionic Cold Atoms",
+      "reading_level": "title_only",
+      "selection": "not_advanced_after_title_screen",
+      "reason": "Title describes a different research domain or did not provide a sufficiently specific interface-agent connection for this purposeful supplementary sample. Not a full-text scope adjudication.",
+      "metadata_source_page": 14
+    },
+    {
+      "id": "arxiv:physics/0606023",
+      "title": "Networks based on collisions among mobile agents",
+      "reading_level": "title_only",
+      "selection": "not_advanced_after_title_screen",
+      "reason": "Title describes a different research domain or did not provide a sufficiently specific interface-agent connection for this purposeful supplementary sample. Not a full-text scope adjudication.",
+      "metadata_source_page": 14
+    },
+    {
+      "id": "arxiv:quant-ph/0605190",
+      "title": "Quantum Computing Using Crossed Atomic Beams",
+      "reading_level": "title_only",
+      "selection": "not_advanced_after_title_screen",
+      "reason": "Title describes a different research domain or did not provide a sufficiently specific interface-agent connection for this purposeful supplementary sample. Not a full-text scope adjudication.",
+      "metadata_source_page": 14
+    },
+    {
+      "id": "arxiv:cs/0605033",
+      "title": "Mobile Agent Based Solutions for Knowledge Assessment in elearning Environments",
+      "reading_level": "title_only",
+      "selection": "not_advanced_after_title_screen",
+      "reason": "Title describes a different research domain or did not provide a sufficiently specific interface-agent connection for this purposeful supplementary sample. Not a full-text scope adjudication.",
+      "metadata_source_page": 14
+    },
+    {
+      "id": "arxiv:cs/0605032",
+      "title": "A framework of reusable structures for mobile agent development",
+      "reading_level": "title_only",
+      "selection": "not_advanced_after_title_screen",
+      "reason": "Title describes a different research domain or did not provide a sufficiently specific interface-agent connection for this purposeful supplementary sample. Not a full-text scope adjudication.",
+      "metadata_source_page": 14
+    },
+    {
+      "id": "arxiv:quant-ph/0605014",
+      "title": "Potential and limits to cluster state quantum computing using probabilistic gates",
+      "reading_level": "title_only",
+      "selection": "not_advanced_after_title_screen",
+      "reason": "Title describes a different research domain or did not provide a sufficiently specific interface-agent connection for this purposeful supplementary sample. Not a full-text scope adjudication.",
+      "metadata_source_page": 14
+    },
+    {
+      "id": "arxiv:cs/0603111",
+      "title": "Remote-control and clustering of physical computations using the XML-RPC protocol and the open-Mosix system",
+      "reading_level": "title_only",
+      "selection": "not_advanced_after_title_screen",
+      "reason": "Title describes a different research domain or did not provide a sufficiently specific interface-agent connection for this purposeful supplementary sample. Not a full-text scope adjudication.",
+      "metadata_source_page": 14
+    },
+    {
+      "id": "arxiv:physics/0602091",
+      "title": "A system of mobile agents to model social networks",
+      "reading_level": "title_only",
+      "selection": "not_advanced_after_title_screen",
+      "reason": "Title describes a different research domain or did not provide a sufficiently specific interface-agent connection for this purposeful supplementary sample. Not a full-text scope adjudication.",
+      "metadata_source_page": 14
+    },
+    {
+      "id": "arxiv:quant-ph/0512117",
+      "title": "Quantum computation using weak nonlinearities: robustness against decoherence",
+      "reading_level": "title_only",
+      "selection": "not_advanced_after_title_screen",
+      "reason": "Title describes a different research domain or did not provide a sufficiently specific interface-agent connection for this purposeful supplementary sample. Not a full-text scope adjudication.",
+      "metadata_source_page": 14
+    },
+    {
+      "id": "arxiv:hep-ph/0510096",
+      "title": "3D Relativistic Hydrodynamic Computations Using Lattice-QCD-Inspired Equations of State",
+      "reading_level": "title_only",
+      "selection": "not_advanced_after_title_screen",
+      "reason": "Title describes a different research domain or did not provide a sufficiently specific interface-agent connection for this purposeful supplementary sample. Not a full-text scope adjudication.",
+      "metadata_source_page": 14
+    },
+    {
+      "id": "arxiv:quant-ph/0508218",
+      "title": "Repeat-Until-Success quantum computing using stationary and flying qubits",
+      "reading_level": "title_only",
+      "selection": "not_advanced_after_title_screen",
+      "reason": "Title describes a different research domain or did not provide a sufficiently specific interface-agent connection for this purposeful supplementary sample. Not a full-text scope adjudication.",
+      "metadata_source_page": 14
+    },
+    {
+      "id": "arxiv:physics/0508145",
+      "title": "Model of mobile agents for sexual interactions networks",
+      "reading_level": "title_only",
+      "selection": "not_advanced_after_title_screen",
+      "reason": "Title describes a different research domain or did not provide a sufficiently specific interface-agent connection for this purposeful supplementary sample. Not a full-text scope adjudication.",
+      "metadata_source_page": 14
+    },
+    {
+      "id": "arxiv:cs/0506103",
+      "title": "Security of mobile agents: a new concept of the integrity protection",
+      "reading_level": "title_only",
+      "selection": "not_advanced_after_title_screen",
+      "reason": "Title describes a different research domain or did not provide a sufficiently specific interface-agent connection for this purposeful supplementary sample. Not a full-text scope adjudication.",
+      "metadata_source_page": 14
+    },
+    {
+      "id": "arxiv:quant-ph/0503151",
+      "title": "A relational quantum computer using only two-qubit total spin measurement and an initial supply of highly mixed single qubit states",
+      "reading_level": "title_only",
+      "selection": "not_advanced_after_title_screen",
+      "reason": "Title describes a different research domain or did not provide a sufficiently specific interface-agent connection for this purposeful supplementary sample. Not a full-text scope adjudication.",
+      "metadata_source_page": 14
+    },
+    {
+      "id": "arxiv:cond-mat/0502665",
+      "title": "Cluster size distribution of infection in a system of mobile agents",
+      "reading_level": "title_only",
+      "selection": "not_advanced_after_title_screen",
+      "reason": "Title describes a different research domain or did not provide a sufficiently specific interface-agent connection for this purposeful supplementary sample. Not a full-text scope adjudication.",
+      "metadata_source_page": 14
+    },
+    {
+      "id": "arxiv:quant-ph/0502090",
+      "title": "Nonadiabatic Geometric Quantum Computation Using A Single-loop Scenario",
+      "reading_level": "title_only",
+      "selection": "not_advanced_after_title_screen",
+      "reason": "Title describes a different research domain or did not provide a sufficiently specific interface-agent connection for this purposeful supplementary sample. Not a full-text scope adjudication.",
+      "metadata_source_page": 14
+    },
+    {
+      "id": "arxiv:cs/0411041",
+      "title": "Content Based Image Retrieval with Mobile Agents and Steganography",
+      "reading_level": "title_only",
+      "selection": "not_advanced_after_title_screen",
+      "reason": "Title describes a different research domain or did not provide a sufficiently specific interface-agent connection for this purposeful supplementary sample. Not a full-text scope adjudication.",
+      "metadata_source_page": 14
+    },
+    {
+      "id": "arxiv:quant-ph/0409127",
+      "title": "Noise resistance of adiabatic quantum computation using random matrix theory",
+      "reading_level": "title_only",
+      "selection": "not_advanced_after_title_screen",
+      "reason": "Title describes a different research domain or did not provide a sufficiently specific interface-agent connection for this purposeful supplementary sample. Not a full-text scope adjudication.",
+      "metadata_source_page": 14
+    },
+    {
+      "id": "arxiv:q-bio/0409012",
+      "title": "How to compute using globally coupled oscillators",
+      "reading_level": "title_only",
+      "selection": "not_advanced_after_title_screen",
+      "reason": "Title describes a different research domain or did not provide a sufficiently specific interface-agent connection for this purposeful supplementary sample. Not a full-text scope adjudication.",
+      "metadata_source_page": 14
+    },
+    {
+      "id": "arxiv:quant-ph/0408097",
+      "title": "Quantum Computing Using Single Photons and the Zeno Effect",
+      "reading_level": "title_only",
+      "selection": "not_advanced_after_title_screen",
+      "reason": "Title describes a different research domain or did not provide a sufficiently specific interface-agent connection for this purposeful supplementary sample. Not a full-text scope adjudication.",
+      "metadata_source_page": 14
+    },
+    {
+      "id": "arxiv:quant-ph/0408040",
+      "title": "Efficient high-fidelity quantum computation using matter qubits and linear optics",
+      "reading_level": "title_only",
+      "selection": "not_advanced_after_title_screen",
+      "reason": "Title describes a different research domain or did not provide a sufficiently specific interface-agent connection for this purposeful supplementary sample. Not a full-text scope adjudication.",
+      "metadata_source_page": 14
+    },
+    {
+      "id": "arxiv:quant-ph/0407069",
+      "title": "Holonomic Quantum Computation Using Rf-SQUIDs Coupled Through A Microwave Cavity",
+      "reading_level": "title_only",
+      "selection": "not_advanced_after_title_screen",
+      "reason": "Title describes a different research domain or did not provide a sufficiently specific interface-agent connection for this purposeful supplementary sample. Not a full-text scope adjudication.",
+      "metadata_source_page": 14
+    },
+    {
+      "id": "arxiv:quant-ph/0406192",
+      "title": "Quantum Computing using Linear Optics",
+      "reading_level": "title_only",
+      "selection": "not_advanced_after_title_screen",
+      "reason": "Title describes a different research domain or did not provide a sufficiently specific interface-agent connection for this purposeful supplementary sample. Not a full-text scope adjudication.",
+      "metadata_source_page": 14
+    },
+    {
+      "id": "arxiv:cond-mat/0402443",
+      "title": "Scaling of the propagation of epidemics in a system of mobile agents",
+      "reading_level": "title_only",
+      "selection": "not_advanced_after_title_screen",
+      "reason": "Title describes a different research domain or did not provide a sufficiently specific interface-agent connection for this purposeful supplementary sample. Not a full-text scope adjudication.",
+      "metadata_source_page": 14
+    },
+    {
+      "id": "arxiv:quant-ph/0402005",
+      "title": "Optical quantum computation using cluster states",
+      "reading_level": "title_only",
+      "selection": "not_advanced_after_title_screen",
+      "reason": "Title describes a different research domain or did not provide a sufficiently specific interface-agent connection for this purposeful supplementary sample. Not a full-text scope adjudication.",
+      "metadata_source_page": 14
+    },
+    {
+      "id": "arxiv:quant-ph/0312226",
+      "title": "A feasible gate for scalable linear optics quantum computation using polarization optics",
+      "reading_level": "title_only",
+      "selection": "not_advanced_after_title_screen",
+      "reason": "Title describes a different research domain or did not provide a sufficiently specific interface-agent connection for this purposeful supplementary sample. Not a full-text scope adjudication.",
+      "metadata_source_page": 14
+    },
+    {
+      "id": "arxiv:cs/0312017",
+      "title": "An Exploratory Study of Mobile Computing Use by Knowledge Workers",
+      "reading_level": "title_only",
+      "selection": "not_advanced_after_title_screen",
+      "reason": "Title describes a different research domain or did not provide a sufficiently specific interface-agent connection for this purposeful supplementary sample. Not a full-text scope adjudication.",
+      "metadata_source_page": 14
+    },
+    {
+      "id": "arxiv:quant-ph/0310015",
+      "title": "A quantum computer using a trapped-ion spin molecule and microwave radiation",
+      "reading_level": "title_only",
+      "selection": "not_advanced_after_title_screen",
+      "reason": "Title describes a different research domain or did not provide a sufficiently specific interface-agent connection for this purposeful supplementary sample. Not a full-text scope adjudication.",
+      "metadata_source_page": 14
+    },
+    {
+      "id": "arxiv:quant-ph/0306125",
+      "title": "Quantum computing using dissipation (proceedings)",
+      "reading_level": "title_only",
+      "selection": "not_advanced_after_title_screen",
+      "reason": "Title describes a different research domain or did not provide a sufficiently specific interface-agent connection for this purposeful supplementary sample. Not a full-text scope adjudication.",
+      "metadata_source_page": 14
+    },
+    {
+      "id": "arxiv:cond-mat/0306235",
+      "title": "Charge-based quantum computing using single donors in semiconductors",
+      "reading_level": "title_only",
+      "selection": "not_advanced_after_title_screen",
+      "reason": "Title describes a different research domain or did not provide a sufficiently specific interface-agent connection for this purposeful supplementary sample. Not a full-text scope adjudication.",
+      "metadata_source_page": 14
+    },
+    {
+      "id": "arxiv:cond-mat/0301581",
+      "title": "Spin-based quantum computing using electrons on liquid helium",
+      "reading_level": "title_only",
+      "selection": "not_advanced_after_title_screen",
+      "reason": "Title describes a different research domain or did not provide a sufficiently specific interface-agent connection for this purposeful supplementary sample. Not a full-text scope adjudication.",
+      "metadata_source_page": 14
+    },
+    {
+      "id": "arxiv:quant-ph/0210175",
+      "title": "Geometric phase shift in quantum computation using superconducting nanocircuits: nonadiabatic effects",
+      "reading_level": "title_only",
+      "selection": "not_advanced_after_title_screen",
+      "reason": "Title describes a different research domain or did not provide a sufficiently specific interface-agent connection for this purposeful supplementary sample. Not a full-text scope adjudication.",
+      "metadata_source_page": 14
+    },
+    {
+      "id": "arxiv:quant-ph/0209035",
+      "title": "Natural two-qubit gate for quantum computation using the XY interaction",
+      "reading_level": "title_only",
+      "selection": "not_advanced_after_title_screen",
+      "reason": "Title describes a different research domain or did not provide a sufficiently specific interface-agent connection for this purposeful supplementary sample. Not a full-text scope adjudication.",
+      "metadata_source_page": 14
+    },
+    {
+      "id": "arxiv:quant-ph/0209006",
+      "title": "Quantum computation using the Aharonov-Casher set up",
+      "reading_level": "title_only",
+      "selection": "not_advanced_after_title_screen",
+      "reason": "Title describes a different research domain or did not provide a sufficiently specific interface-agent connection for this purposeful supplementary sample. Not a full-text scope adjudication.",
+      "metadata_source_page": 14
+    },
+    {
+      "id": "arxiv:quant-ph/0208118",
+      "title": "Universal Quantum Computation using Exchange Interactions and Teleportation of Single-Qubit Operations",
+      "reading_level": "title_only",
+      "selection": "not_advanced_after_title_screen",
+      "reason": "Title describes a different research domain or did not provide a sufficiently specific interface-agent connection for this purposeful supplementary sample. Not a full-text scope adjudication.",
+      "metadata_source_page": 14
+    },
+    {
+      "id": "arxiv:quant-ph/0207022",
+      "title": "Implementations of Nonadiabatic Geometric Quantum Computation using NMR",
+      "reading_level": "title_only",
+      "selection": "not_advanced_after_title_screen",
+      "reason": "Title describes a different research domain or did not provide a sufficiently specific interface-agent connection for this purposeful supplementary sample. Not a full-text scope adjudication.",
+      "metadata_source_page": 14
+    },
+    {
+      "id": "arxiv:cs/0205062",
+      "title": "Minimizing Cache Misses in Scientific Computing Using Isoperimetric Bodies",
+      "reading_level": "title_only",
+      "selection": "not_advanced_after_title_screen",
+      "reason": "Title describes a different research domain or did not provide a sufficiently specific interface-agent connection for this purposeful supplementary sample. Not a full-text scope adjudication.",
+      "metadata_source_page": 14
+    },
+    {
+      "id": "arxiv:quant-ph/0112014",
+      "title": "Exact gate-sequences for universal quantum computation using the XY-interaction alone",
+      "reading_level": "title_only",
+      "selection": "not_advanced_after_title_screen",
+      "reason": "Title describes a different research domain or did not provide a sufficiently specific interface-agent connection for this purposeful supplementary sample. Not a full-text scope adjudication.",
+      "metadata_source_page": 14
+    },
+    {
+      "id": "arxiv:quant-ph/0110002",
+      "title": "Quantum Computing Using an Open System and Projected Subspace",
+      "reading_level": "title_only",
+      "selection": "not_advanced_after_title_screen",
+      "reason": "Title describes a different research domain or did not provide a sufficiently specific interface-agent connection for this purposeful supplementary sample. Not a full-text scope adjudication.",
+      "metadata_source_page": 14
+    },
+    {
+      "id": "arxiv:quant-ph/0109077",
+      "title": "Efficient Quantum Computation using Coherent States",
+      "reading_level": "title_only",
+      "selection": "not_advanced_after_title_screen",
+      "reason": "Title describes a different research domain or did not provide a sufficiently specific interface-agent connection for this purposeful supplementary sample. Not a full-text scope adjudication.",
+      "metadata_source_page": 14
+    },
+    {
+      "id": "arxiv:quant-ph/0108020",
+      "title": "Universal quantum computation using only projective measurement, quantum memory, and preparation of the 0 state",
+      "reading_level": "title_only",
+      "selection": "not_advanced_after_title_screen",
+      "reason": "Title describes a different research domain or did not provide a sufficiently specific interface-agent connection for this purposeful supplementary sample. Not a full-text scope adjudication.",
+      "metadata_source_page": 14
+    },
+    {
+      "id": "arxiv:quant-ph/0105147",
+      "title": "Non-thermal nuclear magnetic resonance quantum computing using hyperpolarized Xenon",
+      "reading_level": "title_only",
+      "selection": "not_advanced_after_title_screen",
+      "reason": "Title describes a different research domain or did not provide a sufficiently specific interface-agent connection for this purposeful supplementary sample. Not a full-text scope adjudication.",
+      "metadata_source_page": 14
+    },
+    {
+      "id": "arxiv:cs/0010013",
+      "title": "A Public-key based Information Management Model for Mobile Agents",
+      "reading_level": "title_only",
+      "selection": "not_advanced_after_title_screen",
+      "reason": "Title describes a different research domain or did not provide a sufficiently specific interface-agent connection for this purposeful supplementary sample. Not a full-text scope adjudication.",
+      "metadata_source_page": 14
+    },
+    {
+      "id": "arxiv:physics/0008157",
+      "title": "Optimized Wakefield Computations Using A Network Model",
+      "reading_level": "title_only",
+      "selection": "not_advanced_after_title_screen",
+      "reason": "Title describes a different research domain or did not provide a sufficiently specific interface-agent connection for this purposeful supplementary sample. Not a full-text scope adjudication.",
+      "metadata_source_page": 14
+    },
+    {
+      "id": "arxiv:quant-ph/0007113",
+      "title": "Quantum Computing Using Electrons Floating on Liquid Helium",
+      "reading_level": "title_only",
+      "selection": "not_advanced_after_title_screen",
+      "reason": "Title describes a different research domain or did not provide a sufficiently specific interface-agent connection for this purposeful supplementary sample. Not a full-text scope adjudication.",
+      "metadata_source_page": 14
+    },
+    {
+      "id": "arxiv:quant-ph/0007074",
+      "title": "Solid State Quantum Computing Using Spectral Holes",
+      "reading_level": "title_only",
+      "selection": "not_advanced_after_title_screen",
+      "reason": "Title describes a different research domain or did not provide a sufficiently specific interface-agent connection for this purposeful supplementary sample. Not a full-text scope adjudication.",
+      "metadata_source_page": 14
+    },
+    {
+      "id": "arxiv:cond-mat/0006037",
+      "title": "Quantum computation using electrons trapped by surface acoustic waves",
+      "reading_level": "title_only",
+      "selection": "not_advanced_after_title_screen",
+      "reason": "Title describes a different research domain or did not provide a sufficiently specific interface-agent connection for this purposeful supplementary sample. Not a full-text scope adjudication.",
+      "metadata_source_page": 14
+    },
+    {
+      "id": "arxiv:quant-ph/0004043",
+      "title": "Quantum Computing Using Dissipation to Remain in a Decoherence-Free Subspace",
+      "reading_level": "title_only",
+      "selection": "not_advanced_after_title_screen",
+      "reason": "Title describes a different research domain or did not provide a sufficiently specific interface-agent connection for this purposeful supplementary sample. Not a full-text scope adjudication.",
+      "metadata_source_page": 14
+    },
+    {
+      "id": "arxiv:nlin/0003007",
+      "title": "Spurious Lyapunov Exponents Computed Using the Eckmann-Ruelle Procedure",
+      "reading_level": "title_only",
+      "selection": "not_advanced_after_title_screen",
+      "reason": "Title describes a different research domain or did not provide a sufficiently specific interface-agent connection for this purposeful supplementary sample. Not a full-text scope adjudication.",
+      "metadata_source_page": 14
+    },
+    {
+      "id": "arxiv:quant-ph/0002034",
+      "title": "A model for ensemble NMR quantum computer using antiferromagnetic structure",
+      "reading_level": "title_only",
+      "selection": "not_advanced_after_title_screen",
+      "reason": "Title describes a different research domain or did not provide a sufficiently specific interface-agent connection for this purposeful supplementary sample. Not a full-text scope adjudication.",
+      "metadata_source_page": 14
+    },
+    {
+      "id": "arxiv:quant-ph/0001113",
+      "title": "Actual computational time-cost of the Quantum Fourier Transform in a quantum computer using nuclear spins",
+      "reading_level": "title_only",
+      "selection": "not_advanced_after_title_screen",
+      "reason": "Title describes a different research domain or did not provide a sufficiently specific interface-agent connection for this purposeful supplementary sample. Not a full-text scope adjudication.",
+      "metadata_source_page": 14
+    }
+  ]
+}

@@ -2,6 +2,7 @@ from contextlib import closing
 import hashlib
 from html.parser import HTMLParser
 import json
+import re
 from pathlib import Path
 import shutil
 import sqlite3
@@ -15,9 +16,10 @@ import jsonschema
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / 'scripts'))
 from build import write_sqlite
-from data_hub import build_download_manifest, data_hub_body
+from data_hub import GROUPS, build_download_manifest, byte_size, data_hub_body
 from export_citations import build_citation_exports, encode_citations
 from export_rag import build_exports, encode_documents
+from site_config import SITE
 
 
 def record(aid, status='curated'):
@@ -234,11 +236,52 @@ class DataHubTests(unittest.TestCase):
                 self.assertIn('git clone https://github.com/reacher-z/Awesome-CUA.git', values)
                 for item in manifest['artifacts']:
                     self.assertIn(item['path'], links)
-                    self.assertIn('https://awesomecua.github.io' + item['path'], values)
+                    self.assertIn(SITE + item['path'], values)
                     self.assertIn(item['sha256'], values)
                 self.assertIn(manifest['catalog_sha256'], values)
+                # The headline counts curated resources; the rest of the complete catalog is labelled separately.
+                counts = {item['id']: item['count']['value'] for item in manifest['artifacts']}
+                stats = markup.split('<div class="data-stats">', 1)[1].split('</div>', 1)[0]
+                self.assertTrue(stats.startswith(f"<span><strong>{counts['rag-reviewed']:,}</strong>"), stats)
+                self.assertIn(f"<strong>{counts['catalog-jsonl'] - counts['rag-reviewed']:,}</strong>", stats)
                 self.assertTrue(any(tag == 'input' and attrs.get('id') == 'data-copy-value'
                                     and 'readonly' in attrs for tag, attrs in tags))
+
+    def test_first_screen_offers_the_main_choices_with_manifest_numbers(self):
+        manifest = self.manifest()
+        by_id = {item['id']: item for item in manifest['artifacts']}
+        for language in ('en', 'zh'):
+            with self.subTest(language=language):
+                markup = data_hub_body(manifest, language=language, updated='2026-11-06')
+                first_screen = markup.split('<section class="r3-term data-try"', 1)[0]
+                for identity in ('catalog-jsonl', 'citations-bib', 'rag-reviewed'):
+                    item = by_id[identity]
+                    self.assertIn(f'href="{item["path"]}" download', first_screen)
+                    self.assertIn(f'{item["count"]["value"]:,}', first_screen)
+                    self.assertIn(byte_size(item['bytes']), first_screen)
+                self.assertIn('https://huggingface.co/datasets/', first_screen)
+                self.assertEqual(first_screen.count('class="data-choice '), 4)
+                self.assertIn('2026-11-06', first_screen)
+
+    def test_every_file_is_folded_into_its_group_with_a_fingerprint_on_demand(self):
+        manifest = self.manifest()
+        markup = data_hub_body(manifest)
+        sections = markup.split('<details class="data-group" id="downloads-')[1:]
+        self.assertEqual([section.split('"', 1)[0] for section in sections], list(GROUPS))
+        for group, section in zip(GROUPS, sections):
+            expected = {item['id'] for item in manifest['artifacts'] if item['group'] == group}
+            self.assertEqual(set(re.findall(r'data-artifact-id="([^"]+)"', section)), expected)
+            self.assertEqual(section.split('<section', 1)[0].count('<details class="data-sha">'), len(expected))
+        self.assertNotIn('<details class="data-group" open', markup)
+
+    def test_record_preview_shows_the_real_record_and_links_to_all_of_it(self):
+        preview = {'path': '/resources/example/record.json', 'fields': 21,
+                   'record': {'id': 'github:example/agent', 'name': 'Agent <one>', 'review_status': 'curated'}}
+        markup = data_hub_body(self.manifest(), preview=preview)
+        self.assertIn('Agent &lt;one&gt;', markup)
+        self.assertIn('href="/resources/example/record.json"', markup)
+        self.assertIn('3 of 21 fields', markup)
+        self.assertNotIn('data-record', data_hub_body(self.manifest()))
 
     @unittest.skipUnless(shutil.which('node'), 'Node is required for the clipboard behavior fixture')
     def test_copy_script_success_and_denied_clipboard_fallback(self):

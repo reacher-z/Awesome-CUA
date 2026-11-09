@@ -11,6 +11,7 @@ sys.path.insert(0, str(ROOT / 'scripts'))
 from paper_library import PAGE_SIZE, connected_assets, library_pages, paper_library
 from publication_metadata import record_date_text
 from search_pages import incoming_relations, resource_body, resource_path
+from site_config import SITE
 
 
 def record(rid, kind, *, name=None, status='curated', scope='core'):
@@ -171,7 +172,7 @@ class PaperAssetTests(unittest.TestCase):
             self.assertEqual(entry['more'][0]['text'], '+2 ' + suffix)
             self.assertEqual(schema['numberOfItems'], 1)
             self.assertEqual([item['url'] for item in schema['itemListElement']],
-                             ['https://awesomecua.github.io' + resource_path(self.paper)])
+                             [SITE + resource_path(self.paper)])
         detail = resource_body(self.paper, {r['id']: r for r in rows}, incoming_relations(rows))
         self.assertIn('id="connected-assets"', detail)
 
@@ -250,7 +251,7 @@ class PaperAssetTests(unittest.TestCase):
             self.assertEqual(schema['numberOfItems'], len(expected))
             self.assertEqual([item['position'] for item in schema['itemListElement']], [1, 2])
             self.assertEqual({item['url'] for item in schema['itemListElement']},
-                             {'https://awesomecua.github.io' + resource_path(r) for r in (self.paper, self.survey)})
+                             {SITE + resource_path(r) for r in (self.paper, self.survey)})
             self.assertEqual(len(parsed.entries[self.paper['id']]['assets']), 1)
             self.assertEqual(parsed.entries[self.survey['id']]['assets'], [])
         self.assertEqual(rows, original)
@@ -321,7 +322,7 @@ class PaperAssetTests(unittest.TestCase):
                 self.assertEqual([item['position'] for item in schema['itemListElement']],
                                  list(range(len(seen) + 1, len(seen) + len(visible) + 1)))
                 self.assertEqual([item['url'] for item in schema['itemListElement']],
-                                 ['https://awesomecua.github.io' + resource_path({'id': rid}) for rid in visible])
+                                 [SITE + resource_path({'id': rid}) for rid in visible])
                 self.assertIn('<strong>' + f'{len(papers):,}' + '</strong>', markup)
                 self.assertIn('class="library-connected-count" href="/connections/">' + str(len(linked)) + ' ', markup)
                 for rid, entry in parsed.entries.items():

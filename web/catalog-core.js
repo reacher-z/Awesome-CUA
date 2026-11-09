@@ -1,8 +1,8 @@
-export const KIND_ORDER = ['paper','survey','model','dataset','benchmark','agent','framework','infrastructure','tool','product','company'];
+export const KIND_ORDER = ['paper','survey','learning','model','dataset','benchmark','agent','framework','infrastructure','tool','product','company'];
 export const FEATURED = ['OSWorld','UI-TARS','Browser Use','OpenCUA','AgentNet','AndroidWorld','WebArena','UI-Venus','Stagehand','ScreenSpot Pro','Agent S','Holo Model Family'];
 export const PAGE_SIZE = 24;
 export const PLATFORM_GROUPS = {desktop:['desktop','windows','macos','linux'],mobile:['android','ios','harmonyos']};
-export const KINDS = {paper:['Papers','论文','▤'],survey:['Surveys','综述','≋'],model:['Models','模型','◈'],dataset:['Datasets','数据集','▦'],benchmark:['Benchmarks','评测基准','◎'],agent:['Agents','智能体','↗'],framework:['Frameworks','框架','◇'],infrastructure:['Infrastructure','基础设施','▧'],tool:['Tools','工具','⚒'],product:['Products','产品','□'],company:['Publishers','发布方','⌂']};
+export const KINDS = {paper:['Papers','论文','▤'],survey:['Surveys','综述','≋'],learning:['Learning resources','学习资源','▥'],model:['Models','模型','◈'],dataset:['Datasets','数据集','▦'],benchmark:['Benchmarks','评测基准','◎'],agent:['Agents','智能体','↗'],framework:['Frameworks','框架','◇'],infrastructure:['Infrastructure','基础设施','▧'],tool:['Tools','工具','⚒'],product:['Products','产品','□'],company:['Publishers','发布方','⌂']};
 export const PLATFORMS = {web:['Web','浏览器'],desktop:['Desktop','桌面'],windows:['Windows','Windows'],macos:['macOS','macOS'],linux:['Linux','Linux'],mobile:['Mobile','移动设备'],android:['Android','Android'],ios:['iOS','iOS'],harmonyos:['HarmonyOS','鸿蒙'],'cross-platform':['Cross-platform','跨平台'],unspecified:['Unassigned','待标注']};
 export function createRecordLoader(fetcher) {
   const cache=new Map();
@@ -30,10 +30,17 @@ export function compactFacts(record, slotLabel = slot => slot) {
 }
 export const TOPIC_ALIASES = {'reinforcement-learning':['RL'],'human-in-the-loop':['HITL']};
 const CJK = /[\p{Script=Han}\p{Script=Hiragana}\p{Script=Katakana}\p{Script=Hangul}]/u;
+function compoundForms(value) {
+  const original=String(value || ''), camel=original.replace(/(\p{Ll})(\p{Lu})/gu,'$1 $2');
+  // Keep both intermediate forms (mac OSWorld, macOS World) plus the full split.
+  const acronym=original.replace(/(\p{Lu})(\p{Lu}\p{Ll})/gu,'$1 $2');
+  const split=camel.replace(/(\p{Lu})(\p{Lu}\p{Ll})/gu,'$1 $2');
+  return [...new Set([original,camel,acronym,split])];
+}
 export function searchText(values) {
   const text = values.filter(Boolean).join(' ');
-  // Index the parts of compound names too, so word-start search finds "osworld" in macOSWorld and "llm" in SpreadsheetLLM.
-  const parts = text.split(/\s+/).filter(word => /\p{Ll}\p{Lu}/u.test(word)).map(word => word.replace(/(\p{Ll})(\p{Lu})/gu,'$1 $2'));
+  // Append compound variants without replacing any original or previously indexed form.
+  const parts = text.split(/\s+/).flatMap(word=>compoundForms(word).slice(1));
   return normalize([text,...parts].join(' '));
 }
 // Index the English and Chinese labels of a record's kind, platforms and topics rather than their keys; topic labels come from data/topics.json through index.json.
@@ -54,6 +61,19 @@ export function matches(record, state, ignoreKind = false) {
 const collator = new Intl.Collator('en',{sensitivity:'base'});
 const FEATURED_RANK = new Map(FEATURED.map((name,i) => [name,i]));
 const alpha = (a,b) => collator.compare(a.name,b.name);
+// Rank names only after filtering: this does not broaden literal AND matching.
+// A title's pre-colon name distinguishes "Agent S: ..." from incidental mentions
+// and related names such as "Agent S2: ..." without a hand-maintained paper list.
+function queryNameRank(record, query) {
+  const forms=value=>compoundForms(value).map(normalize);
+  const names=[record.name,...(record.aliases || [])].flatMap(forms);
+  const title=String(record.name || ''), shortTitles=/[:：]/u.test(title)?forms(title.split(/[:：]/u,1)[0]):[];
+  if(names.includes(query) || shortTitles.includes(query))return 0;
+  if(names.some(name=>name.startsWith(query+' ')))return 1;
+  const terms=query.split(' ');
+  if(names.some(name=>terms.every(term=>CJK.test(term)?name.includes(term):name.startsWith(term)||name.includes(' '+term))))return 2;
+  return 3;
+}
 export function filtered(records, state) {
   const result = records.filter(r => matches(r,state));
   // Bibliographic dates are ISO prefixes, so code-unit order is chronological; compute each once per sort.
@@ -63,9 +83,9 @@ export function filtered(records, state) {
   else if (state.sort === 'newest') result.sort((a,b) => newer(a,b) || alpha(a,b));
   else {
     const papers = ['paper','survey'].includes(state.kind), q = normalize(state.q);
-    const exact = new Set(state.q ? result.filter(r => normalize(r.name) === q) : []);
+    const relevance = new Map(result.map(r=>[r,q?queryNameRank(r,q):0]));
     const rank = r => r.kind !== 'company' && FEATURED_RANK.has(r.name) ? FEATURED_RANK.get(r.name) : FEATURED.length;
-    result.sort((a,b) => Number(a.review_status !== 'curated') - Number(b.review_status !== 'curated') || (papers ? newer(a,b) || alpha(a,b) : exact.has(b)-exact.has(a) || rank(a)-rank(b) || alpha(a,b)));
+    result.sort((a,b) => Number(a.review_status !== 'curated') - Number(b.review_status !== 'curated') || relevance.get(a)-relevance.get(b) || (papers ? newer(a,b) || alpha(a,b) : rank(a)-rank(b) || alpha(a,b)));
   }
   return result;
 }
@@ -91,7 +111,7 @@ export function pageWindow(page, pages) {
 }
 export function escapeHTML(value) { return String(value ?? '').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c])); }
 export function safeURL(value) { try {const u=new URL(value); return ['https:','http:'].includes(u.protocol) ? u.href : '#';} catch {return '#';} }
-export const FACT_LABELS = {sample_count:['Sample count','样本数'],sample_unit:['Sample unit','样本单位'],screen_count:['Screen count','界面数量'],example_count:['Example count','示例数量'],modalities:['Modalities','数据模态'],languages:['Languages','语言'],gated:['Access gated','访问需申请'],disabled:['Disabled on Hub','Hub 已停用'],hub_id:['Hub identifier','Hub 标识'],download_url:['Download location','下载入口'],size_category_reported:['Publisher size category','发布方规模分类'],reported_scale:['Reported scale','发布方描述规模'],artifact_type:['Artifact type','资产类型'],task_count:['Task count','任务数量'],task_unit:['Task unit','任务单位'],metrics:['Metrics','评测指标'],evaluation_type:['Evaluation method','评测方式'],access:['Access','访问方式'],pricing_url:['Pricing','价格页面'],availability:['Availability','可用性'],leaderboard_url:['Leaderboard','排行榜'],dataset_profile:['Dataset profile','数据集概况'],benchmark_protocol:['Evaluation protocol','评测协议'],platform_constraints:['Platform constraints','平台限制'],artifact_inspection:['Artifact inspection','资产检查范围'],base_model:['Base model','基础模型'],hub_revision:['Hub revision','Hub 修订版本'],listed_weight_files:['Listed weight files','列出的权重文件'],license_name:['License name','许可名称'],dataverse:['Dataverse release','Dataverse 发布版本'],release_tag:['Release tag','发布标签'],repository_revision:['Repository revision','仓库修订版本'],repository_tree_sha:['Git tree SHA','Git 目录树 SHA'],repository_url:['Implementation repository','代码仓库'],release_revision:['Release revision','发布修订版本'],dataset_release:['Dataset release','数据集发布版本'],evaluation_caution:['Evaluation caution','评测注意事项'],license_components_note:['License components','许可组成说明'],maintenance_status:['Maintenance status','维护状态'],component_path:['Component path','组件路径'],license_conflict:['License conflict','许可声明冲突'],package_version:['Package version','软件包版本'],architecture:['Architecture','架构'],parameter_label:['Parameter size label','参数规模标注'],training_data_note:['Training data note','训练数据说明']};
+export const FACT_LABELS = {sample_count:['Sample count','样本数'],sample_unit:['Sample unit','样本单位'],screen_count:['Screen count','界面数量'],example_count:['Example count','示例数量'],modalities:['Modalities','数据模态'],languages:['Languages','语言'],gated:['Access gated','访问需申请'],disabled:['Disabled on Hub','Hub 已停用'],hub_id:['Hub identifier','Hub 标识'],download_url:['Download location','下载入口'],size_category_reported:['Publisher size category','发布方规模分类'],reported_scale:['Reported scale','发布方描述规模'],artifact_type:['Artifact type','资产类型'],task_count:['Task count','任务数量'],task_unit:['Task unit','任务单位'],metrics:['Metrics','评测指标'],evaluation_type:['Evaluation method','评测方式'],access:['Access','访问方式'],pricing_url:['Pricing','价格页面'],availability:['Availability','可用性'],leaderboard_url:['Leaderboard','排行榜'],dataset_profile:['Dataset profile','数据集概况'],benchmark_protocol:['Evaluation protocol','评测协议'],platform_constraints:['Platform constraints','平台限制'],artifact_inspection:['Artifact inspection','资产检查范围'],base_model:['Base model','基础模型'],hub_revision:['Hub revision','Hub 修订版本'],listed_weight_files:['Listed weight files','列出的权重文件'],license_name:['License name','许可名称'],dataverse:['Dataverse release','Dataverse 发布版本'],release_tag:['Release tag','发布标签'],repository_revision:['Repository revision','仓库修订版本'],repository_id:['GitHub repository ID','GitHub 仓库 ID'],repository_tree_sha:['Git tree SHA','Git 目录树 SHA'],repository_url:['Implementation repository','代码仓库'],release_revision:['Release revision','发布修订版本'],dataset_release:['Dataset release','数据集发布版本'],evaluation_caution:['Evaluation caution','评测注意事项'],license_components_note:['License components','许可组成说明'],maintenance_status:['Maintenance status','维护状态'],component_path:['Component path','组件路径'],license_conflict:['License conflict','许可声明冲突'],package_version:['Package version','软件包版本'],architecture:['Architecture','架构'],parameter_label:['Parameter size label','参数规模标注'],training_data_note:['Training data note','训练数据说明'],api_model_id:['API model ID','API 模型 ID'],documentation_url:['Documentation','文档'],release_notes_url:['Release notes','发布说明'],released_at:['Release date','发布日期']};
 const PROFILE_PARTS = {dataset_profile:['supervision','modalities','formats','splits','counts'],benchmark_protocol:['focus','setting','observations','actions','evaluation','counts']};
 const PROFILE_LABELS = {supervision:['Supervision','监督信号'],modalities:['Modalities','数据模态'],formats:['Formats','文件格式'],splits:['Splits','数据划分'],focus:['Focus','评测重点'],setting:['Setting','评测设置'],observations:['Observations','观测输入'],actions:['Actions / outputs','动作 / 输出'],evaluation:['Evaluation','评测方法'],counts:['Scale','规模']};
 const PREFIXES = {exact:'',approximately:'≈ ','at-least':'≥ ','more-than':'> ','>':'> ','>=':'≥ '};
@@ -101,6 +121,7 @@ export function formatFact(key, value, lang='en') {
   // Nested objects are summarized or dropped; String() would render them as "[object Object]".
   const text=v=>v===null||v===undefined?'':typeof v==='boolean'?(zh?(v?'是':'否'):(v?'Yes':'No')):typeof v==='number'?num(v):Array.isArray(v)?v.map(text).filter(Boolean).join(' · '):typeof v==='object'?(typeof v.name==='string'?v.name:Object.entries(v).map(([k,x])=>[k,text(x)]).filter(([,x])=>x).map(([k,x])=>k.replaceAll('_',' ')+': '+x).join(' · ')):/^\d{4}-\d\d-\d\d(T[\d:.]+Z)?$/.test(v)?formatDate(v,lang):String(v);
   const count=c=>{const q=c.qualifier ?? c.comparison;return (PREFIXES[q] ?? (q?q+' ':''))+num(c.value)+' '+c.unit;};
+  if(key==='repository_id'&&Number.isSafeInteger(value)&&value>0) return String(value);
   if(key==='gated'&&(value==='auto'||value==='manual')) return zh?(value==='auto'?'是（自动批准）':'是（人工审批）'):(value==='auto'?'Yes, approved automatically':'Yes, approved manually');
   if(!value||typeof value!=='object'||Array.isArray(value)) return text(value);
   if(key==='reported_scale') return count(value);

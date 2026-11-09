@@ -56,7 +56,8 @@ class ResourcePayloadTests(unittest.TestCase):
         self.build = self.root / 'dist/site'
         self.site = Path(self.temp.name) / 'published'
         (self.site / '.git').mkdir(parents=True)
-        shutil.copytree(ROOT / 'web', self.root / 'web')
+        # These catalog fixtures have no research source inputs. Survey publication has its own fixtures.
+        shutil.copytree(ROOT / 'web', self.root / 'web', ignore=shutil.ignore_patterns('survey'))
         shutil.copytree(ROOT / 'schemas', self.root / 'schemas')
         for name in ('AGENTS.md', 'LICENSE'):
             shutil.copy2(ROOT / name, self.root / name)

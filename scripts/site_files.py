@@ -2,6 +2,8 @@
 from pathlib import Path
 
 
+# /survey companions are owned by its bundle manifest, not by these global basenames.
+# prepare_publication validates/reconciles them through survey_bundle before copying.
 MANAGED_ROOTS = ('resources', 'categories', 'guides', 'topics', 'zh/topics', 'badges')
 MANAGED_FILES = frozenset({'index.html', 'index.md', 'record.json', 'citation.bib', 'citation.csl.json',
                            'publication-citation.bib', 'publication-citation.csl.json',

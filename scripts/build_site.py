@@ -13,11 +13,16 @@ sys.path.insert(0,str(ROOT/'scripts'))
 from build import validate_records, write_sqlite
 from catalog import TOPICS
 from search_pages import build_search_pages, resource_path
+from site_config import HOST, SITE
 from export_rag import build_exports
 from export_citations import build_citation_exports
+from export_candidates import copy_public_candidates, SCHEMAS as CANDIDATE_SCHEMAS
+from site_data import catalog_counts
 from site_files import reconcile_generated_pages
 from publication_metadata import record_date_text, publication_search_text
 from repository_identity import attach_repository_aliases
+from survey_bundle import copy_bundle as copy_survey_bundle
+from privacy_guard import require_clean, tree_files
 
 
 def version_script_imports(destination):
@@ -42,7 +47,7 @@ def replaceable(destination):
     return not destination.exists() or destination.is_dir() and not destination.is_symlink() and (not any(destination.iterdir()) or (destination/'data/search-manifest.json').is_file() and not (destination/'.git').exists())
 
 
-def build_site(output=None):
+def build_site(output=None, check=None):
     destination=Path(output) if output else ROOT/'dist'/'site'
     if not replaceable(destination):raise ValueError(f'Refusing to replace {destination}: build into an empty directory or a previous site build.')
     destination.parent.mkdir(parents=True,exist_ok=True)
@@ -51,6 +56,8 @@ def build_site(output=None):
     try:
         staging.chmod(0o755)
         manifest,count=write_site(staging)
+        # An optional check sees the complete staged site; if it raises, the previous build stays in place.
+        if check:check(staging)
         if destination.exists():shutil.rmtree(destination)
         staging.rename(destination)
     except BaseException:
@@ -69,6 +76,7 @@ def write_site(destination):
         errors.append('Catalog repository aliases differ from their reviewed source declarations; rebuild catalog first.')
     if errors:raise ValueError('\n'.join(errors[:10]))
     if len(rows)!=coverage['total_records']:raise ValueError('Catalog/coverage count mismatch; rebuild catalog first.')
+    survey_page=copy_survey_bundle(ROOT/'web/survey',destination/'survey',source_root=ROOT,site_url=SITE)
     for path in (ROOT/'web').iterdir():
         if path.is_file():shutil.copy2(path,destination/path.name)
     badge_source=ROOT/'web/badges'
@@ -79,6 +87,9 @@ def write_site(destination):
             source=badge_source/name
             if source.is_symlink() or not source.is_file():raise ValueError('Missing or unsafe static badge: '+name)
             shutil.copy2(source,destination/'badges'/name)
+    assets=ROOT/'web/assets'
+    if assets.is_symlink() or not assets.is_dir():raise ValueError('Site asset directory must be a real directory')
+    shutil.copytree(assets,destination/'assets',dirs_exist_ok=True,symlinks=False)
     version_script_imports(destination)
     (destination/'data').mkdir(exist_ok=True)
     (destination/'downloads').mkdir(exist_ok=True)
@@ -94,8 +105,11 @@ def write_site(destination):
             if relation['target_id'] in related:
                 related[relation['target_id']].add(row['id']);related[row['id']].add(relation['target_id'])
                 incoming[relation['target_id']].append({'source_id':row['id'],'type':relation['type'],'evidence_url':relation['evidence_url']})
-    index={'coverage':{k:coverage[k] for k in ['as_of_utc','total_records','curated_records','metadata_only_records','by_kind','unindexed_candidates','sources','excluded_records','arxiv_archive_records']},
-        'topics':{topic:[entry['en'],entry['zh']] for topic,entry in TOPICS.items()},'records':[{**{k:row[k] for k in keys},'page_url':resource_path(row),
+    candidate_manifest=ROOT/'data/github-candidates-manifest.json'
+    # Curated-only headline counts, with the populations still awaiting review reported beside them.
+    counts=catalog_counts(rows,coverage,json.loads(candidate_manifest.read_text(encoding='utf-8')) if candidate_manifest.exists() else None)
+    index={'counts':counts,'coverage':{k:coverage.get(k,0) if k=='out_of_scope_candidates' else coverage[k] for k in ['as_of_utc','total_records','curated_records','metadata_only_records','by_kind','unindexed_candidates','out_of_scope_candidates','sources','excluded_records','arxiv_archive_records']},
+        'topics':{topic:[entry['en'],entry['zh']] for topic,entry in TOPICS.items()},'records':[{**{k:row[k] for k in keys},**({'authors_omitted':True} if row.get('authors_omitted') is True else {}),'page_url':resource_path(row),
         'paper_version':row.get('details',{}).get('arxiv_snapshot',{}).get('version'),
         'paper_source_url':row.get('details',{}).get('arxiv_snapshot',{}).get('versioned_url'),
         'paper_date':record_date_text(row),
@@ -109,6 +123,10 @@ def write_site(destination):
     shutil.copy2(ROOT/'data/papers.jsonl',destination/'downloads/arxiv-archive.jsonl')
     (destination/'downloads/publications.jsonl').write_bytes((ROOT/'data/publications.jsonl').read_bytes() if (ROOT/'data/publications.jsonl').exists() else b'')
     (destination/'downloads/repository-aliases.json').write_text(json.dumps(repository_declarations,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
+    candidates=copy_public_candidates(ROOT/'data',destination/'downloads',(ROOT/'data/catalog.jsonl').read_bytes())
+    for contract in CANDIDATE_SCHEMAS:
+        if candidates is not None:shutil.copy2(ROOT/'schemas'/contract,destination/'schemas'/contract)
+        else:(destination/'schemas'/contract).unlink(missing_ok=True)
     write_sqlite(rows,destination/'downloads'/'catalog.sqlite')
     build_exports(rows,destination/'downloads',(ROOT/'data/catalog.jsonl').read_bytes())
     build_citation_exports(rows,destination/'downloads',(ROOT/'data/catalog.jsonl').read_bytes())
@@ -117,11 +135,17 @@ def write_site(destination):
         if (ROOT/'data'/name).exists():shutil.copy2(ROOT/'data'/name,destination/'downloads'/name)
     shutil.copy2(ROOT/'LICENSE',destination/'LICENSE')
     (destination/'.nojekyll').write_text('',encoding='utf-8')
-    manifest=build_search_pages(destination,rows,coverage,ROOT)
+    # Actions deployments take the custom domain from the Pages settings; the file keeps it with the snapshot and for branch publishing.
+    (destination/'CNAME').write_text(HOST+'\n',encoding='utf-8')
+    manifest=build_search_pages(destination,rows,coverage,ROOT,survey_page=survey_page)
     reconcile_generated_pages(destination,manifest)
     return manifest,len(rows)
 
 
 if __name__=='__main__':
     sys.stdout.reconfigure(encoding='utf-8')
-    build_site(sys.argv[1] if len(sys.argv)>1 else None)
+    # Command-line builds (CI, the scheduled scan, publication and releases) refuse output that names a protected
+    # person before it replaces the previous build.
+    checked=[]
+    build_site(sys.argv[1] if len(sys.argv)>1 else None,check=lambda staging:checked.append(require_clean(tree_files(staging),'website')))
+    print(f'Checked {checked[0]:,} website files for protected personal names.')

@@ -171,7 +171,7 @@
     "fixture_sha256": "c78d5601b8797b7768e968989873fc1aab5a9c4a329b46c3183cbb5a4a874c64",
     "record_count": 70,
     "record_hash_method": "sha256-utf8-json-sorted-keys-compact-v1",
-    "history_check": "matched_available_pinned_git_object",
+    "history_check": "not_available_or_disabled; verified_pinned_fixture_used",
     "network_requests": 0,
     "subset_cannot_recompute_full_catalog_sha256": true
   }

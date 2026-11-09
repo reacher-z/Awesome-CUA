@@ -553,6 +553,7 @@ html:not(.js) .js-only{display:none}
 .pager{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:20px 0;border-top:1px solid var(--line-strong);margin-top:-1px}
 .pager nav{display:flex;gap:4px;flex-wrap:wrap}
 .pager a,.pager span{display:inline-flex;align-items:center;justify-content:center;min-width:40px;height:40px;padding:0 10px;border-radius:var(--r-control);text-decoration:none;color:var(--text);font-variant-numeric:tabular-nums;font-size:var(--step-ui);font-weight:500}
+nav.pager{flex-wrap:wrap;justify-content:flex-start;gap:4px;width:min(var(--content),calc(100% - 2*var(--gutter)));margin-inline:auto}
 .pager a:hover{background:var(--fill-hover)}
 .pager [aria-current]{background:var(--text-strong);color:var(--bg)}
 .pager .info{color:var(--text-meta);font-size:var(--step-meta)}

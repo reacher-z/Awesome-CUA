@@ -575,6 +575,18 @@ def asset_version(destination):
     return digest.hexdigest()[:12]
 
 
+def list_twin(destination, path, title, schema, language='en', parent=None):
+    """A Markdown twin for a list page, written from the ItemList its HTML already declares."""
+    entries=next((item for item in (schema or {}).get('@graph',[schema]) if isinstance(item,dict) and item.get('@type')=='ItemList'),schema or {})
+    zh=language=='zh'
+    lines=[f'# {title}','',('HTML 页面：' if zh else 'HTML page: ')+SITE+path,'']
+    if parent:lines+=[('完整列表：' if zh else 'Full list: ')+SITE+parent+'index.md','']
+    lines+=[f'- {link(item["name"],item["url"])}' for item in entries.get('itemListElement',[])]
+    target=destination/path.lstrip('/')/'index.md'
+    target.parent.mkdir(parents=True,exist_ok=True)
+    target.write_text(clean_text('\n'.join(lines)+'\n'),encoding='utf-8')
+
+
 def declare_markdown_twins(destination, manifest):
     """Name each page's index.md in its <head> once the build has written every twin, then refresh the page fingerprint."""
     for item in manifest:
@@ -761,6 +773,7 @@ def build_search_pages(destination, rows, coverage, root, *, survey_page=None):
         path=f'/compare/{plural}/'
         export=profile_export(rows,kind)
         (destination/f'downloads/{plural}-profiles.json').write_text(json.dumps(export,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
+        list_twin(destination,path,title,{'@type':'ItemList','itemListElement':[{'name':item['name'],'url':SITE+resource_path(item)} for item in export['records']]})
         emit(path,page(title,f'Compare {plural} by source-reviewed interfaces, scope, counting units, and access information.',path,comparison_body(rows,kind,resource_path),{'@type':'CollectionPage','name':title},crumbs=[("AwesomeCUA","/"),("Catalog","/catalog/"),(title,path)]),lastmod=modified([r for r in rows if r['kind']==kind]))
     papers=sorted([r for r in reviewed if r['kind'] in {'paper','survey'}],key=record_date_text,reverse=True)
     library_count=library_pages(rows)
@@ -783,6 +796,7 @@ def build_search_pages(destination, rows, coverage, root, *, survey_page=None):
     for language in ('en','zh'):
         path=topic_path(language=language)
         body,schema=topic_index_body(topic_manifest,language=language,site_url=SITE)
+        list_twin(destination,path,'Computer-use research topics' if language=='en' else 'Computer-Use 主题目录',schema,language)
         title='Computer-use research topics' if language=='en' else 'Computer-Use 主题目录'
         summary='Explore source-reviewed computer-use papers, models, datasets, benchmarks and tools by topic.' if language=='en' else '按研究主题浏览已审阅的 Computer-Use 论文、模型、数据、基准与工具，并下载完整主题记录。'
         emit(path,page(title,summary,path,body,schema,lang='zh-CN' if language=='zh' else 'en',alternatives={'en':'/topics/','zh-CN':'/zh/topics/','x-default':'/topics/'}),lastmod=modified([r for members in topic_groups.values() for r in members]),alternates={'en':'/topics/','zh-CN':'/zh/topics/','x-default':'/topics/'})
@@ -794,6 +808,7 @@ def build_search_pages(destination, rows, coverage, root, *, survey_page=None):
                 path=topic_path(topic,language,number)
                 body,schema=topic_body(topic,members,lambda r:localized_path(r,language=='zh'),language=language,site_url=SITE,number=number)
                 numbered=(f'{title}, page {number}' if language=='en' else f'{title}（第 {number} 页）') if number>1 else title
+                if number>1:list_twin(destination,path,numbered,schema,language,parent=first)
                 alternatives={'en':topic_path(topic,'en',number),'zh-CN':topic_path(topic,'zh',number),'x-default':topic_path(topic,'en',number)}
                 trail=[("AwesomeCUA","/zh/" if language=='zh' else "/"),("主题" if language=='zh' else "Topics",topic_path(language=language)),(topic_name(topic,language),first)]+([(f'Page {number}' if language=='en' else f'第 {number} 页',path)] if number>1 else [])
                 emit(path,page(numbered,summary,path,body,schema,lang='zh-CN' if language=='zh' else 'en',alternatives=alternatives,crumbs=trail),lastmod=modified(members),alternates=alternatives)

@@ -366,7 +366,7 @@ class ReadmeBlockTests(unittest.TestCase):
         table = [line for line in build.highlights(rows, edges).splitlines() if line.startswith("| [")]
         self.assertEqual([line.split("]")[0][3:] for line in table], ["Beta", "Alpha", "Gamma"])
         self.assertRegex(table[0], r"\| +2 \|")
-        self.assertIn("[all 3 →](docs/benchmarks.md)", build.highlights(rows, edges))
+        self.assertIn("**Benchmarks** · 3 in the catalog", build.highlights(rows, edges))
         self.assertEqual(build.highlights(rows, []).strip(), "")
 
     def test_recently_reviewed_orders_non_paper_approvals(self):
@@ -385,8 +385,10 @@ class ReadmeBlockTests(unittest.TestCase):
 
     def test_badges_count_only_curated_resources_and_date_the_evidence(self):
         strip = build.badges([], {"curated_records": 1674, "metadata_only_records": 1962, "unindexed_candidates": 1920, "total_records": 3636, "as_of_utc": "2026-11-06T04:18:34Z"})
-        self.assertIn("[![Curated resources](https://img.shields.io/badge/curated%20resources-1%2C674-", strip)
-        self.assertIn("[![Reviewed papers and surveys](", strip)
+        # Count badges are plain images; the pages they count are linked once further down the README.
+        self.assertIn("![Curated resources](https://img.shields.io/badge/curated%20resources-1%2C674-", strip)
+        self.assertNotIn("[![Curated resources]", strip)
+        self.assertIn("![Reviewed papers and surveys](", strip)
         self.assertIn("[![Last successful scan](https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2Freacher-z%2FAwesome-CUA%2Fstatus%2Fscan-badge.json&style=flat-square&labelColor=1E2233)](docs/maintenance.md#scan-badge)", strip)
         # The scan badge is live, so the generated strip does not change with each scan.
         self.assertNotIn("2026--11--06", strip)

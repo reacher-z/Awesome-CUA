@@ -74,7 +74,7 @@ class WorkflowCredentialTests(unittest.TestCase):
                     checkouts += 1
                     with self.subTest(workflow=path.name, job=job, step=name):
                         self.assertIn("          persist-credentials: false", lines)
-        self.assertEqual(checkouts, 11)
+        self.assertEqual(checkouts, 13)
 
     def test_only_push_and_dispatch_steps_receive_the_token(self):
         found = set()

@@ -1,12 +1,12 @@
 # Coverage and quality ledger
 
-Evidence snapshot through **2026-11-10T03:01:53Z**. Generated from committed source receipts.
+Evidence snapshot through **2026-11-10T06:29:47Z**. Generated from committed source receipts.
 
-- 5,216 curated resources. Another 905 records await review with bibliographic metadata only; the active catalog file holds 6,121 records in all.
+- 5,355 curated resources. Another 905 records await review with bibliographic metadata only; the active catalog file holds 6,260 records in all.
 - 2,624 paper and survey records, including 2,571 arXiv identities and 53 publisher-only identities.
 - 3,879 retained arXiv metadata records; 1,308 explicit scope exclusions are outside the active catalog.
-- 9,381 discovery identifiers; 525 remain unresolved. Reviewed decisions include 481 non-resource links, 697 aliases and 1,774 out-of-scope resources; their reasons remain in the review queue.
-- 375 editorial proposals await verification or review.
+- 9,381 discovery identifiers; 33 remain unresolved. Reviewed decisions include 505 non-resource links, 748 aliases and 2,052 out-of-scope resources; their reasons remain in the review queue.
+- 378 editorial proposals await verification or review.
 
 These are distinct resource identifiers, not distinct research projects. Papers, repositories, datasets, products, and publisher entities have different grains.
 
@@ -16,18 +16,18 @@ Counts of source-reviewed resources. A resource tagged with several environments
 
 | Kind | web | desktop | windows | macos | linux | android | ios | harmonyos | cross-platform | unspecified |
 | --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
-| [agent](agents.md) | 243 | 228 | 102 | 115 | 76 | 85 | 17 | · | 59 | 3 |
-| [benchmark](benchmarks.md) | 209 | 95 | 14 | 11 | 25 | 42 | 2 | · | 28 | 13 |
+| [agent](agents.md) | 247 | 229 | 103 | 116 | 77 | 88 | 20 | 2 | 60 | 3 |
+| [benchmark](benchmarks.md) | 211 | 95 | 14 | 11 | 25 | 44 | 2 | · | 28 | 14 |
 | [company](companies.md) | · | 1 | · | · | · | · | · | · | 1 | 18 |
-| [dataset](datasets.md) | 116 | 74 | 13 | 16 | 22 | 74 | 7 | · | 34 | 35 |
-| [framework](frameworks.md) | 463 | 309 | 99 | 88 | 111 | 101 | 17 | 1 | 154 | 26 |
-| [infrastructure](infrastructures.md) | 62 | 76 | 16 | 22 | 57 | 21 | 3 | · | 11 | 2 |
-| [learning](learning.md) | 29 | 18 | 3 | 4 | 4 | 4 | 1 | · | 18 | 1 |
-| [model](models.md) | 177 | 174 | 20 | 18 | 19 | 96 | 7 | · | 143 | 86 |
+| [dataset](datasets.md) | 122 | 78 | 13 | 16 | 26 | 74 | 7 | · | 34 | 36 |
+| [framework](frameworks.md) | 472 | 312 | 101 | 88 | 111 | 102 | 17 | 1 | 154 | 26 |
+| [infrastructure](infrastructures.md) | 65 | 78 | 16 | 23 | 59 | 22 | 3 | · | 11 | 2 |
+| [learning](learning.md) | 30 | 19 | 3 | 5 | 4 | 4 | 1 | · | 19 | 1 |
+| [model](models.md) | 190 | 179 | 22 | 18 | 21 | 100 | 7 | · | 144 | 90 |
 | [paper](topics.md) | 662 | 244 | 43 | 18 | 25 | 229 | 12 | 4 | 112 | 597 |
 | [product](products.md) | 64 | 23 | 9 | 9 | 4 | 6 | 2 | 1 | 8 | · |
 | [survey](surveys.md) | 7 | 2 | 1 | · | · | 2 | 1 | · | 13 | 17 |
-| [tool](tools.md) | 647 | 557 | 251 | 281 | 190 | 60 | 36 | 1 | 175 | 13 |
+| [tool](tools.md) | 682 | 577 | 264 | 294 | 198 | 74 | 48 | 2 | 176 | 21 |
 
 ## Source snapshot coverage
 
@@ -193,16 +193,16 @@ The recorded title query returned 1,199 unique records out of 1,246 reported mat
 
 | Scope | Recorded declarations |
 | --- | ---: |
-| code | 2064 |
-| data | 211 |
-| weights | 327 |
+| code | 2139 |
+| data | 220 |
+| weights | 346 |
 | document | 8 |
 
 Data and weights fields record their own licenses. Hub declarations are publisher metadata. Missing values remain null.
 
 ## Pending editorial proposals
 
-375 proposals: 8 with unresolved primary evidence, 15 whose current source snapshot awaits review, 329 held by a reviewer after reading the current source, 23 screened as relevant from the current source and awaiting an editorial annotation, and 0 awaiting another scope review.
+378 proposals: 8 with unresolved primary evidence, 15 whose current source snapshot awaits review, 332 held by a reviewer after reading the current source, 23 screened as relevant from the current source and awaiting an editorial annotation, and 0 awaiting another scope review.
 
 | Resource | Reason |
 | --- | --- |
@@ -581,6 +581,9 @@ Data and weights fields record their own licenses. Hub declarations are publishe
 | [Figma](https://www.figma.com/deck/rsWK4sRl0dOahG59bfMhql) | A Figma Slides deck titled "Computer Use Talk 11/24" per Figma's oEmbed API; the deck renders only in JavaScript, so its slide text cannot be read. |
 | [zhuanlan.zhihu.com](https://zhuanlan.zhihu.com/p/14143950360n) | primary evidence unresolved: HTTP Error 403: Forbidden; Zhihu column article 14143950360n, found from the OS agent survey, serves only the site's anti-bot welcome page to plain fetches, and its article API answers 403, so the text is unavailable. |
 | [zhuanlan.zhihu.com](https://zhuanlan.zhihu.com/p/18229337790) | primary evidence unresolved: HTTP Error 403: Forbidden; Zhihu column article 18229337790, found from the OS-Genesis release, serves only the site's anti-bot welcome page to plain fetches, and its article API answers 403, so the text is unavailable. |
+| [FiftyOne-GUI-Grounding-Eval](https://huggingface.co/datasets/harpreetsahota/FiftyOne-GUI-Grounding-Eval) | A FiftyOne dataset of 2405 screenshot samples with an unfilled template card; the workshop README gives it only a 'Benchmark Dataset' badge, leaving its instructions, annotations and source app undescribed. |
+| [MFAToolsPlus](https://github.com/SweetSmellFox/MFAToolsPlus) | The README names MFAToolsPlus as an Avalonia development helper for MaaFramework and lists only system requirements, license and credits, with no feature description. |
+| [rust-headless-chrome](https://github.com/atroche/rust-headless-chrome) | An unchanged fork of the rust-headless-chrome library, a Rust API for controlling Chrome over the DevTools Protocol; the original rust-headless-chrome/rust-headless-chrome repository is uncatalogued. |
 
 ## Uncurated papers behind curated resources
 
@@ -593,7 +596,8 @@ Papers that a curated resource names as its `introduced_by` or `documented_by` p
 | [InternVL3: Exploring Advanced Training and Test-Time Recipes for Open-Source Multimodal Models](https://arxiv.org/abs/2504.10479) | [InternVL3-9B](https://huggingface.co/OpenGVLab/InternVL3-9B), [InternVL3-2B](https://huggingface.co/OpenGVLab/InternVL3-2B), [InternVL3-1B](https://huggingface.co/OpenGVLab/InternVL3-1B), [InternVL3-78B](https://huggingface.co/OpenGVLab/InternVL3-78B), [InternVL3-8B](https://huggingface.co/OpenGVLab/InternVL3-8B), [InternVL3-14B](https://huggingface.co/OpenGVLab/InternVL3-14B), [InternVL3-38B](https://huggingface.co/OpenGVLab/InternVL3-38B) |
 | [AndroidGen: Building an Android Language Agent under Data Scarcity](https://arxiv.org/abs/2504.19298) | [AndroidGen-GLM-4-9B](https://huggingface.co/THUDM/androidgen-glm-4-9b), [AndroidGen-Llama-3-70B](https://huggingface.co/THUDM/androidgen-llama-3-70b) |
 | [RLVR-World: Training World Models with Reinforcement Learning](https://arxiv.org/abs/2505.13934) | [webarena-world-model-cot](https://huggingface.co/datasets/thuml/webarena-world-model-cot), [webarena-world-model-sft](https://huggingface.co/thuml/webarena-world-model-sft), [webarena-world-model-rlvr](https://huggingface.co/thuml/webarena-world-model-rlvr) |
-| [AgentGym-RL: Training LLM Agents for Long-Horizon Decision Making through Multi-Turn Reinforcement Learning](https://arxiv.org/abs/2509.08755) | [AgentGym-RL](https://github.com/WooooDyy/AgentGym-RL) |
+| [Cognitive Kernel-Pro: A Framework for Deep Research Agents and Agent Foundation Models Training](https://arxiv.org/abs/2508.00414) | [CognitiveKernel-Pro-Query](https://huggingface.co/datasets/CognitiveKernel/CognitiveKernel-Pro-Query), [CognitiveKernel-Pro-SFT](https://huggingface.co/datasets/CognitiveKernel/CognitiveKernel-Pro-SFT), [Qwen3-8B-CK-Pro](https://huggingface.co/CognitiveKernel/Qwen3-8B-CK-Pro) |
+| [AgentGym-RL: Training LLM Agents for Long-Horizon Decision Making through Multi-Turn Reinforcement Learning](https://arxiv.org/abs/2509.08755) | [AgentGym-RL](https://github.com/WooooDyy/AgentGym-RL), [AgentGym-RL-Data-ID](https://huggingface.co/datasets/AgentGym/AgentGym-RL-Data-ID) |
 | [UI2Code^N: UI-to-Code Generation as Interactive Visual Optimization](https://arxiv.org/abs/2511.08195) | [UI2Code^N](https://github.com/zai-org/UI2Code_N), [UI2Code_N](https://huggingface.co/zai-org/UI2Code_N) |
 | [LPS-Bench: Benchmarking Safety Awareness of Computer-Use Agents in Long-Horizon Planning under Benign and Adversarial Scenarios](https://arxiv.org/abs/2602.03255) | [LPS-Bench](https://huggingface.co/datasets/tianyyuu/LPS-Bench) |
 | [GenericAgent: A Token-Efficient Self-Evolving LLM Agent via Contextual Information Density Maximization (V1.0)](https://arxiv.org/abs/2604.17091) | [GA-Technical-Report](https://github.com/JinyiHan99/GA-Technical-Report) |

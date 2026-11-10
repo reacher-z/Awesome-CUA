@@ -1,0 +1,17 @@
+{
+  "enforced_rules": [
+    "*"
+  ],
+  "false_positives": [
+    {
+      "rule": "awesome-spell-check",
+      "reason": "Text \"OS X\" should be written as \"macOS\"",
+      "why": "Part of a published title, such as Apple's archived document The OS X Accessibility Model."
+    },
+    {
+      "rule": "awesome-spell-check",
+      "reason": "Text \"NodeJS\" should be written as \"Node.js\"",
+      "why": "Part of a published project name, such as Patchright NodeJS (github.com/Kaliiiiiiiiii-Vinyzu/patchright-nodejs)."
+    }
+  ]
+}

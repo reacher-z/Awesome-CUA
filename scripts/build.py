@@ -854,15 +854,17 @@ def badges(rows, report):
     # A short status strip under the banner: at most six badges. The counts come from this build; the scan badge reads
     # the status branch, so it shows the latest successful scan of main and turns amber after six hours without one.
     # Only curated records count as resources; records awaiting review and candidates keep their own labels in STATS.
+    # The badges are plain images: the coverage ledger, bibliography, maintenance guide, dataset and license are each
+    # linked once further down, and awesome-lint flags an address linked twice in one README.
     style = '?style=flat-square&labelColor=1E2233'
     reviewed_papers = sum(r["review_status"] == "curated" and r["kind"] in {"paper", "survey"} for r in rows)
     scan = "https://img.shields.io/endpoint?url=" + urllib.parse.quote(SCAN_BADGE_JSON, safe="") + style.replace("?", "&", 1)
     return ("\n" + " ".join([
-        f"[![Curated resources]({shield('curated resources', format(report['curated_records'], ','), '4352E8')}{style})](docs/coverage.md)",
-        f"[![Reviewed papers and surveys]({shield('reviewed papers and surveys', format(reviewed_papers, ','), '4352E8')}{style})](docs/papers.md)",
+        f"![Curated resources]({shield('curated resources', format(report['curated_records'], ','), '4352E8')}{style})",
+        f"![Reviewed papers and surveys]({shield('reviewed papers and surveys', format(reviewed_papers, ','), '4352E8')}{style})",
         f"[![Last successful scan]({scan})](docs/maintenance.md#scan-badge)",
-        f"[![Hugging Face dataset]({shield('dataset', 'Hugging Face', '4352E8')}{style})]({HUGGING_FACE_DATASET})",
-        f"[![MIT license]({shield('license', 'MIT', '5E6472')}{style})](LICENSE)"]) + "\n")
+        f"![Hugging Face dataset]({shield('dataset', 'Hugging Face', '4352E8')}{style})",
+        f"![MIT license]({shield('license', 'MIT', '5E6472')}{style})"]) + "\n")
 
 
 HUGGING_FACE_DATASET = "https://huggingface.co/datasets/TIGER-Lab/AwesomeCUA"
@@ -884,7 +886,7 @@ README_TEXT = {
             "product": "Products", "company": "Publishers and brands"},
         "by_platform": "By platform:", "reviewed_papers": "**{n:,}** reviewed papers", "arxiv_records": "{n:,} paper and survey records, including those awaiting review",
         "kinds": {"benchmark": "Benchmarks", "model": "Models", "dataset": "Datasets", "framework": "Frameworks", "agent": "Agents"},
-        "all": "all {n} →", "surveys": "Start with the newest surveys", "survey_header": "| Date | Survey | Environments |", "highlight_header": "| Resource | Mentions | Environments | Paper | License | Description |",
+        "all": "{n} in the catalog", "surveys": "Start with the newest surveys", "survey_header": "| Date | Survey | Environments |", "highlight_header": "| Resource | Mentions | Environments | Paper | License | Description |",
         "recent_header": "| Reviewed | Resource | Kind | Environments | Description |", "kind_names": {"learning": "Learning resources"},
         "scopes": {"code": "code", "data": "data", "weights": "weights", "document": "document"},
         "star_history_heading": "Star History", "star_history_alt": "GitHub star count over time for Awesome-CUA",
@@ -899,7 +901,7 @@ README_TEXT = {
             "product": "产品", "company": "发布方与品牌"},
         "by_platform": "按平台：", "reviewed_papers": "**{n:,}** 篇已审阅论文", "arxiv_records": "{n:,} 条论文与综述记录（含待审阅）",
         "kinds": {"benchmark": "基准", "model": "模型", "dataset": "数据集", "framework": "框架", "agent": "智能体"},
-        "all": "全部 {n} 项 →", "surveys": "从最新综述入门", "survey_header": "| 日期 | 综述 | 环境 |", "highlight_header": "| 资源 | 被提及 | 环境 | 论文 | 许可 | 简介（英文） |",
+        "all": "目录中共 {n} 项", "surveys": "从最新综述入门", "survey_header": "| 日期 | 综述 | 环境 |", "highlight_header": "| 资源 | 被提及 | 环境 | 论文 | 许可 | 简介（英文） |",
         "recent_header": "| 审阅日期 | 资源 | 类型 | 环境 | 简介（英文） |",
         "kind_names": {"benchmark": "基准", "dataset": "数据集", "model": "模型", "agent": "智能体", "framework": "框架", "tool": "工具",
             "infrastructure": "基础设施", "product": "产品", "company": "发布方", "learning": "学习资源"},
@@ -953,26 +955,94 @@ def aligned_table(rows, right=()):
     return [line(rows[0]), rule, *map(line, rows[1:])]
 
 
+ENVIRONMENT_LABELS = {**dict(PLATFORMS), "unspecified": "Unspecified"}
+
+
+def environments_cell(environments):
+    """Platform names as proper nouns (Android, macOS, iOS); awesome-lint's spell check flags the lower-case IDs."""
+    return ", ".join(ENVIRONMENT_LABELS.get(e, e[:1].upper() + e[1:]) for e in environments)
+
+
+GENERATED_BLOCK = re.compile(r"<!-- (\w+):START -->.*?<!-- \1:END -->", re.S)
+LINK = re.compile(r"(?<!!)\[((?:[^\[\]]|\\[\[\]])+)\]\(([^)\s#][^)\s]*)\)")
+
+
+def unlink_repeats(content):
+    """Keep the first link to each address on the page and write later ones inside generated blocks as plain text,
+    such as a paper cited by two highlighted resources; awesome-lint flags an address linked twice. Authored text
+    outside the blocks is never changed, so a repeat there is fixed by hand."""
+    spans = [m.span() for m in GENERATED_BLOCK.finditer(content)]
+    seen = set()
+
+    def replace(match):
+        url = match.group(2).rstrip("/")
+        if url in seen and any(a <= match.start() < b for a, b in spans):
+            return match.group(1)
+        seen.add(url)
+        return match.group(0)
+    content = LINK.sub(replace, content)
+    for start, end in reversed([m.span() for m in GENERATED_BLOCK.finditer(content)]):
+        content = content[:start] + realign_tables(content[start:end]) + content[end:]
+    return content
+
+
+def realign_tables(text):
+    """Pad every Markdown table in `text` again, because unlinking changed cell widths."""
+    out, table = [], []
+
+    def flush():
+        if table:
+            rows = [[c.strip() for c in re.split(r"(?<!\\)\|", line.strip())[1:-1]] for line in table]
+            rule = len(rows) > 1 and all(re.fullmatch(r":?-+:?", cell) for cell in rows[1])
+            right = {i for i, cell in enumerate(rows[1]) if cell.endswith(":")} if rule else set()
+            out.extend(aligned_table([r for k, r in enumerate(rows) if k != 1], right=right) if rule else table)
+            table.clear()
+    for line in text.split("\n"):
+        if line.startswith("|"):
+            table.append(line)
+        else:
+            flush()
+            out.append(line)
+    flush()
+    return "\n".join(out)
+
+
+CONTENTS_HEADING = {"en": "## Contents", "zh": "## 目录"}
+
+
+def heading_anchor(text):
+    """GitHub's fragment for a heading: lower case, punctuation dropped, each space a hyphen."""
+    return "#" + re.sub(r"[^\w\- ]", "", text.lower()).replace(" ", "-")
+
+
+def contents_block(content, lang="en"):
+    """One list of every ## heading after Contents, in order, as awesome-lint's ToC check expects."""
+    after = content.split("\n" + CONTENTS_HEADING[lang] + "\n", 1)[1]
+    after = GENERATED_BLOCK.sub(lambda m: m.group(0) if m.group(1) != "CONTENTS" else "", after)
+    headings = [h.strip() for h in re.findall(r"^## (.+)$", re.sub(r"^```.*?^```", "", after, flags=re.S | re.M), re.M)]
+    return "\n" + "\n".join(f"- [{h}]({heading_anchor(h)})" for h in headings) + "\n"
+
+
 def task_navigator(lang="en"):
     """Short task-oriented entry points shared by source and publication READMEs."""
     site = SITE
     if lang == "zh":
         heading, columns, cli = "按任务查找", "| 你的任务 | 从这里开始 | 可以找到什么 |", "本地检索示例（克隆后运行；Python 3.11+，无需安装依赖）"
         items = [
-            ("查找论文", f"[论文库]({site}/zh/papers/) · [研究主题]({site}/zh/topics/) · [论文—资产关系]({site}/connections/)", "按年份和主题阅读已审阅论文，查看原始来源，以及经一手来源支持的代码、数据和模型关联。"),
+            ("查找论文", f"[综述]({site}/zh/categories/survey/) · [论文—资产关系]({site}/connections/)", "从已审阅综述入门，再查看经一手来源支持、与论文关联的代码、数据和模型。"),
             ("选择评测基准", f"[基准指南]({site}/guides/gui-agent-benchmarks/)", "核对平台、任务、评估器和版本。"),
             ("寻找训练数据", f"[训练数据指南]({site}/guides/gui-agent-training-data/)", "比较监督形式、划分、样本单位和数据许可。"),
             ("构建智能体", f"[智能体]({site}/categories/agent/) · [框架]({site}/categories/framework/)", "找到实现入口、支持的平台和论文依据。"),
-            ("接入 RAG 或 Agent", f"[使用指南]({site}/zh/agents/) · [数据中心]({site}/zh/data/)", "下载完整记录或检索文档，保留审阅状态和来源。"),
+            ("接入 RAG 或 Agent", f"[检索文档]({site}/downloads/rag-documents.jsonl) · [检索清单]({site}/downloads/rag-manifest.json)", "带审阅状态和来源的检索文档，以及其校验清单。"),
         ]
     else:
         heading, columns, cli = "Find by task", "| Your task | Start here | What you can find |", "Local examples (after cloning; Python 3.11+, no dependencies required)"
         items = [
-            ("Find papers", f"[Research library]({site}/papers/) · [Topics]({site}/topics/) · [Paper–asset connections]({site}/connections/)", "Reviewed papers by year and topic, with original sources and the code, datasets and models linked to them through reviewed primary evidence."),
+            ("Find papers", f"[Surveys]({site}/categories/survey/) · [Paper–asset connections]({site}/connections/)", "Reviewed surveys first, then the code, datasets and models linked to papers through reviewed primary evidence."),
             ("Choose a benchmark", f"[Benchmark guide]({site}/guides/gui-agent-benchmarks/)", "Platforms, tasks, evaluators, and versions to compare."),
             ("Find training data", f"[Training-data guide]({site}/guides/gui-agent-training-data/)", "Supervision, splits, count units, and data licenses."),
             ("Build an agent", f"[Agents]({site}/categories/agent/) · [Frameworks]({site}/categories/framework/)", "Implementation entry points, supported platforms, and papers."),
-            ("Use RAG or an agent", f"[Agent guide]({site}/agents/) · [Data hub]({site}/data/)", "Complete records or retrieval documents with review states and sources."),
+            ("Use RAG or an agent", f"[RAG documents]({site}/downloads/rag-documents.jsonl) · [RAG manifest]({site}/downloads/rag-manifest.json)", "Retrieval documents with review states and sources, and their checksum manifest."),
         ]
     commands = [
         'python3 scripts/catalog.py search "grounding" --kind paper --status curated --limit 0 --json',
@@ -1018,16 +1088,17 @@ def highlights(rows, edges, limit=6, lang="en"):
     # Surveys come first as the entry point and are ordered by date, not by mentions.
     surveys = sorted((r for r in rows if r["kind"] == "survey" and r["review_status"] == "curated"), key=lambda r: (record_date_text(r), r["name"]), reverse=True)
     if surveys:
-        lines += [f"**{text['surveys']}** · [{text['all'].format(n=len(surveys))}](docs/surveys.md)", ""]
-        lines += aligned_table([cells(text["survey_header"])] + [(nowrap(record_date_text(r) or '—'), f"[{md(r['name'])}]({r['url']})", ', '.join(r['environments'])) for r in surveys[:5]])
+        # The count is plain text: the Explore table links each category page once.
+        lines += [f"**{text['surveys']}** · {text['all'].format(n=len(surveys))}", ""]
+        lines += aligned_table([cells(text["survey_header"])] + [(nowrap(record_date_text(r) or '—'), f"[{md(r['name'])}]({r['url']})", environments_cell(r['environments'])) for r in surveys[:5]])
         lines.append("")
     for kind, path in HIGHLIGHT_KINDS:
         curated = [r for r in rows if r["kind"] == kind and r["review_status"] == "curated"]
         ranked = sorted((r for r in curated if cited_by[r["id"]]), key=lambda r: (-len(cited_by[r["id"]]), r["name"].casefold()))[:limit]
         if not ranked:
             continue
-        lines += [f"**{text['kinds'][kind]}** · [{text['all'].format(n=len(curated))}]({path})", ""]
-        lines += aligned_table([cells(text["highlight_header"])] + [(f"[{md(r['name'])}]({r['url']})", str(len(cited_by[r['id']])), ', '.join(r['environments']), paper_cell(r, by_id), license_cell(r, lang), md(r['summary'])) for r in ranked], right=(1,))
+        lines += [f"**{text['kinds'][kind]}** · {text['all'].format(n=len(curated))}", ""]
+        lines += aligned_table([cells(text["highlight_header"])] + [(f"[{md(r['name'])}]({r['url']})", str(len(cited_by[r['id']])), environments_cell(r['environments']), paper_cell(r, by_id), license_cell(r, lang), md(r['summary'])) for r in ranked], right=(1,))
         lines.append("")
     return "\n".join(lines) + "\n"
 
@@ -1038,7 +1109,7 @@ def recently_reviewed(rows, reviewed_at, limit=12, lang="en"):
         key=lambda r: (reviewed_at[r["id"]], r["name"].casefold()), reverse=True)[:limit]
     text = README_TEXT[lang]
     lines = [""]
-    lines += aligned_table([cells(text["recent_header"])] + [(nowrap(reviewed_at[r['id']][:10]), f"[{md(r['name'])}]({r['url']})", text['kind_names'].get(r['kind'], r['kind']), ', '.join(r['environments']), md(r['summary'])) for r in recent]) if recent else []
+    lines += aligned_table([cells(text["recent_header"])] + [(nowrap(reviewed_at[r['id']][:10]), f"[{md(r['name'])}]({r['url']})", text['kind_names'].get(r['kind'], r['kind']), environments_cell(r['environments']), md(r['summary'])) for r in recent]) if recent else []
     return "\n".join(lines) + "\n" if recent else "\n"
 
 
@@ -1119,7 +1190,11 @@ def build(args):
             for name, body in blocks.items():
                 # A function replacement keeps backslashes in generated Markdown literal.
                 content = re.sub(rf"(?<=<!-- {name}:START -->).*?(?=<!-- {name}:END -->)", lambda _: body, content, flags=re.S)
-            files[filename] = content
+            # Contents lists the headings the other blocks and the authored text produce, so it is built last.
+            if "<!-- CONTENTS:START -->" in content:
+                contents = contents_block(content, lang)
+                content = re.sub(r"(?<=<!-- CONTENTS:START -->).*?(?=<!-- CONTENTS:END -->)", lambda _: contents, content, flags=re.S)
+            files[filename] = unlink_repeats(content)
     dictionary = ROOT / "docs/data-dictionary.md"
     if dictionary.exists():
         files["docs/data-dictionary.md"] = re.sub(r"(?<=<!-- TOPICS:START -->).*?(?=<!-- TOPICS:END -->)", lambda _: topic_vocabulary(), dictionary.read_text(encoding="utf-8"), flags=re.S)

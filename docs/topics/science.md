@@ -2,9 +2,9 @@
 
 [Home](../../README.md) · [All topics](../topics.md) · [Full arXiv bibliography](../papers.md)
 
-55 source-reviewed resources tagged `science`. Curated metadata; unknown facts are shown as —.
+60 source-reviewed resources tagged `science`. Curated metadata; unknown facts are shown as —.
 
-**Contents:** [Benchmarks (5)](#benchmarks) · [Datasets (2)](#datasets) · [Models (7)](#models) · [Agents (4)](#agents) · [Frameworks (3)](#frameworks) · [Tools (8)](#tools) · [Infrastructure (3)](#infrastructure) · [Papers (23)](#papers)
+**Contents:** [Benchmarks (5)](#benchmarks) · [Datasets (6)](#datasets) · [Models (7)](#models) · [Agents (4)](#agents) · [Frameworks (3)](#frameworks) · [Tools (8)](#tools) · [Infrastructure (4)](#infrastructure) · [Papers (23)](#papers)
 
 ## Benchmarks
 
@@ -22,7 +22,11 @@ All entries in this section: desktop, linux.
 
 | Resource | Paper | Scale | License | Description | Evidence |
 | --- | --- | --- | --- | --- | --- |
+| [JUMPDiscovery](https://huggingface.co/datasets/orion-agent/JUMPDiscovery) | — | — | — | Task data for the Orion computer-using agent's open discovery task: a problem statement, CellProfiler pipelines, gene sets and a script that downloads JUMP Cell Painting morphological profiles. | [✓ 2026‑11‑10](https://huggingface.co/api/datasets/orion-agent/JUMPDiscovery) |
+| [JUMPDiscovery_results](https://huggingface.co/datasets/orion-agent/JUMPDiscovery_results) | — | — | — | Outputs of the Orion computer-using agent on the JUMP Cell Painting discovery task: one folder per attempt with hypotheses, figures, analysis scripts and reports, plus an example trajectory. | [✓ 2026‑11‑10](https://huggingface.co/api/datasets/orion-agent/JUMPDiscovery_results) |
+| [Microscopy-Dataset](https://huggingface.co/datasets/orion-agent/Microscopy-Dataset) | — | — | — | Task set for the Orion computer-using agent's microscopy image-processing task: 12 CellProfiler training modules and 14 test challenges with problem statements, images, ground truth and unit tests. | [✓ 2026‑11‑10](https://huggingface.co/api/datasets/orion-agent/Microscopy-Dataset) |
 | [OSWorld-Science task data](https://huggingface.co/datasets/SciAILab/OSWorld-Science-data) | [2609.39903](https://arxiv.org/abs/2609.39903) (2026) | [153 task-definition JSON files](https://huggingface.co/api/datasets/SciAILab/OSWorld-Science-data/revision/9b8de9ad9325c87fbeba90e0676e8d640be70681) · [115 translated task files](https://huggingface.co/api/datasets/SciAILab/OSWorld-Science-data/revision/9b8de9ad9325c87fbeba90e0676e8d640be70681) · [11 QCOW2 VM images](https://huggingface.co/api/datasets/SciAILab/OSWorld-Science-data/revision/9b8de9ad9325c87fbeba90e0676e8d640be70681) · [2,759 files](https://huggingface.co/api/datasets/SciAILab/OSWorld-Science-data/revision/9b8de9ad9325c87fbeba90e0676e8d640be70681) | data cc-by-nc-4.0 | Gated Hub release of OSWorld-Science task definitions, staged inputs, grader references and prepared Ubuntu VM images for computer-use agents working in scientific software. | [✓ 2026‑10‑18](https://huggingface.co/api/datasets/SciAILab/OSWorld-Science-data/revision/9b8de9ad9325c87fbeba90e0676e8d640be70681) |
+| [Pathology-Dataset](https://huggingface.co/datasets/orion-agent/Pathology-Dataset) | — | — | — | Task set for the Orion computer-using agent's digital pathology task in QuPath: tutorial material, lymph-node metastasis segmentation on CAMELYON slides and TP53 index calculation, with test suites. | [✓ 2026‑11‑10](https://huggingface.co/api/datasets/orion-agent/Pathology-Dataset) |
 | [ScienceBoard evaluation trajectories](https://huggingface.co/datasets/OS-Copilot/ScienceBoard-Traj) | [2505.19897](https://arxiv.org/abs/2505.19897) (2025) | — | — | Archives of ScienceBoard agent evaluation runs, separated by agent configuration and screenshot, accessibility-tree or set-of-marks observation mode. | [✓ 2026‑10‑17](https://huggingface.co/api/datasets/OS-Copilot/ScienceBoard-Traj) |
 
 ## Models
@@ -75,6 +79,7 @@ All entries in this section: desktop.
 | --- | --- | --- | --- | --- | --- |
 | [grass-gui](https://github.com/ShiinaHiiragi/grass-gui) | desktop, linux | — | — | ScienceBoard's replacement GRASS GIS 8.4 wxPython GUI with an embedded Flask server that loads mapsets and layers, runs GRASS commands and returns layer, region and console state as JSON for task checks. | [✓ 2026‑10‑18](https://raw.githubusercontent.com/ShiinaHiiragi/grass-gui/HEAD/manual.md) |
 | [kalgebra-kai](https://github.com/ShiinaHiiragi/kalgebra) | desktop, linux | — | code GPL-2.0 | Modified KAlgebra build from ScienceBoard with a local HTTP server that reports variables and plotted 2D and 3D functions and can switch tabs or add calculations and plots, so the benchmark can check math tasks. | [✓ 2026‑10‑18](https://raw.githubusercontent.com/ShiinaHiiragi/kalgebra/HEAD/manual.md) |
+| [orion-vm-arm](https://huggingface.co/datasets/orion-agent/orion-vm-arm) | desktop, linux, macos | — | — | A VMware Fusion snapshot of the Orion agent's Ubuntu guest for arm64 Macs, with CellProfiler, QuPath and napari pre-installed, released as a single OS.zip archive. | [✓ 2026‑11‑10](https://huggingface.co/api/datasets/orion-agent/orion-vm-arm) |
 | [ScienceBoard VMware environment](https://huggingface.co/OS-Copilot/ScienceBoard-Env) | linux, desktop | [2505.19897](https://arxiv.org/abs/2505.19897) (2025) | — | A prebuilt Ubuntu virtual-machine archive containing the software environment used for ScienceBoard scientific computer-use tasks. | [✓ 2026‑10‑17](https://huggingface.co/OS-Copilot/ScienceBoard-Env/raw/main/README.md) |
 
 ## Papers

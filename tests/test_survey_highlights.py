@@ -18,9 +18,9 @@ class SurveyHighlightTests(unittest.TestCase):
         block = build.highlights(rows, [])
         lines = [line for line in block.splitlines() if line.startswith("| 2025")]
         self.assertEqual([line.split("[")[1].split("]")[0] for line in lines], ["Survey 7", "Survey 6", "Survey 5", "Survey 4", "Survey 3"])
-        self.assertTrue(block.lstrip().startswith("**Start with the newest surveys** · [all 7 →](docs/surveys.md)"))
+        self.assertTrue(block.lstrip().startswith("**Start with the newest surveys** · 7 in the catalog"))
         self.assertNotIn("Boilerplate", block)
-        self.assertIn("**从最新综述入门** · [全部 7 项 →](docs/surveys.md)", build.highlights(rows, [], lang="zh"))
+        self.assertIn("**从最新综述入门** · 目录中共 7 项", build.highlights(rows, [], lang="zh"))
 
     def test_no_surveys_no_table(self):
         self.assertNotIn("surveys", build.highlights([], []).casefold())

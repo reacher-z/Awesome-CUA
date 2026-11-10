@@ -54,7 +54,7 @@ python3 scripts/catalog.py get arxiv:2404.07972 --related --json
 
 **5,115 curated resources** · **1,718 reviewed papers and surveys** · **104 discovery documents**
 
-Evidence through `2026-11-09T22:08:43Z`. **885 records awaiting review** have verified bibliographic metadata, and **206 discovered candidates** await resolution. 1,741 candidates have an out-of-scope review. 1,308 scope exclusions retain their original metadata in the archive.
+Evidence through `2026-11-10T00:34:12Z`. **906 records awaiting review** have verified bibliographic metadata, and **701 discovered candidates** await resolution. 1,741 candidates have an out-of-scope review. 1,308 scope exclusions retain their original metadata in the archive.
 
 <!-- STATS:END -->
 
@@ -64,7 +64,7 @@ Evidence through `2026-11-09T22:08:43Z`. **885 records awaiting review** have ve
 | Browse                                           | What you find                                                 | Entries |
 | ------------------------------------------------ | ------------------------------------------------------------- | ------: |
 | [Research by topic](docs/topics.md)              | Reviewed papers grouped by topic                              |   1,681 |
-| [Full bibliography](docs/papers.md)              | All paper and survey records, including those awaiting review |   2,603 |
+| [Full bibliography](docs/papers.md)              | All paper and survey records, including those awaiting review |   2,624 |
 | [Surveys](docs/surveys.md)                       | Surveys of computer-use agent research                        |      37 |
 | [Learning resources](docs/learning.md)           | Courses and tutorials                                         |      36 |
 | [Datasets](docs/datasets.md)                     | Training and evaluation data for GUI agents                   |     243 |

@@ -2,9 +2,9 @@
 
 [Home](../../README.md) · [All topics](../topics.md) · [Full arXiv bibliography](../papers.md)
 
-64 source-reviewed resources tagged `training-free`. Curated metadata; unknown facts are shown as —.
+65 source-reviewed resources tagged `training-free`. Curated metadata; unknown facts are shown as —.
 
-**Contents:** [Agents (4)](#agents) · [Frameworks (6)](#frameworks) · [Tools (3)](#tools) · [Papers (51)](#papers)
+**Contents:** [Agents (5)](#agents) · [Frameworks (6)](#frameworks) · [Tools (3)](#tools) · [Papers (51)](#papers)
 
 ## Agents
 
@@ -12,6 +12,7 @@
 | --- | --- | --- | --- | --- | --- |
 | [AdbGPT](https://github.com/sidongfeng/AdbGPT) | android | — | — | An Android bug replay agent that extracts action details from written bug reports and uses the current app screen to guide reproduction steps. | [✓ 2026‑11‑09](https://raw.githubusercontent.com/sidongfeng/AdbGPT/HEAD/README.md) |
 | [AgentOccam](https://github.com/amazon-science/AgentOccam) | web | [2410.13825](https://arxiv.org/abs/2410.13825) (2024) | code Apache-2.0 | AgentOccam is a web agent that uses webpage descriptions and action strings to carry out tasks from a URL and instruction. Its repository includes task configurations and evaluation scripts. | [✓ 2026‑11‑09](https://raw.githubusercontent.com/amazon-science/AgentOccam/HEAD/README.md) |
+| [GTA1: GUI Test-time Scaling Agent](https://github.com/Yan98/GTA1) | desktop, linux | [2507.05791](https://arxiv.org/abs/2507.05791) (2025) | — | GTA1 is a GUI agent that samples action proposals, uses a judge to select one, and maps it to a visual target with a reinforcement-trained grounding model. | [✓ 2026‑11‑09](https://raw.githubusercontent.com/Yan98/GTA1/HEAD/README.md) |
 | [GUI-explorer](https://github.com/iLearn-Lab/ACL25-GUI-explorer) | android | [2505.16827](https://arxiv.org/abs/2505.16827) (2025) | code MIT | Android agent code that explores apps over ADB, mines transition-aware knowledge into a knowledge base behind a retrieval service, and runs an OpenAI-backed agent demo that draws on it. | [✓ 2026‑10‑18](https://raw.githubusercontent.com/iLearn-Lab/ACL25-GUI-explorer/HEAD/README.md) |
 | [RCI Agent](https://github.com/posgnu/rci-agent) | web | [2303.17491](https://arxiv.org/abs/2303.17491) (2023) | code MIT | A MiniWoB++ agent that uses explicit and implicit recursive criticism-and-improvement prompts to refine action plans and ground actions to browser state. | [✓ 2026‑10‑17](https://raw.githubusercontent.com/posgnu/rci-agent/HEAD/README.md) |
 

@@ -87,7 +87,7 @@ class CandidateTopicExpansionTests(unittest.TestCase):
                 'github_candidate_max_requests', 'github_candidate_max_seconds',
                 'github_candidate_existing_budget', 'network_max_requests', 'network_max_seconds',
             )),
-            (30, 220, 5, 180, 600),
+            (30, 220, 5, 180, 360),
         )
         for topic in ADDED_TOPICS + NOVEMBER_TOPICS:
             query = scan.search_query(topic, '2008-01-01', '2026-10-20')['query']

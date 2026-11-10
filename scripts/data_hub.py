@@ -70,6 +70,31 @@ def byte_size(value):
     return f'{value / (1024 * 1024):.1f} MiB'
 
 
+def data_hub_markdown(manifest, *, language='en', site_url=SITE, updated=None):
+    """The download page's facts in its display order, from the same manifest."""
+    zh = language == 'zh'
+    tr = lambda en, cn: cn if zh else en
+    sep = '：' if zh else ': '
+    artifacts = manifest['artifacts']
+    by_id = {item['id']: item for item in artifacts}
+    reviewed = by_id['rag-reviewed']['count']['value']
+    total = by_id['catalog-jsonl']['count']['value']
+    other = site_url + ('/data/index.md' if zh else '/zh/data/index.md')
+    lines = [f'# {tr("Download the data", "下载数据")}', '',
+             f'{tr("Reviewed records", "已审核记录")}{sep}{reviewed:,} · {tr("Catalog records awaiting review", "目录记录待审核")}{sep}{total-reviewed:,} · {tr("Updated", "更新")}{sep}{updated} · [{tr("File list as JSON", "文件清单 JSON")}]({site_url}/downloads/manifest.json) · [{"English" if zh else "中文"}]({other})', '',
+             f'- [Hugging Face]({HF_DATASET}) · {tr("Format", "格式")}{sep}datasets · {tr("Records", "条数")}{sep}{reviewed:,} · {tr("Config", "配置")}{sep}resources · {tr("Updated", "更新")}{sep}{tr("Every scan", "随扫描")}', '',
+             f'## {tr("All files", "全部文件")}{sep}{len(artifacts)} {tr("files", "个文件")}', '']
+    for group, labels in GROUPS.items():
+        files = [item for item in artifacts if item['group'] == group]
+        lines.extend([f'### {labels[zh]}{sep}{len(files)} {tr("files", "个文件")}', ''])
+        for item in files:
+            count = item['count']
+            lines.append(f'- [{item["title"][language]}]({site_url}{item["path"]}) · {item["format"]} · {count["value"]:,} {UNITS[count["unit"]][zh]} · {byte_size(item["bytes"])} · SHA-256{sep}{item["sha256"]}')
+        lines.append('')
+    lines.append(f'{tr("Source catalog SHA-256", "源目录 SHA-256")}{sep}{manifest["catalog_sha256"]}')
+    return '\n'.join(lines) + '\n'
+
+
 def line_count(path, *, prefix=None):
     with Path(path).open(encoding='utf-8') as stream:
         if prefix is None:
@@ -329,7 +354,7 @@ print(benchmarks[0][{key('"name"')}], benchmarks[0][{key('"url"')}])"""),
                    f'<a href="{"/zh/topics/" if zh else "/topics/"}">{tr("Topic subsets", "专题子集")}</a>')
     command_window = (f'<div class="window term"><div class="titlebar"><span class="lights" aria-hidden="true"><i></i><i></i><i></i></span><div class="address">{ic("lock")}<output><b>awesomecua.com</b>/downloads/</output></div></div>'
                       f'<div class="tabs" role="tablist" aria-label="{tr("Ways to use the data", "使用数据的方式")}">{tabs}</div>{panels}'
-                      f'<div class="panel-foot"><span class="data-agent-links">{agent_links}</span><button class="btn btn-ghost js-only" type="button" data-copy-panel style="min-height:36px">{ic("copy")}{tr("Copy", "复制")}</button></div></div>')
+                      f'<div class="panel-foot"><span class="data-agent-links">{agent_links}</span><button class="btn btn-ghost js-only" type="button" data-copy-panel>{ic("copy")}{tr("Copy", "复制")}</button></div></div>')
 
     groups = []
     for group, labels in GROUPS.items():

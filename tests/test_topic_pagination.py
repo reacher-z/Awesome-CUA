@@ -10,6 +10,7 @@ from unittest import mock
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / 'scripts'))
 import topic_pages
 from build_site import build_site
+from site_fixture import shared_site
 from search_pages import SITE, resource_path
 from sitemaps import sitemap_urls
 from topic_pages import topic_counts, topic_index_body, topic_page_count, topic_path, topic_sections
@@ -78,7 +79,7 @@ class TopicPageBuildTests(unittest.TestCase):
     @classmethod
     def setUpClass(cls):
         cls.temp = tempfile.TemporaryDirectory()
-        cls.dest = build_site(cls.temp.name)
+        cls.dest = shared_site()
         cls.pages = {item['path']: item for item in json.loads((cls.dest / 'data/search-manifest.json').read_text())['pages']}
         cls.markup = {path: (cls.dest / path.lstrip('/') / 'index.html').read_text() for path in cls.pages if re.match(r'/(zh/)?topics/', path)}
         cls.topics = json.loads((cls.dest / 'downloads/topics.json').read_text())['topics']

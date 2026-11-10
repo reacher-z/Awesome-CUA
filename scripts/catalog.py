@@ -222,6 +222,9 @@ def fetch(url, refresh=False):
     if budget:
         info['request_attempts'] = budget.summary()['requests_reserved'] - reserved_before
         info['request_attempted'] = info['request_attempts'] > 0
+    if info.get('status') == 429:
+        info.setdefault('deferred', True)
+        info.setdefault('deferred_reason', 'rate_limited')
     write_json(CACHE / f"{key}.error.json", info)
     return info, b""
 
@@ -638,7 +641,7 @@ def discover(args):
         manifest = {"id": source["id"], **info, "unique_resources": 0,
             'run_started_at': started, 'provider_host': host,
             'request_attempted': info.get('request_attempted', not deferred),
-            'state': 'deferred' if deferred or info.get('deferred') else 'failed'}
+            'state': 'deferred' if deferred or info.get('deferred') or info.get('status') == 429 else 'failed'}
         if info.get('status') == 429:
             rate_limited_hosts.add(host)
         if not info["ok"]:
@@ -747,7 +750,9 @@ def harvest(args):
             except (ET.ParseError, ValueError) as error:
                 info["error"] = str(error)
         for aid in sorted(set(batch) - got):
-            failures.append({"id": f"arxiv:{aid}", "checked_at": info["retrieved_at"], "error": invalid.get(aid) or info.get("error", "identifier absent from API response")})
+            failures.append({"id": f"arxiv:{aid}", "checked_at": info["retrieved_at"],
+                **({'deferred': True} if info.get('status') == 429 else {}),
+                "error": invalid.get(aid) or info.get("error", "identifier absent from API response")})
         print(f"arXiv {start + 1}-{start + len(batch)}/{len(ids)}: {len(got)} metadata records", flush=True)
         write_jsonl(DATA / "papers.jsonl", records.values())
         write_jsonl(DATA / "metadata-updates.jsonl", proposals.values())
@@ -999,7 +1004,7 @@ def enrich(args):
             declaration = card_license(raw)
             slot = "data" if source.path.startswith("/datasets/") or row["kind"] == "dataset" else "weights" if row["kind"] == "model" else None
             if declaration and slot:
-                result["licenses"][slot] = {"declared": declaration, "url": ev["url"], "retrieved_at": ev["retrieved_at"], "basis": "publisher model/dataset card metadata; third-party assets retain their own terms"}
+                result["licenses"][slot] = {"declared": declaration, "url": ev["url"], "retrieved_at": ev["retrieved_at"], "basis": "publisher model/dataset card metadata"}
                 result["evidence"].append({"role": "primary", "method": "huggingface_card", "supports": [f"licenses.{slot}"], **{k: ev[k] for k in ("url", "sha256", "retrieved_at")}})
         if hub_source and source.path.startswith(("/api/datasets/", "/api/models/")):
             try:
@@ -1070,7 +1075,7 @@ def enrich(args):
                 declared = detect_code_license(license_text)
                 # Ambiguous/custom/composite declarations stay unknown rather than being guessed.
                 if declared:
-                    result["licenses"]["code"] = {"declared": declared, "url": license_url, "retrieved_at": info["retrieved_at"], "basis": "repository LICENSE header; " + ("GNU text does not say -only or -or-later; " if "GPL" in declared else "") + "not a weights/data license"}
+                    result["licenses"]["code"] = {"declared": declared, "url": license_url, "retrieved_at": info["retrieved_at"], "basis": "repository LICENSE header" + ("; GNU text names no -only or -or-later variant" if "GPL" in declared else "")}
                     result["evidence"].append({"role": "primary", "method": "license_header", "supports": ["licenses.code"], **{k: info[k] for k in ("url", "sha256", "retrieved_at")}})
                 break
         seen = set()

@@ -3427,7 +3427,7 @@
       "url": "https://arxiv.org/abs/2007.09554",
       "decision": "out_of_scope",
       "basis": "primary_abstract_review",
-      "reason": "The abstract surveys methods and datasets for localizing objects in natural images from referring expressions. This general vision-language survey does not cover GUI grounding or agents operating interfaces.",
+      "reason": "The abstract surveys methods and datasets for localizing objects in natural images from referring expressions. This general vision-language survey sits outside GUI grounding and computer-use agents.",
       "reviewed_at": "2026-11-05T23:58:03Z",
       "metadata_fingerprint": "9dda0c361f507931e0f68c9ac5cb04ea75914071d7588170d7818b2176c46bb7",
       "evidence": {
@@ -9513,7 +9513,7 @@
       "url": "https://arxiv.org/abs/2404.00282",
       "decision": "out_of_scope",
       "basis": "primary_abstract_review",
-      "reason": "The abstract surveys the roles LLMs play inside reinforcement learning, with applications such as robotics and driving. This RL survey does not cover agents operating graphical interfaces, web pages or devices.",
+      "reason": "The abstract surveys the roles LLMs play inside reinforcement learning, with applications such as robotics and driving. This RL survey sits outside computer-use agents.",
       "reviewed_at": "2026-11-05T23:58:03Z",
       "metadata_fingerprint": "a5e0a86c8c1b8a12da54313d5041e3ca9296beb917f00a5090cb42c99428b674",
       "evidence": {
@@ -9989,7 +9989,7 @@
       "url": "https://arxiv.org/abs/2405.14093",
       "decision": "out_of_scope",
       "basis": "primary_abstract_review",
-      "reason": "The abstract surveys vision-language-action models for language-conditioned robotic control and planning. This embodied robotics survey does not cover agents operating graphical interfaces, web pages or devices.",
+      "reason": "The abstract surveys vision-language-action models for language-conditioned robotic control and planning. This embodied robotics survey sits outside computer-use agents.",
       "reviewed_at": "2026-11-05T23:58:03Z",
       "metadata_fingerprint": "eeebd1bd9d6610db6c6937552296afa518821db913c447961f8ab21943995c4f",
       "evidence": {
@@ -10567,7 +10567,7 @@
       "url": "https://arxiv.org/abs/2407.06886",
       "decision": "out_of_scope",
       "basis": "primary_abstract_review",
-      "reason": "The abstract surveys embodied AI: robots, simulators, embodied perception, interaction and sim-to-real. This robotics survey mentions digital settings only in passing and does not cover agents operating GUIs or web pages.",
+      "reason": "The abstract surveys embodied AI: robots, simulators, embodied perception, interaction and sim-to-real. This robotics survey mentions digital settings only in passing and sits outside computer-use agents.",
       "reviewed_at": "2026-11-05T23:58:03Z",
       "metadata_fingerprint": "d89c9fdf28989def865d7f7656f83129a64bc9e136dedde272845e06596e21d5",
       "evidence": {
@@ -12811,7 +12811,7 @@
       "url": "https://arxiv.org/abs/2502.00372",
       "decision": "out_of_scope",
       "basis": "primary_abstract_review",
-      "reason": "Neuro-symbolic automaton with probabilistic logic for referring-expression grounding in natural images. This is not GUI grounding and involves no computer-use agent.",
+      "reason": "Neuro-symbolic automaton with probabilistic logic for referring-expression grounding in natural images. This work sits outside GUI grounding and computer-use agents.",
       "reviewed_at": "2026-11-05T23:58:03Z",
       "metadata_fingerprint": "8439664ee402311df5002a3549f724d19c97a362fd292a7daa2f71a31fa21147",
       "evidence": {
@@ -12964,7 +12964,7 @@
       "url": "https://arxiv.org/abs/2502.03214",
       "decision": "out_of_scope",
       "basis": "primary_abstract_review",
-      "reason": "Benchmarks VLM spatial reasoning on an interactive sliding-tile puzzle in 3D, 2D and text modes. This puzzle environment is not a GUI, web or device interface.",
+      "reason": "Benchmarks VLM spatial reasoning on an interactive sliding-tile puzzle in 3D, 2D and text modes. This puzzle environment sits outside GUI, web and device interfaces.",
       "reviewed_at": "2026-11-05T23:58:03Z",
       "metadata_fingerprint": "e5264c28beefcb652f591d7e5f90a62890f4f74e85987d9dc77d02279668a29c",
       "evidence": {
@@ -13202,7 +13202,7 @@
       "url": "https://arxiv.org/abs/2502.17419",
       "decision": "out_of_scope",
       "basis": "primary_abstract_review",
-      "reason": "Surveys reasoning LLMs such as o1 and R1, covering how they are built and reasoning benchmarks. This general LLM reasoning review does not cover agents operating GUIs, web pages or devices.",
+      "reason": "Surveys reasoning LLMs such as o1 and R1, covering how they are built and reasoning benchmarks. This general LLM reasoning review sits outside computer-use agents.",
       "reviewed_at": "2026-11-05T23:58:03Z",
       "metadata_fingerprint": "ce166245189e9f614fe5d8a31ed776529898b1ca872b6951758fef8390b8fdcf",
       "evidence": {
@@ -19526,7 +19526,7 @@
       "url": "https://arxiv.org/abs/2605.23204",
       "decision": "out_of_scope",
       "basis": "primary_abstract_review",
-      "reason": "The abstract surveys AI systems that automate scientific research workflows from literature grounding to reporting. This AI-for-science survey does not cover agents operating graphical interfaces, web pages or devices.",
+      "reason": "The abstract surveys AI systems that automate scientific research workflows from literature grounding to reporting. This AI-for-science survey sits outside computer-use agents.",
       "reviewed_at": "2026-11-05T23:58:03Z",
       "metadata_fingerprint": "1f49d5b7086cac3b575a59afce4e5656d2dfcf31911a122017fa90fe0b60aaef",
       "evidence": {
@@ -20869,7 +20869,7 @@
       "url": "https://arxiv.org/abs/2607.21655",
       "decision": "out_of_scope",
       "basis": "primary_abstract_review",
-      "reason": "The abstract surveys progress reward models for robotic learning. This robotics survey does not cover agents operating graphical interfaces, web pages or devices.",
+      "reason": "The abstract surveys progress reward models for robotic learning. This robotics survey sits outside computer-use agents.",
       "reviewed_at": "2026-11-05T23:58:03Z",
       "metadata_fingerprint": "5ac2b0d751f1ff575ce45fe01acc25676070474d0a5890f70ca3e9101509ee0c",
       "evidence": {

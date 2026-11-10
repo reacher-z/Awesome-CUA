@@ -75,11 +75,11 @@ class ReadmeLocalizationTests(unittest.TestCase):
 
     def test_badges_are_at_most_six_and_end_with_license(self):
         badges = build.badges([row("arxiv:2401.00001", "Paper", kind="paper")], {**self.report, "as_of_utc": "2026-10-17T07:57:59Z"})
-        self.assertLessEqual(badges.count("[!["), 6)
+        self.assertLessEqual(badges.count("!["), 6)
         self.assertIn("dataset-Hugging%20Face-", badges)
         self.assertNotIn(")](", badges)
-        self.assertIn("2026--10--17", badges)
-        self.assertTrue(badges.strip().endswith("labelColor=1E2233)"))
+        self.assertIn("img.shields.io/endpoint?url=", badges)
+        self.assertTrue(badges.strip().endswith("labelColor=1E2233)")
 
     def test_star_history_has_linked_light_and_dark_sources_and_localized_fallbacks(self):
         chart = "https://api.star-history.com/svg?repos=reacher-z/Awesome-CUA&type=Date"

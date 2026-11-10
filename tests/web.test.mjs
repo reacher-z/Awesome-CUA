@@ -865,3 +865,11 @@ test('clone commands copy exactly once and announce scoped bilingual success or 
     for(const [key,descriptor] of saved)if(descriptor)Object.defineProperty(globalThis,key,descriptor);else delete globalThis[key];
   }
 });
+
+test('category filter needs every term and A-Z sorting ignores case and orders numbers',async()=>{
+  const {matches,byName}=await import('../web/listing.js');
+  const text='osworld xlang-ai/osworld desktop linux desktop 桌面';
+  for(const query of ['','OSWorld','xlang-ai/','  linux   osworld ','桌面'])assert.equal(matches(text,query),true,query);
+  for(const query of ['android','osworld android'])assert.equal(matches(text,query),false,query);
+  assert.deepEqual(['b10','B2','a'].sort(byName),['a','B2','b10']);
+});

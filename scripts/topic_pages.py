@@ -204,7 +204,7 @@ def topic_body(topic, rows, resource_path, *, language='en', site_url=SITE, numb
             link = sections[slug]
             body += ['<a class="topic-col-', slug, '" href="', link[len(here):] if link.startswith(here + '#') else link, '">', labels[zh], '<strong>', str(counts[slug]), '</strong></a>']
     body += ['</nav><p class="topic-method">', tr('Membership follows reviewed tags. Dates preserve source precision. Annotations retain their original language.',
-             '条目依据已审阅标签归类，同一主题不表示资源之间存在依赖关系。日期保留来源精度，注释保留原语言。'), '</p>']
+             '条目依据已审阅标签归类。日期保留来源精度，注释保留原语言。'), '</p>']
     visible, offset = [], 0
     for slug, labels, selected in ordered_groups(rows):
         shown = selected[max(0, start - offset):max(0, start + PAGE_SIZE - offset)]
@@ -238,7 +238,7 @@ def topic_body(topic, rows, resource_path, *, language='en', site_url=SITE, numb
                 body += ['<span>', tr('Adjacent research', '相关研究'), '</span>']
             body += ['</div></div><div class="topic-resource-links"><a href="', safe_href(primary), '">', tr('Source', '一手来源'), ' ↗</a>']
             if row['kind'] in {'paper', 'survey'}:
-                body += ['<a href="', path, 'citation.bib" download>BibTeX ↓</a>']
+                body += ['<a href="', path.removeprefix('/zh'), 'citation.bib" download>BibTeX ↓</a>']
             body += ['<a href="', path, '">', tr('Details', '详情'), ' →</a></div></article>']
         body += ['</section>']
     if pages > 1:

@@ -49,13 +49,13 @@ The schema checks `dataset_profile`, `benchmark_protocol`, `leaderboard_url`, `a
 | `metrics` | benchmark | Metric names the publisher reports, such as `task success` | Editorial (legacy) |
 | `evaluation_type` | benchmark | How results are judged, such as `programmatic state checks` or `rubric-based` | Editorial (legacy) |
 | `leaderboard_url` | benchmark | HTTPS address of the official leaderboard that the reviewed primary source links; the benchmark table links it after the name | Editorial |
-| `modalities` | benchmark, dataset, model | Data modalities, such as `screenshot` or `instruction` | Hub API (`modality:` tags), or editorial |
-| `languages` | benchmark, dataset, model | Natural-language codes, such as `en` | Hub API (card `language`), or editorial |
+| `modalities` | benchmark, dataset, infrastructure, model | Data modalities, such as `screenshot` or `instruction` | Hub API (`modality:` tags), or editorial |
+| `languages` | benchmark, dataset, infrastructure, model | Natural-language codes, such as `en` | Hub API (card `language`), or editorial |
 | `download_url` | benchmark, dataset, infrastructure, model | Download landing page, not a direct file; the Hub API sets the repository's file tree | Hub API, or editorial |
 | `hub_id` | benchmark, dataset, infrastructure, model | Hugging Face repository ID as the API reports it | Hub API, or editorial |
 | `gated` | benchmark, dataset, infrastructure, model | Hub access gate: `false`, `"auto"` (approved automatically) or `"manual"` (approved by the publisher) | Hub API, or editorial |
 | `disabled` | benchmark, dataset, infrastructure, model | Whether Hugging Face has disabled the repository | Hub API, or editorial |
-| `size_category_reported` | benchmark, dataset, model | Hub size band, such as `10K<n<100K`, or null; it can count files, so it is never a sample count | Hub API |
+| `size_category_reported` | benchmark, dataset, infrastructure, model | Hub size band, such as `10K<n<100K`, or null; it can count files, so it is never a sample count | Hub API |
 | `dataverse` | dataset | Dataverse publisher, persistent URL, publication date, version number, minor number and state, release time, verbatim license object, and file count | Dataverse API |
 | `license_review` | agent, benchmark, dataset, framework, infrastructure, learning, model, paper, survey, tool | Per license slot, the `reason` and `evidence_urls` of a reviewed license decision | License review |
 | `license_name` | dataset, model | License the publisher names without an SPDX identifier, such as `qwen-research` | Editorial |
@@ -211,6 +211,7 @@ Edit authored files by hand and review them in a pull request. Do not hand-edit 
 | `exclusions.json` | Authored | Scope decisions; see [scope review](scope-review.md) |
 | `publications.jsonl` | Authored | Reviewed publication observations |
 | `repository-aliases.json` | Authored | Paired official GitHub or Hugging Face identity observations for reviewed former or other repository names |
+| `shared-urls.json` | Authored | Record pairs that share one URL, such as a publisher and its product on the same homepage; `catalog.py validate` requires every other record URL to be unique |
 | `candidate-reviews.json` | Authored | Reviewed non-resources, aliases, and out-of-scope GitHub, Hugging Face and website candidates; see [methodology](methodology.md#identity-and-deduplication) |
 | `sources.json` | Authored | Discovery-source registry read by `catalog.py discover` |
 | `paper-discovery-queries.json` | Authored | Hugging Face search registry read by `discover_papers.py` |

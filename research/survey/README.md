@@ -8,7 +8,7 @@ Python 3.11+ and the standard library are sufficient. No provider request, model
 python3 -S research/survey/scripts/build_article.py --output output/survey
 ```
 
-Open `output/survey/index.html`. The HTML embeds its styles, enhancement script, and inventory figure. The same directory contains BibTeX and CSL-JSON references, a compact source-reading register, public evidence ledgers, and a build manifest with file sizes and SHA-256 fingerprints. Raw papers, full source abstracts, model weights, and training data are not redistributed.
+Open `output/survey/index.html`. The HTML embeds its styles, enhancement script, and inventory figure. `scripts/build_site.py` publishes that article with the current site header and footer in place of its own bar, and the published `build-manifest.json` keeps the reviewed page's fingerprint as `reviewed_index_sha256`. The same directory contains BibTeX and CSL-JSON references, a compact source-reading register, public evidence ledgers, and a build manifest with file sizes and SHA-256 fingerprints. Raw papers, full source abstracts, model weights, and training data are not redistributed.
 
 By default, the builder writes **only the output directory**. It does not update the generated files under `research/survey`. To explicitly refresh those mirrors after reviewing a manuscript change:
 

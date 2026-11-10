@@ -387,7 +387,9 @@ class ReadmeBlockTests(unittest.TestCase):
         strip = build.badges([], {"curated_records": 1674, "metadata_only_records": 1962, "unindexed_candidates": 1920, "total_records": 3636, "as_of_utc": "2026-11-06T04:18:34Z"})
         self.assertIn("![Curated resources](https://img.shields.io/badge/curated%20resources-1%2C674-", strip)
         self.assertIn("![Reviewed papers and surveys](", strip)
-        self.assertIn("2026--11--06%2004%3A18%20UTC", strip)
+        self.assertIn("![Last successful scan](https://img.shields.io/endpoint?url=", strip)
+        # The scan badge is live, so the generated strip does not change with each scan.
+        self.assertNotIn("2026--11--06", strip)
         self.assertLessEqual(strip.count("!["), 6)
         self.assertNotIn("workflow", strip)
         self.assertNotIn("3%2C636", strip)

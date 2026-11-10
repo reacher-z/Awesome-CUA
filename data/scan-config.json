@@ -15,7 +15,7 @@
   "recent_max_results": 500,
   "harvest_limit": 500,
   "network_max_requests": 180,
-  "network_max_seconds": 600,
+  "network_max_seconds": 360,
   "github_candidates_enabled": true,
   "github_candidate_max_requests": 30,
   "github_candidate_max_seconds": 220,

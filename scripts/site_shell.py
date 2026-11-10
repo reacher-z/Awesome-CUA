@@ -122,24 +122,24 @@ def head_assets(lang="en") -> str:
             '<meta name="referrer" content="strict-origin-when-cross-origin">'
             '<meta name="theme-color" content="#FFFFFF" media="(prefers-color-scheme: light)">'
             '<meta name="theme-color" content="#0C1023" media="(prefers-color-scheme: dark)">'
+            # The headline face is the largest paint on most pages; the body and mono faces load when the stylesheet asks.
             '<link rel="preload" href="/assets/fonts/eb-garamond.woff2" as="font" type="font/woff2" crossorigin>'
-            '<link rel="preload" href="/assets/fonts/inter.woff2" as="font" type="font/woff2" crossorigin>'
             f'<link rel="stylesheet" href="{asset("/assets/site.css")}">'
             f'<script src="{asset("/assets/site.js")}" defer></script>')
 
 
-NAV = [("Catalog", "目录", "/catalog/", "/catalog/"), ("Papers", "论文", "/papers/", "/zh/papers/"),
-       ("Benchmarks", "评测基准", "/categories/benchmark/", "/categories/benchmark/"),
+NAV = [("Catalog", "目录", "/catalog/", "/zh/catalog/"), ("Papers", "论文", "/papers/", "/zh/papers/"),
+       ("Benchmarks", "评测基准", "/categories/benchmark/", "/zh/categories/benchmark/"),
        ("Topics", "主题", "/topics/", "/zh/topics/"), ("Guides", "指南", "/guides/", "/guides/"),
        ("Data", "数据", "/data/", "/zh/data/")]
 
 
 def active_nav(path: str):
-    if path.startswith(("/papers/", "/zh/papers/", "/categories/paper/", "/categories/survey/", "/survey/")):
+    if path.startswith(("/papers/", "/zh/papers/", "/categories/paper/", "/categories/survey/", "/zh/categories/survey/", "/survey/")):
         return "Papers"
-    if path.startswith("/categories/benchmark/") or path.startswith("/compare/benchmarks/"):
+    if path.startswith(("/categories/benchmark/", "/zh/categories/benchmark/", "/compare/benchmarks/")):
         return "Benchmarks"
-    if path.startswith(("/catalog/", "/categories/", "/compare/", "/explore/", "/resources/")):
+    if path.startswith(("/catalog/", "/zh/catalog/", "/categories/", "/zh/categories/", "/compare/", "/explore/", "/resources/")):
         return "Catalog"
     if path.startswith(("/topics/", "/zh/topics/")):
         return "Topics"
@@ -197,7 +197,7 @@ def header(*, path="/", lang="en", lang_href=None, live=False) -> str:
 <a class="brand" href="{home}" aria-label="Awesome CUA home">{LOGO}<b>Awesome <span>CUA</span></b></a>
 <nav class="nav" aria-label="{"主导航" if zh else "Main navigation"}">{nav}</nav>
 <div class="head-tools">
-<button class="search-trigger js-only" type="button" data-open-palette aria-label="{search_label}">{ic("search")}<span>{search_label}</span><kbd>⌘K</kbd></button>
+<button class="search-trigger js-only" type="button" data-open-palette aria-keyshortcuts="Meta+K Control+K">{ic("search")}<span>{search_label}</span><kbd>⌘K</kbd></button>
 <a class="icon-btn lang" href="{esc(other)}" {lang_attr}><span class="lang-full">{lang_text}</span><span class="vh">{"切换语言" if zh else "Switch language"}</span></a>
 <button class="icon-btn js-only" type="button" data-theme-toggle aria-label="{theme_label}">{ic("auto")}</button>
 {star_button(zh, live)}
@@ -229,10 +229,10 @@ def maintainer_cards(zh=False, live=False) -> str:
 
 
 FOOTER_COLUMNS = [
-    ("Browse", "浏览", [("Catalog", "目录", "/catalog/", "/catalog/"),
+    ("Browse", "浏览", [("Catalog", "目录", "/catalog/", "/zh/catalog/"),
                         ("Explore every record", "检索全部记录", "/explore/", "/explore/?lang=zh"),
-                        ("Benchmarks", "评测基准", "/categories/benchmark/", "/categories/benchmark/"),
-                        ("Datasets", "数据集", "/categories/dataset/", "/categories/dataset/"),
+                        ("Benchmarks", "评测基准", "/categories/benchmark/", "/zh/categories/benchmark/"),
+                        ("Datasets", "数据集", "/categories/dataset/", "/zh/categories/dataset/"),
                         ("Papers", "论文", "/papers/", "/zh/papers/"),
                         ("Survey", "综述", "/survey/", "/survey/")]),
     ("Use the data", "使用数据", [("Download data", "下载数据", "/data/", "/zh/data/"),

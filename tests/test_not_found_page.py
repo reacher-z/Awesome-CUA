@@ -8,6 +8,7 @@ import urllib.parse
 
 sys.path.insert(0,str(Path(__file__).resolve().parents[1]/'scripts'))
 from build_site import build_site
+from site_fixture import shared_site
 from search_pages import KINDS, SOURCE_REPO, SITE
 from sitemaps import sitemap_urls
 
@@ -29,7 +30,7 @@ class NotFoundParser(HTMLParser):
 class NotFoundPageTests(unittest.TestCase):
     @classmethod
     def setUpClass(cls):
-        cls.temp=tempfile.TemporaryDirectory();cls.dest=build_site(cls.temp.name)
+        cls.temp=tempfile.TemporaryDirectory();cls.dest=shared_site()
         cls.text=(cls.dest/'404.html').read_text();cls.page=NotFoundParser(cls.text)
     @classmethod
     def tearDownClass(cls):cls.temp.cleanup()

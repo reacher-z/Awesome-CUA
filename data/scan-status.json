@@ -1,59 +1,165 @@
 {
-  "id": "scan:2026-11-07T13:20:13Z",
+  "id": "scan:2026-11-10T00:33:03Z",
   "schema_version": 1,
-  "status": "success",
-  "started_at": "2026-11-07T13:20:13Z",
-  "finished_at": "2026-11-07T13:25:28Z",
-  "run_url": "https://github.com/reacher-z/Awesome-CUA/actions/runs/42375857688",
+  "status": "partial",
+  "started_at": "2026-11-10T00:33:03Z",
+  "finished_at": "2026-11-10T00:35:36Z",
+  "run_url": "https://github.com/reacher-z/Awesome-CUA/actions/runs/42729113617",
   "schedule": {
     "timezone": "UTC",
     "times_local": [
       "00:07",
-      "01:07",
-      "02:07",
-      "03:07",
-      "04:07",
-      "05:07",
-      "06:07",
-      "07:07",
       "08:07",
-      "09:07",
-      "10:07",
-      "11:07",
-      "12:07",
-      "13:07",
-      "14:07",
-      "15:07",
-      "16:07",
-      "17:07",
-      "18:07",
-      "19:07",
-      "20:07",
-      "21:07",
-      "22:07",
-      "23:07"
+      "16:07"
     ]
   },
   "before": {
-    "resources": 2623,
-    "bibliographic_records": 2112,
-    "arxiv_archive_records": 3420,
+    "resources": 6000,
+    "bibliographic_records": 2550,
+    "arxiv_archive_records": 3858,
     "excluded_records": 1308,
-    "curated_papers": 1673,
-    "curated_resources": 497,
-    "candidates": 6084
+    "curated_papers": 1718,
+    "curated_resources": 3397,
+    "candidates": 8801
   },
   "after": {
-    "resources": 2623,
-    "bibliographic_records": 2112,
-    "arxiv_archive_records": 3420,
+    "resources": 6021,
+    "bibliographic_records": 2571,
+    "arxiv_archive_records": 3879,
     "excluded_records": 1308,
-    "curated_papers": 1673,
-    "curated_resources": 497,
-    "candidates": 6084
+    "curated_papers": 1718,
+    "curated_resources": 3397,
+    "candidates": 9381
   },
-  "new_papers": [],
-  "new_candidate_count": 0,
+  "new_papers": [
+    {
+      "id": "arxiv:1311.2524",
+      "name": "Rich feature hierarchies for accurate object detection and semantic segmentation",
+      "url": "https://arxiv.org/abs/1311.2524",
+      "review_status": "metadata_verified"
+    },
+    {
+      "id": "arxiv:1602.01783",
+      "name": "Asynchronous Methods for Deep Reinforcement Learning",
+      "url": "https://arxiv.org/abs/1602.01783",
+      "review_status": "metadata_verified"
+    },
+    {
+      "id": "arxiv:2311.13596",
+      "name": "T-Rex: Counting by Visual Prompting",
+      "url": "https://arxiv.org/abs/2311.13596",
+      "review_status": "metadata_verified"
+    },
+    {
+      "id": "arxiv:2405.10300",
+      "name": "Grounding DINO 1.5: Advance the \"Edge\" of Open-Set Object Detection",
+      "url": "https://arxiv.org/abs/2405.10300",
+      "review_status": "metadata_verified"
+    },
+    {
+      "id": "arxiv:2411.14347",
+      "name": "DINO-X: A Unified Vision Model for Open-World Object Detection and Understanding",
+      "url": "https://arxiv.org/abs/2411.14347",
+      "review_status": "metadata_verified"
+    },
+    {
+      "id": "arxiv:2411.18363",
+      "name": "ChatRex: Taming Multimodal LLM for Joint Perception and Understanding",
+      "url": "https://arxiv.org/abs/2411.18363",
+      "review_status": "metadata_verified"
+    },
+    {
+      "id": "arxiv:2501.14818",
+      "name": "Eagle 2: Building Post-Training Data Strategies from Scratch for Frontier Vision-Language Models",
+      "url": "https://arxiv.org/abs/2501.14818",
+      "review_status": "metadata_verified"
+    },
+    {
+      "id": "arxiv:2503.08507",
+      "name": "Referring to Any Person",
+      "url": "https://arxiv.org/abs/2503.08507",
+      "review_status": "metadata_verified"
+    },
+    {
+      "id": "arxiv:2503.14734",
+      "name": "GR00T N1: An Open Foundation Model for Generalist Humanoid Robots",
+      "url": "https://arxiv.org/abs/2503.14734",
+      "review_status": "metadata_verified"
+    },
+    {
+      "id": "arxiv:2504.15271",
+      "name": "Eagle 2.5: Boosting Long-Context Post-Training for Frontier Vision-Language Models",
+      "url": "https://arxiv.org/abs/2504.15271",
+      "review_status": "metadata_verified"
+    },
+    {
+      "id": "arxiv:2506.04034",
+      "name": "Rex-Thinker: Grounded Object Referring via Chain-of-Thought Reasoning",
+      "url": "https://arxiv.org/abs/2506.04034",
+      "review_status": "metadata_verified"
+    },
+    {
+      "id": "arxiv:2507.05513",
+      "name": "Llama Nemoretriever Colembed: Top-Performing Text-Image Retrieval Model",
+      "url": "https://arxiv.org/abs/2507.05513",
+      "review_status": "metadata_verified"
+    },
+    {
+      "id": "arxiv:2508.00414",
+      "name": "Cognitive Kernel-Pro: A Framework for Deep Research Agents and Agent Foundation Models Training",
+      "url": "https://arxiv.org/abs/2508.00414",
+      "review_status": "metadata_verified"
+    },
+    {
+      "id": "arxiv:2511.03929",
+      "name": "NVIDIA Nemotron Nano V2 VL",
+      "url": "https://arxiv.org/abs/2511.03929",
+      "review_status": "metadata_verified"
+    },
+    {
+      "id": "arxiv:2512.24601",
+      "name": "Recursive Language Models",
+      "url": "https://arxiv.org/abs/2512.24601",
+      "review_status": "metadata_verified"
+    },
+    {
+      "id": "arxiv:2601.15808",
+      "name": "Inference-Time Scaling of Verification: Self-Evolving Deep Research Agents via Test-Time Rubric-Guided Verification",
+      "url": "https://arxiv.org/abs/2601.15808",
+      "review_status": "metadata_verified"
+    },
+    {
+      "id": "arxiv:2602.03412",
+      "name": "Verified Critical Step Optimization for LLM Agents",
+      "url": "https://arxiv.org/abs/2602.03412",
+      "review_status": "metadata_verified"
+    },
+    {
+      "id": "arxiv:2604.18131",
+      "name": "Training LLM Agents for Spontaneous, Reward-Free Self-Evolution via World Knowledge Exploration",
+      "url": "https://arxiv.org/abs/2604.18131",
+      "review_status": "metadata_verified"
+    },
+    {
+      "id": "arxiv:2604.24954",
+      "name": "Nemotron 3 Nano Omni: Efficient and Open Multimodal Intelligence",
+      "url": "https://arxiv.org/abs/2604.24954",
+      "review_status": "metadata_verified"
+    },
+    {
+      "id": "arxiv:2611.00041",
+      "name": "Think Before You Locate: Clinical Chain-of-Though Supervision for Sequential Medical Image Grounding",
+      "url": "https://arxiv.org/abs/2611.00041",
+      "review_status": "metadata_verified"
+    },
+    {
+      "id": "arxiv:2611.08449",
+      "name": "VFlash: Fast, Accurate Visual Planning via Flash Primitive Decoding",
+      "url": "https://arxiv.org/abs/2611.08449",
+      "review_status": "metadata_verified"
+    }
+  ],
+  "new_candidate_count": 580,
   "pending_metadata_changes": 11,
   "source_fetches": {
     "successful": 103,
@@ -63,53 +169,19 @@
   "paper_searches": {
     "successful": 32,
     "total": 32,
-    "unique_identifiers": 1508,
-    "new_candidates": 0
+    "unique_identifiers": 1512,
+    "new_candidates": 1
   },
   "candidate_observations": {
-    "started_at": "2026-11-07T13:21:38Z",
-    "finished_at": "2026-11-07T13:23:45Z",
-    "ok": true,
-    "exit_code": 0,
-    "error": null,
-    "state": "bounded_progress",
-    "complete": false,
-    "scan_status": "partial",
-    "run_id": "run:d45e7019e48c7ceeed2c48c8",
-    "request_attempted": true,
-    "successful_responses": 5,
-    "requests_attempted": 5,
-    "new_unique_repositories": 5,
-    "total_unique_repositories": 10251,
-    "pending_queries": 1,
-    "unknown_requests": 0,
-    "epoch_id": "epoch:33dadbd455354e9407058991",
-    "query_status_counts": {
-      "observed_pages_exhausted": 388,
-      "pending": 1,
-      "split": 23,
-      "superseded_input": 101
-    },
-    "rejected_rows": {},
-    "settled_unknown_requests": 0,
-    "warnings": [],
-    "notices": [],
-    "files": {
-      "github-candidates.jsonl": "2b41decdba55c8dea9d319b4b5de85b736e436486267a99a72df8cd87e0779d3",
-      "github-candidates-manifest.json": "63f59afa9ce8ff19529a850d8eb78bccfce959db048aca7aee24ab7e99ab8385",
-      "github-candidate-progress.json": "2b6d8a6eda8f9a885a9695f5974db2994210f03dfee7d0cc5e57d66ee757dbcc"
-    },
-    "published": true,
-    "network_reservations": 5,
-    "staged_files": {
-      "github-candidates.jsonl": "2b41decdba55c8dea9d319b4b5de85b736e436486267a99a72df8cd87e0779d3",
-      "github-candidates-manifest.json": "63f59afa9ce8ff19529a850d8eb78bccfce959db048aca7aee24ab7e99ab8385",
-      "github-candidate-progress.json": "2b6d8a6eda8f9a885a9695f5974db2994210f03dfee7d0cc5e57d66ee757dbcc"
-    },
-    "comparison_context_rebound": true,
+    "started_at": "2026-11-10T00:34:26Z",
+    "finished_at": "2026-11-10T00:34:51Z",
+    "ok": false,
+    "exit_code": 1,
+    "error": "Candidate phase rejected: invalid repository name\n",
+    "published": false,
     "durable_validation": {
       "ok": true,
-      "checked_at": "2026-11-07T13:25:28Z",
+      "checked_at": "2026-11-10T00:35:35Z",
       "mode": "resumable_triplet",
       "required": true,
       "files": {
@@ -123,92 +195,53 @@
   "phases": [
     {
       "name": "discovery",
-      "started_at": "2026-11-07T13:20:14Z",
-      "finished_at": "2026-11-07T13:20:42Z",
+      "started_at": "2026-11-10T00:33:04Z",
+      "finished_at": "2026-11-10T00:33:33Z",
       "ok": true,
       "exit_code": 0,
       "error": null
     },
     {
       "name": "huggingface",
-      "started_at": "2026-11-07T13:20:42Z",
-      "finished_at": "2026-11-07T13:21:25Z",
+      "started_at": "2026-11-10T00:33:33Z",
+      "finished_at": "2026-11-10T00:34:10Z",
       "ok": true,
       "exit_code": 0,
       "error": null
     },
     {
       "name": "recent_arxiv",
-      "started_at": "2026-11-07T13:21:25Z",
-      "finished_at": "2026-11-07T13:21:25Z",
+      "started_at": "2026-11-10T00:34:10Z",
+      "finished_at": "2026-11-10T00:34:11Z",
       "ok": true,
       "exit_code": 0,
       "error": null,
       "complete": true,
       "new_count": 0,
       "warnings": [],
-      "cache_used": true,
-      "source_retrieved_at": "2026-11-07T00:38:22Z"
+      "cache_used": false,
+      "rate_limited": false,
+      "deferred": false
     },
     {
       "name": "harvest",
-      "started_at": "2026-11-07T13:21:25Z",
-      "finished_at": "2026-11-07T13:21:26Z",
+      "started_at": "2026-11-10T00:34:11Z",
+      "finished_at": "2026-11-10T00:34:14Z",
       "ok": true,
       "exit_code": 0,
       "error": null
     },
     {
       "name": "github_candidates",
-      "started_at": "2026-11-07T13:21:38Z",
-      "finished_at": "2026-11-07T13:23:45Z",
-      "ok": true,
-      "exit_code": 0,
-      "error": null,
-      "state": "bounded_progress",
-      "complete": false,
-      "scan_status": "partial",
-      "run_id": "run:d45e7019e48c7ceeed2c48c8",
-      "request_attempted": true,
-      "successful_responses": 5,
-      "requests_attempted": 5,
-      "new_unique_repositories": 5,
-      "total_unique_repositories": 10251,
-      "pending_queries": 1,
-      "unknown_requests": 0,
-      "epoch_id": "epoch:33dadbd455354e9407058991",
-      "query_status_counts": {
-        "observed_pages_exhausted": 388,
-        "pending": 1,
-        "split": 23,
-        "superseded_input": 101
-      },
-      "rejected_rows": {},
-      "settled_unknown_requests": 0,
-      "warnings": [],
-      "notices": [],
-      "files": {
-        "github-candidates.jsonl": "2b41decdba55c8dea9d319b4b5de85b736e436486267a99a72df8cd87e0779d3",
-        "github-candidates-manifest.json": "63f59afa9ce8ff19529a850d8eb78bccfce959db048aca7aee24ab7e99ab8385",
-        "github-candidate-progress.json": "2b6d8a6eda8f9a885a9695f5974db2994210f03dfee7d0cc5e57d66ee757dbcc"
-      },
-      "published": true,
-      "baseline_files": {
-        "github-candidates.jsonl": "cf42fb18dc880d8116fdca6a5c166c711ed56817a4413ccf3f682a45c5434783",
-        "github-candidates-manifest.json": "b3ce194d56541d473b58eef7c75baccb07cf4aa090a1dcc0fad4e342788fec26",
-        "github-candidate-progress.json": "05149308235080a9cd9d3e9b361c798b4c3575ccf260f69bbfb5128d8c5fc8ea"
-      },
-      "ready_to_publish": false,
-      "network_reservations": 5,
-      "staged_files": {
-        "github-candidates.jsonl": "2b41decdba55c8dea9d319b4b5de85b736e436486267a99a72df8cd87e0779d3",
-        "github-candidates-manifest.json": "63f59afa9ce8ff19529a850d8eb78bccfce959db048aca7aee24ab7e99ab8385",
-        "github-candidate-progress.json": "2b6d8a6eda8f9a885a9695f5974db2994210f03dfee7d0cc5e57d66ee757dbcc"
-      },
-      "comparison_context_rebound": true,
+      "started_at": "2026-11-10T00:34:26Z",
+      "finished_at": "2026-11-10T00:34:51Z",
+      "ok": false,
+      "exit_code": 1,
+      "error": "Candidate phase rejected: invalid repository name\n",
+      "published": false,
       "durable_validation": {
         "ok": true,
-        "checked_at": "2026-11-07T13:25:28Z",
+        "checked_at": "2026-11-10T00:35:35Z",
         "mode": "resumable_triplet",
         "required": true,
         "files": {
@@ -221,34 +254,39 @@
     },
     {
       "name": "build",
-      "started_at": "2026-11-07T13:23:57Z",
-      "finished_at": "2026-11-07T13:24:00Z",
+      "started_at": "2026-11-10T00:34:51Z",
+      "finished_at": "2026-11-10T00:34:59Z",
       "ok": true,
       "exit_code": 0,
       "error": null
     },
     {
       "name": "validate",
-      "started_at": "2026-11-07T13:24:58Z",
-      "finished_at": "2026-11-07T13:25:16Z",
+      "started_at": "2026-11-10T00:34:59Z",
+      "finished_at": "2026-11-10T00:35:23Z",
       "ok": true,
       "exit_code": 0,
       "error": null
     }
   ],
-  "warnings": [],
+  "warnings": [
+    "github_candidates: Candidate phase rejected: invalid repository name\n"
+  ],
+  "rate_limit_only": false,
+  "network_deferred_only": false,
   "policy": "Automated scans discover candidates and verify bibliographic metadata. Editorial approval, topic annotations, and license claims require separate source review.",
   "network_budget": {
-    "round_id": "f0fb36c80ee0464ca2f04c601e2d632d",
+    "round_id": "5e19edb92af54a36a8720728472d6184",
     "max_requests": 180,
-    "max_seconds": 600,
-    "requests_reserved": 146,
-    "responses_received": 146,
+    "max_seconds": 360,
+    "requests_reserved": 143,
+    "responses_received": 143,
     "unknown_attempts": 0,
     "by_phase": {
       "discovery": 109,
       "huggingface": 32,
-      "github_candidates": 5
+      "recent_arxiv": 1,
+      "harvest": 1
     },
     "by_provider": {
       "raw.githubusercontent.com": 66,
@@ -261,13 +299,12 @@
       "doc-04-10-sheets.googleusercontent.com": 1,
       "doc-0s-8k-sheets.googleusercontent.com": 1,
       "doc-04-0o-sheets.googleusercontent.com": 1,
-      "export.arxiv.org": 2,
-      "arxiv.org": 2,
-      "api.github.com": 5
+      "export.arxiv.org": 4,
+      "arxiv.org": 2
     },
     "provider_cooldowns": {},
     "blocked_providers": [],
-    "ledger_sha256": "1a8257ab237415351603a9b8efd19a341c3fa9bb0348b208605f69f1ae67d900",
+    "ledger_sha256": "d022daf06f9c54b3d974d2aa70dcb09cb363a40327e0c56bf9715357a0d56701",
     "count_boundary": "Reservations are persisted before I/O; interrupted attempts remain conservatively charged. HTTP status observation does not establish complete or validated content."
   }
 }

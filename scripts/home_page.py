@@ -2,6 +2,7 @@
 from __future__ import annotations
 
 from collections import Counter, defaultdict
+import hashlib
 import json
 import re
 
@@ -198,12 +199,13 @@ def catalog_view(rows, reviewed, coverage, root):
 def search_index(view, zh=False):
     """Compact array index for the search field and palette: reviewed records only.
 
-    The Chinese index shows Chinese summaries and keeps the English in extra["e"], so English terms still match.
+    Search starts from this file alone. Summaries live in search_text(), which the page fetches next.
 
-    Row: [id, name, kindIndex, envBits, year, flags, summary, mentions, topicIdx[], ident, reviewedDay, licence, extra?]
+    Row: [id, name, kindIndex, envBits, year, flags, mentions, topicIdx[], ident, reviewedDay, licence, extra?]
+    id is "" when it is "github:" + ident lowercased; ident is "" when it is "arXiv " + the arXiv ID.
     flags: 1 = curated, 2 = official leaderboard, 4 = authors omitted
     extra: {"a": aliases, "p": arXiv ID of the documenting paper, "l": leaderboard URL, "u": primary source URL when the
-    ID does not give it, "e": English summary}, present only when non-empty.
+    ID does not give it}, present only when non-empty.
     """
     reviewed, by_id = view["reviewed"], view["by_id"]
     topic_keys = sorted({topic for record in reviewed for topic in record["topics"]})
@@ -218,8 +220,10 @@ def search_index(view, zh=False):
         licence = licence_of(record)
         is_paper = record["kind"] in ("paper", "survey")
         paper = None if is_paper else paper_of(record, by_id)
+        record_id, ident = record["id"], identity(record)
         extra = {}
-        if not record["id"].startswith(("github:", "arxiv:")) or is_paper:
+        arxiv_url = record_id.startswith("arxiv:") and record["url"] == "https://arxiv.org/abs/" + record_id[6:]
+        if (not record_id.startswith(("github:", "arxiv:")) or is_paper) and not arxiv_url:
             extra["u"] = record["url"]
         if record["aliases"]:
             extra["a"] = record["aliases"]
@@ -227,16 +231,45 @@ def search_index(view, zh=False):
             extra["p"] = paper["id"].split(":", 1)[1]
         if leaderboard:
             extra["l"] = leaderboard
-        text = clip(record["summary"], 120)
-        shown = clip(zh_summary(record), 120) if zh else text
-        if shown != text and not is_paper:
-            extra["e"] = text
-        rows.append([record["id"], clean_title(record["name"]), KIND_ORDER.index(record["kind"]), bits,
-                     year_of(record, by_id), flags, "" if is_paper else shown,
-                     len(view["mentions"][record["id"]]), [topic_keys.index(topic) for topic in record["topics"]],
-                     identity(record), int(reviewed_day or 0), licence_keys.index(licence) if licence else -1]
+        if record_id.startswith("arxiv:") and ident == "arXiv " + record_id[6:]:
+            ident = ""
+        elif record_id == "github:" + ident.lower():
+            record_id = ""
+        rows.append([record_id, clean_title(record["name"]), KIND_ORDER.index(record["kind"]), bits,
+                     year_of(record, by_id), flags, len(view["mentions"][record["id"]]),
+                     [topic_keys.index(topic) for topic in record["topics"]],
+                     ident, int(reviewed_day or 0), licence_keys.index(licence) if licence else -1]
                     + ([extra] if extra else []))
-    return {"v": 1, "kinds": KIND_ORDER, "topics": topic_keys, "licences": licence_keys, "rows": rows}
+    return {"v": 2, "b": search_stamp(view), "kinds": KIND_ORDER, "topics": topic_keys, "licences": licence_keys,
+            "rows": rows}
+
+
+def search_stamp(view) -> str:
+    """Short hash of the row order shared by search_index() and search_text(); the page pairs the two files by it."""
+    ids = "\n".join(sorted(record["id"] for record in view["reviewed"]))
+    return hashlib.sha1(ids.encode()).hexdigest()[:12]
+
+
+def search_text(view, zh=False):
+    """Summaries for the rows of search_index(), in the same order, fetched after the index.
+
+    "d" is the shown summary (empty for papers). The Chinese file adds "e", the English summary where it differs,
+    so English terms still match.
+    """
+    shown, english = [], []
+    for record in sorted(view["reviewed"], key=lambda item: item["id"]):
+        if record["kind"] in ("paper", "survey"):
+            shown.append("")
+            english.append("")
+            continue
+        text = clip(record["summary"], 120)
+        local = clip(zh_summary(record), 120) if zh else text
+        shown.append(local)
+        english.append(text if local != text else "")
+    payload = {"v": 2, "b": search_stamp(view), "n": len(shown), "d": shown}
+    if zh:
+        payload["e"] = english
+    return payload
 
 
 def kind_count(view, kind) -> int:

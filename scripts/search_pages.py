@@ -814,8 +814,10 @@ def build_search_pages(destination, rows, coverage, root, *, survey_page=None):
     (destination/'data/site-stamp.json').write_text(json.dumps({'stars':stars,'last_scan':last_scan})+'\n',encoding='utf-8')
     view=home_page.catalog_view(rows,reviewed,coverage,root)
     draw_og_cards(destination,rows,reviewed)
-    for filename,zh in (('search-index.json',False),('search-index.zh.json',True)):
-        (destination/'data'/filename).write_text(json.dumps(home_page.search_index(view,zh=zh),ensure_ascii=False,separators=(',',':'))+'\n',encoding='utf-8')
+    # The index alone answers searches by name; the summaries follow in a second file.
+    for suffix,zh in (('',False),('.zh',True)):
+        for stem,build in (('search-index',home_page.search_index),('search-text',home_page.search_text)):
+            (destination/'data'/f'{stem}{suffix}.json').write_text(json.dumps(build(view,zh=zh),ensure_ascii=False,separators=(',',':'))+'\n',encoding='utf-8')
     zh_guides={g['slug']:g for g in json.loads(zh_guides_file.read_text(encoding='utf-8'))} if (zh_guides_file:=root/'data/site-guides.zh-CN.json').exists() else {}
     ZH_PAGE_PATHS.clear()
     ZH_PAGE_PATHS.update({'/','/catalog/','/papers/','/topics/','/data/','/agents/',*ZH_STATIC_PAGES,*(f'/guides/{slug}/' for slug in zh_guides)})

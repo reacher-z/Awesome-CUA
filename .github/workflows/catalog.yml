@@ -36,6 +36,8 @@ jobs:
         run: node --test tests/web.test.mjs
       - name: Build static website
         run: python scripts/build_site.py
+      - name: Check search relevance and index size
+        run: node --test tests/search_quality.test.mjs
       - uses: actions/upload-artifact@b7c566a772e6b6bfb58ed0dc250532a479d7789f # v6.0.0
         with:
           name: cua-catalog

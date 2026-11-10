@@ -59,6 +59,7 @@ jobs:
           python scripts/run_tests.py
           node --test tests/web.test.mjs
           python scripts/build_site.py
+          node --test tests/search_quality.test.mjs
       - name: Snapshot verified public scan data
         id: snapshot
         if: steps.quality.outcome == 'success'

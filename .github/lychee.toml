@@ -1,0 +1,29 @@
+# Settings for the weekly link check (.github/workflows/links.yml) over README.md, README.zh-CN.md and docs/.
+max_concurrency = 24
+host_concurrency = 4
+timeout = 20
+max_retries = 2
+retry_wait_time = 3
+# Hugging Face and arena hosts answer bursts with 429; a rate-limited link is reachable.
+accept = ["200..=299", "429"]
+include_mail = false
+no_progress = true
+exclude_all_private = true
+user_agent = "Mozilla/5.0 (compatible; Awesome-CUA-link-check/1.0; +https://github.com/reacher-z/Awesome-CUA)"
+
+# Hosts that answer 403 to every automated client, including for pages a browser opens. Their status says
+# nothing about the link, so they are skipped. Reasons from the 2026-11-09 probe of all 9,188 unique URLs:
+exclude = [
+  # doi.org resolves to publisher pages (ACM, Elsevier, IEEE, Springer) that return 403 to non-browser clients.
+  '^https?://(dx\.)?doi\.org/',
+  # ACM Digital Library returns 403 behind a Cloudflare challenge.
+  '^https?://dl\.acm\.org/',
+  # ScienceDirect returns 403 to non-browser clients.
+  '^https?://(www\.)?sciencedirect\.com/',
+  # ResearchGate returns 403 behind a Cloudflare challenge.
+  '^https?://(www\.)?researchgate\.net/',
+  # Preprints.org returns 403 behind a Cloudflare challenge.
+  '^https?://(www\.)?preprints\.org/',
+  # Zhihu columns return 403 without a signed-in browser session.
+  '^https?://zhuanlan\.zhihu\.com/',
+]

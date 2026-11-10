@@ -1,0 +1,37 @@
+name: Links
+# Weekly check of every link in README.md, README.zh-CN.md and docs/. Hosts that refuse automated clients are
+# skipped with their reasons in .github/lychee.toml; any other link that does not answer 2xx or 429 after retries
+# fails the run, and the job summary lists it with the file that carries it.
+on:
+  schedule:
+    - cron: '23 5 * * 1'
+  workflow_dispatch:
+permissions: {}
+concurrency:
+  group: ${{ github.workflow }}
+  cancel-in-progress: false
+jobs:
+  links:
+    runs-on: ubuntu-latest
+    # Hugging Face rate limits stretch a full run to about 25 minutes.
+    timeout-minutes: 60
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803 # v6.1.0
+        with:
+          persist-credentials: false
+      - name: Check links
+        uses: lycheeverse/lychee-action@e7477775783ea5526144ba13e8db5eec57747ce8 # v2.9.0
+        with:
+          lycheeVersion: v0.24.2
+          args: --config .github/lychee.toml README.md README.zh-CN.md 'docs/**/*.md'
+          output: lychee/report.md
+      - name: Keep the link report
+        if: ${{ !cancelled() && hashFiles('lychee/report.md') != '' }}
+        uses: actions/upload-artifact@b7c566a772e6b6bfb58ed0dc250532a479d7789f # v6.0.0
+        with:
+          name: link-report-${{ github.run_id }}-${{ github.run_attempt }}
+          path: lychee/report.md
+          if-no-files-found: error
+          retention-days: 14

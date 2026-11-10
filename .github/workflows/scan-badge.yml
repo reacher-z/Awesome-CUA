@@ -2,7 +2,7 @@ name: Scan badge
 
 on:
   schedule:
-    # Hourly, so the badge turns the warning colour within an hour of the last successful scan reaching six hours.
+    # Hourly, so the badge turns the warning colour within an hour of the last successful scan reaching nine hours.
     - cron: '47 * * * *'
   workflow_run:
     workflows: [Discovery scans every eight hours]

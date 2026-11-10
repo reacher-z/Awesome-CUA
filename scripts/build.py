@@ -852,7 +852,7 @@ SCAN_BADGE_JSON = "https://raw.githubusercontent.com/reacher-z/Awesome-CUA/statu
 
 def badges(rows, report):
     # A short status strip under the banner: at most six badges. The counts come from this build; the scan badge reads
-    # the status branch, so it shows the latest successful scan of main and turns amber after six hours without one.
+    # the status branch, so it shows the latest successful scan of main and turns amber after nine hours without one.
     # Only curated records count as resources; records awaiting review and candidates keep their own labels in STATS.
     # The badges are plain images: the coverage ledger, bibliography, maintenance guide, dataset and license are each
     # linked once further down, and awesome-lint flags an address linked twice in one README.

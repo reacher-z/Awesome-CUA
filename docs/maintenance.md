@@ -16,7 +16,7 @@ Every scan of `main` that is not a dry run also updates scan health. While the s
 
 ### Scan badge
 
-The README's "last successful scan" badge reads `scan-badge.json` from the `status` branch through the shields.io endpoint badge. `.github/workflows/scan-badge.yml` rewrites that file every hour at :47 UTC, after every scan of `main` and on manual dispatch, and commits only when it changes. `python3 scripts/scan_badge.py` takes the latest `scan.yml` run of `main` that concluded `success`: every scan check passed and the repeated-partial alert did not fire. A healthy scan with nothing new commits nothing and still counts. The badge shows when that run finished, in UTC, in indigo (`#4352E8`), and in amber (`#B45309`) once it is more than six hours old.
+The README's "last successful scan" badge reads `scan-badge.json` from the `status` branch through the shields.io endpoint badge. `.github/workflows/scan-badge.yml` rewrites that file every hour at :47 UTC, after every scan of `main` and on manual dispatch, and commits only when it changes. `python3 scripts/scan_badge.py` takes the latest `scan.yml` run of `main` that concluded `success`: every scan check passed and the repeated-partial alert did not fire. A healthy scan with nothing new commits nothing and still counts. The badge shows when that run finished, in UTC, in indigo (`#4352E8`), and in amber (`#B45309`) once it is more than nine hours old, one eight-hour scan interval plus an hour.
 
 ### Retired discovery sources
 

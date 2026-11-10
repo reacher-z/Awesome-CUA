@@ -5,7 +5,8 @@ A successful scan is a run of .github/workflows/scan.yml on main that concluded
 ``success``: every scan check passed and the repeated-partial alert did not fire.
 A healthy scan with nothing new commits nothing and still counts. The badge shows
 when the latest such run finished, in UTC, and turns the warning colour once that
-is more than MAX_AGE_HOURS old.
+is more than MAX_AGE_HOURS old: one eight-hour scan interval plus an hour, the
+threshold of the operators' stale-scan alert.
 """
 import argparse
 from datetime import datetime, timedelta, timezone
@@ -17,7 +18,7 @@ LABEL = 'last successful scan'
 # The README badge colour (indigo) and an amber warning colour.
 NORMAL = '4352E8'
 WARNING = 'B45309'
-MAX_AGE_HOURS = 6
+MAX_AGE_HOURS = 9
 
 
 def parse_time(value):

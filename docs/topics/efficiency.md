@@ -2,9 +2,9 @@
 
 [Home](../../README.md) · [All topics](../topics.md) · [Full arXiv bibliography](../papers.md)
 
-555 source-reviewed resources tagged `efficiency`. Curated metadata; unknown facts are shown as —.
+554 source-reviewed resources tagged `efficiency`. Curated metadata; unknown facts are shown as —.
 
-**Contents:** [Benchmarks (16)](#benchmarks) · [Datasets (1)](#datasets) · [Models (45)](#models) · [Agents (44)](#agents) · [Frameworks (115)](#frameworks) · [Tools (114)](#tools) · [Infrastructure (1)](#infrastructure) · [Products (1)](#products) · [Learning resources (1)](#learning-resources) · [Papers (217)](#papers)
+**Contents:** [Benchmarks (16)](#benchmarks) · [Datasets (1)](#datasets) · [Models (45)](#models) · [Agents (43)](#agents) · [Frameworks (115)](#frameworks) · [Tools (114)](#tools) · [Infrastructure (1)](#infrastructure) · [Products (1)](#products) · [Learning resources (1)](#learning-resources) · [Papers (217)](#papers)
 
 ## Benchmarks
 
@@ -96,7 +96,6 @@ All entries in this section: desktop.
 | [Clearcote Jet](https://github.com/clearcotelabs/clearcote-jet) | web | — | code MIT | A browser agent that reads a page, picks each next step with a decision model and acts in Clearcote with curved mouse paths and key-by-key typing; finished tasks are saved as skills that replay without model calls. | [✓ 2026‑11‑10](https://raw.githubusercontent.com/clearcotelabs/clearcote-jet/a4995bf64b2ba5c4939b3a813e163e8d71236b17/README.md) |
 | [CoMEM-Agent](https://github.com/WenyiWU0111/CoMEM-Agent) | web | [2510.09038](https://arxiv.org/abs/2510.09038) (2025) | — | A web GUI agent implementation that retrieves compact embeddings of earlier interaction trajectories as memory. The repository includes inference and training code. | [✓ 2026‑11‑09](https://raw.githubusercontent.com/WenyiWU0111/CoMEM-Agent/HEAD/README.md) |
 | [DeskMind](https://github.com/deskmind-ai/deskmind) | desktop, macos | — | code Apache-2.0 | DeskMind is a local-first macOS computer-use agent that combines accessibility inspection, DeskMind Eyes grounding, and user clarification. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/deskmind-ai/deskmind/HEAD/README.md) |
-| [DesktopAgent (S1-Fast)](https://github.com/elidot007/desktop-agent) | desktop, windows | — | code Apache-2.0 | DesktopAgent operates Windows desktop applications in the background using a local 0.33B System-One decision model (S1-Fast) and UI Automation. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/elidot007/desktop-agent/HEAD/README.md) |
 | [DietSurf](https://github.com/100x-bot/dietsurf) | web | — | — | Minimalist Chrome side-panel browser agent with a virtual filesystem and shell-like command interface. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/100x-bot/dietsurf/HEAD/README.md) |
 | [Fara Browser Automation Agent](https://github.com/pmbstyle/fara-agent) | web, desktop | — | code MIT | Local browser automation agent powered by Microsoft's Fara-7B computer-use model via LM Studio or Ollama and Playwright. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/pmbstyle/fara-agent/HEAD/README.md) |
 | [fastbrowse](https://github.com/agent-labs-dev/fastbrowse) | web | — | code MIT | Browser agent in which TypeSafe's Jev picks each action from controls indexed on the page over CDP, an LLM plans and reads, and code gates inputs, secrets and irreversible steps; answers cite page quotes. | [✓ 2026‑10‑18](https://raw.githubusercontent.com/agent-labs-dev/fastbrowse/HEAD/README.md) |

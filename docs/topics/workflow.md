@@ -2,9 +2,9 @@
 
 [Home](../../README.md) · [All topics](../topics.md) · [Full arXiv bibliography](../papers.md)
 
-565 source-reviewed resources tagged `workflow`. Curated metadata; unknown facts are shown as —.
+563 source-reviewed resources tagged `workflow`. Curated metadata; unknown facts are shown as —.
 
-**Contents:** [Benchmarks (30)](#benchmarks) · [Datasets (9)](#datasets) · [Models (3)](#models) · [Agents (69)](#agents) · [Frameworks (145)](#frameworks) · [Tools (124)](#tools) · [Infrastructure (6)](#infrastructure) · [Products (27)](#products) · [Learning resources (10)](#learning-resources) · [Surveys (4)](#surveys) · [Papers (138)](#papers)
+**Contents:** [Benchmarks (30)](#benchmarks) · [Datasets (9)](#datasets) · [Models (3)](#models) · [Agents (69)](#agents) · [Frameworks (143)](#frameworks) · [Tools (124)](#tools) · [Infrastructure (6)](#infrastructure) · [Products (27)](#products) · [Learning resources (10)](#learning-resources) · [Surveys (4)](#surveys) · [Papers (138)](#papers)
 
 ## Benchmarks
 
@@ -167,7 +167,6 @@
 | [AutoGPT](https://github.com/Significant-Gravitas/AutoGPT) | cross-platform, web, desktop | — | — | AutoGPT is an open-source autonomous agent platform for building, orchestrating, and running multi-step web and workspace automation agents. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/Significant-Gravitas/AutoGPT/HEAD/README.md) |
 | [Automify](https://github.com/aldovincenti/automify) | cross-platform, desktop, web, macos, windows, linux | — | code MIT | Automify is a Node.js computer-use framework unifying browser, CLI, and native desktop workflow automation for AI agents. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/aldovincenti/automify/HEAD/README.md) |
 | [BabyAGI](https://github.com/yoheinakajima/babyagi) | unspecified | — | — | BabyAGI is an autonomous task-management agent framework that iteratively creates, prioritizes, and executes tasks using LLMs and vector memory. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/yoheinakajima/babyagi/HEAD/README.md) |
-| [Bees Desktop](https://github.com/Bees-bot/bees-desktop) | cross-platform, desktop, web | — | — | Thread-based multi-agent desktop runtime allowing a team of AI agents to collaborate over local files and browsers. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/Bees-bot/bees-desktop/main/README.md) |
 | [bgivenb Typed UI Capabilities](https://github.com/bgivenb/computer-use-automation) | web, desktop | — | code MIT | Model-guided UI workflow discovery framework with signed human review and deterministic replay. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/bgivenb/computer-use-automation/main/README.md) |
 | [BrowserMesh](https://github.com/scrollDynasty/BrowserMesh) | web | — | code Apache-2.0 | Multi-agent browser MCP runtime in Rust managing isolated, persistent, parallel Playwright sessions. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/scrollDynasty/BrowserMesh/HEAD/README.md) |
 | [case-sdk](https://github.com/case-computers/case-sdk) | desktop, macos | — | — | Dual-mode macOS GUI automation SDK supporting structured JSON procedures, local/remote WebSocket runtimes, and MCP integration. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/case-computers/case-sdk/HEAD/README.md) |
@@ -226,7 +225,6 @@
 | [Mosaik](https://github.com/luantak/mosaik) | web | — | code MIT | Composable agentic browser automation framework built from small, reusable perception and action primitives. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/luantak/mosaik/master/README.md) |
 | [muhtalhakhan OpenAgent](https://github.com/muhtalhakhan/open-agent) | cross-platform, desktop, web | — | code MIT | Self-hosted, provider-agnostic AI agent runtime with browser automation, shell execution, and extensible skill plugins. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/muhtalhakhan/open-agent/main/README.md) |
 | [Napaxi](https://github.com/antgroup/Napaxi) | android, ios | — | code GPL-3.0 | Mobile-native agent SDK by Ant Group for building on-device AI agents with sandboxed skill execution. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/antgroup/Napaxi/HEAD/README.md) |
-| [Native by K](https://github.com/Karunya-Muddana/Native) | cross-platform, desktop, web | — | code Apache-2.0 | Local-first open-source AI agent harness for developers integrating terminal, filesystem, and browser control. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/Karunya-Muddana/Native/main/README.md) |
 | [navforge](https://github.com/huzjie/navforge) | cross-platform, desktop, web | — | code MIT | navforge is a self-hosted orchestration framework for coordinating multi-step computer-use and browser navigation agents. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/huzjie/navforge/HEAD/README.md) |
 | [Neurosim](https://github.com/anaishowland/neurosim) | web, desktop | — | code MIT | Neurosim is a Python framework for building, simulating, and evaluating multi-step AI and computer-use agent systems. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/anaishowland/neurosim/HEAD/README.md) |
 | [Northstar (Legacy Portal CUA)](https://github.com/zoyaarief/legacy-credit-union-automation) | web | — | — | Discovers workflows on legacy credit-union web portals with an AI agent once and compiles them into deterministic scripts. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/zoyaarief/legacy-credit-union-automation/main/README.md) |

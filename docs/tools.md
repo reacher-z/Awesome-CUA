@@ -6,7 +6,7 @@ Curated metadata. Each entry links its first-party evidence. Unknown facts are s
 
 *Paper* lists reviewed `introduced_by`/`documented_by` relations with the record's year. *License* lists publisher declarations by scope (code, data, weights, document). *Evidence* links the reviewed first-party snapshot and its retrieval date.
 
-**1163 resources:** [Web (489)](#web) · [Desktop (286)](#desktop) · [Mobile (59)](#mobile) · [Cross-platform (308)](#cross-platform) · [Unspecified (21)](#unspecified)
+**1162 resources:** [Web (488)](#web) · [Desktop (286)](#desktop) · [Mobile (59)](#mobile) · [Cross-platform (308)](#cross-platform) · [Unspecified (21)](#unspecified)
 
 Resources tagged with environments from more than one family are listed under *Cross-platform*; their exact environments stay in the table.
 
@@ -193,7 +193,6 @@ All entries in this section: web.
 | [DSH Patrol](https://github.com/qigelunbiya/DSH-Patrol) | — | code MIT | Teach-once, patrol-repeatedly website inspection and monitoring plugin for DeepSeek Harness. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/qigelunbiya/DSH-Patrol/main/README.md) |
 | [DSH Qwen Web Bridge Plugin](https://github.com/Andy294753951/dsh-plugin-qwen-web-bridge) | — | code MIT | DeepSeek Harness plugin for driving an authenticated Qwen web session via local browser automation. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/Andy294753951/dsh-plugin-qwen-web-bridge/main/README.md) |
 | [dsh-browser-firefox](https://github.com/tuojc/dsh-browser-firefox) | — | code MIT | Firefox browser-control plugin and extension for DeepSeek Harness enabling agents to read and drive live Firefox tabs. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/tuojc/dsh-browser-firefox/main/README.md) |
-| [dsh-browser-full-access](https://github.com/LianPing-cyber/dsh-browser-full-access) | — | code MIT | Background-tab full-access fork of `dsh-browser` for DeepSeek Harness web automation. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/LianPing-cyber/dsh-browser-full-access/main/README.md) |
 | [dsh-browser-ops](https://github.com/lirui1024k/dsh-browser-ops) | — | code MIT | DeepSeek Harness plugin combining agent-driven real-browser control with workflow recording. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/lirui1024k/dsh-browser-ops/main/README.md) |
 | [dsh-browser-playwright](https://github.com/ChenyuHeee/dsh-browser-playwright) | — | code MIT | Snapshot-first Playwright browser automation plugin for DeepSeek Harness using accessibility-tree interactions. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/ChenyuHeee/dsh-browser-playwright/HEAD/README.md) |
 | [dsh-browser-secure](https://github.com/frankXie-java/dsh-browser-secure) | — | code MIT | Security-hardened fork of `dsh-browser` for DeepSeek Harness adding audit logging and domain egress allowlists. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/frankXie-java/dsh-browser-secure/main/README.md) |

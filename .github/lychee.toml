@@ -26,4 +26,15 @@ exclude = [
   '^https?://(www\.)?preprints\.org/',
   # Zhihu columns return 403 without a signed-in browser session.
   '^https?://zhuanlan\.zhihu\.com/',
+  # OpenAI, Adept and Perplexity answer 403 to non-browser clients behind a bot challenge; the pages open in a browser.
+  '^https?://(www\.)?openai\.com/',
+  '^https?://(www\.)?adept\.ai/',
+  '^https?://(www\.)?perplexity\.ai/',
+  # DeepLearning.AI answers 200 from home networks and 403 from GitHub-hosted runners.
+  '^https?://(www\.)?deeplearning\.ai/',
+  # Coverage-ledger rows that record an upstream confirmed gone on 2026-11-10 (HTTP 404 from the GitHub API and the page):
+  # an unapproved proposal for a repository whose owner removed it, and a retired discovery source.
+  '^https://github\.com/(THUDM/AutoGLM|agiresearch/LiteCUA|Runa-Asahi/tsuki-phone-agent|DeLunnLi/Awesome-Multimodal-GUI-Agents)$',
+  # A listed product whose site answers 404 at the root; its row waits for editorial review.
+  '^https://www\.sentius\.ai/?$',
 ]

@@ -2,9 +2,9 @@
 
 [Home](../../README.md) · [All platforms](../environments.md) · [Research by topic](../topics.md)
 
-589 source-reviewed resources tagged `windows`. Curated metadata; unknown facts are shown as —.
+587 source-reviewed resources tagged `windows`. Curated metadata; unknown facts are shown as —.
 
-**Contents:** [Benchmarks (14)](#benchmarks) · [Datasets (13)](#datasets) · [Models (22)](#models) · [Agents (103)](#agents) · [Frameworks (101)](#frameworks) · [Tools (264)](#tools) · [Infrastructure (16)](#infrastructure) · [Products (9)](#products) · [Learning resources (3)](#learning-resources) · [Surveys (1)](#surveys) · [Papers (43)](#papers)
+**Contents:** [Benchmarks (14)](#benchmarks) · [Datasets (13)](#datasets) · [Models (22)](#models) · [Agents (102)](#agents) · [Frameworks (100)](#frameworks) · [Tools (264)](#tools) · [Infrastructure (16)](#infrastructure) · [Products (9)](#products) · [Learning resources (3)](#learning-resources) · [Surveys (1)](#surveys) · [Papers (43)](#papers)
 
 ## Benchmarks
 
@@ -99,7 +99,6 @@
 | [cuAgent](https://github.com/xhqing/cuAgent) | cross-platform, desktop, macos, windows, linux | — | — | cuAgent is a desktop computer-use agent that operates GUI applications through the open-computer-use Model Context Protocol server. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/xhqing/cuAgent/HEAD/README.md) |
 | [DEIMOS (Environment-Aware Computer Agent)](https://github.com/SakshamJuneja007/freaky-monkey) | desktop, windows, macos, linux | — | — | Environment-aware autonomous computer-use agent that perceives OS state and executes multi-step desktop workflows. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/SakshamJuneja007/freaky-monkey/main/README.md) |
 | [DesktopAgent (.NET 9)](https://github.com/alessiobianchini/DesktopAgent) | cross-platform, desktop, windows, macos, linux | — | — | Safety-first local desktop automation agent built on .NET 9 with cross-platform OS adapters, policy checks, and an MCP server. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/alessiobianchini/DesktopAgent/HEAD/README.md) |
-| [DesktopAgent (S1-Fast)](https://github.com/elidot007/desktop-agent) | desktop, windows | — | code Apache-2.0 | DesktopAgent operates Windows desktop applications in the background using a local 0.33B System-One decision model (S1-Fast) and UI Automation. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/elidot007/desktop-agent/HEAD/README.md) |
 | [Doppel](https://github.com/Orvii/doppel) | desktop, windows, linux | — | code MIT | Doppel is a computer-use agent that operates inside a dedicated virtual desktop with its own cursor on Windows 11 and Linux. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/Orvii/doppel/HEAD/README.md) |
 | [DSH Deskwork](https://github.com/GuoMonth/dsh-deskwork) | desktop, windows, macos, web | — | code MIT | AI desktop workspace powered by DeepSeek Harness for automating ERP and enterprise back-office operations. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/GuoMonth/dsh-deskwork/main/README.md) |
 | [Enikk](https://github.com/gtt116/enikk) | cross-platform, desktop, macos, windows, linux | — | code MIT | Enikk is an open-source computer-use agent that combines GUI visual control and CLI execution across vision and text-only models. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/gtt116/enikk/HEAD/README.md) |
@@ -281,7 +280,6 @@
 | [VoltageInputMcp](https://github.com/casualkre/voltage-input-mcp) | desktop, windows, linux, macos | — | code MIT | Two-layer local input engine for MCP where a frontier planning model dispatches high-rate action programs to a local executor. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/casualkre/voltage-input-mcp/main/README.md) |
 | [WinWright](https://github.com/alegauss/winwright) | desktop, windows | — | code Apache-2.0 | Playwright-inspired Windows desktop automation and testing framework that drives native apps and reports verified UI state. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/alegauss/winwright/main/README.md) |
 | [WKAppBot SDK](https://github.com/kiexpert/wkappbot-sdk) | desktop, windows, web | — | code MIT | WKAppBot is an open-source Windows Computer Use and AppBot SDK giving AI agents structured UI perception and action execution. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/kiexpert/wkappbot-sdk/HEAD/README.md) |
-| [ZetaTron](https://github.com/itsmarcelS/ZetaTron) | desktop, windows, web | — | — | Self-directed local-first autonomous agent harness for Windows with desktop and browser execution capabilities. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/itsmarcelS/ZetaTron/main/README.md) |
 | [Zhaozuo (照做)](https://github.com/dongsheng123132/zhaozuo) | desktop, windows | — | code Apache-2.0 | Demonstration-driven Windows desktop automation framework compatible with the ActionParity protocol for third-party GUI software. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/dongsheng123132/zhaozuo/HEAD/README.md) |
 
 ## Tools

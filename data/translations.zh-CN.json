@@ -6065,9 +6065,6 @@
   "github:bee-san/airplane-checkin-skill": {
     "summary": "注重隐私的 Hermes 浏览器技能，用于定时、经验证的多航空公司网页值机。"
   },
-  "github:bees-bot/bees-desktop": {
-    "summary": "基于线程的多智能体桌面运行时，让一组 AI 智能体围绕本地文件和浏览器协作。"
-  },
   "github:beijingwahw/dsh-computer-use-plugin": {
     "summary": "面向 DeepSeek Harness 的全功能桌面计算机使用插件，支持多显示器捕获、OCR 和 GUI 动作。"
   },
@@ -7292,9 +7289,6 @@
   "github:elenaviewsynthesis/holoskill-gym": {
     "summary": "用于自我演进的 CLI 和计算机使用智能体技能的 Gym 环境与优化框架。"
   },
-  "github:elidot007/desktop-agent": {
-    "summary": "DesktopAgent 使用本地 0.33B System-One 决策模型（S1-Fast）和 UI Automation，在后台操作 Windows 桌面应用。"
-  },
   "github:elijahumana/one-for-all": {
     "summary": "面向 AI 智能体的统一 macOS 控制平面，覆盖浏览器自动化、原生桌面应用、终端和系统硬件。"
   },
@@ -8357,9 +8351,6 @@
   "github:itmediatech/better-ai-browser-utilities": {
     "summary": "节省 token 的 Model Context Protocol 工具包，用于控制 AI 智能体的真实 Chrome 会话。"
   },
-  "github:itsmarcels/zetatron": {
-    "summary": "面向 Windows 的自主运行、本地优先的自主智能体测试框架，具备桌面和浏览器操作能力。"
-  },
   "github:itw-code/arc-cua": {
     "summary": "浏览器执行框架，为智能体提供按 token 预算裁剪、带索引动作的可访问性树，并检查每个动作是否引起状态变化；另含文档到表单的处理流程和 MCP 服务器。"
   },
@@ -8726,9 +8717,6 @@
   "github:kareemheshaam/reqvexa": {
     "summary": "基于 HAR 的 HTTP 来源分析器，可追踪浏览器智能体网络请求背后的 cookie、token 和请求头。"
   },
-  "github:karunya-muddana/native": {
-    "summary": "面向开发者的本地优先开源 AI 智能体框架，集成终端、文件系统和浏览器控制。"
-  },
   "github:kaustubhlall/osrs-cv": {
     "summary": "使用 YOLOv8 目标检测、Tesseract OCR 和类人的贝塞尔曲线鼠标轨迹，自动操作 Old School RuneScape 的 GUI 游戏过程。"
   },
@@ -9022,9 +9010,6 @@
   },
   "github:lhuanyu/midscene-ios": {
     "summary": "Midscene iOS 提供通过屏幕操作与查询来自动化 iOS 设备的 SDK 和交互式环境，借助 macOS 设备镜像，并提供浏览器中的操作界面。"
-  },
-  "github:lianping-cyber/dsh-browser-full-access": {
-    "summary": "用于 DeepSeek Harness 网页自动化的 `dsh-browser` 分支，支持后台标签页的完整访问。"
   },
   "github:lightfeed/browser-agent": {
     "summary": "TypeScript 浏览器智能体库，使用 LLM 完成一次网页导航流程，之后以零 LLM token 重放缓存的选择器。"
@@ -11005,9 +10990,6 @@
   },
   "github:rao-studios/frigate": {
     "summary": "一个包含 macOS 屏幕感知模块的 Swift 机器学习软件包。它检测屏幕区域、识别文字、分类界面元素角色，并生成页面结构图。"
-  },
-  "github:rao-studios/mary": {
-    "summary": "具备环境感知智能的 macOS 计算机使用桌面客户端和个人 AI 操作环境。"
   },
   "github:rao-studios/visionax": {
     "summary": "计算机视觉无障碍树（AX/A11Y）生成器，从原始桌面像素合成结构化 UI 树。"
@@ -13216,9 +13198,6 @@
   },
   "github:yuta-fywoo/jev-gui-delegate": {
     "summary": "Jev GUI Delegate 是本地控制器，可执行委派的 Windows 和 Chrome 任务，在选择不确定时调用 Jev，并在操作后核对结果。"
-  },
-  "github:yutori-ai/navi-bench": {
-    "summary": "Navi-Bench 通过直接在实时网站上执行的日常消费者任务，并使用确定性结果验证器，评测网页智能体。"
   },
   "github:yuxiangchai/amex-codebase": {
     "summary": "AMEX Android GUI 数据处理代码，将 3 个标注层级转为问答对并微调 LLaMA2-Accessory 模型，同时发布了模型检查点。"

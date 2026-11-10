@@ -7,7 +7,7 @@ A source-backed collection of papers, models, datasets, benchmarks and tools for
 **[Search the website](https://awesomecua.com/)** · **[Papers](https://awesomecua.com/papers/)** · **[Topics](https://awesomecua.com/topics/)** · **[Data](https://awesomecua.com/data/)** · **[API](https://awesomecua.com/api/)** · **[Agent guide](https://awesomecua.com/agents/)** · **[Contribute](CONTRIBUTING.md)**
 
 <!-- BADGES:START -->
-![Curated resources](https://img.shields.io/badge/curated%20resources-5%2C355-4352E8?style=flat-square&labelColor=1E2233) ![Reviewed papers and surveys](https://img.shields.io/badge/reviewed%20papers%20and%20surveys-1%2C719-4352E8?style=flat-square&labelColor=1E2233) [![Last successful scan](https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2Freacher-z%2FAwesome-CUA%2Fstatus%2Fscan-badge.json&style=flat-square&labelColor=1E2233)](docs/maintenance.md#scan-badge) ![Hugging Face dataset](https://img.shields.io/badge/dataset-Hugging%20Face-4352E8?style=flat-square&labelColor=1E2233) ![MIT license](https://img.shields.io/badge/license-MIT-5E6472?style=flat-square&labelColor=1E2233)
+![Curated resources](https://img.shields.io/badge/curated%20resources-5%2C348-4352E8?style=flat-square&labelColor=1E2233) ![Reviewed papers and surveys](https://img.shields.io/badge/reviewed%20papers%20and%20surveys-1%2C719-4352E8?style=flat-square&labelColor=1E2233) [![Last successful scan](https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2Freacher-z%2FAwesome-CUA%2Fstatus%2Fscan-badge.json&style=flat-square&labelColor=1E2233)](docs/maintenance.md#scan-badge) ![Hugging Face dataset](https://img.shields.io/badge/dataset-Hugging%20Face-4352E8?style=flat-square&labelColor=1E2233) ![MIT license](https://img.shields.io/badge/license-MIT-5E6472?style=flat-square&labelColor=1E2233)
 <!-- BADGES:END -->
 
 If this collection is useful, a [star on GitHub](https://github.com/reacher-z/Awesome-CUA) helps others find it.
@@ -67,7 +67,7 @@ python3 scripts/catalog.py get arxiv:2404.07972 --related --json
 
 <!-- STATS:START -->
 
-**5,355 curated resources** · **1,719 reviewed papers and surveys** · **104 discovery documents**
+**5,348 curated resources** · **1,719 reviewed papers and surveys** · **104 discovery documents**
 
 Evidence through `2026-11-10T08:20:17Z`. **1,187 records awaiting review** have verified bibliographic metadata, and **181 discovered candidates** await resolution. 2,052 candidates have an out-of-scope review. 1,308 scope exclusions retain their original metadata in the archive.
 
@@ -83,16 +83,16 @@ Evidence through `2026-11-10T08:20:17Z`. **1,187 records awaiting review** have 
 | [Surveys](docs/surveys.md)                       | Surveys of computer-use agent research                        |      37 |
 | [Learning resources](docs/learning.md)           | Courses and tutorials                                         |      38 |
 | [Datasets](docs/datasets.md)                     | Training and evaluation data for GUI agents                   |     278 |
-| [Benchmarks](docs/benchmarks.md)                 | Evaluation environments and task suites                       |     310 |
+| [Benchmarks](docs/benchmarks.md)                 | Evaluation environments and task suites                       |     309 |
 | [Models and checkpoint releases](docs/models.md) | Checkpoints and model families                                |     475 |
-| [Agents](docs/agents.md)                         | Open implementations that act on a computer                   |     481 |
-| [Frameworks](docs/frameworks.md)                 | Code for building and evaluating agents                       |     675 |
+| [Agents](docs/agents.md)                         | Open implementations that act on a computer                   |     479 |
+| [Frameworks](docs/frameworks.md)                 | Code for building and evaluating agents                       |     672 |
 | [Infrastructure](docs/infrastructures.md)        | Sandboxes, VMs, device farms and environments                 |     122 |
-| [Tools](docs/tools.md)                           | Evaluation harnesses, recorders and other utilities           |   1,163 |
+| [Tools](docs/tools.md)                           | Evaluation harnesses, recorders and other utilities           |   1,162 |
 | [Products](docs/products.md)                     | Computer-use products from vendors and projects               |      75 |
 | [Publishers and brands](docs/companies.md)       | Publishers and brands connected to cataloged resources        |      19 |
 
-**By platform:** [Web](docs/environments/web.md) **2,752** · [Desktop](docs/environments/desktop.md) **1,837** · [Windows](docs/environments/windows.md) **589** · [macOS](docs/environments/macos.md) **598** · [Linux](docs/environments/linux.md) **550** · [Android](docs/environments/android.md) **745** · [iOS](docs/environments/ios.md) **120** · [HarmonyOS](docs/environments/harmonyos.md) **10** · [Cross-platform](docs/environments/cross-platform.md) **760**
+**By platform:** [Web](docs/environments/web.md) **2,747** · [Desktop](docs/environments/desktop.md) **1,832** · [Windows](docs/environments/windows.md) **587** · [macOS](docs/environments/macos.md) **597** · [Linux](docs/environments/linux.md) **550** · [Android](docs/environments/android.md) **745** · [iOS](docs/environments/ios.md) **120** · [HarmonyOS](docs/environments/harmonyos.md) **10** · [Cross-platform](docs/environments/cross-platform.md) **758**
 <!-- EXPLORE:END -->
 
 Coverage spans web, desktop, Android, iOS, Windows, macOS, Linux, and cross-platform work. Topics include grounding, screen understanding, planning, memory, long-horizon workflows, reinforcement learning, data generation, safety, robustness, and evaluation.
@@ -138,7 +138,7 @@ The most-mentioned curated resources per category: the count is how many other c
 | 2026‑09‑02 | [Efficient GUI Agents: A Systems Survey of Observation, Memory, Action, and Runtime Optimization](https://arxiv.org/abs/2609.02309)     | Cross-platform |
 | 2026‑08‑30 | [A Systematic Survey of Agentic Skills: Architecture, Lifecycle, and Security](https://arxiv.org/abs/2608.29596)                        | Cross-platform |
 
-**Benchmarks** · 310 in the catalog
+**Benchmarks** · 309 in the catalog
 
 | Resource                                                                       | Mentions | Environments                   | Paper                                                 | License         | Description                                                                         |
 | ------------------------------------------------------------------------------ | -------: | ------------------------------ | ----------------------------------------------------- | --------------- | ----------------------------------------------------------------------------------- |
@@ -171,18 +171,18 @@ The most-mentioned curated resources per category: the count is how many other c
 | [GroundCUA dataset](https://huggingface.co/datasets/ServiceNow/GroundCUA)      |        5 | Desktop, Windows, macOS, Linux        | [2511.07332](https://arxiv.org/abs/2511.07332) (2025) | data mit        | Desktop GUI-grounding data from the GroundCUA project: PNG screenshots of 87 applications paired by hash with JSON lists of element boxes, visible text and optional coarse categories.     |
 | [GUI-Actor data](https://huggingface.co/datasets/cckevinn/GUI-Actor-Data)      |        5 | Unspecified                           | 2506.03143 (2025)                                     | —               | A processed screenshot and bounding-box collection released for training GUI-Actor visual grounding models.                                                                                 |
 
-**Frameworks** · 675 in the catalog
+**Frameworks** · 672 in the catalog
 
 | Resource                                                                                             | Mentions | Environments                                            | Paper                                                 | License  | Description                                                                                                                                                                                       |
 | ---------------------------------------------------------------------------------------------------- | -------: | ------------------------------------------------------- | ----------------------------------------------------- | -------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| [Browser Use](https://github.com/browser-use/browser-use)                                            |       58 | Web                                                     | —                                                     | code MIT | Open-source browser agent library that runs locally with any LLM against a local or cloud browser, and also serves as a CLI for coding agents and as a driver for Claude's browser toolset.       |
+| [Browser Use](https://github.com/browser-use/browser-use)                                            |       57 | Web                                                     | —                                                     | code MIT | Open-source browser agent library that runs locally with any LLM against a local or cloud browser, and also serves as a CLI for coding agents and as a driver for Claude's browser toolset.       |
 | [Cua](https://github.com/trycua/cua)                                                                 |       41 | Desktop                                                 | —                                                     | code MIT | Monorepo behind Cua Spaces, which gives agents full macOS or Linux desktops, plus Cua Driver for operating native apps, Lume for Apple Silicon VMs, Cua Bench and the CUA-S1 decision models.     |
 | [Epic EHR Browser Automation](https://github.com/Browser-Automation-Hub/epic-ehr-browser-automation) |       13 | Web                                                     | —                                                     | code MIT | A browser automation scaffold for Epic EHR workflows such as appointments, patient lookup, notes and messaging. It documents authentication, sessions and example actions.                        |
 | [MaaFramework](https://github.com/MaaXYZ/MaaFramework)                                               |       13 | Cross-platform, Desktop, Windows, Linux, macOS, Android | —                                                     | —        | MaaFramework is an image-recognition automation framework for black-box testing, with a low-code task pipeline and documented integration and API interfaces.                                     |
 | [SCALE-CUA (THUDM)](https://github.com/THUDM/SCALE-CUA)                                              |       12 | Desktop                                                 | [2607.11185](https://arxiv.org/abs/2607.11185) (2026) | —        | Computer-use training framework with VeriGen task synthesis, adaptive rollout sampling, and visual-context segmentation.                                                                          |
 | [WebMCP](https://github.com/webmachinelearning/webmcp)                                               |       12 | Web                                                     | —                                                     | —        | A client-side web API proposal that lets pages expose structured JavaScript tools to browser agents. Agents can invoke page functions while sharing the visible interface and context with users. |
 
-**Agents** · 481 in the catalog
+**Agents** · 479 in the catalog
 
 | Resource                                                     | Mentions | Environments                                        | Paper                                                                                                                                                                                                                      | License         | Description                                                                                                                                                                                             |
 | ------------------------------------------------------------ | -------: | --------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -207,6 +207,7 @@ Newest editorial approvals of models, datasets, benchmarks, systems, and tools (
 <!-- RECENT:START -->
 | Reviewed   | Resource                                                                       | Kind      | Environments                                                                 | Description                                                                                                                                                                                                  |
 | ---------- | ------------------------------------------------------------------------------ | --------- | ---------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| 2026‑11‑10 | [Strawberry](https://www.strawberrybrowser.com)                                | product   | Web                                                                          | Agentic desktop browser for macOS and Windows whose AI companions open sites, click through flows and work inside the user's signed-in accounts, asking for approval before sending, paying or deleting.     |
 | 2026‑11‑10 | [Hermes Jev Skills](https://github.com/kerpopule/hermes-jev-skills)            | tool      | Web, Desktop, macOS                                                          | SKILL.md skills for Hermes, Claude Code and Codex agents that pass small decisions to the Jev model, including desktop and browser skills in which Jev picks each next action from a caller-built table.     |
 | 2026‑11‑10 | [Scrapling](https://github.com/D4Vinci/Scrapling)                              | tool      | Web                                                                          | A Python scraping framework with HTTP and stealth browser fetchers and spiders, plus an MCP server whose seventeen tools let AI agents click, fill forms, type and take screenshots in browser sessions.     |
 | 2026‑11‑10 | [Operit2](https://github.com/AAswordman/Operit2)                               | agent     | Web, Desktop, Windows, macOS, Linux, Android, iOS, HarmonyOS, Cross-platform | A cross-device personal agent in preview that continues conversations and tasks across phones, desktops and cloud nodes, with file, terminal and browser tools that click, type and snapshot web pages.      |
@@ -218,7 +219,6 @@ Newest editorial approvals of models, datasets, benchmarks, systems, and tools (
 | 2026‑11‑10 | [Patchright NodeJS](https://github.com/Kaliiiiiiiiii-Vinyzu/patchright-nodejs) | tool      | Web                                                                          | Patchright NodeJS is the Node.js package of Patchright: a patched Playwright that drives Chromium through the standard JavaScript API with automation leaks removed.                                         |
 | 2026‑11‑10 | [Patchright .NET](https://github.com/DevEnterpriseSoftware/patchright-dotnet)  | tool      | Web                                                                          | Patchright .NET is the .NET package of Patchright: a patched Playwright that replaces the Microsoft.Playwright package and drives Chromium with automation leaks removed.                                    |
 | 2026‑11‑10 | [OmniJev](https://huggingface.co/tinnel123/OmniJev)                            | model     | Cross-platform, Web                                                          | OmniJev v1.1 is a 4B LoRA adapter with decision heads for Qwen3.5-4B that answers typed questions about screens and other images with probabilities; its task families include androidcontrol and web.       |
-| 2026‑11‑10 | [WebMCP](https://github.com/jasonjmcghee/WebMCP)                               | framework | Web                                                                          | An early WebMCP proposal and code: a script widget on a website registers its tools, resources and prompts, which MCP clients reach through a token-secured localhost WebSocket server.                      |
 <!-- RECENT:END -->
 
 </details>

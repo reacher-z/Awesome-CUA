@@ -2,9 +2,9 @@
 
 [Home](../../README.md) · [All topics](../topics.md) · [Full arXiv bibliography](../papers.md)
 
-358 source-reviewed resources tagged `memory`. Curated metadata; unknown facts are shown as —.
+356 source-reviewed resources tagged `memory`. Curated metadata; unknown facts are shown as —.
 
-**Contents:** [Benchmarks (4)](#benchmarks) · [Datasets (4)](#datasets) · [Models (6)](#models) · [Agents (51)](#agents) · [Frameworks (52)](#frameworks) · [Tools (21)](#tools) · [Infrastructure (1)](#infrastructure) · [Products (4)](#products) · [Learning resources (2)](#learning-resources) · [Surveys (3)](#surveys) · [Papers (210)](#papers)
+**Contents:** [Benchmarks (4)](#benchmarks) · [Datasets (4)](#datasets) · [Models (6)](#models) · [Agents (50)](#agents) · [Frameworks (51)](#frameworks) · [Tools (21)](#tools) · [Infrastructure (1)](#infrastructure) · [Products (4)](#products) · [Learning resources (2)](#learning-resources) · [Surveys (3)](#surveys) · [Papers (210)](#papers)
 
 ## Benchmarks
 
@@ -73,7 +73,6 @@
 | [LASER](https://github.com/Mayer123/LASER) | web | [2309.08172](https://arxiv.org/abs/2309.08172) (2023) | code GPL-3.0 | LASER models interactive web navigation as state-space exploration with explicit state transitions and backtracking on WebShop. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/Mayer123/LASER/HEAD/README.md) |
 | [LKO Mark 3.4](https://github.com/shubhransh-gupta/LKO-Mark-3.4) | desktop, macos | — | — | Autonomous macOS desktop assistant with voice interaction, screen vision, and native AppleScript/system control. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/shubhransh-gupta/LKO-Mark-3.4/main/README.md) |
 | [Lumen browser agent](https://github.com/omxyz/lumen) | web | — | code MIT | A screenshot-driven browser agent over Chrome DevTools Protocol, with resumable sessions, context compression, action replay and configurable completion checks. | [✓ 2026‑10‑17](https://raw.githubusercontent.com/omxyz/lumen/HEAD/README.md) |
-| [Mary (Personal AI OS)](https://github.com/rao-studios/Mary) | desktop, macos | — | code MIT | Ambient-intelligent macOS computer-use desktop client and personal AI operating environment. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/rao-studios/Mary/main/README.md) |
 | [MERRICK](https://github.com/SimonCheungAI/MERRICK) | desktop, macos, web | — | code MIT | Personal macOS assistant agent for planning, browser automation, and native desktop task execution. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/SimonCheungAI/MERRICK/main/README.md) |
 | [MobA](https://github.com/OpenDFM/MobA) | android | [2410.13757](https://arxiv.org/abs/2410.13757) (2024) | — | An Android agent that combines global task planning and memory with a local action executor, using reflection to revise mobile interaction steps. | [✓ 2026‑10‑17](https://raw.githubusercontent.com/OpenDFM/MobA/HEAD/README.md) |
 | [Mobile-Agent-E code component](https://github.com/X-PLUG/MobileAgent/tree/main/Mobile-Agent-E) | android | [2501.11733](https://arxiv.org/abs/2501.11733) (2025) | code MIT | Android automation component with hierarchical planning, reflection and persistent tips/shortcuts learned across task sequences. | [✓ 2026‑10‑18](https://raw.githubusercontent.com/X-PLUG/MobileAgent/HEAD/Mobile-Agent-E/README.md) |
@@ -146,7 +145,6 @@
 | [Synapse](https://github.com/ltzheng/Synapse) | web | [2306.07863](https://arxiv.org/abs/2306.07863) (2023) | — | A computer-control research implementation that retrieves example trajectories from memory, abstracts task-relevant state and prompts an agent to navigate browser tasks. | [✓ 2026‑10‑17](https://raw.githubusercontent.com/ltzheng/synapse/HEAD/README.md) |
 | [TuriX-CUA](https://github.com/TurixAI/TuriX-CUA) | cross-platform, desktop, macos, windows | — | code MIT | TuriX-CUA is a multi-agent desktop automation framework for macOS and Windows combining planner, actor, reflector, and memory skills. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/TurixAI/TuriX-CUA/HEAD/README.md) |
 | [VISTA](https://github.com/joshhhhhan/VISTA) | desktop, linux | [2610.02200](https://arxiv.org/abs/2610.02200) (2026) | code MIT | VISTA is a harness for visual game agents that combines game actions with frame inspection and retrievable observation history for extended tasks. | [✓ 2026‑11‑09](https://raw.githubusercontent.com/joshhhhhan/VISTA/HEAD/README.md) |
-| [ZetaTron](https://github.com/itsmarcelS/ZetaTron) | desktop, windows, web | — | — | Self-directed local-first autonomous agent harness for Windows with desktop and browser execution capabilities. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/itsmarcelS/ZetaTron/main/README.md) |
 
 ## Tools
 
@@ -189,7 +187,7 @@ All entries in this section: desktop.
 | [agent-qa](https://vostride.com) | — | cross-platform, web, android, ios | A QA agent that runs plain-language tests against web, Android, and iOS apps. It navigates user flows, verifies outcomes, and stores validated run evidence for reuse. | [✓ 2026‑11‑09](https://vostride.com) |
 | [dassi](https://www.dassi.ai) | — | web | Side-panel extension for Chrome, Edge and Brave whose agent reads pages, takes screenshots, clicks, types, fills forms and manages tabs in the user's signed-in browser, with saved skills, schedules and a choice of model. | [✓ 2026‑10‑20](https://www.dassi.ai) |
 | [Dex](https://www.joindex.com) | — | web | ThirdLayer's Chrome extension that keeps an operational memory of a user's work tools and runs agents that navigate tabs and fill forms in the browser, alongside Gmail, Slack and CRM integrations. | [✓ 2026‑10‑19](https://www.joindex.com) |
-| [Strawberry](https://www.strawberrybrowser.com) | — | web | Agentic desktop browser for macOS and Windows whose AI companions open sites, click through flows and work inside the user's signed-in accounts, asking for approval before sending, paying or deleting. | [✓ 2026‑10‑20](https://strawberrybrowser.com/llms.txt) |
+| [Strawberry](https://www.strawberrybrowser.com) | — | web | Agentic desktop browser for macOS and Windows whose AI companions open sites, click through flows and work inside the user's signed-in accounts, asking for approval before sending, paying or deleting. | [✓ 2026‑11‑10](https://www.strawberrybrowser.com) |
 
 ## Learning resources
 

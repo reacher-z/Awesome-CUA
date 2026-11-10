@@ -2,9 +2,9 @@
 
 [Home](../../README.md) · [All platforms](../environments.md) · [Research by topic](../topics.md)
 
-598 source-reviewed resources tagged `macos`. Curated metadata; unknown facts are shown as —.
+597 source-reviewed resources tagged `macos`. Curated metadata; unknown facts are shown as —.
 
-**Contents:** [Benchmarks (11)](#benchmarks) · [Datasets (16)](#datasets) · [Models (18)](#models) · [Agents (116)](#agents) · [Frameworks (88)](#frameworks) · [Tools (294)](#tools) · [Infrastructure (23)](#infrastructure) · [Products (9)](#products) · [Learning resources (5)](#learning-resources) · [Papers (18)](#papers)
+**Contents:** [Benchmarks (11)](#benchmarks) · [Datasets (16)](#datasets) · [Models (18)](#models) · [Agents (115)](#agents) · [Frameworks (88)](#frameworks) · [Tools (294)](#tools) · [Infrastructure (23)](#infrastructure) · [Products (9)](#products) · [Learning resources (5)](#learning-resources) · [Papers (18)](#papers)
 
 ## Benchmarks
 
@@ -136,7 +136,6 @@
 | [Mano skill](https://github.com/Mininglamp-AI/mano-skill) | cross-platform, desktop, macos, windows, linux, web | — | — | Mano skill runs desktop tasks from natural-language instructions by inspecting screenshots and issuing mouse and keyboard actions. It offers cloud and on-device modes. | [✓ 2026‑11‑09](https://raw.githubusercontent.com/Mininglamp-AI/mano-skill/HEAD/README.md) |
 | [mano-afk](https://github.com/Mininglamp-AI/mano-afk) | web, desktop, macos | — | code MIT | An app-building agent that deploys software and tests it through browser GUI actions, with retry loops and an included benchmark for GUI automation. | [✓ 2026‑11‑09](https://raw.githubusercontent.com/Mininglamp-AI/mano-afk/HEAD/README.md) |
 | [Marvi OS](https://github.com/xRetr00/Marvi-OS) | desktop, windows, macos, linux | — | code MIT | Conversational desktop agent shell that observes screen context and executes local OS and GUI actions. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/xRetr00/Marvi-OS/main/README.md) |
-| [Mary (Personal AI OS)](https://github.com/rao-studios/Mary) | desktop, macos | — | code MIT | Ambient-intelligent macOS computer-use desktop client and personal AI operating environment. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/rao-studios/Mary/main/README.md) |
 | [MERRICK](https://github.com/SimonCheungAI/MERRICK) | desktop, macos, web | — | code MIT | Personal macOS assistant agent for planning, browser automation, and native desktop task execution. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/SimonCheungAI/MERRICK/main/README.md) |
 | [nanoMuse](https://github.com/nano-muse/nanoMuse) | cross-platform, desktop, web, android, ios, macos, linux, windows | [2610.08699](https://arxiv.org/abs/2610.08699) (2026) | code GPL-3.0 | nanoMuse is an open-source personal agent that maintains persistent cross-device memory and executes browser, desktop, and mobile tasks. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/nano-muse/nanoMuse/HEAD/README.md) |
 | [Navisual](https://github.com/NavisualGuide/navisual) | cross-platform, desktop, macos, windows | — | — | Navisual is a non-intrusive visual desktop guide that observes the screen and highlights where the user should click next. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/NavisualGuide/navisual/HEAD/README.md) |

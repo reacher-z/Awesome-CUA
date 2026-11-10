@@ -155,6 +155,50 @@ class SearchPagesTests(unittest.TestCase):
                 self.assertIn('<html lang="zh-CN"',text)
                 if row['id'] in translations:self.assertIn(html.escape(translations[row['id']]['summary'],quote=True),text)
 
+    def test_static_pages_have_chinese_twins_that_name_each_other(self):
+        urls=set(sitemap_urls(self.dest,SITE))
+        guides=[f'/guides/{guide["slug"]}/' for guide in json.loads((ROOT/'data/site-guides.zh-CN.json').read_text())]
+        for english in ['/about/','/api/','/badges/','/compare/benchmarks/','/compare/datasets/','/connections/','/coverage/','/guides/',*guides,'/survey/','/updates/']:
+            chinese='/zh'+english
+            with self.subTest(english):
+                self.assertIn(SITE+chinese,urls)
+                for path in (english,chinese):
+                    head=(self.dest/path.lstrip('/')/'index.html').read_text().split('</head>',1)[0]
+                    self.assertIn(f'hreflang="en" href="{SITE}{english}"',head)
+                    self.assertIn(f'hreflang="zh-CN" href="{SITE}{chinese}"',head)
+                    self.assertIn(f'hreflang="x-default" href="{SITE}{english}"',head)
+                text=(self.dest/chinese.lstrip('/')/'index.html').read_text()
+                self.assertIn('<html lang="zh-CN"',text)
+                heading=html.unescape(re.sub(r'<[^>]+>','',re.search(r'<h1[^>]*>(.*?)</h1>',text,re.S).group(1)))
+                self.assertRegex(heading,r'[\u4e00-\u9fff]')
+
+    def test_chinese_pages_link_to_chinese_static_pages(self):
+        text=(self.dest/'zh/papers/index.html').read_text()
+        for english in ('/about/','/coverage/','/updates/','/guides/'):
+            self.assertIn(f'href="/zh{english}"',text)
+            self.assertNotIn(f'href="{english}"',text)
+        survey=(self.dest/'zh/survey/index.html').read_text()
+        self.assertIn('href="/survey/#conclusion-heading" hreflang="en"',survey)
+        self.assertIn('<h2>摘要</h2>',survey)
+
+    def test_chinese_pages_show_count_units_and_settings_in_chinese(self):
+        from specifications import PROFILE_KEYS, count_text
+        from unit_labels import ZH_UNITS, setting_text
+        for row in self.rows:
+            profile=row['details'].get(PROFILE_KEYS.get(row['kind'],''))
+            if not profile or not eligible(row):continue
+            text=(self.dest/zh_resource_path(row).lstrip('/')/'index.html').read_text()
+            markdown=(self.dest/zh_resource_path(row).lstrip('/')/'index.md').read_text()
+            with self.subTest(row['id']):
+                for count in profile['counts']:
+                    self.assertIn(html.escape(count_text(count,True),quote=True),text)
+                    self.assertIn(count_text(count,True),markdown)
+                    if count['unit'] in ZH_UNITS:self.assertNotIn(html.escape(count_text(count),quote=True),text)
+                if 'setting' in profile:self.assertIn(f'<dd>{setting_text(profile["setting"],True)}</dd>',text)
+        osworld=(self.dest/'zh/categories/benchmark/index.html').read_text()
+        self.assertIn('369 个任务定义',osworld)
+        self.assertNotIn('369 task definitions',osworld)
+
     def test_home_pages_declare_the_site_search(self):
         for path in ('index.html','zh/index.html'):
             graph=json.loads(re.search(r'<script type="application/ld\+json">(.*?)</script>',(self.dest/path).read_text(),re.S).group(1))['@graph']
@@ -410,7 +454,7 @@ class SearchPagesTests(unittest.TestCase):
                 core=source/'web/catalog-core.js';core.write_bytes(core.read_bytes()+b'\n// Dependency version regression fixture.\n')
                 build_site(destination);after=snapshot()
                 self.assertNotEqual((destination/'app.js').read_bytes(),original_app)
-                self.assertEqual({path for path in before if before[path]!=after[path]},{'/explore/','/compare/benchmarks/','/compare/datasets/'})
+                self.assertEqual({path for path in before if before[path]!=after[path]},{'/explore/','/compare/benchmarks/','/compare/datasets/','/zh/compare/benchmarks/','/zh/compare/datasets/'})
                 scripts={name:(destination/name).read_bytes() for name in ('app.js','compare.js')}
                 build_site(destination)
                 self.assertEqual(snapshot(),after)
@@ -531,6 +575,18 @@ class SearchPagesTests(unittest.TestCase):
             self.assertFalse(markdown.endswith('\n\n'))
         self.assertEqual(self.manifest['excluded_pages'],len(excluded))
         self.assertEqual(self.manifest['metadata_only_pages'],sum(row['review_status']=='metadata_verified' for row in self.rows))
+
+
+
+class ChineseSurveyLandingTests(unittest.TestCase):
+    def test_translated_abstract_matches_the_published_english_abstract(self):
+        from search_pages import survey_abstract
+        survey=json.loads((ROOT/'data/survey.zh-CN.json').read_text(encoding='utf-8'))
+        english=survey_abstract((ROOT/'web/survey/index.html').read_text(encoding='utf-8'))
+        # A revised English abstract needs a revised translation; until then the Chinese page shows only the section list.
+        self.assertEqual(hashlib.sha256(english.encode()).hexdigest(),survey['source_abstract_sha256'])
+        headings=re.findall(r'<h2[^>]*\bid="([^"]+)"',(ROOT/'web/survey/index.html').read_text(encoding='utf-8'))
+        self.assertEqual(set(headings),set(survey['sections']))
 
 
 if __name__=='__main__':unittest.main()

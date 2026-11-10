@@ -1,12 +1,12 @@
 # Coverage and quality ledger
 
-Evidence snapshot through **2026-11-10T00:34:12Z**. Generated from committed source receipts.
+Evidence snapshot through **2026-11-10T03:01:53Z**. Generated from committed source receipts.
 
-- 5,116 curated resources. Another 905 records await review with bibliographic metadata only; the active catalog file holds 6,021 records in all.
+- 5,216 curated resources. Another 905 records await review with bibliographic metadata only; the active catalog file holds 6,121 records in all.
 - 2,624 paper and survey records, including 2,571 arXiv identities and 53 publisher-only identities.
 - 3,879 retained arXiv metadata records; 1,308 explicit scope exclusions are outside the active catalog.
-- 9,381 discovery identifiers; 701 remain unresolved. Reviewed decisions include 469 non-resource links, 666 aliases and 1,741 out-of-scope resources; their reasons remain in the review queue.
-- 551 editorial proposals await verification or review.
+- 9,381 discovery identifiers; 525 remain unresolved. Reviewed decisions include 481 non-resource links, 697 aliases and 1,774 out-of-scope resources; their reasons remain in the review queue.
+- 375 editorial proposals await verification or review.
 
 These are distinct resource identifiers, not distinct research projects. Papers, repositories, datasets, products, and publisher entities have different grains.
 
@@ -16,18 +16,18 @@ Counts of source-reviewed resources. A resource tagged with several environments
 
 | Kind | web | desktop | windows | macos | linux | android | ios | harmonyos | cross-platform | unspecified |
 | --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
-| [agent](agents.md) | 241 | 228 | 102 | 115 | 76 | 83 | 16 | · | 59 | 3 |
-| [benchmark](benchmarks.md) | 207 | 94 | 14 | 10 | 25 | 41 | 2 | · | 28 | 12 |
+| [agent](agents.md) | 243 | 228 | 102 | 115 | 76 | 85 | 17 | · | 59 | 3 |
+| [benchmark](benchmarks.md) | 209 | 95 | 14 | 11 | 25 | 42 | 2 | · | 28 | 13 |
 | [company](companies.md) | · | 1 | · | · | · | · | · | · | 1 | 18 |
-| [dataset](datasets.md) | 102 | 71 | 13 | 16 | 21 | 70 | 7 | · | 33 | 31 |
-| [framework](frameworks.md) | 460 | 309 | 99 | 88 | 111 | 101 | 17 | 1 | 154 | 26 |
-| [infrastructure](infrastructures.md) | 60 | 76 | 16 | 22 | 57 | 20 | 3 | · | 11 | 2 |
+| [dataset](datasets.md) | 116 | 74 | 13 | 16 | 22 | 74 | 7 | · | 34 | 35 |
+| [framework](frameworks.md) | 463 | 309 | 99 | 88 | 111 | 101 | 17 | 1 | 154 | 26 |
+| [infrastructure](infrastructures.md) | 62 | 76 | 16 | 22 | 57 | 21 | 3 | · | 11 | 2 |
 | [learning](learning.md) | 29 | 18 | 3 | 4 | 4 | 4 | 1 | · | 18 | 1 |
-| [model](models.md) | 155 | 158 | 16 | 18 | 14 | 85 | 7 | · | 138 | 71 |
+| [model](models.md) | 177 | 174 | 20 | 18 | 19 | 96 | 7 | · | 143 | 86 |
 | [paper](topics.md) | 662 | 244 | 43 | 18 | 25 | 229 | 12 | 4 | 112 | 597 |
 | [product](products.md) | 64 | 23 | 9 | 9 | 4 | 6 | 2 | 1 | 8 | · |
 | [survey](surveys.md) | 7 | 2 | 1 | · | · | 2 | 1 | · | 13 | 17 |
-| [tool](tools.md) | 645 | 556 | 250 | 281 | 190 | 57 | 34 | 1 | 175 | 13 |
+| [tool](tools.md) | 647 | 557 | 251 | 281 | 190 | 60 | 36 | 1 | 175 | 13 |
 
 ## Source snapshot coverage
 
@@ -35,31 +35,31 @@ The denominator is the normalized identifiers extracted from each fetched docume
 
 | Source | Discovered | Indexed | Curated | Excluded | Set aside | Out of scope | Unresolved | Fetch |
 | --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: | --- |
-| [ShowLab Awesome GUI Agent](https://github.com/showlab/Awesome-GUI-Agent) | 338 | 234 | 232 | 7 | 89 | 5 | 3 | OK · 2026-11-10 |
-| [ZJU REAL Awesome GUI Agents](https://github.com/ZJU-REAL/Awesome-GUI-Agents) | 220 | 178 | 177 | 0 | 41 | 0 | 1 | OK · 2026-11-10 |
+| [ShowLab Awesome GUI Agent](https://github.com/showlab/Awesome-GUI-Agent) | 338 | 235 | 233 | 7 | 90 | 5 | 1 | OK · 2026-11-10 |
+| [ZJU REAL Awesome GUI Agents](https://github.com/ZJU-REAL/Awesome-GUI-Agents) | 220 | 178 | 177 | 0 | 42 | 0 | 0 | OK · 2026-11-10 |
 | [OS Agents Survey](https://github.com/OS-Agent-Survey/OS-Agent-Survey) | 224 | 196 | 191 | 9 | 16 | 2 | 1 | OK · 2026-11-10 |
 | [Awesome Computer Use Agents — wjhou](https://github.com/wjhou/awesome-computer-use-agents) | 132 | 104 | 102 | 4 | 18 | 5 | 1 | OK · 2026-11-10 |
-| [Steel Awesome Web Agents](https://github.com/steel-dev/awesome-web-agents) | 113 | 58 | 58 | 0 | 35 | 18 | 2 | OK · 2026-11-10 |
+| [Steel Awesome Web Agents](https://github.com/steel-dev/awesome-web-agents) | 113 | 58 | 58 | 0 | 36 | 18 | 1 | OK · 2026-11-10 |
 | [Steel Web Agents Archive](https://github.com/steel-dev/awesome-web-agents/blob/main/ARCHIVE.md) | 7 | 3 | 3 | 0 | 4 | 0 | 0 | OK · 2026-11-10 |
 | [Computer Browser Phone Use Agent Datasets](https://github.com/Khang-9966/Computer-Browser-Phone-Use-Agent-Datasets) | 170 | 137 | 136 | 2 | 30 | 1 | 0 | OK · 2026-11-10 |
-| [Awesome Multimodal GUI Agents](https://github.com/DeLunnLi/Awesome-Multimodal-GUI-Agents) | 588 | 524 | 517 | 2 | 58 | 1 | 3 | RETIRED · 2026-11-05 |
+| [Awesome Multimodal GUI Agents](https://github.com/DeLunnLi/Awesome-Multimodal-GUI-Agents) | 588 | 525 | 518 | 2 | 59 | 1 | 1 | RETIRED · 2026-11-05 |
 | [Awesome Computer Use — TianyuanYang](https://github.com/TianyuanYang/awesome-computer-use) | 94 | 76 | 76 | 1 | 12 | 5 | 0 | OK · 2026-11-10 |
 | [Computer Use Agents Overview](https://github.com/cdxeve/awesome-computer-use-agents) | 78 | 50 | 49 | 10 | 12 | 6 | 0 | OK · 2026-11-10 |
-| [Awesome GUI Agents — Supernal](https://github.com/supernalintelligence/Awesome-Gui-Agents) | 63 | 21 | 21 | 3 | 25 | 12 | 2 | OK · 2026-11-10 |
-| [Yearly GUI Agents](https://github.com/qy0720/awesome-yearly-gui-agents) | 193 | 151 | 151 | 2 | 36 | 1 | 3 | OK · 2026-11-10 |
+| [Awesome GUI Agents — Supernal](https://github.com/supernalintelligence/Awesome-Gui-Agents) | 63 | 22 | 22 | 3 | 25 | 12 | 1 | OK · 2026-11-10 |
+| [Yearly GUI Agents](https://github.com/qy0720/awesome-yearly-gui-agents) | 193 | 152 | 152 | 2 | 37 | 1 | 1 | OK · 2026-11-10 |
 | [OSU-NLP-Group/GUI-Agents-Paper-List / README.md](https://github.com/OSU-NLP-Group/GUI-Agents-Paper-List) | 545 | 492 | 474 | 0 | 53 | 0 | 0 | OK · 2026-11-10 |
 | [opendilab/awesome-ui-agents / README.md](https://github.com/opendilab/awesome-ui-agents) | 144 | 97 | 95 | 6 | 32 | 9 | 0 | OK · 2026-11-10 |
 | [jin-s13/awesome-gui-agent-hub / AWESOME.md](https://github.com/jin-s13/awesome-gui-agent-hub) | 257 | 254 | 236 | 0 | 2 | 0 | 1 | OK · 2026-11-10 |
 | [ZJU-REAL/Awesome-GUI-Agents / ICLR2026/Paperlist.md](https://github.com/ZJU-REAL/Awesome-GUI-Agents) | 7 | 0 | 0 | 0 | 7 | 0 | 0 | OK · 2026-11-10 |
 | [dqtz5vpvj9-create/awesome-mobile-gui-agents / README.md](https://github.com/dqtz5vpvj9-create/awesome-mobile-gui-agents) | 40 | 32 | 32 | 0 | 8 | 0 | 0 | OK · 2026-11-10 |
-| [PhoneLLM/Awesome-LLM-Powered-Phone-GUI-Agents](https://github.com/PhoneLLM/Awesome-LLM-Powered-Phone-GUI-Agents) | 247 | 211 | 210 | 9 | 26 | 0 | 1 | OK · 2026-11-10 |
+| [PhoneLLM/Awesome-LLM-Powered-Phone-GUI-Agents](https://github.com/PhoneLLM/Awesome-LLM-Powered-Phone-GUI-Agents) | 247 | 212 | 211 | 9 | 26 | 0 | 0 | OK · 2026-11-10 |
 | [aialt/awesome-mobile-agents](https://github.com/aialt/awesome-mobile-agents) | 91 | 71 | 69 | 7 | 11 | 2 | 0 | OK · 2026-11-10 |
 | [albzni/Awesome-LLM-based-Web-Agent-and-Tools](https://github.com/albzni/Awesome-LLM-based-Web-Agent-and-Tools) | 10 | 4 | 4 | 0 | 1 | 5 | 0 | OK · 2026-11-10 |
 | [ranpox/awesome-computer-use](https://github.com/ranpox/awesome-computer-use) | 96 | 71 | 71 | 0 | 15 | 9 | 1 | OK · 2026-11-10 |
 | [Awesome GUI Agent Security](https://github.com/Yuxuan2003/Awesome-GUI-Agent-Security) | 196 | 196 | 191 | 0 | 0 | 0 | 0 | OK · 2026-11-10 |
-| [Awesome GUI Agent Safety](https://github.com/Autonomous-Agent-Team/Awesome-GUI-Agent-Safety) | 72 | 47 | 43 | 9 | 13 | 2 | 1 | OK · 2026-11-10 |
+| [Awesome GUI Agent Safety](https://github.com/Autonomous-Agent-Team/Awesome-GUI-Agent-Safety) | 72 | 47 | 43 | 9 | 13 | 3 | 0 | OK · 2026-11-10 |
 | [Awesome GUI Agent Memory](https://github.com/kqcoxn/Awesome-GUI-Agent-Memory) | 57 | 52 | 50 | 1 | 4 | 0 | 0 | OK · 2026-11-10 |
-| [ChenVoid Awesome GUI Agent](https://github.com/ChenVoid/Awesome-GUI-Agent) | 215 | 147 | 145 | 32 | 33 | 2 | 1 | OK · 2026-11-10 |
+| [ChenVoid Awesome GUI Agent](https://github.com/ChenVoid/Awesome-GUI-Agent) | 215 | 147 | 145 | 32 | 34 | 2 | 0 | OK · 2026-11-10 |
 | [Awesome Computer Use — philfung](https://github.com/philfung/awesome-computer-use) | 34 | 23 | 23 | 0 | 10 | 0 | 1 | OK · 2026-11-10 |
 | [Fara — first-party releases](https://github.com/microsoft/fara) | 18 | 5 | 5 | 0 | 13 | 0 | 0 | OK · 2026-11-10 |
 | [UI-Venus — first-party releases](https://github.com/inclusionAI/UI-Venus) | 9 | 4 | 4 | 0 | 5 | 0 | 0 | OK · 2026-11-10 |
@@ -73,10 +73,10 @@ The denominator is the normalized identifiers extracted from each fetched docume
 | [Seg2Click — first-party releases](https://github.com/jcwang0602/Seg2Click) | 12 | 9 | 9 | 0 | 1 | 2 | 0 | OK · 2026-11-10 |
 | [SwitchMem — first-party releases](https://github.com/dmis-lab/SwitchMem) | 1 | 1 | 1 | 0 | 0 | 0 | 0 | OK · 2026-11-10 |
 | [OpenMobile-2 — first-party releases](https://github.com/OpenMobile2/OpenMobile2-Code) | 13 | 9 | 9 | 0 | 2 | 2 | 0 | OK · 2026-11-10 |
-| [MobileGym++ — first-party releases](https://github.com/OpenMobile2/MobileGym-plusplus) | 8 | 4 | 4 | 0 | 3 | 0 | 1 | OK · 2026-11-10 |
+| [MobileGym++ — first-party releases](https://github.com/OpenMobile2/MobileGym-plusplus) | 8 | 4 | 4 | 0 | 4 | 0 | 0 | OK · 2026-11-10 |
 | [CarryOn — first-party releases](https://github.com/Ethannju/carryon) | 2 | 1 | 1 | 0 | 1 | 0 | 0 | OK · 2026-11-10 |
 | [GraceBench — first-party releases](https://iaie-physicalai.github.io/GraceBench) | 3 | 1 | 1 | 0 | 2 | 0 | 0 | OK · 2026-11-10 |
-| [AGUVIS — first-party releases](https://github.com/xlang-ai/aguvis) | 6 | 3 | 3 | 0 | 2 | 0 | 1 | OK · 2026-11-10 |
+| [AGUVIS — first-party releases](https://github.com/xlang-ai/aguvis) | 6 | 4 | 4 | 0 | 2 | 0 | 0 | OK · 2026-11-10 |
 | [OS-Atlas — first-party releases](https://github.com/OS-Copilot/OS-Atlas) | 10 | 6 | 6 | 0 | 3 | 1 | 0 | OK · 2026-11-10 |
 | [MobileAgent / GUI-Owl / UI-S1 — first-party release index](https://github.com/X-PLUG/MobileAgent) | 33 | 18 | 18 | 0 | 15 | 0 | 0 | OK · 2026-11-10 |
 | [GUICourse — first-party release checklist](https://github.com/yiye3/GUICourse) | 7 | 6 | 6 | 0 | 1 | 0 | 0 | OK · 2026-11-10 |
@@ -86,47 +86,47 @@ The denominator is the normalized identifiers extracted from each fetched docume
 | [ScienceBoard — first-party environments and trajectories](https://github.com/OS-Copilot/ScienceBoard) | 16 | 7 | 7 | 0 | 7 | 1 | 1 | OK · 2026-11-10 |
 | [MAI-UI / Qwen-UI-Agent — first-party project index](https://github.com/Tongyi-MAI/MAI-UI) | 17 | 4 | 4 | 0 | 13 | 0 | 0 | OK · 2026-11-10 |
 | [H Company — official Hub model index](https://huggingface.co/Hcompany) | 39 | 29 | 29 | 0 | 0 | 10 | 0 | OK · 2026-11-10 |
-| [Maxi-W Awesome AI for GUI Agents](https://github.com/maxi-w/awesome-ai-for-gui-agents) | 50 | 39 | 39 | 0 | 7 | 2 | 2 | OK · 2026-11-10 |
+| [Maxi-W Awesome AI for GUI Agents](https://github.com/maxi-w/awesome-ai-for-gui-agents) | 50 | 39 | 39 | 0 | 9 | 2 | 0 | OK · 2026-11-10 |
 | [Awesome On-Device Agents](https://github.com/Adam-THU/awesome-on-device-agents) | 32 | 24 | 19 | 3 | 0 | 5 | 0 | OK · 2026-11-10 |
 | [AwesomeEverything GUI Agents Paper List](https://github.com/WeijianQ/AwesomeEverything_GUI-Agents-Paper-List) | 496 | 456 | 447 | 0 | 40 | 0 | 0 | OK · 2026-11-10 |
 | [trycua/acu — Awesome Computer Use](https://github.com/trycua/acu) | 156 | 122 | 121 | 3 | 21 | 9 | 1 | OK · 2026-11-10 |
-| [Awesome GUI Grounding (GUI grounding survey list)](https://github.com/OmniAI-Lab-CUHKSZ/Awesome-GUI-Grounding) | 334 | 266 | 263 | 8 | 52 | 5 | 3 | OK · 2026-11-10 |
-| [ShowLab Awesome Multimodal Embodied Agents — surveys and multimodal-agent sections](https://github.com/showlab/Awesome-Multimodal-Embodied-Agent) | 223 | 110 | 97 | 35 | 26 | 51 | 1 | OK · 2026-11-10 |
+| [Awesome GUI Grounding (GUI grounding survey list)](https://github.com/OmniAI-Lab-CUHKSZ/Awesome-GUI-Grounding) | 334 | 267 | 264 | 8 | 52 | 6 | 1 | OK · 2026-11-10 |
+| [ShowLab Awesome Multimodal Embodied Agents — surveys and multimodal-agent sections](https://github.com/showlab/Awesome-Multimodal-Embodied-Agent) | 223 | 111 | 98 | 35 | 26 | 51 | 0 | OK · 2026-11-10 |
 | [Awesome RL GUI Agents (reinforcement-learning GUI agent survey list)](https://github.com/Steve2457/Awesome-RL-GUI-Agents) | 205 | 160 | 157 | 38 | 5 | 2 | 0 | OK · 2026-11-10 |
 | [12britz/awesome-computer-use — agent, grounding, automation and evaluation sections](https://github.com/12britz/awesome-computer-use) | 120 | 115 | 115 | 0 | 4 | 1 | 0 | OK · 2026-11-10 |
-| [Agent-Tools/awesome-autonomous-web — browser-agent sections](https://github.com/Agent-Tools/awesome-autonomous-web) | 45 | 33 | 33 | 0 | 6 | 3 | 3 | OK · 2026-11-10 |
-| [haoruilee/awesome-agent-native-services — Browser & Web Execution Services](https://github.com/haoruilee/awesome-agent-native-services) | 44 | 31 | 31 | 0 | 6 | 6 | 1 | OK · 2026-11-10 |
-| [LLM-Brained GUI Agents survey tables — data/benchmark.json](https://github.com/vyokky/LLM-Brained-GUI-Agents-Survey) | 121 | 94 | 94 | 0 | 23 | 1 | 3 | OK · 2026-11-10 |
+| [Agent-Tools/awesome-autonomous-web — browser-agent sections](https://github.com/Agent-Tools/awesome-autonomous-web) | 45 | 33 | 33 | 0 | 9 | 3 | 0 | OK · 2026-11-10 |
+| [haoruilee/awesome-agent-native-services — Browser & Web Execution Services](https://github.com/haoruilee/awesome-agent-native-services) | 44 | 31 | 31 | 0 | 7 | 6 | 0 | OK · 2026-11-10 |
+| [LLM-Brained GUI Agents survey tables — data/benchmark.json](https://github.com/vyokky/LLM-Brained-GUI-Agents-Survey) | 121 | 95 | 95 | 0 | 24 | 1 | 1 | OK · 2026-11-10 |
 | [LLM-Brained GUI Agents survey tables — data/dataset.json](https://github.com/vyokky/LLM-Brained-GUI-Agents-Survey) | 74 | 58 | 58 | 2 | 11 | 3 | 0 | OK · 2026-11-10 |
-| [LLM-Brained GUI Agents survey tables — data/framework.json](https://github.com/vyokky/LLM-Brained-GUI-Agents-Survey) | 139 | 114 | 114 | 0 | 23 | 1 | 1 | OK · 2026-11-10 |
-| [LLM-Brained GUI Agents survey tables — data/gui-testing.json](https://github.com/vyokky/LLM-Brained-GUI-Agents-Survey) | 32 | 29 | 29 | 0 | 1 | 0 | 2 | OK · 2026-11-10 |
-| [LLM-Brained GUI Agents survey tables — data/models.json](https://github.com/vyokky/LLM-Brained-GUI-Agents-Survey) | 97 | 73 | 71 | 4 | 17 | 2 | 1 | OK · 2026-11-10 |
+| [LLM-Brained GUI Agents survey tables — data/framework.json](https://github.com/vyokky/LLM-Brained-GUI-Agents-Survey) | 139 | 115 | 115 | 0 | 23 | 1 | 0 | OK · 2026-11-10 |
+| [LLM-Brained GUI Agents survey tables — data/gui-testing.json](https://github.com/vyokky/LLM-Brained-GUI-Agents-Survey) | 32 | 30 | 30 | 0 | 1 | 0 | 1 | OK · 2026-11-10 |
+| [LLM-Brained GUI Agents survey tables — data/models.json](https://github.com/vyokky/LLM-Brained-GUI-Agents-Survey) | 97 | 73 | 71 | 4 | 18 | 2 | 0 | OK · 2026-11-10 |
 | [LLM-Brained GUI Agents survey tables — data/survey.json](https://github.com/vyokky/LLM-Brained-GUI-Agents-Survey) | 40 | 21 | 11 | 6 | 2 | 6 | 5 | OK · 2026-11-10 |
-| [LLM-Brained GUI Agents survey tables — data/virtual-assistant.json](https://github.com/vyokky/LLM-Brained-GUI-Agents-Survey) | 19 | 9 | 9 | 0 | 4 | 5 | 1 | OK · 2026-11-10 |
-| [OSWorld-Verified leaderboard results](https://os-world.github.io) | 50 | 32 | 32 | 0 | 8 | 6 | 4 | OK · 2026-11-10 |
-| [OSWorld self-reported leaderboard results](https://os-world.github.io) | 89 | 22 | 22 | 5 | 53 | 5 | 4 | OK · 2026-11-10 |
-| [ScreenSpot-Pro grounding leaderboard results](https://gui-agent.github.io/grounding-leaderboard) | 45 | 31 | 31 | 2 | 8 | 2 | 2 | OK · 2026-11-10 |
-| [AndroidWorld leaderboard spreadsheet](https://docs.google.com/spreadsheets/d/1cchzP9dlTZ3WXQTfYNhh3avxoLipqHN75v1Tb86uhHo) | 66 | 43 | 43 | 0 | 19 | 0 | 4 | OK · 2026-11-10 |
-| [WebArena and VisualWebArena leaderboard spreadsheet](https://docs.google.com/spreadsheets/d/1M801lEpBbKSNwP-vDBkC_pF7LdyGU1f_ufZb_NWNBZQ) | 83 | 44 | 41 | 4 | 26 | 6 | 3 | OK · 2026-11-10 |
+| [LLM-Brained GUI Agents survey tables — data/virtual-assistant.json](https://github.com/vyokky/LLM-Brained-GUI-Agents-Survey) | 19 | 10 | 10 | 0 | 4 | 5 | 0 | OK · 2026-11-10 |
+| [OSWorld-Verified leaderboard results](https://os-world.github.io) | 50 | 33 | 33 | 0 | 10 | 7 | 0 | OK · 2026-11-10 |
+| [OSWorld self-reported leaderboard results](https://os-world.github.io) | 89 | 22 | 22 | 5 | 55 | 7 | 0 | OK · 2026-11-10 |
+| [ScreenSpot-Pro grounding leaderboard results](https://gui-agent.github.io/grounding-leaderboard) | 45 | 32 | 32 | 2 | 9 | 2 | 0 | OK · 2026-11-10 |
+| [AndroidWorld leaderboard spreadsheet](https://docs.google.com/spreadsheets/d/1cchzP9dlTZ3WXQTfYNhh3avxoLipqHN75v1Tb86uhHo) | 66 | 43 | 43 | 0 | 22 | 0 | 1 | OK · 2026-11-10 |
+| [WebArena and VisualWebArena leaderboard spreadsheet](https://docs.google.com/spreadsheets/d/1M801lEpBbKSNwP-vDBkC_pF7LdyGU1f_ufZb_NWNBZQ) | 83 | 46 | 43 | 4 | 26 | 6 | 1 | OK · 2026-11-10 |
 | [AndroidLab leaderboard spreadsheet](https://docs.google.com/spreadsheets/d/1Zv6mBfd4Ibt8mke24K6zAFrXe4AvEFaBLW3hpJqSgjw) | 6 | 5 | 5 | 0 | 1 | 0 | 0 | OK · 2026-11-10 |
 | [arXiv abstract-phrase query: GUI, computer-use and web agents (all dates)](https://arxiv.org) | 1117 | 1104 | 1046 | 13 | 0 | 0 | 0 | OK · 2026-11-10 |
-| [Hub model search "gui" (by likes)](https://huggingface.co/models?search=gui) | 30 | 24 | 24 | 0 | 0 | 0 | 6 | OK · 2026-11-10 |
+| [Hub model search "gui" (by likes)](https://huggingface.co/models?search=gui) | 30 | 27 | 27 | 0 | 2 | 1 | 0 | OK · 2026-11-10 |
 | [Hub model search "computer-use" (by likes)](https://huggingface.co/models?search=computer-use) | 2 | 2 | 2 | 0 | 0 | 0 | 0 | OK · 2026-11-10 |
-| [Hub dataset search "gui" (by likes)](https://huggingface.co/datasets?search=gui) | 18 | 15 | 15 | 0 | 0 | 2 | 1 | OK · 2026-11-10 |
+| [Hub dataset search "gui" (by likes)](https://huggingface.co/datasets?search=gui) | 18 | 15 | 15 | 0 | 0 | 3 | 0 | OK · 2026-11-10 |
 | [Hub dataset search "computer-use" (by likes)](https://huggingface.co/datasets?search=computer-use) | 4 | 3 | 3 | 0 | 1 | 0 | 0 | OK · 2026-11-10 |
-| [Hub dataset search "web-agent" (by likes)](https://huggingface.co/datasets?search=web-agent) | 5 | 2 | 2 | 0 | 1 | 0 | 2 | OK · 2026-11-10 |
+| [Hub dataset search "web-agent" (by likes)](https://huggingface.co/datasets?search=web-agent) | 5 | 2 | 2 | 0 | 1 | 2 | 0 | OK · 2026-11-10 |
 | [Hub dataset search "mind2web" (by likes)](https://huggingface.co/datasets?search=mind2web) | 8 | 6 | 6 | 0 | 0 | 0 | 2 | OK · 2026-11-10 |
-| [Hub dataset search "android" (by likes)](https://huggingface.co/datasets?search=android) | 9 | 3 | 3 | 0 | 1 | 2 | 3 | OK · 2026-11-10 |
+| [Hub dataset search "android" (by likes)](https://huggingface.co/datasets?search=android) | 9 | 4 | 4 | 0 | 2 | 2 | 1 | OK · 2026-11-10 |
 | [Hub dataset search "screenspot" (by likes)](https://huggingface.co/datasets?search=screenspot) | 5 | 4 | 4 | 0 | 1 | 0 | 0 | OK · 2026-11-10 |
 | [Hub collection maxiw/gui-datasets](https://huggingface.co/collections/maxiw/gui-datasets-66c512aef77e8e56f38a670b) | 20 | 20 | 20 | 0 | 0 | 0 | 0 | OK · 2026-11-10 |
 | [Hub collection maxiw/research-on-gui-models](https://huggingface.co/collections/maxiw/research-on-gui-models-66b907281caaa1d77cfc536d) | 18 | 17 | 17 | 1 | 0 | 0 | 0 | OK · 2026-11-10 |
 | [Hub collection m-ric/gui-agents](https://huggingface.co/collections/m-ric/gui-agents-67cc9f6ea029f09af73caff8) | 8 | 8 | 8 | 0 | 0 | 0 | 0 | OK · 2026-11-10 |
 | [Hub collection thomwolf/gui-agents](https://huggingface.co/collections/thomwolf/gui-agents-675d54f9e907322a10f1cfae) | 3 | 3 | 3 | 0 | 0 | 0 | 0 | OK · 2026-11-10 |
-| [Hub collection johannhartmann/computer-use-models](https://huggingface.co/collections/johannhartmann/computer-use-models-679792c9addd59e1129d990f) | 22 | 20 | 20 | 0 | 0 | 1 | 1 | OK · 2026-11-10 |
+| [Hub collection johannhartmann/computer-use-models](https://huggingface.co/collections/johannhartmann/computer-use-models-679792c9addd59e1129d990f) | 22 | 21 | 21 | 0 | 0 | 1 | 0 | OK · 2026-11-10 |
 | [Hub collection sergiopaniego/gui-grounding-datasets](https://huggingface.co/collections/sergiopaniego/gui-grounding-datasets-6867faa9ecb5032865458705) | 2 | 2 | 2 | 0 | 0 | 0 | 0 | OK · 2026-11-10 |
 | [Hub collection xlbqc/gui-agent](https://huggingface.co/collections/xlbqc/gui-agent-67bc272a55edf2ef92ae1076) | 27 | 27 | 27 | 0 | 0 | 0 | 0 | OK · 2026-11-10 |
 | [Hub collection Yuxiang007/gui-agent](https://huggingface.co/collections/Yuxiang007/gui-agent-689d9f3701de4072f3d60dcd) | 7 | 7 | 6 | 0 | 0 | 0 | 0 | OK · 2026-11-10 |
-| [XLANG Lab — official Hub model index](https://huggingface.co/xlangai) | 13 | 7 | 7 | 0 | 0 | 1 | 5 | OK · 2026-11-10 |
+| [XLANG Lab — official Hub model index](https://huggingface.co/xlangai) | 13 | 11 | 11 | 0 | 0 | 1 | 1 | OK · 2026-11-10 |
 | [ByteDance Seed UI-TARS — official Hub model index](https://huggingface.co/ByteDance-Seed) | 6 | 6 | 6 | 0 | 0 | 0 | 0 | OK · 2026-11-10 |
 | [mPLUG GUI-Owl — official Hub model index](https://huggingface.co/mPLUG) | 9 | 9 | 9 | 0 | 0 | 0 | 0 | OK · 2026-11-10 |
 | [Salesforce GTA1 — official Hub model index](https://huggingface.co/Salesforce) | 3 | 3 | 3 | 0 | 0 | 0 | 0 | OK · 2026-11-10 |
@@ -137,7 +137,7 @@ The denominator is the normalized identifiers extracted from each fetched docume
 | [StepFun Android datasets — official Hub dataset index](https://huggingface.co/stepfun-ai) | 1 | 1 | 1 | 0 | 0 | 0 | 0 | OK · 2026-11-10 |
 | [Survey bibliography references with no other registered listing (arXiv identifier query)](https://arxiv.org) | 4 | 4 | 3 | 0 | 0 | 0 | 0 | OK · 2026-11-10 |
 | [Efficient GUI Agents survey (arXiv 2609.02309) — HTML bibliography](https://arxiv.org/abs/2609.02309) | 118 | 75 | 74 | 2 | 37 | 1 | 3 | OK · 2026-11-10 |
-| [GUI Agents: A Survey (arXiv 2412.13501) — HTML bibliography](https://arxiv.org/abs/2412.13501) | 117 | 62 | 56 | 13 | 33 | 6 | 3 | OK · 2026-11-10 |
+| [GUI Agents: A Survey (arXiv 2412.13501) — HTML bibliography](https://arxiv.org/abs/2412.13501) | 117 | 62 | 56 | 13 | 35 | 6 | 1 | OK · 2026-11-10 |
 | [Computer-use benchmark leads](https://github.com/reacher-z/Awesome-CUA/blob/main/docs/discovery-leads/benchmark-leads.md) | 161 | 105 | 4 | 4 | 0 | 52 | 0 | OK · 2026-11-10 |
 
 ## Paper-discovery query coverage
@@ -193,16 +193,16 @@ The recorded title query returned 1,199 unique records out of 1,246 reported mat
 
 | Scope | Recorded declarations |
 | --- | ---: |
-| code | 2055 |
-| data | 197 |
-| weights | 300 |
+| code | 2064 |
+| data | 211 |
+| weights | 327 |
 | document | 8 |
 
 Data and weights fields record their own licenses. Hub declarations are publisher metadata. Missing values remain null.
 
 ## Pending editorial proposals
 
-551 proposals: 24 with unresolved primary evidence, 15 whose current source snapshot awaits review, 489 held by a reviewer after reading the current source, 23 screened as relevant from the current source and awaiting an editorial annotation, and 0 awaiting another scope review.
+375 proposals: 8 with unresolved primary evidence, 15 whose current source snapshot awaits review, 329 held by a reviewer after reading the current source, 23 screened as relevant from the current source and awaiting an editorial annotation, and 0 awaiting another scope review.
 
 | Resource | Reason |
 | --- | --- |
@@ -569,194 +569,18 @@ Data and weights fields record their own licenses. Hub declarations are publishe
 | [DynaSaur: Large Language Agents Beyond Predefined Actions](https://arxiv.org/abs/2411.01747) | Relevance screening of the complete arXiv v3 abstract (5 November 2026) left the scope open: Screeners disagreed on scope. One read it as outside the scope: The abstract lets LLM agents write and reuse program actions in place of choosing from a fixed action set. This generic agent framework names no web-page, GUI or device setting, so it is outside the catalog. The other marked it borderline: Generic LLM agent framework that writes and executes code to create reusable actions. The abstract leaves its environments and benchmarks unnamed, so it is unclear whether the agent operates web pages, computer files or applications. Needs a scope decision from the full text. |
 | [Toward Efficient Agents: Memory, Tool learning, and Planning](https://arxiv.org/abs/2601.14192) | Relevance screening of the complete arXiv v2 abstract (5 November 2026) left the scope open: Survey of efficiency in agent memory, tool learning and planning; the abstract leaves open whether it covers web, GUI or computer-use agents. Needs a scope decision from the full text. |
 | [Towards LLMCI - Multimodal AI for LLM-Vision UI Operation](https://www.researchsquare.com/article/rs-4653823/v1) | Relevance screening of the preprint abstract in its Crossref record (6 November 2026): core. A framework in which an LLM uses a vision model to recognize interface elements and operates applications with keyboard and mouse input, shown as a proof of concept. Awaiting an editorial annotation. |
-| [Bloomberg - Are you a robot?](https://www.bloomberg.com/news/articles/2024-11-13/openai-nears-launch-of-ai-agents-to-automate-tasks-for-users) | primary evidence unresolved: HTTP Error 403: Forbidden; The Bloomberg page presents a robot check. The Bloomberg robot check leaves the article's subject and contents open. |
-| [SmolVLM2-2.2B-Instruct-Agentic-GUI-GGUF](https://huggingface.co/mradermacher/SmolVLM2-2.2B-Instruct-Agentic-GUI-GGUF) | The card provides GGUF quantizations of an Agentic-GUI-named model, but does not describe its GUI tasks, inputs, or outputs. Its computer-use capability remains unclear. |
-| [ChatUITest](https://github.com/ZJU-ACES-ISE/ChatUITest) | ChatUITest says it generates GUI test scripts, but its README marks the project under construction and the repository contains only that README. The linked simulation tool and unfinished dataset are separate resources. |
-| [world_model_for_wa_desc_with_tao_dataset](https://huggingface.co/datasets/LangAGI-Lab/world_model_for_wa_desc_with_tao_dataset) | The dataset card supplies a train split and fields for actions, observations, and next-state descriptions, but only a placeholder description. It does not explain the dataset's provenance or intended use. |
-| [webgames](https://huggingface.co/datasets/convergence-ai/webgames) | The webgames dataset has a data file, but its card contains only a license declaration. A description of the data and its use is missing. |
-| [Sequence-of-action-prediction-mind2web](https://huggingface.co/datasets/Izazk/Sequence-of-action-prediction-mind2web) | The Sequence-of-action-prediction-mind2web dataset has a data file, but its card contains only a license declaration. A description of the data and its use is missing. |
-| [android_ui_detection_yolov8](https://huggingface.co/datasets/yasirfaizahmed/android_ui_detection_yolov8) | android_ui_detection_yolov8 has a data archive, but its dataset card remains an unfilled template. It gives no description of the images, annotations, or intended use. |
-| [MobileRisk](https://huggingface.co/datasets/OS-Copilot/MobileRisk) | The Hugging Face page shows an image and text dataset preview but has no dataset card explaining the images, labels, or intended use. |
-| [supra-tex](https://huggingface.co/supra3d/supra-tex) | The repository contains model files, but its card only discusses unresolved deployment issues. It does not explain what the model does or how it is used. |
-| [MM-Eureka-Zero-38B](https://huggingface.co/FanqingM/MM-Eureka-Zero-38B) | The repository has model weights, but its page has no model card. The supplied source does not explain the model's purpose or use. |
-| [smolagents_SmolVLM2-2.2B-Instruct-Agentic-GUI-GGUF](https://huggingface.co/bartowski/smolagents_SmolVLM2-2.2B-Instruct-Agentic-GUI-GGUF) | The card documents GGUF quantizations and llama.cpp use, but describes GUI capability only through the original model's name. |
-| [GPTVoiceTasker](https://github.com/vuminhduc796/GPTVoiceTasker) | GPTVoiceTasker has application and build files, but the supplied source has no README describing its function or how it is used. |
-| [lora_qformer_uitars_test_V1-400_merged](https://huggingface.co/WenyiWU0111/lora_qformer_uitars_test_V1-400_merged) | The model repository contains weight files, but its page has no model card explaining the checkpoint, its training or its intended use. |
-| [LX-GUIAgent](https://github.com/LX-GUIAgent/LX-GUIAgent) | The README describes an Android GUI agent and names implementation files, but the supplied file list contains evaluation results and documentation without those agent files. The released implementation is missing. |
-| [qwen-1.5-1.8b-chat-mllm](https://huggingface.co/mllmTeam/qwen-1.5-1.8b-chat-mllm) | The Qwen model repository has weight files but no model card. The rendered page gives no training, usage, or GUI-capability description. |
-| [Static-FineBench](https://huggingface.co/datasets/Willtime2006/Static-FineBench) | Static-FineBench has an image dataset page with rows and class labels, but no dataset card. The source does not explain the images' purpose, annotation scheme or intended use. |
-| [Auto-UI](https://huggingface.co/cooelf/Auto-UI) | The Auto-UI model card contains only a license declaration. It gives no description of the checkpoint, its capabilities or how to use it. |
-| [browser-use](https://github.com/NachaFromMars/browser-use) | The README describes browser-control commands, but the listed repository files contain a README, a skill file and metadata. Documentation of the browser driver or usable package is missing. |
-| [SE-GUI-3B](https://huggingface.co/XinBB/SE-GUI-3B) | The SE-GUI-3B model card contains only a license declaration. It gives no account of the checkpoint's task, training or use. |
-| [GTA_data_no_web](https://huggingface.co/datasets/smz8599/GTA_data_no_web) | The Hugging Face page shows data parts but has no dataset card, and its viewer cannot identify supported files. The dataset contents and intended use need documentation. |
-| [gui-aima-data](https://huggingface.co/datasets/smz8599/gui-aima-data) | The Hugging Face page shows split archive files and AndroidControl image paths, but has no dataset card and its viewer reports a generation error. The dataset contents and intended use need documentation. |
-| [zod](https://github.com/colinhacks/zod) | The fetched README contains only a path to another README. It gives no description of the repository or its use, so the supplied source cannot support a catalog entry. |
-| [vllm](https://github.com/XuRui314/vllm) | The README consists of a title saying this vllm repository is for HiconAgent. It gives no description of its changes, contents or computer-use capability. |
-| [yardi-voyager-browser-automation](https://github.com/Browser-Automation-Hub/yardi-voyager-browser-automation) | The README presents a Yardi Voyager browser automation scaffold and lists intended actions, but its action example has placeholder options and the selector reference is undocumented. Working Yardi workflows remain unclear. |
-| [VeriOS-Agent-7B](https://huggingface.co/wuuuuuz/VeriOS-Agent-7B) | The repository page lists model files but says there is no model card. It gives no description of the checkpoint's training, computer-use capability or intended use. |
-| [VideoAgentTrek-IDM-s1-7B](https://huggingface.co/xlangai/VideoAgentTrek-IDM-s1-7B) | The repository lists model weights, but its card contains only a license declaration. It gives no account of the checkpoint's task, training or intended use. |
-| [RVC-GUI](https://huggingface.co/datasets/Tiger14n/RVC-GUI) | The RVC-GUI repository contains ZIP archives, but its card supplies only a license. Documentation explaining the archives and their intended use is missing. |
-| [wcwidth](https://github.com/jquast/wcwidth) | The supplied source contains only a documentation path. It gives no readable description of the repository's purpose or computer-use relevance. |
-| [SoftwareTestingLanguageModels](https://github.com/neuroevolution-ai/SoftwareTestingLanguageModels) | The repository source reports no top-level README. The supplied text gives no description of the code or its use in GUI testing. |
-| [GT-r1](https://huggingface.co/konkazzz/GT-r1) | The GT-r1 model repository contains weights and data files, while its card states only a license. Documentation identifying its purpose and use is missing. |
-| [Figma](https://www.figma.com/deck/rsWK4sRl0dOahG59bfMhql) | The fetched Figma deck exposes only generic Figma metadata. Its title and slide contents are unavailable, so its subject cannot be assessed. |
-| [AppSim-Wechat-V2](https://github.com/Acrab-Agentic-Labs/AppSim-Wechat-V2) | The AutoWechat README documents app data and interface fixes and briefly mentions AI automated testing. It does not describe an agent testing interface or evaluation workflow. |
-| [arena.xlang.ai](https://arena.xlang.ai) | primary evidence unresolved: HTTP Error 522: <none>; The arena address returned error code 522. Its content and relevance to computer-use evaluation cannot be assessed from this response. |
-| [Meta-Llama-3.1-8B-Instruct-WM-webarena-16k-adapter](https://huggingface.co/LangAGI-Lab/Meta-Llama-3.1-8B-Instruct-WM-webarena-16k-adapter) | The model repository contains adapter files, but its card is an unfilled template. It gives no usable description of the model's web-agent task, training or intended use. |
-| [UI-Simulator_android_data](https://huggingface.co/datasets/UI-Simulator/UI-Simulator_android_data) | The dataset card lists four UI-Simulator CSV splits, including Android training data. It does not describe the rows, their creation or their use for mobile-agent training. |
-| [MobileWorld](https://huggingface.co/datasets/jacklishufan/MobileWorld) | The MobileWorld dataset page shows an archive and a three-row preview, but has no card explaining the dataset's contents or intended use. |
-| [SimpAgent-data](https://huggingface.co/datasets/Minuskid/SimpAgent-data) | SimpAgent-data has GUI action examples and JSON files, but no dataset card explaining the files or their use. Its viewer reports incompatible columns and shows image paths to a local directory. |
-| [serve-sim](https://github.com/EvanBacon/serve-sim) | The supplied README contains only a path to another README. It gives no description of the repository's function or use. |
-| [webarena-world-model-sft](https://huggingface.co/thuml/webarena-world-model-sft) | The short card labels a WebArena world-model checkpoint and links to usage examples elsewhere. It does not explain the model's inputs, outputs or behavior. |
-| [Gelato-UI-TARS-1.5-7B](https://huggingface.co/mlfoundations/Gelato-UI-TARS-1.5-7B) | The repository page shows model files and a computer-use grounding collection, but says it has no model card. Its inputs and outputs are undocumented. |
-| [InternVL3_5-1B-HF](https://huggingface.co/OpenGVLab/InternVL3_5-1B-HF) | The InternVL3.5-1B card describes a general multimodal checkpoint and briefly claims GUI interaction for the model family. It supplies no GUI task, example, or result for this checkpoint. |
-| [pixtoapp](https://github.com/soumikmohianuta/pixtoapp) | The README lists Python dependencies, screenshot processing, and Android SDK setup. It does not explain what Pix to App produces or how its screenshots are used. |
-| [Static-FineBench](https://huggingface.co/datasets/wumiaoshou/Static-FineBench) | The repository page shows a dataset of desktop images and XML annotations, including slider examples. It lacks a dataset description explaining its purpose and intended use. |
-| [SeeClick-aitw](https://huggingface.co/cckevinn/SeeClick-aitw) | The rendered Hugging Face page lists a model named SeeClick-aitw and loading instructions, but it says there is no model card and gives no account of its GUI capability or training. |
-| [finalrun.app](https://finalrun.app/benchmark) | primary evidence unresolved: <urlopen error timed out>; The benchmark URL returned zero bytes. The supplied fetch provides no readable page or status from which to establish what the benchmark contains. |
-| [Di-GUI-3Bv0.0](https://github.com/jackfsuia/Di-GUI-3Bv0.0) | The README describes a GUI grounding model and its training choices, but the repository lists only that README. No weights, implementation, or usable model access is documented. |
-| [steel-node](https://github.com/steel-dev/steel-node) | Steel Node is a TypeScript and JavaScript client for the Steel REST API. The README shows session creation but does not explain what those sessions control or how they support browser agents. |
-| [droidbotApp](https://github.com/ylimit/droidbotApp) | droidbotApp is an Android app described as coordinating with DroidBot. The README gives build steps but leaves its functions and use during automation unexplained. |
-| [SE-GUI-7B](https://huggingface.co/XinBB/SE-GUI-7B) | The SE-GUI-7B repository lists model weight files, but its card contains only a license declaration. It gives no description of the checkpoint's purpose or use. |
-| [OpenPhone_model](https://huggingface.co/hkuds/OpenPhone_model) | The OpenPhone_model repository page has no model card. Its checkpoint archive parts lack a source description of the model's purpose, inputs, or use. |
-| [solari-cookbook](https://github.com/mangeshraut712/solari-cookbook) | This Solari Cookbook address presents runnable browser, desktop, and sandbox examples, while its own clone command points to solari-sdk/solari-cookbook. Maintainer review is needed to resolve the original repository address. |
-| [huggingface.co](https://huggingface.co/datasets/TIGER-Lab/ClawBenchV2Trace) | The Hugging Face dataset fetch returned an error with no source text. Its contents and computer-use relevance remain unreadable. |
-| [Redirecting…](https://lightpanda.io/docs/open-source/guides/mcp-server) | The Lightpanda MCP documentation address returns only a notice redirecting to another path. No guide text describes the server or its use. |
-| [OpenWebVoyager-opt-1](https://huggingface.co/OpenWebVoyager/OpenWebVoyager-opt-1) | The OpenWebVoyager-opt-1 model repository has weight files, but its card contains only license metadata. It gives no model purpose, training, or usage description. |
-| [InternVL3_5-2B-HF](https://huggingface.co/OpenGVLab/InternVL3_5-2B-HF) | The InternVL3.5 model card mentions GUI interaction as a family capability but gives no GUI tasks, results, or usage details for this checkpoint. The card also titles itself as a different model size. |
-| [next-themes](https://github.com/pacocoursey/next-themes) | The supplied source contains only a path to another README. Its contents are needed to establish what this package does and assess its relevance. |
-| [langgraphjs](https://github.com/langchain-ai/langgraphjs) | The supplied README text is only a path to another README. It gives no description of this repository's functions or use, so its relevance cannot be established from the source. |
-| [SE-GUI-3k](https://huggingface.co/datasets/XinBB/SE-GUI-3k) | The dataset page shows conversations, images and bounding-box fields across 772 rows, but has no dataset card explaining what the examples represent or how they are used. |
-| [webarena-world-model-rlvr](https://huggingface.co/thuml/webarena-world-model-rlvr) | The model card lists web-agent and world-model tags, a base model and a citation, but gives no description of the checkpoint's behavior or how it is used in web-agent tasks. |
-| [AssistantBench](https://huggingface.co/datasets/AssistantBench/AssistantBench) | The AssistantBench dataset card supplies a license field and paper citation. It lacks a description of the dataset files and their use. |
-| [android_control](https://huggingface.co/datasets/jacklishufan/android_control) | The android_control page shows an image-and-text dataset archive and an episode preview. It gives no account of the data's origin, labels, or relationship to AndroidControl. |
-| [mind2web_clean](https://huggingface.co/datasets/BigAction/mind2web_clean) | The mind2web_clean card lists web queries, HTML, actions, candidate elements, and Selenium ground-truth fields. It lacks an explanation of the dataset's purpose and preparation. |
-| [axum](https://github.com/tokio-rs/axum) | The fetched README contains only a path to another README. It gives no description of this repository's purpose or use. |
-| [asil-qwen35-9b-rl](https://huggingface.co/sharryXR/asil-qwen35-9b-rl) | The card describes an ASIL Qwen3.5-9B RL checkpoint and its training prompts, but does not explain what interface tasks the checkpoint performs. |
-| [CUA_World_State_Model](https://huggingface.co/Zery/CUA_World_State_Model) | The CUA_World_State_Model card links to a paper and repository and names a base model, but does not describe what this checkpoint predicts or how to use it. |
-| [cordis](https://github.com/cordiverse/cordis) | The supplied README contains only a path to another README. It gives no readable description of Cordis or its use. |
-| [Indeed-UI-8B - ModelScope 魔搭社区](https://www.modelscope.cn/models/IntellgenceIndeed/Indeed-UI-8B) | The ModelScope page names Indeed-UI-8B and calls it an open-source model, but supplies no readable model card describing its capabilities or use. |
-| [agent-output](https://huggingface.co/datasets/yueqis/agent-output/tree/main) | The agent-output dataset viewer shows agent answers, evaluation fields and logs, but provides no card explaining the dataset's intended use or how its outputs were produced. |
-| [ctf-gym](https://github.com/James4Ever0/ctf-gym) | The README calls CTF gym a benchmark for computer-using agents, but gives no tasks, evaluation method, or usage instructions. The supplied file list contains only the README and license. |
-| [VideoAgentTrek-CUA-7B](https://huggingface.co/xlangai/VideoAgentTrek-CUA-7B) | The model repository has weight files, but its card contains only a license declaration. It gives no checkpoint description, inputs, capabilities, or intended use. |
-| [timewarp-env-data](https://huggingface.co/datasets/sparklabutah/timewarp-env-data) | The card documents data files for Wiki, News, and Shop environments, including WebShop products and goal instructions. It does not explain whether those environments involve browser or GUI interaction. |
-| [UIED-WebAPP](https://github.com/MulongXie/UIED-WebAPP) | The repository contains application files but has no top-level README. Source documentation is needed to establish what the app does and how it is used. |
-| [openai.com](https://openai.com/index/gpt-6-astra) | primary evidence unresolved: HTTP Error 403: Forbidden; The page returned HTTP 403 and an empty title. Readable first-party content is needed to identify and assess the resource. |
-| [GELab-Engine-7B](https://huggingface.co/Summoneryhl/GELab-Engine-7B) | The model repository has checkpoint files, but its card gives only a license. Documentation of its task and use is needed. |
-| [tti_webarena](https://huggingface.co/sjunhongs/tti_webarena/tree/main) | The model repository has weight files, but its card gives only a license. Documentation of the model's task and use is needed. |
-| [firefox_antidetect_patch](https://github.com/feder-cr/firefox_antidetect_patch) | The repository has no top-level README. Its file list and repository metadata suggest browser modifications, but no readable source explains their role in agent use. |
-| [navi-bench](https://huggingface.co/datasets/yutori-ai/navi-bench) | The dataset card lists a 200-example validation split and task metadata fields, but does not explain the tasks or how the data is used. |
-| [UI-TARS：Next-generation native GUI agent model designed to interact seamlessly with GUIs using human-like perception](https://seed-tars.com/1.5) | The UI-TARS page contains a title and repeated description of a GUI agent model, without release details or an account of this version's contents. |
-| [decopatch](https://github.com/calmee4/decopatch) | The DeCoPatch README calls this an ECCV reference implementation and says the complete codebase is planned. It gives no subject or method from which to describe the resource. |
-| [mobile-spec](https://github.com/SeleniumHQ/mobile-spec) | The repository has files for a mobile specification, but the supplied source says only that it has no top-level README. Its purpose and use need documentation. |
-| [GUI-Robust](https://huggingface.co/datasets/kuangtie/GUI-Robust) | The GUI-Robust dataset card supplies language, license, size, and GUI-Agent tags, but gives no description of its examples or intended evaluation use. |
-| [agent-eval-harness](https://github.com/TradeStackDev/agent-eval-harness) | The README describes a web-agent evaluation harness and example task suites, but the supplied file list contains only README.md. Implementation and benchmark tasks are missing. |
-| [NextGen-CAPTCHAs](https://huggingface.co/datasets/YaxinLuo/NextGen-CAPTCHAs) | The dataset card contains only a license declaration. It does not explain the CAPTCHA images or how the dataset is used. |
-| [bolt.diy-Fork](https://github.com/mnluzimu/bolt.diy-Fork) | The repository has application and configuration files but no top-level README. The supplied source does not explain this fork's purpose or how its contents are used. |
-| [HiconAgent-AMEX](https://huggingface.co/datasets/Minuskid/HiconAgent-AMEX) | The HiconAgent-AMEX card associates this dataset with GUI-agent training, but describes the agent and training framework instead of the dataset's records, fields, or use. |
-| [Just a moment...](https://www.adept.ai/blog/fuyu-8b) | primary evidence unresolved: HTTP Error 403: Forbidden; The Adept Fuyu-8B blog fetch returned a browser verification page. The article text needed to assess the page is unavailable. |
-| [world_model_for_wa_desc_with_tao_formatted_w_cot](https://huggingface.co/datasets/LangAGI-Lab/world_model_for_wa_desc_with_tao_formatted_w_cot) | The dataset card lists instruction, input, and output fields with train and validation splits, but gives no description of the examples or their intended use. |
-| [next.js](https://github.com/vercel/next.js) | The supplied source contains only a README path. It gives no description of the repository's purpose or capabilities. |
-| [ScreenAgent](https://huggingface.co/niurl/ScreenAgent) | The model card contains only a license declaration. It does not describe the ScreenAgent archive or establish its relationship to the catalogued project. |
-| [InternVL3_5-14B](https://huggingface.co/OpenGVLab/InternVL3_5-14B) | The InternVL3.5-14B card mentions GUI interaction for the model family, but supplies no GUI task details or results for this checkpoint. Its individual computer-use capability remains unclear. |
-| [globot](https://github.com/Globe-Engineer/globot) | The globot README refers to GPT-4V and natbot but gives no direct description of globot's browser actions or workflow. Its computer-use capability remains unclear from the source. |
-| [wave-ui-viz](https://huggingface.co/spaces/agentsea/wave-ui-viz) | The Wave Ui Viz Space card contains Gradio configuration and a generic configuration-reference link. It does not describe what the app visualizes or how it is used. |
-| [OpenGUI-2B](https://huggingface.co/SugarVapeur/OpenGUI-2B) | primary evidence unresolved: content mismatch; The OpenGUI-2B repository lists model files, while its card contains only a license declaration. Its task, GUI capability and use are undocumented in the supplied source. |
-| [MindAct_CandidateGeneration_deberta-v3-base](https://huggingface.co/osunlp/MindAct_CandidateGeneration_deberta-v3-base) | The MindAct_CandidateGeneration_deberta-v3-base page offers a text-classification model and usage snippets, but has no card explaining its candidate-generation task or computer-use role. |
-| [Aguvis-7B-720P](https://huggingface.co/xlangai/Aguvis-7B-720P) | The Aguvis-7B-720P page shows model weights and GUI-grounding evaluation results, but has no model card explaining the checkpoint's task or use. |
-| [VideoAgentTrek-ScreenFilter](https://huggingface.co/xlangai/VideoAgentTrek-ScreenFilter) | The VideoAgentTrek-ScreenFilter repository has a checkpoint file, but its card contains only license metadata. A description of ScreenFilter's purpose and use is still missing. |
-| [GUI-AIMA-3B](https://huggingface.co/smz8599/GUI-AIMA-3B) | The GUI-AIMA-3B card contains a base-model entry and links to a paper and GitHub repository, but it gives no description of this checkpoint's function or intended use. |
-| [Postman](https://www.postman.com/idan-775bed48-7905039/browser-automation-hub) | The fetched Postman page contains only the Postman title. It supplies no description or contents for the purported browser automation hub. |
-| [WinSpot](https://github.com/zackhuiiiii/WinSpot) | The WinSpot README describes a Windows GUI grounding benchmark, but its dataset link is a placeholder and the page says release is still forthcoming. Benchmark data or evaluation assets are missing. |
-| [LFM2-350M-ComputerUse](https://huggingface.co/DingoBeast/LFM2-350M-ComputerUse) | The card provides a fine-tuned text-model adapter and a generic text-generation example. Computer-use training or GUI capability appears only in its name. |
-| [UIShift-7B-2K](https://huggingface.co/mllmTeam/UIShift-7B-2K) | The repository contains model weight files, but its page has no model card. The supplied source gives no task description or intended use for UIShift-7B-2K. |
-| [lora_qformer_test_V4-700_merged](https://huggingface.co/WenyiWU0111/lora_qformer_test_V4-700_merged) | The repository contains model weight files, but its rendered page says there is no model card. The supplied source does not explain the checkpoint's task or intended use. |
-| [ACT-SOP](https://huggingface.co/tineding/ACT-SOP) | ACT-SOP has adapter files, but its model card remains an unfilled template. The source gives no description of the adapter's task or intended use. |
-| [AgentEval](https://huggingface.co/datasets/AgentGym/AgentEval) | The AgentEval repository has JSON evaluation files and a rendered dataset preview, but no dataset card explains the tasks, evaluation procedure or intended use. |
-| [Visco](https://github.com/sys-reasoner/Visco) | Visco is described as a mobile and desktop GUI agent, and its README reports an Android World result. The agent code and setup instructions remain pending, so the release cannot yet be documented as usable. |
-| [Meta-Llama-3.1-8B-Instruct-value-model-16k-qlora-adapter-v2](https://huggingface.co/LangAGI-Lab/Meta-Llama-3.1-8B-Instruct-value-model-16k-qlora-adapter-v2) | The model repository contains adapter files, but its card remains an unfilled template. It gives no task, training, evaluation, or usage details to establish computer-use relevance. |
-| [a3-qwen-3.5-9b-trajectories](https://huggingface.co/datasets/xhluca/a3-qwen-3.5-9b-trajectories/tree/main/webarena) | The Hugging Face page shows trajectory files and a dataset viewer schema error, but has no dataset card explaining how the trajectories were collected or used. |
-| [osworld_v2_assets_gated](https://huggingface.co/datasets/xlangai/osworld_v2_assets_gated) | The gated Hugging Face repository lists OSWorld asset files, but its accessible page has no dataset card. The contents and intended use of those assets need documentation. |
-| [huggingface.co](https://huggingface.co/datasets/ZHEN-04/CaptchaArena-Trajectories) | primary evidence unresolved: response exceeds 10 MB metadata budget; The fetch for the CaptchaArena-Trajectories dataset returned an error and no source text. Its contents and use cannot be checked from the supplied evidence. |
-| [steel-python](https://github.com/steel-dev/steel-python) | The README documents a typed Steel REST API client and session creation, but does not explain what the sessions expose or whether they support browser interaction. |
-| [openai.com](https://openai.com/index/introducing-o3-and-o4-mini) | primary evidence unresolved: HTTP Error 403: Forbidden; The linked page returned HTTP 403, leaving no readable product or model description from which to assess computer-use relevance. |
-| [OSWorld-web](https://github.com/Task-Web/OSWorld-web) | OSWorld Web contains self-hosted web applications, but the README does not describe their use for agent tasks or evaluation. Its computer-use relevance remains unclear. |
-| [Qwen3-VL-8B-Instruct-MobileWorld-SFT](https://huggingface.co/jacklishufan/Qwen3-VL-8B-Instruct-MobileWorld-SFT) | The Hugging Face repository contains model files but has no model card. Documentation of the checkpoint's task, training, or intended use is missing. |
-| [agent-browser](https://github.com/NachaFromMars/agent-browser) | The README describes a browser automation CLI, but the supplied file list contains documentation and a skill file without the described Rust or Node.js implementation. An executable release or its implementation is needed. |
-| [SafeBench](https://github.com/NY1024/SafeBench) | The README calls SafeBench an initial proof-of-concept framework and links code and data. It still does not describe the evaluation subject, tasks, or how the repository is used. |
-| [OpenWebVoyager-opt-3](https://huggingface.co/OpenWebVoyager/OpenWebVoyager-opt-3) | The OpenWebVoyager-opt-3 model card contains only license front matter. It gives no model description or documented computer-use capability. |
-| [webarena-setup](https://github.com/gasse/webarena-setup) | The README only warns that the WebArena and VisualWebArena setup is unofficial. It gives no account of what the setup scripts do or how to use them. |
-| [spice](https://github.com/oetcxiaoliu/spice) | The repository's supplied README consists of null bytes. Its files are listed, but readable documentation describing the project and any computer-use application is missing. |
-| [zhuanlan.zhihu.com](https://zhuanlan.zhihu.com/p/18229337790) | primary evidence unresolved: HTTP Error 403: Forbidden; The Zhihu article fetch returned a 403 page showing only a generic welcome message; the article's subject and content are unavailable. |
-| [SmolVLM2-2.2B-Instruct-Agentic-GUI](https://huggingface.co/smolagents/SmolVLM2-2.2B-Instruct-Agentic-GUI) | The model card says the checkpoint was fine-tuned on aguvis-stage-2, but its only usage example is generic text generation. It gives no GUI-action or screen-grounding behavior. |
-| [help.openai.com](https://help.openai.com/en/articles/10561834-operator-release-notes) | primary evidence unresolved: HTTP Error 403: Forbidden; The Operator release-notes page returned HTTP 403 with an empty page title. The supplied source contains no readable release details. |
-| [deepmind.google](https://deepmind.google/technologies/project-mariner) | primary evidence unresolved: content mismatch; The Project Mariner URL redirects to a generic DeepMind homepage, and the supplied page body is undecodable binary text. The linked page's content remains unreadable. |
-| [Joy_Caption_Batch-GUI](https://huggingface.co/Ole1/Joy_Caption_Batch-GUI) | The model card contains only a license declaration. The file list includes scripts and weights, but the source does not explain the model's purpose or any computer-use capability. |
-| [AFM-WebAgent-RL-Dataset](https://huggingface.co/datasets/PersonalAILab/AFM-WebAgent-RL-Dataset) | The AFM-WebAgent-RL-Dataset card describes multi-agent reasoning trajectories and mentions web-agent settings. It gives no examples of browser pages, GUI observations, or website actions. |
-| [aitw-general-digiq-agent](https://huggingface.co/JackBAI/aitw-general-digiq-agent) | The Hugging Face repository has checkpoint files but no model card. The page gives no description of its inputs, training, or use. |
-| [GUI-SD-data](https://huggingface.co/datasets/yankie123/GUI-SD-data) | The Hugging Face page shows an image dataset with a train split and no dataset card. It does not explain what the images depict or how the annotations are used. |
-| [webarena-world-model-cot](https://huggingface.co/datasets/thuml/webarena-world-model-cot) | The dataset card links to usage examples and the RLVR-World paper, but provides no description of the dataset's records, collection method or role in web-agent training. |
-| [autodevice.io](https://autodevice.io/benchmark) | primary evidence unresolved: <urlopen error \[Errno -2\] Name or service not known>; The AutoDevice benchmark address yielded zero bytes of readable source. Its tasks, evaluation method and identity remain undocumented in the supplied evidence. |
-| [UXAgent: A System for Simulating Usability Testing of Web Design with LLM Agents](https://uxagent.hailab.io) | The UXAgent page supplies only a title about simulated usability testing of web design with LLM agents; it lacks a system description or release details. |
-| [MM-Eureka-Qwen-7B](https://huggingface.co/FanqingM/MM-Eureka-Qwen-7B) | The MM-Eureka-Qwen-7B card only points to another repository; it gives no account of this checkpoint's training, capabilities, or use. |
-| [nnetnav-wa-qwen-7B](https://huggingface.co/apurvaga/nnetnav-wa-qwen-7B) | The model card points to Go-Browse for details and examples, but does not describe this checkpoint's training, capabilities, or use. |
-| [Mind2Web-cleaned-lite-value-model-w-cot-formatted-test](https://huggingface.co/datasets/LangAGI-Lab/Mind2Web-cleaned-lite-value-model-w-cot-formatted-test) | The dataset card contains a title, feature names and a train split, but no description of the examples, their provenance or their intended use. |
-| [zerostep.com](https://zerostep.com) | primary evidence unresolved: <urlopen error \[Errno -3\] Temporary failure in name resolution>; The zerostep.com fetch supplied zero bytes of binary content. A readable product page is needed to establish its capabilities and substance. |
-| [mobile-openrpc](https://github.com/mobile-next/mobile-openrpc) | The repository lists OpenRPC specifications for mobilecli and Mobile Fleet, but the supplied README does not describe their operations or device-control capability. |
-| [dagster](https://github.com/dagster-io/dagster) | The supplied source is only a path to a README. It provides no description of the repository's purpose or capabilities. |
-| [openai.com](https://openai.com/index/gpt-4o-mini-advancing-cost-efficient-intelligence) | primary evidence unresolved: HTTP Error 403: Forbidden; The page fetch returned HTTP 403 and an empty title. Readable page content is needed to establish its subject and any computer-use relevance. |
-| [mobilevlm_test](https://huggingface.co/datasets/xwk123/mobilevlm_test) | The card identifies MobileVLM and mentions a benchmark, while the repository lists test-data archives. It gives no description of the files' contents, tasks, or use. |
-| [huggingface.co](https://huggingface.co/datasets/zlab-princeton/SWEeper-Bench-traces) | The dataset fetch returned an error and no source text. A readable card is needed to establish what the trace files contain and how they are used. |
-| [MM-Eureka-Qwen-32B](https://huggingface.co/FanqingM/MM-Eureka-Qwen-32B) | The repository page lists MM-Eureka-Qwen-32B model files but has no model card. It gives no supported account of the checkpoint's purpose or computer-use capability. |
-| [Just a moment...](https://www.adept.ai/blog/adept-fuyu-heavy) | primary evidence unresolved: HTTP Error 403: Forbidden; The Adept blog address returned a 403 bot challenge showing only “Just a moment...”. The article text is unavailable for reviewing its subject or substance. |
-| [dart-gui-7b](https://huggingface.co/dart-gui/dart-gui-7b) | The dart-gui-7b repository contains model weights, but its rendered page says “No model card”. The supplied source gives no description of its training or GUI capability. |
-| [TianXi_Action_Grounding_7B](https://huggingface.co/tangliang/TianXi_Action_Grounding_7B) | The repository contains model weights, but its page has no model card. The supplied source does not explain the checkpoint's task, training or use. |
-| [MER-17M](https://huggingface.co/datasets/topdu/MER-17M) | The MER-17M dataset card contains only a license declaration. It gives no description of the data or its use, so its relevance cannot be established. |
-| [zhuanlan.zhihu.com](https://zhuanlan.zhihu.com/p/14143950360n) | primary evidence unresolved: HTTP Error 403: Forbidden; The Zhihu fetch returned HTTP 403 and only a generic welcome message. The article's content and computer-use relevance remain unavailable. |
-| [android-control](https://huggingface.co/datasets/smolagents/android-control) | The android-control card lists goals, screenshots, actions, instructions, and train and test splits. It gives no description or provenance to establish how the dataset was made or its relation to AndroidControl. |
-| [OpenWebVoyager-opt-2](https://huggingface.co/OpenWebVoyager/OpenWebVoyager-opt-2) | The model card contains only license metadata. A description of the resource and its GUI or computer-use purpose is needed to assess it. |
-| [FerrisGrid-CLI-ts](https://github.com/BrunoV21/FerrisGrid-CLI-ts) | The README identifies this TypeScript package as a mirror of the canonical FerrisGrid Rust CLI. The canonical catalog record is absent from catalog_neighbors, leaving no permitted alias target. |
-| [chrome-integration](https://github.com/voqal/chrome-integration) | The repository contains extension-related files but has no top-level README. The supplied source does not explain its behavior or how it is used. |
-| [russ](https://github.com/xnancy/russ) | Sitebot documents training, synthesized data, and WebLang typechecking with a webagent manifest. The README still does not explain how it observes or operates websites. |
-| [codg](https://github.com/vcaesar/codg) | Codg documents a coding and work-agent harness and lists computer, mobile, and browser use in one broad feature line. The source gives no concrete interface-operation workflow or implementation detail. |
-| [zhuanlan.zhihu.com](https://zhuanlan.zhihu.com/p/1914038712540574158) | primary evidence unresolved: HTTP Error 403: Forbidden; The Zhihu article fetch returned 403 and only a generic welcome message. Its subject and article text are unavailable. |
-| [aguvis-stage-2](https://huggingface.co/datasets/smolagents/aguvis-stage-2) | The aguvis-stage-2 card lists image and conversation fields across named training configurations, but gives no description of the dataset's origin, task or intended use. |
-| [VideoAgentTrek-IDM-s2-7B](https://huggingface.co/xlangai/VideoAgentTrek-IDM-s2-7B) | The VideoAgentTrek-IDM-s2-7B repository has model weight files, but its card contains only a license declaration. Its purpose and use remain undocumented. |
-| [bugcraft-dataset](https://huggingface.co/erayyapagci/bugcraft-dataset) | The Hugging Face repository page lists bugcraft-dataset files but has no model card. The supplied source does not explain the files' purpose or use. |
-| [Error](https://ai.meta.com/blog/introducing-muse-spark-meta-model-api) | The Meta page returns an error message. The supplied source contains no readable description of the linked resource. |
-| [SEAgent-1.0-7B](https://huggingface.co/Zery/SEAgent-1.0-7B) | The model repository lists weight files, but its card only points to a GitHub repository and paper for inference. The supplied source does not describe the checkpoint's computer-use capability. |
-| [openai.com](https://openai.com/index/hello-gpt-4o) | primary evidence unresolved: HTTP Error 403: Forbidden; The OpenAI page fetch returned HTTP 403 and supplied no readable content. Its subject and relevance cannot be established from the supplied source. |
-| [aitw-webshop-digiq-agent](https://huggingface.co/JackBAI/aitw-webshop-digiq-agent) | The Hugging Face repository shows PyTorch model files but has no model card explaining the checkpoint's purpose, training, or use. Its computer-use relevance remains undocumented. |
-| [autopy-legacy](https://github.com/msanders/autopy) | The AutoPy legacy repository contains code, but its supplied README only says the repository is inactive and points to a replacement. It gives no description of the code or its use. |
-| [AFM-WebAgent-SFT-Dataset](https://huggingface.co/datasets/PersonalAILab/AFM-WebAgent-SFT-Dataset) | The dataset card describes multi-agent training trajectories and identifies web-agent data derived from TaskCraft. It does not describe page navigation or interaction within those trajectories. |
-| [showdown](https://github.com/generalagents/showdown) | The README calls showdown an offline and online computer-use benchmark suite, but gives no task descriptions, evaluation procedure, or usage instructions. |
-| [MobileGym](https://os-copilot.github.io/OpenMobile2-Sim) | The page contains only the title MobileGym. It gives no description of the resource, its contents, or how it is used. |
-| [huggingface.co](https://huggingface.co/datasets/sparklabutah/TimeWarp-GPT5-Traces) | The TimeWarp-GPT5-Traces dataset fetch returned an error with no source text or file listing, leaving its contents and relevance unverified. |
-| [ViCo](https://github.com/Xigmoid/ViCo) | The ViCo repository supplies only a title about visual-oriented coding for chart replication. It needs documentation of its method and release contents to assess its substance. |
-| [MM-Eureka-Dataset](https://huggingface.co/datasets/FanqingM/MM-Eureka-Dataset) | The Hugging Face page shows an image dataset with a train split but no dataset card. It needs documentation of the images and their intended use. |
-| [screen-capture-mcp](https://github.com/jblanchette/screen-capture-mcp) | The README documents a Windows screen-capture MCP server but directs source installation to kmoulder/screen-capture-mcp. This appears to be a copy, and no listed neighbor identifies the original. |
-| [InternVL3_5-38B](https://huggingface.co/OpenGVLab/InternVL3_5-38B) | The InternVL3_5-38B card describes a multimodal checkpoint and makes a brief GUI-interaction claim for the model family. It gives no GUI task, result, or checkpoint-specific detail. |
-| [InternVL3_5-2B](https://huggingface.co/OpenGVLab/InternVL3_5-2B) | The InternVL3_5-2B card documents a multimodal checkpoint and claims GUI interaction for the wider family. It supplies no GUI task, example, or result for this checkpoint. |
-| [MM-Navigator](https://github.com/zzxslp/MM-Navigator) | The MM-Navigator README links its smartphone GUI navigation paper and shows an iPhone demo. It says the code and benchmark are forthcoming and gives no agent usage instructions. |
-| [huggingface.co](https://huggingface.co/datasets/RVtech/Audio2Tool) | The Audio2Tool dataset fetch returned an error and supplied no card text. The dataset contents and relevance cannot be assessed from this source. |
-| [InternVL3_5-30B-A3B](https://huggingface.co/OpenGVLab/InternVL3_5-30B-A3B) | The InternVL3_5-30B-A3B card describes a general multimodal checkpoint and mentions GUI interaction as a family capability. It gives no GUI task, method, or result for this checkpoint. |
-| [MM-Eureka-8B](https://huggingface.co/FanqingM/MM-Eureka-8B) | The MM-Eureka-8B repository lists checkpoint files, but its card only points to a newer model. It gives no description of this checkpoint's capabilities or use. |
-| [WebCanvas_showcase](https://github.com/iMeanAI/WebCanvas_showcase) | WebCanvas_showcase describes an agent evaluation showcase and marks SeeAct complete. The README gives no integration details, and the supplied file list identifies only a SEEACT directory. |
-| [ProRL-Agent-Server](https://github.com/NVIDIA-NeMo/ProRL-Agent-Server) | Polar documents a general reinforcement-learning rollout server and marks CUA support complete in its roadmap. The README gives no computer-use workflow or integration detail. |
-| [webenv-sim](https://github.com/TradeStackDev/webenv-sim) | The README describes browser sessions, action replay, and evaluation, but the supplied file list contains only the README. The described implementation and tasks are missing. |
-| [InternVL3_5-8B-HF](https://huggingface.co/OpenGVLab/InternVL3_5-8B-HF) | The card documents an InternVL3.5 8B checkpoint and names GUI interaction for the model family. It gives no GUI task, result, or usage detail for this checkpoint. |
-| [huggingface.co](https://huggingface.co/datasets/TIGER-Lab/WebsiteBench) | primary evidence unresolved: response exceeds 10 MB metadata budget; The WebsiteBench dataset fetch returned an error with no source text or files. Its contents and relationship to the listed benchmark remain unverified. |
-| [huggingface.co](https://huggingface.co/datasets/mahirlabibdihan/weboperator-experiments) | The WebOperator Experiments dataset fetch returned an error with no source text or files. Its contents and relationship to the listed repository remain unverified. |
-| [InternVL3_5-GPT-OSS-20B-A4B-Preview-HF](https://huggingface.co/OpenGVLab/InternVL3_5-GPT-OSS-20B-A4B-Preview-HF) | The card documents a general InternVL3.5 checkpoint and names GUI interaction for the model family. It gives no GUI task, result, or usage detail for this preview checkpoint. |
-| [huggingface.co](https://huggingface.co/datasets/Zbao/WinDeskGround) | The WinDeskGround dataset address returned a fetch error with no source text. Its contents and relationship to the listed benchmark cannot be checked. |
-| [OpenPhone_dataset](https://huggingface.co/datasets/hkuds/OpenPhone_dataset) | The card identifies an AndroidLab archive and derived data for LightAgent GRPO training, but does not describe the data contents or establish a mobile GUI task. |
-| [aguvis-stage-1](https://huggingface.co/datasets/smolagents/aguvis-stage-1) | The dataset card lists GUI-related training configurations and image plus user-assistant text fields. It gives no description of the dataset's purpose, assembly or intended use. |
-| [UniClawBench-Assets](https://huggingface.co/datasets/Azily/UniClawBench-Assets) | UniClawBench Task Assets contains binary fixtures for a benchmark, but its card does not describe the tasks or establish that the assets evaluate computer or browser interaction. |
-| [huggingface.co](https://huggingface.co/datasets/YijiaFan/CaPtain-SFT-Data) | The dataset fetch returned an error with no source text or files. The supplied record gives no readable content from which to assess its purpose or computer-use relevance. |
-| [Interception](https://github.com/oblitum/Interception) | Interception's README covers Windows driver installation, licensing, and assorted uses. It does not explain what input-device actions its API exposes for automation. |
-| [InternVL3_5-30B-A3B-HF](https://huggingface.co/OpenGVLab/InternVL3_5-30B-A3B-HF) | The InternVL3.5 card mentions GUI interaction for the model family, while this checkpoint's detailed training and evaluations cover general multimodal tasks. Its own GUI use needs documentation. |
-| [A3Agent](https://github.com/FroStorM/A3Agent) | A3Agent describes a local desktop agent workspace with chat, model settings, SOPs, history, and backups. The supplied description leaves its ability to observe or operate other interfaces unclear. |
-| [Qwen-AgentWorld](https://github.com/QwenLM/Qwen-AgentWorld) | Qwen-AgentWorld models predicted observations across Android, Web, OS, and other agent domains. The supplied description leaves the role of graphical interfaces or browser actions in those domains unclear. |
+| [screen-capture-mcp](https://github.com/jblanchette/screen-capture-mcp) | An unmodified fork of kmoulder/screen-capture-mcp at upstream commit 01d5537, with the same README. It becomes an alias once kmoulder/screen-capture-mcp has a catalog record. |
+| [LX-GUIAgent](https://github.com/LX-GUIAgent/LX-GUIAgent) | The README describes a Planner-Grounder-Reflector Android agent and its AndroidWorld results; the repository holds the README, images, requirements.txt and result files. A record needs the agent code it names (lx_guiagent.py, agents/*.py). |
+| [SoftwareTestingLanguageModels](https://github.com/neuroevolution-ai/SoftwareTestingLanguageModels) | Research code in which language models pick widgets to click in NaturalNets GUI and dummy apps, via a Kivy viewer and a notebook; no README or doc states the project's goal, usage or results. |
+| [mind2web_clean](https://huggingface.co/datasets/BigAction/mind2web_clean) | The card holds only a dataset_info schema (query, html, operation, selenium_ground_truth and candidate fields) with no text on the data. A curated record needs the publisher to state the source dataset, what "clean" means and the intended use. |
+| [Sequence-of-action-prediction-mind2web](https://huggingface.co/datasets/Izazk/Sequence-of-action-prediction-mind2web) | The card holds only an MIT license line. combined_data.jsonl pairs web tasks and cleaned HTML elements with a target element and action type, with no stated origin, preparation or intended use. |
+| [VideoAgentTrek-CUA-7B](https://huggingface.co/xlangai/VideoAgentTrek-CUA-7B) | The card holds only an Apache-2.0 license line. The VideoAgentTrek README and paper cover computer-use pretraining from video-mined trajectories and name IDM checkpoints, and no fetched source names VideoAgentTrek-CUA-7B. |
+| [agent-output](https://huggingface.co/datasets/yueqis/agent-output/tree/main) | The repository holds hybrid-output.jsonl and per-task logs of a CodeActAgent run with gpt-4o-2024-05-13 that mixes API calls and web browsing on shopping_admin and other site tasks, and it has no card. |
+| [android_ui_detection_yolov8](https://huggingface.co/datasets/yasirfaizahmed/android_ui_detection_yolov8) | The repository holds one 1.09 GB data.zip; the viewer exposes a single image column of portrait screenshots, and the card is the unfilled Hugging Face template, leaving annotation format, classes and use undocumented. |
+| [zhuanlan.zhihu.com](https://zhuanlan.zhihu.com/p/1914038712540574158) | primary evidence unresolved: HTTP Error 403: Forbidden; Zhihu column article 1914038712540574158, found from the ScienceBoard release, serves only the site's anti-bot welcome page to plain fetches, and its article API answers 403, so the text is unavailable. |
+| [Figma](https://www.figma.com/deck/rsWK4sRl0dOahG59bfMhql) | A Figma Slides deck titled "Computer Use Talk 11/24" per Figma's oEmbed API; the deck renders only in JavaScript, so its slide text cannot be read. |
+| [zhuanlan.zhihu.com](https://zhuanlan.zhihu.com/p/14143950360n) | primary evidence unresolved: HTTP Error 403: Forbidden; Zhihu column article 14143950360n, found from the OS agent survey, serves only the site's anti-bot welcome page to plain fetches, and its article API answers 403, so the text is unavailable. |
+| [zhuanlan.zhihu.com](https://zhuanlan.zhihu.com/p/18229337790) | primary evidence unresolved: HTTP Error 403: Forbidden; Zhihu column article 18229337790, found from the OS-Genesis release, serves only the site's anti-bot welcome page to plain fetches, and its article API answers 403, so the text is unavailable. |
 
 ## Uncurated papers behind curated resources
 
@@ -768,15 +592,17 @@ Papers that a curated resource names as its `introduced_by` or `documented_by` p
 | [DesignRepair: Dual-Stream Design Guideline-Aware Frontend Repair with Large Language Models](https://arxiv.org/abs/2411.01606) | [DesignRepair](https://github.com/UGAIForge/DesignRepair) |
 | [InternVL3: Exploring Advanced Training and Test-Time Recipes for Open-Source Multimodal Models](https://arxiv.org/abs/2504.10479) | [InternVL3-9B](https://huggingface.co/OpenGVLab/InternVL3-9B), [InternVL3-2B](https://huggingface.co/OpenGVLab/InternVL3-2B), [InternVL3-1B](https://huggingface.co/OpenGVLab/InternVL3-1B), [InternVL3-78B](https://huggingface.co/OpenGVLab/InternVL3-78B), [InternVL3-8B](https://huggingface.co/OpenGVLab/InternVL3-8B), [InternVL3-14B](https://huggingface.co/OpenGVLab/InternVL3-14B), [InternVL3-38B](https://huggingface.co/OpenGVLab/InternVL3-38B) |
 | [AndroidGen: Building an Android Language Agent under Data Scarcity](https://arxiv.org/abs/2504.19298) | [AndroidGen-GLM-4-9B](https://huggingface.co/THUDM/androidgen-glm-4-9b), [AndroidGen-Llama-3-70B](https://huggingface.co/THUDM/androidgen-llama-3-70b) |
+| [RLVR-World: Training World Models with Reinforcement Learning](https://arxiv.org/abs/2505.13934) | [webarena-world-model-cot](https://huggingface.co/datasets/thuml/webarena-world-model-cot), [webarena-world-model-sft](https://huggingface.co/thuml/webarena-world-model-sft), [webarena-world-model-rlvr](https://huggingface.co/thuml/webarena-world-model-rlvr) |
 | [AgentGym-RL: Training LLM Agents for Long-Horizon Decision Making through Multi-Turn Reinforcement Learning](https://arxiv.org/abs/2509.08755) | [AgentGym-RL](https://github.com/WooooDyy/AgentGym-RL) |
 | [UI2Code^N: UI-to-Code Generation as Interactive Visual Optimization](https://arxiv.org/abs/2511.08195) | [UI2Code^N](https://github.com/zai-org/UI2Code_N), [UI2Code_N](https://huggingface.co/zai-org/UI2Code_N) |
 | [LPS-Bench: Benchmarking Safety Awareness of Computer-Use Agents in Long-Horizon Planning under Benign and Adversarial Scenarios](https://arxiv.org/abs/2602.03255) | [LPS-Bench](https://huggingface.co/datasets/tianyyuu/LPS-Bench) |
 | [GenericAgent: A Token-Efficient Self-Evolving LLM Agent via Contextual Information Density Maximization (V1.0)](https://arxiv.org/abs/2604.17091) | [GA-Technical-Report](https://github.com/JinyiHan99/GA-Technical-Report) |
+| [Qwen-AgentWorld: Language World Models for General Agents](https://arxiv.org/abs/2606.24597) | [Qwen-AgentWorld](https://github.com/QwenLM/Qwen-AgentWorld) |
 | [AutoDesign: Meta-Harness Optimization for Long-Horizon Agentic Design](https://arxiv.org/abs/2608.13560) | [AutoDesign](https://github.com/Yaxin9Luo/AutoDesign) |
 | [RSIGame: Autonomous Agentic Game Development with Recursive Self-improvement](https://arxiv.org/abs/2609.39045) | [RSIGame](https://github.com/WenyiWU0111/RSIGame) |
 | [GroundAnything: Reconciling Parallel Decoding with Precise Visual Grounding at Flash Speed](https://arxiv.org/abs/2609.39600) | [GroundAnything-VLM](https://huggingface.co/GroundingPI/GroundAnything-VLM) |
 | [VISTA: A Visual Harness for Reasoning in an Interactive World](https://arxiv.org/abs/2610.02200) | [VISTA](https://github.com/joshhhhhan/VISTA) |
-| [SWEeper-Bench: Can Agents Discover Bugs in Interactive Software?](https://arxiv.org/abs/2610.14096) | [SWEeper-Bench](https://huggingface.co/datasets/zlab-princeton/SWEeper-Bench) |
+| [SWEeper-Bench: Can Agents Discover Bugs in Interactive Software?](https://arxiv.org/abs/2610.14096) | [SWEeper-Bench-traces](https://huggingface.co/datasets/zlab-princeton/SWEeper-Bench-traces), [SWEeper-Bench](https://huggingface.co/datasets/zlab-princeton/SWEeper-Bench) |
 | [Gym-Anything-RT: Scaling Real-Time Environments for Vision-Language Agents](https://arxiv.org/abs/2610.37567) | [Gym-Anything-RT](https://github.com/gym-anything/gym-anything-rt) |
 
 ## Scope exclusions

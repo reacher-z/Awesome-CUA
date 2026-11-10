@@ -219,6 +219,7 @@ Edit authored files by hand and review them in a pull request. Do not hand-edit 
 | `translations.zh-CN.json` | Authored | Chinese summaries keyed by curated record ID, checked by `catalog.py validate` |
 | `scan-config.json` | Authored | Scan schedule and limits read by `scan.py` and the website status page |
 | `site-guides.json`, `site-discovery.json` | Authored | Website guides and search-discovery settings read by `build_site.py` and `submit_indexnow.py` |
+| `site-guides.zh-CN.json`, `survey.zh-CN.json` | Authored | Chinese guides keyed by guide slug, and the Chinese survey landing page (title, abstract, section titles and the fingerprint of the English abstract it translates), read by `build_site.py` |
 | `conference-discovery.json`, `discovery-audits.json` | Authored | Records of a manual proceedings sweep and an arXiv query audit; no script rewrites them |
 | `topics.json` | Authored | Topic vocabulary read by `catalog.py validate`, `catalog.py build`, `build_site.py` and the website; see [topic vocabulary](#topic-vocabulary) |
 | `search-submissions.json` | Authored | Hand-recorded search-console receipts; `submit_indexnow.py --submit` with default paths also appends here |

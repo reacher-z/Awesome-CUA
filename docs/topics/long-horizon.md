@@ -2,9 +2,9 @@
 
 [Home](../../README.md) · [All topics](../topics.md) · [Full arXiv bibliography](../papers.md)
 
-240 source-reviewed resources tagged `long-horizon`. Curated metadata; unknown facts are shown as —.
+241 source-reviewed resources tagged `long-horizon`. Curated metadata; unknown facts are shown as —.
 
-**Contents:** [Benchmarks (26)](#benchmarks) · [Datasets (6)](#datasets) · [Models (3)](#models) · [Agents (11)](#agents) · [Frameworks (27)](#frameworks) · [Tools (1)](#tools) · [Infrastructure (2)](#infrastructure) · [Papers (164)](#papers)
+**Contents:** [Benchmarks (26)](#benchmarks) · [Datasets (7)](#datasets) · [Models (3)](#models) · [Agents (11)](#agents) · [Frameworks (27)](#frameworks) · [Tools (1)](#tools) · [Infrastructure (2)](#infrastructure) · [Papers (164)](#papers)
 
 ## Benchmarks
 
@@ -46,6 +46,7 @@
 | [Mind2Web 2 task data and judge scripts](https://huggingface.co/datasets/osunlp/Mind2Web-2) | web | — | [130 per-task evaluation scripts](https://huggingface.co/datasets/osunlp/Mind2Web-2/tree/54f5b2546c30b86812d9564f4800c0c6f77deb45/evaluation_scripts/2025_10_23) | data cc-by-4.0 | Auto-gated Hub release of Mind2Web 2: dev and test task CSVs for long-horizon agentic web search, plus 130 per-task Python evaluation scripts that act as its judge agents. | [✓ 2026‑10‑18](https://huggingface.co/api/datasets/osunlp/Mind2Web-2/revision/54f5b2546c30b86812d9564f4800c0c6f77deb45) |
 | [OSWorld 2.0 task classes](https://huggingface.co/datasets/xlangai/osworld_v2_tasks) | desktop, linux | [2606.29537](https://arxiv.org/abs/2606.29537) (2026) | [108 task class files](https://huggingface.co/api/datasets/xlangai/osworld_v2_tasks) · [34 implementation note files](https://huggingface.co/api/datasets/xlangai/osworld_v2_tasks) | data apache-2.0 | Gated Hub release of the OSWorld 2.0 benchmark's Python task classes, which hold task setup and evaluator logic kept out of the public code to limit leakage and are pinned per benchmark release. | [✓ 2026‑10‑18](https://huggingface.co/api/datasets/xlangai/osworld_v2_tasks) |
 | [OSWorld 2.0 trajectories](https://huggingface.co/datasets/xlangai/osworld2.0-trajectory) | desktop, linux | [2606.29537](https://arxiv.org/abs/2606.29537) (2026) | [21 ZIP result archives](https://huggingface.co/api/datasets/xlangai/osworld2.0-trajectory/tree/a9cd5b050c26012f21515b227d6b9c7af728a8f0) · [7 model run folders](https://huggingface.co/api/datasets/xlangai/osworld2.0-trajectory/tree/a9cd5b050c26012f21515b227d6b9c7af728a8f0/website_demo) · [108 task folders](https://huggingface.co/api/datasets/xlangai/osworld2.0-trajectory/tree/a9cd5b050c26012f21515b227d6b9c7af728a8f0/website_demo/MiniMax-M3/tasks) | — | XLang's gated release of OSWorld 2.0 agent runs: 21 ZIP result archives named by model and run settings, plus per-task trajectory JSONL, step screenshots, results and logs for seven model runs. | [✓ 2026‑10‑18](https://huggingface.co/api/datasets/xlangai/osworld2.0-trajectory) |
+| [osworld_v2_assets_gated](https://huggingface.co/datasets/xlangai/osworld_v2_assets_gated) | desktop, linux | [2606.29537](https://arxiv.org/abs/2606.29537) (2026) | — | — | Gated Hub snapshot of the task assets for the OSWorld 2.0 computer-use benchmark, such as setup files and ground-truth files, downloaded locally and pinned per benchmark release before tasks run. | [✓ 2026‑11‑10](https://huggingface.co/api/datasets/xlangai/osworld_v2_assets_gated) |
 | [VeriGUI](https://huggingface.co/datasets/2077AIDataFoundation/VeriGUI) | web | [2508.04026](https://arxiv.org/abs/2508.04026) (2025) | — | data apache-2.0 | VeriWeb dataset of 302 web information-seeking tasks, with annotated subtasks, human action logs, and execution videos for evaluating long-chain agents. | [✓ 2026‑11‑09](https://huggingface.co/api/datasets/2077AIDataFoundation/VeriGUI) |
 
 ## Models

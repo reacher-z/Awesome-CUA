@@ -2,9 +2,9 @@
 
 [Home](../../README.md) · [All topics](../topics.md) · [Full arXiv bibliography](../papers.md)
 
-83 source-reviewed resources tagged `video`. Curated metadata; unknown facts are shown as —.
+86 source-reviewed resources tagged `video`. Curated metadata; unknown facts are shown as —.
 
-**Contents:** [Benchmarks (5)](#benchmarks) · [Datasets (17)](#datasets) · [Models (7)](#models) · [Frameworks (3)](#frameworks) · [Tools (10)](#tools) · [Products (1)](#products) · [Learning resources (1)](#learning-resources) · [Papers (39)](#papers)
+**Contents:** [Benchmarks (5)](#benchmarks) · [Datasets (17)](#datasets) · [Models (10)](#models) · [Frameworks (3)](#frameworks) · [Tools (10)](#tools) · [Products (1)](#products) · [Learning resources (1)](#learning-resources) · [Papers (39)](#papers)
 
 ## Benchmarks
 
@@ -49,6 +49,9 @@
 | [Magma-8B](https://huggingface.co/microsoft/Magma-8B) | unspecified | [2502.13130](https://arxiv.org/abs/2502.13130) (2025) | weights mit | Magma-8B is a released multimodal agent checkpoint whose card shows UI navigation tasks alongside robot manipulation and describes training with video data. | [✓ 2026‑11‑09](https://huggingface.co/api/models/microsoft/Magma-8B) |
 | [Qwen3-VL / Qwen2.5-VL](https://github.com/QwenLM/Qwen3-VL) | cross-platform, web, desktop, android | [2502.13923](https://arxiv.org/abs/2502.13923) (2025) | code Apache-2.0 | Official repository for the Qwen-VL vision-language model series supporting native visual GUI grounding, computer use, and mobile navigation. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/QwenLM/Qwen3-VL/HEAD/README.md) |
 | [ShowUI-Narrator](https://huggingface.co/FRank62Wu/ShowUI-Narrator) | unspecified | — | weights apache-2.0 | A released 2B model for narrating user actions in GUI screenshots and video, with a pipeline that detects the cursor and processes cropped frames. | [✓ 2026‑11‑09](https://huggingface.co/api/models/FRank62Wu/ShowUI-Narrator) |
+| [VideoAgentTrek-IDM-s1-7B](https://huggingface.co/xlangai/VideoAgentTrek-IDM-s1-7B) | unspecified | [2510.19488](https://arxiv.org/abs/2510.19488) (2025) | weights apache-2.0 | Keyframe detection model for the VideoAgentTrek Video2Action pipeline, the first inverse-dynamics stage that finds GUI interaction moments in screen-recorded tutorial videos before a second model labels the actions. | [✓ 2026‑11‑10](https://huggingface.co/api/models/xlangai/VideoAgentTrek-IDM-s1-7B) |
+| [VideoAgentTrek-IDM-s2-7B](https://huggingface.co/xlangai/VideoAgentTrek-IDM-s2-7B) | cross-platform | [2510.19488](https://arxiv.org/abs/2510.19488) (2025) | weights apache-2.0 | Action identification model in the VideoAgentTrek Video2Action pipeline, which recovers GUI actions such as clicks and typed text from screen-recorded tutorial videos to build computer-use training trajectories. | [✓ 2026‑11‑10](https://huggingface.co/api/models/xlangai/VideoAgentTrek-IDM-s2-7B) |
+| [VideoAgentTrek-ScreenFilter](https://huggingface.co/xlangai/VideoAgentTrek-ScreenFilter) | unspecified | — | weights agpl-3.0 | Cursor-detection model in the VideoAgentTrek pipeline that filters screen-recorded tutorial videos by cursor presence before Video2Action extracts GUI action trajectories. | [✓ 2026‑11‑10](https://huggingface.co/api/models/xlangai/VideoAgentTrek-ScreenFilter) |
 
 ## Frameworks
 

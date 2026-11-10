@@ -201777,5 +201777,39 @@
     "reviewed_at": "2026-11-10T05:24:09Z",
     "read_basis": "Scan-backlog review 2026-11-10: primary source (README) fetched 2026-11-10T05:00:54Z; new scan find decided by a Claude reviewer agent from primary sources; independent verifier agent (claude-reviewer + verifier); deterministic checker on quotes, vocabulary and summary rules.",
     "reviewed_sha256": "92c6b362bb5f14bf1517476b73b0fc329accaa94d27599316c75007cb2ae045d"
+  },
+  {
+    "id": "arxiv:2410.03859",
+    "name": "SWE-bench Multimodal: Do AI Systems Generalize to Visual Software Domains?",
+    "kind": "paper",
+    "url": "https://arxiv.org/abs/2410.03859",
+    "summary": "Introduces SWE-bench Multimodal, issue-resolution tasks from 17 JavaScript libraries for interface design, diagramming, visualization and mapping, each with images, and tests how SWE-bench systems generalize to them.",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "evaluation",
+      "screen-understanding"
+    ],
+    "scope": "adjacent",
+    "verify_terms": [
+      "SWE-bench Multimodal: Do AI Systems Generalize"
+    ],
+    "evidence_urls": [
+      "https://export.arxiv.org/api/query?id_list=2410.03859&max_results=1"
+    ],
+    "notes": "The annotation and scope were reviewed against the complete retained original arXiv abstract. Adjacent scope: systems fix visual front-end bugs by editing code rather than operating an interface. The abstract reports 617 task instances, which differs from the released Hub split sizes. Experimental findings have not been independently reproduced.",
+    "primary_supports": [
+      "name",
+      "kind",
+      "summary",
+      "environments",
+      "topics",
+      "scope",
+      "notes"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_sha256": "c94a4981a9d8544a6aa678d639e2af5d6c75b1ed69a2a3a7547da982e568bcad",
+    "reviewed_at": "2026-10-18T11:12:10Z"
   }
 ]

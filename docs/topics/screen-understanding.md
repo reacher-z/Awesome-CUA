@@ -2,9 +2,9 @@
 
 [Home](../../README.md) · [All topics](../topics.md) · [Full arXiv bibliography](../papers.md)
 
-1,018 source-reviewed resources tagged `screen-understanding`. Curated metadata; unknown facts are shown as —.
+1,019 source-reviewed resources tagged `screen-understanding`. Curated metadata; unknown facts are shown as —.
 
-**Contents:** [Benchmarks (26)](#benchmarks) · [Datasets (67)](#datasets) · [Models (165)](#models) · [Agents (96)](#agents) · [Frameworks (107)](#frameworks) · [Tools (313)](#tools) · [Infrastructure (4)](#infrastructure) · [Learning resources (5)](#learning-resources) · [Surveys (2)](#surveys) · [Papers (233)](#papers)
+**Contents:** [Benchmarks (26)](#benchmarks) · [Datasets (67)](#datasets) · [Models (165)](#models) · [Agents (96)](#agents) · [Frameworks (107)](#frameworks) · [Tools (313)](#tools) · [Infrastructure (4)](#infrastructure) · [Learning resources (5)](#learning-resources) · [Surveys (2)](#surveys) · [Papers (234)](#papers)
 
 ## Benchmarks
 
@@ -1004,6 +1004,7 @@ All entries in this section: unspecified.
 | 2024‑10‑24 | [Ferret-UI 2: Mastering Universal User Interface Understanding Across Platforms](https://arxiv.org/abs/2410.18967) | ios, android, web, cross-platform | Extends Ferret-UI across device platforms with adaptive visual scaling and synthetic data for referring, grounding, and user-centered UI tasks. |
 | 2024‑10‑18 | [Test-Agent: A Multimodal App Automation Testing Framework Based on the Large Language Model](https://ieeexplore.ieee.org/abstract/document/10778901) | harmonyos, cross-platform | Test-Agent uses an LLM, screenshots, and interface structure to generate and execute mobile app test actions from natural-language instructions across platforms. |
 | 2024‑10‑17 | [Harnessing Webpage UIs for Text-Rich Visual Understanding](https://arxiv.org/abs/2410.13824) | web | Builds MultiUI by generating instructions from webpage accessibility trees and pairing them with screenshots for multimodal training. Evaluation examines web-interface understanding, including VisualWebBench and Mind2Web, and transfer to other text-rich visual tasks. |
+| 2024‑10‑04 | [SWE-bench Multimodal: Do AI Systems Generalize to Visual Software Domains?](https://arxiv.org/abs/2410.03859) | web | Introduces SWE-bench Multimodal, issue-resolution tasks from 17 JavaScript libraries for interface design, diagramming, visualization and mapping, each with images, and tests how SWE-bench systems generalize to them. |
 | 2024‑09‑30 | [DreamStruct: Understanding Slides and User Interfaces via Synthetic Data Generation](https://arxiv.org/abs/2410.00201) | cross-platform | Generates labeled slides and interface visuals through code to support visual element detection, description, and classification with less manual annotation. |
 | 2024‑09‑30 | [MM1.5: Methods, Analysis & Insights from Multimodal LLM Fine-tuning](https://arxiv.org/abs/2409.20566) | unspecified | MM1.5 is a multimodal model family trained with curated data mixtures; its MM1.5-UI variant targets mobile UI understanding. |
 | 2024‑09‑26 | [Inferring Alt-text For UI Icons With Large Language Models During App Development](https://arxiv.org/abs/2409.18060) | unspecified | Introduces IconDesc, which generates mobile icon alt-text from partial UI context such as element identifiers, bounds, nearby text and hierarchy. Model evaluation and a user study examine the resulting accessibility descriptions. |

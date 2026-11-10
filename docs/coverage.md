@@ -2,7 +2,7 @@
 
 Evidence snapshot through **2026-11-10T08:20:17Z**. Generated from committed source receipts.
 
-- 5,347 curated resources. Another 1,188 records await review with bibliographic metadata only; the active catalog file holds 6,535 records in all.
+- 5,348 curated resources. Another 1,187 records await review with bibliographic metadata only; the active catalog file holds 6,535 records in all.
 - 2,906 paper and survey records, including 2,853 arXiv identities and 53 publisher-only identities.
 - 4,161 retained arXiv metadata records; 1,308 explicit scope exclusions are outside the active catalog.
 - 9,817 discovery identifiers; 181 remain unresolved. Reviewed decisions include 505 non-resource links, 748 aliases and 2,052 out-of-scope resources; their reasons remain in the review queue.
@@ -24,7 +24,7 @@ Counts of source-reviewed resources. A resource tagged with several environments
 | [infrastructure](infrastructures.md) | 65 | 78 | 16 | 23 | 59 | 22 | 3 | · | 11 | 2 |
 | [learning](learning.md) | 30 | 19 | 3 | 5 | 4 | 4 | 1 | · | 19 | 1 |
 | [model](models.md) | 190 | 179 | 22 | 18 | 21 | 100 | 7 | · | 144 | 90 |
-| [paper](topics.md) | 661 | 244 | 43 | 18 | 25 | 229 | 12 | 4 | 112 | 597 |
+| [paper](topics.md) | 662 | 244 | 43 | 18 | 25 | 229 | 12 | 4 | 112 | 597 |
 | [product](products.md) | 64 | 23 | 9 | 9 | 4 | 6 | 2 | 1 | 8 | · |
 | [survey](surveys.md) | 7 | 2 | 1 | · | · | 2 | 1 | · | 13 | 17 |
 | [tool](tools.md) | 681 | 577 | 264 | 294 | 198 | 74 | 48 | 2 | 176 | 21 |
@@ -138,7 +138,7 @@ The denominator is the normalized identifiers extracted from each fetched docume
 | [Survey bibliography references with no other registered listing (arXiv identifier query)](https://arxiv.org) | 4 | 4 | 3 | 0 | 0 | 0 | 0 | OK · 2026-11-10 |
 | [Efficient GUI Agents survey (arXiv 2609.02309) — HTML bibliography](https://arxiv.org/abs/2609.02309) | 118 | 75 | 74 | 2 | 37 | 1 | 3 | OK · 2026-11-10 |
 | [GUI Agents: A Survey (arXiv 2412.13501) — HTML bibliography](https://arxiv.org/abs/2412.13501) | 117 | 62 | 56 | 13 | 35 | 6 | 1 | OK · 2026-11-10 |
-| [Computer-use benchmark leads](https://github.com/reacher-z/Awesome-CUA/blob/main/docs/discovery-leads/benchmark-leads.md) | 161 | 105 | 3 | 4 | 0 | 52 | 0 | OK · 2026-11-10 |
+| [Computer-use benchmark leads](https://github.com/reacher-z/Awesome-CUA/blob/main/docs/discovery-leads/benchmark-leads.md) | 161 | 105 | 4 | 4 | 0 | 52 | 0 | OK · 2026-11-10 |
 
 ## Paper-discovery query coverage
 
@@ -592,7 +592,6 @@ Papers that a curated resource names as its `introduced_by` or `documented_by` p
 | Paper | Linked from |
 | --- | --- |
 | [Agent Lumos: Unified and Modular Training for Open-Source Language Agents](https://arxiv.org/abs/2311.05657) | [lumos_web_agent_ground_iterative](https://huggingface.co/datasets/ai2lumos/lumos_web_agent_ground_iterative), [lumos_web_agent_ground_iterative](https://huggingface.co/ai2lumos/lumos_web_agent_ground_iterative), [lumos_unified_plan_iterative](https://huggingface.co/ai2lumos/lumos_unified_plan_iterative), [lumos_unified_plan_iterative](https://huggingface.co/datasets/ai2lumos/lumos_unified_plan_iterative), [lumos_web_agent_plan_iterative-13B](https://huggingface.co/ai2lumos/lumos_web_agent_plan_iterative-13B), [lumos_unified_ground_iterative](https://huggingface.co/datasets/ai2lumos/lumos_unified_ground_iterative), [lumos_unified_ground_iterative](https://huggingface.co/ai2lumos/lumos_unified_ground_iterative), [lumos_unified_ground_iterative-13B](https://huggingface.co/ai2lumos/lumos_unified_ground_iterative-13B), [lumos_web_agent_ground_iterative-13B](https://huggingface.co/ai2lumos/lumos_web_agent_ground_iterative-13B), [lumos_web_agent_plan_iterative](https://huggingface.co/ai2lumos/lumos_web_agent_plan_iterative), [lumos_unified_plan_iterative-13B](https://huggingface.co/ai2lumos/lumos_unified_plan_iterative-13B) |
-| [SWE-bench Multimodal: Do AI Systems Generalize to Visual Software Domains?](https://arxiv.org/abs/2410.03859) | [SWE-bench Multimodal](https://huggingface.co/datasets/SWE-bench/SWE-bench_Multimodal) |
 | [DesignRepair: Dual-Stream Design Guideline-Aware Frontend Repair with Large Language Models](https://arxiv.org/abs/2411.01606) | [DesignRepair](https://github.com/UGAIForge/DesignRepair) |
 | [InternVL3: Exploring Advanced Training and Test-Time Recipes for Open-Source Multimodal Models](https://arxiv.org/abs/2504.10479) | [InternVL3-9B](https://huggingface.co/OpenGVLab/InternVL3-9B), [InternVL3-2B](https://huggingface.co/OpenGVLab/InternVL3-2B), [InternVL3-1B](https://huggingface.co/OpenGVLab/InternVL3-1B), [InternVL3-78B](https://huggingface.co/OpenGVLab/InternVL3-78B), [InternVL3-8B](https://huggingface.co/OpenGVLab/InternVL3-8B), [InternVL3-14B](https://huggingface.co/OpenGVLab/InternVL3-14B), [InternVL3-38B](https://huggingface.co/OpenGVLab/InternVL3-38B) |
 | [AndroidGen: Building an Android Language Agent under Data Scarcity](https://arxiv.org/abs/2504.19298) | [AndroidGen-GLM-4-9B](https://huggingface.co/THUDM/androidgen-glm-4-9b), [AndroidGen-Llama-3-70B](https://huggingface.co/THUDM/androidgen-llama-3-70b) |

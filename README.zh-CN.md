@@ -7,7 +7,7 @@
 **[网站搜索](https://awesomecua.com/zh/)** · **[论文](https://awesomecua.com/zh/papers/)** · **[主题](https://awesomecua.com/zh/topics/)** · **[数据](https://awesomecua.com/zh/data/)** · **[API](https://awesomecua.com/api/)** · **[智能体指南](https://awesomecua.com/zh/agents/)** · **[参与贡献](CONTRIBUTING.md)**
 
 <!-- BADGES:START -->
-![Curated resources](https://img.shields.io/badge/curated%20resources-5%2C347-4352E8?style=flat-square&labelColor=1E2233) ![Reviewed papers and surveys](https://img.shields.io/badge/reviewed%20papers%20and%20surveys-1%2C718-4352E8?style=flat-square&labelColor=1E2233) [![Last successful scan](https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2Freacher-z%2FAwesome-CUA%2Fstatus%2Fscan-badge.json&style=flat-square&labelColor=1E2233)](docs/maintenance.md#scan-badge) ![Hugging Face dataset](https://img.shields.io/badge/dataset-Hugging%20Face-4352E8?style=flat-square&labelColor=1E2233) ![MIT license](https://img.shields.io/badge/license-MIT-5E6472?style=flat-square&labelColor=1E2233)
+![Curated resources](https://img.shields.io/badge/curated%20resources-5%2C348-4352E8?style=flat-square&labelColor=1E2233) ![Reviewed papers and surveys](https://img.shields.io/badge/reviewed%20papers%20and%20surveys-1%2C719-4352E8?style=flat-square&labelColor=1E2233) [![Last successful scan](https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2Freacher-z%2FAwesome-CUA%2Fstatus%2Fscan-badge.json&style=flat-square&labelColor=1E2233)](docs/maintenance.md#scan-badge) ![Hugging Face dataset](https://img.shields.io/badge/dataset-Hugging%20Face-4352E8?style=flat-square&labelColor=1E2233) ![MIT license](https://img.shields.io/badge/license-MIT-5E6472?style=flat-square&labelColor=1E2233)
 <!-- BADGES:END -->
 
 觉得有用？欢迎在 GitHub 上[点星支持本合集](https://github.com/reacher-z/Awesome-CUA)，让更多人找到它。
@@ -67,9 +67,9 @@ python3 scripts/catalog.py get arxiv:2404.07972 --related --json
 
 <!-- STATS:START -->
 
-**5,347 条已审阅资源** · **1,718 篇已审阅论文与综述** · **104 个发现来源文档**
+**5,348 条已审阅资源** · **1,719 篇已审阅论文与综述** · **104 个发现来源文档**
 
-证据截至 `2026-11-10T08:20:17Z`。**1,188 条待审阅记录**已完成书目核实；**181 个已发现候选**尚待处理。2,052 个候选已完成范围外审阅。1,308 条范围排除记录在归档中保留原始元数据。
+证据截至 `2026-11-10T08:20:17Z`。**1,187 条待审阅记录**已完成书目核实；**181 个已发现候选**尚待处理。2,052 个候选已完成范围外审阅。1,308 条范围排除记录在归档中保留原始元数据。
 
 <!-- STATS:END -->
 
@@ -78,7 +78,7 @@ python3 scripts/catalog.py get arxiv:2404.07972 --related --json
 <!-- EXPLORE:START -->
 | 浏览                              | 内容               |    条目 |
 | ------------------------------- | ---------------- | ----: |
-| [按主题浏览研究](docs/topics.md)       | 按主题整理的已审阅论文      | 1,681 |
+| [按主题浏览研究](docs/topics.md)       | 按主题整理的已审阅论文      | 1,682 |
 | [完整论文目录](docs/papers.md)        | 全部论文与综述记录，含待审阅记录 | 2,906 |
 | [综述](docs/surveys.md)           | 电脑操作智能体研究综述      |    37 |
 | [学习资源](docs/learning.md)        | 课程与教程            |    38 |
@@ -92,7 +92,7 @@ python3 scripts/catalog.py get arxiv:2404.07972 --related --json
 | [产品](docs/products.md)          | 厂商和项目提供的电脑操作产品   |    75 |
 | [发布方与品牌](docs/companies.md)     | 与已收录资源相关的发布方和品牌  |    19 |
 
-**按平台：** [Web](docs/environments/web.md) **2,746** · [Desktop](docs/environments/desktop.md) **1,832** · [Windows](docs/environments/windows.md) **587** · [macOS](docs/environments/macos.md) **597** · [Linux](docs/environments/linux.md) **550** · [Android](docs/environments/android.md) **745** · [iOS](docs/environments/ios.md) **120** · [HarmonyOS](docs/environments/harmonyos.md) **10** · [Cross-platform](docs/environments/cross-platform.md) **758**
+**按平台：** [Web](docs/environments/web.md) **2,747** · [Desktop](docs/environments/desktop.md) **1,832** · [Windows](docs/environments/windows.md) **587** · [macOS](docs/environments/macos.md) **597** · [Linux](docs/environments/linux.md) **550** · [Android](docs/environments/android.md) **745** · [iOS](docs/environments/ios.md) **120** · [HarmonyOS](docs/environments/harmonyos.md) **10** · [Cross-platform](docs/environments/cross-platform.md) **758**
 <!-- EXPLORE:END -->
 
 覆盖 Web、桌面、Android、iOS、Windows、macOS、Linux 和跨平台工作。主题包括 grounding、屏幕理解、规划、记忆、长流程任务、强化学习、数据生成、安全、鲁棒性和评测。环境分面可以重叠；不会根据模型的基准成绩推定框架支持。

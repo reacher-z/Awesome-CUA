@@ -1,7 +1,7 @@
 {
   "as_of_utc": "2026-11-10T08:20:17Z",
   "total_records": 6535,
-  "curated_records": 5347,
+  "curated_records": 5348,
   "bibliographic_records": 2906,
   "arxiv_active_records": 2853,
   "non_arxiv_bibliographic_records": 53,
@@ -9,7 +9,7 @@
   "arxiv_archive_records": 4161,
   "excluded_records": 1308,
   "exclusion_revalidation_pending": 0,
-  "metadata_only_records": 1188,
+  "metadata_only_records": 1187,
   "discovery_identifiers": 9817,
   "unindexed_candidates": 181,
   "non_resource_candidates": 505,
@@ -2683,14 +2683,6 @@
       ]
     },
     {
-      "id": "arxiv:2410.03859",
-      "name": "SWE-bench Multimodal: Do AI Systems Generalize to Visual Software Domains?",
-      "url": "https://arxiv.org/abs/2410.03859",
-      "linked_from": [
-        "url:cb7f3bdb832d533c96b0"
-      ]
-    },
-    {
       "id": "arxiv:2411.01606",
       "name": "DesignRepair: Dual-Stream Design Guideline-Aware Frontend Repair with Large Language Models",
       "url": "https://arxiv.org/abs/2411.01606",
@@ -2856,7 +2848,7 @@
     "linux": 550,
     "macos": 597,
     "unspecified": 825,
-    "web": 2746,
+    "web": 2747,
     "windows": 587
   },
   "curated_by_kind_and_environment": {
@@ -2953,7 +2945,7 @@
       "linux": 25,
       "macos": 18,
       "unspecified": 597,
-      "web": 661,
+      "web": 662,
       "windows": 43
     },
     "product": {
@@ -6209,7 +6201,7 @@
       "indexed": 105,
       "indexed_resources": 105,
       "resolved_aliases": 0,
-      "curated": 3,
+      "curated": 4,
       "excluded": 4,
       "set_aside": 0,
       "out_of_scope": 52,

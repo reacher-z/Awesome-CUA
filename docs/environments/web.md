@@ -2,9 +2,9 @@
 
 [Home](../../README.md) · [All platforms](../environments.md) · [Research by topic](../topics.md)
 
-2,746 source-reviewed resources tagged `web`. Curated metadata; unknown facts are shown as —.
+2,747 source-reviewed resources tagged `web`. Curated metadata; unknown facts are shown as —.
 
-**Contents:** [Benchmarks (210)](#benchmarks) · [Datasets (122)](#datasets) · [Models (190)](#models) · [Agents (247)](#agents) · [Frameworks (469)](#frameworks) · [Tools (681)](#tools) · [Infrastructure (65)](#infrastructure) · [Products (64)](#products) · [Learning resources (30)](#learning-resources) · [Surveys (7)](#surveys) · [Papers (661)](#papers)
+**Contents:** [Benchmarks (210)](#benchmarks) · [Datasets (122)](#datasets) · [Models (190)](#models) · [Agents (247)](#agents) · [Frameworks (469)](#frameworks) · [Tools (681)](#tools) · [Infrastructure (65)](#infrastructure) · [Products (64)](#products) · [Learning resources (30)](#learning-resources) · [Surveys (7)](#surveys) · [Papers (662)](#papers)
 
 ## Benchmarks
 
@@ -2710,6 +2710,7 @@
 | 2024‑10‑17 | [Web Agents with World Models: Learning and Leveraging Environment Dynamics in Web Navigation](https://arxiv.org/abs/2410.13232) | web | Uses a learned web world model to predict important state changes and compare candidate actions before executing them. |
 | 2024‑10‑11 | [Refusal-Trained LLMs Are Easily Jailbroken As Browser Agents](https://arxiv.org/abs/2410.13886) | web | Introduces BrowserART and studies whether chat-model refusal behavior transfers to browser agents carrying out potentially harmful instructions. |
 | 2024‑10‑09 | [ST-WebAgentBench: A Benchmark for Evaluating Safety and Trustworthiness in Web Agents](https://arxiv.org/abs/2410.06703) | web | Evaluates web-task completion under explicit enterprise policies, measuring policy-compliant completion and safety violations separately. |
+| 2024‑10‑04 | [SWE-bench Multimodal: Do AI Systems Generalize to Visual Software Domains?](https://arxiv.org/abs/2410.03859) | web | Introduces SWE-bench Multimodal, issue-resolution tasks from 17 JavaScript libraries for interface design, diagramming, visualization and mapping, each with images, and tests how SWE-bench systems generalize to them. |
 | 2024‑10‑03 | [NNetNav: Unsupervised Learning of Browser Agents Through Environment Interaction in the Wild](https://arxiv.org/abs/2410.02907) | web | Generates browser-agent demonstrations through autonomous exploration and retrospective task labeling, pruning trajectories that lack meaningful subtasks. |
 | 2024‑10‑02 | [ExACT: Teaching AI Agents to Explore with Reflective-MCTS and Exploratory Learning](https://arxiv.org/abs/2410.02052) | web | ExACT combines reflective tree search with learning from search experience to help web agents explore, assess states and backtrack on VisualWebArena. |
 | 2024‑10‑01 | [Multimodal Auto Validation For Self-Refinement in Web Agents](https://arxiv.org/abs/2410.00689) | web | Studies text and visual validation for web agents and uses the resulting validator to detect failures and guide workflow self-refinement. |

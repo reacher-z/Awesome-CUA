@@ -16,7 +16,7 @@ function apply() {
     row.element.hidden = !visible;
     count += Number(visible);
   }
-  output.textContent = `Showing ${count} of ${rows.length} profiles.`;
+  output.textContent = output.dataset.lang === 'zh' ? `显示 ${count} / ${rows.length} 个规格档案。` : `Showing ${count} of ${rows.length} profiles.`;
   const url = new URL(location.href);
   for (const [key,value] of [['q',query.value.trim()],['environment',environment.value]]) {
     if(value) url.searchParams.set(key,value); else url.searchParams.delete(key);

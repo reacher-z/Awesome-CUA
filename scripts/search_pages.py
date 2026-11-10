@@ -27,7 +27,7 @@ from agent_files import FULL_ORDER, catalog_markdown, category_title, compact_en
 from survey_bundle import apply_site_shell
 from discovery_files import FEED_SIZE, FEED_TITLE, feed_entry, robots_txt, write_feeds
 from site_data import PAPER_KINDS, catalog_counts, eligible, latest, newest_reviewed, record_modified, review_dates
-from static_api import API_SUMMARY, API_TITLE, api_docs_body, api_docs_markdown, write_api
+from static_api import API_SUMMARY, API_TITLE, ZH_API_SUMMARY, ZH_API_TITLE, api_docs_body, api_docs_markdown, write_api
 from sitemaps import write_sitemaps
 
 REPO = "https://github.com/AwesomeCUA/awesomecua.github.io"
@@ -42,7 +42,7 @@ TITLE_SUFFIX = ' | AwesomeCUA'
 # Search snippets: 70-160 characters in English, 50-160 in Chinese.
 DESCRIPTION_BOUNDS = {'en': (70, 160), 'zh-CN': (50, 160)}
 DESCRIPTION_CONTEXT = {'en': 'AwesomeCUA links every computer-use agent resource to its primary sources and review status.',
-                       'zh-CN': 'AwesomeCUA 收录计算机使用智能体的论文、模型、数据集、评测基准与工具，每条记录都附一手来源、许可证与审阅状态。'}
+                       'zh-CN': 'AwesomeCUA 收录计算机使用智能体的论文、模型、数据集、评测基准与工具，并标注一手来源与审阅状态。'}
 CJK_BREAKS = '，、；：。！？）'
 CONNECTION_PAGE_SIZE = 150
 
@@ -113,6 +113,28 @@ def guide_path(guide):
     # Guide slugs become output directories and canonical URLs, so they cannot carry path or markup characters.
     if not isinstance(guide.get("slug"),str) or not re.fullmatch(r"[a-z0-9-]+",guide["slug"]):raise ValueError(f"Invalid guide slug: {guide.get('slug')!r}")
     return f"/guides/{guide['slug']}/"
+
+
+# English pages whose Chinese twin this build writes; Chinese pages link to the twin instead.
+ZH_PAGE_PATHS = set()
+ZH_STATIC_PAGES = ('/about/', '/api/', '/badges/', '/compare/benchmarks/', '/compare/datasets/', '/connections/', '/coverage/', '/guides/', '/survey/', '/updates/')
+
+
+def zh_href(href):
+    """The Chinese twin of a site link, or None when the link has no Chinese page."""
+    base=href.split('#',1)[0]
+    if '?' in base or not base.endswith('/'):return None
+    if base=='/categories/paper/':return '/zh/papers/'+href[len(base):]
+    return '/zh'+href if base in ZH_PAGE_PATHS else None
+
+
+def localize_links(body):
+    """Point a Chinese page's links at Chinese twins; links marked with hreflang keep their language."""
+    def anchor(match):
+        tag=match.group(0)
+        if 'hreflang=' in tag:return tag
+        return re.sub(r'href="(/[^"]*)"',lambda m:f'href="{zh_href(m.group(1)) or m.group(1)}"',tag,count=1)
+    return re.sub(r'<a\b[^>]*>',anchor,body)
 
 
 def alternate_map(alternatives):
@@ -204,6 +226,8 @@ def og_name(path):
 
 def page(title, summary, path, body, main=None, index=True, lang="en", alternatives=False, crumbs=None, canonical=True, landing=False, extra_graph=(), context='', og=None):
     url=SITE+path
+    # Chinese body links lead to Chinese twins; the breadcrumb trail keeps the targets its BreadcrumbList declares.
+    if lang.startswith('zh'):body=localize_links(body)
     # One list renders both the visible trail and BreadcrumbList, so they cannot disagree.
     crumbs=crumbs or [("AwesomeCUA","/zh/" if lang=="zh-CN" and path!="/zh/" else "/"),(title,path)]
     graph=[organization(), {"@type":"WebPage", "@id":url+"#page", "url":url, "name":title, "description":summary, "inLanguage":lang, "isPartOf":{"@id":SITE+"/#website"}, "publisher":{"@id":SITE+"/#organization"}}]
@@ -692,6 +716,64 @@ def draw_og_cards(destination, rows, reviewed):
     OG_CARDS.update({name:(paths[name],f'{spec[2]} — AwesomeCUA') for name,spec in cards.items()})
 
 
+SURVEY_PAIR = {'en':'/survey/','zh-CN':'/zh/survey/','x-default':'/survey/'}
+
+
+def survey_abstract(document):
+    """The survey's English abstract as plain text."""
+    match=re.search(r'<section class="abstract"[^>]*>.*?<div class="abstract-copy">(.*?)</div>',document,re.S)
+    return ' '.join(html.unescape(re.sub(r'<[^>]+>',' ',match.group(1))).split()) if match else ''
+
+
+def zh_survey_body(survey_zh, document, date):
+    """Chinese landing page for the English survey: the translated abstract and a section list that opens the English text."""
+    # The site footer follows the article and carries headings of its own.
+    sections=re.findall(r'<h2[^>]*\bid="([^"]+)"[^>]*>(.*?)</h2>',document.split('<footer',1)[0],re.S)
+    current=hashlib.sha256(survey_abstract(document).encode()).hexdigest()==survey_zh['source_abstract_sha256']
+    body=f'<div class="eyebrow">研究综述 · 工作稿</div><h1>{esc(survey_zh["title"])}</h1><p class="answer-lead">{esc(survey_zh["description"])}全文为英文，下方各章节链接直达英文正文。</p>'
+    body+='<div class="page-actions"><a class="button primary" href="/survey/" hreflang="en" lang="en">阅读英文全文</a><a class="button secondary" href="/survey/references.bib" download>参考文献 BibTeX</a></div>'
+    if date:body+=f'<dl class="page-facts"><div><dt>稿件日期</dt><dd>{esc(date)}</dd></div><div><dt>正文语言</dt><dd>英文</dd></div></dl>'
+    if current:body+=f'<h2>摘要</h2><p>{esc(survey_zh["abstract"])}</p>'
+    body+='<h2>章节</h2><ol class="survey-sections">'+''.join(f'<li><a href="/survey/#{esc(anchor)}" hreflang="en">{esc(survey_zh["sections"].get(anchor) or " ".join(html.unescape(re.sub(r"<[^>]+>","",title)).split()))}</a></li>' for anchor,title in sections if anchor!='abstract-heading')+'</ol>'
+    body+='<h2>相关文件</h2><ul><li><a href="/survey/references.json">参考文献 JSON</a></li><li><a href="/survey/evidence/reading-index.json">来源阅读登记表</a></li><li><a href="/survey/build-manifest.json">综述文件清单</a></li><li><a href="/zh/papers/">已审阅的论文与综述</a></li></ul>'
+    return body
+
+
+RUN_STATES = {'success':'成功','partial':'部分完成','failed':'失败','failure':'失败','skipped':'已跳过','error':'出错'}
+
+
+def zh_updates_body(scan_config, scan, coverage, conference_file, *, papers, other, awaiting, candidates, new_paper_href):
+    """The Chinese scan-activity page. Recorded warnings, query text and source names keep their original wording."""
+    times=scan_config['scan_times_local']
+    schedule=('每天 '+'、'.join(times[:-1])+' 和 '+times[-1] if len(times)>1 else '每天 '+times[0])+'（'+scan_config['timezone']+'）'
+    publication='每小时第 '+' 分和第 '.join(str(minute) for minute in scan_config['publish_check_minutes'])+' 分（'+scan_config['timezone']+'）各检查一次；仅当源目录有新提交时才重新构建'
+    state=lambda value:RUN_STATES.get(str(value),str(value))
+    body=f'<div class="eyebrow">发现动态</div><h1>扫描动态</h1><p class="answer-lead">公开来源按计划每 8 小时扫描一次。新论文的标识信息会与 arXiv 核对；编辑注释与审阅批准另行进行。</p><dl class="page-facts"><div><dt>扫描计划</dt><dd>{esc(schedule)}</dd></div><div><dt>网站发布检查</dt><dd>{esc(publication)}</dd></div></dl><p>下方为各次扫描的实际完成时间。没有新发现的扫描不发布记录；新的扫描记录至少每 {scan_config["scan_commit_heartbeat_hours"]} 小时出现一次。</p>'
+    body+=f'<h2>当前发布的目录</h2><dl class="page-facts"><div><dt>已审阅的论文与综述</dt><dd>{papers:,}</dd></div><div><dt>其他已审阅资源</dt><dd>{other:,}</dd></div><div><dt>待审阅记录</dt><dd>{awaiting:,}</dd></div><div><dt>已发现候选</dt><dd>{candidates:,}</dd></div></dl><p>这些数量包含下方扫描之后完成的编辑工作。<a href="/papers/">浏览已审阅的研究</a>或<a href="/coverage/">查看完整覆盖情况</a>。</p>'
+    if scan:
+        body+=f'<h2>最近一次完成的扫描</h2><dl class="page-facts"><div><dt>状态</dt><dd>{esc(state(scan["status"]))}</dd></div><div><dt>开始</dt><dd>{esc(scan["started_at"])}</dd></div><div><dt>结束</dt><dd>{esc(scan["finished_at"])}</dd></div><div><dt>成功获取的发现文档</dt><dd>{scan["source_fetches"]["successful"]} / {scan["source_fetches"]["total"]}</dd></div><div><dt>新增论文元数据</dt><dd>{len(scan["new_papers"])}</dd></div><div><dt>新增候选标识</dt><dd>{scan["new_candidate_count"]}</dd></div><div><dt>扫描完成时的已审阅论文</dt><dd>{scan["after"]["curated_papers"]:,}</dd></div><div><dt>待处理的元数据变更</dt><dd>{scan["pending_metadata_changes"]}</dd></div></dl>'
+        if scan.get('run_url'):body+=f'<p><a href="{safe_href(scan["run_url"])}">查看工作流运行与日志</a></p>'
+        if scan['warnings']:body+='<h3>记录的缺口</h3><ul>'+''.join('<li lang="en">'+esc(w)+'</li>' for w in scan['warnings'])+'</ul>'
+        if scan['new_papers']:
+            body+='<h2>新加入书目的记录</h2><p>以下是新发现的书目记录，其相关性与研究发现仍待编辑审阅。</p><ul>'+''.join(f'<li><a href="{new_paper_href(r)}">{esc(r["name"])}</a> · 元数据已核实</li>' for r in scan['new_papers'][:30])+'</ul>'
+        body+='<p><a href="/downloads/scan-status.json">下载完整扫描记录</a></p>'
+    else:
+        body+='<h2>首次扫描尚未完成</h2><p>扫描计划已在源仓库中配置，目前还没有已完成的自动扫描记录。</p>'
+    body+='<h2>扫描的作用</h2><p>扫描负责发现新来源并核实书目字段。编辑决定相关性、记录数据集的使用许可并撰写摘要。已审阅的快照保持不变，观察到的元数据变化进入审阅队列。</p><p><a href="https://github.com/reacher-z/Awesome-CUA/actions/workflows/scan.yml">发现工作流</a> · <a href="'+REPO+'/actions/workflows/publish.yml">发布工作流</a> · <a href="/coverage/">覆盖台账</a></p>'
+    body+='<p><a href="'+REPO+'/blob/main/.indexnow/submissions.json">搜索通知记录</a>列出了发布后提交的变更页面及收到的响应。</p>'
+    discovery=coverage.get('paper_discovery',{})
+    if discovery:
+        body+=f'<h2>最近一次论文发现</h2><p>{esc(discovery.get("finished_at") or "进行中")} · {discovery.get("successful_query_count",0)} / {discovery.get("configured_query_count",0)} 个查询窗口成功 · {discovery.get("unique_identifiers",0):,} 个不重复标识 · {discovery.get("new_candidate_count",0):,} 个新候选。</p><p>新发现的标识会经过一手元数据核实与相关性审阅。</p><div class="table-scroll"><table><thead><tr><th>领域 / 查询</th><th>不重复命中</th><th>新候选</th><th>窗口上限</th><th>状态</th></tr></thead><tbody>'
+        for item in discovery.get('queries',[]):
+            ok=item.get('state')=='success'
+            body+=f'<tr><td>{esc(item["area"])}<br><small lang="en">{esc(item["query"])}</small></td><td>{item.get("unique_count",0) if ok else "—"}</td><td>{item.get("new_candidate_count",0) if ok else "—"}</td><td>{item["limit"]}</td><td>{esc(state(item["state"]))}</td></tr>'
+        body+='</tbody></table></div><p>各查询的新增数取决于查询顺序，按本轮首次发现计数。<a href="/downloads/paper-discovery-queries.json">查询登记表</a> · <a href="/downloads/paper-discovery-status.json">结果与来源记录</a></p>'
+    if conference_file.exists():
+        conference=json.loads(conference_file.read_text(encoding='utf-8'))
+        body+=f'<h2>会议论文集扫描</h2><p>在 {conference["source_count"]} 份官方论文集快照中，按关键词筛出并检查了 {conference["title_candidate_count"]} 个标题。标题候选与可能改名的论文等待身份与范围审阅。</p><p><a href="/downloads/conference-discovery.json">查看筛选出的标题、审阅范围与一手来源记录</a>。</p>'
+    return body
+
+
 def build_search_pages(destination, rows, coverage, root, *, survey_page=None):
     lookup={r["id"]:r for r in rows}
     pending_reviews={item['id']:item for item in coverage.get('pending_editorial',[])}
@@ -723,9 +805,21 @@ def build_search_pages(destination, rows, coverage, root, *, survey_page=None):
     draw_og_cards(destination,rows,reviewed)
     for filename,zh in (('search-index.json',False),('search-index.zh.json',True)):
         (destination/'data'/filename).write_text(json.dumps(home_page.search_index(view,zh=zh),ensure_ascii=False,separators=(',',':'))+'\n',encoding='utf-8')
+    zh_guides={g['slug']:g for g in json.loads(zh_guides_file.read_text(encoding='utf-8'))} if (zh_guides_file:=root/'data/site-guides.zh-CN.json').exists() else {}
+    ZH_PAGE_PATHS.clear()
+    ZH_PAGE_PATHS.update({'/','/catalog/','/papers/','/topics/','/data/','/agents/',*ZH_STATIC_PAGES,*(f'/guides/{slug}/' for slug in zh_guides)})
+    ZH_PAGE_PATHS.update(resource_path(r) for r in rows if eligible(r))
+    ZH_PAGE_PATHS.update(f'/categories/{kind}/' for kind in KINDS if kind!='paper')
+    ZH_PAGE_PATHS.update(topic_path(topic) for r in rows if eligible(r) for topic in r['topics'])
+    survey_zh_file=root/'data/survey.zh-CN.json'
+    if not survey_page or not survey_zh_file.exists():ZH_PAGE_PATHS.discard('/survey/')
+    if not (destination/'badges/featured-by-awesomecua-laurel.svg').is_file():ZH_PAGE_PATHS.discard('/badges/')
     if survey_page:
         # The reviewed article gains the site header and footer here and is otherwise never normalized.
-        survey_page=apply_site_shell(destination/'survey',head=site_shell.head_assets('en'),top=site_shell.top(path='/survey/'),bottom=site_shell.bottom(),
+        survey_pair=SURVEY_PAIR if '/survey/' in ZH_PAGE_PATHS else {}
+        survey_alternates=''.join(f'<link rel="alternate" hreflang="{locale}" href="{SITE}{target}">' for locale,target in survey_pair.items())
+        survey_switch=survey_pair.get('zh-CN')
+        survey_page=apply_site_shell(destination/'survey',head=site_shell.head_assets('en')+survey_alternates,top=site_shell.top(path='/survey/',lang_href=survey_switch),bottom=site_shell.bottom(lang_href=survey_switch),
                                      retitle=lambda title:page_title(re.sub(r'\s*[·|]\s*AwesomeCUA$','',title)))
         if survey_page != {'path':'/survey/','indexable':True,'sha256':hashlib.sha256((destination/'survey/index.html').read_bytes()).hexdigest()}:
             raise ValueError('Survey page does not match its copied bytes')
@@ -865,7 +959,12 @@ def build_search_pages(destination, rows, coverage, root, *, survey_page=None):
         export=profile_export(rows,kind)
         (destination/f'downloads/{plural}-profiles.json').write_text(json.dumps(export,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
         list_twin(destination,path,title,{'@type':'ItemList','itemListElement':[{'name':item['name'],'url':SITE+resource_path(item)} for item in export['records']]})
-        emit(path,page(title,f'Compare {plural} by source-reviewed interfaces, scope, counting units, and access information.',path,comparison_body(rows,kind,resource_path),{'@type':'CollectionPage','name':title},crumbs=[("AwesomeCUA","/"),("Catalog","/catalog/"),(title,path)]),lastmod=modified([r for r in rows if r['kind']==kind]))
+        compare_pair={'en':path,'zh-CN':'/zh'+path,'x-default':path}
+        emit(path,page(title,f'Compare {plural} by source-reviewed interfaces, scope, counting units, and access information.',path,comparison_body(rows,kind,resource_path),{'@type':'CollectionPage','name':title},crumbs=[("AwesomeCUA","/"),("Catalog","/catalog/"),(title,path)],alternatives=compare_pair),lastmod=modified([r for r in rows if r['kind']==kind]),alternates=compare_pair)
+        zh_path,noun='/zh'+path,('评测基准' if kind=='benchmark' else '数据集')
+        zh_title='GUI 智能体评测基准协议对比' if kind=='benchmark' else 'GUI 智能体训练数据集对比'
+        list_twin(destination,zh_path,zh_title,{'@type':'ItemList','itemListElement':[{'name':item['name'],'url':SITE+localized_path(lookup[item['id']],True)} for item in export['records']]},'zh')
+        emit(zh_path,page(zh_title,f'按已审阅的交互接口、范围、计数单位与获取方式比较{noun}。',zh_path,comparison_body(rows,kind,lambda r:localized_path(r,True),zh=True,env_label=lambda env:'未指定' if env=='unspecified' else PLATFORMS.get(env,(env,env))[1]),{'@type':'CollectionPage','name':zh_title},lang='zh-CN',crumbs=[("AwesomeCUA","/zh/"),("目录","/zh/catalog/"),(zh_title,zh_path)],alternatives=compare_pair),lastmod=modified([r for r in rows if r['kind']==kind]),alternates=compare_pair)
     papers=sorted([r for r in reviewed if r['kind'] in {'paper','survey'}],key=record_date_text,reverse=True)
     library_count=library_pages(rows)
     for language,title,summary in [
@@ -920,32 +1019,41 @@ def build_search_pages(destination, rows, coverage, root, *, survey_page=None):
     linked_papers=[r for r in papers if any(e['type'] in {'documented_by','introduced_by'} for e in incoming.get(r['id'],[]))]
     # Long lists split into pages so each page stays a readable size; the newest papers come first.
     connection_pages=[linked_papers[i:i+CONNECTION_PAGE_SIZE] for i in range(0,len(linked_papers),CONNECTION_PAGE_SIZE)] or [[]]
-    def connection_path(n):
-        return '/connections/' if n==1 else f'/connections/page/{n}/'
-    for number,members in enumerate(connection_pages,1):
-        path=connection_path(number)
-        start=(number-1)*CONNECTION_PAGE_SIZE
-        pager='' if len(connection_pages)==1 else ('<nav class="pagination library-pager" aria-label="Connection pages">'
-            + (f'<a href="{connection_path(number-1)}" rel="prev">← Previous</a>' if number>1 else '<span></span>') + '<span class="page-numbers">'
-            + ''.join(f'<a href="{connection_path(n)}" aria-label="Page {n}"' + (' aria-current="page"' if n==number else '') + f'>{n}</a>' for n in range(1,len(connection_pages)+1))
-            + '</span>' + (f'<a href="{connection_path(number+1)}" rel="next">Next →</a>' if number<len(connection_pages) else '<span></span>')
-            + f'</nav><p class="library-range">Showing {start+1:,}–{start+len(members):,} of {len(linked_papers):,} papers.</p>')
-        body='<div class="eyebrow">FOLLOW THE RESEARCH TO THE ASSETS</div><h1>Computer-use papers, code, and datasets'+(f', page {number}' if number>1 else '')+'</h1><p class="answer-lead">Find the implementations, benchmarks, and datasets connected to reviewed research papers. Every relationship below has a primary-source evidence link.</p><p>Connections describe publication documentation or introduction.</p><div class="reading-list">'
-        for paper in members:
-            body+=f'<article><h2><a href="{resource_path(paper)}">{esc(paper["name"])}</a></h2><p>{esc(description(paper))}</p><ul>'
-            for rel in incoming[paper['id']]:
-                source=lookup[rel['source_id']]
-                body+=f'<li><a href="{resource_path(source)}">{esc(source["name"])}</a> — {esc(KINDS[source["kind"]])} · <a href="{safe_href(rel["evidence_url"])}">source evidence</a></li>'
-            body+='</ul></article>'
-        body+='</div>'+pager+'<p><a href="/downloads/relationships.json">Download reviewed relationships as JSON</a> · <a href="/about/">Editorial policy</a></p>'
-        title='Computer-use papers, code, and datasets'+(f', page {number}' if number>1 else '')
-        crumbs=[("AwesomeCUA","/"),("Computer-use papers, code, and datasets","/connections/")]+([(f'Page {number}',path)] if number>1 else [])
-        emit(path,page(title,'Trace computer-use agent papers to documented implementations, GUI benchmarks, and training datasets using reviewed primary-source relationships.',path,body,crumbs=crumbs if number>1 else None),lastmod=modified(members+[lookup[rel['source_id']] for paper in members for rel in incoming[paper['id']]]))
+    def connection_path(n,zh=False):
+        return ('/zh' if zh else '')+('/connections/' if n==1 else f'/connections/page/{n}/')
+    for zh in (False,True):
+        tr=lambda en,cn,zh=zh:cn if zh else en
+        heading=tr('Computer-use papers, code, and datasets','计算机使用智能体论文、代码与数据集')
+        for number,members in enumerate(connection_pages,1):
+            path=connection_path(number,zh)
+            pair={'en':connection_path(number),'zh-CN':connection_path(number,True),'x-default':connection_path(number)}
+            start=(number-1)*CONNECTION_PAGE_SIZE
+            pager='' if len(connection_pages)==1 else (f'<nav class="pagination library-pager" aria-label="{tr("Connection pages","关联分页")}">'
+                + (f'<a href="{connection_path(number-1,zh)}" rel="prev">{tr("← Previous","← 上一页")}</a>' if number>1 else '<span></span>') + '<span class="page-numbers">'
+                + ''.join(f'<a href="{connection_path(n,zh)}" aria-label="{tr(f"Page {n}",f"第 {n} 页")}"' + (' aria-current="page"' if n==number else '') + f'>{n}</a>' for n in range(1,len(connection_pages)+1))
+                + '</span>' + (f'<a href="{connection_path(number+1,zh)}" rel="next">{tr("Next →","下一页 →")}</a>' if number<len(connection_pages) else '<span></span>')
+                + '</nav><p class="library-range">'+tr(f'Showing {start+1:,}–{start+len(members):,} of {len(linked_papers):,} papers.',f'第 {start+1:,}–{start+len(members):,} 篇，共 {len(linked_papers):,} 篇论文。')+'</p>')
+            title=heading+(tr(f', page {number}',f'（第 {number} 页）') if number>1 else '')
+            body=tr('<div class="eyebrow">FOLLOW THE RESEARCH TO THE ASSETS</div>','<div class="eyebrow">从论文追溯到资产</div>')+f'<h1>{title}</h1>'+tr('<p class="answer-lead">Find the implementations, benchmarks, and datasets connected to reviewed research papers. Every relationship below has a primary-source evidence link.</p><p>Connections describe publication documentation or introduction.</p>',
+                    '<p class="answer-lead">查看与已审阅论文相关联的实现、评测基准和数据集。下方每条关联都附有一手来源证据链接。</p><p>关联表示论文记录或首次提出了该资源。</p>')+'<div class="reading-list">'
+            for paper in members:
+                body+=f'<article><h2><a href="{localized_path(paper,zh)}">{esc(paper["name"])}</a></h2><p>{esc(zh_summary(paper) if zh else description(paper))}</p><ul>'
+                for rel in incoming[paper['id']]:
+                    source=lookup[rel['source_id']]
+                    body+=f'<li><a href="{localized_path(source,zh)}">{esc(source["name"])}</a> — {esc(home_page.KINDS[source["kind"]][2] if zh else KINDS[source["kind"]])} · <a href="{safe_href(rel["evidence_url"])}">{tr("source evidence","来源证据")}</a></li>'
+                body+='</ul></article>'
+            body+='</div>'+pager+'<p><a href="/downloads/relationships.json">'+tr('Download reviewed relationships as JSON','下载已审阅的关联（JSON）')+'</a> · <a href="/about/">'+tr('Editorial policy','收录方法')+'</a></p>'
+            crumbs=[("AwesomeCUA",tr("/","/zh/")),(heading,connection_path(1,zh))]+([(tr(f'Page {number}',f'第 {number} 页'),path)] if number>1 else [])
+            summary=tr('Trace computer-use agent papers to documented implementations, GUI benchmarks, and training datasets using reviewed primary-source relationships.','从计算机使用智能体论文追溯到论文记录或提出的实现、GUI 评测基准与训练数据集，每条关联都经过一手来源审阅并附证据链接。')
+            emit(path,page(title,summary,path,body,lang=tr('en','zh-CN'),crumbs=crumbs if number>1 else None,alternatives=pair),lastmod=modified(members+[lookup[rel['source_id']] for paper in members for rel in incoming[paper['id']]]),alternates=pair)
     edges=[{'source_id':r['id'],'source_name':r['name'],'source_kind':r['kind'],**rel} for r in rows for rel in r['relations']]
     (destination/'downloads/relationships.json').write_text(json.dumps({'relation_count':len(edges),'semantics':'Reviewed semantic links.','relations':edges},ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
     sources=''.join(f'<tr><td><a href="{safe_href(s["url"])}">{esc(s["name"])}</a></td><td>{s["discovered"]}</td><td>{s["indexed"]}</td><td>{s["curated"]}</td><td>{s["excluded"]}</td><td>{s.get("set_aside",0)}</td><td>{s.get("out_of_scope",0)}</td><td>{s["unindexed"]}</td></tr>' for s in coverage['sources'])
-    body=f'<h1>Coverage and verification ledger</h1><p class="answer-lead">{len(reviewed):,} curated resources and {awaiting:,} records with verified bibliographic metadata awaiting review.</p><p>Evidence snapshot: {esc(snapshot)}. Resource types can refer to different parts of the same project.</p><h2>Discovery-source coverage</h2><div class="table-scroll"><table class="coverage-table"><thead><tr><th>Source</th><th>Found</th><th>Indexed</th><th>Curated</th><th>Excluded</th><th>Set aside</th><th>Out of scope</th><th>Unresolved</th></tr></thead><tbody>{sources}</tbody></table></div><h2>Explicit scope exclusions</h2><p>{coverage["excluded_records"]} records are excluded after individual scope review. The original {coverage["arxiv_archive_records"]:,}-record arXiv metadata archive is retained. <a href="/downloads/exclusions.json">Inspect decisions and source evidence</a> · <a href="/downloads/arxiv-archive.jsonl">Download the raw archive</a>.</p><p>A changed or unconfirmed exclusion returns to review.</p><h2>What is still in progress?</h2><p>Most bibliography entries still require relevance review. Asset sizes, model licenses, availability, and experiment protocols need continuing curation.</p><p>{coverage["unindexed_candidates"]} discovered identifiers remain unresolved. {coverage.get("out_of_scope_candidates",0)} candidates have an out-of-scope review.</p><p><a href="/downloads/coverage.json">Download the complete coverage ledger</a> · <a href="/about/">Editorial policy</a></p>'
-    emit('/coverage/',page('Coverage and verification ledger','Inspect AwesomeCUA source populations, editorial review states, bibliographic verification, unresolved identifiers, and explicit coverage gaps.','/coverage/',body),lastmod=max(snapshot,modified(rows) or snapshot))
+    coverage_body=f'<h1>Coverage and verification ledger</h1><p class="answer-lead">{len(reviewed):,} curated resources and {awaiting:,} records with verified bibliographic metadata awaiting review.</p><p>Evidence snapshot: {esc(snapshot)}. Resource types can refer to different parts of the same project.</p><h2>Discovery-source coverage</h2><div class="table-scroll"><table class="coverage-table"><thead><tr><th>Source</th><th>Found</th><th>Indexed</th><th>Curated</th><th>Excluded</th><th>Set aside</th><th>Out of scope</th><th>Unresolved</th></tr></thead><tbody>{sources}</tbody></table></div><h2>Explicit scope exclusions</h2><p>{coverage["excluded_records"]} records are excluded after individual scope review. The original {coverage["arxiv_archive_records"]:,}-record arXiv metadata archive is retained. <a href="/downloads/exclusions.json">Inspect decisions and source evidence</a> · <a href="/downloads/arxiv-archive.jsonl">Download the raw archive</a>.</p><p>A changed or unconfirmed exclusion returns to review.</p><h2>What is still in progress?</h2><p>Most bibliography entries still require relevance review. Asset sizes, model licenses, availability, and experiment protocols need continuing curation.</p><p>{coverage["unindexed_candidates"]} discovered identifiers remain unresolved. {coverage.get("out_of_scope_candidates",0)} candidates have an out-of-scope review.</p><p><a href="/downloads/coverage.json">Download the complete coverage ledger</a> · <a href="/about/">Editorial policy</a></p>'
+    coverage_pair={'en':'/coverage/','zh-CN':'/zh/coverage/','x-default':'/coverage/'}
+    emit('/coverage/',page('Coverage and verification ledger','Inspect AwesomeCUA source populations, editorial review states, bibliographic verification, unresolved identifiers, and explicit coverage gaps.','/coverage/',coverage_body,alternatives=coverage_pair),lastmod=max(snapshot,modified(rows) or snapshot),alternates=coverage_pair)
+    body=f'<h1>覆盖与核验台账</h1><p class="answer-lead">{len(reviewed):,} 条已审阅资源，另有 {awaiting:,} 条书目元数据已核实、等待审阅的记录。</p><p>证据快照：{esc(snapshot)}。不同资源类型可能指向同一项目的不同部分。</p><h2>发现来源覆盖</h2><div class="table-scroll"><table class="coverage-table"><thead><tr><th>来源</th><th>发现</th><th>已收录</th><th>已审阅</th><th>已排除</th><th>已搁置</th><th>范围外</th><th>待核实</th></tr></thead><tbody>{sources}</tbody></table></div><h2>范围排除</h2><p>{coverage["excluded_records"]:,} 条记录经逐条范围审阅后排除。包含 {coverage["arxiv_archive_records"]:,} 条记录的原始 arXiv 元数据档案完整保留。<a href="/downloads/exclusions.json">查看排除决定与来源证据</a> · <a href="/downloads/arxiv-archive.jsonl">下载原始档案</a>。</p><p>排除依据发生变化或尚未确认时，记录会回到审阅队列。</p><h2>哪些工作仍在进行？</h2><p>多数书目条目仍待相关性审阅。资产规模、模型许可证、可用性与实验协议在持续整理中。</p><p>{coverage["unindexed_candidates"]:,} 个已发现标识尚待核实；{coverage.get("out_of_scope_candidates",0):,} 个候选经审阅判定为范围外。</p><p><a href="/downloads/coverage.json">下载完整覆盖台账</a> · <a href="/about/">收录方法</a></p>'
+    emit('/zh/coverage/',page('覆盖与核验台账','查看 AwesomeCUA 的来源范围、编辑审阅状态、书目核验、待核实标识与已知覆盖缺口。','/zh/coverage/',body,lang='zh-CN',alternatives=coverage_pair),lastmod=max(snapshot,modified(rows) or snapshot),alternates=coverage_pair)
     agent_alternatives={'en':'/agents/','zh-CN':'/zh/agents/','x-default':'/agents/'}
     for language,path,title,desc in [
         ('en','/agents/','Use AwesomeCUA with agents and RAG','Clone the complete computer-use catalog, search locally, and ingest citation-preserving retrieval documents with review states and source evidence.'),
@@ -979,7 +1087,10 @@ def build_search_pages(destination, rows, coverage, root, *, survey_page=None):
     if conference_file.exists():
         conference=json.loads(conference_file.read_text(encoding='utf-8'))
         body+=f'<h2>Conference proceedings sweep</h2><p>{conference["title_candidate_count"]} keyword-selected titles were inspected across {conference["source_count"]} official proceedings snapshots. Title candidates and possible renamed papers await identity and scope review.</p><p><a href="/downloads/conference-discovery.json">Inspect the selected titles, review boundaries, and primary receipts</a>.</p>'
-    emit('/updates/',page('Scan activity','Inspect the actual completion, discoveries, and source gaps from the AwesomeCUA public-source scans that run every eight hours.','/updates/',body),lastmod=max(filter(None,[snapshot,modified(rows),scan and scan.get('finished_at')])))
+    updates_pair={'en':'/updates/','zh-CN':'/zh/updates/','x-default':'/updates/'}
+    updates_lastmod=max(filter(None,[snapshot,modified(rows),scan and scan.get('finished_at')]))
+    emit('/updates/',page('Scan activity','Inspect the actual completion, discoveries, and source gaps from the AwesomeCUA public-source scans that run every eight hours.','/updates/',body,alternatives=updates_pair),lastmod=updates_lastmod,alternates=updates_pair)
+    emit('/zh/updates/',page('扫描动态','查看 AwesomeCUA 每 8 小时一次的公开来源扫描的实际完成时间、新发现的论文与候选，以及记录在案的来源缺口。','/zh/updates/',zh_updates_body(scan_config,scan,coverage,conference_file,papers=len(papers),other=len(reviewed)-len(papers),awaiting=awaiting,candidates=candidates,new_paper_href=lambda r:localized_path(r,True)),lang='zh-CN',alternatives=updates_pair),lastmod=updates_lastmod,alternates=updates_pair)
     badge_papers=sum(r['kind'] in {'paper','survey'} for r in reviewed)
     (destination/'badges').mkdir(exist_ok=True)
     badge=f'<svg xmlns="http://www.w3.org/2000/svg" width="590" height="30" role="img" aria-label="{len(reviewed)} curated resources, {badge_papers} reviewed papers, {awaiting} records awaiting review"><rect width="590" height="30" rx="5" fill="#4856df"/><g fill="#fff" font-family="Arial,sans-serif" font-size="12" text-anchor="middle"><text x="95" y="20">{len(reviewed):,} curated resources</text><text x="290" y="20">{badge_papers:,} reviewed papers</text><text x="480" y="20">{awaiting:,} awaiting review</text></g></svg>'
@@ -990,9 +1101,20 @@ def build_search_pages(destination, rows, coverage, root, *, survey_page=None):
         for name,label,width,height in featured_badges:
             body+=f'<figure><div class="badge-preview{" badge-preview-dark" if "dark" in name else ""}"><img src="/badges/{name}" width="{width}" height="{height}" alt="{esc(label)}: Featured by AwesomeCUA"></div><figcaption><strong>{esc(label)}</strong> · <a href="/badges/{name}" download>Download SVG</a></figcaption></figure>'
         body+='</div><h2>Add a badge to your README</h2><p>Replace <code>YOUR_RESOURCE_URL</code> with the link to your listed resource. The image is hosted here; no third-party image service is required.</p><pre><code>[![Featured by AwesomeCUA]('+SITE+'/badges/featured-by-awesomecua-laurel.svg)](YOUR_RESOURCE_URL)</code></pre><p>“Featured” indicates a catalog listing. Each listing shows its review state and primary evidence. The original SVG artwork is available under the <a href="'+SOURCE_REPO+'/blob/main/LICENSE">MIT license</a>.</p><p><a href="/catalog/">Find your resource</a> · <a href="/about/">Editorial policy</a></p>'
-        emit('/badges/',page('Featured resource badges','Download original AwesomeCUA SVG badges and link them to a source-backed resource entry.','/badges/',body))
+        badges_pair={'en':'/badges/','zh-CN':'/zh/badges/','x-default':'/badges/'}
+        emit('/badges/',page('Featured resource badges','Download original AwesomeCUA SVG badges and link them to a source-backed resource entry.','/badges/',body,alternatives=badges_pair),alternates=badges_pair)
+        zh_labels={'featured-by-awesomecua-laurel.svg':'紫色桂冠、CUA 盾徽与衬线字体','featured-by-awesomecua.svg':'浅色徽章','featured-by-awesomecua-dark.svg':'深色徽章','awesomecua-featured-seal.svg':'精选印章'}
+        body='<h1>AwesomeCUA 精选徽章</h1><p class="answer-lead">适用于项目主页、GitHub README 和发布说明的 SVG 徽章。把徽章链接到你的资源在 AwesomeCUA 上的条目，读者即可查看它的来源。</p><div class="badge-gallery">'
+        for name,label,width,height in featured_badges:
+            body+=f'<figure><div class="badge-preview{" badge-preview-dark" if "dark" in name else ""}"><img src="/badges/{name}" width="{width}" height="{height}" alt="{esc(zh_labels[name])}：Featured by AwesomeCUA"></div><figcaption><strong>{esc(zh_labels[name])}</strong> · <a href="/badges/{name}" download>下载 SVG</a></figcaption></figure>'
+        body+='</div><h2>在 README 中添加徽章</h2><p>把 <code>YOUR_RESOURCE_URL</code> 替换为你的资源条目链接。图片由本站托管。</p><pre><code>[![Featured by AwesomeCUA]('+SITE+'/badges/featured-by-awesomecua-laurel.svg)](YOUR_RESOURCE_URL)</code></pre><p>“精选”表示该资源已收录在目录中。每个条目都会显示审阅状态与一手证据。原创 SVG 图稿采用 <a href="'+SOURCE_REPO+'/blob/main/LICENSE">MIT 许可证</a>。</p><p><a href="/catalog/">查找你的资源</a> · <a href="/about/">收录方法</a></p>'
+        emit('/zh/badges/',page('精选资源徽章','下载 AwesomeCUA 原创 SVG 徽章，用于项目主页、README 与发布说明，并链接到你的资源在目录中附有来源的条目。','/zh/badges/',body,lang='zh-CN',alternatives=badges_pair),alternates=badges_pair)
+    else:ZH_PAGE_PATHS.discard('/badges/')
     body='<h1>About AwesomeCUA and its editorial policy</h1><p class="answer-lead">AwesomeCUA is a source-backed catalog of resources for agents that operate computer interfaces. Its purpose is to make research and engineering assets easier to find, compare, and trace to their original publishers.</p><h2>Who maintains the catalog?</h2><p>The AwesomeCUA project publishes the catalog through its <a href="https://github.com/AwesomeCUA">GitHub organization</a>. Annotations and taxonomy labels are reviewed against primary sources.</p><h2>What is included?</h2><p>GUI and hybrid GUI/code agents, visual grounding, web and mobile navigation, training data, evaluation environments, execution infrastructure, safety research, and relevant products. Supporting tools may be marked adjacent.</p><h2>How are claims checked?</h2><p>Community lists and semantic searches discover candidates. Retained arXiv and publication sources support bibliographic facts. Official papers, repositories, documentation, and model/dataset cards support curated annotations. Every record retains source URLs, retrieval timestamps, and content hashes. A changed source returns to editorial review.</p><h2>What do review states mean?</h2><ul><li><strong>Curated:</strong> a primary source was inspected for identity, scope, and the concise annotation.</li><li><strong>Metadata verified:</strong> bibliographic fields were checked; relevance review is pending.</li><li><strong>Candidate:</strong> a discovered identifier awaiting resolution.</li></ul><h2>Licenses and corrections</h2><p>Code, data, weights, and document licenses are separate. Original catalog annotations and code use MIT; upstream resources keep their own terms. Report errors through <a href="'+SOURCE_REPO+'/issues/new?template=resource.yml">a source-backed correction</a>.</p><h2>Indexing policy</h2><p>Reviewed resource pages and useful collection pages are eligible for indexing. Metadata-only resource pages remain accessible, with <code>noindex,follow</code> until their relevance is reviewed. The full bibliography remains searchable and downloadable.</p><p><a href="/coverage/">Coverage ledger</a> · <a href="/data/">Data and provenance</a></p>'
-    emit('/about/',page('About AwesomeCUA and editorial policy','Learn what AwesomeCUA includes, how primary-source review works, what verification means, and how to suggest corrections.','/about/',body))
+    about_pair={'en':'/about/','zh-CN':'/zh/about/','x-default':'/about/'}
+    emit('/about/',page('About AwesomeCUA and editorial policy','Learn what AwesomeCUA includes, how primary-source review works, what verification means, and how to suggest corrections.','/about/',body,alternatives=about_pair),alternates=about_pair)
+    body='<h1>关于 AwesomeCUA 与收录方法</h1><p class="answer-lead">AwesomeCUA 收录操作计算机界面的智能体相关资源，每条记录都有来源可查。它让研究与工程资产更容易查找、比较，并能追溯到原始发布方。</p><h2>谁在维护这个目录？</h2><p>AwesomeCUA 项目通过其 <a href="https://github.com/AwesomeCUA">GitHub 组织</a>发布本目录。注释与分类标签都对照一手来源审阅。</p><h2>收录哪些内容？</h2><p>GUI 智能体与 GUI/代码混合智能体、视觉定位、网页与移动端导航、训练数据、评测环境、执行基础设施、安全研究以及相关产品。支撑性工具可标记为相关基础资源。</p><h2>如何核查内容？</h2><p>社区列表与语义检索用于发现候选。书目信息以保留的 arXiv 与出版来源为依据；已审阅的注释以官方论文、代码仓库、文档以及模型卡和数据集卡为依据。每条记录都保留来源 URL、获取时间戳与内容哈希。来源发生变化时，记录会重新进入编辑审阅。</p><h2>各审阅状态是什么意思？</h2><ul><li><strong>已审阅：</strong>已查看一手来源，核对了资源身份、收录范围与简明注释。</li><li><strong>元数据已核实：</strong>书目字段已核对，相关性待审阅。</li><li><strong>候选：</strong>已发现、等待核实的标识。</li></ul><h2>许可证与更正</h2><p>代码、数据、权重与文档的许可证分别记录。目录的原创注释与代码采用 MIT 许可证；上游资源保留各自的条款。发现错误请提交<a href="'+SOURCE_REPO+'/issues/new?template=resource.yml">有来源依据的更正</a>。</p><h2>搜索引擎索引</h2><p>已审阅的资源页面和有实质内容的集合页面可被搜索引擎收录。仅有元数据的资源页面可以正常访问，在相关性审阅完成前带有 <code>noindex,follow</code>。完整书目始终可以检索和下载。</p><p><a href="/coverage/">覆盖台账</a> · <a href="/data/">数据与来源</a></p>'
+    emit('/zh/about/',page('关于 AwesomeCUA 与收录方法','了解 AwesomeCUA 收录哪些内容、如何对照一手来源审阅、各审阅状态的含义、许可证如何分别记录，以及如何提交更正。','/zh/about/',body,lang='zh-CN',alternatives=about_pair),alternates=about_pair)
     desc='A structured catalog of computer-use agent research papers, models, datasets, benchmarks, tools, products, and publishers, including original annotations, review states, source evidence, scoped license declarations, and resource relationships.'
     dataset={"@type":"Dataset","name":"AwesomeCUA computer-use agent resource catalog","description":desc,"url":SITE+'/data/',"creator":{"@id":SITE+'/#organization'},"license":SOURCE_REPO+'/blob/main/LICENSE',"dateModified":snapshot,"keywords":["computer-use agents","GUI agents","browser agents","datasets","benchmarks"],"distribution":[{"@type":"DataDownload","encodingFormat":"application/x-ndjson","contentUrl":SITE+'/downloads/catalog.jsonl'},{"@type":"DataDownload","encodingFormat":"application/json","contentUrl":SITE+'/data/records.json'},{"@type":"DataDownload","encodingFormat":"application/vnd.sqlite3","contentUrl":SITE+'/downloads/catalog.sqlite'}],"isAccessibleForFree":True}
     download_manifest=build_download_manifest(destination,rows,(root/'data/catalog.jsonl').read_bytes())
@@ -1011,9 +1133,22 @@ def build_search_pages(destination, rows, coverage, root, *, survey_page=None):
         emit(path,page(title,summary,path,body,data_schema,lang='zh-CN' if language=='zh' else 'en',alternatives=data_alternatives,landing=True),lastmod=max(snapshot,modified(rows) or snapshot),alternates=data_alternatives)
     guides=json.loads((root/'data/site-guides.json').read_text(encoding='utf-8'))
     for guide in guides:
-        emit(guide_path(guide),page(guide['title'],guide['description'],guide_path(guide),guide['body'],{"@type":"Article","headline":guide['title'],"description":guide['description'],"author":{"@id":SITE+'/#organization'}},crumbs=[("AwesomeCUA","/"),("Guides","/guides/"),(guide['title'],guide_path(guide))]))
+        path=guide_path(guide)
+        guide_pair={'en':path,'zh-CN':'/zh'+path,'x-default':path} if guide['slug'] in zh_guides else None
+        emit(path,page(guide['title'],guide['description'],path,guide['body'],{"@type":"Article","headline":guide['title'],"description":guide['description'],"author":{"@id":SITE+'/#organization'}},crumbs=[("AwesomeCUA","/"),("Guides","/guides/"),(guide['title'],path)],alternatives=guide_pair),alternates=guide_pair)
+        if guide_pair:
+            zh_guide=zh_guides[guide['slug']]
+            emit('/zh'+path,page(zh_guide['title'],zh_guide['description'],'/zh'+path,zh_guide['body'],{"@type":"Article","headline":zh_guide['title'],"description":zh_guide['description'],"inLanguage":"zh-CN","author":{"@id":SITE+'/#organization'}},lang='zh-CN',crumbs=[("AwesomeCUA","/zh/"),("指南","/zh/guides/"),(zh_guide['title'],'/zh'+path)],alternatives=guide_pair),alternates=guide_pair)
     body='<h1>Guides to computer-use agents</h1><p class="answer-lead">Practical reading guides with direct answers and primary research references. These guides help distinguish interface grounding, task execution, training data, and evaluation.</p><div class="reading-list">'+''.join(f'<article><h2><a href="{guide_path(g)}">{esc(g["title"])}</a></h2><p>{esc(g["description"])}</p></article>' for g in guides)+'</div>'
-    emit('/guides/',page('Computer-use agent guides','Understand computer-use agents, choose GUI-agent benchmarks, and find training datasets with clearly scoped primary-source references.','/guides/',body))
+    if survey_page and survey_zh_file.exists():
+        survey_zh=json.loads(survey_zh_file.read_text(encoding='utf-8'))
+        survey_html=(destination/'survey/index.html').read_text(encoding='utf-8')
+        survey_date=json.loads((destination/'survey/build-manifest.json').read_text(encoding='utf-8')).get('working_manuscript_date')
+        emit('/zh/survey/',page(survey_zh['title'],survey_zh['description'],'/zh/survey/',zh_survey_body(survey_zh,survey_html,survey_date),lang='zh-CN',alternatives=SURVEY_PAIR),lastmod=survey_date,alternates=SURVEY_PAIR)
+    guides_pair={'en':'/guides/','zh-CN':'/zh/guides/','x-default':'/guides/'}
+    emit('/guides/',page('Computer-use agent guides','Understand computer-use agents, choose GUI-agent benchmarks, and find training datasets with clearly scoped primary-source references.','/guides/',body,alternatives=guides_pair),alternates=guides_pair)
+    body='<h1>计算机使用智能体指南</h1><p class="answer-lead">附直接答案与一手研究参考的实用阅读指南，帮助区分界面定位、任务执行、训练数据与评测。</p><div class="reading-list">'+''.join(f'<article><h2><a href="{guide_path(g)}">{esc(zh_guides[g["slug"]]["title"] if g["slug"] in zh_guides else g["title"])}</a></h2><p>{esc(zh_guides[g["slug"]]["description"] if g["slug"] in zh_guides else g["description"])}</p></article>' for g in guides)+'</div>'
+    emit('/zh/guides/',page('计算机使用智能体指南','了解计算机使用智能体，选择 GUI 智能体评测基准，查找训练数据，每篇指南都附一手来源参考。','/zh/guides/',body,lang='zh-CN',alternatives=guides_pair),alternates=guides_pair)
     zh_note=f'当前有 {len(reviewed):,} 条已对照一手来源审核的资源；另有 {awaiting:,} 条书目记录待审阅、{candidates:,} 个已发现候选待核实。'
     zh_body=home_page.hero(view,last_scan,zh=True)+home_page.benchmark_band(view,zh=True)+home_page.tasks(view,zh=True)+home_page.latest(view,zh=True)+home_page.categories(view,zh=True)+home_page.papers(view,zh=True)+home_page.developers(zh=True)+home_page.directory_strip(zh=True,note=zh_note)+home_page.contribute(zh=True)
     website={"@type":"WebSite","@id":SITE+"/#website","url":SITE+"/","name":"AwesomeCUA","description":"Source-backed computer-use and GUI-agent resource catalog","publisher":{"@id":SITE+"/#organization"},"inLanguage":["en","zh-CN"],
@@ -1050,7 +1185,9 @@ def build_search_pages(destination, rows, coverage, root, *, survey_page=None):
     api_index=write_api(destination,rows=rows,coverage=coverage,root=root,site=SITE,resource_path=resource_path,review_times=review_times,counts=counts,
                         catalog_sha256=hashlib.sha256((root/'data/catalog.jsonl').read_bytes()).hexdigest(),kinds=KINDS,kind_labels=KIND_LABELS,
                         topic_groups=topic_groups,topic_name=topic_name,topic_path=topic_path)
-    emit('/api/',page(API_TITLE,API_SUMMARY,'/api/',api_docs_body(api_index,site=SITE,esc=esc),{'@type':'TechArticle','headline':API_TITLE,'description':API_SUMMARY,'author':{'@id':SITE+'/#organization'}}),lastmod=snapshot)
+    api_pair={'en':'/api/','zh-CN':'/zh/api/','x-default':'/api/'}
+    emit('/api/',page(API_TITLE,API_SUMMARY,'/api/',api_docs_body(api_index,site=SITE,esc=esc),{'@type':'TechArticle','headline':API_TITLE,'description':API_SUMMARY,'author':{'@id':SITE+'/#organization'}},alternatives=api_pair),lastmod=snapshot,alternates=api_pair)
+    emit('/zh/api/',page(ZH_API_TITLE,ZH_API_SUMMARY,'/zh/api/',api_docs_body(api_index,site=SITE,esc=esc,zh=True),{'@type':'TechArticle','headline':ZH_API_TITLE,'description':ZH_API_SUMMARY,'inLanguage':'zh-CN','author':{'@id':SITE+'/#organization'}},lang='zh-CN',alternatives=api_pair),lastmod=snapshot,alternates=api_pair)
     (destination/'api/index.md').write_text(clean_text(api_docs_markdown(api_index,site=SITE)),encoding='utf-8')
     newest=newest_reviewed(rows,review_times,20)
     (destination/'index.md').write_text(clean_text(home_markdown([(r['name'],SITE+resource_path(r),KINDS[r['kind']],review_times[r['id']],description(r)) for r in newest],kind_rows,site=SITE,counts=counts,snapshot=snapshot)),encoding='utf-8')
@@ -1076,7 +1213,7 @@ def build_search_pages(destination, rows, coverage, root, *, survey_page=None):
     (destination/'robots.txt').write_text(robots_txt(SITE),encoding='utf-8')
     if survey_page:
         survey_date=json.loads((destination/'survey/build-manifest.json').read_text(encoding='utf-8')).get('working_manuscript_date')
-        sitemap_facts['/survey/']={'lastmod':survey_date,'alternates':{}}
+        sitemap_facts['/survey/']={'lastmod':survey_date,'alternates':dict(survey_pair)}
     declare_markdown_twins(destination,manifest)
     kind_by_path={**{resource_path(r):r['kind'] for r in rows},**{zh_resource_path(r):r['kind'] for r in rows if eligible(r)}}
     write_sitemaps(destination,SITE,[{'path':item['path'],'section':sitemap_section(item['path'],kind_by_path),**sitemap_facts[item['path']]} for item in manifest if item['indexable']])

@@ -312,10 +312,47 @@ FIELD_NOTES = (
 )
 
 
-def api_docs_body(index, *, site, esc):
-    """HTML body of /api/ (rendered inside the site's shared page template)."""
+ZH_API_TITLE = 'AwesomeCUA 静态数据 API'
+ZH_API_SUMMARY = ('供智能体与脚本读取的版本化 JSON 和 CSV 文件：已审阅的资源与论文、分类、近期变更，以及明确标注的待审候选。'
+                  '随每个目录快照重新生成，无需密钥或账号。')
+ZH_ENDPOINTS = {
+    'resources': '论文以外的已审阅资源：模型、数据集、评测基准、智能体、框架、基础设施、工具、产品、发布者与学习资源。',
+    'papers': '已审阅的研究论文与综述，含作者、记录的发表日期、arXiv 版本与引用文件。',
+    'categories': '资源类型与研究主题，附已审阅数量，以及对应页面、Markdown 与数据的链接。',
+    'changes': f'快照前 {CHANGE_WINDOW_DAYS} 天内的目录事件：编辑审阅、新增书目记录与范围排除。',
+    'candidates': '待审阅记录，逐条标注：等待相关性审阅的书目记录，以及等待审阅的已发现标识。',
+}
+ZH_FIELD_NOTES = (
+    ('标识', '每个条目都保留目录 `id`，资源改名后 `id` 不变。`url` 是原始来源，`page_url` 是目录页面。页面的 Markdown 版本、完整记录和（论文的）引用文件位于 `page_url` 下的固定路径，在 `links` 中逐个列出，例如 `{page_url}record.json`。'),
+    ('版本', '`version` 是 API 格式版本：主版本号变化表示字段有不兼容的改动，次版本号只增加字段。`generated_at` 是快照中最新的数据记录时间（UTC），同一源提交生成的所有文件取值相同。`catalog_sha256` 是源目录的指纹。'),
+    ('审阅状态', '`resources.json` 和 `papers.json` 只含已审阅记录，`categories.json` 中的计数也只统计已审阅记录，每条都对照一手来源审阅过。`candidates.json` 中的记录均为待审阅状态，并逐条注明。'),
+    ('许可证', '代码、数据、权重和文档的许可证分别声明；`null` 表示未记录许可证。目录注释与这些文件采用 MIT 许可证；所链接的资源保留各自的条款。'),
+    ('缓存与 CORS', '文件为静态文件，由 GitHub Pages 提供，带 `Access-Control-Allow-Origin: *`、`ETag` 和 `Last-Modified`，浏览器可以跨域读取，客户端可以发送条件请求。重新导入前先比较 `generated_at` 或 `catalog_sha256`。'),
+    ('CSV', '每个 CSV 中一行对应一个 JSON 条目，每行都重复 `version` 和 `generated_at`。列表用 `; ` 连接，值内的空白合并为单个空格。'),
+)
+
+
+def api_docs_body(index, *, site, esc, zh=False):
+    """HTML body of /api/ or /zh/api/ (rendered inside the site's shared page template)."""
     rows = ''.join(f'<tr><td><a href="{esc(item["json"])}">{esc(item["name"])}.json</a></td><td><a href="{esc(item["csv"])}">{esc(item["name"])}.csv</a></td>'
-                   f'<td>{item["count"]:,}</td><td>{esc(_size(item["json_bytes"]))}</td><td>{esc(item["description"])}</td></tr>' for item in index['endpoints'])
+                   f'<td>{item["count"]:,}</td><td>{esc(_size(item["json_bytes"]))}</td><td>{esc(ZH_ENDPOINTS.get(item["name"], item["description"]) if zh else item["description"])}</td></tr>' for item in index['endpoints'])
+    if zh:
+        body = (f'<div class="eyebrow">静态 API</div><h1>{esc(ZH_API_TITLE)}</h1><p class="answer-lead">{esc(ZH_API_SUMMARY)}</p>'
+                f'<p>基础 URL：<code>{esc(site + API_PATH)}</code> · 版本 {esc(index["version"])} · 快照 {esc(index["generated_at"])} · '
+                f'<a href="{esc(site + API_PATH + "index.json")}">API 索引</a> · <a href="{esc(site + API_PATH + "schema.json")}">JSON Schema</a> · <a href="/api/index.md" hreflang="en">Markdown 版本（英文）</a></p>'
+                '<h2>端点</h2><div class="table-scroll"><table class="coverage-table"><thead><tr><th>JSON</th><th>CSV</th><th>条目数</th><th>大小</th><th>内容</th></tr></thead>'
+                f'<tbody>{rows}</tbody></table></div>')
+        for heading, text in ZH_FIELD_NOTES:
+            body += f'<h2>{esc(heading)}</h2><p>{_code(esc(text))}</p>'
+        body += ('<h2>示例</h2><pre class="command-block"><code>'
+                 + esc(f"curl -s {site}{API_PATH}resources.json | jq -r '.items[] | select(.kind == \"benchmark\") | .name'")
+                 + '</code></pre><pre class="command-block"><code>'
+                 + esc(f"python3 -c \"import json, urllib.request; d = json.load(urllib.request.urlopen('{site}{API_PATH}papers.json')); print(d['generated_at'], d['count'])\"")
+                 + '</code></pre>'
+                 '<h2>批量数据</h2><p>API 是目录的索引。如需含完整证据的全部记录，请使用'
+                 '<a href="/downloads/catalog.jsonl">目录 JSONL</a>、<a href="/downloads/catalog.sqlite">SQLite 数据库</a>或<a href="/zh/data/">数据下载页</a>；'
+                 '待审阅的 GitHub 仓库见<a href="/downloads/github-candidates.jsonl">候选观察记录</a>。</p>')
+        return body
     body = (f'<div class="eyebrow">STATIC API</div><h1>{esc(API_TITLE)}</h1><p class="answer-lead">{esc(API_SUMMARY)}</p>'
             f'<p>Base URL: <code>{esc(site + API_PATH)}</code> · Version {esc(index["version"])} · Snapshot {esc(index["generated_at"])} · '
             f'<a href="{esc(site + API_PATH + "index.json")}">API index</a> · <a href="{esc(site + API_PATH + "schema.json")}">JSON Schema</a> · <a href="/api/index.md">Markdown version</a></p>'

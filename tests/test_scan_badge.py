@@ -1,4 +1,4 @@
-"""The scan badge shows the latest successful scan of main and turns amber after six hours."""
+"""The scan badge shows the latest successful scan of main and turns amber after nine hours."""
 from datetime import datetime, timezone
 import json
 import os
@@ -42,10 +42,10 @@ class BadgeTests(unittest.TestCase):
         self.assertEqual(scan_badge.badge(runs, NOW), {"schemaVersion": 1, "label": "last successful scan",
                                                        "message": "2026-11-09 16:47 UTC", "color": "4352E8"})
 
-    def test_turns_amber_after_six_hours(self):
-        self.assertEqual(scan_badge.badge([run("2026-11-09T12:00:00Z")], NOW)["color"], "4352E8")
-        stale = scan_badge.badge([run("2026-11-09T11:59:00Z")], NOW)
-        self.assertEqual((stale["message"], stale["color"]), ("2026-11-09 11:59 UTC", "B45309"))
+    def test_turns_amber_after_nine_hours(self):
+        self.assertEqual(scan_badge.badge([run("2026-11-09T09:00:00Z")], NOW)["color"], "4352E8")
+        stale = scan_badge.badge([run("2026-11-09T08:59:00Z")], NOW)
+        self.assertEqual((stale["message"], stale["color"]), ("2026-11-09 08:59 UTC", "B45309"))
 
     def test_no_successful_run_is_a_warning(self):
         self.assertEqual(scan_badge.badge([run("2026-11-09T17:00:00Z", conclusion="failure")], NOW),
@@ -55,7 +55,7 @@ class BadgeTests(unittest.TestCase):
         with tempfile.TemporaryDirectory() as directory:
             runs, output = Path(directory) / "runs.json", Path(directory) / "badge.json"
             runs.write_text(json.dumps({"total_count": 1, "workflow_runs": [run("2026-11-09T16:47:39Z")]}))
-            self.assertEqual(scan_badge.main(["--runs", str(runs), "--output", str(output), "--now", "2026-11-09T23:00:00Z"]), 0)
+            self.assertEqual(scan_badge.main(["--runs", str(runs), "--output", str(output), "--now", "2026-11-10T02:00:00Z"]), 0)
             self.assertEqual(output.read_text(), '{"schemaVersion":1,"label":"last successful scan","message":"2026-11-09 16:47 UTC","color":"B45309"}\n')
 
 

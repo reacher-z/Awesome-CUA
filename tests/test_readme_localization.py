@@ -79,7 +79,7 @@ class ReadmeLocalizationTests(unittest.TestCase):
         self.assertIn("dataset-Hugging%20Face-", badges)
         self.assertNotIn(")](", badges)
         self.assertIn("img.shields.io/endpoint?url=", badges)
-        self.assertTrue(badges.strip().endswith("labelColor=1E2233)")
+        self.assertTrue(badges.strip().endswith("labelColor=1E2233)"))
 
     def test_star_history_has_linked_light_and_dark_sources_and_localized_fallbacks(self):
         chart = "https://api.star-history.com/svg?repos=reacher-z/Awesome-CUA&type=Date"

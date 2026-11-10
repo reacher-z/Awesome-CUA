@@ -66,7 +66,7 @@ class GeneratedTitleTests(unittest.TestCase):
                 self.assertIn(f'<link rel="alternate" type="text/markdown" href="{item["path"]}index.md">',(folder/'index.html').read_text().split('</head>',1)[0])
     def test_titles_name_the_brand_once(self):
         for path,parsed in self.titles.items():
-            self.assertEqual(parsed.title.count('AwesomeCUA'),1,path)
+            self.assertEqual(parsed.title.count('AwesomeCUA')+parsed.title.count('Awesome CUA'),1,path)
             if path!='/':self.assertEqual(parsed.og,parsed.title,path)
 
 

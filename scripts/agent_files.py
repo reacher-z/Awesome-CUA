@@ -120,7 +120,7 @@ def catalog_markdown(kinds, topics, *, site, counts, language='en'):
 
 def home_markdown(newest, kinds, *, site, counts, snapshot, language='en'):
     curated, waiting = counts['curated'], counts['awaiting_review']
-    lines = ['# AwesomeCUA', '',
+    lines = ['# Awesome CUA', '',
              f'> A source-backed catalog of computer-use, GUI, browser and mobile agent research and resources: {curated["total"]:,} curated records '
              f'({curated["papers_and_surveys"]:,} papers and surveys, {curated["other_resources"]:,} models, datasets, benchmarks, agents, frameworks, tools and products), each reviewed against a primary source.', '',
              f'Snapshot {snapshot}. Awaiting review and not counted above: {waiting["metadata_only_records"]:,} metadata-only bibliography records and {waiting["unresolved_candidate_identifiers"]:,} discovered identifiers. {counts["note"]}', '',
@@ -133,7 +133,7 @@ def home_markdown(newest, kinds, *, site, counts, snapshot, language='en'):
               f'- {link("Atom feed", site + "/feed.xml")} and {link("JSON Feed", site + "/feed.json")} of newly reviewed resources',
               f'- {link("Data downloads", site + "/data/")}: JSONL, SQLite, RAG documents and citations']
     if language == 'zh':
-        lines = ['# AwesomeCUA', '',
+        lines = ['# Awesome CUA', '',
                  f'> 计算机使用、GUI、网页和移动端智能体研究资源目录：{curated["total"]:,} 条已审核记录，其中论文与综述 {curated["papers_and_surveys"]:,} 条，其他资源 {curated["other_resources"]:,} 条。每条记录均核对一手来源。', '',
                  f'快照：{snapshot}。另有 {waiting["metadata_only_records"]:,} 条书目记录和 {waiting["unresolved_candidate_identifiers"]:,} 个已发现标识符待审核。', '',
                  f'HTML 页面：{site}/zh/ · {link("English", site + "/index.md")} · 智能体索引：{site}/llms.txt', '', '## 最近审核的资源', '']
@@ -150,8 +150,8 @@ def home_markdown(newest, kinds, *, site, counts, snapshot, language='en'):
 def llms_full(groups, *, site, snapshot, counts, survey_line, kind_files):
     """Every curated record once, compactly, grouped by kind; full annotations stay in the per-kind files."""
     curated = counts['curated']
-    lines = ['# AwesomeCUA curated catalog', '',
-             f'> All {curated["total"]:,} curated, source-reviewed records of the AwesomeCUA computer-use agent catalog, one compact entry each, grouped by kind. '
+    lines = ['# Awesome CUA curated catalog', '',
+             f'> All {curated["total"]:,} curated, source-reviewed records of the AwesomeCUA computer-use agent catalog ({curated["papers_and_surveys"]:,} papers and surveys, {curated["other_resources"]:,} other resources), one compact entry each, grouped by kind. '
              f'Snapshot {snapshot}. Metadata-only bibliography records and unreviewed candidates are excluded.', '',
              'Each entry links its catalog page. Append `index.md` to that URL for the full annotation with evidence fingerprints, or `record.json` for the complete record. '
              'Full annotations by kind: ' + ', '.join(link(label, site + path) for label, path in kind_files) + '.', '', NOTICE]
@@ -165,12 +165,13 @@ def llms_full(groups, *, site, snapshot, counts, survey_line, kind_files):
 def llms_txt(*, site, counts, kinds, zh_kinds, library, topics, api_endpoints, guides, survey_links, releases_url):
     """The /llms.txt index: what the site is and where each Markdown and data entry point lives."""
     curated, waiting = counts['curated'], counts['awaiting_review']
-    lines = ['# AwesomeCUA', '',
-             f'> Source-backed catalog of computer-use, GUI, browser and mobile agents: {curated["total"]:,} curated resources ({curated["papers_and_surveys"]:,} papers and surveys, '
+    lines = ['# Awesome CUA', '',
+             f'> Awesome CUA (Awesome Computer-Use Agents) is a source-backed catalog of computer-use, GUI, browser and mobile agents: {curated["total"]:,} curated resources ({curated["papers_and_surveys"]:,} papers and surveys, '
              f'{curated["other_resources"]:,} models, datasets, benchmarks, agents, frameworks, tools and products), each reviewed against a primary source with evidence, '
              f'review dates and separate license declarations. {waiting["metadata_only_records"]:,} metadata-only bibliography records await relevance review and are labeled separately.', '',
              'Code, data, weights and document licenses are separate. '
-             'Every resource, category, topic and research-library page has a Markdown version at `index.md` beside it, and every resource page its complete record at `record.json`.', '',
+             'Every resource, category, topic and research-library page has a Markdown version at `index.md` beside it, and every resource page its complete record at `record.json`. '
+             f'Read any item by id: `curl -sL {site}/resources/<id>/index.md` (for example `{site}/resources/arxiv-2404-07972/index.md`; papers also read with `hf papers read 2404.07972`).', '',
              '## Catalog by kind', '']
     lines += [f'- {link(label, site + md_path)}: {plural(count, "curated record")}' + (f'; {note}' if note else '') for label, count, md_path, note in kinds]
     lines += ['', '## Research library', '',
@@ -185,17 +186,17 @@ def llms_txt(*, site, counts, kinds, zh_kinds, library, topics, api_endpoints, g
     lines += ['', '## Topics', '', 'Reviewed topic membership; resources can belong to several topics, so counts overlap. Chinese topic pages: ' + site + '/zh/topics/', '']
     lines += [f'- {link(name, site + path + "index.md")}: {plural(count, "reviewed resource")}' for name, count, path in topics]
     lines += ['', '## Static API', '', f'Versioned JSON and CSV under {site}/api/v1/; every file carries `version` and `generated_at`.', '',
-              f'- {link("API documentation", site + "/api/index.md")}: endpoints, fields, review states and versioning',
-              f'- {link("API index", site + "/api/v1/index.json")}: endpoint list with counts, byte sizes and SHA-256',
-              f'- {link("JSON Schema", site + "/api/v1/schema.json")}']
-    lines += [f'- {link(name + ".json", url_json)} ({link("CSV", url_csv)}): {inline(description)}' for name, url_json, url_csv, description in api_endpoints]
+              f'- {link("API documentation", site + "/api/index.md")}: endpoints, fields, review states and versioning; the JSON and CSV files are listed under Optional']
     lines += ['', '## Agent and RAG access', '', '```sh', 'git clone https://github.com/reacher-z/Awesome-CUA.git', '```', '',
               f'- {link("Data downloads", site + "/data/index.md")}',
-              f'- {link("Agent instructions", site + "/AGENTS.md")}', f'- {link("Human and agent guide", site + "/agents/")}', f'- {link("中文指南", site + "/zh/agents/")}',
+              f'- {link("Agent instructions", site + "/AGENTS.md")}: read commands, API, search pattern, BibTeX; also at {site}/agents.md and {site}/agents.txt', f'- {link("Human and agent guide", site + "/agents/")}', f'- {link("中文指南", site + "/zh/agents/")}',
               f'- {link("Reviewed retrieval documents", site + "/downloads/rag-documents.jsonl")}', f'- {link("All retrieval documents", site + "/downloads/rag-all-records.jsonl")}',
               f'- {link("Export manifest", site + "/downloads/rag-manifest.json")}', f'- {link("Full catalog JSONL", site + "/downloads/catalog.jsonl")}: every active record, including metadata-only ones']
     lines += ['', '## Guides and policies', ''] + [f'- {link(title, site + path)}: {inline(description)}' for title, path, description in guides]
     lines += ['', '## Optional', '',
+              f'- {link("API index", site + "/api/v1/index.json")}: endpoint list with counts, byte sizes and SHA-256; {link("JSON Schema", site + "/api/v1/schema.json")}']
+    lines += [f'- {link(name + ".json", url_json)} ({link("CSV", url_csv)}): {inline(description)}' for name, url_json, url_csv, description in api_endpoints]
+    lines += [
               f'- {link("Complete curated catalog in one file", site + "/llms-full.txt")}: every curated record once, compactly; full annotations are in the per-kind files above',
               f'- {link("Atom feed", site + "/feed.xml")} and {link("JSON Feed", site + "/feed.json")}: the 100 newest reviewed resources',
               f'- {link("Benchmark protocols", site + "/compare/benchmarks/")} and {link("dataset profiles", site + "/compare/datasets/")}: source-reviewed specifications ({link("benchmarks JSON", site + "/downloads/benchmarks-profiles.json")}, {link("datasets JSON", site + "/downloads/datasets-profiles.json")})',

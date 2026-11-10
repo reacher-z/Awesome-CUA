@@ -54,10 +54,10 @@ class AgentFileTests(unittest.TestCase):
     def test_llms_txt_follows_the_llmstxt_format_and_every_link_resolves(self):
         text = (self.dest / 'llms.txt').read_text()
         lines = text.splitlines()
-        self.assertEqual(lines[0], '# AwesomeCUA')
+        self.assertEqual(lines[0], '# Awesome CUA')
         self.assertTrue(lines[2].startswith('> '))
         headings = [line for line in lines if line.startswith('#')]
-        self.assertEqual([h for h in headings if h.startswith('# ')], ['# AwesomeCUA'])
+        self.assertEqual([h for h in headings if h.startswith('# ')], ['# Awesome CUA'])
         self.assertEqual(headings[-1], '## Optional')
         self.assertLessEqual(len(text.encode()), 50_000)
         links = re.findall(r'\]\((https://awesomecua\.com/[^)]*)\)', text)

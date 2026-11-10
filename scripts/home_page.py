@@ -436,14 +436,14 @@ def hero(view, last_scan, zh=False) -> str:
     if zh:
         stats = (f'<span>已审核 <b>{total}</b> 条</span><span>其中论文与综述 <b>{papers}</b> 篇</span>'
                  f'<span class="hs-opt">尚未收录的扫描发现 <b>{candidates}</b> 条</span>')
-        title, lede = f'计算机使用<span class="bbox-w"><span class="bbox">智能体{BBOX}</span>，</span>一站检索。', "收录面向计算机使用智能体的评测基准、数据集、模型与论文，每一条都核对过一手来源。"
+        title, lede = f'计算机使用<span class="bbox-w"><span class="bbox">智能体{BBOX}</span>，</span>一站检索。', (f"Awesome CUA（Awesome Computer-Use Agents）是计算机使用智能体的资源目录：已审核 {total} 条，其中论文与综述 {papers} 篇、评测基准 {fmt(kind_count(view, 'benchmark'))} 个、数据集 {fmt(kind_count(view, 'dataset'))} 个、模型 {fmt(kind_count(view, 'model'))} 个，每条都核对过一手来源。" + (f"最近一次扫描：{last_scan[:10]}。" if last_scan else ""))
     else:
         stats = (f'<span><b>{total}</b> reviewed records</span><span><b>{papers}</b> papers and surveys</span>'
                  f'<span class="hs-opt"><b>{candidates}</b> scan finds not yet in the catalog</span>')
-        title, lede = f'Computer-use <span class="bbox">agents{BBOX}</span>, indexed.', "Benchmarks, datasets, models and papers for agents that use computers, each checked against its primary source."
+        title, lede = f'Computer-use <span class="bbox">agents{BBOX}</span>, indexed.', (f"Awesome CUA (Awesome Computer-Use Agents) is a catalog of computer-use agent research and resources: {total} reviewed records, including {papers} papers and surveys, {fmt(kind_count(view, 'benchmark'))} benchmarks, {fmt(kind_count(view, 'dataset'))} datasets and {fmt(kind_count(view, 'model'))} models, each checked against its primary source." + (f" Last scan {last_scan[:10]}." if last_scan else ""))
     return f'''<section class="screen" aria-labelledby="hero-h"><div class="screen-in" data-screen>
 <div class="wrap hero">
-<h1 id="hero-h">{title}</h1>
+<h1 id="hero-h"><span class="hero-brand">Awesome CUA</span> {title}</h1>
 <p class="hero-lede">{lede}</p>
 <div class="hero-acts">{star_button(zh, live=True, cls="star-hero")}<p class="hero-stats">{stats}{scanned}</p></div>
 {finder(view, zh)}
@@ -708,6 +708,32 @@ def directory_strip(zh=False, note="") -> str:
     other = '<a class="dir-lang" href="/">English</a>' if zh else '<a class="dir-lang" href="/zh/" lang="zh-CN">中文指南</a>'
     return (f'<section class="wrap dir-strip" aria-labelledby="dir-h"><div class="dir-lead"><h2 id="dir-h">{esc(lead[0])}</h2><p>{lead[1]}</p>{other}</div>'
             f'<dl class="dir-rows">{rows}</dl>{foot}</section>')
+
+
+def faq_items(view, last_scan, zh=False) -> list:
+    """Real questions about the catalog, answered from this build's numbers (HTML answers)."""
+    n = lambda kind: fmt(kind_count(view, kind))
+    total, papers, candidates = n("all"), fmt(view["papers"]), fmt(view["candidates"])
+    scan = last_scan[:10] if last_scan else ""
+    if zh:
+        return [
+            ("Awesome CUA 是什么？", f"Awesome CUA 是面向计算机使用、GUI、网页和移动端智能体的资源目录，已审核 {total} 条论文、模型、数据集、评测基准、智能体、框架、工具与产品，每条都链接一手来源。"),
+            ("目录收录了多少资源？", f"已审核 {total} 条：论文与综述 {papers} 篇，其他资源 {fmt(view['other_resources'])} 条，其中评测基准 {n('benchmark')} 个、数据集 {n('dataset')} 个、模型 {n('model')} 个、智能体 {n('agent')} 个、框架 {n('framework')} 个、工具 {n('tool')} 个。另有 {fmt(view['metadata_only'])} 条仅有元数据的书目记录和 {candidates} 条扫描发现等待审核，不计入总数。"),
+            ("每条记录如何审核？", '审核者阅读一手来源（论文、代码仓库、模型卡或项目主页），记录证据、审核日期，并分别记录代码、数据、权重和文档许可证，未知信息保留为空。详见<a href="/about/">编辑方法</a>。'),
+            ("如何用代码读取目录？", '克隆 GitHub 仓库，下载 <a href="/downloads/catalog.jsonl">catalog.jsonl</a>，或调用 <a href="/api/">/api/v1/ JSON 接口</a>。每个页面在 <code>index.md</code> 提供 Markdown 版本，<a href="/llms.txt">llms.txt</a> 列出全部入口。'),
+            ("目录多久更新一次？", f"发现扫描每 8 小时运行一次" + (f"，最近一次在 {scan}" if scan else "") + '。详见<a href="/updates/">更新记录</a>。'),
+            ("如何引用 Awesome CUA？", '使用 GitHub 仓库中的 CITATION.cff，或复制 <a href="/AGENTS.md">AGENTS.md</a> 中的 BibTeX。'),
+            ("如何推荐资源或报告更正？", f'通过 <a href="{ISSUES}">GitHub Issue 表单</a>提交，审核者会先阅读一手来源。'),
+        ]
+    return [
+        ("What is Awesome CUA?", f"Awesome CUA is a source-backed catalog of computer-use, GUI, browser and mobile agents: {total} reviewed papers, models, datasets, benchmarks, agents, frameworks, tools and products, each linked to its primary source."),
+        ("How many resources does it list?", f"{total} reviewed records: {papers} papers and surveys and {fmt(view['other_resources'])} other resources, including {n('benchmark')} benchmarks, {n('dataset')} datasets, {n('model')} models, {n('agent')} agents, {n('framework')} frameworks and {n('tool')} tools. {fmt(view['metadata_only'])} metadata-only bibliography records and {candidates} scan finds await review and are not counted."),
+        ("How is each record reviewed?", 'A reviewer reads the primary source (paper, repository, model card or project page) and records the evidence, the review date, and code, data, weights and document licenses separately. Unknown facts stay empty. See the <a href="/about/">editorial policy</a>.'),
+        ("How can I read the catalog from code?", 'Clone the GitHub repository, download <a href="/downloads/catalog.jsonl">catalog.jsonl</a>, or call the <a href="/api/">JSON API under /api/v1/</a>. Every page has a Markdown version at <code>index.md</code>, and <a href="/llms.txt">llms.txt</a> lists them all.'),
+        ("How often is it updated?", "Discovery scans run every 8 hours" + (f"; the latest was {scan}" if scan else "") + '. See <a href="/updates/">catalog updates</a>.'),
+        ("How do I cite Awesome CUA?", 'Use CITATION.cff in the GitHub repository, or copy the BibTeX in <a href="/AGENTS.md">AGENTS.md</a>.'),
+        ("How do I suggest a resource or report a correction?", f'Open a <a href="{ISSUES}">GitHub issue form</a>. A reviewer reads the primary source first.'),
+    ]
 
 
 def contribute(zh=False) -> str:

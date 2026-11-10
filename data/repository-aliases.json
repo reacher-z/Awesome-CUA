@@ -1618,5 +1618,32 @@
         "sha256": "cfe2c81a380adacc6928662dac240b88fd760e191c178758099d368bf6768dde"
       }
     ]
+  },
+  {
+    "alias_id": "url:e8ffd8e74a6ef03e6a09",
+    "target_id": "url:1a54e63277eaffdaef57",
+    "repository_id": "69d25cc26e4fc0581f4505b2",
+    "basis": "official_huggingface_repository_id",
+    "reviewed_at": "2026-11-10T03:01:53Z",
+    "observations": [
+      {
+        "url": "https://huggingface.co/api/models/SugarVapeur/OpenGUI-2B",
+        "resolved_url": "https://huggingface.co/api/models/SugarVapeur/ClawGUI-2B",
+        "repository_id": "69d25cc26e4fc0581f4505b2",
+        "full_name": "SugarVapeur/ClawGUI-2B",
+        "html_url": "https://huggingface.co/SugarVapeur/ClawGUI-2B",
+        "retrieved_at": "2026-11-10T03:01:52Z",
+        "sha256": "448868dd028c422209955b031a070562cce041f66740eda893ec03f88d3b2271"
+      },
+      {
+        "url": "https://huggingface.co/api/models/SugarVapeur/ClawGUI-2B",
+        "resolved_url": "https://huggingface.co/api/models/SugarVapeur/ClawGUI-2B",
+        "repository_id": "69d25cc26e4fc0581f4505b2",
+        "full_name": "SugarVapeur/ClawGUI-2B",
+        "html_url": "https://huggingface.co/SugarVapeur/ClawGUI-2B",
+        "retrieved_at": "2026-11-10T03:01:53Z",
+        "sha256": "448868dd028c422209955b031a070562cce041f66740eda893ec03f88d3b2271"
+      }
+    ]
   }
 ]

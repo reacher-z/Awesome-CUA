@@ -2,9 +2,9 @@
 
 [Home](../../README.md) · [All topics](../topics.md) · [Full arXiv bibliography](../papers.md)
 
-23 source-reviewed resources tagged `history`. Curated metadata; unknown facts are shown as —.
+24 source-reviewed resources tagged `history`. Curated metadata; unknown facts are shown as —.
 
-**Contents:** [Benchmarks (1)](#benchmarks) · [Agents (3)](#agents) · [Frameworks (3)](#frameworks) · [Tools (13)](#tools) · [Infrastructure (1)](#infrastructure) · [Products (2)](#products)
+**Contents:** [Benchmarks (1)](#benchmarks) · [Agents (3)](#agents) · [Frameworks (3)](#frameworks) · [Tools (14)](#tools) · [Infrastructure (1)](#infrastructure) · [Products (2)](#products)
 
 ## Benchmarks
 
@@ -40,6 +40,7 @@ All entries in this section: web.
 | [CasperJS](https://github.com/casperjs/casperjs) | web | — | — | CasperJS is a browser navigation scripting and testing utility for PhantomJS and SlimerJS, with helpers for forms, links, screenshots and assertions. | [✓ 2026‑11‑09](https://raw.githubusercontent.com/casperjs/casperjs/HEAD/README.md) |
 | [computer-use](https://github.com/leeguooooo/computer-use) | desktop, macos | — | — | An archived macOS broker that lets MCP clients delegate computer-use tasks to the official Codex runtime and receive the nested agent's final response. | [✓ 2026‑11‑09](https://raw.githubusercontent.com/leeguooooo/computer-use/HEAD/README.md) |
 | [Droidrun iOS Portal](https://github.com/droidrun/ios-portal) | ios | — | code MIT | An archived iOS automation portal that exposes screenshots, accessibility trees, app launch, gestures, and text input through an XCTest HTTP server. | [✓ 2026‑11‑09](https://raw.githubusercontent.com/droidrun/ios-portal/HEAD/README.md) |
+| [Mobile JSON Wire Protocol Specification](https://github.com/SeleniumHQ/mobile-spec) | android, ios | — | — | A draft WebDriver extension for automating native and hybrid mobile apps, defining sessions, capabilities, locator strategies, touch gestures, orientation, rotation, network modes and webview contexts. | [✓ 2026‑11‑10](https://raw.githubusercontent.com/SeleniumHQ/mobile-spec/81201df03cb76464afe8df17c4c203093793ea6e/spec-draft.md) |
 | [NotebookLM Claude Code Skill](https://github.com/PleasePrompto/notebooklm-skill) | web | — | code MIT | A Claude Code skill automates browser-based questions to NotebookLM and returns answers from uploaded documents. It includes scripts for authentication and notebook management. | [✓ 2026‑11‑09](https://raw.githubusercontent.com/PleasePrompto/notebooklm-skill/HEAD/README.md) |
 | [openadapt-flow](https://github.com/OpenAdaptAI/openadapt-flow) | cross-platform, web, desktop, windows, macos, linux | — | code MIT | openadapt-flow turns recorded web or desktop tasks into reusable programs, replays them locally, and verifies saved records. Its standalone repository is archived. | [✓ 2026‑11‑09](https://raw.githubusercontent.com/OpenAdaptAI/openadapt-flow/HEAD/README.md) |
 | [openadapt-grounding](https://github.com/OpenAdaptAI/openadapt-grounding) | cross-platform, web, desktop | — | code MIT | An archived GUI element localization package that anchors targets to OCR text and stabilizes detections across frames, with optional model-based fallbacks. | [✓ 2026‑11‑09](https://raw.githubusercontent.com/OpenAdaptAI/openadapt-grounding/HEAD/README.md) |

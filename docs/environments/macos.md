@@ -2,9 +2,9 @@
 
 [Home](../../README.md) · [All platforms](../environments.md) · [Research by topic](../topics.md)
 
-581 source-reviewed resources tagged `macos`. Curated metadata; unknown facts are shown as —.
+582 source-reviewed resources tagged `macos`. Curated metadata; unknown facts are shown as —.
 
-**Contents:** [Benchmarks (10)](#benchmarks) · [Datasets (16)](#datasets) · [Models (18)](#models) · [Agents (115)](#agents) · [Frameworks (88)](#frameworks) · [Tools (281)](#tools) · [Infrastructure (22)](#infrastructure) · [Products (9)](#products) · [Learning resources (4)](#learning-resources) · [Papers (18)](#papers)
+**Contents:** [Benchmarks (11)](#benchmarks) · [Datasets (16)](#datasets) · [Models (18)](#models) · [Agents (115)](#agents) · [Frameworks (88)](#frameworks) · [Tools (281)](#tools) · [Infrastructure (22)](#infrastructure) · [Products (9)](#products) · [Learning resources (4)](#learning-resources) · [Papers (18)](#papers)
 
 ## Benchmarks
 
@@ -19,6 +19,7 @@
 | [macOSWorld](https://github.com/showlab/macosworld) | desktop, macos | [2506.04135](https://arxiv.org/abs/2506.04135) (2025) | — | code CC-BY-NC-4.0 | macOSWorld benchmarks GUI agents on tasks across 30 macOS apps in five languages. It supplies a Python testbench for AWS macOS instances and a safety task subset. | [✓ 2026‑11‑09](https://raw.githubusercontent.com/showlab/macosworld/HEAD/readme.md) |
 | [OSWorld](https://github.com/xlang-ai/OSWorld) · [leaderboard](https://os-world.github.io/) | desktop, linux, windows, macos | [2404.07972](https://arxiv.org/abs/2404.07972) (2024) | [369 task definitions](https://raw.githubusercontent.com/xlang-ai/OSWorld/HEAD/evaluation_examples/test_all.json) | code Apache-2.0 | Execution-based evaluation of agents performing tasks in real desktop environments. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/xlang-ai/OSWorld/HEAD/README.md) |
 | [ScreenSpot Pro](https://github.com/likaixin2000/ScreenSpot-Pro-GUI-Grounding) · [leaderboard](https://gui-agent.github.io/grounding-leaderboard) | desktop, windows, macos, linux | — | [1,581 target annotations](https://huggingface.co/datasets/likaixin/ScreenSpot-Pro/raw/main/README.md) | code MIT | GUI grounding benchmark focused on professional high-resolution interfaces. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/likaixin2000/ScreenSpot-Pro-GUI-Grounding/HEAD/readme.md) |
+| [showdown](https://github.com/generalagents/showdown) | desktop, macos | — | — | — | Evaluation code for the showdown-clicks benchmark: eval.py checks whether a model's predicted click on a macOS screenshot lands in the annotated bounding box, with integrations for Claude, Qwen, UI-TARS and others. | [✓ 2026‑11‑10](https://raw.githubusercontent.com/generalagents/showdown/86cbd20d161eb3a3e49babe677a26dcec4beb91a/README.md) |
 | [showdown-clicks](https://huggingface.co/datasets/generalagents/showdown-clicks) | macos, desktop | — | [557 annotated clicks](https://huggingface.co/datasets/generalagents/showdown-clicks/raw/main/showdown-clicks-dev/data.csv) · [5,679 left clicks](https://huggingface.co/datasets/generalagents/showdown-clicks/raw/main/README.md) | data mit | Offline click benchmark from General Agents: 557 human left clicks on macOS screenshots, each with an instruction and the bounding box of valid click locations, scored by whether a predicted point lands inside. | [✓ 2026‑10‑18](https://huggingface.co/datasets/generalagents/showdown-clicks/raw/main/README.md) |
 
 ## Datasets

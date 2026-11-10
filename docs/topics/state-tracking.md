@@ -2,9 +2,9 @@
 
 [Home](../../README.md) · [All topics](../topics.md) · [Full arXiv bibliography](../papers.md)
 
-158 source-reviewed resources tagged `state-tracking`. Curated metadata; unknown facts are shown as —.
+159 source-reviewed resources tagged `state-tracking`. Curated metadata; unknown facts are shown as —.
 
-**Contents:** [Benchmarks (8)](#benchmarks) · [Datasets (1)](#datasets) · [Models (7)](#models) · [Agents (9)](#agents) · [Frameworks (21)](#frameworks) · [Tools (26)](#tools) · [Infrastructure (5)](#infrastructure) · [Products (1)](#products) · [Learning resources (3)](#learning-resources) · [Papers (77)](#papers)
+**Contents:** [Benchmarks (8)](#benchmarks) · [Datasets (2)](#datasets) · [Models (7)](#models) · [Agents (9)](#agents) · [Frameworks (21)](#frameworks) · [Tools (26)](#tools) · [Infrastructure (5)](#infrastructure) · [Products (1)](#products) · [Learning resources (3)](#learning-resources) · [Papers (77)](#papers)
 
 ## Benchmarks
 
@@ -21,11 +21,10 @@
 
 ## Datasets
 
-All entries in this section: web.
-
-| Resource | Paper | Scale | License | Description | Evidence |
-| --- | --- | --- | --- | --- | --- |
-| [Preflight Bench](https://huggingface.co/datasets/multimodal-ai-engineering/preflight-bench) | [2610.39282](https://arxiv.org/abs/2610.39282) (2026) | — | data cc-by-4.0 | A dataset of paired screenshots, click outcomes and checker answers for evaluating pre-click checks on changing web pages. It includes Lance tables and development and test splits. | [✓ 2026‑11‑09](https://huggingface.co/api/datasets/multimodal-ai-engineering/preflight-bench) |
+| Resource | Environments | Paper | Scale | License | Description | Evidence |
+| --- | --- | --- | --- | --- | --- | --- |
+| [Preflight Bench](https://huggingface.co/datasets/multimodal-ai-engineering/preflight-bench) | web | [2610.39282](https://arxiv.org/abs/2610.39282) (2026) | — | data cc-by-4.0 | A dataset of paired screenshots, click outcomes and checker answers for evaluating pre-click checks on changing web pages. It includes Lance tables and development and test splits. | [✓ 2026‑11‑09](https://huggingface.co/api/datasets/multimodal-ai-engineering/preflight-bench) |
+| [Static-FineBench](https://huggingface.co/datasets/wumiaoshou/Static-FineBench) | desktop, web, cross-platform | — | — | — | Data for FineState-Bench, a fine-grained GUI state-control benchmark: desktop, web and mobile screenshots with XML and JSON annotations of locate and interact instructions and separate localization and interaction boxes. | [✓ 2026‑11‑10](https://huggingface.co/api/datasets/wumiaoshou/Static-FineBench) |
 
 ## Models
 

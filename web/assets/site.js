@@ -286,6 +286,8 @@
     const TAIL = ['tool', 'infrastructure', 'product', 'company', 'learning'], moreDefault = moreLabel && moreLabel.textContent, moreNDefault = moreN && moreN.textContent;
     const addr = $('[data-address]', fin), seeAll = $('[data-see-all]', fin);
     const defaultRows = list.innerHTML, defCounts = Object.fromEntries($$('[data-count]', fin).map(e => [e.dataset.count, e.textContent]));
+    // The status bar names the view it opens; the server renders the all-resources label, so keep it for the default view.
+    const seeAllDefault = seeAll && seeAll.innerHTML;
     const screenEl = $('[data-screen]');
     const st = {q: '', kind: 'all', env: 0, lb: false, sort: 'mentions'};
     const mid = matchMedia('(max-width: 1023px)');
@@ -319,6 +321,7 @@
         list.innerHTML = defaultRows; count.textContent = '';
         Object.entries(defCounts).forEach(([k, v]) => $$(`[data-count="${k}"]`, fin).forEach(e => { e.textContent = v; e.parentElement.classList.remove('is-zero') }));
         if (moreN) moreN.textContent = moreNDefault;
+        if (seeAll) seeAll.innerHTML = seeAllDefault;
         sync(); return;
       }
       if (!IDX) { list.setAttribute('aria-busy', 'true'); loadIndex().then(render).catch(() => { list.innerHTML = `<li class="empty"><h3>${ZH ? '搜索暂不可用' : 'Search is offline'}</h3><p>${ZH ? '索引未能加载。' : 'The search index did not load. Browse the catalog instead.'} <a href="${CATALOG}">${ZH ? '浏览目录' : 'Open the catalog'}</a></p></li>` }); return }

@@ -1,7 +1,7 @@
 """Category-page guides: a short definition, a "how to choose" table and FAQs, all computed from the reviewed records."""
 from __future__ import annotations
 
-from collections import Counter
+from collections import Counter, defaultdict
 import html
 import re
 
@@ -47,13 +47,13 @@ LICENSE_ORDER = {'model': ('weights', 'code'), 'dataset': ('data', 'code'), 'lea
 COLUMNS = {
     'benchmark': ('platform', 'setting', 'scale', 'leaderboard'),
     'dataset': ('platform', 'supervision', 'scale', 'license'),
-    'model': ('platform', 'license', 'paper', 'mentions'),
+    'model': ('platform', 'license', 'paper', 'links'),
     'product': ('platform', 'access', 'pricing'),
     'company': ('resources', 'kinds'),
     'survey': ('date', 'platform', 'topics'),
 }
 HEADINGS = {'platform': ('Platform', '平台'), 'setting': ('Setting', '设置'), 'scale': ('Scale', '规模'), 'leaderboard': ('Leaderboard', '排行榜'),
-            'supervision': ('Supervision', '监督信号'), 'license': ('License', '许可证'), 'paper': ('Paper', '论文'), 'mentions': ('Mentions', '提及'),
+            'supervision': ('Supervision', '监督信号'), 'license': ('License', '许可证'), 'paper': ('Paper', '论文'), 'links': ('Linked records', '关联记录'),
             'publisher': ('Publisher', '发布方'), 'access': ('Access', '访问方式'), 'pricing': ('Pricing', '定价'), 'resources': ('Resources', '资源'), 'kinds': ('Kinds', '类型'),
             'date': ('Date', '日期'), 'topics': ('Topics', '主题')}
 KIND_NAMES = {'paper': ('paper', 'papers', '论文'), 'survey': ('survey', 'surveys', '综述'), 'learning': ('learning resource', 'learning resources', '学习资源'),
@@ -190,8 +190,8 @@ def cell(column, record, view, zh):
         identifier, paper = found
         label = 'arXiv ' + identifier.split(':', 1)[1]
         return f'<a href="{esc(resource_path(paper))}">{esc(label)}</a>' if paper else esc(label)
-    if column == 'mentions':
-        return n(len(view['mentions'].get(record['id'], ())))
+    if column == 'links':
+        return n(len(linked(view)[record['id']]))
     if column == 'publisher':
         return ', '.join(a(p, zh) for p in publishers(record, by_id)) or '—'
     if column == 'access':
@@ -207,20 +207,54 @@ def cell(column, record, view, zh):
     if column == 'date':
         return esc(record_date_text(record) or '—')
     if column == 'topics':
-        return esc(', '.join([topic_name(t, 'zh' if zh else 'en') for t in record['topics'] if t != 'survey'][:2])) or '—'
+        return esc(('、' if zh else ', ').join([topic_name(t, 'zh' if zh else 'en') for t in record['topics'] if t != 'survey'][:2])) or '—'
     raise KeyError(column)
 
 
-FALLBACK_COLUMNS = ('publisher', 'license', 'mentions')
+FALLBACK_COLUMNS = ('publisher', 'license', 'links')
+
+
+def linked(view):
+    """Distinct other reviewed records linked to each record, by a mention in their reviewed source or a relation either way."""
+    if 'linked' not in view:
+        ids = {r['id'] for r in view['reviewed']}
+        links = defaultdict(set)
+        for record in view['reviewed']:
+            for rel in record['relations']:
+                if rel['target_id'] in ids and rel['target_id'] != record['id']:
+                    links[rel['target_id']].add(record['id'])
+                    links[record['id']].add(rel['target_id'])
+        for target, sources in view['mentions'].items():
+            links[target] |= {i for i in sources if i in ids and i != target}
+        view['linked'] = links
+    return view['linked']
+
+
+def publisher_sizes(view):
+    """Reviewed records each publisher has in the catalog."""
+    if 'publisher_sizes' not in view:
+        view['publisher_sizes'] = Counter(rel['target_id'] for r in view['reviewed'] for rel in r['relations'] if rel['type'] == 'published_by')
+    return view['publisher_sizes']
+
+
+def prominent(records, view):
+    """The rows to compare: most linked records first; ties go to entries whose publisher has more catalog records, then by name."""
+    links, sizes = linked(view), publisher_sizes(view)
+    def key(record):
+        size = max((sizes[rel['target_id']] for rel in record['relations'] if rel['type'] == 'published_by'), default=0)
+        return (-len(links[record['id']]), -size, record['name'].casefold())
+    return sorted(records, key=key)[:ROWS]
 
 
 def columns_for(kind, rows, view):
-    """The kind's preferred columns that at least two shown rows fill, topped up from shared fallbacks."""
-    preferred = COLUMNS.get(kind, ('platform', 'license', 'mentions'))
+    """The kind's preferred columns that at least two shown rows fill and that differ across rows, topped up from shared fallbacks."""
+    preferred = COLUMNS.get(kind, ('platform', 'license', 'links'))
     needed = min(2, len(rows))
-    filled = [c for c in dict.fromkeys(preferred + FALLBACK_COLUMNS)
-              if sum(cell(c, r, view, False) != '—' for r in rows) >= needed]
-    return tuple(filled[:len(preferred)])
+
+    def useful(column):
+        values = [cell(column, r, view, False) for r in rows]
+        return sum(v != '—' for v in values) >= needed and (len(rows) < 2 or len(set(values)) > 1)
+    return tuple([c for c in dict.fromkeys(preferred + FALLBACK_COLUMNS) if useful(c)][:len(preferred)])
 
 
 def ordered_by_mentions(kind):
@@ -228,22 +262,28 @@ def ordered_by_mentions(kind):
 
 
 def choose_table(kind, records, view, *, zh, snapshot):
-    rows = records[:ROWS]
+    rows = prominent(records, view)
     columns = columns_for(kind, rows, view)
     name_heading = KIND_NAMES[kind][2] if zh else KIND_NAMES[kind][0].capitalize()
     head = f'<th scope="col">{esc(name_heading)}</th>' + ''.join(f'<th scope="col">{HEADINGS[c][zh]}</th>' for c in columns)
     body = ''.join('<tr>' + f'<th scope="row">{a(r, zh)}</th>' + ''.join(f'<td data-label="{esc(HEADINGS[c][zh])}">{cell(c, r, view, zh)}</td>' for c in columns) + '</tr>' for r in rows)
     caption = '怎么选' if zh else 'How to choose'
     if zh:
-        source = f'来源：本页列表中排在前 {len(rows)} 位的已审核记录，数据见 <a href="/api/v1/resources.json">resources.json</a>，快照 {esc(snapshot[:10])}。每行链接到该条目的一手证据。'
+        measure = {'company': '个', 'product': '款', 'survey': '篇'}.get(kind, '条')
+        tie = '' if kind == 'company' else '；数量相同时，发布方在目录中记录更多者在前'
+        source = (f'行：与其他已审核记录关联（提及或关系）最多的 {len(rows)} {measure}{KIND_NAMES[kind][2]}{tie}。'
+                  f'数据见 <a href="/api/v1/resources.json">resources.json</a>，快照 {esc(snapshot[:10])}。每行链接到该条目的一手证据。')
     else:
-        source = f'Source: the first {len(rows)} reviewed records in this page\'s list, from <a href="/api/v1/resources.json">resources.json</a>, snapshot {esc(snapshot[:10])}. Each row links to its entry and primary evidence.'
+        tie = '' if kind == 'company' else '; ties go to entries whose publisher has more catalog records'
+        source = (f'Rows: the {len(rows)} {KIND_NAMES[kind][1 if len(rows) != 1 else 0]} linked to the most other reviewed records, by mention or relation{tie}. '
+                  f'Data from <a href="/api/v1/resources.json">resources.json</a>, '
+                  f'snapshot {esc(snapshot[:10])}. Each row links to its entry and primary evidence.')
     return f'<div class="choose"><table><caption id="choose-h">{caption}</caption><thead><tr>{head}</tr></thead><tbody>{body}</tbody></table><p class="src">{source}</p></div>'
 
 
 def mentioned_answer(kind, records, view, zh):
     top = [r for r in records if view['mentions'].get(r['id'])][:3]
-    if len(top) < 2:
+    if len(top) < 2 or len(view['mentions'][top[0]['id']]) < 3:
         return None
     label = KIND_NAMES[kind]
     items = [f'{a(r, zh)}（{n(len(view["mentions"][r["id"]]))} 条记录）' if zh else f'{a(r, zh)} ({n(len(view["mentions"][r["id"]]))} records)' for r in top]
@@ -440,7 +480,8 @@ def guide(kind, records, view, *, zh, snapshot, url):
 
 def guide_markdown(kind, records, view, *, zh, snapshot):
     """The same definition, table and questions for the category's Markdown twin."""
-    columns = columns_for(kind, records[:ROWS], view)
+    rows = prominent(records, view)
+    columns = columns_for(kind, rows, view)
     name_heading = KIND_NAMES[kind][2] if zh else KIND_NAMES[kind][0].capitalize()
 
     def md(markup):
@@ -449,7 +490,7 @@ def guide_markdown(kind, records, view, *, zh, snapshot):
 
     lines = ['## 怎么选' if zh else '## How to choose', '',
              '| ' + ' | '.join([name_heading, *(HEADINGS[c][zh] for c in columns)]) + ' |', '|' + ' --- |' * (len(columns) + 1)]
-    lines += ['| ' + ' | '.join([md(a(r, zh)), *(md(cell(c, r, view, zh)) for c in columns)]) + ' |' for r in records[:ROWS]]
+    lines += ['| ' + ' | '.join([md(a(r, zh)), *(md(cell(c, r, view, zh)) for c in columns)]) + ' |' for r in rows]
     lines += ['', '## 常见问题' if zh else '## Questions', '']
     for q, answer in faqs(kind, records, view, zh=zh):
         lines += [f'### {q}', '', md(answer), '']

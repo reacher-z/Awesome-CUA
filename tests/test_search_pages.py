@@ -227,6 +227,10 @@ class SearchPagesTests(unittest.TestCase):
                 self.assertLess(guide,text.index('data-list-rows'))
                 table=re.search(r'<div class="choose"><table>(.*?)</table>',text,re.S).group(1)
                 self.assertEqual(table.count('<th scope="row">'),min(category_guides.ROWS,count),(kind,lang))
+                cells={}
+                for label,value in re.findall(r'<td data-label="([^"]+)">(.*?)</td>',table,re.S):cells.setdefault(label,[]).append(value)
+                for label,values in cells.items():
+                    if len(values)>1:self.assertGreater(len(set(values)),1,(kind,lang,label))
                 graph=json.loads(re.search(r'<script type="application/ld\+json">(.*?)</script>',text,re.S).group(1))['@graph']
                 faq=[item for item in graph if item['@type']=='FAQPage']
                 self.assertEqual(len(faq),1,(kind,lang))

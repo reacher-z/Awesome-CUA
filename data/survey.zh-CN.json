@@ -1,0 +1,20 @@
+{
+  "source_abstract_sha256": "2fa67dcdfe18ab312314b91695c710a2541eb6f55d20c267c39bc587e8deb692",
+  "title": "计算机使用智能体：方法、评测、人的能动性与研究资产",
+  "description": "一篇以证据为基础的计算机使用智能体研究综述，涵盖方法、评测、人机交互与可复用的研究资产。",
+  "abstract": "计算机使用智能体把人的目标转化为在浏览器、桌面应用和移动界面上的操作。各系统观察的内容、行动的方式、学习所依据的经验以及判定任务完成的标准各不相同，因此进展难以直接比较。本综述围绕四个问题组织这一领域：界面选择如何约束智能体设计；演示数据、合成轨迹与强化学习分别教会智能体什么；各评测协议能证明哪些能力；研究资产如何持续供人和软件智能体复用。我们把早期的界面自动化与视觉定位、模块化策略与原生策略、记忆、验证、恢复以及运行时系统联系起来。比较时区分局部动作预测、交互式任务完成、安全性以及对人的恰当协助。证据基础包括从 87 篇文献中选读的全文章节，以及一份固定版本的清单，收录 1,123 篇经编辑审阅的论文与综述，并辅以可复现的标题检索和限定范围的摘要筛选。我们提供可查阅的阅读登记表和带版本的参考文献，并指出若干研究机会：更清晰的泛化测试、评估器验证、人的控制，以及关联研究产物的维护。",
+  "sections": {
+    "abstract-heading": "摘要",
+    "context-heading": "范围、历史基础及与已有综述的关系",
+    "review-design-heading": "综述设计与证据基础",
+    "methods-from-interface-grounding-to-learning-through-interaction": "方法：从界面定位到在交互中学习",
+    "evaluation-interaction-data-and-safety": "评测、交互数据与安全",
+    "human-agency-heading": "人的能动性、个性化与主动协助",
+    "research-assets-heading": "从文献列表到可复用的研究资产",
+    "research-agenda-heading": "开放问题与研究议程",
+    "limitations-heading": "范围与来源",
+    "conclusion-heading": "结论",
+    "evidence-appendix-heading": "证据与检索记录",
+    "references-heading": "参考文献"
+  }
+}

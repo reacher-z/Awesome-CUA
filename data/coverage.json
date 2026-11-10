@@ -1,7 +1,7 @@
 {
-  "as_of_utc": "2026-11-10T00:34:12Z",
-  "total_records": 6021,
-  "curated_records": 5115,
+  "as_of_utc": "2026-11-10T03:01:53Z",
+  "total_records": 6121,
+  "curated_records": 5215,
   "bibliographic_records": 2624,
   "arxiv_active_records": 2571,
   "non_arxiv_bibliographic_records": 53,
@@ -11,10 +11,10 @@
   "exclusion_revalidation_pending": 0,
   "metadata_only_records": 906,
   "discovery_identifiers": 9381,
-  "unindexed_candidates": 701,
-  "non_resource_candidates": 469,
-  "alias_candidates": 666,
-  "out_of_scope_candidates": 1741,
+  "unindexed_candidates": 525,
+  "non_resource_candidates": 481,
+  "alias_candidates": 697,
+  "out_of_scope_candidates": 1774,
   "pending_editorial": [
     {
       "id": "github:thudm/autoglm",
@@ -2558,1320 +2558,88 @@
       "cause": "annotation_pending"
     },
     {
-      "id": "url:6224c7f61c680453ec99",
-      "name": "Bloomberg - Are you a robot?",
-      "url": "https://www.bloomberg.com/news/articles/2024-11-13/openai-nears-launch-of-ai-agents-to-automate-tasks-for-users",
-      "reason": "primary evidence unresolved: HTTP Error 403: Forbidden; The Bloomberg page presents a robot check. The Bloomberg robot check leaves the article's subject and contents open.",
-      "cause": "unresolved_evidence"
-    },
-    {
-      "id": "url:b3ec31e442a5a9673420",
-      "name": "SmolVLM2-2.2B-Instruct-Agentic-GUI-GGUF",
-      "url": "https://huggingface.co/mradermacher/SmolVLM2-2.2B-Instruct-Agentic-GUI-GGUF",
-      "reason": "The card provides GGUF quantizations of an Agentic-GUI-named model, but does not describe its GUI tasks, inputs, or outputs. Its computer-use capability remains unclear.",
-      "cause": "reviewer_hold"
-    },
-    {
-      "id": "github:zju-aces-ise/chatuitest",
-      "name": "ChatUITest",
-      "url": "https://github.com/ZJU-ACES-ISE/ChatUITest",
-      "reason": "ChatUITest says it generates GUI test scripts, but its README marks the project under construction and the repository contains only that README. The linked simulation tool and unfinished dataset are separate resources.",
-      "cause": "reviewer_hold"
-    },
-    {
-      "id": "url:96bb23bd687d6c227a41",
-      "name": "world_model_for_wa_desc_with_tao_dataset",
-      "url": "https://huggingface.co/datasets/LangAGI-Lab/world_model_for_wa_desc_with_tao_dataset",
-      "reason": "The dataset card supplies a train split and fields for actions, observations, and next-state descriptions, but only a placeholder description. It does not explain the dataset's provenance or intended use.",
-      "cause": "reviewer_hold"
-    },
-    {
-      "id": "url:654e0cbc1a22b59eca47",
-      "name": "webgames",
-      "url": "https://huggingface.co/datasets/convergence-ai/webgames",
-      "reason": "The webgames dataset has a data file, but its card contains only a license declaration. A description of the data and its use is missing.",
-      "cause": "reviewer_hold"
-    },
-    {
-      "id": "url:6588fa6675ed27a7b81c",
-      "name": "Sequence-of-action-prediction-mind2web",
-      "url": "https://huggingface.co/datasets/Izazk/Sequence-of-action-prediction-mind2web",
-      "reason": "The Sequence-of-action-prediction-mind2web dataset has a data file, but its card contains only a license declaration. A description of the data and its use is missing.",
-      "cause": "reviewer_hold"
-    },
-    {
-      "id": "url:d90b71ff4bc54052cc5b",
-      "name": "android_ui_detection_yolov8",
-      "url": "https://huggingface.co/datasets/yasirfaizahmed/android_ui_detection_yolov8",
-      "reason": "android_ui_detection_yolov8 has a data archive, but its dataset card remains an unfilled template. It gives no description of the images, annotations, or intended use.",
-      "cause": "reviewer_hold"
-    },
-    {
-      "id": "url:ca7bfba3981fc7e5b3bf",
-      "name": "MobileRisk",
-      "url": "https://huggingface.co/datasets/OS-Copilot/MobileRisk",
-      "reason": "The Hugging Face page shows an image and text dataset preview but has no dataset card explaining the images, labels, or intended use.",
-      "cause": "reviewer_hold"
-    },
-    {
-      "id": "url:d49ba5bffd42baa51993",
-      "name": "supra-tex",
-      "url": "https://huggingface.co/supra3d/supra-tex",
-      "reason": "The repository contains model files, but its card only discusses unresolved deployment issues. It does not explain what the model does or how it is used.",
-      "cause": "reviewer_hold"
-    },
-    {
-      "id": "url:d6a1636277b933005a8e",
-      "name": "MM-Eureka-Zero-38B",
-      "url": "https://huggingface.co/FanqingM/MM-Eureka-Zero-38B",
-      "reason": "The repository has model weights, but its page has no model card. The supplied source does not explain the model's purpose or use.",
-      "cause": "reviewer_hold"
-    },
-    {
-      "id": "url:ea75a3a35abbf35ce5f4",
-      "name": "smolagents_SmolVLM2-2.2B-Instruct-Agentic-GUI-GGUF",
-      "url": "https://huggingface.co/bartowski/smolagents_SmolVLM2-2.2B-Instruct-Agentic-GUI-GGUF",
-      "reason": "The card documents GGUF quantizations and llama.cpp use, but describes GUI capability only through the original model's name.",
-      "cause": "reviewer_hold"
-    },
-    {
-      "id": "github:vuminhduc796/gptvoicetasker",
-      "name": "GPTVoiceTasker",
-      "url": "https://github.com/vuminhduc796/GPTVoiceTasker",
-      "reason": "GPTVoiceTasker has application and build files, but the supplied source has no README describing its function or how it is used.",
-      "cause": "reviewer_hold"
-    },
-    {
-      "id": "url:b144605ae24674ffb917",
-      "name": "lora_qformer_uitars_test_V1-400_merged",
-      "url": "https://huggingface.co/WenyiWU0111/lora_qformer_uitars_test_V1-400_merged",
-      "reason": "The model repository contains weight files, but its page has no model card explaining the checkpoint, its training or its intended use.",
+      "id": "github:jblanchette/screen-capture-mcp",
+      "name": "screen-capture-mcp",
+      "url": "https://github.com/jblanchette/screen-capture-mcp",
+      "reason": "An unmodified fork of kmoulder/screen-capture-mcp at upstream commit 01d5537, with the same README. It becomes an alias once kmoulder/screen-capture-mcp has a catalog record.",
       "cause": "reviewer_hold"
     },
     {
       "id": "github:lx-guiagent/lx-guiagent",
       "name": "LX-GUIAgent",
       "url": "https://github.com/LX-GUIAgent/LX-GUIAgent",
-      "reason": "The README describes an Android GUI agent and names implementation files, but the supplied file list contains evaluation results and documentation without those agent files. The released implementation is missing.",
-      "cause": "reviewer_hold"
-    },
-    {
-      "id": "url:14ea32803bd58ccbf0fe",
-      "name": "qwen-1.5-1.8b-chat-mllm",
-      "url": "https://huggingface.co/mllmTeam/qwen-1.5-1.8b-chat-mllm",
-      "reason": "The Qwen model repository has weight files but no model card. The rendered page gives no training, usage, or GUI-capability description.",
-      "cause": "reviewer_hold"
-    },
-    {
-      "id": "url:247724b6269724b0cbd0",
-      "name": "Static-FineBench",
-      "url": "https://huggingface.co/datasets/Willtime2006/Static-FineBench",
-      "reason": "Static-FineBench has an image dataset page with rows and class labels, but no dataset card. The source does not explain the images' purpose, annotation scheme or intended use.",
-      "cause": "reviewer_hold"
-    },
-    {
-      "id": "url:952cb4c3f308418aa85b",
-      "name": "Auto-UI",
-      "url": "https://huggingface.co/cooelf/Auto-UI",
-      "reason": "The Auto-UI model card contains only a license declaration. It gives no description of the checkpoint, its capabilities or how to use it.",
-      "cause": "reviewer_hold"
-    },
-    {
-      "id": "github:nachafrommars/browser-use",
-      "name": "browser-use",
-      "url": "https://github.com/NachaFromMars/browser-use",
-      "reason": "The README describes browser-control commands, but the listed repository files contain a README, a skill file and metadata. Documentation of the browser driver or usable package is missing.",
-      "cause": "reviewer_hold"
-    },
-    {
-      "id": "url:6d6f7ffc6a15e9e75a14",
-      "name": "SE-GUI-3B",
-      "url": "https://huggingface.co/XinBB/SE-GUI-3B",
-      "reason": "The SE-GUI-3B model card contains only a license declaration. It gives no account of the checkpoint's task, training or use.",
-      "cause": "reviewer_hold"
-    },
-    {
-      "id": "url:9d4a551d03898f04e34d",
-      "name": "GTA_data_no_web",
-      "url": "https://huggingface.co/datasets/smz8599/GTA_data_no_web",
-      "reason": "The Hugging Face page shows data parts but has no dataset card, and its viewer cannot identify supported files. The dataset contents and intended use need documentation.",
-      "cause": "reviewer_hold"
-    },
-    {
-      "id": "url:c995f9bd42f67e5e280e",
-      "name": "gui-aima-data",
-      "url": "https://huggingface.co/datasets/smz8599/gui-aima-data",
-      "reason": "The Hugging Face page shows split archive files and AndroidControl image paths, but has no dataset card and its viewer reports a generation error. The dataset contents and intended use need documentation.",
-      "cause": "reviewer_hold"
-    },
-    {
-      "id": "github:colinhacks/zod",
-      "name": "zod",
-      "url": "https://github.com/colinhacks/zod",
-      "reason": "The fetched README contains only a path to another README. It gives no description of the repository or its use, so the supplied source cannot support a catalog entry.",
-      "cause": "reviewer_hold"
-    },
-    {
-      "id": "github:xurui314/vllm",
-      "name": "vllm",
-      "url": "https://github.com/XuRui314/vllm",
-      "reason": "The README consists of a title saying this vllm repository is for HiconAgent. It gives no description of its changes, contents or computer-use capability.",
-      "cause": "reviewer_hold"
-    },
-    {
-      "id": "github:browser-automation-hub/yardi-voyager-browser-automation",
-      "name": "yardi-voyager-browser-automation",
-      "url": "https://github.com/Browser-Automation-Hub/yardi-voyager-browser-automation",
-      "reason": "The README presents a Yardi Voyager browser automation scaffold and lists intended actions, but its action example has placeholder options and the selector reference is undocumented. Working Yardi workflows remain unclear.",
-      "cause": "reviewer_hold"
-    },
-    {
-      "id": "url:0b0a7a841d65715d60b1",
-      "name": "VeriOS-Agent-7B",
-      "url": "https://huggingface.co/wuuuuuz/VeriOS-Agent-7B",
-      "reason": "The repository page lists model files but says there is no model card. It gives no description of the checkpoint's training, computer-use capability or intended use.",
-      "cause": "reviewer_hold"
-    },
-    {
-      "id": "url:280f2ab56bbc0b630d81",
-      "name": "VideoAgentTrek-IDM-s1-7B",
-      "url": "https://huggingface.co/xlangai/VideoAgentTrek-IDM-s1-7B",
-      "reason": "The repository lists model weights, but its card contains only a license declaration. It gives no account of the checkpoint's task, training or intended use.",
-      "cause": "reviewer_hold"
-    },
-    {
-      "id": "url:2f51fad53f40798dca22",
-      "name": "RVC-GUI",
-      "url": "https://huggingface.co/datasets/Tiger14n/RVC-GUI",
-      "reason": "The RVC-GUI repository contains ZIP archives, but its card supplies only a license. Documentation explaining the archives and their intended use is missing.",
-      "cause": "reviewer_hold"
-    },
-    {
-      "id": "github:jquast/wcwidth",
-      "name": "wcwidth",
-      "url": "https://github.com/jquast/wcwidth",
-      "reason": "The supplied source contains only a documentation path. It gives no readable description of the repository's purpose or computer-use relevance.",
+      "reason": "The README describes a Planner-Grounder-Reflector Android agent and its AndroidWorld results; the repository holds the README, images, requirements.txt and result files. A record needs the agent code it names (lx_guiagent.py, agents/*.py).",
       "cause": "reviewer_hold"
     },
     {
       "id": "github:neuroevolution-ai/softwaretestinglanguagemodels",
       "name": "SoftwareTestingLanguageModels",
       "url": "https://github.com/neuroevolution-ai/SoftwareTestingLanguageModels",
-      "reason": "The repository source reports no top-level README. The supplied text gives no description of the code or its use in GUI testing.",
-      "cause": "reviewer_hold"
-    },
-    {
-      "id": "url:1a6fc60f2b931acbd057",
-      "name": "GT-r1",
-      "url": "https://huggingface.co/konkazzz/GT-r1",
-      "reason": "The GT-r1 model repository contains weights and data files, while its card states only a license. Documentation identifying its purpose and use is missing.",
-      "cause": "reviewer_hold"
-    },
-    {
-      "id": "url:4cfbb0e916842a07d102",
-      "name": "Figma",
-      "url": "https://www.figma.com/deck/rsWK4sRl0dOahG59bfMhql",
-      "reason": "The fetched Figma deck exposes only generic Figma metadata. Its title and slide contents are unavailable, so its subject cannot be assessed.",
-      "cause": "reviewer_hold"
-    },
-    {
-      "id": "github:acrab-agentic-labs/appsim-wechat-v2",
-      "name": "AppSim-Wechat-V2",
-      "url": "https://github.com/Acrab-Agentic-Labs/AppSim-Wechat-V2",
-      "reason": "The AutoWechat README documents app data and interface fixes and briefly mentions AI automated testing. It does not describe an agent testing interface or evaluation workflow.",
-      "cause": "reviewer_hold"
-    },
-    {
-      "id": "url:71e3df995abb51b4f661",
-      "name": "arena.xlang.ai",
-      "url": "https://arena.xlang.ai",
-      "reason": "primary evidence unresolved: HTTP Error 522: <none>; The arena address returned error code 522. Its content and relevance to computer-use evaluation cannot be assessed from this response.",
-      "cause": "unresolved_evidence"
-    },
-    {
-      "id": "url:58195ef097be91525554",
-      "name": "Meta-Llama-3.1-8B-Instruct-WM-webarena-16k-adapter",
-      "url": "https://huggingface.co/LangAGI-Lab/Meta-Llama-3.1-8B-Instruct-WM-webarena-16k-adapter",
-      "reason": "The model repository contains adapter files, but its card is an unfilled template. It gives no usable description of the model's web-agent task, training or intended use.",
-      "cause": "reviewer_hold"
-    },
-    {
-      "id": "url:d32dfe60eff4b87c1d05",
-      "name": "UI-Simulator_android_data",
-      "url": "https://huggingface.co/datasets/UI-Simulator/UI-Simulator_android_data",
-      "reason": "The dataset card lists four UI-Simulator CSV splits, including Android training data. It does not describe the rows, their creation or their use for mobile-agent training.",
-      "cause": "reviewer_hold"
-    },
-    {
-      "id": "url:3d12df2fd27076504434",
-      "name": "MobileWorld",
-      "url": "https://huggingface.co/datasets/jacklishufan/MobileWorld",
-      "reason": "The MobileWorld dataset page shows an archive and a three-row preview, but has no card explaining the dataset's contents or intended use.",
-      "cause": "reviewer_hold"
-    },
-    {
-      "id": "url:d3874b7f93f40f982ec2",
-      "name": "SimpAgent-data",
-      "url": "https://huggingface.co/datasets/Minuskid/SimpAgent-data",
-      "reason": "SimpAgent-data has GUI action examples and JSON files, but no dataset card explaining the files or their use. Its viewer reports incompatible columns and shows image paths to a local directory.",
-      "cause": "reviewer_hold"
-    },
-    {
-      "id": "github:evanbacon/serve-sim",
-      "name": "serve-sim",
-      "url": "https://github.com/EvanBacon/serve-sim",
-      "reason": "The supplied README contains only a path to another README. It gives no description of the repository's function or use.",
-      "cause": "reviewer_hold"
-    },
-    {
-      "id": "url:42686ac00c4ae107f147",
-      "name": "webarena-world-model-sft",
-      "url": "https://huggingface.co/thuml/webarena-world-model-sft",
-      "reason": "The short card labels a WebArena world-model checkpoint and links to usage examples elsewhere. It does not explain the model's inputs, outputs or behavior.",
-      "cause": "reviewer_hold"
-    },
-    {
-      "id": "url:7617bb21031bc5fb6574",
-      "name": "Gelato-UI-TARS-1.5-7B",
-      "url": "https://huggingface.co/mlfoundations/Gelato-UI-TARS-1.5-7B",
-      "reason": "The repository page shows model files and a computer-use grounding collection, but says it has no model card. Its inputs and outputs are undocumented.",
-      "cause": "reviewer_hold"
-    },
-    {
-      "id": "url:98f37e375e57e027af64",
-      "name": "InternVL3_5-1B-HF",
-      "url": "https://huggingface.co/OpenGVLab/InternVL3_5-1B-HF",
-      "reason": "The InternVL3.5-1B card describes a general multimodal checkpoint and briefly claims GUI interaction for the model family. It supplies no GUI task, example, or result for this checkpoint.",
-      "cause": "reviewer_hold"
-    },
-    {
-      "id": "github:soumikmohianuta/pixtoapp",
-      "name": "pixtoapp",
-      "url": "https://github.com/soumikmohianuta/pixtoapp",
-      "reason": "The README lists Python dependencies, screenshot processing, and Android SDK setup. It does not explain what Pix to App produces or how its screenshots are used.",
-      "cause": "reviewer_hold"
-    },
-    {
-      "id": "url:94adc54bf1cd168da768",
-      "name": "Static-FineBench",
-      "url": "https://huggingface.co/datasets/wumiaoshou/Static-FineBench",
-      "reason": "The repository page shows a dataset of desktop images and XML annotations, including slider examples. It lacks a dataset description explaining its purpose and intended use.",
-      "cause": "reviewer_hold"
-    },
-    {
-      "id": "url:a4b101913db4b3673a2b",
-      "name": "SeeClick-aitw",
-      "url": "https://huggingface.co/cckevinn/SeeClick-aitw",
-      "reason": "The rendered Hugging Face page lists a model named SeeClick-aitw and loading instructions, but it says there is no model card and gives no account of its GUI capability or training.",
-      "cause": "reviewer_hold"
-    },
-    {
-      "id": "url:c4f9e1e096522afa3017",
-      "name": "finalrun.app",
-      "url": "https://finalrun.app/benchmark",
-      "reason": "primary evidence unresolved: <urlopen error timed out>; The benchmark URL returned zero bytes. The supplied fetch provides no readable page or status from which to establish what the benchmark contains.",
-      "cause": "unresolved_evidence"
-    },
-    {
-      "id": "github:jackfsuia/di-gui-3bv0.0",
-      "name": "Di-GUI-3Bv0.0",
-      "url": "https://github.com/jackfsuia/Di-GUI-3Bv0.0",
-      "reason": "The README describes a GUI grounding model and its training choices, but the repository lists only that README. No weights, implementation, or usable model access is documented.",
-      "cause": "reviewer_hold"
-    },
-    {
-      "id": "github:steel-dev/steel-node",
-      "name": "steel-node",
-      "url": "https://github.com/steel-dev/steel-node",
-      "reason": "Steel Node is a TypeScript and JavaScript client for the Steel REST API. The README shows session creation but does not explain what those sessions control or how they support browser agents.",
-      "cause": "reviewer_hold"
-    },
-    {
-      "id": "github:ylimit/droidbotapp",
-      "name": "droidbotApp",
-      "url": "https://github.com/ylimit/droidbotApp",
-      "reason": "droidbotApp is an Android app described as coordinating with DroidBot. The README gives build steps but leaves its functions and use during automation unexplained.",
-      "cause": "reviewer_hold"
-    },
-    {
-      "id": "url:00f5bfd8c7991012a183",
-      "name": "SE-GUI-7B",
-      "url": "https://huggingface.co/XinBB/SE-GUI-7B",
-      "reason": "The SE-GUI-7B repository lists model weight files, but its card contains only a license declaration. It gives no description of the checkpoint's purpose or use.",
-      "cause": "reviewer_hold"
-    },
-    {
-      "id": "url:836de49b2bbd47d3a6a5",
-      "name": "OpenPhone_model",
-      "url": "https://huggingface.co/hkuds/OpenPhone_model",
-      "reason": "The OpenPhone_model repository page has no model card. Its checkpoint archive parts lack a source description of the model's purpose, inputs, or use.",
-      "cause": "reviewer_hold"
-    },
-    {
-      "id": "github:mangeshraut712/solari-cookbook",
-      "name": "solari-cookbook",
-      "url": "https://github.com/mangeshraut712/solari-cookbook",
-      "reason": "This Solari Cookbook address presents runnable browser, desktop, and sandbox examples, while its own clone command points to solari-sdk/solari-cookbook. Maintainer review is needed to resolve the original repository address.",
-      "cause": "reviewer_hold"
-    },
-    {
-      "id": "url:3452cef2f99d7de2935a",
-      "name": "huggingface.co",
-      "url": "https://huggingface.co/datasets/TIGER-Lab/ClawBenchV2Trace",
-      "reason": "The Hugging Face dataset fetch returned an error with no source text. Its contents and computer-use relevance remain unreadable.",
-      "cause": "reviewer_hold"
-    },
-    {
-      "id": "url:89768830f010f4081bd6",
-      "name": "Redirecting…",
-      "url": "https://lightpanda.io/docs/open-source/guides/mcp-server",
-      "reason": "The Lightpanda MCP documentation address returns only a notice redirecting to another path. No guide text describes the server or its use.",
-      "cause": "reviewer_hold"
-    },
-    {
-      "id": "url:bd293c9a5f9bf16b8199",
-      "name": "OpenWebVoyager-opt-1",
-      "url": "https://huggingface.co/OpenWebVoyager/OpenWebVoyager-opt-1",
-      "reason": "The OpenWebVoyager-opt-1 model repository has weight files, but its card contains only license metadata. It gives no model purpose, training, or usage description.",
-      "cause": "reviewer_hold"
-    },
-    {
-      "id": "url:d1f0e13ad96c108ef09b",
-      "name": "InternVL3_5-2B-HF",
-      "url": "https://huggingface.co/OpenGVLab/InternVL3_5-2B-HF",
-      "reason": "The InternVL3.5 model card mentions GUI interaction as a family capability but gives no GUI tasks, results, or usage details for this checkpoint. The card also titles itself as a different model size.",
-      "cause": "reviewer_hold"
-    },
-    {
-      "id": "github:pacocoursey/next-themes",
-      "name": "next-themes",
-      "url": "https://github.com/pacocoursey/next-themes",
-      "reason": "The supplied source contains only a path to another README. Its contents are needed to establish what this package does and assess its relevance.",
-      "cause": "reviewer_hold"
-    },
-    {
-      "id": "github:langchain-ai/langgraphjs",
-      "name": "langgraphjs",
-      "url": "https://github.com/langchain-ai/langgraphjs",
-      "reason": "The supplied README text is only a path to another README. It gives no description of this repository's functions or use, so its relevance cannot be established from the source.",
-      "cause": "reviewer_hold"
-    },
-    {
-      "id": "url:380318a8de65fe45956c",
-      "name": "SE-GUI-3k",
-      "url": "https://huggingface.co/datasets/XinBB/SE-GUI-3k",
-      "reason": "The dataset page shows conversations, images and bounding-box fields across 772 rows, but has no dataset card explaining what the examples represent or how they are used.",
-      "cause": "reviewer_hold"
-    },
-    {
-      "id": "url:e02a165e76cd7c43e2ca",
-      "name": "webarena-world-model-rlvr",
-      "url": "https://huggingface.co/thuml/webarena-world-model-rlvr",
-      "reason": "The model card lists web-agent and world-model tags, a base model and a citation, but gives no description of the checkpoint's behavior or how it is used in web-agent tasks.",
-      "cause": "reviewer_hold"
-    },
-    {
-      "id": "url:447997967beea3b07f6f",
-      "name": "AssistantBench",
-      "url": "https://huggingface.co/datasets/AssistantBench/AssistantBench",
-      "reason": "The AssistantBench dataset card supplies a license field and paper citation. It lacks a description of the dataset files and their use.",
-      "cause": "reviewer_hold"
-    },
-    {
-      "id": "url:55e1984776b99054def2",
-      "name": "android_control",
-      "url": "https://huggingface.co/datasets/jacklishufan/android_control",
-      "reason": "The android_control page shows an image-and-text dataset archive and an episode preview. It gives no account of the data's origin, labels, or relationship to AndroidControl.",
+      "reason": "Research code in which language models pick widgets to click in NaturalNets GUI and dummy apps, via a Kivy viewer and a notebook; no README or doc states the project's goal, usage or results.",
       "cause": "reviewer_hold"
     },
     {
       "id": "url:6546c8f79b5cae118e20",
       "name": "mind2web_clean",
       "url": "https://huggingface.co/datasets/BigAction/mind2web_clean",
-      "reason": "The mind2web_clean card lists web queries, HTML, actions, candidate elements, and Selenium ground-truth fields. It lacks an explanation of the dataset's purpose and preparation.",
+      "reason": "The card holds only a dataset_info schema (query, html, operation, selenium_ground_truth and candidate fields) with no text on the data. A curated record needs the publisher to state the source dataset, what \"clean\" means and the intended use.",
       "cause": "reviewer_hold"
     },
     {
-      "id": "github:tokio-rs/axum",
-      "name": "axum",
-      "url": "https://github.com/tokio-rs/axum",
-      "reason": "The fetched README contains only a path to another README. It gives no description of this repository's purpose or use.",
-      "cause": "reviewer_hold"
-    },
-    {
-      "id": "url:c5cedb2f95336a8e48aa",
-      "name": "asil-qwen35-9b-rl",
-      "url": "https://huggingface.co/sharryXR/asil-qwen35-9b-rl",
-      "reason": "The card describes an ASIL Qwen3.5-9B RL checkpoint and its training prompts, but does not explain what interface tasks the checkpoint performs.",
-      "cause": "reviewer_hold"
-    },
-    {
-      "id": "url:f0ffbdc41c9dca4c585f",
-      "name": "CUA_World_State_Model",
-      "url": "https://huggingface.co/Zery/CUA_World_State_Model",
-      "reason": "The CUA_World_State_Model card links to a paper and repository and names a base model, but does not describe what this checkpoint predicts or how to use it.",
-      "cause": "reviewer_hold"
-    },
-    {
-      "id": "github:cordiverse/cordis",
-      "name": "cordis",
-      "url": "https://github.com/cordiverse/cordis",
-      "reason": "The supplied README contains only a path to another README. It gives no readable description of Cordis or its use.",
-      "cause": "reviewer_hold"
-    },
-    {
-      "id": "url:26157e2cda7fb73cf99c",
-      "name": "Indeed-UI-8B - ModelScope 魔搭社区",
-      "url": "https://www.modelscope.cn/models/IntellgenceIndeed/Indeed-UI-8B",
-      "reason": "The ModelScope page names Indeed-UI-8B and calls it an open-source model, but supplies no readable model card describing its capabilities or use.",
-      "cause": "reviewer_hold"
-    },
-    {
-      "id": "url:878a860ff07d92f11fc7",
-      "name": "agent-output",
-      "url": "https://huggingface.co/datasets/yueqis/agent-output/tree/main",
-      "reason": "The agent-output dataset viewer shows agent answers, evaluation fields and logs, but provides no card explaining the dataset's intended use or how its outputs were produced.",
-      "cause": "reviewer_hold"
-    },
-    {
-      "id": "github:james4ever0/ctf-gym",
-      "name": "ctf-gym",
-      "url": "https://github.com/James4Ever0/ctf-gym",
-      "reason": "The README calls CTF gym a benchmark for computer-using agents, but gives no tasks, evaluation method, or usage instructions. The supplied file list contains only the README and license.",
+      "id": "url:6588fa6675ed27a7b81c",
+      "name": "Sequence-of-action-prediction-mind2web",
+      "url": "https://huggingface.co/datasets/Izazk/Sequence-of-action-prediction-mind2web",
+      "reason": "The card holds only an MIT license line. combined_data.jsonl pairs web tasks and cleaned HTML elements with a target element and action type, with no stated origin, preparation or intended use.",
       "cause": "reviewer_hold"
     },
     {
       "id": "url:80c3ab0a8a6f78938d4d",
       "name": "VideoAgentTrek-CUA-7B",
       "url": "https://huggingface.co/xlangai/VideoAgentTrek-CUA-7B",
-      "reason": "The model repository has weight files, but its card contains only a license declaration. It gives no checkpoint description, inputs, capabilities, or intended use.",
+      "reason": "The card holds only an Apache-2.0 license line. The VideoAgentTrek README and paper cover computer-use pretraining from video-mined trajectories and name IDM checkpoints, and no fetched source names VideoAgentTrek-CUA-7B.",
       "cause": "reviewer_hold"
     },
     {
-      "id": "url:b320a607bb563e99e95e",
-      "name": "timewarp-env-data",
-      "url": "https://huggingface.co/datasets/sparklabutah/timewarp-env-data",
-      "reason": "The card documents data files for Wiki, News, and Shop environments, including WebShop products and goal instructions. It does not explain whether those environments involve browser or GUI interaction.",
+      "id": "url:878a860ff07d92f11fc7",
+      "name": "agent-output",
+      "url": "https://huggingface.co/datasets/yueqis/agent-output/tree/main",
+      "reason": "The repository holds hybrid-output.jsonl and per-task logs of a CodeActAgent run with gpt-4o-2024-05-13 that mixes API calls and web browsing on shopping_admin and other site tasks, and it has no card.",
       "cause": "reviewer_hold"
     },
     {
-      "id": "github:mulongxie/uied-webapp",
-      "name": "UIED-WebAPP",
-      "url": "https://github.com/MulongXie/UIED-WebAPP",
-      "reason": "The repository contains application files but has no top-level README. Source documentation is needed to establish what the app does and how it is used.",
-      "cause": "reviewer_hold"
-    },
-    {
-      "id": "url:039a4975e102cb538c36",
-      "name": "openai.com",
-      "url": "https://openai.com/index/gpt-6-astra",
-      "reason": "primary evidence unresolved: HTTP Error 403: Forbidden; The page returned HTTP 403 and an empty title. Readable first-party content is needed to identify and assess the resource.",
-      "cause": "unresolved_evidence"
-    },
-    {
-      "id": "url:41b685bbd42fbd4732da",
-      "name": "GELab-Engine-7B",
-      "url": "https://huggingface.co/Summoneryhl/GELab-Engine-7B",
-      "reason": "The model repository has checkpoint files, but its card gives only a license. Documentation of its task and use is needed.",
-      "cause": "reviewer_hold"
-    },
-    {
-      "id": "url:a1621345ec327462b86e",
-      "name": "tti_webarena",
-      "url": "https://huggingface.co/sjunhongs/tti_webarena/tree/main",
-      "reason": "The model repository has weight files, but its card gives only a license. Documentation of the model's task and use is needed.",
-      "cause": "reviewer_hold"
-    },
-    {
-      "id": "github:feder-cr/firefox_antidetect_patch",
-      "name": "firefox_antidetect_patch",
-      "url": "https://github.com/feder-cr/firefox_antidetect_patch",
-      "reason": "The repository has no top-level README. Its file list and repository metadata suggest browser modifications, but no readable source explains their role in agent use.",
-      "cause": "reviewer_hold"
-    },
-    {
-      "id": "url:5bbbc1012ab02e9df3bb",
-      "name": "navi-bench",
-      "url": "https://huggingface.co/datasets/yutori-ai/navi-bench",
-      "reason": "The dataset card lists a 200-example validation split and task metadata fields, but does not explain the tasks or how the data is used.",
-      "cause": "reviewer_hold"
-    },
-    {
-      "id": "url:6b25d42c771397f5afca",
-      "name": "UI-TARS：Next-generation native GUI agent model designed to interact seamlessly with GUIs using human-like perception",
-      "url": "https://seed-tars.com/1.5",
-      "reason": "The UI-TARS page contains a title and repeated description of a GUI agent model, without release details or an account of this version's contents.",
-      "cause": "reviewer_hold"
-    },
-    {
-      "id": "github:calmee4/decopatch",
-      "name": "decopatch",
-      "url": "https://github.com/calmee4/decopatch",
-      "reason": "The DeCoPatch README calls this an ECCV reference implementation and says the complete codebase is planned. It gives no subject or method from which to describe the resource.",
-      "cause": "reviewer_hold"
-    },
-    {
-      "id": "github:seleniumhq/mobile-spec",
-      "name": "mobile-spec",
-      "url": "https://github.com/SeleniumHQ/mobile-spec",
-      "reason": "The repository has files for a mobile specification, but the supplied source says only that it has no top-level README. Its purpose and use need documentation.",
-      "cause": "reviewer_hold"
-    },
-    {
-      "id": "url:369456114b26b0ff0a05",
-      "name": "GUI-Robust",
-      "url": "https://huggingface.co/datasets/kuangtie/GUI-Robust",
-      "reason": "The GUI-Robust dataset card supplies language, license, size, and GUI-Agent tags, but gives no description of its examples or intended evaluation use.",
-      "cause": "reviewer_hold"
-    },
-    {
-      "id": "github:tradestackdev/agent-eval-harness",
-      "name": "agent-eval-harness",
-      "url": "https://github.com/TradeStackDev/agent-eval-harness",
-      "reason": "The README describes a web-agent evaluation harness and example task suites, but the supplied file list contains only README.md. Implementation and benchmark tasks are missing.",
-      "cause": "reviewer_hold"
-    },
-    {
-      "id": "url:3d3e841ab0d65b18523c",
-      "name": "NextGen-CAPTCHAs",
-      "url": "https://huggingface.co/datasets/YaxinLuo/NextGen-CAPTCHAs",
-      "reason": "The dataset card contains only a license declaration. It does not explain the CAPTCHA images or how the dataset is used.",
-      "cause": "reviewer_hold"
-    },
-    {
-      "id": "github:mnluzimu/bolt.diy-fork",
-      "name": "bolt.diy-Fork",
-      "url": "https://github.com/mnluzimu/bolt.diy-Fork",
-      "reason": "The repository has application and configuration files but no top-level README. The supplied source does not explain this fork's purpose or how its contents are used.",
-      "cause": "reviewer_hold"
-    },
-    {
-      "id": "url:3df97229d34c44c2014a",
-      "name": "HiconAgent-AMEX",
-      "url": "https://huggingface.co/datasets/Minuskid/HiconAgent-AMEX",
-      "reason": "The HiconAgent-AMEX card associates this dataset with GUI-agent training, but describes the agent and training framework instead of the dataset's records, fields, or use.",
-      "cause": "reviewer_hold"
-    },
-    {
-      "id": "url:ed599761bbe23dfce405",
-      "name": "Just a moment...",
-      "url": "https://www.adept.ai/blog/fuyu-8b",
-      "reason": "primary evidence unresolved: HTTP Error 403: Forbidden; The Adept Fuyu-8B blog fetch returned a browser verification page. The article text needed to assess the page is unavailable.",
-      "cause": "unresolved_evidence"
-    },
-    {
-      "id": "url:3ef18fbb67e0376561db",
-      "name": "world_model_for_wa_desc_with_tao_formatted_w_cot",
-      "url": "https://huggingface.co/datasets/LangAGI-Lab/world_model_for_wa_desc_with_tao_formatted_w_cot",
-      "reason": "The dataset card lists instruction, input, and output fields with train and validation splits, but gives no description of the examples or their intended use.",
-      "cause": "reviewer_hold"
-    },
-    {
-      "id": "github:vercel/next.js",
-      "name": "next.js",
-      "url": "https://github.com/vercel/next.js",
-      "reason": "The supplied source contains only a README path. It gives no description of the repository's purpose or capabilities.",
-      "cause": "reviewer_hold"
-    },
-    {
-      "id": "url:92b5cb08491c09243b72",
-      "name": "ScreenAgent",
-      "url": "https://huggingface.co/niurl/ScreenAgent",
-      "reason": "The model card contains only a license declaration. It does not describe the ScreenAgent archive or establish its relationship to the catalogued project.",
-      "cause": "reviewer_hold"
-    },
-    {
-      "id": "url:558abdb3eb20b922e01b",
-      "name": "InternVL3_5-14B",
-      "url": "https://huggingface.co/OpenGVLab/InternVL3_5-14B",
-      "reason": "The InternVL3.5-14B card mentions GUI interaction for the model family, but supplies no GUI task details or results for this checkpoint. Its individual computer-use capability remains unclear.",
-      "cause": "reviewer_hold"
-    },
-    {
-      "id": "github:globe-engineer/globot",
-      "name": "globot",
-      "url": "https://github.com/Globe-Engineer/globot",
-      "reason": "The globot README refers to GPT-4V and natbot but gives no direct description of globot's browser actions or workflow. Its computer-use capability remains unclear from the source.",
-      "cause": "reviewer_hold"
-    },
-    {
-      "id": "url:6d9b772fcb41da7c6152",
-      "name": "wave-ui-viz",
-      "url": "https://huggingface.co/spaces/agentsea/wave-ui-viz",
-      "reason": "The Wave Ui Viz Space card contains Gradio configuration and a generic configuration-reference link. It does not describe what the app visualizes or how it is used.",
-      "cause": "reviewer_hold"
-    },
-    {
-      "id": "url:1a54e63277eaffdaef57",
-      "name": "OpenGUI-2B",
-      "url": "https://huggingface.co/SugarVapeur/OpenGUI-2B",
-      "reason": "primary evidence unresolved: content mismatch; The OpenGUI-2B repository lists model files, while its card contains only a license declaration. Its task, GUI capability and use are undocumented in the supplied source.",
-      "cause": "unresolved_evidence"
-    },
-    {
-      "id": "url:43f98379902167a5f9f3",
-      "name": "MindAct_CandidateGeneration_deberta-v3-base",
-      "url": "https://huggingface.co/osunlp/MindAct_CandidateGeneration_deberta-v3-base",
-      "reason": "The MindAct_CandidateGeneration_deberta-v3-base page offers a text-classification model and usage snippets, but has no card explaining its candidate-generation task or computer-use role.",
-      "cause": "reviewer_hold"
-    },
-    {
-      "id": "url:ac62da857db91f68376b",
-      "name": "Aguvis-7B-720P",
-      "url": "https://huggingface.co/xlangai/Aguvis-7B-720P",
-      "reason": "The Aguvis-7B-720P page shows model weights and GUI-grounding evaluation results, but has no model card explaining the checkpoint's task or use.",
-      "cause": "reviewer_hold"
-    },
-    {
-      "id": "url:c7e1d8863286e92c47a2",
-      "name": "VideoAgentTrek-ScreenFilter",
-      "url": "https://huggingface.co/xlangai/VideoAgentTrek-ScreenFilter",
-      "reason": "The VideoAgentTrek-ScreenFilter repository has a checkpoint file, but its card contains only license metadata. A description of ScreenFilter's purpose and use is still missing.",
-      "cause": "reviewer_hold"
-    },
-    {
-      "id": "url:638d229f7a02760ae9dc",
-      "name": "GUI-AIMA-3B",
-      "url": "https://huggingface.co/smz8599/GUI-AIMA-3B",
-      "reason": "The GUI-AIMA-3B card contains a base-model entry and links to a paper and GitHub repository, but it gives no description of this checkpoint's function or intended use.",
-      "cause": "reviewer_hold"
-    },
-    {
-      "id": "url:6ef140e52d572f66d2b8",
-      "name": "Postman",
-      "url": "https://www.postman.com/idan-775bed48-7905039/browser-automation-hub",
-      "reason": "The fetched Postman page contains only the Postman title. It supplies no description or contents for the purported browser automation hub.",
-      "cause": "reviewer_hold"
-    },
-    {
-      "id": "github:zackhuiiiii/winspot",
-      "name": "WinSpot",
-      "url": "https://github.com/zackhuiiiii/WinSpot",
-      "reason": "The WinSpot README describes a Windows GUI grounding benchmark, but its dataset link is a placeholder and the page says release is still forthcoming. Benchmark data or evaluation assets are missing.",
-      "cause": "reviewer_hold"
-    },
-    {
-      "id": "url:b68b02b47c87f006533e",
-      "name": "LFM2-350M-ComputerUse",
-      "url": "https://huggingface.co/DingoBeast/LFM2-350M-ComputerUse",
-      "reason": "The card provides a fine-tuned text-model adapter and a generic text-generation example. Computer-use training or GUI capability appears only in its name.",
-      "cause": "reviewer_hold"
-    },
-    {
-      "id": "url:0dcc389cc2b1b15fb081",
-      "name": "UIShift-7B-2K",
-      "url": "https://huggingface.co/mllmTeam/UIShift-7B-2K",
-      "reason": "The repository contains model weight files, but its page has no model card. The supplied source gives no task description or intended use for UIShift-7B-2K.",
-      "cause": "reviewer_hold"
-    },
-    {
-      "id": "url:8a5201470d27334977fa",
-      "name": "lora_qformer_test_V4-700_merged",
-      "url": "https://huggingface.co/WenyiWU0111/lora_qformer_test_V4-700_merged",
-      "reason": "The repository contains model weight files, but its rendered page says there is no model card. The supplied source does not explain the checkpoint's task or intended use.",
-      "cause": "reviewer_hold"
-    },
-    {
-      "id": "url:ab4587d17c4f541bb94c",
-      "name": "ACT-SOP",
-      "url": "https://huggingface.co/tineding/ACT-SOP",
-      "reason": "ACT-SOP has adapter files, but its model card remains an unfilled template. The source gives no description of the adapter's task or intended use.",
-      "cause": "reviewer_hold"
-    },
-    {
-      "id": "url:85b700fbb7f1c599b7c3",
-      "name": "AgentEval",
-      "url": "https://huggingface.co/datasets/AgentGym/AgentEval",
-      "reason": "The AgentEval repository has JSON evaluation files and a rendered dataset preview, but no dataset card explains the tasks, evaluation procedure or intended use.",
-      "cause": "reviewer_hold"
-    },
-    {
-      "id": "github:sys-reasoner/visco",
-      "name": "Visco",
-      "url": "https://github.com/sys-reasoner/Visco",
-      "reason": "Visco is described as a mobile and desktop GUI agent, and its README reports an Android World result. The agent code and setup instructions remain pending, so the release cannot yet be documented as usable.",
-      "cause": "reviewer_hold"
-    },
-    {
-      "id": "url:062d2cb4ccb89de78162",
-      "name": "Meta-Llama-3.1-8B-Instruct-value-model-16k-qlora-adapter-v2",
-      "url": "https://huggingface.co/LangAGI-Lab/Meta-Llama-3.1-8B-Instruct-value-model-16k-qlora-adapter-v2",
-      "reason": "The model repository contains adapter files, but its card remains an unfilled template. It gives no task, training, evaluation, or usage details to establish computer-use relevance.",
-      "cause": "reviewer_hold"
-    },
-    {
-      "id": "url:3ab90a696d8578c944c8",
-      "name": "a3-qwen-3.5-9b-trajectories",
-      "url": "https://huggingface.co/datasets/xhluca/a3-qwen-3.5-9b-trajectories/tree/main/webarena",
-      "reason": "The Hugging Face page shows trajectory files and a dataset viewer schema error, but has no dataset card explaining how the trajectories were collected or used.",
-      "cause": "reviewer_hold"
-    },
-    {
-      "id": "url:3de50fa3eee0081d31ac",
-      "name": "osworld_v2_assets_gated",
-      "url": "https://huggingface.co/datasets/xlangai/osworld_v2_assets_gated",
-      "reason": "The gated Hugging Face repository lists OSWorld asset files, but its accessible page has no dataset card. The contents and intended use of those assets need documentation.",
-      "cause": "reviewer_hold"
-    },
-    {
-      "id": "url:52067b3e48e9381e4c66",
-      "name": "huggingface.co",
-      "url": "https://huggingface.co/datasets/ZHEN-04/CaptchaArena-Trajectories",
-      "reason": "primary evidence unresolved: response exceeds 10 MB metadata budget; The fetch for the CaptchaArena-Trajectories dataset returned an error and no source text. Its contents and use cannot be checked from the supplied evidence.",
-      "cause": "unresolved_evidence"
-    },
-    {
-      "id": "github:steel-dev/steel-python",
-      "name": "steel-python",
-      "url": "https://github.com/steel-dev/steel-python",
-      "reason": "The README documents a typed Steel REST API client and session creation, but does not explain what the sessions expose or whether they support browser interaction.",
-      "cause": "reviewer_hold"
-    },
-    {
-      "id": "url:646f1157fd8be029a59f",
-      "name": "openai.com",
-      "url": "https://openai.com/index/introducing-o3-and-o4-mini",
-      "reason": "primary evidence unresolved: HTTP Error 403: Forbidden; The linked page returned HTTP 403, leaving no readable product or model description from which to assess computer-use relevance.",
-      "cause": "unresolved_evidence"
-    },
-    {
-      "id": "github:task-web/osworld-web",
-      "name": "OSWorld-web",
-      "url": "https://github.com/Task-Web/OSWorld-web",
-      "reason": "OSWorld Web contains self-hosted web applications, but the README does not describe their use for agent tasks or evaluation. Its computer-use relevance remains unclear.",
-      "cause": "reviewer_hold"
-    },
-    {
-      "id": "url:e58270c90ea4fa83cfb4",
-      "name": "Qwen3-VL-8B-Instruct-MobileWorld-SFT",
-      "url": "https://huggingface.co/jacklishufan/Qwen3-VL-8B-Instruct-MobileWorld-SFT",
-      "reason": "The Hugging Face repository contains model files but has no model card. Documentation of the checkpoint's task, training, or intended use is missing.",
-      "cause": "reviewer_hold"
-    },
-    {
-      "id": "github:nachafrommars/agent-browser",
-      "name": "agent-browser",
-      "url": "https://github.com/NachaFromMars/agent-browser",
-      "reason": "The README describes a browser automation CLI, but the supplied file list contains documentation and a skill file without the described Rust or Node.js implementation. An executable release or its implementation is needed.",
-      "cause": "reviewer_hold"
-    },
-    {
-      "id": "github:ny1024/safebench",
-      "name": "SafeBench",
-      "url": "https://github.com/NY1024/SafeBench",
-      "reason": "The README calls SafeBench an initial proof-of-concept framework and links code and data. It still does not describe the evaluation subject, tasks, or how the repository is used.",
-      "cause": "reviewer_hold"
-    },
-    {
-      "id": "url:2cd89755e4e2511de633",
-      "name": "OpenWebVoyager-opt-3",
-      "url": "https://huggingface.co/OpenWebVoyager/OpenWebVoyager-opt-3",
-      "reason": "The OpenWebVoyager-opt-3 model card contains only license front matter. It gives no model description or documented computer-use capability.",
-      "cause": "reviewer_hold"
-    },
-    {
-      "id": "github:gasse/webarena-setup",
-      "name": "webarena-setup",
-      "url": "https://github.com/gasse/webarena-setup",
-      "reason": "The README only warns that the WebArena and VisualWebArena setup is unofficial. It gives no account of what the setup scripts do or how to use them.",
-      "cause": "reviewer_hold"
-    },
-    {
-      "id": "github:oetcxiaoliu/spice",
-      "name": "spice",
-      "url": "https://github.com/oetcxiaoliu/spice",
-      "reason": "The repository's supplied README consists of null bytes. Its files are listed, but readable documentation describing the project and any computer-use application is missing.",
-      "cause": "reviewer_hold"
-    },
-    {
-      "id": "url:8968c1abb0e7f3ba989e",
-      "name": "zhuanlan.zhihu.com",
-      "url": "https://zhuanlan.zhihu.com/p/18229337790",
-      "reason": "primary evidence unresolved: HTTP Error 403: Forbidden; The Zhihu article fetch returned a 403 page showing only a generic welcome message; the article's subject and content are unavailable.",
-      "cause": "unresolved_evidence"
-    },
-    {
-      "id": "url:915e40f18b217ac63fc6",
-      "name": "SmolVLM2-2.2B-Instruct-Agentic-GUI",
-      "url": "https://huggingface.co/smolagents/SmolVLM2-2.2B-Instruct-Agentic-GUI",
-      "reason": "The model card says the checkpoint was fine-tuned on aguvis-stage-2, but its only usage example is generic text generation. It gives no GUI-action or screen-grounding behavior.",
-      "cause": "reviewer_hold"
-    },
-    {
-      "id": "url:f71c8181cb28b8bda0ab",
-      "name": "help.openai.com",
-      "url": "https://help.openai.com/en/articles/10561834-operator-release-notes",
-      "reason": "primary evidence unresolved: HTTP Error 403: Forbidden; The Operator release-notes page returned HTTP 403 with an empty page title. The supplied source contains no readable release details.",
-      "cause": "unresolved_evidence"
-    },
-    {
-      "id": "url:76b3c8418dfcd7192aab",
-      "name": "deepmind.google",
-      "url": "https://deepmind.google/technologies/project-mariner",
-      "reason": "primary evidence unresolved: content mismatch; The Project Mariner URL redirects to a generic DeepMind homepage, and the supplied page body is undecodable binary text. The linked page's content remains unreadable.",
-      "cause": "unresolved_evidence"
-    },
-    {
-      "id": "url:44083141a8f3d05b7a54",
-      "name": "Joy_Caption_Batch-GUI",
-      "url": "https://huggingface.co/Ole1/Joy_Caption_Batch-GUI",
-      "reason": "The model card contains only a license declaration. The file list includes scripts and weights, but the source does not explain the model's purpose or any computer-use capability.",
-      "cause": "reviewer_hold"
-    },
-    {
-      "id": "url:a166f8bbaf1bdcc931cb",
-      "name": "AFM-WebAgent-RL-Dataset",
-      "url": "https://huggingface.co/datasets/PersonalAILab/AFM-WebAgent-RL-Dataset",
-      "reason": "The AFM-WebAgent-RL-Dataset card describes multi-agent reasoning trajectories and mentions web-agent settings. It gives no examples of browser pages, GUI observations, or website actions.",
-      "cause": "reviewer_hold"
-    },
-    {
-      "id": "url:0e5617031e625a75cfc7",
-      "name": "aitw-general-digiq-agent",
-      "url": "https://huggingface.co/JackBAI/aitw-general-digiq-agent",
-      "reason": "The Hugging Face repository has checkpoint files but no model card. The page gives no description of its inputs, training, or use.",
-      "cause": "reviewer_hold"
-    },
-    {
-      "id": "url:1a495ecc8b0d73e04308",
-      "name": "GUI-SD-data",
-      "url": "https://huggingface.co/datasets/yankie123/GUI-SD-data",
-      "reason": "The Hugging Face page shows an image dataset with a train split and no dataset card. It does not explain what the images depict or how the annotations are used.",
-      "cause": "reviewer_hold"
-    },
-    {
-      "id": "url:3e0f07cb0ff3f32dfc0e",
-      "name": "webarena-world-model-cot",
-      "url": "https://huggingface.co/datasets/thuml/webarena-world-model-cot",
-      "reason": "The dataset card links to usage examples and the RLVR-World paper, but provides no description of the dataset's records, collection method or role in web-agent training.",
-      "cause": "reviewer_hold"
-    },
-    {
-      "id": "url:900a4ea90640baaf11d0",
-      "name": "autodevice.io",
-      "url": "https://autodevice.io/benchmark",
-      "reason": "primary evidence unresolved: <urlopen error [Errno -2] Name or service not known>; The AutoDevice benchmark address yielded zero bytes of readable source. Its tasks, evaluation method and identity remain undocumented in the supplied evidence.",
-      "cause": "unresolved_evidence"
-    },
-    {
-      "id": "url:2f73fe78c423e263d451",
-      "name": "UXAgent: A System for Simulating Usability Testing of Web Design with LLM Agents",
-      "url": "https://uxagent.hailab.io",
-      "reason": "The UXAgent page supplies only a title about simulated usability testing of web design with LLM agents; it lacks a system description or release details.",
-      "cause": "reviewer_hold"
-    },
-    {
-      "id": "url:13914e49a2e5de982b6e",
-      "name": "MM-Eureka-Qwen-7B",
-      "url": "https://huggingface.co/FanqingM/MM-Eureka-Qwen-7B",
-      "reason": "The MM-Eureka-Qwen-7B card only points to another repository; it gives no account of this checkpoint's training, capabilities, or use.",
-      "cause": "reviewer_hold"
-    },
-    {
-      "id": "url:511ba336435d406f3761",
-      "name": "nnetnav-wa-qwen-7B",
-      "url": "https://huggingface.co/apurvaga/nnetnav-wa-qwen-7B",
-      "reason": "The model card points to Go-Browse for details and examples, but does not describe this checkpoint's training, capabilities, or use.",
-      "cause": "reviewer_hold"
-    },
-    {
-      "id": "url:8caadf7f990c275d4185",
-      "name": "Mind2Web-cleaned-lite-value-model-w-cot-formatted-test",
-      "url": "https://huggingface.co/datasets/LangAGI-Lab/Mind2Web-cleaned-lite-value-model-w-cot-formatted-test",
-      "reason": "The dataset card contains a title, feature names and a train split, but no description of the examples, their provenance or their intended use.",
-      "cause": "reviewer_hold"
-    },
-    {
-      "id": "url:e68b8a6065350ceab375",
-      "name": "zerostep.com",
-      "url": "https://zerostep.com",
-      "reason": "primary evidence unresolved: <urlopen error [Errno -3] Temporary failure in name resolution>; The zerostep.com fetch supplied zero bytes of binary content. A readable product page is needed to establish its capabilities and substance.",
-      "cause": "unresolved_evidence"
-    },
-    {
-      "id": "github:mobile-next/mobile-openrpc",
-      "name": "mobile-openrpc",
-      "url": "https://github.com/mobile-next/mobile-openrpc",
-      "reason": "The repository lists OpenRPC specifications for mobilecli and Mobile Fleet, but the supplied README does not describe their operations or device-control capability.",
-      "cause": "reviewer_hold"
-    },
-    {
-      "id": "github:dagster-io/dagster",
-      "name": "dagster",
-      "url": "https://github.com/dagster-io/dagster",
-      "reason": "The supplied source is only a path to a README. It provides no description of the repository's purpose or capabilities.",
-      "cause": "reviewer_hold"
-    },
-    {
-      "id": "url:031c86eaad2b766793d4",
-      "name": "openai.com",
-      "url": "https://openai.com/index/gpt-4o-mini-advancing-cost-efficient-intelligence",
-      "reason": "primary evidence unresolved: HTTP Error 403: Forbidden; The page fetch returned HTTP 403 and an empty title. Readable page content is needed to establish its subject and any computer-use relevance.",
-      "cause": "unresolved_evidence"
-    },
-    {
-      "id": "url:5182ab4e9bd7843f240b",
-      "name": "mobilevlm_test",
-      "url": "https://huggingface.co/datasets/xwk123/mobilevlm_test",
-      "reason": "The card identifies MobileVLM and mentions a benchmark, while the repository lists test-data archives. It gives no description of the files' contents, tasks, or use.",
-      "cause": "reviewer_hold"
-    },
-    {
-      "id": "url:54907fd6dc968eaced34",
-      "name": "huggingface.co",
-      "url": "https://huggingface.co/datasets/zlab-princeton/SWEeper-Bench-traces",
-      "reason": "The dataset fetch returned an error and no source text. A readable card is needed to establish what the trace files contain and how they are used.",
-      "cause": "reviewer_hold"
-    },
-    {
-      "id": "url:0acabc15683679ea8aed",
-      "name": "MM-Eureka-Qwen-32B",
-      "url": "https://huggingface.co/FanqingM/MM-Eureka-Qwen-32B",
-      "reason": "The repository page lists MM-Eureka-Qwen-32B model files but has no model card. It gives no supported account of the checkpoint's purpose or computer-use capability.",
-      "cause": "reviewer_hold"
-    },
-    {
-      "id": "url:1a20a291c766bd4e6861",
-      "name": "Just a moment...",
-      "url": "https://www.adept.ai/blog/adept-fuyu-heavy",
-      "reason": "primary evidence unresolved: HTTP Error 403: Forbidden; The Adept blog address returned a 403 bot challenge showing only “Just a moment...”. The article text is unavailable for reviewing its subject or substance.",
-      "cause": "unresolved_evidence"
-    },
-    {
-      "id": "url:689fea75118e3113476b",
-      "name": "dart-gui-7b",
-      "url": "https://huggingface.co/dart-gui/dart-gui-7b",
-      "reason": "The dart-gui-7b repository contains model weights, but its rendered page says “No model card”. The supplied source gives no description of its training or GUI capability.",
-      "cause": "reviewer_hold"
-    },
-    {
-      "id": "url:f644200c18bea88da7b3",
-      "name": "TianXi_Action_Grounding_7B",
-      "url": "https://huggingface.co/tangliang/TianXi_Action_Grounding_7B",
-      "reason": "The repository contains model weights, but its page has no model card. The supplied source does not explain the checkpoint's task, training or use.",
-      "cause": "reviewer_hold"
-    },
-    {
-      "id": "url:84ce80ef300f3b8de66d",
-      "name": "MER-17M",
-      "url": "https://huggingface.co/datasets/topdu/MER-17M",
-      "reason": "The MER-17M dataset card contains only a license declaration. It gives no description of the data or its use, so its relevance cannot be established.",
-      "cause": "reviewer_hold"
-    },
-    {
-      "id": "url:4ed986fbfacac80c8ed2",
-      "name": "zhuanlan.zhihu.com",
-      "url": "https://zhuanlan.zhihu.com/p/14143950360n",
-      "reason": "primary evidence unresolved: HTTP Error 403: Forbidden; The Zhihu fetch returned HTTP 403 and only a generic welcome message. The article's content and computer-use relevance remain unavailable.",
-      "cause": "unresolved_evidence"
-    },
-    {
-      "id": "url:891329fc95617395b58f",
-      "name": "android-control",
-      "url": "https://huggingface.co/datasets/smolagents/android-control",
-      "reason": "The android-control card lists goals, screenshots, actions, instructions, and train and test splits. It gives no description or provenance to establish how the dataset was made or its relation to AndroidControl.",
-      "cause": "reviewer_hold"
-    },
-    {
-      "id": "url:f4f6f5bfe051e6ba3d94",
-      "name": "OpenWebVoyager-opt-2",
-      "url": "https://huggingface.co/OpenWebVoyager/OpenWebVoyager-opt-2",
-      "reason": "The model card contains only license metadata. A description of the resource and its GUI or computer-use purpose is needed to assess it.",
-      "cause": "reviewer_hold"
-    },
-    {
-      "id": "github:brunov21/ferrisgrid-cli-ts",
-      "name": "FerrisGrid-CLI-ts",
-      "url": "https://github.com/BrunoV21/FerrisGrid-CLI-ts",
-      "reason": "The README identifies this TypeScript package as a mirror of the canonical FerrisGrid Rust CLI. The canonical catalog record is absent from catalog_neighbors, leaving no permitted alias target.",
-      "cause": "reviewer_hold"
-    },
-    {
-      "id": "github:voqal/chrome-integration",
-      "name": "chrome-integration",
-      "url": "https://github.com/voqal/chrome-integration",
-      "reason": "The repository contains extension-related files but has no top-level README. The supplied source does not explain its behavior or how it is used.",
-      "cause": "reviewer_hold"
-    },
-    {
-      "id": "github:xnancy/russ",
-      "name": "russ",
-      "url": "https://github.com/xnancy/russ",
-      "reason": "Sitebot documents training, synthesized data, and WebLang typechecking with a webagent manifest. The README still does not explain how it observes or operates websites.",
-      "cause": "reviewer_hold"
-    },
-    {
-      "id": "github:vcaesar/codg",
-      "name": "codg",
-      "url": "https://github.com/vcaesar/codg",
-      "reason": "Codg documents a coding and work-agent harness and lists computer, mobile, and browser use in one broad feature line. The source gives no concrete interface-operation workflow or implementation detail.",
+      "id": "url:d90b71ff4bc54052cc5b",
+      "name": "android_ui_detection_yolov8",
+      "url": "https://huggingface.co/datasets/yasirfaizahmed/android_ui_detection_yolov8",
+      "reason": "The repository holds one 1.09 GB data.zip; the viewer exposes a single image column of portrait screenshots, and the card is the unfilled Hugging Face template, leaving annotation format, classes and use undocumented.",
       "cause": "reviewer_hold"
     },
     {
       "id": "url:4053e29cc54fd605a33f",
       "name": "zhuanlan.zhihu.com",
       "url": "https://zhuanlan.zhihu.com/p/1914038712540574158",
-      "reason": "primary evidence unresolved: HTTP Error 403: Forbidden; The Zhihu article fetch returned 403 and only a generic welcome message. Its subject and article text are unavailable.",
+      "reason": "primary evidence unresolved: HTTP Error 403: Forbidden; Zhihu column article 1914038712540574158, found from the ScienceBoard release, serves only the site's anti-bot welcome page to plain fetches, and its article API answers 403, so the text is unavailable.",
       "cause": "unresolved_evidence"
     },
     {
-      "id": "url:23dab7abc4fc46085012",
-      "name": "aguvis-stage-2",
-      "url": "https://huggingface.co/datasets/smolagents/aguvis-stage-2",
-      "reason": "The aguvis-stage-2 card lists image and conversation fields across named training configurations, but gives no description of the dataset's origin, task or intended use.",
+      "id": "url:4cfbb0e916842a07d102",
+      "name": "Figma",
+      "url": "https://www.figma.com/deck/rsWK4sRl0dOahG59bfMhql",
+      "reason": "A Figma Slides deck titled \"Computer Use Talk 11/24\" per Figma's oEmbed API; the deck renders only in JavaScript, so its slide text cannot be read.",
       "cause": "reviewer_hold"
     },
     {
-      "id": "url:2e88b52ca1717a28fd32",
-      "name": "VideoAgentTrek-IDM-s2-7B",
-      "url": "https://huggingface.co/xlangai/VideoAgentTrek-IDM-s2-7B",
-      "reason": "The VideoAgentTrek-IDM-s2-7B repository has model weight files, but its card contains only a license declaration. Its purpose and use remain undocumented.",
-      "cause": "reviewer_hold"
-    },
-    {
-      "id": "url:2c85ae447a0eeed51393",
-      "name": "bugcraft-dataset",
-      "url": "https://huggingface.co/erayyapagci/bugcraft-dataset",
-      "reason": "The Hugging Face repository page lists bugcraft-dataset files but has no model card. The supplied source does not explain the files' purpose or use.",
-      "cause": "reviewer_hold"
-    },
-    {
-      "id": "url:f8a956094e526a92caf3",
-      "name": "Error",
-      "url": "https://ai.meta.com/blog/introducing-muse-spark-meta-model-api",
-      "reason": "The Meta page returns an error message. The supplied source contains no readable description of the linked resource.",
-      "cause": "reviewer_hold"
-    },
-    {
-      "id": "url:62688de46b172fb0c746",
-      "name": "SEAgent-1.0-7B",
-      "url": "https://huggingface.co/Zery/SEAgent-1.0-7B",
-      "reason": "The model repository lists weight files, but its card only points to a GitHub repository and paper for inference. The supplied source does not describe the checkpoint's computer-use capability.",
-      "cause": "reviewer_hold"
-    },
-    {
-      "id": "url:2d3a533e91db8cea0f48",
-      "name": "openai.com",
-      "url": "https://openai.com/index/hello-gpt-4o",
-      "reason": "primary evidence unresolved: HTTP Error 403: Forbidden; The OpenAI page fetch returned HTTP 403 and supplied no readable content. Its subject and relevance cannot be established from the supplied source.",
+      "id": "url:4ed986fbfacac80c8ed2",
+      "name": "zhuanlan.zhihu.com",
+      "url": "https://zhuanlan.zhihu.com/p/14143950360n",
+      "reason": "primary evidence unresolved: HTTP Error 403: Forbidden; Zhihu column article 14143950360n, found from the OS agent survey, serves only the site's anti-bot welcome page to plain fetches, and its article API answers 403, so the text is unavailable.",
       "cause": "unresolved_evidence"
     },
     {
-      "id": "url:5281c8befef1059590f3",
-      "name": "aitw-webshop-digiq-agent",
-      "url": "https://huggingface.co/JackBAI/aitw-webshop-digiq-agent",
-      "reason": "The Hugging Face repository shows PyTorch model files but has no model card explaining the checkpoint's purpose, training, or use. Its computer-use relevance remains undocumented.",
-      "cause": "reviewer_hold"
-    },
-    {
-      "id": "github:msanders/autopy",
-      "name": "autopy-legacy",
-      "url": "https://github.com/msanders/autopy",
-      "reason": "The AutoPy legacy repository contains code, but its supplied README only says the repository is inactive and points to a replacement. It gives no description of the code or its use.",
-      "cause": "reviewer_hold"
-    },
-    {
-      "id": "url:25d827c3632ae849bd7a",
-      "name": "AFM-WebAgent-SFT-Dataset",
-      "url": "https://huggingface.co/datasets/PersonalAILab/AFM-WebAgent-SFT-Dataset",
-      "reason": "The dataset card describes multi-agent training trajectories and identifies web-agent data derived from TaskCraft. It does not describe page navigation or interaction within those trajectories.",
-      "cause": "reviewer_hold"
-    },
-    {
-      "id": "github:generalagents/showdown",
-      "name": "showdown",
-      "url": "https://github.com/generalagents/showdown",
-      "reason": "The README calls showdown an offline and online computer-use benchmark suite, but gives no task descriptions, evaluation procedure, or usage instructions.",
-      "cause": "reviewer_hold"
-    },
-    {
-      "id": "url:7ae659b00ca85338fe0a",
-      "name": "MobileGym",
-      "url": "https://os-copilot.github.io/OpenMobile2-Sim",
-      "reason": "The page contains only the title MobileGym. It gives no description of the resource, its contents, or how it is used.",
-      "cause": "reviewer_hold"
-    },
-    {
-      "id": "url:fa8fd2873571ab1b3556",
-      "name": "huggingface.co",
-      "url": "https://huggingface.co/datasets/sparklabutah/TimeWarp-GPT5-Traces",
-      "reason": "The TimeWarp-GPT5-Traces dataset fetch returned an error with no source text or file listing, leaving its contents and relevance unverified.",
-      "cause": "reviewer_hold"
-    },
-    {
-      "id": "github:xigmoid/vico",
-      "name": "ViCo",
-      "url": "https://github.com/Xigmoid/ViCo",
-      "reason": "The ViCo repository supplies only a title about visual-oriented coding for chart replication. It needs documentation of its method and release contents to assess its substance.",
-      "cause": "reviewer_hold"
-    },
-    {
-      "id": "url:798290a27386d4ada4a9",
-      "name": "MM-Eureka-Dataset",
-      "url": "https://huggingface.co/datasets/FanqingM/MM-Eureka-Dataset",
-      "reason": "The Hugging Face page shows an image dataset with a train split but no dataset card. It needs documentation of the images and their intended use.",
-      "cause": "reviewer_hold"
-    },
-    {
-      "id": "github:jblanchette/screen-capture-mcp",
-      "name": "screen-capture-mcp",
-      "url": "https://github.com/jblanchette/screen-capture-mcp",
-      "reason": "The README documents a Windows screen-capture MCP server but directs source installation to kmoulder/screen-capture-mcp. This appears to be a copy, and no listed neighbor identifies the original.",
-      "cause": "reviewer_hold"
-    },
-    {
-      "id": "url:33b35b47d8bb269d84a1",
-      "name": "InternVL3_5-38B",
-      "url": "https://huggingface.co/OpenGVLab/InternVL3_5-38B",
-      "reason": "The InternVL3_5-38B card describes a multimodal checkpoint and makes a brief GUI-interaction claim for the model family. It gives no GUI task, result, or checkpoint-specific detail.",
-      "cause": "reviewer_hold"
-    },
-    {
-      "id": "url:feaad5e9f2497d1ed9ca",
-      "name": "InternVL3_5-2B",
-      "url": "https://huggingface.co/OpenGVLab/InternVL3_5-2B",
-      "reason": "The InternVL3_5-2B card documents a multimodal checkpoint and claims GUI interaction for the wider family. It supplies no GUI task, example, or result for this checkpoint.",
-      "cause": "reviewer_hold"
-    },
-    {
-      "id": "github:zzxslp/mm-navigator",
-      "name": "MM-Navigator",
-      "url": "https://github.com/zzxslp/MM-Navigator",
-      "reason": "The MM-Navigator README links its smartphone GUI navigation paper and shows an iPhone demo. It says the code and benchmark are forthcoming and gives no agent usage instructions.",
-      "cause": "reviewer_hold"
-    },
-    {
-      "id": "url:01d119d0574bbeb84699",
-      "name": "huggingface.co",
-      "url": "https://huggingface.co/datasets/RVtech/Audio2Tool",
-      "reason": "The Audio2Tool dataset fetch returned an error and supplied no card text. The dataset contents and relevance cannot be assessed from this source.",
-      "cause": "reviewer_hold"
-    },
-    {
-      "id": "url:4d7042b462e937c33406",
-      "name": "InternVL3_5-30B-A3B",
-      "url": "https://huggingface.co/OpenGVLab/InternVL3_5-30B-A3B",
-      "reason": "The InternVL3_5-30B-A3B card describes a general multimodal checkpoint and mentions GUI interaction as a family capability. It gives no GUI task, method, or result for this checkpoint.",
-      "cause": "reviewer_hold"
-    },
-    {
-      "id": "url:a6f3a5ff1d72022f449e",
-      "name": "MM-Eureka-8B",
-      "url": "https://huggingface.co/FanqingM/MM-Eureka-8B",
-      "reason": "The MM-Eureka-8B repository lists checkpoint files, but its card only points to a newer model. It gives no description of this checkpoint's capabilities or use.",
-      "cause": "reviewer_hold"
-    },
-    {
-      "id": "github:imeanai/webcanvas_showcase",
-      "name": "WebCanvas_showcase",
-      "url": "https://github.com/iMeanAI/WebCanvas_showcase",
-      "reason": "WebCanvas_showcase describes an agent evaluation showcase and marks SeeAct complete. The README gives no integration details, and the supplied file list identifies only a SEEACT directory.",
-      "cause": "reviewer_hold"
-    },
-    {
-      "id": "github:nvidia-nemo/prorl-agent-server",
-      "name": "ProRL-Agent-Server",
-      "url": "https://github.com/NVIDIA-NeMo/ProRL-Agent-Server",
-      "reason": "Polar documents a general reinforcement-learning rollout server and marks CUA support complete in its roadmap. The README gives no computer-use workflow or integration detail.",
-      "cause": "reviewer_hold"
-    },
-    {
-      "id": "github:tradestackdev/webenv-sim",
-      "name": "webenv-sim",
-      "url": "https://github.com/TradeStackDev/webenv-sim",
-      "reason": "The README describes browser sessions, action replay, and evaluation, but the supplied file list contains only the README. The described implementation and tasks are missing.",
-      "cause": "reviewer_hold"
-    },
-    {
-      "id": "url:15c5435c1cb4f9e6b737",
-      "name": "InternVL3_5-8B-HF",
-      "url": "https://huggingface.co/OpenGVLab/InternVL3_5-8B-HF",
-      "reason": "The card documents an InternVL3.5 8B checkpoint and names GUI interaction for the model family. It gives no GUI task, result, or usage detail for this checkpoint.",
-      "cause": "reviewer_hold"
-    },
-    {
-      "id": "url:687a7b27f38720fe54bc",
-      "name": "huggingface.co",
-      "url": "https://huggingface.co/datasets/TIGER-Lab/WebsiteBench",
-      "reason": "primary evidence unresolved: response exceeds 10 MB metadata budget; The WebsiteBench dataset fetch returned an error with no source text or files. Its contents and relationship to the listed benchmark remain unverified.",
+      "id": "url:8968c1abb0e7f3ba989e",
+      "name": "zhuanlan.zhihu.com",
+      "url": "https://zhuanlan.zhihu.com/p/18229337790",
+      "reason": "primary evidence unresolved: HTTP Error 403: Forbidden; Zhihu column article 18229337790, found from the OS-Genesis release, serves only the site's anti-bot welcome page to plain fetches, and its article API answers 403, so the text is unavailable.",
       "cause": "unresolved_evidence"
-    },
-    {
-      "id": "url:a12c18540006368e69ab",
-      "name": "huggingface.co",
-      "url": "https://huggingface.co/datasets/mahirlabibdihan/weboperator-experiments",
-      "reason": "The WebOperator Experiments dataset fetch returned an error with no source text or files. Its contents and relationship to the listed repository remain unverified.",
-      "cause": "reviewer_hold"
-    },
-    {
-      "id": "url:c09ce6d4ca2ddaf02fae",
-      "name": "InternVL3_5-GPT-OSS-20B-A4B-Preview-HF",
-      "url": "https://huggingface.co/OpenGVLab/InternVL3_5-GPT-OSS-20B-A4B-Preview-HF",
-      "reason": "The card documents a general InternVL3.5 checkpoint and names GUI interaction for the model family. It gives no GUI task, result, or usage detail for this preview checkpoint.",
-      "cause": "reviewer_hold"
-    },
-    {
-      "id": "url:897db7dba36e69a60e5e",
-      "name": "huggingface.co",
-      "url": "https://huggingface.co/datasets/Zbao/WinDeskGround",
-      "reason": "The WinDeskGround dataset address returned a fetch error with no source text. Its contents and relationship to the listed benchmark cannot be checked.",
-      "cause": "reviewer_hold"
-    },
-    {
-      "id": "url:e7ea65893ab264517d83",
-      "name": "OpenPhone_dataset",
-      "url": "https://huggingface.co/datasets/hkuds/OpenPhone_dataset",
-      "reason": "The card identifies an AndroidLab archive and derived data for LightAgent GRPO training, but does not describe the data contents or establish a mobile GUI task.",
-      "cause": "reviewer_hold"
-    },
-    {
-      "id": "url:05fc5b1f872760909bf9",
-      "name": "aguvis-stage-1",
-      "url": "https://huggingface.co/datasets/smolagents/aguvis-stage-1",
-      "reason": "The dataset card lists GUI-related training configurations and image plus user-assistant text fields. It gives no description of the dataset's purpose, assembly or intended use.",
-      "cause": "reviewer_hold"
-    },
-    {
-      "id": "url:d4b5cf6fee1c4093a61f",
-      "name": "UniClawBench-Assets",
-      "url": "https://huggingface.co/datasets/Azily/UniClawBench-Assets",
-      "reason": "UniClawBench Task Assets contains binary fixtures for a benchmark, but its card does not describe the tasks or establish that the assets evaluate computer or browser interaction.",
-      "cause": "reviewer_hold"
-    },
-    {
-      "id": "url:e28b33f6cd860675a897",
-      "name": "huggingface.co",
-      "url": "https://huggingface.co/datasets/YijiaFan/CaPtain-SFT-Data",
-      "reason": "The dataset fetch returned an error with no source text or files. The supplied record gives no readable content from which to assess its purpose or computer-use relevance.",
-      "cause": "reviewer_hold"
-    },
-    {
-      "id": "github:oblitum/interception",
-      "name": "Interception",
-      "url": "https://github.com/oblitum/Interception",
-      "reason": "Interception's README covers Windows driver installation, licensing, and assorted uses. It does not explain what input-device actions its API exposes for automation.",
-      "cause": "reviewer_hold"
-    },
-    {
-      "id": "url:2ebcbc24ecbdc2db22fb",
-      "name": "InternVL3_5-30B-A3B-HF",
-      "url": "https://huggingface.co/OpenGVLab/InternVL3_5-30B-A3B-HF",
-      "reason": "The InternVL3.5 card mentions GUI interaction for the model family, while this checkpoint's detailed training and evaluations cover general multimodal tasks. Its own GUI use needs documentation.",
-      "cause": "reviewer_hold"
-    },
-    {
-      "id": "github:frostorm/a3agent",
-      "name": "A3Agent",
-      "url": "https://github.com/FroStorM/A3Agent",
-      "reason": "A3Agent describes a local desktop agent workspace with chat, model settings, SOPs, history, and backups. The supplied description leaves its ability to observe or operate other interfaces unclear.",
-      "cause": "reviewer_hold"
-    },
-    {
-      "id": "github:qwenlm/qwen-agentworld",
-      "name": "Qwen-AgentWorld",
-      "url": "https://github.com/QwenLM/Qwen-AgentWorld",
-      "reason": "Qwen-AgentWorld models predicted observations across Android, Web, OS, and other agent domains. The supplied description leaves the role of graphical interfaces or browser actions in those domains unclear.",
-      "cause": "reviewer_hold"
     }
   ],
   "uncurated_linked_papers": [
@@ -3933,6 +2701,16 @@
       ]
     },
     {
+      "id": "arxiv:2505.13934",
+      "name": "RLVR-World: Training World Models with Reinforcement Learning",
+      "url": "https://arxiv.org/abs/2505.13934",
+      "linked_from": [
+        "url:3e0f07cb0ff3f32dfc0e",
+        "url:42686ac00c4ae107f147",
+        "url:e02a165e76cd7c43e2ca"
+      ]
+    },
+    {
       "id": "arxiv:2509.08755",
       "name": "AgentGym-RL: Training LLM Agents for Long-Horizon Decision Making through Multi-Turn Reinforcement Learning",
       "url": "https://arxiv.org/abs/2509.08755",
@@ -3963,6 +2741,14 @@
       "url": "https://arxiv.org/abs/2604.17091",
       "linked_from": [
         "github:jinyihan99/ga-technical-report"
+      ]
+    },
+    {
+      "id": "arxiv:2606.24597",
+      "name": "Qwen-AgentWorld: Language World Models for General Agents",
+      "url": "https://arxiv.org/abs/2606.24597",
+      "linked_from": [
+        "github:qwenlm/qwen-agentworld"
       ]
     },
     {
@@ -4002,6 +2788,7 @@
       "name": "SWEeper-Bench: Can Agents Discover Bugs in Interactive Software?",
       "url": "https://arxiv.org/abs/2610.14096",
       "linked_from": [
+        "url:54907fd6dc968eaced34",
         "url:9d35341e71dfd457fd79"
       ]
     },
@@ -4015,52 +2802,52 @@
     }
   ],
   "by_kind": {
-    "agent": 471,
-    "benchmark": 300,
+    "agent": 475,
+    "benchmark": 305,
     "company": 19,
-    "dataset": 243,
-    "framework": 662,
-    "infrastructure": 114,
+    "dataset": 267,
+    "framework": 665,
+    "infrastructure": 117,
     "learning": 36,
-    "model": 400,
+    "model": 454,
     "paper": 2587,
     "product": 75,
     "survey": 37,
-    "tool": 1077
+    "tool": 1084
   },
   "curated_by_environment": {
-    "android": 698,
-    "cross-platform": 750,
-    "desktop": 1780,
+    "android": 720,
+    "cross-platform": 756,
+    "desktop": 1801,
     "harmonyos": 7,
-    "ios": 102,
-    "linux": 527,
-    "macos": 581,
-    "unspecified": 791,
-    "web": 2631,
-    "windows": 566
+    "ios": 105,
+    "linux": 533,
+    "macos": 582,
+    "unspecified": 811,
+    "web": 2678,
+    "windows": 571
   },
   "curated_by_kind_and_environment": {
     "agent": {
-      "android": 83,
+      "android": 85,
       "cross-platform": 59,
       "desktop": 228,
-      "ios": 16,
+      "ios": 17,
       "linux": 76,
       "macos": 115,
       "unspecified": 3,
-      "web": 241,
+      "web": 243,
       "windows": 102
     },
     "benchmark": {
-      "android": 41,
+      "android": 42,
       "cross-platform": 28,
-      "desktop": 94,
+      "desktop": 95,
       "ios": 2,
       "linux": 25,
-      "macos": 10,
-      "unspecified": 12,
-      "web": 207,
+      "macos": 11,
+      "unspecified": 13,
+      "web": 209,
       "windows": 14
     },
     "company": {
@@ -4069,14 +2856,14 @@
       "unspecified": 18
     },
     "dataset": {
-      "android": 70,
-      "cross-platform": 33,
-      "desktop": 71,
+      "android": 74,
+      "cross-platform": 34,
+      "desktop": 74,
       "ios": 7,
-      "linux": 21,
+      "linux": 22,
       "macos": 16,
-      "unspecified": 31,
-      "web": 102,
+      "unspecified": 35,
+      "web": 116,
       "windows": 13
     },
     "framework": {
@@ -4088,18 +2875,18 @@
       "linux": 111,
       "macos": 88,
       "unspecified": 26,
-      "web": 460,
+      "web": 463,
       "windows": 99
     },
     "infrastructure": {
-      "android": 20,
+      "android": 21,
       "cross-platform": 11,
       "desktop": 76,
       "ios": 3,
       "linux": 57,
       "macos": 22,
       "unspecified": 2,
-      "web": 60,
+      "web": 62,
       "windows": 16
     },
     "learning": {
@@ -4114,15 +2901,15 @@
       "windows": 3
     },
     "model": {
-      "android": 85,
-      "cross-platform": 138,
-      "desktop": 158,
+      "android": 96,
+      "cross-platform": 143,
+      "desktop": 174,
       "ios": 7,
-      "linux": 14,
+      "linux": 19,
       "macos": 18,
-      "unspecified": 71,
-      "web": 155,
-      "windows": 16
+      "unspecified": 86,
+      "web": 177,
+      "windows": 20
     },
     "paper": {
       "android": 229,
@@ -4157,22 +2944,22 @@
       "windows": 1
     },
     "tool": {
-      "android": 57,
+      "android": 60,
       "cross-platform": 175,
-      "desktop": 556,
+      "desktop": 557,
       "harmonyos": 1,
-      "ios": 34,
+      "ios": 36,
       "linux": 190,
       "macos": 281,
       "unspecified": 13,
-      "web": 645,
-      "windows": 250
+      "web": 647,
+      "windows": 251
     }
   },
   "license_declarations_by_scope": {
-    "code": 2055,
-    "data": 197,
-    "weights": 300,
+    "code": 2064,
+    "data": 211,
+    "weights": 327,
     "document": 8
   },
   "sources": [
@@ -4198,14 +2985,14 @@
         "state": "success"
       },
       "discovered": 338,
-      "indexed": 234,
-      "indexed_resources": 233,
+      "indexed": 235,
+      "indexed_resources": 234,
       "resolved_aliases": 7,
-      "curated": 232,
+      "curated": 233,
       "excluded": 7,
-      "set_aside": 89,
+      "set_aside": 90,
       "out_of_scope": 5,
-      "unindexed": 3
+      "unindexed": 1
     },
     {
       "id": "zju-gui",
@@ -4234,9 +3021,9 @@
       "resolved_aliases": 3,
       "curated": 177,
       "excluded": 0,
-      "set_aside": 41,
+      "set_aside": 42,
       "out_of_scope": 0,
-      "unindexed": 1
+      "unindexed": 0
     },
     {
       "id": "os-agent-survey",
@@ -4327,9 +3114,9 @@
       "resolved_aliases": 2,
       "curated": 58,
       "excluded": 0,
-      "set_aside": 35,
+      "set_aside": 36,
       "out_of_scope": 18,
-      "unindexed": 2
+      "unindexed": 1
     },
     {
       "id": "steel-web-archive",
@@ -4410,14 +3197,14 @@
         "provider_host": "raw.githubusercontent.com"
       },
       "discovered": 588,
-      "indexed": 524,
-      "indexed_resources": 524,
+      "indexed": 525,
+      "indexed_resources": 525,
       "resolved_aliases": 6,
-      "curated": 517,
+      "curated": 518,
       "excluded": 2,
-      "set_aside": 58,
+      "set_aside": 59,
       "out_of_scope": 1,
-      "unindexed": 3
+      "unindexed": 1
     },
     {
       "id": "tianyuan-cua",
@@ -4503,14 +3290,14 @@
         "state": "success"
       },
       "discovered": 63,
-      "indexed": 21,
-      "indexed_resources": 21,
+      "indexed": 22,
+      "indexed_resources": 22,
       "resolved_aliases": 0,
-      "curated": 21,
+      "curated": 22,
       "excluded": 3,
       "set_aside": 25,
       "out_of_scope": 12,
-      "unindexed": 2
+      "unindexed": 1
     },
     {
       "id": "yearly-gui",
@@ -4534,14 +3321,14 @@
         "state": "success"
       },
       "discovered": 193,
-      "indexed": 151,
-      "indexed_resources": 151,
+      "indexed": 152,
+      "indexed_resources": 152,
       "resolved_aliases": 4,
-      "curated": 151,
+      "curated": 152,
       "excluded": 2,
-      "set_aside": 36,
+      "set_aside": 37,
       "out_of_scope": 1,
-      "unindexed": 3
+      "unindexed": 1
     },
     {
       "id": "osu-gui",
@@ -4720,14 +3507,14 @@
         "state": "success"
       },
       "discovered": 247,
-      "indexed": 211,
-      "indexed_resources": 211,
+      "indexed": 212,
+      "indexed_resources": 212,
       "resolved_aliases": 3,
-      "curated": 210,
+      "curated": 211,
       "excluded": 9,
       "set_aside": 26,
       "out_of_scope": 0,
-      "unindexed": 1
+      "unindexed": 0
     },
     {
       "id": "mobile-agents",
@@ -4881,8 +3668,8 @@
       "curated": 43,
       "excluded": 9,
       "set_aside": 13,
-      "out_of_scope": 2,
-      "unindexed": 1
+      "out_of_scope": 3,
+      "unindexed": 0
     },
     {
       "id": "gui-agent-memory",
@@ -4942,9 +3729,9 @@
       "resolved_aliases": 2,
       "curated": 145,
       "excluded": 32,
-      "set_aside": 33,
+      "set_aside": 34,
       "out_of_scope": 2,
-      "unindexed": 1
+      "unindexed": 0
     },
     {
       "id": "philfung-cua",
@@ -5376,9 +4163,9 @@
       "resolved_aliases": 0,
       "curated": 4,
       "excluded": 0,
-      "set_aside": 3,
+      "set_aside": 4,
       "out_of_scope": 0,
-      "unindexed": 1
+      "unindexed": 0
     },
     {
       "id": "release-carryon",
@@ -5464,14 +4251,14 @@
         "state": "success"
       },
       "discovered": 6,
-      "indexed": 3,
-      "indexed_resources": 3,
+      "indexed": 4,
+      "indexed_resources": 4,
       "resolved_aliases": 0,
-      "curated": 3,
+      "curated": 4,
       "excluded": 0,
       "set_aside": 2,
       "out_of_scope": 0,
-      "unindexed": 1
+      "unindexed": 0
     },
     {
       "id": "release-os-atlas",
@@ -5779,9 +4566,9 @@
       "resolved_aliases": 0,
       "curated": 39,
       "excluded": 0,
-      "set_aside": 7,
+      "set_aside": 9,
       "out_of_scope": 2,
-      "unindexed": 2
+      "unindexed": 0
     },
     {
       "id": "on-device-agents",
@@ -5898,14 +4685,14 @@
         "state": "success"
       },
       "discovered": 334,
-      "indexed": 266,
-      "indexed_resources": 266,
+      "indexed": 267,
+      "indexed_resources": 267,
       "resolved_aliases": 5,
-      "curated": 263,
+      "curated": 264,
       "excluded": 8,
       "set_aside": 52,
-      "out_of_scope": 5,
-      "unindexed": 3
+      "out_of_scope": 6,
+      "unindexed": 1
     },
     {
       "id": "showlab-mm-embodied",
@@ -5929,14 +4716,14 @@
         "state": "success"
       },
       "discovered": 223,
-      "indexed": 110,
-      "indexed_resources": 110,
+      "indexed": 111,
+      "indexed_resources": 111,
       "resolved_aliases": 0,
-      "curated": 97,
+      "curated": 98,
       "excluded": 35,
       "set_aside": 26,
       "out_of_scope": 51,
-      "unindexed": 1
+      "unindexed": 0
     },
     {
       "id": "rl-gui-agents",
@@ -6027,9 +4814,9 @@
       "resolved_aliases": 0,
       "curated": 33,
       "excluded": 0,
-      "set_aside": 6,
+      "set_aside": 9,
       "out_of_scope": 3,
-      "unindexed": 3
+      "unindexed": 0
     },
     {
       "id": "agent-native-browsers",
@@ -6058,9 +4845,9 @@
       "resolved_aliases": 0,
       "curated": 31,
       "excluded": 0,
-      "set_aside": 6,
+      "set_aside": 7,
       "out_of_scope": 6,
-      "unindexed": 1
+      "unindexed": 0
     },
     {
       "id": "llm-brained-gui-survey-benchmark",
@@ -6084,14 +4871,14 @@
         "state": "success"
       },
       "discovered": 121,
-      "indexed": 94,
-      "indexed_resources": 94,
+      "indexed": 95,
+      "indexed_resources": 95,
       "resolved_aliases": 0,
-      "curated": 94,
+      "curated": 95,
       "excluded": 0,
-      "set_aside": 23,
+      "set_aside": 24,
       "out_of_scope": 1,
-      "unindexed": 3
+      "unindexed": 1
     },
     {
       "id": "llm-brained-gui-survey-dataset",
@@ -6146,14 +4933,14 @@
         "state": "success"
       },
       "discovered": 139,
-      "indexed": 114,
-      "indexed_resources": 114,
+      "indexed": 115,
+      "indexed_resources": 115,
       "resolved_aliases": 0,
-      "curated": 114,
+      "curated": 115,
       "excluded": 0,
       "set_aside": 23,
       "out_of_scope": 1,
-      "unindexed": 1
+      "unindexed": 0
     },
     {
       "id": "llm-brained-gui-survey-gui-testing",
@@ -6177,14 +4964,14 @@
         "state": "success"
       },
       "discovered": 32,
-      "indexed": 29,
-      "indexed_resources": 29,
+      "indexed": 30,
+      "indexed_resources": 30,
       "resolved_aliases": 2,
-      "curated": 29,
+      "curated": 30,
       "excluded": 0,
       "set_aside": 1,
       "out_of_scope": 0,
-      "unindexed": 2
+      "unindexed": 1
     },
     {
       "id": "llm-brained-gui-survey-models",
@@ -6213,9 +5000,9 @@
       "resolved_aliases": 1,
       "curated": 71,
       "excluded": 4,
-      "set_aside": 17,
+      "set_aside": 18,
       "out_of_scope": 2,
-      "unindexed": 1
+      "unindexed": 0
     },
     {
       "id": "llm-brained-gui-survey-survey",
@@ -6270,14 +5057,14 @@
         "state": "success"
       },
       "discovered": 19,
-      "indexed": 9,
-      "indexed_resources": 9,
+      "indexed": 10,
+      "indexed_resources": 10,
       "resolved_aliases": 0,
-      "curated": 9,
+      "curated": 10,
       "excluded": 0,
       "set_aside": 4,
       "out_of_scope": 5,
-      "unindexed": 1
+      "unindexed": 0
     },
     {
       "id": "osworld-verified-leaderboard",
@@ -6301,14 +5088,14 @@
         "state": "success"
       },
       "discovered": 50,
-      "indexed": 32,
-      "indexed_resources": 32,
+      "indexed": 33,
+      "indexed_resources": 33,
       "resolved_aliases": 0,
-      "curated": 32,
+      "curated": 33,
       "excluded": 0,
-      "set_aside": 8,
-      "out_of_scope": 6,
-      "unindexed": 4
+      "set_aside": 10,
+      "out_of_scope": 7,
+      "unindexed": 0
     },
     {
       "id": "osworld-self-reported-leaderboard",
@@ -6337,9 +5124,9 @@
       "resolved_aliases": 1,
       "curated": 22,
       "excluded": 5,
-      "set_aside": 53,
-      "out_of_scope": 5,
-      "unindexed": 4
+      "set_aside": 55,
+      "out_of_scope": 7,
+      "unindexed": 0
     },
     {
       "id": "screenspot-pro-leaderboard",
@@ -6363,14 +5150,14 @@
         "state": "success"
       },
       "discovered": 45,
-      "indexed": 31,
-      "indexed_resources": 31,
+      "indexed": 32,
+      "indexed_resources": 32,
       "resolved_aliases": 0,
-      "curated": 31,
+      "curated": 32,
       "excluded": 2,
-      "set_aside": 8,
+      "set_aside": 9,
       "out_of_scope": 2,
-      "unindexed": 2
+      "unindexed": 0
     },
     {
       "id": "androidworld-leaderboard",
@@ -6399,9 +5186,9 @@
       "resolved_aliases": 1,
       "curated": 43,
       "excluded": 0,
-      "set_aside": 19,
+      "set_aside": 22,
       "out_of_scope": 0,
-      "unindexed": 4
+      "unindexed": 1
     },
     {
       "id": "webarena-leaderboard",
@@ -6425,14 +5212,14 @@
         "state": "success"
       },
       "discovered": 83,
-      "indexed": 44,
-      "indexed_resources": 44,
+      "indexed": 46,
+      "indexed_resources": 46,
       "resolved_aliases": 0,
-      "curated": 41,
+      "curated": 43,
       "excluded": 4,
       "set_aside": 26,
       "out_of_scope": 6,
-      "unindexed": 3
+      "unindexed": 1
     },
     {
       "id": "androidlab-leaderboard",
@@ -6518,14 +5305,14 @@
         "state": "success"
       },
       "discovered": 30,
-      "indexed": 24,
-      "indexed_resources": 24,
+      "indexed": 27,
+      "indexed_resources": 27,
       "resolved_aliases": 0,
-      "curated": 24,
+      "curated": 27,
       "excluded": 0,
-      "set_aside": 0,
-      "out_of_scope": 0,
-      "unindexed": 6
+      "set_aside": 2,
+      "out_of_scope": 1,
+      "unindexed": 0
     },
     {
       "id": "hf-models-search-computer-use",
@@ -6586,8 +5373,8 @@
       "curated": 15,
       "excluded": 0,
       "set_aside": 0,
-      "out_of_scope": 2,
-      "unindexed": 1
+      "out_of_scope": 3,
+      "unindexed": 0
     },
     {
       "id": "hf-datasets-search-computer-use",
@@ -6648,8 +5435,8 @@
       "curated": 2,
       "excluded": 0,
       "set_aside": 1,
-      "out_of_scope": 0,
-      "unindexed": 2
+      "out_of_scope": 2,
+      "unindexed": 0
     },
     {
       "id": "hf-datasets-search-mind2web",
@@ -6704,14 +5491,14 @@
         "state": "success"
       },
       "discovered": 9,
-      "indexed": 3,
-      "indexed_resources": 3,
+      "indexed": 4,
+      "indexed_resources": 4,
       "resolved_aliases": 0,
-      "curated": 3,
+      "curated": 4,
       "excluded": 0,
-      "set_aside": 1,
+      "set_aside": 2,
       "out_of_scope": 2,
-      "unindexed": 3
+      "unindexed": 1
     },
     {
       "id": "hf-datasets-search-screenspot",
@@ -6890,14 +5677,14 @@
         "state": "success"
       },
       "discovered": 22,
-      "indexed": 20,
-      "indexed_resources": 20,
+      "indexed": 21,
+      "indexed_resources": 21,
       "resolved_aliases": 1,
-      "curated": 20,
+      "curated": 21,
       "excluded": 0,
       "set_aside": 0,
       "out_of_scope": 1,
-      "unindexed": 1
+      "unindexed": 0
     },
     {
       "id": "hf-collection-sergiopaniego-gui-grounding-datasets",
@@ -7014,14 +5801,14 @@
         "state": "success"
       },
       "discovered": 13,
-      "indexed": 7,
-      "indexed_resources": 7,
+      "indexed": 11,
+      "indexed_resources": 11,
       "resolved_aliases": 0,
-      "curated": 7,
+      "curated": 11,
       "excluded": 0,
       "set_aside": 0,
       "out_of_scope": 1,
-      "unindexed": 5
+      "unindexed": 1
     },
     {
       "id": "release-ui-tars-model-index",
@@ -7360,9 +6147,9 @@
       "resolved_aliases": 0,
       "curated": 56,
       "excluded": 13,
-      "set_aside": 33,
+      "set_aside": 35,
       "out_of_scope": 6,
-      "unindexed": 3
+      "unindexed": 1
     },
     {
       "id": "benchmark-leads",

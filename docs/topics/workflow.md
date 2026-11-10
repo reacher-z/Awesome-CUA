@@ -2,9 +2,9 @@
 
 [Home](../../README.md) · [All topics](../topics.md) · [Full arXiv bibliography](../papers.md)
 
-550 source-reviewed resources tagged `workflow`. Curated metadata; unknown facts are shown as —.
+551 source-reviewed resources tagged `workflow`. Curated metadata; unknown facts are shown as —.
 
-**Contents:** [Benchmarks (30)](#benchmarks) · [Datasets (9)](#datasets) · [Models (1)](#models) · [Agents (69)](#agents) · [Frameworks (145)](#frameworks) · [Tools (112)](#tools) · [Infrastructure (6)](#infrastructure) · [Products (27)](#products) · [Learning resources (9)](#learning-resources) · [Surveys (4)](#surveys) · [Papers (138)](#papers)
+**Contents:** [Benchmarks (30)](#benchmarks) · [Datasets (9)](#datasets) · [Models (2)](#models) · [Agents (69)](#agents) · [Frameworks (145)](#frameworks) · [Tools (112)](#tools) · [Infrastructure (6)](#infrastructure) · [Products (27)](#products) · [Learning resources (9)](#learning-resources) · [Surveys (4)](#surveys) · [Papers (138)](#papers)
 
 ## Benchmarks
 
@@ -57,11 +57,10 @@
 
 ## Models
 
-All entries in this section: desktop, web.
-
-| Resource | Paper | License | Description | Evidence |
-| --- | --- | --- | --- | --- |
-| [Holo3](https://hcompany.ai/holo3) | — | — | Holo3 is a computer-use model family trained on synthetic navigation and enterprise workflows. Its publisher reports desktop benchmark results and offers inference access and an open checkpoint. | [✓ 2026‑11‑09](https://hcompany.ai/holo3) |
+| Resource | Environments | Paper | License | Description | Evidence |
+| --- | --- | --- | --- | --- | --- |
+| [ACT-SOP](https://huggingface.co/tineding/ACT-SOP) | android | [2401.04124](https://arxiv.org/abs/2401.04124) (2024) | — | LoRA adapter for Llama-2-7b from MobileAgent, a mobile device control agent that adds Standard Operating Procedure (SOP) context and predicts actions on AitW screens. | [✓ 2026‑11‑10](https://huggingface.co/api/models/tineding/ACT-SOP) |
+| [Holo3](https://hcompany.ai/holo3) | desktop, web | — | — | Holo3 is a computer-use model family trained on synthetic navigation and enterprise workflows. Its publisher reports desktop benchmark results and offers inference access and an open checkpoint. | [✓ 2026‑11‑09](https://hcompany.ai/holo3) |
 
 ## Agents
 

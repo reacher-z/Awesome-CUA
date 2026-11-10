@@ -27931,5 +27931,690 @@
     "decision": "alias",
     "reason": "The undetected-playwright-python README states that the repository has moved to Kaliiiiiiiiii-Vinyzu/patchright, the Patchright driver catalogued as github:kaliiiiiiiiii-vinyzu/patchright.",
     "target_id": "github:kaliiiiiiiiii-vinyzu/patchright"
+  },
+  {
+    "id": "github:browser-automation-hub/yardi-voyager-browser-automation",
+    "url": "https://github.com/Browser-Automation-Hub/yardi-voyager-browser-automation",
+    "decision": "not_a_resource",
+    "reason": "A templated Puppeteer scaffold for Yardi Voyager whose five action functions are TODO stubs returning an empty result, with the selector reference left undocumented."
+  },
+  {
+    "id": "github:brunov21/ferrisgrid-cli-ts",
+    "url": "https://github.com/BrunoV21/FerrisGrid-CLI-ts",
+    "decision": "alias",
+    "reason": "The README calls this repository the TypeScript npm package mirror of the FerrisGrid Rust CLI and points to BrunoV21/FerrisGrid-CLI as the canonical repository, the catalogued FerrisGrid-CLI.",
+    "target_id": "github:brunov21/ferrisgrid-cli"
+  },
+  {
+    "id": "github:calmee4/decopatch",
+    "url": "https://github.com/calmee4/decopatch",
+    "decision": "out_of_scope",
+    "reason": "The DeCoPatch package splits numeric signals into patches and evaluates models on a synthetic wave dataset; the README names only an ECCV paper, with no GUI or screen subject.",
+    "reviewed_at": "2026-11-10T01:33:56Z",
+    "evidence": {
+      "url": "https://raw.githubusercontent.com/calmee4/decopatch/b71cd98aabc7d0e8f58bac30d0255cb80bac16c4/README.md",
+      "sha256": "3527327455cbc73afb56d7b287e46139e347f38c25049ebe58f30d167a7c13e3",
+      "retrieved_at": "2026-11-10T01:18:34Z"
+    }
+  },
+  {
+    "id": "github:colinhacks/zod",
+    "url": "https://github.com/colinhacks/zod",
+    "decision": "out_of_scope",
+    "reason": "Zod is a TypeScript schema validation library that parses data into typed, validated results; its README treats data validation and has no GUI or computer-use subject.",
+    "reviewed_at": "2026-11-10T01:33:56Z",
+    "evidence": {
+      "url": "https://raw.githubusercontent.com/colinhacks/zod/19c40d2072288b4cafec851e9d056a72a88e5973/README.md",
+      "sha256": "439c0c93c68f5dffea46de6df34f3b545d001d19570b5ee4975755d40bcf2c78",
+      "retrieved_at": "2026-11-10T01:18:34Z"
+    }
+  },
+  {
+    "id": "github:cordiverse/cordis",
+    "url": "https://github.com/cordiverse/cordis",
+    "decision": "out_of_scope",
+    "reason": "Cordis is a Node.js meta-framework of spatiotemporal composability backed by a programming-paradigm paper; its README covers plugin composition with no GUI or computer-use subject.",
+    "reviewed_at": "2026-11-10T01:33:56Z",
+    "evidence": {
+      "url": "https://raw.githubusercontent.com/cordiverse/cordis/b38ef5847a0f60662efc78fdde2c89f4943b77d4/README.md",
+      "sha256": "51a639c5e1ebcf5556516e95e42787aa511805aa932b67d34cd66c15336e0c92",
+      "retrieved_at": "2026-11-10T01:18:34Z"
+    }
+  },
+  {
+    "id": "github:dagster-io/dagster",
+    "url": "https://github.com/dagster-io/dagster",
+    "decision": "out_of_scope",
+    "reason": "Dagster is a data pipeline orchestrator for building and maintaining data assets such as tables and models; its README covers data engineering with no GUI or computer-use subject.",
+    "reviewed_at": "2026-11-10T01:33:56Z",
+    "evidence": {
+      "url": "https://raw.githubusercontent.com/dagster-io/dagster/8042f162edbbc94b3b9f3a1a14edcedeb2db5941/README.md",
+      "sha256": "edd1cb00df322ab24faff58fa62b83986a4bd023d8f82cad86ea7052018da6ce",
+      "retrieved_at": "2026-11-10T01:18:34Z"
+    }
+  },
+  {
+    "id": "github:frostorm/a3agent",
+    "url": "https://github.com/FroStorM/A3Agent",
+    "decision": "alias",
+    "reason": "A3Agent is GenericAgent rebuilt as a desktop app: its README describes it as a modification of GenericAgent whose core execution still runs on the GenericAgent files, with a new FastAPI backend, web UI and packaging.",
+    "target_id": "github:lsdefine/genericagent"
+  },
+  {
+    "id": "github:jackfsuia/di-gui-3bv0.0",
+    "url": "https://github.com/jackfsuia/Di-GUI-3Bv0.0",
+    "decision": "not_a_resource",
+    "reason": "A README-only repository, unchanged since September 2025, describing training choices for a 3B GUI grounding model; it publishes no weights, code or data, and its leaderboard entry links back here."
+  },
+  {
+    "id": "github:james4ever0/ctf-gym",
+    "url": "https://github.com/James4Ever0/ctf-gym",
+    "decision": "not_a_resource",
+    "reason": "A repository holding only a title README with TODO comments and a license, unchanged since August 2025, for a planned capture-the-flag environment for computer-using agents."
+  },
+  {
+    "id": "github:jquast/wcwidth",
+    "url": "https://github.com/jquast/wcwidth",
+    "decision": "out_of_scope",
+    "reason": "wcwidth is a Python and C11 library that measures the display width of strings in terminals for CLI and TUI programs, a text-rendering utility with no GUI-agent subject.",
+    "reviewed_at": "2026-11-10T01:33:56Z",
+    "evidence": {
+      "url": "https://raw.githubusercontent.com/jquast/wcwidth/fa21975c0106cc1242a618d769301e3499e8fdb7/README.rst",
+      "sha256": "9e2bcedc5d3d32a9abe9f722146bac40983184790bfbbca2ee9cd4863b4b9906",
+      "retrieved_at": "2026-11-10T01:18:34Z"
+    }
+  },
+  {
+    "id": "github:sys-reasoner/visco",
+    "url": "https://github.com/sys-reasoner/Visco",
+    "decision": "not_a_resource",
+    "reason": "A README announcing Visco, a multi-agent GUI copilot, plus an android_world_eval/result.md table of AndroidWorld results; its README says the code and paper come later."
+  },
+  {
+    "id": "github:tokio-rs/axum",
+    "url": "https://github.com/tokio-rs/axum",
+    "decision": "out_of_scope",
+    "reason": "The axum crate README describes an HTTP routing and request-handling library for Rust built on the tower middleware ecosystem, a general web-server library.",
+    "reviewed_at": "2026-11-10T01:33:56Z",
+    "evidence": {
+      "url": "https://raw.githubusercontent.com/tokio-rs/axum/1a25995c13a621b627385a9b91c97583b9a6bcb0/README.md",
+      "sha256": "686118c46e57e581fd4bc65305aeeb71ab9c4052ac534914f15c62ac0c189b9d",
+      "retrieved_at": "2026-11-10T01:18:35Z"
+    }
+  },
+  {
+    "id": "github:tradestackdev/agent-eval-harness",
+    "url": "https://github.com/TradeStackDev/agent-eval-harness",
+    "decision": "not_a_resource",
+    "reason": "The repository's main branch holds a single README.md describing a Playwright web-agent harness with 130 tasks; the package code, task suites and LICENSE it references are absent, a README-only placeholder."
+  },
+  {
+    "id": "github:tradestackdev/webenv-sim",
+    "url": "https://github.com/TradeStackDev/webenv-sim",
+    "decision": "not_a_resource",
+    "reason": "The repository's main branch holds a single README.md describing a Playwright browser-session simulator for agents; the core, actions, eval and api modules it lays out are absent, a README-only placeholder."
+  },
+  {
+    "id": "github:vcaesar/codg",
+    "url": "https://github.com/vcaesar/codg",
+    "decision": "out_of_scope",
+    "reason": "Codg is a terminal coding-agent harness with multi-provider models, MCP servers, skills, plugins and messaging channels; GUI use appears as one feature line and a /computer TUI command among dozens of coding commands.",
+    "reviewed_at": "2026-11-10T01:33:56Z",
+    "evidence": {
+      "url": "https://raw.githubusercontent.com/vcaesar/codg/beff0c0bab56b1496fee55e69630cb86d7ba42b3/README.md",
+      "sha256": "43496109c46c18457c375a9d4576e945948c2edd1dd68cf5259992543533cdb6",
+      "retrieved_at": "2026-11-10T01:18:35Z"
+    }
+  },
+  {
+    "id": "github:vercel/next.js",
+    "url": "https://github.com/vercel/next.js",
+    "decision": "out_of_scope",
+    "reason": "The Next.js package README describes the React framework for building full-stack web applications, a general web development framework.",
+    "reviewed_at": "2026-11-10T01:33:56Z",
+    "evidence": {
+      "url": "https://raw.githubusercontent.com/vercel/next.js/0d6361d3d913bd86e84a7f0a1fc3a0541ad2cc7e/readme.md",
+      "sha256": "86fa4cae97d711fd7d23ac4189750e63011f2cf7fca8f844d4caa4a5484a8e3d",
+      "retrieved_at": "2026-11-10T01:18:35Z"
+    }
+  },
+  {
+    "id": "github:xigmoid/vico",
+    "url": "https://github.com/Xigmoid/ViCo",
+    "decision": "out_of_scope",
+    "reason": "The README holds only the title of an EMNLP 2026 Findings paper; its arXiv abstract describes RL training of coding agents that write plotting code to replicate academic charts, a chart-to-code subject outside computer use.",
+    "reviewed_at": "2026-11-10T01:33:56Z",
+    "evidence": {
+      "url": "https://raw.githubusercontent.com/Xigmoid/ViCo/66e6f314c558ce9830cc51cfce3759a0d6435234/README.md",
+      "sha256": "0f02fadcb2c11a41ab36b793f7e7e4181f221a43af950215c706d9f6b3f49919",
+      "retrieved_at": "2026-11-10T01:18:35Z"
+    }
+  },
+  {
+    "id": "github:xurui314/vllm",
+    "url": "https://github.com/XuRui314/vllm",
+    "decision": "out_of_scope",
+    "reason": "A copy of the vLLM inference engine; the HiconAgent README clones it and copies its vllm/ package over a pinned vLLM 0.7.4 nightly install to avoid OOM, a serving dependency of that training code.",
+    "reviewed_at": "2026-11-10T01:33:56Z",
+    "evidence": {
+      "url": "https://raw.githubusercontent.com/XuRui314/vllm/69247dbfeb4d1ec6ae8825e34c85b52cafdca12b/README.md",
+      "sha256": "6bdecbc15ea52a5ca81a48881607ba907f7608dd60d6508821054339176d5b1a",
+      "retrieved_at": "2026-11-10T01:18:35Z"
+    }
+  },
+  {
+    "id": "github:zackhuiiiii/winspot",
+    "url": "https://github.com/zackhuiiiii/WinSpot",
+    "decision": "alias",
+    "reason": "The WinSpot README is a landing page for the catalogued paper WinClick: GUI Grounding with Multimodal Large Language Models, citing arXiv 2503.04730; its dataset and project links are placeholders and the repository holds only an example image.",
+    "target_id": "arxiv:2503.04730"
+  },
+  {
+    "id": "github:zju-aces-ise/chatuitest",
+    "url": "https://github.com/ZJU-ACES-ISE/ChatUITest",
+    "decision": "not_a_resource",
+    "reason": "The repository holds one README naming ChatUITest, a GUI test-script generator, as under construction, with links to a separate defect simulation tool and dataset; README.md is the only file at its January 2025 head commit."
+  },
+  {
+    "id": "github:langchain-ai/langgraphjs",
+    "url": "https://github.com/langchain-ai/langgraphjs",
+    "decision": "out_of_scope",
+    "reason": "LangGraph.js is a TypeScript orchestration library for stateful LLM agents with durable execution, memory and human-in-the-loop controls; its README names no GUI, browser or device interaction.",
+    "reviewed_at": "2026-11-10T01:35:39Z",
+    "evidence": {
+      "url": "https://raw.githubusercontent.com/langchain-ai/langgraphjs/b689df0c41d70d758ba72477a96de6afd23789cd/README.md",
+      "sha256": "0de2190913879f035b09ef711c65c1da7726bd2ba5957fbf4eee98325d23a294",
+      "retrieved_at": "2026-11-10T01:18:34Z"
+    }
+  },
+  {
+    "id": "github:mangeshraut712/solari-cookbook",
+    "url": "https://github.com/mangeshraut712/solari-cookbook",
+    "decision": "alias",
+    "reason": "A GitHub fork of Solari Cookbook, the runnable cloud browser, sandbox and desktop examples whose own clone command points to solari-sdk/solari-cookbook.",
+    "target_id": "github:solari-sdk/solari-cookbook"
+  },
+  {
+    "id": "github:mnluzimu/bolt.diy-fork",
+    "url": "https://github.com/mnluzimu/bolt.diy-Fork",
+    "decision": "out_of_scope",
+    "reason": "An uploaded copy of the bolt.diy AI web-development assistant, whose system prompt casts it as a senior software developer coding inside an in-browser WebContainer runtime.",
+    "reviewed_at": "2026-11-10T01:35:39Z",
+    "evidence": {
+      "url": "https://raw.githubusercontent.com/mnluzimu/bolt.diy-fork/08d88c174c11f1db8af3646736317713c8feed17/docs/mkdocs.yml",
+      "sha256": "b06a9a7950d455a5aaba59ce66f698d6b2c5361908fc7266e6aec9ce1d186d70",
+      "retrieved_at": "2026-11-10T01:25:47Z"
+    }
+  },
+  {
+    "id": "github:mobile-next/mobile-openrpc",
+    "url": "https://github.com/mobile-next/mobile-openrpc",
+    "decision": "alias",
+    "reason": "OpenRPC specification files for mobilecli: the mobilecli README links this repository's mobilecli/openrpc.md as its method reference, an older subset of the docs/openrpc.md that mobilecli ships.",
+    "target_id": "github:mobile-next/mobilecli"
+  },
+  {
+    "id": "github:msanders/autopy",
+    "url": "https://github.com/msanders/autopy",
+    "decision": "alias",
+    "reason": "The archived original AutoPy repository, whose README redirects to autopilot-rs/autopy, the maintained AutoPy desktop mouse, keyboard and screen automation library.",
+    "target_id": "github:autopilot-rs/autopy"
+  },
+  {
+    "id": "github:mulongxie/uied-webapp",
+    "url": "https://github.com/MulongXie/UIED-WebAPP",
+    "decision": "alias",
+    "reason": "The web demo of UIED, the GUI element detector for screenshots: a Node.js app whose page offers UIED detection with an editable dashboard and links the MulongXie/UIED repository.",
+    "target_id": "github:mulongxie/uied"
+  },
+  {
+    "id": "github:nachafrommars/agent-browser",
+    "url": "https://github.com/NachaFromMars/agent-browser",
+    "decision": "alias",
+    "reason": "An OpenClaw skill package for agent-browser, the ref-based headless browser automation CLI, whose SKILL.md installs it from npm and links vercel-labs/agent-browser for source and issues.",
+    "target_id": "github:vercel-labs/agent-browser"
+  },
+  {
+    "id": "github:nachafrommars/browser-use",
+    "url": "https://github.com/NachaFromMars/browser-use",
+    "decision": "alias",
+    "reason": "A ClawHub skill package for the Browser Use command-line interface, whose SKILL.md documents its open, state, click and input commands and links the browser-use/browser-use skill_cli README.",
+    "target_id": "github:browser-use/browser-use"
+  },
+  {
+    "id": "github:nvidia-nemo/prorl-agent-server",
+    "url": "https://github.com/NVIDIA-NeMo/ProRL-Agent-Server",
+    "decision": "out_of_scope",
+    "reason": "Polar is an RL rollout server for arbitrary agent harnesses, validated on software-engineering tasks with coding harnesses; computer use appears only as a roadmap checkbox.",
+    "reviewed_at": "2026-11-10T01:35:39Z",
+    "evidence": {
+      "url": "https://raw.githubusercontent.com/NVIDIA-NeMo/ProRL-Agent-Server/1c0d381a19193a9b83676ccbf668ba8e7a51337a/README.md",
+      "sha256": "d1efc14cd7fbdf71c77cbcf029de9ceeb427db22c1f1748d9b918025eaf5a518",
+      "retrieved_at": "2026-11-10T01:18:35Z"
+    }
+  },
+  {
+    "id": "github:ny1024/safebench",
+    "url": "https://github.com/NY1024/SafeBench",
+    "decision": "out_of_scope",
+    "reason": "SafeBench is a safety benchmark of harmful image-text and audio queries for multimodal LLMs, judged by a jury of LLMs; its subject is harmful-output safety of chat models.",
+    "reviewed_at": "2026-11-10T01:35:39Z",
+    "evidence": {
+      "url": "https://raw.githubusercontent.com/NY1024/SafeBench/ac490b3cc5e350abb3c54969d0cfca15b4b1fef7/README.md",
+      "sha256": "07965772cb5f8c5791ec5c248469a5911d16ef582700d6c02011593679fe3547",
+      "retrieved_at": "2026-11-10T01:18:35Z"
+    }
+  },
+  {
+    "id": "github:oetcxiaoliu/spice",
+    "url": "https://github.com/oetcxiaoliu/spice",
+    "decision": "out_of_scope",
+    "reason": "A 2019 upload of SPICE server and client sources with build outputs, the remote display protocol for virtual machines; its README file holds only null bytes.",
+    "reviewed_at": "2026-11-10T01:35:39Z",
+    "evidence": {
+      "url": "https://raw.githubusercontent.com/oetcxiaoliu/spice/d58cfb8ca421ffdc17499f70babcd83adfcf4fe1/README",
+      "sha256": "b03298ef97737bbe9b33b942cb52fc5826565adc4498f1a197830a77c58e829d",
+      "retrieved_at": "2026-11-10T01:18:35Z"
+    }
+  },
+  {
+    "id": "github:pacocoursey/next-themes",
+    "url": "https://github.com/pacocoursey/next-themes",
+    "decision": "out_of_scope",
+    "reason": "next-themes is a React and Next.js library for dark mode and theme switching with a useTheme hook; its subject is web app theming.",
+    "reviewed_at": "2026-11-10T01:35:39Z",
+    "evidence": {
+      "url": "https://raw.githubusercontent.com/pacocoursey/next-themes/a7eeabc39cfb37d74ea3d82eac674d0e1851b1cb/README.md",
+      "sha256": "7bc50defab8772b7324f106c06ec65b18f92daece6530cf752a37cdfb8967f5d",
+      "retrieved_at": "2026-11-10T01:18:35Z"
+    }
+  },
+  {
+    "id": "url:01d119d0574bbeb84699",
+    "url": "https://huggingface.co/datasets/RVtech/Audio2Tool",
+    "decision": "out_of_scope",
+    "reason": "A spoken tool-calling benchmark of 16,843 voiced queries mapped to structured tool calls for smart-home, wearable and car voice assistants; its subject is speech-driven API calling.",
+    "reviewed_at": "2026-11-10T01:45:04Z",
+    "evidence": {
+      "url": "https://huggingface.co/datasets/RVtech/Audio2Tool/raw/main/README.md",
+      "sha256": "2ccdfeeb0b81990c8796774b348ae85aa4edc9530773c69752edfe9b847e62f8",
+      "retrieved_at": "2026-11-10T01:19:52Z"
+    }
+  },
+  {
+    "id": "url:05fc5b1f872760909bf9",
+    "url": "https://huggingface.co/datasets/smolagents/aguvis-stage-1",
+    "decision": "alias",
+    "reason": "The Smol2Operator conversion of xlangai/aguvis-stage1 into its unified action space, used for phase-1 grounding training, decided like its stage-2 sibling.",
+    "target_id": "url:06dd5ac7917c45d48509"
+  },
+  {
+    "id": "url:0acabc15683679ea8aed",
+    "url": "https://huggingface.co/FanqingM/MM-Eureka-Qwen-32B",
+    "decision": "out_of_scope",
+    "reason": "The MM-EUREKA README describes MM-Eureka-Qwen-32B as a multimodal math and K12 reasoning model trained with rule-based reinforcement learning and evaluated on MathVista, WeMath and MMK12.",
+    "reviewed_at": "2026-11-10T01:45:04Z",
+    "evidence": {
+      "url": "https://huggingface.co/FanqingM/MM-Eureka-Qwen-32B",
+      "sha256": "c0ddb47920e77135567b79489ad6cb5c737b0df61a858bc704ed768fe46126aa",
+      "retrieved_at": "2026-11-10T01:18:36Z"
+    }
+  },
+  {
+    "id": "url:13914e49a2e5de982b6e",
+    "url": "https://huggingface.co/FanqingM/MM-Eureka-Qwen-7B",
+    "decision": "out_of_scope",
+    "reason": "The MM-EUREKA README describes MM-Eureka-Qwen-7B as a multimodal math and K12 reasoning model trained with rule-based reinforcement learning and evaluated on MathVista, WeMath and MMK12.",
+    "reviewed_at": "2026-11-10T01:45:04Z",
+    "evidence": {
+      "url": "https://huggingface.co/FanqingM/MM-Eureka-Qwen-7B/raw/main/README.md",
+      "sha256": "9af5f253d6caa9913614cf51950071efeb0ccc5fdbf49876b860609e6b6ac770",
+      "retrieved_at": "2026-11-10T01:18:36Z"
+    }
+  },
+  {
+    "id": "url:14ea32803bd58ccbf0fe",
+    "url": "https://huggingface.co/mllmTeam/qwen-1.5-1.8b-chat-mllm",
+    "decision": "out_of_scope",
+    "reason": "Quantized Qwen 1.5 1.8B chat weights in the .mllm format of the mllm inference engine for mobile and edge devices; the mllm README lists them among its supported language models.",
+    "reviewed_at": "2026-11-10T01:45:04Z",
+    "evidence": {
+      "url": "https://huggingface.co/mllmTeam/qwen-1.5-1.8b-chat-mllm",
+      "sha256": "21f5449b0166b121942d40cd761d753e10f8996a91a17475599fd2541682f44c",
+      "retrieved_at": "2026-11-10T01:18:37Z"
+    }
+  },
+  {
+    "id": "url:23dab7abc4fc46085012",
+    "url": "https://huggingface.co/datasets/smolagents/aguvis-stage-2",
+    "decision": "alias",
+    "reason": "The Smol2Operator conversion of xlangai/aguvis-stage2 into its unified action space; the Smol2Operator post describes it as the fully formatted version of that dataset.",
+    "target_id": "url:b5e2127e07f692d516b9"
+  },
+  {
+    "id": "url:247724b6269724b0cbd0",
+    "url": "https://huggingface.co/datasets/Willtime2006/Static-FineBench",
+    "decision": "alias",
+    "reason": "A second upload of the FineState-Bench data held at wumiaoshou/Static-FineBench: the two share 2,294 files with identical JSON annotations, and the wumiaoshou upload is earlier and also holds XML annotations.",
+    "target_id": "url:94adc54bf1cd168da768"
+  },
+  {
+    "id": "url:25d827c3632ae849bd7a",
+    "url": "https://huggingface.co/datasets/PersonalAILab/AFM-WebAgent-SFT-Dataset",
+    "decision": "out_of_scope",
+    "reason": "Chain-of-Agents SFT trajectories for a web agent that calls web_search and crawl_page tool servers, distilled from multi-agent systems on TaskCraft tasks; the trajectories are text tool calls.",
+    "reviewed_at": "2026-11-10T01:45:04Z",
+    "evidence": {
+      "url": "https://huggingface.co/datasets/PersonalAILab/AFM-WebAgent-SFT-Dataset/raw/main/README.md",
+      "sha256": "4c75622c895633d9a2e870b45d48046ca1a1d3bdfdd6178ef91cb2f72664b72e",
+      "retrieved_at": "2026-11-10T01:18:37Z"
+    }
+  },
+  {
+    "id": "url:55e1984776b99054def2",
+    "url": "https://huggingface.co/datasets/jacklishufan/android_control",
+    "decision": "alias",
+    "reason": "A webdataset tar of AndroidControl episode screenshots that the MobileWorldBench README lists as its \"Android Control Images\"; another copy of the AndroidControl dataset's screens.",
+    "target_id": "component:google-research/android_control"
+  },
+  {
+    "id": "url:2f51fad53f40798dca22",
+    "url": "https://huggingface.co/datasets/Tiger14n/RVC-GUI",
+    "decision": "out_of_scope",
+    "reason": "ZIP packages of RVC GUI, a voice-conversion desktop app whose GitHub README describes it as for audio file inference with a HuBERT model; its subject is audio voice conversion.",
+    "reviewed_at": "2026-11-10T01:47:49Z",
+    "evidence": {
+      "url": "https://huggingface.co/datasets/Tiger14n/RVC-GUI/raw/main/README.md",
+      "sha256": "3e0e15fa0c5cc81675bd69af8eb469d128a725c1a7bfc71f03b7877b7b650567",
+      "retrieved_at": "2026-11-10T01:18:37Z"
+    }
+  },
+  {
+    "id": "url:3d3e841ab0d65b18523c",
+    "url": "https://huggingface.co/datasets/YaxinLuo/NextGen-CAPTCHAs",
+    "decision": "alias",
+    "reason": "Hub copy of the captcha_data/ benchmark snapshot of Next-Gen CAPTCHAs, which that repository's README links as its dataset download; the same 27 CAPTCHA family folders sit in the repository.",
+    "target_id": "github:metaagentx/nextgen-captchas"
+  },
+  {
+    "id": "url:44083141a8f3d05b7a54",
+    "url": "https://huggingface.co/Ole1/Joy_Caption_Batch-GUI",
+    "decision": "out_of_scope",
+    "reason": "A PyQt5 desktop app script with JoyCaption CLIP, image-adapter and LoRA text-model weights for batch image captioning; GUI here names the app's own window, and its subject is image captioning.",
+    "reviewed_at": "2026-11-10T01:47:49Z",
+    "evidence": {
+      "url": "https://huggingface.co/Ole1/Joy_Caption_Batch-GUI/raw/main/README.md",
+      "sha256": "d8d7a46d41a1a37fe4f0a5f637bf55c649310185329127d8a2204632e480be17",
+      "retrieved_at": "2026-11-10T01:18:38Z"
+    }
+  },
+  {
+    "id": "url:6d9b772fcb41da7c6152",
+    "url": "https://huggingface.co/spaces/agentsea/wave-ui-viz",
+    "decision": "alias",
+    "reason": "The Space's app.py is a viewer for the agentsea/wave-ui-25k dataset: it loads that dataset, draws each element's bounding box on its screenshot and lists the annotation fields.",
+    "target_id": "url:f2cf4ec32aa0b3ba6b95"
+  },
+  {
+    "id": "url:798290a27386d4ada4a9",
+    "url": "https://huggingface.co/datasets/FanqingM/MM-Eureka-Dataset",
+    "decision": "out_of_scope",
+    "reason": "The MM-Eureka README links this dataset as training data for its multimodal reasoning models trained with rule-based reinforcement learning; the files are K12 and MMPR image archives for math and visual reasoning.",
+    "reviewed_at": "2026-11-10T01:53:02Z",
+    "evidence": {
+      "url": "https://huggingface.co/datasets/FanqingM/MM-Eureka-Dataset",
+      "sha256": "d2cf255b4539b8071620cba1a656406528162153dffde7e12c047e261ad006f2",
+      "retrieved_at": "2026-11-10T01:18:41Z"
+    }
+  },
+  {
+    "id": "url:84ce80ef300f3b8de66d",
+    "url": "https://huggingface.co/datasets/topdu/MER-17M",
+    "decision": "out_of_scope",
+    "reason": "The OpenOCR README releases MER-17M together with CMER, its complex mathematical expression recognition work; the dataset is webdataset tar shards of formula images for OCR.",
+    "reviewed_at": "2026-11-10T01:53:02Z",
+    "evidence": {
+      "url": "https://huggingface.co/datasets/topdu/MER-17M/raw/main/README.md",
+      "sha256": "4bcf87ecfbbb8e07a01b21415a970c8b53a5283bf6872b657040d3f45c9241f7",
+      "retrieved_at": "2026-11-10T01:18:41Z"
+    }
+  },
+  {
+    "id": "url:891329fc95617395b58f",
+    "url": "https://huggingface.co/datasets/smolagents/android-control",
+    "decision": "alias",
+    "reason": "A Parquet repackaging of AndroidControl: the same episode_id, goal, screenshots, actions (action_type, app_name, direction, text, x, y) and step_instructions fields, with 12,232 train and 3,051 test episodes.",
+    "target_id": "component:google-research/android_control"
+  },
+  {
+    "id": "url:8caadf7f990c275d4185",
+    "url": "https://huggingface.co/datasets/LangAGI-Lab/Mind2Web-cleaned-lite-value-model-w-cot-formatted-test",
+    "decision": "alias",
+    "reason": "The value-model test set url:9e2c14b01faf8d48b4e9 rewritten by the same authors into instruction, input and output prompts: both cards give 6125 examples, and the WMA-Agents README lists them as Value Model Test and Value Model Formatted Test.",
+    "target_id": "url:9e2c14b01faf8d48b4e9"
+  },
+  {
+    "id": "url:9d4a551d03898f04e34d",
+    "url": "https://huggingface.co/datasets/smz8599/GTA_data_no_web",
+    "decision": "alias",
+    "reason": "The GUI-AIMA README describes this repository as the GTA1 grounding data with the web part removed, re-uploaded in seven archive parts; the GTA1 project publishes the source dataset.",
+    "target_id": "url:d46306ac1d0a0cce573a"
+  },
+  {
+    "id": "url:a166f8bbaf1bdcc931cb",
+    "url": "https://huggingface.co/datasets/PersonalAILab/AFM-WebAgent-RL-Dataset",
+    "decision": "out_of_scope",
+    "reason": "Text RL prompts for Chain-of-Agents web search agents: each row is a question answered through think, plan and tool steps that call web_search and crawl_page, with target answers.",
+    "reviewed_at": "2026-11-10T01:55:38Z",
+    "evidence": {
+      "url": "https://huggingface.co/datasets/PersonalAILab/AFM-WebAgent-RL-Dataset/raw/main/README.md",
+      "sha256": "4c75622c895633d9a2e870b45d48046ca1a1d3bdfdd6178ef91cb2f72664b72e",
+      "retrieved_at": "2026-11-10T01:18:42Z"
+    }
+  },
+  {
+    "id": "url:a6f3a5ff1d72022f449e",
+    "url": "https://huggingface.co/FanqingM/MM-Eureka-8B",
+    "decision": "out_of_scope",
+    "reason": "MM-Eureka-8B is the InternVL-based release of MM-EUREKA, a multimodal math and K12 reasoning model trained with rule-based reinforcement learning; its card points users to the newer Qwen-based models.",
+    "reviewed_at": "2026-11-10T01:55:38Z",
+    "evidence": {
+      "url": "https://huggingface.co/FanqingM/MM-Eureka-8B/raw/main/README.md",
+      "sha256": "a413fb5221e837333e03c1fd8c0823471cdcf6f24e2ff4f8946bfe39cb260438",
+      "retrieved_at": "2026-11-10T01:18:42Z"
+    }
+  },
+  {
+    "id": "url:b320a607bb563e99e95e",
+    "url": "https://huggingface.co/datasets/sparklabutah/timewarp-env-data",
+    "decision": "alias",
+    "reason": "The setup files that TimeWarp's setup.sh downloads: most of the 6.28 GB is a mirror of the WebShop product data, plus the Wiki and News index files of the TimeWarp environments.",
+    "target_id": "github:sparklabutah/timewarp"
+  },
+  {
+    "id": "url:b3ec31e442a5a9673420",
+    "url": "https://huggingface.co/mradermacher/SmolVLM2-2.2B-Instruct-Agentic-GUI-GGUF",
+    "decision": "alias",
+    "reason": "GGUF quantizations of smolagents/SmolVLM2-2.2B-Instruct-Agentic-GUI, which the Smol2Operator README names as the model its GUI-agent training recipe produced; another address of the Smol2Operator release.",
+    "target_id": "github:huggingface/smol2operator"
+  },
+  {
+    "id": "url:c995f9bd42f67e5e280e",
+    "url": "https://huggingface.co/datasets/smz8599/gui-aima-data",
+    "decision": "alias",
+    "reason": "A 97 GB convenience bundle of the GUI-AIMA training data: the GUI-AIMA README lists GUI-Actor-Data, UGround-single and GTA1 without web as the sources and offers this repository as one download.",
+    "target_id": "github:sjz5202/gui-aima"
+  },
+  {
+    "id": "url:d3874b7f93f40f982ec2",
+    "url": "https://huggingface.co/datasets/Minuskid/SimpAgent-data",
+    "decision": "alias",
+    "reason": "SimpAgent's training annotations: the AITW, Mind2Web, AndroidControl and GUI-Odyssey annotations rewritten into SimpAgent's prompt format, without images, as linked from the SimpAgent README.",
+    "target_id": "github:jiutian-vl/simpagent"
+  },
+  {
+    "id": "url:d49ba5bffd42baa51993",
+    "url": "https://huggingface.co/supra3d/supra-tex",
+    "decision": "out_of_scope",
+    "reason": "A 3D texturing pipeline whose pipeline.json pairs Qwen-Image-2.1 with Pixal3D geometry, MoGe-2, DINOv3 and RMBG-2.0 checkpoints and a PBR material adapter; its subject is 3D asset texturing.",
+    "reviewed_at": "2026-11-10T01:59:49Z",
+    "evidence": {
+      "url": "https://huggingface.co/supra3d/supra-tex/raw/main/README.md",
+      "sha256": "4093f7cb992dcb32aa30b11ea00cbe1b63b4398a40aff445d1fcc4eaeb1ac021",
+      "retrieved_at": "2026-11-10T01:18:44Z"
+    }
+  },
+  {
+    "id": "url:d4b5cf6fee1c4093a61f",
+    "url": "https://huggingface.co/datasets/Azily/UniClawBench-Assets",
+    "decision": "alias",
+    "reason": "Binary task fixtures of UniClawBench (screenshots, PDFs, media and archives) laid out to mirror the code repository's injection/ task paths and placed there by its asset bootstrap command; part of the UniClawBench release.",
+    "target_id": "github:hku-mmlab/uniclawbench"
+  },
+  {
+    "id": "url:d6a1636277b933005a8e",
+    "url": "https://huggingface.co/FanqingM/MM-Eureka-Zero-38B",
+    "decision": "out_of_scope",
+    "reason": "A 38B MM-Eureka-Zero checkpoint from the MM-EUREKA project, which applies rule-based reinforcement learning to multimodal reasoning with InternVL models.",
+    "reviewed_at": "2026-11-10T01:59:49Z",
+    "evidence": {
+      "url": "https://huggingface.co/FanqingM/MM-Eureka-Zero-38B",
+      "sha256": "aecd01fcaf9690c2224682046e695de7f8ebea3d7e5a71b912a0f19e612e5f34",
+      "retrieved_at": "2026-11-10T01:18:44Z"
+    }
+  },
+  {
+    "id": "url:e28b33f6cd860675a897",
+    "url": "https://huggingface.co/datasets/YijiaFan/CaPtain-SFT-Data",
+    "decision": "out_of_scope",
+    "reason": "SFT data of CaPtain: 24,440 rows of synthetic robot-arm code-as-policy trajectories collected in simulation on LIBERO, plus visual QA; its subject is robot manipulation.",
+    "reviewed_at": "2026-11-10T01:59:49Z",
+    "evidence": {
+      "url": "https://huggingface.co/datasets/YijiaFan/CaPtain-SFT-Data/raw/main/README.md",
+      "sha256": "45ef34506d5baa3c6ae0bda4b8aeef35da10f053f3f1e6cde44052ec7832f640",
+      "retrieved_at": "2026-11-10T01:20:05Z"
+    }
+  },
+  {
+    "id": "url:ea75a3a35abbf35ce5f4",
+    "url": "https://huggingface.co/bartowski/smolagents_SmolVLM2-2.2B-Instruct-Agentic-GUI-GGUF",
+    "decision": "alias",
+    "reason": "llama.cpp GGUF quantizations of smolagents/SmolVLM2-2.2B-Instruct-Agentic-GUI, the GUI agent model that the Smol2Operator post names as the output of its training recipe; a quantized copy of the Smol2Operator release.",
+    "target_id": "github:huggingface/smol2operator"
+  },
+  {
+    "id": "url:031c86eaad2b766793d4",
+    "url": "https://openai.com/index/gpt-4o-mini-advancing-cost-efficient-intelligence",
+    "decision": "out_of_scope",
+    "reason": "OpenAI's GPT-4o mini launch post, a small general-purpose text and vision model announced for low-cost API use, with no computer-use or GUI material.",
+    "reviewed_at": "2026-11-10T02:05:56Z",
+    "evidence": {
+      "url": "https://web.archive.org/web/2026/https://openai.com/index/gpt-4o-mini-advancing-cost-efficient-intelligence/",
+      "sha256": "2aaa11b93a0bfb6f08a02790e751d83c1ebe6dd48d5f31fdcfa01cbebb374541",
+      "retrieved_at": "2026-11-10T01:48:48Z"
+    }
+  },
+  {
+    "id": "url:2d3a533e91db8cea0f48",
+    "url": "https://openai.com/index/hello-gpt-4o",
+    "decision": "out_of_scope",
+    "reason": "OpenAI's Hello GPT-4o launch post, a general model reasoning across audio, vision and text in real time, with demos and no computer-use or GUI material.",
+    "reviewed_at": "2026-11-10T02:05:56Z",
+    "evidence": {
+      "url": "https://web.archive.org/web/2026/https://openai.com/index/hello-gpt-4o/",
+      "sha256": "5ebcfd7ba72cec410a0c00a8659932d13db33438f2e1a02d1b3374fa11e03768",
+      "retrieved_at": "2026-11-10T01:48:51Z"
+    }
+  },
+  {
+    "id": "url:6224c7f61c680453ec99",
+    "url": "https://www.bloomberg.com/news/articles/2024-11-13/openai-nears-launch-of-ai-agents-to-automate-tasks-for-users",
+    "decision": "not_a_resource",
+    "reason": "A November 2024 Bloomberg news report, attributed to people familiar with the matter, on OpenAI's upcoming computer-using agent codenamed Operator; a press report ahead of the product's release."
+  },
+  {
+    "id": "url:646f1157fd8be029a59f",
+    "url": "https://openai.com/index/introducing-o3-and-o4-mini",
+    "decision": "out_of_scope",
+    "reason": "OpenAI's o3 and o4-mini launch post covers reasoning models with tool access and benchmark results in math, coding and vision, with no computer-use or GUI section.",
+    "reviewed_at": "2026-11-10T02:05:56Z",
+    "evidence": {
+      "url": "https://web.archive.org/web/2026/https://openai.com/index/introducing-o3-and-o4-mini/",
+      "sha256": "4c1001177c8f33a8c61995c4a3b73aab7ab222006d558ff89c393558db659b9d",
+      "retrieved_at": "2026-11-10T01:48:49Z"
+    }
+  },
+  {
+    "id": "url:6b25d42c771397f5afca",
+    "url": "https://seed-tars.com/1.5",
+    "decision": "alias",
+    "reason": "seed-tars.com/1.5 is the UI-TARS-1.5 release blog; the UI-TARS repository README links it as the blog for the 1.5 model and carries the same introduction, so it is another address of UI-TARS.",
+    "target_id": "github:bytedance/ui-tars"
+  },
+  {
+    "id": "url:6ef140e52d572f66d2b8",
+    "url": "https://www.postman.com/idan-775bed48-7905039/browser-automation-hub",
+    "decision": "not_a_resource",
+    "reason": "A Postman workspace that lists 30 collections; each documents one Browser Automation Hub npm package for an enterprise web app and links its GitHub repository."
+  },
+  {
+    "id": "url:71e3df995abb51b4f661",
+    "url": "https://arena.xlang.ai",
+    "decision": "alias",
+    "reason": "arena.xlang.ai is the website of Computer Agent Arena, the open platform where users evaluate computer agents on real tasks; the xlang-ai/computer-agent-arena README links it as the project website.",
+    "target_id": "github:xlang-ai/computer-agent-arena"
+  },
+  {
+    "id": "url:76b3c8418dfcd7192aab",
+    "url": "https://deepmind.google/technologies/project-mariner",
+    "decision": "alias",
+    "reason": "The DeepMind Project Mariner page describes the browser-agent research prototype that observes the browser, plans and acts; it is another address of Project Mariner.",
+    "target_id": "url:12d789d450207bd6d5da"
+  },
+  {
+    "id": "url:7ae659b00ca85338fe0a",
+    "url": "https://os-copilot.github.io/OpenMobile2-Sim",
+    "decision": "alias",
+    "reason": "OpenMobile2-Sim is a static GitHub Pages build of the MobileGym++ simulator, embedded in the OpenMobile-2 project page; it is another address of MobileGym++.",
+    "target_id": "github:openmobile2/mobilegym-plusplus"
+  },
+  {
+    "id": "url:89768830f010f4081bd6",
+    "url": "https://lightpanda.io/docs/open-source/guides/mcp-server",
+    "decision": "alias",
+    "reason": "The address redirects to Lightpanda's MCP documentation, which explains running the lightpanda mcp command of the Lightpanda browser; it is documentation of Lightpanda Browser.",
+    "target_id": "github:lightpanda-io/browser"
+  },
+  {
+    "id": "url:900a4ea90640baaf11d0",
+    "url": "https://autodevice.io/benchmark",
+    "decision": "not_a_resource",
+    "reason": "autodevice.io/benchmark returns no response because the domain no longer resolves, and the Wayback Machine holds no capture of the benchmark page."
+  },
+  {
+    "id": "url:c4f9e1e096522afa3017",
+    "url": "https://finalrun.app/benchmark",
+    "decision": "alias",
+    "reason": "finalrun.app/benchmark is FinalRun's AndroidWorld results page reporting 113 of 116 tasks; the site links its open-source agent repository finalrun-agent, so it is another address of finalrun-agent.",
+    "target_id": "github:final-run/finalrun-agent"
+  },
+  {
+    "id": "url:e68b8a6065350ceab375",
+    "url": "https://zerostep.com",
+    "decision": "not_a_resource",
+    "reason": "zerostep.com no longer resolves and the product repository github.com/zerostep-ai/zerostep returns 404; the last Wayback capture of the ZeroStep Playwright ai() add-on is from 2026-05-24."
+  },
+  {
+    "id": "url:ed599761bbe23dfce405",
+    "url": "https://www.adept.ai/blog/fuyu-8b",
+    "decision": "alias",
+    "reason": "Adept's October 2023 Fuyu-8B release post announces the open multimodal model built for digital agents and points to its Hugging Face release; it is another address of Fuyu-8B.",
+    "target_id": "url:c6e1ffa1f4c6561c3b22"
+  },
+  {
+    "id": "url:f71c8181cb28b8bda0ab",
+    "url": "https://help.openai.com/en/articles/10561834-operator-release-notes",
+    "decision": "not_a_resource",
+    "reason": "The Operator release-notes page now serves \"That page doesn't exist\"; captures since September 2025 are 404, and the last readable one records Operator's deprecation into ChatGPT agent."
   }
 ]

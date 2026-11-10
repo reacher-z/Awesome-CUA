@@ -2,9 +2,9 @@
 
 [Home](../../README.md) · [All topics](../topics.md) · [Full arXiv bibliography](../papers.md)
 
-134 source-reviewed resources tagged `ui-design`. Curated metadata; unknown facts are shown as —.
+136 source-reviewed resources tagged `ui-design`. Curated metadata; unknown facts are shown as —.
 
-**Contents:** [Benchmarks (13)](#benchmarks) · [Datasets (6)](#datasets) · [Models (5)](#models) · [Agents (10)](#agents) · [Frameworks (14)](#frameworks) · [Tools (28)](#tools) · [Infrastructure (1)](#infrastructure) · [Learning resources (1)](#learning-resources) · [Surveys (1)](#surveys) · [Papers (55)](#papers)
+**Contents:** [Benchmarks (13)](#benchmarks) · [Datasets (6)](#datasets) · [Models (5)](#models) · [Agents (10)](#agents) · [Frameworks (15)](#frameworks) · [Tools (29)](#tools) · [Infrastructure (1)](#infrastructure) · [Learning resources (1)](#learning-resources) · [Surveys (1)](#surveys) · [Papers (55)](#papers)
 
 ## Benchmarks
 
@@ -74,6 +74,7 @@
 | [RecreationWorld](https://github.com/QwenLM/RecreationWorld) | cross-platform, desktop, linux, macos, windows, android, web | [2609.22000](https://arxiv.org/abs/2609.22000) (2026) | code MIT | Framework for hybrid computer-use agents that inspect running reference apps, implement replicas with coding tools, and verify behavior across five platforms. | [✓ 2026‑11‑09](https://raw.githubusercontent.com/QwenLM/RecreationWorld/HEAD/README.md) |
 | [SameState WebMCP](https://github.com/breeznik/samestate-webmcp) | web | — | code MIT | WebMCP reference architecture exposing Redux frontend state directly to browser agents for synchronized human-agent interaction. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/breeznik/samestate-webmcp/main/README.md) |
 | [Touchline](https://github.com/edenbuilds/touchline) | web | — | code MIT | Multi-agent browser squad for evidence-led website inspection and frontend reconstruction. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/edenbuilds/touchline/main/README.md) |
+| [UXAgent](https://uxagent.hailab.io) | web | — | — | Usability-testing system that generates simulated user personas, has LLM agents work through a target website via a browser connector, and shows their survey answers and action logs in a result viewer. | [✓ 2026‑11‑10](https://uxagent.hailab.io) |
 | [Venxuix Dccide](https://github.com/venxuix-dccide/Venxuix) | desktop, windows | — | — | 2D/3D agentic operating environment layered above Windows where humans and AI agents co-orchestrate desktop tasks. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/venxuix-dccide/Venxuix/main/README.md) |
 | [WebMCP](https://github.com/webmachinelearning/webmcp) | web | — | — | A client-side web API proposal that lets pages expose structured JavaScript tools to browser agents. Agents can invoke page functions while sharing the visible interface and context with users. | [✓ 2026‑11‑09](https://raw.githubusercontent.com/webmachinelearning/webmcp/HEAD/README.md) |
 | [WebMCPcss](https://github.com/cochinoraptor/WebMCPcss) | web | — | code MIT | Extends the WebMCP standard by declaring agent-callable website actions and semantic affordances directly through CSS rules. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/cochinoraptor/WebMCPcss/main/README.md) |
@@ -103,6 +104,7 @@
 | [OpenUI](https://github.com/wandb/openui) | web | — | code Apache-2.0 | OpenUI lets users and agents generate, preview, and iteratively edit live HTML/Tailwind/React UI components from natural language and screenshots. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/wandb/openui/HEAD/README.md) |
 | [periscope-mcp](https://github.com/segentic-lab/periscope-mcp) | web | — | code AGPL-3.0 | Web-application QA and analysis MCP server exposing 74 Playwright tools for authenticated flows, visual regression, and accessibility audits. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/segentic-lab/periscope-mcp/HEAD/README.md) |
 | [Pi Desktop for Windows](https://github.com/AYOUYI/pi-desktop-for-windows) | desktop, windows | — | code MIT | Native Windows desktop GUI client and workspace for the Pi coding and computer-use agent. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/AYOUYI/pi-desktop-for-windows/main/README.md) |
+| [Pix to App](https://github.com/soumikmohianuta/pixtoapp) | android | — | code BSD-3-Clause | A Python pipeline that turns a mobile app screenshot into an Android project, using Canny edge contours for the view hierarchy, Tesseract OCR for text and generated layout, style, color and string XML. | [✓ 2026‑11‑10](https://raw.githubusercontent.com/soumikmohianuta/pixtoapp/f103a580e015ef7779998f14c9533a238a4bf1d1/README.md) |
 | [PixelCheck](https://github.com/xcodethink/pixelcheck) | web | — | code MIT | Drop-in MCP server providing five visual browser primitives for frontend coding agents to inspect, screenshot, and verify live web UIs. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/xcodethink/pixelcheck/HEAD/README.md) |
 | [pursr](https://github.com/0xheycat/pursr) | web | — | code MIT | Visual QA, accessibility auditing, screenshot diffing, and MCP browser automation toolkit. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/0xheycat/pursr/HEAD/README.md) |
 | [ReproSight](https://github.com/tungcorn/ReproSight) | web | — | code MIT | ReproSight is a CLI that lets coding agents reproduce visual defects in a browser, collect evidence, isolate edits in a worktree, and run regression checks. | [✓ 2026‑11‑09](https://raw.githubusercontent.com/tungcorn/ReproSight/HEAD/README.md) |

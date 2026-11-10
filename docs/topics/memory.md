@@ -2,9 +2,9 @@
 
 [Home](../../README.md) · [All topics](../topics.md) · [Full arXiv bibliography](../papers.md)
 
-354 source-reviewed resources tagged `memory`. Curated metadata; unknown facts are shown as —.
+356 source-reviewed resources tagged `memory`. Curated metadata; unknown facts are shown as —.
 
-**Contents:** [Benchmarks (4)](#benchmarks) · [Datasets (4)](#datasets) · [Models (4)](#models) · [Agents (49)](#agents) · [Frameworks (52)](#frameworks) · [Tools (21)](#tools) · [Infrastructure (1)](#infrastructure) · [Products (4)](#products) · [Learning resources (2)](#learning-resources) · [Surveys (3)](#surveys) · [Papers (210)](#papers)
+**Contents:** [Benchmarks (4)](#benchmarks) · [Datasets (4)](#datasets) · [Models (6)](#models) · [Agents (49)](#agents) · [Frameworks (52)](#frameworks) · [Tools (21)](#tools) · [Infrastructure (1)](#infrastructure) · [Products (4)](#products) · [Learning resources (2)](#learning-resources) · [Surveys (3)](#surveys) · [Papers (210)](#papers)
 
 ## Benchmarks
 
@@ -26,14 +26,14 @@
 
 ## Models
 
-All entries in this section: cross-platform, desktop, android, web.
-
-| Resource | Paper | License | Description | Evidence |
-| --- | --- | --- | --- | --- |
-| [GUI-Owl 1.5 32B Instruct](https://huggingface.co/mPLUG/GUI-Owl-1.5-32B-Instruct) | [2602.16855](https://arxiv.org/abs/2602.16855) (2026) | weights MIT | Instruct variant of the 32B GUI-Owl 1.5 native GUI agent model, built on Qwen3-VL and released with Mobile-Agent-v3.5 for desktop, mobile and browser control, with about 33.4B BF16 parameters under MIT. | [✓ 2026‑10‑18](https://huggingface.co/mPLUG/GUI-Owl-1.5-32B-Instruct/raw/6154cc22f19e7375994707986c1bd459e29621ac/README.md) |
-| [GUI-Owl 1.5 32B Think](https://huggingface.co/mPLUG/GUI-Owl-1.5-32B-Think) | [2602.16855](https://arxiv.org/abs/2602.16855) (2026) | weights MIT | Thinking variant of the 32B GUI-Owl 1.5 native GUI agent model, built on Qwen3-VL and released with Mobile-Agent-v3.5 for desktop, mobile and browser control, with about 33.4B BF16 parameters under MIT. | [✓ 2026‑10‑18](https://huggingface.co/mPLUG/GUI-Owl-1.5-32B-Think/raw/6635d0e256809902add2e091050c7f00b6c25c93/README.md) |
-| [GUI-Owl 1.5 8B Instruct](https://huggingface.co/mPLUG/GUI-Owl-1.5-8B-Instruct) | [2602.16855](https://arxiv.org/abs/2602.16855) (2026) | weights MIT | Instruct variant of the 8B GUI-Owl 1.5 native GUI agent model, built on Qwen3-VL and released with Mobile-Agent-v3.5 for desktop, mobile and browser control, with about 8.8B BF16 parameters under MIT. | [✓ 2026‑10‑18](https://huggingface.co/mPLUG/GUI-Owl-1.5-8B-Instruct/raw/06d5faecff74840bab2be2425e9c42667a5d04fc/README.md) |
-| [GUI-Owl 1.5 8B Think](https://huggingface.co/mPLUG/GUI-Owl-1.5-8B-Think) | [2602.16855](https://arxiv.org/abs/2602.16855) (2026) | weights MIT | Thinking variant of the 8B GUI-Owl 1.5 native GUI agent model, built on Qwen3-VL and released with Mobile-Agent-v3.5 for desktop, mobile and browser control, with about 8.8B BF16 parameters under MIT. | [✓ 2026‑10‑18](https://huggingface.co/mPLUG/GUI-Owl-1.5-8B-Think/raw/afe3707fc84caebc4d7046118b34493ecf8bb060/README.md) |
+| Resource | Environments | Paper | License | Description | Evidence |
+| --- | --- | --- | --- | --- | --- |
+| [GUI-Owl 1.5 32B Instruct](https://huggingface.co/mPLUG/GUI-Owl-1.5-32B-Instruct) | cross-platform, desktop, android, web | [2602.16855](https://arxiv.org/abs/2602.16855) (2026) | weights MIT | Instruct variant of the 32B GUI-Owl 1.5 native GUI agent model, built on Qwen3-VL and released with Mobile-Agent-v3.5 for desktop, mobile and browser control, with about 33.4B BF16 parameters under MIT. | [✓ 2026‑10‑18](https://huggingface.co/mPLUG/GUI-Owl-1.5-32B-Instruct/raw/6154cc22f19e7375994707986c1bd459e29621ac/README.md) |
+| [GUI-Owl 1.5 32B Think](https://huggingface.co/mPLUG/GUI-Owl-1.5-32B-Think) | cross-platform, desktop, android, web | [2602.16855](https://arxiv.org/abs/2602.16855) (2026) | weights MIT | Thinking variant of the 32B GUI-Owl 1.5 native GUI agent model, built on Qwen3-VL and released with Mobile-Agent-v3.5 for desktop, mobile and browser control, with about 33.4B BF16 parameters under MIT. | [✓ 2026‑10‑18](https://huggingface.co/mPLUG/GUI-Owl-1.5-32B-Think/raw/6635d0e256809902add2e091050c7f00b6c25c93/README.md) |
+| [GUI-Owl 1.5 8B Instruct](https://huggingface.co/mPLUG/GUI-Owl-1.5-8B-Instruct) | cross-platform, desktop, android, web | [2602.16855](https://arxiv.org/abs/2602.16855) (2026) | weights MIT | Instruct variant of the 8B GUI-Owl 1.5 native GUI agent model, built on Qwen3-VL and released with Mobile-Agent-v3.5 for desktop, mobile and browser control, with about 8.8B BF16 parameters under MIT. | [✓ 2026‑10‑18](https://huggingface.co/mPLUG/GUI-Owl-1.5-8B-Instruct/raw/06d5faecff74840bab2be2425e9c42667a5d04fc/README.md) |
+| [GUI-Owl 1.5 8B Think](https://huggingface.co/mPLUG/GUI-Owl-1.5-8B-Think) | cross-platform, desktop, android, web | [2602.16855](https://arxiv.org/abs/2602.16855) (2026) | weights MIT | Thinking variant of the 8B GUI-Owl 1.5 native GUI agent model, built on Qwen3-VL and released with Mobile-Agent-v3.5 for desktop, mobile and browser control, with about 8.8B BF16 parameters under MIT. | [✓ 2026‑10‑18](https://huggingface.co/mPLUG/GUI-Owl-1.5-8B-Think/raw/afe3707fc84caebc4d7046118b34493ecf8bb060/README.md) |
+| [lora_qformer_test_V4-700_merged](https://huggingface.co/WenyiWU0111/lora_qformer_test_V4-700_merged) | web | [2510.09038](https://arxiv.org/abs/2510.09038) (2025) | — | Qwen2.5-VL-7B-Instruct merged with the CoMEM memory module, which compresses past GUI trajectories into 8 continuous embeddings through a LoRA-tuned Q-Former, for web agent tasks. | [✓ 2026‑11‑10](https://huggingface.co/api/models/WenyiWU0111/lora_qformer_test_V4-700_merged) |
+| [lora_qformer_uitars_test_V1-400_merged](https://huggingface.co/WenyiWU0111/lora_qformer_uitars_test_V1-400_merged) | web | [2510.09038](https://arxiv.org/abs/2510.09038) (2025) | — | UI-TARS-V1.5-7B checkpoint with CoMEM continuous memory merged in, where a LoRA-tuned Q-Former compresses retrieved GUI trajectories into fixed-length embeddings for the web agent. | [✓ 2026‑11‑10](https://huggingface.co/api/models/WenyiWU0111/lora_qformer_uitars_test_V1-400_merged) |
 
 ## Agents
 

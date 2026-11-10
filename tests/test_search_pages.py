@@ -469,6 +469,24 @@ class SearchPagesTests(unittest.TestCase):
         robots=urllib.robotparser.RobotFileParser();robots.parse((self.dest/'robots.txt').read_text().splitlines())
         for bot in ['Googlebot','bingbot','OAI-SearchBot','PerplexityBot','Claude-SearchBot']:
             self.assertTrue(robots.can_fetch(bot,SITE+'/papers/'))
+    def test_site_agent_files_are_identical_and_separate_from_the_contributor_file(self):
+        texts={name:(self.dest/name).read_text() for name in ('AGENTS.md','agents.md','agents.txt')}
+        self.assertEqual(len(set(texts.values())),1)
+        text=texts['AGENTS.md']
+        self.assertNotEqual(text,(ROOT/'AGENTS.md').read_text())
+        for needle in ('curl -sL '+SITE+'/resources/<id>/index.md','hf papers read 2404.07972','/api/v1/resources.json','/explore/?q=','/llms-full.txt','/sitemap.xml','/downloads/catalog.jsonl','@misc{awesomecua','/issues/new/choose'):
+            self.assertIn(needle,text)
+
+    def test_markdown_twins_start_with_front_matter_and_home_has_a_faq(self):
+        for path in ('index.md','zh/index.md','papers/index.md','categories/model/index.md'):
+            head=(self.dest/path).read_text().split('\n---\n',1)[0]
+            self.assertTrue(head.startswith('---\ntitle: '),path)
+            for key in ('url: '+SITE,'updated: 20','type: ','lang: '):self.assertIn(key,head,path)
+        for path in ('index.html','zh/index.html'):
+            markup=(self.dest/path).read_text()
+            self.assertIn('"@type":"FAQPage"',markup.replace('": "','":"').replace('" :','":'))
+            self.assertIn('class="cat-faq"',markup)
+
     def test_agent_guides_and_rag_downloads_share_the_actual_catalog(self):
         command='git clone https://github.com/reacher-z/Awesome-CUA.git'
         for path in ['explore/index.html','agents/index.html','zh/agents/index.html','data/index.html','AGENTS.md','llms.txt']:

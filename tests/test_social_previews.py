@@ -44,7 +44,7 @@ class SocialPreviewTests(unittest.TestCase):
                 if 'twitter:image' in meta:self.assertEqual(meta['twitter:image'],meta['og:image'])
                 images[item['path']]=meta['og:image'][0][len(origin):]
                 self.assertEqual(meta['twitter:card'],['summary_large_image'])
-                self.assertEqual(meta['og:site_name'],['AwesomeCUA'])
+                self.assertEqual(meta['og:site_name'],['Awesome CUA' if item['path'] in ('/','/zh/') else 'AwesomeCUA'])
                 self.assertEqual(meta['og:locale'],['zh_CN' if head.lang=='zh-CN' else 'en_US'])
                 self.assertEqual((meta['og:image:width'],meta['og:image:height']),(['1200'],['630']))
                 self.assertTrue(meta['og:image:alt'][0])

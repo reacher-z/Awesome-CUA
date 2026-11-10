@@ -54,10 +54,10 @@ class AgentFileTests(unittest.TestCase):
     def test_llms_txt_follows_the_llmstxt_format_and_every_link_resolves(self):
         text = (self.dest / 'llms.txt').read_text()
         lines = text.splitlines()
-        self.assertEqual(lines[0], '# AwesomeCUA')
+        self.assertEqual(lines[0], '# Awesome CUA')
         self.assertTrue(lines[2].startswith('> '))
         headings = [line for line in lines if line.startswith('#')]
-        self.assertEqual([h for h in headings if h.startswith('# ')], ['# AwesomeCUA'])
+        self.assertEqual([h for h in headings if h.startswith('# ')], ['# Awesome CUA'])
         self.assertEqual(headings[-1], '## Optional')
         self.assertLessEqual(len(text.encode()), 50_000)
         links = re.findall(r'\]\((https://awesomecua\.com/[^)]*)\)', text)
@@ -235,7 +235,7 @@ class AgentFileTests(unittest.TestCase):
     def test_agent_category_heading_names_the_kind_once(self):
         for path, heading in (('categories/agent/index.md', '# Computer-use agents\n'), ('zh/categories/agent/index.md', '# 计算机使用智能体\n')):
             with self.subTest(path=path):
-                self.assertTrue((self.dest / path).read_text().startswith(heading))
+                self.assertTrue((self.dest / path).read_text().split('\n---\n\n', 1)[1].startswith(heading))
         self.assertIn('<h1>Computer-use agents</h1>', (self.dest / 'categories/agent/index.html').read_text())
         self.assertIn('<h1>计算机使用智能体</h1>', (self.dest / 'zh/categories/agent/index.html').read_text())
 

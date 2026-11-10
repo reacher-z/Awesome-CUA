@@ -79,6 +79,7 @@ python3 scripts/catalog.py lint
 .venv/bin/python scripts/run_tests.py
 node --test tests/web.test.mjs
 .venv/bin/python scripts/build_site.py
+node --test tests/search_quality.test.mjs
 ```
 
 `--limit` bounds a harvest or search; it does not select editorial entries. Search manifests explicitly report incomplete pagination. Successful responses are cached; failed requests are recorded separately and never overwrite the last successful response. A failed refresh remains a failure in the latest run manifest. Re-running without `--refresh` can reuse an older successful cache response, retaining its original retrieval timestamp.

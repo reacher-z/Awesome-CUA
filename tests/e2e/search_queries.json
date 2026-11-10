@@ -1,0 +1,118 @@
+{
+ "description": "Real searches on awesomecua.com. Each expected id (any one, for a topic query) must rank in the top 3 of the homepage search, in the English and the Chinese index.",
+ "top": 3,
+ "queries": [
+  {
+   "q": "OSWorld",
+   "expect": [
+    "github:xlang-ai/osworld"
+   ],
+   "note": "exact name"
+  },
+  {
+   "q": "WebArena",
+   "expect": [
+    "github:web-arena-x/webarena"
+   ],
+   "note": "exact name"
+  },
+  {
+   "q": "Mind2Web",
+   "expect": [
+    "github:osu-nlp-group/mind2web"
+   ],
+   "note": "exact name"
+  },
+  {
+   "q": "UI-TARS",
+   "expect": [
+    "github:bytedance/ui-tars"
+   ],
+   "note": "hyphenated name"
+  },
+  {
+   "q": "AndroidControl",
+   "expect": [
+    "component:google-research/android_control"
+   ],
+   "note": "exact name"
+  },
+  {
+   "q": "ScreenSpot",
+   "expect": [
+    "url:7abb418096432f56c685"
+   ],
+   "note": "exact name"
+  },
+  {
+   "q": "SeeClick",
+   "expect": [
+    "github:njucckevin/seeclick"
+   ],
+   "note": "exact name"
+  },
+  {
+   "q": "BrowserGym",
+   "expect": [
+    "github:servicenow/browsergym"
+   ],
+   "note": "exact name"
+  },
+  {
+   "q": "AndroidWorld",
+   "expect": [
+    "github:google-research/android_world"
+   ],
+   "note": "exact name"
+  },
+  {
+   "q": "Android in the Wild",
+   "expect": [
+    "component:google-research/android_in_the_wild"
+   ],
+   "note": "multi-word name"
+  },
+  {
+   "q": "android trajectories",
+   "expect": [
+    "github:runamu/monday",
+    "url:114ced4a94d12f384d69",
+    "url:2b7363c3a20d8022b319",
+    "url:2e1927450da2183a5abe",
+    "url:3849b18aa87edefc6afd",
+    "url:422010da7a5c845a18f6",
+    "url:546e6c95825d1318c98d",
+    "url:66a0adb854eff694965d",
+    "url:84e5aeeffaf561baa966",
+    "url:93278fa5b9e6bd0cbcef",
+    "url:ab26f9ef56d651cee587",
+    "url:b5dab1881ac1069e44ce",
+    "url:cf4d2d45a7314cb16acb",
+    "url:d3ec5122a2b52fd5ae4b",
+    "url:e041226738f8ea43a878"
+   ],
+   "note": "topic query: any reviewed Android trajectory dataset"
+  },
+  {
+   "q": "osworl",
+   "expect": [
+    "github:xlang-ai/osworld"
+   ],
+   "note": "typo: missing letter"
+  },
+  {
+   "q": "webarna",
+   "expect": [
+    "github:web-arena-x/webarena"
+   ],
+   "note": "typo: missing letter"
+  },
+  {
+   "q": "mind2wbe",
+   "expect": [
+    "github:osu-nlp-group/mind2web"
+   ],
+   "note": "typo: transposed letters"
+  }
+ ]
+}

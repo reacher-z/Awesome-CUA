@@ -24,6 +24,7 @@ import home_page
 import category_guides
 from zh_summaries import zh_summary
 import site_shell
+from agent_site_file import FILES as SITE_AGENT_FILES, site_agents_md
 from agent_files import FULL_ORDER, catalog_markdown, category_title, compact_entry, home_markdown, kind_markdown, library_markdown, link, llms_full, llms_txt, paper_hub_markdown
 from survey_bundle import apply_site_shell
 from discovery_files import FEED_SIZE, FEED_TITLE, feed_entry, robots_txt, write_feeds
@@ -75,7 +76,7 @@ def page_title(title):
     number = re.search(r'(?:, page \d+|（第 \d+ 页）)$', title)
     tail = number[0] if number else ''
     head = title[:len(title)-len(tail)]
-    if 'AwesomeCUA' in title:return shorten(head, TITLE_LIMIT-len(tail)) + tail
+    if 'AwesomeCUA' in title or 'Awesome CUA' in title:return shorten(head, TITLE_LIMIT-len(tail)) + tail
     return shorten(head, TITLE_LIMIT-len(TITLE_SUFFIX)-len(tail)) + tail + TITLE_SUFFIX
 
 
@@ -205,7 +206,7 @@ def jsonld(value):
 
 
 def organization():
-    return {"@type":"Organization", "@id":SITE+"/#organization", "name":"AwesomeCUA", "url":SITE+"/", "sameAs":["https://github.com/AwesomeCUA", SOURCE_REPO, REPO]}
+    return {"@type":"Organization", "@id":SITE+"/#organization", "name":"Awesome CUA", "alternateName":["AwesomeCUA","Awesome Computer-Use Agents"], "url":SITE+"/", "sameAs":["https://github.com/AwesomeCUA", SOURCE_REPO, REPO]}
 
 
 # Open Graph cards drawn by this build: {name: (site path, alt text)}. Pages without a card of their own share the home card.
@@ -259,7 +260,7 @@ def page(title, summary, path, body, main=None, index=True, lang="en", alternati
     body_class=''if not landing else ' class="home"' if path in ('/','/zh/') else ' class="home list-page"'
     # The English homepage uses no reading-page rule, so its first paint waits on one stylesheet instead of two.
     pages_css='' if path=='/' else f'<link rel="stylesheet" href="{site_shell.asset("/pages.css")}">'
-    document=f'''<!doctype html><html lang="{lang}" data-site="cua"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>{esc(full_title)}</title>{site_shell.head_assets(lang)}<meta name="description" content="{esc(snippet)}"><meta name="robots" content="{robots}">{identity}{alternate}<meta property="og:title" content="{esc(full_title)}"><meta property="og:description" content="{esc(snippet)}">{og_url}<meta property="og:type" content="website"><meta property="og:site_name" content="AwesomeCUA"><meta property="og:locale" content="{"zh_CN" if lang=="zh-CN" else "en_US"}"><meta property="og:image" content="{SITE}{og_image}"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta property="og:image:alt" content="{esc(og_alt)}"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:image" content="{SITE}{og_image}"><link rel="icon" href="/favicon.svg" type="image/svg+xml">{pages_css}<script type="application/ld+json">{jsonld({"@context":"https://schema.org","@graph":graph})}</script>{home_page.legacy_redirect_script() if path=="/" else ""}</head><body{body_class}><a class="skip" href="#content">{skip}</a>{site_shell.top(path=path,lang=lang,lang_href=switch_to,live=landing)}{content}{site_shell.bottom(lang=lang,lang_href=switch_to,live=landing)}</body></html>'''
+    document=f'''<!doctype html><html lang="{lang}" data-site="cua"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>{esc(full_title)}</title>{site_shell.head_assets(lang)}<meta name="description" content="{esc(snippet)}"><meta name="robots" content="{robots}">{identity}{alternate}<meta property="og:title" content="{esc(full_title)}"><meta property="og:description" content="{esc(snippet)}">{og_url}<meta property="og:type" content="website"><meta property="og:site_name" content="{"Awesome CUA" if path in ("/","/zh/") else "AwesomeCUA"}"><meta property="og:locale" content="{"zh_CN" if lang=="zh-CN" else "en_US"}"><meta property="og:image" content="{SITE}{og_image}"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta property="og:image:alt" content="{esc(og_alt)}"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:image" content="{SITE}{og_image}"><link rel="icon" href="/favicon.svg" type="image/svg+xml">{pages_css}<script type="application/ld+json">{jsonld({"@context":"https://schema.org","@graph":graph})}</script>{home_page.legacy_redirect_script() if path=="/" else ""}</head><body{body_class}><a class="skip" href="#content">{skip}</a>{site_shell.top(path=path,lang=lang,lang_href=switch_to,live=landing)}{content}{site_shell.bottom(lang=lang,lang_href=switch_to,live=landing)}</body></html>'''
     return document
 
 
@@ -409,6 +410,13 @@ def reviewer_hold(record, decision):
     return None
 
 
+def shown_bibtex(record):
+    """The entry without its machine-readable % comment lines."""
+    try:entry=citation_bibtex(record)
+    except ValueError:return ''  # the citation.bib export of the same record raises the same error and fails the build
+    return '\n'.join(line for line in entry.splitlines() if not line.startswith('%')).strip('\n')
+
+
 def markdown_literal(text):
     """Keep a plain-text editorial reason literal in the Markdown reading view."""
     return re.sub(r'([\\`*_{}\[\]()#+\-.!|~=])', r'\\\1', html.escape(text, quote=False))
@@ -488,6 +496,7 @@ def resource_body(record, lookup, incoming=None, pending_review=None, zh=False):
         body+='<h2>'+tr('Preferred paper record','首选论文记录')+'</h2><p>'+tr('The retained source identifies this as an alternate bibliographic record. Follow '+target+' for the preferred arXiv identity.','保留的来源将此记录标为备用书目记录。首选的 arXiv 身份见 '+target+'。')+'</p>'
     if r['kind'] in {'paper','survey'}:
         body+='<h2>'+tr('Cite this paper','引用本文')+'</h2><p><a href="'+resource_path(r)+'citation.bib" download>'+tr('Download BibTeX','下载 BibTeX')+'</a> · <a href="'+resource_path(r)+'citation.csl.json" download>'+tr('Download CSL JSON','下载 CSL JSON')+'</a></p><p>'+tr('Citations preserve the selected source edition, its authors and recorded date precision. Unrecorded venues and identifiers are omitted.','引用文件保留所选来源版本、其作者和记录的日期精度；未记录的发表场所和标识符不写入。')+'</p>'
+        if shown_bibtex(r):body+='<pre class="bibtex" tabindex="0"><code>'+esc(shown_bibtex(r))+'</code></pre>'
         if authors_omitted(r):body+='<p>'+tr('These citation files omit the authors; the paper lists them.','这些引用文件不含作者；作者列表见论文。')+'</p>'
         body+=publication_body(r,zh)
     if r["kind"] not in {"paper","survey"} or any(r["licenses"].values()):
@@ -540,7 +549,7 @@ def resource_markdown(r, pending_review=None, level=1):
     if authors_omitted(r):lines+=['',h2+' Authors','',f'[{AUTHORS_OMITTED[0]}]({(r["details"].get("arxiv_snapshot") or {}).get("versioned_url") or r["url"]})']
     elif r["authors"]:lines+=['',h2+' Authors','',', '.join(r["authors"])]
     if r['kind'] in {'paper','survey'}:
-        lines+=['',h2+' Citation exports','',f'- BibTeX: {SITE}{resource_path(r)}citation.bib',f'- CSL JSON: {SITE}{resource_path(r)}citation.csl.json']
+        lines+=['',h2+' Citation exports','',f'- BibTeX: {SITE}{resource_path(r)}citation.bib',f'- CSL JSON: {SITE}{resource_path(r)}citation.csl.json','',*(['```bibtex',shown_bibtex(r),'```'] if shown_bibtex(r) else [])]
     pub=publication(r)
     if pub:
         lines+=['',h2+' Publication record','', '- '+field_label('title')+': '+pub['title'], '- '+(AUTHORS_OMITTED[0]+' ('+pub['url']+')' if authors_omitted(r) else field_label('authors')+': '+', '.join(pub['authors'])),
@@ -689,6 +698,29 @@ def declare_markdown_twins(destination, manifest):
         item['sha256']=hashlib.sha256(content).hexdigest()
 
 
+def twin_type(path, kind_by_path):
+    if path in ('/','/zh/'):return 'home'
+    if path in kind_by_path:return kind_by_path[path]
+    parts=[x for x in path.strip('/').split('/') if x!='zh']
+    first=parts[0] if parts else ''
+    return {'categories':'category','topics':'topic','papers':'research-library','guides':'guide','api':'documentation','data':'dataset-hub','compare':'comparison'}.get(first,'page')
+
+
+def add_front_matter(destination, sitemap_facts, kind_by_path, snapshot):
+    """Start every Markdown twin with a YAML block: title, url, updated, type, lang. Rewrites are idempotent."""
+    for twin in sorted(destination.rglob('index.md')):
+        text=twin.read_text(encoding='utf-8')
+        if text.startswith('---\n'):continue
+        folder=twin.parent.relative_to(destination).as_posix()
+        path='/' if folder=='.' else '/'+folder+'/'
+        page=twin.with_name('index.html')
+        found=re.search(r'<title>(.*?)</title>',page.read_text(encoding='utf-8'),re.S) if page.is_file() else None
+        title=html.unescape(found[1]).strip() if found else next((line[2:].strip() for line in text.splitlines() if line.startswith('# ')),'Awesome CUA')
+        updated=(sitemap_facts.get(path,{}).get('lastmod') or snapshot)[:10]
+        front=['---','title: '+json.dumps(title,ensure_ascii=False),'url: '+SITE+path,'updated: '+updated,'type: '+twin_type(path,kind_by_path),'lang: '+('zh-CN' if path.startswith('/zh/') else 'en'),'---','']
+        twin.write_text('\n'.join(front)+'\n'+text,encoding='utf-8')
+
+
 KIND_LINES = {
     'benchmark':'Benchmarks for GUI, web and mobile agents, with evaluation protocols, scale and licenses.',
     'dataset':'Training and evaluation data for computer-use agents, with supervision, formats and licenses.',
@@ -814,8 +846,10 @@ def build_search_pages(destination, rows, coverage, root, *, survey_page=None):
     (destination/'data/site-stamp.json').write_text(json.dumps({'stars':stars,'last_scan':last_scan})+'\n',encoding='utf-8')
     view=home_page.catalog_view(rows,reviewed,coverage,root)
     draw_og_cards(destination,rows,reviewed)
-    for filename,zh in (('search-index.json',False),('search-index.zh.json',True)):
-        (destination/'data'/filename).write_text(json.dumps(home_page.search_index(view,zh=zh),ensure_ascii=False,separators=(',',':'))+'\n',encoding='utf-8')
+    # The index alone answers searches by name; the summaries follow in a second file.
+    for suffix,zh in (('',False),('.zh',True)):
+        for stem,build in (('search-index',home_page.search_index),('search-text',home_page.search_text)):
+            (destination/'data'/f'{stem}{suffix}.json').write_text(json.dumps(build(view,zh=zh),ensure_ascii=False,separators=(',',':'))+'\n',encoding='utf-8')
     zh_guides={g['slug']:g for g in json.loads(zh_guides_file.read_text(encoding='utf-8'))} if (zh_guides_file:=root/'data/site-guides.zh-CN.json').exists() else {}
     ZH_PAGE_PATHS.clear()
     ZH_PAGE_PATHS.update({'/','/catalog/','/papers/','/topics/','/data/','/agents/',*ZH_STATIC_PAGES,*(f'/guides/{slug}/' for slug in zh_guides)})
@@ -1161,15 +1195,21 @@ def build_search_pages(destination, rows, coverage, root, *, survey_page=None):
     body='<h1>计算机使用智能体指南</h1><p class="answer-lead">附直接答案与一手研究参考的实用阅读指南，帮助区分界面定位、任务执行、训练数据与评测。</p><div class="reading-list">'+''.join(f'<article><h2><a href="{guide_path(g)}">{esc(zh_guides[g["slug"]]["title"] if g["slug"] in zh_guides else g["title"])}</a></h2><p>{esc(zh_guides[g["slug"]]["description"] if g["slug"] in zh_guides else g["description"])}</p></article>' for g in guides)+'</div>'
     emit('/zh/guides/',page('计算机使用智能体指南','了解计算机使用智能体，选择 GUI 智能体评测基准，查找训练数据，每篇指南都附一手来源参考。','/zh/guides/',body,lang='zh-CN',alternatives=guides_pair),alternates=guides_pair)
     zh_note=f'当前有 {len(reviewed):,} 条已对照一手来源审核的资源；另有 {awaiting:,} 条书目记录待审阅、{candidates:,} 个已发现候选待核实。'
-    zh_body=home_page.hero(view,last_scan,zh=True)+home_page.benchmark_band(view,zh=True)+home_page.tasks(view,zh=True)+home_page.latest(view,zh=True)+home_page.categories(view,zh=True)+home_page.papers(view,zh=True)+home_page.developers(zh=True)+home_page.directory_strip(zh=True,note=zh_note)+home_page.contribute(zh=True)
-    website={"@type":"WebSite","@id":SITE+"/#website","url":SITE+"/","name":"AwesomeCUA","description":"Source-backed computer-use and GUI-agent resource catalog","publisher":{"@id":SITE+"/#organization"},"inLanguage":["en","zh-CN"],
+    def home_faq(zh):
+        view['metadata_only']=counts['awaiting_review']['metadata_only_records'];view['other_resources']=counts['curated']['other_resources']
+        items=home_page.faq_items(view,last_scan,zh=zh)
+        if zh:items=[(q,category_guides.spaced(answer)) for q,answer in items]
+        section=f'<section class="wrap cat-guide home-faq" aria-labelledby="faq-h">{category_guides.faq_html(items,zh=zh)}</section>'
+        return section,category_guides.faq_schema(items,SITE+('/zh/' if zh else '/'),'zh-CN' if zh else 'en')
+    zh_body=home_page.hero(view,last_scan,zh=True)+home_page.benchmark_band(view,zh=True)+home_page.tasks(view,zh=True)+home_page.latest(view,zh=True)+home_page.categories(view,zh=True)+home_page.papers(view,zh=True)+home_page.developers(zh=True)+home_faq(True)[0]+home_page.directory_strip(zh=True,note=zh_note)+home_page.contribute(zh=True)
+    website={"@type":"WebSite","@id":SITE+"/#website","url":SITE+"/","name":"Awesome CUA","alternateName":["AwesomeCUA","Awesome Computer-Use Agents"],"description":"Source-backed computer-use and GUI-agent resource catalog","publisher":{"@id":SITE+"/#organization"},"inLanguage":["en","zh-CN"],
              # The explorer reads ?q= and searches every record.
              "potentialAction":{"@type":"SearchAction","target":{"@type":"EntryPoint","urlTemplate":SITE+"/explore/?q={search_term_string}#catalog"},"query-input":"required name=search_term_string"}}
-    emit('/zh/',page('AwesomeCUA 中文主页：Computer-Use Agent 资源目录','浏览可搜索、可追溯的 Computer-Use Agent 论文、模型、数据集、基准、框架与产品，查看来源证据并下载结构化目录。','/zh/',zh_body,lang='zh-CN',alternatives=True,landing=True,extra_graph=[website]),lastmod=modified(rows),alternates=True)
+    emit('/zh/',page(f'Awesome CUA 中文主页：{len(reviewed):,} 条计算机使用智能体资源','浏览可搜索、可追溯的 Computer-Use Agent 论文、模型、数据集、基准、框架与产品，查看来源证据并下载结构化目录。','/zh/',zh_body,lang='zh-CN',alternatives=True,landing=True,extra_graph=[website,home_faq(True)[1]]),lastmod=modified(rows),alternates=True)
     # The explorer keeps a static, visible directory for visitors without JavaScript.
     static='<section class="shell static-directory" aria-labelledby="static-directory-title"><div class="eyebrow" data-i18n="directoryEyebrow">READ, EXPLORE, AND CITE</div><h2 id="static-directory-title" data-i18n="directoryHeading">Computer-use agent research and resources</h2><p data-i18n="directoryCopy">Browse source-backed pages directly, with or without JavaScript. Reviewed entries include concise annotations, provenance, and separate license declarations.</p><div class="directory-links"><a href="/catalog/" data-i18n="directoryTitle">Resource directory</a><a href="/papers/" data-paper-library data-i18n="directoryPapers">Research papers</a><a href="/topics/" data-topic-directory data-i18n="directoryTopics">Browse by topic</a><a href="/connections/" data-i18n="directoryConnections">Papers → code & data</a><a href="/updates/" data-i18n="directoryUpdates">Scan updates</a><a href="/categories/model/" data-i18n="directoryModels">Models</a><a href="/categories/dataset/" data-i18n="directoryDatasets">Datasets</a><a href="/categories/benchmark/" data-i18n="directoryBenchmarks">Benchmarks</a><a href="/compare/benchmarks/" data-i18n="compareBenchmarks">Compare benchmarks</a><a href="/compare/datasets/" data-i18n="compareDatasets">Compare datasets</a><a href="/categories/learning/" data-i18n="directoryLearning">Learning resources</a><a href="/categories/framework/" data-i18n="directoryFrameworks">Frameworks</a><a href="/categories/product/" data-i18n="directoryProducts">Products</a><a href="/guides/" data-i18n="navGuides">Guides</a><a href="/data/" data-i18n="directoryData">Download data</a><a href="/coverage/" data-i18n="navCoverage">Coverage</a><a href="/about/" data-i18n="editorialPolicy">Editorial policy</a><a href="/zh/" lang="zh-CN">中文指南</a></div><h3 data-i18n="startHeading">Where should I start?</h3><p><a href="/guides/what-are-computer-use-agents/" data-i18n="startConcepts">Understand computer-use agents</a><span data-i18n="listComma">, </span><a href="/guides/gui-agent-benchmarks/" data-i18n="startBenchmarks">choose a benchmark for the capability you need</a><span data-i18n="listOr">, or </span><a href="/guides/gui-agent-training-data/" data-i18n="startData">find training data with the right supervision and license</a><span data-i18n="sentenceEnd">.</span></p></section>'
-    home_body=home_page.hero(view,last_scan)+home_page.benchmark_band(view)+home_page.tasks(view)+home_page.latest(view)+home_page.categories(view)+home_page.papers(view)+home_page.developers()+home_page.directory_strip()+home_page.contribute()
-    emit('/',page('AwesomeCUA — Computer-use research, data, and tools','Find research, models, benchmarks, and software for web, desktop, and mobile agents. Filter by task or platform, then inspect the primary sources.','/',home_body,alternatives=True,landing=True,extra_graph=[website]),lastmod=modified(rows),alternates=True)
+    home_body=home_page.hero(view,last_scan)+home_page.benchmark_band(view)+home_page.tasks(view)+home_page.latest(view)+home_page.categories(view)+home_page.papers(view)+home_page.developers()+home_faq(False)[0]+home_page.directory_strip()+home_page.contribute()
+    emit('/',page(f'Awesome CUA: {len(reviewed):,} computer-use agent resources','Find research, models, benchmarks, and software for web, desktop, and mobile agents. Filter by task or platform, then inspect the primary sources.','/',home_body,alternatives=True,landing=True,extra_graph=[website,home_faq(False)[1]]),lastmod=modified(rows),alternates=True)
     # Feeds announce curated records as they pass source review, newest review first.
     entries=[feed_entry(r,site=SITE,page_path=resource_path(r),reviewed_at=review_times[r['id']],modified=record_modified(r,review_times),summary=description(r),kind_label=KINDS[r['kind']]) for r in newest_reviewed(rows,review_times,FEED_SIZE)]
     write_feeds(destination,entries,site=SITE,updated=max((entry['updated'] for entry in entries),default=snapshot))
@@ -1221,12 +1261,14 @@ def build_search_pages(destination, rows, coverage, root, *, survey_page=None):
         if members:groups.append((KINDS[kind],[compact_entry(r,site=SITE,page_path=resource_path(r),summary=description(r)) for r in members]))
     kind_files=[(KINDS[kind],f'/categories/{kind}/index.md') for kind in FULL_ORDER if kind!='paper']+[('Research library',library_path(1)+'index.md')]
     (destination/'llms-full.txt').write_text(clean_text(llms_full(groups,site=SITE,snapshot=snapshot,counts=counts,survey_line=survey_line,kind_files=kind_files)),encoding='utf-8')
+    for name in SITE_AGENT_FILES:(destination/name).write_text(clean_text(site_agents_md(site=SITE,counts=counts,snapshot=snapshot)),encoding='utf-8')
     (destination/'robots.txt').write_text(robots_txt(SITE),encoding='utf-8')
     if survey_page:
         survey_date=json.loads((destination/'survey/build-manifest.json').read_text(encoding='utf-8')).get('working_manuscript_date')
         sitemap_facts['/survey/']={'lastmod':survey_date,'alternates':dict(survey_pair)}
     declare_markdown_twins(destination,manifest)
     kind_by_path={**{resource_path(r):r['kind'] for r in rows},**{zh_resource_path(r):r['kind'] for r in rows if eligible(r)}}
+    add_front_matter(destination,sitemap_facts,kind_by_path,snapshot)
     write_sitemaps(destination,SITE,[{'path':item['path'],'section':sitemap_section(item['path'],kind_by_path),**sitemap_facts[item['path']]} for item in manifest if item['indexable']])
     (destination/'data/search-manifest.json').write_text(json.dumps({'site_url':SITE,'indexable_pages':sum(x['indexable'] for x in manifest),'metadata_only_pages':sum(not x['indexable'] and not x.get('scope_excluded') and not x.get('utility') for x in manifest),'excluded_pages':sum(bool(x.get('scope_excluded')) for x in manifest),'pages':manifest},ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
     config=json.loads((root/'data/site-discovery.json').read_text(encoding='utf-8'))

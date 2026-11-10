@@ -26,8 +26,6 @@ CRAWLERS = (
      ('GPTBot', 'ClaudeBot', 'Google-Extended', 'GoogleOther', 'Google-CloudVertexBot', 'Applebot-Extended', 'CCBot',
       'meta-externalagent', 'Amazonbot', 'MistralAI-Training', 'KimiBot')),
 )
-# Cloudflare Content Signals Policy (https://contentsignals.org/). The catalog's own annotations are MIT licensed.
-CONTENT_SIGNAL = 'search=yes, ai-input=yes'
 
 
 def crawler_tokens():
@@ -36,15 +34,15 @@ def crawler_tokens():
 
 def robots_txt(site):
     lines = [f'# Crawl policy for {site}/', '# Search engines, AI search, AI assistants and AI crawlers are all welcome.',
-             '# Content Signals Policy: https://contentsignals.org/', f'# Agent-readable index: {site}/llms.txt', '',
-             'User-agent: *', f'Content-Signal: {CONTENT_SIGNAL}', 'Allow: /', '',
+             f'# Agent-readable index: {site}/llms.txt', '',
+             'User-agent: *', 'Allow: /', '',
              '# A crawler that matches a named group ignores the * group (RFC 9309 2.2.1),',
              '# so every named crawler below shares one group with the same allow-all policy.',
              '# Also covered by *: 360Spider, Sogou spider, YisouSpider (outside the RFC 9309 token grammar or undocumented).', '']
     # Comment lines may separate the User-agent lines of one group; a blank line would end it.
     for label, tokens in CRAWLERS:
         lines += ['# ' + label] + [f'User-agent: {token}' for token in tokens]
-    lines += [f'Content-Signal: {CONTENT_SIGNAL}', 'Allow: /', '',
+    lines += ['Allow: /', '',
               f'Sitemap: {site}/sitemap.xml', f'Sitemap: {site}/sitemap.txt']
     return '\n'.join(lines) + '\n'
 

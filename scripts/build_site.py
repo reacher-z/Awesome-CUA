@@ -130,7 +130,6 @@ def write_site(destination):
     write_sqlite(rows,destination/'downloads'/'catalog.sqlite')
     build_exports(rows,destination/'downloads',(ROOT/'data/catalog.jsonl').read_bytes())
     build_citation_exports(rows,destination/'downloads',(ROOT/'data/catalog.jsonl').read_bytes())
-    shutil.copy2(ROOT/'AGENTS.md',destination/'AGENTS.md')
     for name in ('paper-discovery-queries.json','paper-discovery-status.json','conference-discovery.json'):
         if (ROOT/'data'/name).exists():shutil.copy2(ROOT/'data'/name,destination/'downloads'/name)
     shutil.copy2(ROOT/'LICENSE',destination/'LICENSE')

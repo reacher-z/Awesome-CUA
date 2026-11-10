@@ -14,7 +14,7 @@ sys.path.insert(0, str(ROOT / 'scripts'))
 from build_site import build_site
 from site_fixture import shared_site
 from catalog import editorial_identity
-from discovery_files import CONTENT_SIGNAL, CRAWLERS, FEED_SIZE, crawler_tokens, robots_txt
+from discovery_files import CRAWLERS, FEED_SIZE, crawler_tokens, robots_txt
 from search_pages import SITE, eligible, resource_path
 from site_data import catalog_counts, record_modified, utc
 from sitemaps import SECTIONS, SITEMAP_NS, XHTML_NS, section_file, sitemap_urls
@@ -56,12 +56,12 @@ class RobotsTests(unittest.TestCase):
         # A blank line ends a group in common parsers, so the named crawlers must not be separated by one.
         block = robots_txt(SITE).split('User-agent: ' + CRAWLERS[0][1][0], 1)[1].split('\n\n', 1)[0]
         self.assertEqual(block.count('User-agent: '), len(crawler_tokens()) - 1)
-        self.assertIn('Allow: /', block); self.assertIn('Content-Signal: ' + CONTENT_SIGNAL, block)
+        self.assertIn('Allow: /', block); self.assertNotIn('Content-Signal', block)
 
     def test_training_preference_token_is_its_own_allow_group(self):
         text = robots_txt(SITE)
         self.assertNotIn('ai-train', text); self.assertNotIn('__usage', text)
-        self.assertIn('User-agent: *\nContent-Signal: ' + CONTENT_SIGNAL + '\nAllow: /\n', text)
+        self.assertIn('User-agent: *\nAllow: /\n', text)
 
 
 class BuiltDiscoveryTests(unittest.TestCase):

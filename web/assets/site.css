@@ -1437,3 +1437,5 @@ html:lang(zh-CN) .eyebrow{letter-spacing:.02em}
 @media (max-width:767px){.bbox-f::before{top:calc(100% + 5px)}.bbox-f::after{right:auto;left:17px}.home .hero-lede{margin-top:40px}}
 .row-desc{max-width:80ch}
 .choose td a,.choose th a{padding-block:4px}
+.hero-brand{display:block;font-size:.3em;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--text-meta);margin-bottom:.6em}
+pre.bibtex{overflow-x:auto;white-space:pre;font-size:.85em;padding:12px 16px;border:1px solid var(--line);border-radius:8px;max-width:100%}

@@ -119,6 +119,7 @@ jobs:
           AWESOMECUA_REPO_STARS: ${{ steps.stars.outputs.json }}
         run: |
           python scripts/build_site.py
+          node --test tests/search_quality.test.mjs
           python scripts/prepare_publication.py --site-dir "$GITHUB_WORKSPACE" --skip-profile
       - name: Record source revision
         id: source_revision

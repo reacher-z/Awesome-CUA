@@ -2,27 +2,27 @@
 
 [Home](../README.md) · [Full arXiv bibliography](papers.md) · [Methodology](methodology.md)
 
-5,354 source-reviewed resources across 35 topics. Topic tags are catalog annotations from the editorial review; a resource appears under every topic it carries. Each hub lists benchmarks, data, models, systems, learning resources, and papers together, newest papers first.
+5,347 source-reviewed resources across 35 topics. Topic tags are catalog annotations from the editorial review; a resource appears under every topic it carries. Each hub lists benchmarks, data, models, systems, learning resources, and papers together, newest papers first.
 
 | Topic | All | Benchmarks | Datasets | Models | Systems | Learning resources | Papers | Newest reviewed paper |
 | --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: | --- |
-| [Web navigation](topics/web-navigation.md) | 1,769 | 128 | 64 | 83 | 1,119 | 19 | 356 | [Securing Web Agents with the Compile-Then-Execute Paradigm](https://arxiv.org/abs/2611.06039) · 2026-11-04 |
-| [Automation](topics/automation.md) | 1,642 | 11 | 1 | 15 | 1,460 | 17 | 138 | [Interface Quilt: Modifying Applications with Computer Use Agents and Generative UI](https://arxiv.org/abs/2611.01891) · 2026-11-01 |
-| [Evaluation](topics/evaluation.md) | 1,542 | 308 | 101 | 29 | 257 | 12 | 835 | [GUI Grounding for Computer-Use Agents: A Survey](https://doi.org/10.20944/preprints202611.0431.v1) · 2026-11-04 |
-| [Tool integration](topics/tool-integration.md) | 1,407 | 32 | 5 | 55 | 1,162 | 8 | 145 | [Securing Web Agents with the Compile-Then-Execute Paradigm](https://arxiv.org/abs/2611.06039) · 2026-11-04 |
-| [Screen understanding](topics/screen-understanding.md) | 1,019 | 26 | 67 | 165 | 521 | 5 | 235 | [Visual Token Routing: Learning to keep tokens that matter](https://arxiv.org/abs/2611.06854) · 2026-11-04 |
+| [Web navigation](topics/web-navigation.md) | 1,767 | 127 | 64 | 83 | 1,118 | 19 | 356 | [Securing Web Agents with the Compile-Then-Execute Paradigm](https://arxiv.org/abs/2611.06039) · 2026-11-04 |
+| [Automation](topics/automation.md) | 1,636 | 11 | 1 | 15 | 1,454 | 17 | 138 | [Interface Quilt: Modifying Applications with Computer Use Agents and Generative UI](https://arxiv.org/abs/2611.01891) · 2026-11-01 |
+| [Evaluation](topics/evaluation.md) | 1,541 | 307 | 101 | 29 | 257 | 12 | 835 | [GUI Grounding for Computer-Use Agents: A Survey](https://doi.org/10.20944/preprints202611.0431.v1) · 2026-11-04 |
+| [Tool integration](topics/tool-integration.md) | 1,402 | 32 | 5 | 55 | 1,157 | 8 | 145 | [Securing Web Agents with the Compile-Then-Execute Paradigm](https://arxiv.org/abs/2611.06039) · 2026-11-04 |
+| [Screen understanding](topics/screen-understanding.md) | 1,018 | 26 | 67 | 165 | 520 | 5 | 235 | [Visual Token Routing: Learning to keep tokens that matter](https://arxiv.org/abs/2611.06854) · 2026-11-04 |
 | [GUI grounding](topics/grounding.md) | 1,014 | 34 | 81 | 255 | 339 | 3 | 302 | [GUI Grounding for Computer-Use Agents: A Survey](https://doi.org/10.20944/preprints202611.0431.v1) · 2026-11-04 |
 | [Mobile navigation](topics/mobile-navigation.md) | 662 | 31 | 38 | 85 | 239 | 5 | 264 | [Can LLM Agents Learn to Test? Maintaining Scoped Experience as Testing Evidence for Mobile GUI Testing](https://arxiv.org/abs/2611.05873) · 2026-11-04 |
 | [Data generation](topics/data-generation.md) | 641 | 5 | 154 | 16 | 110 | 1 | 355 | [MKD2World: A Typed Spatial MarkDown World Model For Web Agents](https://arxiv.org/abs/2611.06544) · 2026-11-04 |
-| [Planning](topics/planning.md) | 565 | 11 | 12 | 60 | 173 | 4 | 305 | [Securing Web Agents with the Compile-Then-Execute Paradigm](https://arxiv.org/abs/2611.06039) · 2026-11-04 |
-| [Workflows](topics/workflow.md) | 565 | 30 | 9 | 3 | 371 | 10 | 142 | [Can LLM Agents Learn to Test? Maintaining Scoped Experience as Testing Evidence for Mobile GUI Testing](https://arxiv.org/abs/2611.05873) · 2026-11-04 |
+| [Planning](topics/planning.md) | 564 | 11 | 12 | 60 | 172 | 4 | 305 | [Securing Web Agents with the Compile-Then-Execute Paradigm](https://arxiv.org/abs/2611.06039) · 2026-11-04 |
+| [Workflows](topics/workflow.md) | 563 | 30 | 9 | 3 | 369 | 10 | 142 | [Can LLM Agents Learn to Test? Maintaining Scoped Experience as Testing Evidence for Mobile GUI Testing](https://arxiv.org/abs/2611.05873) · 2026-11-04 |
 | [Safety & security](topics/safety-security.md) | 559 | 48 | 13 | 9 | 210 | 3 | 276 | [Securing Web Agents with the Compile-Then-Execute Paradigm](https://arxiv.org/abs/2611.06039) · 2026-11-04 |
-| [Efficiency](topics/efficiency.md) | 555 | 16 | 1 | 45 | 275 | 1 | 217 | [Visual Token Routing: Learning to keep tokens that matter](https://arxiv.org/abs/2611.06854) · 2026-11-04 |
+| [Efficiency](topics/efficiency.md) | 554 | 16 | 1 | 45 | 274 | 1 | 217 | [Visual Token Routing: Learning to keep tokens that matter](https://arxiv.org/abs/2611.06854) · 2026-11-04 |
 | [Reinforcement learning](topics/reinforcement-learning.md) | 477 | 9 | 10 | 111 | 80 | 1 | 266 | [JHiMA-WebRL: A Joint Hierarchical Multi-Agent Reinforcement Learning Framework for Long-Horizon Web Tasks](https://arxiv.org/abs/2611.05263) · 2026-11-03 |
 | [Sandboxes](topics/sandbox.md) | 381 | 32 | 1 | · | 276 | 3 | 69 | [WebHarbor: Docking Real Websites for Evolving GUI Agent Environments](https://arxiv.org/abs/2611.03634) · 2026-11-02 |
-| [Memory](topics/memory.md) | 358 | 4 | 4 | 6 | 129 | 2 | 213 | [Can LLM Agents Learn to Test? Maintaining Scoped Experience as Testing Evidence for Mobile GUI Testing](https://arxiv.org/abs/2611.05873) · 2026-11-04 |
+| [Memory](topics/memory.md) | 356 | 4 | 4 | 6 | 127 | 2 | 213 | [Can LLM Agents Learn to Test? Maintaining Scoped Experience as Testing Evidence for Mobile GUI Testing](https://arxiv.org/abs/2611.05873) · 2026-11-04 |
 | [Human in the loop](topics/human-in-the-loop.md) | 355 | 5 | 3 | 2 | 237 | 1 | 107 | [iPrefBench: A User-Centric Benchmark for Personalized Mobile Use Agents](https://arxiv.org/abs/2610.34735) · 2026-10-26 |
-| [Action prediction](topics/action-prediction.md) | 310 | 9 | 15 | 173 | 54 | · | 59 | [Visual Token Routing: Learning to keep tokens that matter](https://arxiv.org/abs/2611.06854) · 2026-11-04 |
+| [Action prediction](topics/action-prediction.md) | 309 | 9 | 15 | 173 | 53 | · | 59 | [Visual Token Routing: Learning to keep tokens that matter](https://arxiv.org/abs/2611.06854) · 2026-11-04 |
 | [Robustness](topics/robustness.md) | 306 | 39 | 9 | · | 56 | · | 202 | [Voluntary Servitude: Weaponized Safety Warning Mechanisms for Controlling AI Agents](https://arxiv.org/abs/2611.04393) · 2026-11-03 |
 | [Observability](topics/observability.md) | 249 | 14 | 10 | · | 151 | 1 | 73 | [Interpretable Early Termination of Web Navigation Agents via Closed Sequential Pattern Mining](https://arxiv.org/abs/2611.04142) · 2026-11-03 |
 | [Long-horizon tasks](topics/long-horizon.md) | 248 | 26 | 9 | 8 | 41 | · | 164 | [JHiMA-WebRL: A Joint Hierarchical Multi-Agent Reinforcement Learning Framework for Long-Horizon Web Tasks](https://arxiv.org/abs/2611.05263) · 2026-11-03 |

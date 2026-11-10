@@ -7,7 +7,7 @@
 **[网站搜索](https://awesomecua.com/zh/)** · **[论文](https://awesomecua.com/zh/papers/)** · **[主题](https://awesomecua.com/zh/topics/)** · **[数据](https://awesomecua.com/zh/data/)** · **[API](https://awesomecua.com/api/)** · **[智能体指南](https://awesomecua.com/zh/agents/)** · **[参与贡献](CONTRIBUTING.md)**
 
 <!-- BADGES:START -->
-![Curated resources](https://img.shields.io/badge/curated%20resources-5%2C354-4352E8?style=flat-square&labelColor=1E2233) ![Reviewed papers and surveys](https://img.shields.io/badge/reviewed%20papers%20and%20surveys-1%2C718-4352E8?style=flat-square&labelColor=1E2233) [![Last successful scan](https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2Freacher-z%2FAwesome-CUA%2Fstatus%2Fscan-badge.json&style=flat-square&labelColor=1E2233)](docs/maintenance.md#scan-badge) ![Hugging Face dataset](https://img.shields.io/badge/dataset-Hugging%20Face-4352E8?style=flat-square&labelColor=1E2233) ![MIT license](https://img.shields.io/badge/license-MIT-5E6472?style=flat-square&labelColor=1E2233)
+![Curated resources](https://img.shields.io/badge/curated%20resources-5%2C347-4352E8?style=flat-square&labelColor=1E2233) ![Reviewed papers and surveys](https://img.shields.io/badge/reviewed%20papers%20and%20surveys-1%2C718-4352E8?style=flat-square&labelColor=1E2233) [![Last successful scan](https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2Freacher-z%2FAwesome-CUA%2Fstatus%2Fscan-badge.json&style=flat-square&labelColor=1E2233)](docs/maintenance.md#scan-badge) ![Hugging Face dataset](https://img.shields.io/badge/dataset-Hugging%20Face-4352E8?style=flat-square&labelColor=1E2233) ![MIT license](https://img.shields.io/badge/license-MIT-5E6472?style=flat-square&labelColor=1E2233)
 <!-- BADGES:END -->
 
 觉得有用？欢迎在 GitHub 上[点星支持本合集](https://github.com/reacher-z/Awesome-CUA)，让更多人找到它。
@@ -67,7 +67,7 @@ python3 scripts/catalog.py get arxiv:2404.07972 --related --json
 
 <!-- STATS:START -->
 
-**5,354 条已审阅资源** · **1,718 篇已审阅论文与综述** · **104 个发现来源文档**
+**5,347 条已审阅资源** · **1,718 篇已审阅论文与综述** · **104 个发现来源文档**
 
 证据截至 `2026-11-10T08:20:17Z`。**1,188 条待审阅记录**已完成书目核实；**181 个已发现候选**尚待处理。2,052 个候选已完成范围外审阅。1,308 条范围排除记录在归档中保留原始元数据。
 
@@ -83,16 +83,16 @@ python3 scripts/catalog.py get arxiv:2404.07972 --related --json
 | [综述](docs/surveys.md)           | 电脑操作智能体研究综述      |    37 |
 | [学习资源](docs/learning.md)        | 课程与教程            |    38 |
 | [数据集](docs/datasets.md)         | GUI 智能体的训练与评测数据  |   278 |
-| [基准](docs/benchmarks.md)        | 评测环境与任务集         |   310 |
+| [基准](docs/benchmarks.md)        | 评测环境与任务集         |   309 |
 | [模型与权重版本](docs/models.md)       | 模型权重版本与模型系列      |   475 |
-| [智能体](docs/agents.md)           | 可操作电脑的公开实现       |   481 |
-| [框架](docs/frameworks.md)        | 用于构建和评测智能体的代码    |   675 |
+| [智能体](docs/agents.md)           | 可操作电脑的公开实现       |   479 |
+| [框架](docs/frameworks.md)        | 用于构建和评测智能体的代码    |   672 |
 | [基础设施](docs/infrastructures.md) | 沙箱、虚拟机、设备集群与运行环境 |   122 |
-| [工具](docs/tools.md)             | 评测工具、录制工具及其他实用工具 | 1,163 |
+| [工具](docs/tools.md)             | 评测工具、录制工具及其他实用工具 | 1,162 |
 | [产品](docs/products.md)          | 厂商和项目提供的电脑操作产品   |    75 |
 | [发布方与品牌](docs/companies.md)     | 与已收录资源相关的发布方和品牌  |    19 |
 
-**按平台：** [Web](docs/environments/web.md) **2,751** · [Desktop](docs/environments/desktop.md) **1,837** · [Windows](docs/environments/windows.md) **589** · [macOS](docs/environments/macos.md) **598** · [Linux](docs/environments/linux.md) **550** · [Android](docs/environments/android.md) **745** · [iOS](docs/environments/ios.md) **120** · [HarmonyOS](docs/environments/harmonyos.md) **10** · [Cross-platform](docs/environments/cross-platform.md) **760**
+**按平台：** [Web](docs/environments/web.md) **2,746** · [Desktop](docs/environments/desktop.md) **1,832** · [Windows](docs/environments/windows.md) **587** · [macOS](docs/environments/macos.md) **597** · [Linux](docs/environments/linux.md) **550** · [Android](docs/environments/android.md) **745** · [iOS](docs/environments/ios.md) **120** · [HarmonyOS](docs/environments/harmonyos.md) **10** · [Cross-platform](docs/environments/cross-platform.md) **758**
 <!-- EXPLORE:END -->
 
 覆盖 Web、桌面、Android、iOS、Windows、macOS、Linux 和跨平台工作。主题包括 grounding、屏幕理解、规划、记忆、长流程任务、强化学习、数据生成、安全、鲁棒性和评测。环境分面可以重叠；不会根据模型的基准成绩推定框架支持。
@@ -138,7 +138,7 @@ git clone https://github.com/reacher-z/Awesome-CUA.git
 | 2026‑09‑02 | [Efficient GUI Agents: A Systems Survey of Observation, Memory, Action, and Runtime Optimization](https://arxiv.org/abs/2609.02309)     | Cross-platform |
 | 2026‑08‑30 | [A Systematic Survey of Agentic Skills: Architecture, Lifecycle, and Security](https://arxiv.org/abs/2608.29596)                        | Cross-platform |
 
-**基准** · 目录中共 310 项
+**基准** · 目录中共 309 项
 
 | 资源                                                                             | 被提及 | 环境                             | 论文                                                    | 许可            | 简介（英文）                                                                              |
 | ------------------------------------------------------------------------------ | --: | ------------------------------ | ----------------------------------------------------- | ------------- | ----------------------------------------------------------------------------------- |
@@ -171,18 +171,18 @@ git clone https://github.com/reacher-z/Awesome-CUA.git
 | [GroundCUA dataset](https://huggingface.co/datasets/ServiceNow/GroundCUA)      |   5 | Desktop, Windows, macOS, Linux        | [2511.07332](https://arxiv.org/abs/2511.07332) (2025) | 数据 mit        | Desktop GUI-grounding data from the GroundCUA project: PNG screenshots of 87 applications paired by hash with JSON lists of element boxes, visible text and optional coarse categories.     |
 | [GUI-Actor data](https://huggingface.co/datasets/cckevinn/GUI-Actor-Data)      |   5 | Unspecified                           | 2506.03143 (2025)                                     | —             | A processed screenshot and bounding-box collection released for training GUI-Actor visual grounding models.                                                                                 |
 
-**框架** · 目录中共 675 项
+**框架** · 目录中共 672 项
 
 | 资源                                                                                                   | 被提及 | 环境                                                      | 论文                                                    | 许可     | 简介（英文）                                                                                                                                                                                            |
 | ---------------------------------------------------------------------------------------------------- | --: | ------------------------------------------------------- | ----------------------------------------------------- | ------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| [Browser Use](https://github.com/browser-use/browser-use)                                            |  58 | Web                                                     | —                                                     | 代码 MIT | Open-source browser agent library that runs locally with any LLM against a local or cloud browser, and also serves as a CLI for coding agents and as a driver for Claude's browser toolset.       |
+| [Browser Use](https://github.com/browser-use/browser-use)                                            |  57 | Web                                                     | —                                                     | 代码 MIT | Open-source browser agent library that runs locally with any LLM against a local or cloud browser, and also serves as a CLI for coding agents and as a driver for Claude's browser toolset.       |
 | [Cua](https://github.com/trycua/cua)                                                                 |  41 | Desktop                                                 | —                                                     | 代码 MIT | Monorepo behind Cua Spaces, which gives agents full macOS or Linux desktops, plus Cua Driver for operating native apps, Lume for Apple Silicon VMs, Cua Bench and the CUA-S1 decision models.     |
 | [Epic EHR Browser Automation](https://github.com/Browser-Automation-Hub/epic-ehr-browser-automation) |  13 | Web                                                     | —                                                     | 代码 MIT | A browser automation scaffold for Epic EHR workflows such as appointments, patient lookup, notes and messaging. It documents authentication, sessions and example actions.                        |
 | [MaaFramework](https://github.com/MaaXYZ/MaaFramework)                                               |  13 | Cross-platform, Desktop, Windows, Linux, macOS, Android | —                                                     | —      | MaaFramework is an image-recognition automation framework for black-box testing, with a low-code task pipeline and documented integration and API interfaces.                                     |
 | [SCALE-CUA (THUDM)](https://github.com/THUDM/SCALE-CUA)                                              |  12 | Desktop                                                 | [2607.11185](https://arxiv.org/abs/2607.11185) (2026) | —      | Computer-use training framework with VeriGen task synthesis, adaptive rollout sampling, and visual-context segmentation.                                                                          |
 | [WebMCP](https://github.com/webmachinelearning/webmcp)                                               |  12 | Web                                                     | —                                                     | —      | A client-side web API proposal that lets pages expose structured JavaScript tools to browser agents. Agents can invoke page functions while sharing the visible interface and context with users. |
 
-**智能体** · 目录中共 481 项
+**智能体** · 目录中共 479 项
 
 | 资源                                                           | 被提及 | 环境                                                  | 论文                                                                                                                                                                                                                         | 许可            | 简介（英文）                                                                                                                                                                                                  |
 | ------------------------------------------------------------ | --: | --------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -207,6 +207,7 @@ git clone https://github.com/reacher-z/Awesome-CUA.git
 <!-- RECENT:START -->
 | 审阅日期       | 资源                                                                             | 类型  | 环境                                                                           | 简介（英文）                                                                                                                                                                                                       |
 | ---------- | ------------------------------------------------------------------------------ | --- | ---------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| 2026‑11‑10 | [Strawberry](https://www.strawberrybrowser.com)                                | 产品  | Web                                                                          | Agentic desktop browser for macOS and Windows whose AI companions open sites, click through flows and work inside the user's signed-in accounts, asking for approval before sending, paying or deleting.     |
 | 2026‑11‑10 | [Hermes Jev Skills](https://github.com/kerpopule/hermes-jev-skills)            | 工具  | Web, Desktop, macOS                                                          | SKILL.md skills for Hermes, Claude Code and Codex agents that pass small decisions to the Jev model, including desktop and browser skills in which Jev picks each next action from a caller-built table.     |
 | 2026‑11‑10 | [Scrapling](https://github.com/D4Vinci/Scrapling)                              | 工具  | Web                                                                          | A Python scraping framework with HTTP and stealth browser fetchers and spiders, plus an MCP server whose seventeen tools let AI agents click, fill forms, type and take screenshots in browser sessions.     |
 | 2026‑11‑10 | [Operit2](https://github.com/AAswordman/Operit2)                               | 智能体 | Web, Desktop, Windows, macOS, Linux, Android, iOS, HarmonyOS, Cross-platform | A cross-device personal agent in preview that continues conversations and tasks across phones, desktops and cloud nodes, with file, terminal and browser tools that click, type and snapshot web pages.      |
@@ -218,7 +219,6 @@ git clone https://github.com/reacher-z/Awesome-CUA.git
 | 2026‑11‑10 | [Patchright NodeJS](https://github.com/Kaliiiiiiiiii-Vinyzu/patchright-nodejs) | 工具  | Web                                                                          | Patchright NodeJS is the Node.js package of Patchright: a patched Playwright that drives Chromium through the standard JavaScript API with automation leaks removed.                                         |
 | 2026‑11‑10 | [Patchright .NET](https://github.com/DevEnterpriseSoftware/patchright-dotnet)  | 工具  | Web                                                                          | Patchright .NET is the .NET package of Patchright: a patched Playwright that replaces the Microsoft.Playwright package and drives Chromium with automation leaks removed.                                    |
 | 2026‑11‑10 | [OmniJev](https://huggingface.co/tinnel123/OmniJev)                            | 模型  | Cross-platform, Web                                                          | OmniJev v1.1 is a 4B LoRA adapter with decision heads for Qwen3.5-4B that answers typed questions about screens and other images with probabilities; its task families include androidcontrol and web.       |
-| 2026‑11‑10 | [WebMCP](https://github.com/jasonjmcghee/WebMCP)                               | 框架  | Web                                                                          | An early WebMCP proposal and code: a script widget on a website registers its tools, resources and prompts, which MCP clients reach through a token-secured localhost WebSocket server.                      |
 <!-- RECENT:END -->
 
 </details>

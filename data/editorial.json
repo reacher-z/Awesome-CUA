@@ -98111,32 +98111,6 @@
     ]
   },
   {
-    "name": "Navi-Bench",
-    "url": "https://github.com/yutori-ai/navi-bench",
-    "kind": "benchmark",
-    "scope": "core",
-    "environments": [
-      "web"
-    ],
-    "topics": [
-      "evaluation",
-      "web-navigation"
-    ],
-    "summary": "Navi-Bench evaluates web agents on everyday consumer tasks executed directly on live websites with deterministic outcome verifiers.",
-    "verify_terms": [
-      "Navi-Bench"
-    ],
-    "evidence_urls": [
-      "https://raw.githubusercontent.com/yutori-ai/navi-bench/HEAD/README.md"
-    ],
-    "editorial_reviewed": true,
-    "reviewed_at": "2026-11-04",
-    "reviewed_sha256": "1642a791d8fc35149562ca741b8d20596d0a2b756fab188522070242dca21336",
-    "task_classes": [
-      "R04.01.02.04"
-    ]
-  },
-  {
     "name": "GameWorld",
     "url": "https://github.com/gameworld-project/GameWorld",
     "kind": "benchmark",
@@ -103138,31 +103112,6 @@
     "editorial_reviewed": true,
     "reviewed_at": "2026-11-04",
     "reviewed_sha256": "89b5ae98ec25c0200970ba9b0ea1d01524dfb2a8b0fd77b19b45a83e359c93dc"
-  },
-  {
-    "name": "DesktopAgent (S1-Fast)",
-    "url": "https://github.com/elidot007/desktop-agent",
-    "kind": "agent",
-    "scope": "core",
-    "environments": [
-      "desktop",
-      "windows"
-    ],
-    "topics": [
-      "efficiency",
-      "action-prediction",
-      "automation"
-    ],
-    "summary": "DesktopAgent operates Windows desktop applications in the background using a local 0.33B System-One decision model (S1-Fast) and UI Automation.",
-    "verify_terms": [
-      "DesktopAgent"
-    ],
-    "evidence_urls": [
-      "https://raw.githubusercontent.com/elidot007/desktop-agent/HEAD/README.md"
-    ],
-    "editorial_reviewed": true,
-    "reviewed_at": "2026-11-04",
-    "reviewed_sha256": "96a88efb376d6545914ff77b203bd64a03e0c262e234963f75b458e61227a7ce"
   },
   {
     "name": "AgentP",
@@ -124269,32 +124218,6 @@
     "reviewed_sha256": "4811c6c8add0915dbf95c8e3e6ca153e5ae9528f28ba6229ee087b431734fe36"
   },
   {
-    "name": "Bees Desktop",
-    "url": "https://github.com/Bees-bot/bees-desktop",
-    "kind": "framework",
-    "scope": "core",
-    "environments": [
-      "cross-platform",
-      "desktop",
-      "web"
-    ],
-    "topics": [
-      "workflow",
-      "tool-integration",
-      "automation"
-    ],
-    "summary": "Thread-based multi-agent desktop runtime allowing a team of AI agents to collaborate over local files and browsers.",
-    "verify_terms": [
-      "Bees Desktop"
-    ],
-    "evidence_urls": [
-      "https://raw.githubusercontent.com/Bees-bot/bees-desktop/main/README.md"
-    ],
-    "editorial_reviewed": true,
-    "reviewed_at": "2026-11-04",
-    "reviewed_sha256": "fb25b09ac08e17da6a1f2371b6886a78ac3a5788d05fedad7212af41edef31c5"
-  },
-  {
     "name": "WebAgents Protocol",
     "url": "https://github.com/BetterWright/WebAgents",
     "kind": "framework",
@@ -130268,32 +130191,6 @@
     "reviewed_sha256": "173d33f6eea9e40c2139199e887bcf1fede55237a116a87917958a5fe226ca34"
   },
   {
-    "name": "Mary (Personal AI OS)",
-    "url": "https://github.com/rao-studios/Mary",
-    "kind": "agent",
-    "scope": "core",
-    "environments": [
-      "desktop",
-      "macos"
-    ],
-    "topics": [
-      "screen-understanding",
-      "memory",
-      "automation",
-      "tool-integration"
-    ],
-    "summary": "Ambient-intelligent macOS computer-use desktop client and personal AI operating environment.",
-    "verify_terms": [
-      "Mary"
-    ],
-    "evidence_urls": [
-      "https://raw.githubusercontent.com/rao-studios/Mary/main/README.md"
-    ],
-    "editorial_reviewed": true,
-    "reviewed_at": "2026-11-04",
-    "reviewed_sha256": "f4d999bfd1614a0bdfe118d6f557e388ac9b98f7c3aa110ee28d6b92f5e48fab"
-  },
-  {
     "name": "MealPilot",
     "url": "https://github.com/raunak-choudhary/Hack_Princeton_MealPilot",
     "kind": "agent",
@@ -131093,30 +130990,6 @@
     "editorial_reviewed": true,
     "reviewed_at": "2026-11-04",
     "reviewed_sha256": "cbc4cbe2ba8e0bf081fe72e0f4623b1f55f19311e736863e0f8135e7a3631da9"
-  },
-  {
-    "name": "dsh-browser-full-access",
-    "url": "https://github.com/LianPing-cyber/dsh-browser-full-access",
-    "kind": "tool",
-    "scope": "core",
-    "environments": [
-      "web"
-    ],
-    "topics": [
-      "web-navigation",
-      "tool-integration",
-      "automation"
-    ],
-    "summary": "Background-tab full-access fork of `dsh-browser` for DeepSeek Harness web automation.",
-    "verify_terms": [
-      "browser"
-    ],
-    "evidence_urls": [
-      "https://raw.githubusercontent.com/LianPing-cyber/dsh-browser-full-access/main/README.md"
-    ],
-    "editorial_reviewed": true,
-    "reviewed_at": "2026-11-04",
-    "reviewed_sha256": "b219352383bf466d485896d0946b502c0e4bc60f5cc12b459a0e8f0c0dab9996"
   },
   {
     "name": "BrowserTrack",
@@ -132940,33 +132813,6 @@
     "reviewed_sha256": "8503f27fc1165e72e45e898e9b9dc8356f02cfb08c0c581136518bff69f07b9e"
   },
   {
-    "name": "ZetaTron",
-    "url": "https://github.com/itsmarcelS/ZetaTron",
-    "kind": "framework",
-    "scope": "core",
-    "environments": [
-      "desktop",
-      "windows",
-      "web"
-    ],
-    "topics": [
-      "planning",
-      "memory",
-      "automation",
-      "tool-integration"
-    ],
-    "summary": "Self-directed local-first autonomous agent harness for Windows with desktop and browser execution capabilities.",
-    "verify_terms": [
-      "ZetaTron"
-    ],
-    "evidence_urls": [
-      "https://raw.githubusercontent.com/itsmarcelS/ZetaTron/main/README.md"
-    ],
-    "editorial_reviewed": true,
-    "reviewed_at": "2026-11-04",
-    "reviewed_sha256": "13f206bc3a588c2453e828d23b0a889c9aab6e075675d47f1f0e7da4be3f2212"
-  },
-  {
     "name": "Threadline WebMCP",
     "url": "https://github.com/JamesWirths/threadline",
     "kind": "framework",
@@ -133069,32 +132915,6 @@
     "editorial_reviewed": true,
     "reviewed_at": "2026-11-04",
     "reviewed_sha256": "251cb8963229f86745b4cae6b873e4c28042b06d3ce7ea4ae41358e534eeffe6"
-  },
-  {
-    "name": "Native by K",
-    "url": "https://github.com/Karunya-Muddana/Native",
-    "kind": "framework",
-    "scope": "core",
-    "environments": [
-      "cross-platform",
-      "desktop",
-      "web"
-    ],
-    "topics": [
-      "tool-integration",
-      "workflow",
-      "automation"
-    ],
-    "summary": "Local-first open-source AI agent harness for developers integrating terminal, filesystem, and browser control.",
-    "verify_terms": [
-      "Native by K"
-    ],
-    "evidence_urls": [
-      "https://raw.githubusercontent.com/Karunya-Muddana/Native/main/README.md"
-    ],
-    "editorial_reviewed": true,
-    "reviewed_at": "2026-11-04",
-    "reviewed_sha256": "9ca0e066c1b2b2aee6a54af3f2c3e317c3f3063bb8f486a1975bb63db59c2cd6"
   },
   {
     "name": "WellSet WebMCP",
@@ -167529,9 +167349,6 @@
     "name": "Strawberry",
     "kind": "product",
     "url": "https://www.strawberrybrowser.com",
-    "evidence_urls": [
-      "https://strawberrybrowser.com/llms.txt"
-    ],
     "environments": [
       "web"
     ],
@@ -167549,7 +167366,7 @@
     "aliases": [
       "Strawberry Browser"
     ],
-    "notes": "Dendrite Systems, a team based in Stockholm, publishes Strawberry. Its llms.txt describes companions as persistent assistants that are briefed once and remember across sessions, routines that run work on a schedule, saved skills that re-run a workflow, and 93 native integrations with 1,254 operations alongside work done in the browser session the user is signed into; companions ask for approval before sending email, making payments or taking destructive actions. The browser-agent page says a companion plans the work, opens the sites, moves between tabs, clicks through flows and uses an app integration when that is faster than browsing. Regular browsing is free, while companion work draws on monthly credits, with a free plan of 500 credits and paid tiers. The llms.txt also says the publisher retracted its February 2026 comparison benchmark after an audit and now publishes a measurement standard for results.",
+    "notes": "Strawberry Browser Inc., a Stockholm-based team, publishes Strawberry. On the browser-agent page a companion plans the work, opens the sites, moves between tabs, clicks through flows and uses an app integration when that is faster than browsing. Regular browsing is free, while companion work draws on monthly credits, with a free plan of 500 credits and paid tiers.",
     "details": {
       "access": "publisher-managed",
       "pricing_url": "https://strawberrybrowser.com/pricing"
@@ -167574,8 +167391,8 @@
           "notes"
         ],
         "url": "https://strawberrybrowser.com/browser-agent",
-        "sha256": "b790fc80bfc58803f708d9c8afdd53b1faa3312950b78e40cefdc0708f8288a9",
-        "retrieved_at": "2026-10-20T04:40:38Z"
+        "sha256": "ae0da1f9d5ed744d19dc0e8fb75aa21756086686705d507cc5c75a4e4ace9536",
+        "retrieved_at": "2026-11-10T08:13:06Z"
       },
       {
         "role": "primary",
@@ -167584,8 +167401,8 @@
           "notes"
         ],
         "url": "https://strawberrybrowser.com/about-us",
-        "sha256": "33c76bdc63bad85d307b305bf0cd4f2f17e7a1da860cf4ce6ff66c4a4b987fa7",
-        "retrieved_at": "2026-10-20T04:40:40Z"
+        "sha256": "81bc6cd56d4b78ff19b19da8cfff1acd388a2f3ba01e32b73a18433bd6cea1d6",
+        "retrieved_at": "2026-11-10T08:13:09Z"
       },
       {
         "role": "primary",
@@ -167595,13 +167412,13 @@
           "details.pricing_url"
         ],
         "url": "https://strawberrybrowser.com/pricing",
-        "sha256": "74f5cda50ae8ad25ed90f73e308cc4a6401304319f727ad64d69928917532e96",
-        "retrieved_at": "2026-10-20T04:40:41Z"
+        "sha256": "c736081829338d8af2489784d3341c1879ddee6d97839b311d0e87e43854a96e",
+        "retrieved_at": "2026-11-10T08:13:13Z"
       }
     ],
     "editorial_reviewed": true,
-    "reviewed_sha256": "b63ef661f6d4648038baf08bd630ec20129e5c300f5600d71ae38463a82f7560",
-    "reviewed_at": "2026-10-20T04:42:16Z"
+    "reviewed_sha256": "c006431c0d509371208837c36eec4c59ab73b566ae64d176a3877500554a53bc",
+    "reviewed_at": "2026-11-10T08:13:23Z"
   },
   {
     "name": "Webfuse",

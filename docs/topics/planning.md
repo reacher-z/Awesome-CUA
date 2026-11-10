@@ -2,9 +2,9 @@
 
 [Home](../../README.md) · [All topics](../topics.md) · [Full arXiv bibliography](../papers.md)
 
-565 source-reviewed resources tagged `planning`. Curated metadata; unknown facts are shown as —.
+564 source-reviewed resources tagged `planning`. Curated metadata; unknown facts are shown as —.
 
-**Contents:** [Benchmarks (11)](#benchmarks) · [Datasets (12)](#datasets) · [Models (60)](#models) · [Agents (89)](#agents) · [Frameworks (80)](#frameworks) · [Tools (2)](#tools) · [Products (2)](#products) · [Learning resources (4)](#learning-resources) · [Surveys (7)](#surveys) · [Papers (298)](#papers)
+**Contents:** [Benchmarks (11)](#benchmarks) · [Datasets (12)](#datasets) · [Models (60)](#models) · [Agents (89)](#agents) · [Frameworks (79)](#frameworks) · [Tools (2)](#tools) · [Products (2)](#products) · [Learning resources (4)](#learning-resources) · [Surveys (7)](#surveys) · [Papers (298)](#papers)
 
 ## Benchmarks
 
@@ -281,7 +281,6 @@
 | [WebDreamer](https://github.com/OSU-NLP-Group/WebDreamer) | web | [2411.06559](https://arxiv.org/abs/2411.06559) (2024) | — | World-model and planning components that simulate web-action outcomes, with linked training data and model checkpoints. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/OSU-NLP-Group/WebDreamer/HEAD/README.md) |
 | [WebThinker](https://github.com/RUC-NLPIR/WebThinker) | web | [2504.21776](https://arxiv.org/abs/2504.21776) (2025) | code MIT | WebThinker empowers large reasoning models to autonomously search, browse webpages, and draft research reports during deep thinking. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/RUC-NLPIR/WebThinker/HEAD/README.md) |
 | [WorkForceAgent-R1](https://github.com/night-chen/WorkForceAgent-R1) | web | [2505.22942](https://arxiv.org/abs/2505.22942) (2025) | — | Web-task reward functions, WorkArena data processing and GRPO training configurations for reasoning-oriented language agents. | [✓ 2026‑10‑17](https://raw.githubusercontent.com/night-chen/WorkForceAgent-R1/HEAD/README.md) |
-| [ZetaTron](https://github.com/itsmarcelS/ZetaTron) | desktop, windows, web | — | — | Self-directed local-first autonomous agent harness for Windows with desktop and browser execution capabilities. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/itsmarcelS/ZetaTron/main/README.md) |
 
 ## Tools
 

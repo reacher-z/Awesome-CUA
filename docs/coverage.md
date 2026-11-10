@@ -2,7 +2,7 @@
 
 Evidence snapshot through **2026-11-10T08:20:17Z**. Generated from committed source receipts.
 
-- 5,354 curated resources. Another 1,188 records await review with bibliographic metadata only; the active catalog file holds 6,542 records in all.
+- 5,347 curated resources. Another 1,188 records await review with bibliographic metadata only; the active catalog file holds 6,535 records in all.
 - 2,906 paper and survey records, including 2,853 arXiv identities and 53 publisher-only identities.
 - 4,161 retained arXiv metadata records; 1,308 explicit scope exclusions are outside the active catalog.
 - 9,817 discovery identifiers; 181 remain unresolved. Reviewed decisions include 505 non-resource links, 748 aliases and 2,052 out-of-scope resources; their reasons remain in the review queue.
@@ -16,18 +16,18 @@ Counts of source-reviewed resources. A resource tagged with several environments
 
 | Kind | web | desktop | windows | macos | linux | android | ios | harmonyos | cross-platform | unspecified |
 | --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
-| [agent](agents.md) | 247 | 229 | 103 | 116 | 77 | 88 | 20 | 2 | 60 | 3 |
-| [benchmark](benchmarks.md) | 211 | 95 | 14 | 11 | 25 | 44 | 2 | · | 28 | 14 |
+| [agent](agents.md) | 247 | 227 | 102 | 115 | 77 | 88 | 20 | 2 | 60 | 3 |
+| [benchmark](benchmarks.md) | 210 | 95 | 14 | 11 | 25 | 44 | 2 | · | 28 | 14 |
 | [company](companies.md) | · | 1 | · | · | · | · | · | · | 1 | 18 |
 | [dataset](datasets.md) | 122 | 78 | 13 | 16 | 26 | 74 | 7 | · | 34 | 36 |
-| [framework](frameworks.md) | 472 | 312 | 101 | 88 | 111 | 102 | 17 | 1 | 154 | 26 |
+| [framework](frameworks.md) | 469 | 309 | 100 | 88 | 111 | 102 | 17 | 1 | 152 | 26 |
 | [infrastructure](infrastructures.md) | 65 | 78 | 16 | 23 | 59 | 22 | 3 | · | 11 | 2 |
 | [learning](learning.md) | 30 | 19 | 3 | 5 | 4 | 4 | 1 | · | 19 | 1 |
 | [model](models.md) | 190 | 179 | 22 | 18 | 21 | 100 | 7 | · | 144 | 90 |
 | [paper](topics.md) | 661 | 244 | 43 | 18 | 25 | 229 | 12 | 4 | 112 | 597 |
 | [product](products.md) | 64 | 23 | 9 | 9 | 4 | 6 | 2 | 1 | 8 | · |
 | [survey](surveys.md) | 7 | 2 | 1 | · | · | 2 | 1 | · | 13 | 17 |
-| [tool](tools.md) | 682 | 577 | 264 | 294 | 198 | 74 | 48 | 2 | 176 | 21 |
+| [tool](tools.md) | 681 | 577 | 264 | 294 | 198 | 74 | 48 | 2 | 176 | 21 |
 
 ## Source snapshot coverage
 
@@ -193,7 +193,7 @@ The recorded title query returned 1,199 unique records out of 1,246 reported mat
 
 | Scope | Recorded declarations |
 | --- | ---: |
-| code | 2139 |
+| code | 2134 |
 | data | 220 |
 | weights | 346 |
 | document | 8 |

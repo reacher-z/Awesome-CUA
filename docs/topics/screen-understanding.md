@@ -2,9 +2,9 @@
 
 [Home](../../README.md) · [All topics](../topics.md) · [Full arXiv bibliography](../papers.md)
 
-1,019 source-reviewed resources tagged `screen-understanding`. Curated metadata; unknown facts are shown as —.
+1,018 source-reviewed resources tagged `screen-understanding`. Curated metadata; unknown facts are shown as —.
 
-**Contents:** [Benchmarks (26)](#benchmarks) · [Datasets (67)](#datasets) · [Models (165)](#models) · [Agents (97)](#agents) · [Frameworks (107)](#frameworks) · [Tools (313)](#tools) · [Infrastructure (4)](#infrastructure) · [Learning resources (5)](#learning-resources) · [Surveys (2)](#surveys) · [Papers (233)](#papers)
+**Contents:** [Benchmarks (26)](#benchmarks) · [Datasets (67)](#datasets) · [Models (165)](#models) · [Agents (96)](#agents) · [Frameworks (107)](#frameworks) · [Tools (313)](#tools) · [Infrastructure (4)](#infrastructure) · [Learning resources (5)](#learning-resources) · [Surveys (2)](#surveys) · [Papers (233)](#papers)
 
 ## Benchmarks
 
@@ -336,7 +336,6 @@
 | [MacWork](https://github.com/gklab/MacWork) | desktop, macos | — | code Apache-2.0 | MacWork is an open-source macOS computer-use agent and MCP server that drives desktop applications through the native Accessibility API. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/gklab/MacWork/HEAD/README.md) |
 | [Mano skill](https://github.com/Mininglamp-AI/mano-skill) | cross-platform, desktop, macos, windows, linux, web | — | — | Mano skill runs desktop tasks from natural-language instructions by inspecting screenshots and issuing mouse and keyboard actions. It offers cloud and on-device modes. | [✓ 2026‑11‑09](https://raw.githubusercontent.com/Mininglamp-AI/mano-skill/HEAD/README.md) |
 | [Marvi OS](https://github.com/xRetr00/Marvi-OS) | desktop, windows, macos, linux | — | code MIT | Conversational desktop agent shell that observes screen context and executes local OS and GUI actions. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/xRetr00/Marvi-OS/main/README.md) |
-| [Mary (Personal AI OS)](https://github.com/rao-studios/Mary) | desktop, macos | — | code MIT | Ambient-intelligent macOS computer-use desktop client and personal AI operating environment. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/rao-studios/Mary/main/README.md) |
 | [Milli-Agent](https://github.com/Abdullah-Al-Raju/milli-agent) | desktop, windows, linux | — | — | Milli-Agent is a real-time computer-use agent architecture designed for high-frequency in-memory screen capture and low-latency actuation. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/Abdullah-Al-Raju/milli-agent/HEAD/README.md) |
 | [MultimodalWebSurfer](https://microsoft.github.io/autogen/stable/reference/python/autogen_ext.agents.web_surfer.html) | web | — | — | MultimodalWebSurfer operates a Chromium browser through Playwright, using marked screenshots and a multimodal model to choose actions on web pages. | [✓ 2026‑11‑09](https://microsoft.github.io/autogen/stable/reference/python/autogen_ext.agents.web_surfer.html) |
 | [my_tiny_agent](https://github.com/yanjin101/my_tiny_agent) | desktop, windows | — | code MIT | Spec-driven small-LLM desktop agent that operates Windows end-to-end using OCR, YOLO icon detection, and Win32 APIs without a VLM. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/yanjin101/my_tiny_agent/master/README.md) |

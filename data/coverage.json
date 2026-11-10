@@ -1,7 +1,7 @@
 {
   "as_of_utc": "2026-11-10T08:20:17Z",
-  "total_records": 6542,
-  "curated_records": 5354,
+  "total_records": 6535,
+  "curated_records": 5347,
   "bibliographic_records": 2906,
   "arxiv_active_records": 2853,
   "non_arxiv_bibliographic_records": 53,
@@ -2834,43 +2834,43 @@
     }
   ],
   "by_kind": {
-    "agent": 481,
-    "benchmark": 310,
+    "agent": 479,
+    "benchmark": 309,
     "company": 19,
     "dataset": 278,
-    "framework": 675,
+    "framework": 672,
     "infrastructure": 122,
     "learning": 38,
     "model": 475,
     "paper": 2869,
     "product": 75,
     "survey": 37,
-    "tool": 1163
+    "tool": 1162
   },
   "curated_by_environment": {
     "android": 745,
-    "cross-platform": 760,
-    "desktop": 1837,
+    "cross-platform": 758,
+    "desktop": 1832,
     "harmonyos": 10,
     "ios": 120,
     "linux": 550,
-    "macos": 598,
+    "macos": 597,
     "unspecified": 825,
-    "web": 2751,
-    "windows": 589
+    "web": 2746,
+    "windows": 587
   },
   "curated_by_kind_and_environment": {
     "agent": {
       "android": 88,
       "cross-platform": 60,
-      "desktop": 229,
+      "desktop": 227,
       "harmonyos": 2,
       "ios": 20,
       "linux": 77,
-      "macos": 116,
+      "macos": 115,
       "unspecified": 3,
       "web": 247,
-      "windows": 103
+      "windows": 102
     },
     "benchmark": {
       "android": 44,
@@ -2880,7 +2880,7 @@
       "linux": 25,
       "macos": 11,
       "unspecified": 14,
-      "web": 211,
+      "web": 210,
       "windows": 14
     },
     "company": {
@@ -2901,15 +2901,15 @@
     },
     "framework": {
       "android": 102,
-      "cross-platform": 154,
-      "desktop": 312,
+      "cross-platform": 152,
+      "desktop": 309,
       "harmonyos": 1,
       "ios": 17,
       "linux": 111,
       "macos": 88,
       "unspecified": 26,
-      "web": 472,
-      "windows": 101
+      "web": 469,
+      "windows": 100
     },
     "infrastructure": {
       "android": 22,
@@ -2985,12 +2985,12 @@
       "linux": 198,
       "macos": 294,
       "unspecified": 21,
-      "web": 682,
+      "web": 681,
       "windows": 264
     }
   },
   "license_declarations_by_scope": {
-    "code": 2139,
+    "code": 2134,
     "data": 220,
     "weights": 346,
     "document": 8

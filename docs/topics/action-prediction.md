@@ -2,9 +2,9 @@
 
 [Home](../../README.md) · [All topics](../topics.md) · [Full arXiv bibliography](../papers.md)
 
-310 source-reviewed resources tagged `action-prediction`. Curated metadata; unknown facts are shown as —.
+309 source-reviewed resources tagged `action-prediction`. Curated metadata; unknown facts are shown as —.
 
-**Contents:** [Benchmarks (9)](#benchmarks) · [Datasets (15)](#datasets) · [Models (173)](#models) · [Agents (27)](#agents) · [Frameworks (25)](#frameworks) · [Tools (2)](#tools) · [Papers (59)](#papers)
+**Contents:** [Benchmarks (9)](#benchmarks) · [Datasets (15)](#datasets) · [Models (173)](#models) · [Agents (26)](#agents) · [Frameworks (25)](#frameworks) · [Tools (2)](#tools) · [Papers (59)](#papers)
 
 ## Benchmarks
 
@@ -228,7 +228,6 @@
 | [Auto-UI](https://github.com/gimme1dollar/auto_ui) | android | [2309.11436](https://arxiv.org/abs/2309.11436) (2023) | code Apache-2.0 | A multimodal interface agent that uses earlier actions and future action plans to predict the next action. The repository provides training and inference instructions. | [✓ 2026‑11‑09](https://raw.githubusercontent.com/gimme1dollar/auto_ui/HEAD/README.md) |
 | [claude-minecraft-use](https://github.com/ObservedObserver/claude-minecraft-use) | desktop, macos | — | code MIT | Adapts Anthropic Claude Computer Use on macOS with continuous movement and camera controls to play Minecraft from screen observations. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/ObservedObserver/claude-minecraft-use/HEAD/README.md) |
 | [ClickAgent](https://github.com/Samsung/ClickAgent) | android | — | — | ClickAgent decouples high-level MLLM action reasoning from a specialized UI element localization model for Android task automation. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/Samsung/ClickAgent/HEAD/README.md) |
-| [DesktopAgent (S1-Fast)](https://github.com/elidot007/desktop-agent) | desktop, windows | — | code Apache-2.0 | DesktopAgent operates Windows desktop applications in the background using a local 0.33B System-One decision model (S1-Fast) and UI Automation. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/elidot007/desktop-agent/HEAD/README.md) |
 | [Game AI - Dome Keeper](https://github.com/proj-airi/game-playing-ai-dome-keeper) | desktop, windows, macos, linux | — | — | A game-playing agent for Dome Keeper that combines computer vision and a language model. Its active mod is written in TypeScript and converted to GDScript. | [✓ 2026‑11‑09](https://raw.githubusercontent.com/proj-airi/game-playing-ai-dome-keeper/HEAD/README.md) |
 | [globot](https://github.com/Globe-Engineer/globot) | web | — | code MIT | A Python browser agent that drives Chromium through Playwright, turns the DOM snapshot into numbered clickable and input elements, and has an OpenAI model pick click, type, scroll or back actions. | [✓ 2026‑11‑10](https://raw.githubusercontent.com/Globe-Engineer/globot/7d3a6eda712c6d2f861a3ff5b4652c5cf79efe96/README.md) |
 | [GUI Reflection](https://github.com/penghao-wu/GUI_Reflection) | unspecified | [2506.08012](https://arxiv.org/abs/2506.08012) (2025) | code Apache-2.0 | GUI Reflection provides agent code that predicts GUI actions from a screen image and task goal, alongside scripts for evaluation and supervised training. | [✓ 2026‑11‑09](https://raw.githubusercontent.com/penghao-wu/GUI_Reflection/HEAD/README.md) |

@@ -145,7 +145,7 @@ def home_markdown(newest, kinds, *, site, counts, snapshot, language='en', faq='
                   f'- {link("Atom 订阅", site + "/feed.xml")}与{link("JSON Feed", site + "/feed.json")}：最新审核的资源',
                   f'- {link("数据下载", site + "/zh/data/")}：JSONL、SQLite、RAG 文档与引用文件']
     if faq:
-        lines += ['', '## 常见问题' if language == 'zh' else '## Questions', '', faq]
+        lines += ['', '## 常见问题' if language == 'zh' else '## FAQ', '', faq]
     return '\n'.join(lines) + '\n'
 
 
@@ -160,7 +160,7 @@ def llms_full(groups, *, site, snapshot, counts, survey_line, kind_files, faq=''
     if survey_line:
         lines += ['', survey_line]
     if faq:
-        lines += ['', '## Questions', '', faq]
+        lines += ['', '## FAQ', '', faq]
     for label, entries in groups:
         lines += ['', f'## {label} ({len(entries):,})', ''] + ['\n\n'.join(entries)]
     return '\n'.join(lines) + '\n'
@@ -196,7 +196,7 @@ def llms_txt(*, site, counts, kinds, zh_kinds, library, topics, api_endpoints, g
               f'- {link("Agent instructions", site + "/AGENTS.md")}: read commands, API, search pattern, BibTeX; also at {site}/agents.md and {site}/agents.txt', f'- {link("Human and agent guide", site + "/agents/index.md")}', f'- {link("中文指南", site + "/zh/agents/index.md")}']
     lines += ['', '## Guides and policies', ''] + [f'- {link(title, site + path + "index.md")}: {inline(description)}' for title, path, description in guides]
     if faq:
-        lines += ['', '## Questions', '', faq]
+        lines += ['', '## FAQ', '', faq]
     lines += ['', '## Optional', '',
               f'- {link("Reviewed retrieval documents", site + "/downloads/rag-documents.jsonl")}, {link("all retrieval documents", site + "/downloads/rag-all-records.jsonl")} and {link("export manifest", site + "/downloads/rag-manifest.json")}',
               f'- {link("Full catalog JSONL", site + "/downloads/catalog.jsonl")}: every active record, including metadata-only ones',

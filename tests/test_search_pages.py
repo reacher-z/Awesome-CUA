@@ -483,7 +483,7 @@ class SearchPagesTests(unittest.TestCase):
             self.assertTrue(head.startswith('---\ntitle: '),path)
             for key in ('url: '+SITE,'updated: 20','type: ','lang: '):self.assertIn(key,head,path)
         for path in ('index.md','zh/index.md','llms.txt','llms-full.txt','AGENTS.md'):
-            self.assertRegex((self.dest/path).read_text(),r'(?m)^## (Questions|常见问题)$',path)
+            self.assertRegex((self.dest/path).read_text(),r'(?m)^## (FAQ|常见问题)$',path)
         for path in ('index.html','zh/index.html'):
             markup=(self.dest/path).read_text()
             self.assertNotIn('FAQPage',markup);self.assertNotIn('class="cat-faq"',markup)

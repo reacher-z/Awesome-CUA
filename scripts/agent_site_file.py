@@ -81,7 +81,7 @@ Hugging Face mirror: `load_dataset("TIGER-Lab/AwesomeCUA", "resources")`.
 }}
 ```
 
-{('## Questions' + chr(10) + chr(10) + faq + chr(10) + chr(10)) if faq else ''}## Updates
+{('## FAQ' + chr(10) + chr(10) + faq + chr(10) + chr(10)) if faq else ''}## Updates
 
 Discovery scans run every 8 hours. Release tags attach versioned data bundles with SHA-256 checksums: {repo}/releases
 

@@ -475,7 +475,7 @@ def resource_body(record, lookup, incoming=None, pending_review=None, zh=False):
     verified=str(r.get('last_verified_at') or '')[:10]
     if verified:
         article='an' if kind_label[:1].lower() in 'aeiou' else 'a'
-        lead=(f'{r["name"]} 是 Awesome CUA 目录中的{kind_label}，最近核实于 {verified}。' if zh else f'{r["name"]} is {article} {kind_label.lower()} in the Awesome CUA catalog, last verified {verified}. ')+lead
+        lead=(f'{r["name"]}是{kind_label}，收录于 Awesome CUA 目录，最近核实于 {verified}。' if zh else f'{r["name"]} is {article} {kind_label.lower()} in the Awesome CUA catalog, last verified {verified}. ')+lead
     body=f'<div class="eyebrow">{esc(kind_label)}</div><h1>{esc(r["name"])}</h1><p class="answer-lead">{esc(lead)}</p><p class="review-notice">{esc(status)}{tr(".","。")}</p><div class="page-actions"><a class="button primary" href="{safe_href(r["url"])}">{tr("Original source ↗","原始来源 ↗")}</a><a class="button secondary" href="{own}index.md">{tr("Read as Markdown","Markdown 版本")}</a><a class="button secondary" href="{resource_path(r)}record.json">{tr("Record JSON","记录 JSON")}</a></div>'
     hold=reviewer_hold(r,pending_review)
     if hold:

@@ -1277,7 +1277,7 @@ def build_search_pages(destination, rows, coverage, root, *, survey_page=None):
     declare_markdown_twins(destination,manifest)
     kind_by_path={**{resource_path(r):r['kind'] for r in rows},**{zh_resource_path(r):r['kind'] for r in rows if eligible(r)}}
     add_front_matter(destination,sitemap_facts,kind_by_path,snapshot)
-    write_sitemaps(destination,SITE,[{'path':item['path'],'section':sitemap_section(item['path'],kind_by_path),**{**sitemap_facts[item['path']],'lastmod':sitemap_facts[item['path']].get('lastmod') or snapshot[:10]}} for item in manifest if item['indexable']])
+    write_sitemaps(destination,SITE,[{'path':item['path'],'section':sitemap_section(item['path'],kind_by_path),**{**sitemap_facts[item['path']],'lastmod':sitemap_facts[item['path']].get('lastmod') or snapshot}} for item in manifest if item['indexable']])
     (destination/'data/search-manifest.json').write_text(json.dumps({'site_url':SITE,'indexable_pages':sum(x['indexable'] for x in manifest),'metadata_only_pages':sum(not x['indexable'] and not x.get('scope_excluded') and not x.get('utility') for x in manifest),'excluded_pages':sum(bool(x.get('scope_excluded')) for x in manifest),'pages':manifest},ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
     config=json.loads((root/'data/site-discovery.json').read_text(encoding='utf-8'))
     key=config['indexnow_key'];(destination/(key+'.txt')).write_text(key,encoding='utf-8')

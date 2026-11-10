@@ -121,7 +121,7 @@ def catalog_markdown(kinds, topics, *, site, counts, language='en'):
 def home_markdown(newest, kinds, *, site, counts, snapshot, language='en', faq=''):
     curated, waiting = counts['curated'], counts['awaiting_review']
     lines = ['# Awesome CUA', '',
-             f'> A source-backed catalog of computer-use, GUI, browser and mobile agent research and resources: {curated["total"]:,} curated records '
+             f'> Awesome CUA (Awesome Computer-Use Agents) is a source-backed catalog of computer-use, GUI, browser and mobile agent research and resources: {curated["total"]:,} curated records '
              f'({curated["papers_and_surveys"]:,} papers and surveys, {curated["other_resources"]:,} models, datasets, benchmarks, agents, frameworks, tools and products), each reviewed against a primary source.', '',
              f'Snapshot {snapshot}. Awaiting review and not counted above: {waiting["metadata_only_records"]:,} metadata-only bibliography records and {waiting["unresolved_candidate_identifiers"]:,} discovered identifiers. {counts["note"]}', '',
              f'HTML page: {site}/ · 中文: {site}/zh/ · Agent index: {site}/llms.txt', '', '## Newest reviewed resources', '']

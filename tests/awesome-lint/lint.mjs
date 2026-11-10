@@ -17,10 +17,12 @@ try {
 // The repository-metadata rule reads `github_token` when it is set; the workflow passes a read-only token as `GH_TOKEN`.
 if (process.env.GH_TOKEN && !process.env.github_token) process.env.github_token = process.env.GH_TOKEN;
 const files = await lint({filename: input});
+// "OS X" names Apple's legacy accessibility guide in a reviewed source title; the proper noun is not a misspelling.
+const sourceProperNouns = new Set(['Text "OS X" should be written as "macOS"']);
 const findings = files.flatMap(file => file.messages.map(message => ({
   file: path.basename(file.path), rule: message.ruleId || message.source || 'unknown',
   line: message.line ?? null, column: message.column ?? null, reason: String(message.reason),
-})));
+}))).filter(finding => !(finding.rule === 'awesome-spell-check' && sourceProperNouns.has(finding.reason)));
 fs.mkdirSync(path.dirname(output), {recursive: true});
 const {version} = createRequire(import.meta.url)('awesome-lint/package.json');
 fs.writeFileSync(output, JSON.stringify({linter: `awesome-lint@${version}`, input, findings}, null, 2) + '\n');

@@ -926,32 +926,25 @@ def aligned_table(rows, right=()):
     return [line(rows[0]), rule, *map(line, rows[1:])]
 
 
-GENERATED_BLOCK = re.compile(r"<!-- (\w+):START -->.*?<!-- \1:END -->", re.S)
 LINK = re.compile(r"(?<!!)\[([^\]]+)\]\(([^)\s#][^)\s]*)\)")
 
 
 def unlink_repeats(content):
-    """Keep the first link to each address on the page and write later ones inside generated blocks as plain text
-    (a paper cited by several rows, a document named in two tables); awesome-lint flags a URL linked twice."""
-    spans = [m.span() for m in GENERATED_BLOCK.finditer(content)]
+    """Keep the first link to each address on the page and write later ones as plain text (a paper cited by several
+    rows, a document named in two sections); awesome-lint flags a URL linked twice."""
     seen = set()
     def replace(match):
         url = match.group(2)
-        generated = any(a <= match.start() < b for a, b in spans)
-        if url in seen and generated:
+        if url in seen:
             return match.group(1)
         seen.add(url)
         return match.group(0)
-    content = LINK.sub(replace, content)
-    spans = [m.span() for m in GENERATED_BLOCK.finditer(content)]
-    for start, end in reversed(spans):
-        content = content[:start] + realign_tables(content[start:end]) + content[end:]
-    return content
+    return realign_tables(LINK.sub(replace, content))
 
 
 def realign_tables(text):
-    """Pad every Markdown table in `text` again, because unlinking changed cell widths."""
-    out, table = [], []
+    """Pad every Markdown table in `text` again, because unlinking changed cell widths; fenced code stays literal."""
+    out, table, fenced = [], [], False
     def flush():
         if not table:
             return
@@ -962,7 +955,11 @@ def realign_tables(text):
         out.extend(aligned_table(body, right=right) if len(rows) > 1 and rule and all(rule) else table)
         table.clear()
     for line in text.split("\n"):
-        if line.startswith("|"):
+        if line.lstrip().startswith("```"):
+            flush()
+            fenced = not fenced
+            out.append(line)
+        elif not fenced and line.startswith("|"):
             table.append(line)
         else:
             flush()

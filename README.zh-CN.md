@@ -4,7 +4,7 @@
 
 [English](README.md) · **简体中文**
 
-**[网站搜索](https://awesomecua.com/zh/)** · **[论文](https://awesomecua.com/zh/papers/)** · **[主题](https://awesomecua.com/zh/topics/)** · **[数据](https://awesomecua.com/zh/data/)** · **[智能体指南](https://awesomecua.com/zh/agents/)** · **[参与贡献](CONTRIBUTING.md)**
+**[网站搜索](https://awesomecua.com/zh/)** · **[参与贡献](CONTRIBUTING.md)**
 
 觉得有用？欢迎在 GitHub 上[点星支持本合集](https://github.com/reacher-z/Awesome-CUA)，让更多人找到它。
 
@@ -25,13 +25,13 @@
 <!-- TASKS:START -->
 ## 按任务查找
 
-| 你的任务           | 从这里开始                                                                                                | 可以找到什么                                     |
-| -------------- | ---------------------------------------------------------------------------------------------------- | ------------------------------------------ |
-| 查找论文           | 论文库 · 研究主题 · [论文—资产关系](https://awesomecua.com/connections/)                                          | 按年份和主题阅读已审阅论文，查看原始来源，以及经一手来源支持的代码、数据和模型关联。 |
-| 选择评测基准         | [基准指南](https://awesomecua.com/guides/gui-agent-benchmarks/)                                          | 核对平台、任务、评估器和版本。                            |
-| 寻找训练数据         | [训练数据指南](https://awesomecua.com/guides/gui-agent-training-data/)                                     | 比较监督形式、划分、样本单位和数据许可。                       |
-| 构建智能体          | [智能体](https://awesomecua.com/categories/agent/) · [框架](https://awesomecua.com/categories/framework/) | 找到实现入口、支持的平台和论文依据。                         |
-| 接入 RAG 或 Agent | 使用指南 · 数据中心                                                                                          | 下载完整记录或检索文档，保留审阅状态和来源。                     |
+| 你的任务           | 从这里开始                                                                                                                                 | 可以找到什么                                     |
+| -------------- | ------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------ |
+| 查找论文           | [论文库](https://awesomecua.com/zh/papers/) · [研究主题](https://awesomecua.com/zh/topics/) · [论文—资产关系](https://awesomecua.com/connections/) | 按年份和主题阅读已审阅论文，查看原始来源，以及经一手来源支持的代码、数据和模型关联。 |
+| 选择评测基准         | [基准指南](https://awesomecua.com/guides/gui-agent-benchmarks/)                                                                           | 核对平台、任务、评估器和版本。                            |
+| 寻找训练数据         | [训练数据指南](https://awesomecua.com/guides/gui-agent-training-data/)                                                                      | 比较监督形式、划分、样本单位和数据许可。                       |
+| 构建智能体          | [智能体](https://awesomecua.com/categories/agent/) · [框架](https://awesomecua.com/categories/framework/)                                  | 找到实现入口、支持的平台和论文依据。                         |
+| 接入 RAG 或 Agent | [使用指南](https://awesomecua.com/zh/agents/) · [数据中心](https://awesomecua.com/zh/data/)                                                   | 下载完整记录或检索文档，保留审阅状态和来源。                     |
 
 <details>
 <summary>本地检索示例（克隆后运行；Python 3.11+，无需安装依赖）</summary>
@@ -88,12 +88,12 @@ python3 scripts/catalog.py get arxiv:2404.07972 --related --json
 
 - [llms.txt](https://awesomecua.com/llms.txt) - 供语言模型使用的导航文件。
 - [llms-full.txt](https://awesomecua.com/llms-full.txt) - Markdown 格式的精选注释。
-- [数据中心](https://awesomecua.com/zh/data/) - 分六组提供目录、RAG 文档、引用、主题、对比、来源和数据规范。
+- 数据中心 - 分六组提供目录、RAG 文档、引用、主题、对比、来源和数据规范。
 - [目录 JSONL](https://awesomecua.com/downloads/catalog.jsonl) - 完整目录，每行一个资源。
 - [下载清单](https://awesomecua.com/downloads/manifest.json) - 导出文件的数量、字节数和 SHA-256 校验和。
 - [Atom 订阅源](https://awesomecua.com/feed.xml) - 以 Atom 格式发布的研究更新。
 - [Hugging Face 数据集](https://huggingface.co/datasets/TIGER-Lab/AwesomeCUA) - 只读镜像；metadata_only 和 github_candidates 不是精选条目。
-- [智能体与 RAG 指南](https://awesomecua.com/zh/agents/) - 面向智能体和 RAG 系统的指南。
+- 智能体与 RAG 指南 - 面向智能体和 RAG 系统的指南。
 
 克隆完整目录：
 
@@ -186,7 +186,7 @@ git clone https://github.com/reacher-z/Awesome-CUA.git
 
 ## 最新审阅
 
-按时间倒序列出最新通过编辑审阅的模型、数据集、基准、系统和工具；新论文按日期列在[主题页面](docs/topics.md)中。
+按时间倒序列出最新通过编辑审阅的模型、数据集、基准、系统和工具；新论文按日期列在主题页面中。
 
 <details>
 <summary>展开最新审阅表</summary>
@@ -216,11 +216,11 @@ git clone https://github.com/reacher-z/Awesome-CUA.git
 
 打开[交互式网站](https://awesomecua.com/)，可以搜索和筛选全部资源、查看来源证据、切换中英文界面，或下载完整目录。网站开发与发布见 [website.md](docs/website.md)。
 
-[中文数据中心](https://awesomecua.com/zh/data/)与[English data hub](https://awesomecua.com/data/)按六组组织公开下载：完整目录、RAG 检索文档、论文引用、主题与对比、来源与审阅状态、数据规范（schema）。克隆仓库仍可取得同一套完整源目录；数据中心提供其已发布快照的导出文件。
+中文数据中心与[English data hub](https://awesomecua.com/data/)按六组组织公开下载：完整目录、RAG 检索文档、论文引用、主题与对比、来源与审阅状态、数据规范（schema）。克隆仓库仍可取得同一套完整源目录；数据中心提供其已发布快照的导出文件。
 
-[下载清单](https://awesomecua.com/downloads/manifest.json)为每个列出的导出记录实际数量及单位、范围、精确字节数和 SHA-256 指纹。混合使用下载文件前，请比较各清单的 `catalog_sha256`，确认它们属于同一目录快照。
+下载清单为每个列出的导出记录实际数量及单位、范围、精确字节数和 SHA-256 指纹。混合使用下载文件前，请比较各清单的 `catalog_sha256`，确认它们属于同一目录快照。
 
-[已审阅研究](https://awesomecua.com/zh/papers/)（[English](https://awesomecua.com/papers/)） · [Computer-use agent 指南](https://awesomecua.com/guides/) · [静态资源目录](https://awesomecua.com/catalog/) · [搜索与 AI 发现](docs/search-discovery.md)
+已审阅研究（[English](https://awesomecua.com/papers/)） · [Computer-use agent 指南](https://awesomecua.com/guides/) · [静态资源目录](https://awesomecua.com/catalog/) · [搜索与 AI 发现](docs/search-discovery.md)
 
 - **[目录 JSONL](https://github.com/reacher-z/Awesome-CUA/blob/main/data/catalog.jsonl)：** 每行一个资源，包含稳定 ID、类型化字段、来源证据、按范围区分的许可和审阅状态。
 - **[引用图](https://github.com/reacher-z/Awesome-CUA/blob/main/data/references.jsonl)：** 一手来源中的对外引用。
@@ -271,7 +271,7 @@ node --test tests/web.test.mjs
 
 这些命令与 [Catalog quality](.github/workflows/catalog.yml) 在每次推送和拉取请求时运行的检查一致，顺序也相同。需要 Python 3.11+ 和 Node.js 24+，即 `package.json` 中 `engines` 声明的版本（CI 使用 Python 3.12 和 Node.js 24）。网页测试只使用 Node.js 内置的测试运行器，无需用 npm 安装任何依赖。`npm run test:web` 和 `npm run build:web` 分别是最后两条命令的快捷方式。
 
-网络发现和核实需要显式运行相应命令；常规构建不联网。一手来源快照发生变化后，必须重新进行编辑审阅才能发布。[维护指南](docs/maintenance.md) · [方法说明](docs/methodology.md) · [数据字典](docs/data-dictionary.md)
+网络发现和核实需要显式运行相应命令；常规构建不联网。一手来源快照发生变化后，必须重新进行编辑审阅才能发布。维护指南 · [方法说明](docs/methodology.md) · [数据字典](docs/data-dictionary.md)
 
 ## 致谢与复用
 

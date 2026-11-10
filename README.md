@@ -4,7 +4,7 @@ A source-backed collection of papers, models, datasets, benchmarks and tools for
 
 **English** · [简体中文](README.zh-CN.md)
 
-**[Search the website](https://awesomecua.com/)** · **[Papers](https://awesomecua.com/papers/)** · **[Topics](https://awesomecua.com/topics/)** · **[Data](https://awesomecua.com/data/)** · **[Agent guide](https://awesomecua.com/agents/)** · **[Contribute](CONTRIBUTING.md)**
+**[Search the website](https://awesomecua.com/)** · **[Contribute](CONTRIBUTING.md)**
 
 If this collection is useful, a [star on GitHub](https://github.com/reacher-z/Awesome-CUA) helps others find it.
 
@@ -25,13 +25,13 @@ Curated entries were reviewed against a first-party source snapshot; records awa
 <!-- TASKS:START -->
 ## Find by task
 
-| Your task           | Start here                                                                                                      | What you can find                                                                                                                            |
-| ------------------- | --------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------- |
-| Find papers         | Research library · Topics · [Paper–asset connections](https://awesomecua.com/connections/)                      | Reviewed papers by year and topic, with original sources and the code, datasets and models linked to them through reviewed primary evidence. |
-| Choose a benchmark  | [Benchmark guide](https://awesomecua.com/guides/gui-agent-benchmarks/)                                          | Platforms, tasks, evaluators, and versions to compare.                                                                                       |
-| Find training data  | [Training-data guide](https://awesomecua.com/guides/gui-agent-training-data/)                                   | Supervision, splits, count units, and data licenses.                                                                                         |
-| Build an agent      | [Agents](https://awesomecua.com/categories/agent/) · [Frameworks](https://awesomecua.com/categories/framework/) | Implementation entry points, supported platforms, and papers.                                                                                |
-| Use RAG or an agent | Agent guide · Data hub                                                                                          | Complete records or retrieval documents with review states and sources.                                                                      |
+| Your task           | Start here                                                                                                                                                     | What you can find                                                                                                                            |
+| ------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------- |
+| Find papers         | [Research library](https://awesomecua.com/papers/) · [Topics](https://awesomecua.com/topics/) · [Paper–asset connections](https://awesomecua.com/connections/) | Reviewed papers by year and topic, with original sources and the code, datasets and models linked to them through reviewed primary evidence. |
+| Choose a benchmark  | [Benchmark guide](https://awesomecua.com/guides/gui-agent-benchmarks/)                                                                                         | Platforms, tasks, evaluators, and versions to compare.                                                                                       |
+| Find training data  | [Training-data guide](https://awesomecua.com/guides/gui-agent-training-data/)                                                                                  | Supervision, splits, count units, and data licenses.                                                                                         |
+| Build an agent      | [Agents](https://awesomecua.com/categories/agent/) · [Frameworks](https://awesomecua.com/categories/framework/)                                                | Implementation entry points, supported platforms, and papers.                                                                                |
+| Use RAG or an agent | [Agent guide](https://awesomecua.com/agents/) · [Data hub](https://awesomecua.com/data/)                                                                       | Complete records or retrieval documents with review states and sources.                                                                      |
 
 <details>
 <summary>Local examples (after cloning; Python 3.11+, no dependencies required)</summary>
@@ -88,12 +88,12 @@ Download the catalog, feeds and RAG documents; the data hub also lists sources, 
 
 - [llms.txt](https://awesomecua.com/llms.txt) - Navigation file for language models.
 - [llms-full.txt](https://awesomecua.com/llms-full.txt) - Curated annotations in Markdown.
-- [Data hub](https://awesomecua.com/data/) - Catalog, RAG documents, citations, topics, comparisons, sources and schemas in six groups.
+- Data hub - Catalog, RAG documents, citations, topics, comparisons, sources and schemas in six groups.
 - [Catalog JSONL](https://awesomecua.com/downloads/catalog.jsonl) - Complete catalog with one resource per line.
 - [Download manifest](https://awesomecua.com/downloads/manifest.json) - Export counts, byte sizes and SHA-256 checksums.
 - [Atom feed](https://awesomecua.com/feed.xml) - Research updates as an Atom feed.
 - [Hugging Face dataset](https://huggingface.co/datasets/TIGER-Lab/AwesomeCUA) - Read-only mirror; metadata_only and github_candidates are unreviewed.
-- [Agent and RAG guide](https://awesomecua.com/agents/) - Guide for agents and RAG systems.
+- Agent and RAG guide - Guide for agents and RAG systems.
 
 Clone the complete catalog:
 
@@ -186,7 +186,7 @@ The most-mentioned curated resources per category: the count is how many other c
 
 ## Recently reviewed
 
-Newest editorial approvals of models, datasets, benchmarks, systems, and tools (newest first). New papers appear by date in the [topic hubs](docs/topics.md).
+Newest editorial approvals of models, datasets, benchmarks, systems, and tools (newest first). New papers appear by date in the topic hubs.
 
 <details>
 <summary>Show the recently reviewed table</summary>
@@ -212,20 +212,20 @@ Newest editorial approvals of models, datasets, benchmarks, systems, and tools (
 
 ## Data files and local queries
 
-Browse the [interactive website](https://awesomecua.com/) to search and filter all resources, inspect source evidence, switch between English and Chinese, or download the complete catalog. [Website development and publishing](docs/website.md).
+Browse the interactive website to search and filter all resources, inspect source evidence, switch between English and Chinese, or download the complete catalog. [Website development and publishing](docs/website.md).
 
-The [English data hub](https://awesomecua.com/data/) and [中文数据中心](https://awesomecua.com/zh/data/) organize public downloads into six groups: complete catalog, RAG documents, citations, topics and comparisons, sources and review status, and schemas. Cloning still gives you the complete source catalog; the hub provides exports from its published snapshot.
+The English data hub and [中文数据中心](https://awesomecua.com/zh/data/) organize public downloads into six groups: complete catalog, RAG documents, citations, topics and comparisons, sources and review status, and schemas. Cloning still gives you the complete source catalog; the hub provides exports from its published snapshot.
 
-The [download manifest](https://awesomecua.com/downloads/manifest.json) records each listed export's actual count and unit, scope, byte size, and SHA-256 fingerprint. Compare `catalog_sha256` across manifests before combining files from different downloads.
+The download manifest records each listed export's actual count and unit, scope, byte size, and SHA-256 fingerprint. Compare `catalog_sha256` across manifests before combining files from different downloads.
 
-[Reviewed research](https://awesomecua.com/papers/) · [Computer-use agent guides](https://awesomecua.com/guides/) · [Static resource directory](https://awesomecua.com/catalog/) · [Search and AI discovery](docs/search-discovery.md)
+Reviewed research · [Computer-use agent guides](https://awesomecua.com/guides/) · [Static resource directory](https://awesomecua.com/catalog/) · [Search and AI discovery](docs/search-discovery.md)
 
-- **[Catalog JSONL](https://github.com/reacher-z/Awesome-CUA/blob/main/data/catalog.jsonl):** one resource per line, with stable IDs, typed fields, provenance, scoped licenses, and review status.
-- **[Reference graph](https://github.com/reacher-z/Awesome-CUA/blob/main/data/references.jsonl):** outbound references from primary sources.
-- **[Discovery registry](https://github.com/reacher-z/Awesome-CUA/blob/main/data/sources.json)** and **[candidates](data/candidates.jsonl):** source snapshots and where each identifier was found.
-- **[Review queue](https://github.com/reacher-z/Awesome-CUA/blob/main/data/review-queue.jsonl):** unresolved evidence, unindexed discoveries, and proposals requiring editorial work. Discovered links reviewed as non-resources or as other addresses of indexed resources stay listed with a `resolution` and their reason.
-- **[JSON Schema](https://github.com/reacher-z/Awesome-CUA/blob/main/schemas/resource.schema.json)** and **[coverage JSON](data/coverage.json):** machine-checkable contracts and coverage accounting.
-- **[BibTeX](https://awesomecua.com/downloads/citations.bib)** and **[CSL JSON](https://awesomecua.com/downloads/citations.csl.json):** reviewed-paper citations with recorded authors, dates, and versions. Each resource page also provides its own `record.json`.
+- [Catalog JSONL](https://github.com/reacher-z/Awesome-CUA/blob/main/data/catalog.jsonl) - One resource per line, with stable IDs, typed fields, provenance, scoped licenses, and review status.
+- [Reference graph](https://github.com/reacher-z/Awesome-CUA/blob/main/data/references.jsonl) - Outbound references from primary sources.
+- [Discovery registry](https://github.com/reacher-z/Awesome-CUA/blob/main/data/sources.json) - Source snapshots and where each identifier was found (see also [candidates](data/candidates.jsonl)).
+- [Review queue](https://github.com/reacher-z/Awesome-CUA/blob/main/data/review-queue.jsonl) - Unresolved evidence, unindexed discoveries, and proposals requiring editorial work. Discovered links reviewed as non-resources or as other addresses of indexed resources stay listed with a `resolution` and their reason.
+- [JSON Schema](https://github.com/reacher-z/Awesome-CUA/blob/main/schemas/resource.schema.json) - Machine-checkable contracts and coverage accounting (see also [coverage JSON](data/coverage.json)).
+- [BibTeX](https://awesomecua.com/downloads/citations.bib) - Reviewed-paper citations with recorded authors, dates, and versions. Each resource page also provides its own `record.json` (see also [CSL JSON](https://awesomecua.com/downloads/citations.csl.json)).
 
 ```bash
 # Python 3.11+. Search and export require only the standard library.
@@ -270,7 +270,7 @@ node --test tests/web.test.mjs
 
 These commands match the checks that [Catalog quality](.github/workflows/catalog.yml) runs on every push and pull request, in the same order. They need Python 3.11+ and Node.js 24+, the `engines` version in `package.json` (CI uses Python 3.12 and Node.js 24). The web tests use only the built-in Node.js test runner, so nothing needs to be installed with npm. `npm run test:web` and `npm run build:web` are shortcuts for the last two commands.
 
-Network discovery and verification are explicit commands; ordinary builds are offline. Changed primary snapshots require another editorial review before publication. [Maintenance guide](docs/maintenance.md) · [Methodology](docs/methodology.md) · [Data dictionary](docs/data-dictionary.md)
+Network discovery and verification are explicit commands; ordinary builds are offline. Changed primary snapshots require another editorial review before publication. Maintenance guide · [Methodology](docs/methodology.md) · [Data dictionary](docs/data-dictionary.md)
 
 ## Acknowledgments and reuse
 

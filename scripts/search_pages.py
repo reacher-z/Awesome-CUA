@@ -412,7 +412,9 @@ def reviewer_hold(record, decision):
 
 def shown_bibtex(record):
     """The entry without its machine-readable % comment lines."""
-    return '\n'.join(line for line in citation_bibtex(record).splitlines() if not line.startswith('%')).strip('\n')
+    try:entry=citation_bibtex(record)
+    except ValueError:return ''  # the citation.bib export of the same record raises the same error and fails the build
+    return '\n'.join(line for line in entry.splitlines() if not line.startswith('%')).strip('\n')
 
 
 def markdown_literal(text):
@@ -494,7 +496,7 @@ def resource_body(record, lookup, incoming=None, pending_review=None, zh=False):
         body+='<h2>'+tr('Preferred paper record','首选论文记录')+'</h2><p>'+tr('The retained source identifies this as an alternate bibliographic record. Follow '+target+' for the preferred arXiv identity.','保留的来源将此记录标为备用书目记录。首选的 arXiv 身份见 '+target+'。')+'</p>'
     if r['kind'] in {'paper','survey'}:
         body+='<h2>'+tr('Cite this paper','引用本文')+'</h2><p><a href="'+resource_path(r)+'citation.bib" download>'+tr('Download BibTeX','下载 BibTeX')+'</a> · <a href="'+resource_path(r)+'citation.csl.json" download>'+tr('Download CSL JSON','下载 CSL JSON')+'</a></p><p>'+tr('Citations preserve the selected source edition, its authors and recorded date precision. Unrecorded venues and identifiers are omitted.','引用文件保留所选来源版本、其作者和记录的日期精度；未记录的发表场所和标识符不写入。')+'</p>'
-        body+='<pre class="bibtex" tabindex="0"><code>'+esc(shown_bibtex(r))+'</code></pre>'
+        if shown_bibtex(r):body+='<pre class="bibtex" tabindex="0"><code>'+esc(shown_bibtex(r))+'</code></pre>'
         if authors_omitted(r):body+='<p>'+tr('These citation files omit the authors; the paper lists them.','这些引用文件不含作者；作者列表见论文。')+'</p>'
         body+=publication_body(r,zh)
     if r["kind"] not in {"paper","survey"} or any(r["licenses"].values()):
@@ -547,7 +549,7 @@ def resource_markdown(r, pending_review=None, level=1):
     if authors_omitted(r):lines+=['',h2+' Authors','',f'[{AUTHORS_OMITTED[0]}]({(r["details"].get("arxiv_snapshot") or {}).get("versioned_url") or r["url"]})']
     elif r["authors"]:lines+=['',h2+' Authors','',', '.join(r["authors"])]
     if r['kind'] in {'paper','survey'}:
-        lines+=['',h2+' Citation exports','',f'- BibTeX: {SITE}{resource_path(r)}citation.bib',f'- CSL JSON: {SITE}{resource_path(r)}citation.csl.json','','```bibtex',shown_bibtex(r),'```']
+        lines+=['',h2+' Citation exports','',f'- BibTeX: {SITE}{resource_path(r)}citation.bib',f'- CSL JSON: {SITE}{resource_path(r)}citation.csl.json','',*(['```bibtex',shown_bibtex(r),'```'] if shown_bibtex(r) else [])]
     pub=publication(r)
     if pub:
         lines+=['',h2+' Publication record','', '- '+field_label('title')+': '+pub['title'], '- '+(AUTHORS_OMITTED[0]+' ('+pub['url']+')' if authors_omitted(r) else field_label('authors')+': '+', '.join(pub['authors'])),

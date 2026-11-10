@@ -154,7 +154,7 @@ def llms_full(groups, *, site, snapshot, counts, survey_line, kind_files, faq=''
     curated = counts['curated']
     lines = ['# Awesome CUA curated catalog', '',
              f'> All {curated["total"]:,} curated, source-reviewed records of the Awesome CUA computer-use agent catalog ({curated["papers_and_surveys"]:,} papers and surveys, {curated["other_resources"]:,} other resources), one compact entry each, grouped by kind. '
-             f'Snapshot {snapshot}. Metadata-only bibliography records and unreviewed candidates are excluded.', '',
+             f'Snapshot {snapshot}. The {counts["awaiting_review"]["metadata_only_records"]:,} metadata-only bibliography records and unreviewed candidates are excluded.', '',
              'Each entry links its catalog page. Append `index.md` to that URL for the full annotation with evidence fingerprints, or `record.json` for the complete record. '
              'Full annotations by kind: ' + ', '.join(link(label, site + path) for label, path in kind_files) + '.', '', NOTICE]
     if survey_line:
@@ -193,13 +193,13 @@ def llms_txt(*, site, counts, kinds, zh_kinds, library, topics, api_endpoints, g
               f'- {link("API documentation", site + "/api/index.md")}: endpoints, fields, review states and versioning; the JSON and CSV files are listed under Optional']
     lines += ['', '## Agent and RAG access', '', '```sh', 'git clone https://github.com/reacher-z/Awesome-CUA.git', '```', '',
               f'- {link("Data downloads", site + "/data/index.md")}',
-              f'- {link("Agent instructions", site + "/AGENTS.md")}: read commands, API, search pattern, BibTeX; also at {site}/agents.md and {site}/agents.txt', f'- {link("Human and agent guide", site + "/agents/")}', f'- {link("中文指南", site + "/zh/agents/")}',
-              f'- {link("Reviewed retrieval documents", site + "/downloads/rag-documents.jsonl")}', f'- {link("All retrieval documents", site + "/downloads/rag-all-records.jsonl")}',
-              f'- {link("Export manifest", site + "/downloads/rag-manifest.json")}', f'- {link("Full catalog JSONL", site + "/downloads/catalog.jsonl")}: every active record, including metadata-only ones']
-    lines += ['', '## Guides and policies', ''] + [f'- {link(title, site + path)}: {inline(description)}' for title, path, description in guides]
+              f'- {link("Agent instructions", site + "/AGENTS.md")}: read commands, API, search pattern, BibTeX; also at {site}/agents.md and {site}/agents.txt', f'- {link("Human and agent guide", site + "/agents/index.md")}', f'- {link("中文指南", site + "/zh/agents/index.md")}']
+    lines += ['', '## Guides and policies', ''] + [f'- {link(title, site + path + "index.md")}: {inline(description)}' for title, path, description in guides]
     if faq:
         lines += ['', '## Questions', '', faq]
     lines += ['', '## Optional', '',
+              f'- {link("Reviewed retrieval documents", site + "/downloads/rag-documents.jsonl")}, {link("all retrieval documents", site + "/downloads/rag-all-records.jsonl")} and {link("export manifest", site + "/downloads/rag-manifest.json")}',
+              f'- {link("Full catalog JSONL", site + "/downloads/catalog.jsonl")}: every active record, including metadata-only ones',
               f'- {link("API index", site + "/api/v1/index.json")}: endpoint list with counts, byte sizes and SHA-256; {link("JSON Schema", site + "/api/v1/schema.json")}']
     lines += [f'- {link(name + ".json", url_json)} ({link("CSV", url_csv)}): {inline(description)}' for name, url_json, url_csv, description in api_endpoints]
     lines += [

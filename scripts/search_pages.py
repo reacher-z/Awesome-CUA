@@ -24,6 +24,7 @@ import home_page
 import category_guides
 from zh_summaries import zh_summary
 import site_shell
+from page_twins import page_markdown
 from agent_site_file import FILES as SITE_AGENT_FILES, site_agents_md
 from agent_files import FULL_ORDER, catalog_markdown, category_title, compact_entry, home_markdown, kind_markdown, library_markdown, link, llms_full, llms_txt, paper_hub_markdown
 from survey_bundle import apply_site_shell
@@ -1269,10 +1270,14 @@ def build_search_pages(destination, rows, coverage, root, *, survey_page=None):
     if survey_page:
         survey_date=json.loads((destination/'survey/build-manifest.json').read_text(encoding='utf-8')).get('working_manuscript_date')
         sitemap_facts['/survey/']={'lastmod':survey_date,'alternates':dict(survey_pair)}
+    for item in manifest:
+        folder=destination/item['path'].lstrip('/')
+        if item['indexable'] and item['path'].endswith('/') and 'survey' not in item['path'] and (folder/'index.html').is_file() and not (folder/'index.md').exists():
+            (folder/'index.md').write_text(clean_text(page_markdown((folder/'index.html').read_text(encoding='utf-8'),SITE)),encoding='utf-8')
     declare_markdown_twins(destination,manifest)
     kind_by_path={**{resource_path(r):r['kind'] for r in rows},**{zh_resource_path(r):r['kind'] for r in rows if eligible(r)}}
     add_front_matter(destination,sitemap_facts,kind_by_path,snapshot)
-    write_sitemaps(destination,SITE,[{'path':item['path'],'section':sitemap_section(item['path'],kind_by_path),**sitemap_facts[item['path']]} for item in manifest if item['indexable']])
+    write_sitemaps(destination,SITE,[{'path':item['path'],'section':sitemap_section(item['path'],kind_by_path),**{**sitemap_facts[item['path']],'lastmod':sitemap_facts[item['path']].get('lastmod') or snapshot[:10]}} for item in manifest if item['indexable']])
     (destination/'data/search-manifest.json').write_text(json.dumps({'site_url':SITE,'indexable_pages':sum(x['indexable'] for x in manifest),'metadata_only_pages':sum(not x['indexable'] and not x.get('scope_excluded') and not x.get('utility') for x in manifest),'excluded_pages':sum(bool(x.get('scope_excluded')) for x in manifest),'pages':manifest},ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
     config=json.loads((root/'data/site-discovery.json').read_text(encoding='utf-8'))
     key=config['indexnow_key'];(destination/(key+'.txt')).write_text(key,encoding='utf-8')

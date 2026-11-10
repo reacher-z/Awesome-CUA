@@ -488,6 +488,13 @@ class SearchPagesTests(unittest.TestCase):
             markup=(self.dest/path).read_text()
             self.assertNotIn('FAQPage',markup);self.assertNotIn('class="cat-faq"',markup)
 
+    def test_hand_written_pages_have_markdown_twins(self):
+        for path in ('about','coverage','guides/gui-agent-benchmarks'):
+            text=(self.dest/path/'index.md').read_text()
+            self.assertTrue(text.startswith('---\ntitle: '),path)
+            self.assertIn('\n# ',text)
+            self.assertIn('<link rel="alternate" type="text/markdown" href="/'+path+'/index.md">',(self.dest/path/'index.html').read_text())
+
     def test_agent_guides_and_rag_downloads_share_the_actual_catalog(self):
         command='git clone https://github.com/reacher-z/Awesome-CUA.git'
         for path in ['explore/index.html','agents/index.html','zh/agents/index.html','data/index.html','AGENTS.md','llms.txt']:

@@ -2,9 +2,16 @@
 
 [Home](../../README.md) · [All platforms](../environments.md) · [Research by topic](../topics.md)
 
-7 source-reviewed resources tagged `harmonyos`. Curated metadata; unknown facts are shown as —.
+10 source-reviewed resources tagged `harmonyos`. Curated metadata; unknown facts are shown as —.
 
-**Contents:** [Frameworks (1)](#frameworks) · [Tools (1)](#tools) · [Products (1)](#products) · [Papers (4)](#papers)
+**Contents:** [Agents (2)](#agents) · [Frameworks (1)](#frameworks) · [Tools (2)](#tools) · [Products (1)](#products) · [Papers (4)](#papers)
+
+## Agents
+
+| Resource | Environments | Paper | License | Description | Evidence |
+| --- | --- | --- | --- | --- | --- |
+| [ai-phone](https://github.com/dongxinsuperman/ai-phone) | android, ios, harmonyos | — | code MIT | A self-hosted platform that runs natural-language test cases on iOS, Android and HarmonyOS phones and virtual devices with a vision-only VLM decision loop, device queues and HTML reports. | [✓ 2026‑11‑10](https://raw.githubusercontent.com/dongxinsuperman/ai-phone/a96cb091903922f4f002f48c38cdfb1146653f93/README.md) |
+| [Operit2](https://github.com/AAswordman/Operit2) | web, desktop, windows, macos, linux, android, ios, harmonyos, cross-platform | — | code AGPL-3.0 | A cross-device personal agent in preview that continues conversations and tasks across phones, desktops and cloud nodes, with file, terminal and browser tools that click, type and snapshot web pages. | [✓ 2026‑11‑10](https://raw.githubusercontent.com/AAswordman/Operit2/dd6d34d81591f6455935c43ddf7101cd9a1215d2/README.md) |
 
 ## Frameworks
 
@@ -16,11 +23,10 @@ All entries in this section: android, harmonyos.
 
 ## Tools
 
-All entries in this section: cross-platform, ios, android, harmonyos, web, desktop, macos, linux.
-
-| Resource | Paper | License | Description | Evidence |
-| --- | --- | --- | --- | --- |
-| [agent-device](https://github.com/callstack/agent-device) | — | code MIT | agent-device gives agents CLI, MCP, and Node.js interfaces for inspecting and controlling mobile, web, and desktop apps through accessibility snapshots and UI actions. | [✓ 2026‑11‑09](https://raw.githubusercontent.com/callstack/agent-device/HEAD/README.md) |
+| Resource | Environments | Paper | License | Description | Evidence |
+| --- | --- | --- | --- | --- | --- |
+| [agent-device](https://github.com/callstack/agent-device) | cross-platform, ios, android, harmonyos, web, desktop, macos, linux | — | code MIT | agent-device gives agents CLI, MCP, and Node.js interfaces for inspecting and controlling mobile, web, and desktop apps through accessibility snapshots and UI actions. | [✓ 2026‑11‑09](https://raw.githubusercontent.com/callstack/agent-device/HEAD/README.md) |
+| [uiautodev](https://github.com/uiautodev/uiautodev) | android, ios, harmonyos | — | code MIT | A mobile device control and UI automation tool for Android, iOS and HarmonyOS with a desktop app and a server; this repository holds the npm CLI that downloads and runs the server binary. | [✓ 2026‑11‑10](https://raw.githubusercontent.com/uiautodev/uiautodev/339fd00e81a3ce9756098a90726562a94c6844a2/README.md) |
 
 ## Products
 

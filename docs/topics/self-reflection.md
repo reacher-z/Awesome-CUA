@@ -2,9 +2,9 @@
 
 [Home](../../README.md) · [All topics](../topics.md) · [Full arXiv bibliography](../papers.md)
 
-152 source-reviewed resources tagged `self-reflection`. Curated metadata; unknown facts are shown as —.
+156 source-reviewed resources tagged `self-reflection`. Curated metadata; unknown facts are shown as —.
 
-**Contents:** [Benchmarks (6)](#benchmarks) · [Datasets (1)](#datasets) · [Models (6)](#models) · [Agents (29)](#agents) · [Frameworks (45)](#frameworks) · [Tools (8)](#tools) · [Products (2)](#products) · [Papers (55)](#papers)
+**Contents:** [Benchmarks (7)](#benchmarks) · [Datasets (2)](#datasets) · [Models (8)](#models) · [Agents (29)](#agents) · [Frameworks (45)](#frameworks) · [Tools (8)](#tools) · [Products (2)](#products) · [Papers (55)](#papers)
 
 ## Benchmarks
 
@@ -13,6 +13,7 @@
 | [AgentForge](https://github.com/MoeenAsim/Agentforge-V5) | cross-platform, desktop, web | — | — | — | Multi-agent adversarial evaluation and safety-checking laboratory for stress-testing computer-use agents. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/MoeenAsim/Agentforge-V5/main/README.md) |
 | [cskwork vigil](https://github.com/cskwork/vigil) | web | — | — | code MIT | Continuous browser QA harness that reproduces reported bugs and autonomously expands end-to-end test coverage on live web URLs. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/cskwork/vigil/main/README.md) |
 | [done-or-not](https://github.com/tatra-labs/done-or-not) | desktop, web | [2610.40578](https://arxiv.org/abs/2610.40578) (2026) | — | code MIT | done-or-not is an offline benchmark of 910 computer-use trajectories across three simulated computers for grading completion verifiers. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/tatra-labs/done-or-not/HEAD/README.md) |
+| [GUI_Reflection_Task_Suite_Benchmark](https://huggingface.co/datasets/craigwu/GUI_Reflection_Task_Suite_Benchmark) | unspecified | [2506.08012](https://arxiv.org/abs/2506.08012) (2025) | — | data mit | Evaluation split of the GUI Reflection Task Suite, with JSONL files for action verification, action reversal and mistake-informed reattempts on ScreenSpot and ScreenSpot v2. | [✓ 2026‑11‑10](https://huggingface.co/api/datasets/craigwu/GUI_Reflection_Task_Suite_Benchmark) |
 | [HoloSkill Gym](https://github.com/ElenaViewSynthesis/holoskill-gym) | cross-platform, desktop, web | — | — | — | Gym environment and optimization framework for self-evolving CLI and computer-use agent skills. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/ElenaViewSynthesis/holoskill-gym/main/README.md) |
 | [Kane](https://github.com/Venkat5599/kane) | web | — | — | — | Plain-English browser verification harness for AI-built web applications that reports UI failures back to coding agents. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/Venkat5599/kane/main/README.md) |
 | [OmniWebBench](https://github.com/FanXuTheRealOne/OmniWebBench) | web | — | — | code Apache-2.0 | OmniWebBench evaluates agentic browsers across end-to-end web navigation, action execution, failure recovery, and evidence verification. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/FanXuTheRealOne/OmniWebBench/HEAD/README.md) |
@@ -24,11 +25,14 @@ All entries in this section: unspecified.
 | Resource | Paper | Scale | License | Description | Evidence |
 | --- | --- | --- | --- | --- | --- |
 | [GUI_Reflection_SFT_train](https://huggingface.co/datasets/craigwu/GUI_Reflection_SFT_train) | [2506.08012](https://arxiv.org/abs/2506.08012) (2025) | — | data mit | Offline supervised fine-tuning data for GUI Reflection, released as JSONL files. Users obtain the corresponding images from the source datasets named in the card. | [✓ 2026‑11‑09](https://huggingface.co/api/datasets/craigwu/GUI_Reflection_SFT_train) |
+| [GUI_Reflection_Task_Suite_train](https://huggingface.co/datasets/craigwu/GUI_Reflection_Task_Suite_train) | [2506.08012](https://arxiv.org/abs/2506.08012) (2025) | — | data mit | Training split of the GUI Reflection Task Suite: JSONL files for action verification, action reversal and mistake-informed reattempt, built on AndroidControl, GUI Odyssey, AMEX, OS-Atlas and Wave UI. | [✓ 2026‑11‑10](https://huggingface.co/api/datasets/craigwu/GUI_Reflection_Task_Suite_train) |
 
 ## Models
 
 | Resource | Environments | Paper | License | Description | Evidence |
 | --- | --- | --- | --- | --- | --- |
+| [GUI_Reflection_8b_pretrain](https://huggingface.co/craigwu/GUI_Reflection_8b_pretrain) | unspecified | — | weights mit | GUI Reflection checkpoint from the GUI pre-training stage, trained on grounding, captioning, OCR and VQA data plus reflection-task data, before the offline SFT stage. | [✓ 2026‑11‑10](https://huggingface.co/api/models/craigwu/GUI_Reflection_8b_pretrain) |
+| [GUI_Reflection_8b_SFT](https://huggingface.co/craigwu/GUI_Reflection_8b_SFT) | android | — | weights mit | Final GUI Reflection agent checkpoint, built on InternVL, that predicts mobile GUI actions from a screenshot and task goal after training on reflection and error-correction data. | [✓ 2026‑11‑10](https://huggingface.co/api/models/craigwu/GUI_Reflection_8b_SFT) |
 | [InfiGUI-R1 3B](https://huggingface.co/InfiX-ai/InfiGUI-R1-3B) | web, desktop, android | [2504.14239](https://arxiv.org/abs/2504.14239) (2025) | weights apache-2.0 | A Qwen2.5-VL checkpoint trained with the Actor2Reasoner procedure to combine interface grounding with planning and recovery reasoning. | [✓ 2026‑10‑17](https://huggingface.co/InfiX-ai/InfiGUI-R1-3B/raw/main/README.md) |
 | [Northstar-CUA-Fast](https://huggingface.co/Tzafon/Northstar-CUA-Fast) | desktop, web | — | weights apache-2.0 | A 4B-parameter computer-use model trained with GUI reinforcement learning that maps text and screenshots to actions such as clicks, typing, and scrolling. | [✓ 2026‑11‑09](https://huggingface.co/api/models/Tzafon/Northstar-CUA-Fast) |
 | [OpenCUA 32B](https://huggingface.co/xlangai/OpenCUA-32B) | desktop, linux, windows, macos | [2508.09123](https://arxiv.org/abs/2508.09123) (2025) | weights mit | A Qwen2.5-VL-based computer-use checkpoint that combines screenshot history with planning and grounded executable actions. | [✓ 2026‑10‑17](https://huggingface.co/xlangai/OpenCUA-32B/raw/main/README.md) |

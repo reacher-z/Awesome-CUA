@@ -2,9 +2,9 @@
 
 [Home](../../README.md) · [All topics](../topics.md) · [Full arXiv bibliography](../papers.md)
 
-98 source-reviewed resources tagged `cross-app`. Curated metadata; unknown facts are shown as —.
+100 source-reviewed resources tagged `cross-app`. Curated metadata; unknown facts are shown as —.
 
-**Contents:** [Benchmarks (21)](#benchmarks) · [Datasets (4)](#datasets) · [Models (4)](#models) · [Agents (11)](#agents) · [Frameworks (3)](#frameworks) · [Tools (4)](#tools) · [Infrastructure (1)](#infrastructure) · [Products (1)](#products) · [Learning resources (1)](#learning-resources) · [Papers (48)](#papers)
+**Contents:** [Benchmarks (21)](#benchmarks) · [Datasets (4)](#datasets) · [Models (6)](#models) · [Agents (11)](#agents) · [Frameworks (3)](#frameworks) · [Tools (4)](#tools) · [Infrastructure (1)](#infrastructure) · [Products (1)](#products) · [Learning resources (1)](#learning-resources) · [Papers (48)](#papers)
 
 ## Benchmarks
 
@@ -49,6 +49,8 @@
 | [Mano-CUA-2.0-4B-MLX-8bit](https://huggingface.co/Mininglamp-2718/Mano-CUA-2.0-4B-MLX-8bit) | desktop, macos, web | [2509.17336](https://arxiv.org/abs/2509.17336) (2025) | weights apache-2.0 | An MLX-quantized Mano-CUA model for Apple Silicon that reads screenshots and task instructions to produce structured GUI actions. | [✓ 2026‑11‑09](https://huggingface.co/api/models/Mininglamp-2718/Mano-CUA-2.0-4B-MLX-8bit) |
 | [MiniMax M3](https://www.minimaxi.com/blog/minimax-m3) | desktop | — | — | MiniMax M3 is a multimodal model whose release page describes desktop operation from visual input and cross-application tasks through MiniMax Code. | [✓ 2026‑11‑09](https://www.minimaxi.com/blog/minimax-m3) |
 | [Muse Spark 1.1](https://ai.meta.com/blog/introducing-muse-spark-meta-model-api) | desktop, web | — | — | Meta Superintelligence Labs multimodal reasoning model for agentic work, trained to choose between writing scripts and clicking in computer-use workflows that span several applications. | [✓ 2026‑11‑10](https://web.archive.org/web/2026/https://ai.meta.com/blog/introducing-muse-spark-meta-model-api/) |
+| [WildAWM-35B-A3B](https://huggingface.co/ChilleD/WildAWM-35B-A3B) | web, desktop | [2610.26828](https://arxiv.org/abs/2610.26828) (2026) | — | WildAWM-35B-A3B is a Qwen3.6-35B-A3B agent checkpoint post-trained on WildAWM cross-interface computer tasks that mix web, MCP and CLI actions, served text-only with SGLang. | [✓ 2026‑11‑10](https://huggingface.co/api/models/ChilleD/WildAWM-35B-A3B) |
+| [WildAWM-4B](https://huggingface.co/ChilleD/WildAWM-4B) | web, desktop | [2610.26828](https://arxiv.org/abs/2610.26828) (2026) | — | WildAWM-4B is a Qwen3.5-4B agent checkpoint post-trained on WildAWM cross-interface computer tasks that mix web, MCP and CLI actions, served text-only with SGLang. | [✓ 2026‑11‑10](https://huggingface.co/api/models/ChilleD/WildAWM-4B) |
 
 ## Agents
 

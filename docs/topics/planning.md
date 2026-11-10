@@ -2,9 +2,9 @@
 
 [Home](../../README.md) · [All topics](../topics.md) · [Full arXiv bibliography](../papers.md)
 
-564 source-reviewed resources tagged `planning`. Curated metadata; unknown facts are shown as —.
+565 source-reviewed resources tagged `planning`. Curated metadata; unknown facts are shown as —.
 
-**Contents:** [Benchmarks (11)](#benchmarks) · [Datasets (11)](#datasets) · [Models (60)](#models) · [Agents (89)](#agents) · [Frameworks (80)](#frameworks) · [Tools (2)](#tools) · [Products (2)](#products) · [Learning resources (4)](#learning-resources) · [Surveys (7)](#surveys) · [Papers (298)](#papers)
+**Contents:** [Benchmarks (11)](#benchmarks) · [Datasets (12)](#datasets) · [Models (60)](#models) · [Agents (89)](#agents) · [Frameworks (80)](#frameworks) · [Tools (2)](#tools) · [Products (2)](#products) · [Learning resources (4)](#learning-resources) · [Surveys (7)](#surveys) · [Papers (298)](#papers)
 
 ## Benchmarks
 
@@ -27,6 +27,7 @@
 | Resource | Environments | Paper | Scale | License | Description | Evidence |
 | --- | --- | --- | --- | --- | --- | --- |
 | [Aguvis stage 2 trajectory data](https://huggingface.co/datasets/xlangai/aguvis-stage2) | cross-platform | [2412.04454](https://arxiv.org/abs/2412.04454) (2024) | — | data apache-2.0 | The second-stage Aguvis collection of interface trajectories for learning action sequences, planning and reasoning after grounding pretraining. | [✓ 2026‑10‑17](https://huggingface.co/datasets/xlangai/aguvis-stage2/raw/main/README.md) |
+| [ExACT-VWA](https://huggingface.co/datasets/Columbia-NLP/ExACT-VWA) | web | [2410.02052](https://arxiv.org/abs/2410.02052) (2024) | — | — | Post-processed R-MCTS and GPT-4o agent trajectories collected on VisualWebArena, stored as context and response pairs with domain and task metadata; part of the set was used to fine-tune GPT-4o. | [✓ 2026‑11‑10](https://huggingface.co/api/datasets/Columbia-NLP/ExACT-VWA) |
 | [GUI-CIDER causal knowledge data](https://huggingface.co/datasets/wuuuuuz/GUI-CIDER) | android | [2605.28534](https://arxiv.org/abs/2605.28534) (2026) | — | — | A published JSONL corpus of synthesized planning and causal knowledge for GUI-agent mid-training, linked directly from the official GUI-CIDER project. | [✓ 2026‑10‑17](https://raw.githubusercontent.com/Wuzheng02/GUI-CIDER/HEAD/README.md) |
 | [GUIMid training data](https://huggingface.co/datasets/hkust-nlp/GUIMid) | web, android | [2504.10127](https://arxiv.org/abs/2504.10127) (2025) | — | data mit | A released GUI-agent mid-training mixture and supporting domain datasets, together with a post-training trajectory file and image archives for web and mobile interaction. | [✓ 2026‑10‑17](https://huggingface.co/datasets/hkust-nlp/GUIMid/raw/main/README.md) |
 | [lumos_unified_plan_iterative](https://huggingface.co/datasets/ai2lumos/lumos_unified_plan_iterative) | web | [2311.05657](https://arxiv.org/abs/2311.05657) (2023) | — | data apache-2.0 | lumos_unified_plan_iterative is a JSONL training dataset for the Lumos planning module. It combines web-agent examples with math and complex question-answering tasks. | [✓ 2026‑11‑09](https://huggingface.co/api/datasets/ai2lumos/lumos_unified_plan_iterative) |

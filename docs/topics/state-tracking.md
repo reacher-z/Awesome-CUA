@@ -2,9 +2,9 @@
 
 [Home](../../README.md) · [All topics](../topics.md) · [Full arXiv bibliography](../papers.md)
 
-159 source-reviewed resources tagged `state-tracking`. Curated metadata; unknown facts are shown as —.
+160 source-reviewed resources tagged `state-tracking`. Curated metadata; unknown facts are shown as —.
 
-**Contents:** [Benchmarks (8)](#benchmarks) · [Datasets (2)](#datasets) · [Models (7)](#models) · [Agents (9)](#agents) · [Frameworks (21)](#frameworks) · [Tools (26)](#tools) · [Infrastructure (5)](#infrastructure) · [Products (1)](#products) · [Learning resources (3)](#learning-resources) · [Papers (77)](#papers)
+**Contents:** [Benchmarks (8)](#benchmarks) · [Datasets (2)](#datasets) · [Models (7)](#models) · [Agents (9)](#agents) · [Frameworks (22)](#frameworks) · [Tools (26)](#tools) · [Infrastructure (5)](#infrastructure) · [Products (1)](#products) · [Learning resources (3)](#learning-resources) · [Papers (77)](#papers)
 
 ## Benchmarks
 
@@ -59,6 +59,7 @@
 | [action-receipt](https://github.com/JeremiahM37/action-receipt) | web | — | code MIT | Generates deterministic per-action DOM and network effect receipts for auditing browser-agent executions. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/JeremiahM37/action-receipt/main/README.md) |
 | [Active Desktop Context Engine](https://github.com/amirf147/active-desktop-context-engine) | desktop, windows | — | code Apache-2.0 | Zero-cloud Windows OS perception layer and Model Context Protocol server streaming real-time desktop UI context to AI agents. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/amirf147/active-desktop-context-engine/master/README.md) |
 | [AgentProg](https://github.com/MobileLLM/AgentProg) | android | [2512.10371](https://arxiv.org/abs/2512.10371) (2025) | code Apache-2.0 | Android GUI-agent framework that keeps long-running task context in structured programs, variables and control flow, with a CLI and AndroidWorld integration. | [✓ 2026‑10‑18](https://raw.githubusercontent.com/MobileLLM/AgentProg/HEAD/README.md) |
+| [ARC CUA](https://github.com/itw-code/arc-cua) | web | — | — | Browser harness that gives an agent a token-budgeted accessibility tree with indexed actions and checks each action for state change, plus a document-to-form pipeline and an MCP server. | [✓ 2026‑11‑10](https://raw.githubusercontent.com/itw-code/arc-cua/27530bdbbcb10713dd64c09d775bf5ab108fc694/README.md) |
 | [Brobot](https://github.com/jspinak/brobot) | cross-platform, desktop | — | code MIT | Brobot is a Java visual automation framework that recognizes interface elements and models application states to navigate, perform actions and recover from errors. | [✓ 2026‑11‑09](https://raw.githubusercontent.com/jspinak/brobot/HEAD/README.md) |
 | [browser-action-receipt](https://github.com/scalar-atelier/browser-action-receipt) | web | — | code MIT | Verification protocol that binds human approval to target DOM state, aborting clicks and emitting a receipt if the page mutates. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/scalar-atelier/browser-action-receipt/main/README.md) |
 | [Domstamp](https://github.com/zuub-don/domstamp) | web | — | code MIT | Framework-neutral browser-state snapshotter capturing compact, diffable DOM and accessibility states for AI web agents. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/zuub-don/domstamp/main/README.md) |

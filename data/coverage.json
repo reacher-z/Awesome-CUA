@@ -1,7 +1,7 @@
 {
-  "as_of_utc": "2026-11-10T03:01:53Z",
-  "total_records": 6121,
-  "curated_records": 5215,
+  "as_of_utc": "2026-11-10T06:29:47Z",
+  "total_records": 6260,
+  "curated_records": 5354,
   "bibliographic_records": 2624,
   "arxiv_active_records": 2571,
   "non_arxiv_bibliographic_records": 53,
@@ -11,10 +11,10 @@
   "exclusion_revalidation_pending": 0,
   "metadata_only_records": 906,
   "discovery_identifiers": 9381,
-  "unindexed_candidates": 525,
-  "non_resource_candidates": 481,
-  "alias_candidates": 697,
-  "out_of_scope_candidates": 1774,
+  "unindexed_candidates": 33,
+  "non_resource_candidates": 505,
+  "alias_candidates": 748,
+  "out_of_scope_candidates": 2052,
   "pending_editorial": [
     {
       "id": "github:thudm/autoglm",
@@ -2640,6 +2640,27 @@
       "url": "https://zhuanlan.zhihu.com/p/18229337790",
       "reason": "primary evidence unresolved: HTTP Error 403: Forbidden; Zhihu column article 18229337790, found from the OS-Genesis release, serves only the site's anti-bot welcome page to plain fetches, and its article API answers 403, so the text is unavailable.",
       "cause": "unresolved_evidence"
+    },
+    {
+      "id": "url:02c45a89c39ca3497ad4",
+      "name": "FiftyOne-GUI-Grounding-Eval",
+      "url": "https://huggingface.co/datasets/harpreetsahota/FiftyOne-GUI-Grounding-Eval",
+      "reason": "A FiftyOne dataset of 2405 screenshot samples with an unfilled template card; the workshop README gives it only a 'Benchmark Dataset' badge, leaving its instructions, annotations and source app undescribed.",
+      "cause": "reviewer_hold"
+    },
+    {
+      "id": "github:sweetsmellfox/mfatoolsplus",
+      "name": "MFAToolsPlus",
+      "url": "https://github.com/SweetSmellFox/MFAToolsPlus",
+      "reason": "The README names MFAToolsPlus as an Avalonia development helper for MaaFramework and lists only system requirements, license and credits, with no feature description.",
+      "cause": "reviewer_hold"
+    },
+    {
+      "id": "github:atroche/rust-headless-chrome",
+      "name": "rust-headless-chrome",
+      "url": "https://github.com/atroche/rust-headless-chrome",
+      "reason": "An unchanged fork of the rust-headless-chrome library, a Rust API for controlling Chrome over the DevTools Protocol; the original rust-headless-chrome/rust-headless-chrome repository is uncatalogued.",
+      "cause": "reviewer_hold"
     }
   ],
   "uncurated_linked_papers": [
@@ -2711,11 +2732,22 @@
       ]
     },
     {
+      "id": "arxiv:2508.00414",
+      "name": "Cognitive Kernel-Pro: A Framework for Deep Research Agents and Agent Foundation Models Training",
+      "url": "https://arxiv.org/abs/2508.00414",
+      "linked_from": [
+        "url:2304547d5025246abbe4",
+        "url:7c431ccb1d5dc1f035d8",
+        "url:f06109ae04d4c3133f90"
+      ]
+    },
+    {
       "id": "arxiv:2509.08755",
       "name": "AgentGym-RL: Training LLM Agents for Long-Horizon Decision Making through Multi-Turn Reinforcement Learning",
       "url": "https://arxiv.org/abs/2509.08755",
       "linked_from": [
-        "github:woooodyy/agentgym-rl"
+        "github:woooodyy/agentgym-rl",
+        "url:9140ca5ba8252d373b8d"
       ]
     },
     {
@@ -2802,52 +2834,53 @@
     }
   ],
   "by_kind": {
-    "agent": 475,
-    "benchmark": 305,
+    "agent": 481,
+    "benchmark": 310,
     "company": 19,
-    "dataset": 267,
-    "framework": 665,
-    "infrastructure": 117,
-    "learning": 36,
-    "model": 454,
+    "dataset": 278,
+    "framework": 675,
+    "infrastructure": 122,
+    "learning": 38,
+    "model": 475,
     "paper": 2587,
     "product": 75,
     "survey": 37,
-    "tool": 1084
+    "tool": 1163
   },
   "curated_by_environment": {
-    "android": 720,
-    "cross-platform": 756,
-    "desktop": 1801,
-    "harmonyos": 7,
-    "ios": 105,
-    "linux": 533,
-    "macos": 582,
-    "unspecified": 811,
-    "web": 2678,
-    "windows": 571
+    "android": 745,
+    "cross-platform": 760,
+    "desktop": 1837,
+    "harmonyos": 10,
+    "ios": 120,
+    "linux": 550,
+    "macos": 598,
+    "unspecified": 825,
+    "web": 2751,
+    "windows": 589
   },
   "curated_by_kind_and_environment": {
     "agent": {
-      "android": 85,
-      "cross-platform": 59,
-      "desktop": 228,
-      "ios": 17,
-      "linux": 76,
-      "macos": 115,
+      "android": 88,
+      "cross-platform": 60,
+      "desktop": 229,
+      "harmonyos": 2,
+      "ios": 20,
+      "linux": 77,
+      "macos": 116,
       "unspecified": 3,
-      "web": 243,
-      "windows": 102
+      "web": 247,
+      "windows": 103
     },
     "benchmark": {
-      "android": 42,
+      "android": 44,
       "cross-platform": 28,
       "desktop": 95,
       "ios": 2,
       "linux": 25,
       "macos": 11,
-      "unspecified": 13,
-      "web": 209,
+      "unspecified": 14,
+      "web": 211,
       "windows": 14
     },
     "company": {
@@ -2858,58 +2891,58 @@
     "dataset": {
       "android": 74,
       "cross-platform": 34,
-      "desktop": 74,
+      "desktop": 78,
       "ios": 7,
-      "linux": 22,
+      "linux": 26,
       "macos": 16,
-      "unspecified": 35,
-      "web": 116,
+      "unspecified": 36,
+      "web": 122,
       "windows": 13
     },
     "framework": {
-      "android": 101,
+      "android": 102,
       "cross-platform": 154,
-      "desktop": 309,
+      "desktop": 312,
       "harmonyos": 1,
       "ios": 17,
       "linux": 111,
       "macos": 88,
       "unspecified": 26,
-      "web": 463,
-      "windows": 99
+      "web": 472,
+      "windows": 101
     },
     "infrastructure": {
-      "android": 21,
+      "android": 22,
       "cross-platform": 11,
-      "desktop": 76,
+      "desktop": 78,
       "ios": 3,
-      "linux": 57,
-      "macos": 22,
+      "linux": 59,
+      "macos": 23,
       "unspecified": 2,
-      "web": 62,
+      "web": 65,
       "windows": 16
     },
     "learning": {
       "android": 4,
-      "cross-platform": 18,
-      "desktop": 18,
+      "cross-platform": 19,
+      "desktop": 19,
       "ios": 1,
       "linux": 4,
-      "macos": 4,
+      "macos": 5,
       "unspecified": 1,
-      "web": 29,
+      "web": 30,
       "windows": 3
     },
     "model": {
-      "android": 96,
-      "cross-platform": 143,
-      "desktop": 174,
+      "android": 100,
+      "cross-platform": 144,
+      "desktop": 179,
       "ios": 7,
-      "linux": 19,
+      "linux": 21,
       "macos": 18,
-      "unspecified": 86,
-      "web": 177,
-      "windows": 20
+      "unspecified": 90,
+      "web": 190,
+      "windows": 22
     },
     "paper": {
       "android": 229,
@@ -2944,22 +2977,22 @@
       "windows": 1
     },
     "tool": {
-      "android": 60,
-      "cross-platform": 175,
-      "desktop": 557,
-      "harmonyos": 1,
-      "ios": 36,
-      "linux": 190,
-      "macos": 281,
-      "unspecified": 13,
-      "web": 647,
-      "windows": 251
+      "android": 74,
+      "cross-platform": 176,
+      "desktop": 577,
+      "harmonyos": 2,
+      "ios": 48,
+      "linux": 198,
+      "macos": 294,
+      "unspecified": 21,
+      "web": 682,
+      "windows": 264
     }
   },
   "license_declarations_by_scope": {
-    "code": 2064,
-    "data": 211,
-    "weights": 327,
+    "code": 2139,
+    "data": 220,
+    "weights": 346,
     "document": 8
   },
   "sources": [

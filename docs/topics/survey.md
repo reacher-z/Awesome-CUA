@@ -2,9 +2,9 @@
 
 [Home](../../README.md) · [All topics](../topics.md) · [Full arXiv bibliography](../papers.md)
 
-52 source-reviewed resources tagged `survey`. Curated metadata; unknown facts are shown as —.
+53 source-reviewed resources tagged `survey`. Curated metadata; unknown facts are shown as —.
 
-**Contents:** [Benchmarks (1)](#benchmarks) · [Learning resources (13)](#learning-resources) · [Surveys (37)](#surveys) · [Papers (1)](#papers)
+**Contents:** [Benchmarks (1)](#benchmarks) · [Learning resources (14)](#learning-resources) · [Surveys (37)](#surveys) · [Papers (1)](#papers)
 
 ## Benchmarks
 
@@ -28,6 +28,7 @@ All entries in this section: cross-platform, desktop, web.
 | [Awesome Multimodal Agentic Coding](https://github.com/jiangjin1999/awesome-multimodal-agentic-coding) | cross-platform, desktop, web | code MIT | Comprehensive research map of papers, benchmarks, and tools for multimodal coding and UI-verifying agents. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/jiangjin1999/awesome-multimodal-agentic-coding/main/README.md) |
 | [Awesome Reinforcement Learning for GUI Agents](https://github.com/Steve2457/Awesome-RL-GUI-Agents) | cross-platform | code MIT | A curated reading list of reinforcement learning work on GUI agents, organized by learning methods, reward and efficiency questions, datasets, and training environments. | [✓ 2026‑11‑09](https://raw.githubusercontent.com/Steve2457/Awesome-RL-GUI-Agents/HEAD/README.md) |
 | [Computer-Use Agents: An Overview of Terminal-Based and GUI-Based Approaches](https://github.com/cdxeve/awesome-computer-use-agents) | cross-platform, web, desktop | — | A curated reading list and accompanying report organize computer-use research, including agents that act through web, desktop, and mobile interfaces. | [✓ 2026‑11‑09](https://raw.githubusercontent.com/cdxeve/awesome-computer-use-agents/HEAD/README.md) |
+| [GUI Agent Research Landscape](https://github.com/harpreetsahota204/gui_agent_research_landscape) | cross-platform | code Apache-2.0 | A research-landscape analysis of GUI and OS agent papers from 2016 to 2025: citation mining, keyword filtering to about 600 papers, LLM-extracted contributions, period trend tables and citation-network rankings. | [✓ 2026‑11‑10](https://raw.githubusercontent.com/harpreetsahota204/gui_agent_research_landscape/e61550476ce577d7fa3581adac78d169eeceaf12/README.md) |
 | [NeurIPS 2025: 45 Computer-Use Agent Papers You Should Know About](https://cua.ai/blog/neurips-2025-cua-papers) | cross-platform, desktop, macos, web | — | An annotated reading list of 45 NeurIPS 2025 computer-use agent papers, organized around benchmarks, safety, grounding and agent architectures. | [✓ 2026‑11‑09](https://cua.ai/blog/neurips-2025-cua-papers) |
 | [Open Operator](https://github.com/OpenHands/open-operator) | cross-platform, web, desktop | code MIT | Open Operator collects resources on computer-use agents, with task categories, benchmark summaries, and pages describing existing agent systems. | [✓ 2026‑11‑09](https://raw.githubusercontent.com/OpenHands/open-operator/HEAD/README.md) |
 | [Visual Agents Workshop Series](https://github.com/harpreetsahota204/visual_agents_workshop) | unspecified | code Apache-2.0 | Visual Agents Workshop Series teaches GUI agent research, dataset preparation, and model fine-tuning through three sessions with linked notebooks and resources. | [✓ 2026‑11‑09](https://raw.githubusercontent.com/harpreetsahota204/visual_agents_workshop/HEAD/README.md) |

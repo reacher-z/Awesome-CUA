@@ -13,8 +13,8 @@ concurrency:
 jobs:
   links:
     runs-on: ubuntu-latest
-    # Hugging Face rate limits stretch a full run to about 25 minutes.
-    timeout-minutes: 60
+    # Hugging Face rate limits stretch a full run to 40 to 60 minutes.
+    timeout-minutes: 120
     permissions:
       contents: read
     steps:

@@ -5,7 +5,7 @@ import sys
 import unittest
 
 sys.path.insert(0,str(Path(__file__).resolve().parents[1]/'scripts'))
-from search_pages import clip, description, page, resource_path
+from search_pages import DESCRIPTION_CONTEXT, clip, description, meta_description, page, page_title, resource_context, resource_path
 
 ROOT=Path(__file__).resolve().parents[1]
 
@@ -38,17 +38,36 @@ class ClipTests(unittest.TestCase):
         self.assertEqual(clip('alpha, beta, gamma',limit=14),'alpha, beta…')
     def test_text_without_whitespace_is_still_bounded(self):
         clipped=clip('x'*400);self.assertEqual(len(clipped),300);self.assertTrue(clipped.endswith('…'))
-    def test_generated_meta_and_social_descriptions_end_on_whole_words(self):
+    def test_generated_meta_and_social_descriptions_stay_within_search_bounds(self):
         rows=[json.loads(line) for line in (ROOT/'data/catalog.jsonl').read_text().splitlines() if line.strip()]
-        long_rows=0
+        shortened=0
         for r in rows:
-            text=description(r);meta=MetaParser(page(r['name'],text,resource_path(r),'<h1>x</h1>')).meta
+            text=description(r);meta=MetaParser(page(r['name'],text,resource_path(r),'<h1>x</h1>',context=resource_context(r))).meta
             with self.subTest(id=r['id']):
                 self.assertEqual(meta['description'],meta['og:description'])
-                self.assertLessEqual(len(meta['description']),300);self.assertFalse(meta['description'][-1].isspace())
-                if len(text)>300:long_rows+=1;self.assertWholeWordClip(text,meta['description'])
-                else:self.assertEqual(meta['description'],text)
-        self.assertGreater(long_rows,0)
-
+                self.assertTrue(70<=len(meta['description'])<=160,(len(meta['description']),meta['description']))
+                self.assertFalse(meta['description'][-1].isspace())
+                if len(text)>160:
+                    shortened+=1
+                    if meta['description'].endswith('…'):self.assertWholeWordClip(text,meta['description'],160)
+                    else:self.assertTrue(text.startswith(meta['description']))
+                elif len(text)>=70:self.assertEqual(meta['description'],' '.join(text.split()))
+        self.assertGreater(shortened,0)
+    def test_short_summaries_gain_context_and_chinese_uses_its_own_bounds(self):
+        self.assertEqual(meta_description('A short summary.'),'A short summary. '+DESCRIPTION_CONTEXT['en'])
+        chinese=meta_description('提出 WebNav。',lang='zh-CN')
+        self.assertTrue(50<=len(chinese)<=160,chinese)
+        long='这是一个很长的中文摘要，'*30
+        clipped=meta_description(long,lang='zh-CN')
+        self.assertLessEqual(len(clipped),160);self.assertTrue(clipped.endswith('…'))
+    def test_whole_sentences_are_kept_when_they_fit(self):
+        text='First sentence describes the benchmark in enough words to be useful for search results today. '+'Second sentence adds far more detail than a snippet can hold, '*4
+        self.assertEqual(meta_description(text),text.split('. ')[0]+'.')
+    def test_titles_fit_sixty_characters_with_the_brand(self):
+        self.assertEqual(page_title('OSWorld'),'OSWorld | AwesomeCUA')
+        long=page_title('A Survey on (M)LLM-Based GUI Agents: Foundations, Technologies and Challenges')
+        self.assertLessEqual(len(long),60);self.assertTrue(long.endswith('… | AwesomeCUA'))
+        self.assertLessEqual(len(page_title('计算机使用智能体资源目录：'*8)),60)
+        self.assertEqual(page_title('Automation — computer-use research and resources in depth, page 12'),'Automation — computer-use research…, page 12 | AwesomeCUA')
 
 if __name__=='__main__':unittest.main()

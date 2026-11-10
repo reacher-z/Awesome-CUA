@@ -114,7 +114,7 @@ class OmittedAuthorRenderingTests(unittest.TestCase):
     def test_resource_page_and_markdown_link_to_the_paper(self):
         body = resource_body(self.record, {self.record['id']: self.record})
         self.assertIn('<h2>Authors</h2><p class="authors-omitted"><a href="https://arxiv.org/abs/2401.00009v2">Authors: see the paper</a></p>', body)
-        self.assertIn('citation files omit them', body)
+        self.assertIn('These citation files omit the authors', body)
         markdown = resource_markdown(self.record)
         self.assertIn('## Authors\n\n[Authors: see the paper](https://arxiv.org/abs/2401.00009v2)', markdown)
         self.assertNoNames(body + markdown)

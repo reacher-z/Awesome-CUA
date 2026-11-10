@@ -77,7 +77,7 @@ class ReadmeLocalizationTests(unittest.TestCase):
         badges = build.badges([row("arxiv:2401.00001", "Paper", kind="paper")], {**self.report, "as_of_utc": "2026-10-17T07:57:59Z"})
         self.assertLessEqual(badges.count("[!["), 6)
         self.assertIn("](https://huggingface.co/datasets/TIGER-Lab/AwesomeCUA)", badges)
-        self.assertIn("2026--10--17", badges)
+        self.assertIn("img.shields.io/endpoint?url=", badges)
         self.assertTrue(badges.strip().endswith("(LICENSE)"))
 
     def test_star_history_has_linked_light_and_dark_sources_and_localized_fallbacks(self):

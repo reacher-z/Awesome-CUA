@@ -38,6 +38,12 @@ def step_outputs(text):
 
 
 class PartialScanReportingTests(unittest.TestCase):
+    def test_rate_limit_only_partials_do_not_fail_the_workflow_after_three_runs(self):
+        self.assertEqual(scan.partial_streak([{'status':'partial','rate_limit_only':True}] * 4),0)
+        self.assertEqual(scan.partial_streak([{'status':'partial','network_deferred_only':True}] * 4),0)
+        self.assertEqual(scan.partial_streak([{'status':'partial','rate_limit_only':True},
+                                              {'status':'partial','warnings':['build: failed']}]),1)
+
     def scan(self, recent=RATE_LIMITED, errors=None, history=(), actions=True, **config):
         """Run one scan with stubbed stages; return its exit code, stdout, step output and step summary."""
         errors = errors or {}
@@ -209,7 +215,7 @@ class NothingToCommitTests(unittest.TestCase):
 class RepeatedPartialWorkflowTests(unittest.TestCase):
     def test_a_separate_job_fails_the_run_only_after_the_scan_job_succeeds(self):
         text = WORKFLOW.read_text()
-        self.assertIn('      - name: Discover and verify public metadata\n        id: scan\n        run: python scripts/scan.py\n', text)
+        self.assertIn('      - name: Discover and verify public metadata\n        id: scan\n        timeout-minutes: 11\n        run: python scripts/scan.py\n', text)
         self.assertIn('      repeated_partial: ${{ steps.scan.outputs.repeated_partial }}\n', text.split('    steps:', 1)[0])
         job = text.split('\n  report_repeated_partial:\n', 1)[1]
         self.assertIn('    needs: scan\n', job)

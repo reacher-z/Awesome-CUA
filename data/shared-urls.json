@@ -1,0 +1,106 @@
+[
+  {
+    "url": "https://www.askui.com/",
+    "ids": [
+      "organization:askui",
+      "url:69d6afe38a9a128ba9f7"
+    ],
+    "reason": "The publisher record and its product share the publisher homepage."
+  },
+  {
+    "url": "https://browser-use.com/",
+    "ids": [
+      "organization:browser-use",
+      "url:ef244017b1460269fc68"
+    ],
+    "reason": "The publisher record and its product share the publisher homepage."
+  },
+  {
+    "url": "https://www.browseract.com/",
+    "ids": [
+      "organization:browseract",
+      "url:7ae2670859e3796e8607"
+    ],
+    "reason": "The publisher record and its product share the publisher homepage."
+  },
+  {
+    "url": "https://www.browserbase.com/",
+    "ids": [
+      "organization:browserbase",
+      "url:978d1dcd70fde8661b9e"
+    ],
+    "reason": "The publisher record and its product share the publisher homepage."
+  },
+  {
+    "url": "https://www.browserless.io/",
+    "ids": [
+      "organization:browserless",
+      "url:1e6b8682e0f1ddc3d36f"
+    ],
+    "reason": "The publisher record and its product share the publisher homepage."
+  },
+  {
+    "url": "https://e2b.dev/",
+    "ids": [
+      "organization:e2b",
+      "url:fda52d641c6b482bda7b"
+    ],
+    "reason": "The publisher record and its product share the publisher homepage."
+  },
+  {
+    "url": "https://www.hyperbrowser.ai/",
+    "ids": [
+      "organization:hyperbrowser",
+      "url:053ebfe0afac66c86222"
+    ],
+    "reason": "The publisher record and its product share the publisher homepage."
+  },
+  {
+    "url": "https://manus.im/",
+    "ids": [
+      "organization:manus",
+      "url:d3414794302313051ff0"
+    ],
+    "reason": "The publisher record and its product share the publisher homepage."
+  },
+  {
+    "url": "https://openai.com/index/computer-using-agent/",
+    "ids": [
+      "organization:openai",
+      "url:74eeb7c9fb20674fe6e2"
+    ],
+    "reason": "The publisher record is evidenced by the same first-party announcement as the model record."
+  },
+  {
+    "url": "https://www.simular.ai/",
+    "ids": [
+      "organization:simular",
+      "url:0bdd6b5ebf2e1f248828"
+    ],
+    "reason": "The publisher record and its product share the publisher homepage."
+  },
+  {
+    "url": "https://www.skyvern.com/",
+    "ids": [
+      "organization:skyvern",
+      "url:15ed5fd3cd950d837f98"
+    ],
+    "reason": "The publisher record and its product share the publisher homepage."
+  },
+  {
+    "url": "https://steel.dev/",
+    "ids": [
+      "organization:steel",
+      "url:b940a884f200a916a61b"
+    ],
+    "reason": "The publisher record and its product share the publisher homepage."
+  },
+  {
+    "url": "https://www.tinyfish.ai/",
+    "ids": [
+      "organization:tinyfish",
+      "url:d92596cfe618e5322ec2"
+    ],
+    "reason": "The publisher record and its product share the publisher homepage."
+  }
+]

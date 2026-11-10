@@ -17,7 +17,9 @@ import xml.etree.ElementTree as ET
 
 sys.path.insert(0,str(Path(__file__).resolve().parents[1]/'scripts'))
 from build_site import build_site
-from search_pages import SITE, eligible, resource_path, resource_schema, page, incoming_relations
+from site_fixture import code_only, shared_site
+import home_page
+from search_pages import SITE, eligible, listing, resource_path, resource_schema, page, incoming_relations, zh_resource_path
 from sitemaps import sitemap_urls
 
 ROOT=Path(__file__).resolve().parents[1]
@@ -55,10 +57,23 @@ class PageParser(HTMLParser):
         if tag=='h1':self.heading_count+=1
 
 
+class ListingRowTests(unittest.TestCase):
+    def test_a_featured_row_without_a_catalog_record_links_to_its_repository(self):
+        row=listing([home_page.WEBSITEBENCH])
+        self.assertIn(f'<a href="{home_page.WEBSITEBENCH["url"]}"',row)
+        self.assertNotIn('/resources/',row)
+        self.assertIn(home_page.WEBSITEBENCH['summary'],row)
+
+    def test_a_catalog_record_links_to_its_resource_page(self):
+        record={**home_page.WEBSITEBENCH,'review_status':'source-reviewed'}
+        del record['href']
+        self.assertIn(f'<a href="{resource_path(record)}"',listing([record]))
+
+
 class SearchPagesTests(unittest.TestCase):
     @classmethod
     def setUpClass(cls):
-        cls.temp=tempfile.TemporaryDirectory();cls.dest=build_site(cls.temp.name)
+        cls.temp=tempfile.TemporaryDirectory();cls.dest=shared_site()
         cls.rows=[json.loads(x) for x in (ROOT/'data/catalog.jsonl').read_text().splitlines()]
         cls.manifest=json.loads((cls.dest/'data/search-manifest.json').read_text())
     @classmethod
@@ -103,6 +118,144 @@ class SearchPagesTests(unittest.TestCase):
                 target=self.dest/path.lstrip('/')
                 if path.endswith('/'):target=target/'index.html'
                 self.assertTrue(target.exists(),f'{item["path"]} -> {link}')
+    def category_rows(self,path):
+        text=(self.dest/path).read_text()
+        return text,re.findall(r'<h3 class="row-name"><a [^>]*>([^<]*)</a>',text)
+    def category_pages(self,kind,lang):
+        prefix='zh/categories/' if lang=='zh' else 'categories/'
+        paths,number=[],1
+        while (self.dest/prefix/f'{kind}/index.html' if number==1 else self.dest/prefix/f'{kind}/page/{number}/index.html').is_file():
+            paths.append(prefix+f'{kind}/index.html' if number==1 else prefix+f'{kind}/page/{number}/index.html')
+            number+=1
+        return paths
+
+    def test_homepage_search_form_submits_to_the_explorer_in_its_language(self):
+        form='<form class="field" role="search" action="/explore/#catalog" method="get" data-finder-form>'
+        self.assertIn(form,(self.dest/'index.html').read_text())
+        self.assertNotIn('name="lang"',(self.dest/'index.html').read_text())
+        self.assertIn(form+'<input type="hidden" name="lang" value="zh">',(self.dest/'zh/index.html').read_text())
+
+    def test_every_reviewed_resource_has_a_chinese_twin_that_names_its_english_page(self):
+        urls=set(sitemap_urls(self.dest,SITE))
+        translations=json.loads((ROOT/'data/translations.zh-CN.json').read_text())
+        for row in self.rows:
+            english,chinese=resource_path(row),zh_resource_path(row)
+            folder=self.dest/chinese.lstrip('/')
+            with self.subTest(row['id']):
+                self.assertEqual((folder/'index.html').is_file(),eligible(row))
+                if not eligible(row):continue
+                self.assertTrue((folder/'index.md').is_file())
+                self.assertIn(SITE+chinese,urls)
+                for path in (english,chinese):
+                    head=(self.dest/path.lstrip('/')/'index.html').read_text().split('</head>',1)[0]
+                    self.assertIn(f'hreflang="en" href="{SITE}{english}"',head)
+                    self.assertIn(f'hreflang="zh-CN" href="{SITE}{chinese}"',head)
+                    self.assertIn(f'hreflang="x-default" href="{SITE}{english}"',head)
+                text=(folder/'index.html').read_text()
+                self.assertIn('<html lang="zh-CN"',text)
+                if row['id'] in translations:self.assertIn(html.escape(translations[row['id']]['summary'],quote=True),text)
+
+    def test_home_pages_declare_the_site_search(self):
+        for path in ('index.html','zh/index.html'):
+            graph=json.loads(re.search(r'<script type="application/ld\+json">(.*?)</script>',(self.dest/path).read_text(),re.S).group(1))['@graph']
+            website=next(item for item in graph if item['@type']=='WebSite')
+            action=website['potentialAction']
+            self.assertEqual(action['@type'],'SearchAction',path)
+            self.assertEqual(action['target']['urlTemplate'],SITE+'/explore/?q={search_term_string}#catalog')
+            self.assertEqual(action['query-input'],'required name=search_term_string')
+            self.assertIn('Organization',{item['@type'] for item in graph})
+
+    def test_chinese_navigation_opens_the_chinese_catalog(self):
+        text=(self.dest/'zh/index.html').read_text()
+        self.assertIn('href="/zh/catalog/"',text)
+        self.assertTrue((self.dest/'zh/catalog/index.html').is_file())
+
+    def test_chinese_directory_pages_are_in_the_categories_sitemap_with_english_pairs(self):
+        listed=(self.dest/'sitemap-categories.xml').read_text()
+        other=(self.dest/'sitemap-pages.xml').read_text()
+        for english,chinese in (('/catalog/','/zh/catalog/'),('/categories/benchmark/','/zh/categories/benchmark/')):
+            self.assertIn(f'<loc>{SITE}{chinese}</loc>',listed)
+            self.assertNotIn(f'<loc>{SITE}{chinese}</loc>',other)
+            self.assertNotIn(f'{SITE}{chinese}"',other)
+            for path in (english,chinese):
+                text=(self.dest/path.strip('/')/'index.html').read_text()
+                self.assertIn(f'hreflang="en" href="{SITE}{english}"',text)
+                self.assertIn(f'hreflang="zh-CN" href="{SITE}{chinese}"',text)
+                self.assertIn(f'hreflang="x-default" href="{SITE}{english}"',text)
+        self.assertNotIn(f'{SITE}/zh/categories/paper/',listed)
+
+    def test_directory_pages_describe_themselves_for_search_in_both_languages(self):
+        for path in ('catalog','zh/catalog','categories/benchmark','zh/categories/benchmark','categories/tool','zh/categories/tool'):
+            text=(self.dest/path/'index.html').read_text()
+            description=html.unescape(re.search(r'<meta name="description" content="([^"]*)"',text).group(1))
+            self.assertTrue(70<=len(description)<=160,(path,len(description)))
+            graph=json.loads(re.search(r'<script type="application/ld\+json">(.*?)</script>',text,re.S).group(1))['@graph']
+            types={item['@type'] for item in graph}
+            self.assertIn('CollectionPage',types,path)
+            self.assertIn('BreadcrumbList',types,path)
+            if 'categories' in path:self.assertIn('ItemList',types,path)
+
+    def test_category_pages_keep_every_row_in_the_html_in_mention_order(self):
+        view=home_page.catalog_view(self.rows,[row for row in self.rows if eligible(row)],json.loads((ROOT/'data/coverage.json').read_text()),ROOT)
+        for kind in {row['kind'] for row in self.rows if eligible(row)}-{'paper'}:
+            selected=[row for row in self.rows if eligible(row) and row['kind']==kind]
+            expected=[row['name'] for row in sorted(selected,key=lambda row:(-len(view['mentions'].get(row['id'],())),row['name'].casefold()))]
+            for lang in ('en','zh'):
+                pages=self.category_pages(kind,lang)
+                names,ids=[],[]
+                for path in pages:
+                    text,rows=self.category_rows(path)
+                    names+=[html.unescape(name) for name in rows]
+                    ids+=re.findall(r'<li class="row" id="([^"]+)"',text)
+                    self.assertIn('hreflang="zh-CN"',text)
+                # Featured rows repeat above the full list; the list itself remains in mention order across pages.
+                self.assertEqual(names[-len(expected):],expected,(kind,lang))
+                self.assertEqual(len(ids),len(set(ids)),(kind,lang))
+
+    def test_category_pages_open_with_a_definition_a_comparison_table_and_questions(self):
+        import category_guides
+        for kind in {row['kind'] for row in self.rows if eligible(row)}-{'paper'}:
+            count=sum(eligible(row) and row['kind']==kind for row in self.rows)
+            for lang in ('en','zh'):
+                pages=self.category_pages(kind,lang)
+                text=(self.dest/pages[0]).read_text()
+                intro=html.unescape(re.sub(r'<[^>]+>','',re.search(r'<p class="list-intro">(.*?)</p>',text,re.S).group(1)))
+                self.assertTrue(intro.startswith(category_guides.definition(kind,lang=='zh')),(kind,lang))
+                if lang=='en':self.assertLessEqual(len(intro.split()),60,kind)
+                guide=text.index('<section class="wrap cat-guide"')
+                self.assertLess(text.index('<p class="list-intro">'),guide)
+                self.assertLess(guide,text.index('data-list-rows'))
+                table=re.search(r'<div class="choose"><table>(.*?)</table>',text,re.S).group(1)
+                self.assertEqual(table.count('<th scope="row">'),min(category_guides.ROWS,count),(kind,lang))
+                cells={}
+                for label,value in re.findall(r'<td data-label="([^"]+)">(.*?)</td>',table,re.S):cells.setdefault(label,[]).append(value)
+                for label,values in cells.items():
+                    if len(values)>1:self.assertGreater(len(set(values)),1,(kind,lang,label))
+                graph=json.loads(re.search(r'<script type="application/ld\+json">(.*?)</script>',text,re.S).group(1))['@graph']
+                faq=[item for item in graph if item['@type']=='FAQPage']
+                self.assertEqual(len(faq),1,(kind,lang))
+                questions=faq[0]['mainEntity']
+                self.assertTrue(3<=len(questions)<=5,(kind,lang,len(questions)))
+                visible=html.unescape(re.sub(r'<[^>]+>','',text[guide:text.index('data-list-rows')]))
+                for question in questions:
+                    self.assertIn(question['name'],visible)
+                    self.assertIn(question['acceptedAnswer']['text'],visible)
+                for later in pages[1:]:
+                    self.assertNotIn('FAQPage',(self.dest/later).read_text())
+                    self.assertNotIn('cat-guide',(self.dest/later).read_text())
+                markdown=(self.dest/pages[0].replace('index.html','index.md')).read_text()
+                self.assertIn(category_guides.definition(kind,lang=='zh'),markdown)
+                for question in questions:self.assertIn('### '+question['name'],markdown)
+
+    def test_benchmarks_feature_websitebench_then_clawbench_above_the_full_list(self):
+        for path,heading in (('categories/benchmark/index.html','Featured'),('zh/categories/benchmark/index.html','精选')):
+            text,names=self.category_rows(path)
+            self.assertLess(text.index(f'>{heading}</h2>'),text.index('data-list-rows'))
+            self.assertEqual(names[:2],['WebsiteBench','ClawBench'])
+            self.assertIn('data-list-filter',text)
+            self.assertIn('class="list-tools js-only"',text)
+            self.assertRegex(text,r'<script type="module" src="/listing\.js\?v=[0-9a-f]+"></script>')
+
     def test_only_the_homepage_hides_the_header_search(self):
         for path in ('index.html','zh/index.html'):
             self.assertIn('<body class="home">',(self.dest/path).read_text())
@@ -131,7 +284,7 @@ class SearchPagesTests(unittest.TestCase):
                 collection=next(item for item in schema['@graph'] if item['@type']=='ItemList')
                 self.assertEqual(collection['numberOfItems'],len(page_ids),path)
                 self.assertEqual([item['url'] for item in collection['itemListElement']],
-                                 [SITE+resource_path({'id':rid}) for rid in page_ids],path)
+                                 [SITE+('/zh' if prefix=='/zh/papers/' else '')+resource_path({'id':rid}) for rid in page_ids],path)
                 self.assertIn('href="/downloads/citations.bib"',markup)
                 self.assertIn('href="/downloads/citations.csl.json"',markup)
                 ids+=page_ids
@@ -158,7 +311,7 @@ class SearchPagesTests(unittest.TestCase):
                     graph=json.loads(re.search(r'<script type="application/ld\+json">(.*?)</script>',markup,re.S)[1])['@graph']
                     listing=next(entity for entity in graph if entity['@type']=='ItemList')
                     self.assertEqual([entry['url'] for entry in listing['itemListElement']],
-                                     [SITE+resource_path(expected[rid]) for rid in page_ids],path)
+                                     [SITE+(zh_resource_path(expected[rid]) if language=='zh' else resource_path(expected[rid])) for rid in page_ids],path)
                     self.assertEqual(listing['numberOfItems'],len(page_ids),path)
                     ids+=page_ids
                 self.assertEqual(set(ids),set(expected),first)
@@ -216,6 +369,7 @@ class SearchPagesTests(unittest.TestCase):
         self.assertIn('href="/zh/data/" aria-current=page>数据</a>',(self.dest/'zh/data/index.html').read_text())
         self.assertIn(SITE+'/downloads/manifest.json',(self.dest/'llms.txt').read_text())
 
+    @code_only
     def test_download_script_change_versions_only_data_hub_pages(self):
         with tempfile.TemporaryDirectory() as directory:
             source=Path(directory)/'source';source.mkdir()
@@ -238,6 +392,7 @@ class SearchPagesTests(unittest.TestCase):
                     self.assertEqual([source for source in parsed.scripts if not source.startswith('/assets/site.js')],['/downloads.js?v='+expected])
                 build_site(destination)
                 self.assertEqual(snapshot(),after)
+    @code_only
     def test_core_change_updates_only_consumer_pages_and_rebuild_is_stable(self):
         with tempfile.TemporaryDirectory() as directory:
             source=Path(directory)/'source';source.mkdir()

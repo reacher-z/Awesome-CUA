@@ -2,9 +2,9 @@
 
 [Home](../../README.md) · [All topics](../topics.md) · [Full arXiv bibliography](../papers.md)
 
-66 source-reviewed resources tagged `industry`. Curated metadata; unknown facts are shown as —.
+67 source-reviewed resources tagged `industry`. Curated metadata; unknown facts are shown as —.
 
-**Contents:** [Benchmarks (1)](#benchmarks) · [Models (2)](#models) · [Agents (1)](#agents) · [Tools (12)](#tools) · [Infrastructure (1)](#infrastructure) · [Products (5)](#products) · [Publishers (18)](#publishers) · [Surveys (3)](#surveys) · [Papers (23)](#papers)
+**Contents:** [Benchmarks (1)](#benchmarks) · [Models (2)](#models) · [Agents (1)](#agents) · [Tools (12)](#tools) · [Infrastructure (1)](#infrastructure) · [Products (6)](#products) · [Publishers (18)](#publishers) · [Surveys (3)](#surveys) · [Papers (23)](#papers)
 
 ## Benchmarks
 
@@ -62,6 +62,7 @@ All entries in this section: web.
 
 | Resource | Publisher | Environments | Description | Evidence |
 | --- | --- | --- | --- | --- |
+| [Agenta](https://github.com/agenta-ai/agenta) | — | web | Agenta is a team workspace for building and running agents. Its agents can use a browser and files to work on websites, alongside connected apps and scheduled automations. | [✓ 2026‑11‑09](https://raw.githubusercontent.com/agenta-ai/agenta/HEAD/README.md) |
 | [Asteroid](https://asteroid.ai) | — | web, desktop, windows, linux | Hosted healthcare automation platform whose agents operate EHRs, payer portals and Windows, Linux or Citrix apps from the screen, then turn repeat runs into scripts or private-API calls served as an API. | [✓ 2026‑10‑19](https://asteroid.ai) |
 | [Computer Agents](https://computer-agents.com) | — | cross-platform, web, desktop | A cloud agent platform that gives agents persistent computers with browser, GUI, terminal, and file access, alongside project workspaces and workflow triggers. | [✓ 2026‑11‑09](https://computer-agents.com) |
 | [ego(lite)](https://lite.ego.app) | — | web, desktop | A Chromium browser that lets AI agents automate signed-in websites through an agent skill, with separate workspaces for agent tasks and page snapshots for navigation. | [✓ 2026‑11‑09](https://lite.ego.app) |
@@ -74,19 +75,19 @@ All entries in this section: unspecified.
 
 | Resource | Description | Evidence |
 | --- | --- | --- |
-| [Anthropic](https://claude.com/chrome) | Publisher or product brand associated with Anthropic computer-use or browser automation offerings. | [✓ 2026‑10‑16](https://claude.com/chrome) |
+| [Anthropic](https://www.anthropic.com/) | Publisher or product brand associated with Anthropic computer-use or browser automation offerings. | [✓ 2026‑11‑09](https://www.anthropic.com/) |
 | [AskUI](https://www.askui.com/) | Publisher or product brand associated with AskUI computer-use or browser automation offerings. | [✓ 2026‑10‑16](https://www.askui.com/) |
 | [Browser Use](https://browser-use.com/) | Publisher or product brand associated with Browser Use computer-use or browser automation offerings. | [✓ 2026‑10‑16](https://browser-use.com/) |
 | [BrowserAct](https://www.browseract.com/) | Publisher or product brand associated with BrowserAct computer-use or browser automation offerings. | [✓ 2026‑10‑16](https://www.browseract.com/) |
 | [Browserbase](https://www.browserbase.com/) | Publisher or product brand associated with Browserbase computer-use or browser automation offerings. | [✓ 2026‑10‑16](https://www.browserbase.com/) |
 | [Browserless](https://www.browserless.io/) | Publisher or product brand associated with Browserless computer-use or browser automation offerings. | [✓ 2026‑10‑16](https://www.browserless.io/) |
 | [E2B](https://e2b.dev/) | Publisher or product brand associated with E2B computer-use or browser automation offerings. | [✓ 2026‑10‑16](https://e2b.dev/) |
-| [Google](https://ai.google.dev/gemini-api/docs/computer-use) | Publisher or product brand associated with Google computer-use or browser automation offerings. | [✓ 2026‑10‑16](https://ai.google.dev/gemini-api/docs/computer-use) |
-| [H](https://hcompany.ai/research/models) | Publisher or product brand associated with H computer-use or browser automation offerings. | [✓ 2026‑10‑16](https://hcompany.ai/research/models) |
+| [Google](https://about.google/) | Publisher or product brand associated with Google computer-use or browser automation offerings. | [✓ 2026‑11‑09](https://about.google/) |
+| [H](https://hcompany.ai/) | Publisher or product brand associated with H computer-use or browser automation offerings. | [✓ 2026‑11‑09](https://hcompany.ai/) |
 | [Huzzle Labs](https://labs.huzzle.com) | Company developing computer-use models, RL environments and evaluations for AI labs and enterprise work. Its site describes the Huzzle World model family. | [✓ 2026‑11‑09](https://labs.huzzle.com) |
 | [Hyperbrowser](https://www.hyperbrowser.ai/) | Publisher or product brand associated with Hyperbrowser computer-use or browser automation offerings. | [✓ 2026‑10‑16](https://www.hyperbrowser.ai/) |
 | [Manus](https://manus.im/) | Publisher or product brand associated with Manus computer-use or browser automation offerings. | [✓ 2026‑10‑16](https://manus.im/) |
-| [Microsoft](https://learn.microsoft.com/en-us/microsoft-copilot-studio/computer-use) | Publisher or product brand associated with Microsoft computer-use or browser automation offerings. | [✓ 2026‑10‑18](https://learn.microsoft.com/en-us/microsoft-copilot-studio/computer-use) |
+| [Microsoft](https://www.microsoft.com/) | Publisher or product brand associated with Microsoft computer-use or browser automation offerings. | [✓ 2026‑11‑09](https://www.microsoft.com/) |
 | [OpenAI](https://openai.com/index/computer-using-agent/) | Publisher or product brand associated with OpenAI computer-use or browser automation offerings. | [✓ 2026‑10‑16](https://openai.com/index/computer-using-agent/) |
 | [Simular](https://www.simular.ai/) | Publisher or product brand associated with Simular computer-use or browser automation offerings. | [✓ 2026‑10‑16](https://www.simular.ai/) |
 | [Skyvern](https://www.skyvern.com/) | Publisher or product brand associated with Skyvern computer-use or browser automation offerings. | [✓ 2026‑10‑16](https://www.skyvern.com/) |
@@ -117,7 +118,7 @@ All entries in this section: unspecified.
 | 2026‑04‑15 | [RiskWebWorld: A Realistic Interactive Benchmark for GUI Agents in E-commerce Risk Management](https://arxiv.org/abs/2604.13531) | web | Introduces RiskWebWorld, an interactive benchmark of e-commerce risk-management tasks for GUI agents on websites, with Gymnasium infrastructure for evaluation and agentic RL. |
 | 2026‑04‑10 | [HealthAdminBench: Evaluating Computer-Use Agents on Healthcare Administration Tasks](https://arxiv.org/abs/2604.09937) | unspecified | Introduces HealthAdminBench with GUI environments for an electronic health record, payer portals and fax handling. Expert-defined administrative tasks are decomposed into verifiable subtasks to compare local progress with end-to-end workflow completion. |
 | 2026‑03‑31 | [Terminal Agents Suffice for Enterprise Automation](https://arxiv.org/abs/2604.00073) | unspecified | Studies enterprise automation by terminal agents that call platform APIs, comparing their task results and cost with other agent approaches, including web agents using graphical interfaces. |
-| 2026‑01‑25 | [EntWorld: A Holistic Environment and Benchmark for Verifiable Enterprise GUI Agents](https://arxiv.org/abs/2601.17722) | unspecified | Introduces EntWorld, an enterprise GUI benchmark built by deriving task logic from database schemas. Long workflows across enterprise domains are assessed with deterministic SQL-based state checks rather than screenshot similarity alone. |
+| 2026‑01‑25 | [EntWorld: A Holistic Environment and Benchmark for Verifiable Enterprise GUI Agents](https://arxiv.org/abs/2601.17722) | unspecified | Introduces EntWorld, an enterprise GUI benchmark built by deriving task logic from database schemas. Long workflows across enterprise domains are assessed with deterministic SQL-based state checks. |
 | 2025‑12‑30 | [ProSoftArena: Benchmarking Hierarchical Capabilities of Multimodal Agents in Professional Software Environments](https://arxiv.org/abs/2601.02399) | windows, desktop | ProSoftArena evaluates 436 professional-software tasks across six disciplines and 13 applications in a Windows 11 virtual-machine environment. Its capability hierarchy, execution-based checks, and human-in-the-loop evaluation cover precise GUI operations and multi-software workflows. |
 | 2025‑12‑12 | [Using GUI Agent for Electronic Design Automation](https://arxiv.org/abs/2512.11611) | unspecified | GUI-EDA collects more than 2,000 screenshot-answer-action pairs from engineers working across five CAD tools and five physical domains. The accompanying benchmark evaluates more than 30 GUI agents on specialized electronic-design workflows. |
 | 2025‑11‑28 | [LegalWebAgent: Empowering Access to Justice via LLM-Based Web Agents](https://arxiv.org/abs/2512.04105) | web | LegalWebAgent separates user-needs clarification, webpage browsing, and actions such as form completion or scheduling. A 15-task evaluation studies legal-service workflows relevant to Québec civil-law users, using HTML and screenshot observations. |

@@ -8,6 +8,7 @@ import unittest
 
 sys.path.insert(0,str(Path(__file__).resolve().parents[1]/'scripts'))
 from build_site import build_site
+from site_fixture import shared_site
 from search_pages import page, resource_titles
 
 
@@ -47,7 +48,7 @@ class ResourceTitleTests(unittest.TestCase):
 class GeneratedTitleTests(unittest.TestCase):
     @classmethod
     def setUpClass(cls):
-        cls.temp=tempfile.TemporaryDirectory();cls.dest=build_site(cls.temp.name)
+        cls.temp=tempfile.TemporaryDirectory();cls.dest=shared_site()
         cls.pages=json.loads((cls.dest/'data/search-manifest.json').read_text())['pages']
         cls.titles={item['path']:TitleParser((cls.dest/item['path'].lstrip('/')/'index.html').read_text()) for item in cls.pages}
     @classmethod
@@ -55,6 +56,14 @@ class GeneratedTitleTests(unittest.TestCase):
     def test_indexable_pages_have_unique_titles(self):
         counts=Counter(self.titles[item['path']].title for item in self.pages if item['indexable'])
         self.assertEqual([title for title,n in counts.items() if n>1],[])
+    def test_titles_fit_sixty_characters(self):
+        self.assertEqual([path for path,parsed in self.titles.items() if len(parsed.title)>60],[])
+    def test_pages_declare_their_markdown_twin(self):
+        for item in self.pages:
+            folder=self.dest/item['path'].lstrip('/')
+            if not item['path'].endswith('/') or item['path']=='/survey/' or not (folder/'index.md').is_file():continue
+            with self.subTest(item['path']):
+                self.assertIn(f'<link rel="alternate" type="text/markdown" href="{item["path"]}index.md">',(folder/'index.html').read_text().split('</head>',1)[0])
     def test_titles_name_the_brand_once(self):
         for path,parsed in self.titles.items():
             self.assertEqual(parsed.title.count('AwesomeCUA'),1,path)

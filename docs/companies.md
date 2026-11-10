@@ -26,19 +26,19 @@ All entries in this section: unspecified.
 
 | Resource | Description | Evidence |
 | --- | --- | --- |
-| [Anthropic](https://claude.com/chrome) | Publisher or product brand associated with Anthropic computer-use or browser automation offerings. | [✓ 2026‑10‑16](https://claude.com/chrome) |
+| [Anthropic](https://www.anthropic.com/) | Publisher or product brand associated with Anthropic computer-use or browser automation offerings. | [✓ 2026‑11‑09](https://www.anthropic.com/) |
 | [AskUI](https://www.askui.com/) | Publisher or product brand associated with AskUI computer-use or browser automation offerings. | [✓ 2026‑10‑16](https://www.askui.com/) |
 | [Browser Use](https://browser-use.com/) | Publisher or product brand associated with Browser Use computer-use or browser automation offerings. | [✓ 2026‑10‑16](https://browser-use.com/) |
 | [BrowserAct](https://www.browseract.com/) | Publisher or product brand associated with BrowserAct computer-use or browser automation offerings. | [✓ 2026‑10‑16](https://www.browseract.com/) |
 | [Browserbase](https://www.browserbase.com/) | Publisher or product brand associated with Browserbase computer-use or browser automation offerings. | [✓ 2026‑10‑16](https://www.browserbase.com/) |
 | [Browserless](https://www.browserless.io/) | Publisher or product brand associated with Browserless computer-use or browser automation offerings. | [✓ 2026‑10‑16](https://www.browserless.io/) |
 | [E2B](https://e2b.dev/) | Publisher or product brand associated with E2B computer-use or browser automation offerings. | [✓ 2026‑10‑16](https://e2b.dev/) |
-| [Google](https://ai.google.dev/gemini-api/docs/computer-use) | Publisher or product brand associated with Google computer-use or browser automation offerings. | [✓ 2026‑10‑16](https://ai.google.dev/gemini-api/docs/computer-use) |
-| [H](https://hcompany.ai/research/models) | Publisher or product brand associated with H computer-use or browser automation offerings. | [✓ 2026‑10‑16](https://hcompany.ai/research/models) |
+| [Google](https://about.google/) | Publisher or product brand associated with Google computer-use or browser automation offerings. | [✓ 2026‑11‑09](https://about.google/) |
+| [H](https://hcompany.ai/) | Publisher or product brand associated with H computer-use or browser automation offerings. | [✓ 2026‑11‑09](https://hcompany.ai/) |
 | [Huzzle Labs](https://labs.huzzle.com) | Company developing computer-use models, RL environments and evaluations for AI labs and enterprise work. Its site describes the Huzzle World model family. | [✓ 2026‑11‑09](https://labs.huzzle.com) |
 | [Hyperbrowser](https://www.hyperbrowser.ai/) | Publisher or product brand associated with Hyperbrowser computer-use or browser automation offerings. | [✓ 2026‑10‑16](https://www.hyperbrowser.ai/) |
 | [Manus](https://manus.im/) | Publisher or product brand associated with Manus computer-use or browser automation offerings. | [✓ 2026‑10‑16](https://manus.im/) |
-| [Microsoft](https://learn.microsoft.com/en-us/microsoft-copilot-studio/computer-use) | Publisher or product brand associated with Microsoft computer-use or browser automation offerings. | [✓ 2026‑10‑18](https://learn.microsoft.com/en-us/microsoft-copilot-studio/computer-use) |
+| [Microsoft](https://www.microsoft.com/) | Publisher or product brand associated with Microsoft computer-use or browser automation offerings. | [✓ 2026‑11‑09](https://www.microsoft.com/) |
 | [OpenAI](https://openai.com/index/computer-using-agent/) | Publisher or product brand associated with OpenAI computer-use or browser automation offerings. | [✓ 2026‑10‑16](https://openai.com/index/computer-using-agent/) |
 | [Simular](https://www.simular.ai/) | Publisher or product brand associated with Simular computer-use or browser automation offerings. | [✓ 2026‑10‑16](https://www.simular.ai/) |
 | [Skyvern](https://www.skyvern.com/) | Publisher or product brand associated with Skyvern computer-use or browser automation offerings. | [✓ 2026‑10‑16](https://www.skyvern.com/) |

@@ -4,6 +4,7 @@ import html
 import json
 import math
 import urllib.parse
+from field_labels import field_label
 
 PROFILE_KEYS = {'benchmark': 'benchmark_protocol', 'dataset': 'dataset_profile'}
 PREFIXES = {'exact': '', 'approximately': '≈ ', 'at-least': '≥ ', 'more-than': '> '}
@@ -85,8 +86,10 @@ def safe_href(value):
     return esc(value)
 
 
-def words(values):
-    return ', '.join(values) if values else 'Not recorded'
+def words(values, zh=False):
+    if not values:
+        return '未记录' if zh else 'Not recorded'
+    return ('、' if zh else ', ').join(values)
 
 
 def count_text(count):
@@ -94,10 +97,11 @@ def count_text(count):
     return f'{PREFIXES[count["qualifier"]]}{value} {count["unit"]} — {count["population"]}' + (' (computed)' if count['basis']=='computed' else '')
 
 
-def counts_html(profile):
+def counts_html(profile, zh=False):
     if not profile['counts']:
-        return '<span class="unknown-value">Not recorded</span>'
-    return '<ul class="measure-list">' + ''.join(f'<li>{esc(count_text(count))} <a href="{safe_href(count.get("reference_url") or count["evidence_url"])}" aria-label="Source for {esc(count["population"])}">source</a></li>' for count in profile['counts']) + '</ul>'
+        return '<span class="unknown-value">' + ('未记录' if zh else 'Not recorded') + '</span>'
+    source, label = ('来源', '来源：') if zh else ('source', 'Source for ')
+    return '<ul class="measure-list">' + ''.join(f'<li>{esc(count_text(count))} <a href="{safe_href(count.get("reference_url") or count["evidence_url"])}" aria-label="{label}{esc(count["population"])}">{source}</a></li>' for count in profile['counts']) + '</ul>'
 
 
 def selected_profiles(rows, kind):
@@ -123,19 +127,26 @@ def profile_export(rows, kind):
     }
 
 
-def resource_profile_html(row):
+def resource_profile_html(row, zh=False):
     key = PROFILE_KEYS.get(row['kind'])
     profile = row['details'].get(key) if key else None
     if not profile:
         return ''
+    language = 'zh' if zh else 'en'
+    label = lambda name: field_label(name, language)
     if row['kind'] == 'benchmark':
-        facts = [('Focus', words(profile['focus'])), ('Setting', profile['setting']), ('Observations', words(profile['observations'])), ('Actions / outputs', words(profile['actions'])), ('Evaluation', profile['evaluation'] or 'Not recorded')]
+        facts = [(label('focus'), words(profile['focus'], zh)), (label('setting'), profile['setting']), (label('observations'), words(profile['observations'], zh)), (label('actions'), words(profile['actions'], zh)), (label('evaluation'), profile['evaluation'] or ('未记录' if zh else 'Not recorded'))]
     else:
-        facts = [('Supervision', words(profile['supervision'])), ('Modalities', words(profile['modalities'])), ('Formats', words(profile['formats'])), ('Splits', words(profile['splits']))]
-    title = 'Evaluation protocol' if row['kind'] == 'benchmark' else 'Dataset profile'
-    body = f'<h2>{title}</h2><dl class="page-facts">' + ''.join(f'<div><dt>{esc(label)}</dt><dd>{esc(value)}</dd></div>' for label, value in facts) + '</dl>'
-    body += '<h3>Scale and counting units</h3>' + counts_html(profile)
-    body += '<p>' + esc(profile['notes']) + '</p><p><a href="/compare/' + ('benchmarks' if row['kind'] == 'benchmark' else 'datasets') + '/">Compare source-reviewed profiles</a></p>'
+        facts = [(label(name), words(profile[name], zh)) for name in ('supervision', 'modalities', 'formats', 'splits')]
+    if zh:
+        title = '评测协议' if row['kind'] == 'benchmark' else '数据集概况'
+        scale, compare = '规模与计数单位', '比较已审阅的规格'
+    else:
+        title = 'Evaluation protocol' if row['kind'] == 'benchmark' else 'Dataset profile'
+        scale, compare = 'Scale and counting units', 'Compare source-reviewed profiles'
+    body = f'<h2>{title}</h2><dl class="page-facts">' + ''.join(f'<div><dt>{esc(name)}</dt><dd>{esc(value)}</dd></div>' for name, value in facts) + '</dl>'
+    body += f'<h3>{scale}</h3>' + counts_html(profile, zh)
+    body += '<p>' + esc(profile['notes']) + '</p><p><a href="/compare/' + ('benchmarks' if row['kind'] == 'benchmark' else 'datasets') + f'/">{compare}</a></p>'
     return body
 
 
@@ -157,14 +168,17 @@ def comparison_body(rows, kind, link_for):
         profile = row['details'][key]
         visible_values = [' '.join(value) if isinstance(value,list) else str(value) for key,value in profile.items() if key not in {'counts','evidence_urls'}]
         text = ' '.join([row['name'], *row['environments'], *visible_values, *(count_text(count) for count in profile['counts'])])
-        body += f'<tr data-profile-row data-environments="{esc(" ".join(row["environments"]))}" data-search="{esc(text)}"><td><a href="{link_for(row)}"><strong>{esc(row["name"])}</strong></a><div>{esc(words(row["environments"]))}</div>'
+        body += f'<tr data-profile-row data-environments="{esc(" ".join(row["environments"]))}" data-search="{esc(text)}"><td><a class="compare-name" href="{link_for(row)}">{esc(row["name"])}</a><div>{esc(words(row["environments"]))}</div>'
         if kind == 'benchmark':
-            body += '<p>' + esc(words(profile['focus'])) + '<br>' + esc(profile['setting']) + '</p></td><td><strong>Observe</strong><br>' + esc(words(profile['observations'])) + '<br><strong>Act / output</strong><br>' + esc(words(profile['actions'])) + '</td><td>' + esc(profile['evaluation'] or 'Not recorded') + '</td>'
+            body += '<p>' + esc(words(profile['focus'])) + '<br>' + esc(profile['setting']) + '</p></td><td><strong>Observe</strong>' + esc(words(profile['observations'])) + '<strong>Act / output</strong>' + esc(words(profile['actions'])) + '</td><td>' + esc(profile['evaluation'] or 'Not recorded') + '</td>'
         else:
             license = row['licenses']['data']
             declaration = f'<a href="{safe_href(license["url"])}">{esc(words(license["declared"]) if isinstance(license["declared"],list) else license["declared"])}</a>' if license else 'Not recorded'
-            body += '<p>' + esc(words(profile['supervision'])) + '</p></td><td>' + esc(words(profile['modalities'])) + '<br><strong>Format</strong><br>' + esc(words(profile['formats'])) + '</td><td>' + esc(words(profile['splits'])) + '<br><strong>Data license</strong><br>' + declaration + '</td>'
-        body += '<td>' + counts_html(profile) + '<details><summary>Scope and source notes</summary><p>' + esc(profile['notes']) + '</p><ul>' + ''.join(f'<li><a href="{safe_href(url)}">Primary evidence {index+1}</a></li>' for index,url in enumerate(profile['evidence_urls'])) + '</ul></details></td></tr>'
+            body += '<p>' + esc(words(profile['supervision'])) + '</p></td><td>' + esc(words(profile['modalities'])) + '<strong>Format</strong>' + esc(words(profile['formats'])) + '</td><td>' + esc(words(profile['splits'])) + '<strong>Data license</strong>' + declaration + '</td>'
+        # Evidence already linked as a count source in this row is not repeated; the table stays light enough to scroll.
+        linked = {count.get('reference_url') or count['evidence_url'] for count in profile['counts']}
+        evidence = [url for url in profile['evidence_urls'] if url not in linked]
+        body += '<td>' + counts_html(profile) + '<details><summary>Scope and source notes</summary>' + esc(profile['notes']) + ''.join(f'{" " if index==0 else " · "}<a href="{safe_href(url)}">Primary evidence {index+1}</a>' for index,url in enumerate(evidence)) + '</details></td></tr>'
     body += '</tbody></table></div><p>Use each resource page for source timestamps, content fingerprints, and separate code, data, and weight licenses.</p>'
     body += f'<p><a href="/downloads/{plural}-profiles.json">Download these profiles as JSON</a> · <a href="/data/">Complete catalog and SQLite</a> · <a href="/compare/{"datasets" if kind=="benchmark" else "benchmarks"}/">Compare {"datasets" if kind=="benchmark" else "benchmarks"}</a></p><script type="module" src="/compare.js"></script>'
     return body

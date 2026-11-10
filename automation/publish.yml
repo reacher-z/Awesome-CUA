@@ -99,7 +99,7 @@ jobs:
         run: |
           python scripts/catalog.py validate
           python scripts/catalog.py build --check
-          python -m unittest discover -s tests -v
+          python scripts/run_tests.py
           node --test tests/web.test.mjs
       - name: Read repository star counts
         id: stars

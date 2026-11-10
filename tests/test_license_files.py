@@ -114,7 +114,7 @@ class LicenseFileProbeTests(unittest.TestCase):
                 self.assertEqual(requested, list(catalog.LICENSE_FILES[:catalog.LICENSE_FILES.index(filename) + 1]))
                 self.assertEqual(row["licenses"]["code"]["declared"], "ISC")
                 self.assertEqual(row["licenses"]["code"]["url"], f"https://raw.githubusercontent.com/example/tool/HEAD/{filename}")
-                self.assertEqual(row["licenses"]["code"]["basis"], "repository LICENSE header; not a weights/data license")
+                self.assertEqual(row["licenses"]["code"]["basis"], "repository LICENSE header")
                 self.assertEqual([e["url"] for e in row["evidence"] if e["method"] == "license_header"], [row["licenses"]["code"]["url"]])
         requested, row = self.enrich({})
         self.assertEqual(requested, ["LICENSE", "LICENSE.md", "LICENSE.txt", "LICENSE.rst", "LICENCE", "COPYING"])
@@ -129,7 +129,7 @@ class LicenseFileProbeTests(unittest.TestCase):
     def test_gnu_declaration_records_that_the_version_scope_is_unstated(self):
         requested, row = self.enrich({"COPYING": AGPL3})
         self.assertEqual(row["licenses"]["code"]["declared"], "AGPL-3.0")
-        self.assertEqual(row["licenses"]["code"]["basis"], "repository LICENSE header; GNU text does not say -only or -or-later; not a weights/data license")
+        self.assertEqual(row["licenses"]["code"]["basis"], "repository LICENSE header; GNU text names no -only or -or-later variant")
 
 
 if __name__ == "__main__":

@@ -2,14 +2,16 @@
 
 [Home](../../README.md) · [All topics](../topics.md) · [Full arXiv bibliography](../papers.md)
 
-44 source-reviewed resources tagged `science`. Curated metadata; unknown facts are shown as —.
+55 source-reviewed resources tagged `science`. Curated metadata; unknown facts are shown as —.
 
-**Contents:** [Benchmarks (3)](#benchmarks) · [Datasets (2)](#datasets) · [Models (6)](#models) · [Agents (1)](#agents) · [Frameworks (3)](#frameworks) · [Tools (3)](#tools) · [Infrastructure (3)](#infrastructure) · [Papers (23)](#papers)
+**Contents:** [Benchmarks (5)](#benchmarks) · [Datasets (2)](#datasets) · [Models (7)](#models) · [Agents (4)](#agents) · [Frameworks (3)](#frameworks) · [Tools (8)](#tools) · [Infrastructure (3)](#infrastructure) · [Papers (23)](#papers)
 
 ## Benchmarks
 
 | Resource | Environments | Paper | Scale | License | Description | Evidence |
 | --- | --- | --- | --- | --- | --- | --- |
+| [BlenderWorld](https://github.com/QwenLM/BlenderWorld) | desktop, linux | [2610.23986](https://arxiv.org/abs/2610.23986) (2026) | — | code MIT | A benchmark for agents creating editable Blender projects from text and visual references. It supplies 223 tasks, submission packaging, and an evaluator for scene and visual criteria. | [✓ 2026‑11‑09](https://raw.githubusercontent.com/QwenLM/BlenderWorld/HEAD/README.md) |
+| [BlenderWorld](https://huggingface.co/datasets/Qwen/BlenderWorld) | desktop, linux | — | — | data mit | A benchmark of 223 Blender creation tasks with text, image, and video inputs. Agents submit editable projects for rendering and rubric-based evaluation. | [✓ 2026‑11‑09](https://huggingface.co/api/datasets/Qwen/BlenderWorld) |
 | [MedSPOT](https://github.com/Tajamul21/MedSPOT) | unspecified | [2603.19993](https://arxiv.org/abs/2603.19993) (2026) | — | — | A sequential GUI grounding benchmark covering 10 medical imaging applications. It evaluates target localization across multi-step workflows and provides model evaluation scripts. | [✓ 2026‑11‑09](https://raw.githubusercontent.com/Tajamul21/MedSPOT/HEAD/README.md) |
 | [OSWorld-Science](https://github.com/DiscoAILab/OSWorld-Science) | desktop, linux, windows | [2609.39903](https://arxiv.org/abs/2609.39903) (2026) | [146 tasks](https://raw.githubusercontent.com/DiscoAILab/OSWorld-Science/HEAD/README.md) | code CC-BY-4.0 | Benchmark harness that runs computer-use agents on scientific-software tasks in per-domain VMs and scores the resulting application states and deliverables with task-specific executable evaluators. | [✓ 2026‑10‑18](https://raw.githubusercontent.com/DiscoAILab/OSWorld-Science/HEAD/README.md) |
 | [ScienceBoard](https://github.com/OS-Copilot/ScienceBoard) | desktop | [2505.19897](https://arxiv.org/abs/2505.19897) (2025) | [169 VM task definitions](https://api.github.com/repos/OS-Copilot/ScienceBoard/git/trees/main?recursive=1) · [6 application families](https://raw.githubusercontent.com/OS-Copilot/ScienceBoard/HEAD/docs/verifier-audit.md) | code MIT | Scientific-workflow tasks for multimodal agents in desktop software such as ChimeraX, KAlgebra, Celestia, Grass GIS and Lean 4, with apps modified to expose state for evaluation. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/OS-Copilot/ScienceBoard/HEAD/README.md) |
@@ -29,6 +31,7 @@ All entries in this section: desktop.
 
 | Resource | Paper | License | Description | Evidence |
 | --- | --- | --- | --- | --- |
+| [CODA-PLANNER-TARS-32B](https://huggingface.co/OpenIXCLab/CODA-PLANNER-TARS-32B) | [2508.20096](https://arxiv.org/abs/2508.20096) (2025) | weights apache-2.0 | CODA-PLANNER-TARS-32B is a GUI agent planner checkpoint trained for scientific applications and deployed alongside a specialist executor in ScienceBoard. | [✓ 2026‑11‑09](https://huggingface.co/api/models/OpenIXCLab/CODA-PLANNER-TARS-32B) |
 | [ScaleCUA (THUDM) GLM-4.6V-Flash ScienceBoard](https://huggingface.co/extreme1228/ScaleCUA-glm4.6v-scienceboard) | [2607.11185](https://arxiv.org/abs/2607.11185) (2026) | weights other | GLM-4.6V-Flash computer-use agent checkpoint from THUDM's ScaleCUA, trained with online RL from a released SFT start point for ScienceBoard scientific-software tasks. | [✓ 2026‑10‑18](https://huggingface.co/extreme1228/ScaleCUA-glm4.6v-scienceboard/raw/3b089b66c9d0ffd3e56477fce32b31ab5ad56361/README.md) |
 | [ScaleCUA (THUDM) GLM-4.6V-Flash ScienceBoard SFT](https://huggingface.co/extreme1228/ScaleCUA-glm4.6v-scienceboard-sft) | [2607.11185](https://arxiv.org/abs/2607.11185) (2026) | weights other | Supervised GLM-4.6V-Flash checkpoint from THUDM's ScaleCUA, released as the start point that online RL initializes from for its ScienceBoard computer-use agent. | [✓ 2026‑10‑18](https://huggingface.co/extreme1228/ScaleCUA-glm4.6v-scienceboard-sft/raw/2bcf77b8a30c161d9ed2e075276877275319d1ad/README.md) |
 | [ScaleCUA (THUDM) Qwen3-VL-8B ScienceBoard](https://huggingface.co/extreme1228/ScaleCUA-qwen3-vl-scienceboard) | [2607.11185](https://arxiv.org/abs/2607.11185) (2026) | weights other | Qwen3-VL-8B computer-use agent checkpoint from THUDM's ScaleCUA, trained with online RL for ScienceBoard scientific-software tasks after an SFT start point and served through an OpenAI-compatible endpoint. | [✓ 2026‑10‑18](https://huggingface.co/extreme1228/ScaleCUA-qwen3-vl-scienceboard/raw/13947f05bff0742e09784310b6c68ae39bff67e5/README.md) |
@@ -38,11 +41,12 @@ All entries in this section: desktop.
 
 ## Agents
 
-All entries in this section: desktop.
-
-| Resource | Paper | License | Description | Evidence |
-| --- | --- | --- | --- | --- |
-| [GERALLT](https://github.com/DLR-SC/GERALLT) | — | — | An LLM-driven system for testing RCE through its graphical interface, using separate models to control actions, assess problems, and describe icons. | [✓ 2026‑11‑09](https://raw.githubusercontent.com/DLR-SC/GERALLT/HEAD/README.md) |
+| Resource | Environments | Paper | License | Description | Evidence |
+| --- | --- | --- | --- | --- | --- |
+| [CAD-Assistant](https://github.com/dimitrismallis/CAD-Assistant) | desktop | [2412.13810](https://arxiv.org/abs/2412.13810) (2024) | code CC-BY-NC-4.0 | CAD-Assistant handles CAD tasks by generating code for execution in FreeCAD and using sketch rendering and solid recognition tools to inspect designs. | [✓ 2026‑11‑09](https://raw.githubusercontent.com/dimitrismallis/CAD-Assistant/HEAD/README.md) |
+| [CADAgent](https://github.com/toreleon/CADAgent) | desktop | — | code LGPL-2.1 | A FreeCAD fork with an in-app agent that turns chat requests into editable 3D models through FreeCAD operations. It includes an agent runtime and chat dock. | [✓ 2026‑11‑09](https://raw.githubusercontent.com/toreleon/CADAgent/HEAD/README.md) |
+| [GERALLT](https://github.com/DLR-SC/GERALLT) | desktop | — | — | An LLM-driven system for testing RCE through its graphical interface, using separate models to control actions, assess problems, and describe icons. | [✓ 2026‑11‑09](https://raw.githubusercontent.com/DLR-SC/GERALLT/HEAD/README.md) |
+| [Orion](https://github.com/Genentech/Orion) | cross-platform, desktop, linux, web | — | code MIT | A biomedical analysis agent that operates scientific desktop applications, a browser, and terminal tools in an Ubuntu virtual machine. Its repository includes task configurations and launchers. | [✓ 2026‑11‑09](https://raw.githubusercontent.com/Genentech/Orion/HEAD/README.md) |
 
 ## Frameworks
 
@@ -56,8 +60,13 @@ All entries in this section: desktop.
 
 | Resource | Environments | Paper | License | Description | Evidence |
 | --- | --- | --- | --- | --- | --- |
+| [Blender Agent Studio](https://github.com/ifBars/blender-agent-studio) | desktop | — | code MIT | Blender Agent Studio connects coding agents to local Blender to create editable scenes, render previews and inspect visual results. | [✓ 2026‑11‑09](https://raw.githubusercontent.com/ifBars/blender-agent-studio/HEAD/README.md) |
 | [Blender Computer Use Artist](https://github.com/xiaof631/blender-computer-use-artist) | desktop, macos, windows, linux | — | code MIT | Codex computer-use skill for automating Blender 3D modeling, rendering, animation, and visual QA. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/xiaof631/blender-computer-use-artist/HEAD/README.md) |
+| [Blender MCP](https://github.com/bpy-dev/blender-mcp) | desktop | — | — | An MCP server links agents to Blender through a live add-on or saved project files, offering scene execution, runtime Python API lookup and benchmark tools. | [✓ 2026‑11‑09](https://raw.githubusercontent.com/bpy-dev/blender-mcp/HEAD/readme.md) |
+| [catia-v5-mcp](https://github.com/AstroQuestStudio/catia-v5-mcp) | desktop, windows | — | code MIT | An MCP server lets agents model and inspect parts and assemblies in CATIA V5 through COM. It provides validated batch actions and checks of resulting geometry and component poses. | [✓ 2026‑11‑09](https://raw.githubusercontent.com/AstroQuestStudio/catia-v5-mcp/HEAD/README.md) |
 | [ChimeraX-SessionStates](https://github.com/ShiinaHiiragi/chimerax-states) | desktop, linux | — | — | ChimeraX plugin used by ScienceBoard to expose internal molecular-visualization session state for deterministic benchmark evaluation. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/ShiinaHiiragi/chimerax-states/HEAD/README.md) |
+| [CLI-Anything · ArcGIS Pro](https://github.com/Jasper0122/CLI-Anything-Arcgis-Pro) | desktop, windows | — | — | A CLI and MCP bridge for ArcGIS Pro that lets agents inspect projects, run geoprocessing, and update an open map through an in-process add-in. | [✓ 2026‑11‑09](https://raw.githubusercontent.com/Jasper0122/CLI-Anything-Arcgis-Pro/HEAD/README.md) |
+| [MCP-Slicer](https://github.com/zhaoyouj/mcp-slicer) | desktop, windows, macos | — | — | MCP-Slicer gives model clients access to 3D Slicer through node inspection, Python execution, and screenshots, supporting visual feedback during medical-image and scene tasks. | [✓ 2026‑11‑09](https://raw.githubusercontent.com/zhaoyouj/mcp-slicer/HEAD/README.md) |
 | [mcp-vroid](https://github.com/nhodges/mcp-vroid) | desktop, linux | — | code MIT | Model Context Protocol server that drives VRoid Studio 3D character creation via Linux Wayland GUI automation. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/nhodges/mcp-vroid/main/README.md) |
 
 ## Infrastructure

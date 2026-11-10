@@ -1,1 +1,2 @@
 jsonschema[format-nongpl]>=4.26.0,<5
+pillow>=12.1,<13

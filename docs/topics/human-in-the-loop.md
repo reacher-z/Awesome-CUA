@@ -2,9 +2,9 @@
 
 [Home](../../README.md) · [All topics](../topics.md) · [Full arXiv bibliography](../papers.md)
 
-350 source-reviewed resources tagged `human-in-the-loop`. Curated metadata; unknown facts are shown as —.
+351 source-reviewed resources tagged `human-in-the-loop`. Curated metadata; unknown facts are shown as —.
 
-**Contents:** [Benchmarks (5)](#benchmarks) · [Datasets (3)](#datasets) · [Models (1)](#models) · [Agents (81)](#agents) · [Frameworks (63)](#frameworks) · [Tools (66)](#tools) · [Infrastructure (13)](#infrastructure) · [Products (10)](#products) · [Learning resources (1)](#learning-resources) · [Papers (107)](#papers)
+**Contents:** [Benchmarks (5)](#benchmarks) · [Datasets (3)](#datasets) · [Models (2)](#models) · [Agents (81)](#agents) · [Frameworks (63)](#frameworks) · [Tools (66)](#tools) · [Infrastructure (13)](#infrastructure) · [Products (10)](#products) · [Learning resources (1)](#learning-resources) · [Papers (107)](#papers)
 
 ## Benchmarks
 
@@ -26,11 +26,10 @@
 
 ## Models
 
-All entries in this section: unspecified.
-
-| Resource | Paper | License | Description | Evidence |
-| --- | --- | --- | --- | --- |
-| [VeriOS-Agent-32B](https://huggingface.co/wuuuuuz/VeriOS-Agent-32B) | [2509.07553](https://arxiv.org/abs/2509.07553) (2025) | — | VeriOS-Agent-32B is a query-driven OS agent checkpoint initialized from Qwen2.5-VL-32B. It is released with model weights for the interaction approach described in the VeriOS paper. | [✓ 2026‑11‑09](https://huggingface.co/api/models/wuuuuuz/VeriOS-Agent-32B) |
+| Resource | Environments | Paper | License | Description | Evidence |
+| --- | --- | --- | --- | --- | --- |
+| [VeriOS-Agent-32B](https://huggingface.co/wuuuuuz/VeriOS-Agent-32B) | unspecified | [2509.07553](https://arxiv.org/abs/2509.07553) (2025) | — | VeriOS-Agent-32B is a query-driven OS agent checkpoint initialized from Qwen2.5-VL-32B. It is released with model weights for the interaction approach described in the VeriOS paper. | [✓ 2026‑11‑09](https://huggingface.co/api/models/wuuuuuz/VeriOS-Agent-32B) |
+| [VeriOS-Agent-7B](https://huggingface.co/wuuuuuz/VeriOS-Agent-7B) | cross-platform, desktop, web | [2509.07553](https://arxiv.org/abs/2509.07553) (2025) | — | A 7B OS agent model that carries out GUI actions under normal conditions and asks a person for input when it detects an untrustworthy scenario, trained in three stages with SFT and GRPO. | [✓ 2026‑11‑10](https://huggingface.co/api/models/wuuuuuz/VeriOS-Agent-7B) |
 
 ## Agents
 

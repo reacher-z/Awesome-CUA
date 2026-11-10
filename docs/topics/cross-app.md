@@ -2,9 +2,9 @@
 
 [Home](../../README.md) · [All topics](../topics.md) · [Full arXiv bibliography](../papers.md)
 
-97 source-reviewed resources tagged `cross-app`. Curated metadata; unknown facts are shown as —.
+98 source-reviewed resources tagged `cross-app`. Curated metadata; unknown facts are shown as —.
 
-**Contents:** [Benchmarks (21)](#benchmarks) · [Datasets (4)](#datasets) · [Models (3)](#models) · [Agents (11)](#agents) · [Frameworks (3)](#frameworks) · [Tools (4)](#tools) · [Infrastructure (1)](#infrastructure) · [Products (1)](#products) · [Learning resources (1)](#learning-resources) · [Papers (48)](#papers)
+**Contents:** [Benchmarks (21)](#benchmarks) · [Datasets (4)](#datasets) · [Models (4)](#models) · [Agents (11)](#agents) · [Frameworks (3)](#frameworks) · [Tools (4)](#tools) · [Infrastructure (1)](#infrastructure) · [Products (1)](#products) · [Learning resources (1)](#learning-resources) · [Papers (48)](#papers)
 
 ## Benchmarks
 
@@ -48,6 +48,7 @@
 | [AndroidGen-Llama-3-70B](https://huggingface.co/THUDM/androidgen-llama-3-70b) | android | [2504.19298](https://arxiv.org/abs/2504.19298) (2025) | weights other | AndroidGen-Llama-3-70B is a released model for agents that carry out tasks across Android applications such as messaging, email and settings without manually labeled interaction data. | [✓ 2026‑11‑09](https://huggingface.co/api/models/THUDM/androidgen-llama-3-70b) |
 | [Mano-CUA-2.0-4B-MLX-8bit](https://huggingface.co/Mininglamp-2718/Mano-CUA-2.0-4B-MLX-8bit) | desktop, macos, web | [2509.17336](https://arxiv.org/abs/2509.17336) (2025) | weights apache-2.0 | An MLX-quantized Mano-CUA model for Apple Silicon that reads screenshots and task instructions to produce structured GUI actions. | [✓ 2026‑11‑09](https://huggingface.co/api/models/Mininglamp-2718/Mano-CUA-2.0-4B-MLX-8bit) |
 | [MiniMax M3](https://www.minimaxi.com/blog/minimax-m3) | desktop | — | — | MiniMax M3 is a multimodal model whose release page describes desktop operation from visual input and cross-application tasks through MiniMax Code. | [✓ 2026‑11‑09](https://www.minimaxi.com/blog/minimax-m3) |
+| [Muse Spark 1.1](https://ai.meta.com/blog/introducing-muse-spark-meta-model-api) | desktop, web | — | — | Meta Superintelligence Labs multimodal reasoning model for agentic work, trained to choose between writing scripts and clicking in computer-use workflows that span several applications. | [✓ 2026‑11‑10](https://web.archive.org/web/2026/https://ai.meta.com/blog/introducing-muse-spark-meta-model-api/) |
 
 ## Agents
 

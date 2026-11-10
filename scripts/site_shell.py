@@ -130,20 +130,20 @@ def head_assets(lang="en") -> str:
 
 NAV = [("Catalog", "目录", "/catalog/", "/zh/catalog/"), ("Papers", "论文", "/papers/", "/zh/papers/"),
        ("Benchmarks", "评测基准", "/categories/benchmark/", "/zh/categories/benchmark/"),
-       ("Topics", "主题", "/topics/", "/zh/topics/"), ("Guides", "指南", "/guides/", "/guides/"),
+       ("Topics", "主题", "/topics/", "/zh/topics/"), ("Guides", "指南", "/guides/", "/zh/guides/"),
        ("Data", "数据", "/data/", "/zh/data/")]
 
 
 def active_nav(path: str):
-    if path.startswith(("/papers/", "/zh/papers/", "/categories/paper/", "/categories/survey/", "/zh/categories/survey/", "/survey/")):
+    if path.startswith(("/papers/", "/zh/papers/", "/categories/paper/", "/categories/survey/", "/zh/categories/survey/", "/survey/", "/zh/survey/")):
         return "Papers"
-    if path.startswith(("/categories/benchmark/", "/zh/categories/benchmark/", "/compare/benchmarks/")):
+    if path.startswith(("/categories/benchmark/", "/zh/categories/benchmark/", "/compare/benchmarks/", "/zh/compare/benchmarks/")):
         return "Benchmarks"
-    if path.startswith(("/catalog/", "/zh/catalog/", "/categories/", "/zh/categories/", "/compare/", "/explore/", "/resources/")):
+    if path.startswith(("/catalog/", "/zh/catalog/", "/categories/", "/zh/categories/", "/compare/", "/zh/compare/", "/explore/", "/resources/", "/zh/resources/")):
         return "Catalog"
     if path.startswith(("/topics/", "/zh/topics/")):
         return "Topics"
-    if path.startswith("/guides/"):
+    if path.startswith(("/guides/", "/zh/guides/")):
         return "Guides"
     if path.startswith(("/data/", "/zh/data/")):
         return "Data"
@@ -234,17 +234,17 @@ FOOTER_COLUMNS = [
                         ("Benchmarks", "评测基准", "/categories/benchmark/", "/zh/categories/benchmark/"),
                         ("Datasets", "数据集", "/categories/dataset/", "/zh/categories/dataset/"),
                         ("Papers", "论文", "/papers/", "/zh/papers/"),
-                        ("Survey", "综述", "/survey/", "/survey/")]),
+                        ("Survey", "综述", "/survey/", "/zh/survey/")]),
     ("Use the data", "使用数据", [("Download data", "下载数据", "/data/", "/zh/data/"),
                                   ("Agent and RAG guide", "Agent 与 RAG 指南", "/agents/", "/zh/agents/"),
                                   ("llms.txt", "llms.txt", "/llms.txt", "/llms.txt"),
                                   ("Hugging Face dataset", "Hugging Face 数据集", HF_DATASET, HF_DATASET),
                                   ("Atom feed", "Atom 订阅", "/feed.xml", "/feed.xml"),
                                   ("Cite the catalog", "引用本目录", REPO + "/blob/main/CITATION.cff", REPO + "/blob/main/CITATION.cff")]),
-    ("Project", "项目", [("Editorial policy", "收录方法", "/about/", "/about/"),
-                         ("Coverage", "覆盖台账", "/coverage/", "/coverage/"),
-                         ("Updates", "更新记录", "/updates/", "/updates/"),
-                         ("Resource badges", "资源徽章", "/badges/", "/badges/"),
+    ("Project", "项目", [("Editorial policy", "收录方法", "/about/", "/zh/about/"),
+                         ("Coverage", "覆盖台账", "/coverage/", "/zh/coverage/"),
+                         ("Updates", "更新记录", "/updates/", "/zh/updates/"),
+                         ("Resource badges", "资源徽章", "/badges/", "/zh/badges/"),
                          ("Suggest a resource", "提交资源", ISSUES, ISSUES),
                          ("Source repository", "源代码仓库", REPO, REPO),
                          ("Sitemap", "站点地图", "/sitemap.xml", "/sitemap.xml")]),
@@ -256,10 +256,11 @@ def scan_stamp(zh=False, live=False) -> str:
     that change rarely link to the scan record and site.js fills in the date from /data/site-stamp.json."""
     label = "最近扫描" if zh else "Last scan"
     last_scan = CONTEXT["last_scan"]
+    updates = "/zh/updates/" if zh else "/updates/"
     if live and last_scan:
         when = last_scan[:16].replace("T", " ") + " UTC"
-        return f'<a href="/updates/">{label} <time data-last-scan datetime="{esc(last_scan)}">{esc(when)}</time></a>'
-    return f'<a href="/updates/">{label}<span data-last-scan-slot></span></a>'
+        return f'<a href="{updates}">{label} <time data-last-scan datetime="{esc(last_scan)}">{esc(when)}</time></a>'
+    return f'<a href="{updates}">{label}<span data-last-scan-slot></span></a>'
 
 
 def footer(*, lang="en", live=False) -> str:

@@ -4,12 +4,12 @@ A source-backed collection of papers, models, datasets, benchmarks and tools for
 
 **English** · [简体中文](README.zh-CN.md)
 
-**[Search the website](https://awesomecua.com/)** · **[Contribute](CONTRIBUTING.md)**
+**[Search the website](https://awesomecua.com/)** · **[Papers](https://awesomecua.com/papers/)** · **[Topics](https://awesomecua.com/topics/)** · **[Data](https://awesomecua.com/data/)** · **[Agent guide](https://awesomecua.com/agents/)** · **[Contribute](CONTRIBUTING.md)**
 
 If this collection is useful, a [star on GitHub](https://github.com/reacher-z/Awesome-CUA) helps others find it.
 
 <!-- BADGES:START -->
-![Curated resources](https://img.shields.io/badge/curated%20resources-5%2C115-4352E8?style=flat-square&labelColor=1E2233) ![Reviewed papers and surveys](https://img.shields.io/badge/reviewed%20papers%20and%20surveys-1%2C718-4352E8?style=flat-square&labelColor=1E2233) ![Last successful scan](https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2Freacher-z%2FAwesome-CUA%2Fstatus%2Fscan-badge.json&style=flat-square&labelColor=1E2233) ![Hugging Face dataset](https://img.shields.io/badge/dataset-Hugging%20Face-4352E8?style=flat-square&labelColor=1E2233) ![MIT license](https://img.shields.io/badge/license-MIT-5E6472?style=flat-square&labelColor=1E2233)
+![Curated resources](https://img.shields.io/badge/curated%20resources-5%2C215-4352E8?style=flat-square&labelColor=1E2233) ![Reviewed papers and surveys](https://img.shields.io/badge/reviewed%20papers%20and%20surveys-1%2C718-4352E8?style=flat-square&labelColor=1E2233) ![Last successful scan](https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2Freacher-z%2FAwesome-CUA%2Fstatus%2Fscan-badge.json&style=flat-square&labelColor=1E2233) ![Hugging Face dataset](https://img.shields.io/badge/dataset-Hugging%20Face-4352E8?style=flat-square&labelColor=1E2233) ![MIT license](https://img.shields.io/badge/license-MIT-5E6472?style=flat-square&labelColor=1E2233)
 <!-- BADGES:END -->
 
 Curated entries were reviewed against a first-party source snapshot; records awaiting review have their bibliographic identity checked; candidates are discovered identifiers awaiting resolution. [What “verified” means](#what-verified-means) · [Coverage ledger](docs/coverage.md)
@@ -25,13 +25,13 @@ Curated entries were reviewed against a first-party source snapshot; records awa
 <!-- TASKS:START -->
 ## Find by task
 
-| Your task           | Start here                                                                                                                                                     | What you can find                                                                                                                            |
-| ------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------- |
-| Find papers         | [Research library](https://awesomecua.com/papers/) · [Topics](https://awesomecua.com/topics/) · [Paper–asset connections](https://awesomecua.com/connections/) | Reviewed papers by year and topic, with original sources and the code, datasets and models linked to them through reviewed primary evidence. |
-| Choose a benchmark  | [Benchmark guide](https://awesomecua.com/guides/gui-agent-benchmarks/)                                                                                         | Platforms, tasks, evaluators, and versions to compare.                                                                                       |
-| Find training data  | [Training-data guide](https://awesomecua.com/guides/gui-agent-training-data/)                                                                                  | Supervision, splits, count units, and data licenses.                                                                                         |
-| Build an agent      | [Agents](https://awesomecua.com/categories/agent/) · [Frameworks](https://awesomecua.com/categories/framework/)                                                | Implementation entry points, supported platforms, and papers.                                                                                |
-| Use RAG or an agent | [Agent guide](https://awesomecua.com/agents/) · [Data hub](https://awesomecua.com/data/)                                                                       | Complete records or retrieval documents with review states and sources.                                                                      |
+| Your task           | Start here                                                                                                      | What you can find                                                                                                                            |
+| ------------------- | --------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------- |
+| Find papers         | Research library · Topics · [Paper–asset connections](https://awesomecua.com/connections/)                      | Reviewed papers by year and topic, with original sources and the code, datasets and models linked to them through reviewed primary evidence. |
+| Choose a benchmark  | [Benchmark guide](https://awesomecua.com/guides/gui-agent-benchmarks/)                                          | Platforms, tasks, evaluators, and versions to compare.                                                                                       |
+| Find training data  | [Training-data guide](https://awesomecua.com/guides/gui-agent-training-data/)                                   | Supervision, splits, count units, and data licenses.                                                                                         |
+| Build an agent      | [Agents](https://awesomecua.com/categories/agent/) · [Frameworks](https://awesomecua.com/categories/framework/) | Implementation entry points, supported platforms, and papers.                                                                                |
+| Use RAG or an agent | Agent guide · Data hub                                                                                          | Complete records or retrieval documents with review states and sources.                                                                      |
 
 <details>
 <summary>Local examples (after cloning; Python 3.11+, no dependencies required)</summary>
@@ -52,9 +52,9 @@ python3 scripts/catalog.py get arxiv:2404.07972 --related --json
 
 <!-- STATS:START -->
 
-**5,115 curated resources** · **1,718 reviewed papers and surveys** · **104 discovery documents**
+**5,215 curated resources** · **1,718 reviewed papers and surveys** · **104 discovery documents**
 
-Evidence through `2026-11-10T00:34:12Z`. **906 records awaiting review** have verified bibliographic metadata, and **701 discovered candidates** await resolution. 1,741 candidates have an out-of-scope review. 1,308 scope exclusions retain their original metadata in the archive.
+Evidence through `2026-11-10T03:01:53Z`. **906 records awaiting review** have verified bibliographic metadata, and **525 discovered candidates** await resolution. 1,774 candidates have an out-of-scope review. 1,308 scope exclusions retain their original metadata in the archive.
 
 <!-- STATS:END -->
 
@@ -67,17 +67,17 @@ Evidence through `2026-11-10T00:34:12Z`. **906 records awaiting review** have ve
 | [Full bibliography](docs/papers.md)              | All paper and survey records, including those awaiting review |   2,624 |
 | [Surveys](docs/surveys.md)                       | Surveys of computer-use agent research                        |      37 |
 | [Learning resources](docs/learning.md)           | Courses and tutorials                                         |      36 |
-| [Datasets](docs/datasets.md)                     | Training and evaluation data for GUI agents                   |     243 |
-| [Benchmarks](docs/benchmarks.md)                 | Evaluation environments and task suites                       |     300 |
-| [Models and checkpoint releases](docs/models.md) | Checkpoints and model families                                |     400 |
-| [Agents](docs/agents.md)                         | Open implementations that act on a computer                   |     471 |
-| [Frameworks](docs/frameworks.md)                 | Code for building and evaluating agents                       |     662 |
-| [Infrastructure](docs/infrastructures.md)        | Sandboxes, VMs, device farms and environments                 |     114 |
-| [Tools](docs/tools.md)                           | Evaluation harnesses, recorders and other utilities           |   1,077 |
+| [Datasets](docs/datasets.md)                     | Training and evaluation data for GUI agents                   |     267 |
+| [Benchmarks](docs/benchmarks.md)                 | Evaluation environments and task suites                       |     305 |
+| [Models and checkpoint releases](docs/models.md) | Checkpoints and model families                                |     454 |
+| [Agents](docs/agents.md)                         | Open implementations that act on a computer                   |     475 |
+| [Frameworks](docs/frameworks.md)                 | Code for building and evaluating agents                       |     665 |
+| [Infrastructure](docs/infrastructures.md)        | Sandboxes, VMs, device farms and environments                 |     117 |
+| [Tools](docs/tools.md)                           | Evaluation harnesses, recorders and other utilities           |   1,084 |
 | [Products](docs/products.md)                     | Computer-use products from vendors and projects               |      75 |
 | [Publishers and brands](docs/companies.md)       | Publishers and brands connected to cataloged resources        |      19 |
 
-**By platform:** [Web](docs/environments/web.md) **2,631** · [Desktop](docs/environments/desktop.md) **1,780** · [Windows](docs/environments/windows.md) **566** · [macOS](docs/environments/macos.md) **581** · [Linux](docs/environments/linux.md) **527** · [Android](docs/environments/android.md) **698** · [iOS](docs/environments/ios.md) **102** · [HarmonyOS](docs/environments/harmonyos.md) **7** · [Cross-platform](docs/environments/cross-platform.md) **750**
+**By platform:** [Web](docs/environments/web.md) **2,678** · [Desktop](docs/environments/desktop.md) **1,801** · [Windows](docs/environments/windows.md) **571** · [macOS](docs/environments/macos.md) **582** · [Linux](docs/environments/linux.md) **533** · [Android](docs/environments/android.md) **720** · [iOS](docs/environments/ios.md) **105** · [HarmonyOS](docs/environments/harmonyos.md) **7** · [Cross-platform](docs/environments/cross-platform.md) **756**
 <!-- EXPLORE:END -->
 
 Coverage spans web, desktop, Android, iOS, Windows, macOS, Linux, and cross-platform work. Topics include grounding, screen understanding, planning, memory, long-horizon workflows, reinforcement learning, data generation, safety, robustness, and evaluation.
@@ -125,18 +125,18 @@ The most-mentioned curated resources per category: the count is how many other c
 | 2026‑09‑02 | [Efficient GUI Agents: A Systems Survey of Observation, Memory, Action, and Runtime Optimization](https://arxiv.org/abs/2609.02309)     | Cross-platform |
 | 2026‑08‑30 | [A Systematic Survey of Agentic Skills: Architecture, Lifecycle, and Security](https://arxiv.org/abs/2608.29596)                        | Cross-platform |
 
-**Benchmarks** · 300 in the catalog
+**Benchmarks** · 305 in the catalog
 
 | Resource                                                                       | Mentions | Environments                   | Paper                                                 | License         | Description                                                                         |
 | ------------------------------------------------------------------------------ | -------: | ------------------------------ | ----------------------------------------------------- | --------------- | ----------------------------------------------------------------------------------- |
 | [OSWorld](https://github.com/xlang-ai/OSWorld)                                 |       60 | Desktop, Linux, Windows, macOS | [2404.07972](https://arxiv.org/abs/2404.07972) (2024) | code Apache-2.0 | Execution-based evaluation of agents performing tasks in real desktop environments. |
-| [WebArena](https://github.com/web-arena-x/webarena)                            |       30 | Web                            | [2307.13854](https://arxiv.org/abs/2307.13854) (2023) | code Apache-2.0 | Self-hosted web environments and tasks for evaluating autonomous web agents.        |
+| [WebArena](https://github.com/web-arena-x/webarena)                            |       31 | Web                            | [2307.13854](https://arxiv.org/abs/2307.13854) (2023) | code Apache-2.0 | Self-hosted web environments and tasks for evaluating autonomous web agents.        |
 | [AndroidWorld](https://github.com/google-research/android_world)               |       21 | Android                        | [2405.14573](https://arxiv.org/abs/2405.14573) (2024) | code Apache-2.0 | Android environment with programmatic task evaluation for mobile agents.            |
 | [BrowserGym](https://github.com/ServiceNow/BrowserGym)                         |       16 | Web                            | [2412.05467](https://arxiv.org/abs/2412.05467) (2024) | code Apache-2.0 | Unified interfaces for browser-agent tasks and benchmark environments.              |
 | [ScreenSpot Pro](https://github.com/likaixin2000/ScreenSpot-Pro-GUI-Grounding) |       15 | Desktop, Windows, macOS, Linux | —                                                     | code MIT        | GUI grounding benchmark focused on professional high-resolution interfaces.         |
-| [VisualWebArena](https://github.com/web-arena-x/visualwebarena)                |       13 | Web                            | [2401.13649](https://arxiv.org/abs/2401.13649) (2024) | —               | Visually grounded web tasks extending the WebArena evaluation setting.              |
+| [VisualWebArena](https://github.com/web-arena-x/visualwebarena)                |       14 | Web                            | [2401.13649](https://arxiv.org/abs/2401.13649) (2024) | —               | Visually grounded web tasks extending the WebArena evaluation setting.              |
 
-**Models** · 400 in the catalog
+**Models** · 454 in the catalog
 
 | Resource                                                                 | Mentions | Environments   | Paper                                                 | License            | Description                                                                                                                                                           |
 | ------------------------------------------------------------------------ | -------: | -------------- | ----------------------------------------------------- | ------------------ | --------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -147,7 +147,7 @@ The most-mentioned curated resources per category: the count is how many other c
 | [GUI-Actor](https://github.com/microsoft/GUI-Actor)                      |        7 | Cross-platform | [2506.03143](https://arxiv.org/abs/2506.03143) (2025) | code MIT           | GUI grounding model with attention-based action localization.                                                                                                         |
 | [OpenCUA](https://github.com/xlang-ai/OpenCUA)                           |        7 | Desktop        | [2508.09123](https://arxiv.org/abs/2508.09123) (2025) | code MIT           | Open computer-use research stack including models and training resources.                                                                                             |
 
-**Datasets** · 243 in the catalog
+**Datasets** · 267 in the catalog
 
 | Resource                                                                       | Mentions | Environments                          | Paper                                                 | License         | Description                                                                                                                                                                                 |
 | ------------------------------------------------------------------------------ | -------: | ------------------------------------- | ----------------------------------------------------- | --------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -158,7 +158,7 @@ The most-mentioned curated resources per category: the count is how many other c
 | [GroundCUA dataset](https://huggingface.co/datasets/ServiceNow/GroundCUA)      |        5 | Desktop, Windows, macOS, Linux        | [2511.07332](https://arxiv.org/abs/2511.07332) (2025) | data mit        | Desktop GUI-grounding data from the GroundCUA project: PNG screenshots of 87 applications paired by hash with JSON lists of element boxes, visible text and optional coarse categories.     |
 | [GUI-Actor data](https://huggingface.co/datasets/cckevinn/GUI-Actor-Data)      |        5 | Unspecified                           | 2506.03143 (2025)                                     | —               | A processed screenshot and bounding-box collection released for training GUI-Actor visual grounding models.                                                                                 |
 
-**Frameworks** · 662 in the catalog
+**Frameworks** · 665 in the catalog
 
 | Resource                                                                                             | Mentions | Environments | Paper                                                 | License  | Description                                                                                                                                                                                       |
 | ---------------------------------------------------------------------------------------------------- | -------: | ------------ | ----------------------------------------------------- | -------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -169,7 +169,7 @@ The most-mentioned curated resources per category: the count is how many other c
 | [Stagehand](https://github.com/browserbase/stagehand)                                                |        9 | Web          | —                                                     | code MIT | Browser automation framework combining code and natural-language actions.                                                                                                                         |
 | [WebMCP](https://github.com/webmachinelearning/webmcp)                                               |        9 | Web          | —                                                     | —        | A client-side web API proposal that lets pages expose structured JavaScript tools to browser agents. Agents can invoke page functions while sharing the visible interface and context with users. |
 
-**Agents** · 471 in the catalog
+**Agents** · 475 in the catalog
 
 | Resource                                                     | Mentions | Environments                                        | Paper                                                                                                                                                                                                                      | License         | Description                                                                                                                                                                                             |
 | ------------------------------------------------------------ | -------: | --------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -192,20 +192,20 @@ Newest editorial approvals of models, datasets, benchmarks, systems, and tools (
 <summary>Show the recently reviewed table</summary>
 
 <!-- RECENT:START -->
-| Reviewed   | Resource                                                                             | Kind           | Environments                                        | Description                                                                                                                                                  |
-| ---------- | ------------------------------------------------------------------------------------ | -------------- | --------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| 2026‑11‑09 | [Microsoft](https://www.microsoft.com/)                                              | company        | Unspecified                                         | Publisher or product brand associated with Microsoft computer-use or browser automation offerings.                                                           |
-| 2026‑11‑09 | [H](https://hcompany.ai/)                                                            | company        | Unspecified                                         | Publisher or product brand associated with H computer-use or browser automation offerings.                                                                   |
-| 2026‑11‑09 | [Google](https://about.google/)                                                      | company        | Unspecified                                         | Publisher or product brand associated with Google computer-use or browser automation offerings.                                                              |
-| 2026‑11‑09 | [Anthropic](https://www.anthropic.com/)                                              | company        | Unspecified                                         | Publisher or product brand associated with Anthropic computer-use or browser automation offerings.                                                           |
-| 2026‑11‑09 | [Frigate](https://github.com/rao-studios/Frigate)                                    | framework      | Desktop, macOS                                      | A Swift ML package that includes a macOS screen-perception module. It detects regions, recognizes text, classifies interface roles, and produces a page map. |
-| 2026‑11‑09 | [WildAWM](https://github.com/MSR-Orchard/WildAWM)                                    | infrastructure | Cross-platform, Desktop, Web                        | WildAWM supplies a pipeline for generating computer environments and cross-interface tasks, with execution checks and tools for evaluating agents.           |
-| 2026‑11‑09 | [WebVIA](https://github.com/zheny2751-dotcom/WebVIA)                                 | framework      | Web                                                 | WebVIA links an agent that explores web pages and records actions to modules that generate HTML and verify the resulting interface.                          |
-| 2026‑11‑09 | [Patchright](https://github.com/Kaliiiiiiiiii-Vinyzu/patchright)                     | tool           | Web                                                 | Patchright is a modified Playwright driver for Chromium automation, with browser interaction through Playwright-style APIs and separate client packages.     |
-| 2026‑11‑09 | [OpenHuman](https://github.com/tinyhumansai/openhuman)                               | framework      | Cross-platform, Desktop, Windows, macOS, Linux, Web | OpenHuman is an agent harness offered as a desktop app and Rust library, with browser and desktop controls that select actions from visible buttons.         |
-| 2026‑11‑09 | [easyGooglePlay](https://github.com/xxjrq/easy-google-play)                          | tool           | Web, Android                                        | easyGooglePlay is an agent skill for building Android releases and completing Google Play Console publishing steps through a signed-in browser bridge.       |
-| 2026‑11‑09 | [CloakBrowser](https://github.com/CloakHQ/CloakBrowser)                              | tool           | Web                                                 | CloakBrowser provides a modified Chromium build with Playwright and Puppeteer compatible APIs for scripted browser interaction.                              |
-| 2026‑11‑09 | [Caster User Directory](https://github.com/amirf147/caster-user-directory-and-notes) | tool           | Desktop, Windows                                    | Caster User Directory combines Windows voice automation with window switching and accessibility-based tracking of focused desktop context.                   |
+| Reviewed   | Resource                                                                                                         | Kind      | Environments | Description                                                                                                                                                                                                         |
+| ---------- | ---------------------------------------------------------------------------------------------------------------- | --------- | ------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| 2026‑11‑10 | [UXAgent](https://uxagent.hailab.io)                                                                             | framework | Web          | Usability-testing system that generates simulated user personas, has LLM agents work through a target website via a browser connector, and shows their survey answers and action logs in a result viewer.           |
+| 2026‑11‑10 | [Muse Spark 1.1](https://ai.meta.com/blog/introducing-muse-spark-meta-model-api)                                 | model     | Desktop, Web | Meta Superintelligence Labs multimodal reasoning model for agentic work, trained to choose between writing scripts and clicking in computer-use workflows that span several applications.                           |
+| 2026‑11‑10 | [Indeed-UI-8B](https://www.modelscope.cn/models/IntellgenceIndeed/Indeed-UI-8B)                                  | model     | Unspecified  | GUI grounding model fine-tuned from GUI-Owl 1.5-8B with grounding data and high-resolution training; the card reports 73.4 on ScreenSpot-Pro, 94.4 on ScreenSpot-V2 and 68.3 on OSWorld-G.                          |
+| 2026‑11‑10 | [GPT-6 Astra](https://openai.com/index/gpt-6-astra)                                                              | model     | Desktop, Web | General OpenAI model whose launch post covers computer use and browsing; OpenAI reports 72.6% on OSWorld 2.0 at about 40 minutes per task, plus ScreenSpot-Pro and Mind2Web results.                                |
+| 2026‑11‑10 | [Adept Fuyu-Heavy](https://www.adept.ai/blog/adept-fuyu-heavy)                                                   | model     | Unspecified  | Adept multimodal model that scales up the Fuyu architecture for digital agents, aimed mainly at UI understanding; Adept reports MMMU, VQAv2, AI2D and ChartQA scores against Gemini models.                         |
+| 2026‑11‑10 | [webarena-world-model-rlvr](https://huggingface.co/thuml/webarena-world-model-rlvr)                              | model     | Web          | A language world model for web page state prediction on WebArena, post-trained with RLVR from an SFT checkpoint and used for model predictive control of web agents.                                                |
+| 2026‑11‑10 | [TimeWarp-GPT5-Traces](https://huggingface.co/datasets/sparklabutah/TimeWarp-GPT5-Traces)                        | dataset   | Web          | GPT-5 teacher trajectories on the TimeWarp web benchmark, grouped by UI version, with SoM-annotated screenshots for each step and experiment logs, used to fine-tune web agents with LlamaFactory.                  |
+| 2026‑11‑10 | [TianXi_Action_Grounding_7B](https://huggingface.co/tangliang/TianXi_Action_Grounding_7B)                        | model     | Desktop      | A 7B GUI action-grounding model from the SEA computer-use agent work, released as Qwen2_5_VL safetensors weights; its GitHub repository runs it on ScreenSpot-Pro across instruction styles and languages.          |
+| 2026‑11‑10 | [Qwen3-VL-8B-Instruct-MobileWorld-SFT](https://huggingface.co/jacklishufan/Qwen3-VL-8B-Instruct-MobileWorld-SFT) | model     | Android      | Qwen3-VL-8B-Instruct fine-tuned on the MobileWorld dataset as a semantic world model that describes in natural language how a mobile GUI screen changes after an action, for planning by mobile agents.             |
+| 2026‑11‑10 | [OpenWebVoyager-opt-2](https://huggingface.co/OpenWebVoyager/OpenWebVoyager-opt-2)                               | model     | Web          | The second optimization-iteration checkpoint of OpenWebVoyager, an idefics2-8b multimodal web agent trained by imitation learning and then refined on successful real-website trajectories kept by GPT-4o feedback. |
+| 2026‑11‑10 | [OpenPhone_dataset](https://huggingface.co/datasets/hkuds/OpenPhone_dataset)                                     | dataset   | Android      | Training data for the OpenPhone mobile agent: the AndroidLab training archive plus a Hugging Face vision-language set with LLM-generated reasoning and reflection chains, formatted for GRPO training.              |
+| 2026‑11‑10 | [InternVL3_5-2B](https://huggingface.co/OpenGVLab/InternVL3_5-2B)                                                | model     | Unspecified  | InternVL3.5-2B checkpoint with a 0.3B vision encoder and 2.0B language model, from a multimodal family trained with Cascade RL that lists GUI interaction among its capabilities.                                   |
 <!-- RECENT:END -->
 
 </details>
@@ -220,12 +220,12 @@ The download manifest records each listed export's actual count and unit, scope,
 
 Reviewed research · [Computer-use agent guides](https://awesomecua.com/guides/) · [Static resource directory](https://awesomecua.com/catalog/) · [Search and AI discovery](docs/search-discovery.md)
 
-- [Catalog JSONL](https://github.com/reacher-z/Awesome-CUA/blob/main/data/catalog.jsonl) - One resource per line, with stable IDs, typed fields, provenance, scoped licenses, and review status.
-- [Reference graph](https://github.com/reacher-z/Awesome-CUA/blob/main/data/references.jsonl) - Outbound references from primary sources.
-- [Discovery registry](https://github.com/reacher-z/Awesome-CUA/blob/main/data/sources.json) - Source snapshots and where each identifier was found (see also [candidates](data/candidates.jsonl)).
-- [Review queue](https://github.com/reacher-z/Awesome-CUA/blob/main/data/review-queue.jsonl) - Unresolved evidence, unindexed discoveries, and proposals requiring editorial work. Discovered links reviewed as non-resources or as other addresses of indexed resources stay listed with a `resolution` and their reason.
-- [JSON Schema](https://github.com/reacher-z/Awesome-CUA/blob/main/schemas/resource.schema.json) - Machine-checkable contracts and coverage accounting (see also [coverage JSON](data/coverage.json)).
-- [BibTeX](https://awesomecua.com/downloads/citations.bib) - Reviewed-paper citations with recorded authors, dates, and versions. Each resource page also provides its own `record.json` (see also [CSL JSON](https://awesomecua.com/downloads/citations.csl.json)).
+- **[Catalog JSONL](https://github.com/reacher-z/Awesome-CUA/blob/main/data/catalog.jsonl):** one resource per line, with stable IDs, typed fields, provenance, scoped licenses, and review status.
+- **[Reference graph](https://github.com/reacher-z/Awesome-CUA/blob/main/data/references.jsonl):** outbound references from primary sources.
+- **[Discovery registry](https://github.com/reacher-z/Awesome-CUA/blob/main/data/sources.json)** and **[candidates](data/candidates.jsonl):** source snapshots and where each identifier was found.
+- **[Review queue](https://github.com/reacher-z/Awesome-CUA/blob/main/data/review-queue.jsonl):** unresolved evidence, unindexed discoveries, and proposals requiring editorial work. Discovered links reviewed as non-resources or as other addresses of indexed resources stay listed with a `resolution` and their reason.
+- **[JSON Schema](https://github.com/reacher-z/Awesome-CUA/blob/main/schemas/resource.schema.json)** and **[coverage JSON](data/coverage.json):** machine-checkable contracts and coverage accounting.
+- **[BibTeX](https://awesomecua.com/downloads/citations.bib)** and **[CSL JSON](https://awesomecua.com/downloads/citations.csl.json):** reviewed-paper citations with recorded authors, dates, and versions. Each resource page also provides its own `record.json`.
 
 ```bash
 # Python 3.11+. Search and export require only the standard library.

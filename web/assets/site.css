@@ -1436,3 +1436,4 @@ html:lang(zh-CN) .eyebrow{letter-spacing:.02em}
 /* Narrow EN hero: step badge and click label sit together under the box, clear of both headline lines */
 @media (max-width:767px){.bbox-f::before{top:calc(100% + 5px)}.bbox-f::after{right:auto;left:17px}.home .hero-lede{margin-top:40px}}
 .row-desc{max-width:80ch}
+.choose td a,.choose th a{padding-block:4px}

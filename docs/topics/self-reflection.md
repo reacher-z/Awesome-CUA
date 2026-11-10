@@ -2,9 +2,9 @@
 
 [Home](../../README.md) · [All topics](../topics.md) · [Full arXiv bibliography](../papers.md)
 
-151 source-reviewed resources tagged `self-reflection`. Curated metadata; unknown facts are shown as —.
+152 source-reviewed resources tagged `self-reflection`. Curated metadata; unknown facts are shown as —.
 
-**Contents:** [Benchmarks (6)](#benchmarks) · [Datasets (1)](#datasets) · [Models (5)](#models) · [Agents (29)](#agents) · [Frameworks (45)](#frameworks) · [Tools (8)](#tools) · [Products (2)](#products) · [Papers (55)](#papers)
+**Contents:** [Benchmarks (6)](#benchmarks) · [Datasets (1)](#datasets) · [Models (6)](#models) · [Agents (29)](#agents) · [Frameworks (45)](#frameworks) · [Tools (8)](#tools) · [Products (2)](#products) · [Papers (55)](#papers)
 
 ## Benchmarks
 
@@ -33,6 +33,7 @@ All entries in this section: unspecified.
 | [Northstar-CUA-Fast](https://huggingface.co/Tzafon/Northstar-CUA-Fast) | desktop, web | — | weights apache-2.0 | A 4B-parameter computer-use model trained with GUI reinforcement learning that maps text and screenshots to actions such as clicks, typing, and scrolling. | [✓ 2026‑11‑09](https://huggingface.co/api/models/Tzafon/Northstar-CUA-Fast) |
 | [OpenCUA 32B](https://huggingface.co/xlangai/OpenCUA-32B) | desktop, linux, windows, macos | [2508.09123](https://arxiv.org/abs/2508.09123) (2025) | weights mit | A Qwen2.5-VL-based computer-use checkpoint that combines screenshot history with planning and grounded executable actions. | [✓ 2026‑10‑17](https://huggingface.co/xlangai/OpenCUA-32B/raw/main/README.md) |
 | [OpenCUA 72B](https://huggingface.co/xlangai/OpenCUA-72B) | desktop, linux, windows, macos | [2508.09123](https://arxiv.org/abs/2508.09123) (2025) | weights mit | A Qwen2.5-VL-based computer-use checkpoint that combines screenshot history and reflective reasoning to predict executable desktop actions. | [✓ 2026‑10‑17](https://huggingface.co/xlangai/OpenCUA-72B/raw/main/README.md) |
+| [ScreenAgent](https://huggingface.co/niurl/ScreenAgent) | desktop, windows, linux | — | weights mit | ScreenAgent-2312 weights in SAT format, a CogAgent-based vision-language model that drives the ScreenAgent environment, issuing mouse and keyboard actions over VNC in plan, act and reflect stages. | [✓ 2026‑11‑10](https://huggingface.co/api/models/niurl/ScreenAgent) |
 | [UI-Voyager](https://huggingface.co/MarsXL/UI-Voyager) | android | [2603.24533](https://arxiv.org/abs/2603.24533) (2026) | weights mit | A released mobile GUI agent checkpoint fine-tuned from Qwen3-VL-4B-Instruct to operate device interfaces, with AndroidWorld evaluation instructions. | [✓ 2026‑11‑09](https://huggingface.co/api/models/MarsXL/UI-Voyager) |
 
 ## Agents

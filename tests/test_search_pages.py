@@ -477,15 +477,16 @@ class SearchPagesTests(unittest.TestCase):
         for needle in ('curl -sL '+SITE+'/resources/<id>/index.md','hf papers read 2404.07972','/api/v1/resources.json','/explore/?q=','/llms-full.txt','/sitemap.xml','/downloads/catalog.jsonl','@misc{awesomecua','/issues/new/choose'):
             self.assertIn(needle,text)
 
-    def test_markdown_twins_start_with_front_matter_and_home_has_a_faq(self):
+    def test_markdown_twins_start_with_front_matter_and_home_questions_are_for_agents(self):
         for path in ('index.md','zh/index.md','papers/index.md','categories/model/index.md'):
             head=(self.dest/path).read_text().split('\n---\n',1)[0]
             self.assertTrue(head.startswith('---\ntitle: '),path)
             for key in ('url: '+SITE,'updated: 20','type: ','lang: '):self.assertIn(key,head,path)
+        for path in ('index.md','zh/index.md','llms.txt','llms-full.txt','AGENTS.md'):
+            self.assertRegex((self.dest/path).read_text(),r'(?m)^## (Questions|常见问题)$',path)
         for path in ('index.html','zh/index.html'):
             markup=(self.dest/path).read_text()
-            self.assertIn('"@type":"FAQPage"',markup.replace('": "','":"').replace('" :','":'))
-            self.assertIn('class="cat-faq"',markup)
+            self.assertNotIn('FAQPage',markup);self.assertNotIn('class="cat-faq"',markup)
 
     def test_agent_guides_and_rag_downloads_share_the_actual_catalog(self):
         command='git clone https://github.com/reacher-z/Awesome-CUA.git'

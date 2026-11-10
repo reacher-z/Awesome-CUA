@@ -10,7 +10,7 @@ ENDPOINTS = ('resources', 'papers', 'categories', 'changes')
 FILES = ('AGENTS.md', 'agents.md', 'agents.txt')
 
 
-def site_agents_md(*, site, counts, snapshot, repo='https://github.com/reacher-z/Awesome-CUA'):
+def site_agents_md(*, site, counts, snapshot, repo='https://github.com/reacher-z/Awesome-CUA', faq=''):
     curated, waiting = counts['curated'], counts['awaiting_review']
     year = snapshot[:4]
     return f'''# Awesome CUA for agents
@@ -81,7 +81,7 @@ Hugging Face mirror: `load_dataset("TIGER-Lab/AwesomeCUA", "resources")`.
 }}
 ```
 
-## Updates
+{('## Questions' + chr(10) + chr(10) + faq + chr(10) + chr(10)) if faq else ''}## Updates
 
 Discovery scans run every 8 hours. Release tags attach versioned data bundles with SHA-256 checksums: {repo}/releases
 

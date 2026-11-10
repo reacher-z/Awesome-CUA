@@ -1195,21 +1195,24 @@ def build_search_pages(destination, rows, coverage, root, *, survey_page=None):
     body='<h1>计算机使用智能体指南</h1><p class="answer-lead">附直接答案与一手研究参考的实用阅读指南，帮助区分界面定位、任务执行、训练数据与评测。</p><div class="reading-list">'+''.join(f'<article><h2><a href="{guide_path(g)}">{esc(zh_guides[g["slug"]]["title"] if g["slug"] in zh_guides else g["title"])}</a></h2><p>{esc(zh_guides[g["slug"]]["description"] if g["slug"] in zh_guides else g["description"])}</p></article>' for g in guides)+'</div>'
     emit('/zh/guides/',page('计算机使用智能体指南','了解计算机使用智能体，选择 GUI 智能体评测基准，查找训练数据，每篇指南都附一手来源参考。','/zh/guides/',body,lang='zh-CN',alternatives=guides_pair),alternates=guides_pair)
     zh_note=f'当前有 {len(reviewed):,} 条已对照一手来源审核的资源；另有 {awaiting:,} 条书目记录待审阅、{candidates:,} 个已发现候选待核实。'
-    def home_faq(zh):
+    def faq_md(zh):
+        """The home questions as Markdown for the agent files; the pages carry no FAQ markup."""
         view['metadata_only']=counts['awaiting_review']['metadata_only_records'];view['other_resources']=counts['curated']['other_resources']
         items=home_page.faq_items(view,last_scan,zh=zh)
         if zh:items=[(q,category_guides.spaced(answer)) for q,answer in items]
-        section=f'<section class="wrap cat-guide home-faq" aria-labelledby="faq-h">{category_guides.faq_html(items,zh=zh)}</section>'
-        return section,category_guides.faq_schema(items,SITE+('/zh/' if zh else '/'),'zh-CN' if zh else 'en')
-    zh_body=home_page.hero(view,last_scan,zh=True)+home_page.benchmark_band(view,zh=True)+home_page.tasks(view,zh=True)+home_page.latest(view,zh=True)+home_page.categories(view,zh=True)+home_page.papers(view,zh=True)+home_page.developers(zh=True)+home_faq(True)[0]+home_page.directory_strip(zh=True,note=zh_note)+home_page.contribute(zh=True)
+        def md(markup):
+            text=re.sub(r'<a href="([^"]+)">(.*?)</a>',lambda m:f'[{m[2]}]({SITE+m[1] if m[1].startswith("/") else m[1]})',markup)
+            return html.unescape(re.sub(r'<[^>]+>','',text))
+        return '\n\n'.join(f'### {q}\n\n{md(answer)}' for q,answer in items)
+    zh_body=home_page.hero(view,last_scan,zh=True)+home_page.benchmark_band(view,zh=True)+home_page.tasks(view,zh=True)+home_page.latest(view,zh=True)+home_page.categories(view,zh=True)+home_page.papers(view,zh=True)+home_page.developers(zh=True)+home_page.directory_strip(zh=True,note=zh_note)+home_page.contribute(zh=True)
     website={"@type":"WebSite","@id":SITE+"/#website","url":SITE+"/","name":"Awesome CUA","alternateName":["AwesomeCUA","Awesome Computer-Use Agents"],"description":"Source-backed computer-use and GUI-agent resource catalog","publisher":{"@id":SITE+"/#organization"},"inLanguage":["en","zh-CN"],
              # The explorer reads ?q= and searches every record.
              "potentialAction":{"@type":"SearchAction","target":{"@type":"EntryPoint","urlTemplate":SITE+"/explore/?q={search_term_string}#catalog"},"query-input":"required name=search_term_string"}}
-    emit('/zh/',page(f'Awesome CUA 中文主页：{len(reviewed):,} 条计算机使用智能体资源','浏览可搜索、可追溯的 Computer-Use Agent 论文、模型、数据集、基准、框架与产品，查看来源证据并下载结构化目录。','/zh/',zh_body,lang='zh-CN',alternatives=True,landing=True,extra_graph=[website,home_faq(True)[1]]),lastmod=modified(rows),alternates=True)
+    emit('/zh/',page(f'Awesome CUA 中文主页：{len(reviewed):,} 条计算机使用智能体资源','浏览可搜索、可追溯的 Computer-Use Agent 论文、模型、数据集、基准、框架与产品，查看来源证据并下载结构化目录。','/zh/',zh_body,lang='zh-CN',alternatives=True,landing=True,extra_graph=[website]),lastmod=modified(rows),alternates=True)
     # The explorer keeps a static, visible directory for visitors without JavaScript.
     static='<section class="shell static-directory" aria-labelledby="static-directory-title"><div class="eyebrow" data-i18n="directoryEyebrow">READ, EXPLORE, AND CITE</div><h2 id="static-directory-title" data-i18n="directoryHeading">Computer-use agent research and resources</h2><p data-i18n="directoryCopy">Browse source-backed pages directly, with or without JavaScript. Reviewed entries include concise annotations, provenance, and separate license declarations.</p><div class="directory-links"><a href="/catalog/" data-i18n="directoryTitle">Resource directory</a><a href="/papers/" data-paper-library data-i18n="directoryPapers">Research papers</a><a href="/topics/" data-topic-directory data-i18n="directoryTopics">Browse by topic</a><a href="/connections/" data-i18n="directoryConnections">Papers → code & data</a><a href="/updates/" data-i18n="directoryUpdates">Scan updates</a><a href="/categories/model/" data-i18n="directoryModels">Models</a><a href="/categories/dataset/" data-i18n="directoryDatasets">Datasets</a><a href="/categories/benchmark/" data-i18n="directoryBenchmarks">Benchmarks</a><a href="/compare/benchmarks/" data-i18n="compareBenchmarks">Compare benchmarks</a><a href="/compare/datasets/" data-i18n="compareDatasets">Compare datasets</a><a href="/categories/learning/" data-i18n="directoryLearning">Learning resources</a><a href="/categories/framework/" data-i18n="directoryFrameworks">Frameworks</a><a href="/categories/product/" data-i18n="directoryProducts">Products</a><a href="/guides/" data-i18n="navGuides">Guides</a><a href="/data/" data-i18n="directoryData">Download data</a><a href="/coverage/" data-i18n="navCoverage">Coverage</a><a href="/about/" data-i18n="editorialPolicy">Editorial policy</a><a href="/zh/" lang="zh-CN">中文指南</a></div><h3 data-i18n="startHeading">Where should I start?</h3><p><a href="/guides/what-are-computer-use-agents/" data-i18n="startConcepts">Understand computer-use agents</a><span data-i18n="listComma">, </span><a href="/guides/gui-agent-benchmarks/" data-i18n="startBenchmarks">choose a benchmark for the capability you need</a><span data-i18n="listOr">, or </span><a href="/guides/gui-agent-training-data/" data-i18n="startData">find training data with the right supervision and license</a><span data-i18n="sentenceEnd">.</span></p></section>'
-    home_body=home_page.hero(view,last_scan)+home_page.benchmark_band(view)+home_page.tasks(view)+home_page.latest(view)+home_page.categories(view)+home_page.papers(view)+home_page.developers()+home_faq(False)[0]+home_page.directory_strip()+home_page.contribute()
-    emit('/',page(f'Awesome CUA: {len(reviewed):,} computer-use agent resources','Find research, models, benchmarks, and software for web, desktop, and mobile agents. Filter by task or platform, then inspect the primary sources.','/',home_body,alternatives=True,landing=True,extra_graph=[website,home_faq(False)[1]]),lastmod=modified(rows),alternates=True)
+    home_body=home_page.hero(view,last_scan)+home_page.benchmark_band(view)+home_page.tasks(view)+home_page.latest(view)+home_page.categories(view)+home_page.papers(view)+home_page.developers()+home_page.directory_strip()+home_page.contribute()
+    emit('/',page(f'Awesome CUA: {len(reviewed):,} computer-use agent resources','Find research, models, benchmarks, and software for web, desktop, and mobile agents. Filter by task or platform, then inspect the primary sources.','/',home_body,alternatives=True,landing=True,extra_graph=[website]),lastmod=modified(rows),alternates=True)
     # Feeds announce curated records as they pass source review, newest review first.
     entries=[feed_entry(r,site=SITE,page_path=resource_path(r),reviewed_at=review_times[r['id']],modified=record_modified(r,review_times),summary=description(r),kind_label=KINDS[r['kind']]) for r in newest_reviewed(rows,review_times,FEED_SIZE)]
     write_feeds(destination,entries,site=SITE,updated=max((entry['updated'] for entry in entries),default=snapshot))
@@ -1241,8 +1244,8 @@ def build_search_pages(destination, rows, coverage, root, *, survey_page=None):
     emit('/zh/api/',page(ZH_API_TITLE,ZH_API_SUMMARY,'/zh/api/',api_docs_body(api_index,site=SITE,esc=esc,zh=True),{'@type':'TechArticle','headline':ZH_API_TITLE,'description':ZH_API_SUMMARY,'inLanguage':'zh-CN','author':{'@id':SITE+'/#organization'}},lang='zh-CN',alternatives=api_pair),lastmod=snapshot,alternates=api_pair)
     (destination/'api/index.md').write_text(clean_text(api_docs_markdown(api_index,site=SITE)),encoding='utf-8')
     newest=newest_reviewed(rows,review_times,20)
-    (destination/'index.md').write_text(clean_text(home_markdown([(r['name'],SITE+resource_path(r),KINDS[r['kind']],review_times[r['id']],description(r)) for r in newest],kind_rows,site=SITE,counts=counts,snapshot=snapshot)),encoding='utf-8')
-    (destination/'zh/index.md').write_text(clean_text(home_markdown([(r['name'],SITE+localized_path(r,True),home_page.KINDS[r['kind']][2],review_times[r['id']],zh_summary(r)) for r in newest],zh_kind_rows,site=SITE,counts=counts,snapshot=snapshot,language='zh')),encoding='utf-8')
+    (destination/'index.md').write_text(clean_text(home_markdown([(r['name'],SITE+resource_path(r),KINDS[r['kind']],review_times[r['id']],description(r)) for r in newest],kind_rows,site=SITE,counts=counts,snapshot=snapshot,faq=faq_md(False))),encoding='utf-8')
+    (destination/'zh/index.md').write_text(clean_text(home_markdown([(r['name'],SITE+localized_path(r,True),home_page.KINDS[r['kind']][2],review_times[r['id']],zh_summary(r)) for r in newest],zh_kind_rows,site=SITE,counts=counts,snapshot=snapshot,language='zh',faq=faq_md(True))),encoding='utf-8')
     survey_links=[]
     survey_line=''
     if survey_page:
@@ -1254,14 +1257,14 @@ def build_search_pages(destination, rows, coverage, root, *, survey_page=None):
     llms_kinds=[(label,count,path,notes.get(kind,'')) for (label,count,path),kind in zip(kind_rows,FULL_ORDER)]
     guide_rows=[(g['title'],guide_path(g),g['description']) for g in guides]+[('Editorial policy','/about/','review states, inclusion boundary and corrections'),('Coverage ledger','/coverage/','source populations and known gaps'),('Catalog updates','/updates/','scan schedule and the latest completed scan')]
     (destination/'llms.txt').write_text(clean_text(llms_txt(site=SITE,counts=counts,kinds=llms_kinds,zh_kinds=zh_kind_rows,library=library_ranges,topics=[(name,n,path) for _,name,n,path in topic_rows],
-        api_endpoints=[(item['name'],item['json'],item['csv'],item['description']) for item in api_index['endpoints']],guides=guide_rows,survey_links=survey_links,releases_url=RELEASES_URL)),encoding='utf-8')
+        api_endpoints=[(item['name'],item['json'],item['csv'],item['description']) for item in api_index['endpoints']],guides=guide_rows,survey_links=survey_links,releases_url=RELEASES_URL,faq=faq_md(False))),encoding='utf-8')
     groups=[]
     for kind in FULL_ORDER:
         members=sorted((r for r in reviewed if r['kind']==kind),key=lambda r:(r['name'].casefold(),r['id']))
         if members:groups.append((KINDS[kind],[compact_entry(r,site=SITE,page_path=resource_path(r),summary=description(r)) for r in members]))
     kind_files=[(KINDS[kind],f'/categories/{kind}/index.md') for kind in FULL_ORDER if kind!='paper']+[('Research library',library_path(1)+'index.md')]
-    (destination/'llms-full.txt').write_text(clean_text(llms_full(groups,site=SITE,snapshot=snapshot,counts=counts,survey_line=survey_line,kind_files=kind_files)),encoding='utf-8')
-    for name in SITE_AGENT_FILES:(destination/name).write_text(clean_text(site_agents_md(site=SITE,counts=counts,snapshot=snapshot)),encoding='utf-8')
+    (destination/'llms-full.txt').write_text(clean_text(llms_full(groups,site=SITE,snapshot=snapshot,counts=counts,survey_line=survey_line,kind_files=kind_files,faq=faq_md(False))),encoding='utf-8')
+    for name in SITE_AGENT_FILES:(destination/name).write_text(clean_text(site_agents_md(site=SITE,counts=counts,snapshot=snapshot,faq=faq_md(False))),encoding='utf-8')
     (destination/'robots.txt').write_text(robots_txt(SITE),encoding='utf-8')
     if survey_page:
         survey_date=json.loads((destination/'survey/build-manifest.json').read_text(encoding='utf-8')).get('working_manuscript_date')

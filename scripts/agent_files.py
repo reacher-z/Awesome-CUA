@@ -118,7 +118,7 @@ def catalog_markdown(kinds, topics, *, site, counts, language='en'):
     return '\n'.join(lines) + '\n'
 
 
-def home_markdown(newest, kinds, *, site, counts, snapshot, language='en'):
+def home_markdown(newest, kinds, *, site, counts, snapshot, language='en', faq=''):
     curated, waiting = counts['curated'], counts['awaiting_review']
     lines = ['# Awesome CUA', '',
              f'> A source-backed catalog of computer-use, GUI, browser and mobile agent research and resources: {curated["total"]:,} curated records '
@@ -144,10 +144,12 @@ def home_markdown(newest, kinds, *, site, counts, snapshot, language='en'):
                   f'- {link("完整已审核目录", site + "/llms-full.txt")}',
                   f'- {link("Atom 订阅", site + "/feed.xml")}与{link("JSON Feed", site + "/feed.json")}：最新审核的资源',
                   f'- {link("数据下载", site + "/zh/data/")}：JSONL、SQLite、RAG 文档与引用文件']
+    if faq:
+        lines += ['', '## 常见问题' if language == 'zh' else '## Questions', '', faq]
     return '\n'.join(lines) + '\n'
 
 
-def llms_full(groups, *, site, snapshot, counts, survey_line, kind_files):
+def llms_full(groups, *, site, snapshot, counts, survey_line, kind_files, faq=''):
     """Every curated record once, compactly, grouped by kind; full annotations stay in the per-kind files."""
     curated = counts['curated']
     lines = ['# Awesome CUA curated catalog', '',
@@ -157,12 +159,14 @@ def llms_full(groups, *, site, snapshot, counts, survey_line, kind_files):
              'Full annotations by kind: ' + ', '.join(link(label, site + path) for label, path in kind_files) + '.', '', NOTICE]
     if survey_line:
         lines += ['', survey_line]
+    if faq:
+        lines += ['', '## Questions', '', faq]
     for label, entries in groups:
         lines += ['', f'## {label} ({len(entries):,})', ''] + ['\n\n'.join(entries)]
     return '\n'.join(lines) + '\n'
 
 
-def llms_txt(*, site, counts, kinds, zh_kinds, library, topics, api_endpoints, guides, survey_links, releases_url):
+def llms_txt(*, site, counts, kinds, zh_kinds, library, topics, api_endpoints, guides, survey_links, releases_url, faq=''):
     """The /llms.txt index: what the site is and where each Markdown and data entry point lives."""
     curated, waiting = counts['curated'], counts['awaiting_review']
     lines = ['# Awesome CUA', '',
@@ -193,6 +197,8 @@ def llms_txt(*, site, counts, kinds, zh_kinds, library, topics, api_endpoints, g
               f'- {link("Reviewed retrieval documents", site + "/downloads/rag-documents.jsonl")}', f'- {link("All retrieval documents", site + "/downloads/rag-all-records.jsonl")}',
               f'- {link("Export manifest", site + "/downloads/rag-manifest.json")}', f'- {link("Full catalog JSONL", site + "/downloads/catalog.jsonl")}: every active record, including metadata-only ones']
     lines += ['', '## Guides and policies', ''] + [f'- {link(title, site + path)}: {inline(description)}' for title, path, description in guides]
+    if faq:
+        lines += ['', '## Questions', '', faq]
     lines += ['', '## Optional', '',
               f'- {link("API index", site + "/api/v1/index.json")}: endpoint list with counts, byte sizes and SHA-256; {link("JSON Schema", site + "/api/v1/schema.json")}']
     lines += [f'- {link(name + ".json", url_json)} ({link("CSV", url_csv)}): {inline(description)}' for name, url_json, url_csv, description in api_endpoints]

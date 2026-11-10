@@ -713,7 +713,7 @@ def add_front_matter(destination, sitemap_facts, kind_by_path, snapshot):
         path='/' if folder=='.' else '/'+folder+'/'
         page=twin.with_name('index.html')
         found=re.search(r'<title>(.*?)</title>',page.read_text(encoding='utf-8'),re.S) if page.is_file() else None
-        title=html.unescape(found[1]).strip() if found else next((line[2:].strip() for line in text.splitlines() if line.startswith('# ')),'AwesomeCUA')
+        title=html.unescape(found[1]).strip() if found else next((line[2:].strip() for line in text.splitlines() if line.startswith('# ')),'Awesome CUA')
         updated=(sitemap_facts.get(path,{}).get('lastmod') or snapshot)[:10]
         front=['---','title: '+json.dumps(title,ensure_ascii=False),'url: '+SITE+path,'updated: '+updated,'type: '+twin_type(path,kind_by_path),'lang: '+('zh-CN' if path.startswith('/zh/') else 'en'),'---','']
         twin.write_text('\n'.join(front)+'\n'+text,encoding='utf-8')

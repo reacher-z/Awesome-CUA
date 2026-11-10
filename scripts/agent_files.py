@@ -151,7 +151,7 @@ def llms_full(groups, *, site, snapshot, counts, survey_line, kind_files):
     """Every curated record once, compactly, grouped by kind; full annotations stay in the per-kind files."""
     curated = counts['curated']
     lines = ['# Awesome CUA curated catalog', '',
-             f'> All {curated["total"]:,} curated, source-reviewed records of the AwesomeCUA computer-use agent catalog ({curated["papers_and_surveys"]:,} papers and surveys, {curated["other_resources"]:,} other resources), one compact entry each, grouped by kind. '
+             f'> All {curated["total"]:,} curated, source-reviewed records of the Awesome CUA computer-use agent catalog ({curated["papers_and_surveys"]:,} papers and surveys, {curated["other_resources"]:,} other resources), one compact entry each, grouped by kind. '
              f'Snapshot {snapshot}. Metadata-only bibliography records and unreviewed candidates are excluded.', '',
              'Each entry links its catalog page. Append `index.md` to that URL for the full annotation with evidence fingerprints, or `record.json` for the complete record. '
              'Full annotations by kind: ' + ', '.join(link(label, site + path) for label, path in kind_files) + '.', '', NOTICE]

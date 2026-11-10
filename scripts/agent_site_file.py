@@ -83,7 +83,7 @@ Hugging Face mirror: `load_dataset("TIGER-Lab/AwesomeCUA", "resources")`.
 
 ## Updates
 
-Discovery scans run every 8 hours; the site is rebuilt when reviewed records change. Release tags attach versioned data bundles with SHA-256 checksums: {repo}/releases
+Discovery scans run every 8 hours. Release tags attach versioned data bundles with SHA-256 checksums: {repo}/releases
 
 ## Contact
 

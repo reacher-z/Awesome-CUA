@@ -718,7 +718,7 @@ def faq_items(view, last_scan, zh=False) -> list:
     if zh:
         return [
             ("Awesome CUA 是什么？", f"Awesome CUA 是面向计算机使用、GUI、网页和移动端智能体的资源目录，已审核 {total} 条论文、模型、数据集、评测基准、智能体、框架、工具与产品，每条都链接一手来源。"),
-            ("目录收录了多少资源？", f"已审核 {total} 条：论文与综述 {papers} 篇，其他资源 {fmt(view['other_resources'])} 条，其中评测基准 {n('benchmark')} 个、数据集 {n('dataset')} 个、模型 {n('model')} 个、智能体 {n('agent')} 个、框架 {n('framework')} 个、工具 {n('tool')} 个。另有 {fmt(view['metadata_only'])} 条仅有元数据的书目记录和 {candidates} 条扫描发现等待审核，不计入总数。"),
+            ("目录收录了多少资源？", f"已审核 {total} 条：论文与综述 {papers} 篇，其他资源 {fmt(view['other_resources'])} 条，其中评测基准 {n('benchmark')} 个、数据集 {n('dataset')} 个、模型 {n('model')} 个、智能体 {n('agent')} 个、框架 {n('framework')} 个、工具 {n('tool')} 个。另有 {fmt(view['metadata_only'])} 条仅有元数据的书目记录和 {candidates} 条扫描发现单独列出。"),
             ("每条记录如何审核？", '审核者阅读一手来源（论文、代码仓库、模型卡或项目主页），记录证据、审核日期，并分别记录代码、数据、权重和文档许可证，未知信息保留为空。详见<a href="/about/">编辑方法</a>。'),
             ("如何用代码读取目录？", '克隆 GitHub 仓库，下载 <a href="/downloads/catalog.jsonl">catalog.jsonl</a>，或调用 <a href="/api/">/api/v1/ JSON 接口</a>。每个页面在 <code>index.md</code> 提供 Markdown 版本，<a href="/llms.txt">llms.txt</a> 列出全部入口。'),
             ("目录多久更新一次？", f"发现扫描每 8 小时运行一次" + (f"，最近一次在 {scan}" if scan else "") + '。详见<a href="/updates/">更新记录</a>。'),
@@ -727,7 +727,7 @@ def faq_items(view, last_scan, zh=False) -> list:
         ]
     return [
         ("What is Awesome CUA?", f"Awesome CUA is a source-backed catalog of computer-use, GUI, browser and mobile agents: {total} reviewed papers, models, datasets, benchmarks, agents, frameworks, tools and products, each linked to its primary source."),
-        ("How many resources does it list?", f"{total} reviewed records: {papers} papers and surveys and {fmt(view['other_resources'])} other resources, including {n('benchmark')} benchmarks, {n('dataset')} datasets, {n('model')} models, {n('agent')} agents, {n('framework')} frameworks and {n('tool')} tools. {fmt(view['metadata_only'])} metadata-only bibliography records and {candidates} scan finds await review and are not counted."),
+        ("How many resources does it list?", f"{total} reviewed records: {papers} papers and surveys and {fmt(view['other_resources'])} other resources, including {n('benchmark')} benchmarks, {n('dataset')} datasets, {n('model')} models, {n('agent')} agents, {n('framework')} frameworks and {n('tool')} tools. {fmt(view['metadata_only'])} metadata-only bibliography records and {candidates} scan finds are listed separately."),
         ("How is each record reviewed?", 'A reviewer reads the primary source (paper, repository, model card or project page) and records the evidence, the review date, and code, data, weights and document licenses separately. Unknown facts stay empty. See the <a href="/about/">editorial policy</a>.'),
         ("How can I read the catalog from code?", 'Clone the GitHub repository, download <a href="/downloads/catalog.jsonl">catalog.jsonl</a>, or call the <a href="/api/">JSON API under /api/v1/</a>. Every page has a Markdown version at <code>index.md</code>, and <a href="/llms.txt">llms.txt</a> lists them all.'),
         ("How often is it updated?", "Discovery scans run every 8 hours" + (f"; the latest was {scan}" if scan else "") + '. See <a href="/updates/">catalog updates</a>.'),

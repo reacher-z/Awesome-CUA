@@ -235,7 +235,7 @@ class AgentFileTests(unittest.TestCase):
     def test_agent_category_heading_names_the_kind_once(self):
         for path, heading in (('categories/agent/index.md', '# Computer-use agents\n'), ('zh/categories/agent/index.md', '# 计算机使用智能体\n')):
             with self.subTest(path=path):
-                self.assertTrue((self.dest / path).read_text().startswith(heading))
+                self.assertTrue((self.dest / path).read_text().split('\n---\n\n', 1)[1].startswith(heading))
         self.assertIn('<h1>Computer-use agents</h1>', (self.dest / 'categories/agent/index.html').read_text())
         self.assertIn('<h1>计算机使用智能体</h1>', (self.dest / 'zh/categories/agent/index.html').read_text())
 

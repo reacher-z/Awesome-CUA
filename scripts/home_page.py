@@ -436,11 +436,11 @@ def hero(view, last_scan, zh=False) -> str:
     if zh:
         stats = (f'<span>已审核 <b>{total}</b> 条</span><span>其中论文与综述 <b>{papers}</b> 篇</span>'
                  f'<span class="hs-opt">尚未收录的扫描发现 <b>{candidates}</b> 条</span>')
-        title, lede = f'计算机使用<span class="bbox-w"><span class="bbox">智能体{BBOX}</span>，</span>一站检索。', (f"Awesome CUA（Awesome Computer-Use Agents）是计算机使用智能体的资源目录：已审核 {total} 条，其中论文与综述 {papers} 篇、评测基准 {fmt(kind_count(view, 'benchmark'))} 个、数据集 {fmt(kind_count(view, 'dataset'))} 个、模型 {fmt(kind_count(view, 'model'))} 个，每条都核对过一手来源。" + (f"最近一次扫描：{last_scan[:10]}。" if last_scan else ""))
+        title, lede = f'计算机使用<span class="bbox-w"><span class="bbox">智能体{BBOX}</span>，</span>一站检索。', (f"Awesome CUA（Awesome Computer-Use Agents）是计算机使用智能体的资源目录：已审核 {total} 条，其中论文与综述 {papers} 篇、其他资源 {fmt(view['other_resources'])} 条，包括评测基准 {fmt(kind_count(view, 'benchmark'))} 个、数据集 {fmt(kind_count(view, 'dataset'))} 个、模型 {fmt(kind_count(view, 'model'))} 个，每条都核对过一手来源。另有 {fmt(view['metadata_only'])} 条仅有元数据的书目记录单独列出。" + (f"最近一次扫描：{last_scan[:10]}。" if last_scan else ""))
     else:
         stats = (f'<span><b>{total}</b> reviewed records</span><span><b>{papers}</b> papers and surveys</span>'
                  f'<span class="hs-opt"><b>{candidates}</b> scan finds not yet in the catalog</span>')
-        title, lede = f'Computer-use <span class="bbox">agents{BBOX}</span>, indexed.', (f"Awesome CUA (Awesome Computer-Use Agents) is a catalog of computer-use agent research and resources: {total} reviewed records, including {papers} papers and surveys, {fmt(kind_count(view, 'benchmark'))} benchmarks, {fmt(kind_count(view, 'dataset'))} datasets and {fmt(kind_count(view, 'model'))} models, each checked against its primary source." + (f" Last scan {last_scan[:10]}." if last_scan else ""))
+        title, lede = f'Computer-use <span class="bbox">agents{BBOX}</span>, indexed.', (f"Awesome CUA (Awesome Computer-Use Agents) is a catalog of computer-use agent research and resources: {total} reviewed records: {papers} papers and surveys and {fmt(view['other_resources'])} other resources, among them {fmt(kind_count(view, 'benchmark'))} benchmarks, {fmt(kind_count(view, 'dataset'))} datasets and {fmt(kind_count(view, 'model'))} models, each checked against its primary source. {fmt(view['metadata_only'])} metadata-only bibliography records are listed separately." + (f" Last scan {last_scan[:10]}." if last_scan else ""))
     return f'''<section class="screen" aria-labelledby="hero-h"><div class="screen-in" data-screen>
 <div class="wrap hero">
 <h1 id="hero-h"><span class="hero-brand">Awesome CUA</span> {title}</h1>

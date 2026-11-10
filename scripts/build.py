@@ -364,6 +364,36 @@ def validate_records(rows):
     return errors
 
 
+def shared_url_key(url):
+    """Normalized record URL: scheme, letter case, a leading www., a trailing slash and the fragment do not distinguish records."""
+    parts = urllib.parse.urlsplit(url.strip())
+    host = parts.netloc.lower().removeprefix("www.")
+    return host + parts.path.rstrip("/") + ("?" + parts.query if parts.query else "")
+
+
+def shared_url_errors(rows, declared):
+    """Each record URL belongs to one record, except the publisher/product pairs declared in data/shared-urls.json."""
+    errors, groups = [], collections.defaultdict(list)
+    for row in rows:
+        # A missing or malformed URL is reported by the record checks; it has no key to share.
+        if isinstance(row.get("url"), str) and row["url"].strip():
+            groups[shared_url_key(row["url"])].append(row.get("id"))
+    allowed = {}
+    for entry in declared:
+        key, ids = shared_url_key(entry["url"]), sorted(entry["ids"])
+        if key in allowed:
+            errors.append(f"Shared URLs: {entry['url']} is declared twice")
+        allowed[key] = ids
+    for key, ids in sorted(groups.items()):
+        ids = sorted(ids)
+        if len(ids) > 1 and allowed.get(key) != ids:
+            errors.append(f"Shared URLs: {', '.join(ids)} share {key}; give each its own URL or declare the pair in data/shared-urls.json")
+    for key, ids in sorted(allowed.items()):
+        if sorted(groups.get(key, [])) != ids:
+            errors.append(f"Shared URLs: declared pair {', '.join(ids)} no longer shares {key}; remove it from data/shared-urls.json")
+    return errors
+
+
 def validate_sources(sources):
     errors = []
     for source in sources:
@@ -816,19 +846,22 @@ def shield(label, message, color):
     return f"https://img.shields.io/badge/{escape(label)}-{escape(message)}-{color}"
 
 
+# .github/workflows/scan-badge.yml writes this shields.io endpoint file to the status branch every hour and after each scan.
+SCAN_BADGE_JSON = "https://raw.githubusercontent.com/reacher-z/Awesome-CUA/status/scan-badge.json"
+
+
 def badges(rows, report):
-    # A short status strip under the banner: at most six badges, all counted or dated from this build. There is no live
-    # workflow-status badge: a rate-limit pause is not an outage, and the health issue is the alert channel.
+    # A short status strip under the banner: at most six badges. The counts come from this build; the scan badge reads
+    # the status branch, so it shows the latest successful scan of main and turns amber after six hours without one.
     # Only curated records count as resources; records awaiting review and candidates keep their own labels in STATS.
     style = '?style=flat-square&labelColor=1E2233'
     reviewed_papers = sum(r["review_status"] == "curated" and r["kind"] in {"paper", "survey"} for r in rows)
-    as_of = report["as_of_utc"]
-    evidence = f"{as_of[:10]} {as_of[11:16]} UTC"
+    scan = "https://img.shields.io/endpoint?url=" + urllib.parse.quote(SCAN_BADGE_JSON, safe="") + style.replace("?", "&", 1)
     return ("\n" + " ".join([
         f"[![Curated resources]({shield('curated resources', format(report['curated_records'], ','), '4352E8')}{style})](docs/coverage.md)",
         f"[![Reviewed papers and surveys]({shield('reviewed papers and surveys', format(reviewed_papers, ','), '4352E8')}{style})](docs/papers.md)",
         f"[![Hugging Face dataset]({shield('dataset', 'Hugging Face', '4352E8')}{style})]({HUGGING_FACE_DATASET})",
-        f"[![Evidence through]({shield('evidence through', evidence, '4352E8')}{style})](docs/maintenance.md)",
+        f"[![Last successful scan]({scan})](docs/maintenance.md#scan-badge)",
         f"[![MIT license]({shield('license', 'MIT', '5E6472')}{style})](LICENSE)"]) + "\n")
 
 
@@ -1110,6 +1143,10 @@ def build(args):
     print(f"Built {len(rows)} records ({report['curated_records']} curated), {len(edges)} reference edges, {len(merged)} review items, and SQLite/JSON exports.")
 
 
+# A summary assembled from facet labels ("X：面向网页（Web）环境的工具，支持A、B、C。") restates tags instead of translating the record.
+FACET_TEMPLATE = re.compile(r"^[^：]{1,120}：面向[^，。]{1,40}环境的[^，。]{1,12}，支持")
+
+
 def validate_translations(rows, translations):
     """Chinese annotations in data/translations.zh-CN.json: keyed by the ID of a curated record, one natural Chinese summary each."""
     if not isinstance(translations, dict):
@@ -1128,6 +1165,8 @@ def validate_translations(rows, translations):
             errors.append(f"Chinese translations {rid}: summary must be Chinese text")
         elif len(text) > 220 or not text.rstrip().endswith(("。", ".", "）", ")")):
             errors.append(f"Chinese translations {rid}: summary must be at most 220 characters and end with a full stop")
+        elif FACET_TEMPLATE.search(text):
+            errors.append(f"Chinese translations {rid}: summary lists facet labels; translate the English summary instead")
     return errors
 
 
@@ -1143,6 +1182,7 @@ def validate(args):
     if missing := {"date-time", "uri"} - set(formats.checkers):
         raise ValueError("JSON Schema format checkers unavailable: " + ", ".join(sorted(missing)) + ". Install requirements-dev.txt (jsonschema[format-nongpl]).")
     errors = validate_records(rows) + validate_sources(read_json(DATA / "sources.json", [])) + validate_translations(rows, read_json(DATA / "translations.zh-CN.json", {}))
+    errors += shared_url_errors(rows, read_json(DATA / "shared-urls.json", []))
     from catalog import validate_candidate_snapshot
     try:
         validate_candidate_snapshot(DATA)

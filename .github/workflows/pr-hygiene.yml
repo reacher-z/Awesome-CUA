@@ -1,0 +1,42 @@
+name: PR hygiene
+
+# pull_request_target runs this file from the base branch, so a pull request cannot edit the check it is run
+# under. The job checks out no pull request code and its token is read-only.
+on:
+  pull_request_target:
+    types: [opened, edited, synchronize, reopened]
+
+permissions: {}
+
+concurrency:
+  group: pr-hygiene-${{ github.event.pull_request.number }}
+  cancel-in-progress: true
+
+jobs:
+  hygiene:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    permissions:
+      contents: read
+      pull-requests: read
+    steps:
+      - name: Read the pull request commits
+        env:
+          GH_TOKEN: ${{ github.token }}
+          PR_NUMBER: ${{ github.event.pull_request.number }}
+        run: gh api --paginate "repos/$GITHUB_REPOSITORY/pulls/$PR_NUMBER/commits?per_page=100" > "$RUNNER_TEMP/commits.json"
+      # The checker comes from the base revision, so a pull request cannot change the rules it is checked against.
+      - uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803 # v6.1.0
+        with:
+          ref: ${{ github.event.pull_request.base.sha }}
+          sparse-checkout: scripts/pr_hygiene.py
+          sparse-checkout-cone-mode: false
+          persist-credentials: false
+      - uses: actions/setup-python@ece7cb06caefa5fff74198d8649806c4678c61a1 # v6.3.0
+        with:
+          python-version: '3.12'
+      # The description is read from the event payload file ($GITHUB_EVENT_PATH), never from an expression.
+      - name: Check commit identities, trailers and the Codex review section
+        run: |
+          if [ ! -f scripts/pr_hygiene.py ]; then echo '::notice::The base revision has no scripts/pr_hygiene.py; the check starts once it is on the base branch.'; exit 0; fi
+          python scripts/pr_hygiene.py --commits "$RUNNER_TEMP/commits.json"

@@ -1,6 +1,7 @@
 """Validate and publish the reviewed survey bundle without rebuilding research or using Git/network."""
 from html.parser import HTMLParser
 import hashlib
+import html
 import json
 from pathlib import Path, PurePosixPath
 import re
@@ -192,6 +193,30 @@ def copy_bundle(source, destination, *, source_root, site_url):
         target.parent.mkdir(parents=True, exist_ok=True)
         target.write_bytes(bundle['payloads'][name])
     return bundle['page']
+
+
+def apply_site_shell(directory, *, head, top, bottom, retitle=None):
+    """Publish a copied article inside the current site header and footer; the manifest keeps the reviewed fingerprint."""
+    index, manifest_path = checked_path(directory, 'index.html'), checked_path(directory, MANIFEST)
+    reviewed = index.read_bytes()
+    manifest = parse_json(manifest_path.read_bytes())
+    document = reviewed.decode('utf-8')
+    document, bars = re.subn(r'<header class="article-bar">.*?</header>', lambda _: top, document, count=1, flags=re.S)
+    if not bars or document.count('</body>') != 1 or '<style>' not in document:
+        raise ValueError('Survey HTML needs one article bar, one closing body tag and an embedded stylesheet')
+    # The site stylesheet comes first, so the article's reading styles decide its own column.
+    document = document.replace('<style>', head + '<style>', 1).replace('</body>', bottom + '</body>')
+    if retitle:
+        # The site's title length limit applies to the article's <title> too; the reviewed body is unchanged.
+        document = re.sub(r'<title>(.*?)</title>', lambda m: '<title>' + html.escape(retitle(html.unescape(m[1])), quote=False) + '</title>', document, count=1, flags=re.S)
+        document = re.sub(r'(<meta (?:property|name)="(?:og|twitter):title" content=")([^"]*)(")', lambda m: m[1] + html.escape(retitle(html.unescape(m[2]))) + m[3], document, flags=re.S)
+    body = document.encode('utf-8')
+    manifest['reviewed_index_sha256'] = digest(reviewed)
+    manifest['files'] = [dict(item, bytes=len(body), sha256=digest(body)) if item['path'] == 'index.html' else item
+                         for item in manifest['files']]
+    index.write_bytes(body)
+    manifest_path.write_text(json.dumps(manifest, ensure_ascii=False, indent=2, sort_keys=True) + '\n', encoding='utf-8')
+    return {'path': PAGE, 'indexable': True, 'sha256': digest(body)}
 
 
 def publication_plan(build, site, *, source_root, site_url, pages):

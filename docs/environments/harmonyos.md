@@ -2,9 +2,9 @@
 
 [Home](../../README.md) · [All platforms](../environments.md) · [Research by topic](../topics.md)
 
-5 source-reviewed resources tagged `harmonyos`. Curated metadata; unknown facts are shown as —.
+7 source-reviewed resources tagged `harmonyos`. Curated metadata; unknown facts are shown as —.
 
-**Contents:** [Frameworks (1)](#frameworks) · [Papers (4)](#papers)
+**Contents:** [Frameworks (1)](#frameworks) · [Tools (1)](#tools) · [Products (1)](#products) · [Papers (4)](#papers)
 
 ## Frameworks
 
@@ -13,6 +13,22 @@ All entries in this section: android, harmonyos.
 | Resource | Paper | License | Description | Evidence |
 | --- | --- | --- | --- | --- |
 | [CHOP](https://github.com/Yuqi-Zhou/CHOP) | [2503.03743](https://arxiv.org/abs/2503.03743) (2025) | code MIT | Mobile automation framework that uses reusable basis subtasks to constrain and refine planning between user goals and executable actions. | [✓ 2026‑10‑16](https://raw.githubusercontent.com/Yuqi-Zhou/CHOP/HEAD/README.md) |
+
+## Tools
+
+All entries in this section: cross-platform, ios, android, harmonyos, web, desktop, macos, linux.
+
+| Resource | Paper | License | Description | Evidence |
+| --- | --- | --- | --- | --- |
+| [agent-device](https://github.com/callstack/agent-device) | — | code MIT | agent-device gives agents CLI, MCP, and Node.js interfaces for inspecting and controlling mobile, web, and desktop apps through accessibility snapshots and UI actions. | [✓ 2026‑11‑09](https://raw.githubusercontent.com/callstack/agent-device/HEAD/README.md) |
+
+## Products
+
+All entries in this section: cross-platform, web, android, ios, harmonyos.
+
+| Resource | Publisher | Description | Evidence |
+| --- | --- | --- | --- |
+| [Case Flow](https://github.com/dongxinsuperman/case-flow-ai) | — | Case Flow is a visual test workbench that sends cases to phone and web executors, then gathers run status, reports, and evidence for review. | [✓ 2026‑11‑09](https://raw.githubusercontent.com/dongxinsuperman/case-flow-ai/HEAD/README.md) |
 
 ## Papers
 

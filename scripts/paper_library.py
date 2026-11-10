@@ -130,7 +130,7 @@ def paper_library(rows, resource_path, *, language='en', site_url=SITE, number=1
     for topic, _count in topics.most_common(8):
         body.append('<a href="' + search_link(topic=topic) + '">' + esc(label(TOPICS, topic)) + '</a>')
     body.append('<a class="library-all-topics" href="' + ('/zh/topics/' if zh else '/topics/') + '">' + tr('All topics', '全部主题') + ' ↗</a>')
-    body.append('</div><p class="library-method">' + tr('AI-assisted editorial review of primary sources. Dates keep their recorded precision. Resource links below follow reviewed introduction or documentation relationships.', '条目经过 AI 辅助的一手来源编辑审阅。发表日期保留来源记录的精度。下方资源链接来自已审阅的介绍或文档关系。') + ' <a href="/about/">' + tr('Method', '收录方法') + ' ↗</a></p>')
+    body.append('</div><p class="library-method">' + tr('Each entry is a paper or survey on computer-use agents, reviewed against the paper itself. Entries are grouped by publication year, newest first. Resource links lead to the code, data, models and benchmarks a paper introduces or documents.', '每个条目都是关于计算机使用智能体的论文或综述，已对照论文原文审阅。条目按发表年份分组，最新的在前。资源链接指向论文提出或记录的代码、数据、模型与评测基准。') + ' <a href="/about/">' + tr('Method', '收录方法') + ' ↗</a></p>')
     for year in (year for year in years if year in groups):
         body.append('<section class="paper-year-group" aria-labelledby="papers-' + year + '"><div class="paper-year-heading"><h2 id="papers-' + year + '">' + (tr('Date not recorded', '日期待录') if year == 'undated' else year) + '</h2><span>' + str(totals[year]) + ' ' + tr('papers & surveys', '篇论文与综述') + '</span><a href="#library-title">' + tr('Back to years', '回到年份') + ' ↑</a></div>')
         for row in groups[year]:
@@ -183,7 +183,7 @@ def paper_library(rows, resource_path, *, language='en', site_url=SITE, number=1
                     body.append('<a class="paper-asset-more" href="' + path + '#connected-assets">+'
                                 + str(len(linked) - 3) + ' ' + tr('resources', '项资源') + '</a>')
                 body.append('</div>')
-            body.append('</div><div class="paper-entry-links"><a href="' + safe_href(source) + '">' + tr('Paper', '原论文') + ' ↗</a><a href="' + path + 'citation.bib" download aria-label="' + esc(tr('BibTeX for ', 'BibTeX：') + row['name']) + '">BibTeX ↓</a><a href="' + path + '">' + tr('Details', '详情') + ' →</a></div></article>')
+            body.append('</div><div class="paper-entry-links"><a href="' + safe_href(source) + '">' + tr('Paper', '原论文') + ' ↗</a><a href="' + path.removeprefix('/zh') + 'citation.bib" download aria-label="' + esc(tr('BibTeX for ', 'BibTeX：') + row['name']) + '">BibTeX ↓</a><a href="' + path + '">' + tr('Details', '详情') + ' →</a></div></article>')
         body.append('</section>')
     if pages > 1:
         body.append('<nav class="pagination library-pager" aria-label="' + tr('Library pages', '论文库分页') + '">')

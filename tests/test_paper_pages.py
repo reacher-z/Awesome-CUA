@@ -10,6 +10,7 @@ from unittest import mock
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / 'scripts'))
 import paper_library
 from build_site import build_site
+from site_fixture import shared_site
 from paper_library import library_pages, library_path, library_years
 from search_pages import SITE, resource_path
 from sitemaps import sitemap_urls
@@ -19,8 +20,9 @@ BUDGET = 150_000
 
 
 def entries(markup):
-    # A listed entry is an <article> whose first resource link names the record it shows.
-    return {m[1] for m in (re.search(r'href="(/resources/[^"]+)"', block) for block in re.findall(r'<article\b.*?</article>', markup, re.S)) if m}
+    # A listed entry is an <article> or compact row whose first resource link names the record it shows.
+    blocks = re.findall(r'<article\b.*?</article>', markup, re.S) + re.findall(r'<li class="row"[^>]*>.*?</li>', markup, re.S)
+    return {m[1] for m in (re.search(r'href="(/resources/[^"]+)"', block) for block in blocks) if m}
 
 
 class PaginationTests(unittest.TestCase):
@@ -74,7 +76,7 @@ class PaperPageTests(unittest.TestCase):
     @classmethod
     def setUpClass(cls):
         cls.temp = tempfile.TemporaryDirectory()
-        cls.dest = build_site(cls.temp.name)
+        cls.dest = shared_site()
         cls.pages = {item['path']: item for item in json.loads((cls.dest / 'data/search-manifest.json').read_text())['pages']}
         cls.markup = {path: (cls.dest / path.lstrip('/') / 'index.html').read_text() for path in cls.pages
                       if re.match(r'/(zh/)?papers/|/categories/', path)}
@@ -91,7 +93,7 @@ class PaperPageTests(unittest.TestCase):
     def test_paginated_category_lists_every_reviewed_record_once(self):
         paths = [path for path in self.markup if path == '/categories/framework/' or path.startswith('/categories/framework/page/')]
         self.assertGreater(len(paths), 1)
-        listed = [url for path in paths for block in re.findall(r'<article\b.*?</article>', self.markup[path], re.S)
+        listed = [url for path in paths for block in re.findall(r'<li class="row"[^>]*>.*?</li>', self.markup[path].split('data-list-rows>', 1)[-1].split('</ul>', 1)[0], re.S)
                   if (match := re.search(r'href="(/resources/[^"]+)"', block)) for url in [match[1]]]
         rows = [json.loads(line) for line in (Path(__file__).resolve().parents[1] / 'data/catalog.jsonl').read_text(encoding='utf-8').splitlines()]
         expected = {resource_path(row) for row in rows if row['kind'] == 'framework' and row['review_status'] == 'curated' and row['scope'] in {'core', 'adjacent'}}

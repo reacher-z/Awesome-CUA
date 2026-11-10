@@ -117,3 +117,12 @@
 .explore-tools button{min-height:36px;padding:0 var(--s-3);border:1px solid var(--line-strong);border-radius:var(--r-control);color:var(--text);font-size:var(--step-ui)}
 .explore-tools button:hover{border-color:var(--link);color:var(--link)}
 .skip-link{border-radius:var(--r-control)}
+
+/* Explorer controls at touch sizes. */
+@media (max-width:1023px),(pointer:coarse){
+.language-button,.subtle-link,.paper-library-shortcut,.agent-search summary,.popular-topics button,.popular-topics a,.agent-related a,.directory-links a{display:inline-flex;align-items:center;min-height:44px}
+.agent-search summary{display:list-item;padding-block:12px}
+.select-wrap select,.sort-wrap select{min-height:44px}
+.view-toggle button{min-width:44px;min-height:44px}
+.pagination button,.pagination .page-numbers button{min-width:44px;min-height:44px}
+}

@@ -8,6 +8,7 @@ import unittest
 
 sys.path.insert(0,str(Path(__file__).resolve().parents[1]/'scripts'))
 from build_site import build_site
+from site_fixture import shared_site
 from search_pages import page, resource_path
 from test_search_pages import page_origin
 
@@ -35,7 +36,7 @@ def structured_trail(text):
 class BreadcrumbTests(unittest.TestCase):
     @classmethod
     def setUpClass(cls):
-        cls.temp=tempfile.TemporaryDirectory();cls.dest=build_site(cls.temp.name)
+        cls.temp=tempfile.TemporaryDirectory();cls.dest=shared_site()
         cls.pages=[item['path'] for item in json.loads((cls.dest/'data/search-manifest.json').read_text())['pages'] if item['path']!='/']
         cls.rows=[json.loads(x) for x in (Path(__file__).resolve().parents[1]/'data/catalog.jsonl').read_text().splitlines() if x.strip()]
         cls.trails={}

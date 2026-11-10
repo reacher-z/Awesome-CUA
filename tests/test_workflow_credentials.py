@@ -20,7 +20,9 @@ HEADER = "AUTHORIZATION: basic " + base64.b64encode(f"x-access-token:{TOKEN}".en
 PUSH_STEPS = {("scan.yml", "scan", "Commit verified scan output"), ("scan.yml", "dispatch_quality", "Run Catalog quality on the scan commit"),
               ("scan.yml", "track_scan_health", "Update the scan health tracking issue"),
               ("publish.yml", "build", "Read repository star counts"), ("publish.yml", "build", "Commit the public website snapshot"), ("publish.yml", "notify_search", "Preserve accepted state and actual submission receipts"),
-              ("freshness.yml", "dispatch_scan", "Dispatch a recovery scan"), ("hf-sync.yml", "sync", "Download the live exports and build the dataset"), ("release.yml", "release", "Publish the GitHub release")}
+              ("freshness.yml", "dispatch_scan", "Dispatch a recovery scan"), ("hf-sync.yml", "sync", "Download the live exports and build the dataset"), ("release.yml", "release", "Publish the GitHub release"),
+              ("scan-badge.yml", "badge", "Read successful scans of main"), ("scan-badge.yml", "badge", "Publish the badge to the status branch"),
+              ("pr-hygiene.yml", "hygiene", "Read the pull request commits")}
 
 
 def workflow_text(path):
@@ -72,7 +74,7 @@ class WorkflowCredentialTests(unittest.TestCase):
                     checkouts += 1
                     with self.subTest(workflow=path.name, job=job, step=name):
                         self.assertIn("          persist-credentials: false", lines)
-        self.assertEqual(checkouts, 9)
+        self.assertEqual(checkouts, 11)
 
     def test_only_push_and_dispatch_steps_receive_the_token(self):
         found = set()

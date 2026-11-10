@@ -40,7 +40,7 @@ class ScanWorkflowTests(unittest.TestCase):
     def test_scan_runs_the_catalog_quality_gate_and_site_build_before_committing(self):
         check = step_script("Check generated data and review boundaries")
         for command in ["python scripts/catalog.py validate", "python scripts/catalog.py build --check",
-                        "python -m unittest discover -s tests -v", "node --test tests/web.test.mjs", "python scripts/build_site.py"]:
+                        "python scripts/run_tests.py", "node --test tests/web.test.mjs", "python scripts/build_site.py"]:
             self.assertIn(command, check)
 
     def test_only_the_dispatch_job_can_write_actions(self):
@@ -91,7 +91,7 @@ class QualityGateParityTests(unittest.TestCase):
 
     def ci_checks(self):
         checks = [command for command in run_commands(self.CI, "validate") if command not in {self.SETUP, self.REBUILD}]
-        self.assertIn("python -m unittest discover -s tests -v", checks)
+        self.assertIn("python scripts/run_tests.py", checks)
         return checks
 
     def test_scan_job_runs_every_catalog_quality_check_before_committing(self):

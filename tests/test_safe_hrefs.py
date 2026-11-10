@@ -9,6 +9,7 @@ from unittest import mock
 sys.path.insert(0,str(Path(__file__).resolve().parents[1]/'scripts'))
 from build import validate_sources
 from build_site import build_site
+from site_fixture import code_only
 from search_pages import guide_path, resource_path
 from specifications import comparison_body, safe_href
 from test_search_pages import copy_survey_source_inputs
@@ -38,6 +39,7 @@ class SafeHrefTests(unittest.TestCase):
         self.assertEqual(safe_href('http://example.org/'),'http://example.org/')
         for value in [ATTACK,' JavaScript:alert(1)','java\tscript:alert(1)','data:text/html,<script>alert(1)</script>','vbscript:msgbox(1)','//example.org/','/resources/x/','https:example.org','',None]:
             with self.assertRaises(ValueError,msg=repr(value)):safe_href(value)
+    @code_only
     def test_script_license_url_fails_the_build(self):
         def mutate(text):
             rows=[json.loads(line) for line in text.splitlines()]
@@ -51,6 +53,7 @@ class SafeHrefTests(unittest.TestCase):
         self.assertIn(row['licenses']['data']['url'],comparison_body(rows,'dataset',resource_path))
         row['licenses']['data']={**row['licenses']['data'],'url':ATTACK}
         with self.assertRaises(ValueError):comparison_body(rows,'dataset',resource_path)
+    @code_only
     def test_script_source_homepage_and_scan_run_url_fail(self):
         sources=json.loads((ROOT/'data/sources.json').read_text())
         self.assertEqual(validate_sources(sources),[])
@@ -60,6 +63,7 @@ class SafeHrefTests(unittest.TestCase):
         self.assertBuildRejects('coverage.json',homepage,ATTACK)
         if (self.source/'data/scan-status.json').exists():
             self.assertBuildRejects('scan-status.json',lambda text:json.dumps({**json.loads(text),'run_url':ATTACK}),ATTACK)
+    @code_only
     def test_guide_slugs_cannot_escape_their_directory_or_attribute(self):
         self.assertEqual(guide_path({'slug':'gui-agent-benchmarks'}),'/guides/gui-agent-benchmarks/')
         for slug in ['../../index','a/b','a.b','x"><script>alert(1)</script>','Upper','',None]:

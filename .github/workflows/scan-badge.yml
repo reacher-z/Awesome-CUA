@@ -1,0 +1,65 @@
+name: Scan badge
+
+on:
+  schedule:
+    # Hourly, so the badge turns the warning colour within an hour of the last successful scan reaching six hours.
+    - cron: '47 * * * *'
+  workflow_run:
+    workflows: [Discovery scans every eight hours]
+    types: [completed]
+    branches: [main]
+  workflow_dispatch:
+
+permissions: {}
+
+concurrency:
+  group: scan-badge
+  cancel-in-progress: false
+
+jobs:
+  badge:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    permissions:
+      actions: read
+      contents: write
+    steps:
+      - name: Read successful scans of main
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh api "repos/$GITHUB_REPOSITORY/actions/workflows/scan.yml/runs?branch=main&status=success&per_page=20" > "$RUNNER_TEMP/scan-runs.json"
+      - uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803 # v6.1.0
+        with:
+          ref: main
+          persist-credentials: false
+      - uses: actions/setup-python@ece7cb06caefa5fff74198d8649806c4678c61a1 # v6.3.0
+        with:
+          python-version: '3.12'
+      - name: Write the badge endpoint
+        run: python scripts/scan_badge.py --runs "$RUNNER_TEMP/scan-runs.json" --output "$RUNNER_TEMP/scan-badge.json"
+      - name: Publish the badge to the status branch
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          # Only the fetch and push get the token, as a per-command header; the status branch holds this one file.
+          auth=(GIT_CONFIG_COUNT=1 GIT_CONFIG_KEY_0=http.https://github.com/.extraheader "GIT_CONFIG_VALUE_0=AUTHORIZATION: basic $(printf 'x-access-token:%s' "$GH_TOKEN" | base64 | tr -d '\n')")
+          unset GH_TOKEN
+          status="$RUNNER_TEMP/status"
+          git init -q "$status"
+          cd "$status"
+          git remote add origin "https://github.com/$GITHUB_REPOSITORY.git"
+          if env "${auth[@]}" git fetch -q --depth 1 origin refs/heads/status; then
+            git checkout -q -B status FETCH_HEAD
+          else
+            git symbolic-ref HEAD refs/heads/status
+          fi
+          cp "$RUNNER_TEMP/scan-badge.json" scan-badge.json
+          git add scan-badge.json
+          if git rev-parse -q --verify HEAD >/dev/null && git diff --cached --quiet; then
+            echo 'Badge unchanged; nothing to commit'
+            exit 0
+          fi
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git commit -q -m 'Update the last successful scan badge'
+          env "${auth[@]}" git push -q origin HEAD:refs/heads/status

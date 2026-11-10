@@ -83,7 +83,7 @@ def candidate_items(rows, queue, site, resource_path, holds):
 
 
 EVENTS = {
-    'reviewed': 'Passed AI-assisted editorial review against a primary source and joined (or was re-reviewed in) the curated catalog.',
+    'reviewed': 'Reviewed against a primary source and joined (or was re-reviewed in) the curated catalog.',
     'added_to_bibliography': 'Discovered by a scheduled scan; bibliographic metadata verified, relevance not yet reviewed.',
     'excluded': 'Removed from the active catalog after a primary-abstract scope review; `note` gives the recorded reason.',
 }
@@ -305,7 +305,7 @@ API_SUMMARY = ('Versioned JSON and CSV files for agents and scripts: curated res
 FIELD_NOTES = (
     ('Identity', 'Each item keeps the catalog `id`, which never changes when a resource is renamed. `url` is the original source and `page_url` the catalog page. The page\'s Markdown version, complete record and (for papers) citation files sit at fixed paths below `page_url`, given once per file in `links`, such as `{page_url}record.json`.'),
     ('Versions', '`version` is the API format version: a new major version means a breaking field change, minor versions add fields. `generated_at` is the newest recorded data time in the snapshot (UTC), so every file built from one source commit carries the same value. `catalog_sha256` fingerprints the source catalog.'),
-    ('Review states', '`resources.json`, `papers.json` and the counts in `categories.json` contain curated records only: an AI-assisted editorial review checked each against a primary source. `candidates.json` is unreviewed and every row says so.'),
+    ('Review states', '`resources.json`, `papers.json` and the counts in `categories.json` contain curated records only, each reviewed against a primary source. `candidates.json` is unreviewed and every row says so.'),
     ('Licenses', 'Code, data, weights and document licenses are separate declarations; `null` means no license is recorded. Catalog annotations and these files are MIT licensed; linked resources keep their own terms.'),
     ('Caching and CORS', 'The files are static and served by GitHub Pages with `Access-Control-Allow-Origin: *`, an `ETag` and `Last-Modified`, so browsers can fetch them across origins and clients can send conditional requests. Compare `generated_at` or `catalog_sha256` before re-ingesting.'),
     ('CSV', 'Each CSV has one row per JSON item and repeats `version` and `generated_at` in every row. Lists are joined with `; `, and whitespace inside a value collapses to single spaces.'),

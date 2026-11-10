@@ -10,6 +10,7 @@ from publication_metadata import record_date_text
 from site_config import SITE
 from site_shell import ic
 from specifications import PREFIXES
+from unit_labels import unit_text
 from topic_pages import topic_name
 
 # What each category holds, in at most two sentences; the facts come from the records the page lists.
@@ -168,7 +169,7 @@ def cell(column, record, view, zh):
         count = first_count(record, 'benchmark_protocol' if record['kind'] == 'benchmark' else 'dataset_profile')
         if not count:
             return '—'
-        return f'<a href="{esc(count.get("reference_url") or count["evidence_url"])}">{esc(PREFIXES[count["qualifier"]] + n(count["value"]) + " " + count["unit"])}</a>'
+        return f'<a href="{esc(count.get("reference_url") or count["evidence_url"])}">{esc(PREFIXES[count["qualifier"]] + n(count["value"]) + " " + unit_text(count["unit"], zh))}</a>'
     if column == 'leaderboard':
         url = details.get('leaderboard_url')
         return f'<a href="{esc(url)}">{"排行榜" if zh else "Leaderboard"}</a>' if url else '—'

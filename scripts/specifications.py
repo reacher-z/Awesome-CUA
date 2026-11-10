@@ -5,6 +5,7 @@ import json
 import math
 import urllib.parse
 from field_labels import field_label
+from unit_labels import setting_text, unit_text
 
 PROFILE_KEYS = {'benchmark': 'benchmark_protocol', 'dataset': 'dataset_profile'}
 PREFIXES = {'exact': '', 'approximately': '≈ ', 'at-least': '≥ ', 'more-than': '> '}
@@ -92,16 +93,17 @@ def words(values, zh=False):
     return ('、' if zh else ', ').join(values)
 
 
-def count_text(count):
+def count_text(count, zh=False):
     value = f'{count["value"]:,}'
-    return f'{PREFIXES[count["qualifier"]]}{value} {count["unit"]} — {count["population"]}' + (' (computed)' if count['basis']=='computed' else '')
+    computed = ('（计算得出）' if zh else ' (computed)') if count['basis'] == 'computed' else ''
+    return f'{PREFIXES[count["qualifier"]]}{value} {unit_text(count["unit"], zh)} — {count["population"]}' + computed
 
 
 def counts_html(profile, zh=False):
     if not profile['counts']:
         return '<span class="unknown-value">' + ('未记录' if zh else 'Not recorded') + '</span>'
     source, label = ('来源', '来源：') if zh else ('source', 'Source for ')
-    return '<ul class="measure-list">' + ''.join(f'<li>{esc(count_text(count))} <a href="{safe_href(count.get("reference_url") or count["evidence_url"])}" aria-label="{label}{esc(count["population"])}">{source}</a></li>' for count in profile['counts']) + '</ul>'
+    return '<ul class="measure-list">' + ''.join(f'<li>{esc(count_text(count, zh))} <a href="{safe_href(count.get("reference_url") or count["evidence_url"])}" aria-label="{label}{esc(count["population"])}">{source}</a></li>' for count in profile['counts']) + '</ul>'
 
 
 def selected_profiles(rows, kind):
@@ -135,7 +137,7 @@ def resource_profile_html(row, zh=False):
     language = 'zh' if zh else 'en'
     label = lambda name: field_label(name, language)
     if row['kind'] == 'benchmark':
-        facts = [(label('focus'), words(profile['focus'], zh)), (label('setting'), profile['setting']), (label('observations'), words(profile['observations'], zh)), (label('actions'), words(profile['actions'], zh)), (label('evaluation'), profile['evaluation'] or ('未记录' if zh else 'Not recorded'))]
+        facts = [(label('focus'), words(profile['focus'], zh)), (label('setting'), setting_text(profile['setting'], zh)), (label('observations'), words(profile['observations'], zh)), (label('actions'), words(profile['actions'], zh)), (label('evaluation'), profile['evaluation'] or ('未记录' if zh else 'Not recorded'))]
     else:
         facts = [(label(name), words(profile[name], zh)) for name in ('supervision', 'modalities', 'formats', 'splits')]
     if zh:
@@ -189,11 +191,11 @@ def comparison_body(rows, kind, link_for, zh=False, env_label=None):
     for row in selected:
         profile = row['details'][key]
         visible_values = [' '.join(value) if isinstance(value,list) else str(value) for key,value in profile.items() if key not in {'counts','evidence_urls'}]
-        text = ' '.join([row['name'], *row['environments'], *visible_values, *(count_text(count) for count in profile['counts'])])
+        text = ' '.join([row['name'], *row['environments'], *visible_values, *(count_text(count, zh) for count in profile['counts'])])
         shown_environments = [env_label(env) for env in row['environments']] if zh else row['environments']
         body += f'<tr data-profile-row data-environments="{esc(" ".join(row["environments"]))}" data-search="{esc(text)}"><td><a class="compare-name" href="{link_for(row)}">{esc(row["name"])}</a><div>{esc(words(shown_environments, zh))}</div>'
         if kind == 'benchmark':
-            body += '<p>' + esc(words(profile['focus'], zh)) + '<br>' + esc(profile['setting']) + f'</p></td><td><strong>{observe}</strong>' + esc(words(profile['observations'], zh)) + f'<strong>{act}</strong>' + esc(words(profile['actions'], zh)) + '</td><td>' + esc(profile['evaluation'] or not_recorded) + '</td>'
+            body += '<p>' + esc(words(profile['focus'], zh)) + '<br>' + esc(setting_text(profile['setting'], zh)) + f'</p></td><td><strong>{observe}</strong>' + esc(words(profile['observations'], zh)) + f'<strong>{act}</strong>' + esc(words(profile['actions'], zh)) + '</td><td>' + esc(profile['evaluation'] or not_recorded) + '</td>'
         else:
             license = row['licenses']['data']
             declaration = f'<a href="{safe_href(license["url"])}">{esc(words(license["declared"], zh) if isinstance(license["declared"],list) else license["declared"])}</a>' if license else not_recorded

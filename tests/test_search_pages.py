@@ -181,6 +181,24 @@ class SearchPagesTests(unittest.TestCase):
         self.assertIn('href="/survey/#conclusion-heading" hreflang="en"',survey)
         self.assertIn('<h2>摘要</h2>',survey)
 
+    def test_chinese_pages_show_count_units_and_settings_in_chinese(self):
+        from specifications import PROFILE_KEYS, count_text
+        from unit_labels import ZH_UNITS, setting_text
+        for row in self.rows:
+            profile=row['details'].get(PROFILE_KEYS.get(row['kind'],''))
+            if not profile or not eligible(row):continue
+            text=(self.dest/zh_resource_path(row).lstrip('/')/'index.html').read_text()
+            markdown=(self.dest/zh_resource_path(row).lstrip('/')/'index.md').read_text()
+            with self.subTest(row['id']):
+                for count in profile['counts']:
+                    self.assertIn(html.escape(count_text(count,True),quote=True),text)
+                    self.assertIn(count_text(count,True),markdown)
+                    if count['unit'] in ZH_UNITS:self.assertNotIn(html.escape(count_text(count),quote=True),text)
+                if 'setting' in profile:self.assertIn(f'<dd>{setting_text(profile["setting"],True)}</dd>',text)
+        osworld=(self.dest/'zh/categories/benchmark/index.html').read_text()
+        self.assertIn('369 个任务定义',osworld)
+        self.assertNotIn('369 task definitions',osworld)
+
     def test_home_pages_declare_the_site_search(self):
         for path in ('index.html','zh/index.html'):
             graph=json.loads(re.search(r'<script type="application/ld\+json">(.*?)</script>',(self.dest/path).read_text(),re.S).group(1))['@graph']

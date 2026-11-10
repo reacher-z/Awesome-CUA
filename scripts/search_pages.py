@@ -11,6 +11,7 @@ import re
 from collections import Counter, defaultdict
 from field_labels import COUNT_BASIS, FIELD_LABELS, field_label
 from specifications import PROFILE_KEYS, comparison_body, profile_export, resource_profile_html, count_text, safe_href
+from unit_labels import setting_text
 from agent_pages import agent_guide_body, RELEASES_URL
 from export_citations import citation_bibtex, citation_csl
 from paper_library import PAGE_SIZE, PLATFORMS, library_pages, library_path, library_years, paper_library, reviewed_papers
@@ -610,6 +611,16 @@ def zh_resource_markdown(record, pending_review=None, level=2, *, paper=False):
     }
     for label, value in values.items():
         body = re.sub(r'(?m)^(- ' + label + r'：).*$', lambda match: match[1] + value, body)
+    profile = record['details'].get(PROFILE_KEYS.get(record['kind']))
+    if profile:
+        # Count units and the task setting read in Chinese; populations and sources keep their recorded wording.
+        for c in profile['counts']:
+            source = c.get('reference_url') or c['evidence_url']
+            basis = '' if c['basis'] == 'computed' else COUNT_BASIS[c['basis']][1] + '；'
+            body = body.replace(f'- {count_text(c)} ({c["basis"]}; source: {source})', f'- {count_text(c, True)}（{basis}来源：{source}）', 1)
+        if 'setting' in profile:
+            body = re.sub(r'(?m)^(- ' + re.escape(field_label('setting', 'zh')) + r'：).*$', lambda match: match[1] + setting_text(profile['setting'], True), body, count=1)
+        body = body.replace('\nNo count recorded.\n', '\n未记录数量。\n', 1)
     slots = {'code': '代码', 'data': '数据', 'document': '文档', 'weights': '权重'}
     body = re.sub(r'(?m)^- (code|data|document|weights): not recorded$', lambda match: f'- {slots[match[1]]}：未记录', body)
     body = re.sub(r'(?m)^- (code|data|document|weights): ', lambda match: f'- {slots[match[1]]}：', body)

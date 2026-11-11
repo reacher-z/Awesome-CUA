@@ -1,10 +1,10 @@
 {
-  "id": "scan:2026-11-11T08:18:35Z",
+  "id": "scan:2026-11-11T16:14:58Z",
   "schema_version": 1,
   "status": "partial",
-  "started_at": "2026-11-11T08:18:35Z",
-  "finished_at": "2026-11-11T08:25:20Z",
-  "run_url": "https://github.com/reacher-z/Awesome-CUA/actions/runs/42985960499",
+  "started_at": "2026-11-11T16:14:58Z",
+  "finished_at": "2026-11-11T16:20:37Z",
+  "run_url": "https://github.com/reacher-z/Awesome-CUA/actions/runs/43056370896",
   "schedule": {
     "timezone": "UTC",
     "times_local": [
@@ -14,15 +14,6 @@
     ]
   },
   "before": {
-    "resources": 6535,
-    "bibliographic_records": 2853,
-    "arxiv_archive_records": 4161,
-    "excluded_records": 1308,
-    "curated_papers": 1718,
-    "curated_resources": 3629,
-    "candidates": 9825
-  },
-  "after": {
     "resources": 6536,
     "bibliographic_records": 2854,
     "arxiv_archive_records": 4162,
@@ -31,18 +22,27 @@
     "curated_resources": 3629,
     "candidates": 9826
   },
+  "after": {
+    "resources": 6537,
+    "bibliographic_records": 2855,
+    "arxiv_archive_records": 4163,
+    "excluded_records": 1308,
+    "curated_papers": 1718,
+    "curated_resources": 3629,
+    "candidates": 9827
+  },
   "new_papers": [
     {
-      "id": "arxiv:2611.02430",
-      "name": "InteractionBench: Measuring Timing, Task Accuracy, Whisper and Volume, and Grounding in Real-Time Voice Systems",
-      "url": "https://arxiv.org/abs/2611.02430",
+      "id": "arxiv:2611.13177",
+      "name": "GroundCascade: Selective Second Opinions for GUI Grounding",
+      "url": "https://arxiv.org/abs/2611.13177",
       "review_status": "metadata_verified"
     }
   ],
   "new_candidate_count": 1,
   "pending_metadata_changes": 11,
   "source_fetches": {
-    "successful": 102,
+    "successful": 103,
     "total": 103,
     "retired": 1
   },
@@ -50,18 +50,18 @@
     "successful": 32,
     "total": 32,
     "unique_identifiers": 1512,
-    "new_candidates": 1
+    "new_candidates": 0
   },
   "candidate_observations": {
-    "started_at": "2026-11-11T08:21:33Z",
-    "finished_at": "2026-11-11T08:24:34Z",
+    "started_at": "2026-11-11T16:16:10Z",
+    "finished_at": "2026-11-11T16:19:51Z",
     "ok": false,
     "deferred": true,
-    "error": "Stage exceeded 181.042 seconds; last verified records retained.",
+    "error": "Stage exceeded 220 seconds; last verified records retained.",
     "published": false,
     "durable_validation": {
       "ok": true,
-      "checked_at": "2026-11-11T08:25:19Z",
+      "checked_at": "2026-11-11T16:20:36Z",
       "mode": "resumable_triplet",
       "required": true,
       "files": {
@@ -75,24 +75,24 @@
   "phases": [
     {
       "name": "discovery",
-      "started_at": "2026-11-11T08:18:37Z",
-      "finished_at": "2026-11-11T08:20:43Z",
+      "started_at": "2026-11-11T16:14:59Z",
+      "finished_at": "2026-11-11T16:15:22Z",
       "ok": true,
       "exit_code": 0,
       "error": null
     },
     {
       "name": "huggingface",
-      "started_at": "2026-11-11T08:20:43Z",
-      "finished_at": "2026-11-11T08:21:20Z",
+      "started_at": "2026-11-11T16:15:22Z",
+      "finished_at": "2026-11-11T16:15:57Z",
       "ok": true,
       "exit_code": 0,
       "error": null
     },
     {
       "name": "recent_arxiv",
-      "started_at": "2026-11-11T08:21:20Z",
-      "finished_at": "2026-11-11T08:21:20Z",
+      "started_at": "2026-11-11T16:15:57Z",
+      "finished_at": "2026-11-11T16:15:57Z",
       "ok": true,
       "exit_code": 0,
       "error": null,
@@ -104,23 +104,23 @@
     },
     {
       "name": "harvest",
-      "started_at": "2026-11-11T08:21:20Z",
-      "finished_at": "2026-11-11T08:21:21Z",
+      "started_at": "2026-11-11T16:15:57Z",
+      "finished_at": "2026-11-11T16:15:58Z",
       "ok": true,
       "exit_code": 0,
       "error": null
     },
     {
       "name": "github_candidates",
-      "started_at": "2026-11-11T08:21:33Z",
-      "finished_at": "2026-11-11T08:24:34Z",
+      "started_at": "2026-11-11T16:16:10Z",
+      "finished_at": "2026-11-11T16:19:51Z",
       "ok": false,
       "deferred": true,
-      "error": "Stage exceeded 181.042 seconds; last verified records retained.",
+      "error": "Stage exceeded 220 seconds; last verified records retained.",
       "published": false,
       "durable_validation": {
         "ok": true,
-        "checked_at": "2026-11-11T08:25:19Z",
+        "checked_at": "2026-11-11T16:20:36Z",
         "mode": "resumable_triplet",
         "required": true,
         "files": {
@@ -133,40 +133,39 @@
     },
     {
       "name": "build",
-      "started_at": "2026-11-11T08:24:34Z",
-      "finished_at": "2026-11-11T08:24:43Z",
+      "started_at": "2026-11-11T16:19:51Z",
+      "finished_at": "2026-11-11T16:19:59Z",
       "ok": true,
       "exit_code": 0,
       "error": null
     },
     {
       "name": "validate",
-      "started_at": "2026-11-11T08:24:43Z",
-      "finished_at": "2026-11-11T08:25:07Z",
+      "started_at": "2026-11-11T16:19:59Z",
+      "finished_at": "2026-11-11T16:20:24Z",
       "ok": true,
       "exit_code": 0,
       "error": null
     }
   ],
   "warnings": [
-    "github_candidates: Stage exceeded 181.042 seconds; last verified records retained.",
-    "Discovery sources failed: arxiv-abstract-phrases"
+    "github_candidates: Stage exceeded 220 seconds; last verified records retained."
   ],
   "rate_limit_only": false,
-  "network_deferred_only": false,
+  "network_deferred_only": true,
   "policy": "Automated scans discover candidates and verify bibliographic metadata. Editorial approval, topic annotations, and license claims require separate source review.",
   "network_budget": {
-    "round_id": "40fc50a43f2742e9860c18c86caf608c",
+    "round_id": "86d07268d21948318e9f5f7b853688c6",
     "max_requests": 180,
     "max_seconds": 360,
-    "requests_reserved": 161,
-    "responses_received": 158,
-    "unknown_attempts": 3,
+    "requests_reserved": 162,
+    "responses_received": 162,
+    "unknown_attempts": 0,
     "by_phase": {
-      "discovery": 111,
+      "discovery": 109,
       "huggingface": 32,
       "harvest": 1,
-      "github_candidates": 17
+      "github_candidates": 20
     },
     "by_provider": {
       "raw.githubusercontent.com": 66,
@@ -179,13 +178,17 @@
       "doc-04-10-sheets.googleusercontent.com": 1,
       "doc-0s-8k-sheets.googleusercontent.com": 1,
       "doc-04-0o-sheets.googleusercontent.com": 1,
-      "export.arxiv.org": 5,
+      "export.arxiv.org": 3,
       "arxiv.org": 2,
-      "api.github.com": 17
+      "api.github.com": 20
     },
-    "provider_cooldowns": {},
-    "blocked_providers": [],
-    "ledger_sha256": "3382e9a6bb59f44b61d0cd51b66bb27e85a34acf2605c05293992aa80e0a05a1",
+    "provider_cooldowns": {
+      "api.github.com": "2026-11-11T16:20:30.236606+00:00"
+    },
+    "blocked_providers": [
+      "api.github.com"
+    ],
+    "ledger_sha256": "9b16551dcc2f5f2097c340f2e9c5dd32e49655c1e4d59a2a62639f581089b0ea",
     "count_boundary": "Reservations are persisted before I/O; interrupted attempts remain conservatively charged. HTTP status observation does not establish complete or validated content."
   }
 }

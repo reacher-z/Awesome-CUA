@@ -1,11 +1,11 @@
 # Coverage and quality ledger
 
-Evidence snapshot through **2026-11-10T08:20:17Z**. Generated from committed source receipts.
+Evidence snapshot through **2026-11-11T08:21:20Z**. Generated from committed source receipts.
 
-- 5,347 curated resources. Another 1,188 records await review with bibliographic metadata only; the active catalog file holds 6,535 records in all.
-- 2,906 paper and survey records, including 2,853 arXiv identities and 53 publisher-only identities.
-- 4,161 retained arXiv metadata records; 1,308 explicit scope exclusions are outside the active catalog.
-- 9,825 discovery identifiers; 187 remain unresolved. Reviewed decisions include 505 non-resource links, 748 aliases and 2,052 out-of-scope resources; their reasons remain in the review queue.
+- 5,347 curated resources. Another 1,189 records await review with bibliographic metadata only; the active catalog file holds 6,536 records in all.
+- 2,907 paper and survey records, including 2,854 arXiv identities and 53 publisher-only identities.
+- 4,162 retained arXiv metadata records; 1,308 explicit scope exclusions are outside the active catalog.
+- 9,826 discovery identifiers; 187 remain unresolved. Reviewed decisions include 505 non-resource links, 748 aliases and 2,052 out-of-scope resources; their reasons remain in the review queue.
 - 378 editorial proposals await verification or review.
 
 These are distinct resource identifiers, not distinct research projects. Papers, repositories, datasets, products, and publisher entities have different grains.
@@ -109,7 +109,7 @@ The denominator is the normalized identifiers extracted from each fetched docume
 | [AndroidWorld leaderboard spreadsheet](https://docs.google.com/spreadsheets/d/1cchzP9dlTZ3WXQTfYNhh3avxoLipqHN75v1Tb86uhHo) | 66 | 43 | 43 | 0 | 22 | 0 | 1 | OK · 2026-11-11 |
 | [WebArena and VisualWebArena leaderboard spreadsheet](https://docs.google.com/spreadsheets/d/1M801lEpBbKSNwP-vDBkC_pF7LdyGU1f_ufZb_NWNBZQ) | 83 | 46 | 43 | 4 | 26 | 6 | 1 | OK · 2026-11-11 |
 | [AndroidLab leaderboard spreadsheet](https://docs.google.com/spreadsheets/d/1Zv6mBfd4Ibt8mke24K6zAFrXe4AvEFaBLW3hpJqSgjw) | 6 | 5 | 5 | 0 | 1 | 0 | 0 | OK · 2026-11-11 |
-| [arXiv abstract-phrase query: GUI, computer-use and web agents (all dates)](https://arxiv.org) | 1117 | 1104 | 1045 | 13 | 0 | 0 | 0 | OK · 2026-11-11 |
+| [arXiv abstract-phrase query: GUI, computer-use and web agents (all dates)](https://arxiv.org) | 1117 | 1104 | 1045 | 13 | 0 | 0 | 0 | FAILED · 2026-11-11 |
 | [Hub model search "gui" (by likes)](https://huggingface.co/models?search=gui) | 30 | 27 | 27 | 0 | 2 | 1 | 0 | OK · 2026-11-11 |
 | [Hub model search "computer-use" (by likes)](https://huggingface.co/models?search=computer-use) | 2 | 2 | 2 | 0 | 0 | 0 | 0 | OK · 2026-11-11 |
 | [Hub dataset search "gui" (by likes)](https://huggingface.co/datasets?search=gui) | 18 | 15 | 15 | 0 | 0 | 3 | 0 | OK · 2026-11-11 |
@@ -142,7 +142,7 @@ The denominator is the normalized identifiers extracted from each fetched docume
 
 ## Paper-discovery query coverage
 
-Latest pass: 2026-11-11T00:35:15Z; **32/32** query windows succeeded. 1,512 distinct identifiers; 0 new to the candidate queue.
+Latest pass: 2026-11-11T08:21:20Z; **32/32** query windows succeeded. 1,512 distinct identifiers; 1 new to the candidate queue.
 
 These are ranked search windows. New identifiers go through primary metadata verification and relevance review.
 

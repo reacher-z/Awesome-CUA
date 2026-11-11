@@ -1,10 +1,10 @@
 {
-  "id": "scan:2026-11-10T16:15:42Z",
+  "id": "scan:2026-11-11T00:34:06Z",
   "schema_version": 1,
   "status": "partial",
-  "started_at": "2026-11-10T16:15:42Z",
-  "finished_at": "2026-11-10T16:19:04Z",
-  "run_url": "https://github.com/reacher-z/Awesome-CUA/actions/runs/42852680158",
+  "started_at": "2026-11-11T00:34:06Z",
+  "finished_at": "2026-11-11T00:39:58Z",
+  "run_url": "https://github.com/reacher-z/Awesome-CUA/actions/runs/42932317945",
   "schedule": {
     "timezone": "UTC",
     "times_local": [
@@ -29,10 +29,10 @@
     "excluded_records": 1308,
     "curated_papers": 1718,
     "curated_resources": 3629,
-    "candidates": 9817
+    "candidates": 9825
   },
   "new_papers": [],
-  "new_candidate_count": 0,
+  "new_candidate_count": 8,
   "pending_metadata_changes": 11,
   "source_fetches": {
     "successful": 103,
@@ -46,15 +46,15 @@
     "new_candidates": 0
   },
   "candidate_observations": {
-    "started_at": "2026-11-10T16:17:03Z",
-    "finished_at": "2026-11-10T16:18:34Z",
+    "started_at": "2026-11-11T00:35:29Z",
+    "finished_at": "2026-11-11T00:39:09Z",
     "ok": false,
-    "exit_code": 1,
-    "error": "Candidate phase rejected: Primary metadata lies outside its query cohort\n",
+    "deferred": true,
+    "error": "Stage exceeded 220 seconds; last verified records retained.",
     "published": false,
     "durable_validation": {
       "ok": true,
-      "checked_at": "2026-11-10T16:19:03Z",
+      "checked_at": "2026-11-11T00:39:57Z",
       "mode": "resumable_triplet",
       "required": true,
       "files": {
@@ -68,52 +68,53 @@
   "phases": [
     {
       "name": "discovery",
-      "started_at": "2026-11-10T16:15:43Z",
-      "finished_at": "2026-11-10T16:16:21Z",
+      "started_at": "2026-11-11T00:34:08Z",
+      "finished_at": "2026-11-11T00:34:37Z",
       "ok": true,
       "exit_code": 0,
       "error": null
     },
     {
       "name": "huggingface",
-      "started_at": "2026-11-10T16:16:21Z",
-      "finished_at": "2026-11-10T16:16:55Z",
+      "started_at": "2026-11-11T00:34:37Z",
+      "finished_at": "2026-11-11T00:35:15Z",
       "ok": true,
       "exit_code": 0,
       "error": null
     },
     {
       "name": "recent_arxiv",
-      "started_at": "2026-11-10T16:16:55Z",
-      "finished_at": "2026-11-10T16:16:55Z",
+      "started_at": "2026-11-11T00:35:15Z",
+      "finished_at": "2026-11-11T00:35:17Z",
       "ok": true,
       "exit_code": 0,
       "error": null,
       "complete": true,
       "new_count": 0,
       "warnings": [],
-      "cache_used": true,
-      "source_retrieved_at": "2026-11-10T00:34:10Z"
+      "cache_used": false,
+      "rate_limited": false,
+      "deferred": false
     },
     {
       "name": "harvest",
-      "started_at": "2026-11-10T16:16:55Z",
-      "finished_at": "2026-11-10T16:16:56Z",
+      "started_at": "2026-11-11T00:35:17Z",
+      "finished_at": "2026-11-11T00:35:17Z",
       "ok": true,
       "exit_code": 0,
       "error": null
     },
     {
       "name": "github_candidates",
-      "started_at": "2026-11-10T16:17:03Z",
-      "finished_at": "2026-11-10T16:18:34Z",
+      "started_at": "2026-11-11T00:35:29Z",
+      "finished_at": "2026-11-11T00:39:09Z",
       "ok": false,
-      "exit_code": 1,
-      "error": "Candidate phase rejected: Primary metadata lies outside its query cohort\n",
+      "deferred": true,
+      "error": "Stage exceeded 220 seconds; last verified records retained.",
       "published": false,
       "durable_validation": {
         "ok": true,
-        "checked_at": "2026-11-10T16:19:03Z",
+        "checked_at": "2026-11-11T00:39:57Z",
         "mode": "resumable_triplet",
         "required": true,
         "files": {
@@ -126,38 +127,39 @@
     },
     {
       "name": "build",
-      "started_at": "2026-11-10T16:18:34Z",
-      "finished_at": "2026-11-10T16:18:40Z",
+      "started_at": "2026-11-11T00:39:09Z",
+      "finished_at": "2026-11-11T00:39:18Z",
       "ok": true,
       "exit_code": 0,
       "error": null
     },
     {
       "name": "validate",
-      "started_at": "2026-11-10T16:18:40Z",
-      "finished_at": "2026-11-10T16:18:55Z",
+      "started_at": "2026-11-11T00:39:18Z",
+      "finished_at": "2026-11-11T00:39:45Z",
       "ok": true,
       "exit_code": 0,
       "error": null
     }
   ],
   "warnings": [
-    "github_candidates: Candidate phase rejected: Primary metadata lies outside its query cohort\n"
+    "github_candidates: Stage exceeded 220 seconds; last verified records retained."
   ],
   "rate_limit_only": false,
-  "network_deferred_only": false,
+  "network_deferred_only": true,
   "policy": "Automated scans discover candidates and verify bibliographic metadata. Editorial approval, topic annotations, and license claims require separate source review.",
   "network_budget": {
-    "round_id": "0567f26c3acf43018217aa22ce886115",
+    "round_id": "375d3763b42f414f8aa74aa0c5b84c2b",
     "max_requests": 180,
     "max_seconds": 360,
-    "requests_reserved": 149,
-    "responses_received": 149,
+    "requests_reserved": 165,
+    "responses_received": 165,
     "unknown_attempts": 0,
     "by_phase": {
       "discovery": 109,
       "huggingface": 32,
-      "github_candidates": 8
+      "recent_arxiv": 1,
+      "github_candidates": 23
     },
     "by_provider": {
       "raw.githubusercontent.com": 66,
@@ -170,17 +172,13 @@
       "doc-04-10-sheets.googleusercontent.com": 1,
       "doc-0s-8k-sheets.googleusercontent.com": 1,
       "doc-04-0o-sheets.googleusercontent.com": 1,
-      "export.arxiv.org": 2,
+      "export.arxiv.org": 3,
       "arxiv.org": 2,
-      "api.github.com": 8
+      "api.github.com": 23
     },
-    "provider_cooldowns": {
-      "api.github.com": "2026-11-10T16:19:18.655599+00:00"
-    },
-    "blocked_providers": [
-      "api.github.com"
-    ],
-    "ledger_sha256": "634743cc47342bd39e63bbdf2fdea98cfe38424875e43bf46f175882cba79483",
+    "provider_cooldowns": {},
+    "blocked_providers": [],
+    "ledger_sha256": "6bd9b14b4d00bf1f804f05c296811ab1867918217ea9032c7cf9bfa1602eb89f",
     "count_boundary": "Reservations are persisted before I/O; interrupted attempts remain conservatively charged. HTTP status observation does not establish complete or validated content."
   }
 }

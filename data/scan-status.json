@@ -1,10 +1,10 @@
 {
-  "id": "scan:2026-11-12T08:18:41Z",
+  "id": "scan:2026-11-12T16:16:11Z",
   "schema_version": 1,
   "status": "partial",
-  "started_at": "2026-11-12T08:18:41Z",
-  "finished_at": "2026-11-12T08:22:44Z",
-  "run_url": "https://github.com/reacher-z/Awesome-CUA/actions/runs/43181852579",
+  "started_at": "2026-11-12T16:16:11Z",
+  "finished_at": "2026-11-12T16:21:36Z",
+  "run_url": "https://github.com/reacher-z/Awesome-CUA/actions/runs/43256744053",
   "schedule": {
     "timezone": "UTC",
     "times_local": [
@@ -46,15 +46,15 @@
     "new_candidates": 0
   },
   "candidate_observations": {
-    "started_at": "2026-11-12T08:19:47Z",
-    "finished_at": "2026-11-12T08:21:55Z",
+    "started_at": "2026-11-12T16:17:38Z",
+    "finished_at": "2026-11-12T16:21:00Z",
     "ok": false,
     "exit_code": 1,
     "error": "Candidate phase rejected: Primary metadata lies outside its query cohort\n",
     "published": false,
     "durable_validation": {
       "ok": true,
-      "checked_at": "2026-11-12T08:22:43Z",
+      "checked_at": "2026-11-12T16:21:34Z",
       "mode": "resumable_triplet",
       "required": true,
       "files": {
@@ -68,24 +68,24 @@
   "phases": [
     {
       "name": "discovery",
-      "started_at": "2026-11-12T08:18:42Z",
-      "finished_at": "2026-11-12T08:19:00Z",
+      "started_at": "2026-11-12T16:16:12Z",
+      "finished_at": "2026-11-12T16:16:52Z",
       "ok": true,
       "exit_code": 0,
       "error": null
     },
     {
       "name": "huggingface",
-      "started_at": "2026-11-12T08:19:00Z",
-      "finished_at": "2026-11-12T08:19:33Z",
+      "started_at": "2026-11-12T16:16:52Z",
+      "finished_at": "2026-11-12T16:17:28Z",
       "ok": true,
       "exit_code": 0,
       "error": null
     },
     {
       "name": "recent_arxiv",
-      "started_at": "2026-11-12T08:19:33Z",
-      "finished_at": "2026-11-12T08:19:33Z",
+      "started_at": "2026-11-12T16:17:28Z",
+      "finished_at": "2026-11-12T16:17:28Z",
       "ok": true,
       "exit_code": 0,
       "error": null,
@@ -97,23 +97,23 @@
     },
     {
       "name": "harvest",
-      "started_at": "2026-11-12T08:19:33Z",
-      "finished_at": "2026-11-12T08:19:33Z",
+      "started_at": "2026-11-12T16:17:28Z",
+      "finished_at": "2026-11-12T16:17:28Z",
       "ok": true,
       "exit_code": 0,
       "error": null
     },
     {
       "name": "github_candidates",
-      "started_at": "2026-11-12T08:19:47Z",
-      "finished_at": "2026-11-12T08:21:55Z",
+      "started_at": "2026-11-12T16:17:38Z",
+      "finished_at": "2026-11-12T16:21:00Z",
       "ok": false,
       "exit_code": 1,
       "error": "Candidate phase rejected: Primary metadata lies outside its query cohort\n",
       "published": false,
       "durable_validation": {
         "ok": true,
-        "checked_at": "2026-11-12T08:22:43Z",
+        "checked_at": "2026-11-12T16:21:34Z",
         "mode": "resumable_triplet",
         "required": true,
         "files": {
@@ -126,16 +126,16 @@
     },
     {
       "name": "build",
-      "started_at": "2026-11-12T08:21:55Z",
-      "finished_at": "2026-11-12T08:22:04Z",
+      "started_at": "2026-11-12T16:21:00Z",
+      "finished_at": "2026-11-12T16:21:07Z",
       "ok": true,
       "exit_code": 0,
       "error": null
     },
     {
       "name": "validate",
-      "started_at": "2026-11-12T08:22:04Z",
-      "finished_at": "2026-11-12T08:22:29Z",
+      "started_at": "2026-11-12T16:21:07Z",
+      "finished_at": "2026-11-12T16:21:24Z",
       "ok": true,
       "exit_code": 0,
       "error": null
@@ -148,16 +148,16 @@
   "network_deferred_only": false,
   "policy": "Automated scans discover candidates and verify bibliographic metadata. Editorial approval, topic annotations, and license claims require separate source review.",
   "network_budget": {
-    "round_id": "1682adc97ed84eeab2f2ce299e688a85",
+    "round_id": "f39493ac3b5d496595d59785bb5d923f",
     "max_requests": 180,
     "max_seconds": 360,
-    "requests_reserved": 149,
-    "responses_received": 149,
+    "requests_reserved": 161,
+    "responses_received": 161,
     "unknown_attempts": 0,
     "by_phase": {
       "discovery": 109,
       "huggingface": 32,
-      "github_candidates": 8
+      "github_candidates": 20
     },
     "by_provider": {
       "raw.githubusercontent.com": 66,
@@ -172,15 +172,15 @@
       "doc-04-0o-sheets.googleusercontent.com": 1,
       "export.arxiv.org": 2,
       "arxiv.org": 2,
-      "api.github.com": 8
+      "api.github.com": 20
     },
     "provider_cooldowns": {
-      "api.github.com": "2026-11-12T08:22:27.132571+00:00"
+      "api.github.com": "2026-11-12T16:21:40.409501+00:00"
     },
     "blocked_providers": [
       "api.github.com"
     ],
-    "ledger_sha256": "1c3e97974ccdd06d98f2fa872a22088d36f0b3ef87aafa9c069c7e415261684e",
+    "ledger_sha256": "a7fc2b6c7de8666be1f14f80c7dd5c532ccb2badd463d6b40a033edd42d76159",
     "count_boundary": "Reservations are persisted before I/O; interrupted attempts remain conservatively charged. HTTP status observation does not establish complete or validated content."
   }
 }

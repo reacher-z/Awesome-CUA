@@ -5,7 +5,7 @@
 Bibliographic records from arXiv and retained publication sources. Metadata-only entries await relevance review. Discovery includes historical references and adjacent work.
 Dates retain their recorded precision. Explicit arXiv scope exclusions are listed in the [scope-decision ledger](../data/exclusion-status.json). The [arXiv archive](../data/papers.jsonl) and [publication observations](../data/publications.jsonl) retain their separate source facts.
 
-**Years:** [2026](#2026) (1,395; 879 ⭐) · [2025](#2025) (737; 514 ⭐) · [2024](#2024) (447; 214 ⭐) · [2023](#2023) (200; 56 ⭐) · [2022](#2022) (49; 16 ⭐) · [2021](#2021) (24; 13 ⭐) · [2020](#2020) (16; 7 ⭐) · [2019](#2019) (9; 2 ⭐) · [2018](#2018) (10; 7 ⭐) · [2017](#2017) (9; 3 ⭐) · [2016](#2016) (5; 2 ⭐) · [2015](#2015) (1; 0 ⭐) · [2013](#2013) (2; 0 ⭐) · [2010](#2010) (1; 1 ⭐) · [2009](#2009) (1; 1 ⭐) · [2007](#2007) (2; 2 ⭐) · [1991](#1991) (1; 1 ⭐)
+**Years:** [2026](#2026) (1,402; 879 ⭐) · [2025](#2025) (737; 514 ⭐) · [2024](#2024) (447; 214 ⭐) · [2023](#2023) (200; 56 ⭐) · [2022](#2022) (49; 16 ⭐) · [2021](#2021) (24; 13 ⭐) · [2020](#2020) (16; 7 ⭐) · [2019](#2019) (9; 2 ⭐) · [2018](#2018) (10; 7 ⭐) · [2017](#2017) (9; 3 ⭐) · [2016](#2016) (5; 2 ⭐) · [2015](#2015) (1; 0 ⭐) · [2013](#2013) (2; 0 ⭐) · [2010](#2010) (1; 1 ⭐) · [2009](#2009) (1; 1 ⭐) · [2007](#2007) (2; 2 ⭐) · [1991](#1991) (1; 1 ⭐)
 
 ⭐ marks papers with an editorial relevance review; their topics link to the [topic hubs](topics.md). Other rows are bibliographic metadata only.
 
@@ -13,6 +13,11 @@ Dates retain their recorded precision. Explicit arXiv scope exclusions are liste
 
 | Date | Paper | Review | Topics |
 | --- | --- | --- | --- |
+| 2026-11-12 | [Scale-Induced Semantic Shift in Visual Prompt Injection Against VLMs and Web Agents](https://arxiv.org/abs/2611.16744) | metadata |  |
+| 2026-11-12 | [MobileProbe: Adaptive Security Evaluation of Mobile Agents via Trajectory-Aware Injection](https://arxiv.org/abs/2611.16693) | metadata |  |
+| 2026-11-11 | [Trained on What Screen Readers Cannot Read: Accessibility Debt in the GUI Corpora Behind Computer-Use Agents](https://arxiv.org/abs/2611.16107) | metadata |  |
+| 2026-11-11 | [GuardianAgentFlow: Multi-Agent Coordination for Web Privacy Protection](https://arxiv.org/abs/2611.15097) | metadata |  |
+| 2026-11-10 | [Rational Use of Time for Social Coordination in Humans and AI](https://arxiv.org/abs/2611.14766) | metadata |  |
 | 2026-11-10 | [A Cross-Scenario Survey and Analysis of Self-Evolving Multimodal Agents](https://arxiv.org/abs/2611.14256) | metadata |  |
 | 2026-11-09 | [Harness Matters: Measuring and Dissecting Security Resilience in Web Agents](https://arxiv.org/abs/2611.11971) | metadata |  |
 | 2026-11-09 | [GroundCascade: Selective Second Opinions for GUI Grounding](https://arxiv.org/abs/2611.13177) | metadata |  |
@@ -21,6 +26,7 @@ Dates retain their recorded precision. Explicit arXiv scope exclusions are liste
 | 2026-11-06 | [A Tutorial on Practical QKD Post-Processing Algorithms Using a GUI-Based Simulation Framework](https://arxiv.org/abs/2611.09182) | metadata |  |
 | 2026-11-05 | [VFlash: Fast, Accurate Visual Planning via Flash Primitive Decoding](https://arxiv.org/abs/2611.08449) | metadata |  |
 | 2026-11-05 | [BiGrounder: Bidirectional Training Unlocks the Potential of GUI Grounding](https://arxiv.org/abs/2611.07765) | metadata |  |
+| 2026-11-05 | [Agent-R$^2$: Scaling Agents for Realistic Productivity Work via Real-Source Data Synthesis](https://arxiv.org/abs/2611.08219) | metadata |  |
 | 2026-11-04 | [Visual Token Routing: Learning to keep tokens that matter](https://arxiv.org/abs/2611.06854) | ⭐ reviewed | [action-prediction](topics/action-prediction.md), [efficiency](topics/efficiency.md), [interaction-history](topics/interaction-history.md), [screen-understanding](topics/screen-understanding.md) |
 | 2026-11-04 | [UniCompress: From Multi-LoRA Experts to One Compact Model for Edge Intelligence](https://arxiv.org/abs/2611.06075) | metadata |  |
 | 2026-11-04 | [Tools Need Not Speak in Text: Latent Context Compression for Agents](https://arxiv.org/abs/2611.06500) | metadata |  |
@@ -294,6 +300,7 @@ Dates retain their recorded precision. Explicit arXiv scope exclusions are liste
 | 2026-10-08 | [SoftwareGym: Scaling Computer-Use Agent Training with Diverse Synthesized Software Environments](https://arxiv.org/abs/2610.12611) | ⭐ reviewed | [data-generation](topics/data-generation.md), [evaluation](topics/evaluation.md), [sandbox](topics/sandbox.md) |
 | 2026-10-08 | [SWEeper-Bench: Can Agents Discover Bugs in Interactive Software?](https://arxiv.org/abs/2610.14096) | metadata |  |
 | 2026-10-08 | [Right Screen, Wrong Transition: World Models as Verifiers for GUI Agents](https://arxiv.org/abs/2610.11942) | ⭐ reviewed | [evaluation](topics/evaluation.md), [safety-security](topics/safety-security.md), [world-models](topics/world-models.md) |
+| 2026-10-08 | [ReTTT: Reflection-Driven Test-Time Training via Experience-Based Parametric Memory](https://arxiv.org/abs/2610.23942) | metadata |  |
 | 2026-10-08 | [Harness Evolution Hits a Ceiling: When Weight Training Should Begin](https://arxiv.org/abs/2610.11655) | ⭐ reviewed | [imitation-learning](topics/imitation-learning.md), [observability](topics/observability.md), [training-free](topics/training-free.md) |
 | 2026-10-08 | [GATOR: Generative and Agentic 3D Object Reconstruction From Casual Images](https://arxiv.org/abs/2610.11215) | metadata |  |
 | 2026-10-08 | [Embodied Turing Machines: Stateful Code for Robot Recursive Self-Improvement](https://arxiv.org/abs/2610.12369) | metadata |  |

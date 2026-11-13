@@ -1,10 +1,10 @@
 {
-  "id": "scan:2026-11-13T08:18:07Z",
+  "id": "scan:2026-11-13T16:15:22Z",
   "schema_version": 1,
   "status": "partial",
-  "started_at": "2026-11-13T08:18:07Z",
-  "finished_at": "2026-11-13T08:23:46Z",
-  "run_url": "https://github.com/reacher-z/Awesome-CUA/actions/runs/43392115488",
+  "started_at": "2026-11-13T16:15:22Z",
+  "finished_at": "2026-11-13T16:20:10Z",
+  "run_url": "https://github.com/reacher-z/Awesome-CUA/actions/runs/43460766237",
   "schedule": {
     "timezone": "UTC",
     "times_local": [
@@ -14,13 +14,13 @@
     ]
   },
   "before": {
-    "resources": 6538,
-    "bibliographic_records": 2856,
-    "arxiv_archive_records": 4164,
+    "resources": 6545,
+    "bibliographic_records": 2863,
+    "arxiv_archive_records": 4171,
     "excluded_records": 1308,
     "curated_papers": 1718,
     "curated_resources": 3629,
-    "candidates": 9828
+    "candidates": 9835
   },
   "after": {
     "resources": 6545,
@@ -31,51 +31,8 @@
     "curated_resources": 3629,
     "candidates": 9835
   },
-  "new_papers": [
-    {
-      "id": "arxiv:2610.23942",
-      "name": "ReTTT: Reflection-Driven Test-Time Training via Experience-Based Parametric Memory",
-      "url": "https://arxiv.org/abs/2610.23942",
-      "review_status": "metadata_verified"
-    },
-    {
-      "id": "arxiv:2611.08219",
-      "name": "Agent-R$^2$: Scaling Agents for Realistic Productivity Work via Real-Source Data Synthesis",
-      "url": "https://arxiv.org/abs/2611.08219",
-      "review_status": "metadata_verified"
-    },
-    {
-      "id": "arxiv:2611.14766",
-      "name": "Rational Use of Time for Social Coordination in Humans and AI",
-      "url": "https://arxiv.org/abs/2611.14766",
-      "review_status": "metadata_verified"
-    },
-    {
-      "id": "arxiv:2611.15097",
-      "name": "GuardianAgentFlow: Multi-Agent Coordination for Web Privacy Protection",
-      "url": "https://arxiv.org/abs/2611.15097",
-      "review_status": "metadata_verified"
-    },
-    {
-      "id": "arxiv:2611.16107",
-      "name": "Trained on What Screen Readers Cannot Read: Accessibility Debt in the GUI Corpora Behind Computer-Use Agents",
-      "url": "https://arxiv.org/abs/2611.16107",
-      "review_status": "metadata_verified"
-    },
-    {
-      "id": "arxiv:2611.16693",
-      "name": "MobileProbe: Adaptive Security Evaluation of Mobile Agents via Trajectory-Aware Injection",
-      "url": "https://arxiv.org/abs/2611.16693",
-      "review_status": "metadata_verified"
-    },
-    {
-      "id": "arxiv:2611.16744",
-      "name": "Scale-Induced Semantic Shift in Visual Prompt Injection Against VLMs and Web Agents",
-      "url": "https://arxiv.org/abs/2611.16744",
-      "review_status": "metadata_verified"
-    }
-  ],
-  "new_candidate_count": 7,
+  "new_papers": [],
+  "new_candidate_count": 0,
   "pending_metadata_changes": 12,
   "source_fetches": {
     "successful": 103,
@@ -86,18 +43,18 @@
     "successful": 32,
     "total": 32,
     "unique_identifiers": 1512,
-    "new_candidates": 2
+    "new_candidates": 0
   },
   "candidate_observations": {
-    "started_at": "2026-11-13T08:19:28Z",
-    "finished_at": "2026-11-13T08:23:08Z",
+    "started_at": "2026-11-13T16:16:18Z",
+    "finished_at": "2026-11-13T16:19:42Z",
     "ok": false,
-    "deferred": true,
-    "error": "Stage exceeded 220 seconds; last verified records retained.",
+    "exit_code": 1,
+    "error": "Candidate phase rejected: Primary metadata lies outside its query cohort\n",
     "published": false,
     "durable_validation": {
       "ok": true,
-      "checked_at": "2026-11-13T08:23:45Z",
+      "checked_at": "2026-11-13T16:20:09Z",
       "mode": "resumable_triplet",
       "required": true,
       "files": {
@@ -111,24 +68,24 @@
   "phases": [
     {
       "name": "discovery",
-      "started_at": "2026-11-13T08:18:08Z",
-      "finished_at": "2026-11-13T08:18:39Z",
+      "started_at": "2026-11-13T16:15:23Z",
+      "finished_at": "2026-11-13T16:15:41Z",
       "ok": true,
       "exit_code": 0,
       "error": null
     },
     {
       "name": "huggingface",
-      "started_at": "2026-11-13T08:18:39Z",
-      "finished_at": "2026-11-13T08:19:17Z",
+      "started_at": "2026-11-13T16:15:41Z",
+      "finished_at": "2026-11-13T16:16:11Z",
       "ok": true,
       "exit_code": 0,
       "error": null
     },
     {
       "name": "recent_arxiv",
-      "started_at": "2026-11-13T08:19:17Z",
-      "finished_at": "2026-11-13T08:19:17Z",
+      "started_at": "2026-11-13T16:16:11Z",
+      "finished_at": "2026-11-13T16:16:11Z",
       "ok": true,
       "exit_code": 0,
       "error": null,
@@ -140,23 +97,23 @@
     },
     {
       "name": "harvest",
-      "started_at": "2026-11-13T08:19:17Z",
-      "finished_at": "2026-11-13T08:19:18Z",
+      "started_at": "2026-11-13T16:16:11Z",
+      "finished_at": "2026-11-13T16:16:11Z",
       "ok": true,
       "exit_code": 0,
       "error": null
     },
     {
       "name": "github_candidates",
-      "started_at": "2026-11-13T08:19:28Z",
-      "finished_at": "2026-11-13T08:23:08Z",
+      "started_at": "2026-11-13T16:16:18Z",
+      "finished_at": "2026-11-13T16:19:42Z",
       "ok": false,
-      "deferred": true,
-      "error": "Stage exceeded 220 seconds; last verified records retained.",
+      "exit_code": 1,
+      "error": "Candidate phase rejected: Primary metadata lies outside its query cohort\n",
       "published": false,
       "durable_validation": {
         "ok": true,
-        "checked_at": "2026-11-13T08:23:45Z",
+        "checked_at": "2026-11-13T16:20:09Z",
         "mode": "resumable_triplet",
         "required": true,
         "files": {
@@ -169,38 +126,37 @@
     },
     {
       "name": "build",
-      "started_at": "2026-11-13T08:23:08Z",
-      "finished_at": "2026-11-13T08:23:16Z",
+      "started_at": "2026-11-13T16:19:42Z",
+      "finished_at": "2026-11-13T16:19:47Z",
       "ok": true,
       "exit_code": 0,
       "error": null
     },
     {
       "name": "validate",
-      "started_at": "2026-11-13T08:23:16Z",
-      "finished_at": "2026-11-13T08:23:34Z",
+      "started_at": "2026-11-13T16:19:47Z",
+      "finished_at": "2026-11-13T16:20:02Z",
       "ok": true,
       "exit_code": 0,
       "error": null
     }
   ],
   "warnings": [
-    "github_candidates: Stage exceeded 220 seconds; last verified records retained."
+    "github_candidates: Candidate phase rejected: Primary metadata lies outside its query cohort\n"
   ],
   "rate_limit_only": false,
-  "network_deferred_only": true,
+  "network_deferred_only": false,
   "policy": "Automated scans discover candidates and verify bibliographic metadata. Editorial approval, topic annotations, and license claims require separate source review.",
   "network_budget": {
-    "round_id": "4805097bc38548e69d23a7531fc82fd6",
+    "round_id": "c77de3ddb6da490592f668862a41326d",
     "max_requests": 180,
     "max_seconds": 360,
-    "requests_reserved": 166,
-    "responses_received": 166,
+    "requests_reserved": 165,
+    "responses_received": 165,
     "unknown_attempts": 0,
     "by_phase": {
       "discovery": 109,
       "huggingface": 32,
-      "harvest": 1,
       "github_candidates": 24
     },
     "by_provider": {
@@ -214,17 +170,17 @@
       "doc-04-10-sheets.googleusercontent.com": 1,
       "doc-0s-8k-sheets.googleusercontent.com": 1,
       "doc-04-0o-sheets.googleusercontent.com": 1,
-      "export.arxiv.org": 3,
+      "export.arxiv.org": 2,
       "arxiv.org": 2,
       "api.github.com": 24
     },
     "provider_cooldowns": {
-      "api.github.com": "2026-11-13T08:23:56.830704+00:00"
+      "api.github.com": "2026-11-13T16:20:27.084824+00:00"
     },
     "blocked_providers": [
       "api.github.com"
     ],
-    "ledger_sha256": "83c3d4c922f0e5ed0564c8e488e26bc88f9522db802f547f6ec8ad843b94b17e",
+    "ledger_sha256": "e56e5a997f0a540ce2b8c630305ee980190135bfe2e3103caee0397e93cb3b4d",
     "count_boundary": "Reservations are persisted before I/O; interrupted attempts remain conservatively charged. HTTP status observation does not establish complete or validated content."
   }
 }

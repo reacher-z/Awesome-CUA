@@ -1,10 +1,10 @@
 {
-  "id": "scan:2026-11-13T16:15:22Z",
+  "id": "scan:2026-11-14T00:32:58Z",
   "schema_version": 1,
   "status": "partial",
-  "started_at": "2026-11-13T16:15:22Z",
-  "finished_at": "2026-11-13T16:20:10Z",
-  "run_url": "https://github.com/reacher-z/Awesome-CUA/actions/runs/43460766237",
+  "started_at": "2026-11-14T00:32:58Z",
+  "finished_at": "2026-11-14T00:37:47Z",
+  "run_url": "https://github.com/reacher-z/Awesome-CUA/actions/runs/43534870038",
   "schedule": {
     "timezone": "UTC",
     "times_local": [
@@ -23,16 +23,35 @@
     "candidates": 9835
   },
   "after": {
-    "resources": 6545,
-    "bibliographic_records": 2863,
-    "arxiv_archive_records": 4171,
+    "resources": 6548,
+    "bibliographic_records": 2866,
+    "arxiv_archive_records": 4174,
     "excluded_records": 1308,
     "curated_papers": 1718,
     "curated_resources": 3629,
-    "candidates": 9835
+    "candidates": 9841
   },
-  "new_papers": [],
-  "new_candidate_count": 0,
+  "new_papers": [
+    {
+      "id": "arxiv:1810.02890",
+      "name": "HG-DAgger: Interactive Imitation Learning with Human Experts",
+      "url": "https://arxiv.org/abs/1810.02890",
+      "review_status": "metadata_verified"
+    },
+    {
+      "id": "arxiv:2510.06135",
+      "name": "Pushing Test-Time Scaling Limits of Deep Search with Asymmetric Verification",
+      "url": "https://arxiv.org/abs/2510.06135",
+      "review_status": "metadata_verified"
+    },
+    {
+      "id": "arxiv:2611.15600",
+      "name": "MemCredit: From Relevance to Utility for Decision-Time Memory in Long-Horizon Web Agents",
+      "url": "https://arxiv.org/abs/2611.15600",
+      "review_status": "metadata_verified"
+    }
+  ],
+  "new_candidate_count": 6,
   "pending_metadata_changes": 12,
   "source_fetches": {
     "successful": 103,
@@ -43,18 +62,18 @@
     "successful": 32,
     "total": 32,
     "unique_identifiers": 1512,
-    "new_candidates": 0
+    "new_candidates": 2
   },
   "candidate_observations": {
-    "started_at": "2026-11-13T16:16:18Z",
-    "finished_at": "2026-11-13T16:19:42Z",
+    "started_at": "2026-11-14T00:33:59Z",
+    "finished_at": "2026-11-14T00:37:16Z",
     "ok": false,
     "exit_code": 1,
     "error": "Candidate phase rejected: Primary metadata lies outside its query cohort\n",
     "published": false,
     "durable_validation": {
       "ok": true,
-      "checked_at": "2026-11-13T16:20:09Z",
+      "checked_at": "2026-11-14T00:37:46Z",
       "mode": "resumable_triplet",
       "required": true,
       "files": {
@@ -68,52 +87,53 @@
   "phases": [
     {
       "name": "discovery",
-      "started_at": "2026-11-13T16:15:23Z",
-      "finished_at": "2026-11-13T16:15:41Z",
+      "started_at": "2026-11-14T00:32:59Z",
+      "finished_at": "2026-11-14T00:33:16Z",
       "ok": true,
       "exit_code": 0,
       "error": null
     },
     {
       "name": "huggingface",
-      "started_at": "2026-11-13T16:15:41Z",
-      "finished_at": "2026-11-13T16:16:11Z",
+      "started_at": "2026-11-14T00:33:16Z",
+      "finished_at": "2026-11-14T00:33:47Z",
       "ok": true,
       "exit_code": 0,
       "error": null
     },
     {
       "name": "recent_arxiv",
-      "started_at": "2026-11-13T16:16:11Z",
-      "finished_at": "2026-11-13T16:16:11Z",
+      "started_at": "2026-11-14T00:33:47Z",
+      "finished_at": "2026-11-14T00:33:48Z",
       "ok": true,
       "exit_code": 0,
       "error": null,
       "complete": true,
-      "new_count": 0,
+      "new_count": 1,
       "warnings": [],
-      "cache_used": true,
-      "source_retrieved_at": "2026-11-13T00:36:06Z"
+      "cache_used": false,
+      "rate_limited": false,
+      "deferred": false
     },
     {
       "name": "harvest",
-      "started_at": "2026-11-13T16:16:11Z",
-      "finished_at": "2026-11-13T16:16:11Z",
+      "started_at": "2026-11-14T00:33:48Z",
+      "finished_at": "2026-11-14T00:33:51Z",
       "ok": true,
       "exit_code": 0,
       "error": null
     },
     {
       "name": "github_candidates",
-      "started_at": "2026-11-13T16:16:18Z",
-      "finished_at": "2026-11-13T16:19:42Z",
+      "started_at": "2026-11-14T00:33:59Z",
+      "finished_at": "2026-11-14T00:37:16Z",
       "ok": false,
       "exit_code": 1,
       "error": "Candidate phase rejected: Primary metadata lies outside its query cohort\n",
       "published": false,
       "durable_validation": {
         "ok": true,
-        "checked_at": "2026-11-13T16:20:09Z",
+        "checked_at": "2026-11-14T00:37:46Z",
         "mode": "resumable_triplet",
         "required": true,
         "files": {
@@ -126,16 +146,16 @@
     },
     {
       "name": "build",
-      "started_at": "2026-11-13T16:19:42Z",
-      "finished_at": "2026-11-13T16:19:47Z",
+      "started_at": "2026-11-14T00:37:16Z",
+      "finished_at": "2026-11-14T00:37:22Z",
       "ok": true,
       "exit_code": 0,
       "error": null
     },
     {
       "name": "validate",
-      "started_at": "2026-11-13T16:19:47Z",
-      "finished_at": "2026-11-13T16:20:02Z",
+      "started_at": "2026-11-14T00:37:22Z",
+      "finished_at": "2026-11-14T00:37:37Z",
       "ok": true,
       "exit_code": 0,
       "error": null
@@ -148,15 +168,17 @@
   "network_deferred_only": false,
   "policy": "Automated scans discover candidates and verify bibliographic metadata. Editorial approval, topic annotations, and license claims require separate source review.",
   "network_budget": {
-    "round_id": "c77de3ddb6da490592f668862a41326d",
+    "round_id": "e653b6774f624f879346c04a61e60213",
     "max_requests": 180,
     "max_seconds": 360,
-    "requests_reserved": 165,
-    "responses_received": 165,
+    "requests_reserved": 167,
+    "responses_received": 167,
     "unknown_attempts": 0,
     "by_phase": {
       "discovery": 109,
       "huggingface": 32,
+      "recent_arxiv": 1,
+      "harvest": 1,
       "github_candidates": 24
     },
     "by_provider": {
@@ -170,17 +192,17 @@
       "doc-04-10-sheets.googleusercontent.com": 1,
       "doc-0s-8k-sheets.googleusercontent.com": 1,
       "doc-04-0o-sheets.googleusercontent.com": 1,
-      "export.arxiv.org": 2,
+      "export.arxiv.org": 4,
       "arxiv.org": 2,
       "api.github.com": 24
     },
     "provider_cooldowns": {
-      "api.github.com": "2026-11-13T16:20:27.084824+00:00"
+      "api.github.com": "2026-11-14T00:38:01.347718+00:00"
     },
     "blocked_providers": [
       "api.github.com"
     ],
-    "ledger_sha256": "e56e5a997f0a540ce2b8c630305ee980190135bfe2e3103caee0397e93cb3b4d",
+    "ledger_sha256": "827578be2b74b53c9fe20bc1a380b77a405bf383e990690aeb64da808f92a18f",
     "count_boundary": "Reservations are persisted before I/O; interrupted attempts remain conservatively charged. HTTP status observation does not establish complete or validated content."
   }
 }

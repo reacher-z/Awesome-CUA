@@ -5,7 +5,7 @@
 Bibliographic records from arXiv and retained publication sources. Metadata-only entries await relevance review. Discovery includes historical references and adjacent work.
 Dates retain their recorded precision. Explicit arXiv scope exclusions are listed in the [scope-decision ledger](../data/exclusion-status.json). The [arXiv archive](../data/papers.jsonl) and [publication observations](../data/publications.jsonl) retain their separate source facts.
 
-**Years:** [2026](#2026) (1,402; 879 ⭐) · [2025](#2025) (737; 514 ⭐) · [2024](#2024) (447; 214 ⭐) · [2023](#2023) (200; 56 ⭐) · [2022](#2022) (49; 16 ⭐) · [2021](#2021) (24; 13 ⭐) · [2020](#2020) (16; 7 ⭐) · [2019](#2019) (9; 2 ⭐) · [2018](#2018) (10; 7 ⭐) · [2017](#2017) (9; 3 ⭐) · [2016](#2016) (5; 2 ⭐) · [2015](#2015) (1; 0 ⭐) · [2013](#2013) (2; 0 ⭐) · [2010](#2010) (1; 1 ⭐) · [2009](#2009) (1; 1 ⭐) · [2007](#2007) (2; 2 ⭐) · [1991](#1991) (1; 1 ⭐)
+**Years:** [2026](#2026) (1,403; 879 ⭐) · [2025](#2025) (738; 514 ⭐) · [2024](#2024) (447; 214 ⭐) · [2023](#2023) (200; 56 ⭐) · [2022](#2022) (49; 16 ⭐) · [2021](#2021) (24; 13 ⭐) · [2020](#2020) (16; 7 ⭐) · [2019](#2019) (9; 2 ⭐) · [2018](#2018) (11; 7 ⭐) · [2017](#2017) (9; 3 ⭐) · [2016](#2016) (5; 2 ⭐) · [2015](#2015) (1; 0 ⭐) · [2013](#2013) (2; 0 ⭐) · [2010](#2010) (1; 1 ⭐) · [2009](#2009) (1; 1 ⭐) · [2007](#2007) (2; 2 ⭐) · [1991](#1991) (1; 1 ⭐)
 
 ⭐ marks papers with an editorial relevance review; their topics link to the [topic hubs](topics.md). Other rows are bibliographic metadata only.
 
@@ -16,6 +16,7 @@ Dates retain their recorded precision. Explicit arXiv scope exclusions are liste
 | 2026-11-12 | [Scale-Induced Semantic Shift in Visual Prompt Injection Against VLMs and Web Agents](https://arxiv.org/abs/2611.16744) | metadata |  |
 | 2026-11-12 | [MobileProbe: Adaptive Security Evaluation of Mobile Agents via Trajectory-Aware Injection](https://arxiv.org/abs/2611.16693) | metadata |  |
 | 2026-11-11 | [Trained on What Screen Readers Cannot Read: Accessibility Debt in the GUI Corpora Behind Computer-Use Agents](https://arxiv.org/abs/2611.16107) | metadata |  |
+| 2026-11-11 | [MemCredit: From Relevance to Utility for Decision-Time Memory in Long-Horizon Web Agents](https://arxiv.org/abs/2611.15600) | metadata |  |
 | 2026-11-11 | [GuardianAgentFlow: Multi-Agent Coordination for Web Privacy Protection](https://arxiv.org/abs/2611.15097) | metadata |  |
 | 2026-11-10 | [Rational Use of Time for Social Coordination in Humans and AI](https://arxiv.org/abs/2611.14766) | metadata |  |
 | 2026-11-10 | [A Cross-Scenario Survey and Analysis of Self-Evolving Multimodal Agents](https://arxiv.org/abs/2611.14256) | metadata |  |
@@ -1598,6 +1599,7 @@ Dates retain their recorded precision. Explicit arXiv scope exclusions are liste
 | 2025-10-09 | [ReInAgent: A Context-Aware GUI Agent Enabling Human-in-the-Loop Mobile Task Navigation](https://arxiv.org/abs/2510.07988) | ⭐ reviewed | [human-in-the-loop](topics/human-in-the-loop.md), [memory](topics/memory.md), [mobile-navigation](topics/mobile-navigation.md) |
 | 2025-10-09 | [Invisible to Humans, Triggered by Agents: Stealthy Jailbreak Attacks on Mobile Vision-Language Agents](https://arxiv.org/abs/2510.07809) | ⭐ reviewed | [mobile-navigation](topics/mobile-navigation.md), [robustness](topics/robustness.md), [safety-security](topics/safety-security.md) |
 | 2025-10-08 | [Your Harness is Not Secure: Benchmarking Real-world Threat of Command Line Interface Agent](https://arxiv.org/abs/2510.06607) | ⭐ reviewed | [evaluation](topics/evaluation.md), [safety-security](topics/safety-security.md), [sandbox](topics/sandbox.md) |
+| 2025-10-07 | [Pushing Test-Time Scaling Limits of Deep Search with Asymmetric Verification](https://arxiv.org/abs/2510.06135) | metadata |  |
 | 2025-10-07 | [Presenting a Paper is an Art: Self-Improvement Aesthetic Agents for Academic Presentations](https://arxiv.org/abs/2510.05571) | metadata |  |
 | 2025-10-07 | [Agent+P: Guiding UI Agents via Symbolic Planning](https://arxiv.org/abs/2510.06042) | ⭐ reviewed | [long-horizon](topics/long-horizon.md), [mobile-navigation](topics/mobile-navigation.md), [planning](topics/planning.md) |
 | 2025-10-06 | [Watch and Learn: Learning to Use Computers from Online Videos](https://arxiv.org/abs/2510.04673) | ⭐ reviewed | [action-prediction](topics/action-prediction.md), [data-generation](topics/data-generation.md), [video](topics/video.md) |
@@ -2939,6 +2941,7 @@ Dates retain their recorded precision. Explicit arXiv scope exclusions are liste
 | --- | --- | --- | --- |
 | 2018-12-30 | [A Systematic Literature Review of Automated Techniques for Functional GUI Testing of Mobile Applications](https://arxiv.org/abs/1812.11470) | ⭐ reviewed | [automation](topics/automation.md), [evaluation](topics/evaluation.md), [survey](topics/survey.md) |
 | 2018-12-21 | [Learning to Navigate the Web](https://arxiv.org/abs/1812.09195) | ⭐ reviewed | [planning](topics/planning.md), [reinforcement-learning](topics/reinforcement-learning.md), [web-navigation](topics/web-navigation.md) |
+| 2018-10-05 | [HG-DAgger: Interactive Imitation Learning with Human Experts](https://arxiv.org/abs/1810.02890) | metadata |  |
 | 2018-08-28 | [Mapping Natural Language Commands to Web Elements](https://arxiv.org/abs/1808.09132) | ⭐ reviewed | [data-generation](topics/data-generation.md), [evaluation](topics/evaluation.md), [grounding](topics/grounding.md) |
 | 2018-06-04 | [NRTR: A No-Recurrence Sequence-to-Sequence Model For Scene Text Recognition](https://arxiv.org/abs/1806.00926) | metadata |  |
 | 2018-06 | [Kite: Building Conversational Bots from Mobile Apps](https://doi.org/10.1145/3210240.3210339) | ⭐ reviewed | [human-in-the-loop](topics/human-in-the-loop.md), [mobile-navigation](topics/mobile-navigation.md), [workflow](topics/workflow.md) |

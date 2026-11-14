@@ -1,10 +1,10 @@
 {
-  "id": "scan:2026-11-14T00:32:58Z",
+  "id": "scan:2026-11-14T08:15:56Z",
   "schema_version": 1,
   "status": "partial",
-  "started_at": "2026-11-14T00:32:58Z",
-  "finished_at": "2026-11-14T00:37:47Z",
-  "run_url": "https://github.com/reacher-z/Awesome-CUA/actions/runs/43534870038",
+  "started_at": "2026-11-14T08:15:56Z",
+  "finished_at": "2026-11-14T08:21:55Z",
+  "run_url": "https://github.com/reacher-z/Awesome-CUA/actions/runs/43574950181",
   "schedule": {
     "timezone": "UTC",
     "times_local": [
@@ -14,15 +14,6 @@
     ]
   },
   "before": {
-    "resources": 6545,
-    "bibliographic_records": 2863,
-    "arxiv_archive_records": 4171,
-    "excluded_records": 1308,
-    "curated_papers": 1718,
-    "curated_resources": 3629,
-    "candidates": 9835
-  },
-  "after": {
     "resources": 6548,
     "bibliographic_records": 2866,
     "arxiv_archive_records": 4174,
@@ -31,27 +22,24 @@
     "curated_resources": 3629,
     "candidates": 9841
   },
+  "after": {
+    "resources": 6549,
+    "bibliographic_records": 2867,
+    "arxiv_archive_records": 4175,
+    "excluded_records": 1308,
+    "curated_papers": 1718,
+    "curated_resources": 3629,
+    "candidates": 9842
+  },
   "new_papers": [
     {
-      "id": "arxiv:1810.02890",
-      "name": "HG-DAgger: Interactive Imitation Learning with Human Experts",
-      "url": "https://arxiv.org/abs/1810.02890",
-      "review_status": "metadata_verified"
-    },
-    {
-      "id": "arxiv:2510.06135",
-      "name": "Pushing Test-Time Scaling Limits of Deep Search with Asymmetric Verification",
-      "url": "https://arxiv.org/abs/2510.06135",
-      "review_status": "metadata_verified"
-    },
-    {
-      "id": "arxiv:2611.15600",
-      "name": "MemCredit: From Relevance to Utility for Decision-Time Memory in Long-Horizon Web Agents",
-      "url": "https://arxiv.org/abs/2611.15600",
+      "id": "arxiv:2608.18050",
+      "name": "StagedWorkspace: A Versioned Workspace for Knowledge-Work Agents",
+      "url": "https://arxiv.org/abs/2608.18050",
       "review_status": "metadata_verified"
     }
   ],
-  "new_candidate_count": 6,
+  "new_candidate_count": 1,
   "pending_metadata_changes": 12,
   "source_fetches": {
     "successful": 103,
@@ -61,19 +49,19 @@
   "paper_searches": {
     "successful": 32,
     "total": 32,
-    "unique_identifiers": 1512,
-    "new_candidates": 2
+    "unique_identifiers": 1513,
+    "new_candidates": 1
   },
   "candidate_observations": {
-    "started_at": "2026-11-14T00:33:59Z",
-    "finished_at": "2026-11-14T00:37:16Z",
+    "started_at": "2026-11-14T08:17:29Z",
+    "finished_at": "2026-11-14T08:21:09Z",
     "ok": false,
-    "exit_code": 1,
-    "error": "Candidate phase rejected: Primary metadata lies outside its query cohort\n",
+    "deferred": true,
+    "error": "Stage exceeded 220 seconds; last verified records retained.",
     "published": false,
     "durable_validation": {
       "ok": true,
-      "checked_at": "2026-11-14T00:37:46Z",
+      "checked_at": "2026-11-14T08:21:53Z",
       "mode": "resumable_triplet",
       "required": true,
       "files": {
@@ -87,53 +75,52 @@
   "phases": [
     {
       "name": "discovery",
-      "started_at": "2026-11-14T00:32:59Z",
-      "finished_at": "2026-11-14T00:33:16Z",
+      "started_at": "2026-11-14T08:15:57Z",
+      "finished_at": "2026-11-14T08:16:24Z",
       "ok": true,
       "exit_code": 0,
       "error": null
     },
     {
       "name": "huggingface",
-      "started_at": "2026-11-14T00:33:16Z",
-      "finished_at": "2026-11-14T00:33:47Z",
+      "started_at": "2026-11-14T08:16:24Z",
+      "finished_at": "2026-11-14T08:17:17Z",
       "ok": true,
       "exit_code": 0,
       "error": null
     },
     {
       "name": "recent_arxiv",
-      "started_at": "2026-11-14T00:33:47Z",
-      "finished_at": "2026-11-14T00:33:48Z",
+      "started_at": "2026-11-14T08:17:17Z",
+      "finished_at": "2026-11-14T08:17:17Z",
       "ok": true,
       "exit_code": 0,
       "error": null,
       "complete": true,
-      "new_count": 1,
+      "new_count": 0,
       "warnings": [],
-      "cache_used": false,
-      "rate_limited": false,
-      "deferred": false
+      "cache_used": true,
+      "source_retrieved_at": "2026-11-14T00:33:47Z"
     },
     {
       "name": "harvest",
-      "started_at": "2026-11-14T00:33:48Z",
-      "finished_at": "2026-11-14T00:33:51Z",
+      "started_at": "2026-11-14T08:17:17Z",
+      "finished_at": "2026-11-14T08:17:18Z",
       "ok": true,
       "exit_code": 0,
       "error": null
     },
     {
       "name": "github_candidates",
-      "started_at": "2026-11-14T00:33:59Z",
-      "finished_at": "2026-11-14T00:37:16Z",
+      "started_at": "2026-11-14T08:17:29Z",
+      "finished_at": "2026-11-14T08:21:09Z",
       "ok": false,
-      "exit_code": 1,
-      "error": "Candidate phase rejected: Primary metadata lies outside its query cohort\n",
+      "deferred": true,
+      "error": "Stage exceeded 220 seconds; last verified records retained.",
       "published": false,
       "durable_validation": {
         "ok": true,
-        "checked_at": "2026-11-14T00:37:46Z",
+        "checked_at": "2026-11-14T08:21:53Z",
         "mode": "resumable_triplet",
         "required": true,
         "files": {
@@ -146,40 +133,39 @@
     },
     {
       "name": "build",
-      "started_at": "2026-11-14T00:37:16Z",
-      "finished_at": "2026-11-14T00:37:22Z",
+      "started_at": "2026-11-14T08:21:09Z",
+      "finished_at": "2026-11-14T08:21:17Z",
       "ok": true,
       "exit_code": 0,
       "error": null
     },
     {
       "name": "validate",
-      "started_at": "2026-11-14T00:37:22Z",
-      "finished_at": "2026-11-14T00:37:37Z",
+      "started_at": "2026-11-14T08:21:17Z",
+      "finished_at": "2026-11-14T08:21:41Z",
       "ok": true,
       "exit_code": 0,
       "error": null
     }
   ],
   "warnings": [
-    "github_candidates: Candidate phase rejected: Primary metadata lies outside its query cohort\n"
+    "github_candidates: Stage exceeded 220 seconds; last verified records retained."
   ],
   "rate_limit_only": false,
-  "network_deferred_only": false,
+  "network_deferred_only": true,
   "policy": "Automated scans discover candidates and verify bibliographic metadata. Editorial approval, topic annotations, and license claims require separate source review.",
   "network_budget": {
-    "round_id": "e653b6774f624f879346c04a61e60213",
+    "round_id": "a0edf1fd835e4f4195d80654636de5ee",
     "max_requests": 180,
     "max_seconds": 360,
-    "requests_reserved": 167,
-    "responses_received": 167,
+    "requests_reserved": 165,
+    "responses_received": 165,
     "unknown_attempts": 0,
     "by_phase": {
       "discovery": 109,
       "huggingface": 32,
-      "recent_arxiv": 1,
       "harvest": 1,
-      "github_candidates": 24
+      "github_candidates": 23
     },
     "by_provider": {
       "raw.githubusercontent.com": 66,
@@ -192,17 +178,13 @@
       "doc-04-10-sheets.googleusercontent.com": 1,
       "doc-0s-8k-sheets.googleusercontent.com": 1,
       "doc-04-0o-sheets.googleusercontent.com": 1,
-      "export.arxiv.org": 4,
+      "export.arxiv.org": 3,
       "arxiv.org": 2,
-      "api.github.com": 24
+      "api.github.com": 23
     },
-    "provider_cooldowns": {
-      "api.github.com": "2026-11-14T00:38:01.347718+00:00"
-    },
-    "blocked_providers": [
-      "api.github.com"
-    ],
-    "ledger_sha256": "827578be2b74b53c9fe20bc1a380b77a405bf383e990690aeb64da808f92a18f",
+    "provider_cooldowns": {},
+    "blocked_providers": [],
+    "ledger_sha256": "f44b25972c8fb4d2d6cb27e8341950ba20f7cbc677c0ece9c349b40f84641b03",
     "count_boundary": "Reservations are persisted before I/O; interrupted attempts remain conservatively charged. HTTP status observation does not establish complete or validated content."
   }
 }

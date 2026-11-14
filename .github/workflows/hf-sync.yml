@@ -40,7 +40,7 @@ jobs:
             *) echo "::error::no Hugging Face mirror is defined for $GITHUB_REPOSITORY"; exit 1 ;;
           esac
 
-      - uses: actions/setup-python@ece7cb06caefa5fff74198d8649806c4678c61a1 # v6.3.0
+      - uses: actions/setup-python@6d4fd22b20465ccc0f7354476588e8df7c9ca0e0 # v7.1.0
         if: env.HF_SYNC_ENABLED == 'true'
         with:
           python-version: '3.12'
@@ -934,7 +934,7 @@ jobs:
                       *) echo "::error::no Hugging Face mirror is defined for $GITHUB_REPOSITORY"; exit 1 ;;
                     esac
 
-                - uses: actions/setup-python@ece7cb06caefa5fff74198d8649806c4678c61a1 # v6.3.0
+                - uses: actions/setup-python@6d4fd22b20465ccc0f7354476588e8df7c9ca0e0 # v7.1.0
                   with:
                     python-version: '3.12'
 

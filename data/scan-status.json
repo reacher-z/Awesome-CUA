@@ -1,10 +1,10 @@
 {
-  "id": "scan:2026-11-14T08:15:56Z",
+  "id": "scan:2026-11-14T16:13:30Z",
   "schema_version": 1,
   "status": "partial",
-  "started_at": "2026-11-14T08:15:56Z",
-  "finished_at": "2026-11-14T08:21:55Z",
-  "run_url": "https://github.com/reacher-z/Awesome-CUA/actions/runs/43574950181",
+  "started_at": "2026-11-14T16:13:30Z",
+  "finished_at": "2026-11-14T16:19:23Z",
+  "run_url": "https://github.com/reacher-z/Awesome-CUA/actions/runs/43614398719",
   "schedule": {
     "timezone": "UTC",
     "times_local": [
@@ -14,13 +14,13 @@
     ]
   },
   "before": {
-    "resources": 6548,
-    "bibliographic_records": 2866,
-    "arxiv_archive_records": 4174,
+    "resources": 6549,
+    "bibliographic_records": 2867,
+    "arxiv_archive_records": 4175,
     "excluded_records": 1308,
     "curated_papers": 1718,
     "curated_resources": 3629,
-    "candidates": 9841
+    "candidates": 9842
   },
   "after": {
     "resources": 6549,
@@ -31,15 +31,8 @@
     "curated_resources": 3629,
     "candidates": 9842
   },
-  "new_papers": [
-    {
-      "id": "arxiv:2608.18050",
-      "name": "StagedWorkspace: A Versioned Workspace for Knowledge-Work Agents",
-      "url": "https://arxiv.org/abs/2608.18050",
-      "review_status": "metadata_verified"
-    }
-  ],
-  "new_candidate_count": 1,
+  "new_papers": [],
+  "new_candidate_count": 0,
   "pending_metadata_changes": 12,
   "source_fetches": {
     "successful": 103,
@@ -50,18 +43,18 @@
     "successful": 32,
     "total": 32,
     "unique_identifiers": 1513,
-    "new_candidates": 1
+    "new_candidates": 0
   },
   "candidate_observations": {
-    "started_at": "2026-11-14T08:17:29Z",
-    "finished_at": "2026-11-14T08:21:09Z",
+    "started_at": "2026-11-14T16:14:59Z",
+    "finished_at": "2026-11-14T16:18:39Z",
     "ok": false,
     "deferred": true,
     "error": "Stage exceeded 220 seconds; last verified records retained.",
     "published": false,
     "durable_validation": {
       "ok": true,
-      "checked_at": "2026-11-14T08:21:53Z",
+      "checked_at": "2026-11-14T16:19:22Z",
       "mode": "resumable_triplet",
       "required": true,
       "files": {
@@ -75,24 +68,24 @@
   "phases": [
     {
       "name": "discovery",
-      "started_at": "2026-11-14T08:15:57Z",
-      "finished_at": "2026-11-14T08:16:24Z",
+      "started_at": "2026-11-14T16:13:31Z",
+      "finished_at": "2026-11-14T16:13:58Z",
       "ok": true,
       "exit_code": 0,
       "error": null
     },
     {
       "name": "huggingface",
-      "started_at": "2026-11-14T08:16:24Z",
-      "finished_at": "2026-11-14T08:17:17Z",
+      "started_at": "2026-11-14T16:13:58Z",
+      "finished_at": "2026-11-14T16:14:47Z",
       "ok": true,
       "exit_code": 0,
       "error": null
     },
     {
       "name": "recent_arxiv",
-      "started_at": "2026-11-14T08:17:17Z",
-      "finished_at": "2026-11-14T08:17:17Z",
+      "started_at": "2026-11-14T16:14:47Z",
+      "finished_at": "2026-11-14T16:14:47Z",
       "ok": true,
       "exit_code": 0,
       "error": null,
@@ -104,23 +97,23 @@
     },
     {
       "name": "harvest",
-      "started_at": "2026-11-14T08:17:17Z",
-      "finished_at": "2026-11-14T08:17:18Z",
+      "started_at": "2026-11-14T16:14:47Z",
+      "finished_at": "2026-11-14T16:14:47Z",
       "ok": true,
       "exit_code": 0,
       "error": null
     },
     {
       "name": "github_candidates",
-      "started_at": "2026-11-14T08:17:29Z",
-      "finished_at": "2026-11-14T08:21:09Z",
+      "started_at": "2026-11-14T16:14:59Z",
+      "finished_at": "2026-11-14T16:18:39Z",
       "ok": false,
       "deferred": true,
       "error": "Stage exceeded 220 seconds; last verified records retained.",
       "published": false,
       "durable_validation": {
         "ok": true,
-        "checked_at": "2026-11-14T08:21:53Z",
+        "checked_at": "2026-11-14T16:19:22Z",
         "mode": "resumable_triplet",
         "required": true,
         "files": {
@@ -133,16 +126,16 @@
     },
     {
       "name": "build",
-      "started_at": "2026-11-14T08:21:09Z",
-      "finished_at": "2026-11-14T08:21:17Z",
+      "started_at": "2026-11-14T16:18:39Z",
+      "finished_at": "2026-11-14T16:18:47Z",
       "ok": true,
       "exit_code": 0,
       "error": null
     },
     {
       "name": "validate",
-      "started_at": "2026-11-14T08:21:17Z",
-      "finished_at": "2026-11-14T08:21:41Z",
+      "started_at": "2026-11-14T16:18:47Z",
+      "finished_at": "2026-11-14T16:19:10Z",
       "ok": true,
       "exit_code": 0,
       "error": null
@@ -155,7 +148,7 @@
   "network_deferred_only": true,
   "policy": "Automated scans discover candidates and verify bibliographic metadata. Editorial approval, topic annotations, and license claims require separate source review.",
   "network_budget": {
-    "round_id": "a0edf1fd835e4f4195d80654636de5ee",
+    "round_id": "79d7ee44972e478aa967e36ac81e6203",
     "max_requests": 180,
     "max_seconds": 360,
     "requests_reserved": 165,
@@ -164,8 +157,7 @@
     "by_phase": {
       "discovery": 109,
       "huggingface": 32,
-      "harvest": 1,
-      "github_candidates": 23
+      "github_candidates": 24
     },
     "by_provider": {
       "raw.githubusercontent.com": 66,
@@ -178,13 +170,17 @@
       "doc-04-10-sheets.googleusercontent.com": 1,
       "doc-0s-8k-sheets.googleusercontent.com": 1,
       "doc-04-0o-sheets.googleusercontent.com": 1,
-      "export.arxiv.org": 3,
+      "export.arxiv.org": 2,
       "arxiv.org": 2,
-      "api.github.com": 23
+      "api.github.com": 24
     },
-    "provider_cooldowns": {},
-    "blocked_providers": [],
-    "ledger_sha256": "f44b25972c8fb4d2d6cb27e8341950ba20f7cbc677c0ece9c349b40f84641b03",
+    "provider_cooldowns": {
+      "api.github.com": "2026-11-14T16:19:35.814594+00:00"
+    },
+    "blocked_providers": [
+      "api.github.com"
+    ],
+    "ledger_sha256": "5b85ac46023f16fe9246a764fd54b93fb3b9c5acb398983a5dd907078e405dc3",
     "count_boundary": "Reservations are persisted before I/O; interrupted attempts remain conservatively charged. HTTP status observation does not establish complete or validated content."
   }
 }

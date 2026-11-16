@@ -1,7 +1,7 @@
 {
-  "as_of_utc": "2026-11-16T08:33:02Z",
-  "total_records": 6556,
-  "curated_records": 5347,
+  "as_of_utc": "2026-11-16T20:51:51Z",
+  "total_records": 6557,
+  "curated_records": 5348,
   "bibliographic_records": 2927,
   "arxiv_active_records": 2874,
   "non_arxiv_bibliographic_records": 53,
@@ -2840,7 +2840,7 @@
     "dataset": 278,
     "framework": 672,
     "infrastructure": 122,
-    "learning": 38,
+    "learning": 39,
     "model": 475,
     "paper": 2890,
     "product": 75,
@@ -2856,7 +2856,7 @@
     "linux": 550,
     "macos": 597,
     "unspecified": 825,
-    "web": 2746,
+    "web": 2747,
     "windows": 587
   },
   "curated_by_kind_and_environment": {
@@ -2930,7 +2930,7 @@
       "linux": 4,
       "macos": 5,
       "unspecified": 1,
-      "web": 30,
+      "web": 31,
       "windows": 3
     },
     "model": {

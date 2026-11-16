@@ -2,9 +2,9 @@
 
 [Home](../../README.md) · [All topics](../topics.md) · [Full arXiv bibliography](../papers.md)
 
-249 source-reviewed resources tagged `observability`. Curated metadata; unknown facts are shown as —.
+250 source-reviewed resources tagged `observability`. Curated metadata; unknown facts are shown as —.
 
-**Contents:** [Benchmarks (14)](#benchmarks) · [Datasets (10)](#datasets) · [Agents (20)](#agents) · [Frameworks (41)](#frameworks) · [Tools (78)](#tools) · [Infrastructure (7)](#infrastructure) · [Products (5)](#products) · [Learning resources (1)](#learning-resources) · [Surveys (2)](#surveys) · [Papers (71)](#papers)
+**Contents:** [Benchmarks (14)](#benchmarks) · [Datasets (10)](#datasets) · [Agents (20)](#agents) · [Frameworks (41)](#frameworks) · [Tools (78)](#tools) · [Infrastructure (7)](#infrastructure) · [Products (5)](#products) · [Learning resources (2)](#learning-resources) · [Surveys (2)](#surveys) · [Papers (71)](#papers)
 
 ## Benchmarks
 
@@ -222,6 +222,7 @@ All entries in this section: web.
 
 | Resource | License | Description | Evidence |
 | --- | --- | --- | --- |
+| [Advancing computer-use agents for healthcare teams](https://openai.com/index/advancing-computer-use-for-healthcare-teams/) | — | Healthcare computer-use examples for EHR and payer-portal workflows, covering prior authorization, referrals, discharge planning, human review and action auditing. | [✓ 2026‑11‑16](https://openai.com/index/advancing-computer-use-for-healthcare-teams/) |
 | [Predicate SDK Playground](https://github.com/PredicateSystems/predicate-sdk-playground) | — | A collection of runnable browser-agent demos using semantic page snapshots and assertions, with logs, screenshots and token accounting for evaluation. | [✓ 2026‑11‑09](https://raw.githubusercontent.com/PredicateSystems/predicate-sdk-playground/HEAD/README.md) |
 
 ## Surveys

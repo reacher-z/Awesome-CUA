@@ -201777,5 +201777,31 @@
     "reviewed_at": "2026-11-10T05:24:09Z",
     "read_basis": "Scan-backlog review 2026-11-10: primary source (README) fetched 2026-11-10T05:00:54Z; new scan find decided by a Claude reviewer agent from primary sources; independent verifier agent (claude-reviewer + verifier); deterministic checker on quotes, vocabulary and summary rules.",
     "reviewed_sha256": "92c6b362bb5f14bf1517476b73b0fc329accaa94d27599316c75007cb2ae045d"
+  },
+  {
+    "name": "Advancing computer-use agents for healthcare teams",
+    "kind": "learning",
+    "url": "https://openai.com/index/advancing-computer-use-for-healthcare-teams/",
+    "environments": [
+      "web"
+    ],
+    "topics": [
+      "cross-app",
+      "workflow",
+      "industry",
+      "human-in-the-loop",
+      "observability",
+      "evaluation"
+    ],
+    "summary": "Healthcare computer-use examples for EHR and payer-portal workflows, covering prior authorization, referrals, discharge planning, human review and action auditing.",
+    "scope": "core",
+    "verify_terms": [
+      "Advancing computer-use agents for healthcare teams"
+    ],
+    "editorial_reviewed": true,
+    "reviewed_sha256": "44438604f40e90335e71b80ee7938931576709234b52ae5a7fca2ffd58c07461",
+    "reviewed_at": "2026-11-16T20:52:10Z",
+    "read_basis": "Read the complete OpenAI article and retained its first-party HTML using curl_cffi with a Chrome TLS profile after the default urllib client received HTTP 403.",
+    "notes": "Published November 16, 2026. The MRI authorization demonstration uses synthetic patient data."
   }
 ]

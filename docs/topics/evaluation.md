@@ -2,9 +2,9 @@
 
 [Home](../../README.md) · [All topics](../topics.md) · [Full arXiv bibliography](../papers.md)
 
-1,541 source-reviewed resources tagged `evaluation`. Curated metadata; unknown facts are shown as —.
+1,542 source-reviewed resources tagged `evaluation`. Curated metadata; unknown facts are shown as —.
 
-**Contents:** [Benchmarks (307)](#benchmarks) · [Datasets (101)](#datasets) · [Models (29)](#models) · [Agents (45)](#agents) · [Frameworks (101)](#frameworks) · [Tools (74)](#tools) · [Infrastructure (31)](#infrastructure) · [Products (5)](#products) · [Publishers (1)](#publishers) · [Learning resources (12)](#learning-resources) · [Surveys (13)](#surveys) · [Papers (822)](#papers)
+**Contents:** [Benchmarks (307)](#benchmarks) · [Datasets (101)](#datasets) · [Models (29)](#models) · [Agents (45)](#agents) · [Frameworks (101)](#frameworks) · [Tools (74)](#tools) · [Infrastructure (31)](#infrastructure) · [Products (5)](#products) · [Publishers (1)](#publishers) · [Learning resources (13)](#learning-resources) · [Surveys (13)](#surveys) · [Papers (822)](#papers)
 
 ## Benchmarks
 
@@ -752,6 +752,7 @@ All entries in this section: cross-platform, desktop.
 | Resource | Environments | License | Description | Evidence |
 | --- | --- | --- | --- | --- |
 | [Achieving 91.4% on Android World: A New Approach to Mobile UI Automation](https://droidrun.ai/benchmark/method) | android | — | Technical article describing an Android UI agent that alternates planning with single actions, checks screen changes and uses a dedicated text editing path. It reports AndroidWorld results. | [✓ 2026‑11‑09](https://droidrun.ai/benchmark/method) |
+| [Advancing computer-use agents for healthcare teams](https://openai.com/index/advancing-computer-use-for-healthcare-teams/) | web | — | Healthcare computer-use examples for EHR and payer-portal workflows, covering prior authorization, referrals, discharge planning, human review and action auditing. | [✓ 2026‑11‑16](https://openai.com/index/advancing-computer-use-for-healthcare-teams/) |
 | [Agentic UI Testing Codelab](https://github.com/a-bhimava/agentic-ui-testing) | web | — | Hands-on developer codelab for building automated UI test suites using Antigravity CLI and Browser Use. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/a-bhimava/agentic-ui-testing/main/README.md) |
 | [Awesome Computer Use Ecosystem](https://github.com/hqhq1025/awesome-computer-use-ecosystem) | cross-platform, desktop, web | — | A curated reading list of computer-use tools for desktop and browser agents, organized by product ecosystem and capability, with a separate project catalog. | [✓ 2026‑11‑09](https://raw.githubusercontent.com/hqhq1025/awesome-computer-use-ecosystem/HEAD/README.md) |
 | [Awesome GPT-6 Astra](https://github.com/archorfight/awesome-gpt-6-astra) | cross-platform, desktop, web | — | Evidence-linked catalog of computer-use demos, evaluations, and agent workflows with primary source receipts. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/archorfight/awesome-gpt-6-astra/main/README.md) |

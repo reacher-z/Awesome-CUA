@@ -5,7 +5,7 @@
 Bibliographic records from arXiv and retained publication sources. Metadata-only entries await relevance review. Discovery includes historical references and adjacent work.
 Dates retain their recorded precision. Explicit arXiv scope exclusions are listed in the [scope-decision ledger](../data/exclusion-status.json). The [arXiv archive](../data/papers.jsonl) and [publication observations](../data/publications.jsonl) retain their separate source facts.
 
-**Years:** [2026](#2026) (1,404; 879 ⭐) · [2025](#2025) (739; 514 ⭐) · [2024](#2024) (447; 214 ⭐) · [2023](#2023) (200; 56 ⭐) · [2022](#2022) (49; 16 ⭐) · [2021](#2021) (24; 13 ⭐) · [2020](#2020) (16; 7 ⭐) · [2019](#2019) (9; 2 ⭐) · [2018](#2018) (11; 7 ⭐) · [2017](#2017) (9; 3 ⭐) · [2016](#2016) (5; 2 ⭐) · [2015](#2015) (1; 0 ⭐) · [2013](#2013) (2; 0 ⭐) · [2010](#2010) (1; 1 ⭐) · [2009](#2009) (1; 1 ⭐) · [2007](#2007) (2; 2 ⭐) · [1991](#1991) (1; 1 ⭐)
+**Years:** [2026](#2026) (1,406; 879 ⭐) · [2025](#2025) (739; 514 ⭐) · [2024](#2024) (447; 214 ⭐) · [2023](#2023) (200; 56 ⭐) · [2022](#2022) (49; 16 ⭐) · [2021](#2021) (24; 13 ⭐) · [2020](#2020) (16; 7 ⭐) · [2019](#2019) (9; 2 ⭐) · [2018](#2018) (11; 7 ⭐) · [2017](#2017) (9; 3 ⭐) · [2016](#2016) (5; 2 ⭐) · [2015](#2015) (1; 0 ⭐) · [2013](#2013) (2; 0 ⭐) · [2010](#2010) (1; 1 ⭐) · [2009](#2009) (1; 1 ⭐) · [2007](#2007) (2; 2 ⭐) · [1991](#1991) (1; 1 ⭐)
 
 ⭐ marks papers with an editorial relevance review; their topics link to the [topic hubs](topics.md). Other rows are bibliographic metadata only.
 
@@ -337,6 +337,7 @@ Dates retain their recorded precision. Explicit arXiv scope exclusions are liste
 | 2026-10-04 | [TeleTune: Evolving Agent Skills From Offline Telemetry](https://arxiv.org/abs/2610.05437) | ⭐ reviewed | [efficiency](topics/efficiency.md), [memory](topics/memory.md), [workflow](topics/workflow.md) |
 | 2026-10-04 | [TeleGen: Improving LLM-Based Web Application Generation via Runtime Telemetry](https://arxiv.org/abs/2610.04981) | metadata |  |
 | 2026-10-04 | [Scaling Verifiable Environments for Long-horizon Work Agents](https://arxiv.org/abs/2610.04906) | metadata |  |
+| 2026-10-04 | [Runtime Authorization of Self-Generated Subgoals in Long-Horizon Tool-Using AI Agents](https://arxiv.org/abs/2610.04975) | metadata |  |
 | 2026-10-04 | [Recurrent Latent Visual Search for GUI Grounding](https://arxiv.org/abs/2610.05185) | ⭐ reviewed | [efficiency](topics/efficiency.md), [grounding](topics/grounding.md), [screen-understanding](topics/screen-understanding.md) |
 | 2026-10-04 | [DynaMesh: Dynamic 3D Texture Generation](https://arxiv.org/abs/2610.05529) | metadata |  |
 | 2026-10-04 | [Code2Games: Enabling Coding Agents for Gaming World Generation](https://arxiv.org/abs/2610.05033) | metadata |  |
@@ -1245,6 +1246,7 @@ Dates retain their recorded precision. Explicit arXiv scope exclusions are liste
 | 2026-02-24 | [Turing Test on Screen: A Benchmark for Mobile GUI Agent Humanization](https://arxiv.org/abs/2604.09574) | ⭐ reviewed | [data-generation](topics/data-generation.md), [evaluation](topics/evaluation.md), [mobile-navigation](topics/mobile-navigation.md) |
 | 2026-02-24 | [Caesar: Deep Agentic Web Exploration for Creative Answer Synthesis](https://arxiv.org/abs/2604.20855) | metadata |  |
 | 2026-02-24 | [ActionEngine: From Reactive to Programmatic Web Agents via State Machine Memory](https://arxiv.org/abs/2602.20502) | ⭐ reviewed | [efficiency](topics/efficiency.md), [memory](topics/memory.md), [planning](topics/planning.md), [web-navigation](topics/web-navigation.md) |
+| 2026-02-22 | [OpenPort Protocol: A Security Governance Specification for AI Agent Tool Access](https://arxiv.org/abs/2602.20196) | metadata |  |
 | 2026-02-20 | [1D-Bench: A Benchmark for Iterative UI Code Generation with Visual Feedback in Real-World](https://arxiv.org/abs/2602.18548) | metadata |  |
 | 2026-02-19 | [Web Agents Should Use Typed Actions Instead of Click-Based Browsing](https://arxiv.org/abs/2602.17245) | ⭐ reviewed | [observability](topics/observability.md), [tool-integration](topics/tool-integration.md), [web-navigation](topics/web-navigation.md), [workflow](topics/workflow.md) |
 | 2026-02-19 | [Persona2Web: Benchmarking Personalized Web Agents for Contextual Reasoning with User History](https://arxiv.org/abs/2602.17003) | ⭐ reviewed | [evaluation](topics/evaluation.md), [memory](topics/memory.md), [web-navigation](topics/web-navigation.md) |

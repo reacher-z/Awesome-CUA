@@ -2,9 +2,9 @@
 
 [Home](../../README.md) · [All topics](../topics.md) · [Full arXiv bibliography](../papers.md)
 
-563 source-reviewed resources tagged `workflow`. Curated metadata; unknown facts are shown as —.
+564 source-reviewed resources tagged `workflow`. Curated metadata; unknown facts are shown as —.
 
-**Contents:** [Benchmarks (30)](#benchmarks) · [Datasets (9)](#datasets) · [Models (3)](#models) · [Agents (69)](#agents) · [Frameworks (143)](#frameworks) · [Tools (124)](#tools) · [Infrastructure (6)](#infrastructure) · [Products (27)](#products) · [Learning resources (10)](#learning-resources) · [Surveys (4)](#surveys) · [Papers (138)](#papers)
+**Contents:** [Benchmarks (30)](#benchmarks) · [Datasets (9)](#datasets) · [Models (3)](#models) · [Agents (69)](#agents) · [Frameworks (143)](#frameworks) · [Tools (124)](#tools) · [Infrastructure (6)](#infrastructure) · [Products (27)](#products) · [Learning resources (11)](#learning-resources) · [Surveys (4)](#surveys) · [Papers (138)](#papers)
 
 ## Benchmarks
 
@@ -461,6 +461,7 @@
 
 | Resource | Environments | License | Description | Evidence |
 | --- | --- | --- | --- | --- |
+| [Advancing computer-use agents for healthcare teams](https://openai.com/index/advancing-computer-use-for-healthcare-teams/) | web | — | Healthcare computer-use examples for EHR and payer-portal workflows, covering prior authorization, referrals, discharge planning, human review and action auditing. | [✓ 2026‑11‑16](https://openai.com/index/advancing-computer-use-for-healthcare-teams/) |
 | [AI Agent Desktop Engineering Blueprint](https://github.com/Men-Zer/ai-agent-desktop-engineering-blueprint) | cross-platform, desktop, web | — | Five-chapter architectural blueprint and comparative engineering guide for building desktop AI and computer-use agent applications. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/Men-Zer/ai-agent-desktop-engineering-blueprint/HEAD/README.md) |
 | [Amazon Nova Act Samples](https://github.com/amazon-agi-labs/nova-act-samples) | web | — | Code examples and reference applications show how to build browser workflows with Amazon Nova Act and deploy the SDK on AWS compute services. | [✓ 2026‑11‑09](https://raw.githubusercontent.com/amazon-agi-labs/nova-act-samples/HEAD/README.md) |
 | [awb-recipes](https://github.com/jeet-dhandha/awb-recipes) | web | code MIT | A collection of dated recipes for browser agents to complete tasks on logged-in sites, recording action steps, selectors, caveats and verification status. | [✓ 2026‑11‑09](https://raw.githubusercontent.com/jeet-dhandha/awb-recipes/HEAD/README.md) |

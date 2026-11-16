@@ -2,9 +2,9 @@
 
 [Home](../../README.md) · [All topics](../topics.md) · [Full arXiv bibliography](../papers.md)
 
-67 source-reviewed resources tagged `industry`. Curated metadata; unknown facts are shown as —.
+68 source-reviewed resources tagged `industry`. Curated metadata; unknown facts are shown as —.
 
-**Contents:** [Benchmarks (1)](#benchmarks) · [Models (2)](#models) · [Agents (1)](#agents) · [Tools (12)](#tools) · [Infrastructure (1)](#infrastructure) · [Products (6)](#products) · [Publishers (18)](#publishers) · [Surveys (3)](#surveys) · [Papers (23)](#papers)
+**Contents:** [Benchmarks (1)](#benchmarks) · [Models (2)](#models) · [Agents (1)](#agents) · [Tools (12)](#tools) · [Infrastructure (1)](#infrastructure) · [Products (6)](#products) · [Publishers (18)](#publishers) · [Learning resources (1)](#learning-resources) · [Surveys (3)](#surveys) · [Papers (23)](#papers)
 
 ## Benchmarks
 
@@ -93,6 +93,14 @@ All entries in this section: unspecified.
 | [Skyvern](https://www.skyvern.com/) | Publisher or product brand associated with Skyvern computer-use or browser automation offerings. | [✓ 2026‑10‑16](https://www.skyvern.com/) |
 | [Steel](https://steel.dev/) | Publisher or product brand associated with Steel computer-use or browser automation offerings. | [✓ 2026‑10‑16](https://steel.dev/) |
 | [TinyFish](https://www.tinyfish.ai/) | Publisher or product brand associated with TinyFish computer-use or browser automation offerings. | [✓ 2026‑10‑16](https://www.tinyfish.ai/) |
+
+## Learning resources
+
+All entries in this section: web.
+
+| Resource | License | Description | Evidence |
+| --- | --- | --- | --- |
+| [Advancing computer-use agents for healthcare teams](https://openai.com/index/advancing-computer-use-for-healthcare-teams/) | — | Healthcare computer-use examples for EHR and payer-portal workflows, covering prior authorization, referrals, discharge planning, human review and action auditing. | [✓ 2026‑11‑16](https://openai.com/index/advancing-computer-use-for-healthcare-teams/) |
 
 ## Surveys
 

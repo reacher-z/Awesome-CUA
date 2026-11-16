@@ -2,9 +2,9 @@
 
 [Home](../../README.md) · [All topics](../topics.md) · [Full arXiv bibliography](../papers.md)
 
-355 source-reviewed resources tagged `human-in-the-loop`. Curated metadata; unknown facts are shown as —.
+356 source-reviewed resources tagged `human-in-the-loop`. Curated metadata; unknown facts are shown as —.
 
-**Contents:** [Benchmarks (5)](#benchmarks) · [Datasets (3)](#datasets) · [Models (2)](#models) · [Agents (82)](#agents) · [Frameworks (64)](#frameworks) · [Tools (68)](#tools) · [Infrastructure (13)](#infrastructure) · [Products (10)](#products) · [Learning resources (1)](#learning-resources) · [Papers (107)](#papers)
+**Contents:** [Benchmarks (5)](#benchmarks) · [Datasets (3)](#datasets) · [Models (2)](#models) · [Agents (82)](#agents) · [Frameworks (64)](#frameworks) · [Tools (68)](#tools) · [Infrastructure (13)](#infrastructure) · [Products (10)](#products) · [Learning resources (2)](#learning-resources) · [Papers (107)](#papers)
 
 ## Benchmarks
 
@@ -299,6 +299,7 @@ All entries in this section: web.
 
 | Resource | License | Description | Evidence |
 | --- | --- | --- | --- |
+| [Advancing computer-use agents for healthcare teams](https://openai.com/index/advancing-computer-use-for-healthcare-teams/) | — | Healthcare computer-use examples for EHR and payer-portal workflows, covering prior authorization, referrals, discharge planning, human review and action auditing. | [✓ 2026‑11‑16](https://openai.com/index/advancing-computer-use-for-healthcare-teams/) |
 | [Amazon Nova Act Samples](https://github.com/amazon-agi-labs/nova-act-samples) | — | Code examples and reference applications show how to build browser workflows with Amazon Nova Act and deploy the SDK on AWS compute services. | [✓ 2026‑11‑09](https://raw.githubusercontent.com/amazon-agi-labs/nova-act-samples/HEAD/README.md) |
 
 ## Papers

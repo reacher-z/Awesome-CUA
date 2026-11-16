@@ -2,9 +2,9 @@
 
 [Home](../../README.md) · [All topics](../topics.md) · [Full arXiv bibliography](../papers.md)
 
-100 source-reviewed resources tagged `cross-app`. Curated metadata; unknown facts are shown as —.
+101 source-reviewed resources tagged `cross-app`. Curated metadata; unknown facts are shown as —.
 
-**Contents:** [Benchmarks (21)](#benchmarks) · [Datasets (4)](#datasets) · [Models (6)](#models) · [Agents (11)](#agents) · [Frameworks (3)](#frameworks) · [Tools (4)](#tools) · [Infrastructure (1)](#infrastructure) · [Products (1)](#products) · [Learning resources (1)](#learning-resources) · [Papers (48)](#papers)
+**Contents:** [Benchmarks (21)](#benchmarks) · [Datasets (4)](#datasets) · [Models (6)](#models) · [Agents (11)](#agents) · [Frameworks (3)](#frameworks) · [Tools (4)](#tools) · [Infrastructure (1)](#infrastructure) · [Products (1)](#products) · [Learning resources (2)](#learning-resources) · [Papers (48)](#papers)
 
 ## Benchmarks
 
@@ -103,11 +103,10 @@ All entries in this section: web.
 
 ## Learning resources
 
-All entries in this section: cross-platform, web, android, ios, desktop, windows.
-
-| Resource | License | Description | Evidence |
-| --- | --- | --- | --- |
-| [Midscene Examples](https://github.com/web-infra-dev/midscene-example) | — | Midscene Examples provides runnable AI automation and testing cases for web, Android, iOS and desktop interfaces, including YAML workflows and SDK integrations. | [✓ 2026‑11‑09](https://raw.githubusercontent.com/web-infra-dev/midscene-example/HEAD/README.md) |
+| Resource | Environments | License | Description | Evidence |
+| --- | --- | --- | --- | --- |
+| [Advancing computer-use agents for healthcare teams](https://openai.com/index/advancing-computer-use-for-healthcare-teams/) | web | — | Healthcare computer-use examples for EHR and payer-portal workflows, covering prior authorization, referrals, discharge planning, human review and action auditing. | [✓ 2026‑11‑16](https://openai.com/index/advancing-computer-use-for-healthcare-teams/) |
+| [Midscene Examples](https://github.com/web-infra-dev/midscene-example) | cross-platform, web, android, ios, desktop, windows | — | Midscene Examples provides runnable AI automation and testing cases for web, Android, iOS and desktop interfaces, including YAML workflows and SDK integrations. | [✓ 2026‑11‑09](https://raw.githubusercontent.com/web-infra-dev/midscene-example/HEAD/README.md) |
 
 ## Papers
 

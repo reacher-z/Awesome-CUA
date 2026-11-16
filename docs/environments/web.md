@@ -2,9 +2,9 @@
 
 [Home](../../README.md) · [All platforms](../environments.md) · [Research by topic](../topics.md)
 
-2,746 source-reviewed resources tagged `web`. Curated metadata; unknown facts are shown as —.
+2,747 source-reviewed resources tagged `web`. Curated metadata; unknown facts are shown as —.
 
-**Contents:** [Benchmarks (210)](#benchmarks) · [Datasets (122)](#datasets) · [Models (190)](#models) · [Agents (247)](#agents) · [Frameworks (469)](#frameworks) · [Tools (681)](#tools) · [Infrastructure (65)](#infrastructure) · [Products (64)](#products) · [Learning resources (30)](#learning-resources) · [Surveys (7)](#surveys) · [Papers (661)](#papers)
+**Contents:** [Benchmarks (210)](#benchmarks) · [Datasets (122)](#datasets) · [Models (190)](#models) · [Agents (247)](#agents) · [Frameworks (469)](#frameworks) · [Tools (681)](#tools) · [Infrastructure (65)](#infrastructure) · [Products (64)](#products) · [Learning resources (31)](#learning-resources) · [Surveys (7)](#surveys) · [Papers (661)](#papers)
 
 ## Benchmarks
 
@@ -2098,6 +2098,7 @@
 
 | Resource | Environments | License | Description | Evidence |
 | --- | --- | --- | --- | --- |
+| [Advancing computer-use agents for healthcare teams](https://openai.com/index/advancing-computer-use-for-healthcare-teams/) | web | — | Healthcare computer-use examples for EHR and payer-portal workflows, covering prior authorization, referrals, discharge planning, human review and action auditing. | [✓ 2026‑11‑16](https://openai.com/index/advancing-computer-use-for-healthcare-teams/) |
 | [Agentic UI Testing Codelab](https://github.com/a-bhimava/agentic-ui-testing) | web | — | Hands-on developer codelab for building automated UI test suites using Antigravity CLI and Browser Use. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/a-bhimava/agentic-ui-testing/main/README.md) |
 | [Agentic Web](https://github.com/SafeRL-Lab/agentic-web) | web | code Apache-2.0 | A research reading list on agents and the web, organized around development, retrieval, planning, safety and benchmarks. | [✓ 2026‑11‑09](https://raw.githubusercontent.com/SafeRL-Lab/agentic-web/HEAD/README.md) |
 | [AI Agent Desktop Engineering Blueprint](https://github.com/Men-Zer/ai-agent-desktop-engineering-blueprint) | cross-platform, desktop, web | — | Five-chapter architectural blueprint and comparative engineering guide for building desktop AI and computer-use agent applications. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/Men-Zer/ai-agent-desktop-engineering-blueprint/HEAD/README.md) |

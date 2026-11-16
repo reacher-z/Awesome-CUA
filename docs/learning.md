@@ -6,7 +6,7 @@ Curated metadata. Each entry links its first-party evidence. Unknown facts are s
 
 Courses, tutorials, and guides are separate from their parent software projects. *License* keeps document and code terms separate. *Evidence* links the reviewed first-party snapshot and its retrieval date.
 
-**38 resources:** [Web (14)](#web) · [Desktop (1)](#desktop) · [Mobile (2)](#mobile) · [Cross-platform (20)](#cross-platform) · [Unspecified (1)](#unspecified)
+**39 resources:** [Web (15)](#web) · [Desktop (1)](#desktop) · [Mobile (2)](#mobile) · [Cross-platform (20)](#cross-platform) · [Unspecified (1)](#unspecified)
 
 Resources tagged with environments from more than one family are listed under *Cross-platform*; their exact environments stay in the table.
 
@@ -16,6 +16,7 @@ All entries in this section: web.
 
 | Resource | License | Description | Evidence |
 | --- | --- | --- | --- |
+| [Advancing computer-use agents for healthcare teams](https://openai.com/index/advancing-computer-use-for-healthcare-teams/) | — | Healthcare computer-use examples for EHR and payer-portal workflows, covering prior authorization, referrals, discharge planning, human review and action auditing. | [✓ 2026‑11‑16](https://openai.com/index/advancing-computer-use-for-healthcare-teams/) |
 | [Agentic UI Testing Codelab](https://github.com/a-bhimava/agentic-ui-testing) | — | Hands-on developer codelab for building automated UI test suites using Antigravity CLI and Browser Use. | [✓ 2026‑11‑04](https://raw.githubusercontent.com/a-bhimava/agentic-ui-testing/main/README.md) |
 | [Agentic Web](https://github.com/SafeRL-Lab/agentic-web) | code Apache-2.0 | A research reading list on agents and the web, organized around development, retrieval, planning, safety and benchmarks. | [✓ 2026‑11‑09](https://raw.githubusercontent.com/SafeRL-Lab/agentic-web/HEAD/README.md) |
 | [Amazon Nova Act Samples](https://github.com/amazon-agi-labs/nova-act-samples) | — | Code examples and reference applications show how to build browser workflows with Amazon Nova Act and deploy the SDK on AWS compute services. | [✓ 2026‑11‑09](https://raw.githubusercontent.com/amazon-agi-labs/nova-act-samples/HEAD/README.md) |

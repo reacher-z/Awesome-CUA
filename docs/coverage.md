@@ -1,11 +1,11 @@
 # Coverage and quality ledger
 
-Evidence snapshot through **2026-11-17T08:19:42Z**. Generated from committed source receipts.
+Evidence snapshot through **2026-11-17T16:17:19Z**. Generated from committed source receipts.
 
-- 5,347 curated resources. Another 1,215 records await review with bibliographic metadata only; the active catalog file holds 6,562 records in all.
-- 2,933 paper and survey records, including 2,880 arXiv identities and 53 publisher-only identities.
-- 4,188 retained arXiv metadata records; 1,308 explicit scope exclusions are outside the active catalog.
-- 9,857 discovery identifiers; 192 remain unresolved. Reviewed decisions include 505 non-resource links, 748 aliases and 2,052 out-of-scope resources; their reasons remain in the review queue.
+- 5,347 curated resources. Another 1,219 records await review with bibliographic metadata only; the active catalog file holds 6,566 records in all.
+- 2,937 paper and survey records, including 2,884 arXiv identities and 53 publisher-only identities.
+- 4,192 retained arXiv metadata records; 1,308 explicit scope exclusions are outside the active catalog.
+- 9,861 discovery identifiers; 192 remain unresolved. Reviewed decisions include 505 non-resource links, 748 aliases and 2,052 out-of-scope resources; their reasons remain in the review queue.
 - 378 editorial proposals await verification or review.
 
 These are distinct resource identifiers, not distinct research projects. Papers, repositories, datasets, products, and publisher entities have different grains.
@@ -136,13 +136,13 @@ The denominator is the normalized identifiers extracted from each fetched docume
 | [OSU NLP Mind2Web datasets — official Hub dataset index](https://huggingface.co/osunlp) | 4 | 4 | 4 | 0 | 0 | 0 | 0 | OK · 2026-11-17 |
 | [StepFun Android datasets — official Hub dataset index](https://huggingface.co/stepfun-ai) | 1 | 1 | 1 | 0 | 0 | 0 | 0 | OK · 2026-11-17 |
 | [Survey bibliography references with no other registered listing (arXiv identifier query)](https://arxiv.org) | 4 | 4 | 3 | 0 | 0 | 0 | 0 | OK · 2026-11-17 |
-| [Efficient GUI Agents survey (arXiv 2609.02309) — HTML bibliography](https://arxiv.org/abs/2609.02309) | 118 | 75 | 74 | 2 | 37 | 1 | 3 | OK · 2026-11-17 |
+| [Efficient GUI Agents survey (arXiv 2609.02309) — HTML bibliography](https://arxiv.org/abs/2609.02309) | 122 | 75 | 74 | 2 | 42 | 0 | 3 | OK · 2026-11-17 |
 | [GUI Agents: A Survey (arXiv 2412.13501) — HTML bibliography](https://arxiv.org/abs/2412.13501) | 117 | 62 | 56 | 13 | 35 | 6 | 1 | OK · 2026-11-17 |
 | [Computer-use benchmark leads](https://github.com/reacher-z/Awesome-CUA/blob/main/docs/discovery-leads/benchmark-leads.md) | 161 | 105 | 3 | 4 | 0 | 52 | 0 | OK · 2026-11-17 |
 
 ## Paper-discovery query coverage
 
-Latest pass: 2026-11-17T08:19:42Z; **32/32** query windows succeeded. 1,512 distinct identifiers; 0 new to the candidate queue.
+Latest pass: 2026-11-17T16:17:18Z; **32/32** query windows succeeded. 1,513 distinct identifiers; 4 new to the candidate queue.
 
 These are ranked search windows. New identifiers go through primary metadata verification and relevance review.
 

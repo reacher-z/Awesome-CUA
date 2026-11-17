@@ -1,10 +1,10 @@
 {
-  "id": "scan:2026-11-17T08:18:42Z",
+  "id": "scan:2026-11-17T16:16:11Z",
   "schema_version": 1,
   "status": "partial",
-  "started_at": "2026-11-17T08:18:42Z",
-  "finished_at": "2026-11-17T08:21:41Z",
-  "run_url": "https://github.com/reacher-z/Awesome-CUA/actions/runs/44045602488",
+  "started_at": "2026-11-17T16:16:11Z",
+  "finished_at": "2026-11-17T16:21:26Z",
+  "run_url": "https://github.com/reacher-z/Awesome-CUA/actions/runs/44123738547",
   "schedule": {
     "timezone": "UTC",
     "times_local": [
@@ -14,15 +14,6 @@
     ]
   },
   "before": {
-    "resources": 6557,
-    "bibliographic_records": 2875,
-    "arxiv_archive_records": 4183,
-    "excluded_records": 1308,
-    "curated_papers": 1718,
-    "curated_resources": 3629,
-    "candidates": 9850
-  },
-  "after": {
     "resources": 6562,
     "bibliographic_records": 2880,
     "arxiv_archive_records": 4188,
@@ -31,39 +22,42 @@
     "curated_resources": 3629,
     "candidates": 9857
   },
+  "after": {
+    "resources": 6566,
+    "bibliographic_records": 2884,
+    "arxiv_archive_records": 4192,
+    "excluded_records": 1308,
+    "curated_papers": 1718,
+    "curated_resources": 3629,
+    "candidates": 9861
+  },
   "new_papers": [
     {
-      "id": "arxiv:2611.18715",
-      "name": "T2T Technical Report: Synthesizing GUI Agent Trajectories at Scale from Video Tutorials",
-      "url": "https://arxiv.org/abs/2611.18715",
+      "id": "arxiv:2605.12887",
+      "name": "EcoGEO: Trajectory-Aware Evidence Ecosystems for Web-Enabled LLM Search Agents",
+      "url": "https://arxiv.org/abs/2605.12887",
       "review_status": "metadata_verified"
     },
     {
-      "id": "arxiv:2611.18747",
-      "name": "Video-as-Experience: Learning Computer Use via Audio-Visual Understanding",
-      "url": "https://arxiv.org/abs/2611.18747",
+      "id": "arxiv:2607.05750",
+      "name": "ArtisanCAD: An Industrial-Level CAD Agent with Expert-Grounded Knowledge Distillation",
+      "url": "https://arxiv.org/abs/2607.05750",
       "review_status": "metadata_verified"
     },
     {
-      "id": "arxiv:2611.20488",
-      "name": "EVIDENT: Evaluating Evidence Grounding in GUI Agents",
-      "url": "https://arxiv.org/abs/2611.20488",
+      "id": "arxiv:2611.11470",
+      "name": "GOPR-CAD: Graph-of-Operations Progressive Reasoning for CAD Generation",
+      "url": "https://arxiv.org/abs/2611.11470",
       "review_status": "metadata_verified"
     },
     {
-      "id": "arxiv:2611.20753",
-      "name": "UIAnchor: Anchoring UI Perception and Action Execution for Reliable Service-Composed Mobile Task Automation with GUI Agents",
-      "url": "https://arxiv.org/abs/2611.20753",
-      "review_status": "metadata_verified"
-    },
-    {
-      "id": "arxiv:2611.20772",
-      "name": "Building Fully On-Device GUI Agents with Mobile NPUs",
-      "url": "https://arxiv.org/abs/2611.20772",
+      "id": "arxiv:2611.20882",
+      "name": "Accelerate Bench: Evaluating Agents for Application-Level Program Optimization",
+      "url": "https://arxiv.org/abs/2611.20882",
       "review_status": "metadata_verified"
     }
   ],
-  "new_candidate_count": 7,
+  "new_candidate_count": 4,
   "pending_metadata_changes": 12,
   "source_fetches": {
     "successful": 103,
@@ -73,19 +67,19 @@
   "paper_searches": {
     "successful": 32,
     "total": 32,
-    "unique_identifiers": 1512,
-    "new_candidates": 0
+    "unique_identifiers": 1513,
+    "new_candidates": 4
   },
   "candidate_observations": {
-    "started_at": "2026-11-17T08:19:50Z",
-    "finished_at": "2026-11-17T08:21:14Z",
+    "started_at": "2026-11-17T16:17:28Z",
+    "finished_at": "2026-11-17T16:20:54Z",
     "ok": false,
     "exit_code": 1,
     "error": "Candidate phase rejected: Primary metadata lies outside its query cohort\n",
     "published": false,
     "durable_validation": {
       "ok": true,
-      "checked_at": "2026-11-17T08:21:40Z",
+      "checked_at": "2026-11-17T16:21:25Z",
       "mode": "resumable_triplet",
       "required": true,
       "files": {
@@ -99,24 +93,24 @@
   "phases": [
     {
       "name": "discovery",
-      "started_at": "2026-11-17T08:18:42Z",
-      "finished_at": "2026-11-17T08:19:08Z",
+      "started_at": "2026-11-17T16:16:12Z",
+      "finished_at": "2026-11-17T16:16:42Z",
       "ok": true,
       "exit_code": 0,
       "error": null
     },
     {
       "name": "huggingface",
-      "started_at": "2026-11-17T08:19:08Z",
-      "finished_at": "2026-11-17T08:19:42Z",
+      "started_at": "2026-11-17T16:16:42Z",
+      "finished_at": "2026-11-17T16:17:19Z",
       "ok": true,
       "exit_code": 0,
       "error": null
     },
     {
       "name": "recent_arxiv",
-      "started_at": "2026-11-17T08:19:42Z",
-      "finished_at": "2026-11-17T08:19:42Z",
+      "started_at": "2026-11-17T16:17:19Z",
+      "finished_at": "2026-11-17T16:17:19Z",
       "ok": true,
       "exit_code": 0,
       "error": null,
@@ -128,23 +122,23 @@
     },
     {
       "name": "harvest",
-      "started_at": "2026-11-17T08:19:42Z",
-      "finished_at": "2026-11-17T08:19:43Z",
+      "started_at": "2026-11-17T16:17:19Z",
+      "finished_at": "2026-11-17T16:17:20Z",
       "ok": true,
       "exit_code": 0,
       "error": null
     },
     {
       "name": "github_candidates",
-      "started_at": "2026-11-17T08:19:50Z",
-      "finished_at": "2026-11-17T08:21:14Z",
+      "started_at": "2026-11-17T16:17:28Z",
+      "finished_at": "2026-11-17T16:20:54Z",
       "ok": false,
       "exit_code": 1,
       "error": "Candidate phase rejected: Primary metadata lies outside its query cohort\n",
       "published": false,
       "durable_validation": {
         "ok": true,
-        "checked_at": "2026-11-17T08:21:40Z",
+        "checked_at": "2026-11-17T16:21:25Z",
         "mode": "resumable_triplet",
         "required": true,
         "files": {
@@ -157,16 +151,16 @@
     },
     {
       "name": "build",
-      "started_at": "2026-11-17T08:21:14Z",
-      "finished_at": "2026-11-17T08:21:19Z",
+      "started_at": "2026-11-17T16:20:54Z",
+      "finished_at": "2026-11-17T16:21:01Z",
       "ok": true,
       "exit_code": 0,
       "error": null
     },
     {
       "name": "validate",
-      "started_at": "2026-11-17T08:21:19Z",
-      "finished_at": "2026-11-17T08:21:32Z",
+      "started_at": "2026-11-17T16:21:01Z",
+      "finished_at": "2026-11-17T16:21:16Z",
       "ok": true,
       "exit_code": 0,
       "error": null
@@ -179,17 +173,17 @@
   "network_deferred_only": false,
   "policy": "Automated scans discover candidates and verify bibliographic metadata. Editorial approval, topic annotations, and license claims require separate source review.",
   "network_budget": {
-    "round_id": "99a3bce21ea1476db060aec52a7256c6",
+    "round_id": "f42bcd7fc2634b7aaefc54ddc6b415e2",
     "max_requests": 180,
     "max_seconds": 360,
-    "requests_reserved": 150,
-    "responses_received": 150,
+    "requests_reserved": 166,
+    "responses_received": 166,
     "unknown_attempts": 0,
     "by_phase": {
       "discovery": 109,
       "huggingface": 32,
       "harvest": 1,
-      "github_candidates": 8
+      "github_candidates": 24
     },
     "by_provider": {
       "raw.githubusercontent.com": 66,
@@ -204,15 +198,15 @@
       "doc-04-0o-sheets.googleusercontent.com": 1,
       "export.arxiv.org": 3,
       "arxiv.org": 2,
-      "api.github.com": 8
+      "api.github.com": 24
     },
     "provider_cooldowns": {
-      "api.github.com": "2026-11-17T08:21:59.784206+00:00"
+      "api.github.com": "2026-11-17T16:21:38.308773+00:00"
     },
     "blocked_providers": [
       "api.github.com"
     ],
-    "ledger_sha256": "45065111eda2fc4c3771268f018182760fcbb13998f43b8253c9232208f578c2",
+    "ledger_sha256": "3cedcc0a53e9794d1add6defc9b49c07ba937629d1fc0475bec1a12353970162",
     "count_boundary": "Reservations are persisted before I/O; interrupted attempts remain conservatively charged. HTTP status observation does not establish complete or validated content."
   }
 }

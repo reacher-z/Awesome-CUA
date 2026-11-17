@@ -1,10 +1,10 @@
 {
-  "id": "scan:2026-11-16T16:15:41Z",
+  "id": "scan:2026-11-17T00:34:33Z",
   "schema_version": 1,
   "status": "partial",
-  "started_at": "2026-11-16T16:15:41Z",
-  "finished_at": "2026-11-16T16:21:32Z",
-  "run_url": "https://github.com/reacher-z/Awesome-CUA/actions/runs/43905444414",
+  "started_at": "2026-11-17T00:34:33Z",
+  "finished_at": "2026-11-17T00:40:03Z",
+  "run_url": "https://github.com/reacher-z/Awesome-CUA/actions/runs/43988684897",
   "schedule": {
     "timezone": "UTC",
     "times_local": [
@@ -23,16 +23,23 @@
     "candidates": 9849
   },
   "after": {
-    "resources": 6556,
-    "bibliographic_records": 2874,
-    "arxiv_archive_records": 4182,
+    "resources": 6557,
+    "bibliographic_records": 2875,
+    "arxiv_archive_records": 4183,
     "excluded_records": 1308,
     "curated_papers": 1718,
     "curated_resources": 3629,
-    "candidates": 9849
+    "candidates": 9850
   },
-  "new_papers": [],
-  "new_candidate_count": 0,
+  "new_papers": [
+    {
+      "id": "arxiv:2607.27294",
+      "name": "AgentS4D: Benchmarking Runtime Risks across the Execution Lifecycle of LLM-Based Workspace Agents",
+      "url": "https://arxiv.org/abs/2607.27294",
+      "review_status": "metadata_verified"
+    }
+  ],
+  "new_candidate_count": 1,
   "pending_metadata_changes": 12,
   "source_fetches": {
     "successful": 103,
@@ -43,18 +50,18 @@
     "successful": 32,
     "total": 32,
     "unique_identifiers": 1512,
-    "new_candidates": 0
+    "new_candidates": 1
   },
   "candidate_observations": {
-    "started_at": "2026-11-16T16:17:05Z",
-    "finished_at": "2026-11-16T16:20:45Z",
+    "started_at": "2026-11-17T00:35:50Z",
+    "finished_at": "2026-11-17T00:39:29Z",
     "ok": false,
-    "deferred": true,
-    "error": "Stage exceeded 220 seconds; last verified records retained.",
+    "exit_code": 1,
+    "error": "Candidate phase rejected: Primary metadata lies outside its query cohort\n",
     "published": false,
     "durable_validation": {
       "ok": true,
-      "checked_at": "2026-11-16T16:21:31Z",
+      "checked_at": "2026-11-17T00:40:02Z",
       "mode": "resumable_triplet",
       "required": true,
       "files": {
@@ -68,52 +75,53 @@
   "phases": [
     {
       "name": "discovery",
-      "started_at": "2026-11-16T16:15:42Z",
-      "finished_at": "2026-11-16T16:16:14Z",
+      "started_at": "2026-11-17T00:34:34Z",
+      "finished_at": "2026-11-17T00:35:03Z",
       "ok": true,
       "exit_code": 0,
       "error": null
     },
     {
       "name": "huggingface",
-      "started_at": "2026-11-16T16:16:14Z",
-      "finished_at": "2026-11-16T16:16:52Z",
+      "started_at": "2026-11-17T00:35:03Z",
+      "finished_at": "2026-11-17T00:35:38Z",
       "ok": true,
       "exit_code": 0,
       "error": null
     },
     {
       "name": "recent_arxiv",
-      "started_at": "2026-11-16T16:16:52Z",
-      "finished_at": "2026-11-16T16:16:52Z",
+      "started_at": "2026-11-17T00:35:38Z",
+      "finished_at": "2026-11-17T00:35:39Z",
       "ok": true,
       "exit_code": 0,
       "error": null,
       "complete": true,
       "new_count": 0,
       "warnings": [],
-      "cache_used": true,
-      "source_retrieved_at": "2026-11-16T00:41:50Z"
+      "cache_used": false,
+      "rate_limited": false,
+      "deferred": false
     },
     {
       "name": "harvest",
-      "started_at": "2026-11-16T16:16:52Z",
-      "finished_at": "2026-11-16T16:16:52Z",
+      "started_at": "2026-11-17T00:35:39Z",
+      "finished_at": "2026-11-17T00:35:42Z",
       "ok": true,
       "exit_code": 0,
       "error": null
     },
     {
       "name": "github_candidates",
-      "started_at": "2026-11-16T16:17:05Z",
-      "finished_at": "2026-11-16T16:20:45Z",
+      "started_at": "2026-11-17T00:35:50Z",
+      "finished_at": "2026-11-17T00:39:29Z",
       "ok": false,
-      "deferred": true,
-      "error": "Stage exceeded 220 seconds; last verified records retained.",
+      "exit_code": 1,
+      "error": "Candidate phase rejected: Primary metadata lies outside its query cohort\n",
       "published": false,
       "durable_validation": {
         "ok": true,
-        "checked_at": "2026-11-16T16:21:31Z",
+        "checked_at": "2026-11-17T00:40:02Z",
         "mode": "resumable_triplet",
         "required": true,
         "files": {
@@ -126,38 +134,40 @@
     },
     {
       "name": "build",
-      "started_at": "2026-11-16T16:20:45Z",
-      "finished_at": "2026-11-16T16:20:53Z",
+      "started_at": "2026-11-17T00:39:29Z",
+      "finished_at": "2026-11-17T00:39:36Z",
       "ok": true,
       "exit_code": 0,
       "error": null
     },
     {
       "name": "validate",
-      "started_at": "2026-11-16T16:20:53Z",
-      "finished_at": "2026-11-16T16:21:18Z",
+      "started_at": "2026-11-17T00:39:36Z",
+      "finished_at": "2026-11-17T00:39:53Z",
       "ok": true,
       "exit_code": 0,
       "error": null
     }
   ],
   "warnings": [
-    "github_candidates: Stage exceeded 220 seconds; last verified records retained."
+    "github_candidates: Candidate phase rejected: Primary metadata lies outside its query cohort\n"
   ],
   "rate_limit_only": false,
-  "network_deferred_only": true,
+  "network_deferred_only": false,
   "policy": "Automated scans discover candidates and verify bibliographic metadata. Editorial approval, topic annotations, and license claims require separate source review.",
   "network_budget": {
-    "round_id": "6003b06409164f0d955991a54a1818c6",
+    "round_id": "d203f3cb69f641cab0f889aaf9e53b80",
     "max_requests": 180,
     "max_seconds": 360,
-    "requests_reserved": 163,
-    "responses_received": 163,
+    "requests_reserved": 167,
+    "responses_received": 167,
     "unknown_attempts": 0,
     "by_phase": {
       "discovery": 109,
       "huggingface": 32,
-      "github_candidates": 22
+      "recent_arxiv": 1,
+      "harvest": 1,
+      "github_candidates": 24
     },
     "by_provider": {
       "raw.githubusercontent.com": 66,
@@ -170,17 +180,17 @@
       "doc-04-10-sheets.googleusercontent.com": 1,
       "doc-0s-8k-sheets.googleusercontent.com": 1,
       "doc-04-0o-sheets.googleusercontent.com": 1,
-      "export.arxiv.org": 2,
+      "export.arxiv.org": 4,
       "arxiv.org": 2,
-      "api.github.com": 22
+      "api.github.com": 24
     },
     "provider_cooldowns": {
-      "api.github.com": "2026-11-16T16:21:41.106845+00:00"
+      "api.github.com": "2026-11-17T00:40:08.743668+00:00"
     },
     "blocked_providers": [
       "api.github.com"
     ],
-    "ledger_sha256": "41d1af5fd3bb120624710df62bdbe38d8d44d1b5026055ff063954ae0ff5e59b",
+    "ledger_sha256": "7c55211276682924e2055d51c3f7e9b735b66bcce229711af4b99169b60cf95d",
     "count_boundary": "Reservations are persisted before I/O; interrupted attempts remain conservatively charged. HTTP status observation does not establish complete or validated content."
   }
 }

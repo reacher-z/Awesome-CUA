@@ -1,10 +1,10 @@
 {
-  "id": "scan:2026-11-17T00:34:33Z",
+  "id": "scan:2026-11-17T08:18:42Z",
   "schema_version": 1,
   "status": "partial",
-  "started_at": "2026-11-17T00:34:33Z",
-  "finished_at": "2026-11-17T00:40:03Z",
-  "run_url": "https://github.com/reacher-z/Awesome-CUA/actions/runs/43988684897",
+  "started_at": "2026-11-17T08:18:42Z",
+  "finished_at": "2026-11-17T08:21:41Z",
+  "run_url": "https://github.com/reacher-z/Awesome-CUA/actions/runs/44045602488",
   "schedule": {
     "timezone": "UTC",
     "times_local": [
@@ -14,15 +14,6 @@
     ]
   },
   "before": {
-    "resources": 6556,
-    "bibliographic_records": 2874,
-    "arxiv_archive_records": 4182,
-    "excluded_records": 1308,
-    "curated_papers": 1718,
-    "curated_resources": 3629,
-    "candidates": 9849
-  },
-  "after": {
     "resources": 6557,
     "bibliographic_records": 2875,
     "arxiv_archive_records": 4183,
@@ -31,15 +22,48 @@
     "curated_resources": 3629,
     "candidates": 9850
   },
+  "after": {
+    "resources": 6562,
+    "bibliographic_records": 2880,
+    "arxiv_archive_records": 4188,
+    "excluded_records": 1308,
+    "curated_papers": 1718,
+    "curated_resources": 3629,
+    "candidates": 9857
+  },
   "new_papers": [
     {
-      "id": "arxiv:2607.27294",
-      "name": "AgentS4D: Benchmarking Runtime Risks across the Execution Lifecycle of LLM-Based Workspace Agents",
-      "url": "https://arxiv.org/abs/2607.27294",
+      "id": "arxiv:2611.18715",
+      "name": "T2T Technical Report: Synthesizing GUI Agent Trajectories at Scale from Video Tutorials",
+      "url": "https://arxiv.org/abs/2611.18715",
+      "review_status": "metadata_verified"
+    },
+    {
+      "id": "arxiv:2611.18747",
+      "name": "Video-as-Experience: Learning Computer Use via Audio-Visual Understanding",
+      "url": "https://arxiv.org/abs/2611.18747",
+      "review_status": "metadata_verified"
+    },
+    {
+      "id": "arxiv:2611.20488",
+      "name": "EVIDENT: Evaluating Evidence Grounding in GUI Agents",
+      "url": "https://arxiv.org/abs/2611.20488",
+      "review_status": "metadata_verified"
+    },
+    {
+      "id": "arxiv:2611.20753",
+      "name": "UIAnchor: Anchoring UI Perception and Action Execution for Reliable Service-Composed Mobile Task Automation with GUI Agents",
+      "url": "https://arxiv.org/abs/2611.20753",
+      "review_status": "metadata_verified"
+    },
+    {
+      "id": "arxiv:2611.20772",
+      "name": "Building Fully On-Device GUI Agents with Mobile NPUs",
+      "url": "https://arxiv.org/abs/2611.20772",
       "review_status": "metadata_verified"
     }
   ],
-  "new_candidate_count": 1,
+  "new_candidate_count": 7,
   "pending_metadata_changes": 12,
   "source_fetches": {
     "successful": 103,
@@ -50,18 +74,18 @@
     "successful": 32,
     "total": 32,
     "unique_identifiers": 1512,
-    "new_candidates": 1
+    "new_candidates": 0
   },
   "candidate_observations": {
-    "started_at": "2026-11-17T00:35:50Z",
-    "finished_at": "2026-11-17T00:39:29Z",
+    "started_at": "2026-11-17T08:19:50Z",
+    "finished_at": "2026-11-17T08:21:14Z",
     "ok": false,
     "exit_code": 1,
     "error": "Candidate phase rejected: Primary metadata lies outside its query cohort\n",
     "published": false,
     "durable_validation": {
       "ok": true,
-      "checked_at": "2026-11-17T00:40:02Z",
+      "checked_at": "2026-11-17T08:21:40Z",
       "mode": "resumable_triplet",
       "required": true,
       "files": {
@@ -75,53 +99,52 @@
   "phases": [
     {
       "name": "discovery",
-      "started_at": "2026-11-17T00:34:34Z",
-      "finished_at": "2026-11-17T00:35:03Z",
+      "started_at": "2026-11-17T08:18:42Z",
+      "finished_at": "2026-11-17T08:19:08Z",
       "ok": true,
       "exit_code": 0,
       "error": null
     },
     {
       "name": "huggingface",
-      "started_at": "2026-11-17T00:35:03Z",
-      "finished_at": "2026-11-17T00:35:38Z",
+      "started_at": "2026-11-17T08:19:08Z",
+      "finished_at": "2026-11-17T08:19:42Z",
       "ok": true,
       "exit_code": 0,
       "error": null
     },
     {
       "name": "recent_arxiv",
-      "started_at": "2026-11-17T00:35:38Z",
-      "finished_at": "2026-11-17T00:35:39Z",
+      "started_at": "2026-11-17T08:19:42Z",
+      "finished_at": "2026-11-17T08:19:42Z",
       "ok": true,
       "exit_code": 0,
       "error": null,
       "complete": true,
       "new_count": 0,
       "warnings": [],
-      "cache_used": false,
-      "rate_limited": false,
-      "deferred": false
+      "cache_used": true,
+      "source_retrieved_at": "2026-11-17T00:35:39Z"
     },
     {
       "name": "harvest",
-      "started_at": "2026-11-17T00:35:39Z",
-      "finished_at": "2026-11-17T00:35:42Z",
+      "started_at": "2026-11-17T08:19:42Z",
+      "finished_at": "2026-11-17T08:19:43Z",
       "ok": true,
       "exit_code": 0,
       "error": null
     },
     {
       "name": "github_candidates",
-      "started_at": "2026-11-17T00:35:50Z",
-      "finished_at": "2026-11-17T00:39:29Z",
+      "started_at": "2026-11-17T08:19:50Z",
+      "finished_at": "2026-11-17T08:21:14Z",
       "ok": false,
       "exit_code": 1,
       "error": "Candidate phase rejected: Primary metadata lies outside its query cohort\n",
       "published": false,
       "durable_validation": {
         "ok": true,
-        "checked_at": "2026-11-17T00:40:02Z",
+        "checked_at": "2026-11-17T08:21:40Z",
         "mode": "resumable_triplet",
         "required": true,
         "files": {
@@ -134,16 +157,16 @@
     },
     {
       "name": "build",
-      "started_at": "2026-11-17T00:39:29Z",
-      "finished_at": "2026-11-17T00:39:36Z",
+      "started_at": "2026-11-17T08:21:14Z",
+      "finished_at": "2026-11-17T08:21:19Z",
       "ok": true,
       "exit_code": 0,
       "error": null
     },
     {
       "name": "validate",
-      "started_at": "2026-11-17T00:39:36Z",
-      "finished_at": "2026-11-17T00:39:53Z",
+      "started_at": "2026-11-17T08:21:19Z",
+      "finished_at": "2026-11-17T08:21:32Z",
       "ok": true,
       "exit_code": 0,
       "error": null
@@ -156,18 +179,17 @@
   "network_deferred_only": false,
   "policy": "Automated scans discover candidates and verify bibliographic metadata. Editorial approval, topic annotations, and license claims require separate source review.",
   "network_budget": {
-    "round_id": "d203f3cb69f641cab0f889aaf9e53b80",
+    "round_id": "99a3bce21ea1476db060aec52a7256c6",
     "max_requests": 180,
     "max_seconds": 360,
-    "requests_reserved": 167,
-    "responses_received": 167,
+    "requests_reserved": 150,
+    "responses_received": 150,
     "unknown_attempts": 0,
     "by_phase": {
       "discovery": 109,
       "huggingface": 32,
-      "recent_arxiv": 1,
       "harvest": 1,
-      "github_candidates": 24
+      "github_candidates": 8
     },
     "by_provider": {
       "raw.githubusercontent.com": 66,
@@ -180,17 +202,17 @@
       "doc-04-10-sheets.googleusercontent.com": 1,
       "doc-0s-8k-sheets.googleusercontent.com": 1,
       "doc-04-0o-sheets.googleusercontent.com": 1,
-      "export.arxiv.org": 4,
+      "export.arxiv.org": 3,
       "arxiv.org": 2,
-      "api.github.com": 24
+      "api.github.com": 8
     },
     "provider_cooldowns": {
-      "api.github.com": "2026-11-17T00:40:08.743668+00:00"
+      "api.github.com": "2026-11-17T08:21:59.784206+00:00"
     },
     "blocked_providers": [
       "api.github.com"
     ],
-    "ledger_sha256": "7c55211276682924e2055d51c3f7e9b735b66bcce229711af4b99169b60cf95d",
+    "ledger_sha256": "45065111eda2fc4c3771268f018182760fcbb13998f43b8253c9232208f578c2",
     "count_boundary": "Reservations are persisted before I/O; interrupted attempts remain conservatively charged. HTTP status observation does not establish complete or validated content."
   }
 }

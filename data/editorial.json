@@ -201777,5 +201777,29 @@
     "reviewed_at": "2026-11-10T05:24:09Z",
     "read_basis": "Scan-backlog review 2026-11-10: primary source (README) fetched 2026-11-10T05:00:54Z; new scan find decided by a Claude reviewer agent from primary sources; independent verifier agent (claude-reviewer + verifier); deterministic checker on quotes, vocabulary and summary rules.",
     "reviewed_sha256": "92c6b362bb5f14bf1517476b73b0fc329accaa94d27599316c75007cb2ae045d"
+  },
+  {
+    "name": "Antigravity Computer Use",
+    "kind": "tool",
+    "url": "https://github.com/shayann07/antigravity-computer-use",
+    "environments": [
+      "windows",
+      "macos",
+      "desktop"
+    ],
+    "topics": [
+      "automation",
+      "screen-understanding",
+      "human-in-the-loop",
+      "safety-security",
+      "tool-integration"
+    ],
+    "summary": "A computer-use skill for Google Antigravity that reads accessibility trees and screenshots and drives Windows and macOS apps with real input, with per-app approval and Esc to stop.",
+    "verify_terms": [
+      "Antigravity Computer Use",
+      "computer-use"
+    ],
+    "editorial_reviewed": false,
+    "review_note": "Proposed by the project's author; MIT-licensed source with signed releases for Windows and macOS. Needs independent editorial review."
   }
 ]

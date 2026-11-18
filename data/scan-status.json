@@ -1,10 +1,10 @@
 {
-  "id": "scan:2026-11-18T00:35:20Z",
+  "id": "scan:2026-11-18T08:18:39Z",
   "schema_version": 1,
   "status": "partial",
-  "started_at": "2026-11-18T00:35:20Z",
-  "finished_at": "2026-11-18T00:41:10Z",
-  "run_url": "https://github.com/reacher-z/Awesome-CUA/actions/runs/44209000374",
+  "started_at": "2026-11-18T08:18:39Z",
+  "finished_at": "2026-11-18T08:24:33Z",
+  "run_url": "https://github.com/reacher-z/Awesome-CUA/actions/runs/44265837809",
   "schedule": {
     "timezone": "UTC",
     "times_local": [
@@ -14,15 +14,6 @@
     ]
   },
   "before": {
-    "resources": 6566,
-    "bibliographic_records": 2884,
-    "arxiv_archive_records": 4192,
-    "excluded_records": 1308,
-    "curated_papers": 1718,
-    "curated_resources": 3629,
-    "candidates": 9861
-  },
-  "after": {
     "resources": 6567,
     "bibliographic_records": 2885,
     "arxiv_archive_records": 4193,
@@ -31,15 +22,54 @@
     "curated_resources": 3629,
     "candidates": 9862
   },
+  "after": {
+    "resources": 6573,
+    "bibliographic_records": 2891,
+    "arxiv_archive_records": 4199,
+    "excluded_records": 1308,
+    "curated_papers": 1718,
+    "curated_resources": 3629,
+    "candidates": 9869
+  },
   "new_papers": [
     {
-      "id": "arxiv:2611.20145",
-      "name": "Rank, Don't Regress: A 279M Text Ranker Beats 2B and 7B VLMs on Referential Urdu GUI Grounding",
-      "url": "https://arxiv.org/abs/2611.20145",
+      "id": "arxiv:2610.06964",
+      "name": "Principles that Guide, Actions that Inform: Agent Evolution via Knowledge Abstraction",
+      "url": "https://arxiv.org/abs/2610.06964",
+      "review_status": "metadata_verified"
+    },
+    {
+      "id": "arxiv:2611.21072",
+      "name": "Sage S2.1 Flash Technical Report",
+      "url": "https://arxiv.org/abs/2611.21072",
+      "review_status": "metadata_verified"
+    },
+    {
+      "id": "arxiv:2611.22223",
+      "name": "GapLeak: When Privacy-Preserving LLM-based Web Agents Become a Privacy Risk",
+      "url": "https://arxiv.org/abs/2611.22223",
+      "review_status": "metadata_verified"
+    },
+    {
+      "id": "arxiv:2611.22591",
+      "name": "PACT: Plan-Action Consistency Training by Preserving Correct Plans and Repairing Actions in GUI Agents",
+      "url": "https://arxiv.org/abs/2611.22591",
+      "review_status": "metadata_verified"
+    },
+    {
+      "id": "arxiv:2611.22722",
+      "name": "Practice in Text, Act in Pixels: Correcting Where Perception Fails",
+      "url": "https://arxiv.org/abs/2611.22722",
+      "review_status": "metadata_verified"
+    },
+    {
+      "id": "arxiv:2611.22971",
+      "name": "SEAM: Computer-Use Agents Know the Harm Between Screens, and Commit It Anyway",
+      "url": "https://arxiv.org/abs/2611.22971",
       "review_status": "metadata_verified"
     }
   ],
-  "new_candidate_count": 1,
+  "new_candidate_count": 7,
   "pending_metadata_changes": 12,
   "source_fetches": {
     "successful": 103,
@@ -50,18 +80,18 @@
     "successful": 32,
     "total": 32,
     "unique_identifiers": 1513,
-    "new_candidates": 0
+    "new_candidates": 1
   },
   "candidate_observations": {
-    "started_at": "2026-11-18T00:36:44Z",
-    "finished_at": "2026-11-18T00:40:24Z",
+    "started_at": "2026-11-18T08:20:05Z",
+    "finished_at": "2026-11-18T08:23:45Z",
     "ok": false,
     "deferred": true,
     "error": "Stage exceeded 220 seconds; last verified records retained.",
     "published": false,
     "durable_validation": {
       "ok": true,
-      "checked_at": "2026-11-18T00:41:09Z",
+      "checked_at": "2026-11-18T08:24:32Z",
       "mode": "resumable_triplet",
       "required": true,
       "files": {
@@ -75,53 +105,52 @@
   "phases": [
     {
       "name": "discovery",
-      "started_at": "2026-11-18T00:35:21Z",
-      "finished_at": "2026-11-18T00:35:52Z",
+      "started_at": "2026-11-18T08:18:40Z",
+      "finished_at": "2026-11-18T08:19:16Z",
       "ok": true,
       "exit_code": 0,
       "error": null
     },
     {
       "name": "huggingface",
-      "started_at": "2026-11-18T00:35:52Z",
-      "finished_at": "2026-11-18T00:36:29Z",
+      "started_at": "2026-11-18T08:19:16Z",
+      "finished_at": "2026-11-18T08:19:51Z",
       "ok": true,
       "exit_code": 0,
       "error": null
     },
     {
       "name": "recent_arxiv",
-      "started_at": "2026-11-18T00:36:29Z",
-      "finished_at": "2026-11-18T00:36:31Z",
+      "started_at": "2026-11-18T08:19:51Z",
+      "finished_at": "2026-11-18T08:19:51Z",
       "ok": true,
       "exit_code": 0,
       "error": null,
       "complete": true,
-      "new_count": 1,
+      "new_count": 0,
       "warnings": [],
-      "cache_used": false,
-      "rate_limited": false,
-      "deferred": false
+      "cache_used": true,
+      "source_retrieved_at": "2026-11-18T00:36:29Z"
     },
     {
       "name": "harvest",
-      "started_at": "2026-11-18T00:36:31Z",
-      "finished_at": "2026-11-18T00:36:32Z",
+      "started_at": "2026-11-18T08:19:51Z",
+      "finished_at": "2026-11-18T08:19:52Z",
       "ok": true,
       "exit_code": 0,
       "error": null
     },
     {
       "name": "github_candidates",
-      "started_at": "2026-11-18T00:36:44Z",
-      "finished_at": "2026-11-18T00:40:24Z",
+      "started_at": "2026-11-18T08:20:05Z",
+      "finished_at": "2026-11-18T08:23:45Z",
       "ok": false,
       "deferred": true,
       "error": "Stage exceeded 220 seconds; last verified records retained.",
       "published": false,
       "durable_validation": {
         "ok": true,
-        "checked_at": "2026-11-18T00:41:09Z",
+        "checked_at": "2026-11-18T08:24:32Z",
         "mode": "resumable_triplet",
         "required": true,
         "files": {
@@ -134,16 +163,16 @@
     },
     {
       "name": "build",
-      "started_at": "2026-11-18T00:40:24Z",
-      "finished_at": "2026-11-18T00:40:32Z",
+      "started_at": "2026-11-18T08:23:45Z",
+      "finished_at": "2026-11-18T08:23:54Z",
       "ok": true,
       "exit_code": 0,
       "error": null
     },
     {
       "name": "validate",
-      "started_at": "2026-11-18T00:40:32Z",
-      "finished_at": "2026-11-18T00:40:56Z",
+      "started_at": "2026-11-18T08:23:54Z",
+      "finished_at": "2026-11-18T08:24:19Z",
       "ok": true,
       "exit_code": 0,
       "error": null
@@ -156,17 +185,17 @@
   "network_deferred_only": true,
   "policy": "Automated scans discover candidates and verify bibliographic metadata. Editorial approval, topic annotations, and license claims require separate source review.",
   "network_budget": {
-    "round_id": "24dc13e0941f4817b796ddf0bac8e806",
+    "round_id": "afc7e15d039e4a25b6ebae2f2a6f0088",
     "max_requests": 180,
     "max_seconds": 360,
-    "requests_reserved": 166,
-    "responses_received": 166,
+    "requests_reserved": 164,
+    "responses_received": 164,
     "unknown_attempts": 0,
     "by_phase": {
       "discovery": 109,
       "huggingface": 32,
-      "recent_arxiv": 1,
-      "github_candidates": 24
+      "harvest": 1,
+      "github_candidates": 22
     },
     "by_provider": {
       "raw.githubusercontent.com": 66,
@@ -181,15 +210,15 @@
       "doc-04-0o-sheets.googleusercontent.com": 1,
       "export.arxiv.org": 3,
       "arxiv.org": 2,
-      "api.github.com": 24
+      "api.github.com": 22
     },
     "provider_cooldowns": {
-      "api.github.com": "2026-11-18T00:41:22.415539+00:00"
+      "api.github.com": "2026-11-18T08:24:31.603434+00:00"
     },
     "blocked_providers": [
       "api.github.com"
     ],
-    "ledger_sha256": "a0057751ae29e6fa64b739b8b75564095395760b9862b084e83134b7c52bdb2d",
+    "ledger_sha256": "ed3c378ebe3fc77507996978127c8671eb7150bef4d4783cb93949f17f23b85f",
     "count_boundary": "Reservations are persisted before I/O; interrupted attempts remain conservatively charged. HTTP status observation does not establish complete or validated content."
   }
 }

@@ -5,7 +5,7 @@
 Bibliographic records from arXiv and retained publication sources. Metadata-only entries await relevance review. Discovery includes historical references and adjacent work.
 Dates retain their recorded precision. Explicit arXiv scope exclusions are listed in the [scope-decision ledger](../data/exclusion-status.json). The [arXiv archive](../data/papers.jsonl) and [publication observations](../data/publications.jsonl) retain their separate source facts.
 
-**Years:** [2026](#2026) (1,430; 879 ⭐) · [2025](#2025) (739; 514 ⭐) · [2024](#2024) (447; 214 ⭐) · [2023](#2023) (200; 56 ⭐) · [2022](#2022) (49; 16 ⭐) · [2021](#2021) (24; 13 ⭐) · [2020](#2020) (16; 7 ⭐) · [2019](#2019) (9; 2 ⭐) · [2018](#2018) (11; 7 ⭐) · [2017](#2017) (9; 3 ⭐) · [2016](#2016) (5; 2 ⭐) · [2015](#2015) (1; 0 ⭐) · [2013](#2013) (2; 0 ⭐) · [2010](#2010) (1; 1 ⭐) · [2009](#2009) (1; 1 ⭐) · [2007](#2007) (2; 2 ⭐) · [1991](#1991) (1; 1 ⭐)
+**Years:** [2026](#2026) (1,438; 879 ⭐) · [2025](#2025) (739; 514 ⭐) · [2024](#2024) (447; 214 ⭐) · [2023](#2023) (200; 56 ⭐) · [2022](#2022) (49; 16 ⭐) · [2021](#2021) (24; 13 ⭐) · [2020](#2020) (16; 7 ⭐) · [2019](#2019) (9; 2 ⭐) · [2018](#2018) (11; 7 ⭐) · [2017](#2017) (9; 3 ⭐) · [2016](#2016) (5; 2 ⭐) · [2015](#2015) (1; 0 ⭐) · [2013](#2013) (2; 0 ⭐) · [2010](#2010) (1; 1 ⭐) · [2009](#2009) (1; 1 ⭐) · [2007](#2007) (2; 2 ⭐) · [1991](#1991) (1; 1 ⭐)
 
 ⭐ marks papers with an editorial relevance review; their topics link to the [topic hubs](topics.md). Other rows are bibliographic metadata only.
 
@@ -13,6 +13,11 @@ Dates retain their recorded precision. Explicit arXiv scope exclusions are liste
 
 | Date | Paper | Review | Topics |
 | --- | --- | --- | --- |
+| 2026-11-18 | [MobileWeave: Program-First Synthesis of Dependency-Linked Tasks for Training Mobile GUI Agents](https://arxiv.org/abs/2611.23860) | metadata |  |
+| 2026-11-18 | [IDEA: Intent-Dominance Evidence Audit for Inference-Time Backdoor Detection in GUI Agents](https://arxiv.org/abs/2611.24102) | metadata |  |
+| 2026-11-18 | [How Complete Must an Environment Be to Train a Capable GUI Agent?](https://arxiv.org/abs/2611.23946) | metadata |  |
+| 2026-11-18 | [Game2Player: Scaling Gameplay Experience for Visual Agents through Environment-Player Co-Development](https://arxiv.org/abs/2611.24154) | metadata |  |
+| 2026-11-18 | [Embodied Graph: A Relational World Model for Long-Horizon Tasks](https://arxiv.org/abs/2611.24115) | metadata |  |
 | 2026-11-17 | [SEAM: Computer-Use Agents Know the Harm Between Screens, and Commit It Anyway](https://arxiv.org/abs/2611.22971) | metadata |  |
 | 2026-11-17 | [Practice in Text, Act in Pixels: Correcting Where Perception Fails](https://arxiv.org/abs/2611.22722) | metadata |  |
 | 2026-11-17 | [PACT: Plan-Action Consistency Training by Preserving Correct Plans and Repairing Actions in GUI Agents](https://arxiv.org/abs/2611.22591) | metadata |  |
@@ -38,6 +43,7 @@ Dates retain their recorded precision. Explicit arXiv scope exclusions are liste
 | 2026-11-11 | [GuardianAgentFlow: Multi-Agent Coordination for Web Privacy Protection](https://arxiv.org/abs/2611.15097) | metadata |  |
 | 2026-11-10 | [Rational Use of Time for Social Coordination in Humans and AI](https://arxiv.org/abs/2611.14766) | metadata |  |
 | 2026-11-10 | [A Cross-Scenario Survey and Analysis of Self-Evolving Multimodal Agents](https://arxiv.org/abs/2611.14256) | metadata |  |
+| 2026-11-09 | [WorkflowArena: Benchmarking Executable Workflow Orchestration in LLM-Based Multi-Agent Systems](https://arxiv.org/abs/2611.12856) | metadata |  |
 | 2026-11-09 | [Harness Matters: Measuring and Dissecting Security Resilience in Web Agents](https://arxiv.org/abs/2611.11971) | metadata |  |
 | 2026-11-09 | [GroundCascade: Selective Second Opinions for GUI Grounding](https://arxiv.org/abs/2611.13177) | metadata |  |
 | 2026-11-08 | [T2T Technical Report: Synthesizing GUI Agent Trajectories at Scale from Video Tutorials](https://arxiv.org/abs/2611.18715) | metadata |  |
@@ -411,6 +417,7 @@ Dates retain their recorded precision. Explicit arXiv scope exclusions are liste
 | 2026-09-30 | [Action Conditioned Bisimulation For GUI Agent Memory](https://arxiv.org/abs/2609.38778) | ⭐ reviewed | [memory](topics/memory.md), [web-navigation](topics/web-navigation.md) |
 | 2026-09-30 | [A2Z GameSpec-Bench: How Faithfully Can Coding Agents Generate Games from Game Design Specifications?](https://arxiv.org/abs/2609.39564) | metadata |  |
 | 2026-09-29 | [Text2Sim: Agentic Physics-Based Simulation Generation with Distilled Expertise](https://arxiv.org/abs/2609.36593) | metadata |  |
+| 2026-09-29 | [StatePortal: Agentic Checkpoint Synthesis for Testing Deep States in Interactive Software](https://arxiv.org/abs/2611.23257) | metadata |  |
 | 2026-09-29 | [StateFork: Branchable Infrastructure for Agent Exploration](https://arxiv.org/abs/2609.38648) | ⭐ reviewed | [planning](topics/planning.md), [sandbox](topics/sandbox.md), [tool-integration](topics/tool-integration.md) |
 | 2026-09-29 | [SimTrace: Grounded Multimodal User Trajectories Generation for Online User Modeling](https://arxiv.org/abs/2609.38397) | ⭐ reviewed | [action-prediction](topics/action-prediction.md), [data-generation](topics/data-generation.md), [interaction-history](topics/interaction-history.md) |
 | 2026-09-29 | [SecureVibe: Making Vibe Coding More Secure](https://arxiv.org/abs/2609.38606) | metadata |  |
@@ -715,6 +722,7 @@ Dates retain their recorded precision. Explicit arXiv scope exclusions are liste
 | 2026-07-24 | [StateAct: Program State, before Pixels, for Long-Horizon Computer-Use Agents](https://arxiv.org/abs/2607.22798) | ⭐ reviewed | [long-horizon](topics/long-horizon.md), [state-tracking](topics/state-tracking.md), [tool-integration](topics/tool-integration.md) |
 | 2026-07-23 | [OpenForgeRL: Train Harness-native Agents in Any Environment](https://arxiv.org/abs/2607.21557) | ⭐ reviewed | [reinforcement-learning](topics/reinforcement-learning.md), [robustness](topics/robustness.md), [sandbox](topics/sandbox.md), [tool-integration](topics/tool-integration.md) |
 | 2026-07-22 | [OpenSkillRisk: Benchmarking Agent Safety When Using Real-World Risky Third-Party Skills](https://arxiv.org/abs/2607.20121) | metadata |  |
+| 2026-07-22 | [MOLT: A Hugging Face-Native, Minimal, and Scalable Framework for Agentic Reinforcement Learning](https://arxiv.org/abs/2607.21653) | metadata |  |
 | 2026-07-22 | [DocOps: A Verifiable Benchmark for Autonomous Agents in Complex Document Operations](https://arxiv.org/abs/2607.19865) | ⭐ reviewed | [evaluation](topics/evaluation.md), [state-tracking](topics/state-tracking.md), [workflow](topics/workflow.md) |
 | 2026-07-21 | [Broken Gates: Re-evaluating Web Bot Defenses in the Age of LLM Agents](https://arxiv.org/abs/2607.18659) | ⭐ reviewed | [evaluation](topics/evaluation.md), [safety-security](topics/safety-security.md), [web-navigation](topics/web-navigation.md) |
 | 2026-07-20 | [Toward User-Conditioned Evaluation of Personal LLM Agents under Temporal Interventions](https://arxiv.org/abs/2607.21635) | metadata |  |

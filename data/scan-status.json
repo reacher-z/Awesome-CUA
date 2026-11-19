@@ -1,10 +1,10 @@
 {
-  "id": "scan:2026-11-19T00:35:31Z",
+  "id": "scan:2026-11-19T08:18:45Z",
   "schema_version": 1,
   "status": "partial",
-  "started_at": "2026-11-19T00:35:31Z",
-  "finished_at": "2026-11-19T00:40:28Z",
-  "run_url": "https://github.com/reacher-z/Awesome-CUA/actions/runs/44430148274",
+  "started_at": "2026-11-19T08:18:45Z",
+  "finished_at": "2026-11-19T08:24:17Z",
+  "run_url": "https://github.com/reacher-z/Awesome-CUA/actions/runs/44486490244",
   "schedule": {
     "timezone": "UTC",
     "times_local": [
@@ -14,15 +14,6 @@
     ]
   },
   "before": {
-    "resources": 6575,
-    "bibliographic_records": 2893,
-    "arxiv_archive_records": 4201,
-    "excluded_records": 1308,
-    "curated_papers": 1718,
-    "curated_resources": 3629,
-    "candidates": 9871
-  },
-  "after": {
     "resources": 6576,
     "bibliographic_records": 2894,
     "arxiv_archive_records": 4202,
@@ -31,15 +22,66 @@
     "curated_resources": 3629,
     "candidates": 9872
   },
+  "after": {
+    "resources": 6584,
+    "bibliographic_records": 2902,
+    "arxiv_archive_records": 4210,
+    "excluded_records": 1308,
+    "curated_papers": 1718,
+    "curated_resources": 3629,
+    "candidates": 9880
+  },
   "new_papers": [
     {
-      "id": "arxiv:2611.21904",
-      "name": "Simulating Quantum Computation Using Probabilistic Programming",
-      "url": "https://arxiv.org/abs/2611.21904",
+      "id": "arxiv:2607.21653",
+      "name": "MOLT: A Hugging Face-Native, Minimal, and Scalable Framework for Agentic Reinforcement Learning",
+      "url": "https://arxiv.org/abs/2607.21653",
+      "review_status": "metadata_verified"
+    },
+    {
+      "id": "arxiv:2611.12856",
+      "name": "WorkflowArena: Benchmarking Executable Workflow Orchestration in LLM-Based Multi-Agent Systems",
+      "url": "https://arxiv.org/abs/2611.12856",
+      "review_status": "metadata_verified"
+    },
+    {
+      "id": "arxiv:2611.23257",
+      "name": "StatePortal: Agentic Checkpoint Synthesis for Testing Deep States in Interactive Software",
+      "url": "https://arxiv.org/abs/2611.23257",
+      "review_status": "metadata_verified"
+    },
+    {
+      "id": "arxiv:2611.23860",
+      "name": "MobileWeave: Program-First Synthesis of Dependency-Linked Tasks for Training Mobile GUI Agents",
+      "url": "https://arxiv.org/abs/2611.23860",
+      "review_status": "metadata_verified"
+    },
+    {
+      "id": "arxiv:2611.23946",
+      "name": "How Complete Must an Environment Be to Train a Capable GUI Agent?",
+      "url": "https://arxiv.org/abs/2611.23946",
+      "review_status": "metadata_verified"
+    },
+    {
+      "id": "arxiv:2611.24102",
+      "name": "IDEA: Intent-Dominance Evidence Audit for Inference-Time Backdoor Detection in GUI Agents",
+      "url": "https://arxiv.org/abs/2611.24102",
+      "review_status": "metadata_verified"
+    },
+    {
+      "id": "arxiv:2611.24115",
+      "name": "Embodied Graph: A Relational World Model for Long-Horizon Tasks",
+      "url": "https://arxiv.org/abs/2611.24115",
+      "review_status": "metadata_verified"
+    },
+    {
+      "id": "arxiv:2611.24154",
+      "name": "Game2Player: Scaling Gameplay Experience for Visual Agents through Environment-Player Co-Development",
+      "url": "https://arxiv.org/abs/2611.24154",
       "review_status": "metadata_verified"
     }
   ],
-  "new_candidate_count": 1,
+  "new_candidate_count": 8,
   "pending_metadata_changes": 12,
   "source_fetches": {
     "successful": 103,
@@ -49,19 +91,19 @@
   "paper_searches": {
     "successful": 32,
     "total": 32,
-    "unique_identifiers": 1514,
-    "new_candidates": 0
+    "unique_identifiers": 1513,
+    "new_candidates": 1
   },
   "candidate_observations": {
-    "started_at": "2026-11-19T00:36:42Z",
-    "finished_at": "2026-11-19T00:40:00Z",
+    "started_at": "2026-11-19T08:19:53Z",
+    "finished_at": "2026-11-19T08:23:33Z",
     "ok": false,
-    "exit_code": 1,
-    "error": "Candidate phase rejected: Primary metadata lies outside its query cohort\n",
+    "deferred": true,
+    "error": "Stage exceeded 220 seconds; last verified records retained.",
     "published": false,
     "durable_validation": {
       "ok": true,
-      "checked_at": "2026-11-19T00:40:27Z",
+      "checked_at": "2026-11-19T08:24:16Z",
       "mode": "resumable_triplet",
       "required": true,
       "files": {
@@ -75,53 +117,52 @@
   "phases": [
     {
       "name": "discovery",
-      "started_at": "2026-11-19T00:35:32Z",
-      "finished_at": "2026-11-19T00:35:59Z",
+      "started_at": "2026-11-19T08:18:46Z",
+      "finished_at": "2026-11-19T08:19:07Z",
       "ok": true,
       "exit_code": 0,
       "error": null
     },
     {
       "name": "huggingface",
-      "started_at": "2026-11-19T00:35:59Z",
-      "finished_at": "2026-11-19T00:36:33Z",
+      "started_at": "2026-11-19T08:19:07Z",
+      "finished_at": "2026-11-19T08:19:39Z",
       "ok": true,
       "exit_code": 0,
       "error": null
     },
     {
       "name": "recent_arxiv",
-      "started_at": "2026-11-19T00:36:33Z",
-      "finished_at": "2026-11-19T00:36:34Z",
+      "started_at": "2026-11-19T08:19:39Z",
+      "finished_at": "2026-11-19T08:19:39Z",
       "ok": true,
       "exit_code": 0,
       "error": null,
       "complete": true,
-      "new_count": 1,
+      "new_count": 0,
       "warnings": [],
-      "cache_used": false,
-      "rate_limited": false,
-      "deferred": false
+      "cache_used": true,
+      "source_retrieved_at": "2026-11-19T00:36:33Z"
     },
     {
       "name": "harvest",
-      "started_at": "2026-11-19T00:36:34Z",
-      "finished_at": "2026-11-19T00:36:35Z",
+      "started_at": "2026-11-19T08:19:39Z",
+      "finished_at": "2026-11-19T08:19:40Z",
       "ok": true,
       "exit_code": 0,
       "error": null
     },
     {
       "name": "github_candidates",
-      "started_at": "2026-11-19T00:36:42Z",
-      "finished_at": "2026-11-19T00:40:00Z",
+      "started_at": "2026-11-19T08:19:53Z",
+      "finished_at": "2026-11-19T08:23:33Z",
       "ok": false,
-      "exit_code": 1,
-      "error": "Candidate phase rejected: Primary metadata lies outside its query cohort\n",
+      "deferred": true,
+      "error": "Stage exceeded 220 seconds; last verified records retained.",
       "published": false,
       "durable_validation": {
         "ok": true,
-        "checked_at": "2026-11-19T00:40:27Z",
+        "checked_at": "2026-11-19T08:24:16Z",
         "mode": "resumable_triplet",
         "required": true,
         "files": {
@@ -134,29 +175,29 @@
     },
     {
       "name": "build",
-      "started_at": "2026-11-19T00:40:00Z",
-      "finished_at": "2026-11-19T00:40:06Z",
+      "started_at": "2026-11-19T08:23:33Z",
+      "finished_at": "2026-11-19T08:23:41Z",
       "ok": true,
       "exit_code": 0,
       "error": null
     },
     {
       "name": "validate",
-      "started_at": "2026-11-19T00:40:06Z",
-      "finished_at": "2026-11-19T00:40:20Z",
+      "started_at": "2026-11-19T08:23:41Z",
+      "finished_at": "2026-11-19T08:24:04Z",
       "ok": true,
       "exit_code": 0,
       "error": null
     }
   ],
   "warnings": [
-    "github_candidates: Candidate phase rejected: Primary metadata lies outside its query cohort\n"
+    "github_candidates: Stage exceeded 220 seconds; last verified records retained."
   ],
   "rate_limit_only": false,
-  "network_deferred_only": false,
+  "network_deferred_only": true,
   "policy": "Automated scans discover candidates and verify bibliographic metadata. Editorial approval, topic annotations, and license claims require separate source review.",
   "network_budget": {
-    "round_id": "a23bf29e23f14b11bd8f5ac92c36bd45",
+    "round_id": "92ff0eba5a9f47a2a6550f71ad101e54",
     "max_requests": 180,
     "max_seconds": 360,
     "requests_reserved": 166,
@@ -165,7 +206,7 @@
     "by_phase": {
       "discovery": 109,
       "huggingface": 32,
-      "recent_arxiv": 1,
+      "harvest": 1,
       "github_candidates": 24
     },
     "by_provider": {
@@ -184,12 +225,12 @@
       "api.github.com": 24
     },
     "provider_cooldowns": {
-      "api.github.com": "2026-11-19T00:40:44.388955+00:00"
+      "api.github.com": "2026-11-19T08:24:31.538233+00:00"
     },
     "blocked_providers": [
       "api.github.com"
     ],
-    "ledger_sha256": "f5ace214631fa037072b497496e1173abacc99b90777b794339b304446092d04",
+    "ledger_sha256": "2b50bf86abe1cafb71be1d4fef3af1d206e049803a2e61907dacb89960532ee8",
     "count_boundary": "Reservations are persisted before I/O; interrupted attempts remain conservatively charged. HTTP status observation does not establish complete or validated content."
   }
 }

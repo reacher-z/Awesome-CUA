@@ -1,10 +1,10 @@
 {
-  "id": "scan:2026-11-18T16:14:52Z",
+  "id": "scan:2026-11-19T00:35:31Z",
   "schema_version": 1,
   "status": "partial",
-  "started_at": "2026-11-18T16:14:52Z",
-  "finished_at": "2026-11-18T16:20:22Z",
-  "run_url": "https://github.com/reacher-z/Awesome-CUA/actions/runs/44344907837",
+  "started_at": "2026-11-19T00:35:31Z",
+  "finished_at": "2026-11-19T00:40:28Z",
+  "run_url": "https://github.com/reacher-z/Awesome-CUA/actions/runs/44430148274",
   "schedule": {
     "timezone": "UTC",
     "times_local": [
@@ -14,15 +14,6 @@
     ]
   },
   "before": {
-    "resources": 6573,
-    "bibliographic_records": 2891,
-    "arxiv_archive_records": 4199,
-    "excluded_records": 1308,
-    "curated_papers": 1718,
-    "curated_resources": 3629,
-    "candidates": 9869
-  },
-  "after": {
     "resources": 6575,
     "bibliographic_records": 2893,
     "arxiv_archive_records": 4201,
@@ -31,21 +22,24 @@
     "curated_resources": 3629,
     "candidates": 9871
   },
+  "after": {
+    "resources": 6576,
+    "bibliographic_records": 2894,
+    "arxiv_archive_records": 4202,
+    "excluded_records": 1308,
+    "curated_papers": 1718,
+    "curated_resources": 3629,
+    "candidates": 9872
+  },
   "new_papers": [
     {
-      "id": "arxiv:2611.22563",
-      "name": "CADMAGEDDON: High-Fidelity CAD Reconstruction with Local Inference",
-      "url": "https://arxiv.org/abs/2611.22563",
-      "review_status": "metadata_verified"
-    },
-    {
-      "id": "arxiv:2611.22565",
-      "name": "MillBill: A Machining Agent with Geometric Feedback",
-      "url": "https://arxiv.org/abs/2611.22565",
+      "id": "arxiv:2611.21904",
+      "name": "Simulating Quantum Computation Using Probabilistic Programming",
+      "url": "https://arxiv.org/abs/2611.21904",
       "review_status": "metadata_verified"
     }
   ],
-  "new_candidate_count": 2,
+  "new_candidate_count": 1,
   "pending_metadata_changes": 12,
   "source_fetches": {
     "successful": 103,
@@ -56,18 +50,18 @@
     "successful": 32,
     "total": 32,
     "unique_identifiers": 1514,
-    "new_candidates": 2
+    "new_candidates": 0
   },
   "candidate_observations": {
-    "started_at": "2026-11-18T16:16:04Z",
-    "finished_at": "2026-11-18T16:19:44Z",
+    "started_at": "2026-11-19T00:36:42Z",
+    "finished_at": "2026-11-19T00:40:00Z",
     "ok": false,
-    "deferred": true,
-    "error": "Stage exceeded 220 seconds; last verified records retained.",
+    "exit_code": 1,
+    "error": "Candidate phase rejected: Primary metadata lies outside its query cohort\n",
     "published": false,
     "durable_validation": {
       "ok": true,
-      "checked_at": "2026-11-18T16:20:21Z",
+      "checked_at": "2026-11-19T00:40:27Z",
       "mode": "resumable_triplet",
       "required": true,
       "files": {
@@ -81,52 +75,53 @@
   "phases": [
     {
       "name": "discovery",
-      "started_at": "2026-11-18T16:14:53Z",
-      "finished_at": "2026-11-18T16:15:17Z",
+      "started_at": "2026-11-19T00:35:32Z",
+      "finished_at": "2026-11-19T00:35:59Z",
       "ok": true,
       "exit_code": 0,
       "error": null
     },
     {
       "name": "huggingface",
-      "started_at": "2026-11-18T16:15:17Z",
-      "finished_at": "2026-11-18T16:15:53Z",
+      "started_at": "2026-11-19T00:35:59Z",
+      "finished_at": "2026-11-19T00:36:33Z",
       "ok": true,
       "exit_code": 0,
       "error": null
     },
     {
       "name": "recent_arxiv",
-      "started_at": "2026-11-18T16:15:53Z",
-      "finished_at": "2026-11-18T16:15:53Z",
+      "started_at": "2026-11-19T00:36:33Z",
+      "finished_at": "2026-11-19T00:36:34Z",
       "ok": true,
       "exit_code": 0,
       "error": null,
       "complete": true,
-      "new_count": 0,
+      "new_count": 1,
       "warnings": [],
-      "cache_used": true,
-      "source_retrieved_at": "2026-11-18T00:36:29Z"
+      "cache_used": false,
+      "rate_limited": false,
+      "deferred": false
     },
     {
       "name": "harvest",
-      "started_at": "2026-11-18T16:15:53Z",
-      "finished_at": "2026-11-18T16:15:54Z",
+      "started_at": "2026-11-19T00:36:34Z",
+      "finished_at": "2026-11-19T00:36:35Z",
       "ok": true,
       "exit_code": 0,
       "error": null
     },
     {
       "name": "github_candidates",
-      "started_at": "2026-11-18T16:16:04Z",
-      "finished_at": "2026-11-18T16:19:44Z",
+      "started_at": "2026-11-19T00:36:42Z",
+      "finished_at": "2026-11-19T00:40:00Z",
       "ok": false,
-      "deferred": true,
-      "error": "Stage exceeded 220 seconds; last verified records retained.",
+      "exit_code": 1,
+      "error": "Candidate phase rejected: Primary metadata lies outside its query cohort\n",
       "published": false,
       "durable_validation": {
         "ok": true,
-        "checked_at": "2026-11-18T16:20:21Z",
+        "checked_at": "2026-11-19T00:40:27Z",
         "mode": "resumable_triplet",
         "required": true,
         "files": {
@@ -139,29 +134,29 @@
     },
     {
       "name": "build",
-      "started_at": "2026-11-18T16:19:44Z",
-      "finished_at": "2026-11-18T16:19:51Z",
+      "started_at": "2026-11-19T00:40:00Z",
+      "finished_at": "2026-11-19T00:40:06Z",
       "ok": true,
       "exit_code": 0,
       "error": null
     },
     {
       "name": "validate",
-      "started_at": "2026-11-18T16:19:51Z",
-      "finished_at": "2026-11-18T16:20:10Z",
+      "started_at": "2026-11-19T00:40:06Z",
+      "finished_at": "2026-11-19T00:40:20Z",
       "ok": true,
       "exit_code": 0,
       "error": null
     }
   ],
   "warnings": [
-    "github_candidates: Stage exceeded 220 seconds; last verified records retained."
+    "github_candidates: Candidate phase rejected: Primary metadata lies outside its query cohort\n"
   ],
   "rate_limit_only": false,
-  "network_deferred_only": true,
+  "network_deferred_only": false,
   "policy": "Automated scans discover candidates and verify bibliographic metadata. Editorial approval, topic annotations, and license claims require separate source review.",
   "network_budget": {
-    "round_id": "37130b5e30a74dfaacf6814cdacb3927",
+    "round_id": "a23bf29e23f14b11bd8f5ac92c36bd45",
     "max_requests": 180,
     "max_seconds": 360,
     "requests_reserved": 166,
@@ -170,7 +165,7 @@
     "by_phase": {
       "discovery": 109,
       "huggingface": 32,
-      "harvest": 1,
+      "recent_arxiv": 1,
       "github_candidates": 24
     },
     "by_provider": {
@@ -189,12 +184,12 @@
       "api.github.com": 24
     },
     "provider_cooldowns": {
-      "api.github.com": "2026-11-18T16:20:30.633424+00:00"
+      "api.github.com": "2026-11-19T00:40:44.388955+00:00"
     },
     "blocked_providers": [
       "api.github.com"
     ],
-    "ledger_sha256": "5c760a47f70492ed7d905af8b9a633edf53a492c554f4d8fc6648adb0394a047",
+    "ledger_sha256": "f5ace214631fa037072b497496e1173abacc99b90777b794339b304446092d04",
     "count_boundary": "Reservations are persisted before I/O; interrupted attempts remain conservatively charged. HTTP status observation does not establish complete or validated content."
   }
 }

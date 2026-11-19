@@ -1,10 +1,10 @@
 {
-  "id": "scan:2026-11-19T08:18:45Z",
+  "id": "scan:2026-11-19T16:15:06Z",
   "schema_version": 1,
   "status": "partial",
-  "started_at": "2026-11-19T08:18:45Z",
-  "finished_at": "2026-11-19T08:24:17Z",
-  "run_url": "https://github.com/reacher-z/Awesome-CUA/actions/runs/44486490244",
+  "started_at": "2026-11-19T16:15:06Z",
+  "finished_at": "2026-11-19T16:21:08Z",
+  "run_url": "https://github.com/reacher-z/Awesome-CUA/actions/runs/44563891242",
   "schedule": {
     "timezone": "UTC",
     "times_local": [
@@ -14,13 +14,13 @@
     ]
   },
   "before": {
-    "resources": 6576,
-    "bibliographic_records": 2894,
-    "arxiv_archive_records": 4202,
+    "resources": 6584,
+    "bibliographic_records": 2902,
+    "arxiv_archive_records": 4210,
     "excluded_records": 1308,
     "curated_papers": 1718,
     "curated_resources": 3629,
-    "candidates": 9872
+    "candidates": 9880
   },
   "after": {
     "resources": 6584,
@@ -31,57 +31,8 @@
     "curated_resources": 3629,
     "candidates": 9880
   },
-  "new_papers": [
-    {
-      "id": "arxiv:2607.21653",
-      "name": "MOLT: A Hugging Face-Native, Minimal, and Scalable Framework for Agentic Reinforcement Learning",
-      "url": "https://arxiv.org/abs/2607.21653",
-      "review_status": "metadata_verified"
-    },
-    {
-      "id": "arxiv:2611.12856",
-      "name": "WorkflowArena: Benchmarking Executable Workflow Orchestration in LLM-Based Multi-Agent Systems",
-      "url": "https://arxiv.org/abs/2611.12856",
-      "review_status": "metadata_verified"
-    },
-    {
-      "id": "arxiv:2611.23257",
-      "name": "StatePortal: Agentic Checkpoint Synthesis for Testing Deep States in Interactive Software",
-      "url": "https://arxiv.org/abs/2611.23257",
-      "review_status": "metadata_verified"
-    },
-    {
-      "id": "arxiv:2611.23860",
-      "name": "MobileWeave: Program-First Synthesis of Dependency-Linked Tasks for Training Mobile GUI Agents",
-      "url": "https://arxiv.org/abs/2611.23860",
-      "review_status": "metadata_verified"
-    },
-    {
-      "id": "arxiv:2611.23946",
-      "name": "How Complete Must an Environment Be to Train a Capable GUI Agent?",
-      "url": "https://arxiv.org/abs/2611.23946",
-      "review_status": "metadata_verified"
-    },
-    {
-      "id": "arxiv:2611.24102",
-      "name": "IDEA: Intent-Dominance Evidence Audit for Inference-Time Backdoor Detection in GUI Agents",
-      "url": "https://arxiv.org/abs/2611.24102",
-      "review_status": "metadata_verified"
-    },
-    {
-      "id": "arxiv:2611.24115",
-      "name": "Embodied Graph: A Relational World Model for Long-Horizon Tasks",
-      "url": "https://arxiv.org/abs/2611.24115",
-      "review_status": "metadata_verified"
-    },
-    {
-      "id": "arxiv:2611.24154",
-      "name": "Game2Player: Scaling Gameplay Experience for Visual Agents through Environment-Player Co-Development",
-      "url": "https://arxiv.org/abs/2611.24154",
-      "review_status": "metadata_verified"
-    }
-  ],
-  "new_candidate_count": 8,
+  "new_papers": [],
+  "new_candidate_count": 0,
   "pending_metadata_changes": 12,
   "source_fetches": {
     "successful": 103,
@@ -92,18 +43,18 @@
     "successful": 32,
     "total": 32,
     "unique_identifiers": 1513,
-    "new_candidates": 1
+    "new_candidates": 0
   },
   "candidate_observations": {
-    "started_at": "2026-11-19T08:19:53Z",
-    "finished_at": "2026-11-19T08:23:33Z",
+    "started_at": "2026-11-19T16:16:42Z",
+    "finished_at": "2026-11-19T16:20:22Z",
     "ok": false,
     "deferred": true,
     "error": "Stage exceeded 220 seconds; last verified records retained.",
     "published": false,
     "durable_validation": {
       "ok": true,
-      "checked_at": "2026-11-19T08:24:16Z",
+      "checked_at": "2026-11-19T16:21:07Z",
       "mode": "resumable_triplet",
       "required": true,
       "files": {
@@ -117,24 +68,24 @@
   "phases": [
     {
       "name": "discovery",
-      "started_at": "2026-11-19T08:18:46Z",
-      "finished_at": "2026-11-19T08:19:07Z",
+      "started_at": "2026-11-19T16:15:07Z",
+      "finished_at": "2026-11-19T16:15:52Z",
       "ok": true,
       "exit_code": 0,
       "error": null
     },
     {
       "name": "huggingface",
-      "started_at": "2026-11-19T08:19:07Z",
-      "finished_at": "2026-11-19T08:19:39Z",
+      "started_at": "2026-11-19T16:15:52Z",
+      "finished_at": "2026-11-19T16:16:29Z",
       "ok": true,
       "exit_code": 0,
       "error": null
     },
     {
       "name": "recent_arxiv",
-      "started_at": "2026-11-19T08:19:39Z",
-      "finished_at": "2026-11-19T08:19:39Z",
+      "started_at": "2026-11-19T16:16:29Z",
+      "finished_at": "2026-11-19T16:16:30Z",
       "ok": true,
       "exit_code": 0,
       "error": null,
@@ -146,23 +97,23 @@
     },
     {
       "name": "harvest",
-      "started_at": "2026-11-19T08:19:39Z",
-      "finished_at": "2026-11-19T08:19:40Z",
+      "started_at": "2026-11-19T16:16:30Z",
+      "finished_at": "2026-11-19T16:16:30Z",
       "ok": true,
       "exit_code": 0,
       "error": null
     },
     {
       "name": "github_candidates",
-      "started_at": "2026-11-19T08:19:53Z",
-      "finished_at": "2026-11-19T08:23:33Z",
+      "started_at": "2026-11-19T16:16:42Z",
+      "finished_at": "2026-11-19T16:20:22Z",
       "ok": false,
       "deferred": true,
       "error": "Stage exceeded 220 seconds; last verified records retained.",
       "published": false,
       "durable_validation": {
         "ok": true,
-        "checked_at": "2026-11-19T08:24:16Z",
+        "checked_at": "2026-11-19T16:21:07Z",
         "mode": "resumable_triplet",
         "required": true,
         "files": {
@@ -175,16 +126,16 @@
     },
     {
       "name": "build",
-      "started_at": "2026-11-19T08:23:33Z",
-      "finished_at": "2026-11-19T08:23:41Z",
+      "started_at": "2026-11-19T16:20:22Z",
+      "finished_at": "2026-11-19T16:20:31Z",
       "ok": true,
       "exit_code": 0,
       "error": null
     },
     {
       "name": "validate",
-      "started_at": "2026-11-19T08:23:41Z",
-      "finished_at": "2026-11-19T08:24:04Z",
+      "started_at": "2026-11-19T16:20:31Z",
+      "finished_at": "2026-11-19T16:20:55Z",
       "ok": true,
       "exit_code": 0,
       "error": null
@@ -197,17 +148,16 @@
   "network_deferred_only": true,
   "policy": "Automated scans discover candidates and verify bibliographic metadata. Editorial approval, topic annotations, and license claims require separate source review.",
   "network_budget": {
-    "round_id": "92ff0eba5a9f47a2a6550f71ad101e54",
+    "round_id": "316a518833c445be9014e54898a2f77e",
     "max_requests": 180,
     "max_seconds": 360,
-    "requests_reserved": 166,
-    "responses_received": 166,
+    "requests_reserved": 164,
+    "responses_received": 164,
     "unknown_attempts": 0,
     "by_phase": {
       "discovery": 109,
       "huggingface": 32,
-      "harvest": 1,
-      "github_candidates": 24
+      "github_candidates": 23
     },
     "by_provider": {
       "raw.githubusercontent.com": 66,
@@ -220,17 +170,17 @@
       "doc-04-10-sheets.googleusercontent.com": 1,
       "doc-0s-8k-sheets.googleusercontent.com": 1,
       "doc-04-0o-sheets.googleusercontent.com": 1,
-      "export.arxiv.org": 3,
+      "export.arxiv.org": 2,
       "arxiv.org": 2,
-      "api.github.com": 24
+      "api.github.com": 23
     },
     "provider_cooldowns": {
-      "api.github.com": "2026-11-19T08:24:31.538233+00:00"
+      "api.github.com": "2026-11-19T16:21:19.245698+00:00"
     },
     "blocked_providers": [
       "api.github.com"
     ],
-    "ledger_sha256": "2b50bf86abe1cafb71be1d4fef3af1d206e049803a2e61907dacb89960532ee8",
+    "ledger_sha256": "2a3022a28fc81f69358b28b744bf0f701b75dc8303038b4314df8f69c6b6f767",
     "count_boundary": "Reservations are persisted before I/O; interrupted attempts remain conservatively charged. HTTP status observation does not establish complete or validated content."
   }
 }

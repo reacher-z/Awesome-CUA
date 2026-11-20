@@ -1,10 +1,10 @@
 {
-  "id": "scan:2026-11-20T00:32:14Z",
+  "id": "scan:2026-11-20T08:18:40Z",
   "schema_version": 1,
   "status": "partial",
-  "started_at": "2026-11-20T00:32:14Z",
-  "finished_at": "2026-11-20T00:37:55Z",
-  "run_url": "https://github.com/reacher-z/Awesome-CUA/actions/runs/44646606305",
+  "started_at": "2026-11-20T08:18:40Z",
+  "finished_at": "2026-11-20T08:24:25Z",
+  "run_url": "https://github.com/reacher-z/Awesome-CUA/actions/runs/44701467689",
   "schedule": {
     "timezone": "UTC",
     "times_local": [
@@ -14,15 +14,6 @@
     ]
   },
   "before": {
-    "resources": 6584,
-    "bibliographic_records": 2902,
-    "arxiv_archive_records": 4210,
-    "excluded_records": 1308,
-    "curated_papers": 1718,
-    "curated_resources": 3629,
-    "candidates": 9880
-  },
-  "after": {
     "resources": 6585,
     "bibliographic_records": 2903,
     "arxiv_archive_records": 4211,
@@ -31,15 +22,42 @@
     "curated_resources": 3629,
     "candidates": 9881
   },
+  "after": {
+    "resources": 6589,
+    "bibliographic_records": 2907,
+    "arxiv_archive_records": 4215,
+    "excluded_records": 1308,
+    "curated_papers": 1718,
+    "curated_resources": 3629,
+    "candidates": 9885
+  },
   "new_papers": [
     {
-      "id": "arxiv:2611.23917",
-      "name": "Vanguard: Knowing When to Trust the Draft in Speculative Vision-Language Agents",
-      "url": "https://arxiv.org/abs/2611.23917",
+      "id": "arxiv:2611.24977",
+      "name": "CANDID: Candidate-Driven Intervention for Disciplined Execution in Local Computer-Use Agents",
+      "url": "https://arxiv.org/abs/2611.24977",
+      "review_status": "metadata_verified"
+    },
+    {
+      "id": "arxiv:2611.25257",
+      "name": "Keel: A Frontier Model Teaches a Vision-Language Model by Rewriting Its Weights",
+      "url": "https://arxiv.org/abs/2611.25257",
+      "review_status": "metadata_verified"
+    },
+    {
+      "id": "arxiv:2611.25297",
+      "name": "ScaleDiag: Diagnosing the Limits of Test-Time Scaling in GUI Grounding",
+      "url": "https://arxiv.org/abs/2611.25297",
+      "review_status": "metadata_verified"
+    },
+    {
+      "id": "arxiv:2611.25387",
+      "name": "TuringSpace: Grounding Spatial Intelligence in Action with Interactive CAPTCHAs",
+      "url": "https://arxiv.org/abs/2611.25387",
       "review_status": "metadata_verified"
     }
   ],
-  "new_candidate_count": 1,
+  "new_candidate_count": 4,
   "pending_metadata_changes": 12,
   "source_fetches": {
     "successful": 103,
@@ -53,15 +71,15 @@
     "new_candidates": 0
   },
   "candidate_observations": {
-    "started_at": "2026-11-20T00:33:42Z",
-    "finished_at": "2026-11-20T00:37:20Z",
+    "started_at": "2026-11-20T08:20:01Z",
+    "finished_at": "2026-11-20T08:23:41Z",
     "ok": false,
-    "exit_code": 1,
-    "error": "Candidate phase rejected: Primary metadata lies outside its query cohort\n",
+    "deferred": true,
+    "error": "Stage exceeded 220 seconds; last verified records retained.",
     "published": false,
     "durable_validation": {
       "ok": true,
-      "checked_at": "2026-11-20T00:37:54Z",
+      "checked_at": "2026-11-20T08:24:24Z",
       "mode": "resumable_triplet",
       "required": true,
       "files": {
@@ -75,53 +93,52 @@
   "phases": [
     {
       "name": "discovery",
-      "started_at": "2026-11-20T00:32:15Z",
-      "finished_at": "2026-11-20T00:32:55Z",
+      "started_at": "2026-11-20T08:18:42Z",
+      "finished_at": "2026-11-20T08:19:10Z",
       "ok": true,
       "exit_code": 0,
       "error": null
     },
     {
       "name": "huggingface",
-      "started_at": "2026-11-20T00:32:55Z",
-      "finished_at": "2026-11-20T00:33:31Z",
+      "started_at": "2026-11-20T08:19:10Z",
+      "finished_at": "2026-11-20T08:19:47Z",
       "ok": true,
       "exit_code": 0,
       "error": null
     },
     {
       "name": "recent_arxiv",
-      "started_at": "2026-11-20T00:33:31Z",
-      "finished_at": "2026-11-20T00:33:32Z",
+      "started_at": "2026-11-20T08:19:47Z",
+      "finished_at": "2026-11-20T08:19:47Z",
       "ok": true,
       "exit_code": 0,
       "error": null,
       "complete": true,
-      "new_count": 1,
+      "new_count": 0,
       "warnings": [],
-      "cache_used": false,
-      "rate_limited": false,
-      "deferred": false
+      "cache_used": true,
+      "source_retrieved_at": "2026-11-20T00:33:31Z"
     },
     {
       "name": "harvest",
-      "started_at": "2026-11-20T00:33:32Z",
-      "finished_at": "2026-11-20T00:33:33Z",
+      "started_at": "2026-11-20T08:19:47Z",
+      "finished_at": "2026-11-20T08:19:48Z",
       "ok": true,
       "exit_code": 0,
       "error": null
     },
     {
       "name": "github_candidates",
-      "started_at": "2026-11-20T00:33:42Z",
-      "finished_at": "2026-11-20T00:37:20Z",
+      "started_at": "2026-11-20T08:20:01Z",
+      "finished_at": "2026-11-20T08:23:41Z",
       "ok": false,
-      "exit_code": 1,
-      "error": "Candidate phase rejected: Primary metadata lies outside its query cohort\n",
+      "deferred": true,
+      "error": "Stage exceeded 220 seconds; last verified records retained.",
       "published": false,
       "durable_validation": {
         "ok": true,
-        "checked_at": "2026-11-20T00:37:54Z",
+        "checked_at": "2026-11-20T08:24:24Z",
         "mode": "resumable_triplet",
         "required": true,
         "files": {
@@ -134,39 +151,39 @@
     },
     {
       "name": "build",
-      "started_at": "2026-11-20T00:37:20Z",
-      "finished_at": "2026-11-20T00:37:27Z",
+      "started_at": "2026-11-20T08:23:41Z",
+      "finished_at": "2026-11-20T08:23:49Z",
       "ok": true,
       "exit_code": 0,
       "error": null
     },
     {
       "name": "validate",
-      "started_at": "2026-11-20T00:37:27Z",
-      "finished_at": "2026-11-20T00:37:45Z",
+      "started_at": "2026-11-20T08:23:49Z",
+      "finished_at": "2026-11-20T08:24:13Z",
       "ok": true,
       "exit_code": 0,
       "error": null
     }
   ],
   "warnings": [
-    "github_candidates: Candidate phase rejected: Primary metadata lies outside its query cohort\n"
+    "github_candidates: Stage exceeded 220 seconds; last verified records retained."
   ],
   "rate_limit_only": false,
-  "network_deferred_only": false,
+  "network_deferred_only": true,
   "policy": "Automated scans discover candidates and verify bibliographic metadata. Editorial approval, topic annotations, and license claims require separate source review.",
   "network_budget": {
-    "round_id": "2f005725618f4bffaa05d2a4d060df75",
+    "round_id": "a661bc1a2226484783b6a7c0d86b3dfc",
     "max_requests": 180,
     "max_seconds": 360,
-    "requests_reserved": 166,
-    "responses_received": 166,
-    "unknown_attempts": 0,
+    "requests_reserved": 165,
+    "responses_received": 164,
+    "unknown_attempts": 1,
     "by_phase": {
       "discovery": 109,
       "huggingface": 32,
-      "recent_arxiv": 1,
-      "github_candidates": 24
+      "harvest": 1,
+      "github_candidates": 23
     },
     "by_provider": {
       "raw.githubusercontent.com": 66,
@@ -181,15 +198,11 @@
       "doc-04-0o-sheets.googleusercontent.com": 1,
       "export.arxiv.org": 3,
       "arxiv.org": 2,
-      "api.github.com": 24
+      "api.github.com": 23
     },
-    "provider_cooldowns": {
-      "api.github.com": "2026-11-20T00:38:00.115635+00:00"
-    },
-    "blocked_providers": [
-      "api.github.com"
-    ],
-    "ledger_sha256": "412a7d219a1b0df6d07306bcb0b9bb6072c0170769be12eefdffc3624dc22272",
+    "provider_cooldowns": {},
+    "blocked_providers": [],
+    "ledger_sha256": "dc9d14e52c0248b670072aeb35812593015b13da07cf06e51e99e11b9027b26c",
     "count_boundary": "Reservations are persisted before I/O; interrupted attempts remain conservatively charged. HTTP status observation does not establish complete or validated content."
   }
 }

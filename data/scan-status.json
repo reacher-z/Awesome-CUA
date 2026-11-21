@@ -1,10 +1,10 @@
 {
-  "id": "scan:2026-11-20T16:14:38Z",
+  "id": "scan:2026-11-21T00:33:45Z",
   "schema_version": 1,
   "status": "partial",
-  "started_at": "2026-11-20T16:14:38Z",
-  "finished_at": "2026-11-20T16:18:58Z",
-  "run_url": "https://github.com/reacher-z/Awesome-CUA/actions/runs/44771303438",
+  "started_at": "2026-11-21T00:33:45Z",
+  "finished_at": "2026-11-21T00:37:37Z",
+  "run_url": "https://github.com/reacher-z/Awesome-CUA/actions/runs/44844610373",
   "schedule": {
     "timezone": "UTC",
     "times_local": [
@@ -14,15 +14,6 @@
     ]
   },
   "before": {
-    "resources": 6589,
-    "bibliographic_records": 2907,
-    "arxiv_archive_records": 4215,
-    "excluded_records": 1308,
-    "curated_papers": 1718,
-    "curated_resources": 3629,
-    "candidates": 9885
-  },
-  "after": {
     "resources": 6590,
     "bibliographic_records": 2908,
     "arxiv_archive_records": 4216,
@@ -31,15 +22,30 @@
     "curated_resources": 3629,
     "candidates": 9886
   },
+  "after": {
+    "resources": 6592,
+    "bibliographic_records": 2910,
+    "arxiv_archive_records": 4218,
+    "excluded_records": 1308,
+    "curated_papers": 1718,
+    "curated_resources": 3629,
+    "candidates": 9888
+  },
   "new_papers": [
     {
-      "id": "arxiv:2611.25179",
-      "name": "Phantom Success, Silent Failure: Auditing the Success Checkers of Simulated Manipulation Benchmarks",
-      "url": "https://arxiv.org/abs/2611.25179",
+      "id": "arxiv:2608.04181",
+      "name": "MergeSE: Post-Hoc Model Merging for Software Engineering Tasks Without Retraining",
+      "url": "https://arxiv.org/abs/2608.04181",
+      "review_status": "metadata_verified"
+    },
+    {
+      "id": "arxiv:2611.25526",
+      "name": "MATE: Mobile Agent Trustworthy Execution for Safe and Efficient Mobile Control",
+      "url": "https://arxiv.org/abs/2611.25526",
       "review_status": "metadata_verified"
     }
   ],
-  "new_candidate_count": 1,
+  "new_candidate_count": 2,
   "pending_metadata_changes": 12,
   "source_fetches": {
     "successful": 103,
@@ -53,15 +59,15 @@
     "new_candidates": 1
   },
   "candidate_observations": {
-    "started_at": "2026-11-20T16:16:02Z",
-    "finished_at": "2026-11-20T16:18:23Z",
+    "started_at": "2026-11-21T00:34:54Z",
+    "finished_at": "2026-11-21T00:37:14Z",
     "ok": false,
     "exit_code": 1,
     "error": "Candidate phase rejected: Primary metadata lies outside its query cohort\n",
     "published": false,
     "durable_validation": {
       "ok": true,
-      "checked_at": "2026-11-20T16:18:57Z",
+      "checked_at": "2026-11-21T00:37:37Z",
       "mode": "resumable_triplet",
       "required": true,
       "files": {
@@ -75,52 +81,53 @@
   "phases": [
     {
       "name": "discovery",
-      "started_at": "2026-11-20T16:14:39Z",
-      "finished_at": "2026-11-20T16:15:11Z",
+      "started_at": "2026-11-21T00:33:46Z",
+      "finished_at": "2026-11-21T00:34:10Z",
       "ok": true,
       "exit_code": 0,
       "error": null
     },
     {
       "name": "huggingface",
-      "started_at": "2026-11-20T16:15:11Z",
-      "finished_at": "2026-11-20T16:15:52Z",
+      "started_at": "2026-11-21T00:34:10Z",
+      "finished_at": "2026-11-21T00:34:44Z",
       "ok": true,
       "exit_code": 0,
       "error": null
     },
     {
       "name": "recent_arxiv",
-      "started_at": "2026-11-20T16:15:52Z",
-      "finished_at": "2026-11-20T16:15:52Z",
+      "started_at": "2026-11-21T00:34:44Z",
+      "finished_at": "2026-11-21T00:34:45Z",
       "ok": true,
       "exit_code": 0,
       "error": null,
       "complete": true,
-      "new_count": 0,
+      "new_count": 1,
       "warnings": [],
-      "cache_used": true,
-      "source_retrieved_at": "2026-11-20T00:33:31Z"
+      "cache_used": false,
+      "rate_limited": false,
+      "deferred": false
     },
     {
       "name": "harvest",
-      "started_at": "2026-11-20T16:15:52Z",
-      "finished_at": "2026-11-20T16:15:53Z",
+      "started_at": "2026-11-21T00:34:45Z",
+      "finished_at": "2026-11-21T00:34:48Z",
       "ok": true,
       "exit_code": 0,
       "error": null
     },
     {
       "name": "github_candidates",
-      "started_at": "2026-11-20T16:16:02Z",
-      "finished_at": "2026-11-20T16:18:23Z",
+      "started_at": "2026-11-21T00:34:54Z",
+      "finished_at": "2026-11-21T00:37:14Z",
       "ok": false,
       "exit_code": 1,
       "error": "Candidate phase rejected: Primary metadata lies outside its query cohort\n",
       "published": false,
       "durable_validation": {
         "ok": true,
-        "checked_at": "2026-11-20T16:18:57Z",
+        "checked_at": "2026-11-21T00:37:37Z",
         "mode": "resumable_triplet",
         "required": true,
         "files": {
@@ -133,16 +140,16 @@
     },
     {
       "name": "build",
-      "started_at": "2026-11-20T16:18:23Z",
-      "finished_at": "2026-11-20T16:18:30Z",
+      "started_at": "2026-11-21T00:37:14Z",
+      "finished_at": "2026-11-21T00:37:19Z",
       "ok": true,
       "exit_code": 0,
       "error": null
     },
     {
       "name": "validate",
-      "started_at": "2026-11-20T16:18:30Z",
-      "finished_at": "2026-11-20T16:18:48Z",
+      "started_at": "2026-11-21T00:37:19Z",
+      "finished_at": "2026-11-21T00:37:31Z",
       "ok": true,
       "exit_code": 0,
       "error": null
@@ -155,17 +162,18 @@
   "network_deferred_only": false,
   "policy": "Automated scans discover candidates and verify bibliographic metadata. Editorial approval, topic annotations, and license claims require separate source review.",
   "network_budget": {
-    "round_id": "f5226cfbd72043af9f0022ec528babff",
+    "round_id": "9ec08bb9698f4a498a82dcb7465ba285",
     "max_requests": 180,
     "max_seconds": 360,
-    "requests_reserved": 155,
-    "responses_received": 155,
+    "requests_reserved": 160,
+    "responses_received": 160,
     "unknown_attempts": 0,
     "by_phase": {
       "discovery": 109,
       "huggingface": 32,
+      "recent_arxiv": 1,
       "harvest": 1,
-      "github_candidates": 13
+      "github_candidates": 17
     },
     "by_provider": {
       "raw.githubusercontent.com": 66,
@@ -178,17 +186,17 @@
       "doc-04-10-sheets.googleusercontent.com": 1,
       "doc-0s-8k-sheets.googleusercontent.com": 1,
       "doc-04-0o-sheets.googleusercontent.com": 1,
-      "export.arxiv.org": 3,
+      "export.arxiv.org": 4,
       "arxiv.org": 2,
-      "api.github.com": 13
+      "api.github.com": 17
     },
     "provider_cooldowns": {
-      "api.github.com": "2026-11-20T16:19:03.240614+00:00"
+      "api.github.com": "2026-11-21T00:38:00.845854+00:00"
     },
     "blocked_providers": [
       "api.github.com"
     ],
-    "ledger_sha256": "ec691795d8173a2980705ca042b2507a44abd4a63883feafd16f73a53c48a8fb",
+    "ledger_sha256": "66bd3c15bc5262d0f87b01f0934d8d3c2a47ecad76406a4b585f4544b58120e3",
     "count_boundary": "Reservations are persisted before I/O; interrupted attempts remain conservatively charged. HTTP status observation does not establish complete or validated content."
   }
 }

@@ -873,3 +873,47 @@ test('category filter needs every term and A-Z sorting ignores case and orders n
   for(const query of ['android','osworld android'])assert.equal(matches(text,query),false,query);
   assert.deepEqual(['b10','B2','a'].sort(byName),['a','B2','b10']);
 });
+test('the status bar names all resources again after picking the All kind',async()=>{
+  // The home finder is a single served script; this fake DOM supplies only what the command window touches.
+  const make=tag=>{const el={tagName:tag,dataset:{},attrs:{},listeners:{},innerHTML:'',textContent:'',value:'',open:false,offsetParent:{},scrollWidth:0,clientWidth:0,scrollLeft:0,style:{},parentElement:null};
+    const classes=new Set();
+    Object.assign(el,{classList:{add:(...c)=>c.forEach(x=>classes.add(x)),remove:(...c)=>c.forEach(x=>classes.delete(x)),toggle:(c,f)=>{if(f===undefined)f=!classes.has(c);f?classes.add(c):classes.delete(c);},contains:c=>classes.has(c)},
+      setAttribute:(k,v)=>el.attrs[k]=String(v),getAttribute:k=>el.attrs[k]??null,removeAttribute:k=>delete el.attrs[k],
+      toggleAttribute:(k,f)=>{if(f===undefined)f=!(k in el.attrs);if(f)el.attrs[k]='';else delete el.attrs[k];return f;},
+      addEventListener:(t,fn)=>(el.listeners[t]??=[]).push(fn),removeEventListener(){},
+      querySelector:()=>null,querySelectorAll:()=>[],getBoundingClientRect:()=>({top:0,left:0,width:0,height:0,right:0,bottom:0}),
+      scrollIntoView(){},scrollBy(){},focus(){},blur(){},append(){},prepend(){},replaceWith(){},remove(){},contains:()=>false,
+      dispatchEvent:e=>(el.listeners[e.type]||[]).forEach(fn=>fn(e)),cloneNode:()=>make(tag)});
+    return el;};
+  const fin=make('div'),q=make('input'),list=make('ol'),count=make('span'),field=make('form'),seeAll=make('a');
+  const defaultLabel='Browse all 5,115 records<svg class="i i-sm"></svg>';
+  seeAll.innerHTML=defaultLabel;
+  const more=make('details'),moreLabel=make('span'),moreN=make('span'),sortSel=make('select');
+  const tabs=['all','model'].map(kind=>{const tab=make('button');tab.dataset.kind=kind;tab.closest=()=>nav;return tab;});
+  const nav=make('nav'),stripEl=make('div'),prev=make('button'),next=make('button');
+  const counts={all:make('span'),model:make('span')};
+  Object.entries(counts).forEach(([kind,el],i)=>{el.dataset.count=kind;el.textContent=String(1674+i);el.parentElement=make('span');});
+  const elements={'#q':q,'#results':list,'#q-count':count,'.field':field,'[data-sort]':sortSel,'[data-more]':more,'[data-more-label]':moreLabel,'[data-more-n]':moreN,
+    '[data-address]':make('output'),'[data-see-all]':seeAll,'[data-filter-n]':make('span'),'[data-finder-form]':make('form'),'.clear':make('button'),'[data-tabstrip]':stripEl};
+  fin.querySelector=selector=>elements[selector]??null;
+  fin.querySelectorAll=selector=>selector==='[data-kind]'?tabs:selector==='[data-env]'?[]:selector==='[data-count]'?Object.values(counts):selector.startsWith('[data-count=')?[counts[selector.slice(13,-2)]].filter(Boolean):[];
+  stripEl.querySelector=selector=>selector==='.tabs'?nav:selector==='.prev'?prev:selector==='.next'?next:null;
+  const globals={document:{documentElement:{lang:'en',removeAttribute(){},classList:{add(){},toggle(){}}},body:{append(){},prepend(){},classList:{toggle(){}}},fonts:{ready:{then(){}},addEventListener(){}},querySelector:selector=>selector==='#finder'?fin:null,querySelectorAll:selector=>selector==='#finder'?[fin]:[],createElement:make,addEventListener(){},getElementById:()=>null,activeElement:null},
+    window:{addEventListener(){}},location:{pathname:'/',search:'',hash:'',href:'/'},history:{pushState(){},replaceState(){}},
+    localStorage:{getItem:()=>null,setItem(){},removeItem(){}},sessionStorage:{getItem:()=>null,setItem(){}},navigator:{clipboard:{writeText:async()=>{}}},
+    matchMedia:()=>({matches:false,addEventListener(){}}),performance:{mark(){},measure(){},now:()=>0},
+    requestAnimationFrame:fn=>{fn();return 1},cancelAnimationFrame(){},addEventListener(){},removeEventListener(){},scrollBy(){},scrollY:0,getComputedStyle:()=>({getPropertyValue:()=>''}),
+    fetch:async()=>({ok:true,json:async()=>({rows:[['url:one','One model',0,1,2025,0,'A model',3,[],'github:one',1,'MIT',{}]],kinds:['model'],topics:{},topic_labels:{},licences:{}})})};
+  const saved=Object.keys(globals).map(key=>[key,Object.getOwnPropertyDescriptor(globalThis,key)]);
+  try{
+    for(const [key,value] of Object.entries(globals))Object.defineProperty(globalThis,key,{value,configurable:true,writable:true});
+    await import('../web/assets/site.js?finder-status');
+    const pick=tab=>tab.listeners.click.forEach(fn=>fn({metaKey:false,ctrlKey:false,shiftKey:false,preventDefault(){}}));
+    pick(tabs[1]);await new Promise(resolve=>setImmediate(resolve));
+    assert.equal(seeAll.innerHTML.replace(/<svg[^]*$/,''),'See all 1 models');
+    pick(tabs[0]);await new Promise(resolve=>setImmediate(resolve));
+    assert.equal(seeAll.innerHTML,defaultLabel);
+  } finally {
+    for(const [key,descriptor] of saved)if(descriptor)Object.defineProperty(globalThis,key,descriptor);else delete globalThis[key];
+  }
+});

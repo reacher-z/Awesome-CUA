@@ -142,7 +142,7 @@ The denominator is the normalized identifiers extracted from each fetched docume
 
 ## Paper-discovery query coverage
 
-Latest pass: 2026-11-21T08:17:14Z; **32/32** query windows succeeded. 1,513 distinct identifiers; 0 new to the candidate queue.
+Latest pass: 2026-11-21T16:15:40Z; **32/32** query windows succeeded. 1,444 distinct identifiers; 0 new to the candidate queue.
 
 These are ranked search windows. New identifiers go through primary metadata verification and relevance review.
 
@@ -150,9 +150,9 @@ These are ranked search windows. New identifiers go through primary metadata ver
 | --- | --- | ---: | --- |
 | General computer use | computer use agents | 80 / 80 | success |
 | Grounding evaluation | GUI grounding benchmark | 80 / 80 | success |
-| Mobile learning | mobile GUI agent reinforcement learning | 80 / 80 | success |
-| Web data and evaluation | web agent dataset benchmark | 80 / 80 | success |
-| Safety and security | computer use agent safety | 80 / 80 | success |
+| Mobile learning | mobile GUI agent reinforcement learning | 35 / 80 | success |
+| Web data and evaluation | web agent dataset benchmark | 55 / 80 | success |
+| Safety and security | computer use agent safety | 29 / 80 | success |
 | Memory and planning | GUI agent memory planning | 80 / 80 | success |
 | Desktop platforms | desktop computer use agent Windows macOS Linux | 80 / 80 | success |
 | Android | Android smartphone GUI agent automation | 80 / 80 | success |

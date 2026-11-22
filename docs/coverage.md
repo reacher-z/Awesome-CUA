@@ -142,7 +142,7 @@ The denominator is the normalized identifiers extracted from each fetched docume
 
 ## Paper-discovery query coverage
 
-Latest pass: 2026-11-22T08:18:18Z; **32/32** query windows succeeded. 1,513 distinct identifiers; 0 new to the candidate queue.
+Latest pass: 2026-11-22T16:15:10Z; **32/32** query windows succeeded. 1,507 distinct identifiers; 0 new to the candidate queue.
 
 These are ranked search windows. New identifiers go through primary metadata verification and relevance review.
 
@@ -165,7 +165,7 @@ These are ranked search windows. New identifiers go through primary metadata ver
 | Long horizon tasks | long horizon computer use agent workflow planning | 80 / 80 | success |
 | Agent memory | GUI agent episodic memory self reflection | 80 / 80 | success |
 | Reinforcement learning | computer use agent online reinforcement learning rewards | 80 / 80 | success |
-| Demonstrations | GUI agent imitation learning human demonstration trajectories | 80 / 80 | success |
+| Demonstrations | GUI agent imitation learning human demonstration trajectories | 72 / 80 | success |
 | Synthetic training data | synthetic GUI agent training data generation | 80 / 80 | success |
 | Task verification | computer use benchmark task evaluation state verification | 80 / 80 | success |
 | Professional software | professional software GUI agent CAD Blender 3D | 80 / 80 | success |

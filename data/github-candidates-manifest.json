@@ -1,10 +1,10 @@
 {
   "active_catalog_context": {
-    "records": 6552,
+    "records": 6594,
     "role": "Comparison context only; not the observation source, selection, or approval.",
-    "sha256": "fa354f6b5b622e2ddd57a1455501a8d8233dcf6a196d18a9cf274c415f67da87"
+    "sha256": "72b68b6e6e1aee07c2673bc5e1ac2f79f4cbfd2d41239d7901792d12eae2759d"
   },
-  "checkpoint_state_sha256": "7aa3a64abaa1dd9bd4e262c9f71ce9477bd7d16898d939ce772427d7c471dc67",
+  "checkpoint_state_sha256": "10b9bbac12c8ea5ebd492add837a5eec1e17426507fbd336bcddf1dd1b7c0985",
   "count": {
     "unit": "repositories",
     "value": 10252
@@ -2591,6 +2591,31 @@
         }
       },
       "id": "7c61d95e5cfd7fc38af647d695d4e91ed15df76953dea9b7fe5b732f5f3237b7"
+    },
+    {
+      "files": {
+        "candidate-reviews.json": {
+          "bytes": 1666016,
+          "sha256": "6bb5e92d23409a3ba6dfd5ff2fb36727292c0ddd84b5fcfc661f5f66623a0009"
+        },
+        "candidates.jsonl": {
+          "bytes": 12779448,
+          "sha256": "a4e682d3f8c39c37adefa2d18709f4b231ccb8cada847ad01bc3ddff1be2fe2b"
+        },
+        "catalog.jsonl": {
+          "bytes": 15653558,
+          "sha256": "351867a1224d239d44ec7a820def890ee5fe1f8aa0bc764579a8860e73ac2c34"
+        },
+        "primary-evidence.jsonl": {
+          "bytes": 5490770,
+          "sha256": "10c2f2fce7e354578ee323a3fb17067c1dcaeee3ea20903ffbc4d7d96702ff0a"
+        },
+        "repository-aliases.json": {
+          "bytes": 74877,
+          "sha256": "bd464331fc4967dc6054cb595d4a1b6d6055266d565a74f595c7d1ed5b2c5452"
+        }
+      },
+      "id": "f29cca61d8ed24e350aa56569b262d18e71c373b5ca79bcc5b88a1cf8a2f1f19"
     }
   ],
   "manifest_schema": "/schemas/github-candidate-observation-manifest.schema.json",
@@ -2606,8 +2631,8 @@
   "review_policy": "Public GitHub metadata observations only. Every row remains candidate/relevance_pending; HTTP success, a topic tag, or a repository name does not establish CUA relevance, release completeness, licensing, or editorial approval.",
   "scan": {
     "configuration": {
-      "created_after": "2026-11-07",
-      "created_before": "2026-11-16",
+      "created_after": "2026-11-16",
+      "created_before": "2026-11-23",
       "topics": [
         "computer-use",
         "gui-agent",
@@ -2650,7 +2675,7 @@
         "phrase-re-implementation"
       ]
     },
-    "current_epoch_id": "epoch:0ce60dce3219223440919118",
+    "current_epoch_id": "epoch:0f6486587cfaa882517cdbb4",
     "epochs": [
       {
         "configuration": {
@@ -3968,16 +3993,115 @@
           "search:b1fff03192e5c7f24171ae68"
         ],
         "source_state_sha256": null
+      },
+      {
+        "configuration": {
+          "created_after": "2026-11-16",
+          "created_before": "2026-11-23",
+          "topics": [
+            "computer-use",
+            "gui-agent",
+            "gui-agents",
+            "gui-automation",
+            "desktop-automation",
+            "browser-agent",
+            "browser-agents",
+            "browser-automation",
+            "android-automation",
+            "computer-use-agent",
+            "computer-use-agents",
+            "gui-grounding",
+            "browser-use",
+            "web-agent",
+            "web-agents",
+            "desktop-agent",
+            "mobile-agent",
+            "cua",
+            "computer-control",
+            "computer-agent",
+            "os-agent",
+            "os-agents",
+            "mobile-agents",
+            "android-agent",
+            "phone-use",
+            "mobile-use",
+            "screen-understanding",
+            "ui-agent",
+            "phrase-clean-room-reimplementation",
+            "phrase-reimplementation-of",
+            "phrase-open-source-reimplementation",
+            "phrase-decompilation",
+            "phrase-decompiled",
+            "phrase-reverse-engineered",
+            "phrase-recreation-of",
+            "phrase-clone-of",
+            "phrase-port-of",
+            "phrase-matching-decomp",
+            "phrase-re-implementation"
+          ]
+        },
+        "created_at": "2026-11-23T08:22:15.768274+00:00",
+        "id": "epoch:0f6486587cfaa882517cdbb4",
+        "previous_epoch_id": "epoch:0ce60dce3219223440919118",
+        "reason": "frontier_continuation",
+        "root_query_ids": [
+          "search:674c6467ce8ca2d4d82203a7",
+          "search:2040c60ffa5ea5497ba6db19",
+          "search:798079f90575e9770e4fac38",
+          "search:20b5496550f4ad15565e8e6e",
+          "search:34b5b79b81ede5924bcd548c",
+          "search:ce6940201dbc19bdda6d514c",
+          "search:daf5bb8e5d1a31f7294c8f88",
+          "search:43de6db7ebe309f41730dd3b",
+          "search:ef3c9ffdf496d5f659fd38b7",
+          "search:df85209f595e654270bc27ba",
+          "search:9196d6e490636d52fbb00360",
+          "search:33dec9f451cf1cac6c21d456",
+          "search:d223d5fa6778ba563a4f6cf1",
+          "search:0181ecb8e9aca85c22691138",
+          "search:962055c36690ee415cf4f035",
+          "search:3cec599738d2a951a13dc017",
+          "search:eef7e4b26765df710090dee6",
+          "search:1f569feca0362b61cd985326",
+          "search:d8bbf3cb7e59a40bb31bc580",
+          "search:4cbf6fd4c3d74db4ec5bcf05",
+          "search:91f8e01e574e378438c670e8",
+          "search:52f94dfac8c00e9e71a97f7c",
+          "search:b433600ec11f4faaf654a292",
+          "search:c5742f769c683a355ca657cc",
+          "search:d7b70582f111ed3d0d73ab74",
+          "search:bc6ff8968b265945dfe7db00",
+          "search:184fbb79fb7aaaffb1557173",
+          "search:9fad7b2c82702c3e681bb289",
+          "search:df0a62438a42bd10778fc17c",
+          "search:ac2f7dc9bf4adaceb43a33fc",
+          "search:e177189f77705f7469d6ea41",
+          "search:4db399f63c754cd81e07c9e9",
+          "search:b2cb5ddb06e38f8c2bedbe77",
+          "search:a9396bd70a8aa932dc80ef34",
+          "search:168e845bc7e0508c051f8e6a",
+          "search:d1198fd7b00b1a5376fc7dea",
+          "search:1f4a96a761ed9b9fd0a758a0",
+          "search:846fdb77c7c0744927ab7c89",
+          "search:838d79c10d0fa8a3ccd1485f"
+        ],
+        "source_state_sha256": null
       }
     ],
     "global_completeness_established": false,
     "limit": "Bounded observed requests, not an exhaustive GitHub/CUA census. Per-query totals and overlapping shards are not a global union.",
     "queries": [
       {
+        "id": "existing:f29cca61d8ed24e350aa56569b262d18e71c373b5ca79bcc5b88a1cf8a2f1f19",
+        "input_id": "f29cca61d8ed24e350aa56569b262d18e71c373b5ca79bcc5b88a1cf8a2f1f19",
+        "kind": "existing",
+        "status": "pending"
+      },
+      {
         "id": "existing:7c61d95e5cfd7fc38af647d695d4e91ed15df76953dea9b7fe5b732f5f3237b7",
         "input_id": "7c61d95e5cfd7fc38af647d695d4e91ed15df76953dea9b7fe5b732f5f3237b7",
         "kind": "existing",
-        "status": "pending"
+        "status": "superseded_input"
       },
       {
         "id": "existing:5dfd3ba388b4a46758e73b834004fc9a05eadc661ef3e7968d833cadcd3f13a6",
@@ -9200,6 +9324,396 @@
         "reported_total": null,
         "status": "pending",
         "topic": "phrase-re-implementation"
+      },
+      {
+        "created_after": "2026-11-16",
+        "created_before": "2026-11-23",
+        "id": "search:674c6467ce8ca2d4d82203a7",
+        "kind": "search",
+        "parent_id": null,
+        "reported_total": null,
+        "status": "pending",
+        "topic": "computer-use"
+      },
+      {
+        "created_after": "2026-11-16",
+        "created_before": "2026-11-23",
+        "id": "search:2040c60ffa5ea5497ba6db19",
+        "kind": "search",
+        "parent_id": null,
+        "reported_total": null,
+        "status": "pending",
+        "topic": "gui-agent"
+      },
+      {
+        "created_after": "2026-11-16",
+        "created_before": "2026-11-23",
+        "id": "search:798079f90575e9770e4fac38",
+        "kind": "search",
+        "parent_id": null,
+        "reported_total": null,
+        "status": "pending",
+        "topic": "gui-agents"
+      },
+      {
+        "created_after": "2026-11-16",
+        "created_before": "2026-11-23",
+        "id": "search:20b5496550f4ad15565e8e6e",
+        "kind": "search",
+        "parent_id": null,
+        "reported_total": null,
+        "status": "pending",
+        "topic": "gui-automation"
+      },
+      {
+        "created_after": "2026-11-16",
+        "created_before": "2026-11-23",
+        "id": "search:34b5b79b81ede5924bcd548c",
+        "kind": "search",
+        "parent_id": null,
+        "reported_total": null,
+        "status": "pending",
+        "topic": "desktop-automation"
+      },
+      {
+        "created_after": "2026-11-16",
+        "created_before": "2026-11-23",
+        "id": "search:ce6940201dbc19bdda6d514c",
+        "kind": "search",
+        "parent_id": null,
+        "reported_total": null,
+        "status": "pending",
+        "topic": "browser-agent"
+      },
+      {
+        "created_after": "2026-11-16",
+        "created_before": "2026-11-23",
+        "id": "search:daf5bb8e5d1a31f7294c8f88",
+        "kind": "search",
+        "parent_id": null,
+        "reported_total": null,
+        "status": "pending",
+        "topic": "browser-agents"
+      },
+      {
+        "created_after": "2026-11-16",
+        "created_before": "2026-11-23",
+        "id": "search:43de6db7ebe309f41730dd3b",
+        "kind": "search",
+        "parent_id": null,
+        "reported_total": null,
+        "status": "pending",
+        "topic": "browser-automation"
+      },
+      {
+        "created_after": "2026-11-16",
+        "created_before": "2026-11-23",
+        "id": "search:ef3c9ffdf496d5f659fd38b7",
+        "kind": "search",
+        "parent_id": null,
+        "reported_total": null,
+        "status": "pending",
+        "topic": "android-automation"
+      },
+      {
+        "created_after": "2026-11-16",
+        "created_before": "2026-11-23",
+        "id": "search:df85209f595e654270bc27ba",
+        "kind": "search",
+        "parent_id": null,
+        "reported_total": null,
+        "status": "pending",
+        "topic": "computer-use-agent"
+      },
+      {
+        "created_after": "2026-11-16",
+        "created_before": "2026-11-23",
+        "id": "search:9196d6e490636d52fbb00360",
+        "kind": "search",
+        "parent_id": null,
+        "reported_total": null,
+        "status": "pending",
+        "topic": "computer-use-agents"
+      },
+      {
+        "created_after": "2026-11-16",
+        "created_before": "2026-11-23",
+        "id": "search:33dec9f451cf1cac6c21d456",
+        "kind": "search",
+        "parent_id": null,
+        "reported_total": null,
+        "status": "pending",
+        "topic": "gui-grounding"
+      },
+      {
+        "created_after": "2026-11-16",
+        "created_before": "2026-11-23",
+        "id": "search:d223d5fa6778ba563a4f6cf1",
+        "kind": "search",
+        "parent_id": null,
+        "reported_total": null,
+        "status": "pending",
+        "topic": "browser-use"
+      },
+      {
+        "created_after": "2026-11-16",
+        "created_before": "2026-11-23",
+        "id": "search:0181ecb8e9aca85c22691138",
+        "kind": "search",
+        "parent_id": null,
+        "reported_total": null,
+        "status": "pending",
+        "topic": "web-agent"
+      },
+      {
+        "created_after": "2026-11-16",
+        "created_before": "2026-11-23",
+        "id": "search:962055c36690ee415cf4f035",
+        "kind": "search",
+        "parent_id": null,
+        "reported_total": null,
+        "status": "pending",
+        "topic": "web-agents"
+      },
+      {
+        "created_after": "2026-11-16",
+        "created_before": "2026-11-23",
+        "id": "search:3cec599738d2a951a13dc017",
+        "kind": "search",
+        "parent_id": null,
+        "reported_total": null,
+        "status": "pending",
+        "topic": "desktop-agent"
+      },
+      {
+        "created_after": "2026-11-16",
+        "created_before": "2026-11-23",
+        "id": "search:eef7e4b26765df710090dee6",
+        "kind": "search",
+        "parent_id": null,
+        "reported_total": null,
+        "status": "pending",
+        "topic": "mobile-agent"
+      },
+      {
+        "created_after": "2026-11-16",
+        "created_before": "2026-11-23",
+        "id": "search:1f569feca0362b61cd985326",
+        "kind": "search",
+        "parent_id": null,
+        "reported_total": null,
+        "status": "pending",
+        "topic": "cua"
+      },
+      {
+        "created_after": "2026-11-16",
+        "created_before": "2026-11-23",
+        "id": "search:d8bbf3cb7e59a40bb31bc580",
+        "kind": "search",
+        "parent_id": null,
+        "reported_total": null,
+        "status": "pending",
+        "topic": "computer-control"
+      },
+      {
+        "created_after": "2026-11-16",
+        "created_before": "2026-11-23",
+        "id": "search:4cbf6fd4c3d74db4ec5bcf05",
+        "kind": "search",
+        "parent_id": null,
+        "reported_total": null,
+        "status": "pending",
+        "topic": "computer-agent"
+      },
+      {
+        "created_after": "2026-11-16",
+        "created_before": "2026-11-23",
+        "id": "search:91f8e01e574e378438c670e8",
+        "kind": "search",
+        "parent_id": null,
+        "reported_total": null,
+        "status": "pending",
+        "topic": "os-agent"
+      },
+      {
+        "created_after": "2026-11-16",
+        "created_before": "2026-11-23",
+        "id": "search:52f94dfac8c00e9e71a97f7c",
+        "kind": "search",
+        "parent_id": null,
+        "reported_total": null,
+        "status": "pending",
+        "topic": "os-agents"
+      },
+      {
+        "created_after": "2026-11-16",
+        "created_before": "2026-11-23",
+        "id": "search:b433600ec11f4faaf654a292",
+        "kind": "search",
+        "parent_id": null,
+        "reported_total": null,
+        "status": "pending",
+        "topic": "mobile-agents"
+      },
+      {
+        "created_after": "2026-11-16",
+        "created_before": "2026-11-23",
+        "id": "search:c5742f769c683a355ca657cc",
+        "kind": "search",
+        "parent_id": null,
+        "reported_total": null,
+        "status": "pending",
+        "topic": "android-agent"
+      },
+      {
+        "created_after": "2026-11-16",
+        "created_before": "2026-11-23",
+        "id": "search:d7b70582f111ed3d0d73ab74",
+        "kind": "search",
+        "parent_id": null,
+        "reported_total": null,
+        "status": "pending",
+        "topic": "phone-use"
+      },
+      {
+        "created_after": "2026-11-16",
+        "created_before": "2026-11-23",
+        "id": "search:bc6ff8968b265945dfe7db00",
+        "kind": "search",
+        "parent_id": null,
+        "reported_total": null,
+        "status": "pending",
+        "topic": "mobile-use"
+      },
+      {
+        "created_after": "2026-11-16",
+        "created_before": "2026-11-23",
+        "id": "search:184fbb79fb7aaaffb1557173",
+        "kind": "search",
+        "parent_id": null,
+        "reported_total": null,
+        "status": "pending",
+        "topic": "screen-understanding"
+      },
+      {
+        "created_after": "2026-11-16",
+        "created_before": "2026-11-23",
+        "id": "search:9fad7b2c82702c3e681bb289",
+        "kind": "search",
+        "parent_id": null,
+        "reported_total": null,
+        "status": "pending",
+        "topic": "ui-agent"
+      },
+      {
+        "created_after": "2026-11-16",
+        "created_before": "2026-11-23",
+        "id": "search:df0a62438a42bd10778fc17c",
+        "kind": "search",
+        "parent_id": null,
+        "reported_total": null,
+        "status": "pending",
+        "topic": "phrase-clean-room-reimplementation"
+      },
+      {
+        "created_after": "2026-11-16",
+        "created_before": "2026-11-23",
+        "id": "search:ac2f7dc9bf4adaceb43a33fc",
+        "kind": "search",
+        "parent_id": null,
+        "reported_total": null,
+        "status": "pending",
+        "topic": "phrase-reimplementation-of"
+      },
+      {
+        "created_after": "2026-11-16",
+        "created_before": "2026-11-23",
+        "id": "search:e177189f77705f7469d6ea41",
+        "kind": "search",
+        "parent_id": null,
+        "reported_total": null,
+        "status": "pending",
+        "topic": "phrase-open-source-reimplementation"
+      },
+      {
+        "created_after": "2026-11-16",
+        "created_before": "2026-11-23",
+        "id": "search:4db399f63c754cd81e07c9e9",
+        "kind": "search",
+        "parent_id": null,
+        "reported_total": null,
+        "status": "pending",
+        "topic": "phrase-decompilation"
+      },
+      {
+        "created_after": "2026-11-16",
+        "created_before": "2026-11-23",
+        "id": "search:b2cb5ddb06e38f8c2bedbe77",
+        "kind": "search",
+        "parent_id": null,
+        "reported_total": null,
+        "status": "pending",
+        "topic": "phrase-decompiled"
+      },
+      {
+        "created_after": "2026-11-16",
+        "created_before": "2026-11-23",
+        "id": "search:a9396bd70a8aa932dc80ef34",
+        "kind": "search",
+        "parent_id": null,
+        "reported_total": null,
+        "status": "pending",
+        "topic": "phrase-reverse-engineered"
+      },
+      {
+        "created_after": "2026-11-16",
+        "created_before": "2026-11-23",
+        "id": "search:168e845bc7e0508c051f8e6a",
+        "kind": "search",
+        "parent_id": null,
+        "reported_total": null,
+        "status": "pending",
+        "topic": "phrase-recreation-of"
+      },
+      {
+        "created_after": "2026-11-16",
+        "created_before": "2026-11-23",
+        "id": "search:d1198fd7b00b1a5376fc7dea",
+        "kind": "search",
+        "parent_id": null,
+        "reported_total": null,
+        "status": "pending",
+        "topic": "phrase-clone-of"
+      },
+      {
+        "created_after": "2026-11-16",
+        "created_before": "2026-11-23",
+        "id": "search:1f4a96a761ed9b9fd0a758a0",
+        "kind": "search",
+        "parent_id": null,
+        "reported_total": null,
+        "status": "pending",
+        "topic": "phrase-port-of"
+      },
+      {
+        "created_after": "2026-11-16",
+        "created_before": "2026-11-23",
+        "id": "search:846fdb77c7c0744927ab7c89",
+        "kind": "search",
+        "parent_id": null,
+        "reported_total": null,
+        "status": "pending",
+        "topic": "phrase-matching-decomp"
+      },
+      {
+        "created_after": "2026-11-16",
+        "created_before": "2026-11-23",
+        "id": "search:838d79c10d0fa8a3ccd1485f",
+        "kind": "search",
+        "parent_id": null,
+        "reported_total": null,
+        "status": "pending",
+        "topic": "phrase-re-implementation"
       }
     ],
     "query_rechecks_count": 17,
@@ -9208,7 +9722,7 @@
       "fetch_failed": 4,
       "fork_not_recorded": 6,
       "quarantined": 5,
-      "rate_limited": 17,
+      "rate_limited": 18,
       "redirect_not_followed": 80,
       "unavailable": 9
     },
@@ -10496,20 +11010,32 @@
         "requests_attempted": 4,
         "started_at": "2026-11-16T00:42:17.859559+00:00",
         "status": "rate_limited"
+      },
+      {
+        "accepted_metadata_rows": 0,
+        "after_unique_repositories": 10252,
+        "before_unique_repositories": 10252,
+        "finished_at": "2026-11-23T08:22:26.846128+00:00",
+        "id": "run:e8fb9b7cb17a7c0c1e27949c",
+        "input_id": "f29cca61d8ed24e350aa56569b262d18e71c373b5ca79bcc5b88a1cf8a2f1f19",
+        "new_unique_repositories": 0,
+        "requests_attempted": 1,
+        "started_at": "2026-11-23T08:22:15.768274+00:00",
+        "status": "rate_limited"
       }
     ]
   },
   "schema": "/schemas/github-candidate-observation.schema.json",
   "schema_version": 1,
   "scope": "candidate-observations",
-  "source_ledger_sha256": "0bc1244c0441fd7e618472251a3e0651a45e9d0e0572b0b4b619adf1b718a64b",
+  "source_ledger_sha256": "e620f49ddc52f06606adf0a9aded5f6ec8d7ceb6dc03807b75fa2a498e6e30cc",
   "supporting_primary_bodies": 604,
   "verification": {
-    "baseline_checkpoint_sha256": "2b6d8a6eda8f9a885a9695f5974db2994210f03dfee7d0cc5e57d66ee757dbcc",
-    "baseline_observation_sha256": "2b41decdba55c8dea9d319b4b5de85b736e436486267a99a72df8cd87e0779d3",
+    "baseline_checkpoint_sha256": "f588cf803e5d07a1015fb990aa2372e968b1f7cc96726363ccd8bc2d09977d30",
+    "baseline_observation_sha256": "acea4ddfea7f601edfc7ca49c12c84f9f11501a995c971ae23bccdf12794a5c3",
     "historical_raw_replayed": false,
     "mode": "incremental_retained_replay",
-    "primary_bodies_replayed": 2,
-    "successful_receipts_replayed": 2
+    "primary_bodies_replayed": 0,
+    "successful_receipts_replayed": 0
   }
 }

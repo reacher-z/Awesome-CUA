@@ -1,11 +1,11 @@
 # Coverage and quality ledger
 
-Evidence snapshot through **2026-11-23T08:21:50Z**. Generated from committed source receipts.
+Evidence snapshot through **2026-11-23T16:15:46Z**. Generated from committed source receipts.
 
-- 5,347 curated resources. Another 1,247 records await review with bibliographic metadata only; the active catalog file holds 6,594 records in all.
-- 2,965 paper and survey records, including 2,912 arXiv identities and 53 publisher-only identities.
-- 4,220 retained arXiv metadata records; 1,308 explicit scope exclusions are outside the active catalog.
-- 9,893 discovery identifiers; 196 remain unresolved. Reviewed decisions include 505 non-resource links, 748 aliases and 2,052 out-of-scope resources; their reasons remain in the review queue.
+- 5,347 curated resources. Another 1,248 records await review with bibliographic metadata only; the active catalog file holds 6,595 records in all.
+- 2,966 paper and survey records, including 2,913 arXiv identities and 53 publisher-only identities.
+- 4,221 retained arXiv metadata records; 1,308 explicit scope exclusions are outside the active catalog.
+- 9,894 discovery identifiers; 196 remain unresolved. Reviewed decisions include 505 non-resource links, 748 aliases and 2,052 out-of-scope resources; their reasons remain in the review queue.
 - 378 editorial proposals await verification or review.
 
 These are distinct resource identifiers, not distinct research projects. Papers, repositories, datasets, products, and publisher entities have different grains.
@@ -142,7 +142,7 @@ The denominator is the normalized identifiers extracted from each fetched docume
 
 ## Paper-discovery query coverage
 
-Latest pass: 2026-11-23T08:21:49Z; **32/32** query windows succeeded. 1,513 distinct identifiers; 0 new to the candidate queue.
+Latest pass: 2026-11-23T16:15:46Z; **32/32** query windows succeeded. 1,513 distinct identifiers; 1 new to the candidate queue.
 
 These are ranked search windows. New identifiers go through primary metadata verification and relevance review.
 

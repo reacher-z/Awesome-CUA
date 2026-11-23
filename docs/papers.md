@@ -5,7 +5,7 @@
 Bibliographic records from arXiv and retained publication sources. Metadata-only entries await relevance review. Discovery includes historical references and adjacent work.
 Dates retain their recorded precision. Explicit arXiv scope exclusions are listed in the [scope-decision ledger](../data/exclusion-status.json). The [arXiv archive](../data/papers.jsonl) and [publication observations](../data/publications.jsonl) retain their separate source facts.
 
-**Years:** [2026](#2026) (1,448; 879 ⭐) · [2025](#2025) (739; 514 ⭐) · [2024](#2024) (447; 214 ⭐) · [2023](#2023) (200; 56 ⭐) · [2022](#2022) (49; 16 ⭐) · [2021](#2021) (24; 13 ⭐) · [2020](#2020) (16; 7 ⭐) · [2019](#2019) (9; 2 ⭐) · [2018](#2018) (11; 7 ⭐) · [2017](#2017) (9; 3 ⭐) · [2016](#2016) (5; 2 ⭐) · [2015](#2015) (1; 0 ⭐) · [2013](#2013) (2; 0 ⭐) · [2010](#2010) (1; 1 ⭐) · [2009](#2009) (1; 1 ⭐) · [2007](#2007) (2; 2 ⭐) · [1991](#1991) (1; 1 ⭐)
+**Years:** [2026](#2026) (1,449; 879 ⭐) · [2025](#2025) (739; 514 ⭐) · [2024](#2024) (447; 214 ⭐) · [2023](#2023) (200; 56 ⭐) · [2022](#2022) (49; 16 ⭐) · [2021](#2021) (24; 13 ⭐) · [2020](#2020) (16; 7 ⭐) · [2019](#2019) (9; 2 ⭐) · [2018](#2018) (11; 7 ⭐) · [2017](#2017) (9; 3 ⭐) · [2016](#2016) (5; 2 ⭐) · [2015](#2015) (1; 0 ⭐) · [2013](#2013) (2; 0 ⭐) · [2010](#2010) (1; 1 ⭐) · [2009](#2009) (1; 1 ⭐) · [2007](#2007) (2; 2 ⭐) · [1991](#1991) (1; 1 ⭐)
 
 ⭐ marks papers with an editorial relevance review; their topics link to the [topic hubs](topics.md). Other rows are bibliographic metadata only.
 
@@ -44,6 +44,7 @@ Dates retain their recorded precision. Explicit arXiv scope exclusions are liste
 | 2026-11-13 | [Training Reasoning Models in Simulation to Natively Use Real Robots](https://arxiv.org/abs/2611.18562) | metadata |  |
 | 2026-11-13 | [StreamEmbed: Real-Time Indexing from Pixels for Screenshot Retrieval](https://arxiv.org/abs/2611.18516) | metadata |  |
 | 2026-11-13 | [Can Mechanistic Interpretability Help Explain LLM Agent Failures? A Case Study on Web Element Hallucination](https://arxiv.org/abs/2611.18514) | metadata |  |
+| 2026-11-13 | [Can Agents Keep Up with Time? An Empirical Analysis of Temporal Adaptation After a Conversational Hiatus](https://arxiv.org/abs/2611.17806) | metadata |  |
 | 2026-11-12 | [Scale-Induced Semantic Shift in Visual Prompt Injection Against VLMs and Web Agents](https://arxiv.org/abs/2611.16744) | metadata |  |
 | 2026-11-12 | [MobileProbe: Adaptive Security Evaluation of Mobile Agents via Trajectory-Aware Injection](https://arxiv.org/abs/2611.16693) | metadata |  |
 | 2026-11-11 | [Video-as-Experience: Learning Computer Use via Audio-Visual Understanding](https://arxiv.org/abs/2611.18747) | metadata |  |

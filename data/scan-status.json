@@ -1,10 +1,10 @@
 {
-  "id": "scan:2026-11-22T16:13:51Z",
+  "id": "scan:2026-11-23T00:37:18Z",
   "schema_version": 1,
   "status": "partial",
-  "started_at": "2026-11-22T16:13:51Z",
-  "finished_at": "2026-11-22T16:19:52Z",
-  "run_url": "https://github.com/reacher-z/Awesome-CUA/actions/runs/45042618618",
+  "started_at": "2026-11-23T00:37:18Z",
+  "finished_at": "2026-11-23T00:44:01Z",
+  "run_url": "https://github.com/reacher-z/Awesome-CUA/actions/runs/45089805560",
   "schedule": {
     "timezone": "UTC",
     "times_local": [
@@ -35,26 +35,26 @@
   "new_candidate_count": 0,
   "pending_metadata_changes": 12,
   "source_fetches": {
-    "successful": 103,
+    "successful": 102,
     "total": 103,
     "retired": 1
   },
   "paper_searches": {
     "successful": 32,
     "total": 32,
-    "unique_identifiers": 1507,
+    "unique_identifiers": 1513,
     "new_candidates": 0
   },
   "candidate_observations": {
-    "started_at": "2026-11-22T16:15:23Z",
-    "finished_at": "2026-11-22T16:19:03Z",
+    "started_at": "2026-11-23T00:39:46Z",
+    "finished_at": "2026-11-23T00:43:17Z",
     "ok": false,
     "deferred": true,
-    "error": "Stage exceeded 220 seconds; last verified records retained.",
+    "error": "Stage exceeded 210.115 seconds; last verified records retained.",
     "published": false,
     "durable_validation": {
       "ok": true,
-      "checked_at": "2026-11-22T16:19:51Z",
+      "checked_at": "2026-11-23T00:44:00Z",
       "mode": "resumable_triplet",
       "required": true,
       "files": {
@@ -68,52 +68,55 @@
   "phases": [
     {
       "name": "discovery",
-      "started_at": "2026-11-22T16:13:52Z",
-      "finished_at": "2026-11-22T16:14:17Z",
+      "started_at": "2026-11-23T00:37:19Z",
+      "finished_at": "2026-11-23T00:38:42Z",
       "ok": true,
       "exit_code": 0,
       "error": null
     },
     {
       "name": "huggingface",
-      "started_at": "2026-11-22T16:14:17Z",
-      "finished_at": "2026-11-22T16:15:10Z",
+      "started_at": "2026-11-23T00:38:42Z",
+      "finished_at": "2026-11-23T00:39:34Z",
       "ok": true,
       "exit_code": 0,
       "error": null
     },
     {
       "name": "recent_arxiv",
-      "started_at": "2026-11-22T16:15:10Z",
-      "finished_at": "2026-11-22T16:15:10Z",
-      "ok": true,
+      "started_at": "2026-11-23T00:39:34Z",
+      "finished_at": "2026-11-23T00:39:34Z",
+      "ok": false,
       "exit_code": 0,
       "error": null,
-      "complete": true,
+      "complete": false,
       "new_count": 0,
-      "warnings": [],
-      "cache_used": true,
-      "source_retrieved_at": "2026-11-22T00:37:47Z"
+      "warnings": [
+        "Network request deferred: provider_cooldown: export.arxiv.org"
+      ],
+      "cache_used": false,
+      "rate_limited": false,
+      "deferred": false
     },
     {
       "name": "harvest",
-      "started_at": "2026-11-22T16:15:10Z",
-      "finished_at": "2026-11-22T16:15:11Z",
+      "started_at": "2026-11-23T00:39:34Z",
+      "finished_at": "2026-11-23T00:39:35Z",
       "ok": true,
       "exit_code": 0,
       "error": null
     },
     {
       "name": "github_candidates",
-      "started_at": "2026-11-22T16:15:23Z",
-      "finished_at": "2026-11-22T16:19:03Z",
+      "started_at": "2026-11-23T00:39:46Z",
+      "finished_at": "2026-11-23T00:43:17Z",
       "ok": false,
       "deferred": true,
-      "error": "Stage exceeded 220 seconds; last verified records retained.",
+      "error": "Stage exceeded 210.115 seconds; last verified records retained.",
       "published": false,
       "durable_validation": {
         "ok": true,
-        "checked_at": "2026-11-22T16:19:51Z",
+        "checked_at": "2026-11-23T00:44:00Z",
         "mode": "resumable_triplet",
         "required": true,
         "files": {
@@ -126,38 +129,41 @@
     },
     {
       "name": "build",
-      "started_at": "2026-11-22T16:19:03Z",
-      "finished_at": "2026-11-22T16:19:12Z",
+      "started_at": "2026-11-23T00:43:17Z",
+      "finished_at": "2026-11-23T00:43:25Z",
       "ok": true,
       "exit_code": 0,
       "error": null
     },
     {
       "name": "validate",
-      "started_at": "2026-11-22T16:19:12Z",
-      "finished_at": "2026-11-22T16:19:37Z",
+      "started_at": "2026-11-23T00:43:25Z",
+      "finished_at": "2026-11-23T00:43:48Z",
       "ok": true,
       "exit_code": 0,
       "error": null
     }
   ],
   "warnings": [
-    "github_candidates: Stage exceeded 220 seconds; last verified records retained."
+    "recent_arxiv: failed",
+    "Network request deferred: provider_cooldown: export.arxiv.org",
+    "github_candidates: Stage exceeded 210.115 seconds; last verified records retained.",
+    "Discovery sources failed: survey-bibliography-backfill"
   ],
   "rate_limit_only": false,
-  "network_deferred_only": true,
+  "network_deferred_only": false,
   "policy": "Automated scans discover candidates and verify bibliographic metadata. Editorial approval, topic annotations, and license claims require separate source review.",
   "network_budget": {
-    "round_id": "514d5c1709f04983a7b582c4fe5a74c7",
+    "round_id": "d8acbee0d7bc45928e7bee79d3836bcd",
     "max_requests": 180,
     "max_seconds": 360,
     "requests_reserved": 165,
-    "responses_received": 165,
-    "unknown_attempts": 0,
+    "responses_received": 164,
+    "unknown_attempts": 1,
     "by_phase": {
-      "discovery": 109,
+      "discovery": 110,
       "huggingface": 32,
-      "github_candidates": 24
+      "github_candidates": 23
     },
     "by_provider": {
       "raw.githubusercontent.com": 66,
@@ -170,17 +176,17 @@
       "doc-04-10-sheets.googleusercontent.com": 1,
       "doc-0s-8k-sheets.googleusercontent.com": 1,
       "doc-04-0o-sheets.googleusercontent.com": 1,
-      "export.arxiv.org": 2,
+      "export.arxiv.org": 3,
       "arxiv.org": 2,
-      "api.github.com": 24
+      "api.github.com": 23
     },
     "provider_cooldowns": {
-      "api.github.com": "2026-11-22T16:20:01.395399+00:00"
+      "export.arxiv.org": "2026-11-23T00:39:40.782742+00:00"
     },
     "blocked_providers": [
-      "api.github.com"
+      "export.arxiv.org"
     ],
-    "ledger_sha256": "5d288662352068c2dca4d9b061911b947ceac36cf8e07dd035e4aa85880506be",
+    "ledger_sha256": "5bf221974d0452ae23a9d2f690cb38cda0791190723644a2321e6e7aed8987c6",
     "count_boundary": "Reservations are persisted before I/O; interrupted attempts remain conservatively charged. HTTP status observation does not establish complete or validated content."
   }
 }

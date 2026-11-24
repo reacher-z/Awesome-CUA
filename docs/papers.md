@@ -5,7 +5,7 @@
 Bibliographic records from arXiv and retained publication sources. Metadata-only entries await relevance review. Discovery includes historical references and adjacent work.
 Dates retain their recorded precision. Explicit arXiv scope exclusions are listed in the [scope-decision ledger](../data/exclusion-status.json). The [arXiv archive](../data/papers.jsonl) and [publication observations](../data/publications.jsonl) retain their separate source facts.
 
-**Years:** [2026](#2026) (1,449; 879 ⭐) · [2025](#2025) (739; 514 ⭐) · [2024](#2024) (447; 214 ⭐) · [2023](#2023) (200; 56 ⭐) · [2022](#2022) (49; 16 ⭐) · [2021](#2021) (24; 13 ⭐) · [2020](#2020) (16; 7 ⭐) · [2019](#2019) (9; 2 ⭐) · [2018](#2018) (11; 7 ⭐) · [2017](#2017) (9; 3 ⭐) · [2016](#2016) (5; 2 ⭐) · [2015](#2015) (1; 0 ⭐) · [2013](#2013) (2; 0 ⭐) · [2010](#2010) (1; 1 ⭐) · [2009](#2009) (1; 1 ⭐) · [2007](#2007) (2; 2 ⭐) · [1991](#1991) (1; 1 ⭐)
+**Years:** [2026](#2026) (1,459; 879 ⭐) · [2025](#2025) (739; 514 ⭐) · [2024](#2024) (447; 214 ⭐) · [2023](#2023) (201; 56 ⭐) · [2022](#2022) (49; 16 ⭐) · [2021](#2021) (24; 13 ⭐) · [2020](#2020) (16; 7 ⭐) · [2019](#2019) (9; 2 ⭐) · [2018](#2018) (12; 7 ⭐) · [2017](#2017) (9; 3 ⭐) · [2016](#2016) (5; 2 ⭐) · [2015](#2015) (1; 0 ⭐) · [2013](#2013) (2; 0 ⭐) · [2010](#2010) (1; 1 ⭐) · [2009](#2009) (1; 1 ⭐) · [2007](#2007) (2; 2 ⭐) · [1991](#1991) (1; 1 ⭐)
 
 ⭐ marks papers with an editorial relevance review; their topics link to the [topic hubs](topics.md). Other rows are bibliographic metadata only.
 
@@ -13,6 +13,16 @@ Dates retain their recorded precision. Explicit arXiv scope exclusions are liste
 
 | Date | Paper | Review | Topics |
 | --- | --- | --- | --- |
+| 2026-11-23 | [Self-Evolving Evaluation Environments for Computer-Use Agents](https://arxiv.org/abs/2611.30962) | metadata |  |
+| 2026-11-23 | [Same Executions, Different Gaps: Judgment Rules in Web-Agent Evaluation](https://arxiv.org/abs/2611.30190) | metadata |  |
+| 2026-11-23 | [PixelOne: From Options to Pixels in a Single Forward for GUI Grounding](https://arxiv.org/abs/2611.30235) | metadata |  |
+| 2026-11-23 | [MobileGrail: Learning Compact Guardrails for On-Device deployable Mobile GUI Agent Safety](https://arxiv.org/abs/2611.29847) | metadata |  |
+| 2026-11-23 | [MedUIGym: Evaluating and Training GUI Agents for Clinical Workflows](https://arxiv.org/abs/2611.30983) | metadata |  |
+| 2026-11-23 | [GUI-Q: Task-Sensitive Granularity and Relation-Preserving Quantization for GUI Agents](https://arxiv.org/abs/2611.30170) | metadata |  |
+| 2026-11-23 | [Conartist: Adaptive Agentic Red-Teaming of Computer-Using Agents against Multi-Step Prompt Injection](https://arxiv.org/abs/2611.29977) | metadata |  |
+| 2026-11-22 | [Benchmarking Web Agent Defenses Against Adaptive Visual Prompt Injection](https://arxiv.org/abs/2611.29268) | metadata |  |
+| 2026-11-21 | [Open Vision Banana: An Open Framework for Unified Visual Perception through Generation in RGB Space](https://arxiv.org/abs/2611.28489) | metadata |  |
+| 2026-11-21 | [Don't Sleep, Keep Watch: Proactive Perception for Computer-Use Agents](https://arxiv.org/abs/2611.28947) | metadata |  |
 | 2026-11-20 | [ROSWORLD: When Digital Task Competence Meets Physical Execution](https://arxiv.org/abs/2611.27467) | metadata |  |
 | 2026-11-20 | [Bel: Step-Level Policy Improvement of Visual Agents Without Training](https://arxiv.org/abs/2611.27222) | metadata |  |
 | 2026-11-19 | [TuringSpace: Grounding Spatial Intelligence in Action with Interactive CAPTCHAs](https://arxiv.org/abs/2611.25387) | metadata |  |
@@ -2754,6 +2764,7 @@ Dates retain their recorded precision. Explicit arXiv scope exclusions are liste
 | 2023-10-03 | [Large Language Models Cannot Self-Correct Reasoning Yet](https://arxiv.org/abs/2310.01798) | metadata |  |
 | 2023-10-03 | [Improving web element localization by using a large language model](https://arxiv.org/abs/2310.02046) | metadata |  |
 | 2023-10-03 | [AXNav: Replaying Accessibility Tests from Natural Language](https://arxiv.org/abs/2310.02424) | ⭐ reviewed | [automation](topics/automation.md), [evaluation](topics/evaluation.md), [screen-understanding](topics/screen-understanding.md), [video](topics/video.md) |
+| 2023-09-29 | [Adversarial Imitation Learning from Visual Observations using Latent Information](https://arxiv.org/abs/2309.17371) | metadata |  |
 | 2023-09-28 | [TaxAI: A Dynamic Economic Simulator and Benchmark for Multi-Agent Reinforcement Learning](https://arxiv.org/abs/2309.16307) | metadata |  |
 | 2023-09-23 | [An In-depth Survey of Large Language Model-based Artificial Intelligence Agents](https://arxiv.org/abs/2309.14365) | metadata |  |
 | 2023-09-21 | [LLM-Grounder: Open-Vocabulary 3D Visual Grounding with Large Language Model as an Agent](https://arxiv.org/abs/2309.12311) | metadata |  |
@@ -2990,6 +3001,7 @@ Dates retain their recorded precision. Explicit arXiv scope exclusions are liste
 | 2018-12-21 | [Learning to Navigate the Web](https://arxiv.org/abs/1812.09195) | ⭐ reviewed | [planning](topics/planning.md), [reinforcement-learning](topics/reinforcement-learning.md), [web-navigation](topics/web-navigation.md) |
 | 2018-10-05 | [HG-DAgger: Interactive Imitation Learning with Human Experts](https://arxiv.org/abs/1810.02890) | metadata |  |
 | 2018-08-28 | [Mapping Natural Language Commands to Web Elements](https://arxiv.org/abs/1808.09132) | ⭐ reviewed | [data-generation](topics/data-generation.md), [evaluation](topics/evaluation.md), [grounding](topics/grounding.md) |
+| 2018-07-17 | [Generative Adversarial Imitation from Observation](https://arxiv.org/abs/1807.06158) | metadata |  |
 | 2018-06-04 | [NRTR: A No-Recurrence Sequence-to-Sequence Model For Scene Text Recognition](https://arxiv.org/abs/1806.00926) | metadata |  |
 | 2018-06 | [Kite: Building Conversational Bots from Mobile Apps](https://doi.org/10.1145/3210240.3210339) | ⭐ reviewed | [human-in-the-loop](topics/human-in-the-loop.md), [mobile-navigation](topics/mobile-navigation.md), [workflow](topics/workflow.md) |
 | 2018-03-23 | [Datasheets for Datasets](https://arxiv.org/abs/1803.09010) | metadata |  |

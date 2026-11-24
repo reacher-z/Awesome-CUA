@@ -1,10 +1,10 @@
 {
-  "id": "scan:2026-11-24T08:18:35Z",
+  "id": "scan:2026-11-24T16:15:38Z",
   "schema_version": 1,
   "status": "partial",
-  "started_at": "2026-11-24T08:18:35Z",
-  "finished_at": "2026-11-24T08:25:16Z",
-  "run_url": "https://github.com/reacher-z/Awesome-CUA/actions/runs/45354938949",
+  "started_at": "2026-11-24T16:15:38Z",
+  "finished_at": "2026-11-24T16:21:15Z",
+  "run_url": "https://github.com/reacher-z/Awesome-CUA/actions/runs/45434967125",
   "schedule": {
     "timezone": "UTC",
     "times_local": [
@@ -20,41 +20,114 @@
     "excluded_records": 1308,
     "curated_papers": 1718,
     "curated_resources": 3629,
-    "candidates": 9894
+    "candidates": 9896
   },
   "after": {
-    "resources": 6595,
-    "bibliographic_records": 2913,
-    "arxiv_archive_records": 4221,
+    "resources": 6607,
+    "bibliographic_records": 2925,
+    "arxiv_archive_records": 4233,
     "excluded_records": 1308,
     "curated_papers": 1718,
     "curated_resources": 3629,
-    "candidates": 9896
+    "candidates": 9906
   },
-  "new_papers": [],
-  "new_candidate_count": 2,
+  "new_papers": [
+    {
+      "id": "arxiv:1807.06158",
+      "name": "Generative Adversarial Imitation from Observation",
+      "url": "https://arxiv.org/abs/1807.06158",
+      "review_status": "metadata_verified"
+    },
+    {
+      "id": "arxiv:2309.17371",
+      "name": "Adversarial Imitation Learning from Visual Observations using Latent Information",
+      "url": "https://arxiv.org/abs/2309.17371",
+      "review_status": "metadata_verified"
+    },
+    {
+      "id": "arxiv:2611.28489",
+      "name": "Open Vision Banana: An Open Framework for Unified Visual Perception through Generation in RGB Space",
+      "url": "https://arxiv.org/abs/2611.28489",
+      "review_status": "metadata_verified"
+    },
+    {
+      "id": "arxiv:2611.28947",
+      "name": "Don't Sleep, Keep Watch: Proactive Perception for Computer-Use Agents",
+      "url": "https://arxiv.org/abs/2611.28947",
+      "review_status": "metadata_verified"
+    },
+    {
+      "id": "arxiv:2611.29268",
+      "name": "Benchmarking Web Agent Defenses Against Adaptive Visual Prompt Injection",
+      "url": "https://arxiv.org/abs/2611.29268",
+      "review_status": "metadata_verified"
+    },
+    {
+      "id": "arxiv:2611.29847",
+      "name": "MobileGrail: Learning Compact Guardrails for On-Device deployable Mobile GUI Agent Safety",
+      "url": "https://arxiv.org/abs/2611.29847",
+      "review_status": "metadata_verified"
+    },
+    {
+      "id": "arxiv:2611.29977",
+      "name": "Conartist: Adaptive Agentic Red-Teaming of Computer-Using Agents against Multi-Step Prompt Injection",
+      "url": "https://arxiv.org/abs/2611.29977",
+      "review_status": "metadata_verified"
+    },
+    {
+      "id": "arxiv:2611.30170",
+      "name": "GUI-Q: Task-Sensitive Granularity and Relation-Preserving Quantization for GUI Agents",
+      "url": "https://arxiv.org/abs/2611.30170",
+      "review_status": "metadata_verified"
+    },
+    {
+      "id": "arxiv:2611.30190",
+      "name": "Same Executions, Different Gaps: Judgment Rules in Web-Agent Evaluation",
+      "url": "https://arxiv.org/abs/2611.30190",
+      "review_status": "metadata_verified"
+    },
+    {
+      "id": "arxiv:2611.30235",
+      "name": "PixelOne: From Options to Pixels in a Single Forward for GUI Grounding",
+      "url": "https://arxiv.org/abs/2611.30235",
+      "review_status": "metadata_verified"
+    },
+    {
+      "id": "arxiv:2611.30962",
+      "name": "Self-Evolving Evaluation Environments for Computer-Use Agents",
+      "url": "https://arxiv.org/abs/2611.30962",
+      "review_status": "metadata_verified"
+    },
+    {
+      "id": "arxiv:2611.30983",
+      "name": "MedUIGym: Evaluating and Training GUI Agents for Clinical Workflows",
+      "url": "https://arxiv.org/abs/2611.30983",
+      "review_status": "metadata_verified"
+    }
+  ],
+  "new_candidate_count": 10,
   "pending_metadata_changes": 13,
   "source_fetches": {
-    "successful": 101,
+    "successful": 103,
     "total": 103,
     "retired": 1
   },
   "paper_searches": {
     "successful": 32,
     "total": 32,
-    "unique_identifiers": 1513,
-    "new_candidates": 2
+    "unique_identifiers": 1514,
+    "new_candidates": 1
   },
   "candidate_observations": {
-    "started_at": "2026-11-24T08:20:51Z",
-    "finished_at": "2026-11-24T08:24:31Z",
+    "started_at": "2026-11-24T16:16:52Z",
+    "finished_at": "2026-11-24T16:20:32Z",
     "ok": false,
     "deferred": true,
     "error": "Stage exceeded 220 seconds; last verified records retained.",
     "published": false,
     "durable_validation": {
       "ok": true,
-      "checked_at": "2026-11-24T08:25:15Z",
+      "checked_at": "2026-11-24T16:21:14Z",
       "mode": "resumable_triplet",
       "required": true,
       "files": {
@@ -68,24 +141,24 @@
   "phases": [
     {
       "name": "discovery",
-      "started_at": "2026-11-24T08:18:36Z",
-      "finished_at": "2026-11-24T08:19:56Z",
+      "started_at": "2026-11-24T16:15:39Z",
+      "finished_at": "2026-11-24T16:16:04Z",
       "ok": true,
       "exit_code": 0,
       "error": null
     },
     {
       "name": "huggingface",
-      "started_at": "2026-11-24T08:19:56Z",
-      "finished_at": "2026-11-24T08:20:39Z",
+      "started_at": "2026-11-24T16:16:04Z",
+      "finished_at": "2026-11-24T16:16:40Z",
       "ok": true,
       "exit_code": 0,
       "error": null
     },
     {
       "name": "recent_arxiv",
-      "started_at": "2026-11-24T08:20:39Z",
-      "finished_at": "2026-11-24T08:20:39Z",
+      "started_at": "2026-11-24T16:16:40Z",
+      "finished_at": "2026-11-24T16:16:40Z",
       "ok": true,
       "exit_code": 0,
       "error": null,
@@ -97,23 +170,23 @@
     },
     {
       "name": "harvest",
-      "started_at": "2026-11-24T08:20:39Z",
-      "finished_at": "2026-11-24T08:20:40Z",
+      "started_at": "2026-11-24T16:16:40Z",
+      "finished_at": "2026-11-24T16:16:41Z",
       "ok": true,
       "exit_code": 0,
       "error": null
     },
     {
       "name": "github_candidates",
-      "started_at": "2026-11-24T08:20:51Z",
-      "finished_at": "2026-11-24T08:24:31Z",
+      "started_at": "2026-11-24T16:16:52Z",
+      "finished_at": "2026-11-24T16:20:32Z",
       "ok": false,
       "deferred": true,
       "error": "Stage exceeded 220 seconds; last verified records retained.",
       "published": false,
       "durable_validation": {
         "ok": true,
-        "checked_at": "2026-11-24T08:25:15Z",
+        "checked_at": "2026-11-24T16:21:14Z",
         "mode": "resumable_triplet",
         "required": true,
         "files": {
@@ -126,39 +199,38 @@
     },
     {
       "name": "build",
-      "started_at": "2026-11-24T08:24:32Z",
-      "finished_at": "2026-11-24T08:24:40Z",
+      "started_at": "2026-11-24T16:20:32Z",
+      "finished_at": "2026-11-24T16:20:40Z",
       "ok": true,
       "exit_code": 0,
       "error": null
     },
     {
       "name": "validate",
-      "started_at": "2026-11-24T08:24:40Z",
-      "finished_at": "2026-11-24T08:25:04Z",
+      "started_at": "2026-11-24T16:20:40Z",
+      "finished_at": "2026-11-24T16:21:03Z",
       "ok": true,
       "exit_code": 0,
       "error": null
     }
   ],
   "warnings": [
-    "github_candidates: Stage exceeded 220 seconds; last verified records retained.",
-    "Discovery sources failed: arxiv-abstract-phrases, survey-bibliography-backfill",
-    "2 arXiv identifiers remain unresolved in the retained harvest ledger."
+    "github_candidates: Stage exceeded 220 seconds; last verified records retained."
   ],
   "rate_limit_only": false,
-  "network_deferred_only": false,
+  "network_deferred_only": true,
   "policy": "Automated scans discover candidates and verify bibliographic metadata. Editorial approval, topic annotations, and license claims require separate source review.",
   "network_budget": {
-    "round_id": "82303e731afc452f90da69500daa13e9",
+    "round_id": "797f961eae2a4c1c8d2ede540c9da099",
     "max_requests": 180,
     "max_seconds": 360,
-    "requests_reserved": 164,
-    "responses_received": 163,
+    "requests_reserved": 165,
+    "responses_received": 164,
     "unknown_attempts": 1,
     "by_phase": {
       "discovery": 109,
       "huggingface": 32,
+      "harvest": 1,
       "github_candidates": 23
     },
     "by_provider": {
@@ -172,17 +244,13 @@
       "doc-04-10-sheets.googleusercontent.com": 1,
       "doc-0s-8k-sheets.googleusercontent.com": 1,
       "doc-04-0o-sheets.googleusercontent.com": 1,
-      "export.arxiv.org": 2,
+      "export.arxiv.org": 3,
       "arxiv.org": 2,
       "api.github.com": 23
     },
-    "provider_cooldowns": {
-      "export.arxiv.org": "2026-11-24T08:20:51.828398+00:00"
-    },
-    "blocked_providers": [
-      "export.arxiv.org"
-    ],
-    "ledger_sha256": "2a04abfda7e939da660bd93ba22a5b875dbf362577e6f48c91dfaeb78dc070b5",
+    "provider_cooldowns": {},
+    "blocked_providers": [],
+    "ledger_sha256": "f543b704176016b8ae13063f02b49a879b624905908e0074d068326cf5d4b39e",
     "count_boundary": "Reservations are persisted before I/O; interrupted attempts remain conservatively charged. HTTP status observation does not establish complete or validated content."
   }
 }

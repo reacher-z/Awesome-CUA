@@ -1,10 +1,10 @@
 {
-  "id": "scan:2026-11-24T16:15:38Z",
+  "id": "scan:2026-11-25T00:34:32Z",
   "schema_version": 1,
   "status": "partial",
-  "started_at": "2026-11-24T16:15:38Z",
-  "finished_at": "2026-11-24T16:21:15Z",
-  "run_url": "https://github.com/reacher-z/Awesome-CUA/actions/runs/45434967125",
+  "started_at": "2026-11-25T00:34:32Z",
+  "finished_at": "2026-11-25T00:40:08Z",
+  "run_url": "https://github.com/reacher-z/Awesome-CUA/actions/runs/45519098089",
   "schedule": {
     "timezone": "UTC",
     "times_local": [
@@ -14,15 +14,6 @@
     ]
   },
   "before": {
-    "resources": 6595,
-    "bibliographic_records": 2913,
-    "arxiv_archive_records": 4221,
-    "excluded_records": 1308,
-    "curated_papers": 1718,
-    "curated_resources": 3629,
-    "candidates": 9896
-  },
-  "after": {
     "resources": 6607,
     "bibliographic_records": 2925,
     "arxiv_archive_records": 4233,
@@ -31,82 +22,25 @@
     "curated_resources": 3629,
     "candidates": 9906
   },
+  "after": {
+    "resources": 6608,
+    "bibliographic_records": 2926,
+    "arxiv_archive_records": 4234,
+    "excluded_records": 1308,
+    "curated_papers": 1718,
+    "curated_resources": 3629,
+    "candidates": 9907
+  },
   "new_papers": [
     {
-      "id": "arxiv:1807.06158",
-      "name": "Generative Adversarial Imitation from Observation",
-      "url": "https://arxiv.org/abs/1807.06158",
-      "review_status": "metadata_verified"
-    },
-    {
-      "id": "arxiv:2309.17371",
-      "name": "Adversarial Imitation Learning from Visual Observations using Latent Information",
-      "url": "https://arxiv.org/abs/2309.17371",
-      "review_status": "metadata_verified"
-    },
-    {
-      "id": "arxiv:2611.28489",
-      "name": "Open Vision Banana: An Open Framework for Unified Visual Perception through Generation in RGB Space",
-      "url": "https://arxiv.org/abs/2611.28489",
-      "review_status": "metadata_verified"
-    },
-    {
-      "id": "arxiv:2611.28947",
-      "name": "Don't Sleep, Keep Watch: Proactive Perception for Computer-Use Agents",
-      "url": "https://arxiv.org/abs/2611.28947",
-      "review_status": "metadata_verified"
-    },
-    {
-      "id": "arxiv:2611.29268",
-      "name": "Benchmarking Web Agent Defenses Against Adaptive Visual Prompt Injection",
-      "url": "https://arxiv.org/abs/2611.29268",
-      "review_status": "metadata_verified"
-    },
-    {
-      "id": "arxiv:2611.29847",
-      "name": "MobileGrail: Learning Compact Guardrails for On-Device deployable Mobile GUI Agent Safety",
-      "url": "https://arxiv.org/abs/2611.29847",
-      "review_status": "metadata_verified"
-    },
-    {
-      "id": "arxiv:2611.29977",
-      "name": "Conartist: Adaptive Agentic Red-Teaming of Computer-Using Agents against Multi-Step Prompt Injection",
-      "url": "https://arxiv.org/abs/2611.29977",
-      "review_status": "metadata_verified"
-    },
-    {
-      "id": "arxiv:2611.30170",
-      "name": "GUI-Q: Task-Sensitive Granularity and Relation-Preserving Quantization for GUI Agents",
-      "url": "https://arxiv.org/abs/2611.30170",
-      "review_status": "metadata_verified"
-    },
-    {
-      "id": "arxiv:2611.30190",
-      "name": "Same Executions, Different Gaps: Judgment Rules in Web-Agent Evaluation",
-      "url": "https://arxiv.org/abs/2611.30190",
-      "review_status": "metadata_verified"
-    },
-    {
-      "id": "arxiv:2611.30235",
-      "name": "PixelOne: From Options to Pixels in a Single Forward for GUI Grounding",
-      "url": "https://arxiv.org/abs/2611.30235",
-      "review_status": "metadata_verified"
-    },
-    {
-      "id": "arxiv:2611.30962",
-      "name": "Self-Evolving Evaluation Environments for Computer-Use Agents",
-      "url": "https://arxiv.org/abs/2611.30962",
-      "review_status": "metadata_verified"
-    },
-    {
-      "id": "arxiv:2611.30983",
-      "name": "MedUIGym: Evaluating and Training GUI Agents for Clinical Workflows",
-      "url": "https://arxiv.org/abs/2611.30983",
+      "id": "arxiv:2611.30738",
+      "name": "Optimizing Locally Equivalent Graph States in Quantum Computing Using Greedy Best-First Search",
+      "url": "https://arxiv.org/abs/2611.30738",
       "review_status": "metadata_verified"
     }
   ],
-  "new_candidate_count": 10,
-  "pending_metadata_changes": 13,
+  "new_candidate_count": 1,
+  "pending_metadata_changes": 15,
   "source_fetches": {
     "successful": 103,
     "total": 103,
@@ -116,18 +50,18 @@
     "successful": 32,
     "total": 32,
     "unique_identifiers": 1514,
-    "new_candidates": 1
+    "new_candidates": 0
   },
   "candidate_observations": {
-    "started_at": "2026-11-24T16:16:52Z",
-    "finished_at": "2026-11-24T16:20:32Z",
+    "started_at": "2026-11-25T00:35:43Z",
+    "finished_at": "2026-11-25T00:39:23Z",
     "ok": false,
     "deferred": true,
     "error": "Stage exceeded 220 seconds; last verified records retained.",
     "published": false,
     "durable_validation": {
       "ok": true,
-      "checked_at": "2026-11-24T16:21:14Z",
+      "checked_at": "2026-11-25T00:40:07Z",
       "mode": "resumable_triplet",
       "required": true,
       "files": {
@@ -141,52 +75,53 @@
   "phases": [
     {
       "name": "discovery",
-      "started_at": "2026-11-24T16:15:39Z",
-      "finished_at": "2026-11-24T16:16:04Z",
+      "started_at": "2026-11-25T00:34:34Z",
+      "finished_at": "2026-11-25T00:34:55Z",
       "ok": true,
       "exit_code": 0,
       "error": null
     },
     {
       "name": "huggingface",
-      "started_at": "2026-11-24T16:16:04Z",
-      "finished_at": "2026-11-24T16:16:40Z",
+      "started_at": "2026-11-25T00:34:55Z",
+      "finished_at": "2026-11-25T00:35:29Z",
       "ok": true,
       "exit_code": 0,
       "error": null
     },
     {
       "name": "recent_arxiv",
-      "started_at": "2026-11-24T16:16:40Z",
-      "finished_at": "2026-11-24T16:16:40Z",
+      "started_at": "2026-11-25T00:35:29Z",
+      "finished_at": "2026-11-25T00:35:30Z",
       "ok": true,
       "exit_code": 0,
       "error": null,
       "complete": true,
-      "new_count": 0,
+      "new_count": 1,
       "warnings": [],
-      "cache_used": true,
-      "source_retrieved_at": "2026-11-24T00:32:44Z"
+      "cache_used": false,
+      "rate_limited": false,
+      "deferred": false
     },
     {
       "name": "harvest",
-      "started_at": "2026-11-24T16:16:40Z",
-      "finished_at": "2026-11-24T16:16:41Z",
+      "started_at": "2026-11-25T00:35:30Z",
+      "finished_at": "2026-11-25T00:35:31Z",
       "ok": true,
       "exit_code": 0,
       "error": null
     },
     {
       "name": "github_candidates",
-      "started_at": "2026-11-24T16:16:52Z",
-      "finished_at": "2026-11-24T16:20:32Z",
+      "started_at": "2026-11-25T00:35:43Z",
+      "finished_at": "2026-11-25T00:39:23Z",
       "ok": false,
       "deferred": true,
       "error": "Stage exceeded 220 seconds; last verified records retained.",
       "published": false,
       "durable_validation": {
         "ok": true,
-        "checked_at": "2026-11-24T16:21:14Z",
+        "checked_at": "2026-11-25T00:40:07Z",
         "mode": "resumable_triplet",
         "required": true,
         "files": {
@@ -199,16 +134,16 @@
     },
     {
       "name": "build",
-      "started_at": "2026-11-24T16:20:32Z",
-      "finished_at": "2026-11-24T16:20:40Z",
+      "started_at": "2026-11-25T00:39:23Z",
+      "finished_at": "2026-11-25T00:39:31Z",
       "ok": true,
       "exit_code": 0,
       "error": null
     },
     {
       "name": "validate",
-      "started_at": "2026-11-24T16:20:40Z",
-      "finished_at": "2026-11-24T16:21:03Z",
+      "started_at": "2026-11-25T00:39:31Z",
+      "finished_at": "2026-11-25T00:39:55Z",
       "ok": true,
       "exit_code": 0,
       "error": null
@@ -221,16 +156,16 @@
   "network_deferred_only": true,
   "policy": "Automated scans discover candidates and verify bibliographic metadata. Editorial approval, topic annotations, and license claims require separate source review.",
   "network_budget": {
-    "round_id": "797f961eae2a4c1c8d2ede540c9da099",
+    "round_id": "13ba731cb24045f9bb846f8c939eb1ec",
     "max_requests": 180,
     "max_seconds": 360,
     "requests_reserved": 165,
-    "responses_received": 164,
-    "unknown_attempts": 1,
+    "responses_received": 165,
+    "unknown_attempts": 0,
     "by_phase": {
       "discovery": 109,
       "huggingface": 32,
-      "harvest": 1,
+      "recent_arxiv": 1,
       "github_candidates": 23
     },
     "by_provider": {
@@ -250,7 +185,7 @@
     },
     "provider_cooldowns": {},
     "blocked_providers": [],
-    "ledger_sha256": "f543b704176016b8ae13063f02b49a879b624905908e0074d068326cf5d4b39e",
+    "ledger_sha256": "e8aa3aef007b347c846bd556e10df3e82360dbf7b00032d9389ea0e43b8c58e7",
     "count_boundary": "Reservations are persisted before I/O; interrupted attempts remain conservatively charged. HTTP status observation does not establish complete or validated content."
   }
 }

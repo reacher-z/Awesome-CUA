@@ -1118,7 +1118,7 @@ def main(argv=None):
     for name, function in [("discover", discover), ("harvest", harvest), ("search-arxiv", search_arxiv), ("verify", verify_editorial), ("enrich", enrich)]:
         command = sub.add_parser(name)
         command.add_argument("--refresh", action="store_true", help="fetch new snapshots instead of reusing local cache")
-        command.add_argument("--limit", type=int, default=0)
+        command.add_argument("--limit", type=nonnegative, default=0)
         if function in (verify_editorial, enrich):
             command.add_argument("--id", action="append", metavar="ID", help="only the editorial entry with this catalog ID (repeatable); other receipts are left unchanged")
         if function is discover:

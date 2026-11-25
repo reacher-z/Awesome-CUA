@@ -1,10 +1,10 @@
 {
-  "id": "scan:2026-11-25T08:18:54Z",
+  "id": "scan:2026-11-25T16:19:07Z",
   "schema_version": 1,
   "status": "partial",
-  "started_at": "2026-11-25T08:18:54Z",
-  "finished_at": "2026-11-25T08:24:38Z",
-  "run_url": "https://github.com/reacher-z/Awesome-CUA/actions/runs/45575141171",
+  "started_at": "2026-11-25T16:19:07Z",
+  "finished_at": "2026-11-25T16:24:03Z",
+  "run_url": "https://github.com/reacher-z/Awesome-CUA/actions/runs/45652524863",
   "schedule": {
     "timezone": "UTC",
     "times_local": [
@@ -14,13 +14,13 @@
     ]
   },
   "before": {
-    "resources": 6608,
-    "bibliographic_records": 2926,
-    "arxiv_archive_records": 4234,
+    "resources": 6616,
+    "bibliographic_records": 2934,
+    "arxiv_archive_records": 4242,
     "excluded_records": 1308,
     "curated_papers": 1718,
     "curated_resources": 3629,
-    "candidates": 9907
+    "candidates": 9915
   },
   "after": {
     "resources": 6616,
@@ -31,57 +31,8 @@
     "curated_resources": 3629,
     "candidates": 9915
   },
-  "new_papers": [
-    {
-      "id": "arxiv:2611.31522",
-      "name": "One Step, Four Clocks: How GUI Agents Fall Out of Step",
-      "url": "https://arxiv.org/abs/2611.31522",
-      "review_status": "metadata_verified"
-    },
-    {
-      "id": "arxiv:2611.31559",
-      "name": "COGENT: A Modular Cognitive Architecture for Agentic User Simulation",
-      "url": "https://arxiv.org/abs/2611.31559",
-      "review_status": "metadata_verified"
-    },
-    {
-      "id": "arxiv:2611.31909",
-      "name": "Your VLM Knows What to Inspect: Semantic Probe-Guided Adaptive Focusing for GUI Grounding",
-      "url": "https://arxiv.org/abs/2611.31909",
-      "review_status": "metadata_verified"
-    },
-    {
-      "id": "arxiv:2611.31962",
-      "name": "Are Web Agents Still Detectable? Stress-Testing Bot Defenses with Coordinated Evasion",
-      "url": "https://arxiv.org/abs/2611.31962",
-      "review_status": "metadata_verified"
-    },
-    {
-      "id": "arxiv:2611.31974",
-      "name": "Coding4Games: Can Modern Coding Agents Play Modern Video Games?",
-      "url": "https://arxiv.org/abs/2611.31974",
-      "review_status": "metadata_verified"
-    },
-    {
-      "id": "arxiv:2611.32097",
-      "name": "GUI-PRISM: Efficient Action Decoding for GUI Agents",
-      "url": "https://arxiv.org/abs/2611.32097",
-      "review_status": "metadata_verified"
-    },
-    {
-      "id": "arxiv:2611.32102",
-      "name": "RISE: Reasoning with Implicit State Embeddings for GUI Agents",
-      "url": "https://arxiv.org/abs/2611.32102",
-      "review_status": "metadata_verified"
-    },
-    {
-      "id": "arxiv:2611.32332",
-      "name": "GUI-WEdit and GUI-SkillEvo: Gradient-Free Adaptation of Small GUI Agents",
-      "url": "https://arxiv.org/abs/2611.32332",
-      "review_status": "metadata_verified"
-    }
-  ],
-  "new_candidate_count": 8,
+  "new_papers": [],
+  "new_candidate_count": 0,
   "pending_metadata_changes": 15,
   "source_fetches": {
     "successful": 103,
@@ -95,15 +46,15 @@
     "new_candidates": 0
   },
   "candidate_observations": {
-    "started_at": "2026-11-25T08:20:13Z",
-    "finished_at": "2026-11-25T08:23:53Z",
+    "started_at": "2026-11-25T16:20:31Z",
+    "finished_at": "2026-11-25T16:23:15Z",
     "ok": false,
-    "deferred": true,
-    "error": "Stage exceeded 220 seconds; last verified records retained.",
+    "exit_code": 1,
+    "error": "Candidate phase rejected: Primary metadata lies outside its query cohort\n",
     "published": false,
     "durable_validation": {
       "ok": true,
-      "checked_at": "2026-11-25T08:24:37Z",
+      "checked_at": "2026-11-25T16:24:02Z",
       "mode": "resumable_triplet",
       "required": true,
       "files": {
@@ -117,24 +68,24 @@
   "phases": [
     {
       "name": "discovery",
-      "started_at": "2026-11-25T08:18:55Z",
-      "finished_at": "2026-11-25T08:19:22Z",
+      "started_at": "2026-11-25T16:19:08Z",
+      "finished_at": "2026-11-25T16:19:41Z",
       "ok": true,
       "exit_code": 0,
       "error": null
     },
     {
       "name": "huggingface",
-      "started_at": "2026-11-25T08:19:22Z",
-      "finished_at": "2026-11-25T08:20:00Z",
+      "started_at": "2026-11-25T16:19:41Z",
+      "finished_at": "2026-11-25T16:20:18Z",
       "ok": true,
       "exit_code": 0,
       "error": null
     },
     {
       "name": "recent_arxiv",
-      "started_at": "2026-11-25T08:20:00Z",
-      "finished_at": "2026-11-25T08:20:01Z",
+      "started_at": "2026-11-25T16:20:18Z",
+      "finished_at": "2026-11-25T16:20:18Z",
       "ok": true,
       "exit_code": 0,
       "error": null,
@@ -146,23 +97,23 @@
     },
     {
       "name": "harvest",
-      "started_at": "2026-11-25T08:20:01Z",
-      "finished_at": "2026-11-25T08:20:01Z",
+      "started_at": "2026-11-25T16:20:18Z",
+      "finished_at": "2026-11-25T16:20:18Z",
       "ok": true,
       "exit_code": 0,
       "error": null
     },
     {
       "name": "github_candidates",
-      "started_at": "2026-11-25T08:20:13Z",
-      "finished_at": "2026-11-25T08:23:53Z",
+      "started_at": "2026-11-25T16:20:31Z",
+      "finished_at": "2026-11-25T16:23:15Z",
       "ok": false,
-      "deferred": true,
-      "error": "Stage exceeded 220 seconds; last verified records retained.",
+      "exit_code": 1,
+      "error": "Candidate phase rejected: Primary metadata lies outside its query cohort\n",
       "published": false,
       "durable_validation": {
         "ok": true,
-        "checked_at": "2026-11-25T08:24:37Z",
+        "checked_at": "2026-11-25T16:24:02Z",
         "mode": "resumable_triplet",
         "required": true,
         "files": {
@@ -175,39 +126,38 @@
     },
     {
       "name": "build",
-      "started_at": "2026-11-25T08:23:53Z",
-      "finished_at": "2026-11-25T08:24:01Z",
+      "started_at": "2026-11-25T16:23:15Z",
+      "finished_at": "2026-11-25T16:23:24Z",
       "ok": true,
       "exit_code": 0,
       "error": null
     },
     {
       "name": "validate",
-      "started_at": "2026-11-25T08:24:01Z",
-      "finished_at": "2026-11-25T08:24:25Z",
+      "started_at": "2026-11-25T16:23:24Z",
+      "finished_at": "2026-11-25T16:23:49Z",
       "ok": true,
       "exit_code": 0,
       "error": null
     }
   ],
   "warnings": [
-    "github_candidates: Stage exceeded 220 seconds; last verified records retained."
+    "github_candidates: Candidate phase rejected: Primary metadata lies outside its query cohort\n"
   ],
   "rate_limit_only": false,
-  "network_deferred_only": true,
+  "network_deferred_only": false,
   "policy": "Automated scans discover candidates and verify bibliographic metadata. Editorial approval, topic annotations, and license claims require separate source review.",
   "network_budget": {
-    "round_id": "58dcdaca477d4d11a99611a5beff7d14",
+    "round_id": "dbda7f5b41a64c0286fdf20e897d5d3c",
     "max_requests": 180,
     "max_seconds": 360,
-    "requests_reserved": 165,
-    "responses_received": 165,
+    "requests_reserved": 154,
+    "responses_received": 154,
     "unknown_attempts": 0,
     "by_phase": {
       "discovery": 109,
       "huggingface": 32,
-      "harvest": 1,
-      "github_candidates": 23
+      "github_candidates": 13
     },
     "by_provider": {
       "raw.githubusercontent.com": 66,
@@ -220,13 +170,17 @@
       "doc-04-10-sheets.googleusercontent.com": 1,
       "doc-0s-8k-sheets.googleusercontent.com": 1,
       "doc-04-0o-sheets.googleusercontent.com": 1,
-      "export.arxiv.org": 3,
+      "export.arxiv.org": 2,
       "arxiv.org": 2,
-      "api.github.com": 23
+      "api.github.com": 13
     },
-    "provider_cooldowns": {},
-    "blocked_providers": [],
-    "ledger_sha256": "51338ff8acbba4405273447cc6c1e851c9de6352ef1b1039374fff719d3880dc",
+    "provider_cooldowns": {
+      "api.github.com": "2026-11-25T16:23:46.952312+00:00"
+    },
+    "blocked_providers": [
+      "api.github.com"
+    ],
+    "ledger_sha256": "d64e7f86d840c328cd1bfe40e3323a7534ebde15d9cad14f4b1ccd0f6a531172",
     "count_boundary": "Reservations are persisted before I/O; interrupted attempts remain conservatively charged. HTTP status observation does not establish complete or validated content."
   }
 }

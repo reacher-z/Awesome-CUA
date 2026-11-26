@@ -5,7 +5,7 @@
 Bibliographic records from arXiv and retained publication sources. Metadata-only entries await relevance review. Discovery includes historical references and adjacent work.
 Dates retain their recorded precision. Explicit arXiv scope exclusions are listed in the [scope-decision ledger](../data/exclusion-status.json). The [arXiv archive](../data/papers.jsonl) and [publication observations](../data/publications.jsonl) retain their separate source facts.
 
-**Years:** [2026](#2026) (1,468; 879 ⭐) · [2025](#2025) (739; 514 ⭐) · [2024](#2024) (447; 214 ⭐) · [2023](#2023) (201; 56 ⭐) · [2022](#2022) (49; 16 ⭐) · [2021](#2021) (24; 13 ⭐) · [2020](#2020) (16; 7 ⭐) · [2019](#2019) (9; 2 ⭐) · [2018](#2018) (12; 7 ⭐) · [2017](#2017) (9; 3 ⭐) · [2016](#2016) (5; 2 ⭐) · [2015](#2015) (1; 0 ⭐) · [2013](#2013) (2; 0 ⭐) · [2010](#2010) (1; 1 ⭐) · [2009](#2009) (1; 1 ⭐) · [2007](#2007) (2; 2 ⭐) · [1991](#1991) (1; 1 ⭐)
+**Years:** [2026](#2026) (1,473; 879 ⭐) · [2025](#2025) (739; 514 ⭐) · [2024](#2024) (447; 214 ⭐) · [2023](#2023) (201; 56 ⭐) · [2022](#2022) (49; 16 ⭐) · [2021](#2021) (24; 13 ⭐) · [2020](#2020) (16; 7 ⭐) · [2019](#2019) (9; 2 ⭐) · [2018](#2018) (12; 7 ⭐) · [2017](#2017) (9; 3 ⭐) · [2016](#2016) (5; 2 ⭐) · [2015](#2015) (1; 0 ⭐) · [2013](#2013) (2; 0 ⭐) · [2010](#2010) (1; 1 ⭐) · [2009](#2009) (1; 1 ⭐) · [2007](#2007) (2; 2 ⭐) · [1991](#1991) (1; 1 ⭐)
 
 ⭐ marks papers with an editorial relevance review; their topics link to the [topic hubs](topics.md). Other rows are bibliographic metadata only.
 
@@ -13,8 +13,12 @@ Dates retain their recorded precision. Explicit arXiv scope exclusions are liste
 
 | Date | Paper | Review | Topics |
 | --- | --- | --- | --- |
+| 2026-11-25 | [OS-Omni: Benchmarking Generalist Computer-Using Agents on Long-Horizon Workflows Across Platforms](https://arxiv.org/abs/2611.34232) | metadata |  |
+| 2026-11-25 | [GlassGround: GUI Grounding Beyond Native Screenshots with Egocentric Wearable Vision](https://arxiv.org/abs/2611.33760) | metadata |  |
+| 2026-11-25 | [EgoUseBench: Benchmarking Computer-Use Agents under Evolving First-Person Contexts](https://arxiv.org/abs/2611.34466) | metadata |  |
 | 2026-11-24 | [Your VLM Knows What to Inspect: Semantic Probe-Guided Adaptive Focusing for GUI Grounding](https://arxiv.org/abs/2611.31909) | metadata |  |
 | 2026-11-24 | [RISE: Reasoning with Implicit State Embeddings for GUI Agents](https://arxiv.org/abs/2611.32102) | metadata |  |
+| 2026-11-24 | [ICLWorld: Benchmarking In-Context Learning of Agents from Digital to Physical Worlds](https://arxiv.org/abs/2611.32649) | metadata |  |
 | 2026-11-24 | [GUI-WEdit and GUI-SkillEvo: Gradient-Free Adaptation of Small GUI Agents](https://arxiv.org/abs/2611.32332) | metadata |  |
 | 2026-11-24 | [GUI-PRISM: Efficient Action Decoding for GUI Agents](https://arxiv.org/abs/2611.32097) | metadata |  |
 | 2026-11-24 | [Coding4Games: Can Modern Coding Agents Play Modern Video Games?](https://arxiv.org/abs/2611.31974) | metadata |  |
@@ -35,6 +39,7 @@ Dates retain their recorded precision. Explicit arXiv scope exclusions are liste
 | 2026-11-20 | [ROSWORLD: When Digital Task Competence Meets Physical Execution](https://arxiv.org/abs/2611.27467) | metadata |  |
 | 2026-11-20 | [Bel: Step-Level Policy Improvement of Visual Agents Without Training](https://arxiv.org/abs/2611.27222) | metadata |  |
 | 2026-11-19 | [TuringSpace: Grounding Spatial Intelligence in Action with Interactive CAPTCHAs](https://arxiv.org/abs/2611.25387) | metadata |  |
+| 2026-11-19 | [SheetAlign: Grounded Interaction and Stage-Isolated Learning for Spreadsheet Agents](https://arxiv.org/abs/2611.26069) | metadata |  |
 | 2026-11-19 | [MATE: Mobile Agent Trustworthy Execution for Safe and Efficient Mobile Control](https://arxiv.org/abs/2611.25526) | metadata |  |
 | 2026-11-18 | [Vanguard: Knowing When to Trust the Draft in Speculative Vision-Language Agents](https://arxiv.org/abs/2611.23917) | metadata |  |
 | 2026-11-18 | [ScaleDiag: Diagnosing the Limits of Test-Time Scaling in GUI Grounding](https://arxiv.org/abs/2611.25297) | metadata |  |

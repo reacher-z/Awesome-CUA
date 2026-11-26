@@ -1,11 +1,11 @@
 # Coverage and quality ledger
 
-Evidence snapshot through **2026-11-25T08:20:01Z**. Generated from committed source receipts.
+Evidence snapshot through **2026-11-26T08:20:00Z**. Generated from committed source receipts.
 
-- 5,347 curated resources. Another 1,269 records await review with bibliographic metadata only; the active catalog file holds 6,616 records in all.
-- 2,987 paper and survey records, including 2,934 arXiv identities and 53 publisher-only identities.
-- 4,242 retained arXiv metadata records; 1,308 explicit scope exclusions are outside the active catalog.
-- 9,915 discovery identifiers; 196 remain unresolved. Reviewed decisions include 505 non-resource links, 748 aliases and 2,052 out-of-scope resources; their reasons remain in the review queue.
+- 5,347 curated resources. Another 1,274 records await review with bibliographic metadata only; the active catalog file holds 6,621 records in all.
+- 2,992 paper and survey records, including 2,939 arXiv identities and 53 publisher-only identities.
+- 4,247 retained arXiv metadata records; 1,308 explicit scope exclusions are outside the active catalog.
+- 9,922 discovery identifiers; 198 remain unresolved. Reviewed decisions include 505 non-resource links, 748 aliases and 2,052 out-of-scope resources; their reasons remain in the review queue.
 - 378 editorial proposals await verification or review.
 
 These are distinct resource identifiers, not distinct research projects. Papers, repositories, datasets, products, and publisher entities have different grains.
@@ -47,9 +47,9 @@ The denominator is the normalized identifiers extracted from each fetched docume
 | [Computer Use Agents Overview](https://github.com/cdxeve/awesome-computer-use-agents) | 78 | 50 | 49 | 10 | 12 | 6 | 0 | OK · 2026-11-26 |
 | [Awesome GUI Agents — Supernal](https://github.com/supernalintelligence/Awesome-Gui-Agents) | 63 | 22 | 22 | 3 | 25 | 12 | 1 | OK · 2026-11-26 |
 | [Yearly GUI Agents](https://github.com/qy0720/awesome-yearly-gui-agents) | 193 | 152 | 152 | 2 | 37 | 1 | 1 | OK · 2026-11-26 |
-| [OSU-NLP-Group/GUI-Agents-Paper-List / README.md](https://github.com/OSU-NLP-Group/GUI-Agents-Paper-List) | 545 | 493 | 464 | 0 | 52 | 0 | 0 | OK · 2026-11-26 |
+| [OSU-NLP-Group/GUI-Agents-Paper-List / README.md](https://github.com/OSU-NLP-Group/GUI-Agents-Paper-List) | 545 | 493 | 444 | 0 | 52 | 0 | 0 | OK · 2026-11-26 |
 | [opendilab/awesome-ui-agents / README.md](https://github.com/opendilab/awesome-ui-agents) | 144 | 97 | 95 | 6 | 32 | 9 | 0 | OK · 2026-11-26 |
-| [jin-s13/awesome-gui-agent-hub / AWESOME.md](https://github.com/jin-s13/awesome-gui-agent-hub) | 280 | 277 | 236 | 0 | 2 | 0 | 1 | OK · 2026-11-26 |
+| [jin-s13/awesome-gui-agent-hub / AWESOME.md](https://github.com/jin-s13/awesome-gui-agent-hub) | 283 | 280 | 236 | 0 | 2 | 0 | 1 | OK · 2026-11-26 |
 | [ZJU-REAL/Awesome-GUI-Agents / ICLR2026/Paperlist.md](https://github.com/ZJU-REAL/Awesome-GUI-Agents) | 7 | 0 | 0 | 0 | 7 | 0 | 0 | OK · 2026-11-26 |
 | [dqtz5vpvj9-create/awesome-mobile-gui-agents / README.md](https://github.com/dqtz5vpvj9-create/awesome-mobile-gui-agents) | 40 | 32 | 32 | 0 | 8 | 0 | 0 | OK · 2026-11-26 |
 | [PhoneLLM/Awesome-LLM-Powered-Phone-GUI-Agents](https://github.com/PhoneLLM/Awesome-LLM-Powered-Phone-GUI-Agents) | 247 | 212 | 211 | 9 | 26 | 0 | 0 | OK · 2026-11-26 |
@@ -104,18 +104,18 @@ The denominator is the normalized identifiers extracted from each fetched docume
 | [LLM-Brained GUI Agents survey tables — data/survey.json](https://github.com/vyokky/LLM-Brained-GUI-Agents-Survey) | 40 | 21 | 11 | 6 | 2 | 6 | 5 | OK · 2026-11-26 |
 | [LLM-Brained GUI Agents survey tables — data/virtual-assistant.json](https://github.com/vyokky/LLM-Brained-GUI-Agents-Survey) | 19 | 10 | 10 | 0 | 4 | 5 | 0 | OK · 2026-11-26 |
 | [OSWorld-Verified leaderboard results](https://os-world.github.io) | 50 | 33 | 33 | 0 | 10 | 7 | 0 | OK · 2026-11-26 |
-| [OSWorld self-reported leaderboard results](https://os-world.github.io) | 89 | 22 | 22 | 5 | 55 | 7 | 0 | OK · 2026-11-26 |
+| [OSWorld self-reported leaderboard results](https://os-world.github.io) | 91 | 23 | 22 | 5 | 55 | 7 | 1 | OK · 2026-11-26 |
 | [ScreenSpot-Pro grounding leaderboard results](https://gui-agent.github.io/grounding-leaderboard) | 45 | 32 | 32 | 2 | 9 | 2 | 0 | OK · 2026-11-26 |
 | [AndroidWorld leaderboard spreadsheet](https://docs.google.com/spreadsheets/d/1cchzP9dlTZ3WXQTfYNhh3avxoLipqHN75v1Tb86uhHo) | 69 | 43 | 43 | 0 | 22 | 0 | 4 | OK · 2026-11-26 |
 | [WebArena and VisualWebArena leaderboard spreadsheet](https://docs.google.com/spreadsheets/d/1M801lEpBbKSNwP-vDBkC_pF7LdyGU1f_ufZb_NWNBZQ) | 83 | 46 | 43 | 4 | 26 | 6 | 1 | OK · 2026-11-26 |
 | [AndroidLab leaderboard spreadsheet](https://docs.google.com/spreadsheets/d/1Zv6mBfd4Ibt8mke24K6zAFrXe4AvEFaBLW3hpJqSgjw) | 6 | 5 | 5 | 0 | 1 | 0 | 0 | OK · 2026-11-26 |
-| [arXiv abstract-phrase query: GUI, computer-use and web agents (all dates)](https://arxiv.org) | 1165 | 1152 | 1046 | 13 | 0 | 0 | 0 | OK · 2026-11-26 |
+| [arXiv abstract-phrase query: GUI, computer-use and web agents (all dates)](https://arxiv.org) | 1167 | 1154 | 1046 | 13 | 0 | 0 | 0 | OK · 2026-11-26 |
 | [Hub model search "gui" (by likes)](https://huggingface.co/models?search=gui) | 28 | 27 | 27 | 0 | 0 | 1 | 0 | OK · 2026-11-26 |
 | [Hub model search "computer-use" (by likes)](https://huggingface.co/models?search=computer-use) | 2 | 2 | 2 | 0 | 0 | 0 | 0 | OK · 2026-11-26 |
 | [Hub dataset search "gui" (by likes)](https://huggingface.co/datasets?search=gui) | 18 | 15 | 15 | 0 | 0 | 3 | 0 | OK · 2026-11-26 |
 | [Hub dataset search "computer-use" (by likes)](https://huggingface.co/datasets?search=computer-use) | 4 | 3 | 3 | 0 | 1 | 0 | 0 | OK · 2026-11-26 |
 | [Hub dataset search "web-agent" (by likes)](https://huggingface.co/datasets?search=web-agent) | 5 | 2 | 2 | 0 | 1 | 2 | 0 | OK · 2026-11-26 |
-| [Hub dataset search "mind2web" (by likes)](https://huggingface.co/datasets?search=mind2web) | 9 | 6 | 6 | 0 | 0 | 0 | 3 | OK · 2026-11-26 |
+| [Hub dataset search "mind2web" (by likes)](https://huggingface.co/datasets?search=mind2web) | 10 | 6 | 6 | 0 | 0 | 0 | 4 | OK · 2026-11-26 |
 | [Hub dataset search "android" (by likes)](https://huggingface.co/datasets?search=android) | 9 | 4 | 4 | 0 | 2 | 2 | 1 | OK · 2026-11-26 |
 | [Hub dataset search "screenspot" (by likes)](https://huggingface.co/datasets?search=screenspot) | 6 | 4 | 4 | 0 | 1 | 0 | 1 | OK · 2026-11-26 |
 | [Hub collection maxiw/gui-datasets](https://huggingface.co/collections/maxiw/gui-datasets-66c512aef77e8e56f38a670b) | 20 | 20 | 20 | 0 | 0 | 0 | 0 | OK · 2026-11-26 |
@@ -142,7 +142,7 @@ The denominator is the normalized identifiers extracted from each fetched docume
 
 ## Paper-discovery query coverage
 
-Latest pass: 2026-11-26T00:34:43Z; **32/32** query windows succeeded. 1,515 distinct identifiers; 0 new to the candidate queue.
+Latest pass: 2026-11-26T08:20:00Z; **32/32** query windows succeeded. 1,516 distinct identifiers; 0 new to the candidate queue.
 
 These are ranked search windows. New identifiers go through primary metadata verification and relevance review.
 

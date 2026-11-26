@@ -1,10 +1,10 @@
 {
-  "id": "scan:2026-11-26T08:18:59Z",
+  "id": "scan:2026-11-26T16:16:06Z",
   "schema_version": 1,
   "status": "partial",
-  "started_at": "2026-11-26T08:18:59Z",
-  "finished_at": "2026-11-26T08:24:04Z",
-  "run_url": "https://github.com/reacher-z/Awesome-CUA/actions/runs/45782049749",
+  "started_at": "2026-11-26T16:16:06Z",
+  "finished_at": "2026-11-26T16:20:18Z",
+  "run_url": "https://github.com/reacher-z/Awesome-CUA/actions/runs/45857092121",
   "schedule": {
     "timezone": "UTC",
     "times_local": [
@@ -14,13 +14,13 @@
     ]
   },
   "before": {
-    "resources": 6616,
-    "bibliographic_records": 2934,
-    "arxiv_archive_records": 4242,
+    "resources": 6621,
+    "bibliographic_records": 2939,
+    "arxiv_archive_records": 4247,
     "excluded_records": 1308,
     "curated_papers": 1718,
     "curated_resources": 3629,
-    "candidates": 9915
+    "candidates": 9922
   },
   "after": {
     "resources": 6621,
@@ -31,39 +31,8 @@
     "curated_resources": 3629,
     "candidates": 9922
   },
-  "new_papers": [
-    {
-      "id": "arxiv:2611.26069",
-      "name": "SheetAlign: Grounded Interaction and Stage-Isolated Learning for Spreadsheet Agents",
-      "url": "https://arxiv.org/abs/2611.26069",
-      "review_status": "metadata_verified"
-    },
-    {
-      "id": "arxiv:2611.32649",
-      "name": "ICLWorld: Benchmarking In-Context Learning of Agents from Digital to Physical Worlds",
-      "url": "https://arxiv.org/abs/2611.32649",
-      "review_status": "metadata_verified"
-    },
-    {
-      "id": "arxiv:2611.33760",
-      "name": "GlassGround: GUI Grounding Beyond Native Screenshots with Egocentric Wearable Vision",
-      "url": "https://arxiv.org/abs/2611.33760",
-      "review_status": "metadata_verified"
-    },
-    {
-      "id": "arxiv:2611.34232",
-      "name": "OS-Omni: Benchmarking Generalist Computer-Using Agents on Long-Horizon Workflows Across Platforms",
-      "url": "https://arxiv.org/abs/2611.34232",
-      "review_status": "metadata_verified"
-    },
-    {
-      "id": "arxiv:2611.34466",
-      "name": "EgoUseBench: Benchmarking Computer-Use Agents under Evolving First-Person Contexts",
-      "url": "https://arxiv.org/abs/2611.34466",
-      "review_status": "metadata_verified"
-    }
-  ],
-  "new_candidate_count": 7,
+  "new_papers": [],
+  "new_candidate_count": 0,
   "pending_metadata_changes": 16,
   "source_fetches": {
     "successful": 103,
@@ -73,19 +42,19 @@
   "paper_searches": {
     "successful": 32,
     "total": 32,
-    "unique_identifiers": 1516,
+    "unique_identifiers": 1515,
     "new_candidates": 0
   },
   "candidate_observations": {
-    "started_at": "2026-11-26T08:20:08Z",
-    "finished_at": "2026-11-26T08:23:33Z",
+    "started_at": "2026-11-26T16:17:25Z",
+    "finished_at": "2026-11-26T16:19:43Z",
     "ok": false,
     "exit_code": 1,
     "error": "Candidate phase rejected: Primary metadata lies outside its query cohort\n",
     "published": false,
     "durable_validation": {
       "ok": true,
-      "checked_at": "2026-11-26T08:24:03Z",
+      "checked_at": "2026-11-26T16:20:17Z",
       "mode": "resumable_triplet",
       "required": true,
       "files": {
@@ -99,24 +68,24 @@
   "phases": [
     {
       "name": "discovery",
-      "started_at": "2026-11-26T08:19:00Z",
-      "finished_at": "2026-11-26T08:19:26Z",
+      "started_at": "2026-11-26T16:16:07Z",
+      "finished_at": "2026-11-26T16:16:36Z",
       "ok": true,
       "exit_code": 0,
       "error": null
     },
     {
       "name": "huggingface",
-      "started_at": "2026-11-26T08:19:26Z",
-      "finished_at": "2026-11-26T08:20:00Z",
+      "started_at": "2026-11-26T16:16:36Z",
+      "finished_at": "2026-11-26T16:17:15Z",
       "ok": true,
       "exit_code": 0,
       "error": null
     },
     {
       "name": "recent_arxiv",
-      "started_at": "2026-11-26T08:20:00Z",
-      "finished_at": "2026-11-26T08:20:00Z",
+      "started_at": "2026-11-26T16:17:15Z",
+      "finished_at": "2026-11-26T16:17:16Z",
       "ok": true,
       "exit_code": 0,
       "error": null,
@@ -128,23 +97,23 @@
     },
     {
       "name": "harvest",
-      "started_at": "2026-11-26T08:20:00Z",
-      "finished_at": "2026-11-26T08:20:01Z",
+      "started_at": "2026-11-26T16:17:16Z",
+      "finished_at": "2026-11-26T16:17:16Z",
       "ok": true,
       "exit_code": 0,
       "error": null
     },
     {
       "name": "github_candidates",
-      "started_at": "2026-11-26T08:20:08Z",
-      "finished_at": "2026-11-26T08:23:33Z",
+      "started_at": "2026-11-26T16:17:25Z",
+      "finished_at": "2026-11-26T16:19:43Z",
       "ok": false,
       "exit_code": 1,
       "error": "Candidate phase rejected: Primary metadata lies outside its query cohort\n",
       "published": false,
       "durable_validation": {
         "ok": true,
-        "checked_at": "2026-11-26T08:24:03Z",
+        "checked_at": "2026-11-26T16:20:17Z",
         "mode": "resumable_triplet",
         "required": true,
         "files": {
@@ -157,16 +126,16 @@
     },
     {
       "name": "build",
-      "started_at": "2026-11-26T08:23:33Z",
-      "finished_at": "2026-11-26T08:23:39Z",
+      "started_at": "2026-11-26T16:19:43Z",
+      "finished_at": "2026-11-26T16:19:50Z",
       "ok": true,
       "exit_code": 0,
       "error": null
     },
     {
       "name": "validate",
-      "started_at": "2026-11-26T08:23:39Z",
-      "finished_at": "2026-11-26T08:23:55Z",
+      "started_at": "2026-11-26T16:19:50Z",
+      "finished_at": "2026-11-26T16:20:08Z",
       "ok": true,
       "exit_code": 0,
       "error": null
@@ -179,17 +148,16 @@
   "network_deferred_only": false,
   "policy": "Automated scans discover candidates and verify bibliographic metadata. Editorial approval, topic annotations, and license claims require separate source review.",
   "network_budget": {
-    "round_id": "8fd457a72ec349038004cba8e54f26da",
+    "round_id": "ec5cc3669a5c49b59475ede034ae86f8",
     "max_requests": 180,
     "max_seconds": 360,
-    "requests_reserved": 166,
-    "responses_received": 166,
+    "requests_reserved": 154,
+    "responses_received": 154,
     "unknown_attempts": 0,
     "by_phase": {
       "discovery": 109,
       "huggingface": 32,
-      "harvest": 1,
-      "github_candidates": 24
+      "github_candidates": 13
     },
     "by_provider": {
       "raw.githubusercontent.com": 66,
@@ -202,17 +170,17 @@
       "doc-04-10-sheets.googleusercontent.com": 1,
       "doc-0s-8k-sheets.googleusercontent.com": 1,
       "doc-04-0o-sheets.googleusercontent.com": 1,
-      "export.arxiv.org": 3,
+      "export.arxiv.org": 2,
       "arxiv.org": 2,
-      "api.github.com": 24
+      "api.github.com": 13
     },
     "provider_cooldowns": {
-      "api.github.com": "2026-11-26T08:24:16.262351+00:00"
+      "api.github.com": "2026-11-26T16:20:23.078495+00:00"
     },
     "blocked_providers": [
       "api.github.com"
     ],
-    "ledger_sha256": "88cf00234d8c87eb005b04c3628acac2ac87d11147e9484afe301a795394052a",
+    "ledger_sha256": "246b856b8f41563fb2b9e235ddd91f40f7f187f494fdecc9889de302cec88858",
     "count_boundary": "Reservations are persisted before I/O; interrupted attempts remain conservatively charged. HTTP status observation does not establish complete or validated content."
   }
 }

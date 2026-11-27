@@ -5,7 +5,7 @@
 Bibliographic records from arXiv and retained publication sources. Metadata-only entries await relevance review. Discovery includes historical references and adjacent work.
 Dates retain their recorded precision. Explicit arXiv scope exclusions are listed in the [scope-decision ledger](../data/exclusion-status.json). The [arXiv archive](../data/papers.jsonl) and [publication observations](../data/publications.jsonl) retain their separate source facts.
 
-**Years:** [2026](#2026) (1,473; 879 ⭐) · [2025](#2025) (739; 514 ⭐) · [2024](#2024) (447; 214 ⭐) · [2023](#2023) (201; 56 ⭐) · [2022](#2022) (49; 16 ⭐) · [2021](#2021) (24; 13 ⭐) · [2020](#2020) (16; 7 ⭐) · [2019](#2019) (9; 2 ⭐) · [2018](#2018) (12; 7 ⭐) · [2017](#2017) (9; 3 ⭐) · [2016](#2016) (5; 2 ⭐) · [2015](#2015) (1; 0 ⭐) · [2013](#2013) (2; 0 ⭐) · [2010](#2010) (1; 1 ⭐) · [2009](#2009) (1; 1 ⭐) · [2007](#2007) (2; 2 ⭐) · [1991](#1991) (1; 1 ⭐)
+**Years:** [2026](#2026) (1,474; 879 ⭐) · [2025](#2025) (739; 514 ⭐) · [2024](#2024) (447; 214 ⭐) · [2023](#2023) (201; 56 ⭐) · [2022](#2022) (49; 16 ⭐) · [2021](#2021) (24; 13 ⭐) · [2020](#2020) (16; 7 ⭐) · [2019](#2019) (9; 2 ⭐) · [2018](#2018) (12; 7 ⭐) · [2017](#2017) (9; 3 ⭐) · [2016](#2016) (5; 2 ⭐) · [2015](#2015) (1; 0 ⭐) · [2013](#2013) (2; 0 ⭐) · [2010](#2010) (1; 1 ⭐) · [2009](#2009) (1; 1 ⭐) · [2007](#2007) (2; 2 ⭐) · [1991](#1991) (1; 1 ⭐)
 
 ⭐ marks papers with an editorial relevance review; their topics link to the [topic hubs](topics.md). Other rows are bibliographic metadata only.
 
@@ -61,6 +61,7 @@ Dates retain their recorded precision. Explicit arXiv scope exclusions are liste
 | 2026-11-16 | [Simulating Quantum Computation Using Probabilistic Programming](https://arxiv.org/abs/2611.21904) | metadata |  |
 | 2026-11-16 | [Sage S2.1 Flash Technical Report](https://arxiv.org/abs/2611.21072) | metadata |  |
 | 2026-11-16 | [EVIDENT: Evaluating Evidence Grounding in GUI Agents](https://arxiv.org/abs/2611.20488) | metadata |  |
+| 2026-11-16 | [DetourBench: Trajectory-Level Evaluation of Interactive Agents with Exact Minimum-Action Bounds](https://arxiv.org/abs/2611.20844) | metadata |  |
 | 2026-11-16 | [Building Fully On-Device GUI Agents with Mobile NPUs](https://arxiv.org/abs/2611.20772) | metadata |  |
 | 2026-11-16 | [Accelerate Bench: Evaluating Agents for Application-Level Program Optimization](https://arxiv.org/abs/2611.20882) | metadata |  |
 | 2026-11-15 | [Rank, Don't Regress: A 279M Text Ranker Beats 2B and 7B VLMs on Referential Urdu GUI Grounding](https://arxiv.org/abs/2611.20145) | metadata |  |

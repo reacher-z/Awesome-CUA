@@ -1,10 +1,10 @@
 {
-  "id": "scan:2026-11-28T08:16:12Z",
+  "id": "scan:2026-11-28T16:13:44Z",
   "schema_version": 1,
   "status": "partial",
-  "started_at": "2026-11-28T08:16:12Z",
-  "finished_at": "2026-11-28T08:22:16Z",
-  "run_url": "https://github.com/reacher-z/Awesome-CUA/actions/runs/46124989572",
+  "started_at": "2026-11-28T16:13:44Z",
+  "finished_at": "2026-11-28T16:19:47Z",
+  "run_url": "https://github.com/reacher-z/Awesome-CUA/actions/runs/46163981825",
   "schedule": {
     "timezone": "UTC",
     "times_local": [
@@ -14,15 +14,6 @@
     ]
   },
   "before": {
-    "resources": 6622,
-    "bibliographic_records": 2940,
-    "arxiv_archive_records": 4248,
-    "excluded_records": 1308,
-    "curated_papers": 1718,
-    "curated_resources": 3629,
-    "candidates": 9923
-  },
-  "after": {
     "resources": 6623,
     "bibliographic_records": 2941,
     "arxiv_archive_records": 4249,
@@ -31,11 +22,20 @@
     "curated_resources": 3629,
     "candidates": 9924
   },
+  "after": {
+    "resources": 6624,
+    "bibliographic_records": 2942,
+    "arxiv_archive_records": 4250,
+    "excluded_records": 1308,
+    "curated_papers": 1718,
+    "curated_resources": 3629,
+    "candidates": 9925
+  },
   "new_papers": [
     {
-      "id": "arxiv:2609.26777",
-      "name": "SWE-Serve: Benchmarking Agentic Engineering For Production Inference Serving",
-      "url": "https://arxiv.org/abs/2609.26777",
+      "id": "arxiv:2602.01664",
+      "name": "FlowSteer: Towards Agents Designing Agentic Workflows via Reinforced Progressive Canvas Editing",
+      "url": "https://arxiv.org/abs/2602.01664",
       "review_status": "metadata_verified"
     }
   ],
@@ -49,19 +49,19 @@
   "paper_searches": {
     "successful": 32,
     "total": 32,
-    "unique_identifiers": 1459,
+    "unique_identifiers": 1504,
     "new_candidates": 1
   },
   "candidate_observations": {
-    "started_at": "2026-11-28T08:17:52Z",
-    "finished_at": "2026-11-28T08:21:32Z",
+    "started_at": "2026-11-28T16:15:26Z",
+    "finished_at": "2026-11-28T16:19:06Z",
     "ok": false,
     "deferred": true,
     "error": "Stage exceeded 220 seconds; last verified records retained.",
     "published": false,
     "durable_validation": {
       "ok": true,
-      "checked_at": "2026-11-28T08:22:15Z",
+      "checked_at": "2026-11-28T16:19:46Z",
       "mode": "resumable_triplet",
       "required": true,
       "files": {
@@ -75,24 +75,24 @@
   "phases": [
     {
       "name": "discovery",
-      "started_at": "2026-11-28T08:16:13Z",
-      "finished_at": "2026-11-28T08:16:38Z",
+      "started_at": "2026-11-28T16:13:45Z",
+      "finished_at": "2026-11-28T16:14:18Z",
       "ok": true,
       "exit_code": 0,
       "error": null
     },
     {
       "name": "huggingface",
-      "started_at": "2026-11-28T08:16:38Z",
-      "finished_at": "2026-11-28T08:17:39Z",
+      "started_at": "2026-11-28T16:14:18Z",
+      "finished_at": "2026-11-28T16:15:14Z",
       "ok": true,
       "exit_code": 0,
       "error": null
     },
     {
       "name": "recent_arxiv",
-      "started_at": "2026-11-28T08:17:39Z",
-      "finished_at": "2026-11-28T08:17:39Z",
+      "started_at": "2026-11-28T16:15:14Z",
+      "finished_at": "2026-11-28T16:15:14Z",
       "ok": true,
       "exit_code": 0,
       "error": null,
@@ -104,23 +104,23 @@
     },
     {
       "name": "harvest",
-      "started_at": "2026-11-28T08:17:39Z",
-      "finished_at": "2026-11-28T08:17:40Z",
+      "started_at": "2026-11-28T16:15:14Z",
+      "finished_at": "2026-11-28T16:15:15Z",
       "ok": true,
       "exit_code": 0,
       "error": null
     },
     {
       "name": "github_candidates",
-      "started_at": "2026-11-28T08:17:52Z",
-      "finished_at": "2026-11-28T08:21:32Z",
+      "started_at": "2026-11-28T16:15:26Z",
+      "finished_at": "2026-11-28T16:19:06Z",
       "ok": false,
       "deferred": true,
       "error": "Stage exceeded 220 seconds; last verified records retained.",
       "published": false,
       "durable_validation": {
         "ok": true,
-        "checked_at": "2026-11-28T08:22:15Z",
+        "checked_at": "2026-11-28T16:19:46Z",
         "mode": "resumable_triplet",
         "required": true,
         "files": {
@@ -133,16 +133,16 @@
     },
     {
       "name": "build",
-      "started_at": "2026-11-28T08:21:32Z",
-      "finished_at": "2026-11-28T08:21:40Z",
+      "started_at": "2026-11-28T16:19:06Z",
+      "finished_at": "2026-11-28T16:19:14Z",
       "ok": true,
       "exit_code": 0,
       "error": null
     },
     {
       "name": "validate",
-      "started_at": "2026-11-28T08:21:40Z",
-      "finished_at": "2026-11-28T08:22:04Z",
+      "started_at": "2026-11-28T16:19:14Z",
+      "finished_at": "2026-11-28T16:19:35Z",
       "ok": true,
       "exit_code": 0,
       "error": null
@@ -155,17 +155,17 @@
   "network_deferred_only": true,
   "policy": "Automated scans discover candidates and verify bibliographic metadata. Editorial approval, topic annotations, and license claims require separate source review.",
   "network_budget": {
-    "round_id": "8e59be78eee941cb90d70c54d0f9151c",
+    "round_id": "a1a0bf9213c14c87ad900496ad6f2b44",
     "max_requests": 180,
     "max_seconds": 360,
-    "requests_reserved": 164,
-    "responses_received": 164,
+    "requests_reserved": 166,
+    "responses_received": 166,
     "unknown_attempts": 0,
     "by_phase": {
       "discovery": 109,
       "huggingface": 32,
       "harvest": 1,
-      "github_candidates": 22
+      "github_candidates": 24
     },
     "by_provider": {
       "raw.githubusercontent.com": 66,
@@ -180,15 +180,15 @@
       "doc-04-0o-sheets.googleusercontent.com": 1,
       "export.arxiv.org": 3,
       "arxiv.org": 2,
-      "api.github.com": 22
+      "api.github.com": 24
     },
     "provider_cooldowns": {
-      "api.github.com": "2026-11-28T08:22:16.726351+00:00"
+      "api.github.com": "2026-11-28T16:19:50.032918+00:00"
     },
     "blocked_providers": [
       "api.github.com"
     ],
-    "ledger_sha256": "7c1aea6bb99bae73a018ce87c2391ae646bc338aa1ac6524c50fcf8ffb025516",
+    "ledger_sha256": "dedee6ce8d8f98795dca69b4624b72c98deb241c5efd1a7adfa0b062575332b3",
     "count_boundary": "Reservations are persisted before I/O; interrupted attempts remain conservatively charged. HTTP status observation does not establish complete or validated content."
   }
 }
